@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <head>
   <link rel="stylesheet" href="../merly.css">
   <script>
@@ -419,7 +419,21 @@
 <tr><td id='L389' class='num line'>389</td><td class='code'><span style='color:#3a6e31;'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;*&nbsp;the&nbsp;rest&nbsp;for&nbsp;the&nbsp;OS&nbsp;and&nbsp;other&nbsp;processes&nbsp;in&nbsp;the</span><tr/>
 <tr><td id='L390' class='num line'>390</td><td class='code'><span style='color:#3a6e31;'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;*&nbsp;system.</span><tr/>
 <tr><td id='L391' class='num line'>391</td><td class='code'><span style='color:#3a6e31;'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;*/</span><tr/>
-<tr><td id='L392' class='num line'>392</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#aaa186;background-color:#741da3;'>!</span><span style='color:#6892a9;background-color:#741da3;'>mem_have</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;'>mem_want</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>&lt;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;'>mem_have</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>/</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;'>2</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
+<tr><td id='L392' class='num line'>392</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>
+  <div class="popuptext" id="2">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (!mem_have&nbsp;||&nbsp;mem_want&nbsp;&lt;&nbsp;mem_have<span style='background-color:#0000af'>&nbsp;-&nbsp;</span>2)<br/>R2: (!mem_have&nbsp;||&nbsp;<span style='background-color:#0000af'>(</span>mem_want&nbsp;&lt;&nbsp;mem_have<span style='background-color:#0000af'>&nbsp;+&nbsp;</span>2<span style='background-color:#0000af'>)</span>)<br/>R3: (!mem_have&nbsp;||&nbsp;mem_want&nbsp;&lt;&nbsp;<span style='background-color:#0000af'>(</span>mem_have<span style='background-color:#0000af'>&nbsp;-&nbsp;</span>2<span style='background-color:#0000af'>)</span>)<br/>R4: (!mem_have&nbsp;||&nbsp;<span style='background-color:#0000af'>mem_want</span><span style='background-color:#0000af'>-&gt;</span><span style='background-color:#0000af'>xx_c</span>&nbsp;&lt;&nbsp;mem_have<span style='background-color:#0000af'>&nbsp;+&nbsp;</span>2)<br/>R5: (!mem_have&nbsp;||&nbsp;mem_want<span style='background-color:#0000af'>&nbsp;&gt;&nbsp;</span><span style='background-color:#0000af'>(</span>mem_have&nbsp;/&nbsp;2<span style='background-color:#0000af'>)</span>)
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 7.60, Total Score: 1007.60<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+!</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>mem_have</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>mem_want</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&lt;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>mem_have</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>/</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>2</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
 <tr><td id='L393' class='num line'>393</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#929270;'>string_list_clear</span><span style='color:#9e9e9e;'>(</span><span style='color:#aaa186;'>&amp;</span><span style='color:#6892a9;'>keep_pack</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L394' class='num line'>394</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span><tr/>
 <tr><td id='L395' class='num line'>395</td><td class='code'><tr/>
@@ -2566,7 +2580,7 @@
     <nav>
       <p></p>
       <ul class="list-style-none d-flex flex-wrap mb-2">
-        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">Â© 2022 Merly, Inc.</a></li>
         <!--
         <li class="mr-3"><a>Terms</a></li>
         <li class="mr-3"><a>Privacy</a></li>

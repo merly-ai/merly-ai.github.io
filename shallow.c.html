@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <head>
   <link rel="stylesheet" href="merly.css">
   <script>
@@ -163,7 +163,21 @@
 <tr><td id='L133' class='num line'>133</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>struct</span>&nbsp;<span style='color:#348675;'>commit_depth</span>&nbsp;<span style='color:#6892a9;'>depths</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L134' class='num line'>134</td><td class='code'><tr/>
 <tr><td id='L135' class='num line'>135</td><td class='code'>&nbsp;&nbsp<span style='color:#929270;'>init_commit_depth</span><span style='color:#9e9e9e;'>(</span><span style='color:#aaa186;'>&amp;</span><span style='color:#6892a9;'>depths</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
-<tr><td id='L136' class='num line'>136</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>while</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;'>commit</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;'>i</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>&lt;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;'>heads</span><span style='color:#aaa186;background-color:#741da3;'>-&gt;</span><span style='color:#7a8f6c;background-color:#741da3;'>nr</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;'>stack</span><span style='color:#9e9e9e;background-color:#741da3;'>.</span><span style='color:#7a8f6c;background-color:#741da3;'>nr</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L136' class='num line'>136</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>while</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>
+  <div class="popuptext" id="2">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (commit&nbsp;||&nbsp;<span style='background-color:#0000af'>(</span>i&nbsp;&lt;&nbsp;heads-&gt;nr<span style='background-color:#0000af'>)</span>&nbsp;||&nbsp;stack)<br/>R2: (commit&nbsp;||&nbsp;<span style='background-color:#0000af'>(</span>i<span style='background-color:#0000af'>&nbsp;&amp;&amp;&nbsp;</span>heads<span style='background-color:#0000af'>)</span>&nbsp;||&nbsp;nr)<br/>R3: (commit&nbsp;||&nbsp;i<span style='background-color:#0000af'>&nbsp;!=&nbsp;</span>heads&nbsp;||&nbsp;nr)<br/>R4: (commit&nbsp;||&nbsp;<span style='background-color:#0000af'>(</span>i<span style='background-color:#0000af'>&nbsp;!=&nbsp;</span>heads<span style='background-color:#0000af'>)</span>&nbsp;||&nbsp;nr)<br/>R5: (commit&nbsp;||&nbsp;i<span style='background-color:#0000af'>&nbsp;&gt;=&nbsp;</span>heads&nbsp;||&nbsp;nr)
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 10.25, Total Score: 1010.25<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+commit</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>i</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&lt;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>heads</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>-&gt;</span><span style='color:#7a8f6c;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>nr</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>stack</span><span style='color:#9e9e9e;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>.</span><span style='color:#7a8f6c;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>nr</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
 <tr><td id='L137' class='num line'>137</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>struct</span>&nbsp;<span style='color:#348675;'>commit_list</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>p</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L138' class='num line'>138</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#aaa186;background-color:#005c22;'>!</span><span style='color:#6892a9;background-color:#005c22;'>commit</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
 <tr><td id='L139' class='num line'>139</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#005c22;'>i</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>&lt;</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#6892a9;background-color:#005c22;'>heads</span><span style='color:#aaa186;background-color:#005c22;'>-&gt;</span><span style='color:#7a8f6c;background-color:#005c22;'>nr</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
@@ -205,7 +219,21 @@
 <tr><td id='L175' class='num line'>175</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>depth_slot</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#929270;'>xmalloc</span><span style='color:#9e9e9e;'>(</span><span style='color:#906a94;font-weight:bold;'>sizeof</span><span style='color:#9e9e9e;'>(</span><span style='color:#835980;'>int</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L176' class='num line'>176</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#aaa186;'>*</span><span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>depth_slot</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>cur_depth</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L177' class='num line'>177</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>else</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
-<tr><td id='L178' class='num line'>178</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;'>cur_depth</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>&gt;=</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;'>*</span><span style='color:#aaa186;background-color:#741da3;'>*</span><span style='color:#6892a9;background-color:#741da3;'>depth_slot</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
+<tr><td id='L178' class='num line'>178</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(3)'>
+  <div class="popuptext" id="3">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (cur_depth<span style='background-color:#0000af'>&nbsp;==&nbsp;</span>**depth_slot)<br/>R2: (cur_depth&nbsp;&gt;=&nbsp;*<span style='background-color:#0000af'>&amp;</span>depth_slot)<br/>R3: (cur_depth<span style='background-color:#0000af'>&nbsp;!=&nbsp;</span>**depth_slot)<br/>R4: (cur_depth<span style='background-color:#0000af'>&nbsp;==&nbsp;</span>*<span style='background-color:#0000af'>(</span>*depth_slot<span style='background-color:#0000af'>)</span>)<br/>R5: (cur_depth<span style='background-color:#0000af'>&nbsp;&gt;&nbsp;</span>**depth_slot)
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 6.75, Total Score: 1006.75<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+cur_depth</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(3)'>&gt;=</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(3)'>*</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(3)'>*</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(3)'>depth_slot</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
 <tr><td id='L179' class='num line'>179</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>continue</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L180' class='num line'>180</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#aaa186;'>*</span><span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>depth_slot</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>cur_depth</span><span style='color:#9e9e9e;'>;</span><tr/>
 <tr><td id='L181' class='num line'>181</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span><tr/>
@@ -858,7 +886,7 @@
     <nav>
       <p></p>
       <ul class="list-style-none d-flex flex-wrap mb-2">
-        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">Â© 2022 Merly, Inc.</a></li>
         <!--
         <li class="mr-3"><a>Terms</a></li>
         <li class="mr-3"><a>Privacy</a></li>
