@@ -1,0 +1,330 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>git Repo - refs\files-backend.c Ctrl Expressions (279) - MerlyMentor</title>
+</head>
+<body>
+  <h2>git Repo - refs\files-backend.c Ctrl Expressions (279) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;refs\files-backend.c Ctrl Expressions (279)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">777</td><td><a href="files-backend.c.html#L777">(<span style='background-color:#741da3;'>(iter->flags & DO_FOR_EACH_OMIT_DANGLING_SYMREFS) && (iter->iter0->flags & REF_ISSYMREF) && (iter->iter0->flags & REF_ISBROKEN)</span>)</a></td><td class="num">1029.75</td></tr>
+      <tr><td class="num line">725</td><td><a href="files-backend.c.html#L725">(<span style='background-color:#741da3;'>failure_errno == EINVAL && (*type & REF_ISBROKEN)</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">1992</td><td><a href="files-backend.c.html#L1992">(<span style='background-color:#9c4c02;'>!sb->len || sb->buf[sb->len - 1] != '\n' || parse_oid_hex(p, &ooid, &p) || *p++ != ' ' || parse_oid_hex(p, &noid, &p) || *p++ != ' ' || !(email_end = strchr(p, '>')) || email_end[1] != ' ' || !(timestamp = parse_timestamp(email_end + 2, &message, 10)) || !message || message[0] != ' ' || (message[1] != '+' && message[1] != '-') || !isdigit(message[2]) || !isdigit(message[3]) || !isdigit(message[4]) || !isdigit(message[5])</span>)</a></td><td class="num">151.45</td></tr>
+      <tr><td class="num line">3236</td><td><a href="files-backend.c.html#L3236">(update && (<span style='background-color:#9c4c02;'>write_in_full(get_lock_file_fd(&lock->lk), oid_to_hex(&cb.last_kept_oid), the_hash_algo->hexsz) < 0 || write_str_in_full(get_lock_file_fd(&lock->lk), "\\n") < 0 || close_ref_gently(lock) < 0</span>))</a></td><td class="num">130.25</td></tr>
+      <tr><td class="num line">1800</td><td><a href="files-backend.c.html#L1800">(write_in_full(fd, oid_to_hex(oid), the_hash_algo->hexsz) < 0 || write_in_full(fd, &term, 1) < 0 || fsync_component(FSYNC_COMPONENT_REFERENCE, get_lock_file_fd(&lock->lk)) < 0 || close_ref_gently(lock) < 0)</a></td><td class="num">73.00</td></tr>
+      <tr><td class="num line">3057</td><td><a href="files-backend.c.html#L3057">((update->flags & REF_HAVE_OLD) && !is_null_oid(&update->old_oid))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="files-backend.c.html#L513">(parse_oid_hex(buf, oid, &p) || (*p != '\0' && !isspace(*p)))</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="files-backend.c.html#L782">(!(iter->flags & DO_FOR_EACH_INCLUDE_BROKEN) && !ref_resolves_to_object(iter->iter0->refname, iter->repo, iter->iter0->oid, iter->iter0->flags))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">3221</td><td><a href="files-backend.c.html#L3221">((expire_flags & EXPIRE_REFLOGS_UPDATE_REF) && !is_null_oid(&cb.last_kept_oid))</a></td><td class="num">42.25</td></tr>
+      <tr><td class="num line">2581</td><td><a href="files-backend.c.html#L2581">((update->flags & REF_HAVE_NEW) && !(update->flags & REF_DELETING) && !(update->flags & REF_LOG_ONLY))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">2768</td><td><a href="files-backend.c.html#L2768">(update->flags & REF_DELETING && !(update->flags & REF_LOG_ONLY) && !(update->flags & REF_IS_PRUNING))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">2915</td><td><a href="files-backend.c.html#L2915">(update->flags & REF_DELETING && !(update->flags & REF_LOG_ONLY) && !(update->flags & REF_IS_PRUNING))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">2584</td><td><a href="files-backend.c.html#L2584">(!(update->type & REF_ISSYMREF) && oideq(&lock->old_oid, &update->new_oid))</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">1899</td><td><a href="files-backend.c.html#L1899">(logmsg && refs_resolve_ref_unsafe(&refs->base, target, RESOLVE_REF_READING, &new_oid, NULL) && files_log_ref_write(refs, refname, &lock->old_oid, &new_oid, logmsg, 0, &err))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">773</td><td><a href="files-backend.c.html#L773">(iter->flags & DO_FOR_EACH_PER_WORKTREE_ONLY && ref_type(iter->iter0->refname) != REF_TYPE_PER_WORKTREE)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">2709</td><td><a href="files-backend.c.html#L2709">((update->flags & REF_IS_PRUNING) && !(update->flags & REF_NO_DEREF))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">2946</td><td><a href="files-backend.c.html#L2946">(update->flags & REF_DELETING && !(update->flags & REF_LOG_ONLY))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">2949</td><td><a href="files-backend.c.html#L2949">(!(update->type & REF_ISPACKED) || update->type & REF_ISSYMREF)</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1056</td><td><a href="files-backend.c.html#L1056">(!refs_resolve_ref_unsafe(&refs->base, lock->ref_name, 0, &lock->old_oid, NULL))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">2186</td><td><a href="files-backend.c.html#L2186">(!refs_resolve_ref_unsafe(iter->ref_store, diter->relative_path, 0, &iter->oid, &flags))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">2448</td><td><a href="files-backend.c.html#L2448">(!(update->flags & REF_HAVE_OLD) || oideq(oid, &update->old_oid))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1479</td><td><a href="files-backend.c.html#L1479">(!copy && refs_resolve_ref_unsafe(&refs->base, newrefname, RESOLVE_REF_READING | RESOLVE_REF_NO_RECURSE, NULL, NULL) && refs_delete_ref(&refs->base, NULL, newrefname, NULL, REF_NO_DEREF))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">2499</td><td><a href="files-backend.c.html#L2499">((update->flags & REF_HAVE_NEW) && is_null_oid(&update->new_oid))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">2532</td><td><a href="files-backend.c.html#L2532">(!refs_resolve_ref_unsafe(&refs->base, referent.buf, 0, &lock->old_oid, NULL))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">280</td><td><a href="files-backend.c.html#L280">(!refs_resolve_ref_unsafe(&refs->base, refname.buf, RESOLVE_REF_READING, &oid, &flag))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">772</td><td><a href="files-backend.c.html#L772">((ok = ref_iterator_advance(iter->iter0)) == ITER_OK)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">2014</td><td><a href="files-backend.c.html#L2014">(bob < scan && *(scan--) != '\n')</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1433</td><td><a href="files-backend.c.html#L1433">(!refs_resolve_ref_unsafe(&refs->base, oldrefname, RESOLVE_REF_READING | RESOLVE_REF_NO_RECURSE, &orig_oid, &flag))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="files-backend.c.html#L1109">(q > p && *(q - 1) == '/')</a></td><td class="num">27.10</td></tr>
+      <tr><td class="num line">1466</td><td><a href="files-backend.c.html#L1466">(!copy && refs_delete_ref(&refs->base, logmsg, oldrefname, &orig_oid, REF_NO_DEREF))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1855</td><td><a href="files-backend.c.html#L1855">(head_ref && (head_flag & REF_ISSYMREF) && !strcmp(head_ref, lock->ref_name))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">1044</td><td><a href="files-backend.c.html#L1044">(is_null_oid(&lock->old_oid) && refs_verify_refname_available(refs->packed_ref_store, refname, NULL, NULL, err))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">638</td><td><a href="files-backend.c.html#L638">(hold_lock_file_for_update_timeout(&lock->lk, ref_file.buf, LOCK_NO_DEREF, get_files_ref_lock_timeout_ms()) < 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1590</td><td><a href="files-backend.c.html#L1590">(!lstat(path, &st) && S_ISDIR(st.st_mode))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">445</td><td><a href="files-backend.c.html#L445">(myerr == ENOENT && !S_ISLNK(st.st_mode))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1449</td><td><a href="files-backend.c.html#L1449">(!refs_rename_ref_available(&refs->base, oldrefname, newrefname))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1918</td><td><a href="files-backend.c.html#L1918">(!fdopen_lock_file(&lock->lk, "w"))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2311</td><td><a href="files-backend.c.html#L2311">((update->flags & REF_LOG_ONLY) || (update->flags & REF_IS_PRUNING) || (update->flags & REF_UPDATE_VIA_HEAD))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">406</td><td><a href="files-backend.c.html#L406">(starts_with(sb_contents.buf, "refs/") && !check_refname_format(sb_contents.buf, 0))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">2154</td><td><a href="files-backend.c.html#L2154">(!ret && !strbuf_getwholeline(&sb, logfp, '\n'))</a></td><td class="num">22.00</td></tr>
+      <tr><td class="num line">2876</td><td><a href="files-backend.c.html#L2876">(files_log_ref_write(refs, lock->ref_name, &lock->old_oid, &update->new_oid, update->msg, update->flags, err))</a></td><td class="num">21.00</td></tr>
+      <tr><td class="num line">2874</td><td><a href="files-backend.c.html#L2874">(update->flags & REF_NEEDS_COMMIT || update->flags & REF_LOG_ONLY)</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="files-backend.c.html#L661">(files_read_raw_ref(&refs->base, refname, &lock->old_oid, referent, type, &failure_errno))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1790</td><td><a href="files-backend.c.html#L1790">(o->type != OBJ_COMMIT && is_branch(lock->ref_name))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2658</td><td><a href="files-backend.c.html#L2658">(backend_data->packed_transaction && ref_transaction_abort(backend_data->packed_transaction, &err))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2590</td><td><a href="files-backend.c.html#L2590">(write_ref_to_lockfile(lock, &update->new_oid, update->flags & REF_SKIP_OID_VERIFICATION, err))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1518</td><td><a href="files-backend.c.html#L1518">(write_ref_to_lockfile(lock, &orig_oid, 0, &err) || commit_ref_update(refs, lock, &orig_oid, logmsg, &err))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1538</td><td><a href="files-backend.c.html#L1538">(write_ref_to_lockfile(lock, &orig_oid, 0, &err) || commit_ref_update(refs, lock, &orig_oid, NULL, &err))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">643</td><td><a href="files-backend.c.html#L643">(myerr == ENOENT && attempts_remaining-- > 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">967</td><td><a href="files-backend.c.html#L967">(errno == EISDIR && remove_directories_remaining-- > 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">977</td><td><a href="files-backend.c.html#L977">(errno == ENOENT && create_directories_remaining-- > 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">993</td><td><a href="files-backend.c.html#L993">(scld_result == SCLD_VANISHED && create_directories_remaining-- > 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3060</td><td><a href="files-backend.c.html#L3060">(refs_verify_refname_available(&refs->base, update->refname, &affected_refnames, NULL, err))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1224</td><td><a href="files-backend.c.html#L1224">(!should_pack_ref(iter->refname, iter->oid, iter->flags, flags))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1099</td><td><a href="files-backend.c.html#L1099">(*p && *p != '/')</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1107</td><td><a href="files-backend.c.html#L1107">(q > p && *q != '/')</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1454</td><td><a href="files-backend.c.html#L1454">(!copy && log && rename(sb_oldref.buf, tmp_renamed_log.buf))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1549</td><td><a href="files-backend.c.html#L1549">(!logmoved && log && rename(tmp_renamed_log.buf, sb_oldref.buf))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="files-backend.c.html#L261">((de = readdir(d)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1218</td><td><a href="files-backend.c.html#L1218">((ok = ref_iterator_advance(iter)) == ITER_OK)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2176</td><td><a href="files-backend.c.html#L2176">((ok = dir_iterator_advance(diter)) == ITER_OK)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1460</td><td><a href="files-backend.c.html#L1460">(copy && log && copy_file(tmp_renamed_log.buf, sb_oldref.buf, 0644))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1232</td><td><a href="files-backend.c.html#L1232">(ref_transaction_update(transaction, iter->refname, iter->oid, NULL, REF_NO_DEREF, NULL, &err))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1825</td><td><a href="files-backend.c.html#L1825">(files_log_ref_write(refs, lock->ref_name, &lock->old_oid, oid, logmsg, 0, err))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">134</td><td><a href="files-backend.c.html#L134">((refs->store_flags & required_flags) != required_flags)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="files-backend.c.html#L1117">((flags & REMOVE_EMPTY_PARENTS_REF) && rmdir(sb.buf))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1122</td><td><a href="files-backend.c.html#L1122">((flags & REMOVE_EMPTY_PARENTS_REFLOG) && rmdir(sb.buf))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1185</td><td><a href="files-backend.c.html#L1185">(!(pack_flags & PACK_REFS_ALL) && !starts_with(refname, "refs/tags/"))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2288</td><td><a href="files-backend.c.html#L2288">(!strcmp(refs->base.gitdir, refs->gitcommondir))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">428</td><td><a href="files-backend.c.html#L428">(skip_packed_refs || refs_read_raw_ref(refs->packed_ref_store, refname, oid, referent, type, &ignore_errno))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1858</td><td><a href="files-backend.c.html#L1858">(files_log_ref_write(refs, "HEAD", &lock->old_oid, oid, logmsg, 0, &log_err))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3044</td><td><a href="files-backend.c.html#L3044">(refs_for_each_rawref(&refs->base, ref_present, &affected_refnames))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">128</td><td><a href="files-backend.c.html#L128">(ref_store->be != &refs_be_files)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2069</td><td><a href="files-backend.c.html#L2069">(at_tail && scanp[-1] == '\n')</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2748</td><td><a href="files-backend.c.html#L2748">(head_ref && !(head_type & REF_ISSYMREF))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">266</td><td><a href="files-backend.c.html#L266">(de->d_name[0] == '.')</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="files-backend.c.html#L1051">(raceproof_create_file(ref_file.buf, create_reflock, &lock->lk))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2181</td><td><a href="files-backend.c.html#L2181">(diter->basename[0] == '.')</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2611</td><td><a href="files-backend.c.html#L2611">(!(update->flags & REF_NEEDS_COMMIT))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="files-backend.c.html#L149">(parse_worktree_ref(refname, &worktree_name, &length, &real_ref))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1546</td><td><a href="files-backend.c.html#L1546">(logmoved && rename(sb_newref.buf, sb_oldref.buf))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">400</td><td><a href="files-backend.c.html#L400">(myerr == ENOENT || myerr == EINVAL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1661</td><td><a href="files-backend.c.html#L1661">(errno == ENOENT || errno == EISDIR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2047</td><td><a href="files-backend.c.html#L2047">(!ret && 0 < pos)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">110</td><td><a href="files-backend.c.html#L110">(refs->store_flags & REF_STORE_MAIN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2525</td><td><a href="files-backend.c.html#L2525">(update->type & REF_ISSYMREF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2526</td><td><a href="files-backend.c.html#L2526">(update->flags & REF_NO_DEREF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2535</td><td><a href="files-backend.c.html#L2535">(update->flags & REF_HAVE_OLD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2893</td><td><a href="files-backend.c.html#L2893">(update->flags & REF_NEEDS_COMMIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2970</td><td><a href="files-backend.c.html#L2970">(update->flags & REF_DELETED_RMDIR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">272</td><td><a href="files-backend.c.html#L272">(stat(path.buf, &st) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">398</td><td><a href="files-backend.c.html#L398">(strbuf_readlink(&sb_contents, path, st.st_size) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1712</td><td><a href="files-backend.c.html#L1712">(msg && *msg)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2129</td><td><a href="files-backend.c.html#L2129">(!ret && sb.len)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="files-backend.c.html#L386">(refs_read_raw_ref(refs->packed_ref_store, refname, oid, referent, type, &ignore_errno))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">597</td><td><a href="files-backend.c.html#L597">(refs_verify_refname_available(&refs->base, refname, extras, NULL, err))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">703</td><td><a href="files-backend.c.html#L703">(refs_verify_refname_available(&refs->base, refname, extras, NULL, err))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1273</td><td><a href="files-backend.c.html#L1273">(packed_refs_lock(refs->packed_ref_store, 0, &err))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1286</td><td><a href="files-backend.c.html#L1286">(refs_delete_ref(&refs->base, msg, refname, NULL, flags))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1580</td><td><a href="files-backend.c.html#L1580">(close_lock_file_gently(&lock->lk))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1611</td><td><a href="files-backend.c.html#L1611">(commit_lock_file(&lock->lk))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1836</td><td><a href="files-backend.c.html#L1836">(strcmp(lock->ref_name, "HEAD") != 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2270</td><td><a href="files-backend.c.html#L2270">(ref_type(iter_common->refname) == REF_TYPE_NORMAL)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2452</td><td><a href="files-backend.c.html#L2452">(is_null_oid(&update->old_oid))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2542</td><td><a href="files-backend.c.html#L2542">(check_old_oid(update, &lock->old_oid, err))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2563</td><td><a href="files-backend.c.html#L2563">(check_old_oid(update, &lock->old_oid, err))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">378</td><td><a href="files-backend.c.html#L378">(remaining_retries-- <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">629</td><td><a href="files-backend.c.html#L629">(attempts_remaining-- > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1283</td><td><a href="files-backend.c.html#L1283">(i < refnames->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1300</td><td><a href="files-backend.c.html#L1300">(refnames->nr == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="files-backend.c.html#L1428">(log && S_ISLNK(loginfo.st_mode))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1717</td><td><a href="files-backend.c.html#L1717">(write_in_full(fd, sb.buf, sb.len) < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2179</td><td><a href="files-backend.c.html#L2179">(!S_ISREG(diter->st.st_mode))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2647</td><td><a href="files-backend.c.html#L2647">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2704</td><td><a href="files-backend.c.html#L2704">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2760</td><td><a href="files-backend.c.html#L2760">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2870</td><td><a href="files-backend.c.html#L2870">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2913</td><td><a href="files-backend.c.html#L2913">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2942</td><td><a href="files-backend.c.html#L2942">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2967</td><td><a href="files-backend.c.html#L2967">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3019</td><td><a href="files-backend.c.html#L3019">(transaction->state != REF_TRANSACTION_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3023</td><td><a href="files-backend.c.html#L3023">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3054</td><td><a href="files-backend.c.html#L3054">(i < transaction->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">381</td><td><a href="files-backend.c.html#L381">(lstat(path, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">452</td><td><a href="files-backend.c.html#L452">(strbuf_read(&sb_contents, fd, 256) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1913</td><td><a href="files-backend.c.html#L1913">(prefer_symlink_refs && !create_ref_symlink(lock, target))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3192</td><td><a href="files-backend.c.html#L3192">(hold_lock_file_for_update(&reflog_lock, log_file, 0) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">384</td><td><a href="files-backend.c.html#L384">(myerr != ENOENT || skip_packed_refs)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">464</td><td><a href="files-backend.c.html#L464">(ret && !myerr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1102</td><td><a href="files-backend.c.html#L1102">(*p == '/')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1660</td><td><a href="files-backend.c.html#L1660">(*logfd < 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1677</td><td><a href="files-backend.c.html#L1677">(*logfd >= 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2083</td><td><a href="files-backend.c.html#L2083">(*bp == '\n')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2386</td><td><a href="files-backend.c.html#L2386">(!strcmp(update->refname, "HEAD"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="files-backend.c.html#L320">(!refs->loose)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">840</td><td><a href="files-backend.c.html#L840">(!(flags & DO_FOR_EACH_INCLUDE_BROKEN))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1270</td><td><a href="files-backend.c.html#L1270">(!refnames->nr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1502</td><td><a href="files-backend.c.html#L1502">(log && rename_tmp_log(refs, newrefname))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2005</td><td><a href="files-backend.c.html#L2005">(message[6] != '\t')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2690</td><td><a href="files-backend.c.html#L2690">(!transaction->nr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2861</td><td><a href="files-backend.c.html#L2861">(!transaction->nr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3247</td><td><a href="files-backend.c.html#L3247">(update && commit_ref(lock))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">268</td><td><a href="files-backend.c.html#L268">(ends_with(de->d_name, ".lock"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">740</td><td><a href="files-backend.c.html#L740">(refs_verify_refname_available(refs->packed_ref_store, refname, extras, NULL, err))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1136</td><td><a href="files-backend.c.html#L1136">(check_refname_format(r->name, 0))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1276</td><td><a href="files-backend.c.html#L1276">(refs_delete_refs(refs->packed_ref_store, msg, refnames, flags))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1328</td><td><a href="files-backend.c.html#L1328">(rename(cb->tmp_renamed_log, path))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2183</td><td><a href="files-backend.c.html#L2183">(ends_with(diter->basename, ".lock"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2316</td><td><a href="files-backend.c.html#L2316">(strcmp(update->refname, head_ref))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2344</td><td><a href="files-backend.c.html#L2344">(strcmp(new_update->refname, "HEAD"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2796</td><td><a href="files-backend.c.html#L2796">(packed_refs_lock(refs->packed_ref_store, 0, err))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2802</td><td><a href="files-backend.c.html#L2802">(is_packed_transaction_needed(refs->packed_ref_store, packed_transaction))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3077</td><td><a href="files-backend.c.html#L3077">(packed_refs_lock(refs->packed_ref_store, 0, err))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3114</td><td><a href="files-backend.c.html#L3114">(fn(ooid, noid, email, timestamp, tz, message, cb->policy_cb))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">71</td><td><a href="files-backend.c.html#L71">(refs->loose)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">192</td><td><a href="files-backend.c.html#L192">(!skip_prefix(refname, "main-worktree/", &refname))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">817</td><td><a href="files-backend.c.html#L817">(iter->iter0)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="files-backend.c.html#L975">(!remove_dir_recursively(&path_copy, REMOVE_DIR_EMPTY_ONLY))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1106</td><td><a href="files-backend.c.html#L1106">(flags & REMOVE_EMPTY_PARENTS_REF | REMOVE_EMPTY_PARENTS_REFLOG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1189</td><td><a href="files-backend.c.html#L1189">(ref_flags & REF_ISSYMREF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1239</td><td><a href="files-backend.c.html#L1239">((flags & PACK_REFS_PRUNE))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1440</td><td><a href="files-backend.c.html#L1440">(flag & REF_ISSYMREF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2217</td><td><a href="files-backend.c.html#L2217">(iter->dir_iterator)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2420</td><td><a href="files-backend.c.html#L2420">(item->util)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2433</td><td><a href="files-backend.c.html#L2433">(update->parent_update)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2664</td><td><a href="files-backend.c.html#L2664">(backend_data->packed_refs_locked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3111</td><td><a href="files-backend.c.html#L3111">(cb->rewrite)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3117</td><td><a href="files-backend.c.html#L3117">(cb->dry_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="files-backend.c.html#L218">(ip < ARRAY_SIZE(prefixes))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="files-backend.c.html#L286">(is_null_oid(&oid))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">300</td><td><a href="files-backend.c.html#L300">(!refname_is_safe(refname.buf))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">500</td><td><a href="files-backend.c.html#L500">(skip_prefix(buf, "ref:", &buf))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">501</td><td><a href="files-backend.c.html#L501">(isspace(*buf))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">701</td><td><a href="files-backend.c.html#L701">(remove_dir_recursively(&ref_file, REMOVE_DIR_EMPTY_ONLY))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">796</td><td><a href="files-backend.c.html#L796">(ref_iterator_abort(ref_iterator) != ITER_DONE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="files-backend.c.html#L1146">(ref_transaction_commit(transaction, &err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1181</td><td><a href="files-backend.c.html#L1181">(ref_type(refname) != REF_TYPE_NORMAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1250</td><td><a href="files-backend.c.html#L1250">(ref_transaction_commit(transaction, &err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="files-backend.c.html#L1644">(force_create || should_autocreate_reflog(refname))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1695</td><td><a href="files-backend.c.html#L1695">(log_ref_setup(refs, refname, 1, &fd, err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1926</td><td><a href="files-backend.c.html#L1926">(commit_ref(lock) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2043</td><td><a href="files-backend.c.html#L2043">(fseek(logfp, 0, SEEK_END) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2055</td><td><a href="files-backend.c.html#L2055">(fseek(logfp, pos - cnt, SEEK_SET))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">2200</td><td><a href="files-backend.c.html#L2200">(ref_iterator_abort(ref_iterator) == ITER_ERROR)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2721</td><td><a href="files-backend.c.html#L2721">(ref_update_reject_duplicates(&affected_refnames, err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2920</td><td><a href="files-backend.c.html#L2920">(!unlink_or_warn(sb.buf))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3027</td><td><a href="files-backend.c.html#L3027">(ref_update_reject_duplicates(&affected_refnames, err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3232</td><td><a href="files-backend.c.html#L3232">(close_lock_file_gently(&reflog_lock))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3244</td><td><a href="files-backend.c.html#L3244">(commit_lock_file(&reflog_lock))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">225</td><td><a href="files-backend.c.html#L225">(pos >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="files-backend.c.html#L443">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">663</td><td><a href="files-backend.c.html#L663">(failure_errno == ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">687</td><td><a href="files-backend.c.html#L687">(failure_errno == EISDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="files-backend.c.html#L972">(!path_copy.len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">986</td><td><a href="files-backend.c.html#L986">(!path_copy.len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="files-backend.c.html#L991">(scld_result == SCLD_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="files-backend.c.html#L1098">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1111</td><td><a href="files-backend.c.html#L1111">(q == p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1165</td><td><a href="files-backend.c.html#L1165">(*refs_to_prune)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1247</td><td><a href="files-backend.c.html#L1247">(ok != ITER_DONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1337</td><td><a href="files-backend.c.html#L1337">(errno == ENOTDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="files-backend.c.html#L1357">(errno == EISDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1484</td><td><a href="files-backend.c.html#L1484">(errno == EISDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1646</td><td><a href="files-backend.c.html#L1646">(errno == ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1649</td><td><a href="files-backend.c.html#L1649">(errno == EISDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1698</td><td><a href="files-backend.c.html#L1698">(fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="files-backend.c.html#L1730">(log_all_ref_updates == LOG_REFS_UNSET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1740</td><td><a href="files-backend.c.html#L1740">(logfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2061</td><td><a href="files-backend.c.html#L2061">(nread != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2074</td><td><a href="files-backend.c.html#L2074">(buf < scanp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2110</td><td><a href="files-backend.c.html#L2110">(bp == buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3184</td><td><a href="files-backend.c.html#L3184">(!cb.dry_run)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3200</td><td><a href="files-backend.c.html#L3200">(!cb.newlog)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3211</td><td><a href="files-backend.c.html#L3211">(!cb.dry_run)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="files-backend.c.html#L274">(S_ISDIR(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">298</td><td><a href="files-backend.c.html#L298">(check_refname_format(refname.buf, REFNAME_ALLOW_ONELEVEL))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">396</td><td><a href="files-backend.c.html#L396">(S_ISLNK(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">421</td><td><a href="files-backend.c.html#L421">(S_ISDIR(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2954</td><td><a href="files-backend.c.html#L2954">(unlink_or_msg(sb.buf, err))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1193</td><td><a href="files-backend.c.html#L1193">(!ref_resolves_to_object(refname, the_repository, oid, ref_flags))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3177</td><td><a href="files-backend.c.html#L3177">(!refs_reflog_exists(ref_store, refname))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">253</td><td><a href="files-backend.c.html#L253">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">964</td><td><a href="files-backend.c.html#L964">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1140</td><td><a href="files-backend.c.html#L1140">(!transaction)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1211</td><td><a href="files-backend.c.html#L1211">(!transaction)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1399</td><td><a href="files-backend.c.html#L1399">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1508</td><td><a href="files-backend.c.html#L1508">(!lock)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1530</td><td><a href="files-backend.c.html#L1530">(!lock)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1780</td><td><a href="files-backend.c.html#L1780">(!skip_oid_verification)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1782</td><td><a href="files-backend.c.html#L1782">(!o)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1943</td><td><a href="files-backend.c.html#L1943">(!lock)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2039</td><td><a href="files-backend.c.html#L2039">(!logfp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2097</td><td><a href="files-backend.c.html#L2097">(!pos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2151</td><td><a href="files-backend.c.html#L2151">(!logfp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2241</td><td><a href="files-backend.c.html#L2241">(!diter)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2775</td><td><a href="files-backend.c.html#L2775">(!packed_transaction)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2778</td><td><a href="files-backend.c.html#L2778">(!packed_transaction)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3049</td><td><a href="files-backend.c.html#L3049">(!packed_transaction)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3158</td><td><a href="files-backend.c.html#L3158">(!lock)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">215</td><td><a href="files-backend.c.html#L215">(strcmp(dirname, "refs/"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1645</td><td><a href="files-backend.c.html#L1645">(raceproof_create_file(logfile, open_or_create_logfile, logfd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1755</td><td><a href="files-backend.c.html#L1755">(close(logfd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1867</td><td><a href="files-backend.c.html#L1867">(commit_ref(lock))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2324</td><td><a href="files-backend.c.html#L2324">(string_list_has_string(affected_refnames, "HEAD"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="files-backend.c.html#L2376">(string_list_has_string(affected_refnames, referent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2456</td><td><a href="files-backend.c.html#L2456">(is_null_oid(oid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2617</td><td><a href="files-backend.c.html#L2617">(close_ref_gently(lock))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2827</td><td><a href="files-backend.c.html#L2827">(ref_transaction_abort(packed_transaction, err))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2895</td><td><a href="files-backend.c.html#L2895">(commit_ref(lock))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3082</td><td><a href="files-backend.c.html#L3082">(initial_ref_transaction_commit(packed_transaction, err))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">152</td><td><a href="files-backend.c.html#L152">(worktree_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">489</td><td><a href="files-backend.c.html#L489">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">599</td><td><a href="files-backend.c.html#L599">(mustexist)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">664</td><td><a href="files-backend.c.html#L664">(mustexist)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">696</td><td><a href="files-backend.c.html#L696">(mustexist)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1152</td><td><a href="files-backend.c.html#L1152">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1356</td><td><a href="files-backend.c.html#L1356">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1441</td><td><a href="files-backend.c.html#L1441">(copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1492</td><td><a href="files-backend.c.html#L1492">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1509</td><td><a href="files-backend.c.html#L1509">(copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1737</td><td><a href="files-backend.c.html#L1737">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1744</td><td><a href="files-backend.c.html#L1744">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1886</td><td><a href="files-backend.c.html#L1886">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2095</td><td><a href="files-backend.c.html#L2095">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2262</td><td><a href="files-backend.c.html#L2262">(iter_worktree)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2269</td><td><a href="files-backend.c.html#L2269">(iter_common)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2502</td><td><a href="files-backend.c.html#L2502">(head_ref)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2505</td><td><a href="files-backend.c.html#L2505">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2513</td><td><a href="files-backend.c.html#L2513">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2557</td><td><a href="files-backend.c.html#L2557">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2651</td><td><a href="files-backend.c.html#L2651">(lock)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2657</td><td><a href="files-backend.c.html#L2657">(backend_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2765</td><td><a href="files-backend.c.html#L2765">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2795</td><td><a href="files-backend.c.html#L2795">(packed_transaction)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2811</td><td><a href="files-backend.c.html#L2811">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2838</td><td><a href="files-backend.c.html#L2838">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2932</td><td><a href="files-backend.c.html#L2932">(packed_transaction)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2937</td><td><a href="files-backend.c.html#L2937">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3088</td><td><a href="files-backend.c.html#L3088">(packed_transaction)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
