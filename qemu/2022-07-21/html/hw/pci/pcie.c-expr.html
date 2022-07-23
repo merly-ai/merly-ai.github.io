@@ -1,0 +1,108 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\pci\pcie.c Ctrl Expressions (57) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\pci\pcie.c Ctrl Expressions (57) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\pci\pcie.c Ctrl Expressions (57)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">364</td><td><a href="pcie.c.html#L364">(<span style='background-color:#741da3;'>!msix_enabled(dev) && !msi_enabled(dev) && pci_intx(dev) != -1 && !dev->exp.hpev_notified</span>)</a></td><td class="num">1018.50</td></tr>
+      <tr><td class="num line">617</td><td><a href="pcie.c.html#L617">(s->hotplug && (s->native_hotplug || DEVICE(dev)->hotplugged))</a></td><td class="num">50.25</td></tr>
+      <tr><td class="num line">772</td><td><a href="pcie.c.html#L772">((sltsta & PCI_EXP_SLTSTA_PDS) && (val & PCI_EXP_SLTCTL_PCC) && (val & PCI_EXP_SLTCTL_PIC_OFF) == PCI_EXP_SLTCTL_PIC_OFF && (!(old_slt_ctl & PCI_EXP_SLTCTL_PCC) || (old_slt_ctl & PCI_EXP_SLTCTL_PIC_OFF) != PCI_EXP_SLTCTL_PIC_OFF))</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">414</td><td><a href="pcie.c.html#L414">(pci_word_test_and_set_mask(dev->config + dev->exp.exp_cap + PCI_EXP_SLTSTA, event) == event)</a></td><td class="num">29.45</td></tr>
+      <tr><td class="num line">575</td><td><a href="pcie.c.html#L575">(pci_dev->devfn && !bus->devices[0])</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">582</td><td><a href="pcie.c.html#L582">(((sltctl & PCI_EXP_SLTCTL_PIC) == PCI_EXP_SLTCTL_PWR_IND_OFF) && ((sltctl & PCI_EXP_SLTCTL_PCC) == PCI_EXP_SLTCTL_PWR_OFF))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">107</td><td><a href="pcie.c.html#L107">(s->width > QEMU_PCI_EXP_LNK_X1 || s->speed > QEMU_PCI_EXP_LNK_2_5GT)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="pcie.c.html#L444">(dev->hotplugged && (sltcap & PCI_EXP_SLTCAP_HPC) == 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">472</td><td><a href="pcie.c.html#L472">(pci_dev->cap_present & QEMU_PCIE_LNKSTA_DLLLA || (lnkcap & PCI_EXP_LNKCAP_DLLLARC))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="pcie.c.html#L488">(pci_dev->cap_present & QEMU_PCIE_LNKSTA_DLLLA || (lnkcap & PCI_EXP_LNKCAP_DLLLARC))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">527</td><td><a href="pcie.c.html#L527">(dev->cap_present & QEMU_PCIE_LNKSTA_DLLLA || (lnkcap & PCI_EXP_LNKCAP_DLLLARC))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">999</td><td><a href="pcie.c.html#L999">((lnksta & PCI_EXP_LNKSTA_NLW) > (lnkcap & PCI_EXP_LNKCAP_MLW))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1006</td><td><a href="pcie.c.html#L1006">((lnksta & PCI_EXP_LNKSTA_CLS) > (lnkcap & PCI_EXP_LNKCAP_SLS))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">992</td><td><a href="pcie.c.html#L992">(!target || !target->exp.exp_cap)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="pcie.c.html#L342">(prev == dev->exp.hpev_notified)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">184</td><td><a href="pcie.c.html#L184">(dev->cap_present & QEMU_PCIE_EXTCAP_INIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">624</td><td><a href="pcie.c.html#L624">(dev->cap_present & QEMU_PCIE_SLTCAP_PCP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">684</td><td><a href="pcie.c.html#L684">(dev->cap_present & QEMU_PCIE_SLTCAP_PCP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">744</td><td><a href="pcie.c.html#L744">(val & ~old_slt_sta & PCIE_SLOT_EVENTS)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">113</td><td><a href="pcie.c.html#L113">(s->speed > QEMU_PCI_EXP_LNK_2_5GT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">141</td><td><a href="pcie.c.html#L141">(s->speed > QEMU_PCI_EXP_LNK_5GT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">147</td><td><a href="pcie.c.html#L147">(s->speed > QEMU_PCI_EXP_LNK_8GT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">548</td><td><a href="pcie.c.html#L548">((sltcap & PCI_EXP_SLTCAP_HPC) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">561</td><td><a href="pcie.c.html#L561">((sltctl & PCI_EXP_SLTCTL_PIC) == PCI_EXP_SLTCTL_PWR_IND_BLINK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="pcie.c.html#L877">(!dev->exp.exp_cap)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">226</td><td><a href="pcie.c.html#L226">(pci_bus_is_express(pci_get_bus(dev)) && pci_bus_is_root(pci_get_bus(dev)))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1093</td><td><a href="pcie.c.html#L1093">(dev->exp.acs_cap)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">469</td><td><a href="pcie.c.html#L469">(!dev->hotplugged)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1002</td><td><a href="pcie.c.html#L1002">(!(lnksta & PCI_EXP_LNKSTA_NLW))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1009</td><td><a href="pcie.c.html#L1009">(!(lnksta & PCI_EXP_LNKSTA_CLS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">846</td><td><a href="pcie.c.html#L846">(pci_get_word(devctl) & PCI_EXP_DEVCTL_BCR_FLR)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">375</td><td><a href="pcie.c.html#L375">(sltcap & PCI_EXP_SLTCAP_PCP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">396</td><td><a href="pcie.c.html#L396">(sltcap & PCI_EXP_SLTCAP_PCP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">428</td><td><a href="pcie.c.html#L428">(sltsta & PCI_EXP_SLTSTA_EIS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="pcie.c.html#L509">(dev->partially_hotplugged)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="pcie.c.html#L751">(!ranges_overlap(addr, len, pos + PCI_EXP_SLTCTL, 2))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">356</td><td><a href="pcie.c.html#L356">(pci_intx(dev) != -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">728</td><td><a href="pcie.c.html#L728">(ranges_overlap(addr, len, pos + PCI_EXP_SLTSTA, 2))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">755</td><td><a href="pcie.c.html#L755">(pci_word_test_and_clear_mask(exp_cap + PCI_EXP_SLTCTL, PCI_EXP_SLTCTL_EIC))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">913</td><td><a href="pcie.c.html#L913">(PCI_EXT_CAP_ID(header) == cap_id)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">166</td><td><a href="pcie.c.html#L166">(pos < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">203</td><td><a href="pcie.c.html#L203">(pos < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">231</td><td><a href="pcie.c.html#L231">(cap_size == PCI_EXP_VER1_SIZEOF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="pcie.c.html#L236">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="pcie.c.html#L954">(offset != PCI_CONFIG_SPACE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="pcie.c.html#L874">(!pci_is_express(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">91</td><td><a href="pcie.c.html#L91">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">901</td><td><a href="pcie.c.html#L901">(!header)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">352</td><td><a href="pcie.c.html#L352">(msix_enabled(dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="pcie.c.html#L354">(msi_enabled(dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="pcie.c.html#L461">(pci_is_vf(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="pcie.c.html#L485">(pci_get_function_0(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">556</td><td><a href="pcie.c.html#L556">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">689</td><td><a href="pcie.c.html#L689">(populated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">919</td><td><a href="pcie.c.html#L919">(prev_p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1050</td><td><a href="pcie.c.html#L1050">(aligned)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1075</td><td><a href="pcie.c.html#L1075">(is_downstream)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

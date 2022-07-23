@@ -1,0 +1,335 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>tor Repo - src\or\dirserv.c Ctrl Expressions (282) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\or\dirserv.c Ctrl Expressions (282) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\or\dirserv.c Ctrl Expressions (282)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2166</td><td><a href="dirserv.c.html#L2166">(rs->is_fast && (!rs->is_exit || exits_can_be_guards) && (<span style='background-color:#741da3;'>router_get_advertised_bandwidth(ri) >= BANDWIDTH_TO_GUARANTEE_GUARD || <span style='background-color:#741da3;'>router_get_advertised_bandwidth(ri) >= (exits_can_be_guards ? guard_bandwidth_including_exits : guard_bandwidth_excluding_exits)</span></span>))</a></td><td class="num">2038.00</td></tr>
+      <tr><td class="num line">2885</td><td><a href="dirserv.c.html#L2885">(try_all || <span style='background-color:#741da3;'>(((uint8_t)id_digest[0]) % 128) == ctr</span>)</a></td><td class="num">1024.35</td></tr>
+      <tr><td class="num line">691</td><td><a href="dirserv.c.html#L691">(<span style='background-color:#741da3;'>ri_old && ri_old->cache_info.published_on < ri->cache_info.published_on && router_differences_are_cosmetic(ri_old, ri) && !router_is_me(ri)</span>)</a></td><td class="num">1021.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="dirserv.c.html#L886">(<span style='background-color:#741da3;'>the_directory->published < now - STUB_REGENERATE_INTERVAL || the_runningrouters.published < now - STUB_REGENERATE_INTERVAL</span>)</a></td><td class="num">1016.20</td></tr>
+      <tr><td class="num line">853</td><td><a href="dirserv.c.html#L853">(<span style='background-color:#741da3;'>router_get_advertised_bandwidth(ent) >= (size_t)min_bw && !(r & FP_NAMED)</span>)</a></td><td class="num">1010.25</td></tr>
+      <tr><td class="num line">2542</td><td><a href="dirserv.c.html#L2542">(tor_snprintf(outp, endp - outp, "directory-signature %s\\n", get_options()->Nickname) < 0)</a></td><td class="num">44.10</td></tr>
+      <tr><td class="num line">1103</td><td><a href="dirserv.c.html#L1103">(strlcat(buf, get_options()->Nickname, buf_len) >= buf_len)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">3063</td><td><a href="dirserv.c.html#L3063">(smartlist_len(conn->fingerprint_stack) && buf_datalen(conn->_base.outbuf) < DIRSERV_BUFFER_MIN)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">596</td><td><a href="dirserv.c.html#L596">(tor_snprintf(annotation_buf, sizeof(annotation_buf), "@uploaded-at %s\\n\"
+                   \"@source %s\\n\"
+                   \"%s%s%s", time_buf, escaped(source), !general ? "@purpose " : "", !general ? router_purpose_to_string(purpose) : "", !general ? "\\n" : "") < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1278</td><td><a href="dirserv.c.html#L1278">(!d || d->refcnt-- > 0)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">2115</td><td><a href="dirserv.c.html#L2115">(!router_addr_is_trusted_dir(ri->addr) || addr_count > max_with_same_addr_on_authority)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">492</td><td><a href="dirserv.c.html#L492">(get_options()->DirAllowPrivateAddresses)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1143</td><td><a href="dirserv.c.html#L1143">(server_mode(options) && router_pick_published_address(options, &addr) < 0)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1962</td><td><a href="dirserv.c.html#L1962">(tor_snprintf(cp, buf_len - (cp - buf), "opt v %s\\n", version) < 0)</a></td><td class="num">22.95</td></tr>
+      <tr><td class="num line">3174</td><td><a href="dirserv.c.html#L3174">(uncompressing && !conn->zlib_state && conn->fingerprint_stack && smartlist_len(conn->fingerprint_stack))</a></td><td class="num">19.50</td></tr>
+      <tr><td class="num line">1265</td><td><a href="dirserv.c.html#L1265">(tor_gzip_compress(&(d->dir_z), &(d->dir_z_len), d->dir, d->dir_len, ZLIB_METHOD))</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">1294</td><td><a href="dirserv.c.html#L1294">(tor_gzip_compress(&(d->dir_z), &(d->dir_z_len), d->dir, d->dir_len, ZLIB_METHOD))</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">1037</td><td><a href="dirserv.c.html#L1037">(!ri->is_running || !ri->is_valid || ri->is_hibernating)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1450</td><td><a href="dirserv.c.html#L1450">(cached_directory && cached_directory->published < (now - MAX_V1_DIRECTORY_AGE))</a></td><td class="num">11.60</td></tr>
+      <tr><td class="num line">2063</td><td><a href="dirserv.c.html#L2063">(first->is_running && !second->is_running)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2065</td><td><a href="dirserv.c.html#L2065">(!first->is_running && second->is_running)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">334</td><td><a href="dirserv.c.html#L334">((fp_by_name = strmap_get_lc(fingerprint_list->fp_by_name, nickname)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">3142</td><td><a href="dirserv.c.html#L3142">(conn->cached_dir_offset == (int)conn->cached_dir->dir_z_len)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">233</td><td><a href="dirserv.c.html#L233">(!is_legal_nickname(nickname) && strcasecmp(nickname, "!reject") && strcasecmp(nickname, "!invalid") && strcasecmp(nickname, "!badexit"))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2797</td><td><a href="dirserv.c.html#L2797">(ri && ri->cache_info.published_on > cutoff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2956</td><td><a href="dirserv.c.html#L2956">(ri && ri->cache_info.published_on > publish_cutoff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">3181</td><td><a href="dirserv.c.html#L3181">(conn->fingerprint_stack && smartlist_len(conn->fingerprint_stack))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1395</td><td><a href="dirserv.c.html#L1395">(d->published < oldest_published && !router_digest_is_trusted_dir(ident))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2881</td><td><a href="dirserv.c.html#L2881">(bridge_auth && router->purpose != ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">530</td><td><a href="dirserv.c.html#L530">(ri->cache_info.published_on > now + ROUTER_ALLOW_SKEW)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">540</td><td><a href="dirserv.c.html#L540">(ri->cache_info.published_on < now - ROUTER_MAX_AGE_TO_PUBLISH)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2044</td><td><a href="dirserv.c.html#L2044">(first->addr < second->addr)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2046</td><td><a href="dirserv.c.html#L2046">(first->addr > second->addr)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3077</td><td><a href="dirserv.c.html#L3077">(!connection_dir_is_encrypted(conn) && !sd->send_unencrypted)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1481</td><td><a href="dirserv.c.html#L1481">(dirty && dirty + DIR_REGEN_SLACK_TIME < time(NULL))</a></td><td class="num">8.60</td></tr>
+      <tr><td class="num line">1366</td><td><a href="dirserv.c.html#L1366">(!old_d || published > old_d->published)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1482</td><td><a href="dirserv.c.html#L1482">(!(auth_src = regenerate()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1699</td><td><a href="dirserv.c.html#L1699">((unsigned)uptime < stable_uptime && (unsigned)uptime < UPTIME_TO_GUARANTEE_STABLE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="dirserv.c.html#L1705">(mtbf < stable_mtbf && mtbf < MTBF_TO_GUARANTEE_STABLE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2561</td><td><a href="dirserv.c.html#L2561">(!(ns = networkstatus_v2_parse_from_string(status)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1986</td><td><a href="dirserv.c.html#L1986">(memcmp(desc->cache_info.signed_descriptor_digest, rs->descriptor_digest, DIGEST_LEN))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">947</td><td><a href="dirserv.c.html#L947">(router->is_running && !answer)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2256</td><td><a href="dirserv.c.html#L2256">(now - time_of_process_start < options->TestingAuthDirTimeToLearnReachability)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2721</td><td><a href="dirserv.c.html#L2721">(sd && !sd->send_unencrypted)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">765</td><td><a href="dirserv.c.html#L765">((r = routerinfo_incompatible_with_extrainfo(ri, ei, NULL, msg)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">805</td><td><a href="dirserv.c.html#L805">(bool_neq((r & FP_INVALID), !ent->is_valid))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">243</td><td><a href="dirserv.c.html#L243">(strlen(fingerprint) != HEX_DIGEST_LEN || base16_decode(digest_tmp, sizeof(digest_tmp), fingerprint, HEX_DIGEST_LEN) < 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="dirserv.c.html#L1065">(crypto_pk_write_public_key_to_string(private_key, &identity_pkey, &identity_pkey_len) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1150</td><td><a href="dirserv.c.html#L1150">(!me || !me->dir_port)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1549</td><td><a href="dirserv.c.html#L1549">(crypto_pk_write_public_key_to_string(private_key, &identity_pkey, &identity_pkey_len) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2260</td><td><a href="dirserv.c.html#L2260">(resolve_my_address(LOG_WARN, options, &addr, &hostname) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2438</td><td><a href="dirserv.c.html#L2438">(resolve_my_address(LOG_WARN, options, &addr, &hostname) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2450</td><td><a href="dirserv.c.html#L2450">(crypto_pk_write_public_key_to_string(private_key, &identity_pkey, &identity_pkey_len) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3163</td><td><a href="dirserv.c.html#L3163">(buf_datalen(conn->_base.outbuf) < DIRSERV_BUFFER_MIN)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3210</td><td><a href="dirserv.c.html#L3210">(buf_datalen(conn->_base.outbuf) >= DIRSERV_BUFFER_MIN)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">672</td><td><a href="dirserv.c.html#L672">(ri->cache_info.signed_descriptor_len > MAX_DESCRIPTOR_UPLOAD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">754</td><td><a href="dirserv.c.html#L754">(ei->cache_info.signed_descriptor_len > MAX_EXTRAINFO_UPLOAD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">798</td><td><a href="dirserv.c.html#L798">(bool_neq((r & FP_NAMED), ent->is_named))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">811</td><td><a href="dirserv.c.html#L811">(bool_neq((r & FP_BADDIR), ent->is_bad_directory))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">817</td><td><a href="dirserv.c.html#L817">(bool_neq((r & FP_BADEXIT), ent->is_bad_exit))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1035</td><td><a href="dirserv.c.html#L1035">(ri->cache_info.published_on < cutoff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1677</td><td><a href="dirserv.c.html#L1677">(now < router->cache_info.published_on)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">494</td><td><a href="dirserv.c.html#L494">(!tor_inet_aton(ri->address, &iaddr))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1961</td><td><a href="dirserv.c.html#L1961">(version && strlen(version) < MAX_V_LINE_LEN - V_LINE_OVERHEAD)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1455</td><td><a href="dirserv.c.html#L1455">(cached_runningrouters.published < (now - MAX_V1_RR_AGE))</a></td><td class="num">6.10</td></tr>
+      <tr><td class="num line">786</td><td><a href="dirserv.c.html#L786">(i < smartlist_len(rl->routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2272</td><td><a href="dirserv.c.html#L2272">(crypto_pk_get_digest(cert->identity_key, identity_digest) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1141</td><td><a href="dirserv.c.html#L1141">(options->BridgeRelay == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1145</td><td><a href="dirserv.c.html#L1145">(options->DirPort == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1252</td><td><a href="dirserv.c.html#L1252">(when <= d->published)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1430</td><td><a href="dirserv.c.html#L1430">(dir->published < cutoff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2932</td><td><a href="dirserv.c.html#L2932">(d->published <= cutoff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3167</td><td><a href="dirserv.c.html#L3167">(conn->dir_spool_src == DIR_SPOOL_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">884</td><td><a href="dirserv.c.html#L884">(!the_directory || !the_runningrouters.dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1362</td><td><a href="dirserv.c.html#L1362">(!old_d && !networkstatus)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">941</td><td><a href="dirserv.c.html#L941">(router_is_me(router) && !we_are_hibernating())</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1381</td><td><a href="dirserv.c.html#L1381">(digestmap_size(cached_v2_networkstatus) > smartlist_len(trusted_dirs) + MAX_UNTRUSTED_NETWORKSTATUSES)</a></td><td class="num">5.10</td></tr>
+      <tr><td class="num line">141</td><td><a href="dirserv.c.html#L141">(old_fp && !strcasecmp(fingerprint, old_fp))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="dirserv.c.html#L374">(platform && !tor_version_as_new_as(platform, "0.1.1.17-rc"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1874</td><td><a href="dirserv.c.html#L1874">(platform && !strcmpstart(platform, "Tor "))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1876</td><td><a href="dirserv.c.html#L1876">(eos && !strcmpstart(eos, " (r"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2316</td><td><a href="dirserv.c.html#L2316">(digestmap_get(omit_as_sybil, ri->cache_info.identity_digest))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2529</td><td><a href="dirserv.c.html#L2529">(digestmap_get(omit_as_sybil, ri->cache_info.identity_digest))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2532</td><td><a href="dirserv.c.html#L2532">(routerstatus_format_entry(outp, endp - outp, &rs, version, 0, 1))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2554</td><td><a href="dirserv.c.html#L2554">(router_append_dirobj_signature(outp, endp - outp, digest, private_key) < 0)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1255</td><td><a href="dirserv.c.html#L1255">(when >= now + ROUTER_MAX_AGE_TO_PUBLISH)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1333</td><td><a href="dirserv.c.html#L1333">(published >= now - MAX_V1_RR_AGE)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1336</td><td><a href="dirserv.c.html#L1336">(published >= now - MAX_V1_DIRECTORY_AGE)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2058</td><td><a href="dirserv.c.html#L2058">(first_is_auth && !second_is_auth)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2060</td><td><a href="dirserv.c.html#L2060">(!first_is_auth && second_is_auth)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1147</td><td><a href="dirserv.c.html#L1147">(!server_mode(options) || !advertised_server_mode())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2186</td><td><a href="dirserv.c.html#L2186">(!strcasecmp(ri->nickname, UNNAMED_ROUTER_NICKNAME))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3103</td><td><a href="dirserv.c.html#L3103">(!smartlist_len(conn->fingerprint_stack))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">139</td><td><a href="dirserv.c.html#L139">(nickname[0] != '!')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">430</td><td><a href="dirserv.c.html#L430">(!(result & FP_NAMED))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">715</td><td><a href="dirserv.c.html#L715">(WRA_WAS_REJECTED(r) && desc)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">991</td><td><a href="dirserv.c.html#L991">(!ri->is_running)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2889</td><td><a href="dirserv.c.html#L2889">(!router->testing_since)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2907</td><td><a href="dirserv.c.html#L2907">(tor_digest_is_zero(fp) && cached_v3_networkstatus)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2909</td><td><a href="dirserv.c.html#L2909">(router_digest_is_me(fp) && the_v2_networkstatus)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">293</td><td><a href="dirserv.c.html#L293">(crypto_pk_get_digest(router->identity_pkey, d))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">203</td><td><a href="dirserv.c.html#L203">(options->NamingAuthoritativeDir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="dirserv.c.html#L381">(result & FP_NAMED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="dirserv.c.html#L385">(result & FP_UNNAMED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="dirserv.c.html#L406">(result & FP_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">410</td><td><a href="dirserv.c.html#L410">(result & FP_INVALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="dirserv.c.html#L525">(status & FP_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">609</td><td><a href="dirserv.c.html#L609">(!router_parse_list_from_string(&s, NULL, list, SAVED_NOWHERE, 0, 0, annotation_buf))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="dirserv.c.html#L625">(!router_parse_list_from_string(&s, NULL, list, SAVED_NOWHERE, 1, 0, NULL))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="dirserv.c.html#L790">(r & FP_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">917</td><td><a href="dirserv.c.html#L917">(desc->is_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1139</td><td><a href="dirserv.c.html#L1139">(options->FetchDirInfoEarly)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1476</td><td><a href="dirserv.c.html#L1476">(!authority || authdir_mode_bridge(options))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2277</td><td><a href="dirserv.c.html#L2277">(options->VersioningAuthoritativeDir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2387</td><td><a href="dirserv.c.html#L2387">(options->V3AuthUseLegacyKey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3036</td><td><a href="dirserv.c.html#L3036">(conn->zlib_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3088</td><td><a href="dirserv.c.html#L3088">(conn->zlib_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3133</td><td><a href="dirserv.c.html#L3133">(conn->zlib_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3164</td><td><a href="dirserv.c.html#L3164">(conn->cached_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3194</td><td><a href="dirserv.c.html#L3194">(conn->fingerprint_stack)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">640</td><td><a href="dirserv.c.html#L640">(!*msg)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">727</td><td><a href="dirserv.c.html#L727">(!*msg)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1515</td><td><a href="dirserv.c.html#L1515">(dirserv_dump_directory_to_string(&new_directory, get_identity_key()))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">170</td><td><a href="dirserv.c.html#L170">(crypto_pk_get_fingerprint(pk, fp, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">227</td><td><a href="dirserv.c.html#L227">(strlen(nickname) > MAX_NICKNAME_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">252</td><td><a href="dirserv.c.html#L252">(0 == strcasecmp(nickname, DEFAULT_CLIENT_NICKNAME))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">261</td><td><a href="dirserv.c.html#L261">(0 == strcasecmp(nickname, UNNAMED_ROUTER_NICKNAME))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="dirserv.c.html#L269">(add_fingerprint_to_dir(nickname, fingerprint, fingerprint_list_new) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="dirserv.c.html#L550">(dirserv_router_has_valid_address(ri) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1101</td><td><a href="dirserv.c.html#L1101">(strlcat(buf, "directory-signature ", buf_len) >= buf_len)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1105</td><td><a href="dirserv.c.html#L1105">(strlcat(buf, "\\n", buf_len) >= buf_len)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1114</td><td><a href="dirserv.c.html#L1114">(router_append_dirobj_signature(buf, buf_len, digest, private_key) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1433</td><td><a href="dirserv.c.html#L1433">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1572</td><td><a href="dirserv.c.html#L1572">(router_append_dirobj_signature(s, len, digest, private_key) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2268</td><td><a href="dirserv.c.html#L2268">(crypto_pk_get_digest(private_key, signing_key_digest) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2456</td><td><a href="dirserv.c.html#L2456">(crypto_pk_get_fingerprint(private_key, fingerprint, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2547</td><td><a href="dirserv.c.html#L2547">(router_get_networkstatus_v2_hash(status, digest) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2633</td><td><a href="dirserv.c.html#L2633">(smartlist_len(result) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">217</td><td><a href="dirserv.c.html#L217">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1480</td><td><a href="dirserv.c.html#L1480">(regenerate != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1712</td><td><a href="dirserv.c.html#L1712">(bw < fast_bandwidth)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1810</td><td><a href="dirserv.c.html#L1810">(fast_bandwidth < ROUTER_REQUIRED_MIN_BANDWIDTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1816</td><td><a href="dirserv.c.html#L1816">(guard_tk > TIME_KNOWN_TO_GUARANTEE_FAMILIAR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1819</td><td><a href="dirserv.c.html#L1819">(fast_bandwidth > BANDWIDTH_TO_GUARANTEE_FAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1836</td><td><a href="dirserv.c.html#L1836">(guard_wfu > WFU_TO_GUARANTEE_GUARD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1928</td><td><a href="dirserv.c.html#L1928">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="dirserv.c.html#L1953">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="dirserv.c.html#L2010">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2018</td><td><a href="dirserv.c.html#L2018">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2071</td><td><a href="dirserv.c.html#L2071">(bw_first > bw_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2073</td><td><a href="dirserv.c.html#L2073">(bw_first < bw_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2098</td><td><a href="dirserv.c.html#L2098">(max_with_same_addr <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2100</td><td><a href="dirserv.c.html#L2100">(max_with_same_addr_on_authority <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2570</td><td><a href="dirserv.c.html#L2570">(*ns_ptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3127</td><td><a href="dirserv.c.html#L3127">(bytes < 8192)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3130</td><td><a href="dirserv.c.html#L3130">(bytes > remaining)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="dirserv.c.html#L499">(is_internal_IP(ntohl(iaddr.s_addr), 0))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">126</td><td><a href="dirserv.c.html#L126">(!strcasecmp(nickname, UNNAMED_ROUTER_NICKNAME))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">151</td><td><a href="dirserv.c.html#L151">(!strcasecmp(nickname, "!reject"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">153</td><td><a href="dirserv.c.html#L153">(!strcasecmp(nickname, "!invalid"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="dirserv.c.html#L155">(!strcasecmp(nickname, "!baddir"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">157</td><td><a href="dirserv.c.html#L157">(!strcasecmp(nickname, "!badexit"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">336</td><td><a href="dirserv.c.html#L336">(!strcasecmp(fp, fp_by_name))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">431</td><td><a href="dirserv.c.html#L431">(!authdir_policy_permits_address(addr, or_port))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">439</td><td><a href="dirserv.c.html#L439">(!authdir_policy_valid_address(addr, or_port))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">713</td><td><a href="dirserv.c.html#L713">(!WRA_WAS_ADDED(r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="dirserv.c.html#L1389">(!digestmap_iter_done(iter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2264</td><td><a href="dirserv.c.html#L2264">(!strchr(hostname, '.'))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2608</td><td><a href="dirserv.c.html#L2608">(!strcmp(key, "authority"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2615</td><td><a href="dirserv.c.html#L2615">(!strcmp(key, "all"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2619</td><td><a href="dirserv.c.html#L2619">(!digestmap_iter_done(iter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2636</td><td><a href="dirserv.c.html#L2636">(!strcmpstart(key, "fp/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2689</td><td><a href="dirserv.c.html#L2689">(!strcmp(key, "all"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2694</td><td><a href="dirserv.c.html#L2694">(!strcmp(key, "authority"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2699</td><td><a href="dirserv.c.html#L2699">(!strcmpstart(key, "d/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2703</td><td><a href="dirserv.c.html#L2703">(!strcmpstart(key, "fp/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2728</td><td><a href="dirserv.c.html#L2728">(!smartlist_len(fps_out))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2759</td><td><a href="dirserv.c.html#L2759">(!strcmp(key, "/tor/server/all"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2763</td><td><a href="dirserv.c.html#L2763">(!strcmp(key, "/tor/server/authority"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2767</td><td><a href="dirserv.c.html#L2767">(!strcmpstart(key, "/tor/server/d/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2808</td><td><a href="dirserv.c.html#L2808">(!smartlist_len(descs_out))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">134</td><td><a href="dirserv.c.html#L134">(!status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">174</td><td><a href="dirserv.c.html#L174">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">202</td><td><a href="dirserv.c.html#L202">(!cf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">363</td><td><a href="dirserv.c.html#L363">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="dirserv.c.html#L462">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">474</td><td><a href="dirserv.c.html#L474">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">641</td><td><a href="dirserv.c.html#L641">(!n_parsed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">746</td><td><a href="dirserv.c.html#L746">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">891</td><td><a href="dirserv.c.html#L891">(!the_directory_is_dirty)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">893</td><td><a href="dirserv.c.html#L893">(!runningrouters_is_dirty)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">896</td><td><a href="dirserv.c.html#L896">(!the_v2_networkstatus_is_dirty)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">914</td><td><a href="dirserv.c.html#L914">(!is_live)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1358</td><td><a href="dirserv.c.html#L1358">(!cached_v2_networkstatus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1426</td><td><a href="dirserv.c.html#L1426">(!cached_v2_networkstatus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1694</td><td><a href="dirserv.c.html#L1694">(!enough_mtbf_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1969</td><td><a href="dirserv.c.html#L1969">(!v2_format)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1975</td><td><a href="dirserv.c.html#L1975">(!desc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2283</td><td><a href="dirserv.c.html#L2283">(!contact)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2319</td><td><a href="dirserv.c.html#L2319">(!vote_on_reachability)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2462</td><td><a href="dirserv.c.html#L2462">(!contact)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2602</td><td><a href="dirserv.c.html#L2602">(!cached_v2_networkstatus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2654</td><td><a href="dirserv.c.html#L2654">(!cached_v2_networkstatus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2895</td><td><a href="dirserv.c.html#L2895">(!try_all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2929</td><td><a href="dirserv.c.html#L2929">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3075</td><td><a href="dirserv.c.html#L3075">(!sd)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">119</td><td><a href="dirserv.c.html#L119">(base16_decode(d, DIGEST_LEN, fingerprint, strlen(fingerprint)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2609</td><td><a href="dirserv.c.html#L2609">(authdir_mode_v2(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">415</td><td><a href="dirserv.c.html#L415">(authdir_policy_baddir_address(addr, or_port))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">423</td><td><a href="dirserv.c.html#L423">(authdir_policy_badexit_address(addr, or_port))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">615</td><td><a href="dirserv.c.html#L615">(WRA_MORE_SEVERE(r_tmp, r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="dirserv.c.html#L631">(WRA_MORE_SEVERE(r_tmp, r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="dirserv.c.html#L643">(WRA_WAS_ADDED(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">705</td><td><a href="dirserv.c.html#L705">(control_event_is_interesting(EVENT_AUTHDIR_NEWDESCS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="dirserv.c.html#L846">(strcmpstart(question, "unregistered-servers-"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1108</td><td><a href="dirserv.c.html#L1108">(router_get_dir_hash(buf, digest))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="dirserv.c.html#L1567">(router_get_runningrouters_hash(s, digest))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2605</td><td><a href="dirserv.c.html#L2605">(should_generate_v2_networkstatus())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2616</td><td><a href="dirserv.c.html#L2616">(digestmap_size(cached_v2_networkstatus))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2879</td><td><a href="dirserv.c.html#L2879">(router_is_me(router))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2949</td><td><a href="dirserv.c.html#L2949">(router_digest_is_me(fp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">295</td><td><a href="dirserv.c.html#L295">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">366</td><td><a href="dirserv.c.html#L366">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">375</td><td><a href="dirserv.c.html#L375">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">382</td><td><a href="dirserv.c.html#L382">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="dirserv.c.html#L386">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">396</td><td><a href="dirserv.c.html#L396">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">403</td><td><a href="dirserv.c.html#L403">(status_by_digest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">407</td><td><a href="dirserv.c.html#L407">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">411</td><td><a href="dirserv.c.html#L411">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">416</td><td><a href="dirserv.c.html#L416">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">424</td><td><a href="dirserv.c.html#L424">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">432</td><td><a href="dirserv.c.html#L432">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">435</td><td><a href="dirserv.c.html#L435">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">440</td><td><a href="dirserv.c.html#L440">(should_log)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">445</td><td><a href="dirserv.c.html#L445">(reject_unlisted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">446</td><td><a href="dirserv.c.html#L446">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">720</td><td><a href="dirserv.c.html#L720">(desc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">824</td><td><a href="dirserv.c.html#L824">(changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">890</td><td><a href="dirserv.c.html#L890">(set_v1_dirty)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1332</td><td><a href="dirserv.c.html#L1332">(is_running_routers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1365</td><td><a href="dirserv.c.html#L1365">(networkstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1369</td><td><a href="dirserv.c.html#L1369">(old_d)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1373</td><td><a href="dirserv.c.html#L1373">(old_d)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1403</td><td><a href="dirserv.c.html#L1403">(d)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1415</td><td><a href="dirserv.c.html#L1415">(cached_v3_networkstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1693</td><td><a href="dirserv.c.html#L1693">(need_uptime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1710</td><td><a href="dirserv.c.html#L1710">(need_capacity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1802</td><td><a href="dirserv.c.html#L1802">(n_active)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1834</td><td><a href="dirserv.c.html#L1834">(n_familiar)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1841</td><td><a href="dirserv.c.html#L1841">(n_active_nonexit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1881</td><td><a href="dirserv.c.html#L1881">(eos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1932</td><td><a href="dirserv.c.html#L1932">(first_line_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2158</td><td><a href="dirserv.c.html#L2158">(naming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2339</td><td><a href="dirserv.c.html#L2339">(current_consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2366</td><td><a href="dirserv.c.html#L2366">(vote_on_reachability)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2368</td><td><a href="dirserv.c.html#L2368">(listbaddirs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2370</td><td><a href="dirserv.c.html#L2370">(listbadexits)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2372</td><td><a href="dirserv.c.html#L2372">(naming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2389</td><td><a href="dirserv.c.html#L2389">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2465</td><td><a href="dirserv.c.html#L2465">(versioning)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2586</td><td><a href="dirserv.c.html#L2586">(routers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2588</td><td><a href="dirserv.c.html#L2588">(omit_as_sybil)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2611</td><td><a href="dirserv.c.html#L2611">(me)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2663</td><td><a href="dirserv.c.html#L2663">(cached)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2696</td><td><a href="dirserv.c.html#L2696">(ri)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2711</td><td><a href="dirserv.c.html#L2711">(for_unencrypted_conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2715</td><td><a href="dirserv.c.html#L2715">(by_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2717</td><td><a href="dirserv.c.html#L2717">(is_extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2765</td><td><a href="dirserv.c.html#L2765">(ri)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2774</td><td><a href="dirserv.c.html#L2774">(sd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2911</td><td><a href="dirserv.c.html#L2911">(cached_v2_networkstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2950</td><td><a href="dirserv.c.html#L2950">(extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2958</td><td><a href="dirserv.c.html#L2958">(extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3009</td><td><a href="dirserv.c.html#L3009">(is_serverdescs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3013</td><td><a href="dirserv.c.html#L3013">(compressed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3019</td><td><a href="dirserv.c.html#L3019">(dir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3068</td><td><a href="dirserv.c.html#L3068">(by_fp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3092</td><td><a href="dirserv.c.html#L3092">(last)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3180</td><td><a href="dirserv.c.html#L3180">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3187</td><td><a href="dirserv.c.html#L3187">(d)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3240</td><td><a href="dirserv.c.html#L3240">(cached_v2_networkstatus)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

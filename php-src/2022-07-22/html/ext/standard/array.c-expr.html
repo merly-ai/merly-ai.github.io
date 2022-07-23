@@ -1,0 +1,875 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\standard\array.c Ctrl Expressions (824) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\standard\array.c Ctrl Expressions (824) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\standard\array.c Ctrl Expressions (824)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3712</td><td><a href="array.c.html#L3712">((thash && GC_IS_RECURSIVE(thash)) || (<span style='background-color:#741da3;'>src_entry == dest_entry && Z_ISREF_P(dest_entry) && (Z_REFCOUNT_P(dest_entry) % 2)</span>))</a></td><td class="num">1033.35</td></tr>
+      <tr><td class="num line">3831</td><td><a href="array.c.html#L3831">(Z_IS_RECURSIVE_P(dest_zval) || Z_IS_RECURSIVE_P(src_zval) || (<span style='background-color:#741da3;'>Z_ISREF_P(src_entry) && Z_ISREF_P(dest_entry) && Z_REF_P(src_entry) == Z_REF_P(dest_entry) && (Z_REFCOUNT_P(dest_entry) % 2)</span>))</a></td><td class="num">1033.10</td></tr>
+      <tr><td class="num line">2730</td><td><a href="array.c.html#L2730">(<span style='background-color:#741da3;'>Z_TYPE_P(zlow) == IS_STRING && Z_TYPE_P(zhigh) == IS_STRING && Z_STRLEN_P(zlow) >= 1 && Z_STRLEN_P(zhigh) >= 1</span>)</a></td><td class="num">1018.75</td></tr>
+      <tr><td class="num line">2438</td><td><a href="array.c.html#L2438">(<span style='background-color:#741da3;'>extract_type > EXTR_SKIP && extract_type <= EXTR_PREFIX_IF_EXISTS && ZEND_NUM_ARGS() < 3</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">4400</td><td><a href="array.c.html#L4400">(<span style='background-color:#741da3;'>pad_size_abs < 0 || pad_size_abs - input_size > Z_L(1048576)</span>)</a></td><td class="num">1009.35</td></tr>
+      <tr><td class="num line">6265</td><td><a href="array.c.html#L6265">(Z_TYPE(Z_ARRVAL(arrays[i])->arData[pos].val) != IS_UNDEF)</a></td><td class="num">97.25</td></tr>
+      <tr><td class="num line">6304</td><td><a href="array.c.html#L6304">(Z_TYPE(Z_ARRVAL(arrays[i])->arData[pos].val) != IS_UNDEF)</a></td><td class="num">97.25</td></tr>
+      <tr><td class="num line">6253</td><td><a href="array.c.html#L6253">(Z_TYPE(Z_ARRVAL(arrays[i])->arPacked[pos]) != IS_UNDEF)</a></td><td class="num">79.25</td></tr>
+      <tr><td class="num line">6292</td><td><a href="array.c.html#L6292">(Z_TYPE(Z_ARRVAL(arrays[i])->arPacked[pos]) != IS_UNDEF)</a></td><td class="num">79.25</td></tr>
+      <tr><td class="num line">3808</td><td><a href="array.c.html#L3808">(Z_TYPE_P(src_zval) != IS_ARRAY || (dest_entry = zend_hash_find_known_hash(dest, string_key)) == NULL || (Z_TYPE_P(dest_entry) != IS_ARRAY && (!Z_ISREF_P(dest_entry) || Z_TYPE_P(Z_REFVAL_P(dest_entry)) != IS_ARRAY)))</a></td><td class="num">73.50</td></tr>
+      <tr><td class="num line">3818</td><td><a href="array.c.html#L3818">(Z_TYPE_P(src_zval) != IS_ARRAY || (dest_entry = zend_hash_index_find(dest, num_key)) == NULL || (Z_TYPE_P(dest_entry) != IS_ARRAY && (!Z_ISREF_P(dest_entry) || Z_TYPE_P(Z_REFVAL_P(dest_entry)) != IS_ARRAY)))</a></td><td class="num">73.50</td></tr>
+      <tr><td class="num line">4924</td><td><a href="array.c.html#L4924">(Z_TYPE(ptrs[i]->val) != IS_UNDEF && (0 < (c = intersect_data_compare_func(ptrs[0], ptrs[i]))))</a></td><td class="num">70.25</td></tr>
+      <tr><td class="num line">4928</td><td><a href="array.c.html#L4928">(Z_TYPE(ptrs[i]->val) != IS_UNDEF && (0 < (c = intersect_key_compare_func(ptrs[0], ptrs[i]))))</a></td><td class="num">70.25</td></tr>
+      <tr><td class="num line">5312</td><td><a href="array.c.html#L5312">(Z_TYPE(ptrs[i]->val) != IS_UNDEF && (0 < (c = diff_data_compare_func(ptrs[0], ptrs[i]))))</a></td><td class="num">70.25</td></tr>
+      <tr><td class="num line">3268</td><td><a href="array.c.html#L3268">(!p->key && (zend_long)p->h == (Z_ARRVAL_P(stack)->nNextFreeElement - 1))</a></td><td class="num">69.10</td></tr>
+      <tr><td class="num line">4740</td><td><a href="array.c.html#L4740">((data = zend_hash_index_find(Z_ARRVAL(args[i]), h)) == NULL || (intersect_data_compare_func && intersect_data_compare_func(val, data) != 0))</a></td><td class="num">62.50</td></tr>
+      <tr><td class="num line">4755</td><td><a href="array.c.html#L4755">((data = zend_hash_find_known_hash(Z_ARRVAL(args[i]), key)) == NULL || (intersect_data_compare_func && intersect_data_compare_func(val, data) != 0))</a></td><td class="num">62.50</td></tr>
+      <tr><td class="num line">4931</td><td><a href="array.c.html#L4931">((!c && Z_TYPE(ptrs[i]->val) != IS_UNDEF) && (behavior == INTERSECT_ASSOC))</a></td><td class="num">62.25</td></tr>
+      <tr><td class="num line">5125</td><td><a href="array.c.html#L5125">((data = zend_hash_index_find(Z_ARRVAL(args[i]), h)) != NULL && (!diff_data_compare_func || diff_data_compare_func(val, data) == 0))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">5140</td><td><a href="array.c.html#L5140">((data = zend_hash_find_known_hash(Z_ARRVAL(args[i]), key)) != NULL && (!diff_data_compare_func || diff_data_compare_func(val, data) == 0))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">5316</td><td><a href="array.c.html#L5316">(Z_TYPE(ptr->val) != IS_UNDEF && (0 != (c = diff_key_compare_func(ptrs[0], ptr))))</a></td><td class="num">51.00</td></tr>
+      <tr><td class="num line">1058</td><td><a href="array.c.html#L1058">(separate && zobj->properties && UNEXPECTED(GC_REFCOUNT(zobj->properties) > 1))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">4983</td><td><a href="array.c.html#L4983">(Z_TYPE((ptrs[0]++)->val) == IS_UNDEF)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">4999</td><td><a href="array.c.html#L4999">(Z_TYPE((ptrs[0]++)->val) == IS_UNDEF)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">5366</td><td><a href="array.c.html#L5366">(Z_TYPE((ptrs[0]++)->val) == IS_UNDEF)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">5382</td><td><a href="array.c.html#L5382">(Z_TYPE((ptrs[0]++)->val) == IS_UNDEF)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">3244</td><td><a href="array.c.html#L3244">(idx == (Z_ARRVAL_P(stack)->nNextFreeElement - 1))</a></td><td class="num">43.85</td></tr>
+      <tr><td class="num line">4682</td><td><a href="array.c.html#L4682">(zend_call_function(&BG(user_compare_fci), &BG(user_compare_fci_cache)) == SUCCESS && Z_TYPE(retval) != IS_UNDEF)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">5747</td><td><a href="array.c.html#L5747">(idx < Z_ARRVAL_P(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">5756</td><td><a href="array.c.html#L5756">(idx < Z_ARRVAL_P(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">6250</td><td><a href="array.c.html#L6250">(pos >= Z_ARRVAL(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">6262</td><td><a href="array.c.html#L6262">(pos >= Z_ARRVAL(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">6289</td><td><a href="array.c.html#L6289">(pos >= Z_ARRVAL(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">6301</td><td><a href="array.c.html#L6301">(pos >= Z_ARRVAL(arrays[i])->nNumUsed)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">1059</td><td><a href="array.c.html#L1059">(EXPECTED(!(GC_FLAGS(zobj->properties) & IS_ARRAY_IMMUTABLE)))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">3016</td><td><a href="array.c.html#L3016">(offset < 0 && (offset = (num_in + offset)) < 0)</a></td><td class="num">32.10</td></tr>
+      <tr><td class="num line">3485</td><td><a href="array.c.html#L3485">(offset < 0 && (offset = (num_in + offset)) < 0)</a></td><td class="num">32.10</td></tr>
+      <tr><td class="num line">3595</td><td><a href="array.c.html#L3595">(offset < 0 && (offset = (num_in + offset)) < 0)</a></td><td class="num">32.10</td></tr>
+      <tr><td class="num line">5832</td><td><a href="array.c.html#L5832">(num_avail < ht->nNumUsed - (ht->nNumUsed >> 1))</a></td><td class="num">30.10</td></tr>
+      <tr><td class="num line">4719</td><td><a href="array.c.html#L4719">(zend_parse_parameters(ZEND_NUM_ARGS(), param_spec, &args, &argc, &BG(user_compare_fci), &BG(user_compare_fci_cache)) == FAILURE)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">5095</td><td><a href="array.c.html#L5095">(zend_parse_parameters(ZEND_NUM_ARGS(), "+f", &args, &argc, &BG(user_compare_fci), &BG(user_compare_fci_cache)) == FAILURE)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">4301</td><td><a href="array.c.html#L4301">((colval = array_column_fetch_prop(data, column_str, column_long, cache_slot_column, &rv)) == NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4314</td><td><a href="array.c.html#L4314">((colval = array_column_fetch_prop(data, column_str, column_long, cache_slot_column, &rv)) == NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">6059</td><td><a href="array.c.html#L6059">(zend_call_function(&fci, &fci_cache) == SUCCESS && Z_TYPE(retval) != IS_UNDEF)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">6318</td><td><a href="array.c.html#L6318">(zend_call_function(&fci, &fci_cache) != SUCCESS || Z_TYPE(result) == IS_UNDEF)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">708</td><td><a href="array.c.html#L708">(SUCCESS == zobj->handlers->count_elements(zobj, &Z_LVAL_P(return_value)))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">4203</td><td><a href="array.c.html#L4203">((tmp = zend_hash_index_find(Z_ARRVAL_P(return_value), Z_LVAL_P(entry))) == NULL)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">4211</td><td><a href="array.c.html#L4211">((tmp = zend_symtable_find(Z_ARRVAL_P(return_value), Z_STR_P(entry))) == NULL)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1898</td><td><a href="array.c.html#L1898">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1948</td><td><a href="array.c.html#L1948">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2015</td><td><a href="array.c.html#L2015">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2083</td><td><a href="array.c.html#L2083">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2146</td><td><a href="array.c.html#L2146">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2189</td><td><a href="array.c.html#L2189">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2249</td><td><a href="array.c.html#L2249">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2300</td><td><a href="array.c.html#L2300">((orig_var = zend_hash_find(symbol_table, Z_STR(final_name))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2521</td><td><a href="array.c.html#L2521">((value_ptr = zend_hash_find_ind(eg_active_symbol_table, Z_STR_P(entry))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3301</td><td><a href="array.c.html#L3301">(idx == Z_ARRVAL_P(stack)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3316</td><td><a href="array.c.html#L3316">(idx < Z_ARRVAL_P(stack)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3329</td><td><a href="array.c.html#L3329">(idx < Z_ARRVAL_P(stack)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3354</td><td><a href="array.c.html#L3354">(idx == Z_ARRVAL_P(stack)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3369</td><td><a href="array.c.html#L3369">(idx < Z_ARRVAL_P(stack)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4569</td><td><a href="array.c.html#L4569">(Z_ARRVAL_P(array)->nNumOfElements <= 1)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4621</td><td><a href="array.c.html#L4621">(idx < Z_ARRVAL_P(array)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4631</td><td><a href="array.c.html#L4631">(idx < Z_ARRVAL_P(array)->nNumUsed)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">869</td><td><a href="array.c.html#L869">(UNEXPECTED(Z_TYPE(retval) == IS_FALSE || Z_TYPE(retval) == IS_TRUE))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="array.c.html#L995">(UNEXPECTED(Z_TYPE(retval) == IS_FALSE || Z_TYPE(retval) == IS_TRUE))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3781</td><td><a href="array.c.html#L3781">(UNEXPECTED(Z_ISREF_P(src_entry) && Z_REFCOUNT_P(src_entry) == 1))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3974</td><td><a href="array.c.html#L3974">(UNEXPECTED(Z_ISREF_P(src_entry) && Z_REFCOUNT_P(src_entry) == 1))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3986</td><td><a href="array.c.html#L3986">(UNEXPECTED(Z_ISREF_P(src_entry) && Z_REFCOUNT_P(src_entry) == 1))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4353</td><td><a href="array.c.html#L4353">(UNEXPECTED(Z_ISREF_P(entry) && Z_REFCOUNT_P(entry) == 1))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4596</td><td><a href="array.c.html#L4596">(UNEXPECTED(Z_ISREF_P(val) && Z_REFCOUNT_P(val) == 1))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">5786</td><td><a href="array.c.html#L5786">(hash->arData[k].key == NULL)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1400</td><td><a href="array.c.html#L1400">(Z_TYPE_P(Z_REFVAL(ref)) == IS_ARRAY && thash == Z_ARRVAL_P(Z_REFVAL(ref)))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">4915</td><td><a href="array.c.html#L4915">(Z_TYPE(ptrs[0]->val) != IS_UNDEF)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">4953</td><td><a href="array.c.html#L4953">(Z_TYPE(ptrs[i]->val) == IS_UNDEF)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">5300</td><td><a href="array.c.html#L5300">(Z_TYPE(ptrs[0]->val) != IS_UNDEF)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">5322</td><td><a href="array.c.html#L5322">(Z_TYPE(ptrs[i]->val) != IS_UNDEF)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">2576</td><td><a href="array.c.html#L2576">(num_args && Z_TYPE(args[0]) == IS_ARRAY)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">5600</td><td><a href="array.c.html#L5600">(Z_TYPE(ab[r].val) != IS_UNDEF)</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">1383</td><td><a href="array.c.html#L1383">(recursive && Z_TYPE_P(Z_REFVAL_P(zv)) == IS_ARRAY)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">3634</td><td><a href="array.c.html#L3634">(UNEXPECTED(Z_ISREF_P(entry)) && UNEXPECTED(Z_REFCOUNT_P(entry) == 1))</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">3771</td><td><a href="array.c.html#L3771">(UNEXPECTED(Z_ISREF_P(src_entry)) && UNEXPECTED(Z_REFCOUNT_P(src_entry) == 1))</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">3936</td><td><a href="array.c.html#L3936">(zend_hash_num_elements(Z_ARRVAL(args[0])) == 0)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">3938</td><td><a href="array.c.html#L3938">(zend_hash_num_elements(Z_ARRVAL(args[1])) == 0)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">5722</td><td><a href="array.c.html#L5722">(zend_hash_num_elements(Z_ARRVAL_P(arrays[i])) != (uint32_t)array_size)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">6227</td><td><a href="array.c.html#L6227">(zend_hash_num_elements(Z_ARRVAL(arrays[i])) > maxlen)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="array.c.html#L2221">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)) || zend_string_equals_literal(var_name, "this"))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">2276</td><td><a href="array.c.html#L2276">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)) || zend_string_equals_literal(var_name, "this"))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">2444</td><td><a href="array.c.html#L2444">(ZSTR_LEN(prefix) && !php_valid_var_name(ZSTR_VAL(prefix), ZSTR_LEN(prefix)))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">3315</td><td><a href="array.c.html#L3315">(EXPECTED(!HT_HAS_ITERATORS(Z_ARRVAL_P(stack))))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">4848</td><td><a href="array.c.html#L4848">(zend_parse_parameters(ZEND_NUM_ARGS(), param_spec, &args, &arr_argc, &fci1, &fci1_cache, &fci2, &fci2_cache) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">5233</td><td><a href="array.c.html#L5233">(zend_parse_parameters(ZEND_NUM_ARGS(), param_spec, &args, &arr_argc, &fci1, &fci1_cache, &fci2, &fci2_cache) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">208</td><td><a href="array.c.html#L208">(f->key == NULL && s->key == NULL)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3048</td><td><a href="array.c.html#L3048">(pos < offset + length && idx < in_hash->nNumUsed)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">3058</td><td><a href="array.c.html#L3058">(pos2 < offset + length && idx < in_hash->nNumUsed)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">3113</td><td><a href="array.c.html#L3113">(pos < offset + length && idx < in_hash->nNumUsed)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">3128</td><td><a href="array.c.html#L3128">(pos2 < offset + length && idx < in_hash->nNumUsed)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">4174</td><td><a href="array.c.html#L4174">(HT_IS_PACKED(arrval) && HT_IS_WITHOUT_HOLES(arrval) && arrval->nNextFreeElement == arrlen)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">4805</td><td><a href="array.c.html#L4805">(zend_parse_parameters(ZEND_NUM_ARGS(), param_spec, &args, &arr_argc, &fci1, &fci1_cache) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">5190</td><td><a href="array.c.html#L5190">(zend_parse_parameters(ZEND_NUM_ARGS(), param_spec, &args, &arr_argc, &fci1, &fci1_cache) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3033</td><td><a href="array.c.html#L3033">(pos < offset && idx < in_hash->nNumUsed)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3092</td><td><a href="array.c.html#L3092">(pos < offset && idx < in_hash->nNumUsed)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">4644</td><td><a href="array.c.html#L4644">(cmp(&lastkept->b, &cmpdata->b))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="array.c.html#L1081">((entry = zend_hash_get_current_data(array)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1108</td><td><a href="array.c.html#L1108">((entry = zend_hash_get_current_data(array)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1135</td><td><a href="array.c.html#L1135">((entry = zend_hash_get_current_data(array)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1162</td><td><a href="array.c.html#L1162">((entry = zend_hash_get_current_data(array)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1186</td><td><a href="array.c.html#L1186">((entry = zend_hash_get_current_data(array)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3702</td><td><a href="array.c.html#L3702">((dest_entry = zend_hash_find_known_hash(dest, string_key)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">135</td><td><a href="array.c.html#L135">(Z_EXTRA(a->val) > Z_EXTRA(b->val))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">137</td><td><a href="array.c.html#L137">(Z_EXTRA(a->val) < Z_EXTRA(b->val))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3622</td><td><a href="array.c.html#L3622">(!preserve_keys || (offset == 0 && HT_IS_WITHOUT_HOLES(ht)))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">4866</td><td><a href="array.c.html#L4866">((behavior & INTERSECT_ASSOC) && key_compare_type == INTERSECT_COMP_KEY_USER)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">4916</td><td><a href="array.c.html#L4916">((behavior & INTERSECT_ASSOC) && key_compare_type == INTERSECT_COMP_KEY_USER)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">5251</td><td><a href="array.c.html#L5251">((behavior & DIFF_ASSOC) && key_compare_type == DIFF_COMP_KEY_USER)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">5301</td><td><a href="array.c.html#L5301">((behavior & DIFF_ASSOC) && key_compare_type == DIFF_COMP_KEY_USER)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2748</td><td><a href="array.c.html#L2748">(low - high < lstep || lstep <= 0)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2765</td><td><a href="array.c.html#L2765">(high - low < lstep || lstep <= 0)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2798</td><td><a href="array.c.html#L2798">(low - high < step || step <= 0)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2812</td><td><a href="array.c.html#L2812">(high - low < step || step <= 0)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">1510</td><td><a href="array.c.html#L1510">(Z_TYPE_P(entry) == IS_LONG && Z_LVAL_P(entry) == Z_LVAL_P(value))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1360</td><td><a href="array.c.html#L1360">(Z_TYPE_P(zv) != IS_REFERENCE && Z_TYPE_P(array) == IS_OBJECT)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2607</td><td><a href="array.c.html#L2607">(EXPECTED(start_key >= 0) && EXPECTED(start_key < num))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2927</td><td><a href="array.c.html#L2927">(hash->nNumUsed != hash->nNumOfElements)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2951</td><td><a href="array.c.html#L2951">(hash->nNumUsed != hash->nNumOfElements)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">4647</td><td><a href="array.c.html#L4647">(lastkept->i > cmpdata->i)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">6002</td><td><a href="array.c.html#L6002">(Z_TYPE(entry_n) == IS_LONG && Z_TYPE_P(return_value) == IS_LONG)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="array.c.html#L688">(mode != COUNT_NORMAL && mode != COUNT_RECURSIVE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2785</td><td><a href="array.c.html#L2785">(Z_TYPE_P(zlow) == IS_DOUBLE || Z_TYPE_P(zhigh) == IS_DOUBLE || is_step_double)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2806</td><td><a href="array.c.html#L2806">(i < size && element >= high)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2820</td><td><a href="array.c.html#L2820">(i < size && element <= high)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4815</td><td><a href="array.c.html#L4815">(data_compare_type == INTERSECT_COMP_DATA_INTERNAL && key_compare_type == INTERSECT_COMP_KEY_INTERNAL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4820</td><td><a href="array.c.html#L4820">(data_compare_type == INTERSECT_COMP_DATA_USER && key_compare_type == INTERSECT_COMP_KEY_INTERNAL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4827</td><td><a href="array.c.html#L4827">(data_compare_type == INTERSECT_COMP_DATA_INTERNAL && key_compare_type == INTERSECT_COMP_KEY_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4834</td><td><a href="array.c.html#L4834">(data_compare_type == INTERSECT_COMP_DATA_USER && key_compare_type == INTERSECT_COMP_KEY_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4863</td><td><a href="array.c.html#L4863">(behavior == INTERSECT_NORMAL && data_compare_type == INTERSECT_COMP_DATA_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5200</td><td><a href="array.c.html#L5200">(data_compare_type == DIFF_COMP_DATA_INTERNAL && key_compare_type == DIFF_COMP_KEY_INTERNAL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5205</td><td><a href="array.c.html#L5205">(data_compare_type == DIFF_COMP_DATA_USER && key_compare_type == DIFF_COMP_KEY_INTERNAL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5212</td><td><a href="array.c.html#L5212">(data_compare_type == DIFF_COMP_DATA_INTERNAL && key_compare_type == DIFF_COMP_KEY_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5219</td><td><a href="array.c.html#L5219">(data_compare_type == DIFF_COMP_DATA_USER && key_compare_type == DIFF_COMP_KEY_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5248</td><td><a href="array.c.html#L5248">(behavior == DIFF_NORMAL && data_compare_type == DIFF_COMP_DATA_USER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">6004</td><td><a href="array.c.html#L6004">((double)ZEND_LONG_MIN <= dval && dval <= (double)ZEND_LONG_MAX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2738</td><td><a href="array.c.html#L2738">(type1 == IS_DOUBLE || type2 == IS_DOUBLE || is_step_double)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5100</td><td><a href="array.c.html#L5100">(zend_parse_parameters(ZEND_NUM_ARGS(), "+", &args, &argc) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">5968</td><td><a href="array.c.html#L5968">(Z_TYPE_P(entry) == IS_ARRAY || Z_TYPE_P(entry) == IS_OBJECT)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">5996</td><td><a href="array.c.html#L5996">(Z_TYPE_P(entry) == IS_ARRAY || Z_TYPE_P(entry) == IS_OBJECT)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2604</td><td><a href="array.c.html#L2604">(UNEXPECTED(start_key > ZEND_LONG_MAX - num + 1))</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">4643</td><td><a href="array.c.html#L4643">(Z_TYPE(cmpdata->b.val) != IS_UNDEF)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6130</td><td><a href="array.c.html#L6130">(zend_call_function(&fci, &fci_cache) == SUCCESS)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6208</td><td><a href="array.c.html#L6208">(ret != SUCCESS || Z_TYPE(result) == IS_UNDEF)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2433</td><td><a href="array.c.html#L2433">(extract_type < EXTR_OVERWRITE || extract_type > EXTR_IF_EXISTS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2740</td><td><a href="array.c.html#L2740">(type1 == IS_LONG || type2 == IS_LONG)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5879</td><td><a href="array.c.html#L5879">(num_req <= 0 || num_req > num_avail)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4734</td><td><a href="array.c.html#L4734">(Z_ISREF_P(val) && Z_REFCOUNT_P(val) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5119</td><td><a href="array.c.html#L5119">(Z_ISREF_P(val) && Z_REFCOUNT_P(val) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2601</td><td><a href="array.c.html#L2601">(sizeof(num) > 4 && UNEXPECTED(num > INT_MAX))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6442</td><td><a href="array.c.html#L6442">(!(current++ % size))</a></td><td class="num">6.35</td></tr>
+      <tr><td class="num line">4940</td><td><a href="array.c.html#L4940">(intersect_data_compare_func(ptrs[0], ptrs[i]) != 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4987</td><td><a href="array.c.html#L4987">(0 <= intersect_data_compare_func(ptrs[0], ptrs[i]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">5003</td><td><a href="array.c.html#L5003">(intersect_data_compare_func(ptrs[0] - 1, ptrs[0]))</a></td><td class="num">6.10</td></tr>
+      <tr><td class="num line">5370</td><td><a href="array.c.html#L5370">(diff_data_compare_func(ptrs[0] - 1, ptrs[0]))</a></td><td class="num">6.10</td></tr>
+      <tr><td class="num line">5386</td><td><a href="array.c.html#L5386">(diff_data_compare_func(ptrs[0] - 1, ptrs[0]))</a></td><td class="num">6.10</td></tr>
+      <tr><td class="num line">3093</td><td><a href="array.c.html#L3093">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3114</td><td><a href="array.c.html#L3114">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3129</td><td><a href="array.c.html#L3129">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3147</td><td><a href="array.c.html#L3147">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3371</td><td><a href="array.c.html#L3371">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4632</td><td><a href="array.c.html#L4632">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4893</td><td><a href="array.c.html#L4893">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4959</td><td><a href="array.c.html#L4959">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5278</td><td><a href="array.c.html#L5278">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5329</td><td><a href="array.c.html#L5329">(Z_TYPE(ptr->val) != IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5757</td><td><a href="array.c.html#L5757">(Z_TYPE(p->val) == IS_UNDEF)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">173</td><td><a href="array.c.html#L173">(f->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">174</td><td><a href="array.c.html#L174">(s->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">974</td><td><a href="array.c.html#L974">(f->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">979</td><td><a href="array.c.html#L979">(s->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1005</td><td><a href="array.c.html#L1005">(s->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1010</td><td><a href="array.c.html#L1010">(f->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1653</td><td><a href="array.c.html#L1653">(i++ < var_name_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2928</td><td><a href="array.c.html#L2928">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2952</td><td><a href="array.c.html#L2952">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3077</td><td><a href="array.c.html#L3077">(idx < in_hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3097</td><td><a href="array.c.html#L3097">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3118</td><td><a href="array.c.html#L3118">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3146</td><td><a href="array.c.html#L3146">(idx < in_hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3149</td><td><a href="array.c.html#L3149">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3372</td><td><a href="array.c.html#L3372">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3373</td><td><a href="array.c.html#L3373">(p->h != k)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4653</td><td><a href="array.c.html#L4653">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4883</td><td><a href="array.c.html#L4883">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4892</td><td><a href="array.c.html#L4892">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4898</td><td><a href="array.c.html#L4898">(hash->nNumOfElements > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4962</td><td><a href="array.c.html#L4962">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4978</td><td><a href="array.c.html#L4978">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5268</td><td><a href="array.c.html#L5268">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5277</td><td><a href="array.c.html#L5277">(idx < hash->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5283</td><td><a href="array.c.html#L5283">(hash->nNumOfElements > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5361</td><td><a href="array.c.html#L5361">(p->key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5888</td><td><a href="array.c.html#L5888">(num_req > (num_avail >> 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6483</td><td><a href="array.c.html#L6483">(pos_values >= values->nNumUsed)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">706</td><td><a href="array.c.html#L706">(zobj->handlers->count_elements)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3202</td><td><a href="array.c.html#L3202">(zend_hash_next_index_insert(Z_ARRVAL_P(stack), &new_var) == NULL)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4349</td><td><a href="array.c.html#L4349">(HT_IS_PACKED(Z_ARRVAL_P(input)) && !preserve_keys)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2759</td><td><a href="array.c.html#L2759">(((signed int)low - lstep) < 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2775</td><td><a href="array.c.html#L2775">(((signed int)low + lstep) > 255)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2851</td><td><a href="array.c.html#L2851">((zend_ulong)low - high < lstep)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2865</td><td><a href="array.c.html#L2865">((zend_ulong)high - low < lstep)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3023</td><td><a href="array.c.html#L3023">(((unsigned)offset + (unsigned)length) > (unsigned)num_in)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3492</td><td><a href="array.c.html#L3492">(((zend_ulong)offset + (zend_ulong)length) > (uint32_t)num_in)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3602</td><td><a href="array.c.html#L3602">(((zend_ulong)offset + (zend_ulong)length) > (unsigned)num_in)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">654</td><td><a href="array.c.html#L654">(!(GC_FLAGS(ht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1233</td><td><a href="array.c.html#L1233">(Z_TYPE(args[0]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1279</td><td><a href="array.c.html#L1279">(Z_TYPE(args[0]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="array.c.html#L1418">(Z_TYPE(args[1]) != IS_UNDEF)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3767</td><td><a href="array.c.html#L3767">(HT_IS_PACKED(dest) && HT_IS_PACKED(src))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4099</td><td><a href="array.c.html#L4099">(HT_IS_PACKED(arrval) && HT_IS_WITHOUT_HOLES(arrval))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4724</td><td><a href="array.c.html#L4724">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4872</td><td><a href="array.c.html#L4872">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5109</td><td><a href="array.c.html#L5109">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5257</td><td><a href="array.c.html#L5257">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5334</td><td><a href="array.c.html#L5334">(diff_data_compare_func(ptrs[0], ptr) != 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5439</td><td><a href="array.c.html#L5439">(Z_TYPE(args[0]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5447</td><td><a href="array.c.html#L5447">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5464</td><td><a href="array.c.html#L5464">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5475</td><td><a href="array.c.html#L5475">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5505</td><td><a href="array.c.html#L5505">(Z_TYPE(args[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5867</td><td><a href="array.c.html#L5867">(!Z_ISUNDEF(b->val))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">6185</td><td><a href="array.c.html#L6185">(Z_TYPE(arrays[0]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">6222</td><td><a href="array.c.html#L6222">(Z_TYPE(arrays[i]) != IS_ARRAY)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5679</td><td><a href="array.c.html#L5679">(parse_state[MULTISORT_ORDER] == 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5695</td><td><a href="array.c.html#L5695">(parse_state[MULTISORT_TYPE] == 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6192</td><td><a href="array.c.html#L6192">(!ZEND_FCI_INITIALIZED(fci) || !maxlen)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4240</td><td><a href="array.c.html#L4240">(Z_OBJ_HANDLER_P(data, has_property)(Z_OBJ_P(data), tmp_str, ZEND_PROPERTY_EXISTS, cache_slot) || Z_OBJ_HANDLER_P(data, has_property)(Z_OBJ_P(data), tmp_str, ZEND_PROPERTY_ISSET, cache_slot))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">716</td><td><a href="array.c.html#L716">(instanceof_function(zobj->ce, zend_ce_countable))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">5911</td><td><a href="array.c.html#L5911">(zend_bitset_in(bitset, i) ^ negative_bitset)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">188</td><td><a href="array.c.html#L188">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">212</td><td><a href="array.c.html#L212">(f->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">217</td><td><a href="array.c.html#L217">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">234</td><td><a href="array.c.html#L234">(f->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="array.c.html#L241">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">259</td><td><a href="array.c.html#L259">(f->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">266</td><td><a href="array.c.html#L266">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">284</td><td><a href="array.c.html#L284">(f->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">291</td><td><a href="array.c.html#L291">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">332</td><td><a href="array.c.html#L332">(f->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">337</td><td><a href="array.c.html#L337">(s->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">427</td><td><a href="array.c.html#L427">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="array.c.html#L443">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">491</td><td><a href="array.c.html#L491">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="array.c.html#L507">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="array.c.html#L555">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">571</td><td><a href="array.c.html#L571">(sort_type & PHP_SORT_FLAG_CASE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2623</td><td><a href="array.c.html#L2623">(start_key--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2627</td><td><a href="array.c.html#L2627">(num--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2639</td><td><a href="array.c.html#L2639">(num--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2917</td><td><a href="array.c.html#L2917">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2937</td><td><a href="array.c.html#L2937">(n_left--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2939</td><td><a href="array.c.html#L2939">(status->last_unsafe)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2965</td><td><a href="array.c.html#L2965">(n_left--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2967</td><td><a href="array.c.html#L2967">(status->last_unsafe)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4811</td><td><a href="array.c.html#L4811">(behavior & INTERSECT_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4903</td><td><a href="array.c.html#L4903">(behavior & INTERSECT_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4923</td><td><a href="array.c.html#L4923">(behavior & INTERSECT_NORMAL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4927</td><td><a href="array.c.html#L4927">(behavior & INTERSECT_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4990</td><td><a href="array.c.html#L4990">(behavior & INTERSECT_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5006</td><td><a href="array.c.html#L5006">(behavior & INTERSECT_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5196</td><td><a href="array.c.html#L5196">(behavior & DIFF_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5288</td><td><a href="array.c.html#L5288">(behavior & DIFF_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5315</td><td><a href="array.c.html#L5315">(behavior & DIFF_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5373</td><td><a href="array.c.html#L5373">(behavior & DIFF_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5389</td><td><a href="array.c.html#L5389">(behavior & DIFF_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5532</td><td><a href="array.c.html#L5532">(!zend_hash_exists(&exclude, str))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5868</td><td><a href="array.c.html#L5868">(b->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1049</td><td><a href="array.c.html#L1049">(EXPECTED(Z_TYPE_P(zv) == IS_ARRAY))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2792</td><td><a href="array.c.html#L2792">(zend_isinf(high) || zend_isinf(low))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3225</td><td><a href="array.c.html#L3225">(zend_hash_num_elements(Z_ARRVAL_P(stack)) == 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3290</td><td><a href="array.c.html#L3290">(zend_hash_num_elements(Z_ARRVAL_P(stack)) == 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3630</td><td><a href="array.c.html#L3630">(UNEXPECTED(Z_TYPE_P(zv) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3647</td><td><a href="array.c.html#L3647">(UNEXPECTED(Z_TYPE_P(zv) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3669</td><td><a href="array.c.html#L3669">(UNEXPECTED(Z_TYPE_P(entry) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">6097</td><td><a href="array.c.html#L6097">(zend_hash_num_elements(Z_ARRVAL_P(array)) == 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">665</td><td><a href="array.c.html#L665">(Z_TYPE_P(element) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">719</td><td><a href="array.c.html#L719">(Z_TYPE(retval) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="array.c.html#L877">(Z_TYPE(retval) == IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">934</td><td><a href="array.c.html#L934">(zend_hash_num_elements(arr) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1003</td><td><a href="array.c.html#L1003">(Z_TYPE(retval) == IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1085</td><td><a href="array.c.html#L1085">(Z_TYPE_P(entry) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1112</td><td><a href="array.c.html#L1112">(Z_TYPE_P(entry) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1139</td><td><a href="array.c.html#L1139">(Z_TYPE_P(entry) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1166</td><td><a href="array.c.html#L1166">(Z_TYPE_P(entry) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1190</td><td><a href="array.c.html#L1190">(Z_TYPE_P(entry) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1254</td><td><a href="array.c.html#L1254">(Z_TYPE(result) == IS_TRUE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1300</td><td><a href="array.c.html#L1300">(Z_TYPE(result) == IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1352</td><td><a href="array.c.html#L1352">(Z_TYPE_P(zv) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1354</td><td><a href="array.c.html#L1354">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="array.c.html#L1428">(Z_TYPE_P(array) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1431</td><td><a href="array.c.html#L1431">(Z_TYPE_P(array) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1507</td><td><a href="array.c.html#L1507">(Z_TYPE_P(value) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1539</td><td><a href="array.c.html#L1539">(Z_TYPE_P(value) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1553</td><td><a href="array.c.html#L1553">(Z_TYPE_P(value) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1689</td><td><a href="array.c.html#L1689">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1691</td><td><a href="array.c.html#L1691">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1735</td><td><a href="array.c.html#L1735">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1737</td><td><a href="array.c.html#L1737">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1786</td><td><a href="array.c.html#L1786">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1836</td><td><a href="array.c.html#L1836">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1874</td><td><a href="array.c.html#L1874">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1876</td><td><a href="array.c.html#L1876">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1899</td><td><a href="array.c.html#L1899">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1933</td><td><a href="array.c.html#L1933">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1935</td><td><a href="array.c.html#L1935">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1949</td><td><a href="array.c.html#L1949">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1985</td><td><a href="array.c.html#L1985">(ZSTR_LEN(var_name) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1990</td><td><a href="array.c.html#L1990">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1992</td><td><a href="array.c.html#L1992">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2016</td><td><a href="array.c.html#L2016">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2062</td><td><a href="array.c.html#L2062">(ZSTR_LEN(var_name) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2067</td><td><a href="array.c.html#L2067">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2069</td><td><a href="array.c.html#L2069">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2084</td><td><a href="array.c.html#L2084">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2127</td><td><a href="array.c.html#L2127">(ZSTR_LEN(var_name) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2147</td><td><a href="array.c.html#L2147">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2174</td><td><a href="array.c.html#L2174">(ZSTR_LEN(var_name) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2190</td><td><a href="array.c.html#L2190">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2250</td><td><a href="array.c.html#L2250">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2301</td><td><a href="array.c.html#L2301">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2343</td><td><a href="array.c.html#L2343">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2345</td><td><a href="array.c.html#L2345">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2391</td><td><a href="array.c.html#L2391">(Z_TYPE_P(orig_var) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2393</td><td><a href="array.c.html#L2393">(Z_TYPE_P(orig_var) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2450</td><td><a href="array.c.html#L2450">(zend_forbid_dynamic_call() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2520</td><td><a href="array.c.html#L2520">(Z_TYPE_P(entry) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2534</td><td><a href="array.c.html#L2534">(Z_TYPE_P(entry) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2566</td><td><a href="array.c.html#L2566">(zend_forbid_dynamic_call() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2600</td><td><a href="array.c.html#L2600">(EXPECTED(num > 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2644</td><td><a href="array.c.html#L2644">(EXPECTED(num == 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2669</td><td><a href="array.c.html#L2669">(Z_TYPE_P(entry) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2930</td><td><a href="array.c.html#L2930">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2954</td><td><a href="array.c.html#L2954">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3034</td><td><a href="array.c.html#L3034">(Z_TYPE_P(entry) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3049</td><td><a href="array.c.html#L3049">(Z_TYPE_P(entry) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3059</td><td><a href="array.c.html#L3059">(Z_TYPE_P(entry) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3078</td><td><a href="array.c.html#L3078">(Z_TYPE_P(entry) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3238</td><td><a href="array.c.html#L3238">(Z_TYPE_P(val) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3262</td><td><a href="array.c.html#L3262">(Z_TYPE_P(val) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3305</td><td><a href="array.c.html#L3305">(Z_TYPE_P(val) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3318</td><td><a href="array.c.html#L3318">(Z_TYPE_P(val) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3331</td><td><a href="array.c.html#L3331">(Z_TYPE_P(val) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3359</td><td><a href="array.c.html#L3359">(Z_TYPE_P(val) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3472</td><td><a href="array.c.html#L3472">(ZEND_NUM_ARGS() == 4)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3721</td><td><a href="array.c.html#L3721">(Z_TYPE_P(dest_zval) == IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3728</td><td><a href="array.c.html#L3728">(Z_TYPE_P(src_zval) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3733</td><td><a href="array.c.html#L3733">(Z_TYPE_P(src_zval) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3882</td><td><a href="array.c.html#L3882">(Z_TYPE_P(arg) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3926</td><td><a href="array.c.html#L3926">(Z_TYPE_P(arg) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4202</td><td><a href="array.c.html#L4202">(Z_TYPE_P(entry) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4210</td><td><a href="array.c.html#L4210">(Z_TYPE_P(entry) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4229</td><td><a href="array.c.html#L4229">(Z_TYPE_P(data) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4251</td><td><a href="array.c.html#L4251">(Z_TYPE_P(data) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4482</td><td><a href="array.c.html#L4482">(Z_TYPE_P(entry) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4489</td><td><a href="array.c.html#L4489">(Z_TYPE_P(entry) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4585</td><td><a href="array.c.html#L4585">(Z_TYPE_P(val) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4622</td><td><a href="array.c.html#L4622">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4884</td><td><a href="array.c.html#L4884">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5269</td><td><a href="array.c.html#L5269">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5659</td><td><a href="array.c.html#L5659">(Z_TYPE_P(arg) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5674</td><td><a href="array.c.html#L5674">(Z_TYPE_P(arg) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5748</td><td><a href="array.c.html#L5748">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6036</td><td><a href="array.c.html#L6036">(ZEND_NUM_ARGS() > 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6047</td><td><a href="array.c.html#L6047">(zend_hash_num_elements(htbl) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6424</td><td><a href="array.c.html#L6424">(Z_TYPE(chunk) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6449</td><td><a href="array.c.html#L6449">(Z_TYPE(chunk) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6487</td><td><a href="array.c.html#L6487">(Z_TYPE_P(entry_values) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6488</td><td><a href="array.c.html#L6488">(Z_TYPE_P(entry_keys) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">179</td><td><a href="array.c.html#L179">(t == IS_LONG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="array.c.html#L181">(t == IS_DOUBLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">193</td><td><a href="array.c.html#L193">(t == IS_LONG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">195</td><td><a href="array.c.html#L195">(t == IS_DOUBLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">695</td><td><a href="array.c.html#L695">(mode != COUNT_RECURSIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="array.c.html#L1232">(argc == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1252</td><td><a href="array.c.html#L1252">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="array.c.html#L1278">(argc == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1298</td><td><a href="array.c.html#L1298">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="array.c.html#L1347">(zv == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1411</td><td><a href="array.c.html#L1411">(result == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1423</td><td><a href="array.c.html#L1423">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1511</td><td><a href="array.c.html#L1511">(behavior == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="array.c.html#L1526">(behavior == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1542</td><td><a href="array.c.html#L1542">(behavior == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1556</td><td><a href="array.c.html#L1556">(behavior == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1570</td><td><a href="array.c.html#L1570">(behavior == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2582</td><td><a href="array.c.html#L2582">(i < num_args)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2724</td><td><a href="array.c.html#L2724">(step < 0.0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2747</td><td><a href="array.c.html#L2747">(low > high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2756</td><td><a href="array.c.html#L2756">(low >= high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2764</td><td><a href="array.c.html#L2764">(high > low)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2772</td><td><a href="array.c.html#L2772">(low <= high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2797</td><td><a href="array.c.html#L2797">(low > high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2811</td><td><a href="array.c.html#L2811">(high > low)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2839</td><td><a href="array.c.html#L2839">(step <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2845</td><td><a href="array.c.html#L2845">(step <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2850</td><td><a href="array.c.html#L2850">(low > high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2859</td><td><a href="array.c.html#L2859">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2864</td><td><a href="array.c.html#L2864">(high > low)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2873</td><td><a href="array.c.html#L2873">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2904</td><td><a href="array.c.html#L2904">(n_elems < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2916</td><td><a href="array.c.html#L2916">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2931</td><td><a href="array.c.html#L2931">(j != idx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2942</td><td><a href="array.c.html#L2942">(rnd_idx != n_left)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2955</td><td><a href="array.c.html#L2955">(j != idx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2957</td><td><a href="array.c.html#L2957">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2970</td><td><a href="array.c.html#L2970">(rnd_idx != n_left)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3014</td><td><a href="array.c.html#L3014">(offset > num_in)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3021</td><td><a href="array.c.html#L3021">(length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3037</td><td><a href="array.c.html#L3037">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3038</td><td><a href="array.c.html#L3038">((zend_long)idx != pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3047</td><td><a href="array.c.html#L3047">(removed != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3080</td><td><a href="array.c.html#L3080">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3081</td><td><a href="array.c.html#L3081">((zend_long)idx != pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3102</td><td><a href="array.c.html#L3102">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3103</td><td><a href="array.c.html#L3103">((zend_long)idx != pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3112</td><td><a href="array.c.html#L3112">(removed != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3154</td><td><a href="array.c.html#L3154">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3155</td><td><a href="array.c.html#L3155">((zend_long)idx != pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3199</td><td><a href="array.c.html#L3199">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3233</td><td><a href="array.c.html#L3233">(idx == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3256</td><td><a href="array.c.html#L3256">(idx == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3319</td><td><a href="array.c.html#L3319">(idx != k)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3332</td><td><a href="array.c.html#L3332">(idx != k)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3336</td><td><a href="array.c.html#L3336">(idx == iter_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3408</td><td><a href="array.c.html#L3408">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3483</td><td><a href="array.c.html#L3483">(offset > num_in)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3490</td><td><a href="array.c.html#L3490">(length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3524</td><td><a href="array.c.html#L3524">(pos >= offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3551</td><td><a href="array.c.html#L3551">(pos >= offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3593</td><td><a href="array.c.html#L3593">(offset > (zend_long)num_in)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3600</td><td><a href="array.c.html#L3600">(length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3606</td><td><a href="array.c.html#L3606">(length <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3626</td><td><a href="array.c.html#L3626">(zv != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3627</td><td><a href="array.c.html#L3627">(__fill_idx >= length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3646</td><td><a href="array.c.html#L3646">(zv != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3650</td><td><a href="array.c.html#L3650">(n >= length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3667</td><td><a href="array.c.html#L3667">(p != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3672</td><td><a href="array.c.html#L3672">(n >= length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3879</td><td><a href="array.c.html#L3879">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3893</td><td><a href="array.c.html#L3893">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3898</td><td><a href="array.c.html#L3898">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3919</td><td><a href="array.c.html#L3919">(argc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3923</td><td><a href="array.c.html#L3923">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3933</td><td><a href="array.c.html#L3933">(argc == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3999</td><td><a href="array.c.html#L3999">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4004</td><td><a href="array.c.html#L4004">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4068</td><td><a href="array.c.html#L4068">(search_value != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4103</td><td><a href="array.c.html#L4103">(lval < elem_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4232</td><td><a href="array.c.html#L4232">(name_str == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4245</td><td><a href="array.c.html#L4245">(prop != rv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4253</td><td><a href="array.c.html#L4253">(name_str != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4405</td><td><a href="array.c.html#L4405">(input_size >= pad_size_abs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4420</td><td><a href="array.c.html#L4420">(pad_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4422</td><td><a href="array.c.html#L4422">(i < num_pads)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4435</td><td><a href="array.c.html#L4435">(pad_size > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4437</td><td><a href="array.c.html#L4437">(i < num_pads)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4443</td><td><a href="array.c.html#L4443">(pad_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4444</td><td><a href="array.c.html#L4444">(i < num_pads)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4458</td><td><a href="array.c.html#L4458">(pad_size > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4459</td><td><a href="array.c.html#L4459">(i < num_pads)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4574</td><td><a href="array.c.html#L4574">(sort_type == PHP_SORT_STRING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4705</td><td><a href="array.c.html#L4705">(data_compare_type == INTERSECT_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4714</td><td><a href="array.c.html#L4714">(data_compare_type == INTERSECT_COMP_DATA_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4723</td><td><a href="array.c.html#L4723">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4737</td><td><a href="array.c.html#L4737">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4739</td><td><a href="array.c.html#L4739">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4754</td><td><a href="array.c.html#L4754">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4789</td><td><a href="array.c.html#L4789">(behavior == INTERSECT_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4792</td><td><a href="array.c.html#L4792">(data_compare_type == INTERSECT_COMP_DATA_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4796</td><td><a href="array.c.html#L4796">(data_compare_type == INTERSECT_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4871</td><td><a href="array.c.html#L4871">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4899</td><td><a href="array.c.html#L4899">(behavior == INTERSECT_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4922</td><td><a href="array.c.html#L4922">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4936</td><td><a href="array.c.html#L4936">(data_compare_type == INTERSECT_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4942</td><td><a href="array.c.html#L4942">(key_compare_type == INTERSECT_COMP_KEY_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4986</td><td><a href="array.c.html#L4986">(behavior == INTERSECT_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5002</td><td><a href="array.c.html#L5002">(behavior == INTERSECT_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5014</td><td><a href="array.c.html#L5014">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5094</td><td><a href="array.c.html#L5094">(data_compare_type == DIFF_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5103</td><td><a href="array.c.html#L5103">(data_compare_type == DIFF_COMP_DATA_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5108</td><td><a href="array.c.html#L5108">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5122</td><td><a href="array.c.html#L5122">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5124</td><td><a href="array.c.html#L5124">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5139</td><td><a href="array.c.html#L5139">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5174</td><td><a href="array.c.html#L5174">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5177</td><td><a href="array.c.html#L5177">(data_compare_type == DIFF_COMP_DATA_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5181</td><td><a href="array.c.html#L5181">(data_compare_type == DIFF_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5256</td><td><a href="array.c.html#L5256">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5284</td><td><a href="array.c.html#L5284">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5309</td><td><a href="array.c.html#L5309">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5311</td><td><a href="array.c.html#L5311">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5321</td><td><a href="array.c.html#L5321">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5326</td><td><a href="array.c.html#L5326">(behavior == DIFF_ASSOC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5330</td><td><a href="array.c.html#L5330">(data_compare_type == DIFF_COMP_DATA_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5337</td><td><a href="array.c.html#L5337">(key_compare_type == DIFF_COMP_KEY_USER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5347</td><td><a href="array.c.html#L5347">(behavior == DIFF_KEY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5369</td><td><a href="array.c.html#L5369">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5385</td><td><a href="array.c.html#L5385">(behavior == DIFF_NORMAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5397</td><td><a href="array.c.html#L5397">(i < arr_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5445</td><td><a href="array.c.html#L5445">(num == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5446</td><td><a href="array.c.html#L5446">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5453</td><td><a href="array.c.html#L5453">(num == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5463</td><td><a href="array.c.html#L5463">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5474</td><td><a href="array.c.html#L5474">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5504</td><td><a href="array.c.html#L5504">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5512</td><td><a href="array.c.html#L5512">(num == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5520</td><td><a href="array.c.html#L5520">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5596</td><td><a href="array.c.html#L5596">(result != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5645</td><td><a href="array.c.html#L5645">(i < MULTISORT_LAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5655</td><td><a href="array.c.html#L5655">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5663</td><td><a href="array.c.html#L5663">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5671</td><td><a href="array.c.html#L5671">(k < MULTISORT_LAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5721</td><td><a href="array.c.html#L5721">(i < num_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5729</td><td><a href="array.c.html#L5729">(array_size < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5740</td><td><a href="array.c.html#L5740">(i < array_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5743</td><td><a href="array.c.html#L5743">(i < num_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5745</td><td><a href="array.c.html#L5745">(HT_IS_PACKED(Z_ARRVAL_P(arrays[i])))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5763</td><td><a href="array.c.html#L5763">(k < array_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5772</td><td><a href="array.c.html#L5772">(i < num_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5778</td><td><a href="array.c.html#L5778">(k < array_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5784</td><td><a href="array.c.html#L5784">(k < array_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5799</td><td><a href="array.c.html#L5799">(i < array_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5824</td><td><a href="array.c.html#L5824">(num_avail == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5831</td><td><a href="array.c.html#L5831">(num_req == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5838</td><td><a href="array.c.html#L5838">(i == randval)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6106</td><td><a href="array.c.html#L6106">(use_type == ARRAY_FILTER_USE_BOTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6125</td><td><a href="array.c.html#L6125">(use_type != ARRAY_FILTER_USE_KEY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6134</td><td><a href="array.c.html#L6134">(use_type == ARRAY_FILTER_USE_BOTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6144</td><td><a href="array.c.html#L6144">(use_type == ARRAY_FILTER_USE_BOTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6179</td><td><a href="array.c.html#L6179">(n_arrays == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6221</td><td><a href="array.c.html#L6221">(i < n_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6238</td><td><a href="array.c.html#L6238">(k < maxlen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6244</td><td><a href="array.c.html#L6244">(i < n_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6248</td><td><a href="array.c.html#L6248">(HT_IS_PACKED(Z_ARRVAL(arrays[i])))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6282</td><td><a href="array.c.html#L6282">(k < maxlen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6283</td><td><a href="array.c.html#L6283">(i < n_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6287</td><td><a href="array.c.html#L6287">(HT_IS_PACKED(Z_ARRVAL(arrays[i])))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6321</td><td><a href="array.c.html#L6321">(i < n_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6327</td><td><a href="array.c.html#L6327">(i < n_arrays)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6403</td><td><a href="array.c.html#L6403">(size < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6410</td><td><a href="array.c.html#L6410">(size > num_in)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6411</td><td><a href="array.c.html#L6411">(num_in == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6471</td><td><a href="array.c.html#L6471">(num_keys != num_values)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1695</td><td><a href="array.c.html#L1695">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1741</td><td><a href="array.c.html#L1741">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1777</td><td><a href="array.c.html#L1777">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1827</td><td><a href="array.c.html#L1827">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2029</td><td><a href="array.c.html#L2029">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2101</td><td><a href="array.c.html#L2101">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2224</td><td><a href="array.c.html#L2224">(!php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2235</td><td><a href="array.c.html#L2235">(!php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2279</td><td><a href="array.c.html#L2279">(!php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2290</td><td><a href="array.c.html#L2290">(!php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2335</td><td><a href="array.c.html#L2335">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2383</td><td><a href="array.c.html#L2383">(!php_valid_var_name(ZSTR_VAL(var_name), ZSTR_LEN(var_name)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">5941</td><td><a href="array.c.html#L5941">(!php_array_pick_keys(php_random_default_algo(), php_random_default_status(), input, num_req, return_value, false))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1642</td><td><a href="array.c.html#L1642">(UNEXPECTED(!ZEND_BIT_TEST(charset2, ch)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">2926</td><td><a href="array.c.html#L2926">(EXPECTED(!HT_HAS_ITERATORS(hash)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">5991</td><td><a href="array.c.html#L5991">(!zend_hash_num_elements(Z_ARRVAL_P(input)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="array.c.html#L870">(!ARRAYG(compare_deprecation_thrown))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">996</td><td><a href="array.c.html#L996">(!ARRAYG(compare_deprecation_thrown))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1439</td><td><a href="array.c.html#L1439">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1618</td><td><a href="array.c.html#L1618">(UNEXPECTED(!var_name_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2911</td><td><a href="array.c.html#L2911">(!HT_IS_PACKED(hash))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2912</td><td><a href="array.c.html#L2912">(!HT_HAS_STATIC_KEYS_ONLY(hash))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5858</td><td><a href="array.c.html#L5858">(!Z_ISUNDEF_P(zv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5900</td><td><a href="array.c.html#L5900">(!zend_bitset_in(bitset, randval))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6149</td><td><a href="array.c.html#L6149">(!zend_is_true(operand))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6234</td><td><a href="array.c.html#L6234">(!ZEND_FCI_INITIALIZED(fci))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1684</td><td><a href="array.c.html#L1684">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1730</td><td><a href="array.c.html#L1730">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1774</td><td><a href="array.c.html#L1774">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1824</td><td><a href="array.c.html#L1824">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1869</td><td><a href="array.c.html#L1869">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1888</td><td><a href="array.c.html#L1888">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1928</td><td><a href="array.c.html#L1928">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1942</td><td><a href="array.c.html#L1942">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1982</td><td><a href="array.c.html#L1982">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2005</td><td><a href="array.c.html#L2005">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2059</td><td><a href="array.c.html#L2059">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2077</td><td><a href="array.c.html#L2077">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2136</td><td><a href="array.c.html#L2136">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2183</td><td><a href="array.c.html#L2183">(php_valid_var_name(Z_STRVAL(final_name), Z_STRLEN(final_name)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2332</td><td><a href="array.c.html#L2332">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2380</td><td><a href="array.c.html#L2380">(!var_name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3421</td><td><a href="array.c.html#L3421">(UNEXPECTED(HT_HAS_ITERATORS(Z_ARRVAL_P(stack))))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3741</td><td><a href="array.c.html#L3741">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3858</td><td><a href="array.c.html#L3858">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3952</td><td><a href="array.c.html#L3952">(!string_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4063</td><td><a href="array.c.html#L4063">(!elem_count)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4169</td><td><a href="array.c.html#L4169">(!arrlen)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4521</td><td><a href="array.c.html#L4521">(!string_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5320</td><td><a href="array.c.html#L5320">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5356</td><td><a href="array.c.html#L5356">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5462</td><td><a href="array.c.html#L5462">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5479</td><td><a href="array.c.html#L5479">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5825</td><td><a href="array.c.html#L5825">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5880</td><td><a href="array.c.html#L5880">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6119</td><td><a href="array.c.html#L6119">(!string_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6139</td><td><a href="array.c.html#L6139">(!retval_true)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6476</td><td><a href="array.c.html#L6476">(!num_keys)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1753</td><td><a href="array.c.html#L1753">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1844</td><td><a href="array.c.html#L1844">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1889</td><td><a href="array.c.html#L1889">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1943</td><td><a href="array.c.html#L1943">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1953</td><td><a href="array.c.html#L1953">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2006</td><td><a href="array.c.html#L2006">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2078</td><td><a href="array.c.html#L2078">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2088</td><td><a href="array.c.html#L2088">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2137</td><td><a href="array.c.html#L2137">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2184</td><td><a href="array.c.html#L2184">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2194</td><td><a href="array.c.html#L2194">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2240</td><td><a href="array.c.html#L2240">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2295</td><td><a href="array.c.html#L2295">(zend_string_equals_literal(Z_STR(final_name), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2305</td><td><a href="array.c.html#L2305">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2525</td><td><a href="array.c.html#L2525">(zend_string_equals_literal(Z_STR_P(entry), "this"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3229</td><td><a href="array.c.html#L3229">(HT_IS_PACKED(Z_ARRVAL_P(stack)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3295</td><td><a href="array.c.html#L3295">(HT_IS_PACKED(Z_ARRVAL_P(stack)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3942</td><td><a href="array.c.html#L3942">(HT_IS_PACKED(Z_ARRVAL_P(ret)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3943</td><td><a href="array.c.html#L3943">(HT_IS_WITHOUT_HOLES(Z_ARRVAL_P(ret)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">4417</td><td><a href="array.c.html#L4417">(HT_IS_PACKED(Z_ARRVAL_P(input)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">4619</td><td><a href="array.c.html#L4619">(HT_IS_PACKED(Z_ARRVAL_P(array)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">6063</td><td><a href="array.c.html#L6063">(UNEXPECTED(Z_ISREF_P(return_value)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">655</td><td><a href="array.c.html#L655">(GC_IS_RECURSIVE(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="array.c.html#L711">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">865</td><td><a href="array.c.html#L865">(UNEXPECTED(call_failed))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="array.c.html#L991">(UNEXPECTED(call_failed))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="array.c.html#L1080">(USED_RET())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="array.c.html#L1107">(USED_RET())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1134</td><td><a href="array.c.html#L1134">(USED_RET())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="array.c.html#L1161">(USED_RET())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1391</td><td><a href="array.c.html#L1391">(GC_IS_RECURSIVE(thash))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="array.c.html#L1525">(fast_is_identical_function(value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1541</td><td><a href="array.c.html#L1541">(fast_equal_check_long(value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1555</td><td><a href="array.c.html#L1555">(fast_equal_check_string(value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1569</td><td><a href="array.c.html#L1569">(fast_equal_check_function(value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="array.c.html#L1680">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1698</td><td><a href="array.c.html#L1698">(zend_string_equals_literal(var_name, "GLOBALS"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="array.c.html#L1701">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="array.c.html#L1705">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1726</td><td><a href="array.c.html#L1726">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1744</td><td><a href="array.c.html#L1744">(zend_string_equals_literal(var_name, "GLOBALS"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1747</td><td><a href="array.c.html#L1747">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1770</td><td><a href="array.c.html#L1770">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1780</td><td><a href="array.c.html#L1780">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1789</td><td><a href="array.c.html#L1789">(zend_string_equals_literal(var_name, "GLOBALS"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1792</td><td><a href="array.c.html#L1792">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1800</td><td><a href="array.c.html#L1800">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="array.c.html#L1820">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="array.c.html#L1830">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1839</td><td><a href="array.c.html#L1839">(zend_string_equals_literal(var_name, "GLOBALS"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1865</td><td><a href="array.c.html#L1865">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1877</td><td><a href="array.c.html#L1877">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1893</td><td><a href="array.c.html#L1893">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1924</td><td><a href="array.c.html#L1924">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1978</td><td><a href="array.c.html#L1978">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1993</td><td><a href="array.c.html#L1993">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="array.c.html#L2010">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2032</td><td><a href="array.c.html#L2032">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2035</td><td><a href="array.c.html#L2035">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2055</td><td><a href="array.c.html#L2055">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2104</td><td><a href="array.c.html#L2104">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2141</td><td><a href="array.c.html#L2141">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2244</td><td><a href="array.c.html#L2244">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2328</td><td><a href="array.c.html#L2328">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2338</td><td><a href="array.c.html#L2338">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2346</td><td><a href="array.c.html#L2346">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2356</td><td><a href="array.c.html#L2356">(Z_ISREF_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="array.c.html#L2376">(HT_IS_PACKED(arr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2386</td><td><a href="array.c.html#L2386">(zend_string_equals_literal(var_name, "this"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="array.c.html#L2535">(Z_REFCOUNTED_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2536</td><td><a href="array.c.html#L2536">(Z_IS_RECURSIVE_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2545</td><td><a href="array.c.html#L2545">(Z_REFCOUNTED_P(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2617</td><td><a href="array.c.html#L2617">(Z_REFCOUNTED_P(val))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2635</td><td><a href="array.c.html#L2635">(Z_REFCOUNTED_P(val))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3030</td><td><a href="array.c.html#L3030">(HT_IS_PACKED(in_hash))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3479</td><td><a href="array.c.html#L3479">(USED_RET())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3516</td><td><a href="array.c.html#L3516">(HT_IS_WITHOUT_HOLES(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3543</td><td><a href="array.c.html#L3543">(HT_IS_WITHOUT_HOLES(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3618</td><td><a href="array.c.html#L3618">(HT_IS_PACKED(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3842</td><td><a href="array.c.html#L3842">(Z_REFCOUNTED_P(dest_zval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3845</td><td><a href="array.c.html#L3845">(Z_REFCOUNTED_P(src_zval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3851</td><td><a href="array.c.html#L3851">(Z_REFCOUNTED_P(dest_zval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3854</td><td><a href="array.c.html#L3854">(Z_REFCOUNTED_P(src_zval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3970</td><td><a href="array.c.html#L3970">(HT_IS_PACKED(src))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3991</td><td><a href="array.c.html#L3991">(EXPECTED(string_key))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4074</td><td><a href="array.c.html#L4074">(fast_is_identical_function(search_value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4085</td><td><a href="array.c.html#L4085">(fast_equal_check_function(search_value, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4412</td><td><a href="array.c.html#L4412">(Z_REFCOUNTED_P(pad_value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4881</td><td><a href="array.c.html#L4881">(HT_IS_PACKED(hash))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5266</td><td><a href="array.c.html#L5266">(HT_IS_PACKED(hash))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5482</td><td><a href="array.c.html#L5482">(zend_string_equals(search_str, str))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5777</td><td><a href="array.c.html#L5777">(HT_IS_PACKED(hash))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5854</td><td><a href="array.c.html#L5854">(HT_IS_PACKED(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6103</td><td><a href="array.c.html#L6103">(ZEND_FCI_INITIALIZED(fci))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">419</td><td><a href="array.c.html#L419">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">428</td><td><a href="array.c.html#L428">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">434</td><td><a href="array.c.html#L434">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">444</td><td><a href="array.c.html#L444">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">450</td><td><a href="array.c.html#L450">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="array.c.html#L459">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">468</td><td><a href="array.c.html#L468">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">483</td><td><a href="array.c.html#L483">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">492</td><td><a href="array.c.html#L492">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="array.c.html#L498">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">508</td><td><a href="array.c.html#L508">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">514</td><td><a href="array.c.html#L514">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">523</td><td><a href="array.c.html#L523">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">532</td><td><a href="array.c.html#L532">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">547</td><td><a href="array.c.html#L547">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">556</td><td><a href="array.c.html#L556">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">562</td><td><a href="array.c.html#L562">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">572</td><td><a href="array.c.html#L572">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">578</td><td><a href="array.c.html#L578">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">587</td><td><a href="array.c.html#L587">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="array.c.html#L596">(reverse)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">742</td><td><a href="array.c.html#L742">(fold_case)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">884</td><td><a href="array.c.html#L884">(call_failed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1019</td><td><a href="array.c.html#L1019">(call_failed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1238</td><td><a href="array.c.html#L1238">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1284</td><td><a href="array.c.html#L1284">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1332</td><td><a href="array.c.html#L1332">(userdata)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1363</td><td><a href="array.c.html#L1363">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1441</td><td><a href="array.c.html#L1441">(userdata)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1506</td><td><a href="array.c.html#L1506">(strict)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1514</td><td><a href="array.c.html#L1514">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1529</td><td><a href="array.c.html#L1529">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1545</td><td><a href="array.c.html#L1545">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1559</td><td><a href="array.c.html#L1559">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1573</td><td><a href="array.c.html#L1573">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1664</td><td><a href="array.c.html#L1664">(add_underscore)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1688</td><td><a href="array.c.html#L1688">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1734</td><td><a href="array.c.html#L1734">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1785</td><td><a href="array.c.html#L1785">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1835</td><td><a href="array.c.html#L1835">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1873</td><td><a href="array.c.html#L1873">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1932</td><td><a href="array.c.html#L1932">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1989</td><td><a href="array.c.html#L1989">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2066</td><td><a href="array.c.html#L2066">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2126</td><td><a href="array.c.html#L2126">(var_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2173</td><td><a href="array.c.html#L2173">(var_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2220</td><td><a href="array.c.html#L2220">(var_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2275</td><td><a href="array.c.html#L2275">(var_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2342</td><td><a href="array.c.html#L2342">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2390</td><td><a href="array.c.html#L2390">(orig_var)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2428</td><td><a href="array.c.html#L2428">(extract_refs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2443</td><td><a href="array.c.html#L2443">(prefix)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2457</td><td><a href="array.c.html#L2457">(extract_refs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2527</td><td><a href="array.c.html#L2527">(object)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2719</td><td><a href="array.c.html#L2719">(zstep)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2885</td><td><a href="array.c.html#L2885">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3067</td><td><a href="array.c.html#L3067">(replace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3137</td><td><a href="array.c.html#L3137">(replace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3232</td><td><a href="array.c.html#L3232">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3255</td><td><a href="array.c.html#L3255">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3300</td><td><a href="array.c.html#L3300">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3353</td><td><a href="array.c.html#L3353">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3382</td><td><a href="array.c.html#L3382">(should_rehash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3414</td><td><a href="array.c.html#L3414">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3468</td><td><a href="array.c.html#L3468">(length_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3588</td><td><a href="array.c.html#L3588">(length_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3654</td><td><a href="array.c.html#L3654">(preserve_keys)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3679</td><td><a href="array.c.html#L3679">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3682</td><td><a href="array.c.html#L3682">(preserve_keys)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3701</td><td><a href="array.c.html#L3701">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3734</td><td><a href="array.c.html#L3734">(thash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3738</td><td><a href="array.c.html#L3738">(thash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3786</td><td><a href="array.c.html#L3786">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3807</td><td><a href="array.c.html#L3807">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3892</td><td><a href="array.c.html#L3892">(recursive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3941</td><td><a href="array.c.html#L3941">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3957</td><td><a href="array.c.html#L3957">(copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3998</td><td><a href="array.c.html#L3998">(recursive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4071</td><td><a href="array.c.html#L4071">(strict)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4075</td><td><a href="array.c.html#L4075">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4086</td><td><a href="array.c.html#L4086">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4110</td><td><a href="array.c.html#L4110">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4243</td><td><a href="array.c.html#L4243">(prop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4258</td><td><a href="array.c.html#L4258">(prop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4293</td><td><a href="array.c.html#L4293">(index_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4298</td><td><a href="array.c.html#L4298">(column_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4311</td><td><a href="array.c.html#L4311">(column_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4320</td><td><a href="array.c.html#L4320">(keyval)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4363</td><td><a href="array.c.html#L4363">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4366</td><td><a href="array.c.html#L4366">(preserve_keys)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4451</td><td><a href="array.c.html#L4451">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4483</td><td><a href="array.c.html#L4483">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4490</td><td><a href="array.c.html#L4490">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4524</td><td><a href="array.c.html#L4524">(change_to_upper)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4594</td><td><a href="array.c.html#L4594">(retval)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4601</td><td><a href="array.c.html#L4601">(str_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4748</td><td><a href="array.c.html#L4748">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4763</td><td><a href="array.c.html#L4763">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4969</td><td><a href="array.c.html#L4969">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4973</td><td><a href="array.c.html#L4973">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5133</td><td><a href="array.c.html#L5133">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5148</td><td><a href="array.c.html#L5148">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5494</td><td><a href="array.c.html#L5494">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5533</td><td><a href="array.c.html#L5533">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5792</td><td><a href="array.c.html#L5792">(repack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5839</td><td><a href="array.c.html#L5839">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5862</td><td><a href="array.c.html#L5862">(true)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5875</td><td><a href="array.c.html#L5875">(true)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5898</td><td><a href="array.c.html#L5898">(i)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5912</td><td><a href="array.c.html#L5912">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6116</td><td><a href="array.c.html#L6116">(have_callback)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6117</td><td><a href="array.c.html#L6117">(use_type)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6153</td><td><a href="array.c.html#L6153">(string_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6212</td><td><a href="array.c.html#L6212">(str_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6249</td><td><a href="array.c.html#L6249">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6261</td><td><a href="array.c.html#L6261">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6288</td><td><a href="array.c.html#L6288">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6300</td><td><a href="array.c.html#L6300">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6429</td><td><a href="array.c.html#L6429">(preserve_keys)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6430</td><td><a href="array.c.html#L6430">(str_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6482</td><td><a href="array.c.html#L6482">(1)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

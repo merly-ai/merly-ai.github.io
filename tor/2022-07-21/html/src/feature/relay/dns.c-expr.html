@@ -1,0 +1,247 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\relay\dns.c Ctrl Expressions (196) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\relay\dns.c Ctrl Expressions (196) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\relay\dns.c Ctrl Expressions (196)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1514</td><td><a href="dns.c.html#L1514">(<span style='background-color:#741da3;'>!force && resolv_conf_fname && !strcmp(conf_fname, resolv_conf_fname) && st.st_mtime == resolv_conf_mtime</span>)</a></td><td class="num">1014.25</td></tr>
+      <tr><td class="num line">1298</td><td><a href="dns.c.html#L1298">((resolve->res_status_ipv4 == RES_STATUS_DONE_OK || resolve->res_status_ipv4 == RES_STATUS_DONE_ERR) && resolve->ttl_ipv4 < ttl)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">1303</td><td><a href="dns.c.html#L1303">((resolve->res_status_ipv6 == RES_STATUS_DONE_OK || resolve->res_status_ipv6 == RES_STATUS_DONE_ERR) && resolve->ttl_ipv6 < ttl)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">1308</td><td><a href="dns.c.html#L1308">((resolve->res_status_hostname == RES_STATUS_DONE_OK || resolve->res_status_hostname == RES_STATUS_DONE_ERR) && resolve->ttl_hostname < ttl)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">761</td><td><a href="dns.c.html#L761">((r = tor_addr_parse_PTR_name(&addr, exitconn->base_.address, AF_UNSPEC, 0)) != 0)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">1829</td><td><a href="dns.c.html#L1829">(r == 0 && get_options()->IPv6Exit)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">170</td><td><a href="dns.c.html#L170">(!strcmpstart(msg, "Resolve requested for") && get_options()->SafeLogging)</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="dns.c.html#L204">(!src || get_options()->SafeLogging)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">728</td><td><a href="dns.c.html#L728">(tor_addr_family(&addr) == AF_INET || tor_addr_family(&addr) == AF_INET6)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="dns.c.html#L251">(!(the_evdns_base = evdns_base_new(tor_libevent_get_base(), 0)))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1498</td><td><a href="dns.c.html#L1498">(!(the_evdns_base = evdns_base_new(tor_libevent_get_base(), 0)))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2111</td><td><a href="dns.c.html#L2111">(!get_options()->ServerDNSDetectHijacking)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1468</td><td><a href="dns.c.html#L1468">(get_options()->ServerDNSRandomizeCase)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1821</td><td><a href="dns.c.html#L1821">(get_options()->IPv6Exit)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="dns.c.html#L470">(resolve->state == CACHE_STATE_CACHED || resolve->state == CACHE_STATE_PENDING)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2185</td><td><a href="dns.c.html#L2185">(resolve->state == CACHE_STATE_PENDING || resolve->state == CACHE_STATE_DONE)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">177</td><td><a href="dns.c.html#L177">(!strcmpstart(msg, "Nameserver ") && (cp = strstr(msg, " has failed: ")))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="dns.c.html#L190">(!strcmpstart(msg, "Nameserver ") && (cp = strstr(msg, " is back up")))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="dns.c.html#L338">(dns_result == DNS_ERR_NONE && answer_addr && tor_addr_family(answer_addr) == AF_INET)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">351</td><td><a href="dns.c.html#L351">(dns_result == DNS_ERR_NONE && answer_addr && tor_addr_family(answer_addr) == AF_INET6)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1635</td><td><a href="dns.c.html#L1635">(n_ipv6_timeouts > 10 && n_ipv6_timeouts > n_ipv6_requests_made / 2)</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">1900</td><td><a href="dns.c.html#L1900">(*ip > 5 && n_wildcard_requests > 10)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">676</td><td><a href="dns.c.html#L676">(!made_connection_pending && !exitconn->base_.marked_for_close)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1521</td><td><a href="dns.c.html#L1521">(stat_res == 0 && st.st_size == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">520</td><td><a href="dns.c.html#L520">(resolved && resolved->res_status_ipv4 == RES_STATUS_DONE_OK)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="dns.c.html#L527">(resolved && resolved->res_status_ipv6 == RES_STATUS_DONE_OK)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="dns.c.html#L727">(tor_addr_parse(&addr, exitconn->base_.address) >= 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">789</td><td><a href="dns.c.html#L789">(resolve && resolve->expire > now)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">302</td><td><a href="dns.c.html#L302">(a->expire < b->expire)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">304</td><td><a href="dns.c.html#L304">(a->expire == b->expire)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1722</td><td><a href="dns.c.html#L1722">(orig_query_type && type && orig_query_type != type)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1841</td><td><a href="dns.c.html#L1841">(launch_one_resolve(resolve->address, DNS_PTR, &a) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1539</td><td><a href="dns.c.html#L1539">((r = evdns_base_resolv_conf_parse(the_evdns_base, flags, sandbox_intern_string(conf_fname))))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1017</td><td><a href="dns.c.html#L1017">(pend->next->conn == conn)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1210</td><td><a href="dns.c.html#L1210">(pendconn->base_.purpose == EXIT_PURPOSE_CONNECT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1224</td><td><a href="dns.c.html#L1224">(pendconn->base_.purpose == EXIT_PURPOSE_CONNECT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">895</td><td><a href="dns.c.html#L895">(ipv4_ok && ipv6_ok && is_resolve)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">326</td><td><a href="dns.c.html#L326">(dns_result == DNS_ERR_NONE && answer_hostname)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1647</td><td><a href="dns.c.html#L1647">(type == DNS_IPv4_A && count)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1670</td><td><a href="dns.c.html#L1670">(type == DNS_IPv6_AAAA && count)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1697</td><td><a href="dns.c.html#L1697">(type == DNS_PTR && count)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1959</td><td><a href="dns.c.html#L1959">(result == DNS_ERR_NONE && count)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1824</td><td><a href="dns.c.html#L1824">(launch_one_resolve(resolve->address, DNS_IPv4_A, NULL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1831</td><td><a href="dns.c.html#L1831">(launch_one_resolve(resolve->address, DNS_IPv6_AAAA, NULL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">289</td><td><a href="dns.c.html#L289">(r->res_status_hostname == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="dns.c.html#L323">(resolve->res_status_hostname != RES_STATUS_INFLIGHT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">335</td><td><a href="dns.c.html#L335">(resolve->res_status_ipv4 != RES_STATUS_INFLIGHT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">348</td><td><a href="dns.c.html#L348">(resolve->res_status_ipv6 != RES_STATUS_INFLIGHT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">428</td><td><a href="dns.c.html#L428">(resolve->expire > now)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">434</td><td><a href="dns.c.html#L434">(resolve->state == CACHE_STATE_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">439</td><td><a href="dns.c.html#L439">(resolve->state == CACHE_STATE_CACHED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">485</td><td><a href="dns.c.html#L485">(resolve->res_status_hostname == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="dns.c.html#L872">(resolve->res_status_hostname == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">932</td><td><a href="dns.c.html#L932">(resolve->res_status_ipv4 == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">941</td><td><a href="dns.c.html#L941">(resolve->res_status_ipv6 == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1007</td><td><a href="dns.c.html#L1007">(pend->conn == conn)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1053</td><td><a href="dns.c.html#L1053">(resolve->state != CACHE_STATE_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="dns.c.html#L1151">(resolve->state != CACHE_STATE_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1289</td><td><a href="dns.c.html#L1289">(resolve->res_status_hostname == RES_STATUS_DONE_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2182</td><td><a href="dns.c.html#L2182">(resolve->state != CACHE_STATE_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">461</td><td><a href="dns.c.html#L461">(!pendconn->base_.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1085</td><td><a href="dns.c.html#L1085">(!pendconn->base_.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="dns.c.html#L1091">(!pendconn->base_.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="dns.c.html#L743">(address_is_invalid_destination(exitconn->base_.address, 0))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1355</td><td><a href="dns.c.html#L1355">(evdns_base_get_nameserver_addr(the_evdns_base, (int)idx, (struct sockaddr *)&sa, sa_len) > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1359</td><td><a href="dns.c.html#L1359">(tor_addr_from_sockaddr(tor_addr, (const struct sockaddr *)&sa, NULL) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2122</td><td><a href="dns.c.html#L2122">(evtimer_add(launch_event, &timeout) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">906</td><td><a href="dns.c.html#L906">(ipv4_allowed && !ipv6_allowed)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">908</td><td><a href="dns.c.html#L908">(ipv6_allowed && !ipv4_allowed)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1195</td><td><a href="dns.c.html#L1195">(pendconn->base_.marked_for_close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1934</td><td><a href="dns.c.html#L1934">(n > n_test_addrs / 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1066</td><td><a href="dns.c.html#L1066">(!resolve->pending_connections)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">769</td><td><a href="dns.c.html#L769">(!is_reverse || !is_resolve)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">897</td><td><a href="dns.c.html#L897">(ipv4_ok && ipv6_ok)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="dns.c.html#L284">(r->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="dns.c.html#L450">(resolve->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">453</td><td><a href="dns.c.html#L453">(resolve->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="dns.c.html#L870">(exitconn->is_reverse_dns_lookup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1016</td><td><a href="dns.c.html#L1016">(pend->next)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="dns.c.html#L1057">(resolve->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="dns.c.html#L1079">(resolve->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1188</td><td><a href="dns.c.html#L1188">(resolve->pending_connections)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1243</td><td><a href="dns.c.html#L1243">(pendconn->is_reverse_dns_lookup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1529</td><td><a href="dns.c.html#L1529">(flags & DNS_OPTION_HOSTSFILE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2051</td><td><a href="dns.c.html#L2051">(options->ServerDNSTestAddresses)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2189</td><td><a href="dns.c.html#L2189">(resolve->is_reverse)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="dns.c.html#L263">(configure_nameservers(0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">765</td><td><a href="dns.c.html#L765">(tor_addr_is_internal(&addr, 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1440</td><td><a href="dns.c.html#L1440">(evdns_base_count_nameservers(the_evdns_base) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1548</td><td><a href="dns.c.html#L1548">(evdns_base_count_nameservers(the_evdns_base) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1577</td><td><a href="dns.c.html#L1577">(evdns_base_count_nameservers(the_evdns_base) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1680</td><td><a href="dns.c.html#L1680">(BUG(ip_str == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1766</td><td><a href="dns.c.html#L1766">(tor_addr_family(ptr_address) == AF_INET)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1771</td><td><a href="dns.c.html#L1771">(tor_addr_family(ptr_address) == AF_INET6)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1808</td><td><a href="dns.c.html#L1808">(configure_nameservers(1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2056</td><td><a href="dns.c.html#L2056">(launch_one_resolve(address, DNS_IPv4_A, NULL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2061</td><td><a href="dns.c.html#L2061">(launch_one_resolve(address, DNS_IPv6_AAAA, NULL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">322</td><td><a href="dns.c.html#L322">(query_type == DNS_PTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="dns.c.html#L334">(query_type == DNS_IPv4_A)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="dns.c.html#L347">(query_type == DNS_IPv6_AAAA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="dns.c.html#L402">(ptr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="dns.c.html#L473">(removed != resolve)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">535</td><td><a href="dns.c.html#L535">(cp != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="dns.c.html#L763">(r == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="dns.c.html#L1098">(tmp != resolve)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1207</td><td><a href="dns.c.html#L1207">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1272</td><td><a href="dns.c.html#L1272">(removed != resolve)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1544</td><td><a href="dns.c.html#L1544">(r != 6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1630</td><td><a href="dns.c.html#L1630">(type == DNS_IPv6_AAAA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="dns.c.html#L1631">(result == DNS_ERR_TIMEOUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1646</td><td><a href="dns.c.html#L1646">(result == DNS_ERR_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1726</td><td><a href="dns.c.html#L1726">(result != DNS_ERR_SHUTDOWN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="dns.c.html#L1817">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1836</td><td><a href="dns.c.html#L1836">(r == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1845</td><td><a href="dns.c.html#L1845">(r == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1849</td><td><a href="dns.c.html#L1849">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1962</td><td><a href="dns.c.html#L1962">(type == DNS_IPv4_A)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="dns.c.html#L1964">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1971</td><td><a href="dns.c.html#L1971">(ntoa_res > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1974</td><td><a href="dns.c.html#L1974">(type == DNS_IPv6_AAAA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1976</td><td><a href="dns.c.html#L1976">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2081</td><td><a href="dns.c.html#L2081">(ipv6 <= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2082</td><td><a href="dns.c.html#L2082">(i < N_WILDCARD_CHECKS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2255</td><td><a href="dns.c.html#L2255">(total_bytes_removed < min_remove_bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">174</td><td><a href="dns.c.html#L174">(!strcmpstart(msg, "Search: "))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">198</td><td><a href="dns.c.html#L198">(!strcmp(msg, "All nameservers have failed"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">201</td><td><a href="dns.c.html#L201">(!strcmpstart(msg, "Address mismatch on received DNS"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">248</td><td><a href="dns.c.html#L248">(!server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">581</td><td><a href="dns.c.html#L581">(BUG(!hostname))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1902</td><td><a href="dns.c.html#L1902">(!smartlist_contains_string(dns_wildcard_list, id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2241</td><td><a href="dns.c.html#L2241">(!dns_cache_entry_count())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">250</td><td><a href="dns.c.html#L250">(!the_evdns_base)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="dns.c.html#L282">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">380</td><td><a href="dns.c.html#L380">(!cached_resolve_pqueue)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">423</td><td><a href="dns.c.html#L423">(!cached_resolve_pqueue)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">770</td><td><a href="dns.c.html#L770">(!is_reverse)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">773</td><td><a href="dns.c.html#L773">(!is_resolve)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">966</td><td><a href="dns.c.html#L966">(!resolve)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">996</td><td><a href="dns.c.html#L996">(!resolve)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1050</td><td><a href="dns.c.html#L1050">(!resolve)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1142</td><td><a href="dns.c.html#L1142">(!resolve)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1144</td><td><a href="dns.c.html#L1144">(!is_test_addr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1155</td><td><a href="dns.c.html#L1155">(!is_test_addr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1427</td><td><a href="dns.c.html#L1427">(!the_evdns_base)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1492</td><td><a href="dns.c.html#L1492">(!conf_fname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1497</td><td><a href="dns.c.html#L1497">(!the_evdns_base)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1537</td><td><a href="dns.c.html#L1537">(!missing_resolv_conf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1606</td><td><a href="dns.c.html#L1606">(!nameserver_config_failed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1637</td><td><a href="dns.c.html#L1637">(!dns_is_broken_for_ipv6)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1805</td><td><a href="dns.c.html#L1805">(!nameservers_configured)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1890</td><td><a href="dns.c.html#L1890">(!dns_wildcard_response_count)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1894</td><td><a href="dns.c.html#L1894">(!ip)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1901</td><td><a href="dns.c.html#L1901">(!dns_wildcard_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1910</td><td><a href="dns.c.html#L1910">(!dns_wildcard_notice_given)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1922</td><td><a href="dns.c.html#L1922">(!dns_wildcarded_test_address_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1940</td><td><a href="dns.c.html#L1940">(!dns_is_completely_invalid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1944</td><td><a href="dns.c.html#L1944">(!dns_wildcarded_test_address_notice_given)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2027</td><td><a href="dns.c.html#L2027">(!req)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2117</td><td><a href="dns.c.html#L2117">(!launch_event)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2276</td><td><a href="dns.c.html#L2276">(!cached_resolve_pqueue)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">225</td><td><a href="dns.c.html#L225">(server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">235</td><td><a href="dns.c.html#L235">(server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">426</td><td><a href="dns.c.html#L426">(smartlist_len(cached_resolve_pqueue))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">740</td><td><a href="dns.c.html#L740">(router_my_exit_policy_is_reject_star())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1166</td><td><a href="dns.c.html#L1166">(cached_resolve_have_all_answers(resolve))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="dns.c.html#L1573">(evdns_base_config_windows_nameservers(the_evdns_base))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1656</td><td><a href="dns.c.html#L1656">(answer_is_wildcarded(answer_buf))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1683</td><td><a href="dns.c.html#L1683">(answer_is_wildcarded(answer_buf))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1715</td><td><a href="dns.c.html#L1715">(is_test_address(string_address))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1801</td><td><a href="dns.c.html#L1801">(net_is_disabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1925</td><td><a href="dns.c.html#L1925">(smartlist_contains_string_case(dns_wildcarded_test_address_list, address))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2043</td><td><a href="dns.c.html#L2043">(net_is_disabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">395</td><td><a href="dns.c.html#L395">(cached_resolve_pqueue)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">641</td><td><a href="dns.c.html#L641">(is_resolve)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">643</td><td><a href="dns.c.html#L643">(hostname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="dns.c.html#L666">(is_resolve)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">882</td><td><a href="dns.c.html#L882">(is_resolve)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">918</td><td><a href="dns.c.html#L918">(ipv4_ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">920</td><td><a href="dns.c.html#L920">(ipv6_ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">931</td><td><a href="dns.c.html#L931">(answer_with_ipv4)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1089</td><td><a href="dns.c.html#L1089">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1505</td><td><a href="dns.c.html#L1505">(conf_fname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1510</td><td><a href="dns.c.html#L1510">(stat_res)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1524</td><td><a href="dns.c.html#L1524">(nameservers_configured)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1564</td><td><a href="dns.c.html#L1564">(nameservers_configured)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1569</td><td><a href="dns.c.html#L1569">(nameservers_configured)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1582</td><td><a href="dns.c.html#L1582">(nameservers_configured)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1596</td><td><a href="dns.c.html#L1596">(nameserver_config_failed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1705</td><td><a href="dns.c.html#L1705">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1714</td><td><a href="dns.c.html#L1714">(was_wildcarded)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1784</td><td><a href="dns.c.html#L1784">(req)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1981</td><td><a href="dns.c.html#L1981">(ip_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2013</td><td><a href="dns.c.html#L2013">(is_ipv6)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2152</td><td><a href="dns.c.html#L2152">(dns_wildcard_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2156</td><td><a href="dns.c.html#L2156">(dns_wildcarded_test_address_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2267</td><td><a href="dns.c.html#L2267">(bad_rep)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

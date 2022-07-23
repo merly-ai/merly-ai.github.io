@@ -1,0 +1,85 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\arm_gicv3.c Ctrl Expressions (34) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\arm_gicv3.c Ctrl Expressions (34) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\arm_gicv3.c Ctrl Expressions (34)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">168</td><td><a href="arm_gicv3.c.html#L168">(<span style='background-color:#741da3;'>(cs->gicr_ctlr & GICR_CTLR_ENABLE_LPIS) && cs->gic->lpi_enable && (cs->gic->gicd_ctlr & GICD_CTLR_EN_GRP1NS) && (cs->hpplpi.prio != 0xff)</span>)</a></td><td class="num">1035.75</td></tr>
+      <tr><td class="num line">269</td><td><a href="arm_gicv3.c.html#L269">(<span style='background-color:#741da3;'>!cs->seenbetter && cs->hppi.prio != 0xff && cs->hppi.irq >= start && cs->hppi.irq < start + len</span>)</a></td><td class="num">1035.35</td></tr>
+      <tr><td class="num line">190</td><td><a href="arm_gicv3.c.html#L190">(!seenbetter && cs->hppi.prio != 0xff && (cs->hppi.irq < GIC_INTERNAL || cs->hppi.irq >= GICV3_LPI_INTID_START))</a></td><td class="num">42.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="arm_gicv3.c.html#L233">(!(pend & (1 << (i & 0x1f))))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">40</td><td><a href="arm_gicv3.c.html#L40">(prio == cs->hppi.prio && irq <= cs->hppi.irq)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">228</td><td><a href="arm_gicv3.c.html#L228">(i == start || (i & 0x1f) == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">171</td><td><a href="arm_gicv3.c.html#L171">(irqbetter(cs, cs->hpplpi.irq, cs->hpplpi.prio))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">111</td><td><a href="arm_gicv3.c.html#L111">(cs->gic->gicd_ctlr & GICD_CTLR_DS)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">118</td><td><a href="arm_gicv3.c.html#L118">(cs->gic->gicd_ctlr & GICD_CTLR_EN_GRP1NS)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="arm_gicv3.c.html#L121">(cs->gic->gicd_ctlr & GICD_CTLR_EN_GRP1S)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">124</td><td><a href="arm_gicv3.c.html#L124">(cs->gic->gicd_ctlr & GICD_CTLR_EN_GRP0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="arm_gicv3.c.html#L334">(irq < (s->num_irq - GIC_INTERNAL))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">152</td><td><a href="arm_gicv3.c.html#L152">(!(pend & (1 << i)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">33</td><td><a href="arm_gicv3.c.html#L33">(prio < cs->hppi.prio)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">73</td><td><a href="arm_gicv3.c.html#L73">(s->gicd_ctlr & GICD_CTLR_DS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">78</td><td><a href="arm_gicv3.c.html#L78">(s->gicd_ctlr & GICD_CTLR_EN_GRP1NS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">81</td><td><a href="arm_gicv3.c.html#L81">(s->gicd_ctlr & GICD_CTLR_EN_GRP1S)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">84</td><td><a href="arm_gicv3.c.html#L84">(s->gicd_ctlr & GICD_CTLR_EN_GRP0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">220</td><td><a href="arm_gicv3.c.html#L220">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">262</td><td><a href="arm_gicv3.c.html#L262">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">282</td><td><a href="arm_gicv3.c.html#L282">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="arm_gicv3.c.html#L294">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">305</td><td><a href="arm_gicv3.c.html#L305">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">318</td><td><a href="arm_gicv3.c.html#L318">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">359</td><td><a href="arm_gicv3.c.html#L359">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">225</td><td><a href="arm_gicv3.c.html#L225">(i < start + len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">265</td><td><a href="arm_gicv3.c.html#L265">(cs->seenbetter)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">151</td><td><a href="arm_gicv3.c.html#L151">(i < GIC_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">237</td><td><a href="arm_gicv3.c.html#L237">(!cs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">156</td><td><a href="arm_gicv3.c.html#L156">(irqbetter(cs, i, prio))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">244</td><td><a href="arm_gicv3.c.html#L244">(irqbetter(cs, i, prio))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">150</td><td><a href="arm_gicv3.c.html#L150">(pend)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">164</td><td><a href="arm_gicv3.c.html#L164">(seenbetter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">396</td><td><a href="arm_gicv3.c.html#L396">(local_err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

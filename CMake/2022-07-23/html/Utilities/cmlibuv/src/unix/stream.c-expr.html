@@ -1,0 +1,206 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <title>CMake Repo - Utilities\cmlibuv\src\unix\stream.c Ctrl Expressions (155) - MerlyMentor</title>
+</head>
+<body>
+  <h2>CMake Repo - Utilities\cmlibuv\src\unix\stream.c Ctrl Expressions (155) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Utilities\cmlibuv\src\unix\stream.c Ctrl Expressions (155)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1145</td><td><a href="stream.c.html#L1145">(<span style='background-color:#741da3;'>stream->read_cb && (stream->flags & UV_HANDLE_READING) && (count-- > 0)</span>)</a></td><td class="num">1021.50</td></tr>
+      <tr><td class="num line">303</td><td><a href="stream.c.html#L303">(ret == 0 || (events[0].flags & EV_ERROR) == 0 || events[0].data != EINVAL)</a></td><td class="num">51.25</td></tr>
+      <tr><td class="num line">1326</td><td><a href="stream.c.html#L1326">((events & POLLHUP) && (stream->flags & UV_HANDLE_READING) && (stream->flags & UV_HANDLE_READ_PARTIAL) && !(stream->flags & UV_HANDLE_READ_EOF))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">1272</td><td><a href="stream.c.html#L1272">(!(stream->flags & UV_HANDLE_WRITABLE) || stream->flags & UV_HANDLE_SHUT || stream->flags & UV_HANDLE_SHUTTING || uv__is_closing(stream))</a></td><td class="num">39.50</td></tr>
+      <tr><td class="num line">674</td><td><a href="stream.c.html#L674">((stream->flags & UV_HANDLE_SHUTTING) && !(stream->flags & UV_HANDLE_CLOSING) && !(stream->flags & UV_HANDLE_SHUT))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">397</td><td><a href="stream.c.html#L397">(!(stream->io_watcher.fd == -1 || stream->io_watcher.fd == fd))</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">1002</td><td><a href="stream.c.html#L1002">(type == SOCK_DGRAM && (ss.ss_family == AF_INET || ss.ss_family == AF_INET6))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">239</td><td><a href="stream.c.html#L239">((events & POLLIN) && uv__io_active(&stream->io_watcher, POLLIN))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">242</td><td><a href="stream.c.html#L242">((events & POLLOUT) && uv__io_active(&stream->io_watcher, POLLOUT))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1385</td><td><a href="stream.c.html#L1385">(error < 0 || QUEUE_EMPTY(&stream->write_queue))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="stream.c.html#L155">(uv_sem_trywait(&s->close_sem) == 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1094</td><td><a href="stream.c.html#L1094">(start + CMSG_LEN(count * sizeof(*pi)) < end)</a></td><td class="num">22.95</td></tr>
+      <tr><td class="num line">432</td><td><a href="stream.c.html#L432">(!QUEUE_EMPTY(&stream->write_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">564</td><td><a href="stream.c.html#L564">(stream->type == UV_TCP && (stream->flags & UV_HANDLE_TCP_SINGLE_ACCEPT))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">416</td><td><a href="stream.c.html#L416">(setsockopt(fd, SOL_SOCKET, SO_OOBINLINE, &enable, sizeof(enable)) && errno != ENOTSOCK && errno != EINVAL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1535</td><td><a href="stream.c.html#L1535">(stream->connect_req != NULL || stream->write_queue_size != 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="stream.c.html#L1418">(stream->type != UV_NAMED_PIPE || !((uv_pipe_t*)stream)->ipc)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1193</td><td><a href="stream.c.html#L1193">(errno == ECONNRESET && stream->type == UV_NAMED_PIPE)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">404</td><td><a href="stream.c.html#L404">((stream->flags & UV_HANDLE_TCP_NODELAY) && uv__tcp_nodelay(fd, 1))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">408</td><td><a href="stream.c.html#L408">((stream->flags & UV_HANDLE_TCP_KEEPALIVE) && uv__tcp_keepalive(fd, 1, 60))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">865</td><td><a href="stream.c.html#L865">(errno == EAGAIN || errno == EWOULDBLOCK || errno == ENOBUFS)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1152</td><td><a href="stream.c.html#L1152">(buf.base == NULL || buf.len == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1243</td><td><a href="stream.c.html#L1243">(nread == 0 && msg.msg_controllen > 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="stream.c.html#L624">(queued_fds->offset-- == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">761</td><td><a href="stream.c.html#L761">(req->bufs != req->bufsml)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">955</td><td><a href="stream.c.html#L955">(req->bufs != req->bufsml)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1036</td><td><a href="stream.c.html#L1036">(queued_fds->size == queued_fds->offset)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">125</td><td><a href="stream.c.html#L125">(r == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="stream.c.html#L296">(ret == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">855</td><td><a href="stream.c.html#L855">(n == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">859</td><td><a href="stream.c.html#L859">(n == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1165</td><td><a href="stream.c.html#L1165">(nread < 0 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1180</td><td><a href="stream.c.html#L1180">(nread < 0 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1225</td><td><a href="stream.c.html#L1225">(is_ipc && msg.msg_controllen > 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1414</td><td><a href="stream.c.html#L1414">(!(stream->flags & UV_HANDLE_WRITABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="stream.c.html#L1573">(!(stream->flags & UV_HANDLE_READING))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">538</td><td><a href="stream.c.html#L538">(err == UV_EAGAIN || err == UV__ERR(EWOULDBLOCK))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">546</td><td><a href="stream.c.html#L546">(err == UV_EAGAIN || err == UV__ERR(EWOULDBLOCK))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">183</td><td><a href="stream.c.html#L183">(FD_ISSET(s->int_fd, s->sread))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">193</td><td><a href="stream.c.html#L193">(errno == EAGAIN || errno == EWOULDBLOCK)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">497</td><td><a href="stream.c.html#L497">(err >= 0 || err == UV_EINTR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">544</td><td><a href="stream.c.html#L544">(err == UV_EMFILE || err == UV_ENFILE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1185</td><td><a href="stream.c.html#L1185">(errno == EAGAIN || errno == EWOULDBLOCK)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1644</td><td><a href="stream.c.html#L1644">(handle->io_watcher.fd != -1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1646</td><td><a href="stream.c.html#L1646">(handle->io_watcher.fd > STDERR_FILENO)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">245</td><td><a href="stream.c.html#L245">(stream->flags & UV_HANDLE_CLOSING)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">916</td><td><a href="stream.c.html#L916">(stream->flags & UV_HANDLE_BLOCKING_WRITES)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1187</td><td><a href="stream.c.html#L1187">(stream->flags & UV_HANDLE_READING)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1201</td><td><a href="stream.c.html#L1201">(stream->flags & UV_HANDLE_READING)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">162</td><td><a href="stream.c.html#L162">(uv__io_active(&stream->io_watcher, POLLIN))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">164</td><td><a href="stream.c.html#L164">(uv__io_active(&stream->io_watcher, POLLOUT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">893</td><td><a href="stream.c.html#L893">(QUEUE_EMPTY(&stream->write_queue))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">941</td><td><a href="stream.c.html#L941">(QUEUE_EMPTY(&stream->write_completed_queue))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1342</td><td><a href="stream.c.html#L1342">(QUEUE_EMPTY(&stream->write_queue))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1470</td><td><a href="stream.c.html#L1470">(nbufs > ARRAY_SIZE(req->bufsml))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">90</td><td><a href="stream.c.html#L90">(loop->emfile_fd == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">148</td><td><a href="stream.c.html#L148">(fd > s->int_fd)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">403</td><td><a href="stream.c.html#L403">(stream->type == UV_TCP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">487</td><td><a href="stream.c.html#L487">(loop->emfile_fd == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">532</td><td><a href="stream.c.html#L532">(w->rcount <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">558</td><td><a href="stream.c.html#L558">(stream->accepted_fd != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">582</td><td><a href="stream.c.html#L582">(server->accepted_fd == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">614</td><td><a href="stream.c.html#L614">(server->queued_fds != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">691</td><td><a href="stream.c.html#L691">(req->cb != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">760</td><td><a href="stream.c.html#L760">(req->error == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">953</td><td><a href="stream.c.html#L953">(req->bufs != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1080</td><td><a href="stream.c.html#L1080">(cmsg->cmsg_type != SCM_RIGHTS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1100</td><td><a href="stream.c.html#L1100">(stream->accepted_fd != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1473</td><td><a href="stream.c.html#L1473">(req->bufs == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1620</td><td><a href="stream.c.html#L1620">(handle->select != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1651</td><td><a href="stream.c.html#L1651">(handle->accepted_fd != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1657</td><td><a href="stream.c.html#L1657">(handle->queued_fds != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1659</td><td><a href="stream.c.html#L1659">(i < queued_fds->offset)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">976</td><td><a href="stream.c.html#L976">(getsockname(fd, (struct sockaddr*)&ss, &sslen))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">981</td><td><a href="stream.c.html#L981">(getsockopt(fd, SOL_SOCKET, SO_TYPE, &type, &len))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">316</td><td><a href="stream.c.html#L316">(fds[1] > max_fd)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">204</td><td><a href="stream.c.html#L204">(FD_ISSET(fd, s->sread))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">206</td><td><a href="stream.c.html#L206">(FD_ISSET(fd, s->swrite))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">448</td><td><a href="stream.c.html#L448">(stream->connect_req)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="stream.c.html#L457">(stream->shutdown_req)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="stream.c.html#L946">(!QUEUE_EMPTY(&pq))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">961</td><td><a href="stream.c.html#L961">(req->cb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="stream.c.html#L1306">(stream->connect_req)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="stream.c.html#L1314">(events & POLLIN | POLLERR | POLLHUP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1337</td><td><a href="stream.c.html#L1337">(events & POLLOUT | POLLERR | POLLHUP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1361</td><td><a href="stream.c.html#L1361">(stream->delayed_error)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1389</td><td><a href="stream.c.html#L1389">(req->cb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1488</td><td><a href="stream.c.html#L1488">(stream->connect_req)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">528</td><td><a href="stream.c.html#L528">(uv__stream_fd(stream) != -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1317</td><td><a href="stream.c.html#L1317">(uv__stream_fd(stream) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1334</td><td><a href="stream.c.html#L1334">(uv__stream_fd(stream) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1379</td><td><a href="stream.c.html#L1379">(error == UV__ERR(EINPROGRESS))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1392</td><td><a href="stream.c.html#L1392">(uv__stream_fd(stream) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1411</td><td><a href="stream.c.html#L1411">(uv__stream_fd(stream) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1427</td><td><a href="stream.c.html#L1427">(uv__handle_fd((uv_handle_t*)send_handle) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">92</td><td><a href="stream.c.html#L92">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">97</td><td><a href="stream.c.html#L97">(err >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">116</td><td><a href="stream.c.html#L116">(s == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="stream.c.html#L170">(r == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">171</td><td><a href="stream.c.html#L171">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">179</td><td><a href="stream.c.html#L179">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">187</td><td><a href="stream.c.html#L187">(r == sizeof(buf))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="stream.c.html#L190">(r != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">196</td><td><a href="stream.c.html#L196">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">210</td><td><a href="stream.c.html#L210">(events != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="stream.c.html#L283">(kq == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">300</td><td><a href="stream.c.html#L300">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="stream.c.html#L323">(s == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="stream.c.html#L343">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="stream.c.html#L347">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">359</td><td><a href="stream.c.html#L359">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">495</td><td><a href="stream.c.html#L495">(err >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="stream.c.html#L500">(emfile_fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="stream.c.html#L537">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="stream.c.html#L541">(err == UV_ECONNABORTED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="stream.c.html#L635">(err == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="stream.c.html#L658">(err == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">688</td><td><a href="stream.c.html#L688">(err == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="stream.c.html#L698">(n == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">740</td><td><a href="stream.c.html#L740">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="stream.c.html#L807">(iovcnt > iovmax)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">814</td><td><a href="stream.c.html#L814">(send_handle != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="stream.c.html#L862">(n >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">878</td><td><a href="stream.c.html#L878">(errno == EPROTOTYPE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">906</td><td><a href="stream.c.html#L906">(n >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">912</td><td><a href="stream.c.html#L912">(n != UV_EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">984</td><td><a href="stream.c.html#L984">(type == SOCK_STREAM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="stream.c.html#L990">(sslen == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="stream.c.html#L1025">(queued_fds == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1029</td><td><a href="stream.c.html#L1029">(queued_fds == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1046</td><td><a href="stream.c.html#L1046">(queued_fds == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="stream.c.html#L1071">(cmsg != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="stream.c.html#L1098">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="stream.c.html#L1102">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1104</td><td><a href="stream.c.html#L1104">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1183</td><td><a href="stream.c.html#L1183">(nread < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="stream.c.html#L1209">(nread == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1218</td><td><a href="stream.c.html#L1218">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1238</td><td><a href="stream.c.html#L1238">(err != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="stream.c.html#L1250">(nread < buflen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1395</td><td><a href="stream.c.html#L1395">(error < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="stream.c.html#L1417">(send_handle != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="stream.c.html#L1450">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="stream.c.html#L1539">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1606</td><td><a href="stream.c.html#L1606">(s != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="stream.c.html#L1161">(!is_ipc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">685</td><td><a href="stream.c.html#L685">(shutdown(uv__stream_fd(stream), SHUT_WR))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="stream.c.html#L312">(socketpair(AF_UNIX, SOCK_STREAM, 0, fds))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="stream.c.html#L823">(uv__is_closing(send_handle))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">908</td><td><a href="stream.c.html#L908">(uv__write_req_update(stream, req, n))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">336</td><td><a href="stream.c.html#L336">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">591</td><td><a href="stream.c.html#L591">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="stream.c.html#L600">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1216</td><td><a href="stream.c.html#L1216">(is_ipc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1491</td><td><a href="stream.c.html#L1491">(empty_queue)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

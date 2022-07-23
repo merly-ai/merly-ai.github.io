@@ -1,0 +1,460 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\libsystemd\sd-bus\bus-objects.c Ctrl Expressions (409) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\libsystemd\sd-bus\bus-objects.c Ctrl Expressions (409) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\libsystemd\sd-bus\bus-objects.c Ctrl Expressions (409)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1763</td><td><a href="bus-objects.c.html#L1763">(!member_name_is_valid(v->x.property.member) || !signature_is_single(v->x.property.signature, false) || !(v->x.property.get || bus_type_is_basic(v->x.property.signature[0]) || streq(v->x.property.signature, "as")) || (v->flags & SD_BUS_VTABLE_METHOD_NO_REPLY) || <span style='background-color:#9c4c02;'>(!!(v->flags & SD_BUS_VTABLE_PROPERTY_CONST) + !!(v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_CHANGE) + !!(v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION)) > 1</span> || ((v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_CHANGE) && (v->flags & SD_BUS_VTABLE_PROPERTY_EXPLICIT)) || (v->flags & SD_BUS_VTABLE_UNPRIVILEGED && v->type == _SD_BUS_VTABLE_PROPERTY))</a></td><td class="num">231.75</td></tr>
+      <tr><td class="num line">1716</td><td><a href="bus-objects.c.html#L1716">(<span style='background-color:#9c4c02;'>!member_name_is_valid(v->x.method.member) || !signature_is_valid(strempty(v->x.method.signature), false) || !signature_is_valid(strempty(v->x.method.result), false) || !(v->x.method.handler || (isempty(v->x.method.signature) && isempty(v->x.method.result))) || v->flags & SD_BUS_VTABLE_PROPERTY_CONST | SD_BUS_VTABLE_PROPERTY_EMITS_CHANGE | SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION</span>)</a></td><td class="num">129.25</td></tr>
+      <tr><td class="num line">1797</td><td><a href="bus-objects.c.html#L1797">(!member_name_is_valid(v->x.signal.member) || !signature_is_valid(strempty(v->x.signal.signature), false) || v->flags & SD_BUS_VTABLE_UNPRIVILEGED)</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">1748</td><td><a href="bus-objects.c.html#L1748">(!(v->x.property.set || bus_type_is_basic(v->x.property.signature[0])))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">657</td><td><a href="bus-objects.c.html#L657">(type != 'v' || !streq(strempty(signature), strempty(c->vtable->x.property.signature)))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">216</td><td><a href="bus-objects.c.html#L216">((flags & CHILDREN_RECURSIVE) && ((flags & CHILDREN_SUBHIERARCHIES) || !i->object_managers))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="bus-objects.c.html#L752">(c->vtable[0].flags & SD_BUS_VTABLE_HIDDEN)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">956</td><td><a href="bus-objects.c.html#L956">(c->vtable[0].flags & SD_BUS_VTABLE_HIDDEN)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">399</td><td><a href="bus-objects.c.html#L399">(!streq(strempty(c->vtable->x.method.signature), signature))</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">822</td><td><a href="bus-objects.c.html#L822">(iface && !streq(c->interface, iface))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1494</td><td><a href="bus-objects.c.html#L1494">(n->child || n->callbacks || n->vtables || n->enumerators || n->object_managers)</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">756</td><td><a href="bus-objects.c.html#L756">(v->type != _SD_BUS_VTABLE_PROPERTY && v->type != _SD_BUS_VTABLE_WRITABLE_PROPERTY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2003</td><td><a href="bus-objects.c.html#L2003">(v->type != _SD_BUS_VTABLE_PROPERTY && v->type != _SD_BUS_VTABLE_WRITABLE_PROPERTY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2074</td><td><a href="bus-objects.c.html#L2074">(v->type != _SD_BUS_VTABLE_PROPERTY && v->type != _SD_BUS_VTABLE_WRITABLE_PROPERTY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">875</td><td><a href="bus-objects.c.html#L875">(!require_fallback && (n->enumerators || n->object_managers))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1381</td><td><a href="bus-objects.c.html#L1381">(bus->bus_client && !m->destination)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1267</td><td><a href="bus-objects.c.html#L1267">(!m->interface || !m->member)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="bus-objects.c.html#L369">(require_fallback && !c->parent->is_fallback)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">593</td><td><a href="bus-objects.c.html#L593">(require_fallback && !c->parent->is_fallback)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2063</td><td><a href="bus-objects.c.html#L2063">(!(v->vtable->flags & SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">285</td><td><a href="bus-objects.c.html#L285">(c->last_iteration == bus->iteration_counter)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">386</td><td><a href="bus-objects.c.html#L386">(c->last_iteration == bus->iteration_counter)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">648</td><td><a href="bus-objects.c.html#L648">(c->last_iteration == bus->iteration_counter)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">327</td><td><a href="bus-objects.c.html#L327">(c->vtable->flags & SD_BUS_VTABLE_UNPRIVILEGED)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1982</td><td><a href="bus-objects.c.html#L1982">(v->vtable->flags & SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">213</td><td><a href="bus-objects.c.html#L213">(r < 0 && r != -EEXIST)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">280</td><td><a href="bus-objects.c.html#L280">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">809</td><td><a href="bus-objects.c.html#L809">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">879</td><td><a href="bus-objects.c.html#L879">(require_fallback && !k->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">888</td><td><a href="bus-objects.c.html#L888">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">939</td><td><a href="bus-objects.c.html#L939">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1039</td><td><a href="bus-objects.c.html#L1039">(require_fallback && !i->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1529</td><td><a href="bus-objects.c.html#L1529">(n && !n->object_managers)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1940</td><td><a href="bus-objects.c.html#L1940">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2041</td><td><a href="bus-objects.c.html#L2041">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2125</td><td><a href="bus-objects.c.html#L2125">(names && names[0] == NULL)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2202</td><td><a href="bus-objects.c.html#L2202">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2415</td><td><a href="bus-objects.c.html#L2415">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2584</td><td><a href="bus-objects.c.html#L2584">(require_fallback && !c->is_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">642</td><td><a href="bus-objects.c.html#L642">(c->vtable->type != _SD_BUS_VTABLE_WRITABLE_PROPERTY)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1374</td><td><a href="bus-objects.c.html#L1374">(m->header->type != SD_BUS_MESSAGE_METHOD_CALL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2014</td><td><a href="bus-objects.c.html#L2014">(!(v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_CHANGE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2080</td><td><a href="bus-objects.c.html#L2080">(!(v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">411</td><td><a href="bus-objects.c.html#L411">(c->vtable->x.method.handler)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">759</td><td><a href="bus-objects.c.html#L759">(v->flags & SD_BUS_VTABLE_HIDDEN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">762</td><td><a href="bus-objects.c.html#L762">(v->flags & SD_BUS_VTABLE_PROPERTY_EXPLICIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1371</td><td><a href="bus-objects.c.html#L1371">(bus->hello_flags & KDBUS_HELLO_MONITOR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1753</td><td><a href="bus-objects.c.html#L1753">(v->flags & SD_BUS_VTABLE_PROPERTY_CONST)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2006</td><td><a href="bus-objects.c.html#L2006">(v->flags & SD_BUS_VTABLE_HIDDEN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2009</td><td><a href="bus-objects.c.html#L2009">(v->flags & SD_BUS_VTABLE_PROPERTY_EMITS_INVALIDATION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2077</td><td><a href="bus-objects.c.html#L2077">(v->flags & SD_BUS_VTABLE_HIDDEN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1203</td><td><a href="bus-objects.c.html#L1203">(require_fallback || !n->object_managers)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1290</td><td><a href="bus-objects.c.html#L1290">(get || streq(m->member, "Set"))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">755</td><td><a href="bus-objects.c.html#L755">(v->type != _SD_BUS_VTABLE_END)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1677</td><td><a href="bus-objects.c.html#L1677">(i->is_fallback != fallback)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1684</td><td><a href="bus-objects.c.html#L1684">(i->vtable == vtable)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1709</td><td><a href="bus-objects.c.html#L1709">(v->type != _SD_BUS_VTABLE_END)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1974</td><td><a href="bus-objects.c.html#L1974">(c != v->parent)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2002</td><td><a href="bus-objects.c.html#L2002">(v->type != _SD_BUS_VTABLE_END)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2073</td><td><a href="bus-objects.c.html#L2073">(v->type != _SD_BUS_VTABLE_END)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1704</td><td><a href="bus-objects.c.html#L1704">(!s->node_vtable.interface)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2028</td><td><a href="bus-objects.c.html#L2028">(!has_invalidating && !has_changing)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">474</td><td><a href="bus-objects.c.html#L474">(streq(v->x.property.signature, "as"))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">457</td><td><a href="bus-objects.c.html#L457">(v->x.property.get)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">521</td><td><a href="bus-objects.c.html#L521">(v->x.property.set)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">205</td><td><a href="bus-objects.c.html#L205">(!object_path_startswith(i->path, prefix))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="bus-objects.c.html#L959">(!streq_ptr(previous_interface, c->interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1085</td><td><a href="bus-objects.c.html#L1085">(!streq_ptr(previous_interface, i->interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1943</td><td><a href="bus-objects.c.html#L1943">(!streq(c->interface, interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2044</td><td><a href="bus-objects.c.html#L2044">(!streq(c->interface, interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2118</td><td><a href="bus-objects.c.html#L2118">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2164</td><td><a href="bus-objects.c.html#L2164">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2213</td><td><a href="bus-objects.c.html#L2213">(!streq_ptr(c->interface, previous_interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2347</td><td><a href="bus-objects.c.html#L2347">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2517</td><td><a href="bus-objects.c.html#L2517">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2587</td><td><a href="bus-objects.c.html#L2587">(!streq(c->interface, interface))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2670</td><td><a href="bus-objects.c.html#L2670">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2736</td><td><a href="bus-objects.c.html#L2736">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2753</td><td><a href="bus-objects.c.html#L2753">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2787</td><td><a href="bus-objects.c.html#L2787">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1320</td><td><a href="bus-objects.c.html#L1320">(iface[0] == 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1285</td><td><a href="bus-objects.c.html#L1285">(streq(m->interface, "org.freedesktop.DBus.Properties"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1309</td><td><a href="bus-objects.c.html#L1309">(streq(m->member, "GetAll"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1377</td><td><a href="bus-objects.c.html#L1377">(hashmap_isempty(bus->nodes))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1682</td><td><a href="bus-objects.c.html#L1682">(streq(i->interface, interface))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2218</td><td><a href="bus-objects.c.html#L2218">(set_get(s, c->interface))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2417</td><td><a href="bus-objects.c.html#L2417">(streq_ptr(c->interface, previous_interface))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2424</td><td><a href="bus-objects.c.html#L2424">(set_get(s, c->interface))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">50</td><td><a href="bus-objects.c.html#L50">(c->find)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">102</td><td><a href="bus-objects.c.html#L102">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="bus-objects.c.html#L127">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="bus-objects.c.html#L149">(!object_path_is_valid(*k))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">155</td><td><a href="bus-objects.c.html#L155">(!object_path_startswith(*k, prefix))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="bus-objects.c.html#L199">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="bus-objects.c.html#L221">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">277</td><td><a href="bus-objects.c.html#L277">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="bus-objects.c.html#L323">(bus->trusted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">379</td><td><a href="bus-objects.c.html#L379">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="bus-objects.c.html#L599">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="bus-objects.c.html#L631">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="bus-objects.c.html#L672">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="bus-objects.c.html#L722">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="bus-objects.c.html#L768">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">815</td><td><a href="bus-objects.c.html#L815">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">829</td><td><a href="bus-objects.c.html#L829">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">894</td><td><a href="bus-objects.c.html#L894">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="bus-objects.c.html#L925">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">947</td><td><a href="bus-objects.c.html#L947">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="bus-objects.c.html#L985">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1045</td><td><a href="bus-objects.c.html#L1045">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1117</td><td><a href="bus-objects.c.html#L1117">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1164</td><td><a href="bus-objects.c.html#L1164">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1173</td><td><a href="bus-objects.c.html#L1173">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="bus-objects.c.html#L1209">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1225</td><td><a href="bus-objects.c.html#L1225">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1264</td><td><a href="bus-objects.c.html#L1264">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1280</td><td><a href="bus-objects.c.html#L1280">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="bus-objects.c.html#L1347">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="bus-objects.c.html#L1354">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1400</td><td><a href="bus-objects.c.html#L1400">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="bus-objects.c.html#L1408">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1503</td><td><a href="bus-objects.c.html#L1503">(n->parent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1949</td><td><a href="bus-objects.c.html#L1949">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1992</td><td><a href="bus-objects.c.html#L1992">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2022</td><td><a href="bus-objects.c.html#L2022">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2050</td><td><a href="bus-objects.c.html#L2050">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2134</td><td><a href="bus-objects.c.html#L2134">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2142</td><td><a href="bus-objects.c.html#L2142">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2146</td><td><a href="bus-objects.c.html#L2146">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2208</td><td><a href="bus-objects.c.html#L2208">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2250</td><td><a href="bus-objects.c.html#L2250">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2310</td><td><a href="bus-objects.c.html#L2310">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2318</td><td><a href="bus-objects.c.html#L2318">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="bus-objects.c.html#L2376">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2383</td><td><a href="bus-objects.c.html#L2383">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2430</td><td><a href="bus-objects.c.html#L2430">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2480</td><td><a href="bus-objects.c.html#L2480">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2488</td><td><a href="bus-objects.c.html#L2488">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="bus-objects.c.html#L2546">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2553</td><td><a href="bus-objects.c.html#L2553">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2593</td><td><a href="bus-objects.c.html#L2593">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2613</td><td><a href="bus-objects.c.html#L2613">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2643</td><td><a href="bus-objects.c.html#L2643">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2651</td><td><a href="bus-objects.c.html#L2651">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2709</td><td><a href="bus-objects.c.html#L2709">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2717</td><td><a href="bus-objects.c.html#L2717">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2724</td><td><a href="bus-objects.c.html#L2724">(bus->nodes_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">833</td><td><a href="bus-objects.c.html#L833">(!*found_object)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1350</td><td><a href="bus-objects.c.html#L1350">(!*found_object)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1413</td><td><a href="bus-objects.c.html#L1413">(sd_bus_message_is_method_call(m, "org.freedesktop.DBus.Properties", "Get") || sd_bus_message_is_method_call(m, "org.freedesktop.DBus.Properties", "Set"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">57</td><td><a href="bus-objects.c.html#L57">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">61</td><td><a href="bus-objects.c.html#L61">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">100</td><td><a href="bus-objects.c.html#L100">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">138</td><td><a href="bus-objects.c.html#L138">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">144</td><td><a href="bus-objects.c.html#L144">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">161</td><td><a href="bus-objects.c.html#L161">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">166</td><td><a href="bus-objects.c.html#L166">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">197</td><td><a href="bus-objects.c.html#L197">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">219</td><td><a href="bus-objects.c.html#L219">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">250</td><td><a href="bus-objects.c.html#L250">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">291</td><td><a href="bus-objects.c.html#L291">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">305</td><td><a href="bus-objects.c.html#L305">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">336</td><td><a href="bus-objects.c.html#L336">(cap == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="bus-objects.c.html#L338">(cap == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="bus-objects.c.html#L344">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">346</td><td><a href="bus-objects.c.html#L346">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="bus-objects.c.html#L373">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="bus-objects.c.html#L377">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="bus-objects.c.html#L392">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="bus-objects.c.html#L429">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="bus-objects.c.html#L465">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">529</td><td><a href="bus-objects.c.html#L529">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="bus-objects.c.html#L550">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="bus-objects.c.html#L565">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">597</td><td><a href="bus-objects.c.html#L597">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">607</td><td><a href="bus-objects.c.html#L607">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">619</td><td><a href="bus-objects.c.html#L619">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">628</td><td><a href="bus-objects.c.html#L628">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="bus-objects.c.html#L635">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">654</td><td><a href="bus-objects.c.html#L654">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="bus-objects.c.html#L661">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">665</td><td><a href="bus-objects.c.html#L665">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">669</td><td><a href="bus-objects.c.html#L669">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="bus-objects.c.html#L676">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">681</td><td><a href="bus-objects.c.html#L681">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">706</td><td><a href="bus-objects.c.html#L706">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="bus-objects.c.html#L710">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">714</td><td><a href="bus-objects.c.html#L714">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="bus-objects.c.html#L720">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">726</td><td><a href="bus-objects.c.html#L726">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="bus-objects.c.html#L730">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="bus-objects.c.html#L766">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">793</td><td><a href="bus-objects.c.html#L793">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">797</td><td><a href="bus-objects.c.html#L797">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="bus-objects.c.html#L813">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">817</td><td><a href="bus-objects.c.html#L817">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">827</td><td><a href="bus-objects.c.html#L827">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">841</td><td><a href="bus-objects.c.html#L841">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="bus-objects.c.html#L848">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="bus-objects.c.html#L852">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">892</td><td><a href="bus-objects.c.html#L892">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="bus-objects.c.html#L923">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="bus-objects.c.html#L929">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="bus-objects.c.html#L933">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">943</td><td><a href="bus-objects.c.html#L943">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">951</td><td><a href="bus-objects.c.html#L951">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">968</td><td><a href="bus-objects.c.html#L968">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">981</td><td><a href="bus-objects.c.html#L981">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="bus-objects.c.html#L994">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">998</td><td><a href="bus-objects.c.html#L998">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1002</td><td><a href="bus-objects.c.html#L1002">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1043</td><td><a href="bus-objects.c.html#L1043">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="bus-objects.c.html#L1047">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="bus-objects.c.html#L1055">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1059</td><td><a href="bus-objects.c.html#L1059">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="bus-objects.c.html#L1063">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1067</td><td><a href="bus-objects.c.html#L1067">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="bus-objects.c.html#L1071">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1075</td><td><a href="bus-objects.c.html#L1075">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="bus-objects.c.html#L1079">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="bus-objects.c.html#L1091">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1095</td><td><a href="bus-objects.c.html#L1095">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="bus-objects.c.html#L1102">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1106</td><td><a href="bus-objects.c.html#L1106">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1110</td><td><a href="bus-objects.c.html#L1110">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1115</td><td><a href="bus-objects.c.html#L1115">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="bus-objects.c.html#L1125">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1129</td><td><a href="bus-objects.c.html#L1129">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="bus-objects.c.html#L1135">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1139</td><td><a href="bus-objects.c.html#L1139">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="bus-objects.c.html#L1162">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1171</td><td><a href="bus-objects.c.html#L1171">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1207</td><td><a href="bus-objects.c.html#L1207">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1213</td><td><a href="bus-objects.c.html#L1213">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1217</td><td><a href="bus-objects.c.html#L1217">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="bus-objects.c.html#L1222">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="bus-objects.c.html#L1230">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1234</td><td><a href="bus-objects.c.html#L1234">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1262</td><td><a href="bus-objects.c.html#L1262">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="bus-objects.c.html#L1278">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1293</td><td><a href="bus-objects.c.html#L1293">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1299</td><td><a href="bus-objects.c.html#L1299">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1305</td><td><a href="bus-objects.c.html#L1305">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="bus-objects.c.html#L1313">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1317</td><td><a href="bus-objects.c.html#L1317">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1324</td><td><a href="bus-objects.c.html#L1324">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="bus-objects.c.html#L1334">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1343</td><td><a href="bus-objects.c.html#L1343">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1352</td><td><a href="bus-objects.c.html#L1352">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1356</td><td><a href="bus-objects.c.html#L1356">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1394</td><td><a href="bus-objects.c.html#L1394">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1404</td><td><a href="bus-objects.c.html#L1404">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1425</td><td><a href="bus-objects.c.html#L1425">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="bus-objects.c.html#L1447">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1476</td><td><a href="bus-objects.c.html#L1476">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1621</td><td><a href="bus-objects.c.html#L1621">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1625</td><td><a href="bus-objects.c.html#L1625">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1665</td><td><a href="bus-objects.c.html#L1665">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1669</td><td><a href="bus-objects.c.html#L1669">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1738</td><td><a href="bus-objects.c.html#L1738">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1787</td><td><a href="bus-objects.c.html#L1787">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1925</td><td><a href="bus-objects.c.html#L1925">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1929</td><td><a href="bus-objects.c.html#L1929">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1933</td><td><a href="bus-objects.c.html#L1933">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1947</td><td><a href="bus-objects.c.html#L1947">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1951</td><td><a href="bus-objects.c.html#L1951">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="bus-objects.c.html#L1990">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2020</td><td><a href="bus-objects.c.html#L2020">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2032</td><td><a href="bus-objects.c.html#L2032">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2036</td><td><a href="bus-objects.c.html#L2036">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2048</td><td><a href="bus-objects.c.html#L2048">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2052</td><td><a href="bus-objects.c.html#L2052">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2067</td><td><a href="bus-objects.c.html#L2067">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2084</td><td><a href="bus-objects.c.html#L2084">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2092</td><td><a href="bus-objects.c.html#L2092">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2096</td><td><a href="bus-objects.c.html#L2096">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2132</td><td><a href="bus-objects.c.html#L2132">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2140</td><td><a href="bus-objects.c.html#L2140">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2206</td><td><a href="bus-objects.c.html#L2206">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2210</td><td><a href="bus-objects.c.html#L2210">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2222</td><td><a href="bus-objects.c.html#L2222">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2227</td><td><a href="bus-objects.c.html#L2227">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2230</td><td><a href="bus-objects.c.html#L2230">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2235</td><td><a href="bus-objects.c.html#L2235">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2238</td><td><a href="bus-objects.c.html#L2238">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2241</td><td><a href="bus-objects.c.html#L2241">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2248</td><td><a href="bus-objects.c.html#L2248">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2256</td><td><a href="bus-objects.c.html#L2256">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2259</td><td><a href="bus-objects.c.html#L2259">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2295</td><td><a href="bus-objects.c.html#L2295">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2298</td><td><a href="bus-objects.c.html#L2298">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="bus-objects.c.html#L2301">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2304</td><td><a href="bus-objects.c.html#L2304">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2308</td><td><a href="bus-objects.c.html#L2308">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2316</td><td><a href="bus-objects.c.html#L2316">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2351</td><td><a href="bus-objects.c.html#L2351">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2353</td><td><a href="bus-objects.c.html#L2353">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2361</td><td><a href="bus-objects.c.html#L2361">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2365</td><td><a href="bus-objects.c.html#L2365">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2369</td><td><a href="bus-objects.c.html#L2369">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2373</td><td><a href="bus-objects.c.html#L2373">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2380</td><td><a href="bus-objects.c.html#L2380">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2428</td><td><a href="bus-objects.c.html#L2428">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2432</td><td><a href="bus-objects.c.html#L2432">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2436</td><td><a href="bus-objects.c.html#L2436">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2440</td><td><a href="bus-objects.c.html#L2440">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2465</td><td><a href="bus-objects.c.html#L2465">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2468</td><td><a href="bus-objects.c.html#L2468">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2471</td><td><a href="bus-objects.c.html#L2471">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2474</td><td><a href="bus-objects.c.html#L2474">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2478</td><td><a href="bus-objects.c.html#L2478">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2486</td><td><a href="bus-objects.c.html#L2486">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2521</td><td><a href="bus-objects.c.html#L2521">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2523</td><td><a href="bus-objects.c.html#L2523">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2531</td><td><a href="bus-objects.c.html#L2531">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="bus-objects.c.html#L2535">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2539</td><td><a href="bus-objects.c.html#L2539">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2543</td><td><a href="bus-objects.c.html#L2543">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2550</td><td><a href="bus-objects.c.html#L2550">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2591</td><td><a href="bus-objects.c.html#L2591">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2595</td><td><a href="bus-objects.c.html#L2595">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2600</td><td><a href="bus-objects.c.html#L2600">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2604</td><td><a href="bus-objects.c.html#L2604">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2611</td><td><a href="bus-objects.c.html#L2611">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2619</td><td><a href="bus-objects.c.html#L2619">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2641</td><td><a href="bus-objects.c.html#L2641">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="bus-objects.c.html#L2649">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2677</td><td><a href="bus-objects.c.html#L2677">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2679</td><td><a href="bus-objects.c.html#L2679">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2687</td><td><a href="bus-objects.c.html#L2687">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2691</td><td><a href="bus-objects.c.html#L2691">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2695</td><td><a href="bus-objects.c.html#L2695">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2702</td><td><a href="bus-objects.c.html#L2702">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2706</td><td><a href="bus-objects.c.html#L2706">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2713</td><td><a href="bus-objects.c.html#L2713">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2721</td><td><a href="bus-objects.c.html#L2721">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2760</td><td><a href="bus-objects.c.html#L2760">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2762</td><td><a href="bus-objects.c.html#L2762">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2766</td><td><a href="bus-objects.c.html#L2766">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2770</td><td><a href="bus-objects.c.html#L2770">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2774</td><td><a href="bus-objects.c.html#L2774">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="bus-objects.c.html#L1330">(!isempty(sd_bus_message_get_signature(m, true)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="bus-objects.c.html#L1339">(!isempty(sd_bus_message_get_signature(m, true)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">209</td><td><a href="bus-objects.c.html#L209">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">246</td><td><a href="bus-objects.c.html#L246">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">396</td><td><a href="bus-objects.c.html#L396">(!signature)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">554</td><td><a href="bus-objects.c.html#L554">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">836</td><td><a href="bus-objects.c.html#L836">(!found_interface)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1033</td><td><a href="bus-objects.c.html#L1033">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1050</td><td><a href="bus-objects.c.html#L1050">(!found_something)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1257</td><td><a href="bus-objects.c.html#L1257">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1410</td><td><a href="bus-objects.c.html#L1410">(!found_object)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1451</td><td><a href="bus-objects.c.html#L1451">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1463</td><td><a href="bus-objects.c.html#L1463">(!parent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1468</td><td><a href="bus-objects.c.html#L1468">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1491</td><td><a href="bus-objects.c.html#L1491">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1518</td><td><a href="bus-objects.c.html#L1518">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1555</td><td><a href="bus-objects.c.html#L1555">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1559</td><td><a href="bus-objects.c.html#L1559">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1673</td><td><a href="bus-objects.c.html#L1673">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1694</td><td><a href="bus-objects.c.html#L1694">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1726</td><td><a href="bus-objects.c.html#L1726">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1775</td><td><a href="bus-objects.c.html#L1775">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1868</td><td><a href="bus-objects.c.html#L1868">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1872</td><td><a href="bus-objects.c.html#L1872">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1921</td><td><a href="bus-objects.c.html#L1921">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1968</td><td><a href="bus-objects.c.html#L1968">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2167</td><td><a href="bus-objects.c.html#L2167">(!name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2195</td><td><a href="bus-objects.c.html#L2195">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2291</td><td><a href="bus-objects.c.html#L2291">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2408</td><td><a href="bus-objects.c.html#L2408">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2461</td><td><a href="bus-objects.c.html#L2461">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2580</td><td><a href="bus-objects.c.html#L2580">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2598</td><td><a href="bus-objects.c.html#L2598">(!found_interface)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2805</td><td><a href="bus-objects.c.html#L2805">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2809</td><td><a href="bus-objects.c.html#L2809">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">59</td><td><a href="bus-objects.c.html#L59">(sd_bus_error_is_set(error))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="bus-objects.c.html#L140">(sd_bus_error_is_set(error))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="bus-objects.c.html#L467">(sd_bus_error_is_set(error))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="bus-objects.c.html#L531">(sd_bus_error_is_set(error))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1328</td><td><a href="bus-objects.c.html#L1328">(sd_bus_message_is_method_call(m, "org.freedesktop.DBus.Introspectable", "Introspect"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1337</td><td><a href="bus-objects.c.html#L1337">(sd_bus_message_is_method_call(m, "org.freedesktop.DBus.ObjectManager", "GetManagedObjects"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1454</td><td><a href="bus-objects.c.html#L1454">(streq(path, "/"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2673</td><td><a href="bus-objects.c.html#L2673">(strv_isempty(interfaces))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2756</td><td><a href="bus-objects.c.html#L2756">(strv_isempty(interfaces))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">66</td><td><a href="bus-objects.c.html#L66">(userdata)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">610</td><td><a href="bus-objects.c.html#L610">(is_get)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">961</td><td><a href="bus-objects.c.html#L961">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="bus-objects.c.html#L974">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">977</td><td><a href="bus-objects.c.html#L977">(empty)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1089</td><td><a href="bus-objects.c.html#L1089">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1123</td><td><a href="bus-objects.c.html#L1123">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1133</td><td><a href="bus-objects.c.html#L1133">(found_something)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1276</td><td><a href="bus-objects.c.html#L1276">(v)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1303</td><td><a href="bus-objects.c.html#L1303">(v)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1443</td><td><a href="bus-objects.c.html#L1443">(n)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1482</td><td><a href="bus-objects.c.html#L1482">(parent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1524</td><td><a href="bus-objects.c.html#L1524">(n)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1532</td><td><a href="bus-objects.c.html#L1532">(out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1571</td><td><a href="bus-objects.c.html#L1571">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1816</td><td><a href="bus-objects.c.html#L1816">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1883</td><td><a href="bus-objects.c.html#L1883">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1956</td><td><a href="bus-objects.c.html#L1956">(names)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2039</td><td><a href="bus-objects.c.html#L2039">(has_invalidating)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2055</td><td><a href="bus-objects.c.html#L2055">(names)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2225</td><td><a href="bus-objects.c.html#L2225">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2254</td><td><a href="bus-objects.c.html#L2254">(previous_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2617</td><td><a href="bus-objects.c.html#L2617">(found_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2818</td><td><a href="bus-objects.c.html#L2818">(slot)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\libsystemd\sd-journal\sd-journal.c Ctrl Expressions (434) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\libsystemd\sd-journal\sd-journal.c Ctrl Expressions (434) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\libsystemd\sd-journal\sd-journal.c Ctrl Expressions (434)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">437</td><td><a href="sd-journal.c.html#L437">(<span style='background-color:#741da3;'>l->monotonic_set && sd_id128_equal(f->current_boot_id, l->boot_id) && l->realtime_set && f->current_realtime == l->realtime && l->xor_hash_set && f->current_xor_hash == l->xor_hash && l->seqnum_set && sd_id128_equal(f->header->seqnum_id, l->seqnum_id) && f->current_seqnum == l->seqnum && f != current_file</span>)</a></td><td class="num">1080.75</td></tr>
+      <tr><td class="num line">2632</td><td><a href="sd-journal.c.html#L2632">(<span style='background-color:#741da3;'>d->is_root && (e->mask & IN_ISDIR) && e->len > 0 && id128_is_valid(e->name)</span>)</a></td><td class="num">1027.50</td></tr>
+      <tr><td class="num line">760</td><td><a href="sd-journal.c.html#L760">(<span style='background-color:#741da3;'>f->last_direction == direction && f->location_type == LOCATION_TAIL && n_entries == f->last_n_entries</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">1014</td><td><a href="sd-journal.c.html#L1014">(<span style='background-color:#741da3;'>(!seqnum_set || !seqnum_id_set) && (!monotonic_set || !boot_id_set) && !realtime_set</span>)</a></td><td class="num">1014.50</td></tr>
+      <tr><td class="num line">526</td><td><a href="sd-journal.c.html#L526">(<span style='background-color:#741da3;'>np == 0 || (direction == DIRECTION_DOWN ? cp < np : cp > np)</span>)</a></td><td class="num">1013.50</td></tr>
+      <tr><td class="num line">642</td><td><a href="sd-journal.c.html#L642">(<span style='background-color:#741da3;'>np == 0 || (direction == DIRECTION_DOWN ? np > cp : np < cp)</span>)</a></td><td class="num">1013.50</td></tr>
+      <tr><td class="num line">679</td><td><a href="sd-journal.c.html#L679">(<span style='background-color:#741da3;'>np == 0 || (direction == DIRECTION_DOWN ? cp > np : cp < np)</span>)</a></td><td class="num">1013.50</td></tr>
+      <tr><td class="num line">1634</td><td><a href="sd-journal.c.html#L1634">(dirname && (!(FLAGS_SET(j->flags, SD_JOURNAL_ALL_NAMESPACES) || dirname_has_namespace(dirname, j->namespace) > 0 || (FLAGS_SET(j->flags, SD_JOURNAL_INCLUDE_DEFAULT_NAMESPACE) && dirname_has_namespace(dirname, NULL) > 0))))</a></td><td class="num">73.00</td></tr>
+      <tr><td class="num line">1630</td><td><a href="sd-journal.c.html#L1630">((j->flags & SD_JOURNAL_LOCAL_ONLY) && !((dirname && dirname_is_machine_id(dirname) > 0) || path_has_prefix(j, path, "/run")))</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">935</td><td><a href="sd-journal.c.html#L935">(asprintf(cursor, "s=%s;i=%\"PRIx64\";b=%s;m=%\"PRIx64\";t=%\"PRIx64\";x=%", SD_ID128_TO_STRING(j->current_file->header->seqnum_id), le64toh(o->entry.seqnum), SD_ID128_TO_STRING(o->entry.boot_id), le64toh(o->entry.monotonic), le64toh(o->entry.realtime), le64toh(o->entry.xor_hash)) < 0)</a></td><td class="num">49.50</td></tr>
+      <tr><td class="num line">2614</td><td><a href="sd-journal.c.html#L2614">(!(e->mask & IN_ISDIR) && e->len > 0 && (endswith(e->name, ".journal") || endswith(e->name, ".journal~")))</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">2335</td><td><a href="sd-journal.c.html#L2335">(l >= field_length + 1 && memcmp(d->data.payload, field, field_length) == 0 && d->data.payload[field_length] == '=')</a></td><td class="num">39.10</td></tr>
+      <tr><td class="num line">285</td><td><a href="sd-journal.c.html#L285">(l4->hash == hash && l4->size == size && memcmp(l4->data, data, size) == 0)</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">2992</td><td><a href="sd-journal.c.html#L2992">(JOURNAL_HEADER_CONTAINS(of->header, n_fields) && le64toh(of->header->n_fields) <= 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">3146</td><td><a href="sd-journal.c.html#L3146">(JOURNAL_HEADER_CONTAINS(of->header, n_fields) && le64toh(of->header->n_fields) <= 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2977</td><td><a href="sd-journal.c.html#L2977">(memcmp(odata, j->unique_field, k) != 0 || ((const char*)odata)[k] != '=')</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2998</td><td><a href="sd-journal.c.html#L2998">(!JOURNAL_HEADER_KEYED_HASH(j->unique_file->header) && !JOURNAL_HEADER_KEYED_HASH(of->header))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3149</td><td><a href="sd-journal.c.html#L3149">(!JOURNAL_HEADER_KEYED_HASH(f->header) && !JOURNAL_HEADER_KEYED_HASH(of->header))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="sd-journal.c.html#L613">(j->current_location.seqnum_set && sd_id128_equal(j->current_location.seqnum_id, f->header->seqnum_id))</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="sd-journal.c.html#L708">(j->current_location.seqnum_set && sd_id128_equal(j->current_location.seqnum_id, f->header->seqnum_id))</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="sd-journal.c.html#L449">(l->seqnum_set && sd_id128_equal(f->header->seqnum_id, l->seqnum_id))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1917</td><td><a href="sd-journal.c.html#L1917">(!j->files_cache || !j->directories_by_path || !j->mmap)</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="sd-journal.c.html#L766">(f->last_direction == direction && f->current_offset > 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3169</td><td><a href="sd-journal.c.html#L3169">(j->data_threshold > 0 && sz > j->data_threshold)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">457</td><td><a href="sd-journal.c.html#L457">(l->monotonic_set && sd_id128_equal(f->current_boot_id, l->boot_id))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">928</td><td><a href="sd-journal.c.html#L928">(!j->current_file || j->current_file->current_offset <= 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">1057</td><td><a href="sd-journal.c.html#L1057">(!j->current_file || j->current_file->current_offset <= 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2625</td><td><a href="sd-journal.c.html#L2625">(!d->is_root && e->len == 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">167</td><td><a href="sd-journal.c.html#L167">(*p >= 'A' && *p <= 'Z')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2246</td><td><a href="sd-journal.c.html#L2246">(*p >= 'A' && *p <= 'Z')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">155</td><td><a href="sd-journal.c.html#L155">(((char*)data)[0] == '_' && ((char*)data)[1] == '_')</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1248</td><td><a href="sd-journal.c.html#L1248">(!j->has_runtime_files && path_has_prefix(j, f->path, "/run"))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="sd-journal.c.html#L1250">(!j->has_persistent_files && path_has_prefix(j, f->path, "/var"))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1712</td><td><a href="sd-journal.c.html#L1712">((j->flags & SD_JOURNAL_RUNTIME_ONLY) && !path_has_prefix(j, p, "/run"))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2144</td><td><a href="sd-journal.c.html#L2144">((d = hashmap_first(j->directories_by_path)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2147</td><td><a href="sd-journal.c.html#L2147">((d = hashmap_first(j->directories_by_wd)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="sd-journal.c.html#L970">(word[0] == '\0' || word[1] != '=')</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">559</td><td><a href="sd-journal.c.html#L559">(direction == DIRECTION_DOWN ? cp > np : cp < np)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1659</td><td><a href="sd-journal.c.html#L1659">(hashmap_put(j->directories_by_path, m->path, m) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1766</td><td><a href="sd-journal.c.html#L1766">(hashmap_put(j->directories_by_path, m->path, m) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1077</td><td><a href="sd-journal.c.html#L1077">(strlen(item) < 2 || item[1] != '=')</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2578</td><td><a href="sd-journal.c.html#L2578">(f->last_seen_generation == j->generation)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2587</td><td><a href="sd-journal.c.html#L2587">(m->last_seen_generation == j->generation)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">182</td><td><a href="sd-journal.c.html#L182">(j < s && j < t)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1086</td><td><a href="sd-journal.c.html#L1086">(!sd_id128_equal(id, j->current_file->header->seqnum_id))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="sd-journal.c.html#L1313">(stat_inode_same(&f->last_stat, &st))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2859</td><td><a href="sd-journal.c.html#L2859">(fstat(f->fd, &st) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1218</td><td><a href="sd-journal.c.html#L1218">(flags & SD_JOURNAL_SYSTEM && file_has_type_prefix("system", filename))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1566</td><td><a href="sd-journal.c.html#L1566">(m->is_root && dirent_is_journal_subdir(de))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1835</td><td><a href="sd-journal.c.html#L1835">(!(j->flags & SD_JOURNAL_LOCAL_ONLY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="sd-journal.c.html#L983">(sscanf(word + 2, "%llx", &seqnum) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">996</td><td><a href="sd-journal.c.html#L996">(sscanf(word + 2, "%llx", &monotonic) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1002</td><td><a href="sd-journal.c.html#L1002">(sscanf(word + 2, "%llx", &realtime) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1008</td><td><a href="sd-journal.c.html#L1008">(sscanf(word + 2, "%llx", &xor_hash) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1091</td><td><a href="sd-journal.c.html#L1091">(sscanf(item + 2, "%llx", &ll) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1093</td><td><a href="sd-journal.c.html#L1093">(ll != le64toh(o->entry.seqnum))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1106</td><td><a href="sd-journal.c.html#L1106">(sscanf(item + 2, "%llx", &ll) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1108</td><td><a href="sd-journal.c.html#L1108">(ll != le64toh(o->entry.monotonic))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1113</td><td><a href="sd-journal.c.html#L1113">(sscanf(item + 2, "%llx", &ll) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1115</td><td><a href="sd-journal.c.html#L1115">(ll != le64toh(o->entry.realtime))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1120</td><td><a href="sd-journal.c.html#L1120">(sscanf(item + 2, "%llx", &ll) != 1)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">1122</td><td><a href="sd-journal.c.html#L1122">(ll != le64toh(o->entry.xor_hash))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">291</td><td><a href="sd-journal.c.html#L291">(same_field(data, size, l4->data, l4->size))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">609</td><td><a href="sd-journal.c.html#L609">(j->current_location.type == LOCATION_HEAD)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">611</td><td><a href="sd-journal.c.html#L611">(j->current_location.type == LOCATION_TAIL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">704</td><td><a href="sd-journal.c.html#L704">(j->current_location.type == LOCATION_HEAD)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">706</td><td><a href="sd-journal.c.html#L706">(j->current_location.type == LOCATION_TAIL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">796</td><td><a href="sd-journal.c.html#L796">(j->current_location.type == LOCATION_DISCRETE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">888</td><td><a href="sd-journal.c.html#L888">(j->current_location.type != LOCATION_DISCRETE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2733</td><td><a href="sd-journal.c.html#L2733">(timeout_usec == UINT64_MAX || timeout_usec > t)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2959</td><td><a href="sd-journal.c.html#L2959">(o->object.type != OBJECT_DATA)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3131</td><td><a href="sd-journal.c.html#L3131">(o->object.type != OBJECT_FIELD)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3213</td><td><a href="sd-journal.c.html#L3213">(r < 0 || size > REPLACE_VAR_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2104</td><td><a href="sd-journal.c.html#L2104">(fstat(fds[i], &st) < 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2486</td><td><a href="sd-journal.c.html#L2486">(j->flags & SD_JOURNAL_OS_ROOT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2606</td><td><a href="sd-journal.c.html#L2606">(e->mask & IN_Q_OVERFLOW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2620</td><td><a href="sd-journal.c.html#L2620">(e->mask & IN_CREATE | IN_MOVED_TO | IN_MODIFY | IN_ATTRIB)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2622</td><td><a href="sd-journal.c.html#L2622">(e->mask & IN_DELETE | IN_MOVED_FROM | IN_UNMOUNT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2629</td><td><a href="sd-journal.c.html#L2629">(e->mask & IN_DELETE_SELF | IN_MOVE_SELF | IN_UNMOUNT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2636</td><td><a href="sd-journal.c.html#L2636">(e->mask & IN_CREATE | IN_MOVED_TO | IN_MODIFY | IN_ATTRIB)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2643</td><td><a href="sd-journal.c.html#L2643">(e->mask & IN_IGNORED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3172</td><td><a href="sd-journal.c.html#L3172">(!GREEDY_REALLOC(j->fields_buffer, sz + 1))</a></td><td class="num">6.60</td></tr>
+      <tr><td class="num line">226</td><td><a href="sd-journal.c.html#L226">(!m || m->matches)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">341</td><td><a href="sd-journal.c.html#L341">(!j->level1->matches)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="sd-journal.c.html#L363">(!j->level2->matches)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1720</td><td><a href="sd-journal.c.html#L1720">(r == -ENOENT && missing_ok)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">184</td><td><a href="sd-journal.c.html#L184">(a[j] != b[j])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1211</td><td><a href="sd-journal.c.html#L1211">(!endswith(filename, ".journal") && !endswith(filename, ".journal~"))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1332</td><td><a href="sd-journal.c.html#L1332">(ordered_hashmap_size(j->files) >= JOURNAL_FILES_MAX)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">377</td><td><a href="sd-journal.c.html#L377">(m->type == MATCH_DISCRETE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="sd-journal.c.html#L498">(m->type == MATCH_DISCRETE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">515</td><td><a href="sd-journal.c.html#L515">(m->type == MATCH_OR_TERM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">534</td><td><a href="sd-journal.c.html#L534">(m->type == MATCH_AND_TERM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">594</td><td><a href="sd-journal.c.html#L594">(m->type == MATCH_DISCRETE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">630</td><td><a href="sd-journal.c.html#L630">(m->type == MATCH_OR_TERM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">770</td><td><a href="sd-journal.c.html#L770">(f->location_type != LOCATION_SEEK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1101</td><td><a href="sd-journal.c.html#L1101">(!sd_id128_equal(id, o->entry.boot_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1238</td><td><a href="sd-journal.c.html#L1238">(j->toplevel_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1280</td><td><a href="sd-journal.c.html#L1280">(j->toplevel_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1422</td><td><a href="sd-journal.c.html#L1422">(j->current_file == f)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1427</td><td><a href="sd-journal.c.html#L1427">(j->unique_file == f)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1435</td><td><a href="sd-journal.c.html#L1435">(j->fields_file == f)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1542</td><td><a href="sd-journal.c.html#L1542">(j->toplevel_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1584</td><td><a href="sd-journal.c.html#L1584">(m->wd > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1586</td><td><a href="sd-journal.c.html#L1586">(j->inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1590</td><td><a href="sd-journal.c.html#L1590">(m->wd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1802</td><td><a href="sd-journal.c.html#L1802">(d->wd > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1805</td><td><a href="sd-journal.c.html#L1805">(j->inotify_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1869</td><td><a href="sd-journal.c.html#L1869">(j->inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1871</td><td><a href="sd-journal.c.html#L1871">(j->inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2183</td><td><a href="sd-journal.c.html#L2183">(f->current_offset <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2206</td><td><a href="sd-journal.c.html#L2206">(f->current_offset <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2222</td><td><a href="sd-journal.c.html#L2222">(!sd_id128_equal(id, o->entry.boot_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2275</td><td><a href="sd-journal.c.html#L2275">(f->current_offset <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2425</td><td><a href="sd-journal.c.html#L2425">(f->current_offset <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2432</td><td><a href="sd-journal.c.html#L2432">(j->current_field < n)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2489</td><td><a href="sd-journal.c.html#L2489">(j->toplevel_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2507</td><td><a href="sd-journal.c.html#L2507">(j->inotify_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2666</td><td><a href="sd-journal.c.html#L2666">(j->inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2698</td><td><a href="sd-journal.c.html#L2698">(j->inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2928</td><td><a href="sd-journal.c.html#L2928">(j->unique_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2943</td><td><a href="sd-journal.c.html#L2943">(j->unique_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2988</td><td><a href="sd-journal.c.html#L2988">(of == j->unique_file)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3072</td><td><a href="sd-journal.c.html#L3072">(j->fields_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3082</td><td><a href="sd-journal.c.html#L3082">(j->fields_hash_table_index >= m)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3090</td><td><a href="sd-journal.c.html#L3090">(j->fields_offset != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3118</td><td><a href="sd-journal.c.html#L3118">(j->fields_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1299</td><td><a href="sd-journal.c.html#L1299">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2060</td><td><a href="sd-journal.c.html#L2060">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3166</td><td><a href="sd-journal.c.html#L3166">(memchr(o->field.payload, 0, sz))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">159</td><td><a href="sd-journal.c.html#L159">(p < b + size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">161</td><td><a href="sd-journal.c.html#L161">(*p == '=')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">164</td><td><a href="sd-journal.c.html#L164">(*p == '_')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">615</td><td><a href="sd-journal.c.html#L615">(j->current_location.monotonic_set)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="sd-journal.c.html#L625">(j->current_location.realtime_set)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">710</td><td><a href="sd-journal.c.html#L710">(j->current_location.monotonic_set)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">715</td><td><a href="sd-journal.c.html#L715">(j->current_location.realtime_set)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1259</td><td><a href="sd-journal.c.html#L1259">(*p == '/')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2243</td><td><a href="sd-journal.c.html#L2243">(*p == '_')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2867</td><td><a href="sd-journal.c.html#L2867">(sum > UINT64_MAX - b)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1387</td><td><a href="sd-journal.c.html#L1387">(!file_type_wanted(j->flags, filename))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1506</td><td><a href="sd-journal.c.html#L1506">(!IN_SET(de->d_type, DT_REG, DT_LNK, DT_UNKNOWN))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1521</td><td><a href="sd-journal.c.html#L1521">(!IN_SET(de->d_type, DT_DIR, DT_LNK, DT_UNKNOWN))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3178</td><td><a href="sd-journal.c.html#L3178">(!field_is_valid(j->fields_buffer))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">187</td><td><a href="sd-journal.c.html#L187">(a[j] == '=')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="sd-journal.c.html#L251">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">253</td><td><a href="sd-journal.c.html#L253">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="sd-journal.c.html#L257">(!j->level1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">259</td><td><a href="sd-journal.c.html#L259">(!j->level1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">263</td><td><a href="sd-journal.c.html#L263">(!j->level2)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">265</td><td><a href="sd-journal.c.html#L265">(!j->level2)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">314</td><td><a href="sd-journal.c.html#L314">(!m->data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="sd-journal.c.html#L335">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">338</td><td><a href="sd-journal.c.html#L338">(!j->level1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">354</td><td><a href="sd-journal.c.html#L354">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">357</td><td><a href="sd-journal.c.html#L357">(!j->level1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">360</td><td><a href="sd-journal.c.html#L360">(!j->level2)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">541</td><td><a href="sd-journal.c.html#L541">(!m->matches)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">669</td><td><a href="sd-journal.c.html#L669">(!m->matches)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">701</td><td><a href="sd-journal.c.html#L701">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">737</td><td><a href="sd-journal.c.html#L737">(!j->level0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1215</td><td><a href="sd-journal.c.html#L1215">(!(flags & SD_JOURNAL_SYSTEM | SD_JOURNAL_CURRENT_USER))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1431</td><td><a href="sd-journal.c.html#L1431">(!j->unique_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1438</td><td><a href="sd-journal.c.html#L1438">(!j->fields_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1680</td><td><a href="sd-journal.c.html#L1680">(!j->no_new_files)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1760</td><td><a href="sd-journal.c.html#L1760">(!m->path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1777</td><td><a href="sd-journal.c.html#L1777">(!m->is_root)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1784</td><td><a href="sd-journal.c.html#L1784">(!j->no_new_files)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1906</td><td><a href="sd-journal.c.html#L1906">(!j->namespace)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1911</td><td><a href="sd-journal.c.html#L1911">(!j->files)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2099</td><td><a href="sd-journal.c.html#L2099">(fds[i] < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2369</td><td><a href="sd-journal.c.html#L2369">(l < offsetof(Object, data.payload))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2548</td><td><a href="sd-journal.c.html#L2548">(!j->on_network)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2908</td><td><a href="sd-journal.c.html#L2908">(!j->unique_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2913</td><td><a href="sd-journal.c.html#L2913">(!j->unique_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2945</td><td><a href="sd-journal.c.html#L2945">(!j->unique_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3051</td><td><a href="sd-journal.c.html#L3051">(!j->fields_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3056</td><td><a href="sd-journal.c.html#L3056">(!j->fields_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3100</td><td><a href="sd-journal.c.html#L3100">(!j->fields_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1029</td><td><a href="sd-journal.c.html#L1029">(seqnum_set && seqnum_id_set)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1035</td><td><a href="sd-journal.c.html#L1035">(monotonic_set && boot_id_set)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">504</td><td><a href="sd-journal.c.html#L504">(JOURNAL_HEADER_KEYED_HASH(f->header))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">598</td><td><a href="sd-journal.c.html#L598">(JOURNAL_HEADER_KEYED_HASH(f->header))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">215</td><td><a href="sd-journal.c.html#L215">(m->matches)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="sd-journal.c.html#L218">(m->parent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">421</td><td><a href="sd-journal.c.html#L421">(j->level0)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="sd-journal.c.html#L465">(l->realtime_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">472</td><td><a href="sd-journal.c.html#L472">(l->xor_hash_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="sd-journal.c.html#L1191">(j->on_network)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1221</td><td><a href="sd-journal.c.html#L1221">(flags & SD_JOURNAL_CURRENT_USER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1384</td><td><a href="sd-journal.c.html#L1384">(j->no_new_files)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1463</td><td><a href="sd-journal.c.html#L1463">(!log_namespace_name_valid(e + 1))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1488</td><td><a href="sd-journal.c.html#L1488">(!streq(e + 1, namespace))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1670</td><td><a href="sd-journal.c.html#L1670">(m->is_root)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1716</td><td><a href="sd-journal.c.html#L1716">(j->prefix)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1811</td><td><a href="sd-journal.c.html#L1811">(d->is_root)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="sd-journal.c.html#L1898">(flags & SD_JOURNAL_OS_ROOT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2013</td><td><a href="sd-journal.c.html#L2013">(flags & SD_JOURNAL_OS_ROOT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2072</td><td><a href="sd-journal.c.html#L2072">(flags & SD_JOURNAL_OS_ROOT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2155</td><td><a href="sd-journal.c.html#L2155">(j->mmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2483</td><td><a href="sd-journal.c.html#L2483">(j->no_new_files)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2492</td><td><a href="sd-journal.c.html#L2492">(j->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2504</td><td><a href="sd-journal.c.html#L2504">(j->no_inotify)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2590</td><td><a href="sd-journal.c.html#L2590">(m->is_root)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2909</td><td><a href="sd-journal.c.html#L2909">(j->unique_file_lost)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3052</td><td><a href="sd-journal.c.html#L3052">(j->fields_file_lost)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="sd-journal.c.html#L170">(ascii_isdigit(*p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2063</td><td><a href="sd-journal.c.html#L2063">(!S_ISDIR(st.st_mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2249</td><td><a href="sd-journal.c.html#L2249">(ascii_isdigit(*p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">81</td><td><a href="sd-journal.c.html#L81">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">91</td><td><a href="sd-journal.c.html#L91">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">92</td><td><a href="sd-journal.c.html#L92">(k == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">152</td><td><a href="sd-journal.c.html#L152">(size < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="sd-journal.c.html#L240">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">453</td><td><a href="sd-journal.c.html#L453">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="sd-journal.c.html#L461">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">468</td><td><a href="sd-journal.c.html#L468">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">475</td><td><a href="sd-journal.c.html#L475">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">510</td><td><a href="sd-journal.c.html#L510">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="sd-journal.c.html#L523">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="sd-journal.c.html#L525">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="sd-journal.c.html#L531">(np == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">545</td><td><a href="sd-journal.c.html#L545">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="sd-journal.c.html#L555">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">570</td><td><a href="sd-journal.c.html#L570">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="sd-journal.c.html#L604">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">617</td><td><a href="sd-journal.c.html#L617">(r != -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="sd-journal.c.html#L622">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="sd-journal.c.html#L639">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="sd-journal.c.html#L641">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="sd-journal.c.html#L647">(np == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="sd-journal.c.html#L652">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="sd-journal.c.html#L676">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="sd-journal.c.html#L712">(r != -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">772</td><td><a href="sd-journal.c.html#L772">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="sd-journal.c.html#L781">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">809</td><td><a href="sd-journal.c.html#L809">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">827</td><td><a href="sd-journal.c.html#L827">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="sd-journal.c.html#L830">(i < n_files)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">835</td><td><a href="sd-journal.c.html#L835">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="sd-journal.c.html#L839">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="sd-journal.c.html#L862">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="sd-journal.c.html#L885">(skip == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">890</td><td><a href="sd-journal.c.html#L890">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">899</td><td><a href="sd-journal.c.html#L899">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="sd-journal.c.html#L902">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="sd-journal.c.html#L907">(skip > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">932</td><td><a href="sd-journal.c.html#L932">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="sd-journal.c.html#L965">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="sd-journal.c.html#L967">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="sd-journal.c.html#L977">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="sd-journal.c.html#L990">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1061</td><td><a href="sd-journal.c.html#L1061">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="sd-journal.c.html#L1071">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="sd-journal.c.html#L1074">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="sd-journal.c.html#L1084">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1099</td><td><a href="sd-journal.c.html#L1099">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="sd-journal.c.html#L1278">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1287</td><td><a href="sd-journal.c.html#L1287">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1293</td><td><a href="sd-journal.c.html#L1293">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1305</td><td><a href="sd-journal.c.html#L1305">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="sd-journal.c.html#L1339">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1348</td><td><a href="sd-journal.c.html#L1348">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1455</td><td><a href="sd-journal.c.html#L1455">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1470</td><td><a href="sd-journal.c.html#L1470">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1596</td><td><a href="sd-journal.c.html#L1596">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1598</td><td><a href="sd-journal.c.html#L1598">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1641</td><td><a href="sd-journal.c.html#L1641">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1689</td><td><a href="sd-journal.c.html#L1689">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1722</td><td><a href="sd-journal.c.html#L1722">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="sd-journal.c.html#L1735">(dfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1793</td><td><a href="sd-journal.c.html#L1793">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1859</td><td><a href="sd-journal.c.html#L1859">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1943</td><td><a href="sd-journal.c.html#L1943">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1975</td><td><a href="sd-journal.c.html#L1975">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1977</td><td><a href="sd-journal.c.html#L1977">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="sd-journal.c.html#L1990">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2017</td><td><a href="sd-journal.c.html#L2017">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2037</td><td><a href="sd-journal.c.html#L2037">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2076</td><td><a href="sd-journal.c.html#L2076">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2096</td><td><a href="sd-journal.c.html#L2096">(i < n_fds)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2110</td><td><a href="sd-journal.c.html#L2110">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2114</td><td><a href="sd-journal.c.html#L2114">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="sd-journal.c.html#L2187">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2210</td><td><a href="sd-journal.c.html#L2210">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2219</td><td><a href="sd-journal.c.html#L2219">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2241</td><td><a href="sd-journal.c.html#L2241">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2279</td><td><a href="sd-journal.c.html#L2279">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2285</td><td><a href="sd-journal.c.html#L2285">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2297</td><td><a href="sd-journal.c.html#L2297">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2303</td><td><a href="sd-journal.c.html#L2303">(c < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2305</td><td><a href="sd-journal.c.html#L2305">(c != COMPRESSION_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2312</td><td><a href="sd-journal.c.html#L2312">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2315</td><td><a href="sd-journal.c.html#L2315">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2324</td><td><a href="sd-journal.c.html#L2324">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2341</td><td><a href="sd-journal.c.html#L2341">((uint64_t)t != l)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2375</td><td><a href="sd-journal.c.html#L2375">((uint64_t)t != l)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2379</td><td><a href="sd-journal.c.html#L2379">(c < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2381</td><td><a href="sd-journal.c.html#L2381">(c != COMPRESSION_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2391</td><td><a href="sd-journal.c.html#L2391">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2429</td><td><a href="sd-journal.c.html#L2429">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2441</td><td><a href="sd-journal.c.html#L2441">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2445</td><td><a href="sd-journal.c.html#L2445">(r == -EBADMSG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2449</td><td><a href="sd-journal.c.html#L2449">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2465</td><td><a href="sd-journal.c.html#L2465">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2511</td><td><a href="sd-journal.c.html#L2511">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2518</td><td><a href="sd-journal.c.html#L2518">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2531</td><td><a href="sd-journal.c.html#L2531">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2545</td><td><a href="sd-journal.c.html#L2545">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2677</td><td><a href="sd-journal.c.html#L2677">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2704</td><td><a href="sd-journal.c.html#L2704">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2711</td><td><a href="sd-journal.c.html#L2711">(r == -EIDRM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2713</td><td><a href="sd-journal.c.html#L2713">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2727</td><td><a href="sd-journal.c.html#L2727">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2730</td><td><a href="sd-journal.c.html#L2730">(t != UINT64_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2739</td><td><a href="sd-journal.c.html#L2739">(r == -EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2741</td><td><a href="sd-journal.c.html#L2741">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2762</td><td><a href="sd-journal.c.html#L2762">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2764</td><td><a href="sd-journal.c.html#L2764">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2766</td><td><a href="sd-journal.c.html#L2766">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2806</td><td><a href="sd-journal.c.html#L2806">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2808</td><td><a href="sd-journal.c.html#L2808">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2810</td><td><a href="sd-journal.c.html#L2810">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2863</td><td><a href="sd-journal.c.html#L2863">(b > UINT64_MAX / 512)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2885</td><td><a href="sd-journal.c.html#L2885">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2930</td><td><a href="sd-journal.c.html#L2930">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2936</td><td><a href="sd-journal.c.html#L2936">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2955</td><td><a href="sd-journal.c.html#L2955">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2967</td><td><a href="sd-journal.c.html#L2967">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2971</td><td><a href="sd-journal.c.html#L2971">(ol <= k)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3002</td><td><a href="sd-journal.c.html#L3002">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3004</td><td><a href="sd-journal.c.html#L3004">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3014</td><td><a href="sd-journal.c.html#L3014">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3026</td><td><a href="sd-journal.c.html#L3026">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3077</td><td><a href="sd-journal.c.html#L3077">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3114</td><td><a href="sd-journal.c.html#L3114">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3127</td><td><a href="sd-journal.c.html#L3127">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3142</td><td><a href="sd-journal.c.html#L3142">(of == f)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3154</td><td><a href="sd-journal.c.html#L3154">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3156</td><td><a href="sd-journal.c.html#L3156">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3235</td><td><a href="sd-journal.c.html#L3235">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3243</td><td><a href="sd-journal.c.html#L3243">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3247</td><td><a href="sd-journal.c.html#L3247">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1529</td><td><a href="sd-journal.c.html#L1529">(!id128_is_valid(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1982</td><td><a href="sd-journal.c.html#L1982">(!streq_ptr(class, "container"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2467</td><td><a href="sd-journal.c.html#L2467">(!JOURNAL_ERRNO_IS_UNAVAILABLE_FIELD(r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3028</td><td><a href="sd-journal.c.html#L3028">(!JOURNAL_ERRNO_IS_UNAVAILABLE_FIELD(r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">86</td><td><a href="sd-journal.c.html#L86">(!copy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">198</td><td><a href="sd-journal.c.html#L198">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">301</td><td><a href="sd-journal.c.html#L301">(!add_here)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">303</td><td><a href="sd-journal.c.html#L303">(!add_here)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">308</td><td><a href="sd-journal.c.html#L308">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="sd-journal.c.html#L374">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">384</td><td><a href="sd-journal.c.html#L384">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">392</td><td><a href="sd-journal.c.html#L392">(!k)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">418</td><td><a href="sd-journal.c.html#L418">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">844</td><td><a href="sd-journal.c.html#L844">(!new_file)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">858</td><td><a href="sd-journal.c.html#L858">(!new_file)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1256</td><td><a href="sd-journal.c.html#L1256">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1408</td><td><a href="sd-journal.c.html#L1408">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1485</td><td><a href="sd-journal.c.html#L1485">(!namespace)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1525</td><td><a href="sd-journal.c.html#L1525">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1548</td><td><a href="sd-journal.c.html#L1548">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1622</td><td><a href="sd-journal.c.html#L1622">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1647</td><td><a href="sd-journal.c.html#L1647">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1649</td><td><a href="sd-journal.c.html#L1649">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1741</td><td><a href="sd-journal.c.html#L1741">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1750</td><td><a href="sd-journal.c.html#L1750">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1752</td><td><a href="sd-journal.c.html#L1752">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1855</td><td><a href="sd-journal.c.html#L1855">(!dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1882</td><td><a href="sd-journal.c.html#L1882">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1895</td><td><a href="sd-journal.c.html#L1895">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1939</td><td><a href="sd-journal.c.html#L1939">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1979</td><td><a href="sd-journal.c.html#L1979">(!root)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1986</td><td><a href="sd-journal.c.html#L1986">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2010</td><td><a href="sd-journal.c.html#L2010">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2032</td><td><a href="sd-journal.c.html#L2032">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2067</td><td><a href="sd-journal.c.html#L2067">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2093</td><td><a href="sd-journal.c.html#L2093">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2136</td><td><a href="sd-journal.c.html#L2136">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2180</td><td><a href="sd-journal.c.html#L2180">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2203</td><td><a href="sd-journal.c.html#L2203">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2272</td><td><a href="sd-journal.c.html#L2272">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2422</td><td><a href="sd-journal.c.html#L2422">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2474</td><td><a href="sd-journal.c.html#L2474">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3036</td><td><a href="sd-journal.c.html#L3036">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3187</td><td><a href="sd-journal.c.html#L3187">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3239</td><td><a href="sd-journal.c.html#L3239">(!cid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3251</td><td><a href="sd-journal.c.html#L3251">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1226</td><td><a href="sd-journal.c.html#L1226">(file_has_type_prefix(prefix, filename))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1563</td><td><a href="sd-journal.c.html#L1563">(dirent_is_journal_file(de))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2235</td><td><a href="sd-journal.c.html#L2235">(isempty(field))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2238</td><td><a href="sd-journal.c.html#L2238">(startswith(field, "__"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2293</td><td><a href="sd-journal.c.html#L2293">(IN_SET(r, -EADDRNOTAVAIL, -EBADMSG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2437</td><td><a href="sd-journal.c.html#L2437">(IN_SET(r, -EADDRNOTAVAIL, -EBADMSG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2678</td><td><a href="sd-journal.c.html#L2678">(ERRNO_IS_TRANSIENT(errno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">84</td><td><a href="sd-journal.c.html#L84">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">206</td><td><a href="sd-journal.c.html#L206">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">297</td><td><a href="sd-journal.c.html#L297">(add_here)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="sd-journal.c.html#L387">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">402</td><td><a href="sd-journal.c.html#L402">(enclose)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">568</td><td><a href="sd-journal.c.html#L568">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">574</td><td><a href="sd-journal.c.html#L574">(offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">650</td><td><a href="sd-journal.c.html#L650">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">656</td><td><a href="sd-journal.c.html#L656">(offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">805</td><td><a href="sd-journal.c.html#L805">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">854</td><td><a href="sd-journal.c.html#L854">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1024</td><td><a href="sd-journal.c.html#L1024">(realtime_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1041</td><td><a href="sd-journal.c.html#L1041">(xor_hash_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1310</td><td><a href="sd-journal.c.html#L1310">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1312</td><td><a href="sd-journal.c.html#L1312">(f)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1459</td><td><a href="sd-journal.c.html#L1459">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1482</td><td><a href="sd-journal.c.html#L1482">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1495</td><td><a href="sd-journal.c.html#L1495">(namespace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1707</td><td><a href="sd-journal.c.html#L1707">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1891</td><td><a href="sd-journal.c.html#L1891">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1904</td><td><a href="sd-journal.c.html#L1904">(namespace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2213</td><td><a href="sd-journal.c.html#L2213">(ret_boot_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2226</td><td><a href="sd-journal.c.html#L2226">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2394</td><td><a href="sd-journal.c.html#L2394">(ret_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2396</td><td><a href="sd-journal.c.html#L2396">(ret_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2402</td><td><a href="sd-journal.c.html#L2402">(ret_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2404</td><td><a href="sd-journal.c.html#L2404">(ret_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2613</td><td><a href="sd-journal.c.html#L2613">(d)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2769</td><td><a href="sd-journal.c.html#L2769">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2779</td><td><a href="sd-journal.c.html#L2779">(from)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2781</td><td><a href="sd-journal.c.html#L2781">(to)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2813</td><td><a href="sd-journal.c.html#L2813">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2823</td><td><a href="sd-journal.c.html#L2823">(ret_from)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2825</td><td><a href="sd-journal.c.html#L2825">(ret_to)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2838</td><td><a href="sd-journal.c.html#L2838">(newline)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3010</td><td><a href="sd-journal.c.html#L3010">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3097</td><td><a href="sd-journal.c.html#L3097">(eof)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3162</td><td><a href="sd-journal.c.html#L3162">(found)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

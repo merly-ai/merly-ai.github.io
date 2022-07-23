@@ -1,0 +1,572 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>qemu Repo - target\i386\kvm\kvm.c Ctrl Expressions (521) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\i386\kvm\kvm.c Ctrl Expressions (521) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\i386\kvm\kvm.c Ctrl Expressions (521)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3977</td><td><a href="kvm.c.html#L3977">(msrs[i].index >= MSR_MC0_CTL && msrs[i].index < MSR_MC0_CTL + <span style='background-color:#741da3;'>(env->mcg_cap & 0xff) * 4</span>)</a></td><td class="num">1071.60</td></tr>
+      <tr><td class="num line">3448</td><td><a href="kvm.c.html#L3448">(i < <span style='background-color:#741da3;'>(env->mcg_cap & 0xff) * 4</span>)</a></td><td class="num">1026.85</td></tr>
+      <tr><td class="num line">3740</td><td><a href="kvm.c.html#L3740">(i < <span style='background-color:#741da3;'>(env->mcg_cap & 0xff) * 4</span>)</a></td><td class="num">1026.85</td></tr>
+      <tr><td class="num line">4699</td><td><a href="kvm.c.html#L4699">(<span style='background-color:#741da3;'>run->ready_for_interrupt_injection && (cpu->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)</span>)</a></td><td class="num">1022.50</td></tr>
+      <tr><td class="num line">2093</td><td><a href="kvm.c.html#L2093">(<span style='background-color:#741da3;'>cpu->vmware_cpuid_freq && cpu->expose_kvm && kvm_base == KVM_CPUID_SIGNATURE && tsc_is_stable_and_known(env)</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">3418</td><td><a href="kvm.c.html#L3418">(<span style='background-color:#741da3;'>ret == 1 && !!depth && depth == env->msr_lbr_depth</span>)</a></td><td class="num">1015.50</td></tr>
+      <tr><td class="num line">1404</td><td><a href="kvm.c.html#L1404">(<span style='background-color:#741da3;'>hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC) && !cpu->hyperv_synic_kvm_only && !hyperv_feat_enabled(cpu, HYPERV_FEAT_VPINDEX)</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">5237</td><td><a href="kvm.c.html#L5237">(<span style='background-color:#741da3;'>!ext_id || (ext_id & 1 << MSI_ADDR_DEST_IDX_SHIFT) || (address >> 32)</span>)</a></td><td class="num">1010.50</td></tr>
+      <tr><td class="num line">2024</td><td><a href="kvm.c.html#L2024">(((env->cpuid_version >> 8) & 0xF) >= 6 && (env->features[FEAT_1_EDX] & CPUID_MCE | CPUID_MCA) == CPUID_MCE | CPUID_MCA && kvm_check_extension(cs->kvm_state, KVM_CAP_MCE) > 0)</a></td><td class="num">78.75</td></tr>
+      <tr><td class="num line">336</td><td><a href="kvm.c.html#L336">(cpuid->entries[i].function == function && cpuid->entries[i].index == index)</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">4844</td><td><a href="kvm.c.html#L4844">(!((cs->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)) && !(cs->interrupt_request & CPU_INTERRUPT_NMI))</a></td><td class="num">59.00</td></tr>
+      <tr><td class="num line">4905</td><td><a href="kvm.c.html#L4905">(hw_breakpoint[n].addr == addr && hw_breakpoint[n].type == type && (hw_breakpoint[n].len == len || len == -1))</a></td><td class="num">54.75</td></tr>
+      <tr><td class="num line">4820</td><td><a href="kvm.c.html#L4820">(((cs->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)) || (cs->interrupt_request & CPU_INTERRUPT_NMI))</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="kvm.c.html#L1278">(kvm_hyperv_properties[i].flags[j].func != func)</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">1281</td><td><a href="kvm.c.html#L1281">(kvm_hyperv_properties[i].flags[j].reg != reg)</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">4688</td><td><a href="kvm.c.html#L4688">((cpu->interrupt_request & CPU_INTERRUPT_INIT) && !(env->hflags & HF_SMM_MASK))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">4806</td><td><a href="kvm.c.html#L4806">((cs->interrupt_request & CPU_INTERRUPT_INIT) && !(env->hflags & HF_SMM_MASK))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">4869</td><td><a href="kvm.c.html#L4869">(cpu_memory_rw_debug(cs, bp->pc, (uint8_t *)&bp->saved_insn, 1, 0) || cpu_memory_rw_debug(cs, bp->pc, (uint8_t *)&int3, 1, 1))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">3405</td><td><a href="kvm.c.html#L3405">(kvm_enabled() && cpu->enable_pmu && (env->features[FEAT_7_0_EDX] & CPUID_7_0_EDX_ARCH_LBR))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">3836</td><td><a href="kvm.c.html#L3836">(kvm_enabled() && cpu->enable_pmu && (env->features[FEAT_7_0_EDX] & CPUID_7_0_EDX_ARCH_LBR))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1882</td><td><a href="kvm.c.html#L1882">(j > 1 && (c->eax & 0xf) != 1)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">2080</td><td><a href="kvm.c.html#L2080">((env->features[FEAT_8000_0007_EDX] & CPUID_APM_INVTSC) && invtsc_mig_blocker == NULL)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">714</td><td><a href="kvm.c.html#L714">(env->mce_banks[bank * 4 + 1] & MCI_STATUS_VAL)</a></td><td class="num">27.70</td></tr>
+      <tr><td class="num line">1857</td><td><a href="kvm.c.html#L1857">(i == 0xb && !(c->ecx & 0xff00))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1860</td><td><a href="kvm.c.html#L1860">(i == 0x1f && !(c->ecx & 0xff00))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">4383</td><td><a href="kvm.c.html#L4383">(reinject_trap || (!kvm_has_robust_singlestep() && cs->singlestep_enabled))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2143</td><td><a href="kvm.c.html#L2143">(!(env->features[FEAT_8000_0001_EDX] & CPUID_EXT2_RDTSCP))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">5227</td><td><a href="kvm.c.html#L5227">(!(env->features[FEAT_KVM] & 1 << KVM_FEATURE_MSI_EXT_DEST_ID))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1923</td><td><a href="kvm.c.html#L1923">(!c->eax && !c->ebx && !c->ecx && !c->edx)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1994</td><td><a href="kvm.c.html#L1994">(!c->eax && !c->ebx && !c->ecx && !c->edx)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1075</td><td><a href="kvm.c.html#L1075">(!do_sys_ioctl && kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV_ENLIGHTENED_VMCS) > 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1078</td><td><a href="kvm.c.html#L1078">(cpuid->entries[i].function == HV_CPUID_ENLIGHTMENT_INFO)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3423</td><td><a href="kvm.c.html#L3423">(!env->lbr_records[i].from)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">3524</td><td><a href="kvm.c.html#L3524">(xcrs.xcrs[i].xcr == 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1227</td><td><a href="kvm.c.html#L1227">(i < ARRAY_SIZE(kvm_hyperv_properties[feature].flags))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">1277</td><td><a href="kvm.c.html#L1277">(j < ARRAY_SIZE(kvm_hyperv_properties[i].flags))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">409</td><td><a href="kvm.c.html#L409">(function == 0xd && index == 0 && (reg == R_EAX || reg == R_EDX))</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="kvm.c.html#L396">(function == 7 && index == 0 && reg == R_EBX)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">400</td><td><a href="kvm.c.html#L400">(function == 7 && index == 0 && reg == R_EDX)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">620</td><td><a href="kvm.c.html#L620">(ram_addr != RAM_ADDR_INVALID && kvm_physical_memory_addr_from_host(c->kvm_state, addr, &paddr))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">258</td><td><a href="kvm.c.html#L258">(r == 0 && cpuid->nent >= max)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1023</td><td><a href="kvm.c.html#L1023">(r == 0 && cpuid->nent >= max)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1581</td><td><a href="kvm.c.html#L1581">(cpu->hyperv_no_nonarch_cs == ON_OFF_AUTO_AUTO && hv_no_nonarch_cs_mig_blocker == NULL)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1854</td><td><a href="kvm.c.html#L1854">(i == 4 && c->eax == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1863</td><td><a href="kvm.c.html#L1863">(i == 0xd && c->eax == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">4453</td><td><a href="kvm.c.html#L4453">(cpu_has_svm(env) && (env->hflags2 & HF2_GIF_MASK))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">618</td><td><a href="kvm.c.html#L618">((env->mcg_cap & MCG_SER_P) && addr)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="kvm.c.html#L703">(!kvm_has_vcpu_events() && env->exception_nr == EXCP12_MCHK)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2071</td><td><a href="kvm.c.html#L2071">(c && (c->ebx & CPUID_7_0_EBX_SGX))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="kvm.c.html#L813">(cur_freq <= 0 || cur_freq != env->tsc_khz)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">285</td><td><a href="kvm.c.html#L285">((cpuid = try_get_cpuid(s, max)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1065</td><td><a href="kvm.c.html#L1065">((cpuid = try_get_hv_cpuid(cs, max, do_sys_ioctl)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4991</td><td><a href="kvm.c.html#L4991">(arch_info->dr6 & (1 << n))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">798</td><td><a href="kvm.c.html#L798">(cur_freq != -ENOTSUP && freq_within_bounds(cur_freq, env->tsc_khz))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">4801</td><td><a href="kvm.c.html#L4801">(kvm_irqchip_in_kernel() && env->mp_state == KVM_MP_STATE_HALTED)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1570</td><td><a href="kvm.c.html#L1570">(cpu->hyperv_passthrough && hv_passthrough_mig_blocker == NULL)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">4886</td><td><a href="kvm.c.html#L4886">(cpu_memory_rw_debug(cs, bp->pc, (uint8_t *)&bp->saved_insn, 1, 1))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1320</td><td><a href="kvm.c.html#L1320">(!cs->kvm_state && !kvm_check_extension(kvm_state, KVM_CAP_SYS_HYPERV_CPUID))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2038</td><td><a href="kvm.c.html#L2038">(banks < (env->mcg_cap & MCG_CAP_BANKS_MASK))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">4490</td><td><a href="kvm.c.html#L4490">(env->nested_state->flags & KVM_STATE_NESTED_GUEST_MODE)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4498</td><td><a href="kvm.c.html#L4498">(env->nested_state->flags & KVM_STATE_NESTED_GIF_SET)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">362</td><td><a href="kvm.c.html#L362">(function == 1 && reg == R_EDX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="kvm.c.html#L365">(function == 1 && reg == R_ECX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">394</td><td><a href="kvm.c.html#L394">(function == 6 && reg == R_EAX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="kvm.c.html#L437">(function == 0x80000001 && reg == R_ECX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="kvm.c.html#L444">(function == 0x80000001 && reg == R_EDX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="kvm.c.html#L450">(function == KVM_CPUID_FEATURES && reg == R_EAX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">460</td><td><a href="kvm.c.html#L460">(function == KVM_CPUID_FEATURES && reg == R_EDX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="kvm.c.html#L766">(target_freq >= min_freq && target_freq <= max_freq)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1290</td><td><a href="kvm.c.html#L1290">(func == HV_CPUID_NESTED_FEATURES && reg == R_EAX)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1841</td><td><a href="kvm.c.html#L1841">(i == 0xd && j == 64)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1845</td><td><a href="kvm.c.html#L1845">(i == 0x1f && j == 64)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2231</td><td><a href="kvm.c.html#L2231">(ret < 0 && ret != -E2BIG)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2267</td><td><a href="kvm.c.html#L2267">(ret < 0 && ret != -E2BIG)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3210</td><td><a href="kvm.c.html#L3210">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_ASYNC_PF_INT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3213</td><td><a href="kvm.c.html#L3213">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_ASYNC_PF)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3216</td><td><a href="kvm.c.html#L3216">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_PV_EOI)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3219</td><td><a href="kvm.c.html#L3219">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_STEAL_TIME)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3223</td><td><a href="kvm.c.html#L3223">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_POLL_CONTROL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3340</td><td><a href="kvm.c.html#L3340">(env->features[FEAT_1_EDX] & CPUID_MTRR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3367</td><td><a href="kvm.c.html#L3367">(env->features[FEAT_7_0_EBX] & CPUID_7_0_EBX_INTEL_PT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3387</td><td><a href="kvm.c.html#L3387">(env->features[FEAT_7_0_ECX] & CPUID_7_0_ECX_SGX_LC)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3398</td><td><a href="kvm.c.html#L3398">(env->features[FEAT_XSAVE] & CPUID_D_1_EAX_XFD)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3703</td><td><a href="kvm.c.html#L3703">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_ASYNC_PF_INT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3706</td><td><a href="kvm.c.html#L3706">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_ASYNC_PF)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3709</td><td><a href="kvm.c.html#L3709">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_PV_EOI)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3712</td><td><a href="kvm.c.html#L3712">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_STEAL_TIME)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3715</td><td><a href="kvm.c.html#L3715">(env->features[FEAT_KVM] & 1 << KVM_FEATURE_POLL_CONTROL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3791</td><td><a href="kvm.c.html#L3791">(env->features[FEAT_1_EDX] & CPUID_MTRR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3810</td><td><a href="kvm.c.html#L3810">(env->features[FEAT_7_0_EBX] & CPUID_7_0_EBX_INTEL_PT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3824</td><td><a href="kvm.c.html#L3824">(env->features[FEAT_7_0_ECX] & CPUID_7_0_ECX_SGX_LC)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3831</td><td><a href="kvm.c.html#L3831">(env->features[FEAT_XSAVE] & CPUID_D_1_EAX_XFD)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3842</td><td><a href="kvm.c.html#L3842">(ret == 1 && depth == ARCH_LBR_NR_ENTRIES)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1470</td><td><a href="kvm.c.html#L1470">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC) && !cpu->hyperv_synic_kvm_only)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2522</td><td><a href="kvm.c.html#L2522">(kvm_check_extension(s, KVM_CAP_X86_SMM) && object_dynamic_cast(OBJECT(ms), TYPE_X86_MACHINE) && x86_machine_is_smm_enabled(X86_MACHINE(ms)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3090</td><td><a href="kvm.c.html#L3090">(ret < cpu->kvm_msr_buf->nmsrs)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3859</td><td><a href="kvm.c.html#L3859">(ret < cpu->kvm_msr_buf->nmsrs)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">483</td><td><a href="kvm.c.html#L483">(kvm_feature_msrs->indices[i] == index)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3115</td><td><a href="kvm.c.html#L3115">(has_msr_perf_capabs && cpu->enable_pmu)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">580</td><td><a href="kvm.c.html#L580">(env->mcg_ext_ctl & MCG_EXT_CTL_LMCE_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2075</td><td><a href="kvm.c.html#L2075">(env->mcg_cap & MCG_LMCE_P)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2743</td><td><a href="kvm.c.html#L2743">((env->eflags & VM_MASK))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2790</td><td><a href="kvm.c.html#L2790">((env->eflags & VM_MASK))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4446</td><td><a href="kvm.c.html#L4446">(env->hflags & HF_GUEST_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4654</td><td><a href="kvm.c.html#L4654">(cpu->interrupt_request & CPU_INTERRUPT_NMI | CPU_INTERRUPT_SMI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4655</td><td><a href="kvm.c.html#L4655">(cpu->interrupt_request & CPU_INTERRUPT_NMI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4666</td><td><a href="kvm.c.html#L4666">(cpu->interrupt_request & CPU_INTERRUPT_SMI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4687</td><td><a href="kvm.c.html#L4687">(cpu->interrupt_request & CPU_INTERRUPT_INIT | CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4692</td><td><a href="kvm.c.html#L4692">(cpu->interrupt_request & CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4724</td><td><a href="kvm.c.html#L4724">((cpu->interrupt_request & CPU_INTERRUPT_HARD))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4751</td><td><a href="kvm.c.html#L4751">(run->flags & KVM_RUN_X86_SMM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4761</td><td><a href="kvm.c.html#L4761">(run->flags & KVM_RUN_X86_BUS_LOCK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4783</td><td><a href="kvm.c.html#L4783">(cs->interrupt_request & CPU_INTERRUPT_MCE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4816</td><td><a href="kvm.c.html#L4816">(cs->interrupt_request & CPU_INTERRUPT_POLL)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4825</td><td><a href="kvm.c.html#L4825">(cs->interrupt_request & CPU_INTERRUPT_SIPI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4829</td><td><a href="kvm.c.html#L4829">(cs->interrupt_request & CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4985</td><td><a href="kvm.c.html#L4985">(arch_info->dr6 & DR6_BS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5120</td><td><a href="kvm.c.html#L5120">(host_supports_vmx() && code == VMX_INVALID_GUEST_STATE)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="kvm.c.html#L1109">(kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="kvm.c.html#L1117">(kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV_TIME) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1151</td><td><a href="kvm.c.html#L1151">(kvm_check_extension(cs->kvm_state, cap) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1166</td><td><a href="kvm.c.html#L1166">(kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV_TLBFLUSH) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1172</td><td><a href="kvm.c.html#L1172">(kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV_ENLIGHTENED_VMCS) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1177</td><td><a href="kvm.c.html#L1177">(kvm_check_extension(cs->kvm_state, KVM_CAP_HYPERV_SEND_IPI) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1237</td><td><a href="kvm.c.html#L1237">((hv_cpuid_get_host(cs, func, reg) & bits) != bits)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2193</td><td><a href="kvm.c.html#L2193">(i < ARRAY_SIZE(env->msr_hv_synic_sint))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3322</td><td><a href="kvm.c.html#L3322">(j < ARRAY_SIZE(env->msr_hv_synic_sint))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3330</td><td><a href="kvm.c.html#L3330">(j < ARRAY_SIZE(env->msr_hv_stimer_config))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3335</td><td><a href="kvm.c.html#L3335">(j < ARRAY_SIZE(env->msr_hv_stimer_count))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4880</td><td><a href="kvm.c.html#L4880">(cpu_memory_rw_debug(cs, bp->pc, &int3, 1, 0))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">335</td><td><a href="kvm.c.html#L335">(i < cpuid->nent)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">482</td><td><a href="kvm.c.html#L482">(i < kvm_feature_msrs->nmsrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">486</td><td><a href="kvm.c.html#L486">(i == kvm_feature_msrs->nmsrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="kvm.c.html#L1077">(i < cpuid->nent)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1489</td><td><a href="kvm.c.html#L1489">(cpu->hyperv_no_nonarch_cs == ON_OFF_AUTO_ON)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1491</td><td><a href="kvm.c.html#L1491">(cpu->hyperv_no_nonarch_cs == ON_OFF_AUTO_AUTO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1833</td><td><a href="kvm.c.html#L1833">(env->nr_dies < 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1979</td><td><a href="kvm.c.html#L1979">(c->eax == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2006</td><td><a href="kvm.c.html#L2006">(env->cpuid_xlevel2 > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2210</td><td><a href="kvm.c.html#L2210">(env->mp_state == KVM_MP_STATE_UNINITIALIZED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2283</td><td><a href="kvm.c.html#L2283">(i < kvm_msr_list->nmsrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2555</td><td><a href="kvm.c.html#L2555">(x86ms->bus_lock_ratelimit > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4280</td><td><a href="kvm.c.html#L4280">(env->mp_state == KVM_MP_STATE_SIPI_RECEIVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4367</td><td><a href="kvm.c.html#L4367">(env->exception_nr == EXCP01_DB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4369</td><td><a href="kvm.c.html#L4369">(env->exception_injected == EXCP03_INT3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4791</td><td><a href="kvm.c.html#L4791">(env->exception_nr == EXCP08_DBLE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4928</td><td><a href="kvm.c.html#L4928">(addr & (len - 1))</a></td><td class="num">5.60</td></tr>
+      <tr><td class="num line">4984</td><td><a href="kvm.c.html#L4984">(arch_info->exception == EXCP01_DB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5371</td><td><a href="kvm.c.html#L5371">(entry->virq == virq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1484</td><td><a href="kvm.c.html#L1484">(hyperv_feat_enabled(cpu, HYPERV_FEAT_VAPIC) && !hyperv_feat_enabled(cpu, HYPERV_FEAT_AVIC))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3062</td><td><a href="kvm.c.html#L3062">(f[FEAT_VMX_SECONDARY_CTLS] & VMX_SECONDARY_EXEC_TSC_SCALING)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">5315</td><td><a href="kvm.c.html#L5315">(msix_enabled(dev) && !msix_is_masked(dev, vector))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">5317</td><td><a href="kvm.c.html#L5317">(msi_enabled(dev) && !msi_is_masked(dev, vector))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1595</td><td><a href="kvm.c.html#L1595">(hyperv_feat_enabled(cpu, HYPERV_FEAT_VPINDEX) && !hv_vpindex_settable)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4304</td><td><a href="kvm.c.html#L4304">(events.flags & KVM_VCPUEVENT_VALID_PAYLOAD)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4331</td><td><a href="kvm.c.html#L4331">(events.flags & KVM_VCPUEVENT_VALID_SMM)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5190</td><td><a href="kvm.c.html#L5190">(kvm_irqchip_add_msi_route(&c, 0, NULL) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="kvm.c.html#L374">(kvm_irqchip_in_kernel() && kvm_check_extension(s, KVM_CAP_TSC_DEADLINE_TIMER))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="kvm.c.html#L780">(!env->tsc_khz)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">827</td><td><a href="kvm.c.html#L827">(!env->tsc_khz)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1623</td><td><a href="kvm.c.html#L1623">(!cpu->hyperv_synic_kvm_only)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1739</td><td><a href="kvm.c.html#L1739">(!env->tsc_khz)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2079</td><td><a href="kvm.c.html#L2079">(!env->user_tsc_khz)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2557</td><td><a href="kvm.c.html#L2557">(!(ret & KVM_BUS_LOCK_DETECTION_EXIT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3127</td><td><a href="kvm.c.html#L3127">(kvm_feature_msrs && cpu_has_vmx(env))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3282</td><td><a href="kvm.c.html#L3282">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNDBG) && has_msr_hv_syndbg_options)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3305</td><td><a href="kvm.c.html#L3305">(hyperv_feat_enabled(cpu, HYPERV_FEAT_VPINDEX) && hv_vpindex_settable)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3688</td><td><a href="kvm.c.html#L3688">(!env->tsc_valid)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4211</td><td><a href="kvm.c.html#L4211">(apic && kvm_irqchip_in_kernel())</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4273</td><td><a href="kvm.c.html#L4273">(!cpu->kvm_no_smi_migration)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4439</td><td><a href="kvm.c.html#L4439">(!env->nested_state)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4469</td><td><a href="kvm.c.html#L4469">(!env->nested_state)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3522</td><td><a href="kvm.c.html#L3522">(i < xcrs.nr_xcrs)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">505</td><td><a href="kvm.c.html#L505">(kvm_arch_get_supported_cpuid(s, 0xD, 1, R_ECX) & CPUID_XSAVE_XSAVES)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">509</td><td><a href="kvm.c.html#L509">(kvm_arch_get_supported_cpuid(s, 1, 0, R_ECX) & CPUID_EXT_RDRAND)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">513</td><td><a href="kvm.c.html#L513">(kvm_arch_get_supported_cpuid(s, 7, 0, R_EBX) & CPUID_7_0_EBX_INVPCID)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">517</td><td><a href="kvm.c.html#L517">(kvm_arch_get_supported_cpuid(s, 7, 0, R_EBX) & CPUID_7_0_EBX_RDSEED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">521</td><td><a href="kvm.c.html#L521">(kvm_arch_get_supported_cpuid(s, 0x80000001, 0, R_EDX) & CPUID_EXT2_RDTSCP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">790</td><td><a href="kvm.c.html#L790">(kvm_check_extension(cs->kvm_state, KVM_CAP_TSC_CONTROL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">5012</td><td><a href="kvm.c.html#L5012">(kvm_find_sw_breakpoint(cs, arch_info->pc))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">218</td><td><a href="kvm.c.html#L218">(env->tsc_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">390</td><td><a href="kvm.c.html#L390">(disable_exits & KVM_X86_DISABLE_EXITS_MWAIT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1324</td><td><a href="kvm.c.html#L1324">(cpu->hyperv_passthrough)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1396</td><td><a href="kvm.c.html#L1396">(!hv_feature_check_deps(cpu, feat, &local_err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1662</td><td><a href="kvm.c.html#L1662">(cpu->hyperv_enforce_cpuid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1758</td><td><a href="kvm.c.html#L1758">(!kvm_hyperv_expand_features(cpu, &local_err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1774</td><td><a href="kvm.c.html#L1774">(cpu->expose_kvm)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1791</td><td><a href="kvm.c.html#L1791">(cpu->kvm_pv_enforce_cpuid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2046</td><td><a href="kvm.c.html#L2046">(unsupported_caps & MCG_LMCE_P)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2164</td><td><a href="kvm.c.html#L2164">(cpu->kvm_msr_buf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2169</td><td><a href="kvm.c.html#L2169">(env->nested_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2826</td><td><a href="kvm.c.html#L2826">(env->pdptrs_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3440</td><td><a href="kvm.c.html#L3440">(env->mcg_cap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3611</td><td><a href="kvm.c.html#L3611">(env->pdptrs_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3734</td><td><a href="kvm.c.html#L3734">(env->mcg_cap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3882</td><td><a href="kvm.c.html#L3882">(cpu->fill_mtrr_mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4112</td><td><a href="kvm.c.html#L4112">(index & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4756</td><td><a href="kvm.c.html#L4756">(run->if_flag)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4986</td><td><a href="kvm.c.html#L4986">(cs->singlestep_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5254</td><td><a href="kvm.c.html#L5254">(class->int_remap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1607</td><td><a href="kvm.c.html#L1607">(value != hyperv_vp_index(CPU(cpu)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2124</td><td><a href="kvm.c.html#L2124">(cpu_has_vmx(env) || cpu_has_svm(env))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1194</td><td><a href="kvm.c.html#L1194">(kvm_check_extension(kvm_state, KVM_CAP_HYPERV_CPUID) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1272</td><td><a href="kvm.c.html#L1272">(i < ARRAY_SIZE(kvm_hyperv_properties))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1375</td><td><a href="kvm.c.html#L1375">(feat < ARRAY_SIZE(kvm_hyperv_properties))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1382</td><td><a href="kvm.c.html#L1382">(feat < ARRAY_SIZE(kvm_hyperv_properties))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4943</td><td><a href="kvm.c.html#L4943">(find_hw_breakpoint(addr, len, type) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">225</td><td><a href="kvm.c.html#L225">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="kvm.c.html#L261">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">262</td><td><a href="kvm.c.html#L262">(r == -E2BIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="kvm.c.html#L282">(cpuid_cache != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="kvm.c.html#L429">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">430</td><td><a href="kvm.c.html#L430">(rc != -ENXIO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="kvm.c.html#L476">(kvm_feature_msrs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="kvm.c.html#L494">(ret != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">551</td><td><a href="kvm.c.html#L551">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">567</td><td><a href="kvm.c.html#L567">(code == BUS_MCEERR_AR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">630</td><td><a href="kvm.c.html#L630">(code == BUS_MCEERR_AR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="kvm.c.html#L643">(code == BUS_MCEERR_AO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">650</td><td><a href="kvm.c.html#L650">(code == BUS_MCEERR_AR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">687</td><td><a href="kvm.c.html#L687">(exception_nr == EXCP01_DB)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">690</td><td><a href="kvm.c.html#L690">(exception_nr == EXCP0E_PAGE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="kvm.c.html#L713">(bank < bank_num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">806</td><td><a href="kvm.c.html#L806">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1026</td><td><a href="kvm.c.html#L1026">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1027</td><td><a href="kvm.c.html#L1027">(r == -E2BIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1508</td><td><a href="kvm.c.html#L1508">(function < HV_CPUID_NESTED_FEATURES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1575</td><td><a href="kvm.c.html#L1575">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1589</td><td><a href="kvm.c.html#L1589">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1603</td><td><a href="kvm.c.html#L1603">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1617</td><td><a href="kvm.c.html#L1617">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1625</td><td><a href="kvm.c.html#L1625">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1647</td><td><a href="kvm.c.html#L1647">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1664</td><td><a href="kvm.c.html#L1664">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="kvm.c.html#L1730">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1743</td><td><a href="kvm.c.html#L1743">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1793</td><td><a href="kvm.c.html#L1793">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1801</td><td><a href="kvm.c.html#L1801">(i <= limit)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1802</td><td><a href="kvm.c.html#L1802">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1819</td><td><a href="kvm.c.html#L1819">(j < times)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="kvm.c.html#L1820">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1866</td><td><a href="kvm.c.html#L1866">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1886</td><td><a href="kvm.c.html#L1886">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1905</td><td><a href="kvm.c.html#L1905">(j <= times)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="kvm.c.html#L1906">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="kvm.c.html#L1934">(limit >= 0x0a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="kvm.c.html#L1940">(has_architectural_pmu_version > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1947</td><td><a href="kvm.c.html#L1947">(num_architectural_pmu_gp_counters > MAX_GP_COUNTERS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1951</td><td><a href="kvm.c.html#L1951">(has_architectural_pmu_version > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1954</td><td><a href="kvm.c.html#L1954">(num_architectural_pmu_fixed_counters > MAX_FIXED_COUNTERS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1963</td><td><a href="kvm.c.html#L1963">(i <= limit)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="kvm.c.html#L1964">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1982</td><td><a href="kvm.c.html#L1982">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2009</td><td><a href="kvm.c.html#L2009">(i <= limit)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="kvm.c.html#L2010">(cpuid_i == KVM_MAX_CPUID_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2033</td><td><a href="kvm.c.html#L2033">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="kvm.c.html#L2056">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2086</td><td><a href="kvm.c.html#L2086">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2121</td><td><a href="kvm.c.html#L2121">(max_nested_state_len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2219</td><td><a href="kvm.c.html#L2219">(kvm_feature_msrs != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2245</td><td><a href="kvm.c.html#L2245">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2280</td><td><a href="kvm.c.html#L2280">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2442</td><td><a href="kvm.c.html#L2442">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2462</td><td><a href="kvm.c.html#L2462">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="kvm.c.html#L2470">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2495</td><td><a href="kvm.c.html#L2495">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2502</td><td><a href="kvm.c.html#L2502">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2508</td><td><a href="kvm.c.html#L2508">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2514</td><td><a href="kvm.c.html#L2514">(shadow_mem != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2517</td><td><a href="kvm.c.html#L2517">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="kvm.c.html#L2546">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2563</td><td><a href="kvm.c.html#L2563">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2643</td><td><a href="kvm.c.html#L2643">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2690</td><td><a href="kvm.c.html#L2690">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2694</td><td><a href="kvm.c.html#L2694">(i < CPU_NB_REGS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2827</td><td><a href="kvm.c.html#L2827">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2876</td><td><a href="kvm.c.html#L2876">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2901</td><td><a href="kvm.c.html#L2901">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2925</td><td><a href="kvm.c.html#L2925">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3086</td><td><a href="kvm.c.html#L3086">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3206</td><td><a href="kvm.c.html#L3206">(level >= KVM_PUT_RESET_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3227</td><td><a href="kvm.c.html#L3227">(has_architectural_pmu_version > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3228</td><td><a href="kvm.c.html#L3228">(has_architectural_pmu_version > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3235</td><td><a href="kvm.c.html#L3235">(i < num_architectural_pmu_fixed_counters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3239</td><td><a href="kvm.c.html#L3239">(i < num_architectural_pmu_gp_counters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3245</td><td><a href="kvm.c.html#L3245">(has_architectural_pmu_version > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3262</td><td><a href="kvm.c.html#L3262">(current_cpu == first_cpu)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3296</td><td><a href="kvm.c.html#L3296">(j < HV_CRASH_PARAMS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3355</td><td><a href="kvm.c.html#L3355">(i < MSR_MTRRcap_VCNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3381</td><td><a href="kvm.c.html#L3381">(i < addr_num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3422</td><td><a href="kvm.c.html#L3422">(i < ARCH_LBR_NR_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3464</td><td><a href="kvm.c.html#L3464">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3474</td><td><a href="kvm.c.html#L3474">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3478</td><td><a href="kvm.c.html#L3478">(i < CPU_NB_REGS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3499</td><td><a href="kvm.c.html#L3499">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3518</td><td><a href="kvm.c.html#L3518">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3539</td><td><a href="kvm.c.html#L3539">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3583</td><td><a href="kvm.c.html#L3583">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3612</td><td><a href="kvm.c.html#L3612">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3718</td><td><a href="kvm.c.html#L3718">(has_architectural_pmu_version > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3719</td><td><a href="kvm.c.html#L3719">(has_architectural_pmu_version > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3725</td><td><a href="kvm.c.html#L3725">(i < num_architectural_pmu_fixed_counters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3728</td><td><a href="kvm.c.html#L3728">(i < num_architectural_pmu_gp_counters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3766</td><td><a href="kvm.c.html#L3766">(j < HV_CRASH_PARAMS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3779</td><td><a href="kvm.c.html#L3779">(msr <= HV_X64_MSR_SINT15)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3786</td><td><a href="kvm.c.html#L3786">(msr <= HV_X64_MSR_STIMER3_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3804</td><td><a href="kvm.c.html#L3804">(i < MSR_MTRRcap_VCNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3819</td><td><a href="kvm.c.html#L3819">(i < addr_num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3846</td><td><a href="kvm.c.html#L3846">(i < ARCH_LBR_NR_ENTRIES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3855</td><td><a href="kvm.c.html#L3855">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3890</td><td><a href="kvm.c.html#L3890">(i < ret)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4195</td><td><a href="kvm.c.html#L4195">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4213</td><td><a href="kvm.c.html#L4213">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4278</td><td><a href="kvm.c.html#L4278">(level >= KVM_PUT_RESET_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4300</td><td><a href="kvm.c.html#L4300">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4401</td><td><a href="kvm.c.html#L4401">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4422</td><td><a href="kvm.c.html#L4422">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4425</td><td><a href="kvm.c.html#L4425">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4483</td><td><a href="kvm.c.html#L4483">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4517</td><td><a href="kvm.c.html#L4517">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4521</td><td><a href="kvm.c.html#L4521">(level >= KVM_PUT_RESET_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4523</td><td><a href="kvm.c.html#L4523">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4528</td><td><a href="kvm.c.html#L4528">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4533</td><td><a href="kvm.c.html#L4533">(level == KVM_PUT_FULL_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4543</td><td><a href="kvm.c.html#L4543">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4547</td><td><a href="kvm.c.html#L4547">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4551</td><td><a href="kvm.c.html#L4551">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4556</td><td><a href="kvm.c.html#L4556">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4560</td><td><a href="kvm.c.html#L4560">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4564</td><td><a href="kvm.c.html#L4564">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4567</td><td><a href="kvm.c.html#L4567">(level >= KVM_PUT_RESET_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4569</td><td><a href="kvm.c.html#L4569">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4575</td><td><a href="kvm.c.html#L4575">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4579</td><td><a href="kvm.c.html#L4579">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4584</td><td><a href="kvm.c.html#L4584">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4598</td><td><a href="kvm.c.html#L4598">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4606</td><td><a href="kvm.c.html#L4606">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4610</td><td><a href="kvm.c.html#L4610">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4614</td><td><a href="kvm.c.html#L4614">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4618</td><td><a href="kvm.c.html#L4618">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4622</td><td><a href="kvm.c.html#L4622">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4626</td><td><a href="kvm.c.html#L4626">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4630</td><td><a href="kvm.c.html#L4630">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4634</td><td><a href="kvm.c.html#L4634">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4638</td><td><a href="kvm.c.html#L4638">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4661</td><td><a href="kvm.c.html#L4661">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4672</td><td><a href="kvm.c.html#L4672">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4706</td><td><a href="kvm.c.html#L4706">(irq >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4712</td><td><a href="kvm.c.html#L4712">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4883</td><td><a href="kvm.c.html#L4883">(int3 != 0xcc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4904</td><td><a href="kvm.c.html#L4904">(n < nb_hw_breakpoint)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4940</td><td><a href="kvm.c.html#L4940">(nb_hw_breakpoint == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4960</td><td><a href="kvm.c.html#L4960">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4990</td><td><a href="kvm.c.html#L4990">(n < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5015</td><td><a href="kvm.c.html#L5015">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5044</td><td><a href="kvm.c.html#L5044">(nb_hw_breakpoint > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5047</td><td><a href="kvm.c.html#L5047">(n < nb_hw_breakpoint)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5067</td><td><a href="kvm.c.html#L5067">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5189</td><td><a href="kvm.c.html#L5189">(i < IOAPIC_NUM_PINS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4325</td><td><a href="kvm.c.html#L4325">(events.nmi.masked)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4332</td><td><a href="kvm.c.html#L4332">(events.smi.smm)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4337</td><td><a href="kvm.c.html#L4337">(events.smi.pending)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4342</td><td><a href="kvm.c.html#L4342">(events.smi.smm_inside_nmi)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4347</td><td><a href="kvm.c.html#L4347">(events.smi.latched_init)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">382</td><td><a href="kvm.c.html#L382">(!kvm_irqchip_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">454</td><td><a href="kvm.c.html#L454">(!kvm_irqchip_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1254</td><td><a href="kvm.c.html#L1254">(!(hyperv_feat_enabled(cpu, dep_feat)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1273</td><td><a href="kvm.c.html#L1273">(!hyperv_feat_enabled(cpu, i))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1312</td><td><a href="kvm.c.html#L1312">(!hyperv_enabled(cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1384</td><td><a href="kvm.c.html#L1384">(!hyperv_feat_enabled(cpu, feat))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="kvm.c.html#L1389">(!hyperv_feature_supported(cs, feat))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1653</td><td><a href="kvm.c.html#L1653">(!evmcs_version_supported(evmcs_version, supported_evmcs_version))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2223</td><td><a href="kvm.c.html#L2223">(!kvm_check_extension(s, KVM_CAP_GET_MSR_FEATURES))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2447</td><td><a href="kvm.c.html#L2447">(!kvm_check_extension(s, KVM_CAP_IRQ_ROUTING))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4228</td><td><a href="kvm.c.html#L4228">(!kvm_has_vcpu_events())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4294</td><td><a href="kvm.c.html#L4294">(!kvm_has_vcpu_events())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4366</td><td><a href="kvm.c.html#L4366">(!kvm_has_vcpu_events())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4396</td><td><a href="kvm.c.html#L4396">(!kvm_has_debugregs())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4417</td><td><a href="kvm.c.html#L4417">(!kvm_has_debugregs())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4679</td><td><a href="kvm.c.html#L4679">(!kvm_pic_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4697</td><td><a href="kvm.c.html#L4697">(!kvm_pic_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4767</td><td><a href="kvm.c.html#L4767">(!kvm_irqchip_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4772</td><td><a href="kvm.c.html#L4772">(!kvm_irqchip_in_kernel())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5062</td><td><a href="kvm.c.html#L5062">(!kvm_vm_check_extension(s, KVM_CAP_SGX_ATTRIBUTE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">406</td><td><a href="kvm.c.html#L406">(!has_msr_arch_capabs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">424</td><td><a href="kvm.c.html#L424">(!sys_attr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">503</td><td><a href="kvm.c.html#L503">(!has_msr_vmx_procbased_ctls2)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1210</td><td><a href="kvm.c.html#L1210">(!cpuid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1215</td><td><a href="kvm.c.html#L1215">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1233</td><td><a href="kvm.c.html#L1233">(!func)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2641</td><td><a href="kvm.c.html#L2641">(!set)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2708</td><td><a href="kvm.c.html#L2708">(!has_xsave)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2721</td><td><a href="kvm.c.html#L2721">(!has_xcrs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2896</td><td><a href="kvm.c.html#L2896">(!has_msr_tsc_deadline)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2919</td><td><a href="kvm.c.html#L2919">(!has_msr_feature_control)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2978</td><td><a href="kvm.c.html#L2978">(!kvm_vmx_basic)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3493</td><td><a href="kvm.c.html#L3493">(!has_xsave)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3513</td><td><a href="kvm.c.html#L3513">(!has_xcrs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5223</td><td><a href="kvm.c.html#L5223">(!first_cpu)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5338</td><td><a href="kvm.c.html#L5338">(!dev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5353</td><td><a href="kvm.c.html#L5353">(!notify_list_inited)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5404</td><td><a href="kvm.c.html#L5404">(!mask)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2552</td><td><a href="kvm.c.html#L2552">(object_dynamic_cast(OBJECT(ms), TYPE_X86_MACHINE))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">242</td><td><a href="kvm.c.html#L242">(kvm_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="kvm.c.html#L397">(host_tsx_broken())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="kvm.c.html#L457">(kvm_irqchip_is_split())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1291</td><td><a href="kvm.c.html#L1291">(hyperv_feat_enabled(cpu, HYPERV_FEAT_EVMCS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1376</td><td><a href="kvm.c.html#L1376">(hyperv_feature_supported(cs, feat))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1432</td><td><a href="kvm.c.html#L1432">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNDBG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1518</td><td><a href="kvm.c.html#L1518">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNDBG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="kvm.c.html#L1613">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1633</td><td><a href="kvm.c.html#L1633">(hyperv_feat_enabled(cpu, HYPERV_FEAT_EVMCS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1763</td><td><a href="kvm.c.html#L1763">(hyperv_enabled(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2130</td><td><a href="kvm.c.html#L2130">(cpu_has_vmx(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2184</td><td><a href="kvm.c.html#L2184">(kvm_irqchip_in_kernel())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2191</td><td><a href="kvm.c.html#L2191">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2490</td><td><a href="kvm.c.html#L2490">(kvm_check_extension(s, KVM_CAP_SET_IDENTITY_MAP_ADDR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3269</td><td><a href="kvm.c.html#L3269">(hyperv_feat_enabled(cpu, HYPERV_FEAT_TIME))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3273</td><td><a href="kvm.c.html#L3273">(hyperv_feat_enabled(cpu, HYPERV_FEAT_REENLIGHTENMENT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3289</td><td><a href="kvm.c.html#L3289">(hyperv_feat_enabled(cpu, HYPERV_FEAT_VAPIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3310</td><td><a href="kvm.c.html#L3310">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3749</td><td><a href="kvm.c.html#L3749">(hyperv_feat_enabled(cpu, HYPERV_FEAT_VAPIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3752</td><td><a href="kvm.c.html#L3752">(hyperv_feat_enabled(cpu, HYPERV_FEAT_TIME))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3755</td><td><a href="kvm.c.html#L3755">(hyperv_feat_enabled(cpu, HYPERV_FEAT_REENLIGHTENMENT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3773</td><td><a href="kvm.c.html#L3773">(hyperv_feat_enabled(cpu, HYPERV_FEAT_SYNIC))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4199</td><td><a href="kvm.c.html#L4199">(kvm_irqchip_in_kernel())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4258</td><td><a href="kvm.c.html#L4258">(kvm_irqchip_in_kernel())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4497</td><td><a href="kvm.c.html#L4497">(cpu_has_svm(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4812</td><td><a href="kvm.c.html#L4812">(kvm_irqchip_in_kernel())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5041</td><td><a href="kvm.c.html#L5041">(kvm_sw_breakpoints_active(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5183</td><td><a href="kvm.c.html#L5183">(kvm_irqchip_is_split())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5202</td><td><a href="kvm.c.html#L5202">(kvm_kernel_irqchip_split())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="kvm.c.html#L356">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="kvm.c.html#L386">(enable_cpu_pm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="kvm.c.html#L679">(has_exception_payload)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">735</td><td><a href="kvm.c.html#L735">(running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1018</td><td><a href="kvm.c.html#L1018">(do_sys_ioctl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1122</td><td><a href="kvm.c.html#L1122">(has_msr_hv_frequencies)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1127</td><td><a href="kvm.c.html#L1127">(has_msr_hv_crash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1131</td><td><a href="kvm.c.html#L1131">(has_msr_hv_reenlightenment)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1135</td><td><a href="kvm.c.html#L1135">(has_msr_hv_reset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1139</td><td><a href="kvm.c.html#L1139">(has_msr_hv_vpindex)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1143</td><td><a href="kvm.c.html#L1143">(has_msr_hv_runtime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1147</td><td><a href="kvm.c.html#L1147">(has_msr_hv_synic)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1156</td><td><a href="kvm.c.html#L1156">(has_msr_hv_stimer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1160</td><td><a href="kvm.c.html#L1160">(has_msr_hv_syndbg_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1191</td><td><a href="kvm.c.html#L1191">(hv_cpuid_cache)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1252</td><td><a href="kvm.c.html#L1252">(deps)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1503</td><td><a href="kvm.c.html#L1503">(nested_eax)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1680</td><td><a href="kvm.c.html#L1680">(has_xsave2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1682</td><td><a href="kvm.c.html#L1682">(has_xsave)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1765</td><td><a href="kvm.c.html#L1765">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2045</td><td><a href="kvm.c.html#L2045">(unsupported_caps)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2065</td><td><a href="kvm.c.html#L2065">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2115</td><td><a href="kvm.c.html#L2115">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2410</td><td><a href="kvm.c.html#L2410">(smram)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2460</td><td><a href="kvm.c.html#L2460">(has_exception_payload)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2529</td><td><a href="kvm.c.html#L2529">(enable_cpu_pm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2537</td><td><a href="kvm.c.html#L2537">(disable_exits)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2628</td><td><a href="kvm.c.html#L2628">(set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2670</td><td><a href="kvm.c.html#L2670">(set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3049</td><td><a href="kvm.c.html#L3049">(has_msr_vmx_vmfunc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3077</td><td><a href="kvm.c.html#L3077">(kvm_perf_cap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3105</td><td><a href="kvm.c.html#L3105">(has_msr_arch_capabs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3110</td><td><a href="kvm.c.html#L3110">(has_msr_core_capabs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3119</td><td><a href="kvm.c.html#L3119">(has_msr_ucode_rev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3145</td><td><a href="kvm.c.html#L3145">(has_msr_star)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3148</td><td><a href="kvm.c.html#L3148">(has_msr_hsave_pa)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3151</td><td><a href="kvm.c.html#L3151">(has_msr_tsc_aux)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3154</td><td><a href="kvm.c.html#L3154">(has_msr_tsc_adjust)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3157</td><td><a href="kvm.c.html#L3157">(has_msr_misc_enable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3161</td><td><a href="kvm.c.html#L3161">(has_msr_smbase)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3164</td><td><a href="kvm.c.html#L3164">(has_msr_smi_count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3167</td><td><a href="kvm.c.html#L3167">(has_msr_pkrs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3170</td><td><a href="kvm.c.html#L3170">(has_msr_bndcfgs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3173</td><td><a href="kvm.c.html#L3173">(has_msr_xss)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3176</td><td><a href="kvm.c.html#L3176">(has_msr_umwait)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3179</td><td><a href="kvm.c.html#L3179">(has_msr_spec_ctrl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3182</td><td><a href="kvm.c.html#L3182">(has_tsc_scale_msr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3186</td><td><a href="kvm.c.html#L3186">(has_msr_tsx_ctrl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3189</td><td><a href="kvm.c.html#L3189">(has_msr_virt_ssbd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3194</td><td><a href="kvm.c.html#L3194">(lm_capable_kernel)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3263</td><td><a href="kvm.c.html#L3263">(has_msr_hv_hypercall)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3293</td><td><a href="kvm.c.html#L3293">(has_msr_hv_crash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3302</td><td><a href="kvm.c.html#L3302">(has_msr_hv_runtime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3327</td><td><a href="kvm.c.html#L3327">(has_msr_hv_stimer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3445</td><td><a href="kvm.c.html#L3445">(has_msr_mcg_ext_ctl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3636</td><td><a href="kvm.c.html#L3636">(has_msr_star)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3639</td><td><a href="kvm.c.html#L3639">(has_msr_hsave_pa)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3642</td><td><a href="kvm.c.html#L3642">(has_msr_tsc_aux)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3645</td><td><a href="kvm.c.html#L3645">(has_msr_tsc_adjust)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3648</td><td><a href="kvm.c.html#L3648">(has_msr_tsc_deadline)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3651</td><td><a href="kvm.c.html#L3651">(has_msr_misc_enable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3654</td><td><a href="kvm.c.html#L3654">(has_msr_smbase)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3657</td><td><a href="kvm.c.html#L3657">(has_msr_smi_count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3660</td><td><a href="kvm.c.html#L3660">(has_msr_feature_control)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3663</td><td><a href="kvm.c.html#L3663">(has_msr_pkrs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3666</td><td><a href="kvm.c.html#L3666">(has_msr_bndcfgs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3669</td><td><a href="kvm.c.html#L3669">(has_msr_xss)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3672</td><td><a href="kvm.c.html#L3672">(has_msr_umwait)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3675</td><td><a href="kvm.c.html#L3675">(has_msr_spec_ctrl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3678</td><td><a href="kvm.c.html#L3678">(has_tsc_scale_msr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3682</td><td><a href="kvm.c.html#L3682">(has_msr_tsx_ctrl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3685</td><td><a href="kvm.c.html#L3685">(has_msr_virt_ssbd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3694</td><td><a href="kvm.c.html#L3694">(lm_capable_kernel)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3737</td><td><a href="kvm.c.html#L3737">(has_msr_mcg_ext_ctl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3745</td><td><a href="kvm.c.html#L3745">(has_msr_hv_hypercall)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3760</td><td><a href="kvm.c.html#L3760">(has_msr_hv_syndbg_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3763</td><td><a href="kvm.c.html#L3763">(has_msr_hv_crash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3770</td><td><a href="kvm.c.html#L3770">(has_msr_hv_runtime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3783</td><td><a href="kvm.c.html#L3783">(has_msr_hv_stimer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4234</td><td><a href="kvm.c.html#L4234">(has_exception_payload)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4255</td><td><a href="kvm.c.html#L4255">(has_msr_smbase)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4741</td><td><a href="kvm.c.html#L4741">(delay_ns)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5072</td><td><a href="kvm.c.html#L5072">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5204</td><td><a href="kvm.c.html#L5204">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5251</td><td><a href="kvm.c.html#L5251">(iommu)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5266</td><td><a href="kvm.c.html#L5266">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5357</td><td><a href="kvm.c.html#L5357">(iommu)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5416</td><td><a href="kvm.c.html#L5416">(mask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5419</td><td><a href="kvm.c.html#L5419">(rc)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\analyze\analyze.c Ctrl Expressions (158) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\analyze\analyze.c Ctrl Expressions (158) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\analyze\analyze.c Ctrl Expressions (158)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">604</td><td><a href="analyze.c.html#L604">(<span style='background-color:#741da3;'>u->deactivated > u->activating && u->deactivated <= boot->finish_time && u->activated == 0 && u->deactivating == 0</span>)</a></td><td class="num">1037.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="analyze.c.html#L601">(<span style='background-color:#741da3;'>text_width > text_start && text_width + text_start > width</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">220</td><td><a href="analyze.c.html#L220">(<span style='background-color:#9c4c02;'>bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "FirmwareTimestampMonotonic", &times.firmware_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "LoaderTimestampMonotonic", &times.loader_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "KernelTimestamp", &times.kernel_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "InitRDTimestampMonotonic", &times.initrd_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "UserspaceTimestampMonotonic", &times.userspace_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "FinishTimestampMonotonic", &times.finish_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "SecurityStartTimestampMonotonic", &times.security_start_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "SecurityFinishTimestampMonotonic", &times.security_finish_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "GeneratorsStartTimestampMonotonic", &times.generators_start_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "GeneratorsFinishTimestampMonotonic", &times.generators_finish_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "UnitsLoadStartTimestampMonotonic", &times.unitsload_start_time) < 0 || bus_get_uint64_property(bus, "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", "UnitsLoadFinishTimestampMonotonic", &times.unitsload_finish_time) < 0</span>)</a></td><td class="num">281.00</td></tr>
+      <tr><td class="num line">381</td><td><a href="analyze.c.html#L381">(<span style='background-color:#9c4c02;'>bus_get_uint64_property(bus, u.unit_path, "org.freedesktop.systemd1.Unit", "InactiveExitTimestampMonotonic", &t->activating) < 0 || bus_get_uint64_property(bus, u.unit_path, "org.freedesktop.systemd1.Unit", "ActiveEnterTimestampMonotonic", &t->activated) < 0 || bus_get_uint64_property(bus, u.unit_path, "org.freedesktop.systemd1.Unit", "ActiveExitTimestampMonotonic", &t->deactivating) < 0 || bus_get_uint64_property(bus, u.unit_path, "org.freedesktop.systemd1.Unit", "InactiveEnterTimestampMonotonic", &t->deactivated) < 0</span>)</a></td><td class="num">118.00</td></tr>
+      <tr><td class="num line">837</td><td><a href="analyze.c.html#L837">(times && times->activated && times->activated <= boot->finish_time && (times->activated >= service_longest || service_longest == 0))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">861</td><td><a href="analyze.c.html#L861">(!times || !times->activated || times->activated > boot->finish_time || service_longest - times->activated > arg_fuzz)</a></td><td class="num">41.35</td></tr>
+      <tr><td class="num line">852</td><td><a href="analyze.c.html#L852">(times && times->activated && times->activated <= boot->finish_time && (service_longest - times->activated) <= arg_fuzz)</a></td><td class="num">39.85</td></tr>
+      <tr><td class="num line">368</td><td><a href="analyze.c.html#L368">((r = bus_parse_unit_info(reply, &u)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1173</td><td><a href="analyze.c.html#L1173">((r = bus_parse_unit_info(reply, &u)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1032</td><td><a href="analyze.c.html#L1032">(!strv_isempty(from_patterns) && !match_patterns && !strv_fnmatch(from_patterns, u->id, 0))</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">1046</td><td><a href="analyze.c.html#L1046">(!strv_isempty(to_patterns) && !match_patterns2 && !strv_fnmatch(to_patterns, *unit, 0))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">590</td><td><a href="analyze.c.html#L590">(u->activating < boot->userspace_time || u->activating > boot->finish_time)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">607</td><td><a href="analyze.c.html#L607">(u->activated < u->activating || u->activated > boot->finish_time)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">609</td><td><a href="analyze.c.html#L609">(u->deactivating < u->activated || u->activated > boot->finish_time)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">611</td><td><a href="analyze.c.html#L611">(u->deactivated < u->deactivating || u->deactivated > boot->finish_time)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1476</td><td><a href="analyze.c.html#L1476">((c = getopt_long(argc, argv, "hH:M:", options, NULL)) >= 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">406</td><td><a href="analyze.c.html#L406">(t->activated >= t->activating)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">408</td><td><a href="analyze.c.html#L408">(t->deactivated >= t->activating)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">575</td><td><a href="analyze.c.html#L575">(boot->firmware_time > boot->loader_time)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">770</td><td><a href="analyze.c.html#L770">(times->activated > boot->userspace_time)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">937</td><td><a href="analyze.c.html#L937">(times->activated > boot->userspace_time)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1051</td><td><a href="analyze.c.html#L1051">(!strv_isempty(patterns) && !match_patterns && !match_patterns2)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1099</td><td><a href="analyze.c.html#L1099">(strv_extend(&expanded_patterns, *pattern) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1598</td><td><a href="analyze.c.html#L1598">(!argv[optind] || streq(argv[optind], "time"))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">413</td><td><a href="analyze.c.html#L413">(t->activating == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="analyze.c.html#L417">(t->name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">507</td><td><a href="analyze.c.html#L507">(t->initrd_time > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1000</td><td><a href="analyze.c.html#L1000">(times[i].time > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">873</td><td><a href="analyze.c.html#L873">(strv_contains(*units, *c))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1121</td><td><a href="analyze.c.html#L1121">(strv_extend(&expanded_patterns, unit_id) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1503</td><td><a href="analyze.c.html#L1503">(strv_extend(&arg_dot_from_patterns, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1509</td><td><a href="analyze.c.html#L1509">(strv_extend(&arg_dot_to_patterns, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">196</td><td><a href="analyze.c.html#L196">(p < t + n)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">205</td><td><a href="analyze.c.html#L205">(*a > 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">530</td><td><a href="analyze.c.html#L530">(i % 5000000 == 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">534</td><td><a href="analyze.c.html#L534">(i % 1000000 == 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">587</td><td><a href="analyze.c.html#L587">(u < times + n)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">700</td><td><a href="analyze.c.html#L700">(u < times + n)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">704</td><td><a href="analyze.c.html#L704">(!u->name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">282</td><td><a href="analyze.c.html#L282">(times.finish_time <= 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">371</td><td><a href="analyze.c.html#L371">(!GREEDY_REALLOC(unit_times, size, c + 1))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">501</td><td><a href="analyze.c.html#L501">(t->firmware_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="analyze.c.html#L503">(t->loader_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="analyze.c.html#L505">(t->kernel_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="analyze.c.html#L577">(boot->loader_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="analyze.c.html#L582">(boot->initrd_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="analyze.c.html#L584">(boot->kernel_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">673</td><td><a href="analyze.c.html#L673">(boot->firmware_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">678</td><td><a href="analyze.c.html#L678">(boot->loader_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">683</td><td><a href="analyze.c.html#L683">(boot->kernel_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">688</td><td><a href="analyze.c.html#L688">(boot->initrd_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="analyze.c.html#L713">(u->time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="analyze.c.html#L766">(times->time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">934</td><td><a href="analyze.c.html#L934">(times->time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="analyze.c.html#L1120">(!streq(*pattern, unit_id))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="analyze.c.html#L1102">(string_is_glob(*pattern))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1237</td><td><a href="analyze.c.html#L1237">(strv_length(args) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1292</td><td><a href="analyze.c.html#L1292">(strv_length(args) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">150</td><td><a href="analyze.c.html#L150">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">175</td><td><a href="analyze.c.html#L175">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">346</td><td><a href="analyze.c.html#L346">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">357</td><td><a href="analyze.c.html#L357">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">363</td><td><a href="analyze.c.html#L363">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">423</td><td><a href="analyze.c.html#L423">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="analyze.c.html#L467">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="analyze.c.html#L476">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="analyze.c.html#L494">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">528</td><td><a href="analyze.c.html#L528">(i <= end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">554</td><td><a href="analyze.c.html#L554">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="analyze.c.html#L558">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="analyze.c.html#L562">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="analyze.c.html#L566">(n <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="analyze.c.html#L572">(width < 800.0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="analyze.c.html#L579">(width < 1000.0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="analyze.c.html#L760">(i != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">789</td><td><a href="analyze.c.html#L789">(path == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="analyze.c.html#L826">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">832</td><td><a href="analyze.c.html#L832">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">847</td><td><a href="analyze.c.html#L847">(service_longest == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="analyze.c.html#L870">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="analyze.c.html#L876">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">883</td><td><a href="analyze.c.html#L883">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">906</td><td><a href="analyze.c.html#L906">(path == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">918</td><td><a href="analyze.c.html#L918">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">924</td><td><a href="analyze.c.html#L924">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">930</td><td><a href="analyze.c.html#L930">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">953</td><td><a href="analyze.c.html#L953">(n <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">960</td><td><a href="analyze.c.html#L960">(i < (unsigned)n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">962</td><td><a href="analyze.c.html#L962">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="analyze.c.html#L990">(n <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">997</td><td><a href="analyze.c.html#L997">(i < (unsigned)n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1013</td><td><a href="analyze.c.html#L1013">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1038</td><td><a href="analyze.c.html#L1038">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="analyze.c.html#L1068">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="analyze.c.html#L1074">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1077</td><td><a href="analyze.c.html#L1077">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="analyze.c.html#L1080">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1083</td><td><a href="analyze.c.html#L1083">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1117</td><td><a href="analyze.c.html#L1117">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1142</td><td><a href="analyze.c.html#L1142">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="analyze.c.html#L1146">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1150</td><td><a href="analyze.c.html#L1150">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="analyze.c.html#L1162">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1168</td><td><a href="analyze.c.html#L1168">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1176</td><td><a href="analyze.c.html#L1176">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1179</td><td><a href="analyze.c.html#L1179">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1219</td><td><a href="analyze.c.html#L1219">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1223</td><td><a href="analyze.c.html#L1223">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1251</td><td><a href="analyze.c.html#L1251">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="analyze.c.html#L1278">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="analyze.c.html#L1306">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="analyze.c.html#L1333">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1358</td><td><a href="analyze.c.html#L1358">(i < _SYSCALL_FILTER_SET_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1516</td><td><a href="analyze.c.html#L1516">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1537</td><td><a href="analyze.c.html#L1537">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1551</td><td><a href="analyze.c.html#L1551">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="analyze.c.html#L1581">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1593</td><td><a href="analyze.c.html#L1593">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1584</td><td><a href="analyze.c.html#L1584">(streq_ptr(argv[optind], "verify"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1600</td><td><a href="analyze.c.html#L1600">(streq(argv[optind], "blame"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1602</td><td><a href="analyze.c.html#L1602">(streq(argv[optind], "critical-chain"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1604</td><td><a href="analyze.c.html#L1604">(streq(argv[optind], "plot"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1606</td><td><a href="analyze.c.html#L1606">(streq(argv[optind], "dot"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1608</td><td><a href="analyze.c.html#L1608">(streq(argv[optind], "dump"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1610</td><td><a href="analyze.c.html#L1610">(streq(argv[optind], "set-log-level"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1612</td><td><a href="analyze.c.html#L1612">(streq(argv[optind], "get-log-level"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1614</td><td><a href="analyze.c.html#L1614">(streq(argv[optind], "set-log-target"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="analyze.c.html#L1616">(streq(argv[optind], "get-log-target"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1618</td><td><a href="analyze.c.html#L1618">(streq(argv[optind], "syscall-filter"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="analyze.c.html#L306">(times.initrd_time)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">972</td><td><a href="analyze.c.html#L972">(!strv_isempty(names))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1203</td><td><a href="analyze.c.html#L1203">(!strv_isempty(args))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1265</td><td><a href="analyze.c.html#L1265">(!strv_isempty(args))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1320</td><td><a href="analyze.c.html#L1320">(!strv_isempty(args))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">321</td><td><a href="analyze.c.html#L321">(!hi)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">458</td><td><a href="analyze.c.html#L458">(!host)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="analyze.c.html#L514">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">856</td><td><a href="analyze.c.html#L856">(!to_print)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">886</td><td><a href="analyze.c.html#L886">(!to_print)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">957</td><td><a href="analyze.c.html#L957">(!h)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1106</td><td><a href="analyze.c.html#L1106">(!unit)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1359</td><td><a href="analyze.c.html#L1359">(!first)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1370</td><td><a href="analyze.c.html#L1370">(!first)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1374</td><td><a href="analyze.c.html#L1374">(!set)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">822</td><td><a href="analyze.c.html#L822">(strv_extend(units, name))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1066</td><td><a href="analyze.c.html#L1066">(IN_SET(arg_dot, DEP_ORDER, DEP_ALL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="analyze.c.html#L1072">(IN_SET(arg_dot, DEP_REQUIRE, DEP_ALL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1190</td><td><a href="analyze.c.html#L1190">(on_tty())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1355</td><td><a href="analyze.c.html#L1355">(strv_isempty(names))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">215</td><td><a href="analyze.c.html#L215">(cached)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">287</td><td><a href="analyze.c.html#L287">(arg_user)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">432</td><td><a href="analyze.c.html#L432">(unit_times)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">765</td><td><a href="analyze.c.html#L765">(times)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">803</td><td><a href="analyze.c.html#L803">(times)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">806</td><td><a href="analyze.c.html#L806">(times)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">933</td><td><a href="analyze.c.html#L933">(times)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1535</td><td><a href="analyze.c.html#L1535">(optarg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1549</td><td><a href="analyze.c.html#L1549">(optarg)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

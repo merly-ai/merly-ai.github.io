@@ -1,0 +1,138 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../../../../../../merly.css">
+  <title>Ventoy Repo - IPXE\ipxe_mod_code\ipxe-3fe683e\src\arch\x86\interface\pcbios\ventoy_int13.c Ctrl Expressions (87) - MerlyMentor</title>
+</head>
+<body>
+  <h2>Ventoy Repo - IPXE\ipxe_mod_code\ipxe-3fe683e\src\arch\x86\interface\pcbios\ventoy_int13.c Ctrl Expressions (87) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../../../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;IPXE\ipxe_mod_code\ipxe-3fe683e\src\arch\x86\interface\pcbios\ventoy_int13.c Ctrl Expressions (87)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">317</td><td><a href="ventoy_int13.c.html#L317">(<span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>cylinders * (*heads) * (*sectors)</span>) == blocks</span>)</a></td><td class="num">2010.20</td></tr>
+      <tr><td class="num line">510</td><td><a href="ventoy_int13.c.html#L510">(<span style='background-color:#741da3;'>(cylinder >= int13->cylinders) || (head >= int13->heads) || (sector < 1) || (sector > int13->sectors_per_track)</span>)</a></td><td class="num">1023.00</td></tr>
+      <tr><td class="num line">1112</td><td><a href="ventoy_int13.c.html#L1112">(<span style='background-color:#741da3;'>((bios_drive & 0x7f) == 0x7f) && (command == INT13_CDROM_STATUS_TERMINATE) && sandev->is_cdrom</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">922</td><td><a href="ventoy_int13.c.html#L922">(<span style='background-color:#741da3;'>(int13->cylinders < 1024) && (sandev_capacity(sandev) <= INT13_MAX_CHS_SECTORS)</span>)</a></td><td class="num">1011.75</td></tr>
+      <tr><td class="num line">1541</td><td><a href="ventoy_int13.c.html#L1541">(((rc = int13_load_eltorito(drive, &address)) != 0) && ((rc = int13_load_mbr(drive, &address)) != 0))</a></td><td class="num">72.50</td></tr>
+      <tr><td class="num line">879</td><td><a href="ventoy_int13.c.html#L879">((rc = edd_describe(&sanpath->block, &dpi->interface_type, &dpi->device_path)) != 0)</a></td><td class="num">52.75</td></tr>
+      <tr><td class="num line">1394</td><td><a href="ventoy_int13.c.html#L1394">(bootinfo->BootFileLocation == 0 && bootinfo->PvdLocation == 16 && (bootinfo->BootFileLen / 2048) < catalog.boot.length && bootinfo->BootFileChecksum > 0)</a></td><td class="num">45.10</td></tr>
+      <tr><td class="num line">1067</td><td><a href="ventoy_int13.c.html#L1067">(ix86->regs.dh == 0 && (ix86->regs.cl & 0x3f) == 1 && ix86->regs.al == 1)</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">932</td><td><a href="ventoy_int13.c.html#L932">((rc = int13_device_path_info(sandev, &params.dpi)) != 0)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">1028</td><td><a href="ventoy_int13.c.html#L1028">((rc = sandev_read(sandev, start, command.count, phys_to_user(command.buffer))) != 0)</a></td><td class="num">39.50</td></tr>
+      <tr><td class="num line">710</td><td><a href="ventoy_int13.c.html#L710">((addr.count == 0xff) || ((addr.buffer.segment == 0xffff) && (addr.buffer.offset == 0xffff)))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="ventoy_int13.c.html#L352">((rc = int13_guess_geometry_fdd(sandev, &guessed_heads, &guessed_sectors)) != 0)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">356</td><td><a href="ventoy_int13.c.html#L356">((rc = int13_guess_geometry_hdd(sandev, scratch, &guessed_heads, &guessed_sectors)) != 0)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">1579</td><td><a href="ventoy_int13.c.html#L1579">((rc = call_bootsector(address.segment, address.offset, drive)) != 0)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">848</td><td><a href="ventoy_int13.c.html#L848">(sandev_needs_reopen(sandev) && ((rc = sandev_reopen(sandev)) != 0))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1533</td><td><a href="ventoy_int13.c.html#L1533">((rc = int13_load_mbr(drive, &address)) != 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">202</td><td><a href="ventoy_int13.c.html#L202">((rc = sandev_read(sandev, 0, 1, virt_to_user(mbr))) != 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1392</td><td><a href="ventoy_int13.c.html#L1392">(0x7C6CEAFA == bootinfo->isolinux0 && 0x90900000 == bootinfo->isolinux1)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1456</td><td><a href="ventoy_int13.c.html#L1456">(chain->disk_drive >= 0x80 && chain->drive_map >= 0x80)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">451</td><td><a href="ventoy_int13.c.html#L451">((rc = sandev_reset(sandev)) != 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">528</td><td><a href="ventoy_int13.c.html#L528">((rc = sandev_rw(sandev, lba, count, buffer)) != 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">733</td><td><a href="ventoy_int13.c.html#L733">((rc = sandev_rw(sandev, lba, count, buffer)) != 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1307</td><td><a href="ventoy_int13.c.html#L1307">(g_sandev && g_sandev->drive == drive)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="ventoy_int13.c.html#L232">((start_cylinder == 0) && (start_head != 0))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1064</td><td><a href="ventoy_int13.c.html#L1064">(VENTOY_BOOT_FIXBIN_DRIVE == bios_drive && INT13_READ_SECTORS == command)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1087</td><td><a href="ventoy_int13.c.html#L1087">(g_drive_map1 >= 0x80 && g_drive_map2 >= 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">245</td><td><a href="ventoy_int13.c.html#L245">((end_head + 1) > *heads)</a></td><td class="num">6.85</td></tr>
+      <tr><td class="num line">432</td><td><a href="ventoy_int13.c.html#L432">((check_equipment_word != equipment_word) || (check_num_drives != num_drives))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">657</td><td><a href="ventoy_int13.c.html#L657">(ix86->regs.bx == 0x55aa)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1444</td><td><a href="ventoy_int13.c.html#L1444">(chain->os_param.vtoy_reserved[6])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="ventoy_int13.c.html#L373">(int13->cylinders > 1024)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">402</td><td><a href="ventoy_int13.c.html#L402">(max_drive < int13->natural_drive)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1104</td><td><a href="ventoy_int13.c.html#L1104">(bios_drive != sandev->drive)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1106</td><td><a href="ventoy_int13.c.html#L1106">(bios_drive == int13->natural_drive)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1486</td><td><a href="ventoy_int13.c.html#L1486">(int13->cylinders > 1024)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="ventoy_int13.c.html#L251">(end_sector > *sectors)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">405</td><td><a href="ventoy_int13.c.html#L405">(*counter < required)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">223</td><td><a href="ventoy_int13.c.html#L223">(!partition->type)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="ventoy_int13.c.html#L363">(!int13->heads)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">365</td><td><a href="ventoy_int13.c.html#L365">(!int13->sectors_per_track)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">367</td><td><a href="ventoy_int13.c.html#L367">(!int13->cylinders)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">981</td><td><a href="ventoy_int13.c.html#L981">(!sandev->is_cdrom)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1020</td><td><a href="ventoy_int13.c.html#L1020">(!int13->boot_catalog)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1335</td><td><a href="ventoy_int13.c.html#L1335">(catalog.valid.platform_id != ELTORITO_PLATFORM_X86)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1340</td><td><a href="ventoy_int13.c.html#L1340">(catalog.boot.indicator != ELTORITO_BOOTABLE)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1344</td><td><a href="ventoy_int13.c.html#L1344">(catalog.boot.media_type != ELTORITO_NO_EMULATION)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1357</td><td><a href="ventoy_int13.c.html#L1357">(catalog.boot.length > 256)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1388</td><td><a href="ventoy_int13.c.html#L1388">(catalog.boot.length > 4)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1476</td><td><a href="ventoy_int13.c.html#L1476">(!int13->heads)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1478</td><td><a href="ventoy_int13.c.html#L1478">(!int13->sectors_per_track)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1480</td><td><a href="ventoy_int13.c.html#L1480">(!int13->cylinders)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">722</td><td><a href="ventoy_int13.c.html#L722">(addr.count <= 0x7f)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">724</td><td><a href="ventoy_int13.c.html#L724">(addr.count == 0xff)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">260</td><td><a href="ventoy_int13.c.html#L260">(!*heads)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="ventoy_int13.c.html#L262">(!*sectors)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">700</td><td><a href="ventoy_int13.c.html#L700">(bufsize < offsetof(typeof(addr), buffer_phys))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">943</td><td><a href="ventoy_int13.c.html#L943">(bufsize < offsetof(typeof(params), dpte))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">945</td><td><a href="ventoy_int13.c.html#L945">(bufsize < offsetof(typeof(params), dpi))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">499</td><td><a href="ventoy_int13.c.html#L499">(sandev_blksize(sandev) != INT13_BLKSIZE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">598</td><td><a href="ventoy_int13.c.html#L598">(sandev_blksize(sandev) != INT13_BLKSIZE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">219</td><td><a href="ventoy_int13.c.html#L219">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">311</td><td><a href="ventoy_int13.c.html#L311">(i < sizeof ( int13_fdd_geometries ) / sizeof ( int13_fdd_geometries[0] ))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">889</td><td><a href="ventoy_int13.c.html#L889">(i < sizeof ( *dpi ))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="ventoy_int13.c.html#L958">(len > bufsize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1058</td><td><a href="ventoy_int13.c.html#L1058">(bios_drive == VENTOY_BIOS_FAKE_DRIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1089</td><td><a href="ventoy_int13.c.html#L1089">(bios_drive == g_drive_map1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1094</td><td><a href="ventoy_int13.c.html#L1094">(bios_drive == g_drive_map2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1181</td><td><a href="ventoy_int13.c.html#L1181">(status < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1271</td><td><a href="ventoy_int13.c.html#L1271">(magic != INT13_MBR_MAGIC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="ventoy_int13.c.html#L856">(!device)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">351</td><td><a href="ventoy_int13.c.html#L351">(int13_is_fdd(sandev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">612</td><td><a href="ventoy_int13.c.html#L612">(int13_is_fdd(sandev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="ventoy_int13.c.html#L635">(int13_is_fdd(sandev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="ventoy_int13.c.html#L694">(int13_is_fdd(sandev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1548</td><td><a href="ventoy_int13.c.html#L1548">(strstr(cmdline, "ibft"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="ventoy_int13.c.html#L415">(num_fdds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">791</td><td><a href="ventoy_int13.c.html#L791">(DBG_EXTRA)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">818</td><td><a href="ventoy_int13.c.html#L818">(DBG_EXTRA)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1072</td><td><a href="ventoy_int13.c.html#L1072">(buffer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1324</td><td><a href="ventoy_int13.c.html#L1324">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1359</td><td><a href="ventoy_int13.c.html#L1359">(g_debug)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1382</td><td><a href="ventoy_int13.c.html#L1382">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1397</td><td><a href="ventoy_int13.c.html#L1397">(g_debug)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1435</td><td><a href="ventoy_int13.c.html#L1435">(g_hddmode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1446</td><td><a href="ventoy_int13.c.html#L1446">(g_hddmode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1531</td><td><a href="ventoy_int13.c.html#L1531">(g_hddmode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1546</td><td><a href="ventoy_int13.c.html#L1546">(imginfo)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\arm_gicv3_redist.c Ctrl Expressions (61) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\arm_gicv3_redist.c Ctrl Expressions (61) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\arm_gicv3_redist.c Ctrl Expressions (61)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1058</td><td><a href="arm_gicv3_redist.c.html#L1058">(<span style='background-color:#741da3;'>!resident && level && doorbell != INTID_SPURIOUS && (cs->gicr_ctlr & GICR_CTLR_ENABLE_LPIS)</span>)</a></td><td class="num">1018.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="arm_gicv3_redist.c.html#L424">(<span style='background-color:#741da3;'>(cs->gic->gicd_ctlr & GICD_CTLR_DS) || !attrs.secure</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">434</td><td><a href="arm_gicv3_redist.c.html#L434">(<span style='background-color:#741da3;'>(cs->gic->gicd_ctlr & GICD_CTLR_DS) || !attrs.secure</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">579</td><td><a href="arm_gicv3_redist.c.html#L579">(<span style='background-color:#741da3;'>(cs->gic->gicd_ctlr & GICD_CTLR_DS) || !attrs.secure</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">589</td><td><a href="arm_gicv3_redist.c.html#L589">(<span style='background-color:#741da3;'>(cs->gic->gicd_ctlr & GICD_CTLR_DS) || !attrs.secure</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">882</td><td><a href="arm_gicv3_redist.c.html#L882">(!(cs->gicr_ctlr & GICR_CTLR_ENABLE_LPIS) || (irq > (1ULL << (idbits + 1)) - 1) || irq < GICV3_LPI_INTID_START)</a></td><td class="num">54.45</td></tr>
+      <tr><td class="num line">110</td><td><a href="arm_gicv3_redist.c.html#L110">((prio < hpp->prio) || ((prio == hpp->prio) && (irq <= hpp->irq)))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">916</td><td><a href="arm_gicv3_redist.c.html#L916">(!(src->gicr_ctlr & GICR_CTLR_ENABLE_LPIS) || !(dest->gicr_ctlr & GICR_CTLR_ENABLE_LPIS))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">966</td><td><a href="arm_gicv3_redist.c.html#L966">(!(src->gicr_ctlr & GICR_CTLR_ENABLE_LPIS) || !(dest->gicr_ctlr & GICR_CTLR_ENABLE_LPIS))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">24</td><td><a href="arm_gicv3_redist.c.html#L24">(!attrs.secure && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">200</td><td><a href="arm_gicv3_redist.c.html#L200">(!attrs.secure && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">218</td><td><a href="arm_gicv3_redist.c.html#L218">(!attrs.secure && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">373</td><td><a href="arm_gicv3_redist.c.html#L373">(!attrs.secure && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">524</td><td><a href="arm_gicv3_redist.c.html#L524">(!attrs.secure && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="arm_gicv3_redist.c.html#L1151">(ns && !(cs->gic->gicd_ctlr & GICD_CTLR_DS))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="arm_gicv3_redist.c.html#L1155">((irqgrp == GICV3_G0 && nsaccess < 1) || (irqgrp == GICV3_G1 && nsaccess < 2))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">1077</td><td><a href="arm_gicv3_redist.c.html#L1077">(vcpu_resident(src, src_vptaddr) && irq == src->hppvlpi.irq)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">201</td><td><a href="arm_gicv3_redist.c.html#L201">(!(cs->gicr_igroupr0 & (1U << irq)))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">219</td><td><a href="arm_gicv3_redist.c.html#L219">(!(cs->gicr_igroupr0 & (1U << irq)))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1143</td><td><a href="arm_gicv3_redist.c.html#L1143">(grp == GICV3_G1 && irqgrp == GICV3_G0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1038</td><td><a href="arm_gicv3_redist.c.html#L1038">(irq >= (1ULL << (idbits + 1)))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">830</td><td><a href="arm_gicv3_redist.c.html#L830">(!(cs->gicr_ctlr & GICR_CTLR_ENABLE_LPIS))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">869</td><td><a href="arm_gicv3_redist.c.html#L869">(irq == cs->hpplpi.irq)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">937</td><td><a href="arm_gicv3_redist.c.html#L937">(irq == src->hpplpi.irq)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1022</td><td><a href="arm_gicv3_redist.c.html#L1022">(irq == cs->hppvlpi.irq)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1052</td><td><a href="arm_gicv3_redist.c.html#L1052">(irq == cs->hppvlpi.irq)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">275</td><td><a href="arm_gicv3_redist.c.html#L275">(cs->gicr_vpendbaser ^ newval)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="arm_gicv3_redist.c.html#L478">(cs->gicr_typer & GICR_TYPER_PLPIS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1116</td><td><a href="arm_gicv3_redist.c.html#L1116">(level == extract32(cs->level, irq, 1))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="arm_gicv3_redist.c.html#L282">(!oldvalid && !newvalid)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">180</td><td><a href="arm_gicv3_redist.c.html#L180">(extract32(pend, irq % 8, 1) == level)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">151</td><td><a href="arm_gicv3_redist.c.html#L151">(i < pendt_size / 8)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">552</td><td><a href="arm_gicv3_redist.c.html#L552">(i < irq + 4)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">927</td><td><a href="arm_gicv3_redist.c.html#L927">((irq / 8) >= pendt_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">980</td><td><a href="arm_gicv3_redist.c.html#L980">(i < pendt_size / 8)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">70</td><td><a href="arm_gicv3_redist.c.html#L70">(!FIELD_EX64(cs->gicr_vpendbaser, GICR_VPENDBASER, VALID))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="arm_gicv3_redist.c.html#L233">(!FIELD_EX64(cs->gicr_vpendbaser, GICR_VPENDBASER, VALID))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">100</td><td><a href="arm_gicv3_redist.c.html#L100">(!(lpite & LPI_CTE_ENABLED))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">270</td><td><a href="arm_gicv3_redist.c.html#L270">(oldvalid && newvalid)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1044</td><td><a href="arm_gicv3_redist.c.html#L1044">(resident && bit_changed)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1126</td><td><a href="arm_gicv3_redist.c.html#L1126">(extract32(cs->edge_trigger, irq, 1))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">479</td><td><a href="arm_gicv3_redist.c.html#L479">(value & GICR_CTLR_ENABLE_LPIS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">506</td><td><a href="arm_gicv3_redist.c.html#L506">(value & GICR_WAKER_ProcessorSleep)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="arm_gicv3_redist.c.html#L402">(i >= irq)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="arm_gicv3_redist.c.html#L728">(r != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="arm_gicv3_redist.c.html#L787">(r != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="arm_gicv3_redist.c.html#L1147">(grp != irqgrp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="arm_gicv3_redist.c.html#L856">(!set_pending_table_bit(cs, lpipt_baddr, irq, level))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">933</td><td><a href="arm_gicv3_redist.c.html#L933">(!set_pending_table_bit(src, src_baddr, irq, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1073</td><td><a href="arm_gicv3_redist.c.html#L1073">(!set_pending_table_bit(src, src_vptaddr, irq, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1093</td><td><a href="arm_gicv3_redist.c.html#L1093">(!vcpu_resident(cs, vptaddr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">985</td><td><a href="arm_gicv3_redist.c.html#L985">(!src_pend)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1014</td><td><a href="arm_gicv3_redist.c.html#L1014">(set_pending_table_bit(cs, vptbase, irq, level))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">104</td><td><a href="arm_gicv3_redist.c.html#L104">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">153</td><td><a href="arm_gicv3_redist.c.html#L153">(pend)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">287</td><td><a href="arm_gicv3_redist.c.html#L287">(newvalid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">865</td><td><a href="arm_gicv3_redist.c.html#L865">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1015</td><td><a href="arm_gicv3_redist.c.html#L1015">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1036</td><td><a href="arm_gicv3_redist.c.html#L1036">(resident)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1045</td><td><a href="arm_gicv3_redist.c.html#L1045">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1124</td><td><a href="arm_gicv3_redist.c.html#L1124">(level)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

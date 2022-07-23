@@ -1,0 +1,112 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\onion.c Ctrl Expressions (61) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\onion.c Ctrl Expressions (61) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\onion.c Ctrl Expressions (61)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">494</td><td><a href="onion.c.html#L494">(<span style='background-color:#741da3;'>cell_out->created_cell.handshake_len > RELAY_PAYLOAD_SIZE - 2 || cell_out->created_cell.handshake_len > payload_len - 2</span>)</a></td><td class="num">1018.10</td></tr>
+      <tr><td class="num line">137</td><td><a href="onion.c.html#L137">(<span style='background-color:#741da3;'>handshake_len > CELL_PAYLOAD_SIZE - 4 || handshake_len > p_len - 4</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">674</td><td><a href="onion.c.html#L674">(should_include_ed25519_id_extend_cells(NULL, get_options()) && !ed25519_public_key_is_zero(&cell_in->ed_pubkey))</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">413</td><td><a href="onion.c.html#L413">(extend1_cell_body_parse(&cell, payload, payload_length) < 0 || cell == NULL)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">428</td><td><a href="onion.c.html#L428">(extend2_cell_body_parse(&cell, payload, payload_length) < 0 || cell == NULL)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="onion.c.html#L251">(!tor_addr_port_is_valid_ap(&cell->orport_ipv4, 0))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">258</td><td><a href="onion.c.html#L258">(!tor_addr_port_is_valid_ap(&cell->orport_ipv6, 0))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">64</td><td><a href="onion.c.html#L64">(cell->handshake_type != ONION_HANDSHAKE_TYPE_TAP && cell->handshake_type != ONION_HANDSHAKE_TYPE_NTOR)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">193</td><td><a href="onion.c.html#L193">(cell->handshake_len != TAP_ONIONSKIN_REPLY_LEN && cell->handshake_len != NTOR_REPLY_LEN)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">266</td><td><a href="onion.c.html#L266">(cell->cell_type != RELAY_COMMAND_EXTEND2 && cell->cell_type != RELAY_COMMAND_EXTEND)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="onion.c.html#L752">(2 + cell_in->created_cell.handshake_len > RELAY_PAYLOAD_SIZE)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">631</td><td><a href="onion.c.html#L631">(BUG(cell_in->create_cell.handshake_type == ONION_HANDSHAKE_TYPE_NTOR_V3))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="onion.c.html#L262">(cell->create_cell.cell_type == CELL_CREATE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">265</td><td><a href="onion.c.html#L265">(cell->create_cell.cell_type == CELL_CREATE2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">273</td><td><a href="onion.c.html#L273">(cell->create_cell.handshake_type == ONION_HANDSHAKE_TYPE_FAST)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">452</td><td><a href="onion.c.html#L452">(cell->created_cell.cell_type == CELL_CREATED)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">455</td><td><a href="onion.c.html#L455">(cell->created_cell.cell_type == CELL_CREATED2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">640</td><td><a href="onion.c.html#L640">(cell_in->create_cell.handshake_type == ONION_HANDSHAKE_TYPE_NTOR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">711</td><td><a href="onion.c.html#L711">(len_encoded < 0 || len_encoded > UINT16_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">176</td><td><a href="onion.c.html#L176">(parse_create2_payload(cell_out, cell_in->payload, CELL_PAYLOAD_SIZE) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">316</td><td><a href="onion.c.html#L316">(BUG(cell->handshake_len > sizeof(cell_out->onionskin)))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">528</td><td><a href="onion.c.html#L528">(BUG(cell_in->handshake_type == ONION_HANDSHAKE_TYPE_NTOR_V3))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">656</td><td><a href="onion.c.html#L656">(tor_addr_port_is_valid_ap(&cell_in->orport_ipv4, 0))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">684</td><td><a href="onion.c.html#L684">(tor_addr_port_is_valid_ap(&cell_in->orport_ipv6, 0))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">69</td><td><a href="onion.c.html#L69">(cell->handshake_type != ONION_HANDSHAKE_TYPE_FAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">80</td><td><a href="onion.c.html#L80">(cell->handshake_len != TAP_ONIONSKIN_CHALLENGE_LEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">84</td><td><a href="onion.c.html#L84">(cell->handshake_len != CREATE_FAST_LEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">88</td><td><a href="onion.c.html#L88">(cell->handshake_len != NTOR_ONIONSKIN_LEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">198</td><td><a href="onion.c.html#L198">(cell->handshake_len != CREATED_FAST_LEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="onion.c.html#L202">(cell->handshake_len > RELAY_PAYLOAD_SIZE - 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">233</td><td><a href="onion.c.html#L233">(cell_out->handshake_len > CELL_PAYLOAD_SIZE - 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">263</td><td><a href="onion.c.html#L263">(cell->cell_type != RELAY_COMMAND_EXTEND)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">345</td><td><a href="onion.c.html#L345">(i < cell->n_spec)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">453</td><td><a href="onion.c.html#L453">(cell->cell_type != RELAY_COMMAND_EXTENDED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="onion.c.html#L456">(cell->cell_type != RELAY_COMMAND_EXTENDED2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">533</td><td><a href="onion.c.html#L533">(cell_in->handshake_type == ONION_HANDSHAKE_TYPE_NTOR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">603</td><td><a href="onion.c.html#L603">(options->ExtendByEd25519ID != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">386</td><td><a href="onion.c.html#L386">(!found_ipv4 && !found_ipv6)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">163</td><td><a href="onion.c.html#L163">(tor_memeq(cell_in->payload, NTOR_CREATE_MAGIC, 16))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">249</td><td><a href="onion.c.html#L249">(tor_digest_is_zero((const char*)cell->node_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">292</td><td><a href="onion.c.html#L292">(tor_memeq(cell->onionskin, NTOR_CREATE_MAGIC, 16))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">517</td><td><a href="onion.c.html#L517">(check_create_cell(cell_in, relayed) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">574</td><td><a href="onion.c.html#L574">(check_created_cell(cell_in) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">621</td><td><a href="onion.c.html#L621">(check_extend_cell(cell_in) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">732</td><td><a href="onion.c.html#L732">(check_extended_cell(cell_in) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">131</td><td><a href="onion.c.html#L131">(p_len < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">139</td><td><a href="onion.c.html#L139">(handshake_type == ONION_HANDSHAKE_TYPE_FAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="onion.c.html#L406">(payload_length > RELAY_PAYLOAD_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">421</td><td><a href="onion.c.html#L421">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">436</td><td><a href="onion.c.html#L436">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">477</td><td><a href="onion.c.html#L477">(payload_len > RELAY_PAYLOAD_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">482</td><td><a href="onion.c.html#L482">(payload_len != TAP_ONIONSKIN_REPLY_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">96</td><td><a href="onion.c.html#L96">(!unknown_ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">253</td><td><a href="onion.c.html#L253">(!is_extend2)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">382</td><td><a href="onion.c.html#L382">(!found_rsa_id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">349</td><td><a href="onion.c.html#L349">(found_ipv4)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">356</td><td><a href="onion.c.html#L356">(found_ipv6)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">364</td><td><a href="onion.c.html#L364">(found_rsa_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">370</td><td><a href="onion.c.html#L370">(found_ed_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">415</td><td><a href="onion.c.html#L415">(cell)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">430</td><td><a href="onion.c.html#L430">(cell)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

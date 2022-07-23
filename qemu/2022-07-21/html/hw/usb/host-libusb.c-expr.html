@@ -1,0 +1,238 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\usb\host-libusb.c Ctrl Expressions (187) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\usb\host-libusb.c Ctrl Expressions (187) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\usb\host-libusb.c Ctrl Expressions (187)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">349</td><td><a href="host-libusb.c.html#L349">(<span style='background-color:#741da3;'>-rc < ARRAY_SIZE(err_names) && err_names[-rc]</span>)</a></td><td class="num">1009.00</td></tr>
+      <tr><td class="num line">449</td><td><a href="host-libusb.c.html#L449">(s->suppress_remote_wake && udev->setup_buf[0] == USB_DIR_IN && udev->setup_buf[1] == USB_REQ_GET_DESCRIPTOR && udev->setup_buf[3] == USB_DT_CONFIG && udev->setup_buf[2] == 0 && xfer->actual_length > offsetof(libusb_config_descriptor, bmAttributes) && (conf->bmAttributes & USB_CFG_ATT_WAKEUP))</a></td><td class="num">64.50</td></tr>
+      <tr><td class="num line">757</td><td><a href="host-libusb.c.html#L757">((xfer = QTAILQ_FIRST(&ring->copy)) != NULL && xfer->copy_complete)</a></td><td class="num">63.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="host-libusb.c.html#L621">((xfer = QTAILQ_FIRST(&ring->inflight)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">625</td><td><a href="host-libusb.c.html#L625">((xfer = QTAILQ_FIRST(&ring->unused)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">629</td><td><a href="host-libusb.c.html#L629">((xfer = QTAILQ_FIRST(&ring->copy)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">642</td><td><a href="host-libusb.c.html#L642">((ring = QTAILQ_FIRST(&s->isorings)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">695</td><td><a href="host-libusb.c.html#L695">((xfer = QTAILQ_FIRST(&ring->unused)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1515</td><td><a href="host-libusb.c.html#L1515">((udev->speedmask & USB_SPEED_MASK_SUPER) && !(udev->port->speedmask & USB_SPEED_MASK_SUPER) && request == 0x8006 && value == 0x100 && index == 0)</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">1226</td><td><a href="host-libusb.c.html#L1226">(s->match.addr && s->match.bus_num && !s->match.vendor_id && !s->match.product_id && !s->match.port)</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">440</td><td><a href="host-libusb.c.html#L440">(r->usb3ep0quirk && xfer->actual_length >= 18 && r->cbuf[7] == 9)</a></td><td class="num">35.00</td></tr>
+      <tr><td class="num line">1858</td><td><a href="host-libusb.c.html#L1858">(f->bus_num > 0 && f->bus_num != libusb_get_bus_number(devs[i]))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1862</td><td><a href="host-libusb.c.html#L1862">(f->addr > 0 && f->addr != libusb_get_device_address(devs[i]))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1170</td><td><a href="host-libusb.c.html#L1170">(libusb_get_bus_number(devs[i]) == bus && libusb_get_device_address(devs[i]) == addr)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">934</td><td><a href="host-libusb.c.html#L934">(type == LIBUSB_TRANSFER_TYPE_BULK && libusb_get_ss_endpoint_companion_descriptor(ctx, endp, &endp_ss_comp) == LIBUSB_SUCCESS)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">802</td><td><a href="host-libusb.c.html#L802">(a < conf->interface[i].num_altsetting)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1081</td><td><a href="host-libusb.c.html#L1081">(QTAILQ_FIRST(&s->requests) != NULL)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1331</td><td><a href="host-libusb.c.html#L1331">(!s->ifs[i].detached)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1391</td><td><a href="host-libusb.c.html#L1391">(!s->ifs[i].claimed)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1873</td><td><a href="host-libusb.c.html#L1873">(f->vendor_id > 0 && f->vendor_id != ddesc.idVendor)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1877</td><td><a href="host-libusb.c.html#L1877">(f->product_id > 0 && f->product_id != ddesc.idProduct)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="host-libusb.c.html#L805">(intf->bInterfaceClass == LIBUSB_CLASS_MASS_STORAGE && intf->bInterfaceSubClass == 6)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1647</td><td><a href="host-libusb.c.html#L1647">(!s->allow_all_guest_resets && udev->addr == 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1545</td><td><a href="host-libusb.c.html#L1545">(usb_host_use_combining(p->ep) && p->state == USB_PACKET_SETUP)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1644</td><td><a href="host-libusb.c.html#L1644">(!s->allow_one_guest_reset && !s->allow_all_guest_resets)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">433</td><td><a href="host-libusb.c.html#L433">(r->in && xfer->actual_length)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">482</td><td><a href="host-libusb.c.html#L482">(r->in && xfer->actual_length)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="host-libusb.c.html#L509">(r->p->ep->nr == 0)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">539</td><td><a href="host-libusb.c.html#L539">(xfer->ring->ep->pid == USB_TOKEN_IN)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">655</td><td><a href="host-libusb.c.html#L655">(psize > xfer->ring->ep->max_packet_size)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">732</td><td><a href="host-libusb.c.html#L732">(xfer != NULL && xfer->copy_complete)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="host-libusb.c.html#L850">(udev->speed == USB_SPEED_SUPER && compat_high)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">853</td><td><a href="host-libusb.c.html#L853">(udev->speed == USB_SPEED_SUPER && compat_full)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="host-libusb.c.html#L856">(udev->speed == USB_SPEED_HIGH && compat_full)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="host-libusb.c.html#L1370">(claimed++ == conf->bNumInterfaces)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">535</td><td><a href="host-libusb.c.html#L535">(QTAILQ_EMPTY(&xfer->ring->inflight))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">751</td><td><a href="host-libusb.c.html#L751">(filled * 2 < s->iso_urb_count)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">570</td><td><a href="host-libusb.c.html#L570">(ring->ep->pid == USB_TOKEN_IN)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1669</td><td><a href="host-libusb.c.html#L1669">(eps[i]->pid == USB_TOKEN_IN)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1698</td><td><a href="host-libusb.c.html#L1698">(eps[i]->pid == USB_TOKEN_IN)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1289</td><td><a href="host-libusb.c.html#L1289">(r && r->p)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">662</td><td><a href="host-libusb.c.html#L662">(psize > p->iov.size)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1190</td><td><a href="host-libusb.c.html#L1190">(s->match.vendor_id > 0xffff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1194</td><td><a href="host-libusb.c.html#L1194">(s->match.product_id > 0xffff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1198</td><td><a href="host-libusb.c.html#L1198">(s->match.addr > 127)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1416</td><td><a href="host-libusb.c.html#L1416">(s->ddesc.bNumConfigurations != 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1850</td><td><a href="host-libusb.c.html#L1850">(libusb_get_device_descriptor(devs[i], &ddesc) != 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1950</td><td><a href="host-libusb.c.html#L1950">(libusb_get_device_descriptor(devs[i], &ddesc) != 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1967</td><td><a href="host-libusb.c.html#L1967">(libusb_open(devs[i], &handle) == 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1005</td><td><a href="host-libusb.c.html#L1005">(hostfd && libusb_speed == 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">707</td><td><a href="host-libusb.c.html#L707">(QTAILQ_EMPTY(&ring->inflight))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">748</td><td><a href="host-libusb.c.html#L748">(QTAILQ_EMPTY(&ring->inflight))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">769</td><td><a href="host-libusb.c.html#L769">(QTAILQ_EMPTY(&ring->inflight))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1869</td><td><a href="host-libusb.c.html#L1869">(strcmp(f->port, port) != 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">366</td><td><a href="host-libusb.c.html#L366">(ep->pid != USB_TOKEN_IN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">414</td><td><a href="host-libusb.c.html#L414">(r->p == p)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">427</td><td><a href="host-libusb.c.html#L427">(r->p == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">477</td><td><a href="host-libusb.c.html#L477">(r->p == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">487</td><td><a href="host-libusb.c.html#L487">(usb_host_use_combining(r->p->ep))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">562</td><td><a href="host-libusb.c.html#L562">(i < s->iso_urb_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">591</td><td><a href="host-libusb.c.html#L591">(ring->ep == ep)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">653</td><td><a href="host-libusb.c.html#L653">(p->pid == USB_TOKEN_OUT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">801</td><td><a href="host-libusb.c.html#L801">(i < conf->bNumInterfaces)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">811</td><td><a href="host-libusb.c.html#L811">(e < intf->bNumEndpoints)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">835</td><td><a href="host-libusb.c.html#L835">(endp->wMaxPacketSize > 64)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">838</td><td><a href="host-libusb.c.html#L838">(endp->wMaxPacketSize > 1024)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">888</td><td><a href="host-libusb.c.html#L888">(i < conf->bNumInterfaces)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">906</td><td><a href="host-libusb.c.html#L906">(e < intf->bNumEndpoints)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">960</td><td><a href="host-libusb.c.html#L960">(s->dh != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1061</td><td><a href="host-libusb.c.html#L1061">(s->dh != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1086</td><td><a href="host-libusb.c.html#L1086">(limit-- == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1106</td><td><a href="host-libusb.c.html#L1106">(s->dh == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1126</td><td><a href="host-libusb.c.html#L1126">(s->hostfd != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1375</td><td><a href="host-libusb.c.html#L1375">(claimed != conf->bNumInterfaces)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="host-libusb.c.html#L1428">(p->status != USB_RET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1473</td><td><a href="host-libusb.c.html#L1473">(s->dh == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1554</td><td><a href="host-libusb.c.html#L1554">(s->dh == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1603</td><td><a href="host-libusb.c.html#L1603">(p->pid == USB_TOKEN_IN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1727</td><td><a href="host-libusb.c.html#L1727">(dev->dh != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1866</td><td><a href="host-libusb.c.html#L1866">(f->port != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1884</td><td><a href="host-libusb.c.html#L1884">(s->errcount >= 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1887</td><td><a href="host-libusb.c.html#L1887">(s->dh != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1900</td><td><a href="host-libusb.c.html#L1900">(s->dh == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1903</td><td><a href="host-libusb.c.html#L1903">(s->seen == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1559</td><td><a href="host-libusb.c.html#L1559">(p->ep->halted)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1041</td><td><a href="host-libusb.c.html#L1041">(s->ddesc.iProduct)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1890</td><td><a href="host-libusb.c.html#L1890">(usb_host_open(s, devs[i], 0) < 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">311</td><td><a href="host-libusb.c.html#L311">(poll[i] != NULL)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="host-libusb.c.html#L363">(!ep->pipeline)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1143</td><td><a href="host-libusb.c.html#L1143">(!s->bh_nodev)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1509</td><td><a href="host-libusb.c.html#L1509">(!r->in)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1569</td><td><a href="host-libusb.c.html#L1569">(!r->in)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1593</td><td><a href="host-libusb.c.html#L1593">(!r->in)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1741</td><td><a href="host-libusb.c.html#L1741">(!dev->bh_postld)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1853</td><td><a href="host-libusb.c.html#L1853">(ddesc.bDeviceClass == LIBUSB_CLASS_HUB)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1953</td><td><a href="host-libusb.c.html#L1953">(ddesc.bDeviceClass == LIBUSB_CLASS_HUB)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">957</td><td><a href="host-libusb.c.html#L957">(s->bh_postld_pending)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1115</td><td><a href="host-libusb.c.html#L1115">(udev->attached)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="host-libusb.c.html#L1153">(s->dh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1211</td><td><a href="host-libusb.c.html#L1211">(s->hostdevice)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1270</td><td><a href="host-libusb.c.html#L1270">(s->needs_autoscan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="host-libusb.c.html#L1281">(p->combined)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="host-libusb.c.html#L1573">(p->stream)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="host-libusb.c.html#L1730">(udev->attached)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1904</td><td><a href="host-libusb.c.html#L1904">(s->dh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="host-libusb.c.html#L919">(usb_ep_get_type(udev, pid, ep) != USB_ENDPOINT_XFER_INVALID)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1186</td><td><a href="host-libusb.c.html#L1186">(usb_host_init() != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1843</td><td><a href="host-libusb.c.html#L1843">(usb_host_init() != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1944</td><td><a href="host-libusb.c.html#L1944">(usb_host_init() != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">293</td><td><a href="host-libusb.c.html#L293">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">331</td><td><a href="host-libusb.c.html#L331">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">335</td><td><a href="host-libusb.c.html#L335">(i < rc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="host-libusb.c.html#L345">(rc >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="host-libusb.c.html#L370">(type != USB_ENDPOINT_XFER_BULK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">681</td><td><a href="host-libusb.c.html#L681">(ring == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">687</td><td><a href="host-libusb.c.html#L687">(xfer != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">699</td><td><a href="host-libusb.c.html#L699">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">702</td><td><a href="host-libusb.c.html#L702">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">726</td><td><a href="host-libusb.c.html#L726">(ring == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">736</td><td><a href="host-libusb.c.html#L736">(xfer == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="host-libusb.c.html#L738">(xfer == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">761</td><td><a href="host-libusb.c.html#L761">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">764</td><td><a href="host-libusb.c.html#L764">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="host-libusb.c.html#L798">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="host-libusb.c.html#L823">(rc == LIBUSB_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">882</td><td><a href="host-libusb.c.html#L882">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">898</td><td><a href="host-libusb.c.html#L898">(alt != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="host-libusb.c.html#L914">(ep == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="host-libusb.c.html#L970">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">978</td><td><a href="host-libusb.c.html#L978">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1169</td><td><a href="host-libusb.c.html#L1169">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1215</td><td><a href="host-libusb.c.html#L1215">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1220</td><td><a href="host-libusb.c.html#L1220">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="host-libusb.c.html#L1240">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="host-libusb.c.html#L1301">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1304</td><td><a href="host-libusb.c.html#L1304">(i < USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1307</td><td><a href="host-libusb.c.html#L1307">(rc != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1308</td><td><a href="host-libusb.c.html#L1308">(rc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1327</td><td><a href="host-libusb.c.html#L1327">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="host-libusb.c.html#L1330">(i < USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="host-libusb.c.html#L1347">(i < USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1356</td><td><a href="host-libusb.c.html#L1356">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="host-libusb.c.html#L1357">(rc == LIBUSB_ERROR_NOT_FOUND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1365</td><td><a href="host-libusb.c.html#L1365">(i < USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1368</td><td><a href="host-libusb.c.html#L1368">(rc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1390</td><td><a href="host-libusb.c.html#L1390">(i < USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="host-libusb.c.html#L1418">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1421</td><td><a href="host-libusb.c.html#L1421">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1444</td><td><a href="host-libusb.c.html#L1444">(iface >= USB_MAX_INTERFACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="host-libusb.c.html#L1450">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1453</td><td><a href="host-libusb.c.html#L1453">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1496</td><td><a href="host-libusb.c.html#L1496">(value == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="host-libusb.c.html#L1525">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1529</td><td><a href="host-libusb.c.html#L1529">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="host-libusb.c.html#L1619">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1623</td><td><a href="host-libusb.c.html#L1623">(rc == LIBUSB_ERROR_NO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1654</td><td><a href="host-libusb.c.html#L1654">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1667</td><td><a href="host-libusb.c.html#L1667">(i < nr_eps)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1674</td><td><a href="host-libusb.c.html#L1674">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1676</td><td><a href="host-libusb.c.html#L1676">(rc != streams)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1696</td><td><a href="host-libusb.c.html#L1696">(i < nr_eps)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1849</td><td><a href="host-libusb.c.html#L1849">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="host-libusb.c.html#L1913">(unconnected == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1949</td><td><a href="host-libusb.c.html#L1949">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1965</td><td><a href="host-libusb.c.html#L1965">(ddesc.iProduct)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">527</td><td><a href="host-libusb.c.html#L527">(!xfer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1233</td><td><a href="host-libusb.c.html#L1233">(!ldev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1924</td><td><a href="host-libusb.c.html#L1924">(!usb_vmstate)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1927</td><td><a href="host-libusb.c.html#L1927">(!usb_auto_timer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1929</td><td><a href="host-libusb.c.html#L1929">(!usb_auto_timer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="host-libusb.c.html#L688">(usb_host_iso_data_copy(xfer, p))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1634</td><td><a href="host-libusb.c.html#L1634">(usb_host_use_combining(ep))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1847</td><td><a href="host-libusb.c.html#L1847">(runstate_is_running())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="host-libusb.c.html#L289">(ctx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">309</td><td><a href="host-libusb.c.html#L309">(poll)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="host-libusb.c.html#L387">(bufsize)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">466</td><td><a href="host-libusb.c.html#L466">(disconnect)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">495</td><td><a href="host-libusb.c.html#L495">(disconnect)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">505</td><td><a href="host-libusb.c.html#L505">(inflight)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">608</td><td><a href="host-libusb.c.html#L608">(inflight)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">713</td><td><a href="host-libusb.c.html#L713">(disconnect)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">775</td><td><a href="host-libusb.c.html#L775">(disconnect)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">825</td><td><a href="host-libusb.c.html#L825">(streams)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">964</td><td><a href="host-libusb.c.html#L964">(dev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1051</td><td><a href="host-libusb.c.html#L1051">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1829</td><td><a href="host-libusb.c.html#L1829">(running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1915</td><td><a href="host-libusb.c.html#L1915">(usb_auto_timer)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

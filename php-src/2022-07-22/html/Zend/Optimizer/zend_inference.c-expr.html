@@ -1,0 +1,811 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - Zend\Optimizer\zend_inference.c Ctrl Expressions (760) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\Optimizer\zend_inference.c Ctrl Expressions (760) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\Optimizer\zend_inference.c Ctrl Expressions (760)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3383</td><td><a href="zend_inference.c.html#L3383">(<span style='background-color:#741da3;'>((tmp & MAY_BE_ARRAY) && (tmp & MAY_BE_ARRAY_KEY_ANY)) || opline->opcode == ZEND_FETCH_DIM_FUNC_ARG || opline->opcode == ZEND_FETCH_DIM_R || opline->opcode == ZEND_FETCH_DIM_IS || opline->opcode == ZEND_FETCH_DIM_UNSET || opline->opcode == ZEND_FETCH_LIST_R</span>)</a></td><td class="num">1044.00</td></tr>
+      <tr><td class="num line">662</td><td><a href="zend_inference.c.html#L662">(<span style='background-color:#741da3;'>OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW() || (op2_min <= 0 && op2_max >= 0) || (op1_min == ZEND_LONG_MIN && op2_max == -1)</span>)</a></td><td class="num">1023.75</td></tr>
+      <tr><td class="num line">4801</td><td><a href="zend_inference.c.html#L4801">(<span style='background-color:#741da3;'>var_info->is_instanceof || !ce || ce->create_object || ce->__get || ce->__set || ce->parent</span>)</a></td><td class="num">1023.25</td></tr>
+      <tr><td class="num line">2531</td><td><a href="zend_inference.c.html#L2531">(<span style='background-color:#741da3;'>opline->opcode == ZEND_ASSIGN_OP && ssa_op->result_def >= 0 && (tmp & MAY_BE_RC1)</span>)</a></td><td class="num">1020.50</td></tr>
+      <tr><td class="num line">3765</td><td><a href="zend_inference.c.html#L3765">(<span style='background-color:#741da3;'>(tmp & MAY_BE_OBJECT) && constraint->ce && ce != constraint->ce</span>)</a></td><td class="num">1018.25</td></tr>
+      <tr><td class="num line">4899</td><td><a href="zend_inference.c.html#L4899">(<span style='background-color:#741da3;'>opline->op2_type == IS_CV && (t2 & MAY_BE_RC1) && (t2 & MAY_BE_OBJECT | MAY_BE_RESOURCE | MAY_BE_ARRAY_OF_OBJECT | MAY_BE_ARRAY_OF_RESOURCE | MAY_BE_ARRAY_OF_ARRAY)</span>)</a></td><td class="num">1018.25</td></tr>
+      <tr><td class="num line">4259</td><td><a href="zend_inference.c.html#L4259">(<span style='background-color:#741da3;'>ssa_op && info->ssa.var_info && ssa_op->op1_use >= 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="zend_inference.c.html#L637">(<span style='background-color:#741da3;'>OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW() || t1_overflow || t2_overflow || t3_overflow || t4_overflow</span>)</a></td><td class="num">1009.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="zend_inference.c.html#L575">(<span style='background-color:#741da3;'>OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || zend_add_will_overflow(op1_min, op2_min)</span>)</a></td><td class="num">1004.00</td></tr>
+      <tr><td class="num line">583</td><td><a href="zend_inference.c.html#L583">(<span style='background-color:#741da3;'>OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW() || zend_add_will_overflow(op1_max, op2_max)</span>)</a></td><td class="num">1004.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="zend_inference.c.html#L600">(<span style='background-color:#741da3;'>OP1_RANGE_UNDERFLOW() || OP2_RANGE_OVERFLOW() || zend_sub_will_overflow(op1_min, op2_max)</span>)</a></td><td class="num">1004.00</td></tr>
+      <tr><td class="num line">608</td><td><a href="zend_inference.c.html#L608">(<span style='background-color:#741da3;'>OP1_RANGE_OVERFLOW() || OP2_RANGE_UNDERFLOW() || zend_sub_will_overflow(op1_max, op2_min)</span>)</a></td><td class="num">1004.00</td></tr>
+      <tr><td class="num line">2591</td><td><a href="zend_inference.c.html#L2591">(<span style='background-color:#9c4c02;'>!ssa_var_info[ssa_op->op1_use].has_range || (opline->opcode == ZEND_PRE_DEC && (ssa_var_info[ssa_op->op1_use].range.underflow || ssa_var_info[ssa_op->op1_use].range.min == ZEND_LONG_MIN)) || (opline->opcode == ZEND_PRE_INC && (ssa_var_info[ssa_op->op1_use].range.overflow || ssa_var_info[ssa_op->op1_use].range.max == ZEND_LONG_MAX))</span>)</a></td><td class="num">187.50</td></tr>
+      <tr><td class="num line">2653</td><td><a href="zend_inference.c.html#L2653">(<span style='background-color:#9c4c02;'>!ssa_var_info[ssa_op->op1_use].has_range || (opline->opcode == ZEND_POST_DEC && (ssa_var_info[ssa_op->op1_use].range.underflow || ssa_var_info[ssa_op->op1_use].range.min == ZEND_LONG_MIN)) || (opline->opcode == ZEND_POST_INC && (ssa_var_info[ssa_op->op1_use].range.overflow || ssa_var_info[ssa_op->op1_use].range.max == ZEND_LONG_MAX))</span>)</a></td><td class="num">187.50</td></tr>
+      <tr><td class="num line">4050</td><td><a href="zend_inference.c.html#L4050">(<span style='background-color:#9c4c02;'>info->ssa.ops && info->ssa.vars && info->call_map && info->ssa.ops[opline - op_array->opcodes].op1_use >= 0 && info->ssa.vars[info->ssa.ops[opline - op_array->opcodes].op1_use].definition >= 0</span>)</a></td><td class="num">168.45</td></tr>
+      <tr><td class="num line">884</td><td><a href="zend_inference.c.html#L884">(<span style='background-color:#9c4c02;'>p && p->pi < 0 && ssa->cfg.blocks[p->block].predecessors_count == 2 && p->sources[1] == var && ssa->var_info[p->sources[0]].has_range && ssa->var_info[p->sources[0]].range.min > constraint->range.max</span>)</a></td><td class="num">142.25</td></tr>
+      <tr><td class="num line">898</td><td><a href="zend_inference.c.html#L898">(<span style='background-color:#9c4c02;'>p && p->pi < 0 && ssa->cfg.blocks[p->block].predecessors_count == 2 && p->sources[1] == var && ssa->var_info[p->sources[0]].has_range && ssa->var_info[p->sources[0]].range.max < constraint->range.min</span>)</a></td><td class="num">142.25</td></tr>
+      <tr><td class="num line">1552</td><td><a href="zend_inference.c.html#L1552">(<span style='background-color:#9c4c02;'>!has_inner_cycles && ssa->var_info[j].has_range && ssa->vars[j].definition_phi && ssa->vars[j].definition_phi->pi >= 0 && ssa->vars[j].definition_phi->has_range_constraint && ssa->vars[j].definition_phi->constraint.range.negative && ssa->vars[j].definition_phi->constraint.range.min_ssa_var < 0 && ssa->vars[j].definition_phi->constraint.range.max_ssa_var < 0</span>)</a></td><td class="num">138.75</td></tr>
+      <tr><td class="num line">1568</td><td><a href="zend_inference.c.html#L1568">(tmp.min == ssa->var_info[j].range.min && tmp.max == ssa->var_info[j].range.max + 1 && tmp.max < constraint->range.min)</a></td><td class="num">97.75</td></tr>
+      <tr><td class="num line">1580</td><td><a href="zend_inference.c.html#L1580">(tmp.max == ssa->var_info[j].range.max && tmp.min == ssa->var_info[j].range.min - 1 && tmp.min > constraint->range.max)</a></td><td class="num">97.75</td></tr>
+      <tr><td class="num line">2829</td><td><a href="zend_inference.c.html#L2829">(ssa->vars[ssa_op->result_def].use_chain < 0 || opline + 1 != op_array->opcodes + ssa->vars[ssa_op->result_def].use_chain)</a></td><td class="num">97.10</td></tr>
+      <tr><td class="num line">3411</td><td><a href="zend_inference.c.html#L3411">(ssa->vars[ssa_op->result_def].use_chain < 0 || opline + 1 != op_array->opcodes + ssa->vars[ssa_op->result_def].use_chain)</a></td><td class="num">97.10</td></tr>
+      <tr><td class="num line">1696</td><td><a href="zend_inference.c.html#L1696">(ssa->vars[j].definition_phi && ssa->vars[j].definition_phi->pi < 0 && !(ssa->var_info[j].type & MAY_BE_REF))</a></td><td class="num">94.50</td></tr>
+      <tr><td class="num line">2834</td><td><a href="zend_inference.c.html#L2834">(ssa->vars[ssa_op->result_def].use_chain < 0 || opline + 1 != ssa_opcodes[ssa->vars[ssa_op->result_def].use_chain])</a></td><td class="num">93.85</td></tr>
+      <tr><td class="num line">3416</td><td><a href="zend_inference.c.html#L3416">(ssa->vars[ssa_op->result_def].use_chain < 0 || opline + 1 != ssa_opcodes[ssa->vars[ssa_op->result_def].use_chain])</a></td><td class="num">93.85</td></tr>
+      <tr><td class="num line">1680</td><td><a href="zend_inference.c.html#L1680">(!ssa->var_info[j].has_range && !(ssa->var_info[j].type & MAY_BE_REF))</a></td><td class="num">83.00</td></tr>
+      <tr><td class="num line">3031</td><td><a href="zend_inference.c.html#L3031">(script && (ce = zend_hash_find_ptr(&script->class_table, Z_STR_P(CRT_CONSTANT(opline->op1)))) != NULL)</a></td><td class="num">82.25</td></tr>
+      <tr><td class="num line">869</td><td><a href="zend_inference.c.html#L869">(constraint->range.min == constraint->range.max && !constraint->range.underflow && !constraint->range.overflow && p->constraint.range.min_ssa_var < 0 && p->constraint.range.max_ssa_var < 0 && ssa->vars[src1].definition >= 0)</a></td><td class="num">80.25</td></tr>
+      <tr><td class="num line">1562</td><td><a href="zend_inference.c.html#L1562">(tmp.min == ssa->var_info[j].range.min && tmp.max == ssa->var_info[j].range.max)</a></td><td class="num">69.50</td></tr>
+      <tr><td class="num line">4070</td><td><a href="zend_inference.c.html#L4070">(func->common.fn_flags & ZEND_ACC_HAS_RETURN_TYPE && (use_tentative_return_info || !ZEND_ARG_TYPE_IS_TENTATIVE(func->common.arg_info - 1)))</a></td><td class="num">67.85</td></tr>
+      <tr><td class="num line">1540</td><td><a href="zend_inference.c.html#L1540">(ssa->vars[j].scc_entry && !(ssa->var_info[j].type & MAY_BE_REF))</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">1653</td><td><a href="zend_inference.c.html#L1653">(ssa->vars[j].scc_entry && !(ssa->var_info[j].type & MAY_BE_REF))</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">2266</td><td><a href="zend_inference.c.html#L2266">(ssa->vars[tmp_var].use_chain >= 0 && !ssa->vars[tmp_var].phi_use_chain)</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">2313</td><td><a href="zend_inference.c.html#L2313">(ssa_op->result_def >= 0 && !(ssa_var_info[ssa_op->result_def].type & MAY_BE_REF))</a></td><td class="num">65.00</td></tr>
+      <tr><td class="num line">2316</td><td><a href="zend_inference.c.html#L2316">(ssa_op->op1_def >= 0 && !(ssa_var_info[ssa_op->op1_def].type & MAY_BE_REF))</a></td><td class="num">65.00</td></tr>
+      <tr><td class="num line">2319</td><td><a href="zend_inference.c.html#L2319">(ssa_op->op2_def >= 0 && !(ssa_var_info[ssa_op->op2_def].type & MAY_BE_REF))</a></td><td class="num">65.00</td></tr>
+      <tr><td class="num line">1276</td><td><a href="zend_inference.c.html#L1276">((opline - 1)->opcode == ZEND_ASSIGN_DIM || (opline - 1)->opcode == ZEND_ASSIGN_OBJ || (opline - 1)->opcode == ZEND_ASSIGN_STATIC_PROP || (opline - 1)->opcode == ZEND_ASSIGN_DIM_OP || (opline - 1)->opcode == ZEND_ASSIGN_OBJ_OP || (opline - 1)->opcode == ZEND_ASSIGN_STATIC_PROP_OP)</a></td><td class="num">64.10</td></tr>
+      <tr><td class="num line">2032</td><td><a href="zend_inference.c.html#L2032">(result_var < 0 || !ssa->var_info[result_var].has_range || ssa->var_info[result_var].range.underflow || ssa->var_info[result_var].range.overflow)</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">2059</td><td><a href="zend_inference.c.html#L2059">(result_var < 0 || !ssa->var_info[result_var].has_range || ssa->var_info[result_var].range.underflow || ssa->var_info[result_var].range.overflow)</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">1833</td><td><a href="zend_inference.c.html#L1833">(use + 1 < op_array->last && op_array->opcodes[use + 1].opcode == ZEND_OP_DATA)</a></td><td class="num">52.70</td></tr>
+      <tr><td class="num line">2182</td><td><a href="zend_inference.c.html#L2182">(prop_info && ((prop_info->ce == scope) || (!scope && (prop_info->flags & ZEND_ACC_PUBLIC))))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">949</td><td><a href="zend_inference.c.html#L949">(!add_will_overflow(ssa->var_info[constraint->min_ssa_var].range.min, constraint->range.min))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">959</td><td><a href="zend_inference.c.html#L959">(!add_will_overflow(ssa->var_info[constraint->max_ssa_var].range.max, constraint->range.max))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">3452</td><td><a href="zend_inference.c.html#L3452">(ssa_op->op1_use >= 0 && !ssa->var_info[ssa_op->op1_use].is_instanceof)</a></td><td class="num">50.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="zend_inference.c.html#L278">(!zend_ssa_is_no_val_use(&op_array->opcodes[use], &ssa->ops[use], i))</a></td><td class="num">49.50</td></tr>
+      <tr><td class="num line">1419</td><td><a href="zend_inference.c.html#L1419">(var_info->range.min == r->min && var_info->range.max == r->max && var_info->range.underflow == r->underflow && var_info->range.overflow == r->overflow)</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">1464</td><td><a href="zend_inference.c.html#L1464">(var_info->range.min == r->min && var_info->range.max == r->max && var_info->range.underflow == r->underflow && var_info->range.overflow == r->overflow)</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">4357</td><td><a href="zend_inference.c.html#L4357">(def >= 0 && ssa->vars[var].var < op_array->last_var)</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">3301</td><td><a href="zend_inference.c.html#L3301">((key_type & MAY_BE_ARRAY_KEY_LONG | MAY_BE_ARRAY_KEY_STRING) && (opline->opcode == ZEND_FETCH_DIM_RW || opline->opcode == ZEND_FETCH_DIM_W || opline->opcode == ZEND_FETCH_DIM_FUNC_ARG || opline->opcode == ZEND_FETCH_LIST_W))</a></td><td class="num">47.50</td></tr>
+      <tr><td class="num line">2272</td><td><a href="zend_inference.c.html#L2272">((use_op->op1_use == tmp_var && use_op->op1_use_chain < 0) || (use_op->op2_use == tmp_var && use_op->op2_use_chain < 0))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">4171</td><td><a href="zend_inference.c.html#L4171">(ssa_op && info->ssa.var_info && ssa_op->op1_use >= 0 && !(t1 & MAY_BE_REF) && info->ssa.var_info[ssa_op->op1_use].ce)</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">4455</td><td><a href="zend_inference.c.html#L4455">(op_array->opcodes[use].opcode == ZEND_UNSET_CV && op_array->function_name)</a></td><td class="num">45.75</td></tr>
+      <tr><td class="num line">229</td><td><a href="zend_inference.c.html#L229">(!ssa->vars[j].no_val && dfs[j] < 0)</a></td><td class="num">45.50</td></tr>
+      <tr><td class="num line">4441</td><td><a href="zend_inference.c.html#L4441">(!(ssa->var_info[p->ssa_var].type & MAY_BE_REF))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">4453</td><td><a href="zend_inference.c.html#L4453">(!(ssa->var_info[op->op1_def].type & MAY_BE_REF))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">4463</td><td><a href="zend_inference.c.html#L4463">(!(ssa->var_info[op->op2_def].type & MAY_BE_REF))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">4468</td><td><a href="zend_inference.c.html#L4468">(!(ssa->var_info[op->result_def].type & MAY_BE_REF))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">4148</td><td><a href="zend_inference.c.html#L4148">(!recursive && ssa_op && info->ssa.var_info && ssa_op->op1_use >= 0 && info->ssa.var_info[ssa_op->op1_use].recursive)</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">4007</td><td><a href="zend_inference.c.html#L4007">((ssa->var_info[v].type & MAY_BE_REF | MAY_BE_ANY | MAY_BE_UNDEF) != MAY_BE_LONG)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">1664</td><td><a href="zend_inference.c.html#L1664">(!(ssa->var_info[j].type & MAY_BE_REF))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">917</td><td><a href="zend_inference.c.html#L917">(constraint->min_ssa_var < 0 && constraint->max_ssa_var < 0 && ssa->var_info[p->ssa_var].has_range)</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">2387</td><td><a href="zend_inference.c.html#L2387">((t1 & MAY_BE_ARRAY | MAY_BE_OBJECT) && (opline->extended_value == IS_ARRAY || opline->extended_value == IS_OBJECT))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">2402</td><td><a href="zend_inference.c.html#L2402">((opline->extended_value == IS_ARRAY || opline->extended_value == IS_OBJECT) && (t1 & MAY_BE_ARRAY | MAY_BE_OBJECT))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">3117</td><td><a href="zend_inference.c.html#L3117">(opline->op1_type != IS_UNUSED && (opline->op2_type == IS_UNUSED || (t2 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_LONG | MAY_BE_DOUBLE | MAY_BE_RESOURCE | MAY_BE_STRING)))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">3075</td><td><a href="zend_inference.c.html#L3075">((t1 & MAY_BE_CLASS) && ssa_op->op1_use >= 0 && ssa_var_info[ssa_op->op1_use].ce)</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">4084</td><td><a href="zend_inference.c.html#L4084">((func->common.fn_flags & ZEND_ACC_RETURN_REFERENCE) && !(func->common.fn_flags & ZEND_ACC_GENERATOR))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="zend_inference.c.html#L2168">((ce->ce_flags & ZEND_ACC_LINKED) && (!scope || (scope->ce_flags & ZEND_ACC_LINKED)))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">971</td><td><a href="zend_inference.c.html#L971">(add_will_overflow(ssa->var_info[constraint->min_ssa_var].range.min, constraint->range.min))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">988</td><td><a href="zend_inference.c.html#L988">(add_will_overflow(ssa->var_info[constraint->max_ssa_var].range.max, constraint->range.max))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">2877</td><td><a href="zend_inference.c.html#L2877">((opline + 1)->op1_type == IS_VAR && (opline->extended_value & ZEND_RETURNS_FUNCTION))</a></td><td class="num">32.35</td></tr>
+      <tr><td class="num line">4013</td><td><a href="zend_inference.c.html#L4013">(opline->opcode == ZEND_ASSIGN && opline->result_type == IS_UNUSED && opline->op1_type == IS_CV && opline->op2_type == IS_CONST)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">4143</td><td><a href="zend_inference.c.html#L4143">((blocks[j].flags & ZEND_BB_REACHABLE) && blocks[j].len != 0)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">3814</td><td><a href="zend_inference.c.html#L3814">(_zend_update_type_info(op_array, ssa, script, worklist, op_array->opcodes + i, ssa->ops + i, NULL, optimization_level, 1) == FAILURE)</a></td><td class="num">29.45</td></tr>
+      <tr><td class="num line">3447</td><td><a href="zend_inference.c.html#L3447">(!(opline->op1_type & IS_VAR | IS_TMP_VAR) || !(t1 & MAY_BE_RC1))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">297</td><td><a href="zend_inference.c.html#L297">(j < ssa->cfg.blocks[p->block].predecessors_count)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">1002</td><td><a href="zend_inference.c.html#L1002">(i < ssa->cfg.blocks[p->block].predecessors_count)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">1435</td><td><a href="zend_inference.c.html#L1435">(zend_inference_widening_meet(&ssa->var_info[var], &tmp))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1480</td><td><a href="zend_inference.c.html#L1480">(zend_inference_narrowing_meet(&ssa->var_info[var], &tmp))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1598</td><td><a href="zend_inference.c.html#L1598">(zend_inference_narrowing_meet(&ssa->var_info[j], &tmp))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">299</td><td><a href="zend_inference.c.html#L299">(ssa->vars[p->sources[j]].no_val)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">940</td><td><a href="zend_inference.c.html#L940">(ssa->var_info[p->sources[0]].has_range)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1004</td><td><a href="zend_inference.c.html#L1004">(ssa->var_info[p->sources[i]].has_range)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">947</td><td><a href="zend_inference.c.html#L947">(narrowing && ssa->var_info[constraint->min_ssa_var].has_range)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">958</td><td><a href="zend_inference.c.html#L958">(narrowing && ssa->var_info[constraint->max_ssa_var].has_range)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="zend_inference.c.html#L970">(narrowing && ssa->var_info[constraint->min_ssa_var].has_range)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">987</td><td><a href="zend_inference.c.html#L987">(narrowing && ssa->var_info[constraint->max_ssa_var].has_range)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4058</td><td><a href="zend_inference.c.html#L4058">(call_info && op_array == &call_info->callee_func->op_array)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4656</td><td><a href="zend_inference.c.html#L4656">(!OP2_HAS_RANGE() || (OP2_MIN_RANGE() <= 0 && OP2_MAX_RANGE() >= 0))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4669</td><td><a href="zend_inference.c.html#L4669">(!OP2_HAS_RANGE() || (OP2_MIN_RANGE() <= 0 && OP2_MAX_RANGE() >= 0))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4732</td><td><a href="zend_inference.c.html#L4732">(!OP2_HAS_RANGE() || (OP2_MIN_RANGE() <= 0 && OP2_MAX_RANGE() >= 0))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">3239</td><td><a href="zend_inference.c.html#L3239">(opline->opcode == ZEND_FETCH_DIM_W || opline->opcode == ZEND_FETCH_DIM_RW || opline->opcode == ZEND_FETCH_DIM_FUNC_ARG || opline->opcode == ZEND_FETCH_LIST_W)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1448</td><td><a href="zend_inference.c.html#L1448">(!r->underflow && !var_info->range.underflow && var_info->range.min < r->min)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1453</td><td><a href="zend_inference.c.html#L1453">(!r->overflow && !var_info->range.overflow && var_info->range.max > r->max)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2242</td><td><a href="zend_inference.c.html#L2242">(prop_info && !(prop_info->flags & ZEND_ACC_STATIC))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3959</td><td><a href="zend_inference.c.html#L3959">(opcode == ZEND_DIV && zval_get_double(&orig_op2) == 0.0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="zend_inference.c.html#L292">(ssa_vars[p->sources[0]].no_val)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">4811</td><td><a href="zend_inference.c.html#L4811">(ZSTR_LEN(prop_name) > 0 && ZSTR_VAL(prop_name)[0] == '\0')</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">236</td><td><a href="zend_inference.c.html#L236">(ssa->vars[j].scc >= 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">242</td><td><a href="zend_inference.c.html#L242">(ssa->vars[j].scc >= 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1019</td><td><a href="zend_inference.c.html#L1019">(ssa->vars[var].definition < 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1632</td><td><a href="zend_inference.c.html#L1632">(ssa->vars[j].scc >= 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1642</td><td><a href="zend_inference.c.html#L1642">(ssa->var_info[j].type & MAY_BE_REF)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1807</td><td><a href="zend_inference.c.html#L1807">(ssa->vars[var].use_chain >= 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1822</td><td><a href="zend_inference.c.html#L1822">(op_array->opcodes[use].opcode == ZEND_OP_DATA)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3790</td><td><a href="zend_inference.c.html#L3790">(i < blocks[p->block].predecessors_count)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3794</td><td><a href="zend_inference.c.html#L3794">(i < blocks[p->block].predecessors_count)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4008</td><td><a href="zend_inference.c.html#L4008">(ssa->vars[v].definition < 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4359</td><td><a href="zend_inference.c.html#L4359">(ssa->ops[def].result_def == var)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4371</td><td><a href="zend_inference.c.html#L4371">(ssa->ops[def].op1_def == var)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4409</td><td><a href="zend_inference.c.html#L4409">(ssa->ops[def].op2_def == var)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4426</td><td><a href="zend_inference.c.html#L4426">(ssa->var_info[var].type & MAY_BE_REF)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4428</td><td><a href="zend_inference.c.html#L4428">(ssa->vars[var].alias == SYMTABLE_ALIAS)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">4448</td><td><a href="zend_inference.c.html#L4448">(ssa->vars[var].use_chain >= 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3047</td><td><a href="zend_inference.c.html#L3047">(op_array->scope && op_array->scope->parent && (op_array->scope->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">4841</td><td><a href="zend_inference.c.html#L4841">(Z_TYPE_P(CRT_CONSTANT(opline->op2)) == IS_CONSTANT_AST)</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">1407</td><td><a href="zend_inference.c.html#L1407">(r->underflow || var_info->range.underflow || r->min < var_info->range.min)</a></td><td class="num">21.00</td></tr>
+      <tr><td class="num line">1413</td><td><a href="zend_inference.c.html#L1413">(r->overflow || var_info->range.overflow || r->max > var_info->range.max)</a></td><td class="num">21.00</td></tr>
+      <tr><td class="num line">1236</td><td><a href="zend_inference.c.html#L1236">(ssa_op->op1_def == var || ssa_op->op2_def == var || ssa_op->result_def == var)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">4739</td><td><a href="zend_inference.c.html#L4739">(opline->extended_value == ZEND_SUB || opline->extended_value == ZEND_MUL || opline->extended_value == ZEND_POW)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">4753</td><td><a href="zend_inference.c.html#L4753">(opline->extended_value == ZEND_BW_OR || opline->extended_value == ZEND_BW_AND || opline->extended_value == ZEND_BW_XOR)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">927</td><td><a href="zend_inference.c.html#L927">(constraint->negative == NEG_USE_LT && tmp->max >= constraint->range.min)</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">932</td><td><a href="zend_inference.c.html#L932">(constraint->negative == NEG_USE_GT && tmp->min <= constraint->range.max)</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">3462</td><td><a href="zend_inference.c.html#L3462">(ce && !ce->create_object && !ce->__get && !result_may_be_separated(ssa, ssa_op))</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">1296</td><td><a href="zend_inference.c.html#L1296">(op_array->arg_info && opline->op1.num <= op_array->num_args)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">2229</td><td><a href="zend_inference.c.html#L2229">(op_array->scope && (op_array->scope->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">15.50</td></tr>
+      <tr><td class="num line">267</td><td><a href="zend_inference.c.html#L267">(!op_array->function_name || !ssa->vars || !ssa->ops)</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">1265</td><td><a href="zend_inference.c.html#L1265">(opline->extended_value != ZEND_CONCAT && opline->extended_value != ZEND_POW)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2853</td><td><a href="zend_inference.c.html#L2853">(opline->op2_type == IS_VAR && opline->extended_value == ZEND_RETURNS_FUNCTION)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3408</td><td><a href="zend_inference.c.html#L3408">((tmp & MAY_BE_RC1 | MAY_BE_RCN) == MAY_BE_RCN && opline->result_type == IS_TMP_VAR)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3444</td><td><a href="zend_inference.c.html#L3444">(opline->opcode != ZEND_FETCH_OBJ_R && opline->opcode != ZEND_FETCH_OBJ_IS)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3486</td><td><a href="zend_inference.c.html#L3486">(opline->opcode != ZEND_FETCH_STATIC_PROP_R && opline->opcode != ZEND_FETCH_STATIC_PROP_IS)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4452</td><td><a href="zend_inference.c.html#L4452">(op->op1_use == var && op->op1_def >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4462</td><td><a href="zend_inference.c.html#L4462">(op->op2_use == var && op->op2_def >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4467</td><td><a href="zend_inference.c.html#L4467">(op->result_use == var && op->result_def >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4649</td><td><a href="zend_inference.c.html#L4649">((t1 & MAY_BE_ANY) == MAY_BE_ARRAY && (t2 & MAY_BE_ANY) == MAY_BE_ARRAY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4688</td><td><a href="zend_inference.c.html#L4688">((t1 & MAY_BE_ANY) == MAY_BE_STRING && (t2 & MAY_BE_ANY) == MAY_BE_STRING)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4724</td><td><a href="zend_inference.c.html#L4724">((t1 & MAY_BE_ANY) == MAY_BE_ARRAY && (t2 & MAY_BE_ANY) == MAY_BE_ARRAY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4756</td><td><a href="zend_inference.c.html#L4756">((t1 & MAY_BE_ANY) == MAY_BE_STRING && (t2 & MAY_BE_ANY) == MAY_BE_STRING)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1140</td><td><a href="zend_inference.c.html#L1140">(ssa_op->op1_def == var || ssa_op->result_def == var)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1151</td><td><a href="zend_inference.c.html#L1151">(tmp->min < ZEND_LONG_MAX && !tmp->underflow)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1159</td><td><a href="zend_inference.c.html#L1159">(ssa_op->op1_def == var || ssa_op->result_def == var)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1170</td><td><a href="zend_inference.c.html#L1170">(tmp->max > ZEND_LONG_MIN && !tmp->overflow)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1178</td><td><a href="zend_inference.c.html#L1178">(ssa_op->op1_def == var || ssa_op->result_def == var)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1192</td><td><a href="zend_inference.c.html#L1192">(tmp->min < ZEND_LONG_MAX && !tmp->underflow)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1200</td><td><a href="zend_inference.c.html#L1200">(ssa_op->op1_def == var || ssa_op->result_def == var)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1214</td><td><a href="zend_inference.c.html#L1214">(tmp->max > ZEND_LONG_MIN && !tmp->overflow)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1267</td><td><a href="zend_inference.c.html#L1267">(ssa_op->op1_def == var || ssa_op->result_def == var)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1571</td><td><a href="zend_inference.c.html#L1571">(constraint->negative == NEG_INIT || constraint->negative == NEG_INVARIANT)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="zend_inference.c.html#L1583">(constraint->negative == NEG_INIT || constraint->negative == NEG_INVARIANT)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2447</td><td><a href="zend_inference.c.html#L2447">(opline->opcode == ZEND_COPY_TMP || opline->op1_type == IS_CV)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2451</td><td><a href="zend_inference.c.html#L2451">(opline->opcode == ZEND_COALESCE || opline->opcode == ZEND_JMP_SET)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3629</td><td><a href="zend_inference.c.html#L3629">(opline->opcode == ZEND_FETCH_R || opline->opcode == ZEND_FETCH_IS)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4146</td><td><a href="zend_inference.c.html#L4146">(opline->opcode == ZEND_RETURN || opline->opcode == ZEND_RETURN_BY_REF)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4717</td><td><a href="zend_inference.c.html#L4717">((t1 & MAY_BE_ANY) == MAY_BE_NULL || (t2 & MAY_BE_ANY) == MAY_BE_NULL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4730</td><td><a href="zend_inference.c.html#L4730">(opline->extended_value == ZEND_DIV || opline->extended_value == ZEND_MOD)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4744</td><td><a href="zend_inference.c.html#L4744">(opline->extended_value == ZEND_SL || opline->extended_value == ZEND_SR)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="zend_inference.c.html#L862">(p->pi >= 0 && p->has_range_constraint)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1020</td><td><a href="zend_inference.c.html#L1020">(var < op_array->last_var && op_array->function_name)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2391</td><td><a href="zend_inference.c.html#L2391">((t1 & MAY_BE_STRING) && opline->extended_value == IS_STRING)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2406</td><td><a href="zend_inference.c.html#L2406">(opline->extended_value == IS_STRING && (t1 & MAY_BE_STRING | MAY_BE_OBJECT))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2411</td><td><a href="zend_inference.c.html#L2411">(opline->extended_value == IS_ARRAY && (t1 & MAY_BE_UNDEF | MAY_BE_NULL))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3405</td><td><a href="zend_inference.c.html#L3405">(opline->opcode == ZEND_FETCH_DIM_IS && (t1 & MAY_BE_STRING))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3437</td><td><a href="zend_inference.c.html#L3437">(opline->op1_type != IS_UNUSED && (t1 & MAY_BE_ANY | MAY_BE_UNDEF & ~MAY_BE_OBJECT))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3936</td><td><a href="zend_inference.c.html#L3936">(opline->opcode == ZEND_MUL && Z_LVAL(orig_op2) == 0)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3944</td><td><a href="zend_inference.c.html#L3944">(opline->opcode == ZEND_MUL && Z_LVAL(orig_op1) == 0)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3458</td><td><a href="zend_inference.c.html#L3458">(ce && !ce->create_object && !result_may_be_separated(ssa, ssa_op))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4266</td><td><a href="zend_inference.c.html#L4266">(info->ssa.var_info[ssa_op->op1_use].range.underflow)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4272</td><td><a href="zend_inference.c.html#L4272">(info->ssa.var_info[ssa_op->op1_use].range.overflow)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">3441</td><td><a href="zend_inference.c.html#L3441">(opline->op1_type == IS_UNUSED || (t1 & MAY_BE_OBJECT))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">4260</td><td><a href="zend_inference.c.html#L4260">(info->ssa.var_info[ssa_op->op1_use].has_range)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1920</td><td><a href="zend_inference.c.html#L1920">((op_type & IS_VAR | IS_TMP_VAR) && (t1 & MAY_BE_RC1))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2049</td><td><a href="zend_inference.c.html#L2049">((t1_type & MAY_BE_ARRAY) && (t2_type & MAY_BE_ARRAY))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2091</td><td><a href="zend_inference.c.html#L2091">((t1_type & MAY_BE_STRING) && (t2_type & MAY_BE_STRING))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2206</td><td><a href="zend_inference.c.html#L2206">(prop_info && (prop_info->flags & ZEND_ACC_STATIC))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2310</td><td><a href="zend_inference.c.html#L2310">(!(t1 & MAY_BE_ANY | MAY_BE_UNDEF | MAY_BE_CLASS) || !(t2 & MAY_BE_ANY | MAY_BE_UNDEF | MAY_BE_CLASS))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">4549</td><td><a href="zend_inference.c.html#L4549">((t1 & MAY_BE_RC1) && (t1 & MAY_BE_OBJECT | MAY_BE_RESOURCE | MAY_BE_ARRAY_OF_OBJECT | MAY_BE_ARRAY_OF_RESOURCE | MAY_BE_ARRAY_OF_ARRAY))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">4590</td><td><a href="zend_inference.c.html#L4590">((t2 & MAY_BE_RC1) && (t2 & MAY_BE_OBJECT | MAY_BE_RESOURCE | MAY_BE_ARRAY_OF_OBJECT | MAY_BE_ARRAY_OF_RESOURCE | MAY_BE_ARRAY_OF_ARRAY))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2023</td><td><a href="zend_inference.c.html#L2023">((t1_type & MAY_BE_OBJECT) || (t2_type & MAY_BE_OBJECT))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2094</td><td><a href="zend_inference.c.html#L2094">((t1_type & ~MAY_BE_STRING) || (t2_type & ~MAY_BE_STRING))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2400</td><td><a href="zend_inference.c.html#L2400">((tmp & MAY_BE_ANY) == (t1 & MAY_BE_ANY))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1350</td><td><a href="zend_inference.c.html#L1350">(func_info && func_info->return_info.has_range)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2031</td><td><a href="zend_inference.c.html#L2031">(t1_type == MAY_BE_LONG && t2_type == MAY_BE_LONG)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2043</td><td><a href="zend_inference.c.html#L2043">(t1_type == MAY_BE_ARRAY && t2_type == MAY_BE_ARRAY)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2058</td><td><a href="zend_inference.c.html#L2058">(t1_type == MAY_BE_LONG && t2_type == MAY_BE_LONG)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4782</td><td><a href="zend_inference.c.html#L4782">(_ssa_op1_info(op_array, ssa, opline + 1, ssa_op + 1) & MAY_BE_UNDEF)</a></td><td class="num">8.20</td></tr>
+      <tr><td class="num line">4793</td><td><a href="zend_inference.c.html#L4793">(_ssa_op1_info(op_array, ssa, opline + 1, ssa_op + 1) & MAY_BE_UNDEF)</a></td><td class="num">8.20</td></tr>
+      <tr><td class="num line">1252</td><td><a href="zend_inference.c.html#L1252">((ssa_op + 1)->op1_def == var)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2720</td><td><a href="zend_inference.c.html#L2720">((ssa_op + 1)->op1_def >= 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2747</td><td><a href="zend_inference.c.html#L2747">((ssa_op + 1)->op1_def >= 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2762</td><td><a href="zend_inference.c.html#L2762">((ssa_op + 1)->op1_def >= 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2888</td><td><a href="zend_inference.c.html#L2888">((opline + 1)->op1_type == IS_CV)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2902</td><td><a href="zend_inference.c.html#L2902">((opline + 1)->op1_type == IS_CV)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">4644</td><td><a href="zend_inference.c.html#L4644">((opline + 1)->opcode == ZEND_BIND_GLOBAL)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">4781</td><td><a href="zend_inference.c.html#L4781">((opline + 1)->op1_type == IS_CV)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">4792</td><td><a href="zend_inference.c.html#L4792">((opline + 1)->op1_type == IS_CV)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1348</td><td><a href="zend_inference.c.html#L1348">(call_info->callee_func->type == ZEND_USER_FUNCTION)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2809</td><td><a href="zend_inference.c.html#L2809">(RETURN_VALUE_USED(opline) && (tmp & MAY_BE_RC1))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3731</td><td><a href="zend_inference.c.html#L3731">(!(ce1->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3769</td><td><a href="zend_inference.c.html#L3769">(is_instanceof && safe_instanceof(constraint->ce, ce))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3915</td><td><a href="zend_inference.c.html#L3915">(Z_TYPE_P(zv) == IS_LONG || Z_TYPE_P(zv) == IS_DOUBLE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3928</td><td><a href="zend_inference.c.html#L3928">(Z_TYPE_P(zv) == IS_LONG || Z_TYPE_P(zv) == IS_DOUBLE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4293</td><td><a href="zend_inference.c.html#L4293">(!(op_array->fn_flags & ZEND_ACC_HAS_RETURN_TYPE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4383</td><td><a href="zend_inference.c.html#L4383">(!(opline->extended_value & ZEND_ARRAY_ELEMENT_REF))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4388</td><td><a href="zend_inference.c.html#L4388">(!(opline->extended_value & ZEND_BIND_REF))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4393</td><td><a href="zend_inference.c.html#L4393">(!(op_array->fn_flags & ZEND_ACC_RETURN_REFERENCE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4415</td><td><a href="zend_inference.c.html#L4415">(!(opline->extended_value & ZEND_BIND_REF))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="zend_inference.c.html#L1340">(!func_info || !func_info->call_map)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3511</td><td><a href="zend_inference.c.html#L3511">(!func_info || !func_info->call_map)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2041</td><td><a href="zend_inference.c.html#L2041">(t1_type == MAY_BE_DOUBLE || t2_type == MAY_BE_DOUBLE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2068</td><td><a href="zend_inference.c.html#L2068">(t1_type == MAY_BE_DOUBLE || t2_type == MAY_BE_DOUBLE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2076</td><td><a href="zend_inference.c.html#L2076">(t1_type == MAY_BE_DOUBLE || t2_type == MAY_BE_DOUBLE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4850</td><td><a href="zend_inference.c.html#L4850">(UNEXPECTED(op_array->fn_flags & ZEND_ACC_VARIADIC))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">867</td><td><a href="zend_inference.c.html#L867">(ssa->var_info[src1].has_range)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1800</td><td><a href="zend_inference.c.html#L1800">(ssa->vars[var].phi_use_chain)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2804</td><td><a href="zend_inference.c.html#L2804">(opline->op2_type & IS_TMP_VAR | IS_VAR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2813</td><td><a href="zend_inference.c.html#L2813">(ssa_var_info[ssa_op->op1_def].use_as_double)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2916</td><td><a href="zend_inference.c.html#L2916">(opline->extended_value & ZEND_BIND_IMPLICIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2933</td><td><a href="zend_inference.c.html#L2933">(opline->extended_value & ZEND_BIND_REF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2947</td><td><a href="zend_inference.c.html#L2947">(op_array->fn_flags & ZEND_ACC_RETURN_REFERENCE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3089</td><td><a href="zend_inference.c.html#L3089">(opline->extended_value & ZEND_ARRAY_ELEMENT_REF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3121</td><td><a href="zend_inference.c.html#L3121">(opline->extended_value & ZEND_ARRAY_ELEMENT_REF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3171</td><td><a href="zend_inference.c.html#L3171">((t1 & MAY_BE_ANY | MAY_BE_UNDEF) & ~MAY_BE_ARRAY | MAY_BE_OBJECT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3565</td><td><a href="zend_inference.c.html#L3565">((t1 & expected_type_mask) & MAY_BE_RESOURCE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3593</td><td><a href="zend_inference.c.html#L3593">(opline->op1_type & IS_TMP_VAR | IS_VAR | IS_CV)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3683</td><td><a href="zend_inference.c.html#L3683">(ce->ce_flags & ZEND_ACC_LINKED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3799</td><td><a href="zend_inference.c.html#L3799">(info->type & MAY_BE_OBJECT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3898</td><td><a href="zend_inference.c.html#L3898">((type & MAY_BE_ANY) & ~MAY_BE_LONG | MAY_BE_DOUBLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3971</td><td><a href="zend_inference.c.html#L3971">(!can_convert_to_double(op_array, ssa, ssa_op->result_def, &orig_result, visited))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3980</td><td><a href="zend_inference.c.html#L3980">((type & MAY_BE_ANY) & ~MAY_BE_LONG | MAY_BE_DOUBLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4009</td><td><a href="zend_inference.c.html#L4009">(ssa->vars[v].no_val)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4127</td><td><a href="zend_inference.c.html#L4127">(op_array->fn_flags & ZEND_ACC_GENERATOR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4438</td><td><a href="zend_inference.c.html#L4438">(ssa->vars[var].phi_use_chain)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4498</td><td><a href="zend_inference.c.html#L4498">(ssa->vars[i].alias)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4548</td><td><a href="zend_inference.c.html#L4548">(opline->op1_type & IS_TMP_VAR | IS_VAR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4589</td><td><a href="zend_inference.c.html#L4589">(opline->op2_type & IS_TMP_VAR | IS_VAR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4844</td><td><a href="zend_inference.c.html#L4844">(op_array->fn_flags & ZEND_ACC_HAS_TYPE_HINTS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">366</td><td><a href="zend_inference.c.html#L366">(~a & ~c & m)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1345</td><td><a href="zend_inference.c.html#L1345">(!call_info || call_info->is_prototype)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2174</td><td><a href="zend_inference.c.html#L2174">(prop_info && prop_info != ZEND_WRONG_PROPERTY_INFO)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4184</td><td><a href="zend_inference.c.html#L4184">(arg_ce && arg_ce == tmp_ce)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">200</td><td><a href="zend_inference.c.html#L200">(dfs[var2] <= dfs[var])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">319</td><td><a href="zend_inference.c.html#L319">(~a & c & m)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">325</td><td><a href="zend_inference.c.html#L325">(a & ~c & m)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">389</td><td><a href="zend_inference.c.html#L389">(b & ~d & m)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">395</td><td><a href="zend_inference.c.html#L395">(~b & d & m)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4848</td><td><a href="zend_inference.c.html#L4848">(EXPECTED(arg_num <= op_array->num_args))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">198</td><td><a href="zend_inference.c.html#L198">(stack->len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">228</td><td><a href="zend_inference.c.html#L228">(j < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">235</td><td><a href="zend_inference.c.html#L235">(j < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">241</td><td><a href="zend_inference.c.html#L241">(j < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">291</td><td><a href="zend_inference.c.html#L291">(p->pi >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="zend_inference.c.html#L699">(!zend_abs_range(op2_min, op2_max, &op2_abs_min, &op2_abs_max))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">943</td><td><a href="zend_inference.c.html#L943">(constraint->min_ssa_var < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="zend_inference.c.html#L954">(constraint->max_ssa_var < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">966</td><td><a href="zend_inference.c.html#L966">(constraint->min_ssa_var < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">983</td><td><a href="zend_inference.c.html#L983">(constraint->max_ssa_var < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1053</td><td><a href="zend_inference.c.html#L1053">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1060</td><td><a href="zend_inference.c.html#L1060">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="zend_inference.c.html#L1077">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1078</td><td><a href="zend_inference.c.html#L1078">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1087</td><td><a href="zend_inference.c.html#L1087">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1088</td><td><a href="zend_inference.c.html#L1088">(opline->extended_value == IS_LONG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1105</td><td><a href="zend_inference.c.html#L1105">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1106</td><td><a href="zend_inference.c.html#L1106">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1116</td><td><a href="zend_inference.c.html#L1116">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1127</td><td><a href="zend_inference.c.html#L1127">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1128</td><td><a href="zend_inference.c.html#L1128">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="zend_inference.c.html#L1146">(tmp->max < ZEND_LONG_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1165</td><td><a href="zend_inference.c.html#L1165">(tmp->min > ZEND_LONG_MIN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1184</td><td><a href="zend_inference.c.html#L1184">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1187</td><td><a href="zend_inference.c.html#L1187">(tmp->max < ZEND_LONG_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1206</td><td><a href="zend_inference.c.html#L1206">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1209</td><td><a href="zend_inference.c.html#L1209">(tmp->min > ZEND_LONG_MIN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1223</td><td><a href="zend_inference.c.html#L1223">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1275</td><td><a href="zend_inference.c.html#L1275">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1295</td><td><a href="zend_inference.c.html#L1295">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1311</td><td><a href="zend_inference.c.html#L1311">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1337</td><td><a href="zend_inference.c.html#L1337">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1564</td><td><a href="zend_inference.c.html#L1564">(constraint->negative == NEG_INIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1576</td><td><a href="zend_inference.c.html#L1576">(constraint->negative == NEG_USE_GT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1588</td><td><a href="zend_inference.c.html#L1588">(constraint->negative == NEG_USE_LT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1631</td><td><a href="zend_inference.c.html#L1631">(j < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1638</td><td><a href="zend_inference.c.html#L1638">(scc < ssa->sccs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1813</td><td><a href="zend_inference.c.html#L1813">(op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1816</td><td><a href="zend_inference.c.html#L1816">(op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1819</td><td><a href="zend_inference.c.html#L1819">(op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1824</td><td><a href="zend_inference.c.html#L1824">(op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1827</td><td><a href="zend_inference.c.html#L1827">(op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1830</td><td><a href="zend_inference.c.html#L1830">(op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1836</td><td><a href="zend_inference.c.html#L1836">(op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1839</td><td><a href="zend_inference.c.html#L1839">(op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1842</td><td><a href="zend_inference.c.html#L1842">(op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2194</td><td><a href="zend_inference.c.html#L2194">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2197</td><td><a href="zend_inference.c.html#L2197">(opline->op1_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2199</td><td><a href="zend_inference.c.html#L2199">(ssa_op->op1_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2217</td><td><a href="zend_inference.c.html#L2217">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2219</td><td><a href="zend_inference.c.html#L2219">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2234</td><td><a href="zend_inference.c.html#L2234">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2299</td><td><a href="zend_inference.c.html#L2299">(opline->opcode == ZEND_OP_DATA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2385</td><td><a href="zend_inference.c.html#L2385">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2417</td><td><a href="zend_inference.c.html#L2417">(opline->extended_value == IS_ARRAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2433</td><td><a href="zend_inference.c.html#L2433">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2454</td><td><a href="zend_inference.c.html#L2454">(opline->opcode == ZEND_JMP_SET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2484</td><td><a href="zend_inference.c.html#L2484">(opline->opcode == ZEND_ASSIGN_OBJ_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2489</td><td><a href="zend_inference.c.html#L2489">(opline->opcode == ZEND_ASSIGN_DIM_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2496</td><td><a href="zend_inference.c.html#L2496">(opline->opcode == ZEND_ASSIGN_STATIC_PROP_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2516</td><td><a href="zend_inference.c.html#L2516">(opline->opcode == ZEND_ASSIGN_DIM_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2517</td><td><a href="zend_inference.c.html#L2517">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2522</td><td><a href="zend_inference.c.html#L2522">(opline->opcode == ZEND_ASSIGN_OBJ_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2523</td><td><a href="zend_inference.c.html#L2523">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2528</td><td><a href="zend_inference.c.html#L2528">(opline->opcode == ZEND_ASSIGN_STATIC_PROP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2536</td><td><a href="zend_inference.c.html#L2536">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2538</td><td><a href="zend_inference.c.html#L2538">(opline->opcode == ZEND_ASSIGN_DIM_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2539</td><td><a href="zend_inference.c.html#L2539">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2557</td><td><a href="zend_inference.c.html#L2557">(opline->opcode == ZEND_ASSIGN_OBJ_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2562</td><td><a href="zend_inference.c.html#L2562">(opline->opcode == ZEND_ASSIGN_STATIC_PROP_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2586</td><td><a href="zend_inference.c.html#L2586">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2590</td><td><a href="zend_inference.c.html#L2590">((t1 & MAY_BE_ANY | MAY_BE_UNDEF) == MAY_BE_LONG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2605</td><td><a href="zend_inference.c.html#L2605">(opline->opcode == ZEND_PRE_INC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2622</td><td><a href="zend_inference.c.html#L2622">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2625</td><td><a href="zend_inference.c.html#L2625">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2634</td><td><a href="zend_inference.c.html#L2634">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2652</td><td><a href="zend_inference.c.html#L2652">((t1 & MAY_BE_ANY | MAY_BE_UNDEF) == MAY_BE_LONG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2667</td><td><a href="zend_inference.c.html#L2667">(opline->opcode == ZEND_POST_INC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2684</td><td><a href="zend_inference.c.html#L2684">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2689</td><td><a href="zend_inference.c.html#L2689">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2695</td><td><a href="zend_inference.c.html#L2695">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2733</td><td><a href="zend_inference.c.html#L2733">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2738</td><td><a href="zend_inference.c.html#L2738">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2758</td><td><a href="zend_inference.c.html#L2758">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2776</td><td><a href="zend_inference.c.html#L2776">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2781</td><td><a href="zend_inference.c.html#L2781">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2788</td><td><a href="zend_inference.c.html#L2788">(ssa_op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2812</td><td><a href="zend_inference.c.html#L2812">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2820</td><td><a href="zend_inference.c.html#L2820">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2826</td><td><a href="zend_inference.c.html#L2826">((tmp & MAY_BE_RC1 | MAY_BE_RCN) == MAY_BE_RCN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2846</td><td><a href="zend_inference.c.html#L2846">(opline->op2_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2862</td><td><a href="zend_inference.c.html#L2862">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2867</td><td><a href="zend_inference.c.html#L2867">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2885</td><td><a href="zend_inference.c.html#L2885">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2899</td><td><a href="zend_inference.c.html#L2899">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2922</td><td><a href="zend_inference.c.html#L2922">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2932</td><td><a href="zend_inference.c.html#L2932">(ssa_op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2946</td><td><a href="zend_inference.c.html#L2946">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2958</td><td><a href="zend_inference.c.html#L2958">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2966</td><td><a href="zend_inference.c.html#L2966">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2972</td><td><a href="zend_inference.c.html#L2972">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2978</td><td><a href="zend_inference.c.html#L2978">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3013</td><td><a href="zend_inference.c.html#L3013">(opline->opcode == ZEND_RECV_VARIADIC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3037</td><td><a href="zend_inference.c.html#L3037">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3058</td><td><a href="zend_inference.c.html#L3058">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3088</td><td><a href="zend_inference.c.html#L3088">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3094</td><td><a href="zend_inference.c.html#L3094">((t1 & MAY_BE_REF | MAY_BE_RC1 | MAY_BE_RCN) == MAY_BE_REF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3109</td><td><a href="zend_inference.c.html#L3109">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3111</td><td><a href="zend_inference.c.html#L3111">(opline->opcode == ZEND_INIT_ARRAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3147</td><td><a href="zend_inference.c.html#L3147">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3154</td><td><a href="zend_inference.c.html#L3154">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3156</td><td><a href="zend_inference.c.html#L3156">(opline->opcode == ZEND_FE_RESET_RW)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3164</td><td><a href="zend_inference.c.html#L3164">(opline->opcode == ZEND_FE_RESET_RW)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3180</td><td><a href="zend_inference.c.html#L3180">(opline->op2_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3184</td><td><a href="zend_inference.c.html#L3184">(opline->opcode == ZEND_FE_FETCH_RW)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3188</td><td><a href="zend_inference.c.html#L3188">(opline->op2_type != IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3194</td><td><a href="zend_inference.c.html#L3194">(opline->opcode == ZEND_FE_FETCH_RW)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3203</td><td><a href="zend_inference.c.html#L3203">(opline->op2_type != IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3212</td><td><a href="zend_inference.c.html#L3212">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3236</td><td><a href="zend_inference.c.html#L3236">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3244</td><td><a href="zend_inference.c.html#L3244">(opline->opcode != ZEND_FETCH_DIM_FUNC_ARG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3251</td><td><a href="zend_inference.c.html#L3251">(opline->opcode == ZEND_FETCH_DIM_FUNC_ARG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3258</td><td><a href="zend_inference.c.html#L3258">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3278</td><td><a href="zend_inference.c.html#L3278">(opline->op2_type != IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3293</td><td><a href="zend_inference.c.html#L3293">(opline->opcode == ZEND_FETCH_DIM_UNSET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3434</td><td><a href="zend_inference.c.html#L3434">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3450</td><td><a href="zend_inference.c.html#L3450">(opline->op1_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3466</td><td><a href="zend_inference.c.html#L3466">(opline->opcode == ZEND_FETCH_OBJ_IS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3494</td><td><a href="zend_inference.c.html#L3494">(opline->opcode == ZEND_FETCH_STATIC_PROP_IS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3507</td><td><a href="zend_inference.c.html#L3507">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3569</td><td><a href="zend_inference.c.html#L3569">(t1 & (MAY_BE_ANY - expected_type_mask))</a></td><td class="num">5.60</td></tr>
+      <tr><td class="num line">3612</td><td><a href="zend_inference.c.html#L3612">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3622</td><td><a href="zend_inference.c.html#L3622">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3626</td><td><a href="zend_inference.c.html#L3626">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3628</td><td><a href="zend_inference.c.html#L3628">(opline->result_type == IS_TMP_VAR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3636</td><td><a href="zend_inference.c.html#L3636">(opline->result_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3754</td><td><a href="zend_inference.c.html#L3754">(p->pi >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3812</td><td><a href="zend_inference.c.html#L3812">(ssa_vars[j].definition >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3887</td><td><a href="zend_inference.c.html#L3887">((type & MAY_BE_ANY) == MAY_BE_DOUBLE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3910</td><td><a href="zend_inference.c.html#L3910">(ssa_op->op1_use == var_num)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3913</td><td><a href="zend_inference.c.html#L3913">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3923</td><td><a href="zend_inference.c.html#L3923">(ssa_op->op2_use == var_num)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3926</td><td><a href="zend_inference.c.html#L3926">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4006</td><td><a href="zend_inference.c.html#L4006">(v < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4056</td><td><a href="zend_inference.c.html#L4056">(op->opcode == ZEND_DO_UCALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4160</td><td><a href="zend_inference.c.html#L4160">(opline->opcode == ZEND_RETURN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4193</td><td><a href="zend_inference.c.html#L4193">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4355</td><td><a href="zend_inference.c.html#L4355">(var < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4490</td><td><a href="zend_inference.c.html#L4490">(i < op_array->last_var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4495</td><td><a href="zend_inference.c.html#L4495">(i < op_array->last_var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4503</td><td><a href="zend_inference.c.html#L4503">(i < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4522</td><td><a href="zend_inference.c.html#L4522">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4577</td><td><a href="zend_inference.c.html#L4577">(opline->op2_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4723</td><td><a href="zend_inference.c.html#L4723">(opline->extended_value == ZEND_ADD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4750</td><td><a href="zend_inference.c.html#L4750">(opline->extended_value == ZEND_CONCAT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4806</td><td><a href="zend_inference.c.html#L4806">(opline->op2_type != IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4882</td><td><a href="zend_inference.c.html#L4882">((t2 & MAY_BE_ANY) != MAY_BE_ARRAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4891</td><td><a href="zend_inference.c.html#L4891">((t1 & MAY_BE_ANY | MAY_BE_REF) != MAY_BE_ARRAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4896</td><td><a href="zend_inference.c.html#L4896">((t1 & MAY_BE_ANY | MAY_BE_REF) != MAY_BE_ARRAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4913</td><td><a href="zend_inference.c.html#L4913">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">343</td><td><a href="zend_inference.c.html#L343">(b & d & m)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="zend_inference.c.html#L686">(OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW())</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="zend_inference.c.html#L728">(OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW())</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="zend_inference.c.html#L766">(OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW())</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">806</td><td><a href="zend_inference.c.html#L806">(OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW())</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">824</td><td><a href="zend_inference.c.html#L824">(OP1_RANGE_UNDERFLOW() || OP2_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW() || OP2_RANGE_OVERFLOW())</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="zend_inference.c.html#L1526">(!zend_bitset_in(visited, j) && zend_check_inner_cycles(op_array, ssa, worklist, visited, j))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3966</td><td><a href="zend_inference.c.html#L3966">(zval_get_double(&orig_result) != Z_DVAL(dval_result))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">554</td><td><a href="zend_inference.c.html#L554">(a % b != 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">555</td><td><a href="zend_inference.c.html#L555">(*r2 < 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2271</td><td><a href="zend_inference.c.html#L2271">(use_op == ssa_op + 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">570</td><td><a href="zend_inference.c.html#L570">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="zend_inference.c.html#L595">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="zend_inference.c.html#L620">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">653</td><td><a href="zend_inference.c.html#L653">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="zend_inference.c.html#L685">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="zend_inference.c.html#L727">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">765</td><td><a href="zend_inference.c.html#L765">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="zend_inference.c.html#L805">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="zend_inference.c.html#L823">(OP1_HAS_RANGE() && OP2_HAS_RANGE())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3984</td><td><a href="zend_inference.c.html#L3984">(!can_convert_to_double(op_array, ssa, phi->ssa_var, value, visited))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">196</td><td><a href="zend_inference.c.html#L196">(root[var] == var)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">244</td><td><a href="zend_inference.c.html#L244">(root[j] == j)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">881</td><td><a href="zend_inference.c.html#L881">(!tmp->underflow)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">895</td><td><a href="zend_inference.c.html#L895">(!tmp->overflow)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1360</td><td><a href="zend_inference.c.html#L1360">(!(type & MAY_BE_ANY - MAY_BE_NULL | MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_LONG))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1369</td><td><a href="zend_inference.c.html#L1369">(!(type & MAY_BE_NULL | MAY_BE_FALSE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1404</td><td><a href="zend_inference.c.html#L1404">(!var_info->has_range)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1445</td><td><a href="zend_inference.c.html#L1445">(!var_info->has_range)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1640</td><td><a href="zend_inference.c.html#L1640">(next_scc_var[j] < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2020</td><td><a href="zend_inference.c.html#L2020">(!(ZEND_OPTIMIZER_IGNORE_OVERLOADING & optimization_level))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2349</td><td><a href="zend_inference.c.html#L2349">(!(ZEND_OPTIMIZER_IGNORE_OVERLOADING & optimization_level))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3139</td><td><a href="zend_inference.c.html#L3139">(!op_array->function_name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3352</td><td><a href="zend_inference.c.html#L3352">(!(tmp & MAY_BE_ARRAY_OF_LONG | MAY_BE_ARRAY_OF_DOUBLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3759</td><td><a href="zend_inference.c.html#L3759">(!p->has_range_constraint)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3762</td><td><a href="zend_inference.c.html#L3762">(!(tmp & MAY_BE_STRING | MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4136</td><td><a href="zend_inference.c.html#L4136">(!ret->type)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4484</td><td><a href="zend_inference.c.html#L4484">(!ssa->var_info)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4489</td><td><a href="zend_inference.c.html#L4489">(!op_array->function_name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3699</td><td><a href="zend_inference.c.html#L3699">(!ce1 || !ce2)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2706</td><td><a href="zend_inference.c.html#L2706">(OP1_DATA_INFO() & MAY_BE_UNDEF)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4818</td><td><a href="zend_inference.c.html#L4818">(ZEND_TYPE_IS_SET(prop_info->type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">288</td><td><a href="zend_inference.c.html#L288">(ssa_vars[i].definition_phi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">864</td><td><a href="zend_inference.c.html#L864">(constraint->negative)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1365</td><td><a href="zend_inference.c.html#L1365">(type & MAY_BE_LONG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1368</td><td><a href="zend_inference.c.html#L1368">(type & MAY_BE_TRUE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1458</td><td><a href="zend_inference.c.html#L1458">(r->underflow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1461</td><td><a href="zend_inference.c.html#L1461">(r->overflow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1897</td><td><a href="zend_inference.c.html#L1897">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1908</td><td><a href="zend_inference.c.html#L1908">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="zend_inference.c.html#L1913">(tmp & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1916</td><td><a href="zend_inference.c.html#L1916">(tmp & MAY_BE_STRING | MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1923</td><td><a href="zend_inference.c.html#L1923">(t1 & MAY_BE_ARRAY_OF_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="zend_inference.c.html#L1934">(t1 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="zend_inference.c.html#L1940">(t1 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1946</td><td><a href="zend_inference.c.html#L1946">(t1 & MAY_BE_TRUE | MAY_BE_LONG | MAY_BE_DOUBLE | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1959</td><td><a href="zend_inference.c.html#L1959">(value_type & MAY_BE_ANY | MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1960</td><td><a href="zend_inference.c.html#L1960">(value_type & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="zend_inference.c.html#L1964">(arr_type & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1969</td><td><a href="zend_inference.c.html#L1969">(dim_type & MAY_BE_LONG | MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_RESOURCE | MAY_BE_DOUBLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1972</td><td><a href="zend_inference.c.html#L1972">(dim_type & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1979</td><td><a href="zend_inference.c.html#L1979">(dim_type & MAY_BE_UNDEF | MAY_BE_NULL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1986</td><td><a href="zend_inference.c.html#L1986">(tmp & MAY_BE_ARRAY_KEY_ANY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1996</td><td><a href="zend_inference.c.html#L1996">(arr_type & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2000</td><td><a href="zend_inference.c.html#L2000">(tmp & MAY_BE_ARRAY | MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2003</td><td><a href="zend_inference.c.html#L2003">(tmp & MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2006</td><td><a href="zend_inference.c.html#L2006">(tmp & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2114</td><td><a href="zend_inference.c.html#L2114">(type_mask & MAY_BE_VOID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2117</td><td><a href="zend_inference.c.html#L2117">(type_mask & MAY_BE_CALLABLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="zend_inference.c.html#L2120">(type_mask & MAY_BE_STATIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2123</td><td><a href="zend_inference.c.html#L2123">(type_mask & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2153</td><td><a href="zend_inference.c.html#L2153">(tmp & MAY_BE_STRING | MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2343</td><td><a href="zend_inference.c.html#L2343">(t1 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2346</td><td><a href="zend_inference.c.html#L2346">(t1 & MAY_BE_ANY - MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2350</td><td><a href="zend_inference.c.html#L2350">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2399</td><td><a href="zend_inference.c.html#L2399">(tmp & MAY_BE_STRING | MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2418</td><td><a href="zend_inference.c.html#L2418">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2421</td><td><a href="zend_inference.c.html#L2421">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2423</td><td><a href="zend_inference.c.html#L2423">(t1 & MAY_BE_ANY - MAY_BE_NULL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2435</td><td><a href="zend_inference.c.html#L2435">(t1 & MAY_BE_RC1 | MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2442</td><td><a href="zend_inference.c.html#L2442">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2445</td><td><a href="zend_inference.c.html#L2445">(t1 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2490</td><td><a href="zend_inference.c.html#L2490">(t1 & MAY_BE_ARRAY_OF_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2501</td><td><a href="zend_inference.c.html#L2501">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2509</td><td><a href="zend_inference.c.html#L2509">(tmp & MAY_BE_STRING | MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2512</td><td><a href="zend_inference.c.html#L2512">(tmp & MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="zend_inference.c.html#L2544">(t2 & MAY_BE_ARRAY | MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2548</td><td><a href="zend_inference.c.html#L2548">(t1 & MAY_BE_ANY - MAY_BE_NULL | MAY_BE_FALSE | MAY_BE_STRING | MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2553</td><td><a href="zend_inference.c.html#L2553">(tmp & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2568</td><td><a href="zend_inference.c.html#L2568">(tmp & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2584</td><td><a href="zend_inference.c.html#L2584">(t1 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2604</td><td><a href="zend_inference.c.html#L2604">(t1 & MAY_BE_UNDEF | MAY_BE_NULL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2611</td><td><a href="zend_inference.c.html#L2611">(t1 & MAY_BE_LONG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2614</td><td><a href="zend_inference.c.html#L2614">(t1 & MAY_BE_DOUBLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2617</td><td><a href="zend_inference.c.html#L2617">(t1 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2626</td><td><a href="zend_inference.c.html#L2626">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2636</td><td><a href="zend_inference.c.html#L2636">(t1 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2640</td><td><a href="zend_inference.c.html#L2640">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2646</td><td><a href="zend_inference.c.html#L2646">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="zend_inference.c.html#L2649">(t1 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2666</td><td><a href="zend_inference.c.html#L2666">(t1 & MAY_BE_UNDEF | MAY_BE_NULL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2673</td><td><a href="zend_inference.c.html#L2673">(t1 & MAY_BE_LONG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2676</td><td><a href="zend_inference.c.html#L2676">(t1 & MAY_BE_DOUBLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2679</td><td><a href="zend_inference.c.html#L2679">(t1 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2697</td><td><a href="zend_inference.c.html#L2697">(t1 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2700</td><td><a href="zend_inference.c.html#L2700">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2703</td><td><a href="zend_inference.c.html#L2703">(t1 & MAY_BE_ARRAY | MAY_BE_FALSE | MAY_BE_NULL | MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2709</td><td><a href="zend_inference.c.html#L2709">(t1 & MAY_BE_ARRAY_OF_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2714</td><td><a href="zend_inference.c.html#L2714">(t1 & MAY_BE_TRUE | MAY_BE_LONG | MAY_BE_DOUBLE | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2724</td><td><a href="zend_inference.c.html#L2724">(tmp & MAY_BE_ANY | MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2725</td><td><a href="zend_inference.c.html#L2725">(tmp & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2751</td><td><a href="zend_inference.c.html#L2751">(tmp & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2766</td><td><a href="zend_inference.c.html#L2766">(tmp & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2790</td><td><a href="zend_inference.c.html#L2790">(tmp & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2796</td><td><a href="zend_inference.c.html#L2796">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2799</td><td><a href="zend_inference.c.html#L2799">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2802</td><td><a href="zend_inference.c.html#L2802">(t2 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2806</td><td><a href="zend_inference.c.html#L2806">(t2 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2821</td><td><a href="zend_inference.c.html#L2821">(tmp & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2848</td><td><a href="zend_inference.c.html#L2848">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2858</td><td><a href="zend_inference.c.html#L2858">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2869</td><td><a href="zend_inference.c.html#L2869">(tmp & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2882</td><td><a href="zend_inference.c.html#L2882">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2892</td><td><a href="zend_inference.c.html#L2892">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2924</td><td><a href="zend_inference.c.html#L2924">(t1 & MAY_BE_RC1 | MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2937</td><td><a href="zend_inference.c.html#L2937">(t2 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2951</td><td><a href="zend_inference.c.html#L2951">(t1 & MAY_BE_RC1 | MAY_BE_RCN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2980</td><td><a href="zend_inference.c.html#L2980">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2982</td><td><a href="zend_inference.c.html#L2982">(t1 & MAY_BE_ARRAY_OF_ANY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2987</td><td><a href="zend_inference.c.html#L2987">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3040</td><td><a href="zend_inference.c.html#L3040">(op_array->scope)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3091</td><td><a href="zend_inference.c.html#L3091">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3096</td><td><a href="zend_inference.c.html#L3096">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3099</td><td><a href="zend_inference.c.html#L3099">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3103</td><td><a href="zend_inference.c.html#L3103">(t1 & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3132</td><td><a href="zend_inference.c.html#L3132">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3158</td><td><a href="zend_inference.c.html#L3158">(t1 & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3183</td><td><a href="zend_inference.c.html#L3183">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3193</td><td><a href="zend_inference.c.html#L3193">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3198</td><td><a href="zend_inference.c.html#L3198">(tmp & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3201</td><td><a href="zend_inference.c.html#L3201">(t1 & MAY_BE_ARRAY_OF_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3206</td><td><a href="zend_inference.c.html#L3206">(tmp & MAY_BE_STRING | MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3214</td><td><a href="zend_inference.c.html#L3214">(t1 & MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3217</td><td><a href="zend_inference.c.html#L3217">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3218</td><td><a href="zend_inference.c.html#L3218">(t1 & MAY_BE_ARRAY_KEY_LONG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3221</td><td><a href="zend_inference.c.html#L3221">(t1 & MAY_BE_ARRAY_KEY_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3243</td><td><a href="zend_inference.c.html#L3243">(t1 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3249</td><td><a href="zend_inference.c.html#L3249">(t1 & MAY_BE_STRING | MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3255</td><td><a href="zend_inference.c.html#L3255">(t1 & MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3259</td><td><a href="zend_inference.c.html#L3259">(t1 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3262</td><td><a href="zend_inference.c.html#L3262">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3267</td><td><a href="zend_inference.c.html#L3267">(t2 & MAY_BE_LONG | MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_RESOURCE | MAY_BE_DOUBLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3268</td><td><a href="zend_inference.c.html#L3268">(t1 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3271</td><td><a href="zend_inference.c.html#L3271">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3276</td><td><a href="zend_inference.c.html#L3276">(t2 & MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3280</td><td><a href="zend_inference.c.html#L3280">(t1 & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3283</td><td><a href="zend_inference.c.html#L3283">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3289</td><td><a href="zend_inference.c.html#L3289">(t2 & MAY_BE_UNDEF | MAY_BE_NULL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3294</td><td><a href="zend_inference.c.html#L3294">(t1 & MAY_BE_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3297</td><td><a href="zend_inference.c.html#L3297">(t1 & MAY_BE_OBJECT | MAY_BE_RESOURCE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3349</td><td><a href="zend_inference.c.html#L3349">(tmp & MAY_BE_ARRAY_OF_LONG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3538</td><td><a href="zend_inference.c.html#L3538">(t1 & MAY_BE_ANY - MAY_BE_NULL | MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_LONG | MAY_BE_DOUBLE | MAY_BE_STRING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3559</td><td><a href="zend_inference.c.html#L3559">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3563</td><td><a href="zend_inference.c.html#L3563">(t1 & expected_type_mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3579</td><td><a href="zend_inference.c.html#L3579">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3684</td><td><a href="zend_inference.c.html#L3684">(ce->parent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3752</td><td><a href="zend_inference.c.html#L3752">(ssa_vars[j].definition_phi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3779</td><td><a href="zend_inference.c.html#L3779">(tmp & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4157</td><td><a href="zend_inference.c.html#L4157">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4161</td><td><a href="zend_inference.c.html#L4161">(t1 & MAY_BE_RC1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4329</td><td><a href="zend_inference.c.html#L4329">(optimization_level & ZEND_OPTIMIZER_NARROW_TO_DOUBLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4523</td><td><a href="zend_inference.c.html#L4523">(t1 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4578</td><td><a href="zend_inference.c.html#L4578">(t2 & MAY_BE_UNDEF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4765</td><td><a href="zend_inference.c.html#L4765">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4772</td><td><a href="zend_inference.c.html#L4772">(t1 & MAY_BE_OBJECT | MAY_BE_RESOURCE | MAY_BE_ARRAY_OF_OBJECT | MAY_BE_ARRAY_OF_RESOURCE | MAY_BE_ARRAY_OF_ARRAY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4789</td><td><a href="zend_inference.c.html#L4789">(t1 & MAY_BE_ANY - MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4797</td><td><a href="zend_inference.c.html#L4797">(ssa_op->op1_use)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4885</td><td><a href="zend_inference.c.html#L4885">((t1 & MAY_BE_ARRAY | MAY_BE_OBJECT | MAY_BE_RESOURCE))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4907</td><td><a href="zend_inference.c.html#L4907">(t1 & MAY_BE_FALSE | MAY_BE_TRUE | MAY_BE_LONG | MAY_BE_DOUBLE | MAY_BE_STRING | MAY_BE_OBJECT | MAY_BE_RESOURCE | MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4910</td><td><a href="zend_inference.c.html#L4910">(t2 & MAY_BE_RESOURCE | MAY_BE_ARRAY | MAY_BE_OBJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">748</td><td><a href="zend_inference.c.html#L748">(shift_left_overflows(op1_min, op2_max) || shift_left_overflows(op1_max, op2_max))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1062</td><td><a href="zend_inference.c.html#L1062">(OP1_RANGE_UNDERFLOW() || OP1_RANGE_OVERFLOW())</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1434</td><td><a href="zend_inference.c.html#L1434">(zend_inference_calc_range(op_array, ssa, var, 1, 0, &tmp))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1479</td><td><a href="zend_inference.c.html#L1479">(zend_inference_calc_range(op_array, ssa, var, 0, 1, &tmp))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1550</td><td><a href="zend_inference.c.html#L1550">(zend_inference_calc_range(op_array, ssa, j, 0, 0, &tmp))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="zend_inference.c.html#L1644">(zend_inference_calc_range(op_array, ssa, j, 0, 1, &tmp))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3060</td><td><a href="zend_inference.c.html#L3060">(Z_TYPE_P(zv) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3938</td><td><a href="zend_inference.c.html#L3938">(is_effective_op1_double_cast(opline, &orig_op2))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3946</td><td><a href="zend_inference.c.html#L3946">(is_effective_op2_double_cast(opline, &orig_op1))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4036</td><td><a href="zend_inference.c.html#L4036">(zend_infer_types_ex(op_array, script, ssa, worklist, optimization_level) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4196</td><td><a href="zend_inference.c.html#L4196">(Z_TYPE_P(zv) == IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4211</td><td><a href="zend_inference.c.html#L4211">(Z_TYPE_P(zv) == IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4226</td><td><a href="zend_inference.c.html#L4226">(Z_TYPE_P(zv) == IS_TRUE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4241</td><td><a href="zend_inference.c.html#L4241">(Z_TYPE_P(zv) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4324</td><td><a href="zend_inference.c.html#L4324">(zend_infer_types_ex(op_array, script, ssa, worklist, optimization_level) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4512</td><td><a href="zend_inference.c.html#L4512">(zend_infer_types(op_array, script, ssa, optimization_level) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">274</td><td><a href="zend_inference.c.html#L274">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">277</td><td><a href="zend_inference.c.html#L277">(use >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="zend_inference.c.html#L318">(m != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">321</td><td><a href="zend_inference.c.html#L321">(temp <= b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="zend_inference.c.html#L327">(temp <= d)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="zend_inference.c.html#L342">(m != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="zend_inference.c.html#L345">(temp >= a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">350</td><td><a href="zend_inference.c.html#L350">(temp >= c)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="zend_inference.c.html#L365">(m != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">368</td><td><a href="zend_inference.c.html#L368">(temp <= b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="zend_inference.c.html#L373">(temp <= d)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">388</td><td><a href="zend_inference.c.html#L388">(m != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">391</td><td><a href="zend_inference.c.html#L391">(temp >= a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="zend_inference.c.html#L397">(temp >= c)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="zend_inference.c.html#L517">(min == ZEND_LONG_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">522</td><td><a href="zend_inference.c.html#L522">(min >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="zend_inference.c.html#L525">(max <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="zend_inference.c.html#L543">(n >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="zend_inference.c.html#L703">(op2_abs_max == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="zend_inference.c.html#L707">(op2_abs_min == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="zend_inference.c.html#L712">(op1_min >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">715</td><td><a href="zend_inference.c.html#L715">(op1_max <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="zend_inference.c.html#L741">(op2_min < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="zend_inference.c.html#L744">(op2_max < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="zend_inference.c.html#L779">(op2_min < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="zend_inference.c.html#L782">(op2_max < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="zend_inference.c.html#L787">(op2_min >= SIZEOF_ZEND_LONG * 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="zend_inference.c.html#L790">(op2_max >= SIZEOF_ZEND_LONG * 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1300</td><td><a href="zend_inference.c.html#L1300">(mask == MAY_BE_LONG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="zend_inference.c.html#L1525">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1537</td><td><a href="zend_inference.c.html#L1537">(n < RANGE_WARMUP_PASSES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="zend_inference.c.html#L1539">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1658</td><td><a href="zend_inference.c.html#L1658">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1668</td><td><a href="zend_inference.c.html#L1668">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1679</td><td><a href="zend_inference.c.html#L1679">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1695</td><td><a href="zend_inference.c.html#L1695">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1727</td><td><a href="zend_inference.c.html#L1727">(alias == HTTP_RESPONSE_HEADER_ALIAS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1847</td><td><a href="zend_inference.c.html#L1847">(use >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1963</td><td><a href="zend_inference.c.html#L1963">(dim_op_type == IS_UNUSED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1974</td><td><a href="zend_inference.c.html#L1974">(dim_op_type != IS_CONST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2465</td><td><a href="zend_inference.c.html#L2465">(short_circuiting_type == ZEND_SHORT_CIRCUITING_CHAIN_EXPR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2467</td><td><a href="zend_inference.c.html#L2467">(short_circuiting_type == ZEND_SHORT_CIRCUITING_CHAIN_ISSET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3307</td><td><a href="zend_inference.c.html#L3307">(j < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3311</td><td><a href="zend_inference.c.html#L3311">(j >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3696</td><td><a href="zend_inference.c.html#L3696">(ce1 == ce2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3706</td><td><a href="zend_inference.c.html#L3706">(rank1 != rank2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3707</td><td><a href="zend_inference.c.html#L3707">(rank1 > rank2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3716</td><td><a href="zend_inference.c.html#L3716">(ce1 != ce2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3728</td><td><a href="zend_inference.c.html#L3728">(ce1 == ce2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3873</td><td><a href="zend_inference.c.html#L3873">(use >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3954</td><td><a href="zend_inference.c.html#L3954">(opcode == ZEND_ASSIGN_OP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4142</td><td><a href="zend_inference.c.html#L4142">(j < blocks_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4181</td><td><a href="zend_inference.c.html#L4181">(tmp_is_instanceof < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4185</td><td><a href="zend_inference.c.html#L4185">(tmp_is_instanceof != arg_is_instanceof)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4197</td><td><a href="zend_inference.c.html#L4197">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4204</td><td><a href="zend_inference.c.html#L4204">(!tmp_range.underflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4207</td><td><a href="zend_inference.c.html#L4207">(!tmp_range.overflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4212</td><td><a href="zend_inference.c.html#L4212">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4219</td><td><a href="zend_inference.c.html#L4219">(!tmp_range.underflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4222</td><td><a href="zend_inference.c.html#L4222">(!tmp_range.overflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4227</td><td><a href="zend_inference.c.html#L4227">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4234</td><td><a href="zend_inference.c.html#L4234">(!tmp_range.underflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4237</td><td><a href="zend_inference.c.html#L4237">(!tmp_range.overflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4242</td><td><a href="zend_inference.c.html#L4242">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4249</td><td><a href="zend_inference.c.html#L4249">(!tmp_range.underflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4252</td><td><a href="zend_inference.c.html#L4252">(!tmp_range.overflow)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4261</td><td><a href="zend_inference.c.html#L4261">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4294</td><td><a href="zend_inference.c.html#L4294">(tmp_is_instanceof < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4298</td><td><a href="zend_inference.c.html#L4298">(tmp_has_range < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4320</td><td><a href="zend_inference.c.html#L4320">(j < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2135</td><td><a href="zend_inference.c.html#L2135">(!ZEND_TYPE_IS_SET(type))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3491</td><td><a href="zend_inference.c.html#L3491">(!result_may_be_separated(ssa, ssa_op))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3749</td><td><a href="zend_inference.c.html#L3749">(!zend_bitset_empty(worklist, worklist_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3881</td><td><a href="zend_inference.c.html#L3881">(!is_narrowable_instr(opline))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4364</td><td><a href="zend_inference.c.html#L4364">(!ZEND_ARG_SEND_MODE(arg_info))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1898</td><td><a href="zend_inference.c.html#L1898">(!write)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1917</td><td><a href="zend_inference.c.html#L1917">(!write)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1947</td><td><a href="zend_inference.c.html#L1947">(!write)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2252</td><td><a href="zend_inference.c.html#L2252">(!prop_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2828</td><td><a href="zend_inference.c.html#L2828">(!ssa_opcodes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3314</td><td><a href="zend_inference.c.html#L3314">(!ssa_opcodes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3410</td><td><a href="zend_inference.c.html#L3410">(!ssa_opcodes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3515</td><td><a href="zend_inference.c.html#L3515">(!call_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3589</td><td><a href="zend_inference.c.html#L3589">(!extra_types)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3766</td><td><a href="zend_inference.c.html#L3766">(!ce)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4031</td><td><a href="zend_inference.c.html#L4031">(!narrowed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4279</td><td><a href="zend_inference.c.html#L4279">(!widening)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1061</td><td><a href="zend_inference.c.html#L1061">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="zend_inference.c.html#L1079">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1089</td><td><a href="zend_inference.c.html#L1089">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="zend_inference.c.html#L1107">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1117</td><td><a href="zend_inference.c.html#L1117">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1129</td><td><a href="zend_inference.c.html#L1129">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1141</td><td><a href="zend_inference.c.html#L1141">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1160</td><td><a href="zend_inference.c.html#L1160">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1179</td><td><a href="zend_inference.c.html#L1179">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1201</td><td><a href="zend_inference.c.html#L1201">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="zend_inference.c.html#L1226">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1237</td><td><a href="zend_inference.c.html#L1237">(OP2_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1255</td><td><a href="zend_inference.c.html#L1255">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1282</td><td><a href="zend_inference.c.html#L1282">(OP1_HAS_RANGE())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1501</td><td><a href="zend_inference.c.html#L1501">(zend_bitset_in(worklist, var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1673</td><td><a href="zend_inference.c.html#L1673">(zend_ssa_range_widening(op_array, ssa, j, scc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1689</td><td><a href="zend_inference.c.html#L1689">(zend_ssa_range_widening(op_array, ssa, j, scc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1707</td><td><a href="zend_inference.c.html#L1707">(zend_ssa_range_narrowing(op_array, ssa, j, scc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1872</td><td><a href="zend_inference.c.html#L1872">(Z_REFCOUNTED_P(zv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1886</td><td><a href="zend_inference.c.html#L1886">(HT_IS_PACKED(ht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2140</td><td><a href="zend_inference.c.html#L2140">(ZEND_TYPE_IS_COMPLEX(type))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2145</td><td><a href="zend_inference.c.html#L2145">(ZEND_TYPE_HAS_NAME(type))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3008</td><td><a href="zend_inference.c.html#L3008">(ZEND_ARG_SEND_MODE(arg_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3868</td><td><a href="zend_inference.c.html#L3868">(zend_bitset_in(visited, var_num))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3877</td><td><a href="zend_inference.c.html#L3877">(zend_ssa_is_no_val_use(opline, ssa_op, var_num))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3893</td><td><a href="zend_inference.c.html#L3893">(Z_ISUNDEF_P(value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3935</td><td><a href="zend_inference.c.html#L3935">(Z_ISUNDEF(orig_op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3943</td><td><a href="zend_inference.c.html#L3943">(Z_ISUNDEF(orig_op2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4018</td><td><a href="zend_inference.c.html#L4018">(can_convert_to_double(op_array, ssa, v, value, visited))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4153</td><td><a href="zend_inference.c.html#L4153">(is_recursive_tail_call(op_array, opline))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4334</td><td><a href="zend_inference.c.html#L4334">(ZEND_FUNC_INFO(op_array))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="zend_inference.c.html#L190">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">909</td><td><a href="zend_inference.c.html#L909">(narrowing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">965</td><td><a href="zend_inference.c.html#L965">(narrowing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1010</td><td><a href="zend_inference.c.html#L1010">(narrowing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1388</td><td><a href="zend_inference.c.html#L1388">(underflow)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1391</td><td><a href="zend_inference.c.html#L1391">(overflow)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1712</td><td><a href="zend_inference.c.html#L1712">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1805</td><td><a href="zend_inference.c.html#L1805">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1879</td><td><a href="zend_inference.c.html#L1879">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1904</td><td><a href="zend_inference.c.html#L1904">(write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1909</td><td><a href="zend_inference.c.html#L1909">(insert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1930</td><td><a href="zend_inference.c.html#L1930">(write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1936</td><td><a href="zend_inference.c.html#L1936">(write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1942</td><td><a href="zend_inference.c.html#L1942">(write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2131</td><td><a href="zend_inference.c.html#L2131">(pce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2142</td><td><a href="zend_inference.c.html#L2142">(pce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2202</td><td><a href="zend_inference.c.html#L2202">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2239</td><td><a href="zend_inference.c.html#L2239">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2253</td><td><a href="zend_inference.c.html#L2253">(pce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2559</td><td><a href="zend_inference.c.html#L2559">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2564</td><td><a href="zend_inference.c.html#L2564">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2575</td><td><a href="zend_inference.c.html#L2575">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2743</td><td><a href="zend_inference.c.html#L2743">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3022</td><td><a href="zend_inference.c.html#L3022">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3073</td><td><a href="zend_inference.c.html#L3073">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3455</td><td><a href="zend_inference.c.html#L3455">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3473</td><td><a href="zend_inference.c.html#L3473">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3499</td><td><a href="zend_inference.c.html#L3499">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3523</td><td><a href="zend_inference.c.html#L3523">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3595</td><td><a href="zend_inference.c.html#L3595">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3602</td><td><a href="zend_inference.c.html#L3602">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3721</td><td><a href="zend_inference.c.html#L3721">(ce1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3800</td><td><a href="zend_inference.c.html#L3800">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4203</td><td><a href="zend_inference.c.html#L4203">(tmp_has_range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4218</td><td><a href="zend_inference.c.html#L4218">(tmp_has_range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4233</td><td><a href="zend_inference.c.html#L4233">(tmp_has_range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4248</td><td><a href="zend_inference.c.html#L4248">(tmp_has_range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4264</td><td><a href="zend_inference.c.html#L4264">(tmp_has_range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4445</td><td><a href="zend_inference.c.html#L4445">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4817</td><td><a href="zend_inference.c.html#L4817">(prop_info)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

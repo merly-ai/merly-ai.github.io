@@ -1,0 +1,265 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\usb\hcd-ehci.c Ctrl Expressions (214) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\usb\hcd-ehci.c Ctrl Expressions (214) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\usb\hcd-ehci.c Ctrl Expressions (214)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">468</td><td><a href="hcd-ehci.c.html#L468">(<span style='background-color:#741da3;'>q->last_pid && ep != 0 && pid != q->last_pid</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="hcd-ehci.c.html#L207">(<span style='background-color:#741da3;'>(s->usbsts & USBINTR_MASK) & s->usbintr</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">2302</td><td><a href="hcd-ehci.c.html#L2302">(<span style='background-color:#741da3;'>(ehci->usbsts & USBINTR_MASK) & ehci->usbintr</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">450</td><td><a href="hcd-ehci.c.html#L450">(<span style='background-color:#9c4c02;'>p->qtdaddr != p->queue->qtdaddr || (p->queue->async && !NLPTR_TBIT(p->qtd.next) && (p->qtd.next != qtd->next)) || (!NLPTR_TBIT(p->qtd.altnext) && (p->qtd.altnext != qtd->altnext)) || p->qtd.token != qtd->token || p->qtd.bufptr[0] != qtd->bufptr[0]</span>)</a></td><td class="num">128.50</td></tr>
+      <tr><td class="num line">435</td><td><a href="hcd-ehci.c.html#L435">(<span style='background-color:#9c4c02;'>(devaddr != get_field(q->qh.epchar, QH_EPCHAR_DEVADDR)) || (endp != get_field(q->qh.epchar, QH_EPCHAR_EP)) || (qh->current_qtd != q->qh.current_qtd) || (q->async && qh->next_qtd != q->qh.next_qtd) || (memcmp(&qh->altnext_qtd, &q->qh.altnext_qtd, 7 * sizeof(uint32_t)) != 0) || (q->dev != NULL && q->dev->addr != devaddr)</span>)</a></td><td class="num">109.25</td></tr>
+      <tr><td class="num line">1807</td><td><a href="hcd-ehci.c.html#L1807">(get_dwords(q->ehci, addr + 0, &qtd.next, 1) < 0 || get_dwords(q->ehci, addr + 4, &qtd.altnext, 1) < 0 || get_dwords(q->ehci, addr + 12, qtd.bufptr, ARRAY_SIZE(qtd.bufptr)) < 0)</a></td><td class="num">99.30</td></tr>
+      <tr><td class="num line">587</td><td><a href="hcd-ehci.c.html#L587">((p = QTAILQ_FIRST(&q->packets)) != NULL)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1688</td><td><a href="hcd-ehci.c.html#L1688">((q->qh.token & QTD_TOKEN_ACTIVE) && (NLPTR_TBIT(q->qh.current_qtd) == 0) && (q->qh.current_qtd != 0))</a></td><td class="num">40.50</td></tr>
+      <tr><td class="num line">1772</td><td><a href="hcd-ehci.c.html#L1772">(((q->qh.token & QTD_TOKEN_TBYTES_MASK) != 0) && (NLPTR_TBIT(q->qh.altnext_qtd) == 0))</a></td><td class="num">35.00</td></tr>
+      <tr><td class="num line">520</td><td><a href="hcd-ehci.c.html#L520">(p->async == EHCI_ASYNC_FINISHED && !(p->queue->qh.token & QTD_TOKEN_HALT))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">1039</td><td><a href="hcd-ehci.c.html#L1039">((val & USBCMD_FLS) && !(s->usbcmd & USBCMD_FLS))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1803</td><td><a href="hcd-ehci.c.html#L1803">(get_dwords(q->ehci, addr + 8, &qtd.token, 1) < 0)</a></td><td class="num">27.60</td></tr>
+      <tr><td class="num line">987</td><td><a href="hcd-ehci.c.html#L987">((val & PORTSC_PRESET) && !(*portsc & PORTSC_PRESET))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1007</td><td><a href="hcd-ehci.c.html#L1007">((val & PORTSC_SUSPEND) && !(*portsc & PORTSC_SUSPEND))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">2204</td><td><a href="hcd-ehci.c.html#L2204">(!(ehci->frindex & 7) && !ehci_periodic_enabled(ehci))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1361</td><td><a href="hcd-ehci.c.html#L1361">(!ehci_verify_pid(p->queue, &p->qtd))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2244</td><td><a href="hcd-ehci.c.html#L2244">((ehci->frindex % 0x2000) + uframes >= 0x2000)</a></td><td class="num">25.95</td></tr>
+      <tr><td class="num line">2197</td><td><a href="hcd-ehci.c.html#L2197">(!(ehci->frindex & 7) && ehci_periodic_enabled(ehci))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">836</td><td><a href="hcd-ehci.c.html#L836">(!(ehci->portsc[i] & PORTSC_PED))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1632</td><td><a href="hcd-ehci.c.html#L1632">(get_dwords(ehci, NLPTR_GET(q->qhaddr), (uint32_t *)&qh, sizeof(EHCIqh) >> 2) < 0)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">489</td><td><a href="hcd-ehci.c.html#L489">(!ehci_verify_qh(q, &qh) || !ehci_verify_qtd(p, &qtd))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">529</td><td><a href="hcd-ehci.c.html#L529">(p->async == EHCI_ASYNC_FINISHED && p->packet.status == USB_RET_SUCCESS)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1002</td><td><a href="hcd-ehci.c.html#L1002">(dev && dev->attached && (dev->speedmask & USB_SPEED_MASK_HIGH))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">253</td><td><a href="hcd-ehci.c.html#L253">(s->astate == EST_INACTIVE && s->pstate == EST_INACTIVE)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1866</td><td><a href="hcd-ehci.c.html#L1866">(ehci_get_fetch_addr(q->ehci, q->async) != q->qh.next)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">2348</td><td><a href="hcd-ehci.c.html#L2348">(ehci->int_req_by_async && (ehci->usbsts & USBSTS_INT))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">991</td><td><a href="hcd-ehci.c.html#L991">(!(val & PORTSC_PRESET) && (*portsc & PORTSC_PRESET))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1010</td><td><a href="hcd-ehci.c.html#L1010">(!(val & PORTSC_FPRES) && (*portsc & PORTSC_FPRES))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1941</td><td><a href="hcd-ehci.c.html#L1941">(!q->async && q->transact_ctr == 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1985</td><td><a href="hcd-ehci.c.html#L1985">(!q->async && q->transact_ctr > 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2516</td><td><a href="hcd-ehci.c.html#L2516">(s->maxframes < 8 || s->maxframes > 512)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="hcd-ehci.c.html#L1055">((USBCMD_RUNSTOP | USBCMD_PSE | USBCMD_ASE & val) != (USBCMD_RUNSTOP | USBCMD_PSE | USBCMD_ASE & s->usbcmd))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1660</td><td><a href="hcd-ehci.c.html#L1660">(async && (q->qh.epchar & QH_EPCHAR_H))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1377</td><td><a href="hcd-ehci.c.html#L1377">(usb_packet_map(&p->packet, &p->sgl))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1460</td><td><a href="hcd-ehci.c.html#L1460">(usb_packet_map(&ehci->ipacket, &ehci->isgl))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="hcd-ehci.c.html#L647">(ehci->last_run_ns < q->ts + maxage)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">2323</td><td><a href="hcd-ehci.c.html#L2323">(ehci->async_stepdown < ehci->maxframes / 2)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">863</td><td><a href="hcd-ehci.c.html#L863">(devs[i] && devs[i]->attached)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">886</td><td><a href="hcd-ehci.c.html#L886">(devs[i] && devs[i]->attached)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2341</td><td><a href="hcd-ehci.c.html#L2341">(ehci_enabled(ehci) && (ehci->usbintr & USBSTS_FLR))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">566</td><td><a href="hcd-ehci.c.html#L566">(!q->last_pid || !q->dev)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2239</td><td><a href="hcd-ehci.c.html#L2239">(!ehci_enabled(ehci) && ehci->pstate == EST_INACTIVE)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">130</td><td><a href="hcd-ehci.c.html#L130">(nr < len && n[nr] != NULL)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1675</td><td><a href="hcd-ehci.c.html#L1675">(q->qhaddr != q->qh.next)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1309</td><td><a href="hcd-ehci.c.html#L1309">(tbytes && p->pid == USB_TOKEN_IN)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="hcd-ehci.c.html#L1457">(ep && ep->type == USB_ENDPOINT_XFER_ISOC)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">186</td><td><a href="hcd-ehci.c.html#L186">((s->usbsts & mask) == mask)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">195</td><td><a href="hcd-ehci.c.html#L195">((s->usbsts & mask) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">237</td><td><a href="hcd-ehci.c.html#L237">(s->usbsts_frindex > s->frindex)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2310</td><td><a href="hcd-ehci.c.html#L2310">((ehci->frindex & 7) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">498</td><td><a href="hcd-ehci.c.html#L498">(!(q->qh.token & QTD_TOKEN_HALT))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1171</td><td><a href="hcd-ehci.c.html#L1171">(!(q->qh.epchar & QH_EPCHAR_DTC))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1350</td><td><a href="hcd-ehci.c.html#L1350">(!(p->qtd.token & QTD_TOKEN_ACTIVE))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1420</td><td><a href="hcd-ehci.c.html#L1420">(itd->transact[i] & ITD_XACT_ACTIVE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1505</td><td><a href="hcd-ehci.c.html#L1505">(itd->transact[i] & ITD_XACT_IOC)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1899</td><td><a href="hcd-ehci.c.html#L1899">(get_dwords(q->ehci, NLPTR_GET(qtdaddr), (uint32_t *)&qtd, sizeof(EHCIqtd) >> 2) < 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2434</td><td><a href="hcd-ehci.c.html#L2434">(s->portsc[i] & PORTSC_POWNER)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2281</td><td><a href="hcd-ehci.c.html#L2281">(ehci_periodic_enabled(ehci) || ehci->pstate != EST_INACTIVE)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2330</td><td><a href="hcd-ehci.c.html#L2330">(ehci_async_enabled(ehci) || ehci->astate != EST_INACTIVE)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1332</td><td><a href="hcd-ehci.c.html#L1332">(q->qh.token & QTD_TOKEN_IOC)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1685</td><td><a href="hcd-ehci.c.html#L1685">(q->qh.token & QTD_TOKEN_HALT)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2028</td><td><a href="hcd-ehci.c.html#L2028">(q->qh.token & QTD_TOKEN_HALT)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2253</td><td><a href="hcd-ehci.c.html#L2253">(ehci->usbsts_frindex >= (rollovers * 0x4000))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2284</td><td><a href="hcd-ehci.c.html#L2284">(uframes > (ehci->maxframes * 8))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">793</td><td><a href="hcd-ehci.c.html#L793">(s->companion_ports[firstport + i])</a></td><td class="num">7.35</td></tr>
+      <tr><td class="num line">945</td><td><a href="hcd-ehci.c.html#L945">(s->companion_ports[port] == NULL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="hcd-ehci.c.html#L1076">(ehci_enabled(s) && (USBSTS_FLR & val))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">955</td><td><a href="hcd-ehci.c.html#L955">(dev && dev->attached)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">962</td><td><a href="hcd-ehci.c.html#L962">(dev && dev->attached)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">993</td><td><a href="hcd-ehci.c.html#L993">(dev && dev->attached)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1355</td><td><a href="hcd-ehci.c.html#L1355">(get_field(p->qtd.token, QTD_TOKEN_TBYTES) > BUFF_SIZE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1780</td><td><a href="hcd-ehci.c.html#L1780">(NLPTR_TBIT(q->qh.next_qtd) == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1391</td><td><a href="hcd-ehci.c.html#L1391">(p->packet.actual_length > BUFF_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1428</td><td><a href="hcd-ehci.c.html#L1428">(len > BUFF_SIZE || pg > 6)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1955</td><td><a href="hcd-ehci.c.html#L1955">(p->packet.status == USB_RET_ASYNC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1990</td><td><a href="hcd-ehci.c.html#L1990">(p->packet.status == USB_RET_NAK)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2122</td><td><a href="hcd-ehci.c.html#L2122">(again < 0 || itd_count > 16)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">250</td><td><a href="hcd-ehci.c.html#L250">(s->usbcmd & USBCMD_RUNSTOP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1663</td><td><a href="hcd-ehci.c.html#L1663">(ehci->usbsts & USBSTS_REC)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2153</td><td><a href="hcd-ehci.c.html#L2153">(ehci->usbsts & USBSTS_IAA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2170</td><td><a href="hcd-ehci.c.html#L2170">(ehci->usbcmd & USBCMD_IAAD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1580</td><td><a href="hcd-ehci.c.html#L1580">(async && (NLPTR_TYPE_GET(entry) != NLPTR_TYPE_QH))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">613</td><td><a href="hcd-ehci.c.html#L613">(warn && cancelled > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1260</td><td><a href="hcd-ehci.c.html#L1260">(!p->queue->async)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">264</td><td><a href="hcd-ehci.c.html#L264">(s->astate == EST_INACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">273</td><td><a href="hcd-ehci.c.html#L273">(s->pstate == EST_INACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">526</td><td><a href="hcd-ehci.c.html#L526">(p->async == EHCI_ASYNC_INFLIGHT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">536</td><td><a href="hcd-ehci.c.html#L536">(p->async != EHCI_ASYNC_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">627</td><td><a href="hcd-ehci.c.html#L627">(addr == q->qhaddr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">672</td><td><a href="hcd-ehci.c.html#L672">(q->dev != dev)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">700</td><td><a href="hcd-ehci.c.html#L700">(*portsc & PORTSC_POWNER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">721</td><td><a href="hcd-ehci.c.html#L721">(*portsc & PORTSC_POWNER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">762</td><td><a href="hcd-ehci.c.html#L762">(*portsc & PORTSC_POWNER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">770</td><td><a href="hcd-ehci.c.html#L770">(*portsc & PORTSC_SUSPEND)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1057</td><td><a href="hcd-ehci.c.html#L1057">(s->pstate == EST_INACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1251</td><td><a href="hcd-ehci.c.html#L1251">(packet->status == USB_RET_REMOVE_FROM_QUEUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1369</td><td><a href="hcd-ehci.c.html#L1369">(p->async == EHCI_ASYNC_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1552</td><td><a href="hcd-ehci.c.html#L1552">(entry == ehci->asynclistaddr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1625</td><td><a href="hcd-ehci.c.html#L1625">(q->seen > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1651</td><td><a href="hcd-ehci.c.html#L1651">(q->transact_ctr == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1655</td><td><a href="hcd-ehci.c.html#L1655">(q->dev == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1743</td><td><a href="hcd-ehci.c.html#L1743">(!(sitd.results & SITD_RESULTS_ACTIVE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1829</td><td><a href="hcd-ehci.c.html#L1829">(!(qtd.token & QTD_TOKEN_ACTIVE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1849</td><td><a href="hcd-ehci.c.html#L1849">(q->dev == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1895</td><td><a href="hcd-ehci.c.html#L1895">(p->qtdaddr == qtdaddr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1904</td><td><a href="hcd-ehci.c.html#L1904">(!(qtd.token & QTD_TOKEN_ACTIVE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2159</td><td><a href="hcd-ehci.c.html#L2159">(ehci->asynclistaddr == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2511</td><td><a href="hcd-ehci.c.html#L2511">(s->portnr > NB_PORTS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2529</td><td><a href="hcd-ehci.c.html#L2529">(i < s->portnr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">764</td><td><a href="hcd-ehci.c.html#L764">(companion->ops->wakeup)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="hcd-ehci.c.html#L881">(s->companion_ports[i])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1534</td><td><a href="hcd-ehci.c.html#L1534">(get_dwords(ehci, NLPTR_GET(entry), (uint32_t *)&qh, sizeof(EHCIqh) >> 2) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1711</td><td><a href="hcd-ehci.c.html#L1711">(get_dwords(ehci, NLPTR_GET(entry), (uint32_t *)&itd, sizeof(EHCIitd) >> 2) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1737</td><td><a href="hcd-ehci.c.html#L1737">(get_dwords(ehci, NLPTR_GET(entry), (uint32_t *)&sitd, sizeof(EHCIsitd) >> 2) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1540</td><td><a href="hcd-ehci.c.html#L1540">(qh.epchar & QH_EPCHAR_H)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1717</td><td><a href="hcd-ehci.c.html#L1717">(ehci_process_itd(ehci, &itd, entry) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1819</td><td><a href="hcd-ehci.c.html#L1819">(qtd.token & QTD_TOKEN_ACTIVE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2217</td><td><a href="hcd-ehci.c.html#L2217">(get_dwords(ehci, list, &entry, 1) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">786</td><td><a href="hcd-ehci.c.html#L786">(firstport + portcount > NB_PORTS)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1205</td><td><a href="hcd-ehci.c.html#L1205">(plen > 4096 - offset)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1425</td><td><a href="hcd-ehci.c.html#L1425">(len > max * mult)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1434</td><td><a href="hcd-ehci.c.html#L1434">(off + len > 4096)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">234</td><td><a href="hcd-ehci.c.html#L234">(!s->usbsts_pending)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">378</td><td><a href="hcd-ehci.c.html#L378">(!ehci->as)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">400</td><td><a href="hcd-ehci.c.html#L400">(!ehci->as)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">660</td><td><a href="hcd-ehci.c.html#L660">(!q->seen)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">951</td><td><a href="hcd-ehci.c.html#L951">(!(owner ^ orig))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1886</td><td><a href="hcd-ehci.c.html#L1886">(NLPTR_TBIT(qtd.next) != 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">150</td><td><a href="hcd-ehci.c.html#L150">(mask & USBSTS_INT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">153</td><td><a href="hcd-ehci.c.html#L153">(mask & USBSTS_ERRINT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">156</td><td><a href="hcd-ehci.c.html#L156">(mask & USBSTS_PCD)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">159</td><td><a href="hcd-ehci.c.html#L159">(mask & USBSTS_FLR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">162</td><td><a href="hcd-ehci.c.html#L162">(mask & USBSTS_HSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">165</td><td><a href="hcd-ehci.c.html#L165">(mask & USBSTS_IAA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="hcd-ehci.c.html#L170">(mask & USBSTS_HALT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">173</td><td><a href="hcd-ehci.c.html#L173">(mask & USBSTS_REC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="hcd-ehci.c.html#L176">(mask & USBSTS_PSS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">179</td><td><a href="hcd-ehci.c.html#L179">(mask & USBSTS_ASS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="hcd-ehci.c.html#L218">(intr & USBSTS_PCD | USBSTS_FLR | USBSTS_HSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">642</td><td><a href="hcd-ehci.c.html#L642">(q->seen)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">747</td><td><a href="hcd-ehci.c.html#L747">(portsc & PORTSC_POWNER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">820</td><td><a href="hcd-ehci.c.html#L820">(portsc & PORTSC_POWNER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1032</td><td><a href="hcd-ehci.c.html#L1032">(val & USBCMD_HCRESET)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1045</td><td><a href="hcd-ehci.c.html#L1045">(val & USBCMD_IAAD)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1242</td><td><a href="hcd-ehci.c.html#L1242">(portsc & PORTSC_POWNER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="hcd-ehci.c.html#L1314">(q->async)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="hcd-ehci.c.html#L1334">(q->async)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1643</td><td><a href="hcd-ehci.c.html#L1643">(!ehci_verify_qh(q, &qh))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="hcd-ehci.c.html#L1817">(!ehci_verify_qtd(p, &qtd))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1907</td><td><a href="hcd-ehci.c.html#L1907">(!ehci_verify_pid(q, &qtd))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1947</td><td><a href="hcd-ehci.c.html#L1947">(q->async)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1960</td><td><a href="hcd-ehci.c.html#L1960">(q->async)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2272</td><td><a href="hcd-ehci.c.html#L2272">(ehci->working)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2306</td><td><a href="hcd-ehci.c.html#L2306">(ehci->periodic_sched_active)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2321</td><td><a href="hcd-ehci.c.html#L2321">(ehci->periodic_sched_active)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2336</td><td><a href="hcd-ehci.c.html#L2336">(ehci->usbsts_pending)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="hcd-ehci.c.html#L2546">(s->frame_timer)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2550</td><td><a href="hcd-ehci.c.html#L2550">(s->async_bh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2563</td><td><a href="hcd-ehci.c.html#L2563">(s->vmstate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="hcd-ehci.c.html#L1370">(ehci_init_transfer(p) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="hcd-ehci.c.html#L1644">(ehci_reset_queue(q) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1914</td><td><a href="hcd-ehci.c.html#L1914">(ehci_execute(p, "queue") == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1933</td><td><a href="hcd-ehci.c.html#L1933">(ehci_qh_do_overlay(q) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">385</td><td><a href="hcd-ehci.c.html#L385">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="hcd-ehci.c.html#L407">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="hcd-ehci.c.html#L579">(p == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">792</td><td><a href="hcd-ehci.c.html#L792">(i < portcount)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">802</td><td><a href="hcd-ehci.c.html#L802">(i < portcount)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">834</td><td><a href="hcd-ehci.c.html#L834">(i < NB_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">841</td><td><a href="hcd-ehci.c.html#L841">(dev != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">861</td><td><a href="hcd-ehci.c.html#L861">(i < NB_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">880</td><td><a href="hcd-ehci.c.html#L880">(i < NB_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1089</td><td><a href="hcd-ehci.c.html#L1089">(i < NB_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1159</td><td><a href="hcd-ehci.c.html#L1159">(eps == EHCI_QH_EPS_HIGH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1167</td><td><a href="hcd-ehci.c.html#L1167">(i < 5)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1195</td><td><a href="hcd-ehci.c.html#L1195">(bytes > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1196</td><td><a href="hcd-ehci.c.html#L1196">(cpage > 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1221</td><td><a href="hcd-ehci.c.html#L1221">(len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1419</td><td><a href="hcd-ehci.c.html#L1419">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1436</td><td><a href="hcd-ehci.c.html#L1436">(pg == 6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="hcd-ehci.c.html#L1450">(dev == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1533</td><td><a href="hcd-ehci.c.html#L1533">(i < MAX_QH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1620</td><td><a href="hcd-ehci.c.html#L1620">(q == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1763</td><td><a href="hcd-ehci.c.html#L1763">(I - bit)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">1816</td><td><a href="hcd-ehci.c.html#L1816">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1831</td><td><a href="hcd-ehci.c.html#L1831">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1952</td><td><a href="hcd-ehci.c.html#L1952">(again == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2060</td><td><a href="hcd-ehci.c.html#L2060">(q != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2212</td><td><a href="hcd-ehci.c.html#L2212">(list == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2252</td><td><a href="hcd-ehci.c.html#L2252">(rollovers > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2292</td><td><a href="hcd-ehci.c.html#L2292">(i < uframes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2300</td><td><a href="hcd-ehci.c.html#L2300">(i >= MIN_UFR_PER_TICK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2429</td><td><a href="hcd-ehci.c.html#L2429">(i < NB_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2431</td><td><a href="hcd-ehci.c.html#L2431">(companion == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2454</td><td><a href="hcd-ehci.c.html#L2454">(state == RUN_STATE_RUNNING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2464</td><td><a href="hcd-ehci.c.html#L2464">(state == RUN_STATE_SAVE_VM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2138</td><td><a href="hcd-ehci.c.html#L2138">(!ehci_async_enabled(ehci))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2145</td><td><a href="hcd-ehci.c.html#L2145">(!ehci_async_enabled(ehci))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1498</td><td><a href="hcd-ehci.c.html#L1498">(!dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2112</td><td><a href="hcd-ehci.c.html#L2112">(!async)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1095</td><td><a href="hcd-ehci.c.html#L1095">(ehci_periodic_enabled(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="hcd-ehci.c.html#L1103">(ehci_async_enabled(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1574</td><td><a href="hcd-ehci.c.html#L1574">(NLPTR_TBIT(entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="hcd-ehci.c.html#L261">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">289</td><td><a href="hcd-ehci.c.html#L289">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1088</td><td><a href="hcd-ehci.c.html#L1088">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1311</td><td><a href="hcd-ehci.c.html#L1311">(tbytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1484</td><td><a href="hcd-ehci.c.html#L1484">(dir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1526</td><td><a href="hcd-ehci.c.html#L1526">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1541</td><td><a href="hcd-ehci.c.html#L1541">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2096</td><td><a href="hcd-ehci.c.html#L2096">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2103</td><td><a href="hcd-ehci.c.html#L2103">(async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2129</td><td><a href="hcd-ehci.c.html#L2129">(again)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2345</td><td><a href="hcd-ehci.c.html#L2345">(need_timer)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

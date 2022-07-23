@@ -1,0 +1,184 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\block\fdc.c Ctrl Expressions (133) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\block\fdc.c Ctrl Expressions (133) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\block\fdc.c Ctrl Expressions (133)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1628</td><td><a href="fdc.c.html#L1628">(<span style='background-color:#741da3;'>fdctrl->data_dir != FD_DIR_WRITE || len < FD_SECTOR_LEN || rel_pos != 0</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="fdc.c.html#L232">(track > drv->max_track || (head != 0 && (drv->flags & FDISK_DBL_SIDES) == 0))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">430</td><td><a href="fdc.c.html#L430">(!blkconf_apply_backend_options(drive->conf, !blk_supports_write_perm(drive->blk), false, errp))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">1682</td><td><a href="fdc.c.html#L1682">((ret < 0 && fdctrl->data_dir == FD_DIR_SCANL) || (ret > 0 && fdctrl->data_dir == FD_DIR_SCANH))</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="fdc.c.html#L335">((parse->drive == drv->drive) || (magic && (parse->drive == get_fallback_drive_type(drv))))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">300</td><td><a href="fdc.c.html#L300">(!drv->blk || !blk_is_inserted(drv->blk) || drv->drive == FLOPPY_DRIVE_TYPE_NONE)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">1822</td><td><a href="fdc.c.html#L1822">(cur_drv->blk == NULL || blk_pwrite(cur_drv->blk, fd_offset(cur_drv), BDRV_SECTOR_SIZE, fdctrl->fifo, 0) < 0)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">2118</td><td><a href="fdc.c.html#L2118">(fdctrl->fifo[2] + cur_drv->track >= cur_drv->max_track)</a></td><td class="num">31.85</td></tr>
+      <tr><td class="num line">2218</td><td><a href="fdc.c.html#L2218">(!(fdctrl->msr & FD_MSR_RQM) || (fdctrl->msr & FD_MSR_DIO))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1722</td><td><a href="fdc.c.html#L1722">(!(fdctrl->msr & FD_MSR_RQM) || !(fdctrl->msr & FD_MSR_DIO))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">532</td><td><a href="fdc.c.html#L532">(blk_get_on_error(dev->conf.blk, 0) != BLOCKDEV_ON_ERROR_ENOSPC && blk_get_on_error(dev->conf.blk, 0) != BLOCKDEV_ON_ERROR_REPORT)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1452</td><td><a href="fdc.c.html#L1452">(fdctrl->dma_chann != -1 && !(fdctrl->msr & FD_MSR_NONDMA))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1401</td><td><a href="fdc.c.html#L1401">(new_head == 0 && (cur_drv->flags & FDISK_DBL_SIDES) != 0)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">270</td><td><a href="fdc.c.html#L270">(drv->blk == NULL || !blk_is_inserted(drv->blk))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2359</td><td><a href="fdc.c.html#L2359">((j & handlers[i].mask) == handlers[i].value)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1100</td><td><a href="fdc.c.html#L1100">(!fdctrl->drives[1].blk)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">508</td><td><a href="fdc.c.html#L508">(!blkconf_blocksizes(&dev->conf, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">526</td><td><a href="fdc.c.html#L526">(!blkconf_apply_backend_options(&dev->conf, read_only, false, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1605</td><td><a href="fdc.c.html#L1605">(fdctrl->data_dir == FD_DIR_SCANE || fdctrl->data_dir == FD_DIR_SCANL || fdctrl->data_dir == FD_DIR_SCANH)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1702</td><td><a href="fdc.c.html#L1702">(fdctrl->data_dir == FD_DIR_SCANE || fdctrl->data_dir == FD_DIR_SCANL || fdctrl->data_dir == FD_DIR_SCANH)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">512</td><td><a href="fdc.c.html#L512">(dev->conf.logical_block_size != 512 || dev->conf.physical_block_size != 512)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1397</td><td><a href="fdc.c.html#L1397">(new_sect >= cur_drv->last_sect || new_sect == fdctrl->eot)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2244</td><td><a href="fdc.c.html#L2244">(pos == FD_SECTOR_LEN - 1 || fdctrl->data_pos == fdctrl->data_len)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="fdc.c.html#L261">(drv->blk != NULL && blk_is_inserted(drv->blk))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1509</td><td><a href="fdc.c.html#L1509">((fdctrl->dsr & FD_DSR_DRATEMASK) != cur_drv->media_rate)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1753</td><td><a href="fdc.c.html#L1753">(fdctrl->data_pos++ == fdctrl->data_len)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1761</td><td><a href="fdc.c.html#L1761">(fdctrl->data_pos++ == fdctrl->data_len)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">2315</td><td><a href="fdc.c.html#L2315">((fdctrl->dsr & FD_DSR_DRATEMASK) != cur_drv->media_rate)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">324</td><td><a href="fdc.c.html#L324">(magic || parse->drive == drv->drive)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2137</td><td><a href="fdc.c.html#L2137">(fdctrl->fifo[2] > cur_drv->track)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">327</td><td><a href="fdc.c.html#L327">(drive_size(parse->drive) == drive_size(drv->drive))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="fdc.c.html#L1631">(blk_pread(cur_drv->blk, fd_offset(cur_drv), BDRV_SECTOR_SIZE, fdctrl->fifo, 0) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1659</td><td><a href="fdc.c.html#L1659">(blk_pwrite(cur_drv->blk, fd_offset(cur_drv), BDRV_SECTOR_SIZE, fdctrl->fifo, 0) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1743</td><td><a href="fdc.c.html#L1743">(blk_pread(cur_drv->blk, fd_offset(cur_drv), BDRV_SECTOR_SIZE, fdctrl->fifo, 0) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2247</td><td><a href="fdc.c.html#L2247">(blk_pwrite(cur_drv->blk, fd_offset(cur_drv), BDRV_SECTOR_SIZE, fdctrl->fifo, 0) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">928</td><td><a href="fdc.c.html#L928">((fdctrl->msr & FD_MSR_RQM) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1131</td><td><a href="fdc.c.html#L1131">((fdctrl->tdr & FD_TDR_BOOTSEL) < 1 << 2)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1140</td><td><a href="fdc.c.html#L1140">((fdctrl->tdr & FD_TDR_BOOTSEL) < 2 << 2)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1148</td><td><a href="fdc.c.html#L1148">((fdctrl->tdr & FD_TDR_BOOTSEL) < 3 << 2)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1408</td><td><a href="fdc.c.html#L1408">((cur_drv->flags & FDISK_DBL_SIDES) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1828</td><td><a href="fdc.c.html#L1828">(cur_drv->sect == cur_drv->last_sect)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2233</td><td><a href="fdc.c.html#L2233">(fdctrl->data_pos == fdctrl->data_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2261</td><td><a href="fdc.c.html#L2261">(fdctrl->data_pos == fdctrl->data_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2281</td><td><a href="fdc.c.html#L2281">(fdctrl->data_pos == fdctrl->data_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1523</td><td><a href="fdc.c.html#L1523">(fdctrl->fifo[0] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1541</td><td><a href="fdc.c.html#L1541">(fdctrl->fifo[0] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1954</td><td><a href="fdc.c.html#L1954">(fdctrl->fifo[0] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1979</td><td><a href="fdc.c.html#L1979">(fdctrl->fifo[2] & 1)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2060</td><td><a href="fdc.c.html#L2060">(fdctrl->fifo[1] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2094</td><td><a href="fdc.c.html#L2094">(fdctrl->fifo[pos] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2096</td><td><a href="fdc.c.html#L2096">(fdctrl->fifo[pos] & 0x40)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="fdc.c.html#L1072">(!(fdctrl->sra & FD_SRA_INTPEND))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="fdc.c.html#L1081">(!(fdctrl->sra & FD_SRA_INTPEND))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1243</td><td><a href="fdc.c.html#L1243">(!(fdctrl->dor & FD_DOR_nRESET))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1268</td><td><a href="fdc.c.html#L1268">(!(fdctrl->dor & FD_DOR_nRESET))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="fdc.c.html#L1295">(!(fdctrl->dor & FD_DOR_nRESET))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1316</td><td><a href="fdc.c.html#L1316">(!(fdctrl->dor & FD_DOR_nRESET))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1527</td><td><a href="fdc.c.html#L1527">(fdctrl->fifo[5] == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2024</td><td><a href="fdc.c.html#L2024">(!(fdctrl->sra & FD_SRA_INTPEND))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2214</td><td><a href="fdc.c.html#L2214">(!(fdctrl->dor & FD_DOR_nRESET))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="fdc.c.html#L537">(blk_get_on_error(dev->conf.blk, 1) != BLOCKDEV_ON_ERROR_REPORT)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">926</td><td><a href="fdc.c.html#L926">(fdctrl->msr & FD_MSR_NONDMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">931</td><td><a href="fdc.c.html#L931">(fdctrl->msr & FD_MSR_DIO)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1239</td><td><a href="fdc.c.html#L1239">(fdctrl->dor & FD_DOR_nRESET)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1546</td><td><a href="fdc.c.html#L1546">(fdctrl->dor & FD_DOR_DMAEN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1599</td><td><a href="fdc.c.html#L1599">(fdctrl->msr & FD_MSR_RQM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2285</td><td><a href="fdc.c.html#L2285">(fdctrl->data_state & FD_STATE_FORMAT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">240</td><td><a href="fdc.c.html#L240">(sect > drv->last_sect)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="fdc.c.html#L260">(drv->track != track)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">319</td><td><a href="fdc.c.html#L319">(parse->drive == FLOPPY_DRIVE_TYPE_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">362</td><td><a href="fdc.c.html#L362">(parse->max_head == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">376</td><td><a href="fdc.c.html#L376">(drv->drive != FLOPPY_DRIVE_TYPE_AUTO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="fdc.c.html#L395">(drv->blk != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">474</td><td><a href="fdc.c.html#L474">(dev->unit == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="fdc.c.html#L475">(dev->unit < MAX_FD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">483</td><td><a href="fdc.c.html#L483">(dev->unit >= MAX_FD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">961</td><td><a href="fdc.c.html#L961">(s->phase == FD_PHASE_RECONSTRUCT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1608</td><td><a href="fdc.c.html#L1608">(dma_len > fdctrl->data_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1610</td><td><a href="fdc.c.html#L1610">(cur_drv->blk == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1611</td><td><a href="fdc.c.html#L1611">(fdctrl->data_dir == FD_DIR_WRITE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1619</td><td><a href="fdc.c.html#L1619">(fdctrl->data_pos < dma_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1737</td><td><a href="fdc.c.html#L1737">(fdctrl->data_pos != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2020</td><td><a href="fdc.c.html#L2020">(fdctrl->reset_sensei > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2104</td><td><a href="fdc.c.html#L2104">(fdctrl->data_len > 7)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2311</td><td><a href="fdc.c.html#L2311">(cur_drv->last_sect != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2349</td><td><a href="fdc.c.html#L2349">(fdctrl->fallback == FLOPPY_DRIVE_TYPE_AUTO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">495</td><td><a href="fdc.c.html#L495">(!dev->conf.blk)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1621</td><td><a href="fdc.c.html#L1621">(len + rel_pos > FD_SECTOR_LEN)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">397</td><td><a href="fdc.c.html#L397">(!blk_is_inserted(drv->blk))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">401</td><td><a href="fdc.c.html#L401">(!drv->media_validated)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">477</td><td><a href="fdc.c.html#L477">(!drive->blk)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1172</td><td><a href="fdc.c.html#L1172">(!cur_drv->blk)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1238</td><td><a href="fdc.c.html#L1238">(!(value & FD_DOR_nRESET))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1400</td><td><a href="fdc.c.html#L1400">(FD_MULTI_TRACK(fdctrl->data_state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">490</td><td><a href="fdc.c.html#L490">(drive->blk)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="fdc.c.html#L1222">(value & FD_DOR_MOTEN0)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="fdc.c.html#L1226">(value & FD_DOR_MOTEN1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="fdc.c.html#L1232">(value & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="fdc.c.html#L1301">(value & FD_DSR_SWRESET)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="fdc.c.html#L1306">(value & FD_DSR_PWRDOWN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1437</td><td><a href="fdc.c.html#L1437">(cur_drv->head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1647</td><td><a href="fdc.c.html#L1647">(cur_drv->ro)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2275</td><td><a href="fdc.c.html#L2275">(cmd->parameters)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="fdc.c.html#L249">(sector != fd_sector(drv))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">380</td><td><a href="fdc.c.html#L380">(pick_geometry(drv) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="fdc.c.html#L323">(nb_sectors == size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="fdc.c.html#L334">(type_match == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">346</td><td><a href="fdc.c.html#L346">(match == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="fdc.c.html#L347">(size_match != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1114</td><td><a href="fdc.c.html#L1114">(i < MAX_FD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1342</td><td><a href="fdc.c.html#L1342">(retval != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="fdc.c.html#L1417">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1533</td><td><a href="fdc.c.html#L1533">(tmp < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1556</td><td><a href="fdc.c.html#L1556">(direction != FD_DIR_VERIFY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1572</td><td><a href="fdc.c.html#L1572">(direction != FD_DIR_WRITE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1678</td><td><a href="fdc.c.html#L1678">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1692</td><td><a href="fdc.c.html#L1692">(rel_pos == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1736</td><td><a href="fdc.c.html#L1736">(pos == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2270</td><td><a href="fdc.c.html#L2270">(pos == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2331</td><td><a href="fdc.c.html#L2331">(i < MAX_FD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2357</td><td><a href="fdc.c.html#L2357">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2358</td><td><a href="fdc.c.html#L2358">(j < sizeof(command_to_handler))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2379</td><td><a href="fdc.c.html#L2379">(i < MAX_FD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2332</td><td><a href="fdc.c.html#L2332">(fds[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1694</td><td><a href="fdc.c.html#L1694">(!fdctrl_seek_to_next_sect(fdctrl, cur_drv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1738</td><td><a href="fdc.c.html#L1738">(!fdctrl_seek_to_next_sect(fdctrl, cur_drv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2253</td><td><a href="fdc.c.html#L2253">(!fdctrl_seek_to_next_sect(fdctrl, cur_drv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="fdc.c.html#L251">(!enable_seek)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">427</td><td><a href="fdc.c.html#L427">(!load)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2355</td><td><a href="fdc.c.html#L2355">(!command_tables_inited)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="fdc.c.html#L1339">(fdctrl_media_changed(get_cur_drv(fdctrl)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">403</td><td><a href="fdc.c.html#L403">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1117</td><td><a href="fdc.c.html#L1117">(do_irq)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

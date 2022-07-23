@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <script>
+    function toggle_popup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
+    }
+  </script>
+  <title>deps\lzma\liblzma\lzma\lzma_encoder_presets.c - MerlyMentor</title>
+</head>
+<body>
+  <h2>deps\lzma\liblzma\lzma\lzma_encoder_presets.c - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+                <li class='mr-3'><a title='Expressions' href='lzma_encoder_presets.c-expr.html';>Expressions</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <table class="code">
+<tr><td id='L1' class='num line'>1</td><td><span style='color:#3a6e31;'>///////////////////////////////////////////////////////////////////////////////</span><tr/>
+<tr><td id='L2' class='num line'>2</td><td class='code'><span style='color:#3a6e31;'>//</span><tr/>
+<tr><td id='L3' class='num line'>3</td><td class='code'><span style='color:#3a6e31;'>///&nbsp;\file&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lzma_encoder_presets.c</span><tr/>
+<tr><td id='L4' class='num line'>4</td><td class='code'><span style='color:#3a6e31;'>///&nbsp;\brief&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encoder&nbsp;presets</span><tr/>
+<tr><td id='L5' class='num line'>5</td><td class='code'><span style='color:#3a6e31;'>//</span><tr/>
+<tr><td id='L6' class='num line'>6</td><td class='code'><span style='color:#3a6e31;'>//&nbsp;&nbsp;Author:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lasse&nbsp;Collin</span><tr/>
+<tr><td id='L7' class='num line'>7</td><td class='code'><span style='color:#3a6e31;'>//</span><tr/>
+<tr><td id='L8' class='num line'>8</td><td class='code'><span style='color:#3a6e31;'>//&nbsp;&nbsp;This&nbsp;file&nbsp;has&nbsp;been&nbsp;put&nbsp;into&nbsp;the&nbsp;public&nbsp;domain.</span><tr/>
+<tr><td id='L9' class='num line'>9</td><td class='code'><span style='color:#3a6e31;'>//&nbsp;&nbsp;You&nbsp;can&nbsp;do&nbsp;whatever&nbsp;you&nbsp;want&nbsp;with&nbsp;this&nbsp;file.</span><tr/>
+<tr><td id='L10' class='num line'>10</td><td class='code'><span style='color:#3a6e31;'>//</span><tr/>
+<tr><td id='L11' class='num line'>11</td><td class='code'><span style='color:#3a6e31;'>///////////////////////////////////////////////////////////////////////////////</span><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L12' class='num line'>12</td><td class='code'><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L13' class='num line'>13</td><td class='code'><span style='color:#3a6e31;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&quot;</span><span style='color:#aa7e6c;'>common.h</span><span style='color:#aa7e6c;'>&quot;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L14' class='num line'>14</td><td class='code'><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L15' class='num line'>15</td><td class='code'><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L16' class='num line'>16</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#906a94;font-weight:bold;'>extern</span>&nbsp;<span style='color:#6892a9;'>LZMA_API</span><span style='color:#9e9e9e;'>(</span><span style='color:#348675;'>lzma_bool</span><span style='color:#9e9e9e;'>)</span><tr/>
+<tr><td id='L17' class='num line'>17</td><td class='code'><span style='color:#929270;'>lzma_lzma_preset</span><span style='color:#9e9e9e;'>(</span><span style='color:#348675;'>lzma_options_lzma</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>options</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#835980;'>uint32_t</span>&nbsp;<span style='color:#6892a9;'>preset</span><span style='color:#9e9e9e;'>)</span><tr/>
+<tr><td id='L18' class='num line'>18</td><td class='code'><span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L19' class='num line'>19</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>uint32_t</span>&nbsp;<span style='color:#6892a9;'>level</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>preset</span>&nbsp;<span style='color:#aaa186;'>&amp;</span>&nbsp;<span style='color:#6892a9;'>LZMA_PRESET_LEVEL_MASK</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L20' class='num line'>20</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>uint32_t</span>&nbsp;<span style='color:#6892a9;'>flags</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>preset</span>&nbsp;<span style='color:#aaa186;'>&amp;</span>&nbsp;<span style='color:#aaa186;'>~</span><span style='color:#6892a9;'>LZMA_PRESET_LEVEL_MASK</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L21' class='num line'>21</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>uint32_t</span>&nbsp;<span style='color:#6892a9;'>supported_flags</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_PRESET_EXTREME</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L22' class='num line'>22</td><td class='code'><tr/>
+<tr><td id='L23' class='num line'>23</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>
+  <div class="popuptext" id="2">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (level&nbsp;&gt;&nbsp;<span style='background-color:#0000ff'>{const}</span>&nbsp;||&nbsp;(flags<span style='background-color:#0000ff'>&nbsp;&amp;&amp;&nbsp;</span><span style='background-color:#0000ff'>!</span>supported_flags))<br/>R2: (level&nbsp;&gt;&nbsp;9&nbsp;||&nbsp;<span style='text-decoration:line-through;color:#949494;background-color:#0000b2;'>(</span>flags&nbsp;&amp;&nbsp;supported_flags<span style='text-decoration:line-through;color:#949494;background-color:#0000b2;'>)</span>)<br/>R3: (<span style='background-color:#0000ff'>(</span>level&nbsp;&gt;&nbsp;9<span style='background-color:#0000ff'>)</span>&nbsp;||&nbsp;(flags&nbsp;&amp;&nbsp;supported_flags))<br/>R4: (<span style='background-color:#0000ff'>level</span><span style='background-color:#0000ff'>-&gt;</span><span style='background-color:#0000ff'>flags</span><span style='background-color:#0000ff'>-&gt;</span><span style='background-color:#0000ff'>supported_flags</span><span style='background-color:#0000ff'>.</span><span style='background-color:#0000ff'>xx_d</span><span style='background-color:#0000ff'>.</span><span style='background-color:#0000ff'>xx_e</span>&nbsp;&gt;&nbsp;9&nbsp;||&nbsp;<span style='text-decoration:line-through;color:#949494;background-color:#0000b2;'>(</span><span style='background-color:#0000ff'>level</span><span style='background-color:#0000ff'>-&gt;</span><span style='background-color:#0000ff'>flags</span><span style='background-color:#0000ff'>-&gt;</span><span style='background-color:#0000ff'>supported_flags</span><span style='background-color:#0000ff'>.</span><span style='background-color:#0000ff'>xx_f</span>&nbsp;&amp;&nbsp;<span style='background-color:#0000ff'>xx_g</span><span style='text-decoration:line-through;color:#949494;background-color:#0000b2;'>)</span>)<br/>R5: (level&nbsp;&gt;&nbsp;9&nbsp;||&nbsp;(flags&nbsp;&amp;&nbsp;supported_flags))
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 8.25, Total Score: 1008.25<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+level</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&gt;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>9</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#9e9e9e;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>flags</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&amp;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>~</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>supported_flags</span><span style='color:#9e9e9e;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>)</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
+<tr><td id='L24' class='num line'>24</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#39688e;'>true</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L25' class='num line'>25</td><td class='code'><tr/>
+<tr><td id='L26' class='num line'>26</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>preset_dict</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#39688e;'>NULL</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L27' class='num line'>27</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>preset_dict_size</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L28' class='num line'>28</td><td class='code'><tr/>
+<tr><td id='L29' class='num line'>29</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>lc</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_LC_DEFAULT</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L30' class='num line'>30</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>lp</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_LP_DEFAULT</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L31' class='num line'>31</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>pb</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_PB_DEFAULT</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L32' class='num line'>32</td><td class='code'><tr/>
+<tr><td id='L33' class='num line'>33</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>static</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>uint8_t</span>&nbsp;<span style='color:#6892a9;'>dict_pow2</span><span style='color:#aaa186;'>[</span><span style='color:#aaa186;'>]</span><tr/>
+<tr><td id='L34' class='num line'>34</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#9e9e9e;'>{</span>&nbsp;<span style='color:#788970;'>18</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>20</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>21</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>22</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>22</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>23</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>23</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>24</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>25</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>26</span>&nbsp;<span style='color:#9e9e9e;'>}</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L35' class='num line'>35</td><td class='code'>&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>dict_size</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#929270;'>UINT32_C</span><span style='color:#9e9e9e;'>(</span><span style='color:#788970;'>1</span><span style='color:#9e9e9e;'>)</span>&nbsp;<span style='color:#aaa186;'>&lt;&lt;</span>&nbsp;<span style='color:#6892a9;'>dict_pow2</span><span style='color:#aaa186;'>[</span><span style='color:#6892a9;'>level</span><span style='color:#aaa186;'>]</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L36' class='num line'>36</td><td class='code'><tr/>
+<tr><td id='L37' class='num line'>37</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#005c22;'>level</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>&lt;=</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#788970;background-color:#005c22;'>3</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L38' class='num line'>38</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mode</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_MODE_FAST</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L39' class='num line'>39</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mf</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>level</span>&nbsp;<span style='color:#aaa186;'>==</span>&nbsp;<span style='color:#788970;'>0</span>&nbsp;<span style='color:#aaa186;'>?</span>&nbsp;<span style='color:#6892a9;'>LZMA_MF_HC3</span>&nbsp;<span style='color:#aaa186;'>:</span>&nbsp;<span style='color:#6892a9;'>LZMA_MF_HC4</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L40' class='num line'>40</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>nice_len</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>level</span>&nbsp;<span style='color:#aaa186;'>&lt;=</span>&nbsp;<span style='color:#788970;'>1</span>&nbsp;<span style='color:#aaa186;'>?</span>&nbsp;<span style='color:#788970;'>128</span>&nbsp;<span style='color:#aaa186;'>:</span>&nbsp;<span style='color:#788970;'>273</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L41' class='num line'>41</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>static</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>uint8_t</span>&nbsp;<span style='color:#6892a9;'>depths</span><span style='color:#aaa186;'>[</span><span style='color:#aaa186;'>]</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#9e9e9e;'>{</span>&nbsp;<span style='color:#788970;'>4</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>8</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>24</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>48</span>&nbsp;<span style='color:#9e9e9e;'>}</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L42' class='num line'>42</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>depth</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>depths</span><span style='color:#aaa186;'>[</span><span style='color:#6892a9;'>level</span><span style='color:#aaa186;'>]</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L43' class='num line'>43</td><td class='code'>&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>else</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L44' class='num line'>44</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mode</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_MODE_NORMAL</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L45' class='num line'>45</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mf</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_MF_BT4</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L46' class='num line'>46</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>nice_len</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>level</span>&nbsp;<span style='color:#aaa186;'>==</span>&nbsp;<span style='color:#788970;'>4</span>&nbsp;<span style='color:#aaa186;'>?</span>&nbsp;<span style='color:#788970;'>16</span>&nbsp;<span style='color:#aaa186;'>:</span>&nbsp;<span style='color:#6892a9;'>level</span>&nbsp;<span style='color:#aaa186;'>==</span>&nbsp;<span style='color:#788970;'>5</span>&nbsp;<span style='color:#aaa186;'>?</span>&nbsp;<span style='color:#788970;'>32</span>&nbsp;<span style='color:#aaa186;'>:</span>&nbsp;<span style='color:#788970;'>64</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L47' class='num line'>47</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>depth</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L48' class='num line'>48</td><td class='code'>&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L49' class='num line'>49</td><td class='code'><tr/>
+<tr><td id='L50' class='num line'>50</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#005c22;'>flags</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>&amp;</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#6892a9;background-color:#005c22;'>LZMA_PRESET_EXTREME</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L51' class='num line'>51</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mode</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_MODE_NORMAL</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L52' class='num line'>52</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>mf</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>LZMA_MF_BT4</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L53' class='num line'>53</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#005c22;'>level</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>==</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#788970;background-color:#005c22;'>3</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>||</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#6892a9;background-color:#005c22;'>level</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>==</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#788970;background-color:#005c22;'>5</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L54' class='num line'>54</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>nice_len</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>192</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L55' class='num line'>55</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>depth</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L56' class='num line'>56</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>else</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L57' class='num line'>57</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>nice_len</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>273</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L58' class='num line'>58</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<span style='color:#6892a9;'>options</span><span style='color:#aaa186;'>-&gt;</span><span style='color:#7a8f6c;'>depth</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>512</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L59' class='num line'>59</td><td class='code'>&nbsp;&nbsp&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L60' class='num line'>60</td><td class='code'>&nbsp;&nbsp<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L61' class='num line'>61</td><td class='code'><tr/>
+<tr><td id='L62' class='num line'>62</td><td class='code'>&nbsp;&nbsp<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#39688e;'>false</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L63' class='num line'>63</td><td class='code'><span style='color:#9e9e9e;'>}</span>
+  </table>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

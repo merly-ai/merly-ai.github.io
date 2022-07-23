@@ -1,0 +1,119 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\scsi\scsi-generic.c Ctrl Expressions (68) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\scsi\scsi-generic.c Ctrl Expressions (68) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\scsi\scsi-generic.c Ctrl Expressions (68)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">306</td><td><a href="scsi-generic.c.html#L306">(<span style='background-color:#741da3;'>r->io_header.host_status != SCSI_HOST_OK || (r->io_header.driver_status & SG_ERR_DRIVER_TIMEOUT) || r->io_header.status != GOOD || len == 0</span>)</a></td><td class="num">1027.75</td></tr>
+      <tr><td class="num line">192</td><td><a href="scsi-generic.c.html#L192">(<span style='background-color:#741da3;'>s->needs_vpd_bl_emulation && page == 0x00 && r->buflen >= 4</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="scsi-generic.c.html#L549">(<span style='background-color:#741da3;'>ret < 0 || io_header.status || io_header.driver_status || io_header.host_status</span>)</a></td><td class="num">1011.00</td></tr>
+      <tr><td class="num line">329</td><td><a href="scsi-generic.c.html#L329">(<span style='background-color:#9c4c02;'>(s->type == TYPE_DISK || s->type == TYPE_TAPE || s->type == TYPE_ZBC) && !blk_is_writable(s->conf.blk) && (r->req.cmd.buf[0] == MODE_SENSE || r->req.cmd.buf[0] == MODE_SENSE_10) && (r->req.cmd.buf[1] & 0x8) == 0</span>)</a></td><td class="num">107.50</td></tr>
+      <tr><td class="num line">315</td><td><a href="scsi-generic.c.html#L315">(r->req.cmd.buf[0] == READ_CAPACITY_10 && (ldl_be_p(&r->buf[0]) != 0xffffffffU || s->max_lba == 0))</a></td><td class="num">93.50</td></tr>
+      <tr><td class="num line">319</td><td><a href="scsi-generic.c.html#L319">(r->req.cmd.buf[0] == SERVICE_ACTION_IN_16 && (r->req.cmd.buf[1] & 31) == SAI_READ_CAPACITY_16)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">289</td><td><a href="scsi-generic.c.html#L289">(sense.key == ILLEGAL_REQUEST && s->needs_vpd_bl_emulation && r->req.cmd.buf[0] == INQUIRY && (r->req.cmd.buf[1] & 0x01) && r->req.cmd.buf[2] == 0xb0)</a></td><td class="num">54.25</td></tr>
+      <tr><td class="num line">171</td><td><a href="scsi-generic.c.html#L171">(s->scsi_version == -1 && !(r->req.cmd.buf[1] & 0x01))</a></td><td class="num">50.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="scsi-generic.c.html#L722">(!blkconf_apply_backend_options(&s->conf, !blk_supports_write_perm(s->conf.blk), true, errp))</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">178</td><td><a href="scsi-generic.c.html#L178">((s->type == TYPE_DISK || s->type == TYPE_ZBC) && (r->req.cmd.buf[1] & 0x01))</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">392</td><td><a href="scsi-generic.c.html#L392">(r->req.cmd.buf[0] == MODE_SELECT && r->req.cmd.buf[4] == 12 && s->type == TYPE_TAPE)</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">693</td><td><a href="scsi-generic.c.html#L693">(blk_get_on_error(s->conf.blk, 0) != BLOCKDEV_ON_ERROR_ENOSPC && blk_get_on_error(s->conf.blk, 0) != BLOCKDEV_ON_ERROR_REPORT)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="scsi-generic.c.html#L208">(page_idx > 4 && r->buf[page_idx - 1] >= 0xb0)</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">511</td><td><a href="scsi-generic.c.html#L511">(p[3] < 20 || memcmp(&p[4], "naa.", 4))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="scsi-generic.c.html#L625">(i + (p[3] + 4) > len)</a></td><td class="num">24.45</td></tr>
+      <tr><td class="num line">49</td><td><a href="scsi-generic.c.html#L49">(r->buflen && r->req.cmd.mode == SCSI_XFER_TO_DEV)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">60</td><td><a href="scsi-generic.c.html#L60">(r->buflen && r->req.cmd.mode == SCSI_XFER_TO_DEV)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">648</td><td><a href="scsi-generic.c.html#L648">(s->type == TYPE_DISK || s->type == TYPE_ZBC)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">514</td><td><a href="scsi-generic.c.html#L514">(p[3] > 20 && p[24] != ',')</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">480</td><td><a href="scsi-generic.c.html#L480">(r->buflen != r->req.cmd.xfer)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="scsi-generic.c.html#L334">(r->req.cmd.buf[0] == MODE_SENSE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">340</td><td><a href="scsi-generic.c.html#L340">(r->req.cmd.buf[0] == INQUIRY)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">280</td><td><a href="scsi-generic.c.html#L280">(r->io_header.driver_status & SG_ERR_DRIVER_SENSE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">500</td><td><a href="scsi-generic.c.html#L500">((p[1] & 0xF) == 3)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="scsi-generic.c.html#L509">((p[1] & 0xF) == 8)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">629</td><td><a href="scsi-generic.c.html#L629">((p[1] & 0x10) == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="scsi-generic.c.html#L634">((p[1] & 0x10) == 0x10)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="scsi-generic.c.html#L465">(r->req.cmd.xfer == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="scsi-generic.c.html#L488">(r->req.cmd.mode == SCSI_XFER_TO_DEV)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">698</td><td><a href="scsi-generic.c.html#L698">(blk_get_on_error(s->conf.blk, 1) != BLOCKDEV_ON_ERROR_REPORT)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">718</td><td><a href="scsi-generic.c.html#L718">(blk_ioctl(s->conf.blk, SG_GET_SCSI_ID, &scsiid))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">143</td><td><a href="scsi-generic.c.html#L143">(r->req.aiocb == NULL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">270</td><td><a href="scsi-generic.c.html#L270">(ret || r->req.io_canceled)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">387</td><td><a href="scsi-generic.c.html#L387">(ret || r->req.io_canceled)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">94</td><td><a href="scsi-generic.c.html#L94">(io_hdr->driver_status & SG_ERR_DRIVER_TIMEOUT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">98</td><td><a href="scsi-generic.c.html#L98">(io_hdr->driver_status & SG_ERR_DRIVER_SENSE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">91</td><td><a href="scsi-generic.c.html#L91">(io_hdr->host_status != SCSI_HOST_OK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">173</td><td><a href="scsi-generic.c.html#L173">(s->scsi_version > 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">209</td><td><a href="scsi-generic.c.html#L209">(page_idx < r->buflen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">214</td><td><a href="scsi-generic.c.html#L214">(page_idx < r->buflen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">219</td><td><a href="scsi-generic.c.html#L219">(len < r->buflen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">363</td><td><a href="scsi-generic.c.html#L363">(r->len == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">413</td><td><a href="scsi-generic.c.html#L413">(r->len == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">735</td><td><a href="scsi-generic.c.html#L735">(s->blocksize == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">688</td><td><a href="scsi-generic.c.html#L688">(!s->conf.blk)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">591</td><td><a href="scsi-generic.c.html#L591">(i < MIN(sizeof(buf), page_len + 4))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">631</td><td><a href="scsi-generic.c.html#L631">(read_naa_id(p, &wwn) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">636</td><td><a href="scsi-generic.c.html#L636">(read_naa_id(p, &wwn) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">82</td><td><a href="scsi-generic.c.html#L82">(r->req.io_canceled)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">621</td><td><a href="scsi-generic.c.html#L621">(i + 3 <= len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">502</td><td><a href="scsi-generic.c.html#L502">(p[3] != 8)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">592</td><td><a href="scsi-generic.c.html#L592">(buf[i] == 0xb0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">86</td><td><a href="scsi-generic.c.html#L86">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">88</td><td><a href="scsi-generic.c.html#L88">(status == CHECK_CONDITION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="scsi-generic.c.html#L181">(page == 0xb0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="scsi-generic.c.html#L370">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="scsi-generic.c.html#L422">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">442</td><td><a href="scsi-generic.c.html#L442">(i < len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="scsi-generic.c.html#L473">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">518</td><td><a href="scsi-generic.c.html#L518">(i < 24)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="scsi-generic.c.html#L580">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="scsi-generic.c.html#L616">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">667</td><td><a href="scsi-generic.c.html#L667">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">705</td><td><a href="scsi-generic.c.html#L705">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="scsi-generic.c.html#L707">(rc != -EPERM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="scsi-generic.c.html#L712">(sg_version < 30000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="scsi-generic.c.html#L301">(sense.key)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">461</td><td><a href="scsi-generic.c.html#L461">(trace_event_get_state_backends(TRACE_SCSI_GENERIC_SEND_COMMAND))</a></td><td class="num">0.25</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

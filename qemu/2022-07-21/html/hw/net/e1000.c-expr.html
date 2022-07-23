@@ -1,0 +1,160 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\net\e1000.c Ctrl Expressions (109) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\net\e1000.c Ctrl Expressions (109) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\net\e1000.c Ctrl Expressions (109)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">476</td><td><a href="e1000.c.html#L476">(<span style='background-color:#9c4c02;'>!s->eecd_state.reading || ((s->eeprom_data[(s->eecd_state.bitnum_out >> 4) & 0x3f] >> (<span style='background-color:#741da3;'>(s->eecd_state.bitnum_out & 0xf) ^ 0xf</span>))) & 1</span>)</a></td><td class="num">1102.50</td></tr>
+      <tr><td class="num line">1037</td><td><a href="e1000.c.html#L1037">(((rdt - s->mac_reg[RDH]) * sizeof(desc)) <= s->mac_reg[RDLEN] >> s->rxbuf_min_shift)</a></td><td class="num">54.85</td></tr>
+      <tr><td class="num line">791</td><td><a href="e1000.c.html#L791">(s->mac_reg[TDH] == tdh_start || tdh_start >= s->mac_reg[TDLEN] / sizeof(desc))</a></td><td class="num">50.60</td></tr>
+      <tr><td class="num line">1023</td><td><a href="e1000.c.html#L1023">(s->mac_reg[RDH] == rdh_start || rdh_start >= s->mac_reg[RDLEN] / sizeof(desc))</a></td><td class="num">50.60</td></tr>
+      <tr><td class="num line">784</td><td><a href="e1000.c.html#L784">(s->mac_reg[TDH]++ * sizeof(desc) >= s->mac_reg[TDLEN])</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">1020</td><td><a href="e1000.c.html#L1020">(s->mac_reg[RDH]++ * sizeof(desc) >= s->mac_reg[RDLEN])</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">363</td><td><a href="e1000.c.html#L363">(!qemu_get_queue(s->nic)->link_down)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">808</td><td><a href="e1000.c.html#L808">(e1000x_is_vlan_packet(buf, le16_to_cpu(s->mac_reg[VET])) && e1000x_vlan_rx_filter_enabled(s->mac_reg))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">950</td><td><a href="e1000.c.html#L950">(e1000x_vlan_enabled(s->mac_reg) && e1000x_is_vlan_packet(filter_buf, le16_to_cpu(s->mac_reg[VET])))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">843</td><td><a href="e1000.c.html#L843">(have_autoneg(s) && !(s->phy_reg[PHY_STATUS] & MII_SR_AUTONEG_COMPLETE))</a></td><td class="num">43.50</td></tr>
+      <tr><td class="num line">1460</td><td><a href="e1000.c.html#L1460">(have_autoneg(s) && !(s->phy_reg[PHY_STATUS] & MII_SR_AUTONEG_COMPLETE))</a></td><td class="num">43.50</td></tr>
+      <tr><td class="num line">1035</td><td><a href="e1000.c.html#L1035">((rdt = s->mac_reg[RDT]) < s->mac_reg[RDH])</a></td><td class="num">35.25</td></tr>
+      <tr><td class="num line">1328</td><td><a href="e1000.c.html#L1328">(!(mac_reg_access[index] & MAC_ACCESS_FLAG_NEEDED) || (s->compat_flags & (mac_reg_access[index] >> 2)))</a></td><td class="num">35.25</td></tr>
+      <tr><td class="num line">1355</td><td><a href="e1000.c.html#L1355">(!(mac_reg_access[index] & MAC_ACCESS_FLAG_NEEDED) || (s->compat_flags & (mac_reg_access[index] >> 2)))</a></td><td class="num">35.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="e1000.c.html#L720">(!(tp->cptse && tp->size < tp->tso_props.hdr_len))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">509</td><td><a href="e1000.c.html#L509">(s->eecd_state.bitnum_in++ == 9 && !s->eecd_state.reading)</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">268</td><td><a href="e1000.c.html#L268">(value && (*curr == 0 || value < *curr))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="e1000.c.html#L813">((vfta & (1 << (vid & 0x1f))) == 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">396</td><td><a href="e1000.c.html#L396">(qemu_get_queue(d->nic)->link_down)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1701</td><td><a href="e1000.c.html#L1701">(range_covers_byte(address, len, PCI_COMMAND) && (pci_dev->config[PCI_COMMAND] & PCI_COMMAND_MASTER))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">524</td><td><a href="e1000.c.html#L524">((s->mac_reg[EERD] & E1000_EEPROM_RW_REG_START) == 0)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">762</td><td><a href="e1000.c.html#L762">(!(s->mac_reg[TCTL] & E1000_TCTL_EN))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="e1000.c.html#L698">(sz >= tp->tso_props.hdr_len && tp->size < tp->tso_props.hdr_len)</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">674</td><td><a href="e1000.c.html#L674">(e1000x_vlan_enabled(s->mac_reg) && e1000x_is_vlan_txd(txd_lower) && (tp->cptse || txd_lower & E1000_TXD_CMD_EOP))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">527</td><td><a href="e1000.c.html#L527">((index = r >> E1000_EEPROM_RW_ADDR_SHIFT) > EEPROM_CHECKSUM_REG)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">772</td><td><a href="e1000.c.html#L772">(s->mac_reg[TDH] != s->mac_reg[TDT])</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="e1000.c.html#L862">(s->mac_reg[RDH] < s->mac_reg[RDT])</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">864</td><td><a href="e1000.c.html#L864">(s->mac_reg[RDH] > s->mac_reg[RDT])</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="e1000.c.html#L317">(s->mac_reg[RDTR] && (pending_ints & E1000_ICS_RXT0))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">598</td><td><a href="e1000.c.html#L598">(props->paylen - sofar > props->mss)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">817</td><td><a href="e1000.c.html#L817">(!isbcast && !ismcast && (rctl & E1000_RCTL_UPE))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">313</td><td><a href="e1000.c.html#L313">(s->mit_ide && (pending_ints & E1000_ICR_TXQE | E1000_ICR_TXDW))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="e1000.c.html#L440">((val & E1000_MDIC_PHY_MASK) >> E1000_MDIC_PHY_SHIFT != 1)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">564</td><td><a href="e1000.c.html#L564">(s->phy_reg[PHY_CTRL] & MII_CR_LOOPBACK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="e1000.c.html#L293">(!s->mit_irq_level && pending_ints)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">455</td><td><a href="e1000.c.html#L455">(addr < NPHYWRITEOPS && phyreg_writeops[addr])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">692</td><td><a href="e1000.c.html#L692">(tp->size + bytes > msh)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1327</td><td><a href="e1000.c.html#L1327">(index < NWRITEOPS && macreg_writeops[index])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="e1000.c.html#L1339">(index < NREADOPS && macreg_readops[index])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1354</td><td><a href="e1000.c.html#L1354">(index < NREADOPS && macreg_readops[index])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">200</td><td><a href="e1000.c.html#L200">(have_autoneg(s) && (val & MII_CR_RESTART_AUTO_NEG))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="e1000.c.html#L499">(!(E1000_EECD_SK & (val ^ oldval)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">851</td><td><a href="e1000.c.html#L851">(s->mac_reg[STATUS] != old_status)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1420</td><td><a href="e1000.c.html#L1420">(nc->link_down && have_autoneg(s))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="e1000.c.html#L821">(ismcast && (rctl & E1000_RCTL_MPE))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">826</td><td><a href="e1000.c.html#L826">(isbcast && (rctl & E1000_RCTL_BAM))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">654</td><td><a href="e1000.c.html#L654">(le32_to_cpu(xp->cmd_and_length) & E1000_TXD_CMD_TSE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">493</td><td><a href="e1000.c.html#L493">(E1000_EECD_CS & (val ^ oldval))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">606</td><td><a href="e1000.c.html#L606">(tp->sum_needed & E1000_TXD_POPTS_TXSM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">618</td><td><a href="e1000.c.html#L618">(tp->sum_needed & E1000_TXD_POPTS_TXSM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">621</td><td><a href="e1000.c.html#L621">(tp->sum_needed & E1000_TXD_POPTS_IXSM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1425</td><td><a href="e1000.c.html#L1425">(chkflag(TSO) || !s->use_tso_for_migration)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">539</td><td><a href="e1000.c.html#L539">(cse && cse < n)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">444</td><td><a href="e1000.c.html#L444">(!(phy_regcap[addr] & PHY_R))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">451</td><td><a href="e1000.c.html#L451">(!(phy_regcap[addr] & PHY_W))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">665</td><td><a href="e1000.c.html#L665">(tp->size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">689</td><td><a href="e1000.c.html#L689">(tp->size >= msh)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">859</td><td><a href="e1000.c.html#L859">(total_size <= s->rxbuf_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">935</td><td><a href="e1000.c.html#L935">(iov->iov_len < MAXIMUM_ETHERNET_HDR_LEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="e1000.c.html#L954">(filter_buf == iov->iov_base)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">958</td><td><a href="e1000.c.html#L958">(iov->iov_len <= iov_ofs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">976</td><td><a href="e1000.c.html#L976">(desc_size > s->rxbuf_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">988</td><td><a href="e1000.c.html#L988">(copy_size > s->rxbuf_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">997</td><td><a href="e1000.c.html#L997">(iov_ofs == iov->iov_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">552</td><td><a href="e1000.c.html#L552">(arr[0] & 1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1330</td><td><a href="e1000.c.html#L1330">(mac_reg_access[index] & MAC_ACCESS_PARTIAL)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1357</td><td><a href="e1000.c.html#L1357">(mac_reg_access[index] & MAC_ACCESS_PARTIAL)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">541</td><td><a href="e1000.c.html#L541">(sloc < n - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">767</td><td><a href="e1000.c.html#L767">(s->tx.busy)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1123</td><td><a href="e1000.c.html#L1123">(index == RA + 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">919</td><td><a href="e1000.c.html#L919">(!e1000x_hw_rx_enabled(s->mac_reg))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="e1000.c.html#L490">(!(E1000_EECD_CS & val))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">502</td><td><a href="e1000.c.html#L502">(!(E1000_EECD_SK & val))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">718</td><td><a href="e1000.c.html#L718">(!(txd_lower & E1000_TXD_CMD_EOP))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">736</td><td><a href="e1000.c.html#L736">(!(txd_lower & E1000_TXD_CMD_RS | E1000_TXD_CMD_RPS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1468</td><td><a href="e1000.c.html#L1468">(!s->received_tx_tso)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1668</td><td><a href="e1000.c.html#L1668">(excluded_regs[i] != PNPMMIO_SIZE)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">710</td><td><a href="e1000.c.html#L710">(bytes && split_size)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">923</td><td><a href="e1000.c.html#L923">(timer_pending(s->flush_queue_timer))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">942</td><td><a href="e1000.c.html#L942">(e1000x_is_oversized(s->mac_reg, size))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">303</td><td><a href="e1000.c.html#L303">(s->mit_timer_on)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">442</td><td><a href="e1000.c.html#L442">(val & E1000_MDIC_OP_READ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="e1000.c.html#L449">(val & E1000_MDIC_OP_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="e1000.c.html#L464">(val & E1000_MDIC_INT_EN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="e1000.c.html#L507">(val & E1000_EECD_DI)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">581</td><td><a href="e1000.c.html#L581">(tp->cptse)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">585</td><td><a href="e1000.c.html#L585">(props->ip)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="e1000.c.html#L595">(props->tcp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">624</td><td><a href="e1000.c.html#L624">(tp->vlan_needed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="e1000.c.html#L685">(tp->cptse)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">840</td><td><a href="e1000.c.html#L840">(nc->link_down)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1846</td><td><a href="e1000.c.html#L1846">(i < ARRAY_SIZE(e1000_devices))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">653</td><td><a href="e1000.c.html#L653">(dtype == E1000_TXD_CMD_DEXT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">663</td><td><a href="e1000.c.html#L663">(dtype == E1000_TXD_CMD_DEXT | E1000_TXD_DTYP_D)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="e1000.c.html#L704">(sz == msh)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">928</td><td><a href="e1000.c.html#L928">(size < sizeof(min_buf))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">984</td><td><a href="e1000.c.html#L984">(desc_offset < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1005</td><td><a href="e1000.c.html#L1005">(desc_offset >= total_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="e1000.c.html#L1030">(desc_offset < total_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="e1000.c.html#L983">(desc.buffer_addr)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="e1000.c.html#L550">(!memcmp(arr, bcast, sizeof bcast))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">946</td><td><a href="e1000.c.html#L946">(!receive_filter(s, filter_buf, size))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">970</td><td><a href="e1000.c.html#L970">(!e1000_has_rxbufs(s, total_size))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1446</td><td><a href="e1000.c.html#L1446">(!chkflag(MIT))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="e1000.c.html#L306">(chkflag(MIT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="e1000.c.html#L402">(e1000_vet_init_need(d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1134</td><td><a href="e1000.c.html#L1134">(e1000_has_rxbufs(s, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="e1000.c.html#L600">(frames)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1001</td><td><a href="e1000.c.html#L1001">(copy_size)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

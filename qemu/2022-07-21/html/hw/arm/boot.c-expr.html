@@ -1,0 +1,166 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\arm\boot.c Ctrl Expressions (115) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\arm\boot.c Ctrl Expressions (115) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\arm\boot.c Ctrl Expressions (115)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1383</td><td><a href="boot.c.html#L1383">(<span style='background-color:#741da3;'>info->psci_conduit == QEMU_PSCI_CONDUIT_DISABLED && info->is_linux && nb_cpus > 1</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="boot.c.html#L584">(<span style='background-color:#741da3;'>scells < 2 && binfo->ram_size >= 4 * GiB</span>)</a></td><td class="num">1013.85</td></tr>
+      <tr><td class="num line">1360</td><td><a href="boot.c.html#L1360">((info->psci_conduit == QEMU_PSCI_CONDUIT_HVC && boot_el >= 2) || (info->psci_conduit == QEMU_PSCI_CONDUIT_SMC && boot_el == 3))</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">781</td><td><a href="boot.c.html#L781">(!info->secure_boot && (cs != first_cpu || !info->secure_board_setup))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">53</td><td><a href="boot.c.html#L53">(arm_feature(&cpu->env, ARM_FEATURE_EL3) && info->secure_boot)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1070</td><td><a href="boot.c.html#L1070">(arm_feature(&cpu->env, ARM_FEATURE_AARCH64) && kernel_size < 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">964</td><td><a href="boot.c.html#L964">(size > ARM64_MAGIC_OFFSET + 4 && memcmp(buffer + ARM64_MAGIC_OFFSET, "ARM\\x64", 4) == 0)</a></td><td class="num">25.10</td></tr>
+      <tr><td class="num line">616</td><td><a href="boot.c.html#L616">(ms->numa_state != NULL && ms->numa_state->num_nodes > 0)</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">790</td><td><a href="boot.c.html#L790">(!env->aarch64 && !info->secure_boot && arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="boot.c.html#L1047">(image_low_addr > info->loader_start || image_high_addr < info->loader_start)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="boot.c.html#L323">(info->kernel_cmdline && *info->kernel_cmdline)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">649</td><td><a href="boot.c.html#L649">(ms->kernel_cmdline && *ms->kernel_cmdline)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1356</td><td><a href="boot.c.html#L1356">(info->is_linux && !info->secure_boot)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="boot.c.html#L566">(addr_limit > addr && size > (addr_limit - addr))</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">1323</td><td><a href="boot.c.html#L1323">(!info->kernel_filename || info->firmware_loaded)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1411</td><td><a href="boot.c.html#L1411">(arm_load_dtb(info->dtb_start, info, info->dtb_limit, as, ms) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1410</td><td><a href="boot.c.html#L1410">(!info->skip_dtb_autoload && have_dtb(info))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1150</td><td><a href="boot.c.html#L1150">(info->initrd_start + initrd_size > ram_end)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1202</td><td><a href="boot.c.html#L1202">(info->ram_size >= 4 * GiB)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">618</td><td><a href="boot.c.html#L618">(i < ms->numa_state->num_nodes)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">579</td><td><a href="boot.c.html#L579">(acells == 0 || scells == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1042</td><td><a href="boot.c.html#L1042">(kernel_size > 0 && have_dtb(info))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">210</td><td><a href="boot.c.html#L210">(arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">501</td><td><a href="boot.c.html#L501">(arm_feature(&armcpu->env, ARM_FEATURE_AARCH64))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1028</td><td><a href="boot.c.html#L1028">(arm_feature(&cpu->env, ARM_FEATURE_AARCH64))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">165</td><td><a href="boot.c.html#L165">(insns[len].fixup != FIXUP_TERMINATOR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">491</td><td><a href="boot.c.html#L491">(armcpu->psci_version >= QEMU_PSCI_VERSION_0_2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">492</td><td><a href="boot.c.html#L492">(armcpu->psci_version < QEMU_PSCI_VERSION_1_0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">858</td><td><a href="boot.c.html#L858">(!g_file_get_contents(image_name, &contents, &length, NULL))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">957</td><td><a href="boot.c.html#L957">(!g_file_get_contents(filename, (char **)&buffer, &len, NULL))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1053</td><td><a href="boot.c.html#L1053">(image_low_addr < info->loader_start)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1094</td><td><a href="boot.c.html#L1094">(kernel_size > info->ram_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1130</td><td><a href="boot.c.html#L1130">(info->initrd_start >= ram_end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1191</td><td><a href="boot.c.html#L1191">(info->dtb_start >= ram_end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1365</td><td><a href="boot.c.html#L1365">(info->psci_conduit != QEMU_PSCI_CONDUIT_DISABLED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">912</td><td><a href="boot.c.html#L912">(bswap32(elf_header.h32.e_flags) & EF_ARM_BE8)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">416</td><td><a href="boot.c.html#L416">(p < base + KERNEL_ARGS_ADDR + 256 + 1024)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">705</td><td><a href="boot.c.html#L705">(!info->is_linux)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1033</td><td><a href="boot.c.html#L1033">(!info->write_board_setup)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1390</td><td><a href="boot.c.html#L1390">(!info->secondary_cpu_reset_hook)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1393</td><td><a href="boot.c.html#L1393">(!info->write_secondary_boot)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="boot.c.html#L335">(info->atag_board)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="boot.c.html#L543">(binfo->dtb_filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="boot.c.html#L658">(binfo->initrd_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="boot.c.html#L676">(binfo->modify_dtb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="boot.c.html#L749">(env->aarch64)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="boot.c.html#L813">(info->secondary_cpu_reset_hook)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">877</td><td><a href="boot.c.html#L877">(albifc->arm_linux_init)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1128</td><td><a href="boot.c.html#L1128">(info->initrd_filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1215</td><td><a href="boot.c.html#L1215">(info->write_board_setup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="boot.c.html#L1246">(info->kernel_filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1276</td><td><a href="boot.c.html#L1276">(info->kernel_cmdline)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">262</td><td><a href="boot.c.html#L262">(n < ARRAY_SIZE(mvbar_blob))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">268</td><td><a href="boot.c.html#L268">(n < ARRAY_SIZE(board_setup_blob))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">171</td><td><a href="boot.c.html#L171">(i < len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">439</td><td><a href="boot.c.html#L439">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="boot.c.html#L444">(numa_node_id >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">486</td><td><a href="boot.c.html#L486">(rc >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">626</td><td><a href="boot.c.html#L626">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="boot.c.html#L637">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="boot.c.html#L645">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="boot.c.html#L652">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="boot.c.html#L661">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">668</td><td><a href="boot.c.html#L668">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="boot.c.html#L713">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="boot.c.html#L720">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">801</td><td><a href="boot.c.html#L801">(cs == first_cpu)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">845</td><td><a href="boot.c.html#L845">(image_name == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">854</td><td><a href="boot.c.html#L854">(size == (size_t)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="boot.c.html#L933">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">953</td><td><a href="boot.c.html#L953">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">976</td><td><a href="boot.c.html#L976">(kernel_size != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="boot.c.html#L988">(kernel_load_offset < BOOTLOADER_MAX_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">999</td><td><a href="boot.c.html#L999">(kernel_size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1061</td><td><a href="boot.c.html#L1061">(kernel_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="boot.c.html#L1065">(kernel_size >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="boot.c.html#L1074">(kernel_size >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1078</td><td><a href="boot.c.html#L1078">(kernel_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="boot.c.html#L1084">(kernel_size >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1089</td><td><a href="boot.c.html#L1089">(kernel_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1138</td><td><a href="boot.c.html#L1138">(initrd_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1145</td><td><a href="boot.c.html#L1145">(initrd_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1171</td><td><a href="boot.c.html#L1171">(elf_machine == EM_AARCH64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1376</td><td><a href="boot.c.html#L1376">(cs != first_cpu)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="boot.c.html#L600">(g_str_has_prefix(node_path[n], "/memory"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">599</td><td><a href="boot.c.html#L599">(node_path[n])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">806</td><td><a href="boot.c.html#L806">(!have_dtb(info))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">546</td><td><a href="boot.c.html#L546">(!filename)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">552</td><td><a href="boot.c.html#L552">(!fdt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">560</td><td><a href="boot.c.html#L560">(!fdt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">620</td><td><a href="boot.c.html#L620">(!mem_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1252</td><td><a href="boot.c.html#L1252">(!fw_cfg)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">742</td><td><a href="boot.c.html#L742">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="boot.c.html#L751">(arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="boot.c.html#L757">(cpu_isar_feature(aa64_pauth, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="boot.c.html#L760">(cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="boot.c.html#L763">(cpu_isar_feature(aa64_sve, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">775</td><td><a href="boot.c.html#L775">(arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">872</td><td><a href="boot.c.html#L872">(object_dynamic_cast(obj, TYPE_ARM_LINUX_BOOT_IF))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1168</td><td><a href="boot.c.html#L1168">(have_dtb(info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1237</td><td><a href="boot.c.html#L1237">(have_dtb(info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1348</td><td><a href="boot.c.html#L1348">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1350</td><td><a href="boot.c.html#L1350">(arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">316</td><td><a href="boot.c.html#L316">(initrd_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">398</td><td><a href="boot.c.html#L398">(initrd_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">420</td><td><a href="boot.c.html#L420">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">595</td><td><a href="boot.c.html#L595">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">704</td><td><a href="boot.c.html#L704">(info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">807</td><td><a href="boot.c.html#L807">(old_param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">849</td><td><a href="boot.c.html#L849">(try_decompress)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">900</td><td><a href="boot.c.html#L900">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">905</td><td><a href="boot.c.html#L905">(elf_is64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">911</td><td><a href="boot.c.html#L911">(big_endian)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1120</td><td><a href="boot.c.html#L1120">(image_high_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1125</td><td><a href="boot.c.html#L1125">(is_linux)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

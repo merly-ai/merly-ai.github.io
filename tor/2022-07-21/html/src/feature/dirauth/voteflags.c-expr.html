@@ -1,0 +1,98 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\dirauth\voteflags.c Ctrl Expressions (47) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\dirauth\voteflags.c Ctrl Expressions (47) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\dirauth\voteflags.c Ctrl Expressions (47)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">603</td><td><a href="voteflags.c.html#L603">(node->is_fast && node->is_stable && ri->supports_tunnelled_dir_requests && ((<span style='background-color:#741da3;'>bw_opt && routerbw_kb >= bw_opt / 1000</span>) || routerbw_kb >= MIN(guard_bandwidth_including_exits_kb, guard_bandwidth_excluding_exits_kb)))</a></td><td class="num">1056.60</td></tr>
+      <tr><td class="num line">186</td><td><a href="voteflags.c.html#L186">(get_uptime() > dirauth_get_options()->MinUptimeHidServDirectoryV2 * 1.1)</a></td><td class="num">44.10</td></tr>
+      <tr><td class="num line">516</td><td><a href="voteflags.c.html#L516">(router->is_hibernating && (router->cache_info.published_on + HIBERNATION_PUBLICATION_SKEW) > node->last_reachable)</a></td><td class="num">33.60</td></tr>
+      <tr><td class="num line">553</td><td><a href="voteflags.c.html#L553">(node->last_reachable && node->last_reachable + REACHABILITY_TEST_CYCLE_PERIOD < now)</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">150</td><td><a href="voteflags.c.html#L150">(dirauth_get_options()->TestingMinExitFlagThreshold > 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">149</td><td><a href="voteflags.c.html#L149">(get_options()->TestingTorNetwork)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="voteflags.c.html#L286">(options->BridgeAuthoritativeDir && node->ri && node->ri->purpose != ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">143</td><td><a href="voteflags.c.html#L143">(!node->is_running || !node->is_valid || ri->is_hibernating)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="voteflags.c.html#L309">(!node->is_exit || node->is_bad_exit)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">361</td><td><a href="voteflags.c.html#L361">(fast_opt && fast_bandwidth_kb > fast_opt / 1000)</a></td><td class="num">8.35</td></tr>
+      <tr><td class="num line">113</td><td><a href="voteflags.c.html#L113">((unsigned)uptime < stable_uptime && (unsigned)uptime < UPTIME_TO_GUARANTEE_STABLE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">119</td><td><a href="voteflags.c.html#L119">(mtbf < stable_mtbf && mtbf < MTBF_TO_GUARANTEE_STABLE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">88</td><td><a href="voteflags.c.html#L88">(now < router->cache_info.published_on)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">140</td><td><a href="voteflags.c.html#L140">(ri->cache_info.published_on < cutoff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">689</td><td><a href="voteflags.c.html#L689">(ri->purpose == ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">542</td><td><a href="voteflags.c.html#L542">(!answer && running_long_enough_to_decide_unreachable())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">148</td><td><a href="voteflags.c.html#L148">(!ri->bandwidthcapacity)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">522</td><td><a href="voteflags.c.html#L522">(!dirauth_options->AuthDirTestReachability)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">655</td><td><a href="voteflags.c.html#L655">(routerset_contains_routerstatus(options->TestingDirAuthVoteExit, rs, 0))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">662</td><td><a href="voteflags.c.html#L662">(routerset_contains_routerstatus(options->TestingDirAuthVoteGuard, rs, 0))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">669</td><td><a href="voteflags.c.html#L669">(routerset_contains_routerstatus(options->TestingDirAuthVoteHSDir, rs, 0))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">221</td><td><a href="voteflags.c.html#L221">(options->TestingTorNetwork)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="voteflags.c.html#L344">(options->TestingTorNetwork)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="voteflags.c.html#L622">(rs->is_middle_only)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="voteflags.c.html#L639">(options->TestingTorNetwork)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="voteflags.c.html#L658">(options->TestingDirAuthVoteExitIsStrict)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">665</td><td><a href="voteflags.c.html#L665">(options->TestingDirAuthVoteGuardIsStrict)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="voteflags.c.html#L672">(options->TestingDirAuthVoteHSDirIsStrict)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">126</td><td><a href="voteflags.c.html#L126">(bw_kb < fast_bandwidth_kb)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">326</td><td><a href="voteflags.c.html#L326">(fast_bandwidth_kb < RELAY_REQUIRED_MIN_BANDWIDTH / 2 * 1000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">333</td><td><a href="voteflags.c.html#L333">(guard_tk > TIME_KNOWN_TO_GUARANTEE_FAMILIAR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">352</td><td><a href="voteflags.c.html#L352">(fast_bandwidth_kb < (uint32_t)min_fast_kb)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="voteflags.c.html#L354">(fast_bandwidth_kb > (uint32_t)max_fast_kb)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="voteflags.c.html#L375">(tk < guard_tk)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="voteflags.c.html#L382">(guard_wfu > WFU_TO_GUARANTEE_GUARD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">632</td><td><a href="voteflags.c.html#L632">(!should_publish_node_ipv6(node, ri, now))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">105</td><td><a href="voteflags.c.html#L105">(!enough_mtbf_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">297</td><td><a href="voteflags.c.html#L297">(router_counts_toward_thresholds(node, now, omit_as_sybil, require_mbw))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="voteflags.c.html#L370">(router_counts_toward_thresholds(node, now, omit_as_sybil, require_mbw))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="voteflags.c.html#L513">(router_is_me(router))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">104</td><td><a href="voteflags.c.html#L104">(need_uptime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">124</td><td><a href="voteflags.c.html#L124">(need_capacity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="voteflags.c.html#L292">(ri)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">318</td><td><a href="voteflags.c.html#L318">(n_active)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">380</td><td><a href="voteflags.c.html#L380">(n_familiar)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="voteflags.c.html#L387">(n_active_nonexit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">623</td><td><a href="voteflags.c.html#L623">(listbadexits)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

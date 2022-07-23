@@ -1,0 +1,597 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\mbstring\mbstring.c Ctrl Expressions (546) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\mbstring\mbstring.c Ctrl Expressions (546) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\mbstring\mbstring.c Ctrl Expressions (546)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2859</td><td><a href="mbstring.c.html#L2859">(<span style='background-color:#741da3;'>(mode & MBFL_HAN2ZEN_ALL) && c >= 0x21 && c <= 0x7D && c != '"' && c != '\'' && c != '\\'</span>)</a></td><td class="num">1028.25</td></tr>
+      <tr><td class="num line">2941</td><td><a href="mbstring.c.html#L2941">(<span style='background-color:#741da3;'>(mode & MBFL_ZEN2HAN_ALL) && c >= 0xFF01 && c <= 0xFF5D && c != 0xFF02 && c != 0xFF07 && c != 0xFF3C</span>)</a></td><td class="num">1028.25</td></tr>
+      <tr><td class="num line">3644</td><td><a href="mbstring.c.html#L3644">(<span style='background-color:#741da3;'>(p2 == wchar_buf + out_len) && in_len && (p2 - p) <= HEX_ENTITY_MAXLEN</span>)</a></td><td class="num">1015.45</td></tr>
+      <tr><td class="num line">3682</td><td><a href="mbstring.c.html#L3682">(<span style='background-color:#741da3;'>(p2 == wchar_buf + out_len) && in_len && (p2 - p) <= DEC_ENTITY_MAXLEN</span>)</a></td><td class="num">1015.45</td></tr>
+      <tr><td class="num line">2155</td><td><a href="mbstring.c.html#L2155">(<span style='background-color:#741da3;'>from < 0 || (!len_is_null && len < 0)</span>)</a></td><td class="num">1011.25</td></tr>
+      <tr><td class="num line">2177</td><td><a href="mbstring.c.html#L2177">(<span style='background-color:#741da3;'>real_from < mblen && -len < mblen - real_from</span>)</a></td><td class="num">1011.10</td></tr>
+      <tr><td class="num line">3144</td><td><a href="mbstring.c.html#L3144">(<span style='background-color:#741da3;'>((opt & 0xFF00) >> 8) & opt</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">3716</td><td><a href="mbstring.c.html#L3716">(<span style='background-color:#741da3;'>(p2 == wchar_buf + out_len) && in_len</span>)</a></td><td class="num">1008.35</td></tr>
+      <tr><td class="num line">583</td><td><a href="mbstring.c.html#L583">(start[i] == '\\' && (start[i + 1] == '\\' || (quote && start[i + 1] == quote)))</a></td><td class="num">70.70</td></tr>
+      <tr><td class="num line">4092</td><td><a href="mbstring.c.html#L4092">(to_r[i] == '\r' && to_r[i + 1] == '\n' && (to_r[i + 2] == ' ' || to_r[i + 2] == '\t'))</a></td><td class="num">59.05</td></tr>
+      <tr><td class="num line">4320</td><td><a href="mbstring.c.html#L4320">(lang != NULL && (name = (char *)mbfl_no_encoding2name(lang->mail_charset)) != NULL)</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">4324</td><td><a href="mbstring.c.html#L4324">(lang != NULL && (name = (char *)mbfl_no_encoding2name(lang->mail_header_encoding)) != NULL)</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">4328</td><td><a href="mbstring.c.html#L4328">(lang != NULL && (name = (char *)mbfl_no_encoding2name(lang->mail_body_encoding)) != NULL)</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">1583</td><td><a href="mbstring.c.html#L1583">(SG(sapi_headers).mimetype && _php_mb_match_regex(MBSTRG(http_output_conv_mimetypes), SG(sapi_headers).mimetype, strlen(SG(sapi_headers).mimetype)))</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">2862</td><td><a href="mbstring.c.html#L2862">((mode & MBFL_HAN2ZEN_ALPHA) && ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')))</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">2945</td><td><a href="mbstring.c.html#L2945">((mode & MBFL_ZEN2HAN_ALPHA) && ((c >= 0xFF21 && c <= 0xFF3A) || (c >= 0xFF41 && c <= 0xFF5A)))</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">2881</td><td><a href="mbstring.c.html#L2881">(next == 0xFF9E && ((n >= 22 && n <= 36) || (n >= 42 && n <= 46)))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">2903</td><td><a href="mbstring.c.html#L2903">(next == 0xFF9E && ((n >= 22 && n <= 36) || (n >= 42 && n <= 46)))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">1588</td><td><a href="mbstring.c.html#L1588">((s = strchr(SG(sapi_headers).mimetype, ';')) == NULL)</a></td><td class="num">38.00</td></tr>
+      <tr><td class="num line">3004</td><td><a href="mbstring.c.html#L3004">((mode & MBFL_ZENKAKU_HIRA2KATA) && ((c >= 0x3041 && c <= 0x3093) || c == 0x309D || c == 0x309E))</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">3008</td><td><a href="mbstring.c.html#L3008">((mode & MBFL_ZENKAKU_KATA2HIRA) && ((c >= 0x30A1 && c <= 0x30F3) || c == 0x30FD || c == 0x30FE))</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">605</td><td><a href="mbstring.c.html#L605">((quote = *pos) == '"' || quote == '\'')</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">289</td><td><a href="mbstring.c.html#L289">(value[0] == '"' && value[value_length - 1] == '"' && value_length > 2)</a></td><td class="num">31.60</td></tr>
+      <tr><td class="num line">308</td><td><a href="mbstring.c.html#L308">(p1 < p && (*p1 == ' ' || *p1 == '\t'))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="mbstring.c.html#L312">(p > p1 && (*p == ' ' || *p == '\t'))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">4094</td><td><a href="mbstring.c.html#L4094">(to_r[i + 1] == ' ' || to_r[i + 1] == '\t')</a></td><td class="num">29.70</td></tr>
+      <tr><td class="num line">522</td><td><a href="mbstring.c.html#L522">(!(retval = pcre2_compile((PCRE2_SPTR)pattern, PCRE2_ZERO_TERMINATED, PCRE2_CASELESS, &errnum, &err_offset, php_pcre_cctx())))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">4259</td><td><a href="mbstring.c.html#L4259">((name = (char *)mbfl_no_encoding2name(lang->mail_charset)) != NULL)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">4262</td><td><a href="mbstring.c.html#L4262">((name = (char *)mbfl_no_encoding2name(lang->mail_header_encoding)) != NULL)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">4265</td><td><a href="mbstring.c.html#L4265">((name = (char *)mbfl_no_encoding2name(lang->mail_body_encoding)) != NULL)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">3642</td><td><a href="mbstring.c.html#L3642">((w >= '0' && w <= '9') || (w >= 'A' && w <= 'F') || (w >= 'a' && w <= 'f'))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">726</td><td><a href="mbstring.c.html#L726">(FAILURE == php_mb_parse_encoding_list(ZSTR_VAL(new_value), ZSTR_LEN(new_value), &list, &size, 1, 0, 0) || size == 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">806</td><td><a href="mbstring.c.html#L806">(!new_value || !new_value_length || !(encoding = mbfl_name2encoding(new_value)))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4037</td><td><a href="mbstring.c.html#L4037">((param_name = php_strtok_r(p, "= ", &tmp)) != NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">742</td><td><a href="mbstring.c.html#L742">(FAILURE == php_mb_parse_encoding_list(new_value, new_value_length, &list, &size, 1, 0, 1) || size == 0)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">4153</td><td><a href="mbstring.c.html#L4153">(n > 0 && p[n - 1] != '\n')</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">4275</td><td><a href="mbstring.c.html#L4275">((name = (char *)mbfl_no_language2name(MBSTRG(language))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4340</td><td><a href="mbstring.c.html#L4340">((name = (char *)mbfl_no_language2name(MBSTRG(language))) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">923</td><td><a href="mbstring.c.html#L923">(!(re = _php_mb_compile_regex(ZSTR_VAL(tmp))))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">657</td><td><a href="mbstring.c.html#L657">(*strend && !isspace(*(unsigned char *)strend))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">4195</td><td><a href="mbstring.c.html#L4195">(!err && php_mail(to_r, subject, message, ZSTR_VAL(str_headers), extra_cmd ? ZSTR_VAL(extra_cmd) : NULL))</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">4082</td><td><a href="mbstring.c.html#L4082">(!isspace((unsigned char)to_r[to_len - 1]))</a></td><td class="num">21.35</td></tr>
+      <tr><td class="num line">608</td><td><a href="mbstring.c.html#L608">(*pos == '\\' && pos[1] && pos[1] == quote)</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">4111</td><td><a href="mbstring.c.html#L4111">(orig_str.encoding->no_encoding == mbfl_no_encoding_invalid || orig_str.encoding->no_encoding == mbfl_no_encoding_pass)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">4125</td><td><a href="mbstring.c.html#L4125">(orig_str.encoding->no_encoding == mbfl_no_encoding_invalid || orig_str.encoding->no_encoding == mbfl_no_encoding_pass)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">2948</td><td><a href="mbstring.c.html#L2948">((mode & MBFL_ZEN2HAN_NUMERIC) && (c >= 0xFF10 && c <= 0xFF19))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">2865</td><td><a href="mbstring.c.html#L2865">((mode & MBFL_HAN2ZEN_NUMERIC) && c >= '0' && c <= '9')</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2916</td><td><a href="mbstring.c.html#L2916">((mode & MBFL_HAN2ZEN_KATAKANA) && c >= 0xFF61 && c <= 0xFF9F)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2919</td><td><a href="mbstring.c.html#L2919">((mode & MBFL_HAN2ZEN_HIRAGANA) && c >= 0xFF61 && c <= 0xFF9F)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2961</td><td><a href="mbstring.c.html#L2961">((mode & MBFL_ZEN2HAN_KATAKANA) && c >= 0x30A1 && c <= 0x30F4)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2969</td><td><a href="mbstring.c.html#L2969">((mode & MBFL_ZEN2HAN_HIRAGANA) && c >= 0x3041 && c <= 0x3093)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">3151</td><td><a href="mbstring.c.html#L3151">((flag1 == 'R' || flag1 == 'N') && (opt & MBFL_HAN2ZEN_ALL))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">3153</td><td><a href="mbstring.c.html#L3153">((flag2 == 'r' || flag2 == 'n') && (opt & MBFL_ZEN2HAN_ALL))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2889</td><td><a href="mbstring.c.html#L2889">(next == 0xFF9F && n >= 42 && n <= 46)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">2907</td><td><a href="mbstring.c.html#L2907">(next == 0xFF9F && n >= 42 && n <= 46)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">1673</td><td><a href="mbstring.c.html#L1673">(params->split_length == params->mb_chunk_length++)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">588</td><td><a href="mbstring.c.html#L588">(j-- > 0 && i < len)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3651</td><td><a href="mbstring.c.html#L3651">((p2 - p) < HEX_ENTITY_MINLEN || (p2 - p) > HEX_ENTITY_MAXLEN)</a></td><td class="num">11.45</td></tr>
+      <tr><td class="num line">3688</td><td><a href="mbstring.c.html#L3688">((p2 - p) < DEC_ENTITY_MINLEN || (p2 - p) > DEC_ENTITY_MAXLEN)</a></td><td class="num">11.45</td></tr>
+      <tr><td class="num line">649</td><td><a href="mbstring.c.html#L649">(*str == '"' || *str == '\'')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2802</td><td><a href="mbstring.c.html#L2802">(*trans_enc_name == 'B' || *trans_enc_name == 'b')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2804</td><td><a href="mbstring.c.html#L2804">(*trans_enc_name == 'Q' || *trans_enc_name == 'q')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4034</td><td><a href="mbstring.c.html#L4034">(*p == ' ' || *p == '\t')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="mbstring.c.html#L604">(*pos && *pos != stop)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">607</td><td><a href="mbstring.c.html#L607">(*pos && *pos != quote)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2876</td><td><a href="mbstring.c.html#L2876">((mode & MBFL_HAN2ZEN_KATAKANA) && (mode & MBFL_HAN2ZEN_GLUE))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2898</td><td><a href="mbstring.c.html#L2898">((mode & MBFL_HAN2ZEN_HIRAGANA) && (mode & MBFL_HAN2ZEN_GLUE))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3159</td><td><a href="mbstring.c.html#L3159">((opt & MBFL_HAN2ZEN_HIRAGANA) && (opt & MBFL_HAN2ZEN_KATAKANA))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="mbstring.c.html#L582">(i < len && start[i] != quote)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">263</td><td><a href="mbstring.c.html#L263">((p = memchr(p, ',', end - p)))</a></td><td class="num">9.85</td></tr>
+      <tr><td class="num line">4022</td><td><a href="mbstring.c.html#L4022">((s = zend_hash_str_find(&ht_headers, "content-type", sizeof("content-type") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4058</td><td><a href="mbstring.c.html#L4058">((s = zend_hash_str_find(&ht_headers, "content-transfer-encoding", sizeof("content-transfer-encoding") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4255</td><td><a href="mbstring.c.html#L4255">((name = (char *)zend_ini_string("mbstring.http_output_conv_mimetypes", sizeof("mbstring.http_output_conv_mimetypes") - 1, 0)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4316</td><td><a href="mbstring.c.html#L4316">((name = (char *)zend_ini_string("mbstring.http_output_conv_mimetypes", sizeof("mbstring.http_output_conv_mimetypes") - 1, 0)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2868</td><td><a href="mbstring.c.html#L2868">((mode & MBFL_HAN2ZEN_SPACE) && c == ' ')</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2951</td><td><a href="mbstring.c.html#L2951">((mode & MBFL_ZEN2HAN_SPACE) && (c == 0x3000))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2954</td><td><a href="mbstring.c.html#L2954">((mode & MBFL_ZEN2HAN_ALL) && (c == 0x2212))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1498</td><td><a href="mbstring.c.html#L1498">(preferred_name == NULL || *preferred_name == '\0')</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">221</td><td><a href="mbstring.c.html#L221">(last_encoding_name && (last_encoding_name == encoding_name || zend_string_equals_ci(encoding_name, last_encoding_name)))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">641</td><td><a href="mbstring.c.html#L641">(*str && isspace(*(unsigned char *)str))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1414</td><td><a href="mbstring.c.html#L1414">(cp >= 0xd800 && cp <= 0xdfff)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1746</td><td><a href="mbstring.c.html#L1746">(char_count < split_length && p < last)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2877</td><td><a href="mbstring.c.html#L2877">(c >= 0xFF61 && c <= 0xFF9F)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2880</td><td><a href="mbstring.c.html#L2880">(next >= 0xFF61 && next <= 0xFF9F)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2885</td><td><a href="mbstring.c.html#L2885">(next == 0xFF9E && n == 19)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2899</td><td><a href="mbstring.c.html#L2899">(c >= 0xFF61 && c <= 0xFF9F)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2902</td><td><a href="mbstring.c.html#L2902">(next >= 0xFF61 && next <= 0xFF9F)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3442</td><td><a href="mbstring.c.html#L3442">(w >= lo_code && w <= hi_code)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3560</td><td><a href="mbstring.c.html#L3560">(codepoint >= lo_code && codepoint <= hi_code)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3680</td><td><a href="mbstring.c.html#L3680">(w >= '0' && w <= '9')</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3887</td><td><a href="mbstring.c.html#L3887">(fld_name != NULL && fld_val != NULL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3933</td><td><a href="mbstring.c.html#L3933">(fld_name != NULL && fld_val != NULL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4580</td><td><a href="mbstring.c.html#L4580">(cp > 0xd7ff && 0xe000 > cp)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3638</td><td><a href="mbstring.c.html#L3638">(*p2++ == '#')</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3639</td><td><a href="mbstring.c.html#L3639">(*p2++ == 'x')</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1386</td><td><a href="mbstring.c.html#L1386">(FAILURE == php_mb_parse_encoding_list(ZSTR_VAL(order_str), ZSTR_LEN(order_str), &list, &size, 0, 1, 0))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2503</td><td><a href="mbstring.c.html#L2503">(php_mb_parse_encoding_list(ZSTR_VAL(from_encodings_str), ZSTR_LEN(from_encodings_str), &from_encodings, &num_from_encodings, 0, 3, 0) == FAILURE)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2681</td><td><a href="mbstring.c.html#L2681">(FAILURE == php_mb_parse_encoding_list(ZSTR_VAL(encoding_str), ZSTR_LEN(encoding_str), &elist, &size, 0, 2, 0))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3333</td><td><a href="mbstring.c.html#L3333">(php_mb_parse_encoding_list(ZSTR_VAL(from_enc_str), ZSTR_LEN(from_enc_str), &elist, &elistsz, 0, 2, 0) == FAILURE)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3213</td><td><a href="mbstring.c.html#L3213">(Z_TYPE_P(var) == IS_ARRAY || Z_TYPE_P(var) == IS_OBJECT)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3264</td><td><a href="mbstring.c.html#L3264">(Z_TYPE_P(var) == IS_ARRAY || Z_TYPE_P(var) == IS_OBJECT)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="mbstring.c.html#L790">(new_value == NULL || ZSTR_LEN(new_value) == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1382</td><td><a href="mbstring.c.html#L1382">(FAILURE == php_mb_parse_encoding_array(order_ht, &list, &size, 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2498</td><td><a href="mbstring.c.html#L2498">(php_mb_parse_encoding_array(from_encodings_ht, &from_encodings, &num_from_encodings, 3) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2677</td><td><a href="mbstring.c.html#L2677">(FAILURE == php_mb_parse_encoding_array(encoding_ht, &elist, &size, 2))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3329</td><td><a href="mbstring.c.html#L3329">(php_mb_parse_encoding_array(from_enc_ht, &elist, &elistsz, 2) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">4134</td><td><a href="mbstring.c.html#L4134">(mbfl_convert_encoding(&orig_str, &tmpstr, tran_cs) != NULL)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">4517</td><td><a href="mbstring.c.html#L4517">(!out_len || wchar_buf[0] == MBFL_BAD_INPUT)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">278</td><td><a href="mbstring.c.html#L278">(value == NULL || value_length == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">346</td><td><a href="mbstring.c.html#L346">(n >= size || comma == NULL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1409</td><td><a href="mbstring.c.html#L1409">(cp < 0 || cp >= 0x110000)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2027</td><td><a href="mbstring.c.html#L2027">(variant == MB_STRRCHR || variant == MB_STRRICHR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2029</td><td><a href="mbstring.c.html#L2029">(variant == MB_STRISTR || variant == MB_STRRICHR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2303</td><td><a href="mbstring.c.html#L2303">((from < 0) || (width < 0))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2311</td><td><a href="mbstring.c.html#L2311">(from < 0 || (size_t)from > str_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2573</td><td><a href="mbstring.c.html#L2573">(case_mode < 0 || case_mode > PHP_UNICODE_CASE_MODE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2925</td><td><a href="mbstring.c.html#L2925">(c == '\\' || c == 0xA5)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2928</td><td><a href="mbstring.c.html#L2928">(c == 0x7E || c == 0x203E)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3015</td><td><a href="mbstring.c.html#L3015">(c == 0xFFE5 || c == 0xFF3C)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3018</td><td><a href="mbstring.c.html#L3018">(c == 0xFFE3 || c == 0x203E)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3021</td><td><a href="mbstring.c.html#L3021">(c == 0x2018 || c == 0x2019)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3024</td><td><a href="mbstring.c.html#L3024">(c == 0x201C || c == 0x201D)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3816</td><td><a href="mbstring.c.html#L3816">(state == 0 || state == 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3856</td><td><a href="mbstring.c.html#L3856">(state == 1 || state == 3)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4575</td><td><a href="mbstring.c.html#L4575">(cp < 0 || cp > 0x10ffff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1725</td><td><a href="mbstring.c.html#L1725">(mbfl_encoding->flag & MBFL_ENCTYPE_SBCS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1728</td><td><a href="mbstring.c.html#L1728">(mbfl_encoding->flag & MBFL_ENCTYPE_WCS2)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1731</td><td><a href="mbstring.c.html#L1731">(mbfl_encoding->flag & MBFL_ENCTYPE_WCS4)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3353</td><td><a href="mbstring.c.html#L3353">(mb_recursive_encoder_detector_feed(identd, &args[n], &recursion_error))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4710</td><td><a href="mbstring.c.html#L4710">(enc->flag & MBFL_ENCTYPE_WCS2)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4712</td><td><a href="mbstring.c.html#L4712">(enc->flag & MBFL_ENCTYPE_WCS4)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2705</td><td><a href="mbstring.c.html#L2705">(strict && size == 1)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3817</td><td><a href="mbstring.c.html#L3817">(token && token_pos > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3883</td><td><a href="mbstring.c.html#L3883">(token && token_pos > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3930</td><td><a href="mbstring.c.html#L3930">(token && token_pos > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">230</td><td><a href="mbstring.c.html#L230">(encoding->no_encoding <= mbfl_no_encoding_qprint)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">566</td><td><a href="mbstring.c.html#L566">(php_mb_default_identify_list[i].lang == lang)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1570</td><td><a href="mbstring.c.html#L1570">((arg_status & PHP_OUTPUT_HANDLER_START) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1734</td><td><a href="mbstring.c.html#L1734">(mbfl_encoding->mblen_table != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2466</td><td><a href="mbstring.c.html#L2466">(encoding->no_encoding <= mbfl_no_encoding_charset_min)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2753</td><td><a href="mbstring.c.html#L2753">(encoding->aliases != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3149</td><td><a href="mbstring.c.html#L3149">((badflag & 1) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1370</td><td><a href="mbstring.c.html#L1370">(!order_str && !order_ht)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="mbstring.c.html#L1079">(FAILURE == zend_multibyte_set_functions(&php_mb_zend_multibyte_functions))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">231</td><td><a href="mbstring.c.html#L231">(encoding == &mbfl_encoding_base64)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">233</td><td><a href="mbstring.c.html#L233">(encoding == &mbfl_encoding_qprint)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">235</td><td><a href="mbstring.c.html#L235">(encoding == &mbfl_encoding_html_ent)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">237</td><td><a href="mbstring.c.html#L237">(encoding == &mbfl_encoding_uuencode)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">622</td><td><a href="mbstring.c.html#L622">(*pos == '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">630</td><td><a href="mbstring.c.html#L630">(*pos == stop)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">873</td><td><a href="mbstring.c.html#L873">(*endptr == '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1578</td><td><a href="mbstring.c.html#L1578">(encoding == &mbfl_encoding_pass)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1794</td><td><a href="mbstring.c.html#L1794">(p < last - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1812</td><td><a href="mbstring.c.html#L1812">(i < chunks - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2464</td><td><a href="mbstring.c.html#L2464">(i < *size)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3059</td><td><a href="mbstring.c.html#L3059">(i < out_len - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3068</td><td><a href="mbstring.c.html#L3068">(i == out_len - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3416</td><td><a href="mbstring.c.html#L3416">(n_elems % 4 != 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3502</td><td><a href="mbstring.c.html#L3502">(p < entity + sizeof(entity))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3617</td><td><a href="mbstring.c.html#L3617">(*p != '&')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3619</td><td><a href="mbstring.c.html#L3619">(p == wchar_buf + out_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3670</td><td><a href="mbstring.c.html#L3670">(*p2 == ';')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3708</td><td><a href="mbstring.c.html#L3708">(*p2 == ';')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3729</td><td><a href="mbstring.c.html#L3729">(*p2 != '&')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3738</td><td><a href="mbstring.c.html#L3738">(p < wchar_buf + out_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">4036</td><td><a href="mbstring.c.html#L4036">(*p != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4727</td><td><a href="mbstring.c.html#L4727">(*p != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4729</td><td><a href="mbstring.c.html#L4729">((unsigned char)*p == (unsigned char)c)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4744</td><td><a href="mbstring.c.html#L4744">((unsigned char)*p == (unsigned char)c)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4678</td><td><a href="mbstring.c.html#L4678">(MBSTRG(detect_order_list) && MBSTRG(detect_order_list_size))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="mbstring.c.html#L760">(!new_value || !ZSTR_VAL(new_value))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">841</td><td><a href="mbstring.c.html#L841">(new_value && ZSTR_LEN(new_value))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1599</td><td><a href="mbstring.c.html#L1599">(SG(sapi_headers).send_default_content_type || send_text_mimetype)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3132</td><td><a href="mbstring.c.html#L3132">(c == mb_convert_kana_flags[i])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4389</td><td><a href="mbstring.c.html#L4389">(wchar_buf[i] == MBFL_BAD_INPUT)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4398</td><td><a href="mbstring.c.html#L4398">(wchar_buf[i] == MBFL_BAD_INPUT)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">678</td><td><a href="mbstring.c.html#L678">(s && s2)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2106</td><td><a href="mbstring.c.html#L2106">(needle.len == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2239</td><td><a href="mbstring.c.html#L2239">(from > string.len)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">4779</td><td><a href="mbstring.c.html#L4779">(haystack.len == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2964</td><td><a href="mbstring.c.html#L2964">(zenkana2hankana_table[n][1])</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2972</td><td><a href="mbstring.c.html#L2972">(zenkana2hankana_table[n][1])</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="mbstring.c.html#L470">(!mbfl_buffer_converter_result(convd, &result))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="mbstring.c.html#L1036">(mbstring_globals->http_input_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1039</td><td><a href="mbstring.c.html#L1039">(mbstring_globals->detect_order_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1042</td><td><a href="mbstring.c.html#L1042">(mbstring_globals->http_output_conv_mimetypes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2872</td><td><a href="mbstring.c.html#L2872">(mode & MBFL_HAN2ZEN_KATAKANA | MBFL_HAN2ZEN_HIRAGANA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2924</td><td><a href="mbstring.c.html#L2924">(mode & MBFL_HAN2ZEN_SPECIAL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2939</td><td><a href="mbstring.c.html#L2939">(mode & MBFL_ZEN2HAN_ALL | MBFL_ZEN2HAN_ALPHA | MBFL_ZEN2HAN_NUMERIC | MBFL_ZEN2HAN_SPACE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2959</td><td><a href="mbstring.c.html#L2959">(mode & MBFL_ZEN2HAN_KATAKANA | MBFL_ZEN2HAN_HIRAGANA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3003</td><td><a href="mbstring.c.html#L3003">(mode & MBFL_ZENKAKU_HIRA2KATA | MBFL_ZENKAKU_KATA2HIRA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3014</td><td><a href="mbstring.c.html#L3014">(mode & MBFL_ZEN2HAN_SPECIAL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3168</td><td><a href="mbstring.c.html#L3168">(opt & MBFL_ZEN2HAN_HIRAGANA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3169</td><td><a href="mbstring.c.html#L3169">(opt & MBFL_ZEN2HAN_KATAKANA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3172</td><td><a href="mbstring.c.html#L3172">(opt & MBFL_ZENKAKU_HIRA2KATA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3175</td><td><a href="mbstring.c.html#L3175">(opt & MBFL_ZENKAKU_KATA2HIRA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3179</td><td><a href="mbstring.c.html#L3179">(opt & MBFL_ZEN2HAN_KATAKANA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3180</td><td><a href="mbstring.c.html#L3180">(opt & MBFL_ZENKAKU_HIRA2KATA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3183</td><td><a href="mbstring.c.html#L3183">(opt & MBFL_ZENKAKU_KATA2HIRA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4159</td><td><a href="mbstring.c.html#L4159">(!zend_hash_str_exists(&ht_headers, "mime-version", sizeof("mime-version") - 1))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4244</td><td><a href="mbstring.c.html#L4244">(!type || zend_string_equals_literal_ci(type, "all"))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4706</td><td><a href="mbstring.c.html#L4706">(enc->mblen_table)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="mbstring.c.html#L645">(!*str)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">4004</td><td><a href="mbstring.c.html#L4004">(strlen(ZSTR_VAL(str_headers)) != ZSTR_LEN(str_headers))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2164</td><td><a href="mbstring.c.html#L2164">(-from < mblen)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">254</td><td><a href="mbstring.c.html#L254">(strcmp(encoding_name, "pass") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">317</td><td><a href="mbstring.c.html#L317">(strcasecmp(p1, "auto") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">818</td><td><a href="mbstring.c.html#L818">(FAILURE == php_mb_regex_set_default_mbctype(enc_name))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">837</td><td><a href="mbstring.c.html#L837">(OnUpdateString(entry, new_value, mh_arg1, mh_arg2, mh_arg3, stage) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">871</td><td><a href="mbstring.c.html#L871">(ZSTR_LEN(new_value) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">922</td><td><a href="mbstring.c.html#L922">(ZSTR_LEN(tmp) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1136</td><td><a href="mbstring.c.html#L1136">(MBSTRG(current_detect_order_list) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1141</td><td><a href="mbstring.c.html#L1141">(MBSTRG(outconv) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1211</td><td><a href="mbstring.c.html#L1211">(FAILURE == zend_alter_ini_entry(ini_name, name, PHP_INI_USER, PHP_INI_STAGE_RUNTIME))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1439</td><td><a href="mbstring.c.html#L1439">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_NONE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1442</td><td><a href="mbstring.c.html#L1442">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1445</td><td><a href="mbstring.c.html#L1445">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_ENTITY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1603</td><td><a href="mbstring.c.html#L1603">(sapi_add_header(p, len, 0) != FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1616</td><td><a href="mbstring.c.html#L1616">(MBSTRG(outconv) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1715</td><td><a href="mbstring.c.html#L1715">(ZSTR_LEN(str) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2701</td><td><a href="mbstring.c.html#L2701">(ZEND_NUM_ARGS() < 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3207</td><td><a href="mbstring.c.html#L3207">(Z_TYPE_P(var) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3210</td><td><a href="mbstring.c.html#L3210">(mbfl_encoding_detector_feed(identd, &string))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3254</td><td><a href="mbstring.c.html#L3254">(Z_TYPE_P(var) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3265</td><td><a href="mbstring.c.html#L3265">(Z_TYPE_P(var) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3479</td><td><a href="mbstring.c.html#L3479">(html_numeric_entity_convert(w, convmap, mapsize, &w))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4038</td><td><a href="mbstring.c.html#L4038">(strcasecmp(param_name, "charset") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4289</td><td><a href="mbstring.c.html#L4289">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_NONE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4291</td><td><a href="mbstring.c.html#L4291">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4293</td><td><a href="mbstring.c.html#L4293">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_ENTITY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4355</td><td><a href="mbstring.c.html#L4355">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_NONE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4357</td><td><a href="mbstring.c.html#L4357">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4359</td><td><a href="mbstring.c.html#L4359">(MBSTRG(current_filter_illegal_mode) == MBFL_OUTPUTFILTER_ILLEGAL_MODE_ENTITY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4618</td><td><a href="mbstring.c.html#L4618">(MBSTRG(illegalchars) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="mbstring.c.html#L323">(i < identify_list_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">333</td><td><a href="mbstring.c.html#L333">(arg_num == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">388</td><td><a href="mbstring.c.html#L388">(j < identify_list_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="mbstring.c.html#L458">(convd == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">538</td><td><a href="mbstring.c.html#L538">(NULL == match_data)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="mbstring.c.html#L565">(i < sizeof(php_mb_default_identify_list) / sizeof(php_mb_default_identify_list[0]))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="mbstring.c.html#L614">(*pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="mbstring.c.html#L679">(s > s2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">701</td><td><a href="mbstring.c.html#L701">(no_language == mbfl_no_language_invalid)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">858</td><td><a href="mbstring.c.html#L858">(new_value != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">893</td><td><a href="mbstring.c.html#L893">(new_value == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1207</td><td><a href="mbstring.c.html#L1207">(name == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1235</td><td><a href="mbstring.c.html#L1235">(name == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1266</td><td><a href="mbstring.c.html#L1266">(type == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1291</td><td><a href="mbstring.c.html#L1291">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1299</td><td><a href="mbstring.c.html#L1299">(n == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="mbstring.c.html#L1306">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1341</td><td><a href="mbstring.c.html#L1341">(name == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1374</td><td><a href="mbstring.c.html#L1374">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1391</td><td><a href="mbstring.c.html#L1391">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1451</td><td><a href="mbstring.c.html#L1451">(substitute_character != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="mbstring.c.html#L1492">(no_encoding == mbfl_no_encoding_invalid)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1543</td><td><a href="mbstring.c.html#L1543">(encstr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1702</td><td><a href="mbstring.c.html#L1702">(split_length <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1711</td><td><a href="mbstring.c.html#L1711">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="mbstring.c.html#L1741">(p < last)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1751</td><td><a href="mbstring.c.html#L1751">(p >= last)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1809</td><td><a href="mbstring.c.html#L1809">(chunks != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1835</td><td><a href="mbstring.c.html#L1835">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1880</td><td><a href="mbstring.c.html#L1880">(!haystack.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1914</td><td><a href="mbstring.c.html#L1914">(!haystack.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2023</td><td><a href="mbstring.c.html#L2023">(!haystack.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2112</td><td><a href="mbstring.c.html#L2112">(!haystack.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2146</td><td><a href="mbstring.c.html#L2146">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2162</td><td><a href="mbstring.c.html#L2162">(from >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2175</td><td><a href="mbstring.c.html#L2175">(len >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2211</td><td><a href="mbstring.c.html#L2211">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2222</td><td><a href="mbstring.c.html#L2222">(from < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2224</td><td><a href="mbstring.c.html#L2224">(from < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2232</td><td><a href="mbstring.c.html#L2232">(len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2234</td><td><a href="mbstring.c.html#L2234">(len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2267</td><td><a href="mbstring.c.html#L2267">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2294</td><td><a href="mbstring.c.html#L2294">(!string.encoding)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2307</td><td><a href="mbstring.c.html#L2307">(from < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2316</td><td><a href="mbstring.c.html#L2316">(width < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2320</td><td><a href="mbstring.c.html#L2320">(width < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2369</td><td><a href="mbstring.c.html#L2369">(num_from_encodings == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2515</td><td><a href="mbstring.c.html#L2515">(num_from_encodings > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2527</td><td><a href="mbstring.c.html#L2527">(ret != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2689</td><td><a href="mbstring.c.html#L2689">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2696</td><td><a href="mbstring.c.html#L2696">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2717</td><td><a href="mbstring.c.html#L2717">(ret == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2731</td><td><a href="mbstring.c.html#L2731">(*encodings)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2754</td><td><a href="mbstring.c.html#L2754">(*alias)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2788</td><td><a href="mbstring.c.html#L2788">(charset_name != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2795</td><td><a href="mbstring.c.html#L2795">(lang != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2801</td><td><a href="mbstring.c.html#L2801">(trans_enc_name != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2931</td><td><a href="mbstring.c.html#L2931">(c == '\'')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2934</td><td><a href="mbstring.c.html#L2934">(c == '"')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2977</td><td><a href="mbstring.c.html#L2977">(c == 0x3001)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2980</td><td><a href="mbstring.c.html#L2980">(c == 0x3002)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2983</td><td><a href="mbstring.c.html#L2983">(c == 0x300C)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2986</td><td><a href="mbstring.c.html#L2986">(c == 0x300D)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2989</td><td><a href="mbstring.c.html#L2989">(c == 0x309B)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2992</td><td><a href="mbstring.c.html#L2992">(c == 0x309C)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2995</td><td><a href="mbstring.c.html#L2995">(c == 0x30FC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2998</td><td><a href="mbstring.c.html#L2998">(c == 0x30FB)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3118</td><td><a href="mbstring.c.html#L3118">(optstr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3122</td><td><a href="mbstring.c.html#L3122">(p < e)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3126</td><td><a href="mbstring.c.html#L3126">(c == 'A')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3128</td><td><a href="mbstring.c.html#L3128">(c == 'a')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3131</td><td><a href="mbstring.c.html#L3131">(i < sizeof(mb_convert_kana_flags) / sizeof(char))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3223</td><td><a href="mbstring.c.html#L3223">(ht != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3230</td><td><a href="mbstring.c.html#L3230">(*recursion_error)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3258</td><td><a href="mbstring.c.html#L3258">(ret != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3276</td><td><a href="mbstring.c.html#L3276">(ht != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3338</td><td><a href="mbstring.c.html#L3338">(elistsz == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3344</td><td><a href="mbstring.c.html#L3344">(elistsz == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3350</td><td><a href="mbstring.c.html#L3350">(identd != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3352</td><td><a href="mbstring.c.html#L3352">(n < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3385</td><td><a href="mbstring.c.html#L3385">(n < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3436</td><td><a href="mbstring.c.html#L3436">(mapelm < convmap_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3476</td><td><a href="mbstring.c.html#L3476">(i < out_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3487</td><td><a href="mbstring.c.html#L3487">(w == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3492</td><td><a href="mbstring.c.html#L3492">(w > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3497</td><td><a href="mbstring.c.html#L3497">(w > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3542</td><td><a href="mbstring.c.html#L3542">(convmap == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3555</td><td><a href="mbstring.c.html#L3555">(mapelm < convmap_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3615</td><td><a href="mbstring.c.html#L3615">(wchar_buf_offset == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3658</td><td><a href="mbstring.c.html#L3658">(p3 < p2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3660</td><td><a href="mbstring.c.html#L3660">(w <= '9')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3662</td><td><a href="mbstring.c.html#L3662">(w >= 'a')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3695</td><td><a href="mbstring.c.html#L3695">(p3 < p2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3699</td><td><a href="mbstring.c.html#L3699">(value > 0x19999999)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3732</td><td><a href="mbstring.c.html#L3732">(p2 > p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3772</td><td><a href="mbstring.c.html#L3772">(convmap == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3809</td><td><a href="mbstring.c.html#L3809">(icnt > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3812</td><td><a href="mbstring.c.html#L3812">(crlf_state == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3829</td><td><a href="mbstring.c.html#L3829">(crlf_state == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3836</td><td><a href="mbstring.c.html#L3836">(crlf_state == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3844</td><td><a href="mbstring.c.html#L3844">(crlf_state == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3845</td><td><a href="mbstring.c.html#L3845">(state == 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3853</td><td><a href="mbstring.c.html#L3853">(crlf_state == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3872</td><td><a href="mbstring.c.html#L3872">(crlf_state != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3882</td><td><a href="mbstring.c.html#L3882">(crlf_state == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3911</td><td><a href="mbstring.c.html#L3911">(crlf_state == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3923</td><td><a href="mbstring.c.html#L3923">(state == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3929</td><td><a href="mbstring.c.html#L3929">(state == 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3988</td><td><a href="mbstring.c.html#L3988">(lang != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4018</td><td><a href="mbstring.c.html#L4018">(str_headers != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4030</td><td><a href="mbstring.c.html#L4030">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4042</td><td><a href="mbstring.c.html#L4042">(charset != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4079</td><td><a href="mbstring.c.html#L4079">(to_len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4116</td><td><a href="mbstring.c.html#L4116">(pstr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4140</td><td><a href="mbstring.c.html#L4140">(pstr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4149</td><td><a href="mbstring.c.html#L4149">(str_headers != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4164</td><td><a href="mbstring.c.html#L4164">(!suppressed_hdrs.cnt_type)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4168</td><td><a href="mbstring.c.html#L4168">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4174</td><td><a href="mbstring.c.html#L4174">(!suppressed_hdrs.cnt_trans_enc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4177</td><td><a href="mbstring.c.html#L4177">(p == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4205</td><td><a href="mbstring.c.html#L4205">(to_r != to)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4258</td><td><a href="mbstring.c.html#L4258">(lang != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4280</td><td><a href="mbstring.c.html#L4280">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4283</td><td><a href="mbstring.c.html#L4283">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4346</td><td><a href="mbstring.c.html#L4346">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4349</td><td><a href="mbstring.c.html#L4349">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4388</td><td><a href="mbstring.c.html#L4388">(i < out_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4397</td><td><a href="mbstring.c.html#L4397">(i < out_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4538</td><td><a href="mbstring.c.html#L4538">(str_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4545</td><td><a href="mbstring.c.html#L4545">(0 > cp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4546</td><td><a href="mbstring.c.html#L4546">(cp == -2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4584</td><td><a href="mbstring.c.html#L4584">(cp < 0x80)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4586</td><td><a href="mbstring.c.html#L4586">(cp < 0x800)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4591</td><td><a href="mbstring.c.html#L4591">(cp < 0x10000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4641</td><td><a href="mbstring.c.html#L4641">(ret == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4687</td><td><a href="mbstring.c.html#L4687">(i < nentries)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4724</td><td><a href="mbstring.c.html#L4724">(nbytes == (size_t)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4728</td><td><a href="mbstring.c.html#L4728">(nb == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4733</td><td><a href="mbstring.c.html#L4733">(nb == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4743</td><td><a href="mbstring.c.html#L4743">(bcnt > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4748</td><td><a href="mbstring.c.html#L4748">(bcnt < nbytes_char)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4775</td><td><a href="mbstring.c.html#L4775">(!haystack.val)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4786</td><td><a href="mbstring.c.html#L4786">(!needle.val)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4088</td><td><a href="mbstring.c.html#L4088">(iscntrl((unsigned char)to_r[i]))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1594</td><td><a href="mbstring.c.html#L1594">(SG(sapi_headers).send_default_content_type)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4087</td><td><a href="mbstring.c.html#L4087">(to_r[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4424</td><td><a href="mbstring.c.html#L4424">(!php_mb_check_encoding(ZSTR_VAL(key), ZSTR_LEN(key), encoding))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4431</td><td><a href="mbstring.c.html#L4431">(!php_mb_check_encoding(Z_STRVAL_P(entry), Z_STRLEN_P(entry), encoding))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4793</td><td><a href="mbstring.c.html#L4793">(haystack.val)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4797</td><td><a href="mbstring.c.html#L4797">(needle.val)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4437</td><td><a href="mbstring.c.html#L4437">(!php_mb_check_encoding_recursive(Z_ARRVAL_P(entry), encoding))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="mbstring.c.html#L376">(UNEXPECTED(!encoding_str))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">972</td><td><a href="mbstring.c.html#L972">(!MBSTRG(internal_encoding_set))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">977</td><td><a href="mbstring.c.html#L977">(!MBSTRG(http_output_set))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">982</td><td><a href="mbstring.c.html#L982">(!MBSTRG(http_input_set))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1469</td><td><a href="mbstring.c.html#L1469">(!php_mb_check_code_point(substitute_codepoint))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1885</td><td><a href="mbstring.c.html#L1885">(!mbfl_is_error(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1919</td><td><a href="mbstring.c.html#L1919">(!mbfl_is_error(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1954</td><td><a href="mbstring.c.html#L1954">(!mbfl_is_error(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1989</td><td><a href="mbstring.c.html#L1989">(!mbfl_is_error(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2036</td><td><a href="mbstring.c.html#L2036">(!mbfl_is_error(n))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">227</td><td><a href="mbstring.c.html#L227">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">318</td><td><a href="mbstring.c.html#L318">(!included_auto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="mbstring.c.html#L331">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">382</td><td><a href="mbstring.c.html#L382">(!included_auto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">434</td><td><a href="mbstring.c.html#L434">(!list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="mbstring.c.html#L717">(!new_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">774</td><td><a href="mbstring.c.html#L774">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">917</td><td><a href="mbstring.c.html#L917">(!new_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1240</td><td><a href="mbstring.c.html#L1240">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1346</td><td><a href="mbstring.c.html#L1346">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1522</td><td><a href="mbstring.c.html#L1522">(!track_vars_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1948</td><td><a href="mbstring.c.html#L1948">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1983</td><td><a href="mbstring.c.html#L1983">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2379</td><td><a href="mbstring.c.html#L2379">(!from_encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2395</td><td><a href="mbstring.c.html#L2395">(!input)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2493</td><td><a href="mbstring.c.html#L2493">(!to_encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2519</td><td><a href="mbstring.c.html#L2519">(!num_from_encodings)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2569</td><td><a href="mbstring.c.html#L2569">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2602</td><td><a href="mbstring.c.html#L2602">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2633</td><td><a href="mbstring.c.html#L2633">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2748</td><td><a href="mbstring.c.html#L2748">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2790</td><td><a href="mbstring.c.html#L2790">(!charset)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3055</td><td><a href="mbstring.c.html#L3055">(!out_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3077</td><td><a href="mbstring.c.html#L3077">(!in_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3193</td><td><a href="mbstring.c.html#L3193">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3318</td><td><a href="mbstring.c.html#L3318">(!to_encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3367</td><td><a href="mbstring.c.html#L3367">(!from_encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3537</td><td><a href="mbstring.c.html#L3537">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3767</td><td><a href="mbstring.c.html#L3767">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4046</td><td><a href="mbstring.c.html#L4046">(!_tran_cs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4472</td><td><a href="mbstring.c.html#L4472">(!encoding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4500</td><td><a href="mbstring.c.html#L4500">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4565</td><td><a href="mbstring.c.html#L4565">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4663</td><td><a href="mbstring.c.html#L4663">(!enc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">381</td><td><a href="mbstring.c.html#L381">(zend_string_equals_literal_ci(encoding_str, "auto"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="mbstring.c.html#L718">(MBSTRG(detect_order_list))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="mbstring.c.html#L730">(MBSTRG(detect_order_list))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="mbstring.c.html#L745">(MBSTRG(http_input_list))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">859</td><td><a href="mbstring.c.html#L859">(zend_string_equals_literal_ci(new_value, "none"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="mbstring.c.html#L862">(zend_string_equals_literal_ci(new_value, "long"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">865</td><td><a href="mbstring.c.html#L865">(zend_string_equals_literal_ci(new_value, "entity"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">899</td><td><a href="mbstring.c.html#L899">(MBSTRG(encoding_translation))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="mbstring.c.html#L929">(MBSTRG(http_output_conv_mimetypes))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1069</td><td><a href="mbstring.c.html#L1069">(MBSTRG(encoding_translation))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1154</td><td><a href="mbstring.c.html#L1154">(MBSTRG(last_used_encoding_name))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1397</td><td><a href="mbstring.c.html#L1397">(MBSTRG(current_detect_order_list))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1452</td><td><a href="mbstring.c.html#L1452">(zend_string_equals_literal_ci(substitute_character, "none"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1456</td><td><a href="mbstring.c.html#L1456">(zend_string_equals_literal_ci(substitute_character, "long"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1460</td><td><a href="mbstring.c.html#L1460">(zend_string_equals_literal_ci(substitute_character, "entity"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1572</td><td><a href="mbstring.c.html#L1572">(MBSTRG(outconv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2399</td><td><a href="mbstring.c.html#L2399">(GC_IS_RECURSIVE(input))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3214</td><td><a href="mbstring.c.html#L3214">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3215</td><td><a href="mbstring.c.html#L3215">(Z_IS_RECURSIVE_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3225</td><td><a href="mbstring.c.html#L3225">(mb_recursive_encoder_detector_feed(identd, entry, recursion_error))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3226</td><td><a href="mbstring.c.html#L3226">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3231</td><td><a href="mbstring.c.html#L3231">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3239</td><td><a href="mbstring.c.html#L3239">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3268</td><td><a href="mbstring.c.html#L3268">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3269</td><td><a href="mbstring.c.html#L3269">(Z_IS_RECURSIVE_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3278</td><td><a href="mbstring.c.html#L3278">(mb_recursive_convert_variable(convd, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3279</td><td><a href="mbstring.c.html#L3279">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3287</td><td><a href="mbstring.c.html#L3287">(Z_REFCOUNTED_P(var))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3668</td><td><a href="mbstring.c.html#L3668">(html_numeric_entity_deconvert(value, convmap, mapsize, converted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3706</td><td><a href="mbstring.c.html#L3706">(html_numeric_entity_deconvert(value, convmap, mapsize, converted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4011</td><td><a href="mbstring.c.html#L4011">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4246</td><td><a href="mbstring.c.html#L4246">(MBSTRG(current_internal_encoding))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4249</td><td><a href="mbstring.c.html#L4249">(MBSTRG(http_input_identify))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4252</td><td><a href="mbstring.c.html#L4252">(MBSTRG(current_http_output_encoding))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4270</td><td><a href="mbstring.c.html#L4270">(MBSTRG(encoding_translation))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4298</td><td><a href="mbstring.c.html#L4298">(MBSTRG(strict_detection))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4303</td><td><a href="mbstring.c.html#L4303">(zend_string_equals_literal_ci(type, "internal_encoding"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4304</td><td><a href="mbstring.c.html#L4304">(MBSTRG(current_internal_encoding))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4307</td><td><a href="mbstring.c.html#L4307">(zend_string_equals_literal_ci(type, "http_input"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4308</td><td><a href="mbstring.c.html#L4308">(MBSTRG(http_input_identify))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4311</td><td><a href="mbstring.c.html#L4311">(zend_string_equals_literal_ci(type, "http_output"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4312</td><td><a href="mbstring.c.html#L4312">(MBSTRG(current_http_output_encoding))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4315</td><td><a href="mbstring.c.html#L4315">(zend_string_equals_literal_ci(type, "http_output_conv_mimetypes"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4319</td><td><a href="mbstring.c.html#L4319">(zend_string_equals_literal_ci(type, "mail_charset"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4323</td><td><a href="mbstring.c.html#L4323">(zend_string_equals_literal_ci(type, "mail_header_encoding"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4327</td><td><a href="mbstring.c.html#L4327">(zend_string_equals_literal_ci(type, "mail_body_encoding"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4331</td><td><a href="mbstring.c.html#L4331">(zend_string_equals_literal_ci(type, "illegal_chars"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4333</td><td><a href="mbstring.c.html#L4333">(zend_string_equals_literal_ci(type, "encoding_translation"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4334</td><td><a href="mbstring.c.html#L4334">(MBSTRG(encoding_translation))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4339</td><td><a href="mbstring.c.html#L4339">(zend_string_equals_literal_ci(type, "language"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4343</td><td><a href="mbstring.c.html#L4343">(zend_string_equals_literal_ci(type, "detect_order"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4354</td><td><a href="mbstring.c.html#L4354">(zend_string_equals_literal_ci(type, "substitute_character"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4364</td><td><a href="mbstring.c.html#L4364">(zend_string_equals_literal_ci(type, "strict_detection"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4365</td><td><a href="mbstring.c.html#L4365">(MBSTRG(strict_detection))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4416</td><td><a href="mbstring.c.html#L4416">(GC_IS_RECURSIVE(vars))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4505</td><td><a href="mbstring.c.html#L4505">(php_mb_is_unsupported_no_encoding(no_enc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4570</td><td><a href="mbstring.c.html#L4570">(php_mb_is_unsupported_no_encoding(no_enc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4579</td><td><a href="mbstring.c.html#L4579">(php_mb_is_no_encoding_utf8(no_enc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="mbstring.c.html#L218">(encoding_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">242</td><td><a href="mbstring.c.html#L242">(last_encoding_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">303</td><td><a href="mbstring.c.html#L303">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">395</td><td><a href="mbstring.c.html#L395">(encoding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">684</td><td><a href="mbstring.c.html#L684">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">686</td><td><a href="mbstring.c.html#L686">(s2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">756</td><td><a href="mbstring.c.html#L756">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">786</td><td><a href="mbstring.c.html#L786">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">808</td><td><a href="mbstring.c.html#L808">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">833</td><td><a href="mbstring.c.html#L833">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1322</td><td><a href="mbstring.c.html#L1322">(encoding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1381</td><td><a href="mbstring.c.html#L1381">(order_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1438</td><td><a href="mbstring.c.html#L1438">(substitute_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1601</td><td><a href="mbstring.c.html#L1601">(charset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1609</td><td><a href="mbstring.c.html#L1609">(send_text_mimetype)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1635</td><td><a href="mbstring.c.html#L1635">(last_feed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1646</td><td><a href="mbstring.c.html#L1646">(last_feed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2037</td><td><a href="mbstring.c.html#L2037">(part)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2173</td><td><a href="mbstring.c.html#L2173">(len_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2215</td><td><a href="mbstring.c.html#L2215">(len_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2325</td><td><a href="mbstring.c.html#L2325">(trimmarker)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2408</td><td><a href="mbstring.c.html#L2408">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2428</td><td><a href="mbstring.c.html#L2428">(chash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2439</td><td><a href="mbstring.c.html#L2439">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2445</td><td><a href="mbstring.c.html#L2445">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2468</td><td><a href="mbstring.c.html#L2468">(shift)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2497</td><td><a href="mbstring.c.html#L2497">(from_encodings_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2502</td><td><a href="mbstring.c.html#L2502">(from_encodings_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2525</td><td><a href="mbstring.c.html#L2525">(input_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2539</td><td><a href="mbstring.c.html#L2539">(free_from_encodings)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2676</td><td><a href="mbstring.c.html#L2676">(encoding_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2680</td><td><a href="mbstring.c.html#L2680">(encoding_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3047</td><td><a href="mbstring.c.html#L3047">(in_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3063</td><td><a href="mbstring.c.html#L3063">(second)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3066</td><td><a href="mbstring.c.html#L3066">(consumed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3081</td><td><a href="mbstring.c.html#L3081">(second)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3328</td><td><a href="mbstring.c.html#L3328">(from_enc_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3360</td><td><a href="mbstring.c.html#L3360">(recursion_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3390</td><td><a href="mbstring.c.html#L3390">(recursion_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3399</td><td><a href="mbstring.c.html#L3399">(recursion_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3468</td><td><a href="mbstring.c.html#L3468">(in_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3482</td><td><a href="mbstring.c.html#L3482">(hex)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3491</td><td><a href="mbstring.c.html#L3491">(hex)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3604</td><td><a href="mbstring.c.html#L3604">(in_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4003</td><td><a href="mbstring.c.html#L4003">(str_headers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4009</td><td><a href="mbstring.c.html#L4009">(headers_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4189</td><td><a href="mbstring.c.html#L4189">(force_extra_parameters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4191</td><td><a href="mbstring.c.html#L4191">(extra_cmd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4201</td><td><a href="mbstring.c.html#L4201">(extra_cmd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4208</td><td><a href="mbstring.c.html#L4208">(subject_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4211</td><td><a href="mbstring.c.html#L4211">(message_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4216</td><td><a href="mbstring.c.html#L4216">(str_headers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4394</td><td><a href="mbstring.c.html#L4394">(length)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4423</td><td><a href="mbstring.c.html#L4423">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4476</td><td><a href="mbstring.c.html#L4476">(input_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4478</td><td><a href="mbstring.c.html#L4478">(input_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4705</td><td><a href="mbstring.c.html#L4705">(enc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4707</td><td><a href="mbstring.c.html#L4707">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4791</td><td><a href="mbstring.c.html#L4791">(0)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\relay.c Ctrl Expressions (311) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\relay.c Ctrl Expressions (311) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\relay.c Ctrl Expressions (311)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">667</td><td><a href="relay.c.html#L667">(origin_circ->remaining_relay_early_cells > 0 && (<span style='background-color:#741da3;'>relay_command == RELAY_COMMAND_EXTEND || relay_command == RELAY_COMMAND_EXTEND2 || cpath_layer != origin_circ->cpath</span>))</a></td><td class="num">1036.75</td></tr>
+      <tr><td class="num line">318</td><td><a href="relay.c.html#L318">(<span style='background-color:#741da3;'>!CIRCUIT_IS_ORIGIN(circ) && TO_OR_CIRCUIT(circ)->rend_splice && cell_direction == CELL_DIRECTION_OUT</span>)</a></td><td class="num">1033.00</td></tr>
+      <tr><td class="num line">2446</td><td><a href="relay.c.html#L2446">(<span style='background-color:#741da3;'>conn->base_.marked_for_close || conn->package_window <= 0 || conn->xoff_received</span>)</a></td><td class="num">1016.50</td></tr>
+      <tr><td class="num line">2458</td><td><a href="relay.c.html#L2458">(<span style='background-color:#741da3;'>conn->base_.marked_for_close || conn->package_window <= 0 || conn->xoff_received</span>)</a></td><td class="num">1016.50</td></tr>
+      <tr><td class="num line">1031</td><td><a href="relay.c.html#L1031">(<span style='background-color:#741da3;'>node_exit_policy_is_exact(node, family) && asked_for_family != -1 && !conn->chosen_exit_name</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">2519</td><td><a href="relay.c.html#L2519">(<span style='background-color:#741da3;'>packaged_this_round && packaged_this_round < max_to_package && n_streams_left</span>)</a></td><td class="num">1008.50</td></tr>
+      <tr><td class="num line">887</td><td><a href="relay.c.html#L887">((tor_addr_family(&addr) == AF_INET && !conn->entry_cfg.ipv4_traffic) || (tor_addr_family(&addr) == AF_INET6 && !conn->entry_cfg.ipv6_traffic))</a></td><td class="num">73.00</td></tr>
+      <tr><td class="num line">1459</td><td><a href="relay.c.html#L1459">(TO_CONN(conn)->linked_conn && TO_CONN(conn)->linked_conn->type == CONN_TYPE_DIR)</a></td><td class="num">69.25</td></tr>
+      <tr><td class="num line">1642</td><td><a href="relay.c.html#L1642">(circ->purpose == CIRCUIT_PURPOSE_S_REND_JOINED && layer_hint != TO_ORIGIN_CIRCUIT(circ)->cpath->prev)</a></td><td class="num">51.25</td></tr>
+      <tr><td class="num line">1421</td><td><a href="relay.c.html#L1421">(tor_addr_is_null(&addr) || (get_options()->ClientDNSRejectInternalAddresses && tor_addr_is_internal(&addr, 0)))</a></td><td class="num">50.25</td></tr>
+      <tr><td class="num line">3061</td><td><a href="relay.c.html#L3061">(get_options()->CellStatistics || get_options()->TestingEnableCellStatsEvent)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">2094</td><td><a href="relay.c.html#L2094">(conn->base_.type == CONN_TYPE_EXIT && (conn->base_.state == EXIT_CONN_STATE_CONNECTING || conn->base_.state == EXIT_CONN_STATE_RESOLVING) && rh.command == RELAY_COMMAND_DATA)</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">2805</td><td><a href="relay.c.html#L2805">(hs_cache_total > get_options()->MaxMemInQueues / 5)</a></td><td class="num">43.85</td></tr>
+      <tr><td class="num line">2812</td><td><a href="relay.c.html#L2812">(geoip_client_cache_total > get_options()->MaxMemInQueues / 5)</a></td><td class="num">43.85</td></tr>
+      <tr><td class="num line">2820</td><td><a href="relay.c.html#L2820">(dns_cache_total > get_options()->MaxMemInQueues / 5)</a></td><td class="num">43.85</td></tr>
+      <tr><td class="num line">1887</td><td><a href="relay.c.html#L1887">((reason = circuit_finish_handshake(TO_ORIGIN_CIRCUIT(circ), &extended_cell.created_cell)) < 0)</a></td><td class="num">40.25</td></tr>
+      <tr><td class="num line">1432</td><td><a href="relay.c.html#L1432">((family == AF_INET && !entry_conn->entry_cfg.ipv4_traffic) || (family == AF_INET6 && !entry_conn->entry_cfg.ipv6_traffic))</a></td><td class="num">39.50</td></tr>
+      <tr><td class="num line">195</td><td><a href="relay.c.html#L195">(!channel_is_client(or_circ->p_chan) || (channel_is_client(or_circ->p_chan) && circ->n_chan))</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">1880</td><td><a href="relay.c.html#L1880">(extended_cell_parse(&extended_cell, rh->command, (const uint8_t*)cell->payload + RELAY_HEADER_SIZE, rh->length) < 0)</a></td><td class="num">32.60</td></tr>
+      <tr><td class="num line">897</td><td><a href="relay.c.html#L897">(get_options()->ClientDNSRejectInternalAddresses && tor_addr_is_internal(&addr, 0))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">1322</td><td><a href="relay.c.html#L1322">(addr->hostname == NULL && tor_addr_is_internal(&addr->addr, 0))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">3068</td><td><a href="relay.c.html#L3068">(get_options()->CellStatistics && !CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">326</td><td><a href="relay.c.html#L326">((reason = circuit_receive_relay_cell(cell, TO_CIRCUIT(splice_), CELL_DIRECTION_IN)) < 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1473</td><td><a href="relay.c.html#L1473">(TO_DIR_CONN(dirconn)->router_purpose == ROUTER_PURPOSE_GENERAL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1894</td><td><a href="relay.c.html#L1894">((reason = circuit_send_next_onion_skin(TO_ORIGIN_CIRCUIT(circ))) < 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2796</td><td><a href="relay.c.html#L2796">(alloc >= get_options()->MaxMemInQueues_low_threshold)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2798</td><td><a href="relay.c.html#L2798">(alloc >= get_options()->MaxMemInQueues)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1003</td><td><a href="relay.c.html#L1003">(!ENTRY_TO_CONN(conn)->marked_for_close)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="relay.c.html#L447">(rh.stream_id == tmpconn->stream_id && !tmpconn->base_.marked_for_close && tmpconn->cpath_layer == layer_hint)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">1246</td><td><a href="relay.c.html#L1246">(tor_addr_family(&addr->addr) == AF_INET)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1250</td><td><a href="relay.c.html#L1250">(tor_addr_family(&addr->addr) == AF_INET6)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2664</td><td><a href="relay.c.html#L2664">((cell = TOR_SIMPLEQ_FIRST(&queue->head)))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2698</td><td><a href="relay.c.html#L2698">((cell = TOR_SIMPLEQ_FIRST(&queue->head)))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1319</td><td><a href="relay.c.html#L1319">(get_options()->ClientDNSRejectInternalAddresses)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">3074</td><td><a href="relay.c.html#L3074">(get_options()->TestingEnableCellStatsEvent)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">2093</td><td><a href="relay.c.html#L2093">(conn && !connection_state_is_open(TO_CONN(conn)))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="relay.c.html#L176">(circ->n_chan->channel_usage == CHANNEL_USED_FOR_FULL_CIRCS && cell->command == CELL_RELAY)</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">457</td><td><a href="relay.c.html#L457">(rh.stream_id == tmpconn->stream_id && !tmpconn->base_.marked_for_close)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">467</td><td><a href="relay.c.html#L467">(rh.stream_id == tmpconn->stream_id && !tmpconn->base_.marked_for_close)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1391</td><td><a href="relay.c.html#L1391">(conn->base_.type == CONN_TYPE_AP && rh->command == RELAY_COMMAND_CONNECTED)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1497</td><td><a href="relay.c.html#L1497">(conn->base_.type == CONN_TYPE_AP && rh->command == RELAY_COMMAND_RESOLVED)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1654</td><td><a href="relay.c.html#L1654">(rh->command == RELAY_COMMAND_BEGIN_DIR && circ->purpose != CIRCUIT_PURPOSE_S_REND_JOINED)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">869</td><td><a href="relay.c.html#L869">(rh->length == 5 || rh->length == 9)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="relay.c.html#L874">(rh->length == 17 || rh->length == 21)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1815</td><td><a href="relay.c.html#L1815">(entry_conn->socks_request && !entry_conn->socks_request->has_finished)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">3092</td><td><a href="relay.c.html#L3092">(queue->n == 0 && chan->dirreq_id)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2485</td><td><a href="relay.c.html#L2485">(conn->base_.marked_for_close || conn->package_window <= 0)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">2102</td><td><a href="relay.c.html#L2102">(rh.stream_id == 0 && rh.command == RELAY_COMMAND_DATA)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1376</td><td><a href="relay.c.html#L1376">(CIRCUIT_IS_ORIGIN(circ) && conn->base_.type == CONN_TYPE_AP)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1750</td><td><a href="relay.c.html#L1750">(relay_crypt_from_last_hop(ocirc, layer_hint) && connection_half_edge_is_valid_data(ocirc->half_streams, rh->stream_id))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1769</td><td><a href="relay.c.html#L1769">(relay_crypt_from_last_hop(ocirc, layer_hint) && connection_half_edge_is_valid_data(ocirc->half_streams, rh->stream_id))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1790</td><td><a href="relay.c.html#L1790">(relay_crypt_from_last_hop(ocirc, layer_hint) && connection_half_edge_is_valid_end(ocirc->half_streams, rh->stream_id))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2001</td><td><a href="relay.c.html#L2001">(relay_crypt_from_last_hop(ocirc, layer_hint) && connection_half_edge_is_valid_resolved(ocirc->half_streams, rh->stream_id))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1343</td><td><a href="relay.c.html#L1343">(conn->on_circuit && CIRCUIT_IS_ORIGIN(conn->on_circuit))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">3344</td><td><a href="relay.c.html#L3344">(chan->cmux && circuitmux_is_circuit_attached(chan->cmux, circ))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1844</td><td><a href="relay.c.html#L1844">(cell->command != CELL_RELAY_EARLY && !networkstatus_get_param(NULL, "AllowNonearlyExtend", 0, 0, 1))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3244</td><td><a href="relay.c.html#L3244">(!streams_blocked && queue->n >= cell_queue_highwatermark())</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="relay.c.html#L1852">((m = rate_limit_log(&early_warning_limit, approx_time())))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1713</td><td><a href="relay.c.html#L1713">(CIRCUIT_IS_ORIGIN(circ) && rh->length > 0)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3126</td><td><a href="relay.c.html#L3126">(streams_blocked && queue->n <= cell_queue_lowwatermark())</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">656</td><td><a href="relay.c.html#L656">(relay_command == RELAY_COMMAND_END && circ->dirreq_id)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">660</td><td><a href="relay.c.html#L660">(cell_direction == CELL_DIRECTION_OUT && circ->n_chan)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="relay.c.html#L779">(linked_conn && linked_conn->type == CONN_TYPE_DIR)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1636</td><td><a href="relay.c.html#L1636">(layer_hint && circ->purpose != CIRCUIT_PURPOSE_S_REND_JOINED)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1733</td><td><a href="relay.c.html#L1733">(linked_conn && linked_conn->type == CONN_TYPE_DIR)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2931</td><td><a href="relay.c.html#L2931">(stream_id && edge->stream_id != stream_id)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1247</td><td><a href="relay.c.html#L1247">(!addr_ipv4 && conn->entry_cfg.ipv4_traffic)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1251</td><td><a href="relay.c.html#L1251">(!addr_ipv6 && conn->entry_cfg.ipv6_traffic)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">341</td><td><a href="relay.c.html#L341">(or_circ->n_cells_discarded_at_end++ == 1)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">677</td><td><a href="relay.c.html#L677">(origin_circ->remaining_relay_early_cells-- == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">926</td><td><a href="relay.c.html#L926">(conn->chosen_exit_optional || conn->chosen_exit_retries)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2449</td><td><a href="relay.c.html#L2449">(!layer_hint || conn->cpath_layer == layer_hint)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2461</td><td><a href="relay.c.html#L2461">(!layer_hint || conn->cpath_layer == layer_hint)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2487</td><td><a href="relay.c.html#L2487">(!layer_hint || conn->cpath_layer == layer_hint)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2243</td><td><a href="relay.c.html#L2243">(max_cells && *max_cells <= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">955</td><td><a href="relay.c.html#L955">(client_dns_incr_failures(conn->socks_request->address) < MAX_RESOLVE_FAILURES)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">198</td><td><a href="relay.c.html#L198">(or_circ->p_chan->channel_usage < CHANNEL_USED_FOR_FULL_CIRCS)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1258</td><td><a href="relay.c.html#L1258">(conn->socks_request->command == SOCKS_COMMAND_RESOLVE_PTR)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1523</td><td><a href="relay.c.html#L1523">(layer_hint != circ->cpath->prev)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">236</td><td><a href="relay.c.html#L236">(relay_decrypt_cell(circ, cell, cell_direction, &layer_hint, &recognized) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1409</td><td><a href="relay.c.html#L1409">(connected_cell_parse(rh, cell, &addr, &ttl) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">685</td><td><a href="relay.c.html#L685">(relay_command == RELAY_COMMAND_EXTEND || relay_command == RELAY_COMMAND_EXTEND2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">755</td><td><a href="relay.c.html#L755">(fromconn->base_.type == CONN_TYPE_AP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">823</td><td><a href="relay.c.html#L823">(reason == END_STREAM_REASON_TORPROTOCOL || reason == END_STREAM_REASON_DESTROY)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1189</td><td><a href="relay.c.html#L1189">(answer_type == RESOLVED_TYPE_ERROR_TRANSIENT || answer_type == RESOLVED_TYPE_ERROR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1304</td><td><a href="relay.c.html#L1304">(conn->base_.state != AP_CONN_STATE_RESOLVE_WAIT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1397</td><td><a href="relay.c.html#L1397">(conn->base_.state != AP_CONN_STATE_CONNECT_WAIT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1566</td><td><a href="relay.c.html#L1566">(connection_half_edge_is_valid_sendme(ocirc->half_streams, rh->stream_id))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1688</td><td><a href="relay.c.html#L1688">(connection_half_edge_is_valid_data(ocirc->half_streams, rh->stream_id))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1813</td><td><a href="relay.c.html#L1813">(conn->base_.type == CONN_TYPE_AP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1958</td><td><a href="relay.c.html#L1958">(connection_half_edge_is_valid_connected(ocirc->half_streams, rh->stream_id))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1201</td><td><a href="relay.c.html#L1201">(errcode && smartlist_len(addrs) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="relay.c.html#L1330">(orig_len && smartlist_len(resolved_addresses) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3302</td><td><a href="relay.c.html#L3302">(payload_len < 2 + payload[1])</a></td><td class="num">6.35</td></tr>
+      <tr><td class="num line">1452</td><td><a href="relay.c.html#L1452">(!entry_conn->socks_request->has_finished)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1157</td><td><a href="relay.c.html#L1157">(remaining < 2 + answer_len + 4)</a></td><td class="num">5.70</td></tr>
+      <tr><td class="num line">3219</td><td><a href="relay.c.html#L3219">(PREDICT_UNLIKELY(queue->n >= max_circuit_cell_queue_size))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">197</td><td><a href="relay.c.html#L197">(cell->command == CELL_RELAY_EARLY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">201</td><td><a href="relay.c.html#L201">(cell->command == CELL_RELAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">252</td><td><a href="relay.c.html#L252">(circ->purpose == CIRCUIT_PURPOSE_PATH_BIAS_TESTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="relay.c.html#L308">(circ->purpose == CIRCUIT_PURPOSE_PATH_BIAS_TESTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">693</td><td><a href="relay.c.html#L693">(i < origin_circ->relay_early_cells_sent)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">822</td><td><a href="relay.c.html#L822">(rh->length > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">847</td><td><a href="relay.c.html#L847">(rh->length == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">866</td><td><a href="relay.c.html#L866">(rh->length >= 5)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="relay.c.html#L872">(rh->length == 9)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="relay.c.html#L877">(rh->length == 21)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">912</td><td><a href="relay.c.html#L912">(strcmp(conn->socks_request->address, new_addr))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1081</td><td><a href="relay.c.html#L1081">(rh->length == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1083</td><td><a href="relay.c.html#L1083">(rh->length < 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1091</td><td><a href="relay.c.html#L1091">(rh->length >= 8)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1097</td><td><a href="relay.c.html#L1097">(rh->length < 25)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1143</td><td><a href="relay.c.html#L1143">(rh->length > RELAY_PAYLOAD_SIZE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1375</td><td><a href="relay.c.html#L1375">(rh->command == RELAY_COMMAND_END)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1681</td><td><a href="relay.c.html#L1681">(rh->stream_id == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1850</td><td><a href="relay.c.html#L1850">(cell->command == CELL_RELAY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1984</td><td><a href="relay.c.html#L1984">(circ->purpose != CIRCUIT_PURPOSE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2194</td><td><a href="relay.c.html#L2194">(on_circuit->send_randomness_after_n_cells == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2258</td><td><a href="relay.c.html#L2258">(conn->package_window <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2560</td><td><a href="relay.c.html#L2560">(conn->cpath_layer == layer_hint)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2919</td><td><a href="relay.c.html#L2919">(circ->n_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2934</td><td><a href="relay.c.html#L2934">(edge->edge_blocked_on_circ != block)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3031</td><td><a href="relay.c.html#L3031">(circ->n_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3042</td><td><a href="relay.c.html#L3042">(queue->n == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3082</td><td><a href="relay.c.html#L3082">(circ->n_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3121</td><td><a href="relay.c.html#L3121">(queue->n == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3253</td><td><a href="relay.c.html#L3253">(queue->n == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3330</td><td><a href="relay.c.html#L3330">(circ->n_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1824</td><td><a href="relay.c.html#L1824">(!conn->base_.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">853</td><td><a href="relay.c.html#L853">(edge_reason_is_retriable(reason) && !connection_edge_is_rendezvous_stream(edge_conn))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">460</td><td><a href="relay.c.html#L460">(cell_direction == CELL_DIRECTION_OUT || connection_edge_is_rendezvous_stream(tmpconn))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">709</td><td><a href="relay.c.html#L709">(circuit_package_relay_cell(&cell, circ, cell_direction, cpath_layer, stream_id, filename, lineno) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1099</td><td><a href="relay.c.html#L1099">(get_uint8(payload + 4) != 6)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1416</td><td><a href="relay.c.html#L1416">(tor_addr_family(&addr) != AF_UNSPEC)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2405</td><td><a href="relay.c.html#L2405">(cell_queue_highwatermark() - cells_on_queue < max_to_package)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">746</td><td><a href="relay.c.html#L746">(fromconn->base_.marked_for_close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1272</td><td><a href="relay.c.html#L1272">(conn->entry_cfg.prefer_ipv6)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2236</td><td><a href="relay.c.html#L2236">(conn->base_.marked_for_close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2307</td><td><a href="relay.c.html#L2307">(sending_optimistically && !sending_from_optimistic)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2341</td><td><a href="relay.c.html#L2341">(*max_cells <= 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">173</td><td><a href="relay.c.html#L173">(BUG(!circ->n_chan))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">192</td><td><a href="relay.c.html#L192">(BUG(!or_circ->p_chan))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2295</td><td><a href="relay.c.html#L2295">(!buf_datalen(entry_conn->sending_optimistic_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="relay.c.html#L946">(!conn->chosen_exit_optional)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1547</td><td><a href="relay.c.html#L1547">(!rh->stream_id)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1822</td><td><a href="relay.c.html#L1822">(!conn->end_reason)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2310</td><td><a href="relay.c.html#L2310">(!entry_conn->pending_optimistic_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2939</td><td><a href="relay.c.html#L2939">(!conn->read_event)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3046</td><td><a href="relay.c.html#L3046">(!circ->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3084</td><td><a href="relay.c.html#L3084">(!circ->testing_cell_stats)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3307</td><td><a href="relay.c.html#L3307">(payload[1] != 4)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3312</td><td><a href="relay.c.html#L3312">(payload[1] != 16)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2066</td><td><a href="relay.c.html#L2066">(rh.length > RELAY_PAYLOAD_SIZE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2072</td><td><a href="relay.c.html#L2072">(rh.stream_id == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3247</td><td><a href="relay.c.html#L3247">(streams_blocked && fromstream)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">233</td><td><a href="relay.c.html#L233">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="relay.c.html#L372">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="relay.c.html#L768">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">962</td><td><a href="relay.c.html#L962">(conn->chosen_exit_optional)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="relay.c.html#L985">(conn->chosen_exit_optional)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1242</td><td><a href="relay.c.html#L1242">(addr->hostname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1481</td><td><a href="relay.c.html#L1481">(entry_conn->pending_optimistic_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1718</td><td><a href="relay.c.html#L1718">(conn->hs_ident)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1839</td><td><a href="relay.c.html#L1839">(rh->stream_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1909</td><td><a href="relay.c.html#L1909">(circ->n_hop)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1910</td><td><a href="relay.c.html#L1910">(circ->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1917</td><td><a href="relay.c.html#L1917">(circ->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3206</td><td><a href="relay.c.html#L3206">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3238</td><td><a href="relay.c.html#L3238">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2452</td><td><a href="relay.c.html#L2452">(connection_get_inbuf_len(TO_CONN(conn)) > 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2464</td><td><a href="relay.c.html#L2464">(connection_get_inbuf_len(TO_CONN(conn)) > 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">253</td><td><a href="relay.c.html#L253">(pathbias_check_probe_response(circ, cell) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">880</td><td><a href="relay.c.html#L880">(tor_addr_is_null(&addr))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">940</td><td><a href="relay.c.html#L940">(connection_ap_detach_retriable(conn, circ, control_reason) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">967</td><td><a href="relay.c.html#L967">(connection_ap_detach_retriable(conn, circ, control_reason) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">990</td><td><a href="relay.c.html#L990">(connection_ap_detach_retriable(conn, circ, control_reason) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1312</td><td><a href="relay.c.html#L1312">(resolved_cell_parse(cell, rh, resolved_addresses, &errcode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1490</td><td><a href="relay.c.html#L1490">(connection_edge_package_raw_inbuf(conn, 1, NULL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1599</td><td><a href="relay.c.html#L1599">(connection_edge_package_raw_inbuf(conn, 1, NULL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1627</td><td><a href="relay.c.html#L1627">(circpad_check_received_cell(cell, circ, layer_hint, rh) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1671</td><td><a href="relay.c.html#L1671">(sendme_circuit_data_received(circ, layer_hint) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1706</td><td><a href="relay.c.html#L1706">(sendme_stream_data_received(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2315</td><td><a href="relay.c.html#L2315">(connection_edge_send_command(conn, RELAY_COMMAND_DATA, payload, length) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2322</td><td><a href="relay.c.html#L2322">(sendme_note_circuit_data_packaged(circ, cpath_layer) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2331</td><td><a href="relay.c.html#L2331">(sendme_note_stream_data_packaged(conn, length) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2545</td><td><a href="relay.c.html#L2545">(congestion_control_get_package_window(circ, layer_hint) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2556</td><td><a href="relay.c.html#L2556">(congestion_control_get_package_window(circ, layer_hint) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3017</td><td><a href="relay.c.html#L3017">(channel_write_packed_cell(chan, cell) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3099</td><td><a href="relay.c.html#L3099">(channel_write_packed_cell(chan, cell) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">263</td><td><a href="relay.c.html#L263">(cell_direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">267</td><td><a href="relay.c.html#L267">(reason < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="relay.c.html#L274">(cell_direction == CELL_DIRECTION_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="relay.c.html#L279">(reason < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="relay.c.html#L283">(reason != END_CIRC_AT_ORIGIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="relay.c.html#L296">(cell_direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="relay.c.html#L377">(cell_direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="relay.c.html#L437">(!rh.stream_id)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="relay.c.html#L572">(offset >= CELL_PAYLOAD_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="relay.c.html#L590">(pad_offset == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">665</td><td><a href="relay.c.html#L665">(cell_direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">719</td><td><a href="relay.c.html#L719">(relay_command == RELAY_COMMAND_DATA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="relay.c.html#L830">(reason == END_STREAM_REASON_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1029</td><td><a href="relay.c.html#L1029">(family == AF_UNSPEC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1045</td><td><a href="relay.c.html#L1045">(family != AF_UNSPEC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="relay.c.html#L1088">(bytes != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1093</td><td><a href="relay.c.html#L1093">(bytes <= INT32_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="relay.c.html#L1103">(bytes <= INT32_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="relay.c.html#L1153">(remaining < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1160</td><td><a href="relay.c.html#L1160">(answer_type == RESOLVED_TYPE_IPV4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="relay.c.html#L1161">(answer_len != 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1170</td><td><a href="relay.c.html#L1170">(answer_type == RESOLVED_TYPE_IPV6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1171</td><td><a href="relay.c.html#L1171">(answer_len != 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1179</td><td><a href="relay.c.html#L1179">(answer_type == RESOLVED_TYPE_HOSTNAME)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1180</td><td><a href="relay.c.html#L1180">(answer_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1552</td><td><a href="relay.c.html#L1552">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="relay.c.html#L1583">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2176</td><td><a href="relay.c.html#L2176">(n_available >= target_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2188</td><td><a href="relay.c.html#L2188">(package_length <= RELAY_PAYLOAD_LENGTH_FOR_RANDOM_SENDMES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2388</td><td><a href="relay.c.html#L2388">(first_conn == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2457</td><td><a href="relay.c.html#L2457">(conn != chosen_stream)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2469</td><td><a href="relay.c.html#L2469">(n_packaging_streams == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2495</td><td><a href="relay.c.html#L2495">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2859</td><td><a href="relay.c.html#L2859">(direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2881</td><td><a href="relay.c.html#L2881">(direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3002</td><td><a href="relay.c.html#L3002">(n_flushed < max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3300</td><td><a href="relay.c.html#L3300">(payload_len < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">299</td><td><a href="relay.c.html#L299">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">393</td><td><a href="relay.c.html#L393">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2270</td><td><a href="relay.c.html#L2270">(PREDICT_UNLIKELY(!bytes_to_process))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2605</td><td><a href="relay.c.html#L2605">(!CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2873</td><td><a href="relay.c.html#L2873">(!circuitmux_is_circuit_attached(cmux, circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2950</td><td><a href="relay.c.html#L2950">(!connection_is_reading(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">316</td><td><a href="relay.c.html#L316">(!chan)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">379</td><td><a href="relay.c.html#L379">(!chan)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">754</td><td><a href="relay.c.html#L754">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1113</td><td><a href="relay.c.html#L1113">(!addr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1243</td><td><a href="relay.c.html#L1243">(!addr_hostname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1279</td><td><a href="relay.c.html#L1279">(!addr_best)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1563</td><td><a href="relay.c.html#L1563">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1685</td><td><a href="relay.c.html#L1685">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1738</td><td><a href="relay.c.html#L1738">(!optimistic_data)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1747</td><td><a href="relay.c.html#L1747">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1766</td><td><a href="relay.c.html#L1766">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1787</td><td><a href="relay.c.html#L1787">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1872</td><td><a href="relay.c.html#L1872">(!layer_hint)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1934</td><td><a href="relay.c.html#L1934">(!layer_hint)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2158</td><td><a href="relay.c.html#L2158">(!n_available)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2249</td><td><a href="relay.c.html#L2249">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2281</td><td><a href="relay.c.html#L2281">(!length)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2541</td><td><a href="relay.c.html#L2541">(!layer_hint)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2591</td><td><a href="relay.c.html#L2591">(!cell)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2678</td><td><a href="relay.c.html#L2678">(!cell)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2712</td><td><a href="relay.c.html#L2712">(!cell)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3029</td><td><a href="relay.c.html#L3029">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">336</td><td><a href="relay.c.html#L336">(BUG(CIRCUIT_IS_ORIGIN(circ)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2424</td><td><a href="relay.c.html#L2424">(crypto_fast_rng_one_in_n(get_thread_fast_rng(), num_streams))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2503</td><td><a href="relay.c.html#L2503">(connection_get_inbuf_len(TO_CONN(conn)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3236</td><td><a href="relay.c.html#L3236">(PREDICT_UNLIKELY(cell_queues_check_size()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">145</td><td><a href="relay.c.html#L145">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">387</td><td><a href="relay.c.html#L387">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="relay.c.html#L408">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="relay.c.html#L444">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">627</td><td><a href="relay.c.html#L627">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1465</td><td><a href="relay.c.html#L1465">(consensus_is_waiting_for_certs())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1564</td><td><a href="relay.c.html#L1564">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1593</td><td><a href="relay.c.html#L1593">(circuit_queue_streams_are_blocked(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1686</td><td><a href="relay.c.html#L1686">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="relay.c.html#L1748">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1759</td><td><a href="relay.c.html#L1759">(circuit_process_stream_xoff(conn, layer_hint, cell))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1760</td><td><a href="relay.c.html#L1760">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1767</td><td><a href="relay.c.html#L1767">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="relay.c.html#L1778">(circuit_process_stream_xon(conn, layer_hint, cell))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1779</td><td><a href="relay.c.html#L1779">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1788</td><td><a href="relay.c.html#L1788">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="relay.c.html#L1830">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1899</td><td><a href="relay.c.html#L1899">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1942</td><td><a href="relay.c.html#L1942">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1956</td><td><a href="relay.c.html#L1956">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1999</td><td><a href="relay.c.html#L1999">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2255</td><td><a href="relay.c.html#L2255">(circuit_consider_stop_edge_reading(circ, cpath_layer))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2268</td><td><a href="relay.c.html#L2268">(PREDICT_UNLIKELY(sending_from_optimistic))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2290</td><td><a href="relay.c.html#L2290">(PREDICT_UNLIKELY(sending_from_optimistic))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2357</td><td><a href="relay.c.html#L2357">(circuit_queue_streams_are_blocked(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2363</td><td><a href="relay.c.html#L2363">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2399</td><td><a href="relay.c.html#L2399">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2509</td><td><a href="relay.c.html#L2509">(circuit_consider_stop_edge_reading(circ, layer_hint))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2921</td><td><a href="relay.c.html#L2921">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2946</td><td><a href="relay.c.html#L2946">(connection_is_reading(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3354</td><td><a href="relay.c.html#L3354">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">245</td><td><a href="relay.c.html#L245">(recognized)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">642</td><td><a href="relay.c.html#L642">(payload_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">982</td><td><a href="relay.c.html#L982">(exitrouter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1026</td><td><a href="relay.c.html#L1026">(node)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1036</td><td><a href="relay.c.html#L1036">(make_reject_all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1151</td><td><a href="relay.c.html#L1151">(remaining)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1232</td><td><a href="relay.c.html#L1232">(error_code)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1259</td><td><a href="relay.c.html#L1259">(addr_hostname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1649</td><td><a href="relay.c.html#L1649">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1904</td><td><a href="relay.c.html#L1904">(layer_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1950</td><td><a href="relay.c.html#L1950">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1976</td><td><a href="relay.c.html#L1976">(layer_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1980</td><td><a href="relay.c.html#L1980">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1993</td><td><a href="relay.c.html#L1993">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2168</td><td><a href="relay.c.html#L2168">(force_random_bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2179</td><td><a href="relay.c.html#L2179">(package_partial)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2339</td><td><a href="relay.c.html#L2339">(max_cells)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2945</td><td><a href="relay.c.html#L2945">(block)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2962</td><td><a href="relay.c.html#L2962">(wide_circ_ids)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2973</td><td><a href="relay.c.html#L2973">(wide_circ_ids)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3004</td><td><a href="relay.c.html#L3004">(destroy_queue)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3210</td><td><a href="relay.c.html#L3210">(exitward)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

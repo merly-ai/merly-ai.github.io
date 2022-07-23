@@ -1,0 +1,336 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>php-src Repo - Zend\zend_object_handlers.c Ctrl Expressions (285) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\zend_object_handlers.c Ctrl Expressions (285) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\zend_object_handlers.c Ctrl Expressions (285)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1558</td><td><a href="zend_object_handlers.c.html#L1558">(UNEXPECTED(<span style='background-color:#741da3;'>(type == BP_VAR_R || type == BP_VAR_RW) && Z_TYPE_P(ret) == IS_UNDEF && ZEND_TYPE_IS_SET(property_info->type)</span>))</a></td><td class="num">1037.00</td></tr>
+      <tr><td class="num line">1220</td><td><a href="zend_object_handlers.c.html#L1220">(<span style='background-color:#741da3;'>(fbc->common.fn_flags & ZEND_ACC_PRIVATE) && fbc->common.scope == scope</span>)</a></td><td class="num">1018.25</td></tr>
+      <tr><td class="num line">252</td><td><a href="zend_object_handlers.c.html#L252">(<span style='background-color:#741da3;'>scope != ce && scope && is_derived_class(ce, scope)</span>)</a></td><td class="num">1008.75</td></tr>
+      <tr><td class="num line">1216</td><td><a href="zend_object_handlers.c.html#L1216">(<span style='background-color:#741da3;'>scope != ce && scope && is_derived_class(ce, scope)</span>)</a></td><td class="num">1008.75</td></tr>
+      <tr><td class="num line">328</td><td><a href="zend_object_handlers.c.html#L328">(<span style='background-color:#9c4c02;'>UNEXPECTED(zend_hash_num_elements(&ce->properties_info) == 0) || UNEXPECTED((zv = zend_hash_find(&ce->properties_info, member)) == NULL)</span>)</a></td><td class="num">118.50</td></tr>
+      <tr><td class="num line">428</td><td><a href="zend_object_handlers.c.html#L428">(<span style='background-color:#9c4c02;'>UNEXPECTED(zend_hash_num_elements(&ce->properties_info) == 0) || EXPECTED((zv = zend_hash_find(&ce->properties_info, member)) == NULL)</span>)</a></td><td class="num">118.50</td></tr>
+      <tr><td class="num line">1051</td><td><a href="zend_object_handlers.c.html#L1051">(EXPECTED(!zobj->ce->__get) || UNEXPECTED((*zend_get_property_guard(zobj, name)) & IN_GET) || UNEXPECTED(prop_info && Z_PROP_FLAG_P(retval) == IS_PROP_UNINIT))</a></td><td class="num">71.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="zend_object_handlers.c.html#L1354">(UNEXPECTED((func = zend_hash_find(&zobj->ce->function_table, lc_method_name)) == NULL))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">649</td><td><a href="zend_object_handlers.c.html#L649">(EXPECTED(p->key == name) || (EXPECTED(p->h == ZSTR_H(name)) && EXPECTED(p->key != NULL) && EXPECTED(zend_string_equal_content(p->key, name))))</a></td><td class="num">56.25</td></tr>
+      <tr><td class="num line">1776</td><td><a href="zend_object_handlers.c.html#L1776">(EXPECTED(p->key == name) || (EXPECTED(p->h == ZSTR_H(name)) && EXPECTED(p->key != NULL) && EXPECTED(zend_string_equal_content(p->key, name))))</a></td><td class="num">56.25</td></tr>
+      <tr><td class="num line">1416</td><td><a href="zend_object_handlers.c.html#L1416">(ce->__call && (object = zend_get_this_object(EG(current_execute_data))) != NULL && instanceof_function(object->ce, ce))</a></td><td class="num">51.50</td></tr>
+      <tr><td class="num line">1149</td><td><a href="zend_object_handlers.c.html#L1149">(UNEXPECTED(prop_info && (prop_info->flags & ZEND_ACC_READONLY) && !verify_readonly_initialization_access(prop_info, zobj->ce, name, "unset")))</a></td><td class="num">47.75</td></tr>
+      <tr><td class="num line">1089</td><td><a href="zend_object_handlers.c.html#L1089">(EXPECTED(!zobj->ce->__get) || UNEXPECTED((*zend_get_property_guard(zobj, name)) & IN_GET))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">885</td><td><a href="zend_object_handlers.c.html#L885">(UNEXPECTED((prop_info->flags & ZEND_ACC_READONLY) && !verify_readonly_initialization_access(prop_info, zobj->ce, name, "initialize")))</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">1085</td><td><a href="zend_object_handlers.c.html#L1085">(EXPECTED((retval = zend_hash_find(zobj->properties, name)) != NULL))</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">362</td><td><a href="zend_object_handlers.c.html#L362">(p && (!(p->flags & ZEND_ACC_STATIC) || (flags & ZEND_ACC_STATIC)))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">1526</td><td><a href="zend_object_handlers.c.html#L1526">(UNEXPECTED(property_info->flags & ZEND_ACC_PRIVATE) || UNEXPECTED(!is_protected_compatible_scope(property_info->ce, scope)))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">1382</td><td><a href="zend_object_handlers.c.html#L1382">(UNEXPECTED(fbc->op_array.fn_flags & ZEND_ACC_PRIVATE) || UNEXPECTED(!zend_check_protected(zend_get_function_root_class(fbc), scope)))</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="zend_object_handlers.c.html#L1447">(UNEXPECTED(fbc->op_array.fn_flags & ZEND_ACC_PRIVATE) || UNEXPECTED(!zend_check_protected(zend_get_function_root_class(fbc), scope)))</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">1615</td><td><a href="zend_object_handlers.c.html#L1615">(UNEXPECTED(constructor->op_array.fn_flags & ZEND_ACC_PRIVATE) || UNEXPECTED(!zend_check_protected(zend_get_function_root_class(constructor), scope)))</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">1650</td><td><a href="zend_object_handlers.c.html#L1650">(Z_OBJ_HT_P(object)->cast_object(Z_OBJ_P(object), &casted, target_type) == FAILURE)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="zend_object_handlers.c.html#L1297">(UNEXPECTED((mname_len = strlen(ZSTR_VAL(method_name))) != ZSTR_LEN(method_name)))</a></td><td class="num">44.00</td></tr>
+      <tr><td class="num line">330</td><td><a href="zend_object_handlers.c.html#L330">(UNEXPECTED(ZSTR_VAL(member)[0] == '\0') && ZSTR_LEN(member) != 0)</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">430</td><td><a href="zend_object_handlers.c.html#L430">(UNEXPECTED(ZSTR_VAL(member)[0] == '\0') && ZSTR_LEN(member) != 0)</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">842</td><td><a href="zend_object_handlers.c.html#L842">(EXPECTED(!(GC_FLAGS(zobj->properties) & IS_ARRAY_IMMUTABLE)))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1080</td><td><a href="zend_object_handlers.c.html#L1080">(EXPECTED(!(GC_FLAGS(zobj->properties) & IS_ARRAY_IMMUTABLE)))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1161</td><td><a href="zend_object_handlers.c.html#L1161">(EXPECTED(!(GC_FLAGS(zobj->properties) & IS_ARRAY_IMMUTABLE)))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">555</td><td><a href="zend_object_handlers.c.html#L555">(EXPECTED(str == member) || (EXPECTED(ZSTR_H(str) == zend_string_hash_val(member)) && EXPECTED(zend_string_equal_content(str, member))))</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">78</td><td><a href="zend_object_handlers.c.html#L78">(UNEXPECTED(Z_TYPE_P(OBJ_PROP(zobj, prop_info->offset)) == IS_UNDEF))</a></td><td class="num">39.75</td></tr>
+      <tr><td class="num line">611</td><td><a href="zend_object_handlers.c.html#L611">(prop_info && UNEXPECTED(prop_info->flags & ZEND_ACC_READONLY) && (type == BP_VAR_W || type == BP_VAR_RW || type == BP_VAR_UNSET))</a></td><td class="num">35.75</td></tr>
+      <tr><td class="num line">1828</td><td><a href="zend_object_handlers.c.html#L1828">(EXPECTED(!EG(exception)) && zobj->ce->__get && !((*guard) & IN_GET))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">697</td><td><a href="zend_object_handlers.c.html#L697">(zobj->ce->__get && !((*guard) & IN_GET))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">701</td><td><a href="zend_object_handlers.c.html#L701">(zobj->ce->__get && !((*guard) & IN_GET))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">847</td><td><a href="zend_object_handlers.c.html#L847">((variable_ptr = zend_hash_find(zobj->properties, name)) != NULL)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">1129</td><td><a href="zend_object_handlers.c.html#L1129">(UNEXPECTED(prop_info && (prop_info->flags & ZEND_ACC_READONLY)))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="zend_object_handlers.c.html#L646">(EXPECTED(idx < zobj->properties->nNumUsed * sizeof(Bucket)))</a></td><td class="num">27.85</td></tr>
+      <tr><td class="num line">1773</td><td><a href="zend_object_handlers.c.html#L1773">(EXPECTED(idx < zobj->properties->nNumUsed * sizeof(Bucket)))</a></td><td class="num">27.85</td></tr>
+      <tr><td class="num line">909</td><td><a href="zend_object_handlers.c.html#L909">(UNEXPECTED(!(zobj->ce->ce_flags & ZEND_ACC_ALLOW_DYNAMIC_PROPERTIES)))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1095</td><td><a href="zend_object_handlers.c.html#L1095">(UNEXPECTED(!(zobj->ce->ce_flags & ZEND_ACC_ALLOW_DYNAMIC_PROPERTIES)))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1536</td><td><a href="zend_object_handlers.c.html#L1536">(UNEXPECTED((property_info->flags & ZEND_ACC_STATIC) == 0))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">516</td><td><a href="zend_object_handlers.c.html#L516">(strcmp(ZSTR_VAL(prop_info_name) + 1, ZSTR_VAL(property_info->name) + 1))</a></td><td class="num">26.45</td></tr>
+      <tr><td class="num line">1608</td><td><a href="zend_object_handlers.c.html#L1608">(UNEXPECTED(!(constructor->op_array.fn_flags & ZEND_ACC_PUBLIC)))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">1395</td><td><a href="zend_object_handlers.c.html#L1395">(fbc && UNEXPECTED(fbc->common.fn_flags & ZEND_ACC_ABSTRACT))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1544</td><td><a href="zend_object_handlers.c.html#L1544">(UNEXPECTED(!(ce->ce_flags & ZEND_ACC_CONSTANTS_UPDATED)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">626</td><td><a href="zend_object_handlers.c.html#L626">(prop_info && UNEXPECTED(prop_info->flags & ZEND_ACC_READONLY))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1065</td><td><a href="zend_object_handlers.c.html#L1065">(prop_info && UNEXPECTED(prop_info->flags & ZEND_ACC_READONLY))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1073</td><td><a href="zend_object_handlers.c.html#L1073">(prop_info && UNEXPECTED(prop_info->flags & ZEND_ACC_READONLY))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">841</td><td><a href="zend_object_handlers.c.html#L841">(UNEXPECTED(GC_REFCOUNT(zobj->properties) > 1))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1079</td><td><a href="zend_object_handlers.c.html#L1079">(UNEXPECTED(GC_REFCOUNT(zobj->properties) > 1))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1160</td><td><a href="zend_object_handlers.c.html#L1160">(UNEXPECTED(GC_REFCOUNT(zobj->properties) > 1))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1166</td><td><a href="zend_object_handlers.c.html#L1166">(EXPECTED(zend_hash_del(zobj->properties, name) != FAILURE))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1158</td><td><a href="zend_object_handlers.c.html#L1158">(EXPECTED(IS_DYNAMIC_PROPERTY_OFFSET(property_offset)) && EXPECTED(zobj->properties != NULL))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">383</td><td><a href="zend_object_handlers.c.html#L383">(UNEXPECTED(!is_protected_compatible_scope(property_info->ce, scope)))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="zend_object_handlers.c.html#L399">(EXPECTED(!ZEND_TYPE_IS_SET(property_info->type)))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">474</td><td><a href="zend_object_handlers.c.html#L474">(UNEXPECTED(!is_protected_compatible_scope(property_info->ce, scope)))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1272</td><td><a href="zend_object_handlers.c.html#L1272">(EXPECTED(EG(trampoline).common.function_name == NULL))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">822</td><td><a href="zend_object_handlers.c.html#L822">(UNEXPECTED(!zend_verify_property_type(prop_info, &tmp, property_uses_strict_types())))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">893</td><td><a href="zend_object_handlers.c.html#L893">(UNEXPECTED(!zend_verify_property_type(prop_info, &tmp, property_uses_strict_types())))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">1133</td><td><a href="zend_object_handlers.c.html#L1133">(UNEXPECTED(Z_ISREF_P(slot)) && (ZEND_DEBUG || ZEND_REF_HAS_TYPE_SOURCES(Z_REF_P(slot))))</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="zend_object_handlers.c.html#L323">(cache_slot && EXPECTED(ce == CACHED_PTR_EX(cache_slot)))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1021</td><td><a href="zend_object_handlers.c.html#L1021">(check_empty && result && EXPECTED(!EG(exception)))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="zend_object_handlers.c.html#L256">((prop_info->flags & ZEND_ACC_PRIVATE) && prop_info->ce == scope)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">718</td><td><a href="zend_object_handlers.c.html#L718">(!Z_ISREF_P(rv) && (type == BP_VAR_W || type == BP_VAR_RW || type == BP_VAR_UNSET))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1678</td><td><a href="zend_object_handlers.c.html#L1678">(!zobj1->properties && !zobj2->properties)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">674</td><td><a href="zend_object_handlers.c.html#L674">((type == BP_VAR_IS) && zobj->ce->__isset)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1812</td><td><a href="zend_object_handlers.c.html#L1812">((has_set_exists != ZEND_PROPERTY_EXISTS) && zobj->ce->__isset)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1469</td><td><a href="zend_object_handlers.c.html#L1469">(UNEXPECTED(fbc->common.scope->ce_flags & ZEND_ACC_TRAIT))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1896</td><td><a href="zend_object_handlers.c.html#L1896">((*fptr_ptr)->common.fn_flags & ZEND_ACC_STATIC)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">904</td><td><a href="zend_object_handlers.c.html#L904">(UNEXPECTED(zobj->ce->ce_flags & ZEND_ACC_NO_DYNAMIC_PROPERTIES))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1091</td><td><a href="zend_object_handlers.c.html#L1091">(UNEXPECTED(zobj->ce->ce_flags & ZEND_ACC_NO_DYNAMIC_PROPERTIES))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1675</td><td><a href="zend_object_handlers.c.html#L1675">(zobj1->ce != zobj2->ce)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1444</td><td><a href="zend_object_handlers.c.html#L1444">(!(fbc->op_array.fn_flags & ZEND_ACC_PUBLIC))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1466</td><td><a href="zend_object_handlers.c.html#L1466">(UNEXPECTED(fbc->common.fn_flags & ZEND_ACC_ABSTRACT))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1489</td><td><a href="zend_object_handlers.c.html#L1489">(class_type->default_static_members_count && !CE_STATIC_MEMBERS(class_type))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1368</td><td><a href="zend_object_handlers.c.html#L1368">(fbc->op_array.fn_flags & ZEND_ACC_CHANGED | ZEND_ACC_PRIVATE | ZEND_ACC_PROTECTED)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1372</td><td><a href="zend_object_handlers.c.html#L1372">(fbc->op_array.fn_flags & ZEND_ACC_CHANGED)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1378</td><td><a href="zend_object_handlers.c.html#L1378">(fbc->op_array.fn_flags & ZEND_ACC_PUBLIC)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">137</td><td><a href="zend_object_handlers.c.html#L137">(zobj->handlers->get_properties != zend_std_get_properties)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1110</td><td><a href="zend_object_handlers.c.html#L1110">(zobj->ce->__get == NULL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1696</td><td><a href="zend_object_handlers.c.html#L1696">(i < zobj1->ce->default_properties_count)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">513</td><td><a href="zend_object_handlers.c.html#L513">(!(property_info->flags & ZEND_ACC_PRIVATE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1519</td><td><a href="zend_object_handlers.c.html#L1519">(!(property_info->flags & ZEND_ACC_PUBLIC))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1054</td><td><a href="zend_object_handlers.c.html#L1054">(UNEXPECTED(type == BP_VAR_RW || type == BP_VAR_R))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1106</td><td><a href="zend_object_handlers.c.html#L1106">(UNEXPECTED(type == BP_VAR_RW || type == BP_VAR_R))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1446</td><td><a href="zend_object_handlers.c.html#L1446">(UNEXPECTED(fbc->common.scope != scope))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1614</td><td><a href="zend_object_handlers.c.html#L1614">(UNEXPECTED(constructor->common.scope != scope))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">508</td><td><a href="zend_object_handlers.c.html#L508">(property_info == NULL || property_info == ZEND_WRONG_PROPERTY_INFO)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">627</td><td><a href="zend_object_handlers.c.html#L627">(type == BP_VAR_W || type == BP_VAR_RW)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">814</td><td><a href="zend_object_handlers.c.html#L814">(UNEXPECTED(prop_info->flags & ZEND_ACC_READONLY))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1371</td><td><a href="zend_object_handlers.c.html#L1371">(fbc->common.scope != scope)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1565</td><td><a href="zend_object_handlers.c.html#L1565">(UNEXPECTED(ce->ce_flags & ZEND_ACC_TRAIT))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1652</td><td><a href="zend_object_handlers.c.html#L1652">(target_type == IS_LONG || target_type == IS_DOUBLE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">114</td><td><a href="zend_object_handlers.c.html#L114">(Z_ISREF_P(prop) && Z_REFCOUNT_P(prop) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">678</td><td><a href="zend_object_handlers.c.html#L678">(!((*guard) & IN_ISSET))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="zend_object_handlers.c.html#L707">(!((*guard) & IN_GET))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">861</td><td><a href="zend_object_handlers.c.html#L861">(!((*guard) & IN_SET))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1176</td><td><a href="zend_object_handlers.c.html#L1176">(!((*guard) & IN_UNSET))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1815</td><td><a href="zend_object_handlers.c.html#L1815">(!((*guard) & IN_ISSET))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1682</td><td><a href="zend_object_handlers.c.html#L1682">(!zobj1->ce->default_properties_count)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1827</td><td><a href="zend_object_handlers.c.html#L1827">(has_set_exists == ZEND_PROPERTY_NOT_EMPTY && result)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">642</td><td><a href="zend_object_handlers.c.html#L642">(EXPECTED(zobj->properties != NULL))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">840</td><td><a href="zend_object_handlers.c.html#L840">(EXPECTED(zobj->properties != NULL))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1769</td><td><a href="zend_object_handlers.c.html#L1769">(EXPECTED(zobj->properties != NULL))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">71</td><td><a href="zend_object_handlers.c.html#L71">(i < ce->default_properties_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">102</td><td><a href="zend_object_handlers.c.html#L102">(i < ce->default_properties_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">354</td><td><a href="zend_object_handlers.c.html#L354">(property_info->ce != scope)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">371</td><td><a href="zend_object_handlers.c.html#L371">(property_info->ce != ce)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">449</td><td><a href="zend_object_handlers.c.html#L449">(property_info->ce != scope)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">462</td><td><a href="zend_object_handlers.c.html#L462">(property_info->ce != ce)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">679</td><td><a href="zend_object_handlers.c.html#L679">(!tmp_name && !ZSTR_IS_INTERNED(name))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">778</td><td><a href="zend_object_handlers.c.html#L778">(prop_info->ce == scope)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">789</td><td><a href="zend_object_handlers.c.html#L789">(prop_info->ce == scope)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1495</td><td><a href="zend_object_handlers.c.html#L1495">(i < class_type->default_static_members_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1525</td><td><a href="zend_object_handlers.c.html#L1525">(property_info->ce != scope)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1819</td><td><a href="zend_object_handlers.c.html#L1819">(!tmp_name && !ZSTR_IS_INTERNED(name))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">704</td><td><a href="zend_object_handlers.c.html#L704">(zobj->ce->__get)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">858</td><td><a href="zend_object_handlers.c.html#L858">(zobj->ce->__set)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1174</td><td><a href="zend_object_handlers.c.html#L1174">(zobj->ce->__unset)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1358</td><td><a href="zend_object_handlers.c.html#L1358">(zobj->ce->__call)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1384</td><td><a href="zend_object_handlers.c.html#L1384">(zobj->ce->__call)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="zend_object_handlers.c.html#L1913">(obj->handlers->get_debug_info)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="zend_object_handlers.c.html#L1940">(zobj->handlers->get_properties_for)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1916</td><td><a href="zend_object_handlers.c.html#L1916">(ht && !is_temp)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">499</td><td><a href="zend_object_handlers.c.html#L499">(ZSTR_VAL(prop_info_name)[0] == 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="zend_object_handlers.c.html#L539">(EXPECTED(!(((zend_uintptr_t)ptr) & 1)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1100</td><td><a href="zend_object_handlers.c.html#L1100">(UNEXPECTED(!zobj->properties))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">63</td><td><a href="zend_object_handlers.c.html#L63">(!zobj->properties)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">128</td><td><a href="zend_object_handlers.c.html#L128">(!zobj->properties)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">161</td><td><a href="zend_object_handlers.c.html#L161">(!ce->__debugInfo)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">512</td><td><a href="zend_object_handlers.c.html#L512">(class_name[0] != '*')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">784</td><td><a href="zend_object_handlers.c.html#L784">(scope && is_derived_class(ce, scope))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">917</td><td><a href="zend_object_handlers.c.html#L917">(!zobj->properties)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1732</td><td><a href="zend_object_handlers.c.html#L1732">(!zobj1->properties)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1735</td><td><a href="zend_object_handlers.c.html#L1735">(!zobj2->properties)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">391</td><td><a href="zend_object_handlers.c.html#L391">(UNEXPECTED(flags & ZEND_ACC_STATIC))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">482</td><td><a href="zend_object_handlers.c.html#L482">(UNEXPECTED(flags & ZEND_ACC_STATIC))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1078</td><td><a href="zend_object_handlers.c.html#L1078">(EXPECTED(zobj->properties))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">69</td><td><a href="zend_object_handlers.c.html#L69">(ce->default_properties_count)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">100</td><td><a href="zend_object_handlers.c.html#L100">(ce->default_properties_count)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">142</td><td><a href="zend_object_handlers.c.html#L142">(zobj->properties)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="zend_object_handlers.c.html#L347">(flags & ZEND_ACC_CHANGED | ZEND_ACC_PRIVATE | ZEND_ACC_PROTECTED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">355</td><td><a href="zend_object_handlers.c.html#L355">(flags & ZEND_ACC_CHANGED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">366</td><td><a href="zend_object_handlers.c.html#L366">(flags & ZEND_ACC_PUBLIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="zend_object_handlers.c.html#L370">(flags & ZEND_ACC_PRIVATE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="zend_object_handlers.c.html#L443">(flags & ZEND_ACC_CHANGED | ZEND_ACC_PRIVATE | ZEND_ACC_PROTECTED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="zend_object_handlers.c.html#L450">(flags & ZEND_ACC_CHANGED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="zend_object_handlers.c.html#L457">(flags & ZEND_ACC_PUBLIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="zend_object_handlers.c.html#L461">(flags & ZEND_ACC_PRIVATE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="zend_object_handlers.c.html#L689">(!zend_is_true(&tmp_result))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1143</td><td><a href="zend_object_handlers.c.html#L1143">(zobj->properties)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="zend_object_handlers.c.html#L1424">(ce->__callstatic)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1490</td><td><a href="zend_object_handlers.c.html#L1490">(class_type->parent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1860</td><td><a href="zend_object_handlers.c.html#L1860">(ce->__tostring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">110</td><td><a href="zend_object_handlers.c.html#L110">(UNEXPECTED(Z_TYPE_P(prop) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">289</td><td><a href="zend_object_handlers.c.html#L289">(UNEXPECTED(GC_DELREF(obj) == 0))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">553</td><td><a href="zend_object_handlers.c.html#L553">(EXPECTED(Z_TYPE_P(zv) == IS_STRING))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">560</td><td><a href="zend_object_handlers.c.html#L560">(EXPECTED(Z_PROPERTY_GUARD_P(zv) == 0))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">573</td><td><a href="zend_object_handlers.c.html#L573">(EXPECTED(Z_TYPE_P(zv) == IS_ARRAY))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">610</td><td><a href="zend_object_handlers.c.html#L610">(EXPECTED(Z_TYPE_P(retval) != IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">637</td><td><a href="zend_object_handlers.c.html#L637">(UNEXPECTED(Z_PROP_FLAG_P(retval) == IS_PROP_UNINIT))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">720</td><td><a href="zend_object_handlers.c.html#L720">(UNEXPECTED(Z_TYPE_P(rv) != IS_OBJECT))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">972</td><td><a href="zend_object_handlers.c.html#L972">(UNEXPECTED(Z_TYPE_P(rv) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1050</td><td><a href="zend_object_handlers.c.html#L1050">(UNEXPECTED(Z_TYPE_P(retval) == IS_UNDEF))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1148</td><td><a href="zend_object_handlers.c.html#L1148">(UNEXPECTED(Z_PROP_FLAG_P(slot) == IS_PROP_UNINIT))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1545</td><td><a href="zend_object_handlers.c.html#L1545">(UNEXPECTED(zend_update_class_constants(ce)) != SUCCESS)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1551</td><td><a href="zend_object_handlers.c.html#L1551">(UNEXPECTED(CE_STATIC_MEMBERS(ce) == NULL))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1632</td><td><a href="zend_object_handlers.c.html#L1632">(Z_TYPE_P(o1) != Z_TYPE_P(o2))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1763</td><td><a href="zend_object_handlers.c.html#L1763">(UNEXPECTED(Z_PROP_FLAG_P(value) == IS_PROP_UNINIT))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1865</td><td><a href="zend_object_handlers.c.html#L1865">(EXPECTED(Z_TYPE(retval) == IS_STRING))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">167</td><td><a href="zend_object_handlers.c.html#L167">(Z_TYPE(retval) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">171</td><td><a href="zend_object_handlers.c.html#L171">(Z_REFCOUNT(retval) <= 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">180</td><td><a href="zend_object_handlers.c.html#L180">(Z_TYPE(retval) == IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="zend_object_handlers.c.html#L613">(Z_TYPE_P(retval) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">716</td><td><a href="zend_object_handlers.c.html#L716">(Z_TYPE_P(rv) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">810</td><td><a href="zend_object_handlers.c.html#L810">(Z_TYPE_P(variable_ptr) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">835</td><td><a href="zend_object_handlers.c.html#L835">(Z_PROP_FLAG_P(variable_ptr) == IS_PROP_UNINIT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1128</td><td><a href="zend_object_handlers.c.html#L1128">(Z_TYPE_P(slot) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1344</td><td><a href="zend_object_handlers.c.html#L1344">(EXPECTED(key != NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1375</td><td><a href="zend_object_handlers.c.html#L1375">(EXPECTED(updated_fbc != NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1434</td><td><a href="zend_object_handlers.c.html#L1434">(EXPECTED(key != NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1497</td><td><a href="zend_object_handlers.c.html#L1497">(Z_TYPE_P(p) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1515</td><td><a href="zend_object_handlers.c.html#L1515">(UNEXPECTED(property_info == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1638</td><td><a href="zend_object_handlers.c.html#L1638">(Z_TYPE_P(o1) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1708</td><td><a href="zend_object_handlers.c.html#L1708">(Z_TYPE_P(p1) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1709</td><td><a href="zend_object_handlers.c.html#L1709">(Z_TYPE_P(p2) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1722</td><td><a href="zend_object_handlers.c.html#L1722">(Z_TYPE_P(p2) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1760</td><td><a href="zend_object_handlers.c.html#L1760">(Z_TYPE_P(value) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">230</td><td><a href="zend_object_handlers.c.html#L230">(child_class == parent_class)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">254</td><td><a href="zend_object_handlers.c.html#L254">(zv != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">526</td><td><a href="zend_object_handlers.c.html#L526">(property_info == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">529</td><td><a href="zend_object_handlers.c.html#L529">(property_info == ZEND_WRONG_PROPERTY_INFO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="zend_object_handlers.c.html#L577">(zv != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="zend_object_handlers.c.html#L631">(type == BP_VAR_UNSET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="zend_object_handlers.c.html#L744">(type != BP_VAR_IS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">943</td><td><a href="zend_object_handlers.c.html#L943">(offset == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">951</td><td><a href="zend_object_handlers.c.html#L951">(type == BP_VAR_IS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1218</td><td><a href="zend_object_handlers.c.html#L1218">(func != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="zend_object_handlers.c.html#L1240">(fbc_scope == scope)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="zend_object_handlers.c.html#L1250">(scope == ce)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1528</td><td><a href="zend_object_handlers.c.html#L1528">(type != BP_VAR_IS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1538</td><td><a href="zend_object_handlers.c.html#L1538">(type != BP_VAR_IS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1655</td><td><a href="zend_object_handlers.c.html#L1655">(target_type == IS_LONG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1672</td><td><a href="zend_object_handlers.c.html#L1672">(zobj1 == zobj2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1713</td><td><a href="zend_object_handlers.c.html#L1713">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1793</td><td><a href="zend_object_handlers.c.html#L1793">(has_set_exists == ZEND_PROPERTY_NOT_EMPTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1795</td><td><a href="zend_object_handlers.c.html#L1795">(has_set_exists < ZEND_PROPERTY_NOT_EMPTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1890</td><td><a href="zend_object_handlers.c.html#L1890">(func == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">868</td><td><a href="zend_object_handlers.c.html#L868">(EXPECTED(!IS_WRONG_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">910</td><td><a href="zend_object_handlers.c.html#L910">(UNEXPECTED(!zend_deprecated_dynamic_property(zobj, name)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">973</td><td><a href="zend_object_handlers.c.html#L973">(UNEXPECTED(!EG(exception)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="zend_object_handlers.c.html#L1096">(UNEXPECTED(!zend_deprecated_dynamic_property(zobj, name)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">168</td><td><a href="zend_object_handlers.c.html#L168">(!Z_REFCOUNTED(retval))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="zend_object_handlers.c.html#L292">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">643</td><td><a href="zend_object_handlers.c.html#L643">(!IS_UNKNOWN_DYNAMIC_PROPERTY_OFFSET(property_offset))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">958</td><td><a href="zend_object_handlers.c.html#L958">(!i_zend_is_true(rv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1355</td><td><a href="zend_object_handlers.c.html#L1355">(UNEXPECTED(!key))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1399</td><td><a href="zend_object_handlers.c.html#L1399">(UNEXPECTED(!key))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1461</td><td><a href="zend_object_handlers.c.html#L1461">(UNEXPECTED(!key))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1770</td><td><a href="zend_object_handlers.c.html#L1770">(!IS_UNKNOWN_DYNAMIC_PROPERTY_OFFSET(property_offset))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1870</td><td><a href="zend_object_handlers.c.html#L1870">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">74</td><td><a href="zend_object_handlers.c.html#L74">(!prop_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">105</td><td><a href="zend_object_handlers.c.html#L105">(!prop_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="zend_object_handlers.c.html#L331">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">376</td><td><a href="zend_object_handlers.c.html#L376">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">392</td><td><a href="zend_object_handlers.c.html#L392">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">431</td><td><a href="zend_object_handlers.c.html#L431">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">467</td><td><a href="zend_object_handlers.c.html#L467">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">483</td><td><a href="zend_object_handlers.c.html#L483">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">993</td><td><a href="zend_object_handlers.c.html#L993">(!offset)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1450</td><td><a href="zend_object_handlers.c.html#L1450">(!fallback_fbc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1701</td><td><a href="zend_object_handlers.c.html#L1701">(!info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">348</td><td><a href="zend_object_handlers.c.html#L348">(UNEXPECTED(EG(fake_scope)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">444</td><td><a href="zend_object_handlers.c.html#L444">(UNEXPECTED(EG(fake_scope)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">608</td><td><a href="zend_object_handlers.c.html#L608">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">641</td><td><a href="zend_object_handlers.c.html#L641">(EXPECTED(IS_DYNAMIC_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="zend_object_handlers.c.html#L668">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">734</td><td><a href="zend_object_handlers.c.html#L734">(UNEXPECTED(IS_WRONG_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">773</td><td><a href="zend_object_handlers.c.html#L773">(UNEXPECTED(EG(fake_scope)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">808</td><td><a href="zend_object_handlers.c.html#L808">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">839</td><td><a href="zend_object_handlers.c.html#L839">(EXPECTED(IS_DYNAMIC_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">852</td><td><a href="zend_object_handlers.c.html#L852">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">880</td><td><a href="zend_object_handlers.c.html#L880">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">953</td><td><a href="zend_object_handlers.c.html#L953">(UNEXPECTED(Z_ISUNDEF_P(rv)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1048</td><td><a href="zend_object_handlers.c.html#L1048">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="zend_object_handlers.c.html#L1077">(EXPECTED(IS_DYNAMIC_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1125</td><td><a href="zend_object_handlers.c.html#L1125">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1169</td><td><a href="zend_object_handlers.c.html#L1169">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1181</td><td><a href="zend_object_handlers.c.html#L1181">(UNEXPECTED(IS_WRONG_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1520</td><td><a href="zend_object_handlers.c.html#L1520">(UNEXPECTED(EG(fake_scope)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1609</td><td><a href="zend_object_handlers.c.html#L1609">(UNEXPECTED(EG(fake_scope)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1691</td><td><a href="zend_object_handlers.c.html#L1691">(UNEXPECTED(Z_IS_RECURSIVE_P(o1)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1758</td><td><a href="zend_object_handlers.c.html#L1758">(EXPECTED(IS_VALID_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1768</td><td><a href="zend_object_handlers.c.html#L1768">(EXPECTED(IS_DYNAMIC_PROPERTY_OFFSET(property_offset)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1806</td><td><a href="zend_object_handlers.c.html#L1806">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">660</td><td><a href="zend_object_handlers.c.html#L660">(EXPECTED(retval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="zend_object_handlers.c.html#L728">(UNEXPECTED(prop_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="zend_object_handlers.c.html#L745">(UNEXPECTED(prop_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="zend_object_handlers.c.html#L813">(UNEXPECTED(prop_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">884</td><td><a href="zend_object_handlers.c.html#L884">(UNEXPECTED(prop_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="zend_object_handlers.c.html#L942">(EXPECTED(funcs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">992</td><td><a href="zend_object_handlers.c.html#L992">(EXPECTED(funcs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="zend_object_handlers.c.html#L1015">(EXPECTED(funcs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="zend_object_handlers.c.html#L1055">(UNEXPECTED(prop_info))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1199</td><td><a href="zend_object_handlers.c.html#L1199">(EXPECTED(funcs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1442</td><td><a href="zend_object_handlers.c.html#L1442">(EXPECTED(func))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1465</td><td><a href="zend_object_handlers.c.html#L1465">(EXPECTED(fbc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1474</td><td><a href="zend_object_handlers.c.html#L1474">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">229</td><td><a href="zend_object_handlers.c.html#L229">(child_class)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">337</td><td><a href="zend_object_handlers.c.html#L337">(cache_slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">404</td><td><a href="zend_object_handlers.c.html#L404">(cache_slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">453</td><td><a href="zend_object_handlers.c.html#L453">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">500</td><td><a href="zend_object_handlers.c.html#L500">(is_dynamic)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">661</td><td><a href="zend_object_handlers.c.html#L661">(cache_slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">786</td><td><a href="zend_object_handlers.c.html#L786">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1135</td><td><a href="zend_object_handlers.c.html#L1135">(prop_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1239</td><td><a href="zend_object_handlers.c.html#L1239">(fbc_scope)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1249</td><td><a href="zend_object_handlers.c.html#L1249">(scope)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1283</td><td><a href="zend_object_handlers.c.html#L1283">(is_static)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1591</td><td><a href="zend_object_handlers.c.html#L1591">(scope)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1607</td><td><a href="zend_object_handlers.c.html#L1607">(constructor)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1787</td><td><a href="zend_object_handlers.c.html#L1787">(value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1788</td><td><a href="zend_object_handlers.c.html#L1788">(cache_slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1897</td><td><a href="zend_object_handlers.c.html#L1897">(obj_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1901</td><td><a href="zend_object_handlers.c.html#L1901">(obj_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1927</td><td><a href="zend_object_handlers.c.html#L1927">(ht)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

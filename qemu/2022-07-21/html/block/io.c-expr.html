@@ -1,0 +1,373 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - block\io.c Ctrl Expressions (322) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - block\io.c Ctrl Expressions (322) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;block\io.c Ctrl Expressions (322)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2560</td><td><a href="io.c.html#L2560">(<span style='background-color:#741da3;'>want_zero && ret & BDRV_BLOCK_RECURSE && local_file && local_file != bs && (ret & BDRV_BLOCK_DATA) && !(ret & BDRV_BLOCK_ZERO) && (ret & BDRV_BLOCK_OFFSET_VALID)</span>)</a></td><td class="num">1032.25</td></tr>
+      <tr><td class="num line">2078</td><td><a href="io.c.html#L2078">(<span style='background-color:#741da3;'>!ret && bs->detect_zeroes != BLOCKDEV_DETECT_ZEROES_OPTIONS_OFF && !(flags & BDRV_REQ_ZERO_WRITE) && drv->bdrv_co_pwrite_zeroes && qemu_iovec_is_zero(qiov, qiov_offset, bytes)</span>)</a></td><td class="num">1025.00</td></tr>
+      <tr><td class="num line">2636</td><td><a href="io.c.html#L2636">(<span style='background-color:#741da3;'>ret < 0 || *pnum == 0 || ret & BDRV_BLOCK_ALLOCATED || bs == base</span>)</a></td><td class="num">1016.50</td></tr>
+      <tr><td class="num line">2573</td><td><a href="io.c.html#L2573">(<span style='background-color:#741da3;'>ret2 & BDRV_BLOCK_EOF && (!file_pnum || ret2 & BDRV_BLOCK_ZERO)</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">1154</td><td><a href="io.c.html#L1154">(<span style='background-color:#741da3;'>qiov_offset > 0 || bytes != qiov->size</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">1227</td><td><a href="io.c.html#L1227">(<span style='background-color:#741da3;'>qiov_offset > 0 || bytes != qiov->size</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">280</td><td><a href="io.c.html#L280">(!bs->drv || (begin && !bs->drv->bdrv_co_drain_begin) || (!begin && !bs->drv->bdrv_co_drain_end))</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">2022</td><td><a href="io.c.html#L2022">(ret == 0 && (req->type == BDRV_TRACKED_TRUNCATE || end_sector > bs->total_sectors) && req->type != BDRV_TRACKED_DISCARD)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">803</td><td><a href="io.c.html#L803">(req == self || (!req->serialising && !self->serialising))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">1898</td><td><a href="io.c.html#L1898">(ret != -ENOTSUP && (flags & BDRV_REQ_FUA) && !(bs->supported_zero_flags & BDRV_REQ_FUA))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">2105</td><td><a href="io.c.html#L2105">(num < bytes_remaining && (flags & BDRV_REQ_FUA) && !(bs->supported_write_flags & BDRV_REQ_FUA))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">3355</td><td><a href="io.c.html#L3355">(!src->bs->drv->bdrv_co_copy_range_from || !dst->bs->drv->bdrv_co_copy_range_to || src->bs->encrypted || dst->bs->encrypted)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">3181</td><td><a href="io.c.html#L3181">(!drv || (!drv->bdrv_aio_ioctl && !drv->bdrv_co_ioctl))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">3123</td><td><a href="io.c.html#L3123">(!QEMU_IS_ALIGNED(tail, bs->bl.request_alignment) && tail > bs->bl.request_alignment)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1910</td><td><a href="io.c.html#L1910">((flags & BDRV_REQ_FUA) && !(bs->supported_write_flags & BDRV_REQ_FUA))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">3336</td><td><a href="io.c.html#L3336">(!dst || !dst->bs || !bdrv_is_inserted(dst->bs))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">3347</td><td><a href="io.c.html#L3347">(!src || !src->bs || !bdrv_is_inserted(src->bs))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">2591</td><td><a href="io.c.html#L2591">(ret >= 0 && offset + *pnum == total_size)</a></td><td class="num">27.10</td></tr>
+      <tr><td class="num line">2482</td><td><a href="io.c.html#L2482">(want_zero && ret == BDRV_BLOCK_DATA | BDRV_BLOCK_OFFSET_VALID && QLIST_EMPTY(&bs->children))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">895</td><td><a href="io.c.html#L895">(bdrv_get_info(bs, &bdi) < 0 || bdi.cluster_size == 0)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">1795</td><td><a href="io.c.html#L1795">(bytes == 0 && !QEMU_IS_ALIGNED(offset, bs->bl.request_alignment))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2243</td><td><a href="io.c.html#L2243">(bytes == 0 && !QEMU_IS_ALIGNED(offset, bs->bl.request_alignment))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2237</td><td><a href="io.c.html#L2237">((flags & BDRV_REQ_NO_FALLBACK) && !QEMU_IS_ALIGNED(offset | bytes, align))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1856</td><td><a href="io.c.html#L1856">((flags & ~bs->supported_zero_flags) & BDRV_REQ_NO_FALLBACK)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">3249</td><td><a href="io.c.html#L3249">((uintptr_t)qiov->iov[i].iov_base % alignment)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3252</td><td><a href="io.c.html#L3252">(qiov->iov[i].iov_len % alignment)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="io.c.html#L437">(qatomic_fetch_inc(&bs->quiesce_counter) == 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3269</td><td><a href="io.c.html#L3269">(qatomic_fetch_inc(&bs->io_plugged) == 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3283</td><td><a href="io.c.html#L3283">(qatomic_fetch_dec(&bs->io_plugged) == 1)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2460</td><td><a href="io.c.html#L2460">(QLIST_EMPTY(&bs->children) && bdrv_bsc_is_data(bs, aligned_offset, pnum))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">942</td><td><a href="io.c.html#L942">(!qatomic_read(&bs->serialising_in_flight))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">3079</td><td><a href="io.c.html#L3079">(!bs->drv->bdrv_co_pdiscard && !bs->drv->bdrv_aio_pdiscard)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">54</td><td><a href="io.c.html#L54">(c == ignore || (ignore_bds_parents && c->klass->parent_is_bds))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">86</td><td><a href="io.c.html#L86">(c == ignore || (ignore_bds_parents && c->klass->parent_is_bds))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">108</td><td><a href="io.c.html#L108">(c == ignore || (ignore_bds_parents && c->klass->parent_is_bds))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">3300</td><td><a href="io.c.html#L3300">(bs->drv && bs->drv->bdrv_register_buf)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">3313</td><td><a href="io.c.html#L3313">(bs->drv && bs->drv->bdrv_unregister_buf)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1630</td><td><a href="io.c.html#L1630">(!pad->head && !pad->tail)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">786</td><td><a href="io.c.html#L786">(offset >= req->overlap_offset + req->overlap_bytes)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">2417</td><td><a href="io.c.html#L2417">(!bs->drv->bdrv_co_block_status && !has_filtered_child)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1667</td><td><a href="io.c.html#L1667">(pad->merge_reads && pad->tail)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1678</td><td><a href="io.c.html#L1678">(pad->merge_reads && pad->tail)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="io.c.html#L1906">(ret == -ENOTSUP && !(flags & BDRV_REQ_NO_FALLBACK))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1271</td><td><a href="io.c.html#L1271">(ret == 0 && (flags & BDRV_REQ_FUA))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2307</td><td><a href="io.c.html#L2307">(!(child->bs->open_flags & BDRV_O_UNMAP))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3061</td><td><a href="io.c.html#L3061">(!bs || !bs->drv || !bdrv_is_inserted(bs))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1659</td><td><a href="io.c.html#L1659">(pad->head || pad->merge_reads)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">911</td><td><a href="io.c.html#L911">(ret < 0 || bdi.cluster_size == 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1391</td><td><a href="io.c.html#L1391">(ret == 0 && pnum == 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1547</td><td><a href="io.c.html#L1547">(bytes <= max_bytes && bytes <= max_transfer)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2554</td><td><a href="io.c.html#L2554">(size2 >= 0 && offset >= size2)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="io.c.html#L790">(req->overlap_offset >= offset + bytes)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1020</td><td><a href="io.c.html#L1020">(bytes > qiov->size - qiov_offset)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">618</td><td><a href="io.c.html#L618">((bs = bdrv_next_all_states(bs)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">667</td><td><a href="io.c.html#L667">((bs = bdrv_next_all_states(bs)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">678</td><td><a href="io.c.html#L678">((bs = bdrv_next_all_states(bs)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">712</td><td><a href="io.c.html#L712">((bs = bdrv_next_all_states(bs)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">837</td><td><a href="io.c.html#L837">((req = bdrv_find_conflicting_request(self)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1424</td><td><a href="io.c.html#L1424">(drv->bdrv_co_pwrite_zeroes && buffer_is_zero(bounce_buffer, pnum))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1972</td><td><a href="io.c.html#L1972">((flags & BDRV_REQ_NO_WAIT) && bdrv_find_conflicting_request(req))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3075</td><td><a href="io.c.html#L3075">(!(bs->open_flags & BDRV_O_UNMAP))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3271</td><td><a href="io.c.html#L3271">(drv && drv->bdrv_io_plug)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3285</td><td><a href="io.c.html#L3285">(drv && drv->bdrv_io_unplug)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3552</td><td><a href="io.c.html#L3552">(flags & ~bs->supported_truncate_flags)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3590</td><td><a href="io.c.html#L3590">(!bs || !bs->drv)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">218</td><td><a href="io.c.html#L218">(bs->bl.request_alignment > BDRV_MAX_ALIGNMENT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">806</td><td><a href="io.c.html#L806">(tracked_request_overlaps(req, self->overlap_offset, self->overlap_bytes))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1869</td><td><a href="io.c.html#L1869">(bytes > 0 && !ret)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2341</td><td><a href="io.c.html#L2341">(ret < 0 && !result)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2629</td><td><a href="io.c.html#L2629">(!include_base && bs == base)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2699</td><td><a href="io.c.html#L2699">(offset + *pnum == eof)</a></td><td class="num">6.85</td></tr>
+      <tr><td class="num line">195</td><td><a href="io.c.html#L195">(c->role & BDRV_CHILD_DATA | BDRV_CHILD_FILTERED | BDRV_CHILD_COW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2970</td><td><a href="io.c.html#L2970">(bs->open_flags & BDRV_O_NO_FLUSH)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3026</td><td><a href="io.c.html#L3026">(child->perm & BLK_PERM_WRITE | BLK_PERM_WRITE_UNCHANGED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1883</td><td><a href="io.c.html#L1883">(tail && num > alignment)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1943</td><td><a href="io.c.html#L1943">(ret == 0 && need_flush)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2160</td><td><a href="io.c.html#L2160">(ret < 0 || pad.merge_reads)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3156</td><td><a href="io.c.html#L3156">(ret && ret != -ENOTSUP)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">315</td><td><a href="io.c.html#L315">(qatomic_read(&bs->in_flight))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1810</td><td><a href="io.c.html#L1810">(qatomic_read(&bs->copy_on_read))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">572</td><td><a href="io.c.html#L572">(i < new_parent->recursive_quiesce_counter)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="io.c.html#L583">(i < old_parent->recursive_quiesce_counter)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="io.c.html#L877">(req->co == self)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1014</td><td><a href="io.c.html#L1014">(qiov_offset > qiov->size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1739</td><td><a href="io.c.html#L1739">(!bdrv_init_padding(bs, *offset, *bytes, pad))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2082</td><td><a href="io.c.html#L2082">(bs->detect_zeroes == BLOCKDEV_DETECT_ZEROES_OPTIONS_UNMAP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2896</td><td><a href="io.c.html#L2896">(acb->refcnt > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2975</td><td><a href="io.c.html#L2975">(bs->flushed_gen == current_gen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3114</td><td><a href="io.c.html#L3114">(!QEMU_IS_ALIGNED(num, bs->bl.request_alignment))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3248</td><td><a href="io.c.html#L3248">(i < qiov->niov)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">66</td><td><a href="io.c.html#L66">(c->klass->drained_end)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">95</td><td><a href="io.c.html#L95">(c->klass->drained_poll)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">121</td><td><a href="io.c.html#L121">(c->klass->drained_begin)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1528</td><td><a href="io.c.html#L1528">(!ret || pnum != bytes)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2152</td><td><a href="io.c.html#L2152">(pad.head || pad.merge_reads)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2423</td><td><a href="io.c.html#L2423">(bs->drv->protocol_name)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2438</td><td><a href="io.c.html#L2438">(bs->drv->bdrv_co_block_status)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="io.c.html#L2546">(bs->drv->supports_backing)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2897</td><td><a href="io.c.html#L2897">(acb->aiocb_info->get_aio_context)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2919</td><td><a href="io.c.html#L2919">(acb->aiocb_info->cancel_async)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2955</td><td><a href="io.c.html#L2955">(bs->drv->bdrv_co_flush)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2962</td><td><a href="io.c.html#L2962">(bs->drv->bdrv_co_flush_to_os)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2986</td><td><a href="io.c.html#L2986">(bs->drv->bdrv_co_flush_to_disk)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2988</td><td><a href="io.c.html#L2988">(bs->drv->bdrv_aio_flush)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3138</td><td><a href="io.c.html#L3138">(bs->drv->bdrv_co_pdiscard)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3448</td><td><a href="io.c.html#L3448">(c->klass->resize)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3594</td><td><a href="io.c.html#L3594">(bs->drv->bdrv_cancel_in_flight)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2937</td><td><a href="io.c.html#L2937">(!bdrv_is_inserted(bs) || bdrv_is_read_only(bs) || bdrv_is_sg(bs))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">999</td><td><a href="io.c.html#L999">(offset > BDRV_MAX_LENGTH - bytes)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1193</td><td><a href="io.c.html#L1193">(qiov == &local_qiov)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1275</td><td><a href="io.c.html#L1275">(qiov == &local_qiov)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2420</td><td><a href="io.c.html#L2420">(offset + bytes == total_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2530</td><td><a href="io.c.html#L2530">(*pnum > bytes)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2647</td><td><a href="io.c.html#L2647">(include_base || p != base)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2656</td><td><a href="io.c.html#L2656">(*pnum == 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">266</td><td><a href="io.c.html#L266">(!data->begin)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">821</td><td><a href="io.c.html#L821">(!req->waiting_for)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">857</td><td><a href="io.c.html#L857">(!req->serialising)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1449</td><td><a href="io.c.html#L1449">(!(flags & BDRV_REQ_PREFETCH))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1454</td><td><a href="io.c.html#L1454">(!(flags & BDRV_REQ_PREFETCH))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2255</td><td><a href="io.c.html#L2255">(!(flags & BDRV_REQ_ZERO_WRITE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2980</td><td><a href="io.c.html#L2980">(!bs->drv)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3134</td><td><a href="io.c.html#L3134">(!bs->drv)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3612</td><td><a href="io.c.html#L3612">(!drv->bdrv_co_preadv_snapshot)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3637</td><td><a href="io.c.html#L3637">(!drv->bdrv_co_snapshot_block_status)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3660</td><td><a href="io.c.html#L3660">(!drv->bdrv_co_pdiscard_snapshot)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3536</td><td><a href="io.c.html#L3536">(new_bytes && backing)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">322</td><td><a href="io.c.html#L322">(bdrv_drain_poll(child->bs, recursive, child, false))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">211</td><td><a href="io.c.html#L211">(drv->bdrv_refresh_limits)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="io.c.html#L258">(data->begin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="io.c.html#L354">(data->begin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">691</td><td><a href="io.c.html#L691">(bs->quiesce_counter)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="io.c.html#L741">(req->serialising)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="io.c.html#L1079">(ret & BDRV_BLOCK_ZERO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1149</td><td><a href="io.c.html#L1149">(drv->bdrv_co_preadv_part)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1159</td><td><a href="io.c.html#L1159">(drv->bdrv_co_preadv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1164</td><td><a href="io.c.html#L1164">(drv->bdrv_aio_preadv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1220</td><td><a href="io.c.html#L1220">(drv->bdrv_co_pwritev_part)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="io.c.html#L1232">(drv->bdrv_co_pwritev)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1239</td><td><a href="io.c.html#L1239">(drv->bdrv_aio_pwritev)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="io.c.html#L1301">(drv->bdrv_co_pwritev_compressed_part)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1506</td><td><a href="io.c.html#L1506">(flags & BDRV_REQ_COPY_ON_READ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1517</td><td><a href="io.c.html#L1517">(flags & BDRV_REQ_COPY_ON_READ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1532</td><td><a href="io.c.html#L1532">(flags & BDRV_REQ_PREFETCH)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1626</td><td><a href="io.c.html#L1626">(pad->tail)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1640</td><td><a href="io.c.html#L1640">(pad->tail)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1664</td><td><a href="io.c.html#L1664">(pad->head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1675</td><td><a href="io.c.html#L1675">(pad->head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1682</td><td><a href="io.c.html#L1682">(pad->merge_reads)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1687</td><td><a href="io.c.html#L1687">(pad->tail)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1711</td><td><a href="io.c.html#L1711">(pad->buf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1895</td><td><a href="io.c.html#L1895">(drv->bdrv_co_pwrite_zeroes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1967</td><td><a href="io.c.html#L1967">(flags & BDRV_REQ_SERIALISING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1989</td><td><a href="io.c.html#L1989">(flags & BDRV_REQ_WRITE_UNCHANGED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2030</td><td><a href="io.c.html#L2030">(req->bytes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2089</td><td><a href="io.c.html#L2089">(flags & BDRV_REQ_ZERO_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2092</td><td><a href="io.c.html#L2092">(flags & BDRV_REQ_WRITE_COMPRESSED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2227</td><td><a href="io.c.html#L2227">(flags & BDRV_REQ_ZERO_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2271</td><td><a href="io.c.html#L2271">(flags & BDRV_REQ_ZERO_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2523</td><td><a href="io.c.html#L2523">(ret & BDRV_BLOCK_RECURSE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2533</td><td><a href="io.c.html#L2533">(ret & BDRV_BLOCK_OFFSET_VALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2537</td><td><a href="io.c.html#L2537">(ret & BDRV_BLOCK_RAW)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="io.c.html#L2544">(ret & BDRV_BLOCK_DATA | BDRV_BLOCK_ZERO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2640</td><td><a href="io.c.html#L2640">(ret & BDRV_BLOCK_EOF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2674</td><td><a href="io.c.html#L2674">(ret & BDRV_BLOCK_ALLOCATED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2798</td><td><a href="io.c.html#L2798">(ret & BDRV_BLOCK_ALLOCATED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2823</td><td><a href="io.c.html#L2823">(drv->bdrv_load_vmstate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2855</td><td><a href="io.c.html#L2855">(drv->bdrv_save_vmstate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2899</td><td><a href="io.c.html#L2899">(acb->bs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2946</td><td><a href="io.c.html#L2946">(bs->active_flush_req)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3186</td><td><a href="io.c.html#L3186">(drv->bdrv_co_ioctl)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3343</td><td><a href="io.c.html#L3343">(write_flags & BDRV_REQ_ZERO_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3551</td><td><a href="io.c.html#L3551">(drv->bdrv_co_truncate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">213</td><td><a href="io.c.html#L213">(*errp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">414</td><td><a href="io.c.html#L414">(ctx != co_ctx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">425</td><td><a href="io.c.html#L425">(ctx != co_ctx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="io.c.html#L531">(old_quiesce_counter == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="io.c.html#L977">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">982</td><td><a href="io.c.html#L982">(bytes < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">987</td><td><a href="io.c.html#L987">(bytes > BDRV_MAX_LENGTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">993</td><td><a href="io.c.html#L993">(offset > BDRV_MAX_LENGTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1038</td><td><a href="io.c.html#L1038">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1042</td><td><a href="io.c.html#L1042">(bytes > BDRV_REQUEST_MAX_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1066</td><td><a href="io.c.html#L1066">(target_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="io.c.html#L1072">(bytes <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="io.c.html#L1076">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="io.c.html#L1084">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="io.c.html#L1105">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1110</td><td><a href="io.c.html#L1110">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1172</td><td><a href="io.c.html#L1172">(acb == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1249</td><td><a href="io.c.html#L1249">(acb == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="io.c.html#L1306">(qiov_offset == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1381</td><td><a href="io.c.html#L1381">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1399</td><td><a href="io.c.html#L1399">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1419</td><td><a href="io.c.html#L1419">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1440</td><td><a href="io.c.html#L1440">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1459</td><td><a href="io.c.html#L1459">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1524</td><td><a href="io.c.html#L1524">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="io.c.html#L1539">(total_bytes < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1569</td><td><a href="io.c.html#L1569">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1672</td><td><a href="io.c.html#L1672">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1695</td><td><a href="io.c.html#L1695">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1750</td><td><a href="io.c.html#L1750">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1791</td><td><a href="io.c.html#L1791">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1816</td><td><a href="io.c.html#L1816">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1889</td><td><a href="io.c.html#L1889">(num > max_write_zeroes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1918</td><td><a href="io.c.html#L1918">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1920</td><td><a href="io.c.html#L1920">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1932</td><td><a href="io.c.html#L1932">(num < max_transfer)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2087</td><td><a href="io.c.html#L2087">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2095</td><td><a href="io.c.html#L2095">(bytes <= max_transfer)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2116</td><td><a href="io.c.html#L2116">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2124</td><td><a href="io.c.html#L2124">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2170</td><td><a href="io.c.html#L2170">(bytes >= align)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2175</td><td><a href="io.c.html#L2175">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2232</td><td><a href="io.c.html#L2232">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2263</td><td><a href="io.c.html#L2263">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2395</td><td><a href="io.c.html#L2395">(total_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2400</td><td><a href="io.c.html#L2400">(offset >= total_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2410</td><td><a href="io.c.html#L2410">(n < bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2512</td><td><a href="io.c.html#L2512">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="io.c.html#L2569">(ret2 >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2653</td><td><a href="io.c.html#L2653">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2686</td><td><a href="io.c.html#L2686">(p == base)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2744</td><td><a href="io.c.html#L2744">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2761</td><td><a href="io.c.html#L2761">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2794</td><td><a href="io.c.html#L2794">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2813</td><td><a href="io.c.html#L2813">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2845</td><td><a href="io.c.html#L2845">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2964</td><td><a href="io.c.html#L2964">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2995</td><td><a href="io.c.html#L2995">(acb == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3016</td><td><a href="io.c.html#L3016">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3036</td><td><a href="io.c.html#L3036">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3070</td><td><a href="io.c.html#L3070">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3100</td><td><a href="io.c.html#L3100">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3108</td><td><a href="io.c.html#L3108">(bytes > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3120</td><td><a href="io.c.html#L3120">(num > align)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3130</td><td><a href="io.c.html#L3130">(num > max_pdiscard)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3148</td><td><a href="io.c.html#L3148">(acb == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3220</td><td><a href="io.c.html#L3220">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3478</td><td><a href="io.c.html#L3478">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3484</td><td><a href="io.c.html#L3484">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3489</td><td><a href="io.c.html#L3489">(old_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3499</td><td><a href="io.c.html#L3499">(offset > old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3517</td><td><a href="io.c.html#L3517">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3540</td><td><a href="io.c.html#L3540">(backing_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3546</td><td><a href="io.c.html#L3546">(backing_len > old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3565</td><td><a href="io.c.html#L3565">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3570</td><td><a href="io.c.html#L3570">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="io.c.html#L1297">(!block_driver_can_compress(drv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1786</td><td><a href="io.c.html#L1786">(!bdrv_is_inserted(bs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2223</td><td><a href="io.c.html#L2223">(!bdrv_is_inserted(bs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">183</td><td><a href="io.c.html#L183">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">202</td><td><a href="io.c.html#L202">(!have_limits)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">293</td><td><a href="io.c.html#L293">(!begin)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1006</td><td><a href="io.c.html#L1006">(!qiov)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1145</td><td><a href="io.c.html#L1145">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1216</td><td><a href="io.c.html#L1216">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1293</td><td><a href="io.c.html#L1293">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1342</td><td><a href="io.c.html#L1342">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1404</td><td><a href="io.c.html#L1404">(!bounce_buffer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1410</td><td><a href="io.c.html#L1410">(!bounce_buffer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1852</td><td><a href="io.c.html#L1852">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2062</td><td><a href="io.c.html#L2062">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2404</td><td><a href="io.c.html#L2404">(!bytes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2549</td><td><a href="io.c.html#L2549">(!cow_bs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2624</td><td><a href="io.c.html#L2624">(!depth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2737</td><td><a href="io.c.html#L2737">(!bytes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2817</td><td><a href="io.c.html#L2817">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2849</td><td><a href="io.c.html#L2849">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3028</td><td><a href="io.c.html#L3028">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3190</td><td><a href="io.c.html#L3190">(!acb)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3384</td><td><a href="io.c.html#L3384">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3474</td><td><a href="io.c.html#L3474">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3608</td><td><a href="io.c.html#L3608">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3633</td><td><a href="io.c.html#L3633">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3656</td><td><a href="io.c.html#L3656">(!drv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">311</td><td><a href="io.c.html#L311">(bdrv_parent_drained_poll(bs, ignore_parent, ignore_bds_parents))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">451</td><td><a href="io.c.html#L451">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">518</td><td><a href="io.c.html#L518">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="io.c.html#L645">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">655</td><td><a href="io.c.html#L655">(replay_events_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="io.c.html#L708">(replay_events_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1958</td><td><a href="io.c.html#L1958">(bdrv_is_read_only(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2066</td><td><a href="io.c.html#L2066">(bdrv_has_readonly_bitmaps(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2331</td><td><a href="io.c.html#L2331">(replay_events_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3065</td><td><a href="io.c.html#L3065">(bdrv_has_readonly_bitmaps(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3494</td><td><a href="io.c.html#L3494">(bdrv_is_read_only(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">124</td><td><a href="io.c.html#L124">(poll)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">172</td><td><a href="io.c.html#L172">(tran)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">319</td><td><a href="io.c.html#L319">(recursive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">350</td><td><a href="io.c.html#L350">(bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">402</td><td><a href="io.c.html#L402">(bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="io.c.html#L459">(recursive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">477</td><td><a href="io.c.html#L477">(poll)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">535</td><td><a href="io.c.html#L535">(recursive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1372</td><td><a href="io.c.html#L1372">(cluster_bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1375</td><td><a href="io.c.html#L1375">(skip_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1552</td><td><a href="io.c.html#L1552">(bytes_remaining)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1555</td><td><a href="io.c.html#L1555">(max_bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1702</td><td><a href="io.c.html#L1702">(zero_middle)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1740</td><td><a href="io.c.html#L1740">(padded)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1758</td><td><a href="io.c.html#L1758">(padded)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1876</td><td><a href="io.c.html#L1876">(head)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2100</td><td><a href="io.c.html#L2100">(bytes_remaining)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2146</td><td><a href="io.c.html#L2146">(padding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2183</td><td><a href="io.c.html#L2183">(bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2277</td><td><a href="io.c.html#L2277">(padded)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2551</td><td><a href="io.c.html#L2551">(want_zero)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2595</td><td><a href="io.c.html#L2595">(file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2598</td><td><a href="io.c.html#L2598">(map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2668</td><td><a href="io.c.html#L2668">(file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2825</td><td><a href="io.c.html#L2825">(child_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2857</td><td><a href="io.c.html#L2857">(child_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3111</td><td><a href="io.c.html#L3111">(head)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3119</td><td><a href="io.c.html#L3119">(tail)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3232</td><td><a href="io.c.html#L3232">(mem)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3340</td><td><a href="io.c.html#L3340">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3351</td><td><a href="io.c.html#L3351">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3361</td><td><a href="io.c.html#L3361">(recurse_src)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3512</td><td><a href="io.c.html#L3512">(new_bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3558</td><td><a href="io.c.html#L3558">(filtered)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - softmmu\memory.c Ctrl Expressions (254) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - softmmu\memory.c Ctrl Expressions (254) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;softmmu\memory.c Ctrl Expressions (254)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1388</td><td><a href="memory.c.html#L1388">(<span style='background-color:#741da3;'>!mr->ops->valid.unaligned && (addr & (size - 1))</span>)</a></td><td class="num">1016.60</td></tr>
+      <tr><td class="num line">206</td><td><a href="memory.c.html#L206">(int128_eq(a->addr.start, b->addr.start) && (<span style='background-color:#9c4c02;'>!int128_nz(a->addr.size) || !int128_nz(b->addr.size) || (int128_eq(a->addr.size, b->addr.size) && (a->match_data == b->match_data) && ((a->match_data && (a->data == b->data)) || !a->match_data) && (a->e == b->e))</span>))</a></td><td class="num">139.75</td></tr>
+      <tr><td class="num line">2968</td><td><a href="memory.c.html#L2968">(QTAILQ_EMPTY(&as->listeners) || listener->priority >= QTAILQ_LAST(&as->listeners)->priority)</a></td><td class="num">68.75</td></tr>
+      <tr><td class="num line">2956</td><td><a href="memory.c.html#L2956">(QTAILQ_EMPTY(&memory_listeners) || listener->priority >= QTAILQ_LAST(&memory_listeners)->priority)</a></td><td class="num">67.50</td></tr>
+      <tr><td class="num line">939</td><td><a href="memory.c.html#L939">(frold && (!frnew || int128_lt(frold->addr.start, frnew->addr.start) || (int128_eq(frold->addr.start, frnew->addr.start) && !flatrange_equal(frold, frnew))))</a></td><td class="num">61.00</td></tr>
+      <tr><td class="num line">3201</td><td><a href="memory.c.html#L3201">(new_ml->mr->addr < ml->mr->addr || (new_ml->mr->addr == ml->mr->addr && new_ml->mr->priority > ml->mr->priority))</a></td><td class="num">60.00</td></tr>
+      <tr><td class="num line">336</td><td><a href="memory.c.html#L336">(j < view->nr && can_merge(&view->ranges[j - 1], &view->ranges[j]))</a></td><td class="num">59.35</td></tr>
+      <tr><td class="num line">770</td><td><a href="memory.c.html#L770">(iold < fds_old_nb && (inew == fds_new_nb || memory_region_ioeventfd_before(&fds_old[iold], &fds_new[inew])))</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">783</td><td><a href="memory.c.html#L783">(inew < fds_new_nb && (iold == fds_old_nb || memory_region_ioeventfd_before(&fds_new[inew], &fds_old[iold])))</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">640</td><td><a href="memory.c.html#L640">(int128_ge(base, addrrange_end(view->ranges[i].addr)))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">3295</td><td><a href="memory.c.html#L3295">(fvi->ac->has_memory(current_machine, as, int128_get64(range->addr.start), MR_SIZE(range->addr.size) + 1))</a></td><td class="num">37.10</td></tr>
+      <tr><td class="num line">1379</td><td><a href="memory.c.html#L1379">(mr->ops->valid.accepts && !mr->ops->valid.accepts(mr->opaque, addr, size, is_write, attrs))</a></td><td class="num">35.25</td></tr>
+      <tr><td class="num line">2172</td><td><a href="memory.c.html#L2172">(fr->dirty_log_mask && (!mr || fr->mr == mr))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">1479</td><td><a href="memory.c.html#L1479">(memory_region_ioeventfd_equal(&ioeventfd, &mr->ioeventfds[i]))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">2475</td><td><a href="memory.c.html#L2475">(memory_region_ioeventfd_before(&mrfd, &mr->ioeventfds[i]))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">2510</td><td><a href="memory.c.html#L2510">(memory_region_ioeventfd_equal(&mrfd, &mr->ioeventfds[i]))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">2717</td><td><a href="memory.c.html#L2717">(fr > view->ranges && addrrange_intersects(fr[-1].addr, range))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">643</td><td><a href="memory.c.html#L643">(int128_lt(base, view->ranges[i].addr.start))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1834</td><td><a href="memory.c.html#L1834">(global_dirty_tracking && ((rb && qemu_ram_is_migratable(rb)) || memory_region_is_iommu(mr)))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2132</td><td><a href="memory.c.html#L2132">(!!old_logging == !!mr->vga_logging_count)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">308</td><td><a href="memory.c.html#L308">(qatomic_fetch_dec(&view->ref) == 1)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1044</td><td><a href="memory.c.html#L1044">(!QTAILQ_EMPTY(&as->listeners))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1760</td><td><a href="memory.c.html#L1760">(!QTAILQ_EMPTY(&mr->subregions))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2424</td><td><a href="memory.c.html#L2424">(!QTAILQ_EMPTY(&mr->coalesced))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2997</td><td><a href="memory.c.html#L2997">(!QTAILQ_EMPTY(&as->listeners))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2463</td><td><a href="memory.c.html#L2463">(kvm_enabled() && (!(kvm_eventfds_enabled() || userspace_eventfd_warning)))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">1401</td><td><a href="memory.c.html#L1401">(size > mr->ops->valid.max_access_size || size < mr->ops->valid.min_access_size)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">687</td><td><a href="memory.c.html#L687">(!mr->alias_offset && int128_ge(mr->size, mr->alias->size))</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">1981</td><td><a href="memory.c.html#L1981">(notifier->start > entry_end || notifier->end < entry->iova)</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">676</td><td><a href="memory.c.html#L676">(cb(fr->addr.start, fr->addr.size, fr->mr, fr->offset_in_region, opaque))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">703</td><td><a href="memory.c.html#L703">(!child->addr && int128_ge(mr->size, child->size))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">927</td><td><a href="memory.c.html#L927">(iold < old_view->nr || inew < new_view->nr)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1863</td><td><a href="memory.c.html#L1863">(flags != iommu_mr->iommu_notify_flags && imrc->notify_flag_changed)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2208</td><td><a href="memory.c.html#L2208">(!fr->dirty_log_mask || fr->mr != mr)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">362</td><td><a href="memory.c.html#L362">((op & MO_BSWAP) != devend_memop(mr->ops->endianness))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">957</td><td><a href="memory.c.html#L957">(frnew->dirty_log_mask & ~frold->dirty_log_mask)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">962</td><td><a href="memory.c.html#L962">(frold->dirty_log_mask & ~frnew->dirty_log_mask)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2912</td><td><a href="memory.c.html#L2912">(fr->dirty_log_mask && listener->log_start)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2935</td><td><a href="memory.c.html#L2935">(fr->dirty_log_mask && listener->log_stop)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3307</td><td><a href="memory.c.html#L3307">(fvi->dispatch_tree && view->root)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1993</td><td><a href="memory.c.html#L1993">(event->type & notifier->notifier_flags)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">639</td><td><a href="memory.c.html#L639">(i < view->nr && int128_nz(remain))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">176</td><td><a href="memory.c.html#L176">(int128_lt(a->addr.start, b->addr.start))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="memory.c.html#L178">(int128_gt(a->addr.start, b->addr.start))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">180</td><td><a href="memory.c.html#L180">(int128_lt(a->addr.size, b->addr.size))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">182</td><td><a href="memory.c.html#L182">(int128_gt(a->addr.size, b->addr.size))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">184</td><td><a href="memory.c.html#L184">(a->match_data < b->match_data)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">186</td><td><a href="memory.c.html#L186">(a->match_data > b->match_data)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">189</td><td><a href="memory.c.html#L189">(a->data < b->data)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">191</td><td><a href="memory.c.html#L191">(a->data > b->data)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">195</td><td><a href="memory.c.html#L195">(a->e < b->e)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">197</td><td><a href="memory.c.html#L197">(a->e > b->e)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">273</td><td><a href="memory.c.html#L273">(view->nr == view->nr_allocated)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2533</td><td><a href="memory.c.html#L2533">(subregion->priority >= other->priority)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2961</td><td><a href="memory.c.html#L2961">(listener->priority < other->priority)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2973</td><td><a href="memory.c.html#L2973">(listener->priority < other->priority)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3144</td><td><a href="memory.c.html#L3144">(ml->mr == mr->alias)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">837</td><td><a href="memory.c.html#L837">(i < fr->mr->ioeventfd_nb)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1397</td><td><a href="memory.c.html#L1397">(!mr->ops->valid.max_access_size)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2667</td><td><a href="memory.c.html#L2667">(int128_le(addrrange_end(*addr), fr->addr.start))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1790</td><td><a href="memory.c.html#L1790">(mr && mr->owner)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1797</td><td><a href="memory.c.html#L1797">(mr && mr->owner)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2669</td><td><a href="memory.c.html#L2669">(int128_ge(addr->start, addrrange_end(fr->addr)))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3080</td><td><a href="memory.c.html#L3080">(dev && dev->id)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">769</td><td><a href="memory.c.html#L769">(iold < fds_old_nb || inew < fds_new_nb)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3134</td><td><a href="memory.c.html#L3134">(cur_start < base || cur_end < cur_start)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">952</td><td><a href="memory.c.html#L952">(frold && frnew && flatrange_equal(frold, frnew))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1985</td><td><a href="memory.c.html#L1985">(notifier->notifier_flags & IOMMU_NOTIFIER_DEVIOTLB_UNMAP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3106</td><td><a href="memory.c.html#L3106">(parent && parent != owner)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">906</td><td><a href="memory.c.html#L906">(QTAILQ_EMPTY(&mr->coalesced))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2417</td><td><a href="memory.c.html#L2417">(QTAILQ_EMPTY(&mr->coalesced))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2440</td><td><a href="memory.c.html#L2440">(QTAILQ_EMPTY(&mr->coalesced))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">293</td><td><a href="memory.c.html#L293">(i < view->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="memory.c.html#L334">(i < view->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">569</td><td><a href="memory.c.html#L569">(mr == as->root)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="memory.c.html#L699">(found++ > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">743</td><td><a href="memory.c.html#L743">(i < view->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">928</td><td><a href="memory.c.html#L928">(iold < old_view->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">933</td><td><a href="memory.c.html#L933">(inew < new_view->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1475</td><td><a href="memory.c.html#L1475">(i < mr->ioeventfd_nb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1973</td><td><a href="memory.c.html#L1973">(event->type == IOMMU_NOTIFIER_UNMAP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2007</td><td><a href="memory.c.html#L2007">(iommu_notifier->iommu_idx == iommu_idx)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2265</td><td><a href="memory.c.html#L2265">(mr->readonly != readonly)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2275</td><td><a href="memory.c.html#L2275">(mr->nonvolatile != nonvolatile)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2285</td><td><a href="memory.c.html#L2285">(mr->romd_mode != romd_mode)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2387</td><td><a href="memory.c.html#L2387">(fr->mr == mr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2474</td><td><a href="memory.c.html#L2474">(i < mr->ioeventfd_nb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2509</td><td><a href="memory.c.html#L2509">(i < mr->ioeventfd_nb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2596</td><td><a href="memory.c.html#L2596">(enabled == mr->enabled)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2637</td><td><a href="memory.c.html#L2637">(addr != mr->addr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2647</td><td><a href="memory.c.html#L2647">(offset == mr->alias_offset)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3154</td><td><a href="memory.c.html#L3154">(mr->enabled || display_disabled)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3176</td><td><a href="memory.c.html#L3176">(mr->enabled || display_disabled)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3246</td><td><a href="memory.c.html#L3246">(i < fv_address_spaces->len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3293</td><td><a href="memory.c.html#L3293">(i < fv_address_spaces->len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1423</td><td><a href="memory.c.html#L1423">(mr->ops->read)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1513</td><td><a href="memory.c.html#L1513">(mr->ops->write)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3099</td><td><a href="memory.c.html#L3099">(!owner && !parent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3250</td><td><a href="memory.c.html#L3250">(as->root->alias)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1508</td><td><a href="memory.c.html#L1508">((!kvm_eventfds_enabled()) && memory_region_dispatch_write_eventfds(mr, addr, data, size, attrs))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1142</td><td><a href="memory.c.html#L1142">(bytes == p - name)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1946</td><td><a href="memory.c.html#L1946">((addr + granularity) < addr)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">876</td><td><a href="memory.c.html#L876">(!addrrange_intersects(tmp, fr->addr))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2051</td><td><a href="memory.c.html#L2051">(!memory_region_is_mapped(mr) || !memory_region_is_ram(mr))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="memory.c.html#L594">(!mr->enabled)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">624</td><td><a href="memory.c.html#L624">(!mr->terminates)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">694</td><td><a href="memory.c.html#L694">(!mr->terminates)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1812</td><td><a href="memory.c.html#L1812">(!mr->name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1839</td><td><a href="memory.c.html#L1839">(tcg_enabled() && rb)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2019</td><td><a href="memory.c.html#L2019">(!imrc->get_attr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2031</td><td><a href="memory.c.html#L2031">(!imrc->attrs_to_index)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2042</td><td><a href="memory.c.html#L2042">(!imrc->num_indexes)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2202</td><td><a href="memory.c.html#L2202">(!listener->log_clear)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2985</td><td><a href="memory.c.html#L2985">(!listener->address_space)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1804</td><td><a href="memory.c.html#L1804">(int128_eq(mr->size, int128_2_64()))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1940</td><td><a href="memory.c.html#L1940">(iotlb.perm != IOMMU_NONE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">841</td><td><a href="memory.c.html#L841">(addrrange_intersects(fr->addr, tmp))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2612</td><td><a href="memory.c.html#L2612">(int128_eq(s, mr->size))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">188</td><td><a href="memory.c.html#L188">(a->match_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">290</td><td><a href="memory.c.html#L290">(view->dispatch)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">414</td><td><a href="memory.c.html#L414">(root->container)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">441</td><td><a href="memory.c.html#L441">(mr->subpage)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="memory.c.html#L464">(mr->subpage)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="memory.c.html#L485">(mr->subpage)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">506</td><td><a href="memory.c.html#L506">(mr->subpage)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="memory.c.html#L565">(mr->container)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">610</td><td><a href="memory.c.html#L610">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="memory.c.html#L685">(mr->enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="memory.c.html#L686">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="memory.c.html#L698">(child->enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1205</td><td><a href="memory.c.html#L1205">(mr->container)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="memory.c.html#L1209">(mr->container)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="memory.c.html#L1447">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1496</td><td><a href="memory.c.html#L1496">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1882</td><td><a href="memory.c.html#L1882">(imrc->iommu_set_page_size_mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1894</td><td><a href="memory.c.html#L1894">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1917</td><td><a href="memory.c.html#L1917">(imrc->get_min_page_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1931</td><td><a href="memory.c.html#L1931">(imrc->replay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1957</td><td><a href="memory.c.html#L1957">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="memory.c.html#L2168">(listener->log_sync)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2179</td><td><a href="memory.c.html#L2179">(listener->log_sync_global)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2306</td><td><a href="memory.c.html#L2306">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2320</td><td><a href="memory.c.html#L2320">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2356</td><td><a href="memory.c.html#L2356">(mr->ram_block)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2367</td><td><a href="memory.c.html#L2367">(mr->dirty_log_mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2700</td><td><a href="memory.c.html#L2700">(root->container)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2751</td><td><a href="memory.c.html#L2751">(tmp->mr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2754</td><td><a href="memory.c.html#L2754">(tmp->fv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2764</td><td><a href="memory.c.html#L2764">(s->fv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2767</td><td><a href="memory.c.html#L2767">(s->mr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2896</td><td><a href="memory.c.html#L2896">(listener->begin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2900</td><td><a href="memory.c.html#L2900">(listener->log_global_start)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2909</td><td><a href="memory.c.html#L2909">(listener->region_add)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2916</td><td><a href="memory.c.html#L2916">(listener->commit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="memory.c.html#L2928">(listener->begin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="memory.c.html#L2938">(listener->region_del)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2942</td><td><a href="memory.c.html#L2942">(listener->commit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3046</td><td><a href="memory.c.html#L3046">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3138</td><td><a href="memory.c.html#L3138">(mr->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3264</td><td><a href="memory.c.html#L3264">(n--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3266</td><td><a href="memory.c.html#L3266">(range->offset_in_region)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3288</td><td><a href="memory.c.html#L3288">(fvi->owner)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3292</td><td><a href="memory.c.html#L3292">(fvi->ac)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3340</td><td><a href="memory.c.html#L3340">(ac->has_memory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1938</td><td><a href="memory.c.html#L1938">(addr < memory_region_size(mr))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">342</td><td><a href="memory.c.html#L342">(k < j)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">386</td><td><a href="memory.c.html#L386">(shift >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="memory.c.html#L399">(shift >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">548</td><td><a href="memory.c.html#L548">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="memory.c.html#L553">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="memory.c.html#L712">(found == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">843</td><td><a href="memory.c.html#L843">(ioeventfd_nb > ioeventfd_max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="memory.c.html#L1034">(old_view == new_view)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1139</td><td><a href="memory.c.html#L1139">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="memory.c.html#L1147">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1167</td><td><a href="memory.c.html#L1167">(size == UINT64_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2222</td><td><a href="memory.c.html#L2222">(sec_start >= sec_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2609</td><td><a href="memory.c.html#L2609">(size == UINT64_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3155</td><td><a href="memory.c.html#L3155">(i < level)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3177</td><td><a href="memory.c.html#L3177">(i < level)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3259</td><td><a href="memory.c.html#L3259">(n <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2740</td><td><a href="memory.c.html#L2740">(ret.mr)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">604</td><td><a href="memory.c.html#L604">(!addrrange_intersects(tmp, clip))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">813</td><td><a href="memory.c.html#L813">(!flatview_ref(view))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1076</td><td><a href="memory.c.html#L1076">(!g_hash_table_lookup(flat_views, physmr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1452</td><td><a href="memory.c.html#L1452">(!memory_region_access_valid(mr, addr, size, false, attrs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1501</td><td><a href="memory.c.html#L1501">(!memory_region_access_valid(mr, addr, size, true, attrs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2874</td><td><a href="memory.c.html#L2874">(!runstate_is_running())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">537</td><td><a href="memory.c.html#L537">(!access_size_min)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">540</td><td><a href="memory.c.html#L540">(!access_size_max)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">946</td><td><a href="memory.c.html#L946">(!adding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">994</td><td><a href="memory.c.html#L994">(!empty_view)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1047</td><td><a href="memory.c.html#L1047">(!old_view2)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1096</td><td><a href="memory.c.html#L1096">(!memory_region_transaction_depth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1178</td><td><a href="memory.c.html#L1178">(!owner)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1869</td><td><a href="memory.c.html#L1869">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2335</td><td><a href="memory.c.html#L2335">(!block)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2706</td><td><a href="memory.c.html#L2706">(!as)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2713</td><td><a href="memory.c.html#L2713">(!fr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2813</td><td><a href="memory.c.html#L2813">(!flags)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2821</td><td><a href="memory.c.html#L2821">(!old_flags)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2837</td><td><a href="memory.c.html#L2837">(!global_dirty_tracking)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3122</td><td><a href="memory.c.html#L3122">(!mr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3149</td><td><a href="memory.c.html#L3149">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3349</td><td><a href="memory.c.html#L3349">(!fv_address_spaces)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1149</td><td><a href="memory.c.html#L1149">(unlikely(memory_region_need_escape(c)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">443</td><td><a href="memory.c.html#L443">(trace_event_get_state_backends(TRACE_MEMORY_REGION_OPS_READ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">466</td><td><a href="memory.c.html#L466">(trace_event_get_state_backends(TRACE_MEMORY_REGION_OPS_READ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="memory.c.html#L487">(trace_event_get_state_backends(TRACE_MEMORY_REGION_OPS_WRITE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">508</td><td><a href="memory.c.html#L508">(trace_event_get_state_backends(TRACE_MEMORY_REGION_OPS_WRITE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="memory.c.html#L547">(memory_region_big_endian(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="memory.c.html#L661">(int128_nz(remain))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1018</td><td><a href="memory.c.html#L1018">(g_hash_table_lookup(flat_views, physmr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3049</td><td><a href="memory.c.html#L3049">(memory_region_is_ram_device(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3051</td><td><a href="memory.c.html#L3051">(memory_region_is_romd(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3053</td><td><a href="memory.c.html#L3053">(memory_region_is_rom(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3055</td><td><a href="memory.c.html#L3055">(memory_region_is_ram(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="memory.c.html#L424">(current_cpu)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">715</td><td><a href="memory.c.html#L715">(next)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">735</td><td><a href="memory.c.html#L735">(mr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">881</td><td><a href="memory.c.html#L881">(add)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">955</td><td><a href="memory.c.html#L955">(adding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="memory.c.html#L974">(adding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">988</td><td><a href="memory.c.html#L988">(flat_views)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1008</td><td><a href="memory.c.html#L1008">(flat_views)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1038</td><td><a href="memory.c.html#L1038">(old_view)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="memory.c.html#L1056">(old_view)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1066</td><td><a href="memory.c.html#L1066">(old_view)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1097</td><td><a href="memory.c.html#L1097">(memory_region_update_pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1109</td><td><a href="memory.c.html#L1109">(ioeventfd_update_pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1174</td><td><a href="memory.c.html#L1174">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1564</td><td><a href="memory.c.html#L1564">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1588</td><td><a href="memory.c.html#L1588">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1615</td><td><a href="memory.c.html#L1615">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1638</td><td><a href="memory.c.html#L1638">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1720</td><td><a href="memory.c.html#L1720">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1907</td><td><a href="memory.c.html#L1907">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2470</td><td><a href="memory.c.html#L2470">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2505</td><td><a href="memory.c.html#L2505">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2625</td><td><a href="memory.c.html#L2625">(container)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2806</td><td><a href="memory.c.html#L2806">(vmstate_change)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2855</td><td><a href="memory.c.html#L2855">(postponed_stop_flags)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2867</td><td><a href="memory.c.html#L2867">(running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2876</td><td><a href="memory.c.html#L2876">(vmstate_change)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2899</td><td><a href="memory.c.html#L2899">(global_dirty_tracking)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3084</td><td><a href="memory.c.html#L3084">(canonical_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3103</td><td><a href="memory.c.html#L3103">(owner)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3170</td><td><a href="memory.c.html#L3170">(owner)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3188</td><td><a href="memory.c.html#L3188">(owner)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3209</td><td><a href="memory.c.html#L3209">(new_ml)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3450</td><td><a href="memory.c.html#L3450">(flatview)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3467</td><td><a href="memory.c.html#L3467">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3491</td><td><a href="memory.c.html#L3491">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3518</td><td><a href="memory.c.html#L3518">(err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

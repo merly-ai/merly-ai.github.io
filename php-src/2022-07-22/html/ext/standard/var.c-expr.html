@@ -1,0 +1,193 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\standard\var.c Ctrl Expressions (142) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\standard\var.c Ctrl Expressions (142) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\standard\var.c Ctrl Expressions (142)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">670</td><td><a href="var.c.html#L670">(<span style='background-color:#9c4c02;'>Z_REFCOUNT_P(var) == 1 && (Z_OBJ_P(var)->properties == NULL || GC_REFCOUNT(Z_OBJ_P(var)->properties) == 1)</span>)</a></td><td class="num">106.00</td></tr>
+      <tr><td class="num line">1188</td><td><a href="var.c.html#L1188">(Z_OBJ_P(struc)->properties == NULL && Z_OBJ_HT_P(struc)->get_properties_for == NULL && Z_OBJ_HT_P(struc)->get_properties == zend_std_get_properties)</a></td><td class="num">95.25</td></tr>
+      <tr><td class="num line">955</td><td><a href="var.c.html#L955">(UNEXPECTED(Z_IS_RECURSIVE_P(data)) || UNEXPECTED(Z_TYPE_P(struc) == IS_ARRAY && Z_ARR_P(data) == Z_ARR_P(struc)))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">1296</td><td><a href="var.c.html#L1296">(!BG(serialize_lock) && !BG(serialize).level--)</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">1169</td><td><a href="var.c.html#L1169">(!(ht = php_var_serialize_call_sleep(Z_OBJ(tmp), Z_FUNC_P(zv))))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="var.c.html#L1353">(classes && (Z_TYPE_P(classes) == IS_ARRAY || !zend_is_true(classes)))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1292</td><td><a href="var.c.html#L1292">(BG(serialize_lock) || BG(serialize).level == 1)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">675</td><td><a href="var.c.html#L675">(is_ref && Z_TYPE_P(Z_REFVAL_P(var)) == IS_OBJECT)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1275</td><td><a href="var.c.html#L1275">(BG(serialize_lock) || !BG(serialize).level)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1348</td><td><a href="var.c.html#L1348">(classes && Z_TYPE_P(classes) != IS_ARRAY && Z_TYPE_P(classes) != IS_TRUE && Z_TYPE_P(classes) != IS_FALSE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">999</td><td><a href="var.c.html#L999">(var_hash && (var_already = php_add_var_hash(var_hash, struc)))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1122</td><td><a href="var.c.html#L1122">(ce->serialize(struc, &serialized_data, &serialized_length, (zend_serialize_data *)var_hash) == SUCCESS)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1398</td><td><a href="var.c.html#L1398">(!php_var_unserialize(retval, &p, p + buf_len, &var_hash))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1087</td><td><a href="var.c.html#L1087">(php_var_serialize_call_magic_serialize(&retval, &obj) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">599</td><td><a href="var.c.html#L599">(level > 1 && !is_enum)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">151</td><td><a href="var.c.html#L151">(ce->ce_flags & ZEND_ACC_ENUM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">948</td><td><a href="var.c.html#L948">(Z_ISREF_P(data) && Z_REFCOUNT_P(data) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1057</td><td><a href="var.c.html#L1057">(ce->ce_flags & ZEND_ACC_NOT_SERIALIZABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1063</td><td><a href="var.c.html#L1063">(ce->ce_flags & ZEND_ACC_ENUM)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1105</td><td><a href="var.c.html#L1105">(Z_ISREF_P(data) && Z_REFCOUNT_P(data) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1226</td><td><a href="var.c.html#L1226">(Z_ISREF_P(prop) && Z_REFCOUNT_P(prop) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">267</td><td><a href="var.c.html#L267">(prop_info && Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="var.c.html#L686">(is_ref && Z_LVAL_P(zv) != -1)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="var.c.html#L1357">(class_hash && Z_TYPE_P(classes) == IS_ARRAY)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">63</td><td><a href="var.c.html#L63">(class_name && unmangle == SUCCESS)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1242</td><td><a href="var.c.html#L1242">(count > 0 && incomplete_class)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1117</td><td><a href="var.c.html#L1117">(ce->serialize != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1199</td><td><a href="var.c.html#L1199">(i < ce->default_properties_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1214</td><td><a href="var.c.html#L1214">(i < ce->default_properties_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">786</td><td><a href="var.c.html#L786">(res == FAILURE || Z_ISUNDEF(retval))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">981</td><td><a href="var.c.html#L981">(php_var_serialize_get_sleep_props(&props, struc, ht) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">127</td><td><a href="var.c.html#L127">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="var.c.html#L140">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="var.c.html#L318">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">336</td><td><a href="var.c.html#L336">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">526</td><td><a href="var.c.html#L526">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="var.c.html#L543">(!(GC_FLAGS(myht) & GC_IMMUTABLE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">64</td><td><a href="var.c.html#L64">(class_name[0] == '*')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="var.c.html#L257">(class_name[0] == '*')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">937</td><td><a href="var.c.html#L937">(incomplete_class && zend_string_equals_literal(key, MAGIC_MEMBER))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1393</td><td><a href="var.c.html#L1393">(BG(unserialize).level > 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1403</td><td><a href="var.c.html#L1403">(BG(unserialize).level <= 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1407</td><td><a href="var.c.html#L1407">(BG(unserialize).level > 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">183</td><td><a href="var.c.html#L183">(!Z_ISUNDEF_P(val) || prop_info)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="var.c.html#L369">(!Z_ISUNDEF_P(val) || prop_info)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="var.c.html#L1080">(ce->__serialize)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">77</td><td><a href="var.c.html#L77">(Z_TYPE_P(zv) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">176</td><td><a href="var.c.html#L176">(Z_TYPE_P(val) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">203</td><td><a href="var.c.html#L203">(Z_REFCOUNT_P(struc) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">362</td><td><a href="var.c.html#L362">(Z_TYPE_P(val) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">502</td><td><a href="var.c.html#L502">(Z_LVAL_P(struc) == ZEND_LONG_MIN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="var.c.html#L668">(Z_TYPE_P(var) != IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">791</td><td><a href="var.c.html#L791">(Z_TYPE(retval) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">813</td><td><a href="var.c.html#L813">(Z_TYPE_P(retval) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">831</td><td><a href="var.c.html#L831">(Z_TYPE_P(val) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">833</td><td><a href="var.c.html#L833">(Z_TYPE_P(val) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">868</td><td><a href="var.c.html#L868">(Z_TYPE_P(name_val) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">875</td><td><a href="var.c.html#L875">(php_var_serialize_try_add_sleep_prop(ht, props, name, name, struc) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">889</td><td><a href="var.c.html#L889">(php_var_serialize_try_add_sleep_prop(ht, props, priv_name, name, struc) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">904</td><td><a href="var.c.html#L904">(php_var_serialize_try_add_sleep_prop(ht, props, prot_name, name, struc) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="var.c.html#L954">(Z_TYPE_P(data) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1009</td><td><a href="var.c.html#L1009">(Z_TYPE_P(struc) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1206</td><td><a href="var.c.html#L1206">(Z_TYPE_P(prop) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1220</td><td><a href="var.c.html#L1220">(Z_TYPE_P(prop) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1377</td><td><a href="var.c.html#L1377">(Z_TYPE_P(max_depth) != IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1381</td><td><a href="var.c.html#L1381">(Z_LVAL_P(max_depth) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">42</td><td><a href="var.c.html#L42">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">57</td><td><a href="var.c.html#L57">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="var.c.html#L99">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">144</td><td><a href="var.c.html#L144">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">189</td><td><a href="var.c.html#L189">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="var.c.html#L227">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">235</td><td><a href="var.c.html#L235">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">250</td><td><a href="var.c.html#L250">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">287</td><td><a href="var.c.html#L287">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">340</td><td><a href="var.c.html#L340">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="var.c.html#L376">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="var.c.html#L389">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">412</td><td><a href="var.c.html#L412">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="var.c.html#L429">(key == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="var.c.html#L458">(key != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">535</td><td><a href="var.c.html#L535">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="var.c.html#L547">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="var.c.html#L566">(level > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="var.c.html#L575">(ce == zend_standard_class_def)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="var.c.html#L602">(ce == zend_standard_class_def)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">827</td><td><a href="var.c.html#L827">(val == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="var.c.html#L931">(count > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1000</td><td><a href="var.c.html#L1000">(var_already == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="var.c.html#L1161">(ce != PHP_IC_ENTRY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="var.c.html#L1334">(buf_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="var.c.html#L1344">(options != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">842</td><td><a href="var.c.html#L842">(!zend_hash_add(ht, name, val))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1088</td><td><a href="var.c.html#L1088">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1170</td><td><a href="var.c.html#L1170">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1279</td><td><a href="var.c.html#L1279">(!BG(serialize_lock))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1399</td><td><a href="var.c.html#L1399">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">591</td><td><a href="var.c.html#L591">(!is_enum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">604</td><td><a href="var.c.html#L604">(!is_enum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">942</td><td><a href="var.c.html#L942">(!key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1099</td><td><a href="var.c.html#L1099">(!key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1201</td><td><a href="var.c.html#L1201">(!prop_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1216</td><td><a href="var.c.html#L1216">(!prop_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">128</td><td><a href="var.c.html#L128">(GC_IS_RECURSIVE(myht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">157</td><td><a href="var.c.html#L157">(Z_IS_RECURSIVE_P(struc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">310</td><td><a href="var.c.html#L310">(Z_REFCOUNTED_P(struc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">319</td><td><a href="var.c.html#L319">(GC_IS_RECURSIVE(myht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="var.c.html#L327">(Z_REFCOUNTED_P(struc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="var.c.html#L348">(GC_IS_RECURSIVE(myht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="var.c.html#L527">(GC_IS_RECURSIVE(myht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">557</td><td><a href="var.c.html#L557">(GC_IS_RECURSIVE(myht))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">808</td><td><a href="var.c.html#L808">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">880</td><td><a href="var.c.html#L880">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">896</td><td><a href="var.c.html#L896">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">911</td><td><a href="var.c.html#L911">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">960</td><td><a href="var.c.html#L960">(Z_REFCOUNTED_P(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="var.c.html#L964">(Z_REFCOUNTED_P(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="var.c.html#L995">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="var.c.html#L1004">(Z_ISREF_P(struc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1316</td><td><a href="var.c.html#L1316">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="var.c.html#L1369">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1409</td><td><a href="var.c.html#L1409">(Z_REFCOUNTED_P(return_value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1429</td><td><a href="var.c.html#L1429">(Z_ISREF_P(return_value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">168</td><td><a href="var.c.html#L168">(myht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">178</td><td><a href="var.c.html#L178">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">256</td><td><a href="var.c.html#L256">(class_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">347</td><td><a href="var.c.html#L347">(myht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="var.c.html#L358">(myht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">364</td><td><a href="var.c.html#L364">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">556</td><td><a href="var.c.html#L556">(myht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">580</td><td><a href="var.c.html#L580">(is_enum)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">590</td><td><a href="var.c.html#L590">(myht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">647</td><td><a href="var.c.html#L647">(return_output)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="var.c.html#L666">(is_ref)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">684</td><td><a href="var.c.html#L684">(zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">835</td><td><a href="var.c.html#L835">(info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1150</td><td><a href="var.c.html#L1150">(var_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1155</td><td><a href="var.c.html#L1155">(serialized_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1164</td><td><a href="var.c.html#L1164">(zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1211</td><td><a href="var.c.html#L1211">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1376</td><td><a href="var.c.html#L1376">(max_depth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1415</td><td><a href="var.c.html#L1415">(class_hash)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

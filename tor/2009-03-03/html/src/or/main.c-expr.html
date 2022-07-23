@@ -1,0 +1,249 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>tor Repo - src\or\main.c Ctrl Expressions (198) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\or\main.c Ctrl Expressions (198) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\or\main.c Ctrl Expressions (198)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1001</td><td><a href="main.c.html#L1001">(<span style='background-color:#741da3;'>time_to_recheck_bandwidth && me && me->bandwidthcapacity < me->bandwidthrate && me->bandwidthcapacity < 51200</span>)</a></td><td class="num">1023.00</td></tr>
+      <tr><td class="num line">930</td><td><a href="main.c.html#L930">(<span style='background-color:#741da3;'>ns && ns->valid_until < now + NS_EXPIRY_SLOP && router_have_minimum_dir_info()</span>)</a></td><td class="num">1014.35</td></tr>
+      <tr><td class="num line">569</td><td><a href="main.c.html#L569">(<span style='background-color:#741da3;'>retval >= 0 && conn->hold_open_until_flushed && connection_wants_to_flush(conn)</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">893</td><td><a href="main.c.html#L893">(<span style='background-color:#741da3;'>now % 10 == 0 && (authdir_mode_tests_reachability(options)) && !we_are_hibernating()</span>)</a></td><td class="num">1012.10</td></tr>
+      <tr><td class="num line">687</td><td><a href="main.c.html#L687">(conn->type == CONN_TYPE_DIR && ((DIR_CONN_IS_SERVER(conn) && conn->timestamp_lastwritten + DIR_CONN_MAX_STALL < now) || (!DIR_CONN_IS_SERVER(conn) && conn->timestamp_lastread + DIR_CONN_MAX_STALL < now)))</a></td><td class="num">94.45</td></tr>
+      <tr><td class="num line">756</td><td><a href="main.c.html#L756">(now >= or_conn->timestamp_lastempty + options->KeepalivePeriod * 10 && now >= conn->timestamp_lastwritten + options->KeepalivePeriod * 10)</a></td><td class="num">75.40</td></tr>
+      <tr><td class="num line">582</td><td><a href="main.c.html#L582">(conn->type == CONN_TYPE_EXIT || (conn->type == CONN_TYPE_OR && server_mode(get_options())) || (conn->type == CONN_TYPE_DIR && conn->purpose == DIR_PURPOSE_SERVER))</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">206</td><td><a href="main.c.html#L206">(!tor_digest_is_zero(TO_OR_CONN(conn)->identity_digest))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">746</td><td><a href="main.c.html#L746">(!clique_mode(options) && !or_conn->n_circuits && now >= or_conn->timestamp_last_added_nonpadding + maxCircuitlessPeriod && (!router || !server_mode(options) || !router_is_clique_mode(router)))</a></td><td class="num">38.85</td></tr>
+      <tr><td class="num line">374</td><td><a href="main.c.html#L374">(!conn->linked_conn || (conn->linked_conn->writing_to_linked_conn && buf_datalen(conn->linked_conn->outbuf)))</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">1179</td><td><a href="main.c.html#L1179">(server_mode(options) && !we_are_hibernating() && seconds_elapsed > 0 && has_completed_circuit && stats_n_seconds_working / TIMEOUT_UNTIL_UNREACHABILITY_COMPLAINT != (stats_n_seconds_working + seconds_elapsed) / TIMEOUT_UNTIL_UNREACHABILITY_COMPLAINT)</a></td><td class="num">33.80</td></tr>
+      <tr><td class="num line">677</td><td><a href="main.c.html#L677">(conn->outbuf && !buf_datalen(conn->outbuf) && conn->type == CONN_TYPE_OR)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">535</td><td><a href="main.c.html#L535">((conn->s >= 0 || conn->linked_conn) && connection_wants_to_flush(conn))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">696</td><td><a href="main.c.html#L696">(conn->purpose == DIR_PURPOSE_FETCH_SERVERDESC && buf_datalen(conn->inbuf) >= 1024)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="main.c.html#L738">(we_are_hibernating() && !or_conn->n_circuits && !buf_datalen(conn->outbuf))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">661</td><td><a href="main.c.html#L661">(server_mode(options) && !we_are_hibernating() && !from_cache && (has_completed_circuit || !any_predicted_circuits(now)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="main.c.html#L1820">(crypto_global_init(get_options()->HardwareAccel))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">989</td><td><a href="main.c.html#L989">(server_mode(options) && (has_completed_circuit || !any_predicted_circuits(now)) && !we_are_hibernating())</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1356</td><td><a href="main.c.html#L1356">(get_options()->ServerDNSAllowBrokenConfig)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">834</td><td><a href="main.c.html#L834">(server_mode(options) && get_onion_key_set_at() + MIN_ONION_KEY_LIFETIME < now)</a></td><td class="num">23.10</td></tr>
+      <tr><td class="num line">195</td><td><a href="main.c.html#L195">(!conn->linked_conn->marked_for_close && conn->linked_conn->reading_from_linked_conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">729</td><td><a href="main.c.html#L729">(now >= conn->timestamp_lastwritten + options->KeepalivePeriod)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">129</td><td><a href="main.c.html#L129">(conn->s >= 0 || conn->linked)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">712</td><td><a href="main.c.html#L712">(or_conn->is_bad_for_new_circs && !or_conn->n_circuits)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">353</td><td><a href="main.c.html#L353">(conn->linked_conn && connection_should_read_from_linked_conn(conn->linked_conn))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">373</td><td><a href="main.c.html#L373">(conn->linked && conn->reading_from_linked_conn)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1113</td><td><a href="main.c.html#L1113">(options->HSAuthorityRecordStats && time_to_write_hs_statistics < now)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1119</td><td><a href="main.c.html#L1119">(options->BridgeAuthoritativeDir && time_to_write_bridge_status_file < now)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">824</td><td><a href="main.c.html#L824">(signewnym_is_pending && time_of_last_signewnym + MAX_SIGNEWNYM_RATE <= now)</a></td><td class="num">8.35</td></tr>
+      <tr><td class="num line">1998</td><td><a href="main.c.html#L1998">(!(k = get_identity_key()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="main.c.html#L620">((conn = connection_get_by_type_state(CONN_TYPE_AP, AP_CONN_STATE_CIRCUIT_WAIT)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="main.c.html#L1047">(!we_are_hibernating() && time_to_check_listeners < now)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1441</td><td><a href="main.c.html#L1441">(e != EINTR && !ERRNO_IS_EINPROGRESS(e))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1204</td><td><a href="main.c.html#L1204">(seconds_elapsed < -NUM_JUMPED_SECONDS_BEFORE_WARN || seconds_elapsed >= NUM_JUMPED_SECONDS_BEFORE_WARN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">906</td><td><a href="main.c.html#L906">(time_to_save_stability && rep_hist_record_mtbf_data() < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="main.c.html#L1102">(server_mode(options) && time_to_check_for_correct_dns < now)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1169</td><td><a href="main.c.html#L1169">(accounting_is_enabled(options) && seconds_elapsed >= 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="main.c.html#L190">(conn->conn_array_index >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="main.c.html#L202">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">205</td><td><a href="main.c.html#L205">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">434</td><td><a href="main.c.html#L434">(conn->conn_array_index < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">561</td><td><a href="main.c.html#L561">(conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">718</td><td><a href="main.c.html#L718">(conn->state == OR_CONN_STATE_CONNECTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">994</td><td><a href="main.c.html#L994">(dirport_reachability_count++ > 5)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1236</td><td><a href="main.c.html#L1236">(n_libevent_errors++ > 8)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1630</td><td><a href="main.c.html#L1630">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1957</td><td><a href="main.c.html#L1957">(options->command == CMD_RUN_TOR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">164</td><td><a href="main.c.html#L164">(current_index == smartlist_len(connection_array) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1058</td><td><a href="main.c.html#L1058">(have_dir_info && !we_are_hibernating())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1085</td><td><a href="main.c.html#L1085">(has_completed_circuit && !we_are_hibernating())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1188</td><td><a href="main.c.html#L1188">(me && !check_whether_orport_reachable())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1193</td><td><a href="main.c.html#L1193">(me && !check_whether_dirport_reachable())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">866</td><td><a href="main.c.html#L866">(last_rotated_x509_certificate + MAX_SSL_KEY_LIFETIME < now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1217</td><td><a href="main.c.html#L1217">(current_second % 300 == 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1561</td><td><a href="main.c.html#L1561">(time_of_last_signewnym + MAX_SIGNEWNYM_RATE > now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1669</td><td><a href="main.c.html#L1669">(now - time_of_process_start >= 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">437</td><td><a href="main.c.html#L437">(!conn_close_if_marked(conn->conn_array_index))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="main.c.html#L766">(!buf_datalen(conn->outbuf))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="main.c.html#L958">(server_mode(options) && has_dns_init_failed())</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="main.c.html#L1731">(signal_add(&signal_events[i], NULL))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">391</td><td><a href="main.c.html#L391">(!conn->active_on_link)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">457</td><td><a href="main.c.html#L457">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">489</td><td><a href="main.c.html#L489">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="main.c.html#L498">(!edge_conn->end_reason)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">528</td><td><a href="main.c.html#L528">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">539</td><td><a href="main.c.html#L539">(!conn->hold_open_until_flushed)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1728</td><td><a href="main.c.html#L1728">(signals[i] >= 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1849</td><td><a href="main.c.html#L1849">(err_if_locked && already_locked)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">286</td><td><a href="main.c.html#L286">(event_del(conn->read_event))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">306</td><td><a href="main.c.html#L306">(event_add(conn->read_event, NULL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">336</td><td><a href="main.c.html#L336">(event_del(conn->write_event))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">357</td><td><a href="main.c.html#L357">(event_add(conn->write_event, NULL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">193</td><td><a href="main.c.html#L193">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">254</td><td><a href="main.c.html#L254">(events & EV_READ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">259</td><td><a href="main.c.html#L259">(events & EV_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="main.c.html#L282">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="main.c.html#L301">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">331</td><td><a href="main.c.html#L331">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">333</td><td><a href="main.c.html#L333">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">351</td><td><a href="main.c.html#L351">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">416</td><td><a href="main.c.html#L416">(conn->active_on_link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="main.c.html#L547">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="main.c.html#L657">(options->DownloadExtraInfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">680</td><td><a href="main.c.html#L680">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">849</td><td><a href="main.c.html#L849">(options->UseBridges)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="main.c.html#L1070">(conn->inbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1304</td><td><a href="main.c.html#L1304">(options->ReloadTorrcOnSIGHUP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1632</td><td><a href="main.c.html#L1632">(or_conn->tls)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1958</td><td><a href="main.c.html#L1958">(options->PidFile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">868</td><td><a href="main.c.html#L868">(tor_tls_context_new(get_identity_key(), MAX_SSL_KEY_LIFETIME) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1782</td><td><a href="main.c.html#L1782">(!strcmp(argv[i], "--hush"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1784</td><td><a href="main.c.html#L1784">(!strcmp(argv[i], "--quiet"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">432</td><td><a href="main.c.html#L432">(i < smartlist_len(closeable_connection_lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="main.c.html#L456">(connection_handle_read(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">488</td><td><a href="main.c.html#L488">(connection_handle_write(conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">839</td><td><a href="main.c.html#L839">(router_rebuild_descriptor(1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1063</td><td><a href="main.c.html#L1063">(i < smartlist_len(connection_array))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1224</td><td><a href="main.c.html#L1224">(evtimer_add(timeout_event, &one_second))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1306</td><td><a href="main.c.html#L1306">(options_init_from_torrc(0, NULL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1318</td><td><a href="main.c.html#L1318">(dirserv_load_fingerprint_file() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1355</td><td><a href="main.c.html#L1355">(dns_init() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1370</td><td><a href="main.c.html#L1370">(init_keys() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1547</td><td><a href="main.c.html#L1547">(do_hup() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1555</td><td><a href="main.c.html#L1555">(waitpid(-1, NULL, WNOHANG) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1803</td><td><a href="main.c.html#L1803">(network_init() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1809</td><td><a href="main.c.html#L1809">(options_init_from_torrc(argc, argv) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1815</td><td><a href="main.c.html#L1815">(geteuid() == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1994</td><td><a href="main.c.html#L1994">(init_keys() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2002</td><td><a href="main.c.html#L2002">(crypto_pk_get_fingerprint(k, buf, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2053</td><td><a href="main.c.html#L2053">(tor_init(argc, argv) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="main.c.html#L550">(retval >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="main.c.html#L572">(retval > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="main.c.html#L846">(time_to_try_getting_descriptors < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">857</td><td><a href="main.c.html#L857">(time_to_reset_descriptor_failures < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">878</td><td><a href="main.c.html#L878">(time_to_add_entropy < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="main.c.html#L902">(time_to_downrate_stability < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="main.c.html#L905">(time_to_save_stability < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">916</td><td><a href="main.c.html#L916">(time_to_check_v3_certificate < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">924</td><td><a href="main.c.html#L924">(time_to_check_for_expired_networkstatus < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">938</td><td><a href="main.c.html#L938">(time_to_dump_geoip_stats < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="main.c.html#L946">(time_to_clean_caches < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">956</td><td><a href="main.c.html#L956">(time_to_retry_dns_init < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">973</td><td><a href="main.c.html#L973">(time_to_check_descriptor < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="main.c.html#L977">(time_to_check_ipaddress < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">992</td><td><a href="main.c.html#L992">(stats_n_seconds_working < TIMEOUT_UNTIL_UNREACHABILITY_COMPLAINT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">996</td><td><a href="main.c.html#L996">(time_to_recheck_bandwidth < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1066</td><td><a href="main.c.html#L1066">(time_to_shrink_memory < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1174</td><td><a href="main.c.html#L1174">(seconds_elapsed > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="main.c.html#L1209">(seconds_elapsed > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="main.c.html#L1261">(stats_n_seconds_working > UPTIME_CUTOFF_FOR_NEW_BANDWIDTH_TEST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1438</td><td><a href="main.c.html#L1438">(loop_result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1451</td><td><a href="main.c.html#L1451">(e == EINVAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1781</td><td><a href="main.c.html#L1781">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1860</td><td><a href="main.c.html#L1860">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="main.c.html#L1525">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1988</td><td><a href="main.c.html#L1988">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="main.c.html#L641">(!router_have_minimum_dir_info())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">707</td><td><a href="main.c.html#L707">(!connection_speaks_cells(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">732</td><td><a href="main.c.html#L732">(!connection_state_is_open(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1369</td><td><a href="main.c.html#L1369">(!identity_key_is_set())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1614</td><td><a href="main.c.html#L1614">(!connection_is_listener(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">243</td><td><a href="main.c.html#L243">(!connection_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">394</td><td><a href="main.c.html#L394">(!called_loop_once)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">864</td><td><a href="main.c.html#L864">(!last_rotated_x509_certificate)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1103</td><td><a href="main.c.html#L1103">(!time_to_check_for_correct_dns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1150</td><td><a href="main.c.html#L1150">(!timeout_event)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1255</td><td><a href="main.c.html#L1255">(!server)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1763</td><td><a href="main.c.html#L1763">(!connection_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1765</td><td><a href="main.c.html#L1765">(!closeable_connection_lst)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1767</td><td><a href="main.c.html#L1767">(!active_linked_connection_lst)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1848</td><td><a href="main.c.html#L1848">(!lf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1901</td><td><a href="main.c.html#L1901">(!postfork)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1922</td><td><a href="main.c.html#L1922">(!postfork)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1928</td><td><a href="main.c.html#L1928">(!postfork)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1939</td><td><a href="main.c.html#L1939">(!postfork)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1943</td><td><a href="main.c.html#L1943">(!postfork)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1277</td><td><a href="main.c.html#L1277">(server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1405</td><td><a href="main.c.html#L1405">(authdir_mode_tests_reachability(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1410</td><td><a href="main.c.html#L1410">(server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">303</td><td><a href="main.c.html#L303">(connection_should_read_from_linked_conn(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="main.c.html#L464">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">471</td><td><a href="main.c.html#L471">(smartlist_len(closeable_connection_lst))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">495</td><td><a href="main.c.html#L495">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">508</td><td><a href="main.c.html#L508">(smartlist_len(closeable_connection_lst))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="main.c.html#L560">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="main.c.html#L580">(connection_wants_to_flush(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">649</td><td><a href="main.c.html#L649">(directory_fetches_from_authorities(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">842</td><td><a href="main.c.html#L842">(advertised_server_mode())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">851</td><td><a href="main.c.html#L851">(router_have_minimum_dir_info())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">890</td><td><a href="main.c.html#L890">(accounting_is_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">904</td><td><a href="main.c.html#L904">(authdir_mode_tests_reachability(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="main.c.html#L1025">(authdir_mode_v3(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="main.c.html#L1297">(accounting_is_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1316</td><td><a href="main.c.html#L1316">(authdir_mode_handles_descs(options, -1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1338</td><td><a href="main.c.html#L1338">(server_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1387</td><td><a href="main.c.html#L1387">(trusted_dirs_reload_certs())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1389</td><td><a href="main.c.html#L1389">(router_reload_v2_networkstatus())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1392</td><td><a href="main.c.html#L1392">(router_reload_consensus_networkstatus())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1396</td><td><a href="main.c.html#L1396">(router_reload_router_list())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1419</td><td><a href="main.c.html#L1419">(nt_service_is_stopping())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1453</td><td><a href="main.c.html#L1453">(got_libevent_error())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="main.c.html#L1457">(ERRNO_IS_EINPROGRESS(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1960</td><td><a href="main.c.html#L1960">(accounting_is_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="main.c.html#L1964">(authdir_mode_tests_reachability(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">879</td><td><a href="main.c.html#L879">(time_to_add_entropy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">940</td><td><a href="main.c.html#L940">(time_to_dump_geoip_stats)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1254</td><td><a href="main.c.html#L1254">(at_interface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1260</td><td><a href="main.c.html#L1260">(server)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1660</td><td><a href="main.c.html#L1660">(stats_n_data_cells_packaged)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1664</td><td><a href="main.c.html#L1664">(stats_n_data_cells_received)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1674</td><td><a href="main.c.html#L1674">(elapsed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1727</td><td><a href="main.c.html#L1727">(is_parent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1841</td><td><a href="main.c.html#L1841">(lockfile)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1884</td><td><a href="main.c.html#L1884">(lockfile)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1932</td><td><a href="main.c.html#L1932">(connection_array)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1934</td><td><a href="main.c.html#L1934">(closeable_connection_lst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1936</td><td><a href="main.c.html#L1936">(active_linked_connection_lst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2050</td><td><a href="main.c.html#L2050">(done)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

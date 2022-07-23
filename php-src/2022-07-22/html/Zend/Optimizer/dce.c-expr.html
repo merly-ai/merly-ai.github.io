@@ -1,0 +1,117 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - Zend\Optimizer\dce.c Ctrl Expressions (66) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\Optimizer\dce.c Ctrl Expressions (66) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\Optimizer\dce.c Ctrl Expressions (66)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">224</td><td><a href="dce.c.html#L224">(<span style='background-color:#741da3;'>opline->op1_type != IS_CONST && (OP1_INFO() & MAY_HAVE_DTOR)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">588</td><td><a href="dce.c.html#L588">(<span style='background-color:#9c4c02;'>may_have_side_effects(op_array, ssa, &op_array->opcodes[i], &ssa->ops[i], ctx.reorder_dtor_effects) || (zend_may_throw(&op_array->opcodes[i], &ssa->ops[i], op_array, ssa) && !may_throw_dce_exception(&op_array->opcodes[i])) || (has_varargs && may_break_varargs(op_array, ssa, &ssa->ops[i]))</span>)</a></td><td class="num">190.00</td></tr>
+      <tr><td class="num line">592</td><td><a href="dce.c.html#L592">(<span style='background-color:#9c4c02;'>op_array->opcodes[i].opcode == ZEND_NEW && op_array->opcodes[i + 1].opcode == ZEND_DO_FCALL && ssa->ops[i].result_def >= 0 && ssa->vars[ssa->ops[i].result_def].escape_state == ESCAPE_STATE_NO_ESCAPE</span>)</a></td><td class="num">159.60</td></tr>
+      <tr><td class="num line">620</td><td><a href="dce.c.html#L620">(i < op_array->last && (<span style='background-color:#9c4c02;'>op_array->opcodes[i + 1].opcode == ZEND_OP_DATA || (op_array->opcodes[i].opcode == ZEND_NEW && op_array->opcodes[i + 1].opcode == ZEND_DO_FCALL)</span>))</a></td><td class="num">137.70</td></tr>
+      <tr><td class="num line">400</td><td><a href="dce.c.html#L400">(<span style='background-color:#9c4c02;'>(ctx->ssa->var_info[ssa_op->op1_use].type & MAY_BE_REF | MAY_BE_ANY | MAY_BE_UNDEF) != 0 && !may_be_refcounted(ctx->ssa->var_info[ssa_op->op1_use].type)</span>)</a></td><td class="num">112.50</td></tr>
+      <tr><td class="num line">298</td><td><a href="dce.c.html#L298">(!zend_ssa_is_no_val_use(opline, ssa_op, ssa_op->op1_use) || (opline->opcode == ZEND_ASSIGN && (ssa->var_info[ssa_op->op1_use].type & MAY_BE_REF) != 0))</a></td><td class="num">91.50</td></tr>
+      <tr><td class="num line">307</td><td><a href="dce.c.html#L307">(!zend_ssa_is_no_val_use(opline, ssa_op, ssa_op->op2_use) || (opline->opcode == ZEND_FE_FETCH_R && (ssa->var_info[ssa_op->op2_use].type & MAY_BE_REF) != 0))</a></td><td class="num">91.50</td></tr>
+      <tr><td class="num line">429</td><td><a href="dce.c.html#L429">(may_be_refcounted(ssa->var_info[ssa_op->op1_use].type) && opline->opcode != ZEND_CASE && opline->opcode != ZEND_CASE_STRICT)</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">184</td><td><a href="dce.c.html#L184">(opline->op2_type != IS_CONST && (OP2_INFO() & MAY_HAVE_DTOR) && ssa->vars[ssa_op->op2_use].escape_state != ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">55.75</td></tr>
+      <tr><td class="num line">507</td><td><a href="dce.c.html#L507">(ssa_op->op1_def >= 0 && ssa->vars[ssa_op->op1_def].var < op_array->num_args)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">511</td><td><a href="dce.c.html#L511">(ssa_op->op2_def >= 0 && ssa->vars[ssa_op->op2_def].var < op_array->num_args)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">515</td><td><a href="dce.c.html#L515">(ssa_op->result_def >= 0 && ssa->vars[ssa_op->result_def].var < op_array->num_args)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">556</td><td><a href="dce.c.html#L556">(phi->var >= op_array->last_var && may_be_refcounted(ssa->var_info[phi->ssa_var].type))</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">217</td><td><a href="dce.c.html#L217">(is_bad_mod(ssa, ssa_op->op1_use, ssa_op->op1_def) || ssa->vars[ssa_op->op1_def].escape_state != ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">235</td><td><a href="dce.c.html#L235">(is_bad_mod(ssa, ssa_op->op1_use, ssa_op->op1_def) || ssa->vars[ssa_op->op1_def].escape_state != ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">350</td><td><a href="dce.c.html#L350">(def_op->result_def == free_var && var->phi_use_chain == NULL && var->use_chain == (opline - ctx->op_array->opcodes))</a></td><td class="num">43.10</td></tr>
+      <tr><td class="num line">427</td><td><a href="dce.c.html#L427">((opline->op1_type & IS_VAR | IS_TMP_VAR) && !is_var_dead(ctx, ssa_op->op1_use))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">436</td><td><a href="dce.c.html#L436">((opline->op2_type & IS_VAR | IS_TMP_VAR) && !is_var_dead(ctx, ssa_op->op2_use))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">617</td><td><a href="dce.c.html#L617">((i = zend_bitset_pop_first(ctx.instr_worklist, ctx.instr_worklist_len)) >= 0)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">628</td><td><a href="dce.c.html#L628">((i = zend_bitset_pop_first(ctx.phi_worklist, ctx.phi_worklist_len)) >= 0)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">644</td><td><a href="dce.c.html#L644">((i = zend_bitset_pop_first(ctx.phi_worklist_no_val, ctx.phi_worklist_len)) >= 0)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">438</td><td><a href="dce.c.html#L438">(may_be_refcounted(ssa->var_info[ssa_op->op2_use].type))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">615</td><td><a href="dce.c.html#L615">(!zend_bitset_empty(ctx.instr_worklist, ctx.instr_worklist_len) || !zend_bitset_empty(ctx.phi_worklist, ctx.phi_worklist_len))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">67</td><td><a href="dce.c.html#L67">(ssa->var_info[use].type & MAY_BE_REF)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">577</td><td><a href="dce.c.html#L577">(op_array->opcodes[i].opcode == ZEND_OP_DATA)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">132</td><td><a href="dce.c.html#L132">((opline->op1_type & IS_VAR | IS_TMP_VAR) && (opline->op2_type & IS_VAR | IS_TMP_VAR))</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">288</td><td><a href="dce.c.html#L288">(var->definition_phi && zend_bitset_in(ctx->phi_dead, var_num))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">276</td><td><a href="dce.c.html#L276">(!check || zend_bitset_in(ctx->instr_dead, var->definition))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">249</td><td><a href="dce.c.html#L249">((opline->extended_value & ZEND_BIND_REF) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">428</td><td><a href="dce.c.html#L428">(!try_remove_var_def(ctx, ssa_op->op1_use, ssa_op->op1_use_chain, opline))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="dce.c.html#L437">(!try_remove_var_def(ctx, ssa_op->op2_use, ssa_op->op2_use_chain, opline))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">570</td><td><a href="dce.c.html#L570">(!(block->flags & ZEND_BB_REACHABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">180</td><td><a href="dce.c.html#L180">(is_bad_mod(ssa, ssa_op->op1_use, ssa_op->op1_def))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">245</td><td><a href="dce.c.html#L245">((opline->extended_value & ZEND_BIND_IMPLICIT | ZEND_BIND_EXPLICIT))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="dce.c.html#L280">(!check || zend_bitset_in(ctx->phi_dead, var_num))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">275</td><td><a href="dce.c.html#L275">(var->definition >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="dce.c.html#L294">(ssa_op->result_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">297</td><td><a href="dce.c.html#L297">(ssa_op->op1_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">306</td><td><a href="dce.c.html#L306">(ssa_op->op2_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">329</td><td><a href="dce.c.html#L329">(var->definition >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">418</td><td><a href="dce.c.html#L418">(opline->opcode == ZEND_NOP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="dce.c.html#L470">(source == phi->ssa_var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">488</td><td><a href="dce.c.html#L488">(phi->pi < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">574</td><td><a href="dce.c.html#L574">(i > block->start)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">655</td><td><a href="dce.c.html#L655">(zend_bitset_in(ctx.phi_dead, phi->ssa_var))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">198</td><td><a href="dce.c.html#L198">(t1 & MAY_BE_REF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="dce.c.html#L241">(op_array->static_variables)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="dce.c.html#L279">(var->definition_phi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="dce.c.html#L327">(var->definition_phi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">253</td><td><a href="dce.c.html#L253">(Z_TYPE_P(value) == IS_CONSTANT_AST)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">63</td><td><a href="dce.c.html#L63">(def < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">341</td><td><a href="dce.c.html#L341">(use_chain >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="dce.c.html#L347">(def >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">439</td><td><a href="dce.c.html#L439">(free_var >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">453</td><td><a href="dce.c.html#L453">(free_var >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="dce.c.html#L473">(common_source == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">475</td><td><a href="dce.c.html#L475">(common_source != source)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">491</td><td><a href="dce.c.html#L491">(common_source >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="dce.c.html#L565">(b > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">585</td><td><a href="dce.c.html#L585">(op_data >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="dce.c.html#L600">(op_data >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">606</td><td><a href="dce.c.html#L606">(op_data >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="dce.c.html#L582">(zend_bitset_in(ctx.instr_worklist, i))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">183</td><td><a href="dce.c.html#L183">(!reorder_dtor_effects)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">221</td><td><a href="dce.c.html#L221">(!reorder_dtor_effects)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">423</td><td><a href="dce.c.html#L423">(is_free_of_live_var(ctx, opline, ssa_op))</a></td><td class="num">0.25</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

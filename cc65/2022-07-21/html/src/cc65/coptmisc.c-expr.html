@@ -1,0 +1,88 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptmisc.c Ctrl Expressions (37) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptmisc.c Ctrl Expressions (37) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptmisc.c Ctrl Expressions (37)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">489</td><td><a href="coptmisc.c.html#L489">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_PHA && CS_GetEntries(S, L + 1, I + 1, 9) && L[1]->OPC == OP65_LDA && L[1]->AM == AM65_ABS && L[2]->OPC == OP65_CLC && L[3]->OPC == OP65_ADC && strcmp(L[3]->Arg, "sp") == 0 && L[6]->OPC == OP65_ADC && strcmp(L[6]->Arg, "sp+1") == 0 && L[9]->OPC == OP65_JMP</span>)</a></td><td class="num">121.20</td></tr>
+      <tr><td class="num line">663</td><td><a href="coptmisc.c.html#L663">(<span style='background-color:#9c4c02;'>CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_STA && L[2]->OPC == OP65_STX && (L[1]->Arg == 0 || L[2]->Arg == 0 || strcmp(L[1]->Arg, L[2]->Arg) != 0) && !CS_RangeHasLabel(S, I + 1, 2) && !RegXUsed(S, I + 3)</span>)</a></td><td class="num">106.90</td></tr>
+      <tr><td class="num line">423</td><td><a href="coptmisc.c.html#L423">(E->OPC == OP65_JSR && (Dec1 = IsDecSP(E)) > 0 && (N = CS_GetNextEntry(S, I)) != 0 && (Dec2 = IsDecSP(N)) > 0 && (Dec1 += Dec2) <= 255 && !CE_HasLabel(N))</a></td><td class="num">66.25</td></tr>
+      <tr><td class="num line">304</td><td><a href="coptmisc.c.html#L304">(E->OPC == OP65_LDA && E->AM == AM65_ZP_INDY && E->RI->In.RegY == 0 && E->RI->In.RegX == 0)</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">352</td><td><a href="coptmisc.c.html#L352">(E->OPC == OP65_LDA && E->AM == AM65_ZPX_IND && E->RI->In.RegY == 0 && E->RI->In.RegX == 0)</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">390</td><td><a href="coptmisc.c.html#L390">(E->Arg[5] >= '1' && E->Arg[5] <= '8')</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">393</td><td><a href="coptmisc.c.html#L393">(strcmp(E->Arg, "subysp") == 0 && RegValIsKnown(E->RI->In.RegY))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">608</td><td><a href="coptmisc.c.html#L608">(CE_IsCallTo(E, "ldaxysp") && RegValIsKnown(E->RI->In.RegY) && !RegXUsed(S, I + 1))</a></td><td class="num">28.35</td></tr>
+      <tr><td class="num line">230</td><td><a href="coptmisc.c.html#L230">(E->RI->In.RegA >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">237</td><td><a href="coptmisc.c.html#L237">(E->RI->In.RegA >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">244</td><td><a href="coptmisc.c.html#L244">(E->RI->In.RegX >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">251</td><td><a href="coptmisc.c.html#L251">(E->RI->In.RegY >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">389</td><td><a href="coptmisc.c.html#L389">(strncmp(E->Arg, "decsp", 5) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">137</td><td><a href="coptmisc.c.html#L137">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">168</td><td><a href="coptmisc.c.html#L168">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">199</td><td><a href="coptmisc.c.html#L199">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">95</td><td><a href="coptmisc.c.html#L95">(RegValIsKnown(In->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">102</td><td><a href="coptmisc.c.html#L102">(RegValIsKnown(In->RegX))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">109</td><td><a href="coptmisc.c.html#L109">(RegValIsKnown(In->RegY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">116</td><td><a href="coptmisc.c.html#L116">(RegValIsKnown(In->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">123</td><td><a href="coptmisc.c.html#L123">(RegValIsKnown(In->RegX))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">130</td><td><a href="coptmisc.c.html#L130">(RegValIsKnown(In->RegY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">80</td><td><a href="coptmisc.c.html#L80">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">298</td><td><a href="coptmisc.c.html#L298">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">346</td><td><a href="coptmisc.c.html#L346">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">413</td><td><a href="coptmisc.c.html#L413">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">479</td><td><a href="coptmisc.c.html#L479">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">600</td><td><a href="coptmisc.c.html#L600">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">650</td><td><a href="coptmisc.c.html#L650">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">434</td><td><a href="coptmisc.c.html#L434">(Dec1 <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">501</td><td><a href="coptmisc.c.html#L501">(adjustment == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="coptmisc.c.html#L505">(adjustment >= 65536 - 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">516</td><td><a href="coptmisc.c.html#L516">(adjustment >= 65536 - 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">528</td><td><a href="coptmisc.c.html#L528">(adjustment > 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="coptmisc.c.html#L543">(adjustment > 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="coptmisc.c.html#L658">(CE_IsCallTo(L[0], "ldaxysp"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">264</td><td><a href="coptmisc.c.html#L264">(X)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

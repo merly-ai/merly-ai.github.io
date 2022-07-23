@@ -1,0 +1,198 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>php-src Repo - ext\opcache\jit\zend_jit_vm_helpers.c Ctrl Expressions (147) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\opcache\jit\zend_jit_vm_helpers.c Ctrl Expressions (147) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\opcache\jit\zend_jit_vm_helpers.c Ctrl Expressions (147)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">962</td><td><a href="zend_jit_vm_helpers.c.html#L962">(start & ZEND_JIT_TRACE_START_ENTER && EX(prev_execute_data) && <span style='background-color:#741da3;'>EX(func) == EX(prev_execute_data)->func</span> && zend_jit_trace_bad_stop_event(orig_opline, JIT_G(blacklist_root_trace) - 1) != ZEND_JIT_TRACE_STOP_RECURSION_EXIT)</a></td><td class="num">1070.35</td></tr>
+      <tr><td class="num line">625</td><td><a href="zend_jit_vm_helpers.c.html#L625">(<span style='background-color:#741da3;'>(opline->op1_type & IS_TMP_VAR | IS_VAR | IS_CV) && opline->opcode != ZEND_ROPE_ADD && opline->opcode != ZEND_ROPE_END && opline->opcode != ZEND_NEW && opline->opcode != ZEND_FETCH_CLASS_CONSTANT && opline->opcode != ZEND_INIT_STATIC_METHOD_CALL</span>)</a></td><td class="num">1047.75</td></tr>
+      <tr><td class="num line">489</td><td><a href="zend_jit_vm_helpers.c.html#L489">(is_megamorphic == ZEND_JIT_EXIT_POLYMORPHISM && (<span style='background-color:#741da3;'>(ZEND_CALL_INFO(call) & ZEND_CALL_DYNAMIC) || func->common.scope</span>))</a></td><td class="num">1030.50</td></tr>
+      <tr><td class="num line">421</td><td><a href="zend_jit_vm_helpers.c.html#L421">(<span style='background-color:#741da3;'>ex != NULL && ex->func != NULL && ret_level < ZEND_JIT_TRACE_MAX_RET_DEPTH</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="zend_jit_vm_helpers.c.html#L1092">(<span style='background-color:#741da3;'>start != ZEND_JIT_TRACE_START_SIDE || level + ret_level != 0</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">784</td><td><a href="zend_jit_vm_helpers.c.html#L784">(opline->op1_type != IS_CONST && opline->op2_type == IS_CONST && Z_TYPE_P(RT_CONSTANT(opline, opline->op2)) == IS_STRING && Z_STRVAL_P(RT_CONSTANT(opline, opline->op2))[0] != '\0')</a></td><td class="num">92.50</td></tr>
+      <tr><td class="num line">654</td><td><a href="zend_jit_vm_helpers.c.html#L654">(opline->op2_type & IS_TMP_VAR | IS_VAR | IS_CV && opline->opcode != ZEND_INSTANCEOF && opline->opcode != ZEND_UNSET_STATIC_PROP && (opline->op2_type == IS_CV || (opline->opcode != ZEND_FE_FETCH_R && opline->opcode != ZEND_FE_FETCH_RW)))</a></td><td class="num">74.75</td></tr>
+      <tr><td class="num line">1158</td><td><a href="zend_jit_vm_helpers.c.html#L1158">(trace_buffer[idx - 1].op == ZEND_JIT_TRACE_INIT_CALL && (trace_buffer[idx - 1].info & ZEND_JIT_TRACE_FAKE_INIT_CALL))</a></td><td class="num">65.20</td></tr>
+      <tr><td class="num line">318</td><td><a href="zend_jit_vm_helpers.c.html#L318">(UNEXPECTED(*(ZEND_OP_TRACE_INFO(opline, offset)->counter) <= 0))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">482</td><td><a href="zend_jit_vm_helpers.c.html#L482">(UNEXPECTED(!jit_extension || !(jit_extension->func_info.flags & ZEND_FUNC_JIT_ON_HOT_TRACE) || (func->op_array.fn_flags & ZEND_ACC_FAKE_CLOSURE)))</a></td><td class="num">54.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="zend_jit_vm_helpers.c.html#L679">(opline->opcode == ZEND_ASSIGN_DIM || opline->opcode == ZEND_ASSIGN_OBJ || opline->opcode == ZEND_ASSIGN_STATIC_PROP || opline->opcode == ZEND_ASSIGN_DIM_OP || opline->opcode == ZEND_ASSIGN_OBJ_OP || opline->opcode == ZEND_ASSIGN_STATIC_PROP_OP || opline->opcode == ZEND_ASSIGN_OBJ_REF || opline->opcode == ZEND_ASSIGN_STATIC_PROP_REF)</a></td><td class="num">52.25</td></tr>
+      <tr><td class="num line">1053</td><td><a href="zend_jit_vm_helpers.c.html#L1053">((start & ZEND_JIT_TRACE_START_LOOP) != 0 && level + ret_level == 0 && zend_jit_trace_bad_stop_event(orig_opline, JIT_G(blacklist_root_trace) - 1) != ZEND_JIT_TRACE_STOP_COMPILED_LOOP)</a></td><td class="num">49.95</td></tr>
+      <tr><td class="num line">797</td><td><a href="zend_jit_vm_helpers.c.html#L797">(Z_TYPE_P(obj) != IS_OBJECT || Z_OBJ_P(obj)->handlers != &std_object_handlers)</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">919</td><td><a href="zend_jit_vm_helpers.c.html#L919">(start == ZEND_JIT_TRACE_START_RETURN && JIT_G(max_recursive_returns) > 0 && execute_data->prev_execute_data && execute_data->prev_execute_data->func && execute_data->prev_execute_data->func->type == ZEND_USER_FUNCTION && zend_jit_trace_has_recursive_ret(execute_data, trace_buffer[0].op_array, orig_opline, ret_level))</a></td><td class="num">48.25</td></tr>
+      <tr><td class="num line">865</td><td><a href="zend_jit_vm_helpers.c.html#L865">(UNEXPECTED(!jit_extension) || UNEXPECTED(!(jit_extension->func_info.flags & ZEND_FUNC_JIT_ON_HOT_TRACE)))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">986</td><td><a href="zend_jit_vm_helpers.c.html#L986">(EX(call) && EX(call)->prev_execute_data == prev_call)</a></td><td class="num">44.00</td></tr>
+      <tr><td class="num line">955</td><td><a href="zend_jit_vm_helpers.c.html#L955">(start & ZEND_JIT_TRACE_START_LOOP && zend_jit_trace_bad_stop_event(orig_opline, JIT_G(blacklist_root_trace) - 1) != ZEND_JIT_TRACE_STOP_LOOP_EXIT)</a></td><td class="num">42.10</td></tr>
+      <tr><td class="num line">1100</td><td><a href="zend_jit_vm_helpers.c.html#L1100">(start == ZEND_JIT_TRACE_START_SIDE || zend_jit_trace_bad_stop_event(orig_opline, JIT_G(blacklist_root_trace) / 2) != ZEND_JIT_TRACE_STOP_INNER_LOOP)</a></td><td class="num">41.10</td></tr>
+      <tr><td class="num line">1146</td><td><a href="zend_jit_vm_helpers.c.html#L1146">(stop == ZEND_JIT_TRACE_STOP_DEEP_RECURSION && zend_jit_trace_bad_stop_event(orig_opline, JIT_G(blacklist_root_trace) / 2) == ZEND_JIT_TRACE_STOP_DEEP_RECURSION)</a></td><td class="num">41.10</td></tr>
+      <tr><td class="num line">1010</td><td><a href="zend_jit_vm_helpers.c.html#L1010">(UNEXPECTED(!jit_extension) || !(jit_extension->func_info.flags & ZEND_FUNC_JIT_ON_HOT_TRACE) || (func->op_array.fn_flags & ZEND_ACC_FAKE_CLOSURE))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="zend_jit_vm_helpers.c.html#L422">(&ex->func->op_array == orig_op_array && ex->opline + 1 == orig_opline)</a></td><td class="num">35.60</td></tr>
+      <tr><td class="num line">1026</td><td><a href="zend_jit_vm_helpers.c.html#L1026">((is_megamorphic == ZEND_JIT_EXIT_METHOD_CALL || is_megamorphic == ZEND_JIT_EXIT_CLOSURE_CALL) && trace_buffer[1].opline == opline - 1)</a></td><td class="num">32.60</td></tr>
+      <tr><td class="num line">823</td><td><a href="zend_jit_vm_helpers.c.html#L823">(EX(call)->func->op_array.fn_flags & ZEND_ACC_CLOSURE | ZEND_ACC_FAKE_CLOSURE)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">991</td><td><a href="zend_jit_vm_helpers.c.html#L991">(EX(call)->func->common.fn_flags & ZEND_ACC_CALL_VIA_TRAMPOLINE)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">995</td><td><a href="zend_jit_vm_helpers.c.html#L995">(EX(call)->func->common.fn_flags & ZEND_ACC_NEVER_CACHE)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">802</td><td><a href="zend_jit_vm_helpers.c.html#L802">(prop_info && prop_info != ZEND_WRONG_PROPERTY_INFO && !(prop_info->flags & ZEND_ACC_STATIC))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">890</td><td><a href="zend_jit_vm_helpers.c.html#L890">(EX(func)->op_array.fn_flags & ZEND_ACC_CALL_VIA_TRAMPOLINE)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">822</td><td><a href="zend_jit_vm_helpers.c.html#L822">(EX(call)->func->type == ZEND_INTERNAL_FUNCTION)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">138</td><td><a href="zend_jit_vm_helpers.c.html#L138">(EXPECTED((op_array->fn_flags & ZEND_ACC_HAS_TYPE_HINTS) == 0))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">814</td><td><a href="zend_jit_vm_helpers.c.html#L814">(opline->opcode == ZEND_DO_FCALL || opline->opcode == ZEND_DO_ICALL || opline->opcode == ZEND_DO_UCALL || opline->opcode == ZEND_DO_FCALL_BY_NAME)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">222</td><td><a href="zend_jit_vm_helpers.c.html#L222">(UNEXPECTED(*(jit_extension->counter) <= 0))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">242</td><td><a href="zend_jit_vm_helpers.c.html#L242">(UNEXPECTED(*(jit_extension->counter) <= 0))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">132</td><td><a href="zend_jit_vm_helpers.c.html#L132">(EXPECTED(!(op_array->fn_flags & ZEND_ACC_CALL_VIA_TRAMPOLINE)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">474</td><td><a href="zend_jit_vm_helpers.c.html#L474">(func->type == ZEND_INTERNAL_FUNCTION && (func->op_array.fn_flags & ZEND_ACC_CLOSURE | ZEND_ACC_FAKE_CLOSURE))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">478</td><td><a href="zend_jit_vm_helpers.c.html#L478">(func->type == ZEND_USER_FUNCTION && (func->op_array.fn_flags & ZEND_ACC_CLOSURE))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">1001</td><td><a href="zend_jit_vm_helpers.c.html#L1001">(func->type == ZEND_INTERNAL_FUNCTION && (func->op_array.fn_flags & ZEND_ACC_CLOSURE | ZEND_ACC_FAKE_CLOSURE))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">1006</td><td><a href="zend_jit_vm_helpers.c.html#L1006">(func->type == ZEND_USER_FUNCTION && (func->op_array.fn_flags & ZEND_ACC_CLOSURE))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="zend_jit_vm_helpers.c.html#L733">((op1_type & IS_TRACE_TYPE_MASK) == IS_ARRAY && opline->op2_type != IS_UNDEF)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">829</td><td><a href="zend_jit_vm_helpers.c.html#L829">(opline->opcode == ZEND_INCLUDE_OR_EVAL || opline->opcode == ZEND_CALLABLE_CONVERT)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">592</td><td><a href="zend_jit_vm_helpers.c.html#L592">(!op_array->function_name || (op_array->fn_flags & ZEND_ACC_CLOSURE))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">871</td><td><a href="zend_jit_vm_helpers.c.html#L871">(!op_array->function_name || (op_array->fn_flags & ZEND_ACC_CLOSURE))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1086</td><td><a href="zend_jit_vm_helpers.c.html#L1086">(opline == orig_opline && level + ret_level == 0)</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">687</td><td><a href="zend_jit_vm_helpers.c.html#L687">((opline + 1)->op1_type & IS_TMP_VAR | IS_VAR | IS_CV)</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">1023</td><td><a href="zend_jit_vm_helpers.c.html#L1023">(JIT_G(max_polymorphic_calls) == 0 && zend_jit_may_be_polymorphic_call(opline - 1))</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">1098</td><td><a href="zend_jit_vm_helpers.c.html#L1098">(bad_stop != ZEND_JIT_TRACE_STOP_INNER_LOOP && bad_stop != ZEND_JIT_TRACE_STOP_LOOP_EXIT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="zend_jit_vm_helpers.c.html#L1109">(opline == last_loop_opline && level == last_loop_level)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">470</td><td><a href="zend_jit_vm_helpers.c.html#L470">(func->common.fn_flags & ZEND_ACC_CALL_VIA_TRAMPOLINE | ZEND_ACC_NEVER_CACHE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">744</td><td><a href="zend_jit_vm_helpers.c.html#L744">(Z_TYPE_P(dim) == IS_LONG || Z_TYPE_P(dim) == IS_STRING)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="zend_jit_vm_helpers.c.html#L599">(UNEXPECTED(opline->opcode == ZEND_HANDLE_EXCEPTION))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1043</td><td><a href="zend_jit_vm_helpers.c.html#L1043">(UNEXPECTED(opline->opcode == ZEND_HANDLE_EXCEPTION))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">79</td><td><a href="zend_jit_vm_helpers.c.html#L79">(old_opline->result_type != IS_UNDEF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">729</td><td><a href="zend_jit_vm_helpers.c.html#L729">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">738</td><td><a href="zend_jit_vm_helpers.c.html#L738">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">745</td><td><a href="zend_jit_vm_helpers.c.html#L745">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="zend_jit_vm_helpers.c.html#L792">(opline->op1_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="zend_jit_vm_helpers.c.html#L877">(execute_data->prev_execute_data == prev_execute_data)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">903</td><td><a href="zend_jit_vm_helpers.c.html#L903">(count + 1 >= JIT_G(max_recursive_calls))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">932</td><td><a href="zend_jit_vm_helpers.c.html#L932">(count + 1 >= JIT_G(max_recursive_returns))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">442</td><td><a href="zend_jit_vm_helpers.c.html#L442">(cache_opline[i] == opline)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">443</td><td><a href="zend_jit_vm_helpers.c.html#L443">(cache_count[i] >= count)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">192</td><td><a href="zend_jit_vm_helpers.c.html#L192">(UNEXPECTED(ZEND_CALL_INFO(call) & ZEND_CALL_RELEASE_THIS))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">818</td><td><a href="zend_jit_vm_helpers.c.html#L818">(ZEND_CALL_INFO(EX(call)) & ZEND_CALL_MEGAMORPHIC)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">58</td><td><a href="zend_jit_vm_helpers.c.html#L58">(UNEXPECTED(call_info & ZEND_CALL_HAS_SYMBOL_TABLE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">63</td><td><a href="zend_jit_vm_helpers.c.html#L63">(UNEXPECTED(call_info & ZEND_CALL_RELEASE_THIS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">65</td><td><a href="zend_jit_vm_helpers.c.html#L65">(UNEXPECTED(call_info & ZEND_CALL_CLOSURE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">68</td><td><a href="zend_jit_vm_helpers.c.html#L68">(UNEXPECTED(call_info & ZEND_CALL_HAS_EXTRA_NAMED_PARAMS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">97</td><td><a href="zend_jit_vm_helpers.c.html#L97">(UNEXPECTED(call_info & ZEND_CALL_HAS_SYMBOL_TABLE | ZEND_CALL_FREE_EXTRA_ARGS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">98</td><td><a href="zend_jit_vm_helpers.c.html#L98">(UNEXPECTED(call_info & ZEND_CALL_HAS_SYMBOL_TABLE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">103</td><td><a href="zend_jit_vm_helpers.c.html#L103">(UNEXPECTED(call_info & ZEND_CALL_HAS_EXTRA_NAMED_PARAMS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">106</td><td><a href="zend_jit_vm_helpers.c.html#L106">(UNEXPECTED(call_info & ZEND_CALL_CLOSURE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">284</td><td><a href="zend_jit_vm_helpers.c.html#L284">(ZEND_CONSTANT_FLAGS(c) & CONST_DEPRECATED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="zend_jit_vm_helpers.c.html#L121">(call_info & ZEND_CALL_TOP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">159</td><td><a href="zend_jit_vm_helpers.c.html#L159">(type_flags & IS_TYPE_REFCOUNTED << Z_TYPE_FLAGS_SHIFT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">266</td><td><a href="zend_jit_vm_helpers.c.html#L266">(flags & IS_CONSTANT_UNQUALIFIED_IN_NAMESPACE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="zend_jit_vm_helpers.c.html#L462">(call->prev_execute_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="zend_jit_vm_helpers.c.html#L1051">(trace_flags & ZEND_JIT_TRACE_JITED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="zend_jit_vm_helpers.c.html#L1052">(trace_flags & ZEND_JIT_TRACE_START_LOOP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="zend_jit_vm_helpers.c.html#L1065">(trace_flags & ZEND_JIT_TRACE_START_ENTER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="zend_jit_vm_helpers.c.html#L1079">(trace_flags & ZEND_JIT_TRACE_BLACKLISTED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1082</td><td><a href="zend_jit_vm_helpers.c.html#L1082">(trace_flags & ZEND_JIT_TRACE_START_LOOP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1126</td><td><a href="zend_jit_vm_helpers.c.html#L1126">(trace_flags & ZEND_JIT_TRACE_UNSUPPORTED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">76</td><td><a href="zend_jit_vm_helpers.c.html#L76">(UNEXPECTED(EG(exception) != NULL))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">320</td><td><a href="zend_jit_vm_helpers.c.html#L320">(UNEXPECTED(zend_jit_trace_hot_root(execute_data, opline) < 0))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">151</td><td><a href="zend_jit_vm_helpers.c.html#L151">(EXPECTED(src != dst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">645</td><td><a href="zend_jit_vm_helpers.c.html#L645">(Z_TYPE_P(zv) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">647</td><td><a href="zend_jit_vm_helpers.c.html#L647">(Z_TYPE_P(zv) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">674</td><td><a href="zend_jit_vm_helpers.c.html#L674">(Z_TYPE_P(zv) == IS_OBJECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">750</td><td><a href="zend_jit_vm_helpers.c.html#L750">(Z_TYPE_P(arr) == IS_INDIRECT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="zend_jit_vm_helpers.c.html#L753">(Z_TYPE_P(arr) == IS_REFERENCE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">757</td><td><a href="zend_jit_vm_helpers.c.html#L757">(Z_TYPE_P(dim) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">839</td><td><a href="zend_jit_vm_helpers.c.html#L839">(UNEXPECTED(opline == zend_jit_halt_op))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">854</td><td><a href="zend_jit_vm_helpers.c.html#L854">(execute_data == EG(current_execute_data))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">908</td><td><a href="zend_jit_vm_helpers.c.html#L908">(count >= JIT_G(max_recursive_calls))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">938</td><td><a href="zend_jit_vm_helpers.c.html#L938">(count >= JIT_G(max_recursive_returns))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">985</td><td><a href="zend_jit_vm_helpers.c.html#L985">(EX(call) != prev_call)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1117</td><td><a href="zend_jit_vm_helpers.c.html#L1117">(loop_unroll_limit < JIT_G(max_loop_unrolls))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">158</td><td><a href="zend_jit_vm_helpers.c.html#L158">(src != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">169</td><td><a href="zend_jit_vm_helpers.c.html#L169">(src != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="zend_jit_vm_helpers.c.html#L402">(i < level)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">413</td><td><a href="zend_jit_vm_helpers.c.html#L413">(i < ret_level)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">438</td><td><a href="zend_jit_vm_helpers.c.html#L438">(count < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">441</td><td><a href="zend_jit_vm_helpers.c.html#L441">(i < ZEND_JIT_TRACE_BAD_ROOT_SLOTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="zend_jit_vm_helpers.c.html#L464">(idx < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="zend_jit_vm_helpers.c.html#L611">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="zend_jit_vm_helpers.c.html#L635">(op1_type == IS_INDIRECT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">640</td><td><a href="zend_jit_vm_helpers.c.html#L640">(op1_type == IS_REFERENCE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">664</td><td><a href="zend_jit_vm_helpers.c.html#L664">(op2_type == IS_INDIRECT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">669</td><td><a href="zend_jit_vm_helpers.c.html#L669">(op2_type == IS_REFERENCE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">692</td><td><a href="zend_jit_vm_helpers.c.html#L692">(op3_type == IS_INDIRECT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">697</td><td><a href="zend_jit_vm_helpers.c.html#L697">(op3_type == IS_REFERENCE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="zend_jit_vm_helpers.c.html#L848">(rc != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">849</td><td><a href="zend_jit_vm_helpers.c.html#L849">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="zend_jit_vm_helpers.c.html#L881">(rc == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="zend_jit_vm_helpers.c.html#L885">(level > ZEND_JIT_TRACE_MAX_CALL_DEPTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="zend_jit_vm_helpers.c.html#L902">(opline == orig_opline)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">918</td><td><a href="zend_jit_vm_helpers.c.html#L918">(level == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="zend_jit_vm_helpers.c.html#L925">(ret_level > ZEND_JIT_TRACE_MAX_RET_DEPTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="zend_jit_vm_helpers.c.html#L931">(opline == orig_opline)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">949</td><td><a href="zend_jit_vm_helpers.c.html#L949">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="zend_jit_vm_helpers.c.html#L975">(level < last_loop_level)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1066</td><td><a href="zend_jit_vm_helpers.c.html#L1066">(start != ZEND_JIT_TRACE_START_RETURN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="zend_jit_vm_helpers.c.html#L1071">(backtrack_link_to_enter < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1085</td><td><a href="zend_jit_vm_helpers.c.html#L1085">(start != ZEND_JIT_TRACE_START_SIDE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="zend_jit_vm_helpers.c.html#L1136">(backtrack_recursion > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1140</td><td><a href="zend_jit_vm_helpers.c.html#L1140">(backtrack_ret_recursion > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1145</td><td><a href="zend_jit_vm_helpers.c.html#L1145">(backtrack_link_to_enter > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1156</td><td><a href="zend_jit_vm_helpers.c.html#L1156">(stop == ZEND_JIT_TRACE_STOP_LINK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="zend_jit_vm_helpers.c.html#L1135">(!ZEND_JIT_TRACE_STOP_OK(stop))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">274</td><td><a href="zend_jit_vm_helpers.c.html#L274">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">275</td><td><a href="zend_jit_vm_helpers.c.html#L275">(!check_defined_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">283</td><td><a href="zend_jit_vm_helpers.c.html#L283">(!check_defined_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1031</td><td><a href="zend_jit_vm_helpers.c.html#L1031">(!func)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1167</td><td><a href="zend_jit_vm_helpers.c.html#L1167">(!halt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">648</td><td><a href="zend_jit_vm_helpers.c.html#L648">(HT_IS_PACKED(Z_ARRVAL_P(zv)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">164</td><td><a href="zend_jit_vm_helpers.c.html#L164">(Z_REFCOUNTED_P(src))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="zend_jit_vm_helpers.c.html#L181">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">186</td><td><a href="zend_jit_vm_helpers.c.html#L186">(RETURN_VALUE_USED(opline))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">286</td><td><a href="zend_jit_vm_helpers.c.html#L286">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">264</td><td><a href="zend_jit_vm_helpers.c.html#L264">(zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">269</td><td><a href="zend_jit_vm_helpers.c.html#L269">(zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">497</td><td><a href="zend_jit_vm_helpers.c.html#L497">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="zend_jit_vm_helpers.c.html#L609">(prev_call)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">708</td><td><a href="zend_jit_vm_helpers.c.html#L708">(ce1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">712</td><td><a href="zend_jit_vm_helpers.c.html#L712">(ce2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">762</td><td><a href="zend_jit_vm_helpers.c.html#L762">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">947</td><td><a href="zend_jit_vm_helpers.c.html#L947">(prev_call)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1050</td><td><a href="zend_jit_vm_helpers.c.html#L1050">(trace_flags)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

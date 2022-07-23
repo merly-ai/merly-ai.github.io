@@ -1,0 +1,267 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\expr.c Ctrl Expressions (216) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\expr.c Ctrl Expressions (216) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\expr.c Ctrl Expressions (216)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1790</td><td><a href="expr.c.html#L1790">(<span style='background-color:#741da3;'>TypeCmp(left, right) < TC_EQUAL && left->C != T_VOID && right->C != T_VOID</span>)</a></td><td class="num">1019.75</td></tr>
+      <tr><td class="num line">1780</td><td><a href="expr.c.html#L1780">(!IsClassInt(Expr2.Type) && !(IsClassPtr(Expr2.Type) && ED_IsNullPtr(Expr)))</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">1128</td><td><a href="expr.c.html#L1128">(!IsClassPtr(Expr->Type) || !IsClassStruct(Indirect(Expr->Type)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">368</td><td><a href="expr.c.html#L368">(ParamCount != Func->ParamCount || (Func->Flags & FD_FASTCALL) == 0)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">281</td><td><a href="expr.c.html#L281">(FrameParams > 0 && (Func->Flags & FD_FASTCALL) != 0)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">951</td><td><a href="expr.c.html#L951">((ED_IsLocConst(&SubScript) || ED_IsLocStack(&SubScript)) && CheckedSizeOf(ElementType) == SIZEOF_CHAR)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">644</td><td><a href="expr.c.html#L644">((Sym->Flags & SC_PARAM) == SC_PARAM && F_IsVariadic(CurrentFunc))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1577</td><td><a href="expr.c.html#L1577">((Gen = FindGen(CurTok.Tok, Ops)) != 0)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1755</td><td><a href="expr.c.html#L1755">((Gen = FindGen(CurTok.Tok, Ops)) != 0)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1506</td><td><a href="expr.c.html#L1506">(ED_IsRVal(Expr) && !IsTypeFunc(Expr->Type) && !IsTypeArray(Expr->Type))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1102</td><td><a href="expr.c.html#L1102">(!IsTypeFunc(Expr->Type) && !IsTypeFuncPtr(Expr->Type))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1859</td><td><a href="expr.c.html#L1859">(IsTypeChar(Expr->Type) && (IsTypeChar(Expr2.Type) || rconst))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2705</td><td><a href="expr.c.html#L2705">(!IsClassInt(Expr->Type) && !IsTypePtr(Expr->Type))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2803</td><td><a href="expr.c.html#L2803">(!IsClassInt(Expr->Type) && !IsTypePtr(Expr->Type))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1477</td><td><a href="expr.c.html#L1477">(ED_IsLVal(Expr) || !(ED_IsLocConst(Expr) || ED_IsLocStack(Expr)))</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">2658</td><td><a href="expr.c.html#L2658">(TypeCmp(Indirect(Expr2.Type), Indirect(Expr3.Type)) < TC_EQUAL)</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">1090</td><td><a href="expr.c.html#L1090">(CurTok.Tok == TOK_LBRACK || CurTok.Tok == TOK_LPAREN || CurTok.Tok == TOK_DOT || CurTok.Tok == TOK_PTR_REF)</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">1806</td><td><a href="expr.c.html#L1806">(IsClassInt(Expr->Type) && IsSignSigned(Expr->Type) && IsClassInt(Expr2.Type) && IsSignSigned(Expr2.Type))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="expr.c.html#L555">(CurTok.Tok == TOK_ICONST || CurTok.Tok == TOK_CCONST)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1713</td><td><a href="expr.c.html#L1713">(Tok == TOK_DIV && Expr2.IVal == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1715</td><td><a href="expr.c.html#L1715">(Tok == TOK_MOD && Expr2.IVal == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2302</td><td><a href="expr.c.html#L2302">(CurTok.Tok == TOK_PLUS || CurTok.Tok == TOK_MINUS)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">678</td><td><a href="expr.c.html#L678">(IsTypeArray(E->Type) || IsTypeFunc(E->Type))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="expr.c.html#L327">((Func->Flags & FD_VARIADIC) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">631</td><td><a href="expr.c.html#L631">((Sym->Flags & SC_CONST) == SC_CONST)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">635</td><td><a href="expr.c.html#L635">((Sym->Flags & SC_FUNC) == SC_FUNC)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">639</td><td><a href="expr.c.html#L639">((Sym->Flags & SC_AUTO) == SC_AUTO)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">653</td><td><a href="expr.c.html#L653">((Sym->Flags & SC_REGISTER) == SC_REGISTER)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">657</td><td><a href="expr.c.html#L657">((Sym->Flags & SC_STATIC) == SC_STATIC)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1718</td><td><a href="expr.c.html#L1718">((Gen->Flags & GEN_NOPUSH) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1847</td><td><a href="expr.c.html#L1847">((Gen->Flags & GEN_NOPUSH) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">585</td><td><a href="expr.c.html#L585">(Preprocessing && CurTok.Tok == TOK_IDENT)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1051</td><td><a href="expr.c.html#L1051">(ED_IsLVal(Expr) && IsTypePtr(Expr->Type))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1861</td><td><a href="expr.c.html#L1861">(IsSignUnsigned(Expr->Type) || IsSignUnsigned(Expr2.Type))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2632</td><td><a href="expr.c.html#L2632">(IsClassInt(Expr2.Type) && IsClassInt(Expr3.Type))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2656</td><td><a href="expr.c.html#L2656">(IsClassPtr(Expr2.Type) && IsClassPtr(Expr3.Type))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2669</td><td><a href="expr.c.html#L2669">(IsTypeVoid(Expr2.Type) && IsTypeVoid(Expr3.Type))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2790</td><td><a href="expr.c.html#L2790">(ED_GetLoc(Expr) == E_LOC_EXPR || ED_GetLoc(Expr) == E_LOC_PRIMARY)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">615</td><td><a href="expr.c.html#L615">(Sym->Flags & SC_TYPE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">659</td><td><a href="expr.c.html#L659">(Sym->Flags & SC_EXTERN | SC_STORAGE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2734</td><td><a href="expr.c.html#L2734">(Gen->Flags & GEN_NOPUSH)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2745</td><td><a href="expr.c.html#L2745">(CheckedSizeOf(Expr->Type) == SIZEOF_CHAR)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2767</td><td><a href="expr.c.html#L2767">(CheckedSizeOf(Expr->Type) == SIZEOF_CHAR)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">187</td><td><a href="expr.c.html#L187">(Table->Tok != TOK_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">188</td><td><a href="expr.c.html#L188">(Table->Tok == Tok)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="expr.c.html#L308">(ParamCount <= Func->ParamCount)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">320</td><td><a href="expr.c.html#L320">(Param->NextSym != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">402</td><td><a href="expr.c.html#L402">(ParamCount < Func->ParamCount)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">469</td><td><a href="expr.c.html#L469">(Expr->Name != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2663</td><td><a href="expr.c.html#L2663">(IsClassPtr(Expr2.Type) && Expr3IsNULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2666</td><td><a href="expr.c.html#L2666">(Expr2IsNULL && IsClassPtr(Expr3.Type))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2750</td><td><a href="expr.c.html#L2750">(Gen->Func == g_add)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2752</td><td><a href="expr.c.html#L2752">(Gen->Func == g_sub)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2851</td><td><a href="expr.c.html#L2851">(Gen->Tok == TOK_PLUS_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2861</td><td><a href="expr.c.html#L2861">(Gen->Tok == TOK_PLUS_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2872</td><td><a href="expr.c.html#L2872">(Gen->Tok == TOK_PLUS_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2882</td><td><a href="expr.c.html#L2882">(Gen->Tok == TOK_PLUS_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2891</td><td><a href="expr.c.html#L2891">(Gen->Tok == TOK_PLUS_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">276</td><td><a href="expr.c.html#L276">(IS_Get(&CodeSizeFactor) >= 200)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2049</td><td><a href="expr.c.html#L2049">(evalexpr(CF_NONE, hie9, &Expr2) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2162</td><td><a href="expr.c.html#L2162">(evalexpr(CF_NONE, hie9, &Expr2) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2730</td><td><a href="expr.c.html#L2730">(evalexpr(CF_NONE, hie1, &Expr2) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="expr.c.html#L1117">(!IsClassStruct(Expr->Type))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1405</td><td><a href="expr.c.html#L1405">(!IsClassInt(Expr->Type))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="expr.c.html#L1583">(!IsClassInt(Expr->Type))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1936</td><td><a href="expr.c.html#L1936">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="expr.c.html#L1940">(IsClassInt(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1945</td><td><a href="expr.c.html#L1945">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1979</td><td><a href="expr.c.html#L1979">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1992</td><td><a href="expr.c.html#L1992">(IsClassInt(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2020</td><td><a href="expr.c.html#L2020">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2058</td><td><a href="expr.c.html#L2058">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2063</td><td><a href="expr.c.html#L2063">(IsClassInt(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2069</td><td><a href="expr.c.html#L2069">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2087</td><td><a href="expr.c.html#L2087">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2092</td><td><a href="expr.c.html#L2092">(IsClassInt(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2100</td><td><a href="expr.c.html#L2100">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2174</td><td><a href="expr.c.html#L2174">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2178</td><td><a href="expr.c.html#L2178">(IsClassPtr(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2188</td><td><a href="expr.c.html#L2188">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2207</td><td><a href="expr.c.html#L2207">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2212</td><td><a href="expr.c.html#L2212">(IsClassPtr(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2222</td><td><a href="expr.c.html#L2222">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2251</td><td><a href="expr.c.html#L2251">(IsClassPtr(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2256</td><td><a href="expr.c.html#L2256">(IsClassPtr(lhst) && IsClassPtr(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2266</td><td><a href="expr.c.html#L2266">(IsClassInt(lhst) && IsClassInt(rhst))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="expr.c.html#L957">(CheckedSizeOf(SubScript.Type) == SIZEOF_CHAR)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="expr.c.html#L1616">(ED_IsConstAbs(Expr) && rconst)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1800</td><td><a href="expr.c.html#L1800">(ED_IsConstAbs(Expr) && rconst)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">300</td><td><a href="expr.c.html#L300">(CurTok.Tok != TOK_RPAREN)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">395</td><td><a href="expr.c.html#L395">(CurTok.Tok != TOK_COMMA)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">564</td><td><a href="expr.c.html#L564">(CurTok.Tok == TOK_FCONST)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">575</td><td><a href="expr.c.html#L575">(CurTok.Tok == TOK_LPAREN)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">690</td><td><a href="expr.c.html#L690">(CurTok.Tok == TOK_LPAREN)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1032</td><td><a href="expr.c.html#L1032">(CurTok.Tok != TOK_IDENT)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1546</td><td><a href="expr.c.html#L1546">(CurTok.Tok == TOK_INC)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1548</td><td><a href="expr.c.html#L1548">(CurTok.Tok == TOK_DEC)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2303</td><td><a href="expr.c.html#L2303">(CurTok.Tok == TOK_PLUS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2391</td><td><a href="expr.c.html#L2391">(CurTok.Tok == TOK_BOOL_AND)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2414</td><td><a href="expr.c.html#L2414">(CurTok.Tok == TOK_BOOL_OR)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2436</td><td><a href="expr.c.html#L2436">(CurTok.Tok == TOK_BOOL_AND)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2456</td><td><a href="expr.c.html#L2456">(CurTok.Tok == TOK_BOOL_AND)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2469</td><td><a href="expr.c.html#L2469">(CurTok.Tok == TOK_BOOL_AND)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2504</td><td><a href="expr.c.html#L2504">(CurTok.Tok == TOK_BOOL_OR)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2525</td><td><a href="expr.c.html#L2525">(CurTok.Tok == TOK_BOOL_OR)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2581</td><td><a href="expr.c.html#L2581">(CurTok.Tok == TOK_QUEST)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2969</td><td><a href="expr.c.html#L2969">(CurTok.Tok == TOK_COMMA)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">806</td><td><a href="expr.c.html#L806">(IsClassPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">813</td><td><a href="expr.c.html#L813">(IsClassInt(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">846</td><td><a href="expr.c.html#L846">(IsClassPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">860</td><td><a href="expr.c.html#L860">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">899</td><td><a href="expr.c.html#L899">(IsClassPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">980</td><td><a href="expr.c.html#L980">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">988</td><td><a href="expr.c.html#L988">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1012</td><td><a href="expr.c.html#L1012">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1071</td><td><a href="expr.c.html#L1071">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1125</td><td><a href="expr.c.html#L1125">(IsTypeArray(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1374</td><td><a href="expr.c.html#L1374">(IsTypePtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1487</td><td><a href="expr.c.html#L1487">(IsTypeFuncPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1491</td><td><a href="expr.c.html#L1491">(IsClassPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1625</td><td><a href="expr.c.html#L1625">(IsSignSigned(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1779</td><td><a href="expr.c.html#L1779">(IsClassInt(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="expr.c.html#L1783">(IsClassPtr(Expr->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1794</td><td><a href="expr.c.html#L1794">(!ED_IsNullPtr(&Expr2))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2463</td><td><a href="expr.c.html#L2463">(!ED_IsTested(&Expr2))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2533</td><td><a href="expr.c.html#L2533">(!ED_IsTested(&Expr2))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2180</td><td><a href="expr.c.html#L2180">(TypeCmp(Indirect(lhst), Indirect(rhst)) < TC_QUAL_DIFF)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2214</td><td><a href="expr.c.html#L2214">(TypeCmp(Indirect(lhst), Indirect(rhst)) < TC_QUAL_DIFF)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2258</td><td><a href="expr.c.html#L2258">(TypeCmp(Indirect(lhst), Indirect(rhst)) < TC_QUAL_DIFF)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">126</td><td><a href="expr.c.html#L126">(IsTypeLong(lhst) || IsTypeLong(rhst))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">127</td><td><a href="expr.c.html#L127">(IsSignUnsigned(lhst) || IsSignUnsigned(rhst))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">133</td><td><a href="expr.c.html#L133">(IsSignUnsigned(lhst) || IsSignUnsigned(rhst))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">807</td><td><a href="expr.c.html#L807">(!IsClassInt(SubScript.Type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">814</td><td><a href="expr.c.html#L814">(!IsClassPtr(SubScript.Type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">833</td><td><a href="expr.c.html#L833">(ED_IsConstAbs(&SubScript))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">870</td><td><a href="expr.c.html#L870">(ConstBaseAddr || ED_IsLVal(Expr))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">968</td><td><a href="expr.c.html#L968">(ED_IsLocStack(&SubScript))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1464</td><td><a href="expr.c.html#L1464">(evalexpr(CF_NONE, hie10, Expr) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1611</td><td><a href="expr.c.html#L1611">(!IsClassInt(Expr2.Type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1930</td><td><a href="expr.c.html#L1930">(ED_IsConstAbs(&Expr2))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1985</td><td><a href="expr.c.html#L1985">(ED_GetLoc(Expr) == E_LOC_ABS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2596</td><td><a href="expr.c.html#L2596">(!IsTypeVoid(Expr2.Type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2613</td><td><a href="expr.c.html#L2613">(!IsTypeVoid(Expr3.Type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2822</td><td><a href="expr.c.html#L2822">(ED_IsConstAbs(&Expr2))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">104</td><td><a href="expr.c.html#L104">(StackPtr != OldSP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">288</td><td><a href="expr.c.html#L288">(FrameParams > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="expr.c.html#L317">(ParamCount == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="expr.c.html#L370">(FrameSize > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="expr.c.html#L377">(FrameSize >= ArgSize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">471</td><td><a href="expr.c.html#L471">(StdFunc >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">498</td><td><a href="expr.c.html#L498">(ParamSize == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1042</td><td><a href="expr.c.html#L1042">(Field == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1152</td><td><a href="expr.c.html#L1152">(StoreType == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1644</td><td><a href="expr.c.html#L1644">(Val2 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1652</td><td><a href="expr.c.html#L1652">(Val2 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1681</td><td><a href="expr.c.html#L1681">(Val2 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1689</td><td><a href="expr.c.html#L1689">(Val2 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="expr.c.html#L2010">(ScaleFactor == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2235</td><td><a href="expr.c.html#L2235">(rscale != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2286</td><td><a href="expr.c.html#L2286">(rscale != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1784</td><td><a href="expr.c.html#L1784">(IsClassPtr(Expr2.Type))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1219</td><td><a href="expr.c.html#L1219">(!ED_IsLVal(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1290</td><td><a href="expr.c.html#L1290">(!ED_IsLVal(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1358</td><td><a href="expr.c.html#L1358">(!ED_IsLVal(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2445</td><td><a href="expr.c.html#L2445">(!ED_IsTested(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2507</td><td><a href="expr.c.html#L2507">(!ED_IsTested(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2583</td><td><a href="expr.c.html#L2583">(!ED_IsTested(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2699</td><td><a href="expr.c.html#L2699">(!ED_IsLVal(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3017</td><td><a href="expr.c.html#L3017">(!ED_IsConst(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3034</td><td><a href="expr.c.html#L3034">(!ED_IsBool(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3051</td><td><a href="expr.c.html#L3051">(!ED_IsConstAbsInt(Expr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">325</td><td><a href="expr.c.html#L325">(!Ellipsis)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">344</td><td><a href="expr.c.html#L344">(!Ellipsis)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">490</td><td><a href="expr.c.html#L490">(!IsFastCall)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">784</td><td><a href="expr.c.html#L784">(!ConstBaseAddr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">839</td><td><a href="expr.c.html#L839">(!ConstBaseAddr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">934</td><td><a href="expr.c.html#L934">(!ConstBaseAddr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2517</td><td><a href="expr.c.html#L2517">(!BoolOp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">162</td><td><a href="expr.c.html#L162">(ED_IsLocAbs(lhs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="expr.c.html#L170">(ED_IsLocAbs(rhs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="expr.c.html#L230">(ED_IsLocExpr(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="expr.c.html#L975">(ED_IsLocAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">978</td><td><a href="expr.c.html#L978">(ED_IsLocStack(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1411</td><td><a href="expr.c.html#L1411">(ED_IsConstAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1516</td><td><a href="expr.c.html#L1516">(TypeSpecAhead())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1535</td><td><a href="expr.c.html#L1535">(TypeSpecAhead())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1596</td><td><a href="expr.c.html#L1596">(ED_IsConstAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1764</td><td><a href="expr.c.html#L1764">(ED_IsConstAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1926</td><td><a href="expr.c.html#L1926">(ED_IsConst(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1970</td><td><a href="expr.c.html#L1970">(ED_IsLocAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2005</td><td><a href="expr.c.html#L2005">(ED_IsLocAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2024</td><td><a href="expr.c.html#L2024">(ED_IsLocAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="expr.c.html#L2168">(ED_IsConstAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2271</td><td><a href="expr.c.html#L2271">(ED_IsLocAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2797</td><td><a href="expr.c.html#L2797">(ED_IsRVal(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2988</td><td><a href="expr.c.html#L2988">(ED_IsConstAbs(Expr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">105</td><td><a href="expr.c.html#L105">(Debug)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">165</td><td><a href="expr.c.html#L165">(NoPush)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">438</td><td><a href="expr.c.html#L438">(IsFuncPtr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="expr.c.html#L452">(PtrOnStack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">485</td><td><a href="expr.c.html#L485">(IsFuncPtr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">493</td><td><a href="expr.c.html#L493">(PtrOnStack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">524</td><td><a href="expr.c.html#L524">(PtrOnStack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">594</td><td><a href="expr.c.html#L594">(Preprocessing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">608</td><td><a href="expr.c.html#L608">(Sym)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">915</td><td><a href="expr.c.html#L915">(ConstBaseAddr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1709</td><td><a href="expr.c.html#L1709">(rconst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1845</td><td><a href="expr.c.html#L1845">(rconst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1864</td><td><a href="expr.c.html#L1864">(rconst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2549</td><td><a href="expr.c.html#L2549">(BoolOp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2574</td><td><a href="expr.c.html#L2574">(Preprocessing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2678</td><td><a href="expr.c.html#L2678">(labt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2737</td><td><a href="expr.c.html#L2737">(MustScale)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2759</td><td><a href="expr.c.html#L2759">(MustScale)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2824</td><td><a href="expr.c.html#L2824">(MustScale)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2832</td><td><a href="expr.c.html#L2832">(MustScale)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

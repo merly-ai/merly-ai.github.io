@@ -1,0 +1,155 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - block\nvme.c Ctrl Expressions (104) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - block\nvme.c Ctrl Expressions (104) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;block\nvme.c Ctrl Expressions (104)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1226</td><td><a href="nvme.c.html#L1226">(<span style='background-color:#9c4c02;'>!QEMU_PTR_IS_ALIGNED(qiov->iov[i].iov_base, qemu_real_host_page_size()) || !QEMU_IS_ALIGNED(qiov->iov[i].iov_len, qemu_real_host_page_size())</span>)</a></td><td class="num">102.50</td></tr>
+      <tr><td class="num line">1098</td><td><a href="nvme.c.html#L1098">(j < qiov->iov[i].iov_len / s->page_size)</a></td><td class="num">45.75</td></tr>
+      <tr><td class="num line">1025</td><td><a href="nvme.c.html#L1025">(!s->dma_map_count && !qemu_co_queue_empty(&s->dma_flush_queue))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">593</td><td><a href="nvme.c.html#L593">(lbaf->ds < BDRV_SECTOR_BITS || lbaf->ds > 12 || (1 << lbaf->ds) > s->page_size)</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">210</td><td><a href="nvme.c.html#L210">(q->free_req_head != -1 && qemu_co_enter_next(&q->free_req_queue, &q->lock))</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">582</td><td><a href="nvme.c.html#L582">(NVME_ID_NS_DLFEAT_WRITE_ZEROES(id->ns.dlfeat) && NVME_ID_NS_DLFEAT_READ_BEHAVIOR(id->ns.dlfeat) == NVME_ID_NS_DLFEAT_READ_BEHAVIOR_ZEROES)</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">402</td><td><a href="nvme.c.html#L402">((le16_to_cpu(c->status) & 0x1) == q->cq_phase)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">620</td><td><a href="nvme.c.html#L620">((le16_to_cpu(cqe->status) & 0x1) == q->cq_phase)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">709</td><td><a href="nvme.c.html#L709">((le16_to_cpu(cqe->status) & 0x1) != q->cq_phase)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">263</td><td><a href="nvme.c.html#L263">(!nvme_init_queue(s, &q->sq, size, NVME_SQ_ENTRY_BYTES, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">268</td><td><a href="nvme.c.html#L268">(!nvme_init_queue(s, &q->cq, size, NVME_CQ_ENTRY_BYTES, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">334</td><td><a href="nvme.c.html#L334">(!qemu_co_queue_empty(&q->free_req_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">839</td><td><a href="nvme.c.html#L839">(!NVME_CSTS_RDY(le32_to_cpu(regs->csts)))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="nvme.c.html#L284">(s->plugged || !q->need_kick)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">903</td><td><a href="nvme.c.html#L903">(*namespace && qemu_strtoul(namespace, NULL, 10, &ns))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">889</td><td><a href="nvme.c.html#L889">(strlen(filename) > pref && !strncmp(filename, "nvme://", pref))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">556</td><td><a href="nvme.c.html#L556">(le32_to_cpu(id->ctrl.nn) < namespace)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">414</td><td><a href="nvme.c.html#L414">(cid == 0 || cid > NVME_QUEUE_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1074</td><td><a href="nvme.c.html#L1074">(r == -ENOMEM && retry)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1479</td><td><a href="nvme.c.html#L1479">(offset != cur_length && exact)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="nvme.c.html#L306">(q->free_req_head == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">635</td><td><a href="nvme.c.html#L635">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">700</td><td><a href="nvme.c.html#L700">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">936</td><td><a href="nvme.c.html#L936">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="nvme.c.html#L1047">(i < qiov->niov)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1225</td><td><a href="nvme.c.html#L1225">(i < qiov->niov)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1529</td><td><a href="nvme.c.html#L1529">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1551</td><td><a href="nvme.c.html#L1551">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1571</td><td><a href="nvme.c.html#L1571">(i < s->queue_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">410</td><td><a href="nvme.c.html#L410">(!q->cq.head)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1266</td><td><a href="nvme.c.html#L1266">(!r && !is_write)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">175</td><td><a href="nvme.c.html#L175">(!q->queue)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">237</td><td><a href="nvme.c.html#L237">(!q->prp_list_pages)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">749</td><td><a href="nvme.c.html#L749">(!s->vfio)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">812</td><td><a href="nvme.c.html#L812">(!s->doorbells)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">978</td><td><a href="nvme.c.html#L978">(!s->write_cache_supported)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1157</td><td><a href="nvme.c.html#L1157">(!data->co)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1326</td><td><a href="nvme.c.html#L1326">(!s->supports_write_zeroes)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1403</td><td><a href="nvme.c.html#L1403">(!s->supports_discard)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">798</td><td><a href="nvme.c.html#L798">(NVME_CSTS_RDY(le32_to_cpu(regs->csts)))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1204</td><td><a href="nvme.c.html#L1204">(data.ret == -EINPROGRESS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1308</td><td><a href="nvme.c.html#L1308">(data.ret == -EINPROGRESS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1371</td><td><a href="nvme.c.html#L1371">(data.ret == -EINPROGRESS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1446</td><td><a href="nvme.c.html#L1446">(data.ret == -EINPROGRESS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">195</td><td><a href="nvme.c.html#L195">(q->completion_bh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="nvme.c.html#L381">(s->plugged)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="nvme.c.html#L397">(q->inflight)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">588</td><td><a href="nvme.c.html#L588">(lbaf->ms)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="nvme.c.html#L977">(flags & BDRV_O_NOCACHE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="nvme.c.html#L1081">(s->dma_map_count)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1353</td><td><a href="nvme.c.html#L1353">(flags & BDRV_REQ_MAY_UNMAP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="nvme.c.html#L1357">(flags & BDRV_REQ_FUA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">551</td><td><a href="nvme.c.html#L551">(nvme_admin_cmd_sync(bs, &cmd))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">574</td><td><a href="nvme.c.html#L574">(nvme_admin_cmd_sync(bs, &cmd))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">670</td><td><a href="nvme.c.html#L670">(nvme_admin_cmd_sync(bs, &cmd))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">680</td><td><a href="nvme.c.html#L680">(nvme_admin_cmd_sync(bs, &cmd))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="nvme.c.html#L799">(qemu_clock_get_ns(QEMU_CLOCK_REALTIME) > deadline)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">840</td><td><a href="nvme.c.html#L840">(qemu_clock_get_ns(QEMU_CLOCK_REALTIME) > deadline)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">254</td><td><a href="nvme.c.html#L254">(i < NVME_NUM_REQS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="nvme.c.html#L467">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1056</td><td><a href="nvme.c.html#L1056">(r == -ENOSPC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="nvme.c.html#L1125">(i < entries)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="nvme.c.html#L1330">(bytes == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1472</td><td><a href="nvme.c.html#L1472">(prealloc != PREALLOC_MODE_OFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="nvme.c.html#L1482">(offset > cur_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="nvme.c.html#L464">(!trace_event_get_state_backends(TRACE_NVME_SUBMIT_COMMAND_RAW))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">777</td><td><a href="nvme.c.html#L777">(!NVME_CAP_CSS(cap))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">859</td><td><a href="nvme.c.html#L859">(!nvme_identify(bs, namespace, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">865</td><td><a href="nvme.c.html#L865">(!nvme_add_io_queue(bs, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">228</td><td><a href="nvme.c.html#L228">(!q)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">510</td><td><a href="nvme.c.html#L510">(!req)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">539</td><td><a href="nvme.c.html#L539">(!id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">661</td><td><a href="nvme.c.html#L661">(!q)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">756</td><td><a href="nvme.c.html#L756">(!regs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">820</td><td><a href="nvme.c.html#L820">(!q)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">895</td><td><a href="nvme.c.html#L895">(!slash)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">965</td><td><a href="nvme.c.html#L965">(!device)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1027</td><td><a href="nvme.c.html#L1027">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1256</td><td><a href="nvme.c.html#L1256">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1418</td><td><a href="nvme.c.html#L1418">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">307</td><td><a href="nvme.c.html#L307">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="nvme.c.html#L625">(nvme_process_completion(q))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1248</td><td><a href="nvme.c.html#L1248">(nvme_qiov_aligned(bs, qiov))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="nvme.c.html#L181">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">249</td><td><a href="nvme.c.html#L249">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">352</td><td><a href="nvme.c.html#L352">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">406</td><td><a href="nvme.c.html#L406">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">432</td><td><a href="nvme.c.html#L432">(progress)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">544</td><td><a href="nvme.c.html#L544">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">743</td><td><a href="nvme.c.html#L743">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">851</td><td><a href="nvme.c.html#L851">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">869</td><td><a href="nvme.c.html#L869">(regs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">926</td><td><a href="nvme.c.html#L926">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="nvme.c.html#L974">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">986</td><td><a href="nvme.c.html#L986">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1086</td><td><a href="nvme.c.html#L1086">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1094</td><td><a href="nvme.c.html#L1094">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1135</td><td><a href="nvme.c.html#L1135">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1197</td><td><a href="nvme.c.html#L1197">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1211</td><td><a href="nvme.c.html#L1211">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1260</td><td><a href="nvme.c.html#L1260">(is_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1436</td><td><a href="nvme.c.html#L1436">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1454</td><td><a href="nvme.c.html#L1454">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1587</td><td><a href="nvme.c.html#L1587">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\s390x\s390-pci-inst.c Ctrl Expressions (110) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\s390x\s390-pci-inst.c Ctrl Expressions (110) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\s390x\s390-pci-inst.c Ctrl Expressions (110)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">473</td><td><a href="s390-pci-inst.c.html#L473">(!len || (<span style='background-color:#741da3;'>len > (4 - (offset & 0x3))</span>) || len == 3)</a></td><td class="num">1029.85</td></tr>
+      <tr><td class="num line">583</td><td><a href="s390-pci-inst.c.html#L583">(!len || (<span style='background-color:#741da3;'>len > (4 - (offset & 0x3))</span>) || len == 3)</a></td><td class="num">1029.85</td></tr>
+      <tr><td class="num line">462</td><td><a href="s390-pci-inst.c.html#L462">(!len || (<span style='background-color:#741da3;'>len > (8 - (offset & 0x7))</span>))</a></td><td class="num">1026.60</td></tr>
+      <tr><td class="num line">569</td><td><a href="s390-pci-inst.c.html#L569">(!len || (<span style='background-color:#741da3;'>len > (8 - (offset & 0x7))</span>))</a></td><td class="num">1026.60</td></tr>
+      <tr><td class="num line">812</td><td><a href="s390-pci-inst.c.html#L812">(<span style='background-color:#741da3;'>(len <= 8) || (len % 8) || (len > pbdev->pci_group->zpci_group.maxstbl)</span>)</a></td><td class="num">1016.60</td></tr>
+      <tr><td class="num line">76</td><td><a href="s390-pci-inst.c.html#L76">((ldl_p(&rrb->request.fmt) & ~CLP_MASK_FMT) != 0 || ldq_p(&rrb->request.reserved1) != 0)</a></td><td class="num">86.00</td></tr>
+      <tr><td class="num line">70</td><td><a href="s390-pci-inst.c.html#L70">((ldl_p(&rrb->request.fmt) & CLP_MASK_FMT) != 0)</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">390</td><td><a href="s390-pci-inst.c.html#L390">((offset >= subregion->addr) && (offset + len) <= (subregion->addr + subregion_size))</a></td><td class="num">33.70</td></tr>
+      <tr><td class="num line">726</td><td><a href="s390-pci-inst.c.html#L726">(entry.iova < start && entry.iova < end && (dma_avail > 0 || entry.perm == IOMMU_NONE))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">64</td><td><a href="s390-pci-inst.c.html#L64">(lduw_p(&rrb->request.hdr.len) != 32)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">96</td><td><a href="s390-pci-inst.c.html#L96">(lduw_p(&rrb->response.hdr.len) < 48)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">629</td><td><a href="s390-pci-inst.c.html#L629">(cache->perm == entry->perm && cache->translated_addr == entry->translated_addr)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">932</td><td><a href="s390-pci-inst.c.html#L932">(pba > pal || pba < pbdev->zpci_fn.sdma || pal > pbdev->zpci_fn.edma)</a></td><td class="num">19.00</td></tr>
+      <tr><td class="num line">714</td><td><a href="s390-pci-inst.c.html#L714">(end < iommu->pba || start > iommu->pal)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">183</td><td><a href="s390-pci-inst.c.html#L183">(req_len < 16 || req_len > 8184 || (req_len % 8 != 0))</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">195</td><td><a href="s390-pci-inst.c.html#L195">(res_len < 8 || res_len > 8176 || (res_len % 8 != 0))</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">1035</td><td><a href="s390-pci-inst.c.html#L1035">(fmb_do_update(pbdev, offsetof(ZpciFmb, counter[i]), pbdev->fmb.counter[i], sizeof(pbdev->fmb.counter[0])))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1027</td><td><a href="s390-pci-inst.c.html#L1027">(fmb_do_update(pbdev, offsetof(ZpciFmb, sample), pbdev->fmb.sample++, sizeof(pbdev->fmb.sample)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">172</td><td><a href="s390-pci-inst.c.html#L172">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">423</td><td><a href="s390-pci-inst.c.html#L423">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">522</td><td><a href="s390-pci-inst.c.html#L522">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">667</td><td><a href="s390-pci-inst.c.html#L667">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">766</td><td><a href="s390-pci-inst.c.html#L766">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">817</td><td><a href="s390-pci-inst.c.html#L817">(((offset & 0xfff) + len) > 0x1000)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1063</td><td><a href="s390-pci-inst.c.html#L1063">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1232</td><td><a href="s390-pci-inst.c.html#L1232">(env->psw.mask & PSW_MASK_PSTATE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">188</td><td><a href="s390-pci-inst.c.html#L188">(s390_cpu_virt_mem_read(cpu, env->regs[r2], r2, buffer, req_len + sizeof(*resh)))</a></td><td class="num">7.60</td></tr>
+      <tr><td class="num line">204</td><td><a href="s390-pci-inst.c.html#L204">(s390_cpu_virt_mem_read(cpu, env->regs[r2], r2, buffer, req_len + res_len))</a></td><td class="num">7.60</td></tr>
+      <tr><td class="num line">343</td><td><a href="s390-pci-inst.c.html#L343">(s390_cpu_virt_mem_write(cpu, env->regs[r2], r2, buffer, req_len + res_len))</a></td><td class="num">7.60</td></tr>
+      <tr><td class="num line">255</td><td><a href="s390-pci-inst.c.html#L255">(!(pbdev->fh & FH_MASK_ENABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">103</td><td><a href="s390-pci-inst.c.html#L103">((initial_l2 - LIST_PCI_HDR_LEN) % sizeof(ClpFhListEntry) != 0)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">938</td><td><a href="s390-pci-inst.c.html#L938">(!(dt == ZPCI_IOTA_RTTO && t))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">244</td><td><a href="s390-pci-inst.c.html#L244">(pbdev->fh & FH_MASK_ENABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">120</td><td><a href="s390-pci-inst.c.html#L120">(g_l2 < initial_l2 && pbdev)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1139</td><td><a href="s390-pci-inst.c.html#L1139">(!pbdev->iommu->enabled)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1150</td><td><a href="s390-pci-inst.c.html#L1150">(!pbdev->iommu->enabled)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">177</td><td><a href="s390-pci-inst.c.html#L177">(s390_cpu_virt_mem_read(cpu, env->regs[r2], r2, buffer, sizeof(*reqh)))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1127</td><td><a href="s390-pci-inst.c.html#L1127">(pbdev->iommu->enabled)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1280</td><td><a href="s390-pci-inst.c.html#L1280">(pbdev->iommu->enabled)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1020</td><td><a href="s390-pci-inst.c.html#L1020">(fmb_do_update(pbdev, offsetof(ZpciFmb, last_update), pbdev->fmb.last_update, sizeof(pbdev->fmb.last_update)))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1045</td><td><a href="s390-pci-inst.c.html#L1045">(fmb_do_update(pbdev, offsetof(ZpciFmb, last_update), pbdev->fmb.last_update, sizeof(pbdev->fmb.last_update)))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">199</td><td><a href="s390-pci-inst.c.html#L199">((req_len + res_len) > 8192)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">842</td><td><a href="s390-pci-inst.c.html#L842">(i < len / 8)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">438</td><td><a href="s390-pci-inst.c.html#L438">(!(fh & FH_MASK_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">538</td><td><a href="s390-pci-inst.c.html#L538">(!(fh & FH_MASK_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">709</td><td><a href="s390-pci-inst.c.html#L709">(!iommu->g_iota)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">776</td><td><a href="s390-pci-inst.c.html#L776">(!(fh & FH_MASK_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1116</td><td><a href="s390-pci-inst.c.html#L1116">(!pbdev->summary_ind)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1199</td><td><a href="s390-pci-inst.c.html#L1199">(!pbdev->fmb_timer)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1283</td><td><a href="s390-pci-inst.c.html#L1283">(!(fh & FH_MASK_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="s390-pci-inst.c.html#L621">(event.type == IOMMU_NOTIFIER_UNMAP)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1100</td><td><a href="s390-pci-inst.c.html#L1100">(fib.fmt != 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1202</td><td><a href="s390-pci-inst.c.html#L1202">(timer_pending(pbdev->fmb_timer))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">36</td><td><a href="s390-pci-inst.c.html#L36">(iommu->dma_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">43</td><td><a href="s390-pci-inst.c.html#L43">(iommu->dma_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">428</td><td><a href="s390-pci-inst.c.html#L428">(r2 & 0x1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="s390-pci-inst.c.html#L527">(r2 & 0x1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="s390-pci-inst.c.html#L672">(r2 & 0x1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="s390-pci-inst.c.html#L704">(iommu->dma_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="s390-pci-inst.c.html#L821">(gaddr & 0x07UL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="s390-pci-inst.c.html#L830">(!memory_region_access_valid(mr, offset + i, 8, true, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">963</td><td><a href="s390-pci-inst.c.html#L963">(pbdev->fmb_timer)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="s390-pci-inst.c.html#L1072">(fiba & 0x7)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="s390-pci-inst.c.html#L1107">(pbdev->summary_ind)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1185</td><td><a href="s390-pci-inst.c.html#L1185">(fmb_addr & FMBK_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="s390-pci-inst.c.html#L1246">(fiba & 0x7)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1265</td><td><a href="s390-pci-inst.c.html#L1265">(fh & FH_MASK_ENABLE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">480</td><td><a href="s390-pci-inst.c.html#L480">(zpci_endian_swap(&data, len))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1095</td><td><a href="s390-pci-inst.c.html#L1095">(s390_cpu_virt_mem_read(cpu, fiba, ar, (uint8_t *)&fib, sizeof(fib)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1306</td><td><a href="s390-pci-inst.c.html#L1306">(s390_cpu_virt_mem_write(cpu, fiba, ar, (uint8_t *)&fib, sizeof(fib)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">210</td><td><a href="s390-pci-inst.c.html#L210">(req_len != 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="s390-pci-inst.c.html#L296">(i < PCI_BAR_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="s390-pci-inst.c.html#L467">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="s390-pci-inst.c.html#L575">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">719</td><td><a href="s390-pci-inst.c.html#L719">(start < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="s390-pci-inst.c.html#L741">(dma_avail > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="s390-pci-inst.c.html#L798">(pcias > ZPCI_IO_BAR_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="s390-pci-inst.c.html#L807">(offset % 8)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">829</td><td><a href="s390-pci-inst.c.html#L829">(i < len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="s390-pci-inst.c.html#L846">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1002</td><td><a href="s390-pci-inst.c.html#L1002">(ret != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="s390-pci-inst.c.html#L1034">(i < ZPCI_FMB_CNT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1124</td><td><a href="s390-pci-inst.c.html#L1124">(dmaas != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="s390-pci-inst.c.html#L1136">(dmaas != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="s390-pci-inst.c.html#L1147">(dmaas != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">87</td><td><a href="s390-pci-inst.c.html#L87">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">143</td><td><a href="s390-pci-inst.c.html#L143">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">226</td><td><a href="s390-pci-inst.c.html#L226">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">277</td><td><a href="s390-pci-inst.c.html#L277">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">319</td><td><a href="s390-pci-inst.c.html#L319">(!group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">444</td><td><a href="s390-pci-inst.c.html#L444">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">544</td><td><a href="s390-pci-inst.c.html#L544">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">622</td><td><a href="s390-pci-inst.c.html#L622">(!cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">682</td><td><a href="s390-pci-inst.c.html#L682">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">782</td><td><a href="s390-pci-inst.c.html#L782">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1078</td><td><a href="s390-pci-inst.c.html#L1078">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1193</td><td><a href="s390-pci-inst.c.html#L1193">(!fmb_addr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1252</td><td><a href="s390-pci-inst.c.html#L1252">(!pbdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">837</td><td><a href="s390-pci-inst.c.html#L837">(s390_cpu_virt_mem_read(cpu, gaddr, ar, buffer, len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1110</td><td><a href="s390-pci-inst.c.html#L1110">(reg_irqs(env, pbdev, fib))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1130</td><td><a href="s390-pci-inst.c.html#L1130">(reg_ioat(env, pbdev, fib, ra))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="s390-pci-inst.c.html#L1155">(reg_ioat(env, pbdev, fib, ra))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">85</td><td><a href="s390-pci-inst.c.html#L85">(resume_token)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">152</td><td><a href="s390-pci-inst.c.html#L152">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">628</td><td><a href="s390-pci-inst.c.html#L628">(cache)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">721</td><td><a href="s390-pci-inst.c.html#L721">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">734</td><td><a href="s390-pci-inst.c.html#L734">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">874</td><td><a href="s390-pci-inst.c.html#L874">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">879</td><td><a href="s390-pci-inst.c.html#L879">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1240</td><td><a href="s390-pci-inst.c.html#L1240">(dmaas)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

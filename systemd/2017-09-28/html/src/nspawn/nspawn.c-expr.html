@@ -1,0 +1,614 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\nspawn\nspawn.c Ctrl Expressions (563) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\nspawn\nspawn.c Ctrl Expressions (563) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\nspawn\nspawn.c Ctrl Expressions (563)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3105</td><td><a href="nspawn.c.html#L3105">((arg_settings_mask & SETTING_NETWORK) == 0 && (<span style='background-color:#741da3;'>settings->private_network >= 0 || settings->network_veth >= 0 || settings->network_bridge || settings->network_zone || settings->network_interfaces || settings->network_macvlan || settings->network_ipvlan || settings->network_veth_extra</span>))</a></td><td class="num">1062.25</td></tr>
+      <tr><td class="num line">3013</td><td><a href="nspawn.c.html#L3013">(<span style='background-color:#741da3;'>(arg_settings_mask & SETTING_START_MODE) == 0 && settings->start_mode >= 0</span>)</a></td><td class="num">1014.75</td></tr>
+      <tr><td class="num line">3082</td><td><a href="nspawn.c.html#L3082">(<span style='background-color:#741da3;'>(arg_settings_mask & SETTING_READ_ONLY) == 0 && settings->read_only >= 0</span>)</a></td><td class="num">1014.75</td></tr>
+      <tr><td class="num line">1217</td><td><a href="nspawn.c.html#L1217">(<span style='background-color:#741da3;'>arg_userns_mode != USER_NAMESPACE_NO && (arg_mount_settings & MOUNT_APPLY_APIVFS_NETNS) && !arg_private_network</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">2353</td><td><a href="nspawn.c.html#L2353">((asprintf((char**)(envp + n_env++), "HOME=%s", home ? home : "/root") < 0) || (asprintf((char**)(envp + n_env++), "USER=%s", arg_user ? arg_user : "root") < 0) || (asprintf((char**)(envp + n_env++), "LOGNAME=%s", arg_user ? arg_user : "root") < 0))</a></td><td class="num">95.30</td></tr>
+      <tr><td class="num line">2368</td><td><a href="nspawn.c.html#L2368">((asprintf((char **)(envp + n_env++), "LISTEN_FDS=%u", fdset_size(fds)) < 0) || (asprintf((char **)(envp + n_env++), "LISTEN_PID=1") < 0))</a></td><td class="num">64.95</td></tr>
+      <tr><td class="num line">3073</td><td><a href="nspawn.c.html#L3073">((arg_settings_mask & SETTING_MACHINE_ID) == 0 && !sd_id128_is_null(settings->machine_id))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1269</td><td><a href="nspawn.c.html#L1269">(gid < (gid_t)arg_uid_shift || gid >= gid_t(arg_uid_shift + arg_uid_range))</a></td><td class="num">25.10</td></tr>
+      <tr><td class="num line">2360</td><td><a href="nspawn.c.html#L2360">(asprintf((char**)(envp + n_env++), "container_uuid=%s", id128_to_uuid_string(arg_uuid, as_uuid)) < 0)</a></td><td class="num">24.10</td></tr>
+      <tr><td class="num line">2372</td><td><a href="nspawn.c.html#L2372">(asprintf((char **)(envp + n_env++), "NOTIFY_SOCKET=%s", NSPAWN_NOTIFY_SOCKET_PATH) < 0)</a></td><td class="num">23.85</td></tr>
+      <tr><td class="num line">2893</td><td><a href="nspawn.c.html#L2893">(cmsg->cmsg_level == SOL_SOCKET && cmsg->cmsg_type == SCM_CREDENTIALS && cmsg->cmsg_len == CMSG_LEN(sizeof(struct ucred)))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1513</td><td><a href="nspawn.c.html#L1513">(!S_ISCHR(st.st_mode) && !S_ISBLK(st.st_mode))</a></td><td class="num">22.00</td></tr>
+      <tr><td class="num line">3065</td><td><a href="nspawn.c.html#L3065">((arg_settings_mask & SETTING_KILL_SIGNAL) == 0 && settings->kill_signal > 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3069</td><td><a href="nspawn.c.html#L3069">((arg_settings_mask & SETTING_PERSONALITY) == 0 && settings->personality != PERSONALITY_INVALID)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3086</td><td><a href="nspawn.c.html#L3086">((arg_settings_mask & SETTING_VOLATILE_MODE) == 0 && settings->volatile_mode != _VOLATILE_MODE_INVALID)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3090</td><td><a href="nspawn.c.html#L3090">((arg_settings_mask & SETTING_CUSTOM_MOUNTS) == 0 && settings->n_custom_mounts > 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3159</td><td><a href="nspawn.c.html#L3159">((arg_settings_mask & SETTING_USERNS) == 0 && settings->userns_mode != _USER_NAMESPACE_MODE_INVALID)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3022</td><td><a href="nspawn.c.html#L3022">((arg_settings_mask & SETTING_PIVOT_ROOT) == 0 && settings->pivot_root_new)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3028</td><td><a href="nspawn.c.html#L3028">((arg_settings_mask & SETTING_WORKING_DIRECTORY) == 0 && settings->working_directory)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3035</td><td><a href="nspawn.c.html#L3035">((arg_settings_mask & SETTING_ENVIRONMENT) == 0 && settings->environment)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3042</td><td><a href="nspawn.c.html#L3042">((arg_settings_mask & SETTING_USER) == 0 && settings->user)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3147</td><td><a href="nspawn.c.html#L3147">((arg_settings_mask & SETTING_EXPOSE_PORTS) == 0 && settings->expose_ports)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1769</td><td><a href="nspawn.c.html#L1769">((arg_link_journal == LINK_GUEST || arg_link_journal == LINK_AUTO) && path_equal(d, q))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1110</td><td><a href="nspawn.c.html#L1110">(!(arg_clone_ns_flags & CLONE_NEWPID) || !(arg_clone_ns_flags & CLONE_NEWUTS))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="nspawn.c.html#L1222">(arg_userns_mode != USER_NAMESPACE_NO && !(arg_mount_settings & MOUNT_APPLY_APIVFS_RO))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">502</td><td><a href="nspawn.c.html#L502">((c = getopt_long(argc, argv, "+hD:u:abL:M:jS:Z:qi:xp:nUE:", options, NULL)) >= 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">306</td><td><a href="nspawn.c.html#L306">(path_equal(m->destination, "/") && arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1262</td><td><a href="nspawn.c.html#L1262">(uid < arg_uid_shift || uid >= arg_uid_shift + arg_uid_range)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">1122</td><td><a href="nspawn.c.html#L1122">(arg_keep_unit && arg_register && cg_pid_get_owner_uid(0, NULL) >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1413</td><td><a href="nspawn.c.html#L1413">(access("/usr/lib/systemd/resolv.conf", F_OK) >= 0 && resolved_listening() > 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1340</td><td><a href="nspawn.c.html#L1340">(unlink(where) < 0 && errno != ENOENT)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="nspawn.c.html#L1783">(arg_link_journal == LINK_GUEST && rmdir(p) < 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1815</td><td><a href="nspawn.c.html#L1815">(mkdir(p, 0755) < 0 && errno != EEXIST)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2901</td><td><a href="nspawn.c.html#L2901">(!ucred || ucred->pid != inner_child_pid)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1244</td><td><a href="nspawn.c.html#L1244">(arg_start_mode == START_BOOT && arg_kill_signal <= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="nspawn.c.html#L1256">(uid == UID_INVALID && gid == GID_INVALID)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3241</td><td><a href="nspawn.c.html#L3241">(etc_passwd_lock < 0 && etc_passwd_lock != -EROFS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3892</td><td><a href="nspawn.c.html#L3892">(!arg_root_hash && dissected_image->can_verity)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2192</td><td><a href="nspawn.c.html#L2192">(arg_uid_shift != (st.st_gid & UINT32_C(0xffff0000)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2531</td><td><a href="nspawn.c.html#L2531">(dup2(STDIN_FILENO, STDOUT_FILENO) != STDOUT_FILENO || dup2(STDIN_FILENO, STDERR_FILENO) != STDERR_FILENO)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1137</td><td><a href="nspawn.c.html#L1137">(arg_ephemeral && arg_template && !arg_directory)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1162</td><td><a href="nspawn.c.html#L1162">(arg_userns_mode != USER_NAMESPACE_NO && !userns_supported())</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2070</td><td><a href="nspawn.c.html#L2070">(arg_template && !arg_directory && arg_machine)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1147</td><td><a href="nspawn.c.html#L1147">(arg_template && !(arg_directory || arg_machine))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2795</td><td><a href="nspawn.c.html#L2795">(candidate < UID_SHIFT_PICK_MIN || candidate > UID_SHIFT_PICK_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2885</td><td><a href="nspawn.c.html#L2885">(errno == EAGAIN || errno == EINTR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2992</td><td><a href="nspawn.c.html#L2992">(!f && errno != ENOENT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3056</td><td><a href="nspawn.c.html#L3056">(!arg_settings_trusted && plus != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3572</td><td><a href="nspawn.c.html#L3572">(!arg_quiet && last_char != '\n')</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3588</td><td><a href="nspawn.c.html#L3588">(r > 0 || container_status == CONTAINER_TERMINATED)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3900</td><td><a href="nspawn.c.html#L3900">(remove_image && unlink(arg_image) >= 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1227</td><td><a href="nspawn.c.html#L1227">(arg_volatile_mode != VOLATILE_NO && arg_read_only)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2200</td><td><a href="nspawn.c.html#L2200">(arg_uid_shift > uid_t - 1 - arg_uid_range)</a></td><td class="num">5.70</td></tr>
+      <tr><td class="num line">2797</td><td><a href="nspawn.c.html#L2797">((candidate & UINT32_C(0xFFFF)) != 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1519</td><td><a href="nspawn.c.html#L1519">(mknod(to, st.st_mode, st.st_rdev) < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1696</td><td><a href="nspawn.c.html#L1696">((arg_clone_ns_flags & CLONE_NEWUTS) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1848</td><td><a href="nspawn.c.html#L1848">((arg_clone_ns_flags & CLONE_NEWPID) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2093</td><td><a href="nspawn.c.html#L2093">(i->type == IMAGE_RAW)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2792</td><td><a href="nspawn.c.html#L2792">(n_tries-- <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2947</td><td><a href="nspawn.c.html#L2947">((arg_settings_mask & _SETTINGS_MASK_ALL) == _SETTINGS_MASK_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3049</td><td><a href="nspawn.c.html#L3049">((arg_settings_mask & SETTING_CAPABILITY) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3057</td><td><a href="nspawn.c.html#L3057">(settings->capability != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3172</td><td><a href="nspawn.c.html#L3172">((arg_settings_mask & SETTING_NOTIFY_READY) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3175</td><td><a href="nspawn.c.html#L3175">((arg_settings_mask & SETTING_SYSCALL_FILTER) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3177</td><td><a href="nspawn.c.html#L3177">(!arg_settings_trusted && !strv_isempty(arg_syscall_whitelist))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1953</td><td><a href="nspawn.c.html#L1953">(arg_userns_mode == USER_NAMESPACE_NO || !arg_userns_chown)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2081</td><td><a href="nspawn.c.html#L2081">(!arg_image && !arg_directory)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2105</td><td><a href="nspawn.c.html#L2105">(!arg_directory && !arg_image)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2145</td><td><a href="nspawn.c.html#L2145">(asprintf(&b, "%s-%016", arg_machine, random_u64()) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="nspawn.c.html#L600">(strv_extend(&arg_network_interfaces, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">614</td><td><a href="nspawn.c.html#L614">(strv_extend(&arg_network_macvlan, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">628</td><td><a href="nspawn.c.html#L628">(strv_extend(&arg_network_ipvlan, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="nspawn.c.html#L883">(strv_extend(&arg_property, optarg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1157</td><td><a href="nspawn.c.html#L1157">(arg_ephemeral && !IN_SET(arg_link_journal, LINK_NO, LINK_AUTO))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1508</td><td><a href="nspawn.c.html#L1508">(stat(from, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2050</td><td><a href="nspawn.c.html#L2050">(waitid(P_ALL, 0, &si, WNOHANG | WNOWAIT | WEXITED) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3677</td><td><a href="nspawn.c.html#L3677">(path_equal(arg_directory, "/") && !arg_ephemeral)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1232</td><td><a href="nspawn.c.html#L1232">(arg_expose_ports && !arg_private_network)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3279</td><td><a href="nspawn.c.html#L3279">(*pid < 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3284</td><td><a href="nspawn.c.html#L3284">(*pid == 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3576</td><td><a href="nspawn.c.html#L3576">(arg_register && !arg_keep_unit)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1329</td><td><a href="nspawn.c.html#L1329">(y && streq(y, z))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2054</td><td><a href="nspawn.c.html#L2054">(si.si_pid == PTR_TO_PID(userdata))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2113</td><td><a href="nspawn.c.html#L2113">(arg_directory && path_equal(arg_directory, "/"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2276</td><td><a href="nspawn.c.html#L2276">(arg_use_cgns && cg_ns_supported())</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2701</td><td><a href="nspawn.c.html#L2701">(!arg_use_cgns || !cg_ns_supported())</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1127</td><td><a href="nspawn.c.html#L1127">(arg_directory && arg_image)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1132</td><td><a href="nspawn.c.html#L1132">(arg_template && arg_image)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1152</td><td><a href="nspawn.c.html#L1152">(arg_ephemeral && arg_template)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1167</td><td><a href="nspawn.c.html#L1167">(arg_userns_chown && arg_read_only)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1172</td><td><a href="nspawn.c.html#L1172">(arg_network_bridge && arg_network_zone)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1999</td><td><a href="nspawn.c.html#L1999">(status.si_status == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2008</td><td><a href="nspawn.c.html#L2008">(status.si_status == SIGINT)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2013</td><td><a href="nspawn.c.html#L2013">(status.si_status == SIGHUP)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2052</td><td><a href="nspawn.c.html#L2052">(si.si_pid == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3980</td><td><a href="nspawn.c.html#L3980">(remove_directory && arg_directory)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3988</td><td><a href="nspawn.c.html#L3988">(remove_image && arg_image)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3391</td><td><a href="nspawn.c.html#L3391">(!barrier_place_and_sync(&barrier))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3520</td><td><a href="nspawn.c.html#L3520">(!barrier_place_and_sync(&barrier))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2162</td><td><a href="nspawn.c.html#L2162">(!*p)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2810</td><td><a href="nspawn.c.html#L2810">(getpwuid(candidate + UINT32_C(0xFFFE)))</a></td><td class="num">2.85</td></tr>
+      <tr><td class="num line">2814</td><td><a href="nspawn.c.html#L2814">(getgrgid(candidate + UINT32_C(0xFFFE)))</a></td><td class="num">2.85</td></tr>
+      <tr><td class="num line">353</td><td><a href="nspawn.c.html#L353">(cg_unified_controller(SYSTEMD_CGROUP_CONTROLLER) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1273</td><td><a href="nspawn.c.html#L1273">(lchown(p, uid, gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1283</td><td><a href="nspawn.c.html#L1283">(mkdir(q, mode) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1335</td><td><a href="nspawn.c.html#L1335">(laccess(check, F_OK) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1348</td><td><a href="nspawn.c.html#L1348">(symlink(what, where) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1498</td><td><a href="nspawn.c.html#L1498">(userns_mkdir(dest, "/dev/net", 0755, 0, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1567</td><td><a href="nspawn.c.html#L1567">(mkdir(p, 0755) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1578</td><td><a href="nspawn.c.html#L1578">(symlink("pts/ptmx", p) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1659</td><td><a href="nspawn.c.html#L1659">(mkfifo(from, 0600) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1699</td><td><a href="nspawn.c.html#L1699">(sethostname_idempotent(arg_machine) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1751</td><td><a href="nspawn.c.html#L1751">(path_is_mount_point(p, NULL, 0) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1759</td><td><a href="nspawn.c.html#L1759">(path_is_mount_point(q, NULL, 0) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1779</td><td><a href="nspawn.c.html#L1779">(unlink(p) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1797</td><td><a href="nspawn.c.html#L1797">(symlink(q, p) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1823</td><td><a href="nspawn.c.html#L1823">(access(p, F_OK) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1826</td><td><a href="nspawn.c.html#L1826">(dir_is_empty(q) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2036</td><td><a href="nspawn.c.html#L2036">(kill(pid, arg_kill_signal) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2307</td><td><a href="nspawn.c.html#L2307">(setsid() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2338</td><td><a href="nspawn.c.html#L2338">(setexeccon(arg_selinux_context) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2363</td><td><a href="nspawn.c.html#L2363">(fdset_size(fds) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2388</td><td><a href="nspawn.c.html#L2388">(chdir(arg_chdir) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2513</td><td><a href="nspawn.c.html#L2513">(prctl(PR_SET_PDEATHSIG, SIGKILL) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3249</td><td><a href="nspawn.c.html#L3249">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, kmsg_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3252</td><td><a href="nspawn.c.html#L3252">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, rtnl_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3255</td><td><a href="nspawn.c.html#L3255">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, pid_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3258</td><td><a href="nspawn.c.html#L3258">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, uuid_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3261</td><td><a href="nspawn.c.html#L3261">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, notify_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3265</td><td><a href="nspawn.c.html#L3265">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, uid_shift_socket_pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3648</td><td><a href="nspawn.c.html#L3648">(geteuid() != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3774</td><td><a href="nspawn.c.html#L3774">(path_is_os_tree(arg_directory) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3783</td><td><a href="nspawn.c.html#L3783">(laccess(p, F_OK) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3934</td><td><a href="nspawn.c.html#L3934">(unlockpt(master) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3945</td><td><a href="nspawn.c.html#L3945">(prctl(PR_SET_CHILD_SUBREAPER, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3989</td><td><a href="nspawn.c.html#L3989">(unlink(arg_image) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3994</td><td><a href="nspawn.c.html#L3994">(rmdir(tmprootdir) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">303</td><td><a href="nspawn.c.html#L303">(i < arg_n_custom_mounts)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">311</td><td><a href="nspawn.c.html#L311">(arg_uid_shift == UID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">329</td><td><a href="nspawn.c.html#L329">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">331</td><td><a href="nspawn.c.html#L331">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">341</td><td><a href="nspawn.c.html#L341">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="nspawn.c.html#L343">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="nspawn.c.html#L347">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">349</td><td><a href="nspawn.c.html#L349">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="nspawn.c.html#L356">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="nspawn.c.html#L358">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="nspawn.c.html#L372">(r == -ENXIO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">374</td><td><a href="nspawn.c.html#L374">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="nspawn.c.html#L393">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">515</td><td><a href="nspawn.c.html#L515">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">521</td><td><a href="nspawn.c.html#L521">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="nspawn.c.html#L527">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="nspawn.c.html#L537">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="nspawn.c.html#L573">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="nspawn.c.html#L586">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="nspawn.c.html#L639">(arg_start_mode == START_PID2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">649</td><td><a href="nspawn.c.html#L649">(arg_start_mode == START_BOOT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">660</td><td><a href="nspawn.c.html#L660">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="nspawn.c.html#L685">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="nspawn.c.html#L710">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="nspawn.c.html#L713">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">717</td><td><a href="nspawn.c.html#L717">(c == ARG_CAPABILITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">725</td><td><a href="nspawn.c.html#L725">(cap < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="nspawn.c.html#L730">(c == ARG_CAPABILITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">775</td><td><a href="nspawn.c.html#L775">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">783</td><td><a href="nspawn.c.html#L783">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">792</td><td><a href="nspawn.c.html#L792">(r == -EADDRNOTAVAIL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">794</td><td><a href="nspawn.c.html#L794">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">831</td><td><a href="nspawn.c.html#L831">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="nspawn.c.html#L846">(arg_personality == PERSONALITY_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="nspawn.c.html#L862">(m < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="nspawn.c.html#L874">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="nspawn.c.html#L876">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">897</td><td><a href="nspawn.c.html#L897">(boolean == false)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="nspawn.c.html#L902">(boolean == true)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">927</td><td><a href="nspawn.c.html#L927">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="nspawn.c.html#L933">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">939</td><td><a href="nspawn.c.html#L939">(arg_uid_range <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="nspawn.c.html#L967">(arg_kill_signal < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">984</td><td><a href="nspawn.c.html#L984">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">996</td><td><a href="nspawn.c.html#L996">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1017</td><td><a href="nspawn.c.html#L1017">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="nspawn.c.html#L1025">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1033</td><td><a href="nspawn.c.html#L1033">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1046</td><td><a href="nspawn.c.html#L1046">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="nspawn.c.html#L1048">(l < sizeof(sd_id128_t))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="nspawn.c.html#L1071">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1073</td><td><a href="nspawn.c.html#L1073">(r == -ENOMEM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1075</td><td><a href="nspawn.c.html#L1075">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1082</td><td><a href="nspawn.c.html#L1082">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="nspawn.c.html#L1102">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1113</td><td><a href="nspawn.c.html#L1113">(arg_start_mode != START_PID1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1119</td><td><a href="nspawn.c.html#L1119">(arg_userns_mode == USER_NAMESPACE_PICK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1177</td><td><a href="nspawn.c.html#L1177">(argc > optind)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1196</td><td><a href="nspawn.c.html#L1196">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1204</td><td><a href="nspawn.c.html#L1204">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1210</td><td><a href="nspawn.c.html#L1210">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1253</td><td><a href="nspawn.c.html#L1253">(arg_userns_mode == USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1259</td><td><a href="nspawn.c.html#L1259">(uid != UID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1266</td><td><a href="nspawn.c.html#L1266">(gid != GID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="nspawn.c.html#L1284">(errno == EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1302</td><td><a href="nspawn.c.html#L1302">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1323</td><td><a href="nspawn.c.html#L1323">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1356</td><td><a href="nspawn.c.html#L1356">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="nspawn.c.html#L1370">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1374</td><td><a href="nspawn.c.html#L1374">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1384</td><td><a href="nspawn.c.html#L1384">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1401</td><td><a href="nspawn.c.html#L1401">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="nspawn.c.html#L1408">(found < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1422</td><td><a href="nspawn.c.html#L1422">(found == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1426</td><td><a href="nspawn.c.html#L1426">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1432</td><td><a href="nspawn.c.html#L1432">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1444</td><td><a href="nspawn.c.html#L1444">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1462</td><td><a href="nspawn.c.html#L1462">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1466</td><td><a href="nspawn.c.html#L1466">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1470</td><td><a href="nspawn.c.html#L1470">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="nspawn.c.html#L1510">(errno != ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1521</td><td><a href="nspawn.c.html#L1521">(errno == EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1523</td><td><a href="nspawn.c.html#L1523">(errno != EPERM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1529</td><td><a href="nspawn.c.html#L1529">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1532</td><td><a href="nspawn.c.html#L1532">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1537</td><td><a href="nspawn.c.html#L1537">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1570</td><td><a href="nspawn.c.html#L1570">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="nspawn.c.html#L1573">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="nspawn.c.html#L1581">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1587</td><td><a href="nspawn.c.html#L1587">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1604</td><td><a href="nspawn.c.html#L1604">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="nspawn.c.html#L1613">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1628</td><td><a href="nspawn.c.html#L1628">(keyring == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1629</td><td><a href="nspawn.c.html#L1629">(errno == ENOSYS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1662</td><td><a href="nspawn.c.html#L1662">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1666</td><td><a href="nspawn.c.html#L1666">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1674</td><td><a href="nspawn.c.html#L1674">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1717</td><td><a href="nspawn.c.html#L1717">(arg_link_journal == LINK_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1723</td><td><a href="nspawn.c.html#L1723">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="nspawn.c.html#L1735">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1739</td><td><a href="nspawn.c.html#L1739">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1743</td><td><a href="nspawn.c.html#L1743">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1768</td><td><a href="nspawn.c.html#L1768">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1774</td><td><a href="nspawn.c.html#L1774">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1781</td><td><a href="nspawn.c.html#L1781">(r == -EINVAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1786</td><td><a href="nspawn.c.html#L1786">(errno == ENOTDIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1792</td><td><a href="nspawn.c.html#L1792">(r != -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1795</td><td><a href="nspawn.c.html#L1795">(arg_link_journal == LINK_GUEST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1806</td><td><a href="nspawn.c.html#L1806">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1811</td><td><a href="nspawn.c.html#L1811">(arg_link_journal == LINK_HOST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="nspawn.c.html#L1830">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1834</td><td><a href="nspawn.c.html#L1834">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="nspawn.c.html#L1852">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1854</td><td><a href="nspawn.c.html#L1854">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1862</td><td><a href="nspawn.c.html#L1862">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1887</td><td><a href="nspawn.c.html#L1887">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1891</td><td><a href="nspawn.c.html#L1891">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1895</td><td><a href="nspawn.c.html#L1895">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1900</td><td><a href="nspawn.c.html#L1900">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1904</td><td><a href="nspawn.c.html#L1904">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1927</td><td><a href="nspawn.c.html#L1927">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1933</td><td><a href="nspawn.c.html#L1933">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1957</td><td><a href="nspawn.c.html#L1957">(r == -EOPNOTSUPP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1959</td><td><a href="nspawn.c.html#L1959">(r == -EBADE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="nspawn.c.html#L1961">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1963</td><td><a href="nspawn.c.html#L1963">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1993</td><td><a href="nspawn.c.html#L1993">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2035</td><td><a href="nspawn.c.html#L2035">(pid > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2086</td><td><a href="nspawn.c.html#L2086">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2088</td><td><a href="nspawn.c.html#L2088">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2097</td><td><a href="nspawn.c.html#L2097">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2166</td><td><a href="nspawn.c.html#L2166">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2178</td><td><a href="nspawn.c.html#L2178">(arg_userns_mode == USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2183</td><td><a href="nspawn.c.html#L2183">(arg_uid_shift == UID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="nspawn.c.html#L2187">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2241</td><td><a href="nspawn.c.html#L2241">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2253</td><td><a href="nspawn.c.html#L2253">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2262</td><td><a href="nspawn.c.html#L2262">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2266</td><td><a href="nspawn.c.html#L2266">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2278</td><td><a href="nspawn.c.html#L2278">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2288</td><td><a href="nspawn.c.html#L2288">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2292</td><td><a href="nspawn.c.html#L2292">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2297</td><td><a href="nspawn.c.html#L2297">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="nspawn.c.html#L2301">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2315</td><td><a href="nspawn.c.html#L2315">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2321</td><td><a href="nspawn.c.html#L2321">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2326</td><td><a href="nspawn.c.html#L2326">(arg_personality != PERSONALITY_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2328</td><td><a href="nspawn.c.html#L2328">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2332</td><td><a href="nspawn.c.html#L2332">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2343</td><td><a href="nspawn.c.html#L2343">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2365</td><td><a href="nspawn.c.html#L2365">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2391</td><td><a href="nspawn.c.html#L2391">(arg_start_mode == START_PID2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2393</td><td><a href="nspawn.c.html#L2393">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2408</td><td><a href="nspawn.c.html#L2408">(arg_start_mode == START_BOOT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2457</td><td><a href="nspawn.c.html#L2457">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2465</td><td><a href="nspawn.c.html#L2465">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2471</td><td><a href="nspawn.c.html#L2471">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2477</td><td><a href="nspawn.c.html#L2477">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2522</td><td><a href="nspawn.c.html#L2522">(r != STDIN_FILENO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2523</td><td><a href="nspawn.c.html#L2523">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2537</td><td><a href="nspawn.c.html#L2537">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="nspawn.c.html#L2544">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2549</td><td><a href="nspawn.c.html#L2549">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2554</td><td><a href="nspawn.c.html#L2554">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2557</td><td><a href="nspawn.c.html#L2557">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2560</td><td><a href="nspawn.c.html#L2560">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2562</td><td><a href="nspawn.c.html#L2562">(l != sizeof(arg_uid_shift))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2567</td><td><a href="nspawn.c.html#L2567">(arg_userns_mode == USER_NAMESPACE_PICK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2573</td><td><a href="nspawn.c.html#L2573">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2575</td><td><a href="nspawn.c.html#L2575">(l != sizeof(arg_uid_shift))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2586</td><td><a href="nspawn.c.html#L2586">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2593</td><td><a href="nspawn.c.html#L2593">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2603</td><td><a href="nspawn.c.html#L2603">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2613</td><td><a href="nspawn.c.html#L2613">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2623</td><td><a href="nspawn.c.html#L2623">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2627</td><td><a href="nspawn.c.html#L2627">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2631</td><td><a href="nspawn.c.html#L2631">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2636</td><td><a href="nspawn.c.html#L2636">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2645</td><td><a href="nspawn.c.html#L2645">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="nspawn.c.html#L2649">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2655</td><td><a href="nspawn.c.html#L2655">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2659</td><td><a href="nspawn.c.html#L2659">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2663</td><td><a href="nspawn.c.html#L2663">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2667</td><td><a href="nspawn.c.html#L2667">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2671</td><td><a href="nspawn.c.html#L2671">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2675</td><td><a href="nspawn.c.html#L2675">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2679</td><td><a href="nspawn.c.html#L2679">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2683</td><td><a href="nspawn.c.html#L2683">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2687</td><td><a href="nspawn.c.html#L2687">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2698</td><td><a href="nspawn.c.html#L2698">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2710</td><td><a href="nspawn.c.html#L2710">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2715</td><td><a href="nspawn.c.html#L2715">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2719</td><td><a href="nspawn.c.html#L2719">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2726</td><td><a href="nspawn.c.html#L2726">(pid < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2728</td><td><a href="nspawn.c.html#L2728">(pid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2739</td><td><a href="nspawn.c.html#L2739">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2746</td><td><a href="nspawn.c.html#L2746">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2748</td><td><a href="nspawn.c.html#L2748">(l != sizeof(pid))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2754</td><td><a href="nspawn.c.html#L2754">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2756</td><td><a href="nspawn.c.html#L2756">(l != sizeof(arg_uuid))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2762</td><td><a href="nspawn.c.html#L2762">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2802</td><td><a href="nspawn.c.html#L2802">(r == -EBUSY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2804</td><td><a href="nspawn.c.html#L2804">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2838</td><td><a href="nspawn.c.html#L2838">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2844</td><td><a href="nspawn.c.html#L2844">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2878</td><td><a href="nspawn.c.html#L2878">(revents != EPOLLIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2884</td><td><a href="nspawn.c.html#L2884">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2906</td><td><a href="nspawn.c.html#L2906">((size_t)n >= sizeof(buf))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2930</td><td><a href="nspawn.c.html#L2930">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2966</td><td><a href="nspawn.c.html#L2966">(arg_settings_trusted < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2972</td><td><a href="nspawn.c.html#L2972">(errno != ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2996</td><td><a href="nspawn.c.html#L2996">(arg_settings_trusted < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3007</td><td><a href="nspawn.c.html#L3007">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3232</td><td><a href="nspawn.c.html#L3232">(arg_userns_mode == USER_NAMESPACE_PICK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3246</td><td><a href="nspawn.c.html#L3246">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3264</td><td><a href="nspawn.c.html#L3264">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3271</td><td><a href="nspawn.c.html#L3271">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3275</td><td><a href="nspawn.c.html#L3275">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3313</td><td><a href="nspawn.c.html#L3313">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3330</td><td><a href="nspawn.c.html#L3330">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3333</td><td><a href="nspawn.c.html#L3333">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3335</td><td><a href="nspawn.c.html#L3335">(l != sizeof arg_uid_shift)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3340</td><td><a href="nspawn.c.html#L3340">(arg_userns_mode == USER_NAMESPACE_PICK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3346</td><td><a href="nspawn.c.html#L3346">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3350</td><td><a href="nspawn.c.html#L3350">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3352</td><td><a href="nspawn.c.html#L3352">(l != sizeof arg_uid_shift)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3361</td><td><a href="nspawn.c.html#L3361">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="nspawn.c.html#L3366">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3368</td><td><a href="nspawn.c.html#L3368">(l != sizeof *pid)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3375</td><td><a href="nspawn.c.html#L3375">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3377</td><td><a href="nspawn.c.html#L3377">(l != sizeof(arg_uuid))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3384</td><td><a href="nspawn.c.html#L3384">(notify_socket < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3390</td><td><a href="nspawn.c.html#L3390">(arg_userns_mode != USER_NAMESPACE_NO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3397</td><td><a href="nspawn.c.html#L3397">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3406</td><td><a href="nspawn.c.html#L3406">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3412</td><td><a href="nspawn.c.html#L3412">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3414</td><td><a href="nspawn.c.html#L3414">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3420</td><td><a href="nspawn.c.html#L3420">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3422</td><td><a href="nspawn.c.html#L3422">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3427</td><td><a href="nspawn.c.html#L3427">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3429</td><td><a href="nspawn.c.html#L3429">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3435</td><td><a href="nspawn.c.html#L3435">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3445</td><td><a href="nspawn.c.html#L3445">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3449</td><td><a href="nspawn.c.html#L3449">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3466</td><td><a href="nspawn.c.html#L3466">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3476</td><td><a href="nspawn.c.html#L3476">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3479</td><td><a href="nspawn.c.html#L3479">(arg_slice || arg_property)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3483</td><td><a href="nspawn.c.html#L3483">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3488</td><td><a href="nspawn.c.html#L3488">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3493</td><td><a href="nspawn.c.html#L3493">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3508</td><td><a href="nspawn.c.html#L3508">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3512</td><td><a href="nspawn.c.html#L3512">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3516</td><td><a href="nspawn.c.html#L3516">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3535</td><td><a href="nspawn.c.html#L3535">(arg_kill_signal > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3550</td><td><a href="nspawn.c.html#L3550">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3561</td><td><a href="nspawn.c.html#L3561">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3565</td><td><a href="nspawn.c.html#L3565">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3585</td><td><a href="nspawn.c.html#L3585">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3594</td><td><a href="nspawn.c.html#L3594">(r == EXIT_FORCE_RESTART)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3645</td><td><a href="nspawn.c.html#L3645">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3654</td><td><a href="nspawn.c.html#L3654">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3658</td><td><a href="nspawn.c.html#L3658">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3662</td><td><a href="nspawn.c.html#L3662">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3666</td><td><a href="nspawn.c.html#L3666">(n_fd_passed > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3668</td><td><a href="nspawn.c.html#L3668">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3687</td><td><a href="nspawn.c.html#L3687">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3697</td><td><a href="nspawn.c.html#L3697">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3701</td><td><a href="nspawn.c.html#L3701">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3705</td><td><a href="nspawn.c.html#L3705">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3711</td><td><a href="nspawn.c.html#L3711">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3722</td><td><a href="nspawn.c.html#L3722">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3735</td><td><a href="nspawn.c.html#L3735">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3739</td><td><a href="nspawn.c.html#L3739">(r == -EBUSY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3743</td><td><a href="nspawn.c.html#L3743">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3750</td><td><a href="nspawn.c.html#L3750">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3760</td><td><a href="nspawn.c.html#L3760">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3763</td><td><a href="nspawn.c.html#L3763">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3773</td><td><a href="nspawn.c.html#L3773">(arg_start_mode == START_BOOT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3795</td><td><a href="nspawn.c.html#L3795">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3802</td><td><a href="nspawn.c.html#L3802">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3808</td><td><a href="nspawn.c.html#L3808">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3814</td><td><a href="nspawn.c.html#L3814">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3826</td><td><a href="nspawn.c.html#L3826">(r == -EBUSY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3830</td><td><a href="nspawn.c.html#L3830">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3837</td><td><a href="nspawn.c.html#L3837">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3858</td><td><a href="nspawn.c.html#L3858">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3868</td><td><a href="nspawn.c.html#L3868">(r == -ENOPKG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3879</td><td><a href="nspawn.c.html#L3879">(r == -EADDRNOTAVAIL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3883</td><td><a href="nspawn.c.html#L3883">(r == -EOPNOTSUPP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3887</td><td><a href="nspawn.c.html#L3887">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3896</td><td><a href="nspawn.c.html#L3896">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3905</td><td><a href="nspawn.c.html#L3905">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3909</td><td><a href="nspawn.c.html#L3909">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3917</td><td><a href="nspawn.c.html#L3917">(master < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3923</td><td><a href="nspawn.c.html#L3923">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3930</td><td><a href="nspawn.c.html#L3930">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3959</td><td><a href="nspawn.c.html#L3959">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3968</td><td><a href="nspawn.c.html#L3968">(pid > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3972</td><td><a href="nspawn.c.html#L3972">(master >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3977</td><td><a href="nspawn.c.html#L3977">(pid > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3984</td><td><a href="nspawn.c.html#L3984">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2350</td><td><a href="nspawn.c.html#L2350">(envp[n_env])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">550</td><td><a href="nspawn.c.html#L550">(!ifname_valid(j))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">567</td><td><a href="nspawn.c.html#L567">(!ifname_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">595</td><td><a href="nspawn.c.html#L595">(!ifname_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="nspawn.c.html#L609">(!ifname_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">623</td><td><a href="nspawn.c.html#L623">(!ifname_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="nspawn.c.html#L679">(!machine_name_is_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">803</td><td><a href="nspawn.c.html#L803">(!env_assignment_is_valid(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">893</td><td><a href="nspawn.c.html#L893">(!in_charset(optarg, DIGITS))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1011</td><td><a href="nspawn.c.html#L1011">(!path_is_absolute(optarg))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1928</td><td><a href="nspawn.c.html#L1928">(!IN_SET(r, -ENOENT, -ENOMEDIUM))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2132</td><td><a href="nspawn.c.html#L2132">(!machine_name_is_valid(arg_machine))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2246</td><td><a href="nspawn.c.html#L2246">(!barrier_place_and_sync(barrier))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2271</td><td><a href="nspawn.c.html#L2271">(!barrier_place_and_sync(barrier))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2382</td><td><a href="nspawn.c.html#L2382">(!barrier_place_and_sync(barrier))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2429</td><td><a href="nspawn.c.html#L2429">(!strv_isempty(arg_parameters))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3844</td><td><a href="nspawn.c.html#L3844">(!mkdtemp(tmprootdir))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">384</td><td><a href="nspawn.c.html#L384">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">547</td><td><a href="nspawn.c.html#L547">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">809</td><td><a href="nspawn.c.html#L809">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">856</td><td><a href="nspawn.c.html#L856">(!optarg)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">891</td><td><a href="nspawn.c.html#L891">(!optarg)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">921</td><td><a href="nspawn.c.html#L921">(!buffer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1179</td><td><a href="nspawn.c.html#L1179">(!arg_parameters)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1314</td><td><a href="nspawn.c.html#L1314">(!z)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1316</td><td><a href="nspawn.c.html#L1316">(!z)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1325</td><td><a href="nspawn.c.html#L1325">(!y)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1562</td><td><a href="nspawn.c.html#L1562">(!options)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2077</td><td><a href="nspawn.c.html#L2077">(!arg_directory)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2100</td><td><a href="nspawn.c.html#L2100">(!arg_ephemeral)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2111</td><td><a href="nspawn.c.html#L2111">(!arg_machine)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2128</td><td><a href="nspawn.c.html#L2128">(!arg_machine)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2376</td><td><a href="nspawn.c.html#L2376">(!env_use)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2433</td><td><a href="nspawn.c.html#L2433">(!arg_chdir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2913</td><td><a href="nspawn.c.html#L2913">(!tags)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2957</td><td><a href="nspawn.c.html#L2957">(!j)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2976</td><td><a href="nspawn.c.html#L2976">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2982</td><td><a href="nspawn.c.html#L2982">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2986</td><td><a href="nspawn.c.html#L2986">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3001</td><td><a href="nspawn.c.html#L3001">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3076</td><td><a href="nspawn.c.html#L3076">(!arg_settings_trusted)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3093</td><td><a href="nspawn.c.html#L3093">(!arg_settings_trusted)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3115</td><td><a href="nspawn.c.html#L3115">(!arg_settings_trusted)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3150</td><td><a href="nspawn.c.html#L3150">(!arg_settings_trusted)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3162</td><td><a href="nspawn.c.html#L3162">(!arg_settings_trusted)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3468</td><td><a href="nspawn.c.html#L3468">(!arg_keep_unit)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3532</td><td><a href="nspawn.c.html#L3532">(!arg_notify_ready)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3761</td><td><a href="nspawn.c.html#L3761">(!arg_quiet)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3767</td><td><a href="nspawn.c.html#L3767">(!arg_quiet)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3835</td><td><a href="nspawn.c.html#L3835">(!arg_root_hash)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3852</td><td><a href="nspawn.c.html#L3852">(!arg_directory)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3939</td><td><a href="nspawn.c.html#L3939">(!arg_quiet)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">387</td><td><a href="nspawn.c.html#L387">(streq(e, "network"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">663</td><td><a href="nspawn.c.html#L663">(sd_id128_is_null(arg_uuid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="nspawn.c.html#L676">(isempty(optarg))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">716</td><td><a href="nspawn.c.html#L716">(streq(t, "all"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">747</td><td><a href="nspawn.c.html#L747">(streq(optarg, "auto"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">750</td><td><a href="nspawn.c.html#L750">(streq(optarg, "no"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">753</td><td><a href="nspawn.c.html#L753">(streq(optarg, "guest"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">756</td><td><a href="nspawn.c.html#L756">(streq(optarg, "host"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="nspawn.c.html#L759">(streq(optarg, "try-guest"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">762</td><td><a href="nspawn.c.html#L762">(streq(optarg, "try-host"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="nspawn.c.html#L907">(streq(optarg, "pick"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">949</td><td><a href="nspawn.c.html#L949">(userns_supported())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="nspawn.c.html#L985">(streq(optarg, "trusted"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="nspawn.c.html#L990">(streq(optarg, "override"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="nspawn.c.html#L1631">(IN_SET(errno, EACCES, EPERM))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1726</td><td><a href="nspawn.c.html#L1726">(sd_id128_equal(arg_uuid, this_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1858</td><td><a href="nspawn.c.html#L1858">(streq(p, "4294967295"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1931</td><td><a href="nspawn.c.html#L1931">(sd_id128_is_null(arg_uuid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1937</td><td><a href="nspawn.c.html#L1937">(sd_id128_is_null(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2808</td><td><a href="nspawn.c.html#L2808">(getpwuid(candidate))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2812</td><td><a href="nspawn.c.html#L2812">(getgrgid(candidate))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2916</td><td><a href="nspawn.c.html#L2916">(strv_find(tags, "READY=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3053</td><td><a href="nspawn.c.html#L3053">(settings_private_network(settings))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">308</td><td><a href="nspawn.c.html#L308">(arg_userns_chown)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">327</td><td><a href="nspawn.c.html#L327">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">919</td><td><a href="nspawn.c.html#L919">(range)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1078</td><td><a href="nspawn.c.html#L1078">(negative)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1105</td><td><a href="nspawn.c.html#L1105">(arg_private_network)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1186</td><td><a href="nspawn.c.html#L1186">(mask_no_settings)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1190</td><td><a href="nspawn.c.html#L1190">(mask_all_settings)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1200</td><td><a href="nspawn.c.html#L1200">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1238</td><td><a href="nspawn.c.html#L1238">(arg_expose_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1397</td><td><a href="nspawn.c.html#L1397">(arg_private_network)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1551</td><td><a href="nspawn.c.html#L1551">(arg_selinux_apifs_context)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1714</td><td><a href="nspawn.c.html#L1714">(arg_ephemeral)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1729</td><td><a href="nspawn.c.html#L1729">(try)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1752</td><td><a href="nspawn.c.html#L1752">(try)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1760</td><td><a href="nspawn.c.html#L1760">(try)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1798</td><td><a href="nspawn.c.html#L1798">(try)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1816</td><td><a href="nspawn.c.html#L1816">(try)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2082</td><td><a href="nspawn.c.html#L2082">(arg_machine)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2116</td><td><a href="nspawn.c.html#L2116">(arg_image)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2123</td><td><a href="nspawn.c.html#L2123">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2137</td><td><a href="nspawn.c.html#L2137">(arg_ephemeral)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2310</td><td><a href="nspawn.c.html#L2310">(arg_private_network)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2313</td><td><a href="nspawn.c.html#L2313">(arg_expose_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2330</td><td><a href="nspawn.c.html#L2330">(secondary)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2337</td><td><a href="nspawn.c.html#L2337">(arg_selinux_context)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2387</td><td><a href="nspawn.c.html#L2387">(arg_chdir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2516</td><td><a href="nspawn.c.html#L2516">(interactive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2547</td><td><a href="nspawn.c.html#L2547">(dissected_image)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2634</td><td><a href="nspawn.c.html#L2634">(arg_read_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2920</td><td><a href="nspawn.c.html#L2920">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2961</td><td><a href="nspawn.c.html#L2961">(f)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2980</td><td><a href="nspawn.c.html#L2980">(arg_image)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2984</td><td><a href="nspawn.c.html#L2984">(arg_directory)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2990</td><td><a href="nspawn.c.html#L2990">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3403</td><td><a href="nspawn.c.html#L3403">(arg_private_network)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3409</td><td><a href="nspawn.c.html#L3409">(arg_network_veth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3417</td><td><a href="nspawn.c.html#L3417">(arg_network_bridge)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3424</td><td><a href="nspawn.c.html#L3424">(arg_network_zone)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3453</td><td><a href="nspawn.c.html#L3453">(arg_register)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3486</td><td><a href="nspawn.c.html#L3486">(arg_keep_unit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3548</td><td><a href="nspawn.c.html#L3548">(arg_expose_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3602</td><td><a href="nspawn.c.html#L3602">(arg_keep_unit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3674</td><td><a href="nspawn.c.html#L3674">(arg_directory)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3683</td><td><a href="nspawn.c.html#L3683">(arg_ephemeral)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3748</td><td><a href="nspawn.c.html#L3748">(arg_template)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3798</td><td><a href="nspawn.c.html#L3798">(arg_ephemeral)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3928</td><td><a href="nspawn.c.html#L3928">(arg_selinux_apifs_context)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3993</td><td><a href="nspawn.c.html#L3993">(remove_tmprootdir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3998</td><td><a href="nspawn.c.html#L3998">(arg_machine)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4007</td><td><a href="nspawn.c.html#L4007">(veth_created)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

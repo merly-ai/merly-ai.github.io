@@ -1,0 +1,103 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>qemu Repo - hw\i386\xen\xen-mapcache.c Ctrl Expressions (52) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\i386\xen\xen-mapcache.c Ctrl Expressions (52) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\i386\xen\xen-mapcache.c Ctrl Expressions (52)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">283</td><td><a href="xen-mapcache.c.html#L283">(<span style='background-color:#741da3;'>mapcache->last_entry != NULL && mapcache->last_entry->paddr_index == address_index && !lock && !size && test_bits(address_offset >> XC_PAGE_SHIFT, test_bit_size >> XC_PAGE_SHIFT, mapcache->last_entry->valid_mapping)</span>)</a></td><td class="num">1037.75</td></tr>
+      <tr><td class="num line">305</td><td><a href="xen-mapcache.c.html#L305">(entry && (lock || entry->lock) && entry->vaddr_base && (entry->paddr_index != address_index || entry->size != cache_size || !test_bits(address_offset >> XC_PAGE_SHIFT, test_bit_size >> XC_PAGE_SHIFT, entry->valid_mapping)))</a></td><td class="num">68.50</td></tr>
+      <tr><td class="num line">560</td><td><a href="xen-mapcache.c.html#L560">(entry && !(entry->paddr_index == address_index && entry->size == cache_size))</a></td><td class="num">49.75</td></tr>
+      <tr><td class="num line">326</td><td><a href="xen-mapcache.c.html#L326">(!entry->vaddr_base || entry->paddr_index != address_index || entry->size != cache_size || !test_bits(address_offset >> XC_PAGE_SHIFT, test_bit_size >> XC_PAGE_SHIFT, entry->valid_mapping))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">415</td><td><a href="xen-mapcache.c.html#L415">(entry && (entry->paddr_index != paddr_index || entry->size != size))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="xen-mapcache.c.html#L461">(entry && (entry->paddr_index != paddr_index || entry->size != size))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">188</td><td><a href="xen-mapcache.c.html#L188">(!vaddr && munmap(entry->vaddr_base, entry->size) != 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">455</td><td><a href="xen-mapcache.c.html#L455">(mapcache->last_entry != NULL && mapcache->last_entry->paddr_index == paddr_index)</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">335</td><td><a href="xen-mapcache.c.html#L335">(!test_bits(address_offset >> XC_PAGE_SHIFT, test_bit_size >> XC_PAGE_SHIFT, entry->valid_mapping))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">578</td><td><a href="xen-mapcache.c.html#L578">(!test_bits(address_offset >> XC_PAGE_SHIFT, test_bit_size >> XC_PAGE_SHIFT, entry->valid_mapping))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">470</td><td><a href="xen-mapcache.c.html#L470">(entry->lock > 0 || pentry == NULL)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">476</td><td><a href="xen-mapcache.c.html#L476">(munmap(entry->vaddr_base, entry->size) != 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">520</td><td><a href="xen-mapcache.c.html#L520">(munmap(entry->vaddr_base, entry->size) != 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">310</td><td><a href="xen-mapcache.c.html#L310">(!free_entry && !entry->lock)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">340</td><td><a href="xen-mapcache.c.html#L340">(!translated && mapcache->phys_offset_to_gaddr)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">171</td><td><a href="xen-mapcache.c.html#L171">(!(entry->flags & XEN_MAPCACHE_ENTRY_DUMMY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="xen-mapcache.c.html#L227">(!(entry->flags & XEN_MAPCACHE_ENTRY_DUMMY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="xen-mapcache.c.html#L170">(entry->vaddr_base != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">358</td><td><a href="xen-mapcache.c.html#L358">(entry->lock == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">397</td><td><a href="xen-mapcache.c.html#L397">(reventry->vaddr_req == ptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">438</td><td><a href="xen-mapcache.c.html#L438">(reventry->vaddr_req == buffer)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">510</td><td><a href="xen-mapcache.c.html#L510">(i < mapcache->nr_buckets)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">513</td><td><a href="xen-mapcache.c.html#L513">(entry->vaddr_base == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">516</td><td><a href="xen-mapcache.c.html#L516">(entry->lock > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">346</td><td><a href="xen-mapcache.c.html#L346">(!dummy && runstate_check(RUN_STATE_INMIGRATE))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">100</td><td><a href="xen-mapcache.c.html#L100">(res >= nr + size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">317</td><td><a href="xen-mapcache.c.html#L317">(!entry && free_entry)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">325</td><td><a href="xen-mapcache.c.html#L325">(!entry->lock)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">502</td><td><a href="xen-mapcache.c.html#L502">(!reventry->dma)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">127</td><td><a href="xen-mapcache.c.html#L127">(rlimit_as.rlim_max != RLIM_INFINITY)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">131</td><td><a href="xen-mapcache.c.html#L131">(rlimit_as.rlim_max < MCACHE_MAX_SIZE + NON_MCACHE_MEMORY_SIZE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">119</td><td><a href="xen-mapcache.c.html#L119">(geteuid() == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">245</td><td><a href="xen-mapcache.c.html#L245">(!err[i])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">196</td><td><a href="xen-mapcache.c.html#L196">(i < nb_pfn)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">209</td><td><a href="xen-mapcache.c.html#L209">(vaddr_base == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="xen-mapcache.c.html#L221">(vaddr_base == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">244</td><td><a href="xen-mapcache.c.html#L244">(i < nb_pfn)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="xen-mapcache.c.html#L276">(test_bit_size % XC_PAGE_SIZE)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">296</td><td><a href="xen-mapcache.c.html#L296">(cache_size % MCACHE_BUCKET_SIZE)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">551</td><td><a href="xen-mapcache.c.html#L551">(test_bit_size % XC_PAGE_SIZE)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">555</td><td><a href="xen-mapcache.c.html#L555">(cache_size % MCACHE_BUCKET_SIZE)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">204</td><td><a href="xen-mapcache.c.html#L204">(!dummy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">321</td><td><a href="xen-mapcache.c.html#L321">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">404</td><td><a href="xen-mapcache.c.html#L404">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">418</td><td><a href="xen-mapcache.c.html#L418">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">445</td><td><a href="xen-mapcache.c.html#L445">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="xen-mapcache.c.html#L465">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">564</td><td><a href="xen-mapcache.c.html#L564">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">237</td><td><a href="xen-mapcache.c.html#L237">(dummy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">273</td><td><a href="xen-mapcache.c.html#L273">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">294</td><td><a href="xen-mapcache.c.html#L294">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">355</td><td><a href="xen-mapcache.c.html#L355">(lock)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

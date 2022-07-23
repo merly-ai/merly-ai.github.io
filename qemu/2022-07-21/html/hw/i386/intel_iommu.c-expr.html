@@ -1,0 +1,280 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\i386\intel_iommu.c Ctrl Expressions (229) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\i386\intel_iommu.c Ctrl Expressions (229) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\i386\intel_iommu.c Ctrl Expressions (229)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">466</td><td><a href="intel_iommu.c.html#L466">(<span style='background-color:#741da3;'>(frcd_reg & VTD_FRCD_F) && ((frcd_reg & VTD_FRCD_SID_MASK) == source_id)</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">1940</td><td><a href="intel_iommu.c.html#L1940">(<span style='background-color:#741da3;'>vtd_as && ((devfn_it & mask) == (devfn & mask))</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">1094</td><td><a href="intel_iommu.c.html#L1094">((<span style='background-color:#741da3;'>xlat > VTD_INTERRUPT_ADDR_LAST || xlat + size - 1 < VTD_INTERRUPT_ADDR_FIRST</span>))</a></td><td class="num">1011.20</td></tr>
+      <tr><td class="num line">1369</td><td><a href="intel_iommu.c.html#L1369">(s->root_scalable && (ce->val[0] & VTD_SM_CONTEXT_ENTRY_RSVD_VAL0(s->aw_bits) || ce->val[1] & VTD_SM_CONTEXT_ENTRY_RSVD_VAL1 || ce->val[2] || ce->val[3]))</a></td><td class="num">70.25</td></tr>
+      <tr><td class="num line">1343</td><td><a href="intel_iommu.c.html#L1343">(s->root_scalable && ((re->lo & VTD_ROOT_ENTRY_RSVD(s->aw_bits)) || (re->hi & VTD_ROOT_ENTRY_RSVD(s->aw_bits))))</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">1360</td><td><a href="intel_iommu.c.html#L1360">(!s->root_scalable && (ce->hi & VTD_CONTEXT_ENTRY_RSVD_HI || ce->lo & VTD_CONTEXT_ENTRY_RSVD_LO(s->aw_bits)))</a></td><td class="num">56.50</td></tr>
+      <tr><td class="num line">1338</td><td><a href="intel_iommu.c.html#L1338">(!s->root_scalable && (re->hi || (re->lo & VTD_ROOT_ENTRY_RSVD(s->aw_bits))))</a></td><td class="num">53.25</td></tr>
+      <tr><td class="num line">2015</td><td><a href="intel_iommu.c.html#L2015">(!vtd_dev_to_context_entry(s, pci_bus_num(vtd_as->bus), vtd_as->devfn, &ce) && domain_id == vtd_get_domain_id(s, &ce))</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">2654</td><td><a href="intel_iommu.c.html#L2654">(s->qi_enabled && !(vtd_get_long_raw(s, DMAR_FSTS_REG) & VTD_FSTS_IQE))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">3525</td><td><a href="intel_iommu.c.html#L3525">(end > VTD_ADDRESS_SIZE(s->aw_bits) - 1)</a></td><td class="num">23.85</td></tr>
+      <tr><td class="num line">2035</td><td><a href="intel_iommu.c.html#L2035">(!ret && domain_id == vtd_get_domain_id(s, &ce))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1440</td><td><a href="intel_iommu.c.html#L1440">(!s->root_scalable && !vtd_is_level_supported(s, vtd_ce_get_level(ce)))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">3194</td><td><a href="intel_iommu.c.html#L3194">(entry->irte.__reserved_0 || entry->irte.__reserved_1 || entry->irte.__reserved_2)</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">2339</td><td><a href="intel_iommu.c.html#L2339">((inv_desc->hi & VTD_INV_DESC_WAIT_RSVD_HI) || (inv_desc->lo & VTD_INV_DESC_WAIT_RSVD_LO))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">2416</td><td><a href="intel_iommu.c.html#L2416">((inv_desc->lo & VTD_INV_DESC_IOTLB_RSVD_LO) || (inv_desc->hi & VTD_INV_DESC_IOTLB_RSVD_HI))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">2490</td><td><a href="intel_iommu.c.html#L2490">((inv_desc->lo & VTD_INV_DESC_DEVICE_IOTLB_RSVD_LO) || (inv_desc->hi & VTD_INV_DESC_DEVICE_IOTLB_RSVD_HI))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">3824</td><td><a href="intel_iommu.c.html#L3824">((s->aw_bits != VTD_HOST_AW_39BIT) && (s->aw_bits != VTD_HOST_AW_48BIT))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">987</td><td><a href="intel_iommu.c.html#L987">((level == VTD_SL_PD_LEVEL || level == VTD_SL_PDP_LEVEL) && (slpte & VTD_SL_PT_PAGE_SIZE_MASK))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">188</td><td><a href="intel_iommu.c.html#L188">(s->ecap & VTD_ECAP_SMTS && val & VTD_IQA_DW_MASK)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1144</td><td><a href="intel_iommu.c.html#L1144">(event->type == IOMMU_NOTIFIER_UNMAP && !info->notify_unmap)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3816</td><td><a href="intel_iommu.c.html#L3816">(s->intr_eim == ON_OFF_AUTO_ON && !s->buggy_eim)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="intel_iommu.c.html#L375">(pre_fsts & VTD_FSTS_PPF || pre_fsts & VTD_FSTS_PFO || pre_fsts & VTD_FSTS_IQE)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">2380</td><td><a href="intel_iommu.c.html#L2380">((inv_desc->lo & VTD_INV_DESC_CC_RSVD) || inv_desc->hi)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1779</td><td><a href="intel_iommu.c.html#L1779">(!ret_fr && !is_fpd_set && s->root_scalable)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2666</td><td><a href="intel_iommu.c.html#L2666">((fectl_reg & VTD_FECTL_IP) && !(fsts_reg & status_fields))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2686</td><td><a href="intel_iommu.c.html#L2686">((fectl_reg & VTD_FECTL_IP) && !(fectl_reg & VTD_FECTL_IM))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2697</td><td><a href="intel_iommu.c.html#L2697">((iectl_reg & VTD_IECTL_IP) && !(ics_reg & VTD_ICS_IWC))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2714</td><td><a href="intel_iommu.c.html#L2714">((iectl_reg & VTD_IECTL_IP) && !(iectl_reg & VTD_IECTL_IM))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3831</td><td><a href="intel_iommu.c.html#L3831">(s->scalable_mode && !s->dma_drain)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2249</td><td><a href="intel_iommu.c.html#L2249">((changed & VTD_GCMD_TE) && s->dma_translation)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2646</td><td><a href="intel_iommu.c.html#L2646">(s->iq_dw && (val & VTD_IQT_QT_256_RSV_BIT))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3806</td><td><a href="intel_iommu.c.html#L3806">(s->intr_eim == ON_OFF_AUTO_ON && !x86_iommu_ir_supported(x86_iommu))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">650</td><td><a href="intel_iommu.c.html#L650">(dma_memory_read(&address_space_memory, base_addr + index * sizeof(slpte), &slpte, sizeof(slpte), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">9.45</td></tr>
+      <tr><td class="num line">566</td><td><a href="intel_iommu.c.html#L566">(s->root_scalable && devfn > UINT8_MAX / 2)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">605</td><td><a href="intel_iommu.c.html#L605">(s->root_scalable && index > UINT8_MAX / 2)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1766</td><td><a href="intel_iommu.c.html#L1766">(cc_entry->context_cache_gen == s->context_cache_gen)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2604</td><td><a href="intel_iommu.c.html#L2604">(s->iq_head == s->iq_size)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2620</td><td><a href="intel_iommu.c.html#L2620">(s->iq_tail >= s->iq_size)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2628</td><td><a href="intel_iommu.c.html#L2628">(s->iq_head != s->iq_tail)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3212</td><td><a href="intel_iommu.c.html#L3212">((source_id & mask) != (sid & mask))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3690</td><td><a href="intel_iommu.c.html#L3690">(s->scalable_mode || s->snoop_control)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1514</td><td><a href="intel_iommu.c.html#L1514">(!(vtd_as->iommu.iommu_notify_flags & IOMMU_NOTIFIER_IOTLB_EVENTS))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3607</td><td><a href="intel_iommu.c.html#L3607">(vtd_dev_to_context_entry(s, bus_n, vtd_as->devfn, &ce) == 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3848</td><td><a href="intel_iommu.c.html#L3848">(object_dynamic_cast(child, "vfio-pci") && !iommu->caching_mode)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1772</td><td><a href="intel_iommu.c.html#L1772">(!is_fpd_set && s->root_scalable)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2265</td><td><a href="intel_iommu.c.html#L2265">((changed & VTD_GCMD_IRE) && x86_iommu_ir_supported(x86_iommu))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3290</td><td><a href="intel_iommu.c.html#L3290">(!iommu || !iommu->intr_enabled)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3224</td><td><a href="intel_iommu.c.html#L3224">(bus > bus_max || bus < bus_min)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">863</td><td><a href="intel_iommu.c.html#L863">(pe.val[0] & VTD_PASID_ENTRY_FPD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2346</td><td><a href="intel_iommu.c.html#L2346">(inv_desc->lo & VTD_INV_DESC_WAIT_SW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2363</td><td><a href="intel_iommu.c.html#L2363">(inv_desc->lo & VTD_INV_DESC_WAIT_IF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3295</td><td><a href="intel_iommu.c.html#L3295">(origin->address & VTD_MSI_ADDR_HI_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3331</td><td><a href="intel_iommu.c.html#L3331">(origin->data & VTD_IR_MSI_DATA_RESERVED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">336</td><td><a href="intel_iommu.c.html#L336">(g_hash_table_size(s->iotlb) >= VTD_IOTLB_MAX_SIZE)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1013</td><td><a href="intel_iommu.c.html#L1013">(pci_bus_num(vtd_bus->bus) == bus_num)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1642</td><td><a href="intel_iommu.c.html#L1642">(!vtd_bus->dev_as[i])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">512</td><td><a href="intel_iommu.c.html#L512">(s->next_frcd_reg == DMAR_FRCD_REG_NR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="intel_iommu.c.html#L520">(s->next_frcd_reg == DMAR_FRCD_REG_NR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1152</td><td><a href="intel_iommu.c.html#L1152">(event->type == IOMMU_NOTIFIER_MAP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1886</td><td><a href="intel_iommu.c.html#L1886">(s->context_cache_gen == VTD_CONTEXT_CACHE_GEN_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2152</td><td><a href="intel_iommu.c.html#L2152">(s->iq_tail != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2201</td><td><a href="intel_iommu.c.html#L2201">(s->dmar_enabled == en)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3169</td><td><a href="intel_iommu.c.html#L3169">(index >= iommu->intr_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3666</td><td><a href="intel_iommu.c.html#L3666">(s->aw_bits >= VTD_HOST_AW_39BIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3669</td><td><a href="intel_iommu.c.html#L3669">(s->aw_bits >= VTD_HOST_AW_48BIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3698</td><td><a href="intel_iommu.c.html#L3698">(s->intr_eim == ON_OFF_AUTO_ON)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3811</td><td><a href="intel_iommu.c.html#L3811">(s->intr_eim == ON_OFF_AUTO_AUTO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3186</td><td><a href="intel_iommu.c.html#L3186">(!entry->irte.present)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">259</td><td><a href="intel_iommu.c.html#L259">(g_hash_table_iter_next(&bus_it, NULL, (void**)&vtd_bus))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">845</td><td><a href="intel_iommu.c.html#L845">(pdire.val & VTD_PASID_DIR_FPD)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1012</td><td><a href="intel_iommu.c.html#L1012">(g_hash_table_iter_next(&iter, NULL, (void **)&vtd_bus))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1267</td><td><a href="intel_iommu.c.html#L1267">(!vtd_is_last_slpte(slpte, level) && entry_valid)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1640</td><td><a href="intel_iommu.c.html#L1640">(g_hash_table_iter_next(&iter, NULL, (void **)&vtd_bus))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2357</td><td><a href="intel_iommu.c.html#L2357">(dma_memory_write(&address_space_memory, status_addr, &status_data, sizeof(status_data), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2727</td><td><a href="intel_iommu.c.html#L2727">(addr + size > DMAR_REG_SIZE)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2778</td><td><a href="intel_iommu.c.html#L2778">(addr + size > DMAR_REG_SIZE)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1322</td><td><a href="intel_iommu.c.html#L1322">(!vtd_iova_range_check(s, start, ce, info->aw))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1326</td><td><a href="intel_iommu.c.html#L1326">(!vtd_iova_range_check(s, end, ce, info->aw))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2159</td><td><a href="intel_iommu.c.html#L2159">(!(vtd_get_long_raw(s, DMAR_FSTS_REG) & VTD_FSTS_IQE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="intel_iommu.c.html#L686">(!x86_iommu->pt_supported)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">923</td><td><a href="intel_iommu.c.html#L923">(!x86_iommu->dt_supported)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">929</td><td><a href="intel_iommu.c.html#L929">(!x86_iommu->pt_supported)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1062</td><td><a href="intel_iommu.c.html#L1062">(!(slpte & access_right_check))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1449</td><td><a href="intel_iommu.c.html#L1449">(!s->root_scalable)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3260</td><td><a href="intel_iommu.c.html#L3260">(!iommu->intr_eime)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3302</td><td><a href="intel_iommu.c.html#L3302">(addr.addr.__head != 0xfee)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3309</td><td><a href="intel_iommu.c.html#L3309">(addr.addr.int_mode != VTD_IR_INT_FORMAT_REMAP)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3345</td><td><a href="intel_iommu.c.html#L3345">(vector != irq.vector)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3351</td><td><a href="intel_iommu.c.html#L3351">(trigger_mode != irq.trigger_mode)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">383</td><td><a href="intel_iommu.c.html#L383">(vtd_get_long_raw(s, DMAR_FECTL_REG) & VTD_FECTL_IM)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="intel_iommu.c.html#L498">(vtd_is_frcd_set(s, s->next_frcd_reg))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">544</td><td><a href="intel_iommu.c.html#L544">(vtd_get_long_raw(s, DMAR_ICS_REG) & VTD_ICS_IWC)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="intel_iommu.c.html#L550">(vtd_get_long_raw(s, DMAR_IECTL_REG) & VTD_IECTL_IM)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3023</td><td><a href="intel_iommu.c.html#L3023">(likely(s->dmar_enabled))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">179</td><td><a href="intel_iommu.c.html#L179">(s->scalable_mode)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">486</td><td><a href="intel_iommu.c.html#L486">(fsts_reg & VTD_FSTS_PFO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="intel_iommu.c.html#L507">(fsts_reg & VTD_FSTS_PPF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">792</td><td><a href="intel_iommu.c.html#L792">(!vtd_pdire_present(&pdire))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="intel_iommu.c.html#L850">(!vtd_pdire_present(&pdire))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">883</td><td><a href="intel_iommu.c.html#L883">(s->root_scalable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">901</td><td><a href="intel_iommu.c.html#L901">(s->root_scalable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="intel_iommu.c.html#L967">(s->root_scalable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="intel_iommu.c.html#L1155">(!memcmp(mapped, &target, sizeof(target)))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1412</td><td><a href="intel_iommu.c.html#L1412">(!vtd_root_entry_present(s, &re, devfn))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="intel_iommu.c.html#L1483">(s->root_scalable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1554</td><td><a href="intel_iommu.c.html#L1554">(s->root_scalable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2253</td><td><a href="intel_iommu.c.html#L2253">(val & VTD_GCMD_SRTP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2257</td><td><a href="intel_iommu.c.html#L2257">(changed & VTD_GCMD_QIE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2261</td><td><a href="intel_iommu.c.html#L2261">(val & VTD_GCMD_SIRTP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2279</td><td><a href="intel_iommu.c.html#L2279">(val & VTD_CCMD_ICC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2280</td><td><a href="intel_iommu.c.html#L2280">(s->qi_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2300</td><td><a href="intel_iommu.c.html#L2300">(val & VTD_TLB_IVT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="intel_iommu.c.html#L2301">(s->qi_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2541</td><td><a href="intel_iommu.c.html#L2541">(!vtd_get_inv_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2553</td><td><a href="intel_iommu.c.html#L2553">(!vtd_process_context_cache_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2560</td><td><a href="intel_iommu.c.html#L2560">(!vtd_process_iotlb_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2578</td><td><a href="intel_iommu.c.html#L2578">(!vtd_process_wait_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2585</td><td><a href="intel_iommu.c.html#L2585">(!vtd_process_inv_iec_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2592</td><td><a href="intel_iommu.c.html#L2592">(!vtd_process_device_iotlb_desc(s, &inv_desc))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3062</td><td><a href="intel_iommu.c.html#L3062">(s->snoop_control)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3662</td><td><a href="intel_iommu.c.html#L3662">(s->dma_drain)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3665</td><td><a href="intel_iommu.c.html#L3665">(s->dma_translation)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3704</td><td><a href="intel_iommu.c.html#L3704">(x86_iommu->dt_supported)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3708</td><td><a href="intel_iommu.c.html#L3708">(x86_iommu->pt_supported)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3712</td><td><a href="intel_iommu.c.html#L3712">(s->caching_mode)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3717</td><td><a href="intel_iommu.c.html#L3717">(s->scalable_mode)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3721</td><td><a href="intel_iommu.c.html#L3721">(s->snoop_control)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="intel_iommu.c.html#L579">(dma_memory_read(&address_space_memory, addr, re, sizeof(*re), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="intel_iommu.c.html#L613">(dma_memory_read(&address_space_memory, addr, ce, ce_size, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">716</td><td><a href="intel_iommu.c.html#L716">(dma_memory_read(&address_space_memory, addr, pdire, entry_size, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">741</td><td><a href="intel_iommu.c.html#L741">(dma_memory_read(&address_space_memory, addr, pe, entry_size, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1053</td><td><a href="intel_iommu.c.html#L1053">(level == vtd_get_iova_level(s, ce))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1705</td><td><a href="intel_iommu.c.html#L1705">(vtd_switch_address_space(vtd_as) == false)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1795</td><td><a href="intel_iommu.c.html#L1795">(vtd_dev_pt_enabled(s, &ce))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2323</td><td><a href="intel_iommu.c.html#L2323">(dma_memory_read(&address_space_memory, addr, inv_desc, dw, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3176</td><td><a href="intel_iommu.c.html#L3176">(dma_memory_read(&address_space_memory, addr, entry, sizeof(*entry), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="intel_iommu.c.html#L260">(devfn_it < PCI_DEVFN_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">313</td><td><a href="intel_iommu.c.html#L313">(level < VTD_SL_PML4_LEVEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">414</td><td><a href="intel_iommu.c.html#L414">(i < DMAR_FRCD_REG_NR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="intel_iommu.c.html#L464">(i < DMAR_FRCD_REG_NR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="intel_iommu.c.html#L620">(ce_size == VTD_CTX_ENTRY_SCALABLE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1050</td><td><a href="intel_iommu.c.html#L1050">(slpte == (uint64_t)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="intel_iommu.c.html#L1240">(iova < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="intel_iommu.c.html#L1246">(slpte == (uint64_t)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="intel_iommu.c.html#L1295">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1522</td><td><a href="intel_iommu.c.html#L1522">(ret == -VTD_FR_CONTEXT_ENTRY_P)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1641</td><td><a href="intel_iommu.c.html#L1641">(i < PCI_DEVFN_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1938</td><td><a href="intel_iommu.c.html#L1938">(devfn_it < PCI_DEVFN_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2111</td><td><a href="intel_iommu.c.html#L2111">(am > VTD_MAMV)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2330</td><td><a href="intel_iommu.c.html#L2330">(dw == 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2438</td><td><a href="intel_iommu.c.html#L2438">(am > VTD_MAMV)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2737</td><td><a href="intel_iommu.c.html#L2737">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2750</td><td><a href="intel_iommu.c.html#L2750">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2761</td><td><a href="intel_iommu.c.html#L2761">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2793</td><td><a href="intel_iommu.c.html#L2793">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2809</td><td><a href="intel_iommu.c.html#L2809">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2825</td><td><a href="intel_iommu.c.html#L2825">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2859</td><td><a href="intel_iommu.c.html#L2859">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2884</td><td><a href="intel_iommu.c.html#L2884">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2898</td><td><a href="intel_iommu.c.html#L2898">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2914</td><td><a href="intel_iommu.c.html#L2914">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2961</td><td><a href="intel_iommu.c.html#L2961">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2974</td><td><a href="intel_iommu.c.html#L2974">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2991</td><td><a href="intel_iommu.c.html#L2991">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3004</td><td><a href="intel_iommu.c.html#L3004">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3071</td><td><a href="intel_iommu.c.html#L3071">(old == IOMMU_NOTIFIER_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3073</td><td><a href="intel_iommu.c.html#L3073">(new == IOMMU_NOTIFIER_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3203</td><td><a href="intel_iommu.c.html#L3203">(sid != X86_IOMMU_SID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3397</td><td><a href="intel_iommu.c.html#L3397">(!attrs.unspecified)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3536</td><td><a href="intel_iommu.c.html#L3536">(remain >= VTD_PAGE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3319</td><td><a href="intel_iommu.c.html#L3319">(addr.addr.sub_valid)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">3329</td><td><a href="intel_iommu.c.html#L3329">(addr.addr.sub_valid)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">751</td><td><a href="intel_iommu.c.html#L751">(!vtd_is_level_supported(s, VTD_PE_GET_LEVEL(pe)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">747</td><td><a href="intel_iommu.c.html#L747">(!vtd_pe_type_check(x86_iommu, pe))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">801</td><td><a href="intel_iommu.c.html#L801">(!vtd_pe_present(pe))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1037</td><td><a href="intel_iommu.c.html#L1037">(!vtd_iova_range_check(s, iova, ce, aw_bits))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1428</td><td><a href="intel_iommu.c.html#L1428">(!vtd_ce_present(ce))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1451</td><td><a href="intel_iommu.c.html#L1451">(!vtd_ce_type_check(x86_iommu, ce))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2629</td><td><a href="intel_iommu.c.html#L2629">(!vtd_process_inv_desc(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3817</td><td><a href="intel_iommu.c.html#L3817">(!kvm_irqchip_is_split())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3873</td><td><a href="intel_iommu.c.html#L3873">(!vtd_decide_config(s, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="intel_iommu.c.html#L262">(!vtd_as)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">448</td><td><a href="intel_iommu.c.html#L448">(!is_write)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1198</td><td><a href="intel_iommu.c.html#L1198">(!mapped)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1696</td><td><a href="intel_iommu.c.html#L1696">(!vtd_bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1701</td><td><a href="intel_iommu.c.html#L1701">(!vtd_as)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2499</td><td><a href="intel_iommu.c.html#L2499">(!vtd_bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2504</td><td><a href="intel_iommu.c.html#L2504">(!vtd_dev_as)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3435</td><td><a href="intel_iommu.c.html#L3435">(!vtd_bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3447</td><td><a href="intel_iommu.c.html#L3447">(!vtd_dev_as)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">415</td><td><a href="intel_iommu.c.html#L415">(vtd_is_frcd_set(s, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">492</td><td><a href="intel_iommu.c.html#L492">(vtd_try_collapse_fault(s, source_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1069</td><td><a href="intel_iommu.c.html#L1069">(vtd_slpte_nonzero_rsvd(slpte, level))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1077</td><td><a href="intel_iommu.c.html#L1077">(vtd_is_last_slpte(slpte, level))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1251</td><td><a href="intel_iommu.c.html#L1251">(vtd_slpte_nonzero_rsvd(slpte, level))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2036</td><td><a href="intel_iommu.c.html#L2036">(vtd_as_has_map_notifier(vtd_as))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2164</td><td><a href="intel_iommu.c.html#L2164">(vtd_queued_inv_disable_check(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3035</td><td><a href="intel_iommu.c.html#L3035">(likely(success))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3614</td><td><a href="intel_iommu.c.html#L3614">(vtd_as_has_map_notifier(vtd_as))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3696</td><td><a href="intel_iommu.c.html#L3696">(x86_iommu_ir_supported(x86_iommu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="intel_iommu.c.html#L317">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">788</td><td><a href="intel_iommu.c.html#L788">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">797</td><td><a href="intel_iommu.c.html#L797">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">841</td><td><a href="intel_iommu.c.html#L841">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">859</td><td><a href="intel_iommu.c.html#L859">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1002</td><td><a href="intel_iommu.c.html#L1002">(vtd_bus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1046</td><td><a href="intel_iommu.c.html#L1046">(true)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1153</td><td><a href="intel_iommu.c.html#L1153">(mapped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1186</td><td><a href="intel_iommu.c.html#L1186">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1408</td><td><a href="intel_iommu.c.html#L1408">(ret_fr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1419</td><td><a href="intel_iommu.c.html#L1419">(ret_fr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1424</td><td><a href="intel_iommu.c.html#L1424">(ret_fr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1435</td><td><a href="intel_iommu.c.html#L1435">(ret_fr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1463</td><td><a href="intel_iommu.c.html#L1463">(ret_fr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1521</td><td><a href="intel_iommu.c.html#L1521">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1556</td><td><a href="intel_iommu.c.html#L1556">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1579</td><td><a href="intel_iommu.c.html#L1579">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1613</td><td><a href="intel_iommu.c.html#L1613">(take_bql)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1618</td><td><a href="intel_iommu.c.html#L1618">(use_iommu)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1626</td><td><a href="intel_iommu.c.html#L1626">(take_bql)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1756</td><td><a href="intel_iommu.c.html#L1756">(iotlb_entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1936</td><td><a href="intel_iommu.c.html#L1936">(vtd_bus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2143</td><td><a href="intel_iommu.c.html#L2143">(en)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2207</td><td><a href="intel_iommu.c.html#L2207">(en)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2229</td><td><a href="intel_iommu.c.html#L2229">(en)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2516</td><td><a href="intel_iommu.c.html#L2516">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3252</td><td><a href="intel_iommu.c.html#L3252">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3325</td><td><a href="intel_iommu.c.html#L3325">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3403</td><td><a href="intel_iommu.c.html#L3403">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

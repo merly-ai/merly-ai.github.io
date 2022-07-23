@@ -1,0 +1,756 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\nvme\ctrl.c Ctrl Expressions (705) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\nvme\ctrl.c Ctrl Expressions (705) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\nvme\ctrl.c Ctrl Expressions (705)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3434</td><td><a href="ctrl.c.html#L3434">(n->params.zasl && <span style='background-color:#741da3;'>data_size > (uint64_t)n->page_size << n->params.zasl</span>)</a></td><td class="num">1035.75</td></tr>
+      <tr><td class="num line">1536</td><td><a href="ctrl.c.html#L1536">(unlikely(<span style='background-color:#741da3;'>UINT64_MAX - slba < nlb || slba + nlb > nsze</span>))</a></td><td class="num">1029.45</td></tr>
+      <tr><td class="num line">1523</td><td><a href="ctrl.c.html#L1523">(mdts && <span style='background-color:#741da3;'>len > n->page_size << mdts</span>)</a></td><td class="num">1026.75</td></tr>
+      <tr><td class="num line">3026</td><td><a href="ctrl.c.html#L3026">(<span style='background-color:#741da3;'>NVME_ID_NS_DPS_TYPE(ns->id_ns.dps) && ((prinfor & NVME_PRINFO_PRACT) != (prinfow & NVME_PRINFO_PRACT))</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="ctrl.c.html#L782">(<span style='background-color:#741da3;'>i == nents - 1 && len > n->page_size</span>)</a></td><td class="num">1013.85</td></tr>
+      <tr><td class="num line">2543</td><td><a href="ctrl.c.html#L2543">(<span style='background-color:#741da3;'>len > n->page_size << n->params.vsl</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">4419</td><td><a href="ctrl.c.html#L4419">(unlikely(!qsize || qsize > NVME_CAP_MQES(ldq_le_p(&n->bar.cap))))</a></td><td class="num">79.75</td></tr>
+      <tr><td class="num line">4788</td><td><a href="ctrl.c.html#L4788">(unlikely(!qsize || qsize > NVME_CAP_MQES(ldq_le_p(&n->bar.cap))))</a></td><td class="num">79.75</td></tr>
+      <tr><td class="num line">6827</td><td><a href="ctrl.c.html#L6827">(addr == NVME_REG_PMRSTS && (NVME_PMRCAP_PMRWBM(ldl_le_p(&n->bar.pmrcap)) & 0x02))</a></td><td class="num">63.25</td></tr>
+      <tr><td class="num line">4796</td><td><a href="ctrl.c.html#L4796">(unlikely(!msix_enabled(&n->parent_obj) && vector))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">7160</td><td><a href="ctrl.c.html#L7160">(params->sriov_max_vq_per_vf && (params->sriov_max_vq_per_vf < 2 || (params->sriov_max_vq_per_vf - 1) % NVME_VF_RES_GRANULARITY))</a></td><td class="num">52.70</td></tr>
+      <tr><td class="num line">6816</td><td><a href="ctrl.c.html#L6816">(pci_is_vf(&n->parent_obj) && !nvme_sctrl(n)->scs && addr != NVME_REG_CSTS)</a></td><td class="num">51.25</td></tr>
+      <tr><td class="num line">6992</td><td><a href="ctrl.c.html#L6992">(pci_is_vf(&n->parent_obj) && !nvme_sctrl(n)->scs && addr != NVME_REG_CSTS)</a></td><td class="num">51.25</td></tr>
+      <tr><td class="num line">4415</td><td><a href="ctrl.c.html#L4415">(unlikely(!sqid || sqid > n->conf_ioqpairs || n->sq[sqid] != NULL))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">4784</td><td><a href="ctrl.c.html#L4784">(unlikely(!cqid || cqid > n->conf_ioqpairs || n->cq[cqid] != NULL))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">1098</td><td><a href="ctrl.c.html#L1098">(nvme_ns_ext(ns) && !(pi && pract && ns->lbaf.ms == nvme_pi_tuple_size(ns)))</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">1278</td><td><a href="ctrl.c.html#L1278">(nvme_ns_ext(ns) && !(pi && pract && ns->lbaf.ms == nvme_pi_tuple_size(ns)))</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">5835</td><td><a href="ctrl.c.html#L5835">(pi && (ns->id_ns.lbaf[lbaf].ms < nvme_pi_tuple_size(ns)))</a></td><td class="num">44.00</td></tr>
+      <tr><td class="num line">6463</td><td><a href="ctrl.c.html#L6463">(unlikely(!(NVME_CAP_CSS(cap) & (1 << NVME_CC_CSS(cc)))))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">4722</td><td><a href="ctrl.c.html#L4722">(unlikely(!QTAILQ_EMPTY(&cq->sq_list)))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">6252</td><td><a href="ctrl.c.html#L6252">(!(nvme_sq_empty(sq) || QTAILQ_EMPTY(&sq->req_list)))</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">351</td><td><a href="ctrl.c.html#L351">(ns->params.max_active_zones != 0 && ns->nr_active_zones + act > ns->params.max_active_zones)</a></td><td class="num">37.10</td></tr>
+      <tr><td class="num line">357</td><td><a href="ctrl.c.html#L357">(ns->params.max_open_zones != 0 && ns->nr_open_zones + opn > ns->params.max_open_zones)</a></td><td class="num">37.10</td></tr>
+      <tr><td class="num line">6117</td><td><a href="ctrl.c.html#L6117">(dbs_addr & (n->page_size - 1) || eis_addr & (n->page_size - 1))</a></td><td class="num">34.70</td></tr>
+      <tr><td class="num line">5553</td><td><a href="ctrl.c.html#L5553">((dw11 & 0xffff) == 0xffff || ((dw11 >> 16) & 0xffff) == 0xffff)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">4193</td><td><a href="ctrl.c.html#L4193">(!(ns->iocs[req->cmd.opcode] & NVME_CMD_EFF_CSUPP))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">6058</td><td><a href="ctrl.c.html#L6058">(!sctrl->nvi || (le16_to_cpu(sctrl->nvq) < 2) || !sn)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">3875</td><td><a href="ctrl.c.html#L3875">(elba < wp || elba > wp + ns->zns.zrwas)</a></td><td class="num">29.35</td></tr>
+      <tr><td class="num line">7152</td><td><a href="ctrl.c.html#L7152">(params->sriov_max_vi_per_vf && (params->sriov_max_vi_per_vf - 1) % NVME_VF_RES_GRANULARITY)</a></td><td class="num">29.20</td></tr>
+      <tr><td class="num line">4567</td><td><a href="ctrl.c.html#L4567">((nsid = find_first_bit(n->changed_nsids, NVME_CHANGED_NSID_SIZE)) != NVME_CHANGED_NSID_SIZE)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">6440</td><td><a href="ctrl.c.html#L6440">(pci_is_vf(&n->parent_obj) && !sctrl->scs)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">7528</td><td><a href="ctrl.c.html#L7528">(pci_is_vf(&n->parent_obj) && !sctrl->scs)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">6762</td><td><a href="ctrl.c.html#L6762">(cba + int128_get64(n->pmr.dev->mr.size) < cba)</a></td><td class="num">27.35</td></tr>
+      <tr><td class="num line">783</td><td><a href="ctrl.c.html#L783">(unlikely(prp_ent & (n->page_size - 1)))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">803</td><td><a href="ctrl.c.html#L803">(unlikely(prp_ent & (n->page_size - 1)))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">819</td><td><a href="ctrl.c.html#L819">(unlikely(prp2 & (n->page_size - 1)))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">4423</td><td><a href="ctrl.c.html#L4423">(unlikely(prp1 & (n->page_size - 1)))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">4792</td><td><a href="ctrl.c.html#L4792">(unlikely(prp1 & (n->page_size - 1)))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">6173</td><td><a href="ctrl.c.html#L6173">(!(nvme_cse_acs[req->cmd.opcode] & NVME_CMD_EFF_CSUPP))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">4957</td><td><a href="ctrl.c.html#L4957">(n->sec_ctrl_list.sec[i].scid >= min_id)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">6698</td><td><a href="ctrl.c.html#L6698">(cba + int128_get64(n->cmb.mem.size) < cba)</a></td><td class="num">25.35</td></tr>
+      <tr><td class="num line">6480</td><td><a href="ctrl.c.html#L6480">(unlikely(NVME_CC_IOCQES(cc) < NVME_CTRL_CQES_MIN(n->id_ctrl.cqes)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">6487</td><td><a href="ctrl.c.html#L6487">(unlikely(NVME_CC_IOCQES(cc) > NVME_CTRL_CQES_MAX(n->id_ctrl.cqes)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">6494</td><td><a href="ctrl.c.html#L6494">(unlikely(NVME_CC_IOSQES(cc) < NVME_CTRL_SQES_MIN(n->id_ctrl.sqes)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">6501</td><td><a href="ctrl.c.html#L6501">(unlikely(NVME_CC_IOSQES(cc) > NVME_CTRL_SQES_MAX(n->id_ctrl.sqes)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1487</td><td><a href="ctrl.c.html#L1487">(!(NVME_AEC_SMART(n->features.async_config) & event))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">7704</td><td><a href="ctrl.c.html#L7704">(NVME_CAP_PMRS(ldq_le_p(&n->bar.cap)))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">5132</td><td><a href="ctrl.c.html#L5132">(!qemu_uuid_is_null(&ns->params.uuid))</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">5452</td><td><a href="ctrl.c.html#L5452">(save && !(nvme_feature_cap[fid] & NVME_FEAT_CAP_SAVE))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">6578</td><td><a href="ctrl.c.html#L6578">(unlikely(msix_enabled(&(n->parent_obj))))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">6591</td><td><a href="ctrl.c.html#L6591">(unlikely(msix_enabled(&(n->parent_obj))))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">657</td><td><a href="ctrl.c.html#L657">(!nvme_addr_is_cmb(n, addr) || !nvme_addr_is_cmb(n, addr + len - 1))</a></td><td class="num">23.45</td></tr>
+      <tr><td class="num line">673</td><td><a href="ctrl.c.html#L673">(!nvme_addr_is_pmr(n, addr) || !nvme_addr_is_pmr(n, addr + len - 1))</a></td><td class="num">23.45</td></tr>
+      <tr><td class="num line">1514</td><td><a href="ctrl.c.html#L1514">(!QTAILQ_EMPTY(&n->aer_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">4334</td><td><a href="ctrl.c.html#L4334">(!QTAILQ_EMPTY(&sq->out_req_list))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">5614</td><td><a href="ctrl.c.html#L5614">(!QTAILQ_EMPTY(&n->aer_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">6052</td><td><a href="ctrl.c.html#L6052">(!pci_is_vf(&n->parent_obj))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">6348</td><td><a href="ctrl.c.html#L6348">(!QTAILQ_EMPTY(&n->aer_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">4497</td><td><a href="ctrl.c.html#L4497">((n->temperature >= n->features.temp_thresh_hi) || (n->temperature <= n->features.temp_thresh_low))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">5500</td><td><a href="ctrl.c.html#L5500">((n->temperature >= n->features.temp_thresh_hi) || (n->temperature <= n->features.temp_thresh_low))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="ctrl.c.html#L1852">(ns->params.max_open_zones && ns->nr_open_zones == ns->params.max_open_zones)</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">5089</td><td><a href="ctrl.c.html#L5089">(ns->params.nsid <= min_nsid || c->csi != ns->csi)</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">4727</td><td><a href="ctrl.c.html#L4727">(cq->irq_enabled && cq->tail != cq->head)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">4998</td><td><a href="ctrl.c.html#L4998">(c->csi == NVME_CSI_ZONED && ns->csi == NVME_CSI_ZONED)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">5073</td><td><a href="ctrl.c.html#L5073">(c->csi != NVME_CSI_NVM && c->csi != NVME_CSI_ZONED)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1431</td><td><a href="ctrl.c.html#L1431">(n->aer_mask & (1 << event->result.event_type))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">4385</td><td><a href="ctrl.c.html#L4385">(n->params.ioeventfd && sq->sqid != 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">6141</td><td><a href="ctrl.c.html#L6141">(n->params.ioeventfd && sq->sqid != 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">6155</td><td><a href="ctrl.c.html#L6155">(n->params.ioeventfd && cq->cqid != 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">7055</td><td><a href="ctrl.c.html#L7055">(params->max_ioqpairs < 1 || params->max_ioqpairs > NVME_MAX_IOQPAIRS)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">7062</td><td><a href="ctrl.c.html#L7062">(params->msix_qsize < 1 || params->msix_qsize > PCI_MSIX_FLAGS_QSIZE + 1)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3921</td><td><a href="ctrl.c.html#L3921">(slba != zone->d.zslba && action != NVME_ZONE_ACTION_ZRWA_FLUSH)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">5535</td><td><a href="ctrl.c.html#L5535">(!(dw11 & 0x1) && blk_enable_write_cache(ns->blkconf.blk))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1695</td><td><a href="ctrl.c.html#L1695">(slba < zone->w_ptr || slba + nlb > ezrwa)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">5703</td><td><a href="ctrl.c.html#L5703">(ns->attached && !ns->params.shared)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">2244</td><td><a href="ctrl.c.html#L2244">(memcmp(bufp + pil, mbufp + pil, ns->lbaf.ms - pil))</a></td><td class="num">11.80</td></tr>
+      <tr><td class="num line">3032</td><td><a href="ctrl.c.html#L3032">(!(n->id_ctrl.ocfs & (1 << format)))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3118</td><td><a href="ctrl.c.html#L3118">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps) && (prinfo & NVME_PRINFO_PRACT))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">7049</td><td><a href="ctrl.c.html#L7049">(n->namespace.blkconf.blk && n->subsys)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">4116</td><td><a href="ctrl.c.html#L4116">(zone_idx < ns->num_zones && max_zones > 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">442</td><td><a href="ctrl.c.html#L442">(n->bar.cmbsz && nvme_addr_is_cmb(n, addr) && nvme_addr_is_cmb(n, hi))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="ctrl.c.html#L462">(n->bar.cmbsz && nvme_addr_is_cmb(n, addr) && nvme_addr_is_cmb(n, hi))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4075</td><td><a href="ctrl.c.html#L4075">(zra == NVME_ZONE_REPORT_EXTENDED && !ns->params.zd_extension_size)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">7089</td><td><a href="ctrl.c.html#L7089">(n->params.zasl > n->params.mdts)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">7128</td><td><a href="ctrl.c.html#L7128">(params->sriov_vq_flexible < params->sriov_max_vfs * 2)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">7134</td><td><a href="ctrl.c.html#L7134">(params->max_ioqpairs < params->sriov_vq_flexible + 2)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">7146</td><td><a href="ctrl.c.html#L7146">(params->msix_qsize < params->sriov_vi_flexible + 1)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">3319</td><td><a href="ctrl.c.html#L3319">(pract && ns->lbaf.ms == nvme_pi_tuple_size(ns))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">3396</td><td><a href="ctrl.c.html#L3396">(pract && ns->lbaf.ms == nvme_pi_tuple_size(ns))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2877</td><td><a href="ctrl.c.html#L2877">(!(iocb->zone->d.za & NVME_ZA_ZRWA_VALID))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">4761</td><td><a href="ctrl.c.html#L4761">(n->params.ioeventfd && cqid != 0)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">7122</td><td><a href="ctrl.c.html#L7122">(!params->sriov_vq_flexible || !params->sriov_vi_flexible)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3575</td><td><a href="ctrl.c.html#L3575">(zone->w_ptr % ns->zns.zrwafg)</a></td><td class="num">10.10</td></tr>
+      <tr><td class="num line">1464</td><td><a href="ctrl.c.html#L1464">(n->aer_queued == n->params.aer_max_queued)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">5606</td><td><a href="ctrl.c.html#L5606">(n->outstanding_aers > n->params.aerl)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2253</td><td><a href="ctrl.c.html#L2253">(memcmp(buf, ctx->mdata.bounce, ctx->mdata.iov.size))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2302</td><td><a href="ctrl.c.html#L2302">(memcmp(buf, ctx->data.bounce, ctx->data.iov.size))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1073</td><td><a href="ctrl.c.html#L1073">(status && (status & 0x7ff) == NVME_DATA_SGL_LEN_INVALID)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="ctrl.c.html#L1631">(req->status && status != NVME_INTERNAL_DEV_ERROR)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3043</td><td><a href="ctrl.c.html#L3043">(ns->pif && format != 0x1)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3539</td><td><a href="ctrl.c.html#L3539">(unlikely(*slba >= ns->id_ns.nsze))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">7409</td><td><a href="ctrl.c.html#L7409">(!pci_is_vf(pci_dev) && n->params.sriov_max_vfs)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">7642</td><td><a href="ctrl.c.html#L7642">(!pci_is_vf(pci_dev) && n->params.sriov_max_vfs)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="ctrl.c.html#L707">(sg->iov.niov + 1 > IOV_MAX)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">722</td><td><a href="ctrl.c.html#L722">(sg->qsg.nsg + 1 > IOV_MAX)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">3038</td><td><a href="ctrl.c.html#L3038">(nr > ns->id_ns.msrc + 1)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">6126</td><td><a href="ctrl.c.html#L6126">(i < n->params.max_ioqpairs + 1)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">6337</td><td><a href="ctrl.c.html#L6337">(i < n->params.max_ioqpairs + 1)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">6342</td><td><a href="ctrl.c.html#L6342">(i < n->params.max_ioqpairs + 1)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">6846</td><td><a href="ctrl.c.html#L6846">(((addr - 0x1000) >> 2) & 1)</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">494</td><td><a href="ctrl.c.html#L494">(cq->tail >= cq->size)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1379</td><td><a href="ctrl.c.html#L1379">(cq->tail != cq->head)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2449</td><td><a href="ctrl.c.html#L2449">(iocb->idx == iocb->nr)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2624</td><td><a href="ctrl.c.html#L2624">(iocb->idx != iocb->nr)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2956</td><td><a href="ctrl.c.html#L2956">(iocb->idx == iocb->nr)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3817</td><td><a href="ctrl.c.html#L3817">(iocb->idx < ns->num_zones)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">4245</td><td><a href="ctrl.c.html#L4245">(cq->tail == cq->head)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">5804</td><td><a href="ctrl.c.html#L5804">(iocb->offset < ns->size)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">6915</td><td><a href="ctrl.c.html#L6915">(cq->tail == cq->head)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">7140</td><td><a href="ctrl.c.html#L7140">(params->sriov_vi_flexible < params->sriov_max_vfs)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2028</td><td><a href="ctrl.c.html#L2028">(ns->params.zoned && nvme_is_write(req))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2239</td><td><a href="ctrl.c.html#L2239">(!(ns->id_ns.dps & NVME_ID_NS_DPS_FIRST_EIGHT))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3479</td><td><a href="ctrl.c.html#L3479">(!(zone->d.za & NVME_ZA_ZRWA_VALID))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3871</td><td><a href="ctrl.c.html#L3871">(!(zone->d.za & NVME_ZA_ZRWA_VALID))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4072</td><td><a href="ctrl.c.html#L4072">(zra != NVME_ZONE_REPORT && zra != NVME_ZONE_REPORT_EXTENDED)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">6092</td><td><a href="ctrl.c.html#L6092">(rt != NVME_VIRT_RES_QUEUE && rt != NVME_VIRT_RES_INTERRUPT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3424</td><td><a href="ctrl.c.html#L3424">(unlikely(zone->d.za & NVME_ZA_ZRWA_VALID))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1313</td><td><a href="ctrl.c.html#L1313">(req->sg.flags & NVME_SG_DMA)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1326</td><td><a href="ctrl.c.html#L1326">(req->sg.flags & NVME_SG_DMA)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1380</td><td><a href="ctrl.c.html#L1380">(cq->irq_enabled && !pending)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1692</td><td><a href="ctrl.c.html#L1692">(zone->d.za & NVME_ZA_ZRWA_VALID)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1785</td><td><a href="ctrl.c.html#L1785">(zone->d.za & NVME_ZA_ZRWA_VALID)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1828</td><td><a href="ctrl.c.html#L1828">(zone->d.za & NVME_ZA_ZRWA_VALID)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1970</td><td><a href="ctrl.c.html#L1970">(zone->d.za & NVME_ZA_ZRWA_VALID)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4135</td><td><a href="ctrl.c.html#L4135">(zone->d.za & NVME_ZA_ZD_EXT_VALID)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4885</td><td><a href="ctrl.c.html#L4885">(active || ns->csi == NVME_CSI_NVM)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4921</td><td><a href="ctrl.c.html#L4921">(cntlid < ARRAY_SIZE(n->subsys->ctrls))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5403</td><td><a href="ctrl.c.html#L5403">(iv >= n->conf_ioqpairs + 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">6903</td><td><a href="ctrl.c.html#L6903">(!qid && n->dbbuf_enabled)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">6964</td><td><a href="ctrl.c.html#L6964">(!qid && n->dbbuf_enabled)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3980</td><td><a href="ctrl.c.html#L3980">(all || !ns->params.zd_extension_size)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">7081</td><td><a href="ctrl.c.html#L7081">(!is_power_of_2(n->pmr.dev->size))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">584</td><td><a href="ctrl.c.html#L584">(!(sg->flags & NVME_SG_ALLOC))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="ctrl.c.html#L718">(!(sg->flags & NVME_SG_DMA))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">6338</td><td><a href="ctrl.c.html#L6338">(n->sq[i] != NULL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">6343</td><td><a href="ctrl.c.html#L6343">(n->cq[i] != NULL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">522</td><td><a href="ctrl.c.html#L522">(~intms & n->irq_status)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1939</td><td><a href="ctrl.c.html#L1939">(zone->d.wp == nvme_zone_wr_boundary(zone))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2063</td><td><a href="ctrl.c.html#L2063">(nvme_ns_ext(ns) || req->cmd.mptr)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2966</td><td><a href="ctrl.c.html#L2966">(nlb > le16_to_cpu(ns->id_ns.mssrl))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3428</td><td><a href="ctrl.c.html#L3428">(unlikely(slba != zone->d.zslba))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6179</td><td><a href="ctrl.c.html#L6179">(NVME_CMD_FLAGS_PSDT(req->cmd.flags) != NVME_PSDT_PRP)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="ctrl.c.html#L363">(zrwa > ns->zns.numzrwa)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2054</td><td><a href="ctrl.c.html#L2054">(req->cmd.opcode == NVME_CMD_WRITE_ZEROES)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2073</td><td><a href="ctrl.c.html#L2073">(req->cmd.opcode == NVME_CMD_READ)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3879</td><td><a href="ctrl.c.html#L3879">(nlb % ns->zns.zrwafg)</a></td><td class="num">6.85</td></tr>
+      <tr><td class="num line">4184</td><td><a href="ctrl.c.html#L4184">(req->cmd.opcode == NVME_CMD_FLUSH)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5041</td><td><a href="ctrl.c.html#L5041">(ns->params.nsid <= min_nsid)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5408</td><td><a href="ctrl.c.html#L5408">(iv == n->admin_cq.vector)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5831</td><td><a href="ctrl.c.html#L5831">(lbaf > ns->id_ns.nlbaf)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">6356</td><td><a href="ctrl.c.html#L6356">(i < n->sec_ctrl_list.numcntl)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">588</td><td><a href="ctrl.c.html#L588">(sg->flags & NVME_SG_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">703</td><td><a href="ctrl.c.html#L703">(sg->flags & NVME_SG_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1212</td><td><a href="ctrl.c.html#L1212">(sg->flags & NVME_SG_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3568</td><td><a href="ctrl.c.html#L3568">(cmd->zsflags & NVME_ZSFLAG_ZRWA_ALLOC)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="ctrl.c.html#L954">(!seg_len || seg_len & 0xf)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3678</td><td><a href="ctrl.c.html#L3678">(status && status != NVME_NO_COMPLETE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3687</td><td><a href="ctrl.c.html#L3687">(status && status != NVME_NO_COMPLETE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3695</td><td><a href="ctrl.c.html#L3695">(status && status != NVME_NO_COMPLETE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3704</td><td><a href="ctrl.c.html#L3704">(status && status != NVME_NO_COMPLETE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3714</td><td><a href="ctrl.c.html#L3714">(status && status != NVME_NO_COMPLETE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4105</td><td><a href="ctrl.c.html#L4105">(partial && nr_zones >= max_zones)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">5471</td><td><a href="ctrl.c.html#L5471">(nsid && nsid != NVME_NSID_BROADCAST)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">5839</td><td><a href="ctrl.c.html#L5839">(pi && pi > NVME_ID_NS_DPS_TYPE_3)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">519</td><td><a href="ctrl.c.html#L519">(msix_enabled(&(n->parent_obj)))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">532</td><td><a href="ctrl.c.html#L532">(msix_enabled(&(n->parent_obj)))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">549</td><td><a href="ctrl.c.html#L549">(msix_enabled(&(n->parent_obj)))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">994</td><td><a href="ctrl.c.html#L994">(NVME_SGL_TYPE(last_sgld->type) == NVME_SGL_DESCR_TYPE_DATA_BLOCK)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1007</td><td><a href="ctrl.c.html#L1007">(NVME_SGL_TYPE(sgld->type) == NVME_SGL_DESCR_TYPE_LAST_SEGMENT)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1700</td><td><a href="ctrl.c.html#L1700">(unlikely(slba != zone->w_ptr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4702</td><td><a href="ctrl.c.html#L4702">(msix_enabled(&n->parent_obj))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4743</td><td><a href="ctrl.c.html#L4743">(msix_enabled(&n->parent_obj))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4800</td><td><a href="ctrl.c.html#L4800">(unlikely(vector >= n->conf_msix_qsize))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5479</td><td><a href="ctrl.c.html#L5479">(!(nvme_feature_cap[fid] & NVME_FEAT_CAP_CHANGE))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6455</td><td><a href="ctrl.c.html#L6455">(unlikely(asq & (page_size - 1)))</a></td><td class="num">5.85</td></tr>
+      <tr><td class="num line">6459</td><td><a href="ctrl.c.html#L6459">(unlikely(acq & (page_size - 1)))</a></td><td class="num">5.85</td></tr>
+      <tr><td class="num line">6883</td><td><a href="ctrl.c.html#L6883">(unlikely(new_head >= cq->size))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6945</td><td><a href="ctrl.c.html#L6945">(unlikely(new_tail >= sq->size))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7179</td><td><a href="ctrl.c.html#L7179">(pci_is_vf(&n->parent_obj))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7208</td><td><a href="ctrl.c.html#L7208">(pci_is_vf(&n->parent_obj))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7221</td><td><a href="ctrl.c.html#L7221">(pci_is_vf(&n->parent_obj))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7720</td><td><a href="ctrl.c.html#L7720">(value & ~old_value & event)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">761</td><td><a href="ctrl.c.html#L761">(len > n->page_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1648</td><td><a href="ctrl.c.html#L1648">(zone_idx >= ns->num_zones)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2459</td><td><a href="ctrl.c.html#L2459">(nlb > n->dmrsl)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2634</td><td><a href="ctrl.c.html#L2634">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2747</td><td><a href="ctrl.c.html#L2747">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2773</td><td><a href="ctrl.c.html#L2773">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2816</td><td><a href="ctrl.c.html#L2816">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2914</td><td><a href="ctrl.c.html#L2914">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2952</td><td><a href="ctrl.c.html#L2952">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3201</td><td><a href="ctrl.c.html#L3201">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3225</td><td><a href="ctrl.c.html#L3225">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3711</td><td><a href="ctrl.c.html#L3711">(i < ns->num_zones)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4104</td><td><a href="ctrl.c.html#L4104">(i < ns->num_zones)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4348</td><td><a href="ctrl.c.html#L4348">(r->sq == sq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4375</td><td><a href="ctrl.c.html#L4375">(i < sq->size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4869</td><td><a href="ctrl.c.html#L4869">(!nvme_nsid_valid(n, nsid) || nsid == NVME_NSID_BROADCAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4979</td><td><a href="ctrl.c.html#L4979">(!nvme_nsid_valid(n, nsid) || nsid == NVME_NSID_BROADCAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4995</td><td><a href="ctrl.c.html#L4995">(c->csi == NVME_CSI_NVM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5123</td><td><a href="ctrl.c.html#L5123">(!nvme_nsid_valid(n, nsid) || nsid == NVME_NSID_BROADCAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5294</td><td><a href="ctrl.c.html#L5294">(!nvme_nsid_valid(n, nsid) || nsid == NVME_NSID_BROADCAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5584</td><td><a href="ctrl.c.html#L5584">(!n->features.hbs.lbafee)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5857</td><td><a href="ctrl.c.html#L5857">(iocb->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5965</td><td><a href="ctrl.c.html#L5965">(cntlid != n->cntlid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7106</td><td><a href="ctrl.c.html#L7106">(params->sriov_max_vfs > NVME_MAX_VFS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7708</td><td><a href="ctrl.c.html#L7708">((value & cap) != value)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">383</td><td><a href="ctrl.c.html#L383">(!n->cmb.cmse)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">403</td><td><a href="ctrl.c.html#L403">(!n->pmr.cmse)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1404</td><td><a href="ctrl.c.html#L1404">(req->sq->ioeventfd_enabled)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1752</td><td><a href="ctrl.c.html#L1752">(!ns->params.cross_zone_read)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2398</td><td><a href="ctrl.c.html#L2398">(!ns->lbaf.ms)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2777</td><td><a href="ctrl.c.html#L2777">(!ns->lbaf.ms)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2918</td><td><a href="ctrl.c.html#L2918">(!ns->lbaf.ms)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3533</td><td><a href="ctrl.c.html#L3533">(!ns->params.zoned)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3784</td><td><a href="ctrl.c.html#L3784">(!ns->lbaf.ms)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">6447</td><td><a href="ctrl.c.html#L6447">(unlikely(n->cq[0]))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">6451</td><td><a href="ctrl.c.html#L6451">(unlikely(n->sq[0]))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">7095</td><td><a href="ctrl.c.html#L7095">(!n->params.vsl)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">5293</td><td><a href="ctrl.c.html#L5293">(nvme_feature_cap[fid] & NVME_FEAT_CAP_NS)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">5460</td><td><a href="ctrl.c.html#L5460">(nvme_feature_cap[fid] & NVME_FEAT_CAP_NS)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">6608</td><td><a href="ctrl.c.html#L6608">(NVME_CC_SHN(data) && !(NVME_CC_SHN(cc)))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">6613</td><td><a href="ctrl.c.html#L6613">(!NVME_CC_SHN(data) && NVME_CC_SHN(cc))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">6618</td><td><a href="ctrl.c.html#L6618">(NVME_CC_EN(data) && !NVME_CC_EN(cc))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">6626</td><td><a href="ctrl.c.html#L6626">(!NVME_CC_EN(data) && NVME_CC_EN(cc))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1707</td><td><a href="ctrl.c.html#L1707">(unlikely((slba + nlb) > zcap))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2114</td><td><a href="ctrl.c.html#L2114">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2220</td><td><a href="ctrl.c.html#L2220">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2532</td><td><a href="ctrl.c.html#L2532">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2552</td><td><a href="ctrl.c.html#L2552">(NVME_ERR_REC_DULBE(ns->features.err_rec))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2826</td><td><a href="ctrl.c.html#L2826">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2976</td><td><a href="ctrl.c.html#L2976">(NVME_ERR_REC_DULBE(ns->features.err_rec))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3136</td><td><a href="ctrl.c.html#L3136">(NVME_ERR_REC_DULBE(ns->features.err_rec))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3316</td><td><a href="ctrl.c.html#L3316">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3345</td><td><a href="ctrl.c.html#L3345">(NVME_ERR_REC_DULBE(ns->features.err_rec))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3352</td><td><a href="ctrl.c.html#L3352">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3393</td><td><a href="ctrl.c.html#L3393">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3486</td><td><a href="ctrl.c.html#L3486">(NVME_ID_NS_DPS_TYPE(ns->id_ns.dps))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4202</td><td><a href="ctrl.c.html#L4202">(NVME_CMD_FLAGS_FUSE(req->cmd.flags))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4927</td><td><a href="ctrl.c.html#L4927">(attached && !nvme_ns(ctrl, nsid))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5515</td><td><a href="ctrl.c.html#L5515">(NVME_ID_NS_NSFEAT_DULBE(ns->id_ns.nsfeat))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5524</td><td><a href="ctrl.c.html#L5524">(NVME_ID_NS_NSFEAT_DULBE(ns->id_ns.nsfeat))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5920</td><td><a href="ctrl.c.html#L5920">(n->features.hbs.lbafee)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">6183</td><td><a href="ctrl.c.html#L6183">(NVME_CMD_FLAGS_FUSE(req->cmd.flags))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">7075</td><td><a href="ctrl.c.html#L7075">(host_memory_backend_is_mapped(n->pmr.dev))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">7599</td><td><a href="ctrl.c.html#L7599">(n->namespace.blkconf.blk)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">869</td><td><a href="ctrl.c.html#L869">(*len == 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">888</td><td><a href="ctrl.c.html#L888">(UINT64_MAX - addr < dlen)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">958</td><td><a href="ctrl.c.html#L958">(UINT64_MAX - addr < seg_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1162</td><td><a href="ctrl.c.html#L1162">(sge_len - offset < 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1787</td><td><a href="ctrl.c.html#L1787">(ns->params.numzrwa)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1829</td><td><a href="ctrl.c.html#L1829">(ns->params.numzrwa)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1883</td><td><a href="ctrl.c.html#L1883">(n->params.auto_transition_zones)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2048</td><td><a href="ctrl.c.html#L2048">(ns->lbaf.ms)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2307</td><td><a href="ctrl.c.html#L2307">(ns->lbaf.ms)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2751</td><td><a href="ctrl.c.html#L2751">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2871</td><td><a href="ctrl.c.html#L2871">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2983</td><td><a href="ctrl.c.html#L2983">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3061</td><td><a href="ctrl.c.html#L3061">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3337</td><td><a href="ctrl.c.html#L3337">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3417</td><td><a href="ctrl.c.html#L3417">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">5045</td><td><a href="ctrl.c.html#L5045">(j == data_len / sizeof(uint32_t))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">5093</td><td><a href="ctrl.c.html#L5093">(j == data_len / sizeof(uint32_t))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">5140</td><td><a href="ctrl.c.html#L5140">(ns->params.eui64)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">5691</td><td><a href="ctrl.c.html#L5691">(i < *nr_ids)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">5827</td><td><a href="ctrl.c.html#L5827">(ns->params.zoned)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">5975</td><td><a href="ctrl.c.html#L5975">(nr > num_total - num_sec)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">6354</td><td><a href="ctrl.c.html#L6354">(n->params.sriov_max_vfs)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6400</td><td><a href="ctrl.c.html#L6400">(n->pmr.dev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6808</td><td><a href="ctrl.c.html#L6808">(addr > (sizeof(n->bar) - size))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">7074</td><td><a href="ctrl.c.html#L7074">(n->pmr.dev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7117</td><td><a href="ctrl.c.html#L7117">(n->pmr.dev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7251</td><td><a href="ctrl.c.html#L7251">(n->params.legacy_cmb)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7356</td><td><a href="ctrl.c.html#L7356">(n->params.use_intel_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7368</td><td><a href="ctrl.c.html#L7368">(n->params.sriov_max_vfs)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7401</td><td><a href="ctrl.c.html#L7401">(n->params.cmb_size_mb)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7405</td><td><a href="ctrl.c.html#L7405">(n->pmr.dev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7449</td><td><a href="ctrl.c.html#L7449">(n->params.use_intel_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7634</td><td><a href="ctrl.c.html#L7634">(n->params.cmb_size_mb)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7638</td><td><a href="ctrl.c.html#L7638">(n->pmr.dev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">447</td><td><a href="ctrl.c.html#L447">(nvme_addr_is_pmr(n, addr) && nvme_addr_is_pmr(n, hi))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="ctrl.c.html#L467">(nvme_addr_is_pmr(n, addr) && nvme_addr_is_pmr(n, hi))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4342</td><td><a href="ctrl.c.html#L4342">(!nvme_check_cqid(n, sq->cqid))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5732</td><td><a href="ctrl.c.html#L5732">(!test_and_set_bit(nsid, ctrl->changed_nsids))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="ctrl.c.html#L553">(!n->cq_pending)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">933</td><td><a href="ctrl.c.html#L933">(NVME_SGL_TYPE(sgl.type) == NVME_SGL_DESCR_TYPE_DATA_BLOCK)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1425</td><td><a href="ctrl.c.html#L1425">(!n->outstanding_aers)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1571</td><td><a href="ctrl.c.html#L1571">(!(ret & flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3063</td><td><a href="ctrl.c.html#L3063">(!iocb->zone)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3239</td><td><a href="ctrl.c.html#L3239">(!iocb->ns)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3272</td><td><a href="ctrl.c.html#L3272">(!iocb->broadcast)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3279</td><td><a href="ctrl.c.html#L3279">(!iocb->ns)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3571</td><td><a href="ctrl.c.html#L3571">(!(ozcs & NVME_ID_NS_ZONED_OZCS_ZRWASUP))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3812</td><td><a href="ctrl.c.html#L3812">(!iocb->all)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3822</td><td><a href="ctrl.c.html#L3822">(!iocb->all)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3867</td><td><a href="ctrl.c.html#L3867">(!(ozcs & NVME_ID_NS_ZONED_OZCS_ZRWASUP))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4587</td><td><a href="ctrl.c.html#L4587">(nslist[0] == 0xffffffff)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4906</td><td><a href="ctrl.c.html#L4906">(!n->subsys)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5871</td><td><a href="ctrl.c.html#L5871">(!iocb->ns)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5924</td><td><a href="ctrl.c.html#L5924">(!iocb->broadcast)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5931</td><td><a href="ctrl.c.html#L5931">(!iocb->ns)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6062</td><td><a href="ctrl.c.html#L6062">(!sctrl->scs)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">7069</td><td><a href="ctrl.c.html#L7069">(!params->serial)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">7101</td><td><a href="ctrl.c.html#L7101">(!n->subsys)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">7537</td><td><a href="ctrl.c.html#L7537">(!n->subsys)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">7748</td><td><a href="ctrl.c.html#L7748">(!(val & PCI_SRIOV_CTRL_VFE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4108</td><td><a href="ctrl.c.html#L4108">(nvme_zone_matches_filter(zrasf, zone++))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4326</td><td><a href="ctrl.c.html#L4326">(unlikely(!qid || nvme_check_sqid(n, qid)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4411</td><td><a href="ctrl.c.html#L4411">(unlikely(!cqid || nvme_check_cqid(n, cqid)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4716</td><td><a href="ctrl.c.html#L4716">(unlikely(!qid || nvme_check_cqid(n, qid)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">6561</td><td><a href="ctrl.c.html#L6561">(unlikely(offset & sizeof(uint32_t) - 1))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">6796</td><td><a href="ctrl.c.html#L6796">(unlikely(addr & sizeof(uint32_t) - 1))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">6839</td><td><a href="ctrl.c.html#L6839">(unlikely(addr & 1 << 2 - 1))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">531</td><td><a href="ctrl.c.html#L531">(cq->irq_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">548</td><td><a href="ctrl.c.html#L548">(cq->irq_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="ctrl.c.html#L876">(sgls & NVME_CTRL_SGLS_EXCESS_LENGTH)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1353</td><td><a href="ctrl.c.html#L1353">(n->dbbuf_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1396</td><td><a href="ctrl.c.html#L1396">(req->status)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="ctrl.c.html#L1898">(flags & NVME_ZRM_AUTO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="ctrl.c.html#L1906">(flags & NVME_ZRM_AUTO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1915</td><td><a href="ctrl.c.html#L1915">(flags & NVME_ZRM_ZRWA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2354</td><td><a href="ctrl.c.html#L2354">(iocb->aiocb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2490</td><td><a href="ctrl.c.html#L2490">(attr & NVME_DSMGMT_AD)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2538</td><td><a href="ctrl.c.html#L2538">(prinfo & NVME_PRINFO_PRACT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2606</td><td><a href="ctrl.c.html#L2606">(iocb->aiocb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2848</td><td><a href="ctrl.c.html#L2848">(prinfow & NVME_PRINFO_PRACT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2893</td><td><a href="ctrl.c.html#L2893">(iocb->bh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3001</td><td><a href="ctrl.c.html#L3001">(iocb->bh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3048</td><td><a href="ctrl.c.html#L3048">(ns->pif)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3182</td><td><a href="ctrl.c.html#L3182">(iocb->aiocb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3229</td><td><a href="ctrl.c.html#L3229">(iocb->broadcast)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3232</td><td><a href="ctrl.c.html#L3232">(iocb->ns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3674</td><td><a href="ctrl.c.html#L3674">(proc_mask & NVME_PROC_CLOSED_ZONES)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3683</td><td><a href="ctrl.c.html#L3683">(proc_mask & NVME_PROC_OPENED_ZONES)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3700</td><td><a href="ctrl.c.html#L3700">(proc_mask & NVME_PROC_FULL_ZONES)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3710</td><td><a href="ctrl.c.html#L3710">(proc_mask & NVME_PROC_READ_ONLY_ZONES)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3747</td><td><a href="ctrl.c.html#L3747">(iocb->aiocb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3809</td><td><a href="ctrl.c.html#L3809">(iocb->zone)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3852</td><td><a href="ctrl.c.html#L3852">(iocb->bh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4198</td><td><a href="ctrl.c.html#L4198">(ns->status)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4246</td><td><a href="ctrl.c.html#L4246">(cq->irq_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4307</td><td><a href="ctrl.c.html#L4307">(sq->ioeventfd_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4313</td><td><a href="ctrl.c.html#L4313">(sq->sqid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4381</td><td><a href="ctrl.c.html#L4381">(n->dbbuf_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4663</td><td><a href="ctrl.c.html#L4663">(off & 0x3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4697</td><td><a href="ctrl.c.html#L4697">(cq->ioeventfd_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4705</td><td><a href="ctrl.c.html#L4705">(cq->cqid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4757</td><td><a href="ctrl.c.html#L4757">(n->dbbuf_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5545</td><td><a href="ctrl.c.html#L5545">(n->qs_created)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5591</td><td><a href="ctrl.c.html#L5591">(dw11 & 0x1ff)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5766</td><td><a href="ctrl.c.html#L5766">(iocb->aiocb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5861</td><td><a href="ctrl.c.html#L5861">(iocb->broadcast)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5864</td><td><a href="ctrl.c.html#L5864">(iocb->ns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6018</td><td><a href="ctrl.c.html#L6018">(sctrl->scs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6070</td><td><a href="ctrl.c.html#L6070">(sctrl->scs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6248</td><td><a href="ctrl.c.html#L6248">(n->dbbuf_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6276</td><td><a href="ctrl.c.html#L6276">(n->dbbuf_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6637</td><td><a href="ctrl.c.html#L6637">(data & 1 << 4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6873</td><td><a href="ctrl.c.html#L6873">(n->outstanding_aers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6890</td><td><a href="ctrl.c.html#L6890">(n->outstanding_aers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6916</td><td><a href="ctrl.c.html#L6916">(cq->irq_enabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6935</td><td><a href="ctrl.c.html#L6935">(n->outstanding_aers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6952</td><td><a href="ctrl.c.html#L6952">(n->outstanding_aers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7042</td><td><a href="ctrl.c.html#L7042">(params->num_queues)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7100</td><td><a href="ctrl.c.html#L7100">(params->sriov_max_vfs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7112</td><td><a href="ctrl.c.html#L7112">(params->cmb_size_mb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7510</td><td><a href="ctrl.c.html#L7510">(n->subsys)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7619</td><td><a href="ctrl.c.html#L7619">(n->subsys)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7698</td><td><a href="ctrl.c.html#L7698">(!visit_type_uint8(v, name, &value, errp))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5686</td><td><a href="ctrl.c.html#L5686">(!*nr_ids)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">6467</td><td><a href="ctrl.c.html#L6467">(unlikely(NVME_CC_MPS(cc) < NVME_CAP_MPSMIN(cap)))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">6473</td><td><a href="ctrl.c.html#L6473">(unlikely(NVME_CC_MPS(cc) > NVME_CAP_MPSMAX(cap)))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1068</td><td><a href="ctrl.c.html#L1068">(nvme_addr_read(n, mptr, &sgl, sizeof(sgl)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1235</td><td><a href="ctrl.c.html#L1235">(unlikely(bytes != len))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1751</td><td><a href="ctrl.c.html#L1751">(unlikely(end > bndry))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1765</td><td><a href="ctrl.c.html#L1765">(end > nvme_zone_rd_boundary(ns, zone))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4573</td><td><a href="ctrl.c.html#L4573">(i == ARRAY_SIZE(nslist))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5289</td><td><a href="ctrl.c.html#L5289">(!nvme_feature_support[fid])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5330</td><td><a href="ctrl.c.html#L5330">(NVME_TEMP_TMPSEL(dw11) != NVME_TEMP_TMPSEL_COMPOSITE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5388</td><td><a href="ctrl.c.html#L5388">(NVME_TEMP_TMPSEL(dw11) != NVME_TEMP_TMPSEL_COMPOSITE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5392</td><td><a href="ctrl.c.html#L5392">(NVME_TEMP_THSEL(dw11) == NVME_TEMP_THSEL_OVER)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5456</td><td><a href="ctrl.c.html#L5456">(!nvme_feature_support[fid])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5485</td><td><a href="ctrl.c.html#L5485">(NVME_TEMP_TMPSEL(dw11) != NVME_TEMP_TMPSEL_COMPOSITE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5643</td><td><a href="ctrl.c.html#L5643">(NVME_CC_CSS(cc) != NVME_CC_CSS_ADMIN_ONLY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5648</td><td><a href="ctrl.c.html#L5648">(NVME_CC_CSS(cc) == NVME_CC_CSS_CSI)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5650</td><td><a href="ctrl.c.html#L5650">(NVME_CC_CSS(cc) == NVME_CC_CSS_NVM)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6254</td><td><a href="ctrl.c.html#L6254">(nvme_addr_read(n, addr, (void *)&cmd, sizeof(cmd)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6568</td><td><a href="ctrl.c.html#L6568">(unlikely(size < sizeof(uint32_t)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6801</td><td><a href="ctrl.c.html#L6801">(unlikely(size < sizeof(uint32_t)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">438</td><td><a href="ctrl.c.html#L438">(hi < addr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="ctrl.c.html#L458">(hi < addr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">636</td><td><a href="ctrl.c.html#L636">(count == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="ctrl.c.html#L641">(sge_len == offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">702</td><td><a href="ctrl.c.html#L702">(cmb || pmr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="ctrl.c.html#L779">(len != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="ctrl.c.html#L850">(i < nsgld)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="ctrl.c.html#L964">(nsgld > SEG_CHUNK_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="ctrl.c.html#L1065">(psdt == NVME_PSDT_SGL_MPTR_SGL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1168</td><td><a href="ctrl.c.html#L1168">(sge_len == offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1183</td><td><a href="ctrl.c.html#L1183">(dir == NVME_TX_DIRECTION_TO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="ctrl.c.html#L1198">(count == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1216</td><td><a href="ctrl.c.html#L1216">(dir == NVME_TX_DIRECTION_TO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1229</td><td><a href="ctrl.c.html#L1229">(dir == NVME_TX_DIRECTION_TO_DEVICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1563</td><td><a href="ctrl.c.html#L1563">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1576</td><td><a href="ctrl.c.html#L1576">(pnum != bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1589</td><td><a href="ctrl.c.html#L1589">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1974</td><td><a href="ctrl.c.html#L1974">(elba > ezrwa)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2243</td><td><a href="ctrl.c.html#L2243">(mbufp < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2393</td><td><a href="ctrl.c.html#L2393">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2414</td><td><a href="ctrl.c.html#L2414">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2443</td><td><a href="ctrl.c.html#L2443">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2744</td><td><a href="ctrl.c.html#L2744">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2770</td><td><a href="ctrl.c.html#L2770">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2813</td><td><a href="ctrl.c.html#L2813">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2911</td><td><a href="ctrl.c.html#L2911">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2949</td><td><a href="ctrl.c.html#L2949">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3198</td><td><a href="ctrl.c.html#L3198">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3230</td><td><a href="ctrl.c.html#L3230">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3616</td><td><a href="ctrl.c.html#L3616">(state == NVME_ZONE_STATE_EMPTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3779</td><td><a href="ctrl.c.html#L3779">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3804</td><td><a href="ctrl.c.html#L3804">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3991</td><td><a href="ctrl.c.html#L3991">(status == NVME_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4009</td><td><a href="ctrl.c.html#L4009">(status == NVME_ZONE_INVAL_TRANSITION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4080</td><td><a href="ctrl.c.html#L4080">(zrasf > NVME_ZONE_REPORT_OFFLINE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4084</td><td><a href="ctrl.c.html#L4084">(data_size < sizeof(NvmeZoneReportHeader))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4096</td><td><a href="ctrl.c.html#L4096">(zra == NVME_ZONE_REPORT_EXTENDED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4134</td><td><a href="ctrl.c.html#L4134">(zra == NVME_ZONE_REPORT_EXTENDED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4263</td><td><a href="ctrl.c.html#L4263">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4290</td><td><a href="ctrl.c.html#L4290">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4463</td><td><a href="ctrl.c.html#L4463">(off >= sizeof(smart))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4467</td><td><a href="ctrl.c.html#L4467">(nsid != 0xffffffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4476</td><td><a href="ctrl.c.html#L4476">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4521</td><td><a href="ctrl.c.html#L4521">(off >= sizeof(fw_log))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4537</td><td><a href="ctrl.c.html#L4537">(off >= sizeof(errlog))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4559</td><td><a href="ctrl.c.html#L4559">(off >= sizeof(nslist))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4605</td><td><a href="ctrl.c.html#L4605">(off >= sizeof(log))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4911</td><td><a href="ctrl.c.html#L4911">(nsid == NVME_NSID_BROADCAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4956</td><td><a href="ctrl.c.html#L4956">(i < num_sec_ctrl)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5025</td><td><a href="ctrl.c.html#L5025">(min_nsid >= NVME_NSID_BROADCAST - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5029</td><td><a href="ctrl.c.html#L5029">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5069</td><td><a href="ctrl.c.html#L5069">(min_nsid >= NVME_NSID_BROADCAST - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5077</td><td><a href="ctrl.c.html#L5077">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5358</td><td><a href="ctrl.c.html#L5358">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5461</td><td><a href="ctrl.c.html#L5461">(nsid != NVME_NSID_BROADCAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5507</td><td><a href="ctrl.c.html#L5507">(nsid == NVME_NSID_BROADCAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5508</td><td><a href="ctrl.c.html#L5508">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5529</td><td><a href="ctrl.c.html#L5529">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5576</td><td><a href="ctrl.c.html#L5576">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5625</td><td><a href="ctrl.c.html#L5625">(nsid <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5797</td><td><a href="ctrl.c.html#L5797">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5862</td><td><a href="ctrl.c.html#L5862">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5971</td><td><a href="ctrl.c.html#L5971">(nr > num_total)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6023</td><td><a href="ctrl.c.html#L6023">(nr > limit)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6031</td><td><a href="ctrl.c.html#L6031">(diff > num_free)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6271</td><td><a href="ctrl.c.html#L6271">(status != NVME_NO_COMPLETE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6328</td><td><a href="ctrl.c.html#L6328">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6361</td><td><a href="ctrl.c.html#L6361">(rst != NVME_RESET_CONTROLLER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6366</td><td><a href="ctrl.c.html#L6366">(rst != NVME_RESET_CONTROLLER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6404</td><td><a href="ctrl.c.html#L6404">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6419</td><td><a href="ctrl.c.html#L6419">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6641</td><td><a href="ctrl.c.html#L6641">(data != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6648</td><td><a href="ctrl.c.html#L6648">(data == 0x4e564d65)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6998</td><td><a href="ctrl.c.html#L6998">(addr < sizeof(n->bar))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7199</td><td><a href="ctrl.c.html#L7199">(i < max_vfs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7390</td><td><a href="ctrl.c.html#L7390">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7391</td><td><a href="ctrl.c.html#L7391">(ret == -ENOTSUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7542</td><td><a href="ctrl.c.html#L7542">(cntlid < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7620</td><td><a href="ctrl.c.html#L7620">(i <= NVME_MAX_NAMESPACES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7718</td><td><a href="ctrl.c.html#L7718">(index < NVME_SMART_WARN_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7750</td><td><a href="ctrl.c.html#L7750">(i < num_vfs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4427</td><td><a href="ctrl.c.html#L4427">(unlikely(!(NVME_SQ_FLAGS_PC(qflags))))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">4804</td><td><a href="ctrl.c.html#L4804">(unlikely(!(NVME_CQ_FLAGS_PC(qflags))))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">6508</td><td><a href="ctrl.c.html#L6508">(unlikely(!NVME_AQA_ASQS(aqa)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">6512</td><td><a href="ctrl.c.html#L6512">(unlikely(!NVME_AQA_ACQS(aqa)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">3273</td><td><a href="ctrl.c.html#L3273">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4161</td><td><a href="ctrl.c.html#L4161">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4189</td><td><a href="ctrl.c.html#L4189">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4386</td><td><a href="ctrl.c.html#L4386">(!nvme_init_sq_ioeventfd(sq))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4762</td><td><a href="ctrl.c.html#L4762">(!nvme_init_cq_ioeventfd(cq))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4874</td><td><a href="ctrl.c.html#L4874">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4984</td><td><a href="ctrl.c.html#L4984">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5128</td><td><a href="ctrl.c.html#L5128">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5305</td><td><a href="ctrl.c.html#L5305">(!nvme_ns(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5345</td><td><a href="ctrl.c.html#L5345">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5350</td><td><a href="ctrl.c.html#L5350">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5462</td><td><a href="ctrl.c.html#L5462">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5467</td><td><a href="ctrl.c.html#L5467">(unlikely(!ns))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5472</td><td><a href="ctrl.c.html#L5472">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5672</td><td><a href="ctrl.c.html#L5672">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5713</td><td><a href="ctrl.c.html#L5713">(!nvme_ns(ctrl, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5925</td><td><a href="ctrl.c.html#L5925">(!nvme_nsid_valid(n, nsid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6142</td><td><a href="ctrl.c.html#L6142">(!nvme_init_sq_ioeventfd(sq))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6156</td><td><a href="ctrl.c.html#L6156">(!nvme_init_cq_ioeventfd(cq))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6287</td><td><a href="ctrl.c.html#L6287">(!msix_present(pci_dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6355</td><td><a href="ctrl.c.html#L6355">(!pci_is_vf(pci_dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6685</td><td><a href="ctrl.c.html#L6685">(!NVME_CAP_CMBS(cap))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6723</td><td><a href="ctrl.c.html#L6723">(!NVME_CAP_PMRS(cap))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6751</td><td><a href="ctrl.c.html#L6751">(!NVME_CAP_PMRS(cap))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6774</td><td><a href="ctrl.c.html#L6774">(!NVME_CAP_PMRS(cap))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">651</td><td><a href="ctrl.c.html#L651">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">669</td><td><a href="ctrl.c.html#L669">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">686</td><td><a href="ctrl.c.html#L686">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">865</td><td><a href="ctrl.c.html#L865">(!dlen)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3405</td><td><a href="ctrl.c.html#L3405">(!wrz)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3446</td><td><a href="ctrl.c.html#L3446">(!piremap)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3490</td><td><a href="ctrl.c.html#L3490">(!wrz)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3671</td><td><a href="ctrl.c.html#L3671">(!proc_mask)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3913</td><td><a href="ctrl.c.html#L3913">(!all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4469</td><td><a href="ctrl.c.html#L4469">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4478</td><td><a href="ctrl.c.html#L4478">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4506</td><td><a href="ctrl.c.html#L4506">(!rae)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4541</td><td><a href="ctrl.c.html#L4541">(!rae)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4591</td><td><a href="ctrl.c.html#L4591">(!rae)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4875</td><td><a href="ctrl.c.html#L4875">(!active)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4877</td><td><a href="ctrl.c.html#L4877">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4916</td><td><a href="ctrl.c.html#L4916">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4923</td><td><a href="ctrl.c.html#L4923">(!ctrl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4985</td><td><a href="ctrl.c.html#L4985">(!active)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4987</td><td><a href="ctrl.c.html#L4987">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5031</td><td><a href="ctrl.c.html#L5031">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5032</td><td><a href="ctrl.c.html#L5032">(!active)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5034</td><td><a href="ctrl.c.html#L5034">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5079</td><td><a href="ctrl.c.html#L5079">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5080</td><td><a href="ctrl.c.html#L5080">(!active)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5082</td><td><a href="ctrl.c.html#L5082">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5360</td><td><a href="ctrl.c.html#L5360">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5511</td><td><a href="ctrl.c.html#L5511">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5531</td><td><a href="ctrl.c.html#L5531">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5579</td><td><a href="ctrl.c.html#L5579">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5627</td><td><a href="ctrl.c.html#L5627">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5677</td><td><a href="ctrl.c.html#L5677">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5693</td><td><a href="ctrl.c.html#L5693">(!ctrl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6014</td><td><a href="ctrl.c.html#L6014">(!sctrl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6048</td><td><a href="ctrl.c.html#L6048">(!sctrl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6330</td><td><a href="ctrl.c.html#L6330">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6406</td><td><a href="ctrl.c.html#L6406">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6421</td><td><a href="ctrl.c.html#L6421">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7421</td><td><a href="ctrl.c.html#L7421">(!subsys)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7743</td><td><a href="ctrl.c.html#L7743">(!sriov_cap)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6619</td><td><a href="ctrl.c.html#L6619">(unlikely(nvme_start_ctrl(n)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">6854</td><td><a href="ctrl.c.html#L6854">(unlikely(nvme_check_cqid(n, qid)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">6929</td><td><a href="ctrl.c.html#L6929">(unlikely(nvme_check_sqid(n, qid)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="ctrl.c.html#L309">(QTAILQ_IN_USE(zone, entry))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">692</td><td><a href="ctrl.c.html#L692">(nvme_addr_is_iomem(n, addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">696</td><td><a href="ctrl.c.html#L696">(nvme_addr_is_cmb(n, addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="ctrl.c.html#L698">(nvme_addr_is_pmr(n, addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="ctrl.c.html#L965">(nvme_addr_read(n, addr, segment, sizeof(segment)))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="ctrl.c.html#L1125">(nvme_ns_ext(ns))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="ctrl.c.html#L1222">(unlikely(residual))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1293</td><td><a href="ctrl.c.html#L1293">(nvme_ns_ext(ns))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="ctrl.c.html#L1357">(nvme_cq_full(cq))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2464</td><td><a href="ctrl.c.html#L2464">(nvme_check_bounds(ns, slba, nlb))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3122</td><td><a href="ctrl.c.html#L3122">(nvme_ns_ext(ns))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3313</td><td><a href="ctrl.c.html#L3313">(nvme_ns_ext(ns))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3390</td><td><a href="ctrl.c.html#L3390">(nvme_ns_ext(ns))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4118</td><td><a href="ctrl.c.html#L4118">(nvme_zone_matches_filter(zrasf, zone))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4128</td><td><a href="ctrl.c.html#L4128">(nvme_wp_is_valid(zone))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5221</td><td><a href="ctrl.c.html#L5221">(nvme_check_sqid(n, sqid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5699</td><td><a href="ctrl.c.html#L5699">(nvme_ns(ctrl, nsid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6305</td><td><a href="ctrl.c.html#L6305">(pci_is_vf(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6378</td><td><a href="ctrl.c.html#L6378">(pci_is_vf(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6692</td><td><a href="ctrl.c.html#L6692">(NVME_CMBMSC_CRE(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6695</td><td><a href="ctrl.c.html#L6695">(NVME_CMBMSC_CMSE(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6728</td><td><a href="ctrl.c.html#L6728">(NVME_PMRCTL_EN(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6758</td><td><a href="ctrl.c.html#L6758">(NVME_PMRMSCL_CMSE(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7381</td><td><a href="ctrl.c.html#L7381">(pci_is_vf(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7570</td><td><a href="ctrl.c.html#L7570">(pci_is_vf(pci_dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7588</td><td><a href="ctrl.c.html#L7588">(nvme_init_subsys(n, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7593</td><td><a href="ctrl.c.html#L7593">(nvme_init_pci(n, pci_dev, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7603</td><td><a href="ctrl.c.html#L7603">(nvme_ns_setup(ns, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7747</td><td><a href="ctrl.c.html#L7747">(range_covers_byte(off, len, PCI_SRIOV_CTRL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="ctrl.c.html#L572">(dma)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">615</td><td><a href="ctrl.c.html#L615">(sg_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="ctrl.c.html#L621">(dst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">622</td><td><a href="ctrl.c.html#L622">(dma)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">711</td><td><a href="ctrl.c.html#L711">(cmb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">755</td><td><a href="ctrl.c.html#L755">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">760</td><td><a href="ctrl.c.html#L760">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">774</td><td><a href="ctrl.c.html#L774">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">795</td><td><a href="ctrl.c.html#L795">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">811</td><td><a href="ctrl.c.html#L811">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">825</td><td><a href="ctrl.c.html#L825">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">893</td><td><a href="ctrl.c.html#L893">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">935</td><td><a href="ctrl.c.html#L935">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">973</td><td><a href="ctrl.c.html#L973">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">983</td><td><a href="ctrl.c.html#L983">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">996</td><td><a href="ctrl.c.html#L996">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1020</td><td><a href="ctrl.c.html#L1020">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1027</td><td><a href="ctrl.c.html#L1027">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1082</td><td><a href="ctrl.c.html#L1082">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1105</td><td><a href="ctrl.c.html#L1105">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1131</td><td><a href="ctrl.c.html#L1131">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1159</td><td><a href="ctrl.c.html#L1159">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1177</td><td><a href="ctrl.c.html#L1177">(dma)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1189</td><td><a href="ctrl.c.html#L1189">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1250</td><td><a href="ctrl.c.html#L1250">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1263</td><td><a href="ctrl.c.html#L1263">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1301</td><td><a href="ctrl.c.html#L1301">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1368</td><td><a href="ctrl.c.html#L1368">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1588</td><td><a href="ctrl.c.html#L1588">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1688</td><td><a href="ctrl.c.html#L1688">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1749</td><td><a href="ctrl.c.html#L1749">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1762</td><td><a href="ctrl.c.html#L1762">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1855</td><td><a href="ctrl.c.html#L1855">(zone)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1888</td><td><a href="ctrl.c.html#L1888">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1892</td><td><a href="ctrl.c.html#L1892">(act)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2004</td><td><a href="ctrl.c.html#L2004">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2021</td><td><a href="ctrl.c.html#L2021">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2044</td><td><a href="ctrl.c.html#L2044">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2068</td><td><a href="ctrl.c.html#L2068">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2106</td><td><a href="ctrl.c.html#L2106">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2117</td><td><a href="ctrl.c.html#L2117">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2154</td><td><a href="ctrl.c.html#L2154">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2205</td><td><a href="ctrl.c.html#L2205">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2215</td><td><a href="ctrl.c.html#L2215">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2230</td><td><a href="ctrl.c.html#L2230">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2287</td><td><a href="ctrl.c.html#L2287">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2297</td><td><a href="ctrl.c.html#L2297">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2413</td><td><a href="ctrl.c.html#L2413">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2503</td><td><a href="ctrl.c.html#L2503">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2534</td><td><a href="ctrl.c.html#L2534">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2548</td><td><a href="ctrl.c.html#L2548">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2554</td><td><a href="ctrl.c.html#L2554">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2656</td><td><a href="ctrl.c.html#L2656">(slba)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2660</td><td><a href="ctrl.c.html#L2660">(nlb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2664</td><td><a href="ctrl.c.html#L2664">(apptag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2668</td><td><a href="ctrl.c.html#L2668">(appmask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2672</td><td><a href="ctrl.c.html#L2672">(reftag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2685</td><td><a href="ctrl.c.html#L2685">(slba)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2689</td><td><a href="ctrl.c.html#L2689">(nlb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2693</td><td><a href="ctrl.c.html#L2693">(apptag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2697</td><td><a href="ctrl.c.html#L2697">(appmask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2701</td><td><a href="ctrl.c.html#L2701">(reftag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2836</td><td><a href="ctrl.c.html#L2836">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2841</td><td><a href="ctrl.c.html#L2841">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2850</td><td><a href="ctrl.c.html#L2850">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2860</td><td><a href="ctrl.c.html#L2860">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2867</td><td><a href="ctrl.c.html#L2867">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2873</td><td><a href="ctrl.c.html#L2873">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2972</td><td><a href="ctrl.c.html#L2972">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2978</td><td><a href="ctrl.c.html#L2978">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2985</td><td><a href="ctrl.c.html#L2985">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3055</td><td><a href="ctrl.c.html#L3055">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3069</td><td><a href="ctrl.c.html#L3069">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3127</td><td><a href="ctrl.c.html#L3127">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3132</td><td><a href="ctrl.c.html#L3132">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3138</td><td><a href="ctrl.c.html#L3138">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3144</td><td><a href="ctrl.c.html#L3144">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3205</td><td><a href="ctrl.c.html#L3205">(ns)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3328</td><td><a href="ctrl.c.html#L3328">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3333</td><td><a href="ctrl.c.html#L3333">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3339</td><td><a href="ctrl.c.html#L3339">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3347</td><td><a href="ctrl.c.html#L3347">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3357</td><td><a href="ctrl.c.html#L3357">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3407</td><td><a href="ctrl.c.html#L3407">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3413</td><td><a href="ctrl.c.html#L3413">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3421</td><td><a href="ctrl.c.html#L3421">(append)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3453</td><td><a href="ctrl.c.html#L3453">(piremap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3461</td><td><a href="ctrl.c.html#L3461">(piremap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3470</td><td><a href="ctrl.c.html#L3470">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3475</td><td><a href="ctrl.c.html#L3475">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3492</td><td><a href="ctrl.c.html#L3492">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3618</td><td><a href="ctrl.c.html#L3618">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3656</td><td><a href="ctrl.c.html#L3656">(proc_zone)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3884</td><td><a href="ctrl.c.html#L3884">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3915</td><td><a href="ctrl.c.html#L3915">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3929</td><td><a href="ctrl.c.html#L3929">(all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3937</td><td><a href="ctrl.c.html#L3937">(all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3945</td><td><a href="ctrl.c.html#L3945">(all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3971</td><td><a href="ctrl.c.html#L3971">(all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3985</td><td><a href="ctrl.c.html#L3985">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3998</td><td><a href="ctrl.c.html#L3998">(all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4013</td><td><a href="ctrl.c.html#L4013">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4067</td><td><a href="ctrl.c.html#L4067">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4089</td><td><a href="ctrl.c.html#L4089">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4629</td><td><a href="ctrl.c.html#L4629">(src_iocs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4670</td><td><a href="ctrl.c.html#L4670">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4910</td><td><a href="ctrl.c.html#L4910">(attached)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5365</td><td><a href="ctrl.c.html#L5365">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5428</td><td><a href="ctrl.c.html#L5428">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5572</td><td><a href="ctrl.c.html#L5572">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5682</td><td><a href="ctrl.c.html#L5682">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5876</td><td><a href="ctrl.c.html#L5876">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5979</td><td><a href="ctrl.c.html#L5979">(rt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5994</td><td><a href="ctrl.c.html#L5994">(rt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6057</td><td><a href="ctrl.c.html#L6057">(online)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6072</td><td><a href="ctrl.c.html#L6072">(sn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6130</td><td><a href="ctrl.c.html#L6130">(sq)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6148</td><td><a href="ctrl.c.html#L6148">(cq)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6907</td><td><a href="ctrl.c.html#L6907">(start_sqs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7286</td><td><a href="ctrl.c.html#L7286">(msix_table_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7294</td><td><a href="ctrl.c.html#L7294">(msix_pba_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7329</td><td><a href="ctrl.c.html#L7329">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7580</td><td><a href="ctrl.c.html#L7580">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7622</td><td><a href="ctrl.c.html#L7622">(ns)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

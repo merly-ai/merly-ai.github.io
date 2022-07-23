@@ -1,0 +1,328 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\policies.c Ctrl Expressions (277) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\policies.c Ctrl Expressions (277) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\policies.c Ctrl Expressions (277)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2474</td><td><a href="policies.c.html#L2474">(i < smartlist_len(summary) && <span style='background-color:#741da3;'>AT(i)->prt_max <= prt_max</span>)</a></td><td class="num">1046.25</td></tr>
+      <tr><td class="num line">2524</td><td><a href="policies.c.html#L2524">(i < smartlist_len(summary) && <span style='background-color:#741da3;'>AT(i)->prt_max <= prt_max</span>)</a></td><td class="num">1046.25</td></tr>
+      <tr><td class="num line">2854</td><td><a href="policies.c.html#L2854">(<span style='background-color:#741da3;'>addr && get_options()->ClientRejectInternalAddresses && (tor_addr_is_internal(addr, 0) || tor_addr_is_loopback(addr))</span>)</a></td><td class="num">1032.50</td></tr>
+      <tr><td class="num line">2526</td><td><a href="policies.c.html#L2526">(<span style='background-color:#741da3;'>AT(i)->reject_count <= UINT64_MAX - count</span>)</a></td><td class="num">1028.10</td></tr>
+      <tr><td class="num line">1723</td><td><a href="policies.c.html#L1723">(<span style='background-color:#741da3;'>ap->maskbits == 0 && ap->prt_min <= 1 && ap->prt_max >= 65535</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">1873</td><td><a href="policies.c.html#L1873">(<span style='background-color:#741da3;'>p->prt_min <= 1 && p->prt_max == 65535 && p->maskbits == 0</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">2326</td><td><a href="policies.c.html#L2326">(<span style='background-color:#741da3;'>policy->maskbits < (is_ip6 ? 128 : 32) && policy->maskbits > 0</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">2274</td><td><a href="policies.c.html#L2274">(<span style='background-color:#9c4c02;'>p->policy_type == ADDR_POLICY_REJECT && p->prt_min <= 1 && p->prt_max == 65535 && p->maskbits == 0 && (tor_addr_family(&p->addr) == family || tor_addr_family(&p->addr) == AF_UNSPEC)</span>)</a></td><td class="num">106.50</td></tr>
+      <tr><td class="num line">2270</td><td><a href="policies.c.html#L2270">(p->policy_type == ADDR_POLICY_ACCEPT && (tor_addr_family(&p->addr) == family || tor_addr_family(&p->addr) == AF_UNSPEC))</a></td><td class="num">89.00</td></tr>
+      <tr><td class="num line">2626</td><td><a href="policies.c.html#L2626">(last || AT(i)->accepted != AT(i + 1)->accepted)</a></td><td class="num">84.35</td></tr>
+      <tr><td class="num line">2476</td><td><a href="policies.c.html#L2476">(!AT(i)->accepted && AT(i)->reject_count <= family_reject_count)</a></td><td class="num">68.00</td></tr>
+      <tr><td class="num line">2089</td><td><a href="policies.c.html#L2089">(!tor_addr_is_null(&or_options->OutboundBindAddresses[i][j]))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">2569</td><td><a href="policies.c.html#L2569">(tor_addr_compare(&p->addr, &addr, CMP_EXACT) == 0 && p->maskbits == maskbits)</a></td><td class="num">49.50</td></tr>
+      <tr><td class="num line">2228</td><td><a href="policies.c.html#L2228">(tor_addr_is_internal(&addr, 0) && !get_options()->DirAllowPrivateAddresses)</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">2223</td><td><a href="policies.c.html#L2223">(i <= (~((mask & ip) ^ mask) >> 24))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">2957</td><td><a href="policies.c.html#L2957">((tor_addr_family(&tmpe->addr) == AF_INET6) && (!include_ipv6))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">2960</td><td><a href="policies.c.html#L2960">((tor_addr_family(&tmpe->addr) == AF_INET) && (!include_ipv4))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">132</td><td><a href="policies.c.html#L132">(tor_addr_parse_mask_ports(private_nets[i], 0, &newpolicy.addr, &newpolicy.maskbits, &port_min, &port_max) < 0)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">427</td><td><a href="policies.c.html#L427">(tor_addr_family(addr) == AF_INET && client_mode && (!options->ClientUseIPv4 || (pref_only && pref_ipv6)))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">1312</td><td><a href="policies.c.html#L1312">((r = tor_addr_compare(&a->addr, &b->addr, CMP_EXACT)))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2663</td><td><a href="policies.c.html#L2663">(rejects_len > MAX_EXITPOLICY_SUMMARY_LEN - strlen("reject") - 1 && accepts_len > MAX_EXITPOLICY_SUMMARY_LEN - strlen("accept") - 1)</a></td><td class="num">28.90</td></tr>
+      <tr><td class="num line">1560</td><td><a href="policies.c.html#L1560">(tor_addr_family(&a->addr) != tor_addr_family(&b->addr))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">434</td><td><a href="policies.c.html#L434">(tor_addr_family(addr) == AF_INET6 && (!reachable_addr_use_ipv6(options) || (pref_only && !pref_ipv6)))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="policies.c.html#L1424">(!tor_addr_compare_masked(addr, &tmpe->addr, tmpe->maskbits, CMP_EXACT))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1454</td><td><a href="policies.c.html#L1454">(!tor_addr_compare_masked(addr, &tmpe->addr, tmpe->maskbits, CMP_EXACT))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2440</td><td><a href="policies.c.html#L2440">(AT(i)->prt_max < prt_min)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2442</td><td><a href="policies.c.html#L2442">(AT(i)->prt_min != prt_min)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2450</td><td><a href="policies.c.html#L2450">(AT(i)->prt_max < prt_max)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2452</td><td><a href="policies.c.html#L2452">(AT(i)->prt_max != prt_max)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2630</td><td><a href="policies.c.html#L2630">(start_prt == AT(i)->prt_max)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2737</td><td><a href="policies.c.html#L2737">(!TOR_ISDIGIT(*summary) || *summary == ',')</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2210</td><td><a href="policies.c.html#L2210">(tor_addr_family(&p->addr) != AF_INET)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3151</td><td><a href="policies.c.html#L3151">(policy_write_item(buf, sizeof(buf), (*ent)->policy, 0) >= 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2635</td><td><a href="policies.c.html#L2635">(AT(i)->accepted)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1595</td><td><a href="policies.c.html#L1595">(a->prt_max < b->prt_min || b->prt_max < a->prt_min)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="policies.c.html#L331">(!ret && (options->ReachableDirAddresses || options->ReachableORAddresses || options->ReachableAddresses))</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">267</td><td><a href="policies.c.html#L267">(options->ReachableDirAddresses && options->ReachableORAddresses && options->ReachableAddresses)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1426</td><td><a href="policies.c.html#L1426">(port >= tmpe->prt_min && port <= tmpe->prt_max)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1456</td><td><a href="policies.c.html#L1456">(tmpe->prt_min <= 1 && tmpe->prt_max >= 65535)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1497</td><td><a href="policies.c.html#L1497">(tmpe->prt_min <= port && port <= tmpe->prt_max)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2331</td><td><a href="policies.c.html#L2331">(policy->prt_min <= 1 && policy->prt_max == 65535)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2860</td><td><a href="policies.c.html#L2860">(e->min_port <= port && port <= e->max_port)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">279</td><td><a href="policies.c.html#L279">(parse_addr_policy(options->ReachableORAddresses ? options->ReachableORAddresses : options->ReachableAddresses, &reachable_or_addr_policy, ADDR_POLICY_ACCEPT))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="policies.c.html#L294">(parse_addr_policy(options->ReachableDirAddresses ? options->ReachableDirAddresses : options->ReachableAddresses, &reachable_dir_addr_policy, ADDR_POLICY_ACCEPT))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1570</td><td><a href="policies.c.html#L1570">(tor_addr_compare_masked(&a->addr, &b->addr, a->maskbits, CMP_EXACT))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1716</td><td><a href="policies.c.html#L1716">((family == AF_INET && kill_v4) || (family == AF_INET6 && kill_v6))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="policies.c.html#L1230">(n->prt_min > 1 || n->prt_max != 65535)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2212</td><td><a href="policies.c.html#L2212">(p->prt_min > port || p->prt_max < port)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="policies.c.html#L312">(options->ClientUseIPv4 == 1 && (policy_is_reject_star(reachable_or_addr_policy, AF_INET, 0) || policy_is_reject_star(reachable_dir_addr_policy, AF_INET, 0)))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">3024</td><td><a href="policies.c.html#L3024">(!options->ExitPolicyRejectPrivate && !options->ExitPolicyRejectLocalInterfaces)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1593</td><td><a href="policies.c.html#L1593">(tor_addr_compare_masked(&a->addr, &b->addr, minbits, CMP_EXACT))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">159</td><td><a href="policies.c.html#L159">(family == AF_INET6 || family == AF_INET || p->is_private)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">276</td><td><a href="policies.c.html#L276">(!options->ReachableORAddresses && options->ReachableAddresses)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">291</td><td><a href="policies.c.html#L291">(!options->ReachableDirAddresses && options->ReachableAddresses)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">709</td><td><a href="policies.c.html#L709">(node->ri && reachable_addr_allows_ri_impl(node->ri, fw_connection, pref_only, pref_ipv6))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">712</td><td><a href="policies.c.html#L712">(node->rs && reachable_addr_allows_rs_impl(node->rs, fw_connection, pref_only, pref_ipv6))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">717</td><td><a href="policies.c.html#L717">(node->md && reachable_addr_allows_md_impl(node->md, fw_connection, pref_only, pref_ipv6))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1665</td><td><a href="policies.c.html#L1665">((is_ipv4 && ipv4_rules) || (!is_ipv4 && ipv6_rules))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2327</td><td><a href="policies.c.html#L2327">(tor_snprintf(buf + written, buflen - written, "/%d", policy->maskbits) < 0)</a></td><td class="num">10.45</td></tr>
+      <tr><td class="num line">2670</td><td><a href="policies.c.html#L2670">(*c != ',' && c >= shorter_str)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1566</td><td><a href="policies.c.html#L1566">(a->maskbits > b->maskbits)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1589</td><td><a href="policies.c.html#L1589">(a->maskbits < b->maskbits)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1766</td><td><a href="policies.c.html#L1766">(ap->policy_type != tmp->policy_type)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2337</td><td><a href="policies.c.html#L2337">(policy->prt_min == policy->prt_max)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2565</td><td><a href="policies.c.html#L2565">(tor_addr_parse_mask_ports(private_nets[i], 0, &addr, &maskbits, NULL, NULL) < 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2816</td><td><a href="policies.c.html#L2816">(e->min_port == e->max_port)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3101</td><td><a href="policies.c.html#L3101">(p->refcnt-- <= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2607</td><td><a href="policies.c.html#L2607">(f != AF_INET && f != AF_INET6)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="policies.c.html#L1256">(load_policy_from_option(options->MetricsPortPolicy, "MetricsPortPolicy", &metrics_policy, -1) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1271</td><td><a href="policies.c.html#L1271">(load_policy_from_option(options->SocksPolicy, "SocksPolicy", &socks_policy, -1) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1274</td><td><a href="policies.c.html#L1274">(load_policy_from_option(options->DirPolicy, "DirPolicy", &dir_policy, -1) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1277</td><td><a href="policies.c.html#L1277">(load_policy_from_option(options->AuthDirReject, "AuthDirReject", &authdir_reject_policy, ADDR_POLICY_REJECT) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1280</td><td><a href="policies.c.html#L1280">(load_policy_from_option(options->AuthDirInvalid, "AuthDirInvalid", &authdir_invalid_policy, ADDR_POLICY_REJECT) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1283</td><td><a href="policies.c.html#L1283">(load_policy_from_option(options->AuthDirBadExit, "AuthDirBadExit", &authdir_badexit_policy, ADDR_POLICY_REJECT) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1286</td><td><a href="policies.c.html#L1286">(load_policy_from_option(options->AuthDirMiddleOnly, "AuthDirMiddleOnly", &authdir_middleonly_policy, ADDR_POLICY_REJECT) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2134</td><td><a href="policies.c.html#L2134">(or_options->ExitRelay == 0 || policy_using_default_exit_options(or_options))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2821</td><td><a href="policies.c.html#L2821">(i < policy->n_entries - 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1166</td><td><a href="policies.c.html#L1166">(public_server_mode(options) && !warned_about_nonexit && policy_using_default_exit_options(options))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2928</td><td><a href="policies.c.html#L2928">(node->md->exit_policy == NULL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">319</td><td><a href="policies.c.html#L319">(reachable_addr_use_ipv6(options) && (policy_is_reject_star(reachable_or_addr_policy, AF_INET6, 0) || policy_is_reject_star(reachable_dir_addr_policy, AF_INET6, 0)))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1419</td><td><a href="policies.c.html#L1419">(tmpe->addr.family == AF_UNSPEC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1450</td><td><a href="policies.c.html#L1450">(tmpe->addr.family == AF_UNSPEC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1493</td><td><a href="policies.c.html#L1493">(tmpe->addr.family == AF_UNSPEC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1879</td><td><a href="policies.c.html#L1879">(family == AF_INET || family == AF_UNSPEC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1882</td><td><a href="policies.c.html#L1882">(family == AF_INET6 || family == AF_UNSPEC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2913</td><td><a href="policies.c.html#L2913">(addr && tor_addr_family(addr) == AF_INET6)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1901</td><td><a href="policies.c.html#L1901">(found_final_effective_entry && first_redundant_entry > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1177</td><td><a href="policies.c.html#L1177">(parse_addr_policy(options->DirPolicy, &addr_policy, -1))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1179</td><td><a href="policies.c.html#L1179">(parse_addr_policy(options->SocksPolicy, &addr_policy, -1))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1181</td><td><a href="policies.c.html#L1181">(parse_addr_policy(options->AuthDirReject, &addr_policy, ADDR_POLICY_REJECT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1184</td><td><a href="policies.c.html#L1184">(parse_addr_policy(options->AuthDirInvalid, &addr_policy, ADDR_POLICY_REJECT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1187</td><td><a href="policies.c.html#L1187">(parse_addr_policy(options->AuthDirBadExit, &addr_policy, ADDR_POLICY_REJECT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1190</td><td><a href="policies.c.html#L1190">(parse_addr_policy(options->AuthDirMiddleOnly, &addr_policy, ADDR_POLICY_REJECT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1194</td><td><a href="policies.c.html#L1194">(parse_addr_policy(options->ReachableAddresses, &addr_policy, ADDR_POLICY_ACCEPT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1197</td><td><a href="policies.c.html#L1197">(parse_addr_policy(options->ReachableORAddresses, &addr_policy, ADDR_POLICY_ACCEPT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1200</td><td><a href="policies.c.html#L1200">(parse_addr_policy(options->ReachableDirAddresses, &addr_policy, ADDR_POLICY_ACCEPT))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2515</td><td><a href="policies.c.html#L2515">(addrbits - scale - maskbits >= 64)</a></td><td class="num">5.70</td></tr>
+      <tr><td class="num line">168</td><td><a href="policies.c.html#L168">(p->maskbits != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">499</td><td><a href="policies.c.html#L499">(options->ClientPreferIPv6ORPort == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">521</td><td><a href="policies.c.html#L521">(options->ClientPreferIPv6DirPort == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1458</td><td><a href="policies.c.html#L1458">(tmpe->policy_type == ADDR_POLICY_ACCEPT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1469</td><td><a href="policies.c.html#L1469">(tmpe->policy_type == ADDR_POLICY_REJECT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1498</td><td><a href="policies.c.html#L1498">(tmpe->maskbits == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1500</td><td><a href="policies.c.html#L1500">(tmpe->policy_type == ADDR_POLICY_ACCEPT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1511</td><td><a href="policies.c.html#L1511">(tmpe->policy_type == ADDR_POLICY_REJECT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2232</td><td><a href="policies.c.html#L2232">(p->policy_type == ADDR_POLICY_ACCEPT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2233</td><td><a href="policies.c.html#L2233">(p->maskbits > 8)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2238</td><td><a href="policies.c.html#L2238">(p->policy_type == ADDR_POLICY_REJECT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="policies.c.html#L2304">(policy->maskbits == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2554</td><td><a href="policies.c.html#L2554">(p->policy_type == ADDR_POLICY_ACCEPT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2555</td><td><a href="policies.c.html#L2555">(p->maskbits == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2558</td><td><a href="policies.c.html#L2558">(p->policy_type == ADDR_POLICY_REJECT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2814</td><td><a href="policies.c.html#L2814">(i < policy->n_entries)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2858</td><td><a href="policies.c.html#L2858">(i < policy->n_entries)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3149</td><td><a href="policies.c.html#L3149">(n++ > 10)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">963</td><td><a href="policies.c.html#L963">(!have_v4 && !have_v6)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">420</td><td><a href="policies.c.html#L420">(!addr || tor_addr_is_null(addr) || !port)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">585</td><td><a href="policies.c.html#L585">(reachable_addr_allows_addr(ipv4_addr, (fw_connection == FIREWALL_OR_CONNECTION ? ipv4_orport : ipv4_dirport), fw_connection, pref_only, pref_ipv6))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">594</td><td><a href="policies.c.html#L594">(reachable_addr_allows_addr(ipv6_addr, (fw_connection == FIREWALL_OR_CONNECTION ? ipv6_orport : ipv6_dirport), fw_connection, pref_only, pref_ipv6))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1541</td><td><a href="policies.c.html#L1541">(addr == NULL || tor_addr_is_null(addr))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1610</td><td><a href="policies.c.html#L1610">(parse_addr_policy(&tmp, policy, -1) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1736</td><td><a href="policies.c.html#L1736">(i < smartlist_len(dest) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1760</td><td><a href="policies.c.html#L1760">(i < smartlist_len(dest) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1893</td><td><a href="policies.c.html#L1893">(i < smartlist_len(policy) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2068</td><td><a href="policies.c.html#L2068">(addr && !tor_addr_is_null(addr))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2333</td><td><a href="policies.c.html#L2333">(written + 4 > buflen)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2507</td><td><a href="policies.c.html#L2507">(maskbits > (addrbits - scale))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2757</td><td><a href="policies.c.html#L2757">(*next == ',')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2759</td><td><a href="policies.c.html#L2759">(*next != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3002</td><td><a href="policies.c.html#L3002">(*priv != NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">123</td><td><a href="policies.c.html#L123">(!p->is_private)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">478</td><td><a href="policies.c.html#L478">(!options->ClientUseIPv4)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1827</td><td><a href="policies.c.html#L1827">(!port->is_unix_addr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2152</td><td><a href="policies.c.html#L2152">(!or_options->BridgeRelay)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2225</td><td><a href="policies.c.html#L2225">(subnet_status[i] != 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2851</td><td><a href="policies.c.html#L2851">(addr && tor_addr_is_null(addr))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">774</td><td><a href="policies.c.html#L774">(use_a && use_b)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1890</td><td><a href="policies.c.html#L1890">(found_ipv4_wildcard && found_ipv6_wildcard)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">474</td><td><a href="policies.c.html#L474">(server_mode(options) || !reachable_addr_use_ipv6(options))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">298</td><td><a href="policies.c.html#L298">(options->ReachableDirAddresses)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1371</td><td><a href="policies.c.html#L1371">(a->is_private)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1392</td><td><a href="policies.c.html#L1392">(e->is_canonical)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2144</td><td><a href="policies.c.html#L2144">(or_options->IPv6Exit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2148</td><td><a href="policies.c.html#L2148">(or_options->ExitPolicyRejectPrivate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2153</td><td><a href="policies.c.html#L2153">(or_options->ReducedExitPolicy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2159</td><td><a href="policies.c.html#L2159">(or_options->ExitPolicyRejectLocalInterfaces)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2164</td><td><a href="policies.c.html#L2164">(or_options->ExitPolicyRejectPrivate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2169</td><td><a href="policies.c.html#L2169">(or_options->ExitPolicyRejectLocalInterfaces)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2217</td><td><a href="policies.c.html#L2217">(p->maskbits)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2302</td><td><a href="policies.c.html#L2302">(policy->is_private)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2910</td><td><a href="policies.c.html#L2910">(node->rejects_all)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2915</td><td><a href="policies.c.html#L2915">(node->ri)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2917</td><td><a href="policies.c.html#L2917">(node->md)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2925</td><td><a href="policies.c.html#L2925">(node->ri)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2927</td><td><a href="policies.c.html#L2927">(node->md)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3034</td><td><a href="policies.c.html#L3034">(options->ExitPolicyRejectPrivate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3039</td><td><a href="policies.c.html#L3039">(options->ExitPolicyRejectLocalInterfaces)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3102</td><td><a href="policies.c.html#L3102">(p->is_canonical)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3138</td><td><a href="policies.c.html#L3138">(!HT_EMPTY(&policy_root))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">117</td><td><a href="policies.c.html#L117">(!*policy)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">153</td><td><a href="policies.c.html#L153">(!*policy)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1631</td><td><a href="policies.c.html#L1631">(!*dest)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="policies.c.html#L306">(policy_is_reject_star(reachable_or_addr_policy, AF_UNSPEC, 0) || policy_is_reject_star(reachable_dir_addr_policy, AF_UNSPEC, 0))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">926</td><td><a href="policies.c.html#L926">(smartlist_len(lspecs) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1160</td><td><a href="policies.c.html#L1160">(policies_parse_exit_policy_from_options(options, 0, NULL, &addr_policy))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1289</td><td><a href="policies.c.html#L1289">(parse_metrics_port_policy(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1292</td><td><a href="policies.c.html#L1292">(parse_reachable_addresses() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1712</td><td><a href="policies.c.html#L1712">(i < smartlist_len(dest))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1738</td><td><a href="policies.c.html#L1738">(j < smartlist_len(dest))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1762</td><td><a href="policies.c.html#L1762">(j < smartlist_len(dest))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2651</td><td><a href="policies.c.html#L2651">(smartlist_len(accepts) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2655</td><td><a href="policies.c.html#L2655">(smartlist_len(rejects) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">161</td><td><a href="policies.c.html#L161">(family == AF_UNSPEC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="policies.c.html#L240">(r == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="policies.c.html#L246">(*dest)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="policies.c.html#L494">(pref_ipv6 >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">516</td><td><a href="policies.c.html#L516">(pref_ipv6 >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">540</td><td><a href="policies.c.html#L540">(fw_connection == FIREWALL_OR_CONNECTION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">544</td><td><a href="policies.c.html#L544">(fw_connection == FIREWALL_DIR_CONNECTION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">680</td><td><a href="policies.c.html#L680">(fw_connection == FIREWALL_DIR_CONNECTION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">802</td><td><a href="policies.c.html#L802">(pref_only || pref)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">922</td><td><a href="policies.c.html#L922">(lspecs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1224</td><td><a href="policies.c.html#L1224">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1227</td><td><a href="policies.c.html#L1227">(*policy)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="policies.c.html#L1330">(len_a != len_b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="policies.c.html#L1333">(i < len_a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1542</td><td><a href="policies.c.html#L1542">(port == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1548</td><td><a href="policies.c.html#L1548">(port == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1725</td><td><a href="policies.c.html#L1725">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1727</td><td><a href="policies.c.html#L1727">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="policies.c.html#L1852">(*dest)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2087</td><td><a href="policies.c.html#L2087">(i < OUTBOUND_ADDR_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2088</td><td><a href="policies.c.html#L2088">(j < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2307</td><td><a href="policies.c.html#L2307">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="policies.c.html#L2309">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2321</td><td><a href="policies.c.html#L2321">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2340</td><td><a href="policies.c.html#L2340">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2347</td><td><a href="policies.c.html#L2347">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2351</td><td><a href="policies.c.html#L2351">(written < buflen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2531</td><td><a href="policies.c.html#L2531">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2610</td><td><a href="policies.c.html#L2610">(f != family)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2676</td><td><a href="policies.c.html#L2676">(rejects_len < accepts_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2726</td><td><a href="policies.c.html#L2726">(*summary)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2727</td><td><a href="policies.c.html#L2727">(n_entries == MAX_EXITPOLICY_SUMMARY_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2779</td><td><a href="policies.c.html#L2779">(n_entries == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2967</td><td><a href="policies.c.html#L2967">(bytes_written_to_pbuf < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="policies.c.html#L127">(private_nets[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2562</td><td><a href="policies.c.html#L2562">(private_nets[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1334</td><td><a href="policies.c.html#L1334">(!single_addr_policy_eq(smartlist_get(a, i), smartlist_get(b, i)))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">305</td><td><a href="policies.c.html#L305">(!server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1098</td><td><a href="policies.c.html#L1098">(!addr_policy_permits_tor_addr(addr, port, authdir_reject_policy))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1109</td><td><a href="policies.c.html#L1109">(!addr_policy_permits_tor_addr(addr, port, authdir_invalid_policy))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1120</td><td><a href="policies.c.html#L1120">(!addr_policy_permits_tor_addr(addr, port, authdir_badexit_policy))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1131</td><td><a href="policies.c.html#L1131">(!addr_policy_permits_tor_addr(addr, port, authdir_middleonly_policy))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2714</td><td><a href="policies.c.html#L2714">(!strcmpstart(summary, "accept "))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2717</td><td><a href="policies.c.html#L2717">(!strcmpstart(summary, "reject "))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2994</td><td><a href="policies.c.html#L2994">(!strcmp(question, "exit-policy/default"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2996</td><td><a href="policies.c.html#L2996">(!strcmp(question, "exit-policy/reject-private/default"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3014</td><td><a href="policies.c.html#L3014">(!strcmp(question, "exit-policy/reject-private/relay"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3055</td><td><a href="policies.c.html#L3055">(!strcmpstart(question, "exit-policy/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3067</td><td><a href="policies.c.html#L3067">(!strcmp(question, "exit-policy/ipv4"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3069</td><td><a href="policies.c.html#L3069">(!strcmp(question, "exit-policy/ipv6"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3071</td><td><a href="policies.c.html#L3071">(!strcmp(question, "exit-policy/full"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="policies.c.html#L208">(!cfg)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">612</td><td><a href="policies.c.html#L612">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">629</td><td><a href="policies.c.html#L629">(!rs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">650</td><td><a href="policies.c.html#L650">(!rs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">675</td><td><a href="policies.c.html#L675">(!md)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">697</td><td><a href="policies.c.html#L697">(!node)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">735</td><td><a href="policies.c.html#L735">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="policies.c.html#L883">(!rs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">964</td><td><a href="policies.c.html#L964">(!have_v6)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">997</td><td><a href="policies.c.html#L997">(!node)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1037</td><td><a href="policies.c.html#L1037">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1085</td><td><a href="policies.c.html#L1085">(!cc_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1397</td><td><a href="policies.c.html#L1397">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1538</td><td><a href="policies.c.html#L1538">(!policy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1982</td><td><a href="policies.c.html#L1982">(!ipv6_exit)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2252</td><td><a href="policies.c.html#L2252">(!policy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2267</td><td><a href="policies.c.html#L2267">(!policy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2576</td><td><a href="policies.c.html#L2576">(!is_private)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2736</td><td><a href="policies.c.html#L2736">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2754</td><td><a href="policies.c.html#L2754">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2774</td><td><a href="policies.c.html#L2774">(!next)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3019</td><td><a href="policies.c.html#L3019">(!me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3062</td><td><a href="policies.c.html#L3062">(!me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3088</td><td><a href="policies.c.html#L3088">(!lst)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3098</td><td><a href="policies.c.html#L3098">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">763</td><td><a href="policies.c.html#L763">(reachable_addr_allows_ap(a, fw_connection, pref_only, pref_ipv6))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="policies.c.html#L768">(reachable_addr_allows_ap(b, fw_connection, pref_only, pref_ipv6))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1661</td><td><a href="policies.c.html#L1661">(tor_addr_is_public_for_reject(addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="policies.c.html#L1741">(addr_policy_covers(ap, tmp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1767</td><td><a href="policies.c.html#L1767">(addr_policy_intersects(ap, tmp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1770</td><td><a href="policies.c.html#L1770">(addr_policy_covers(tmp, ap))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1998</td><td><a href="policies.c.html#L1998">(parse_addr_policy(cfg, dest, -1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="policies.c.html#L221">(item)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">223</td><td><a href="policies.c.html#L223">(malformed_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">862</td><td><a href="policies.c.html#L862">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">890</td><td><a href="policies.c.html#L890">(node)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">941</td><td><a href="policies.c.html#L941">(have_v4)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">950</td><td><a href="policies.c.html#L950">(have_v6)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1243</td><td><a href="policies.c.html#L1243">(killed_any_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1815</td><td><a href="policies.c.html#L1815">(configured_addresses)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1821</td><td><a href="policies.c.html#L1821">(reject_configured_port_addresses)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1834</td><td><a href="policies.c.html#L1834">(reject_interface_addresses)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1843</td><td><a href="policies.c.html#L1843">(ipv6_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1985</td><td><a href="policies.c.html#L1985">(rejectprivate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2006</td><td><a href="policies.c.html#L2006">(add_reduced_policy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2008</td><td><a href="policies.c.html#L2008">(add_default_policy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2086</td><td><a href="policies.c.html#L2086">(or_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2305</td><td><a href="policies.c.html#L2305">(format_for_desc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2624</td><td><a href="policies.c.html#L2624">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2640</td><td><a href="policies.c.html#L2640">(last)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2866</td><td><a href="policies.c.html#L2866">(found_match)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2882</td><td><a href="policies.c.html#L2882">(accept_)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2919</td><td><a href="policies.c.html#L2919">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3106</td><td><a href="policies.c.html#L3106">(found)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

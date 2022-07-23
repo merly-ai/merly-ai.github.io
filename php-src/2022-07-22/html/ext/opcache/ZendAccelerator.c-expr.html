@@ -1,0 +1,567 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\opcache\ZendAccelerator.c Ctrl Expressions (516) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\opcache\ZendAccelerator.c Ctrl Expressions (516) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\opcache\ZendAccelerator.c Ctrl Expressions (516)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2002</td><td><a href="ZendAccelerator.c.html#L2002">(ZCG(cache_persistent_script) && (<span style='background-color:#9c4c02;'>(<span style='background-color:#741da3;'>!EG(current_execute_data) && file_handle->primary_script && ZCG(cache_opline) == NULL</span>) || (EG(current_execute_data) && EG(current_execute_data)->func && ZEND_USER_CODE(EG(current_execute_data)->func->common.type) && ZCG(cache_opline) == EG(current_execute_data)->opline)</span>))</a></td><td class="num">1145.00</td></tr>
+      <tr><td class="num line">2486</td><td><a href="ZendAccelerator.c.html#L2486">(<span style='background-color:#9c4c02;'>(<span style='background-color:#741da3;'>!EG(current_execute_data) && handle->primary_script && ZCG(cache_opline) == NULL</span>) || (EG(current_execute_data) && EG(current_execute_data)->func && ZEND_USER_CODE(EG(current_execute_data)->func->common.type) && ZCG(cache_opline) == EG(current_execute_data)->opline)</span>)</a></td><td class="num">1126.75</td></tr>
+      <tr><td class="num line">1775</td><td><a href="ZendAccelerator.c.html#L1775">(ZCG(accel_directives).file_update_protection && (accel_time_t(<span style='background-color:#741da3;'>ZCG(request_time) - ZCG(accel_directives).file_update_protection</span>) < timestamp))</a></td><td class="num">1060.10</td></tr>
+      <tr><td class="num line">3509</td><td><a href="ZendAccelerator.c.html#L3509">(<span style='background-color:#741da3;'>ZCSG(preload_script)->ping_auto_globals_mask & ~ZCG(auto_globals_mask)</span>)</a></td><td class="num">1027.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="ZendAccelerator.c.html#L251">((<span style='background-color:#741da3;'>((double)ZSMMG(wasted_shared_memory)) / ZCG(accel_directives).memory_consumption</span>) >= ZCG(accel_directives).max_wasted_percentage)</a></td><td class="num">1024.10</td></tr>
+      <tr><td class="num line">1980</td><td><a href="ZendAccelerator.c.html#L1980">(<span style='background-color:#741da3;'>file_handle->filename && ZCG(accel_directives).file_cache && ZCG(enabled) && accel_startup_ok</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="ZendAccelerator.c.html#L1158">(<span style='background-color:#741da3;'>ZCG(accel_directives).revalidate_freq && persistent_script->dynamic_members.revalidate >= ZCG(request_time)</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">911</td><td><a href="ZendAccelerator.c.html#L911">(<span style='background-color:#741da3;'>ZCG(accel_directives).force_restart_timeout && ZCSG(force_restart_time) && time(NULL) >= ZCSG(force_restart_time)</span>)</a></td><td class="num">1011.00</td></tr>
+      <tr><td class="num line">3192</td><td><a href="ZendAccelerator.c.html#L3192">(<span style='background-color:#741da3;'>!page_size && (page_size & (page_size - 1))</span>)</a></td><td class="num">1010.10</td></tr>
+      <tr><td class="num line">1300</td><td><a href="ZendAccelerator.c.html#L1300">(UNEXPECTED(<span style='background-color:#741da3;'>(size_t)(cwd_len + path_length + include_path_len + 2) >= sizeof(ZCG(_key))</span>))</a></td><td class="num">1007.05</td></tr>
+      <tr><td class="num line">1908</td><td><a href="ZendAccelerator.c.html#L1908">(<span style='background-color:#9c4c02;'>!EG(current_execute_data) || !EG(current_execute_data)->opline || !EG(current_execute_data)->func || !ZEND_USER_CODE(EG(current_execute_data)->func->common.type) || EG(current_execute_data)->opline->opcode != ZEND_INCLUDE_OR_EVAL || (EG(current_execute_data)->opline->extended_value != ZEND_INCLUDE_ONCE && EG(current_execute_data)->opline->extended_value != ZEND_REQUIRE_ONCE)</span>)</a></td><td class="num">213.75</td></tr>
+      <tr><td class="num line">2203</td><td><a href="ZendAccelerator.c.html#L2203">(<span style='background-color:#9c4c02;'>!EG(current_execute_data) || !EG(current_execute_data)->opline || !EG(current_execute_data)->func || !ZEND_USER_CODE(EG(current_execute_data)->func->common.type) || EG(current_execute_data)->opline->opcode != ZEND_INCLUDE_OR_EVAL || (EG(current_execute_data)->opline->extended_value != ZEND_INCLUDE_ONCE && EG(current_execute_data)->opline->extended_value != ZEND_REQUIRE_ONCE)</span>)</a></td><td class="num">213.75</td></tr>
+      <tr><td class="num line">2511</td><td><a href="ZendAccelerator.c.html#L2511">((!EG(current_execute_data)) || (<span style='background-color:#9c4c02;'>EG(current_execute_data) && EG(current_execute_data)->func && ZEND_USER_CODE(EG(current_execute_data)->func->common.type) && EG(current_execute_data)->opline->opcode == ZEND_INCLUDE_OR_EVAL && (EG(current_execute_data)->opline->extended_value == ZEND_INCLUDE_ONCE || EG(current_execute_data)->opline->extended_value == ZEND_REQUIRE_ONCE)</span>))</a></td><td class="num">190.00</td></tr>
+      <tr><td class="num line">659</td><td><a href="ZendAccelerator.c.html#L659">(Z_FUNC(p->val)->common.arg_info && (Z_FUNC(p->val)->common.fn_flags & ZEND_ACC_HAS_RETURN_TYPE | ZEND_ACC_HAS_TYPE_HINTS))</a></td><td class="num">92.00</td></tr>
+      <tr><td class="num line">194</td><td><a href="ZendAccelerator.c.html#L194">((*p >= 'a' && *p <= 'z') || (*p >= 'A' && *p <= 'Z') || (*p >= '0' && *p <= '9') || *p == '+' || *p == '-' || *p == '.')</a></td><td class="num">69.75</td></tr>
+      <tr><td class="num line">4075</td><td><a href="ZendAccelerator.c.html#L4075">(opline->opcode == ZEND_INCLUDE_OR_EVAL && opline->extended_value != ZEND_EVAL && opline->op1_type == IS_CONST && Z_TYPE_P(RT_CONSTANT(opline, opline->op1)) == IS_STRING && opline->result_type == IS_UNUSED)</a></td><td class="num">62.75</td></tr>
+      <tr><td class="num line">2026</td><td><a href="ZendAccelerator.c.html#L2026">(UNEXPECTED(is_stream_path(ZSTR_VAL(file_handle->filename)) && !is_cacheable_stream_path(ZSTR_VAL(file_handle->filename))))</a></td><td class="num">60.50</td></tr>
+      <tr><td class="num line">4116</td><td><a href="ZendAccelerator.c.html#L4116">(opline->opcode == ZEND_INCLUDE_OR_EVAL && opline->extended_value != ZEND_EVAL && opline->op1_type == IS_CONST && Z_TYPE_P(RT_CONSTANT(opline, opline->op1)) == IS_STRING)</a></td><td class="num">57.25</td></tr>
+      <tr><td class="num line">3129</td><td><a href="ZendAccelerator.c.html#L3129">(ZCG(accel_directives).huge_code_pages && (strcmp(sapi_module.name, "cli") == 0 || strcmp(sapi_module.name, "cli-server") == 0 || strcmp(sapi_module.name, "cgi-fcgi") == 0 || strcmp(sapi_module.name, "fpm-fcgi") == 0))</a></td><td class="num">52.75</td></tr>
+      <tr><td class="num line">3293</td><td><a href="ZendAccelerator.c.html#L3293">((func = zend_hash_str_find_ptr(CG(function_table), "chdir", sizeof("chdir") - 1)) != NULL && func->type == ZEND_INTERNAL_FUNCTION)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">1571</td><td><a href="ZendAccelerator.c.html#L1571">(key && (!ZCG(accel_directives).validate_timestamps || (new_persistent_script->timestamp == existing_persistent_script->timestamp)))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">2118</td><td><a href="ZendAccelerator.c.html#L2118">(persistent_script && ZCG(accel_directives).consistency_checks && persistent_script->dynamic_members.hits % ZCG(accel_directives).consistency_checks == 0)</a></td><td class="num">47.35</td></tr>
+      <tr><td class="num line">665</td><td><a href="ZendAccelerator.c.html#L665">(Z_FUNC(p->val)->common.fn_flags & ZEND_ACC_VARIADIC)</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">3528</td><td><a href="ZendAccelerator.c.html#L3528">(ZSTR_LEN(filename) > sizeof(" eval()'d code") && *(ZSTR_VAL(filename) + ZSTR_LEN(filename) - sizeof(" eval()'d code")) == ':')</a></td><td class="num">45.70</td></tr>
+      <tr><td class="num line">1327</td><td><a href="ZendAccelerator.c.html#L1327">(EXPECTED(EG(current_execute_data)) && EXPECTED((parent_script = zend_get_executed_filename_ex()) != NULL))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">2828</td><td><a href="ZendAccelerator.c.html#L2828">(ZCG(accel_directives).enable_cli && (strcmp(sapi_module.name, "cli") == 0 || strcmp(sapi_module.name, "phpdbg") == 0))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">1331</td><td><a href="ZendAccelerator.c.html#L1331">((parent_script_len-- > 0) && !IS_SLASH(ZSTR_VAL(parent_script)[parent_script_len]))</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">1881</td><td><a href="ZendAccelerator.c.html#L1881">(is_stream_path(ZSTR_VAL(file_handle->filename)) && !is_cacheable_stream_path(ZSTR_VAL(file_handle->filename)))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">4128</td><td><a href="ZendAccelerator.c.html#L4128">(!IS_ABSOLUTE_PATH(Z_STRVAL_P(RT_CONSTANT(opline, opline->op1)), Z_STRLEN_P(RT_CONSTANT(opline, opline->op1))))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">538</td><td><a href="ZendAccelerator.c.html#L538">(UNEXPECTED((char*)ZCSG(interned_strings).end - (char*)ZCSG(interned_strings).top < STRTAB_STR_SIZE(str)))</a></td><td class="num">42.10</td></tr>
+      <tr><td class="num line">4614</td><td><a href="ZendAccelerator.c.html#L4614">(!ZCG(accel_directives).preload_user || !*ZCG(accel_directives).preload_user)</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">1108</td><td><a href="ZendAccelerator.c.html#L1108">(persistent_script->script.filename != file_handle->opened_path && !zend_string_equal_content(persistent_script->script.filename, file_handle->opened_path))</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">3069</td><td><a href="ZendAccelerator.c.html#L3069">((permflags & KVME_PROT_READ) && !(permflags & KVME_PROT_WRITE) && (permflags & KVME_PROT_EXEC) && entry->kve_path[0] != '\0')</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">3883</td><td><a href="ZendAccelerator.c.html#L3883">(!(ce->ce_flags & ZEND_ACC_TOP_LEVEL | ZEND_ACC_ANON_CLASS) || (ce->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">3992</td><td><a href="ZendAccelerator.c.html#L3992">((ce->ce_flags & ZEND_ACC_TOP_LEVEL | ZEND_ACC_ANON_CLASS) && !(ce->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">986</td><td><a href="ZendAccelerator.c.html#L986">(file_handle->opened_path && GetFileAttributesEx(file_handle->opened_path->val, GetFileExInfoStandard, &fdata) != 0)</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">1114</td><td><a href="ZendAccelerator.c.html#L1114">(full_path_ptr && persistent_script->script.filename != full_path_ptr && !zend_string_equal_content(persistent_script->script.filename, full_path_ptr))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="ZendAccelerator.c.html#L1748">(file_handle->opened_path && zend_accel_blacklist_is_blacklisted(&accel_blacklist, ZSTR_VAL(file_handle->opened_path), ZSTR_LEN(file_handle->opened_path)))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1951</td><td><a href="ZendAccelerator.c.html#L1951">((ZSTR_LEN(persistent_script->script.filename) < sizeof("phar://.phar")) || memcmp(ZSTR_VAL(persistent_script->script.filename), "phar://", sizeof("phar://") - 1))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">3829</td><td><a href="ZendAccelerator.c.html#L3829">(func && func == op_array->dynamic_func_defs[opline->op2.num])</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">2092</td><td><a href="ZendAccelerator.c.html#L2092">(EXPECTED(persistent_script != NULL) && UNEXPECTED(ZCG(accel_directives).validate_permission) && file_handle->type == ZEND_HANDLE_FILENAME && UNEXPECTED(check_persistent_script_access(persistent_script)))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">656</td><td><a href="ZendAccelerator.c.html#L656">(Z_FUNC(p->val)->common.function_name)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">707</td><td><a href="ZendAccelerator.c.html#L707">(Z_FUNC(q->val)->common.function_name)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1412</td><td><a href="ZendAccelerator.c.html#L1412">(force || !ZCG(accel_directives).validate_timestamps || do_validate_timestamps(persistent_script, &file_handle) == FAILURE)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1781</td><td><a href="ZendAccelerator.c.html#L1781">(ZCG(accel_directives).max_file_size > 0 && size > (size_t)ZCG(accel_directives).max_file_size)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3315</td><td><a href="ZendAccelerator.c.html#L3315">(ZCG(enabled) && accel_startup_ok && ZCG(accel_directives).user_blacklist_filename && *ZCG(accel_directives.user_blacklist_filename))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3302</td><td><a href="ZendAccelerator.c.html#L3302">((ini_entry = zend_hash_str_find_ptr(EG(ini_directives), "include_path", sizeof("include_path") - 1)) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3388</td><td><a href="ZendAccelerator.c.html#L3388">((ini_entry = zend_hash_str_find_ptr(EG(ini_directives), "include_path", sizeof("include_path") - 1)) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3996</td><td><a href="ZendAccelerator.c.html#L3996">(!(ce->ce_flags & ZEND_ACC_ANON_CLASS) && zend_hash_exists(EG(class_table), lcname))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1756</td><td><a href="ZendAccelerator.c.html#L1756">(ZCG(accel_directives).validate_timestamps || ZCG(accel_directives).file_update_protection || ZCG(accel_directives).max_file_size > 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1035</td><td><a href="ZendAccelerator.c.html#L1035">(zend_fstat(fileno(file_handle->handle.fp), &statbuf) == -1)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1914</td><td><a href="ZendAccelerator.c.html#L1914">(zend_hash_add_empty_element(&EG(included_files), persistent_script->script.filename) != NULL)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">2209</td><td><a href="ZendAccelerator.c.html#L2209">(zend_hash_add_empty_element(&EG(included_files), persistent_script->script.filename) != NULL)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3251</td><td><a href="ZendAccelerator.c.html#L3251">(JIT_G(buffer_size) == 0 || !ZSMMG(reserved) || zend_jit_startup(ZSMMG(reserved), jit_size, reattached) != SUCCESS)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3532</td><td><a href="ZendAccelerator.c.html#L3532">(cfilenamelen && cfilename[cfilenamelen--] != '(')</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">4515</td><td><a href="ZendAccelerator.c.html#L4515">(zend_hash_num_elements(&script->script.class_table) > 1)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">3026</td><td><a href="ZendAccelerator.c.html#L3026">(perm[0] == 'r' && perm[1] == '-' && perm[2] == 'x' && name[0] == '/')</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1646</td><td><a href="ZendAccelerator.c.html#L1646">(key && !zend_string_starts_with_literal(key, "phar://") && !zend_string_equals(new_persistent_script->script.filename, key))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2263</td><td><a href="ZendAccelerator.c.html#L2263">(ce != entry->dependencies[i].ce)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3141</td><td><a href="ZendAccelerator.c.html#L3141">(!ZCG(accel_directives).enable_cli && strcmp(sapi_module.name, "cli") == 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">989</td><td><a href="ZendAccelerator.c.html#L989">(CompareFileTime(&fdata.ftLastWriteTime, &utc_base_ft) < 0)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="ZendAccelerator.c.html#L1036">(zend_get_stream_timestamp(ZSTR_VAL(file_handle->filename), &statbuf) != SUCCESS)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">1055</td><td><a href="ZendAccelerator.c.html#L1055">(zend_get_stream_timestamp(ZSTR_VAL(file_handle->filename), &statbuf) != SUCCESS)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">3741</td><td><a href="ZendAccelerator.c.html#L3741">(EXPECTED(zval_update_constant_ex(val, c->ce) == SUCCESS))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3759</td><td><a href="ZendAccelerator.c.html#L3759">(UNEXPECTED(zval_update_constant_ex(val, prop->ce) != SUCCESS))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4572</td><td><a href="ZendAccelerator.c.html#L4572">(ZCG(accel_directives).preload && *ZCG(accel_directives).preload)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4668</td><td><a href="ZendAccelerator.c.html#L4668">(ZCG(accel_directives).preload_user && *ZCG(accel_directives).preload_user)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4094</td><td><a href="ZendAccelerator.c.html#L4094">(opline->opcode != ZEND_NOP && opline->opcode != ZEND_RETURN && opline->opcode != ZEND_HANDLE_EXCEPTION)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1258</td><td><a href="ZendAccelerator.c.html#L1258">(!ZCG(include_path) || ZSTR_LEN(ZCG(include_path)) == 0)</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">1200</td><td><a href="ZendAccelerator.c.html#L1200">(UNEXPECTED(!ZCG(accel_directives).use_cwd))</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="ZendAccelerator.c.html#L498">(EXPECTED(ZSTR_H(s) == h) && zend_string_equal_content(s, str))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">531</td><td><a href="ZendAccelerator.c.html#L531">(EXPECTED(ZSTR_H(s) == h) && zend_string_equal_content(s, str))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">594</td><td><a href="ZendAccelerator.c.html#L594">(EXPECTED(ZSTR_H(s) == h) && zend_string_equals_cstr(s, str, size))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">4716</td><td><a href="ZendAccelerator.c.html#L4716">(accel_preload(ZCG(accel_directives).preload, in_child) != SUCCESS)</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">1458</td><td><a href="ZendAccelerator.c.html#L1458">(!zend_accel_hash_find(&ZCSG(hash), key))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">4125</td><td><a href="ZendAccelerator.c.html#L4125">(incl && incl->empty && opline->result_type == IS_UNUSED)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1065</td><td><a href="ZendAccelerator.c.html#L1065">(!stream || !stream->ops || !stream->ops->stat)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">3644</td><td><a href="ZendAccelerator.c.html#L3644">(ce->parent && (ce->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">3659</td><td><a href="ZendAccelerator.c.html#L3659">(ce->num_interfaces && (ce->ce_flags & ZEND_ACC_LINKED))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">882</td><td><a href="ZendAccelerator.c.html#L882">(mem_usage_check->l_type == F_UNLCK || mem_usage_check->l_pid <= 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3843</td><td><a href="ZendAccelerator.c.html#L3843">(op_array->num_dynamic_func_defs - opline->op2.num > 0)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">938</td><td><a href="ZendAccelerator.c.html#L938">(!wrapper->wops || !wrapper->wops->url_stat)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="ZendAccelerator.c.html#L1012">(sapi_module.get_stat && !EG(current_execute_data) && file_handle->primary_script)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1887</td><td><a href="ZendAccelerator.c.html#L1887">(file_handle->type == ZEND_HANDLE_FILENAME && accelerator_orig_zend_stream_open_function(file_handle) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2037</td><td><a href="ZendAccelerator.c.html#L2037">(file_handle->type == ZEND_HANDLE_FILENAME && accelerator_orig_zend_stream_open_function(file_handle) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1515</td><td><a href="ZendAccelerator.c.html#L1515">((char*)new_persistent_script->mem + new_persistent_script->size != (char*)ZCG(mem))</a></td><td class="num">11.35</td></tr>
+      <tr><td class="num line">1630</td><td><a href="ZendAccelerator.c.html#L1630">((char*)new_persistent_script->mem + new_persistent_script->size != (char*)ZCG(mem))</a></td><td class="num">11.35</td></tr>
+      <tr><td class="num line">4251</td><td><a href="ZendAccelerator.c.html#L4251">((char*)new_persistent_script->mem + new_persistent_script->size != (char*)ZCG(mem))</a></td><td class="num">11.35</td></tr>
+      <tr><td class="num line">2253</td><td><a href="ZendAccelerator.c.html#L2253">(i < ce->num_traits + ce->num_interfaces)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">2336</td><td><a href="ZendAccelerator.c.html#L2336">(i < proto->num_traits + proto->num_interfaces)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">2407</td><td><a href="ZendAccelerator.c.html#L2407">(i < proto->num_traits + proto->num_interfaces)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">3032</td><td><a href="ZendAccelerator.c.html#L3032">(ret == 1 && start == seg_end + huge_page_size)</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">1959</td><td><a href="ZendAccelerator.c.html#L1959">((ptr = strstr(phar_path, ".phar/")) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4417</td><td><a href="ZendAccelerator.c.html#L4417">((offset = zend_get_constant_str("__COMPILER_HALT_OFFSET__", sizeof("__COMPILER_HALT_OFFSET__") - 1)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3187</td><td><a href="ZendAccelerator.c.html#L3187">(JIT_G(enabled) && JIT_G(buffer_size) && zend_jit_check_support() == SUCCESS)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2254</td><td><a href="ZendAccelerator.c.html#L2254">(entry->traits_and_interfaces[i] != traits_and_interfaces[i])</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">4638</td><td><a href="ZendAccelerator.c.html#L4638">(initgroups(pw->pw_name, pw->pw_gid) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">3554</td><td><a href="ZendAccelerator.c.html#L3554">(!(copy = zend_hash_exists(preload_scripts, filename)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3592</td><td><a href="ZendAccelerator.c.html#L3592">(!(copy = zend_hash_exists(preload_scripts, filename)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1407</td><td><a href="ZendAccelerator.c.html#L1407">(persistent_script && !persistent_script->corrupted)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2055</td><td><a href="ZendAccelerator.c.html#L2055">(key && !persistent_script->corrupted)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2330</td><td><a href="ZendAccelerator.c.html#L2330">(!ZCG(accelerator_enabled) || (ZCSG(restart_in_progress) && accel_restart_is_active()))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1930</td><td><a href="ZendAccelerator.c.html#L1930">(persistent_script->ping_auto_globals_mask & ~ZCG(auto_globals_mask))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1976</td><td><a href="ZendAccelerator.c.html#L1976">(!file_handle->filename || !ZCG(accelerator_enabled))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2232</td><td><a href="ZendAccelerator.c.html#L2232">(persistent_script->ping_auto_globals_mask & ~ZCG(auto_globals_mask))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3889</td><td><a href="ZendAccelerator.c.html#L3889">(!(ce->ce_flags & ZEND_ACC_ANON_CLASS))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3975</td><td><a href="ZendAccelerator.c.html#L3975">(!(ce->ce_flags & ZEND_ACC_CONSTANTS_UPDATED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3976</td><td><a href="ZendAccelerator.c.html#L3976">(!(ce->ce_flags & ZEND_ACC_TRAIT))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4145</td><td><a href="ZendAccelerator.c.html#L4145">(!(op_array->fn_flags & ZEND_ACC_TRAIT_CLONE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2073</td><td><a href="ZendAccelerator.c.html#L2073">(persistent_script && persistent_script->corrupted)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2259</td><td><a href="ZendAccelerator.c.html#L2259">(found && entry->dependencies)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3589</td><td><a href="ZendAccelerator.c.html#L3589">(ce->info.user.filename != filename)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3616</td><td><a href="ZendAccelerator.c.html#L3616">(op_array && op_array->refcount)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">4086</td><td><a href="ZendAccelerator.c.html#L4086">(!incl || !incl->empty)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2122</td><td><a href="ZendAccelerator.c.html#L2122">(checksum != persistent_script->dynamic_members.checksum)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2723</td><td><a href="ZendAccelerator.c.html#L2723">(ZCG(accelerator_enabled) && ZCSG(last_restart_time) != ZCG(last_restart_time))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3551</td><td><a href="ZendAccelerator.c.html#L3551">(function->op_array.filename != filename)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3837</td><td><a href="ZendAccelerator.c.html#L3837">(opline->op2.num > 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4023</td><td><a href="ZendAccelerator.c.html#L4023">(op_array->fn_flags & ZEND_ACC_EARLY_BINDING)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4157</td><td><a href="ZendAccelerator.c.html#L4157">(op_array->fn_flags & ZEND_ACC_TRAIT_CLONE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4184</td><td><a href="ZendAccelerator.c.html#L4184">(ce->ce_flags & ZEND_ACC_TRAIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4191</td><td><a href="ZendAccelerator.c.html#L4191">(ce->ce_flags & ZEND_ACC_TRAIT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4661</td><td><a href="ZendAccelerator.c.html#L4661">(WIFEXITED(status) && WEXITSTATUS(status) == 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2132</td><td><a href="ZendAccelerator.c.html#L2132">(!persistent_script && ZCG(accel_directives).file_cache)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2824</td><td><a href="ZendAccelerator.c.html#L2824">(strcmp(sapi_module.name, *sapi_name) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3322</td><td><a href="ZendAccelerator.c.html#L3322">(!file_cache_only && ZCG(accel_directives).interned_strings_buffer)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="ZendAccelerator.c.html#L1333">(UNEXPECTED((size_t)(key_length + parent_script_len + 1) >= sizeof(ZCG(_key))))</a></td><td class="num">5.95</td></tr>
+      <tr><td class="num line">485</td><td><a href="ZendAccelerator.c.html#L485">(!ZCG(accelerator_enabled) || accel_activate_add() == FAILURE)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">730</td><td><a href="ZendAccelerator.c.html#L730">(Z_TYPE(c->value) == IS_STRING)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1131</td><td><a href="ZendAccelerator.c.html#L1131">(zend_get_file_handle_timestamp(file_handle, NULL) == persistent_script->timestamp)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1392</td><td><a href="ZendAccelerator.c.html#L1392">(!ZCG(accelerator_enabled) || accelerator_shm_read_lock() != SUCCESS)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2732</td><td><a href="ZendAccelerator.c.html#L2732">(!ZCG(accelerator_enabled) && !ZCG(pcre_reseted))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3550</td><td><a href="ZendAccelerator.c.html#L3550">(EXPECTED(function->type == ZEND_USER_FUNCTION))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3649</td><td><a href="ZendAccelerator.c.html#L3649">(p == Z_PTR(b2->val))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3666</td><td><a href="ZendAccelerator.c.html#L3666">(p == Z_PTR(b2->val))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4278</td><td><a href="ZendAccelerator.c.html#L4278">(zend_hash_num_elements(&script->function_table))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4289</td><td><a href="ZendAccelerator.c.html#L4289">(zend_hash_num_elements(&script->class_table))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4634</td><td><a href="ZendAccelerator.c.html#L4634">(setgid(pw->pw_gid) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4642</td><td><a href="ZendAccelerator.c.html#L4642">(setuid(pw->pw_uid) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">830</td><td><a href="ZendAccelerator.c.html#L830">(mem_usage_check->l_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1123</td><td><a href="ZendAccelerator.c.html#L1123">(persistent_script->timestamp == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1156</td><td><a href="ZendAccelerator.c.html#L1156">(persistent_script->timestamp == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1733</td><td><a href="ZendAccelerator.c.html#L1733">(file_handle->type == ZEND_HANDLE_FILENAME)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2110</td><td><a href="ZendAccelerator.c.html#L2110">(persistent_script && ZCG(accel_directives).validate_timestamps)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2250</td><td><a href="ZendAccelerator.c.html#L2250">(entry->parent != parent)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2260</td><td><a href="ZendAccelerator.c.html#L2260">(i < entry->dependencies_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2305</td><td><a href="ZendAccelerator.c.html#L2305">(i < entry->dependencies_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3491</td><td><a href="ZendAccelerator.c.html#L3491">(func->type == ZEND_INTERNAL_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3500</td><td><a href="ZendAccelerator.c.html#L3500">(ce->type == ZEND_INTERNAL_CLASS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3646</td><td><a href="ZendAccelerator.c.html#L3646">(p->type == ZEND_USER_CLASS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3661</td><td><a href="ZendAccelerator.c.html#L3661">(i < ce->num_interfaces)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3663</td><td><a href="ZendAccelerator.c.html#L3663">(p->type == ZEND_USER_CLASS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3702</td><td><a href="ZendAccelerator.c.html#L3702">(i < ce->num_interfaces)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3714</td><td><a href="ZendAccelerator.c.html#L3714">(i < ce->num_traits)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3755</td><td><a href="ZendAccelerator.c.html#L3755">(i < ce->default_properties_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3833</td><td><a href="ZendAccelerator.c.html#L3833">(op_array->num_dynamic_func_defs == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3972</td><td><a href="ZendAccelerator.c.html#L3972">(ce->type == ZEND_INTERNAL_CLASS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4040</td><td><a href="ZendAccelerator.c.html#L4040">(op_array->type == ZEND_USER_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">560</td><td><a href="ZendAccelerator.c.html#L560">(ZSTR_HAS_CE_CACHE(str) && !ZSTR_HAS_CE_CACHE(s))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">285</td><td><a href="ZendAccelerator.c.html#L285">(fcntl(lock_file, F_SETLK, &restart_in_progress) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">306</td><td><a href="ZendAccelerator.c.html#L306">(fcntl(lock_file, F_SETLK, &restart_finished) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">323</td><td><a href="ZendAccelerator.c.html#L323">(fcntl(lock_file, F_GETLK, &restart_check) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">355</td><td><a href="ZendAccelerator.c.html#L355">(fcntl(lock_file, F_SETLK, &mem_usage_lock) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">381</td><td><a href="ZendAccelerator.c.html#L381">(fcntl(lock_file, F_SETLK, &mem_usage_unlock) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">399</td><td><a href="ZendAccelerator.c.html#L399">(fcntl(lock_file, F_SETLK, &mem_usage_unlock_all) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="ZendAccelerator.c.html#L903">(fcntl(lock_file, F_GETLK, &mem_usage_check) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1046</td><td><a href="ZendAccelerator.c.html#L1046">(zend_get_stream_timestamp(file_path, &statbuf) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1050</td><td><a href="ZendAccelerator.c.html#L1050">(VCWD_STAT(file_path, &statbuf) != -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2446</td><td><a href="ZendAccelerator.c.html#L2446">((char*)entry + size != (char*)ZCG(mem))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2507</td><td><a href="ZendAccelerator.c.html#L2507">(!file_cache_only && ZCG(accelerator_enabled))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2638</td><td><a href="ZendAccelerator.c.html#L2638">(stat("/", &buf) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3055</td><td><a href="ZendAccelerator.c.html#L3055">(sysctl(mib, 4, NULL, &s, NULL, 0) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3059</td><td><a href="ZendAccelerator.c.html#L3059">(sysctl(mib, 4, addr, &s, NULL, 0) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3897</td><td><a href="ZendAccelerator.c.html#L3897">(preload_resolve_deps(&error_info, ce) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4650</td><td><a href="ZendAccelerator.c.html#L4650">(waitpid(pid, &status, 0) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1907</td><td><a href="ZendAccelerator.c.html#L1907">(persistent_script->script.filename)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2202</td><td><a href="ZendAccelerator.c.html#L2202">(persistent_script->script.filename)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3786</td><td><a href="ZendAccelerator.c.html#L3786">(changed && !ok)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1990</td><td><a href="ZendAccelerator.c.html#L1990">((ZCSG(restart_in_progress) && accel_restart_is_active()))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2778</td><td><a href="ZendAccelerator.c.html#L2778">(!strcmp(element1->name, ACCELERATOR_PRODUCT_NAME))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">810</td><td><a href="ZendAccelerator.c.html#L810">(ZCSG(interned_strings).saved_top == NULL)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">967</td><td><a href="ZendAccelerator.c.html#L967">(!file_handle->opened_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1570</td><td><a href="ZendAccelerator.c.html#L1570">(!existing_persistent_script->corrupted)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1886</td><td><a href="ZendAccelerator.c.html#L1886">(!file_handle->opened_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2410</td><td><a href="ZendAccelerator.c.html#L2410">(dependencies && zend_hash_num_elements(dependencies))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2530</td><td><a href="ZendAccelerator.c.html#L2530">(!persistent_script->corrupted)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2551</td><td><a href="ZendAccelerator.c.html#L2551">(!persistent_script->corrupted)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2612</td><td><a href="ZendAccelerator.c.html#L2612">(!ZCG(enabled) || !accel_startup_ok)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2643</td><td><a href="ZendAccelerator.c.html#L2643">(ZCG(root_hash) != buf.st_ino)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2763</td><td><a href="ZendAccelerator.c.html#L2763">(!ZCG(enabled) || !accel_startup_ok)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3330</td><td><a href="ZendAccelerator.c.html#L3330">(ZCG(enabled) && accel_startup_ok)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3359</td><td><a href="ZendAccelerator.c.html#L3359">(!ZCG(enabled) || !accel_startup_ok)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4026</td><td><a href="ZendAccelerator.c.html#L4026">(!script->num_early_bindings)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4568</td><td><a href="ZendAccelerator.c.html#L4568">(!ZCG(enabled) || !accel_startup_ok)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">327</td><td><a href="ZendAccelerator.c.html#L327">(restart_check.l_type == F_UNLCK)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">907</td><td><a href="ZendAccelerator.c.html#L907">(mem_usage_check.l_type == F_UNLCK)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2335</td><td><a href="ZendAccelerator.c.html#L2335">(traits_and_interfaces && dependencies)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">839</td><td><a href="ZendAccelerator.c.html#L839">(kill(mem_usage_check->l_pid, signal))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">851</td><td><a href="ZendAccelerator.c.html#L851">(kill(mem_usage_check->l_pid, 0))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2299</td><td><a href="ZendAccelerator.c.html#L2299">(ZSTR_HAS_CE_CACHE(ce->name))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2603</td><td><a href="ZendAccelerator.c.html#L2603">(zend_accel_in_shm(p->key))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3481</td><td><a href="ZendAccelerator.c.html#L3481">(ZEND_CONSTANT_FLAGS(c) & CONST_PERSISTENT)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">653</td><td><a href="ZendAccelerator.c.html#L653">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">680</td><td><a href="ZendAccelerator.c.html#L680">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">684</td><td><a href="ZendAccelerator.c.html#L684">(ce->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="ZendAccelerator.c.html#L694">(q->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="ZendAccelerator.c.html#L698">(info->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="ZendAccelerator.c.html#L704">(q->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="ZendAccelerator.c.html#L713">(q->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">723</td><td><a href="ZendAccelerator.c.html#L723">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="ZendAccelerator.c.html#L727">(c->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="ZendAccelerator.c.html#L743">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="ZendAccelerator.c.html#L749">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="ZendAccelerator.c.html#L757">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="ZendAccelerator.c.html#L760">(entry->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="ZendAccelerator.c.html#L763">(entry->value)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="ZendAccelerator.c.html#L766">(entry->orig_value)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">773</td><td><a href="ZendAccelerator.c.html#L773">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="ZendAccelerator.c.html#L780">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="ZendAccelerator.c.html#L787">(p->key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">837</td><td><a href="ZendAccelerator.c.html#L837">(tries--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1042</td><td><a href="ZendAccelerator.c.html#L1042">(file_handle->opened_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="ZendAccelerator.c.html#L1107">(file_handle->opened_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1361</td><td><a href="ZendAccelerator.c.html#L1361">(persistent_script->corrupted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1702</td><td><a href="ZendAccelerator.c.html#L1702">(mask & ZEND_AUTOGLOBAL_MASK_SERVER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="ZendAccelerator.c.html#L1705">(mask & ZEND_AUTOGLOBAL_MASK_ENV)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1708</td><td><a href="ZendAccelerator.c.html#L1708">(mask & ZEND_AUTOGLOBAL_MASK_REQUEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1864</td><td><a href="ZendAccelerator.c.html#L1864">(file_handle->opened_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1916</td><td><a href="ZendAccelerator.c.html#L1916">(persistent_script->is_phar)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2049</td><td><a href="ZendAccelerator.c.html#L2049">(file_handle->opened_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2211</td><td><a href="ZendAccelerator.c.html#L2211">(persistent_script->is_phar)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2469</td><td><a href="ZendAccelerator.c.html#L2469">(!GetUserNameW(uname, &unsize))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3690</td><td><a href="ZendAccelerator.c.html#L3690">(ce->parent_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3701</td><td><a href="ZendAccelerator.c.html#L3701">(ce->num_interfaces)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3713</td><td><a href="ZendAccelerator.c.html#L3713">(ce->num_traits)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3751</td><td><a href="ZendAccelerator.c.html#L3751">(ce->default_properties_count)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3768</td><td><a href="ZendAccelerator.c.html#L3768">(ce->default_static_members_count)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3802</td><td><a href="ZendAccelerator.c.html#L3802">(type & E_FATAL_ERRORS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3911</td><td><a href="ZendAccelerator.c.html#L3911">(ce->parent_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4069</td><td><a href="ZendAccelerator.c.html#L4069">(script->empty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1688</td><td><a href="ZendAccelerator.c.html#L1688">(zend_hash_exists(&EG(symbol_table), ZSTR_KNOWN(ZEND_STR_AUTOGLOBAL_SERVER)))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1691</td><td><a href="ZendAccelerator.c.html#L1691">(zend_hash_exists(&EG(symbol_table), ZSTR_KNOWN(ZEND_STR_AUTOGLOBAL_ENV)))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1694</td><td><a href="ZendAccelerator.c.html#L1694">(zend_hash_exists(&EG(symbol_table), ZSTR_KNOWN(ZEND_STR_AUTOGLOBAL_REQUEST)))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1459</td><td><a href="ZendAccelerator.c.html#L1459">(zend_accel_hash_is_full(&ZCSG(hash)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1466</td><td><a href="ZendAccelerator.c.html#L1466">(zend_accel_hash_update(&ZCSG(hash), new_key, 1, bucket))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1588</td><td><a href="ZendAccelerator.c.html#L1588">(zend_accel_hash_is_full(&ZCSG(hash)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1654</td><td><a href="ZendAccelerator.c.html#L1654">(zend_accel_hash_update(&ZCSG(hash), new_key, 1, bucket))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2012</td><td><a href="ZendAccelerator.c.html#L2012">(ZSTR_LEN(&ZCG(key)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2145</td><td><a href="ZendAccelerator.c.html#L2145">(ZSMMG(memory_exhausted) || ZCSG(restart_pending))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2295</td><td><a href="ZendAccelerator.c.html#L2295">(ZCSG(map_ptr_last) > CG(map_ptr_last))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2707</td><td><a href="ZendAccelerator.c.html#L2707">(ZCSG(last_restart_time) < ZCG(request_time))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3122</td><td><a href="ZendAccelerator.c.html#L3122">(UNEXPECTED(accel_gen_uname_id() == FAILURE))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3775</td><td><a href="ZendAccelerator.c.html#L3775">(UNEXPECTED(zval_update_constant_ex(val, ce) != SUCCESS))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4224</td><td><a href="ZendAccelerator.c.html#L4224">(zend_accel_hash_is_full(&ZCSG(hash)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4309</td><td><a href="ZendAccelerator.c.html#L4309">(CG(map_ptr_last) != ZCSG(map_ptr_last))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4367</td><td><a href="ZendAccelerator.c.html#L4367">(Z_TYPE(EG(user_exception_handler)) != IS_UNDEF)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">447</td><td><a href="ZendAccelerator.c.html#L447">(EXPECTED(s < top))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">452</td><td><a href="ZendAccelerator.c.html#L452">(idx >= ZCSG(map_ptr_last))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">495</td><td><a href="ZendAccelerator.c.html#L495">(EXPECTED(pos != STRTAB_INVALID_POS))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">528</td><td><a href="ZendAccelerator.c.html#L528">(EXPECTED(pos != STRTAB_INVALID_POS))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">591</td><td><a href="ZendAccelerator.c.html#L591">(EXPECTED(pos != STRTAB_INVALID_POS))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="ZendAccelerator.c.html#L625">(ZEND_TYPE_HAS_LIST(*single_type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">629</td><td><a href="ZendAccelerator.c.html#L629">(ZEND_TYPE_HAS_NAME(*single_type))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="ZendAccelerator.c.html#L877">(fcntl(lock_file, F_GETLK, mem_usage_check) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">892</td><td><a href="ZendAccelerator.c.html#L892">(LOCKVAL(mem_usage) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1161</td><td><a href="ZendAccelerator.c.html#L1161">(do_validate_timestamps(persistent_script, file_handle) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1275</td><td><a href="ZendAccelerator.c.html#L1275">(str == ZCG(include_path))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1441</td><td><a href="ZendAccelerator.c.html#L1441">(UNEXPECTED(new_key == key))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1734</td><td><a href="ZendAccelerator.c.html#L1734">(accelerator_orig_zend_stream_open_function(file_handle) != SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2017</td><td><a href="ZendAccelerator.c.html#L2017">(!ZCG(accel_directives).revalidate_path)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2082</td><td><a href="ZendAccelerator.c.html#L2082">(accel_activate_add() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2111</td><td><a href="ZendAccelerator.c.html#L2111">(validate_timestamp_and_record(persistent_script, file_handle) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2523</td><td><a href="ZendAccelerator.c.html#L2523">(!ZCG(accel_directives).revalidate_path)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2673</td><td><a href="ZendAccelerator.c.html#L2673">(accel_is_inactive() == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2980</td><td><a href="ZendAccelerator.c.html#L2980">(-1 == madvise(start, size, MADV_HUGEPAGE))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3115</td><td><a href="ZendAccelerator.c.html#L3115">(start_accel_module() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3139</td><td><a href="ZendAccelerator.c.html#L3139">(accel_find_sapi() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3150</td><td><a href="ZendAccelerator.c.html#L3150">(ZCG(enabled) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3172</td><td><a href="ZendAccelerator.c.html#L3172">(cb() != SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3206</td><td><a href="ZendAccelerator.c.html#L3206">(zend_accel_init_shm() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3263</td><td><a href="ZendAccelerator.c.html#L3263">(!ZCG(accel_directives).file_cache)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3326</td><td><a href="ZendAccelerator.c.html#L3326">(accel_finish_startup() != SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3446</td><td><a href="ZendAccelerator.c.html#L3446">(accel_activate_add() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3740</td><td><a href="ZendAccelerator.c.html#L3740">(Z_TYPE_P(val) == IS_CONSTANT_AST)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3757</td><td><a href="ZendAccelerator.c.html#L3757">(Z_TYPE_P(val) == IS_CONSTANT_AST)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3774</td><td><a href="ZendAccelerator.c.html#L3774">(Z_TYPE_P(val) == IS_CONSTANT_AST)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3935</td><td><a href="ZendAccelerator.c.html#L3935">(i < EG(num_errors))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4001</td><td><a href="ZendAccelerator.c.html#L4001">(preload_resolve_deps(&error, ce))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4610</td><td><a href="ZendAccelerator.c.html#L4610">(geteuid() == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">155</td><td><a href="ZendAccelerator.c.html#L155">(p < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">165</td><td><a href="ZendAccelerator.c.html#L165">(p < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="ZendAccelerator.c.html#L265">(ret == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">463</td><td><a href="ZendAccelerator.c.html#L463">(s < top)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">502</td><td><a href="ZendAccelerator.c.html#L502">(pos != STRTAB_INVALID_POS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">535</td><td><a href="ZendAccelerator.c.html#L535">(pos != STRTAB_INVALID_POS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">598</td><td><a href="ZendAccelerator.c.html#L598">(pos != STRTAB_INVALID_POS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">644</td><td><a href="ZendAccelerator.c.html#L644">(j < 256)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="ZendAccelerator.c.html#L647">(j < ZEND_STR_LAST_KNOWN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">668</td><td><a href="ZendAccelerator.c.html#L668">(i < num_args)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">840</td><td><a href="ZendAccelerator.c.html#L840">(errno == ESRCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="ZendAccelerator.c.html#L844">(errno != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="ZendAccelerator.c.html#L852">(errno == ESRCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="ZendAccelerator.c.html#L856">(errno != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">952</td><td><a href="ZendAccelerator.c.html#L952">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="ZendAccelerator.c.html#L1079">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1231</td><td><a href="ZendAccelerator.c.html#L1231">(str == cwd_str)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1715</td><td><a href="ZendAccelerator.c.html#L1715">(i < num_warnings)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1737</td><td><a href="ZendAccelerator.c.html#L1737">(type == ZEND_REQUIRE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1769</td><td><a href="ZendAccelerator.c.html#L1769">(timestamp == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1890</td><td><a href="ZendAccelerator.c.html#L1890">(type == ZEND_REQUIRE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2040</td><td><a href="ZendAccelerator.c.html#L2040">(type == ZEND_REQUIRE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2097</td><td><a href="ZendAccelerator.c.html#L2097">(type == ZEND_REQUIRE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2179</td><td><a href="ZendAccelerator.c.html#L2179">(new_const_num > old_const_num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2308</td><td><a href="ZendAccelerator.c.html#L2308">(ce == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2528</td><td><a href="ZendAccelerator.c.html#L2528">(bucket != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2823</td><td><a href="ZendAccelerator.c.html#L2823">(*sapi_name)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2912</td><td><a href="ZendAccelerator.c.html#L2912">(i < -HT_MIN_MASK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2958</td><td><a href="ZendAccelerator.c.html#L2958">(mem == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2972</td><td><a href="ZendAccelerator.c.html#L2972">(ret == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3025</td><td><a href="ZendAccelerator.c.html#L3025">(ret == 7)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3039</td><td><a href="ZendAccelerator.c.html#L3039">(seg_end > seg_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3058</td><td><a href="ZendAccelerator.c.html#L3058">(addr != MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3062</td><td><a href="ZendAccelerator.c.html#L3062">(start < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3065</td><td><a href="ZendAccelerator.c.html#L3065">(sz == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3073</td><td><a href="ZendAccelerator.c.html#L3073">(seg_end > seg_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3519</td><td><a href="ZendAccelerator.c.html#L3519">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3641</td><td><a href="ZendAccelerator.c.html#L3641">(b1 < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3648</td><td><a href="ZendAccelerator.c.html#L3648">(b2 < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3665</td><td><a href="ZendAccelerator.c.html#L3665">(b2 < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3816</td><td><a href="ZendAccelerator.c.html#L3816">(opline != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4074</td><td><a href="ZendAccelerator.c.html#L4074">(opline < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4115</td><td><a href="ZendAccelerator.c.html#L4115">(opline < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4284</td><td><a href="ZendAccelerator.c.html#L4284">(p != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4295</td><td><a href="ZendAccelerator.c.html#L4295">(p != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4372</td><td><a href="ZendAccelerator.c.html#L4372">(ret == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4397</td><td><a href="ZendAccelerator.c.html#L4397">(ret == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4622</td><td><a href="ZendAccelerator.c.html#L4622">(pw == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4629</td><td><a href="ZendAccelerator.c.html#L4629">(pid == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4633</td><td><a href="ZendAccelerator.c.html#L4633">(pid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4697</td><td><a href="ZendAccelerator.c.html#L4697">(rc == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4751</td><td><a href="ZendAccelerator.c.html#L4751">(ret == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1402</td><td><a href="ZendAccelerator.c.html#L1402">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1553</td><td><a href="ZendAccelerator.c.html#L1553">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1593</td><td><a href="ZendAccelerator.c.html#L1593">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1611</td><td><a href="ZendAccelerator.c.html#L1611">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1671</td><td><a href="ZendAccelerator.c.html#L1671">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1798</td><td><a href="ZendAccelerator.c.html#L1798">(ZCG(accel_directives).record_warnings)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1809</td><td><a href="ZendAccelerator.c.html#L1809">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1856</td><td><a href="ZendAccelerator.c.html#L1856">(ZCG(accel_directives).validate_timestamps)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1991</td><td><a href="ZendAccelerator.c.html#L1991">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2083</td><td><a href="ZendAccelerator.c.html#L2083">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2148</td><td><a href="ZendAccelerator.c.html#L2148">(ZCG(accel_directives).file_cache)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2337</td><td><a href="ZendAccelerator.c.html#L2337">(traits_and_interfaces[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2635</td><td><a href="ZendAccelerator.c.html#L2635">(ZCG(accel_directives).validate_root)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2693</td><td><a href="ZendAccelerator.c.html#L2693">(ZCG(accel_directives).interned_strings_buffer)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2844</td><td><a href="ZendAccelerator.c.html#L2844">(ZCG(accel_directives).interned_strings_buffer)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2861</td><td><a href="ZendAccelerator.c.html#L2861">(ZCG(accel_directives).interned_strings_buffer)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">3415</td><td><a href="ZendAccelerator.c.html#L3415">(ZCG(accel_directives).force_restart_timeout)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2822</td><td><a href="ZendAccelerator.c.html#L2822">(sapi_module.name)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4359</td><td><a href="ZendAccelerator.c.html#L4359">(file_handle.opened_path)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">3821</td><td><a href="ZendAccelerator.c.html#L3821">(!zend_hash_exists(CG(class_table), key))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="ZendAccelerator.c.html#L239">(!VCWD_GETCWD(cwd, MAXPATHLEN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">484</td><td><a href="ZendAccelerator.c.html#L484">(!ZCG(counted))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1196</td><td><a href="ZendAccelerator.c.html#L1196">(!is_cacheable_stream_path(path))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1214</td><td><a href="ZendAccelerator.c.html#L1214">(UNEXPECTED(!cwd_str))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1607</td><td><a href="ZendAccelerator.c.html#L1607">(!ZCG(mem))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1736</td><td><a href="ZendAccelerator.c.html#L1736">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1889</td><td><a href="ZendAccelerator.c.html#L1889">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2039</td><td><a href="ZendAccelerator.c.html#L2039">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2081</td><td><a href="ZendAccelerator.c.html#L2081">(!ZCG(counted))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2096</td><td><a href="ZendAccelerator.c.html#L2096">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2385</td><td><a href="ZendAccelerator.c.html#L2385">(!ZCG(mem))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3463</td><td><a href="ZendAccelerator.c.html#L3463">(!ZCG(counted))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4236</td><td><a href="ZendAccelerator.c.html#L4236">(!ZCG(mem))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="ZendAccelerator.c.html#L609">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">865</td><td><a href="ZendAccelerator.c.html#L865">(!success)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">930</td><td><a href="ZendAccelerator.c.html#L930">(!filename)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">935</td><td><a href="ZendAccelerator.c.html#L935">(!wrapper)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">971</td><td><a href="ZendAccelerator.c.html#L971">(!utc_base)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1226</td><td><a href="ZendAccelerator.c.html#L1226">(!str)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1270</td><td><a href="ZendAccelerator.c.html#L1270">(!str)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1398</td><td><a href="ZendAccelerator.c.html#L1398">(!realpath)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1825</td><td><a href="ZendAccelerator.c.html#L1825">(!op_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2020</td><td><a href="ZendAccelerator.c.html#L2020">(!key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2032</td><td><a href="ZendAccelerator.c.html#L2032">(!persistent_script)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2137</td><td><a href="ZendAccelerator.c.html#L2137">(!persistent_script)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2171</td><td><a href="ZendAccelerator.c.html#L2171">(!persistent_script)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2264</td><td><a href="ZendAccelerator.c.html#L2264">(!ce)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2293</td><td><a href="ZendAccelerator.c.html#L2293">(!needs_autoload)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2350</td><td><a href="ZendAccelerator.c.html#L2350">(!needs_autoload)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2851</td><td><a href="ZendAccelerator.c.html#L2851">(!accel_shared_globals)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3181</td><td><a href="ZendAccelerator.c.html#L3181">(!file_cache_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3378</td><td><a href="ZendAccelerator.c.html#L3378">(!_file_cache_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3694</td><td><a href="ZendAccelerator.c.html#L3694">(!parent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3705</td><td><a href="ZendAccelerator.c.html#L3705">(!interface)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3717</td><td><a href="ZendAccelerator.c.html#L3717">(!trait)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3926</td><td><a href="ZendAccelerator.c.html#L3926">(!ce)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4102</td><td><a href="ZendAccelerator.c.html#L4102">(!empty)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1195</td><td><a href="ZendAccelerator.c.html#L1195">(UNEXPECTED(is_stream_path(path)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1208</td><td><a href="ZendAccelerator.c.html#L1208">(EXPECTED(ZCG(cwd_key_len)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1255</td><td><a href="ZendAccelerator.c.html#L1255">(EXPECTED(ZCG(include_path_key_len)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3890</td><td><a href="ZendAccelerator.c.html#L3890">(zend_hash_exists(EG(class_table), lcname))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">4049</td><td><a href="ZendAccelerator.c.html#L4049">(is_stream_path(ZSTR_VAL(filename)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">4366</td><td><a href="ZendAccelerator.c.html#L4366">(UNEXPECTED(EG(exception)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">217</td><td><a href="ZendAccelerator.c.html#L217">(VCWD_GETCWD(cwd, MAXPATHLEN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="ZendAccelerator.c.html#L218">(ZCG(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">223</td><td><a href="ZendAccelerator.c.html#L223">(ZCG(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">234</td><td><a href="ZendAccelerator.c.html#L234">(ZCG(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">314</td><td><a href="ZendAccelerator.c.html#L314">(ZCSG(restart_in_progress))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">367</td><td><a href="ZendAccelerator.c.html#L367">(ZCG(counted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="ZendAccelerator.c.html#L449">(ZSTR_HAS_CE_CACHE(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">479</td><td><a href="ZendAccelerator.c.html#L479">(IS_ACCEL_INTERNED(str))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">514</td><td><a href="ZendAccelerator.c.html#L514">(UNEXPECTED(file_cache_only))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">518</td><td><a href="ZendAccelerator.c.html#L518">(IS_ACCEL_INTERNED(str))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="ZendAccelerator.c.html#L573">(ZCG(counted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">605</td><td><a href="ZendAccelerator.c.html#L605">(ZCG(counted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1045</td><td><a href="ZendAccelerator.c.html#L1045">(is_stream_path(file_path))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1193</td><td><a href="ZendAccelerator.c.html#L1193">(IS_ABSOLUTE_PATH(path, path_length))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1221</td><td><a href="ZendAccelerator.c.html#L1221">(ZCG(cwd_check))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1223</td><td><a href="ZendAccelerator.c.html#L1223">(ZCG(accelerator_enabled))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1265</td><td><a href="ZendAccelerator.c.html#L1265">(ZCG(include_path_check))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1267</td><td><a href="ZendAccelerator.c.html#L1267">(ZCG(accelerator_enabled))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="ZendAccelerator.c.html#L1369">(ZSMMG(memory_exhausted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1436</td><td><a href="ZendAccelerator.c.html#L1436">(zend_accel_in_shm(key))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1444</td><td><a href="ZendAccelerator.c.html#L1444">(EXPECTED(new_key))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="ZendAccelerator.c.html#L1852">(PG(auto_globals_jit))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2484</td><td><a href="ZendAccelerator.c.html#L2484">(ZCG(cache_persistent_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2597</td><td><a href="ZendAccelerator.c.html#L2597">(PCRE_G(per_request_cache))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2660</td><td><a href="ZendAccelerator.c.html#L2660">(ZCG(counted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2670</td><td><a href="ZendAccelerator.c.html#L2670">(ZCSG(restart_pending))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2672</td><td><a href="ZendAccelerator.c.html#L2672">(ZCSG(restart_pending))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2698</td><td><a href="ZendAccelerator.c.html#L2698">(ZCSG(preload_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2742</td><td><a href="ZendAccelerator.c.html#L2742">(ZCSG(preload_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2758</td><td><a href="ZendAccelerator.c.html#L2758">(ZCG(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3250</td><td><a href="ZendAccelerator.c.html#L3250">(JIT_G(enabled))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="ZendAccelerator.c.html#L3366">(ZCSG(preload_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3401</td><td><a href="ZendAccelerator.c.html#L3401">(ZCSG(restart_pending))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3440</td><td><a href="ZendAccelerator.c.html#L3440">(ZCG(counted))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3450</td><td><a href="ZendAccelerator.c.html#L3450">(ZCSG(restart_in_progress))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3478</td><td><a href="ZendAccelerator.c.html#L3478">(EG(zend_constants))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3488</td><td><a href="ZendAccelerator.c.html#L3488">(EG(function_table))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3497</td><td><a href="ZendAccelerator.c.html#L3497">(EG(class_table))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3517</td><td><a href="ZendAccelerator.c.html#L3517">(ZCSG(saved_scripts))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3942</td><td><a href="ZendAccelerator.c.html#L3942">(CG(delayed_variance_obligations))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3978</td><td><a href="ZendAccelerator.c.html#L3978">(preload_try_resolve_constants(ce))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4300</td><td><a href="ZendAccelerator.c.html#L4300">(EG(zend_constants))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4303</td><td><a href="ZendAccelerator.c.html#L4303">(EG(function_table))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4306</td><td><a href="ZendAccelerator.c.html#L4306">(EG(class_table))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4370</td><td><a href="ZendAccelerator.c.html#L4370">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4380</td><td><a href="ZendAccelerator.c.html#L4380">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4402</td><td><a href="ZendAccelerator.c.html#L4402">(PG(auto_globals_jit))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4406</td><td><a href="ZendAccelerator.c.html#L4406">(EG(zend_constants))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4443</td><td><a href="ZendAccelerator.c.html#L4443">(EG(full_tables_cleanup))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4595</td><td><a href="ZendAccelerator.c.html#L4595">(UNEXPECTED(file_cache_only))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4603</td><td><a href="ZendAccelerator.c.html#L4603">(ZCSG(preload_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4656</td><td><a href="ZendAccelerator.c.html#L4656">(ZCSG(preload_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">576</td><td><a href="ZendAccelerator.c.html#L576">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">797</td><td><a href="ZendAccelerator.c.html#L797">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">996</td><td><a href="ZendAccelerator.c.html#L996">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1018</td><td><a href="ZendAccelerator.c.html#L1018">(tmpbuf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1019</td><td><a href="ZendAccelerator.c.html#L1019">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1028</td><td><a href="ZendAccelerator.c.html#L1028">(res)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1091</td><td><a href="ZendAccelerator.c.html#L1091">(size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1124</td><td><a href="ZendAccelerator.c.html#L1124">(full_path_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1132</td><td><a href="ZendAccelerator.c.html#L1132">(full_path_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1138</td><td><a href="ZendAccelerator.c.html#L1138">(full_path_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1239</td><td><a href="ZendAccelerator.c.html#L1239">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1283</td><td><a href="ZendAccelerator.c.html#L1283">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1316</td><td><a href="ZendAccelerator.c.html#L1316">(include_path_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1465</td><td><a href="ZendAccelerator.c.html#L1465">(new_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1567</td><td><a href="ZendAccelerator.c.html#L1567">(bucket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1644</td><td><a href="ZendAccelerator.c.html#L1644">(bucket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1653</td><td><a href="ZendAccelerator.c.html#L1653">(new_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1828</td><td><a href="ZendAccelerator.c.html#L1828">(do_bailout)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1905</td><td><a href="ZendAccelerator.c.html#L1905">(persistent_script)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1939</td><td><a href="ZendAccelerator.c.html#L1939">(persistent_script)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1986</td><td><a href="ZendAccelerator.c.html#L1986">(file_cache_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2052</td><td><a href="ZendAccelerator.c.html#L2052">(bucket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2164</td><td><a href="ZendAccelerator.c.html#L2164">(persistent_script)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2176</td><td><a href="ZendAccelerator.c.html#L2176">(from_shared_memory)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2246</td><td><a href="ZendAccelerator.c.html#L2246">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2274</td><td><a href="ZendAccelerator.c.html#L2274">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2290</td><td><a href="ZendAccelerator.c.html#L2290">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2292</td><td><a href="ZendAccelerator.c.html#L2292">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2347</td><td><a href="ZendAccelerator.c.html#L2347">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2349</td><td><a href="ZendAccelerator.c.html#L2349">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2368</td><td><a href="ZendAccelerator.c.html#L2368">(dependencies)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2526</td><td><a href="ZendAccelerator.c.html#L2526">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2546</td><td><a href="ZendAccelerator.c.html#L2546">(resolved_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2549</td><td><a href="ZendAccelerator.c.html#L2549">(bucket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2552</td><td><a href="ZendAccelerator.c.html#L2552">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2629</td><td><a href="ZendAccelerator.c.html#L2629">(file_cache_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2642</td><td><a href="ZendAccelerator.c.html#L2642">(sizeof(buf.st_ino) > sizeof(ZCG(root_hash)))</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3018</td><td><a href="ZendAccelerator.c.html#L3018">(f)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3023</td><td><a href="ZendAccelerator.c.html#L3023">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3168</td><td><a href="ZendAccelerator.c.html#L3168">(orig_post_startup_cb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3553</td><td><a href="ZendAccelerator.c.html#L3553">(filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3556</td><td><a href="ZendAccelerator.c.html#L3556">(eval_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3564</td><td><a href="ZendAccelerator.c.html#L3564">(copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3591</td><td><a href="ZendAccelerator.c.html#L3591">(filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3594</td><td><a href="ZendAccelerator.c.html#L3594">(eval_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3602</td><td><a href="ZendAccelerator.c.html#L3602">(copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3748</td><td><a href="ZendAccelerator.c.html#L3748">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3764</td><td><a href="ZendAccelerator.c.html#L3764">(resolved)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3773</td><td><a href="ZendAccelerator.c.html#L3773">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3782</td><td><a href="ZendAccelerator.c.html#L3782">(resolved)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3790</td><td><a href="ZendAccelerator.c.html#L3790">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3965</td><td><a href="ZendAccelerator.c.html#L3965">(changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3985</td><td><a href="ZendAccelerator.c.html#L3985">(changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4083</td><td><a href="ZendAccelerator.c.html#L4083">(resolved_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4108</td><td><a href="ZendAccelerator.c.html#L4108">(changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4123</td><td><a href="ZendAccelerator.c.html#L4123">(resolved_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4265</td><td><a href="ZendAccelerator.c.html#L4265">(bucket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4344</td><td><a href="ZendAccelerator.c.html#L4344">(in_child)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4363</td><td><a href="ZendAccelerator.c.html#L4363">(op_array)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4750</td><td><a href="ZendAccelerator.c.html#L4750">(in_child)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="merly.css">
+  <title>tor Repo - Notable Ctrl Expressions (15) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - Notable Ctrl Expressions (15) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Notable Ctrl Expressions (15)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">ID</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">541:2</td><td><a href="src\feature\nodelist\routerlist.c.html#L2968">(<span style='background-color:#9c4c02;'>!tor_addr_eq(&r1->ipv4_addr, &r2->ipv4_addr) || strcasecmp(r1->nickname, r2->nickname) || r1->ipv4_orport != r2->ipv4_orport || !tor_addr_eq(&r1->ipv6_addr, &r2->ipv6_addr) || r1->ipv6_orport != r2->ipv6_orport || r1->ipv4_dirport != r2->ipv4_dirport || r1->purpose != r2->purpose || r1->onion_pkey_len != r2->onion_pkey_len || !tor_memeq(r1->onion_pkey, r2->onion_pkey, r1->onion_pkey_len) || !crypto_pk_eq_keys(r1->identity_pkey, r2->identity_pkey) || strcasecmp(r1->platform, r2->platform) || (r1->contact_info && !r2->contact_info) || (!r1->contact_info && r2->contact_info) || (r1->contact_info && r2->contact_info && strcasecmp(r1->contact_info, r2->contact_info)) || r1->is_hibernating != r2->is_hibernating || !addr_policies_eq(r1->exit_policy, r2->exit_policy) || (r1->supports_tunnelled_dir_requests != r2->supports_tunnelled_dir_requests)</span>)</a></td><td class="num">221.50</td></tr>
+      <tr><td class="num line">9:2</td><td><a href="src\app\config\config.c.html#L2296">(<span style='background-color:#9c4c02;'>(options->UseEntryGuards && !old_options->UseEntryGuards) || options->UseBridges != old_options->UseBridges || (options->UseBridges && !config_lines_eq(options->Bridges, old_options->Bridges)) || !routerset_equal(old_options->ExcludeNodes, options->ExcludeNodes) || !routerset_equal(old_options->ExcludeExitNodes, options->ExcludeExitNodes) || !routerset_equal(old_options->EntryNodes, options->EntryNodes) || !routerset_equal(old_options->ExitNodes, options->ExitNodes) || !routerset_equal(old_options->HSLayer2Nodes, options->HSLayer2Nodes) || !routerset_equal(old_options->HSLayer3Nodes, options->HSLayer3Nodes) || !routerset_equal(old_options->MiddleNodes, options->MiddleNodes) || options->StrictNodes != old_options->StrictNodes</span>)</a></td><td class="num">129.75</td></tr>
+      <tr><td class="num line">330:1</td><td><a href="src\feature\client\bridges.c.html#L833">(<span style='background-color:#9c4c02;'>(!tor_addr_compare(&bridge->addr, &ri->ipv4_addr, CMP_EXACT) && bridge->port == ri->ipv4_orport) || (!tor_addr_compare(&bridge->addr, &ri->ipv6_addr, CMP_EXACT) && bridge->port == ri->ipv6_orport)</span>)</a></td><td class="num">127.00</td></tr>
+      <tr><td class="num line">330:2</td><td><a href="src\feature\client\bridges.c.html#L889">(<span style='background-color:#9c4c02;'>(!tor_addr_compare(&bridge->addr, &rs->ipv4_addr, CMP_EXACT) && bridge->port == rs->ipv4_orport) || (!tor_addr_compare(&bridge->addr, &rs->ipv6_addr, CMP_EXACT) && bridge->port == rs->ipv6_orport)</span>)</a></td><td class="num">127.00</td></tr>
+      <tr><td class="num line">450:2</td><td><a href="src\feature\dirparse\routerparse.c.html#L1208">(<span style='background-color:#9c4c02;'>((tok->tp == K_ACCEPT6 || tok->tp == K_REJECT6) && tor_addr_family(&newe->addr) == AF_INET) || ((tok->tp == K_ACCEPT || tok->tp == K_REJECT) && tor_addr_family(&newe->addr) == AF_INET6)</span>)</a></td><td class="num">127.00</td></tr>
+      <tr><td class="num line">124:1</td><td><a href="src\core\or\extendinfo.c.html#L347">(<span style='background-color:#9c4c02;'>!tor_addr_is_unspec(&ei->orports[i].addr) && tor_addr_is_internal(&ei->orports[i].addr, 0)</span>)</a></td><td class="num">119.00</td></tr>
+      <tr><td class="num line">468:1</td><td><a href="src\feature\hs\hs_client.c.html#L524">(<span style='background-color:#9c4c02;'>BUG(TO_CIRCUIT(circ)->purpose != CIRCUIT_PURPOSE_C_INTRODUCING && TO_CIRCUIT(circ)->purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT && TO_CIRCUIT(circ)->purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACKED)</span>)</a></td><td class="num">112.25</td></tr>
+      <tr><td class="num line">9:1</td><td><a href="src\app\config\config.c.html#L1236">(<span style='background-color:#9c4c02;'>(options->DirAuthorities && (!old_options || !config_lines_eq(options->DirAuthorities, old_options->DirAuthorities))) || (options->AlternateDirAuthority && (!old_options || !config_lines_eq(options->AlternateDirAuthority, old_options->AlternateDirAuthority)))</span>)</a></td><td class="num">112.00</td></tr>
+      <tr><td class="num line">75:3</td><td><a href="src\core\or\circuitlist.c.html#L724">(<span style='background-color:#9c4c02;'>!TO_CIRCUIT(next_circ)->marked_for_close && next_circ->has_opened && TO_CIRCUIT(next_circ)->state == CIRCUIT_STATE_OPEN && TO_CIRCUIT(next_circ)->purpose != CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT && next_circ->build_state && next_circ->build_state->desired_path_len == DEFAULT_ROUTE_LEN</span>)</a></td><td class="num">110.75</td></tr>
+      <tr><td class="num line">502:2</td><td><a href="src\feature\keymgt\loadkey.c.html#L592">(<span style='background-color:#9c4c02;'>write_secret_key(&keypair->seckey, encrypt_key, secret_fname, tag, encrypted_secret_fname) < 0 || (split && ed25519_pubkey_write_to_file(&keypair->pubkey, public_fname, tag) < 0) || (cert && crypto_write_tagged_contents_to_file(cert_fname, "ed25519v1-cert", tag, cert->encoded, cert->encoded_len) < 0)</span>)</a></td><td class="num">110.50</td></tr>
+      <tr><td class="num line">424:2</td><td><a href="src\feature\dirclient\dirclient.c.html#L2521">(<span style='background-color:#9c4c02;'>which || (conn->requested_resource && (!strcmpstart(conn->requested_resource, "all") || (!strcmpstart(conn->requested_resource, "authority") && get_options()->UseBridges)))</span>)</a></td><td class="num">107.25</td></tr>
+      <tr><td class="num line">536:1</td><td><a href="src\feature\nodelist\nodelist.c.html#L747">(<span style='background-color:#9c4c02;'>reachable_addr_prefer_ipv6_orport(options) && (tor_addr_is_null(&rs->ipv6_addr) == 0 || (node->md && tor_addr_is_null(&node->md->ipv6_addr) == 0))</span>)</a></td><td class="num">107.00</td></tr>
+      <tr><td class="num line">144:3</td><td><a href="src\core\or\policies.c.html#L2274">(<span style='background-color:#9c4c02;'>p->policy_type == ADDR_POLICY_REJECT && p->prt_min <= 1 && p->prt_max == 65535 && p->maskbits == 0 && (tor_addr_family(&p->addr) == family || tor_addr_family(&p->addr) == AF_UNSPEC)</span>)</a></td><td class="num">106.50</td></tr>
+      <tr><td class="num line">50:3</td><td><a href="src\core\mainloop\mainloop.c.html#L1177">(<span style='background-color:#9c4c02;'>conn->type == CONN_TYPE_DIR && ((DIR_CONN_IS_SERVER(conn) && conn->timestamp_last_write_allowed + options->TestingDirConnectionMaxStall < now) || (!DIR_CONN_IS_SERVER(conn) && conn->timestamp_last_read_allowed + options->TestingDirConnectionMaxStall < now))</span>)</a></td><td class="num">100.95</td></tr>
+      <tr><td class="num line">508:1</td><td><a href="src\feature\nodelist\authcert.c.html#L463">(<span style='background-color:#9c4c02;'>!tor_addr_is_null(&cert->ipv4_addr) && cert->ipv4_dirport && (!tor_addr_eq(&ds->ipv4_addr, &cert->ipv4_addr) || ds->ipv4_dirport != cert->ipv4_dirport)</span>)</a></td><td class="num">100.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

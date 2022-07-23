@@ -1,0 +1,133 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\libsystemd\sd-journal\catalog.c Ctrl Expressions (82) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\libsystemd\sd-journal\catalog.c Ctrl Expressions (82) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\libsystemd\sd-journal\catalog.c Ctrl Expressions (82)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">289</td><td><a href="catalog.c.html#L289">(<span style='background-color:#741da3;'>empty_line && strlen(line) >= 2 + 1 + 32 && line[0] == '-' && line[1] == '-' && line[2] == ' ' && IN_SET(line[2 + 1 + 32], ' ', '\0')</span>)</a></td><td class="num">1030.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="catalog.c.html#L345">(!GREEDY_REALLOC(payload, <span style='background-color:#741da3;'>payload_size + (empty_line ? 1 : 0) + line_len + 1 + 1</span>))</a></td><td class="num">1024.05</td></tr>
+      <tr><td class="num line">200</td><td><a href="catalog.c.html#L200">(<span style='background-color:#741da3;'>*beg != '.' || end <= beg + 1</span>)</a></td><td class="num">1011.35</td></tr>
+      <tr><td class="num line">531</td><td><a href="catalog.c.html#L531">(<span style='background-color:#9c4c02;'>memcmp(h->signature, (const uint8_t[])CATALOG_SIGNATURE, sizeof(h->signature)) != 0 || le64toh(h->header_size) < sizeof(CatalogHeader) || le64toh(h->catalog_item_size) < sizeof(CatalogItem) || h->incompatible_flags != 0 || le64toh(h->n_items) <= 0 || st.st_size < off_t(le64toh(h->header_size) + le64toh(h->catalog_item_size) * le64toh(h->n_items))</span>)</a></td><td class="num">117.85</td></tr>
+      <tr><td class="num line">197</td><td><a href="catalog.c.html#L197">(beg > filename && !IN_SET(*beg, '.', '/') && end - beg < 32)</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">691</td><td><a href="catalog.c.html#L691">(last_id_set && sd_id128_equal(last_id, items[n].id))</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">523</td><td><a href="catalog.c.html#L523">(st.st_size < (off_t)sizeof(CatalogHeader) || file_offset_beyond_memory_size(st.st_size))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">65</td><td><a href="catalog.c.html#L65">(k < ELEMENTSOF(b->id.bytes))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">304</td><td><a href="catalog.c.html#L304">(sd_id128_from_string(line + 2 + 1, &jd) >= 0)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">554</td><td><a href="catalog.c.html#L554">(!isempty(loc) && !STR_IN_SET(loc, "C", "POSIX"))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="catalog.c.html#L688">(n < le64toh(h->n_items))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">415</td><td><a href="catalog.c.html#L415">(k != sb->len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="catalog.c.html#L520">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">86</td><td><a href="catalog.c.html#L86">(e == *s)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">409</td><td><a href="catalog.c.html#L409">(k != n * sizeof(CatalogItem))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">454</td><td><a href="catalog.c.html#L454">(!h || !sb)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">650</td><td><a href="catalog.c.html#L650">(!next_header(&s))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">94</td><td><a href="catalog.c.html#L94">(next_header(&s))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">171</td><td><a href="catalog.c.html#L171">(ordered_hashmap_update(h, i, combined) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">180</td><td><a href="catalog.c.html#L180">(ordered_hashmap_put(h, i, combined) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">428</td><td><a href="catalog.c.html#L428">(rename(p, database) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">468</td><td><a href="catalog.c.html#L468">(ordered_hashmap_size(h) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">67</td><td><a href="catalog.c.html#L67">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">128</td><td><a href="catalog.c.html#L128">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">222</td><td><a href="catalog.c.html#L222">(c < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">225</td><td><a href="catalog.c.html#L225">(c > 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">264</td><td><a href="catalog.c.html#L264">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">266</td><td><a href="catalog.c.html#L266">(r == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="catalog.c.html#L274">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="catalog.c.html#L276">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="catalog.c.html#L307">(payload_size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">314</td><td><a href="catalog.c.html#L314">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">326</td><td><a href="catalog.c.html#L326">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">359</td><td><a href="catalog.c.html#L359">(payload_size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="catalog.c.html#L365">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="catalog.c.html#L385">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="catalog.c.html#L389">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">403</td><td><a href="catalog.c.html#L403">(k != sizeof(header))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">421</td><td><a href="catalog.c.html#L421">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="catalog.c.html#L458">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="catalog.c.html#L464">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="catalog.c.html#L485">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">498</td><td><a href="catalog.c.html#L498">(sz < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="catalog.c.html#L517">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="catalog.c.html#L527">(p == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="catalog.c.html#L558">(len > sizeof(key.language) - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="catalog.c.html#L614">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">682</td><td><a href="catalog.c.html#L682">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">716</td><td><a href="catalog.c.html#L716">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="catalog.c.html#L718">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">724</td><td><a href="catalog.c.html#L724">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="catalog.c.html#L727">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">286</td><td><a href="catalog.c.html#L286">(strchr(COMMENTS, line[0]))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">82</td><td><a href="catalog.c.html#L82">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">111</td><td><a href="catalog.c.html#L111">(!dest)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">155</td><td><a href="catalog.c.html#L155">(!i)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">168</td><td><a href="catalog.c.html#L168">(!combined)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">177</td><td><a href="catalog.c.html#L177">(!combined)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">193</td><td><a href="catalog.c.html#L193">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">204</td><td><a href="catalog.c.html#L204">(!_lang)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">239</td><td><a href="catalog.c.html#L239">(!z)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">260</td><td><a href="catalog.c.html#L260">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">339</td><td><a href="catalog.c.html#L339">(!got_id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">475</td><td><a href="catalog.c.html#L475">(!items)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">569</td><td><a href="catalog.c.html#L569">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">585</td><td><a href="catalog.c.html#L585">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">594</td><td><a href="catalog.c.html#L594">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">618</td><td><a href="catalog.c.html#L618">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="catalog.c.html#L624">(!text)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">230</td><td><a href="catalog.c.html#L230">(streq(t, deflang))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">281</td><td><a href="catalog.c.html#L281">(isempty(line))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">159</td><td><a href="catalog.c.html#L159">(language)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">165</td><td><a href="catalog.c.html#L165">(prev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">229</td><td><a href="catalog.c.html#L229">(deflang)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="catalog.c.html#L306">(got_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">321</td><td><a href="catalog.c.html#L321">(with_language)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">348</td><td><a href="catalog.c.html#L348">(empty_line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="catalog.c.html#L358">(got_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">573</td><td><a href="catalog.c.html#L573">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">633</td><td><a href="catalog.c.html#L633">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="catalog.c.html#L645">(v)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">656</td><td><a href="catalog.c.html#L656">(oneline)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\ssi\aspeed_smc.c Ctrl Expressions (82) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\ssi\aspeed_smc.c Ctrl Expressions (82) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\ssi\aspeed_smc.c Ctrl Expressions (82)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">427</td><td><a href="aspeed_smc.c.html#L427">(<span style='background-color:#741da3;'>(addr % seg.size) != addr</span>)</a></td><td class="num">1006.10</td></tr>
+      <tr><td class="num line">718</td><td><a href="aspeed_smc.c.html#L718">(<span style='background-color:#9c4c02;'>addr == s->r_conf || (addr >= s->r_timings && addr < s->r_timings + asc->nregs_timings) || addr == s->r_ce_ctrl || addr == R_CE_CMD_CTRL || addr == R_INTR_CTRL || addr == R_DUMMY_DATA || (aspeed_smc_has_wdt_control(asc) && addr == R_FMC_WDT2_CTRL) || (aspeed_smc_has_dma(asc) && addr == R_DMA_CTRL) || (aspeed_smc_has_dma(asc) && addr == R_DMA_FLASH_ADDR) || (aspeed_smc_has_dma(asc) && addr == R_DMA_DRAM_ADDR) || (aspeed_smc_has_dma(asc) && addr == R_DMA_LEN) || (aspeed_smc_has_dma(asc) && addr == R_DMA_CHECKSUM) || (addr >= R_SEG_ADDR0 && addr < R_SEG_ADDR0 + asc->cs_num_max) || (addr >= s->r_ctrl0 && addr < s->r_ctrl0 + asc->cs_num_max)</span>)</a></td><td class="num">173.55</td></tr>
+      <tr><td class="num line">291</td><td><a href="aspeed_smc.c.html#L291">((asc->segments == aspeed_2500_spi1_segments || asc->segments == aspeed_2500_spi2_segments) && cs == asc->cs_num_max && seg.addr + seg.size != asc->segments[cs].addr + asc->segments[cs].size)</a></td><td class="num">91.10</td></tr>
+      <tr><td class="num line">671</td><td><a href="aspeed_smc.c.html#L671">(!(s->regs[s->r_ctrl0 + fl->cs] & CTRL_CE_STOP_ACTIVE) && value & CTRL_CE_STOP_ACTIVE)</a></td><td class="num">70.10</td></tr>
+      <tr><td class="num line">1040</td><td><a href="aspeed_smc.c.html#L1040">(addr == s->r_conf || (addr >= s->r_timings && addr < s->r_timings + asc->nregs_timings) || addr == s->r_ce_ctrl)</a></td><td class="num">63.60</td></tr>
+      <tr><td class="num line">304</td><td><a href="aspeed_smc.c.html#L304">(seg.size && (seg.addr + seg.size <= asc->flash_window_base || seg.addr > asc->flash_window_base + asc->flash_window_size))</a></td><td class="num">60.95</td></tr>
+      <tr><td class="num line">234</td><td><a href="aspeed_smc.c.html#L234">(new->addr + new->size > seg.addr && new->addr < seg.addr + seg.size)</a></td><td class="num">41.45</td></tr>
+      <tr><td class="num line">1045</td><td><a href="aspeed_smc.c.html#L1045">(addr >= s->r_ctrl0 && addr < s->r_ctrl0 + asc->cs_num_max)</a></td><td class="num">34.60</td></tr>
+      <tr><td class="num line">1048</td><td><a href="aspeed_smc.c.html#L1048">(addr >= R_SEG_ADDR0 && addr < R_SEG_ADDR0 + asc->cs_num_max)</a></td><td class="num">28.10</td></tr>
+      <tr><td class="num line">995</td><td><a href="aspeed_smc.c.html#L995">(!(s->regs[R_DMA_CTRL] & DMA_CTRL_GRANT))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">314</td><td><a href="aspeed_smc.c.html#L314">(seg.size && !QEMU_IS_ALIGNED(seg.addr, seg.size))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="aspeed_smc.c.html#L280">(cs == 0 && seg.addr != asc->flash_window_base)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">1052</td><td><a href="aspeed_smc.c.html#L1052">(value != s->regs[R_SEG_ADDR0 + cs])</a></td><td class="num">9.60</td></tr>
+      <tr><td class="num line">1065</td><td><a href="aspeed_smc.c.html#L1065">(aspeed_smc_has_dma(asc) && addr == R_DMA_DRAM_ADDR && aspeed_smc_dma_granted(s))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1068</td><td><a href="aspeed_smc.c.html#L1068">(aspeed_smc_has_dma(asc) && addr == R_DMA_FLASH_ADDR && aspeed_smc_dma_granted(s))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1071</td><td><a href="aspeed_smc.c.html#L1071">(aspeed_smc_has_dma(asc) && addr == R_DMA_LEN && aspeed_smc_dma_granted(s))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">838</td><td><a href="aspeed_smc.c.html#L838">(s->regs[R_DMA_CTRL] & DMA_CTRL_WRITE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">843</td><td><a href="aspeed_smc.c.html#L843">(s->regs[R_DMA_CTRL] & DMA_CTRL_CALIB)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">883</td><td><a href="aspeed_smc.c.html#L883">(s->regs[R_DMA_CTRL] & DMA_CTRL_WRITE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="aspeed_smc.c.html#L957">(s->regs[R_INTR_CTRL] & INTR_CTRL_DMA_EN)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">978</td><td><a href="aspeed_smc.c.html#L978">(s->regs[R_DMA_CTRL] & DMA_CTRL_CKSUM)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="aspeed_smc.c.html#L587">(s->snoop_index >= addr_width + 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">866</td><td><a href="aspeed_smc.c.html#L866">(s->inject_failure && aspeed_smc_inject_read_failure(s))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="aspeed_smc.c.html#L991">(!(asc->features & ASPEED_SMC_FEATURE_DMA_GRANT))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1059</td><td><a href="aspeed_smc.c.html#L1059">(aspeed_smc_has_wdt_control(asc) && addr == R_FMC_WDT2_CTRL)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="aspeed_smc.c.html#L1063">(aspeed_smc_has_dma(asc) && addr == R_DMA_CTRL)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="aspeed_smc.c.html#L782">(hclk_div && hclk_div < 6)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">227</td><td><a href="aspeed_smc.c.html#L227">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">569</td><td><a href="aspeed_smc.c.html#L569">(s->snoop_index == SNOOP_OFF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">572</td><td><a href="aspeed_smc.c.html#L572">(s->snoop_index == SNOOP_START)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">696</td><td><a href="aspeed_smc.c.html#L696">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">702</td><td><a href="aspeed_smc.c.html#L702">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1093</td><td><a href="aspeed_smc.c.html#L1093">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1138</td><td><a href="aspeed_smc.c.html#L1138">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1171</td><td><a href="aspeed_smc.c.html#L1171">(i < asc->cs_num_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">847</td><td><a href="aspeed_smc.c.html#L847">(s->regs[R_DMA_LEN])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">882</td><td><a href="aspeed_smc.c.html#L882">(s->regs[R_DMA_LEN])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">595</td><td><a href="aspeed_smc.c.html#L595">(!s->snoop_dummies)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">754</td><td><a href="aspeed_smc.c.html#L754">(hclk_mask == hclk_divisors[i])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">964</td><td><a href="aspeed_smc.c.html#L964">(!(dma_ctrl & DMA_CTRL_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1104</td><td><a href="aspeed_smc.c.html#L1104">(!s->dram_mr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1240</td><td><a href="aspeed_smc.c.html#L1240">(!s->controller)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1551</td><td><a href="aspeed_smc.c.html#L1551">(!seg->size)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1711</td><td><a href="aspeed_smc.c.html#L1711">(!seg->size)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="aspeed_smc.c.html#L262">(asc->segment_addr_mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="aspeed_smc.c.html#L393">(asc->addr_width)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">445</td><td><a href="aspeed_smc.c.html#L445">(r_ctrl0 & CTRL_IO_DUAL_ADDR_DATA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="aspeed_smc.c.html#L462">(i--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="aspeed_smc.c.html#L590">(s->snoop_dummies)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="aspeed_smc.c.html#L689">(asc->resets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="aspeed_smc.c.html#L376">(aspeed_smc_flash_mode(fl) == CTRL_READMODE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">474</td><td><a href="aspeed_smc.c.html#L474">(aspeed_smc_flash_mode(fl) == CTRL_FREADMODE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="aspeed_smc.c.html#L475">(i < aspeed_smc_flash_dummies(fl))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="aspeed_smc.c.html#L753">(i < ARRAY_SIZE(hclk_divisors))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">228</td><td><a href="aspeed_smc.c.html#L228">(i == cs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="aspeed_smc.c.html#L490">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="aspeed_smc.c.html#L499">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="aspeed_smc.c.html#L580">(ndummies <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">633</td><td><a href="aspeed_smc.c.html#L633">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="aspeed_smc.c.html#L641">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="aspeed_smc.c.html#L850">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="aspeed_smc.c.html#L886">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">894</td><td><a href="aspeed_smc.c.html#L894">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="aspeed_smc.c.html#L902">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">910</td><td><a href="aspeed_smc.c.html#L910">(result != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1008</td><td><a href="aspeed_smc.c.html#L1008">(dma_ctrl == 0xAEED0000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="aspeed_smc.c.html#L1015">(dma_ctrl == 0xDEEA0000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="aspeed_smc.c.html#L1055">(addr == R_CE_CMD_CTRL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="aspeed_smc.c.html#L1057">(addr == R_DUMMY_DATA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1061</td><td><a href="aspeed_smc.c.html#L1061">(addr == R_INTR_CTRL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1174</td><td><a href="aspeed_smc.c.html#L1174">(!object_property_set_link(OBJECT(fl), "controller", OBJECT(s), errp))</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1178</td><td><a href="aspeed_smc.c.html#L1178">(!object_property_set_uint(OBJECT(fl), "cs", i, errp))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1181</td><td><a href="aspeed_smc.c.html#L1181">(!sysbus_realize(SYS_BUS_DEVICE(fl), errp))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="aspeed_smc.c.html#L622">(!aspeed_smc_is_writable(fl))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1020</td><td><a href="aspeed_smc.c.html#L1020">(!aspeed_smc_dma_granted(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">380</td><td><a href="aspeed_smc.c.html#L380">(!cmd)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">463</td><td><a href="aspeed_smc.c.html#L463">(aspeed_smc_addr_byte_enabled(s, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">629</td><td><a href="aspeed_smc.c.html#L629">(aspeed_smc_do_snoop(fl, data, size))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="aspeed_smc.c.html#L971">(aspeed_smc_dma_in_progress(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1190</td><td><a href="aspeed_smc.c.html#L1190">(aspeed_smc_has_dma(asc))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="aspeed_smc.c.html#L1567">(reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1727</td><td><a href="aspeed_smc.c.html#L1727">(reg)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

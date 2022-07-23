@@ -1,0 +1,436 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\sodium\libsodium.c Ctrl Expressions (385) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\sodium\libsodium.c Ctrl Expressions (385) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\sodium\libsodium.c Ctrl Expressions (385)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1839</td><td><a href="libsodium.c.html#L1839">(<span style='background-color:#741da3;'>hash_len <= 0 || hash_len >= SIZE_MAX || hash_len > 0x1fffffffe0ULL</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">2012</td><td><a href="libsodium.c.html#L2012">(<span style='background-color:#741da3;'>ciphertext_real_len <= 0U || ciphertext_real_len >= SIZE_MAX || ciphertext_real_len > ciphertext_len</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">2130</td><td><a href="libsodium.c.html#L2130">(<span style='background-color:#741da3;'>ciphertext_real_len <= 0U || ciphertext_real_len >= SIZE_MAX || ciphertext_real_len > ciphertext_len</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">2247</td><td><a href="libsodium.c.html#L2247">(<span style='background-color:#741da3;'>ciphertext_real_len <= 0U || ciphertext_real_len >= SIZE_MAX || ciphertext_real_len > ciphertext_len</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">2366</td><td><a href="libsodium.c.html#L2366">(<span style='background-color:#741da3;'>ciphertext_real_len <= 0U || ciphertext_real_len >= SIZE_MAX || ciphertext_real_len > ciphertext_len</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">3433</td><td><a href="libsodium.c.html#L3433">(<span style='background-color:#741da3;'>c_real_len <= 0U || c_real_len >= SIZE_MAX || c_real_len > c_len</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">3414</td><td><a href="libsodium.c.html#L3414">(<span style='background-color:#741da3;'>msg_len > crypto_secretstream_xchacha20poly1305_MESSAGEBYTES_MAX || msg_len > SIZE_MAX - crypto_secretstream_xchacha20poly1305_ABYTES</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">2484</td><td><a href="libsodium.c.html#L2484">(sodium_hex2bin((unsigned char *)ZSTR_VAL(bin), bin_len, hex, hex_len, ignore, &bin_real_len, &end) != 0 || end != hex + hex_len)</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">2555</td><td><a href="libsodium.c.html#L2555">(sodium_base642bin((unsigned char *)ZSTR_VAL(bin), bin_len, b64, b64_len, ignore, &bin_real_len, &end, (int)variant) != 0 || end != b64 + b64_len)</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">797</td><td><a href="libsodium.c.html#L797">(crypto_box_keypair((unsigned char *)ZSTR_VAL(keypair) + crypto_box_SECRETKEYBYTES, (unsigned char *)ZSTR_VAL(keypair)) != 0)</a></td><td class="num">21.10</td></tr>
+      <tr><td class="num line">827</td><td><a href="libsodium.c.html#L827">(crypto_box_seed_keypair((unsigned char *)ZSTR_VAL(keypair) + crypto_box_SECRETKEYBYTES, (unsigned char *)ZSTR_VAL(keypair), seed) != 0)</a></td><td class="num">21.10</td></tr>
+      <tr><td class="num line">1117</td><td><a href="libsodium.c.html#L1117">(crypto_sign_keypair((unsigned char *)ZSTR_VAL(keypair) + crypto_sign_SECRETKEYBYTES, (unsigned char *)ZSTR_VAL(keypair)) != 0)</a></td><td class="num">21.10</td></tr>
+      <tr><td class="num line">1147</td><td><a href="libsodium.c.html#L1147">(crypto_sign_seed_keypair((unsigned char *)ZSTR_VAL(keypair) + crypto_sign_SECRETKEYBYTES, (unsigned char *)ZSTR_VAL(keypair), seed) != 0)</a></td><td class="num">21.10</td></tr>
+      <tr><td class="num line">1644</td><td><a href="libsodium.c.html#L1644">(zend_parse_parameters(ZEND_NUM_ARGS(), "lssll|l", &hash_len, &passwd, &passwd_len, &salt, &salt_len, &opslimit, &memlimit, &alg) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1978</td><td><a href="libsodium.c.html#L1978">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &msg, &msg_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2038</td><td><a href="libsodium.c.html#L2038">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &ciphertext, &ciphertext_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2100</td><td><a href="libsodium.c.html#L2100">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &msg, &msg_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2156</td><td><a href="libsodium.c.html#L2156">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &ciphertext, &ciphertext_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2213</td><td><a href="libsodium.c.html#L2213">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &msg, &msg_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2273</td><td><a href="libsodium.c.html#L2273">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &ciphertext, &ciphertext_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2336</td><td><a href="libsodium.c.html#L2336">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &msg, &msg_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">2392</td><td><a href="libsodium.c.html#L2392">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssss", &ciphertext, &ciphertext_len, &ad, &ad_len, &npub, &npub_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1598</td><td><a href="libsodium.c.html#L1598">(zend_parse_parameters(ZEND_NUM_ARGS(), "ssls", &msg, &msg_len, &nonce, &nonce_len, &ic, &key, &key_len) == FAILURE)</a></td><td class="num">18.50</td></tr>
+      <tr><td class="num line">1831</td><td><a href="libsodium.c.html#L1831">(zend_parse_parameters(ZEND_NUM_ARGS(), "lssll", &hash_len, &passwd, &passwd_len, &salt, &salt_len, &opslimit, &memlimit) == FAILURE)</a></td><td class="num">18.50</td></tr>
+      <tr><td class="num line">546</td><td><a href="libsodium.c.html#L546">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &msg, &msg_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">588</td><td><a href="libsodium.c.html#L588">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &ciphertext, &ciphertext_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="libsodium.c.html#L958">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &msg, &msg_len, &nonce, &nonce_len, &keypair, &keypair_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="libsodium.c.html#L1004">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &ciphertext, &ciphertext_len, &nonce, &nonce_len, &keypair, &keypair_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1403</td><td><a href="libsodium.c.html#L1403">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &signature, &signature_len, &msg, &msg_len, &publickey, &publickey_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1477</td><td><a href="libsodium.c.html#L1477">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &msg, &msg_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1557</td><td><a href="libsodium.c.html#L1557">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &msg, &msg_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">2909</td><td><a href="libsodium.c.html#L2909">(zend_parse_parameters(ZEND_NUM_ARGS(), "sss", &mac, &mac_len, &msg, &msg_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">3148</td><td><a href="libsodium.c.html#L3148">(zend_parse_parameters(ZEND_NUM_ARGS(), "llss", &subkey_len, &subkey_id, &ctx, &ctx_len, &key, &key_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">3396</td><td><a href="libsodium.c.html#L3396">(zend_parse_parameters(ZEND_NUM_ARGS(), "zs|sl", &state_zv, &msg, &msg_len, &ad, &ad_len, &tag) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">628</td><td><a href="libsodium.c.html#L628">(zend_parse_parameters(ZEND_NUM_ARGS(), "s|sl", &msg, &msg_len, &key, &key_len, &hash_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">1435</td><td><a href="libsodium.c.html#L1435">(zend_parse_parameters(ZEND_NUM_ARGS(), "lss", &ciphertext_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">1515</td><td><a href="libsodium.c.html#L1515">(zend_parse_parameters(ZEND_NUM_ARGS(), "lss", &ciphertext_len, &nonce, &nonce_len, &key, &key_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2543</td><td><a href="libsodium.c.html#L2543">(zend_parse_parameters(ZEND_NUM_ARGS(), "sl|s", &b64, &b64_len, &variant, &ignore, &ignore_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">3488</td><td><a href="libsodium.c.html#L3488">(zend_parse_parameters(ZEND_NUM_ARGS(), "zs|s", &state_zv, &c, &c_len, &ad, &ad_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">1672</td><td><a href="libsodium.c.html#L1672">(alg != crypto_pwhash_ALG_ARGON2I13 && alg != crypto_pwhash_ALG_ARGON2ID13 && alg != crypto_pwhash_ALG_DEFAULT)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">640</td><td><a href="libsodium.c.html#L640">(key_len != 0 && (key_len < crypto_generichash_KEYBYTES_MIN || key_len > crypto_generichash_KEYBYTES_MAX))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">679</td><td><a href="libsodium.c.html#L679">(key_len != 0 && (key_len < crypto_generichash_KEYBYTES_MIN || key_len > crypto_generichash_KEYBYTES_MAX))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">493</td><td><a href="libsodium.c.html#L493">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &buf1, &len1, &buf2, &len2) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="libsodium.c.html#L514">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg, &msg_len, &key, &key_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">849</td><td><a href="libsodium.c.html#L849">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &secretkey, &secretkey_len, &publickey, &publickey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1044</td><td><a href="libsodium.c.html#L1044">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg, &msg_len, &publickey, &publickey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1080</td><td><a href="libsodium.c.html#L1080">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &ciphertext, &ciphertext_len, &keypair, &keypair_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1169</td><td><a href="libsodium.c.html#L1169">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &secretkey, &secretkey_len, &publickey, &publickey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1278</td><td><a href="libsodium.c.html#L1278">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg, &msg_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1322</td><td><a href="libsodium.c.html#L1322">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg_signed, &msg_signed_len, &publickey, &publickey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1364</td><td><a href="libsodium.c.html#L1364">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg, &msg_len, &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1729</td><td><a href="libsodium.c.html#L1729">(zend_parse_parameters(ZEND_NUM_ARGS(), "sll", &passwd, &passwd_len, &opslimit, &memlimit) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1780</td><td><a href="libsodium.c.html#L1780">(zend_parse_parameters(ZEND_NUM_ARGS(), "sll", &hash_str, &hash_str_len, &opslimit, &memlimit) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1798</td><td><a href="libsodium.c.html#L1798">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &hash_str, &hash_str_len, &passwd, &passwd_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1886</td><td><a href="libsodium.c.html#L1886">(zend_parse_parameters(ZEND_NUM_ARGS(), "sll", &passwd, &passwd_len, &opslimit, &memlimit) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1930</td><td><a href="libsodium.c.html#L1930">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &hash_str, &hash_str_len, &passwd, &passwd_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2476</td><td><a href="libsodium.c.html#L2476">(zend_parse_parameters(ZEND_NUM_ARGS(), "s|s", &hex, &hex_len, &ignore, &ignore_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2583</td><td><a href="libsodium.c.html#L2583">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &n, &n_len, &p, &p_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2616</td><td><a href="libsodium.c.html#L2616">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &n, &n_len, &p, &p_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2782</td><td><a href="libsodium.c.html#L2782">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &keypair, &keypair_len, &server_pk, &server_pk_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2832</td><td><a href="libsodium.c.html#L2832">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &keypair, &keypair_len, &client_pk, &client_pk_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2878</td><td><a href="libsodium.c.html#L2878">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &msg, &msg_len, &key, &key_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2993</td><td><a href="libsodium.c.html#L2993">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &buf1, &len1, &buf2, &len2) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3452</td><td><a href="libsodium.c.html#L3452">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &header, &header_len, &key, &key_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3564</td><td><a href="libsodium.c.html#L3564">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &p, &p_len, &q, &q_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3654</td><td><a href="libsodium.c.html#L3654">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &p, &p_len, &q, &q_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3731</td><td><a href="libsodium.c.html#L3731">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &x, &x_len, &y, &y_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3817</td><td><a href="libsodium.c.html#L3817">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &p, &p_len, &q, &q_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3846</td><td><a href="libsodium.c.html#L3846">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &p, &p_len, &q, &q_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="libsodium.c.html#L465">(zend_parse_parameters(ZEND_NUM_ARGS(), "zs", &val_zv, &addv, &addv_len) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="libsodium.c.html#L668">(zend_parse_parameters(ZEND_NUM_ARGS(), "|sl", &key, &key_len, &hash_len) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">708</td><td><a href="libsodium.c.html#L708">(zend_parse_parameters(ZEND_NUM_ARGS(), "zs", &state_zv, &msg, &msg_len) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2511</td><td><a href="libsodium.c.html#L2511">(zend_parse_parameters(ZEND_NUM_ARGS(), "sl", &bin, &bin_len, &variant) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3216</td><td><a href="libsodium.c.html#L3216">(zend_parse_parameters(ZEND_NUM_ARGS(), "sl", &unpadded, &unpadded_len, &blocksize) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3289</td><td><a href="libsodium.c.html#L3289">(zend_parse_parameters(ZEND_NUM_ARGS(), "sl", &padded, &padded_len, &blocksize) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3230</td><td><a href="libsodium.c.html#L3230">((blocksize & (blocksize - 1U)) == 0U)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">747</td><td><a href="libsodium.c.html#L747">(zend_parse_parameters(ZEND_NUM_ARGS(), "z|l", &state_zv, &hash_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">816</td><td><a href="libsodium.c.html#L816">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &seed, &seed_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">879</td><td><a href="libsodium.c.html#L879">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="libsodium.c.html#L902">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">926</td><td><a href="libsodium.c.html#L926">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="libsodium.c.html#L1136">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &seed, &seed_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1199</td><td><a href="libsodium.c.html#L1199">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &secretkey, &secretkey_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1227</td><td><a href="libsodium.c.html#L1227">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="libsodium.c.html#L1250">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2448</td><td><a href="libsodium.c.html#L2448">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &bin, &bin_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2648</td><td><a href="libsodium.c.html#L2648">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &n, &n_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2678</td><td><a href="libsodium.c.html#L2678">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &seed, &seed_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2729</td><td><a href="libsodium.c.html#L2729">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2752</td><td><a href="libsodium.c.html#L2752">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &keypair, &keypair_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="libsodium.c.html#L2938">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &eddsakey, &eddsakey_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2965</td><td><a href="libsodium.c.html#L2965">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &eddsakey, &eddsakey_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3363</td><td><a href="libsodium.c.html#L3363">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &key, &key_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3511</td><td><a href="libsodium.c.html#L3511">(crypto_secretstream_xchacha20poly1305_pull((void *)state, (unsigned char *)ZSTR_VAL(msg), &msg_real_len, &tag, c, (unsigned long long)c_len, ad, (unsigned long long)ad_len) != 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3595</td><td><a href="libsodium.c.html#L3595">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3620</td><td><a href="libsodium.c.html#L3620">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3681</td><td><a href="libsodium.c.html#L3681">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3703</td><td><a href="libsodium.c.html#L3703">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3758</td><td><a href="libsodium.c.html#L3758">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3793</td><td><a href="libsodium.c.html#L3793">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &s, &s_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="libsodium.c.html#L635">(hash_len < crypto_generichash_BYTES_MIN || hash_len > crypto_generichash_BYTES_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">674</td><td><a href="libsodium.c.html#L674">(hash_len < crypto_generichash_BYTES_MIN || hash_len > crypto_generichash_BYTES_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">764</td><td><a href="libsodium.c.html#L764">(hash_len < crypto_generichash_BYTES_MIN || hash_len > crypto_generichash_BYTES_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1301</td><td><a href="libsodium.c.html#L1301">(msg_signed_real_len >= SIZE_MAX || msg_signed_real_len > msg_signed_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1344</td><td><a href="libsodium.c.html#L1344">(msg_real_len >= SIZE_MAX || msg_real_len > msg_signed_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1383</td><td><a href="libsodium.c.html#L1383">(signature_real_len <= 0U || signature_real_len > crypto_sign_BYTES)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1442</td><td><a href="libsodium.c.html#L1442">(ciphertext_len <= 0 || ciphertext_len >= SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1522</td><td><a href="libsodium.c.html#L1522">(ciphertext_len <= 0 || ciphertext_len >= SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1668</td><td><a href="libsodium.c.html#L1668">(memlimit <= 0 || memlimit > SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1739</td><td><a href="libsodium.c.html#L1739">(memlimit <= 0 || memlimit > SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1847</td><td><a href="libsodium.c.html#L1847">(memlimit <= 0 || memlimit > SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1896</td><td><a href="libsodium.c.html#L1896">(memlimit <= 0 || memlimit > SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2074</td><td><a href="libsodium.c.html#L2074">(msg_real_len >= SIZE_MAX || msg_real_len > msg_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2188</td><td><a href="libsodium.c.html#L2188">(msg_real_len >= SIZE_MAX || msg_real_len > msg_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2310</td><td><a href="libsodium.c.html#L2310">(msg_real_len >= SIZE_MAX || msg_real_len > msg_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2429</td><td><a href="libsodium.c.html#L2429">(msg_real_len >= SIZE_MAX || msg_real_len > msg_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2491</td><td><a href="libsodium.c.html#L2491">(bin_real_len >= SIZE_MAX || bin_real_len > bin_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2563</td><td><a href="libsodium.c.html#L2563">(bin_real_len >= SIZE_MAX || bin_real_len > bin_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3160</td><td><a href="libsodium.c.html#L3160">(subkey_len > crypto_kdf_BYTES_MAX || subkey_len > SIZE_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3334</td><td><a href="libsodium.c.html#L3334">(ret != 0 || unpadded_len > LONG_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3419</td><td><a href="libsodium.c.html#L3419">(tag < 0 || tag > 255)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3517</td><td><a href="libsodium.c.html#L3517">(msg_real_len >= SIZE_MAX || msg_real_len > msg_len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">424</td><td><a href="libsodium.c.html#L424">(Z_REFCOUNTED_P(buf_zv) && Z_REFCOUNT_P(buf_zv) == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">115</td><td><a href="libsodium.c.html#L115">(trace && Z_TYPE_P(trace) == IS_ARRAY)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">137</td><td><a href="libsodium.c.html#L137">(!Z_REFCOUNTED_P(zv) || Z_REFCOUNT_P(zv) > 1)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2516</td><td><a href="libsodium.c.html#L2516">((((unsigned int)variant) & ~0x6U) != 0x1U)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2549</td><td><a href="libsodium.c.html#L2549">((((unsigned int)variant) & ~0x6U) != 0x1U)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">414</td><td><a href="libsodium.c.html#L414">(zend_parse_parameters(ZEND_NUM_ARGS(), "z", &buf_zv) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">440</td><td><a href="libsodium.c.html#L440">(zend_parse_parameters(ZEND_NUM_ARGS(), "z", &val_zv) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">771</td><td><a href="libsodium.c.html#L771">(crypto_generichash_final((void *)&state_tmp, (unsigned char *)ZSTR_VAL(hash), (size_t)hash_len) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1294</td><td><a href="libsodium.c.html#L1294">(crypto_sign((unsigned char *)ZSTR_VAL(msg_signed), &msg_signed_real_len, msg, (unsigned long long)msg_len, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1338</td><td><a href="libsodium.c.html#L1338">(crypto_sign_open((unsigned char *)ZSTR_VAL(msg), &msg_real_len, msg_signed, (unsigned long long)msg_signed_len, publickey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1376</td><td><a href="libsodium.c.html#L1376">(crypto_sign_detached((unsigned char *)ZSTR_VAL(signature), &signature_real_len, msg, (unsigned long long)msg_len, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2004</td><td><a href="libsodium.c.html#L2004">(crypto_aead_aes256gcm_encrypt((unsigned char *)ZSTR_VAL(ciphertext), &ciphertext_real_len, msg, (unsigned long long)msg_len, ad, (unsigned long long)ad_len, NULL, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2067</td><td><a href="libsodium.c.html#L2067">(crypto_aead_aes256gcm_decrypt((unsigned char *)ZSTR_VAL(msg), &msg_real_len, NULL, ciphertext, (unsigned long long)ciphertext_len, ad, (unsigned long long)ad_len, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2122</td><td><a href="libsodium.c.html#L2122">(crypto_aead_chacha20poly1305_encrypt((unsigned char *)ZSTR_VAL(ciphertext), &ciphertext_real_len, msg, (unsigned long long)msg_len, ad, (unsigned long long)ad_len, NULL, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2181</td><td><a href="libsodium.c.html#L2181">(crypto_aead_chacha20poly1305_decrypt((unsigned char *)ZSTR_VAL(msg), &msg_real_len, NULL, ciphertext, (unsigned long long)ciphertext_len, ad, (unsigned long long)ad_len, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2239</td><td><a href="libsodium.c.html#L2239">(crypto_aead_chacha20poly1305_ietf_encrypt((unsigned char *)ZSTR_VAL(ciphertext), &ciphertext_real_len, msg, (unsigned long long)msg_len, ad, (unsigned long long)ad_len, NULL, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2303</td><td><a href="libsodium.c.html#L2303">(crypto_aead_chacha20poly1305_ietf_decrypt((unsigned char *)ZSTR_VAL(msg), &msg_real_len, NULL, ciphertext, (unsigned long long)ciphertext_len, ad, (unsigned long long)ad_len, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2358</td><td><a href="libsodium.c.html#L2358">(crypto_aead_xchacha20poly1305_ietf_encrypt((unsigned char *)ZSTR_VAL(ciphertext), &ciphertext_real_len, msg, (unsigned long long)msg_len, ad, (unsigned long long)ad_len, NULL, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2422</td><td><a href="libsodium.c.html#L2422">(crypto_aead_xchacha20poly1305_ietf_decrypt((unsigned char *)ZSTR_VAL(msg), &msg_real_len, NULL, ciphertext, (unsigned long long)ciphertext_len, ad, (unsigned long long)ad_len, npub, secretkey) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3254</td><td><a href="libsodium.c.html#L3254">(sodium_pad(NULL, (unsigned char *)ZSTR_VAL(padded), unpadded_len, (size_t)blocksize, xpadded_len + 1U) != 0)</a></td><td class="num">5.10</td></tr>
+      <tr><td class="num line">3425</td><td><a href="libsodium.c.html#L3425">(crypto_secretstream_xchacha20poly1305_push((void *)state, (unsigned char *)ZSTR_VAL(c), &c_real_len, msg, (unsigned long long)msg_len, ad, (unsigned long long)ad_len, (unsigned char)tag) != 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3535</td><td><a href="libsodium.c.html#L3535">(zend_parse_parameters(ZEND_NUM_ARGS(), "z", &state_zv) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">686</td><td><a href="libsodium.c.html#L686">(crypto_generichash_init((void *)&state_tmp, key, (size_t)key_len, (size_t)hash_len) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">726</td><td><a href="libsodium.c.html#L726">(crypto_generichash_update((void *)&state_tmp, msg, (unsigned long long)msg_len) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3372</td><td><a href="libsodium.c.html#L3372">(crypto_secretstream_xchacha20poly1305_init_push(&state, header, key) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3466</td><td><a href="libsodium.c.html#L3466">(crypto_secretstream_xchacha20poly1305_init_pull(&state, header, key) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">561</td><td><a href="libsodium.c.html#L561">(SIZE_MAX - msg_len <= crypto_secretbox_MACBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">884</td><td><a href="libsodium.c.html#L884">(keypair_len != crypto_box_SECRETKEYBYTES + crypto_box_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">907</td><td><a href="libsodium.c.html#L907">(keypair_len != crypto_box_SECRETKEYBYTES + crypto_box_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">969</td><td><a href="libsodium.c.html#L969">(keypair_len != crypto_box_SECRETKEYBYTES + crypto_box_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">975</td><td><a href="libsodium.c.html#L975">(SIZE_MAX - msg_len <= crypto_box_MACBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1015</td><td><a href="libsodium.c.html#L1015">(keypair_len != crypto_box_SECRETKEYBYTES + crypto_box_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1054</td><td><a href="libsodium.c.html#L1054">(SIZE_MAX - msg_len <= crypto_box_SEALBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1086</td><td><a href="libsodium.c.html#L1086">(keypair_len != crypto_box_SECRETKEYBYTES + crypto_box_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1232</td><td><a href="libsodium.c.html#L1232">(keypair_len != crypto_sign_SECRETKEYBYTES + crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1255</td><td><a href="libsodium.c.html#L1255">(keypair_len != crypto_sign_SECRETKEYBYTES + crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1288</td><td><a href="libsodium.c.html#L1288">(SIZE_MAX - msg_len <= crypto_sign_BYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1939</td><td><a href="libsodium.c.html#L1939">(hash_str_len != crypto_pwhash_scryptsalsa208sha256_STRBYTES - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1994</td><td><a href="libsodium.c.html#L1994">(SIZE_MAX - msg_len <= crypto_aead_aes256gcm_ABYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1998</td><td><a href="libsodium.c.html#L1998">((unsigned long long)msg_len > 16ULL * 1ULL << 32 - 2ULL - crypto_aead_aes256gcm_ABYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2057</td><td><a href="libsodium.c.html#L2057">(ciphertext_len - crypto_aead_aes256gcm_ABYTES > 16ULL * 1ULL << 32 - 2ULL)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2116</td><td><a href="libsodium.c.html#L2116">(SIZE_MAX - msg_len <= crypto_aead_chacha20poly1305_ABYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2229</td><td><a href="libsodium.c.html#L2229">(SIZE_MAX - msg_len <= crypto_aead_chacha20poly1305_IETF_ABYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2297</td><td><a href="libsodium.c.html#L2297">((unsigned long long)ciphertext_len - crypto_aead_chacha20poly1305_IETF_ABYTES > 64ULL * 1ULL << 32 - 64ULL)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2352</td><td><a href="libsodium.c.html#L2352">(SIZE_MAX - msg_len <= crypto_aead_xchacha20poly1305_IETF_ABYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2412</td><td><a href="libsodium.c.html#L2412">(msg_len - crypto_aead_xchacha20poly1305_IETF_ABYTES >= SIZE_MAX)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2416</td><td><a href="libsodium.c.html#L2416">((unsigned long long)ciphertext_len - crypto_aead_xchacha20poly1305_IETF_ABYTES > 64ULL * 1ULL << 32 - 64ULL)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2734</td><td><a href="libsodium.c.html#L2734">(keypair_len != crypto_kx_SECRETKEYBYTES + crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2757</td><td><a href="libsodium.c.html#L2757">(keypair_len != crypto_kx_SECRETKEYBYTES + crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2788</td><td><a href="libsodium.c.html#L2788">(keypair_len != crypto_kx_SECRETKEYBYTES + crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2838</td><td><a href="libsodium.c.html#L2838">(keypair_len != crypto_kx_SECRETKEYBYTES + crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3235</td><td><a href="libsodium.c.html#L3235">((size_t)SIZE_MAX - unpadded_len <= xpadlen)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">45</td><td><a href="libsodium.c.html#L45">(ZEND_MM_ALIGNED_SIZE(_ZSTR_STRUCT_SIZE(len)) < len)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">385</td><td><a href="libsodium.c.html#L385">(FAILURE == PHP_MINIT(sodium_password_hash)(INIT_FUNC_ARGS_PASSTHRU))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">525</td><td><a href="libsodium.c.html#L525">(crypto_shorthash((unsigned char *)ZSTR_VAL(hash), msg, (unsigned long long)msg_len, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">566</td><td><a href="libsodium.c.html#L566">(crypto_secretbox_easy((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">608</td><td><a href="libsodium.c.html#L608">(crypto_secretbox_open_easy((unsigned char *)ZSTR_VAL(msg), ciphertext, (unsigned long long)ciphertext_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">647</td><td><a href="libsodium.c.html#L647">(crypto_generichash((unsigned char *)ZSTR_VAL(hash), (size_t)hash_len, msg, (unsigned long long)msg_len, key, (size_t)key_len) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">980</td><td><a href="libsodium.c.html#L980">(crypto_box_easy((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, nonce, publickey, secretkey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1025</td><td><a href="libsodium.c.html#L1025">(crypto_box_open_easy((unsigned char *)ZSTR_VAL(msg), ciphertext, (unsigned long long)ciphertext_len, nonce, publickey, secretkey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1059</td><td><a href="libsodium.c.html#L1059">(crypto_box_seal((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, publickey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1096</td><td><a href="libsodium.c.html#L1096">(crypto_box_seal_open((unsigned char *)ZSTR_VAL(msg), ciphertext, (unsigned long long)ciphertext_len, publickey, secretkey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1210</td><td><a href="libsodium.c.html#L1210">(crypto_sign_ed25519_sk_to_pk((unsigned char *)ZSTR_VAL(publickey), (const unsigned char *)secretkey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1455</td><td><a href="libsodium.c.html#L1455">(crypto_stream((unsigned char *)ZSTR_VAL(ciphertext), (unsigned long long)ciphertext_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1494</td><td><a href="libsodium.c.html#L1494">(crypto_stream_xor((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1535</td><td><a href="libsodium.c.html#L1535">(crypto_stream_xchacha20((unsigned char *)ZSTR_VAL(ciphertext), (unsigned long long)ciphertext_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1574</td><td><a href="libsodium.c.html#L1574">(crypto_stream_xchacha20_xor((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, nonce, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1616</td><td><a href="libsodium.c.html#L1616">(crypto_stream_xchacha20_xor_ic((unsigned char *)ZSTR_VAL(ciphertext), msg, (unsigned long long)msg_len, nonce, (uint64_t)ic, key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1757</td><td><a href="libsodium.c.html#L1757">(crypto_pwhash_str(ZSTR_VAL(hash_str), passwd, (unsigned long long)passwd_len, (unsigned long long)opslimit, (size_t)memlimit) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1865</td><td><a href="libsodium.c.html#L1865">(crypto_pwhash_scryptsalsa208sha256((unsigned char *)ZSTR_VAL(hash), (unsigned long long)hash_len, passwd, (unsigned long long)passwd_len, salt, (unsigned long long)opslimit, (size_t)memlimit) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1911</td><td><a href="libsodium.c.html#L1911">(crypto_pwhash_scryptsalsa208sha256_str(ZSTR_VAL(hash_str), passwd, (unsigned long long)passwd_len, (unsigned long long)opslimit, (size_t)memlimit) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2597</td><td><a href="libsodium.c.html#L2597">(crypto_scalarmult((unsigned char *)ZSTR_VAL(q), n, p) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2632</td><td><a href="libsodium.c.html#L2632">(crypto_scalarmult_ristretto255((unsigned char *)ZSTR_VAL(q), n, p) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2659</td><td><a href="libsodium.c.html#L2659">(crypto_scalarmult_ristretto255_base((unsigned char *)ZSTR_VAL(q), n) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2889</td><td><a href="libsodium.c.html#L2889">(crypto_auth((unsigned char *)ZSTR_VAL(mac), (const unsigned char *)msg, msg_len, (const unsigned char *)key) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2949</td><td><a href="libsodium.c.html#L2949">(crypto_sign_ed25519_sk_to_curve25519((unsigned char *)ZSTR_VAL(ecdhkey), (const unsigned char *)eddsakey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2976</td><td><a href="libsodium.c.html#L2976">(crypto_sign_ed25519_pk_to_curve25519((unsigned char *)ZSTR_VAL(ecdhkey), (const unsigned char *)eddsakey) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3580</td><td><a href="libsodium.c.html#L3580">(crypto_core_ristretto255_add((unsigned char *)ZSTR_VAL(r), p, q) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3606</td><td><a href="libsodium.c.html#L3606">(crypto_core_ristretto255_from_hash((unsigned char *)ZSTR_VAL(r), s) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3714</td><td><a href="libsodium.c.html#L3714">(crypto_core_ristretto255_scalar_invert((unsigned char *)ZSTR_VAL(r), s) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3862</td><td><a href="libsodium.c.html#L3862">(crypto_core_ristretto255_sub((unsigned char *)ZSTR_VAL(r), p, q) != 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">118</td><td><a href="libsodium.c.html#L118">(Z_TYPE_P(frame) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">146</td><td><a href="libsodium.c.html#L146">(sodium_init() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">420</td><td><a href="libsodium.c.html#L420">(Z_TYPE_P(buf_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">446</td><td><a href="libsodium.c.html#L446">(Z_TYPE_P(val_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">471</td><td><a href="libsodium.c.html#L471">(Z_TYPE_P(val_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">714</td><td><a href="libsodium.c.html#L714">(Z_TYPE_P(state_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="libsodium.c.html#L753">(Z_TYPE_P(state_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="libsodium.c.html#L792">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1112</td><td><a href="libsodium.c.html#L1112">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1418</td><td><a href="libsodium.c.html#L1418">(crypto_sign_verify_detached(signature, msg, (unsigned long long)msg_len, publickey) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1784</td><td><a href="libsodium.c.html#L1784">(crypto_pwhash_str_needs_rehash(hash_str, opslimit, memlimit) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1811</td><td><a href="libsodium.c.html#L1811">(crypto_pwhash_str_verify(hash_str, passwd, (unsigned long long)passwd_len) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1943</td><td><a href="libsodium.c.html#L1943">(crypto_pwhash_scryptsalsa208sha256_str_verify(hash_str, passwd, (unsigned long long)passwd_len) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1953</td><td><a href="libsodium.c.html#L1953">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2694</td><td><a href="libsodium.c.html#L2694">(crypto_scalarmult_base(pk, sk) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2708</td><td><a href="libsodium.c.html#L2708">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2715</td><td><a href="libsodium.c.html#L2715">(crypto_scalarmult_base(pk, sk) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2800</td><td><a href="libsodium.c.html#L2800">(crypto_scalarmult(q, client_sk, server_pk) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2850</td><td><a href="libsodium.c.html#L2850">(crypto_scalarmult(q, server_sk, client_pk) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2924</td><td><a href="libsodium.c.html#L2924">(crypto_auth_verify((const unsigned char *)mac, (const unsigned char *)msg, msg_len, (const unsigned char *)key) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3013</td><td><a href="libsodium.c.html#L3013">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3025</td><td><a href="libsodium.c.html#L3025">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3036</td><td><a href="libsodium.c.html#L3036">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3048</td><td><a href="libsodium.c.html#L3048">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3060</td><td><a href="libsodium.c.html#L3060">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3071</td><td><a href="libsodium.c.html#L3071">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3082</td><td><a href="libsodium.c.html#L3082">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3093</td><td><a href="libsodium.c.html#L3093">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3104</td><td><a href="libsodium.c.html#L3104">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3115</td><td><a href="libsodium.c.html#L3115">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3126</td><td><a href="libsodium.c.html#L3126">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3349</td><td><a href="libsodium.c.html#L3349">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3403</td><td><a href="libsodium.c.html#L3403">(Z_TYPE_P(state_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3495</td><td><a href="libsodium.c.html#L3495">(Z_TYPE_P(state_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3540</td><td><a href="libsodium.c.html#L3540">(Z_TYPE_P(state_zv) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3637</td><td><a href="libsodium.c.html#L3637">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3778</td><td><a href="libsodium.c.html#L3778">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">427</td><td><a href="libsodium.c.html#L427">(buf_len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">479</td><td><a href="libsodium.c.html#L479">(val_len != addv_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="libsodium.c.html#L499">(len1 != len2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="libsodium.c.html#L520">(key_len != crypto_shorthash_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="libsodium.c.html#L553">(nonce_len != crypto_secretbox_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">557</td><td><a href="libsodium.c.html#L557">(key_len != crypto_secretbox_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="libsodium.c.html#L595">(nonce_len != crypto_secretbox_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="libsodium.c.html#L599">(key_len != crypto_secretbox_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">603</td><td><a href="libsodium.c.html#L603">(ciphertext_len < crypto_secretbox_MACBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">721</td><td><a href="libsodium.c.html#L721">(state_len != sizeof (crypto_generichash_state))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="libsodium.c.html#L760">(state_len != sizeof (crypto_generichash_state))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="libsodium.c.html#L821">(seed_len != crypto_box_SEEDBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">855</td><td><a href="libsodium.c.html#L855">(secretkey_len != crypto_box_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">859</td><td><a href="libsodium.c.html#L859">(publickey_len != crypto_box_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="libsodium.c.html#L931">(secretkey_len != crypto_box_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="libsodium.c.html#L965">(nonce_len != crypto_box_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1011</td><td><a href="libsodium.c.html#L1011">(nonce_len != crypto_box_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1021</td><td><a href="libsodium.c.html#L1021">(ciphertext_len < crypto_box_MACBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1050</td><td><a href="libsodium.c.html#L1050">(publickey_len != crypto_box_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="libsodium.c.html#L1092">(ciphertext_len < crypto_box_SEALBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1141</td><td><a href="libsodium.c.html#L1141">(seed_len != crypto_sign_SEEDBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1175</td><td><a href="libsodium.c.html#L1175">(secretkey_len != crypto_sign_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1179</td><td><a href="libsodium.c.html#L1179">(publickey_len != crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1204</td><td><a href="libsodium.c.html#L1204">(secretkey_len != crypto_sign_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="libsodium.c.html#L1284">(secretkey_len != crypto_sign_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1328</td><td><a href="libsodium.c.html#L1328">(publickey_len != crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="libsodium.c.html#L1333">(msg_len >= SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="libsodium.c.html#L1370">(secretkey_len != crypto_sign_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1410</td><td><a href="libsodium.c.html#L1410">(signature_len != crypto_sign_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="libsodium.c.html#L1414">(publickey_len != crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1446</td><td><a href="libsodium.c.html#L1446">(nonce_len != crypto_stream_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="libsodium.c.html#L1450">(key_len != crypto_stream_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1484</td><td><a href="libsodium.c.html#L1484">(nonce_len != crypto_stream_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1488</td><td><a href="libsodium.c.html#L1488">(key_len != crypto_stream_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="libsodium.c.html#L1526">(nonce_len != crypto_stream_xchacha20_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1530</td><td><a href="libsodium.c.html#L1530">(key_len != crypto_stream_xchacha20_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1564</td><td><a href="libsodium.c.html#L1564">(nonce_len != crypto_stream_xchacha20_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1568</td><td><a href="libsodium.c.html#L1568">(key_len != crypto_stream_xchacha20_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1606</td><td><a href="libsodium.c.html#L1606">(nonce_len != crypto_stream_xchacha20_NONCEBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1610</td><td><a href="libsodium.c.html#L1610">(key_len != crypto_stream_xchacha20_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1652</td><td><a href="libsodium.c.html#L1652">(hash_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1656</td><td><a href="libsodium.c.html#L1656">(hash_len >= 0xffffffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1660</td><td><a href="libsodium.c.html#L1660">(passwd_len >= 0xffffffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1664</td><td><a href="libsodium.c.html#L1664">(opslimit <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="libsodium.c.html#L1680">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1683</td><td><a href="libsodium.c.html#L1683">(salt_len != crypto_pwhash_SALTBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1687</td><td><a href="libsodium.c.html#L1687">(opslimit < crypto_pwhash_OPSLIMIT_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1691</td><td><a href="libsodium.c.html#L1691">(memlimit < crypto_pwhash_MEMLIMIT_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1697</td><td><a href="libsodium.c.html#L1697">(alg == crypto_pwhash_ALG_ARGON2ID13)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="libsodium.c.html#L1704">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1710</td><td><a href="libsodium.c.html#L1710">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="libsodium.c.html#L1735">(opslimit <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1743</td><td><a href="libsodium.c.html#L1743">(passwd_len >= 0xffffffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1747</td><td><a href="libsodium.c.html#L1747">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1750</td><td><a href="libsodium.c.html#L1750">(opslimit < crypto_pwhash_OPSLIMIT_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1753</td><td><a href="libsodium.c.html#L1753">(memlimit < crypto_pwhash_MEMLIMIT_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1804</td><td><a href="libsodium.c.html#L1804">(passwd_len >= 0xffffffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1808</td><td><a href="libsodium.c.html#L1808">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1843</td><td><a href="libsodium.c.html#L1843">(opslimit <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1851</td><td><a href="libsodium.c.html#L1851">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1854</td><td><a href="libsodium.c.html#L1854">(salt_len != crypto_pwhash_scryptsalsa208sha256_SALTBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1858</td><td><a href="libsodium.c.html#L1858">(opslimit < crypto_pwhash_scryptsalsa208sha256_OPSLIMIT_INTERACTIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1861</td><td><a href="libsodium.c.html#L1861">(memlimit < crypto_pwhash_scryptsalsa208sha256_MEMLIMIT_INTERACTIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1892</td><td><a href="libsodium.c.html#L1892">(opslimit <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1900</td><td><a href="libsodium.c.html#L1900">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1903</td><td><a href="libsodium.c.html#L1903">(opslimit < crypto_pwhash_scryptsalsa208sha256_OPSLIMIT_INTERACTIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="libsodium.c.html#L1906">(memlimit < crypto_pwhash_scryptsalsa208sha256_MEMLIMIT_INTERACTIVE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1936</td><td><a href="libsodium.c.html#L1936">(passwd_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1986</td><td><a href="libsodium.c.html#L1986">(npub_len != crypto_aead_aes256gcm_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="libsodium.c.html#L1990">(secretkey_len != crypto_aead_aes256gcm_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2046</td><td><a href="libsodium.c.html#L2046">(npub_len != crypto_aead_aes256gcm_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2050</td><td><a href="libsodium.c.html#L2050">(secretkey_len != crypto_aead_aes256gcm_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2054</td><td><a href="libsodium.c.html#L2054">(ciphertext_len < crypto_aead_aes256gcm_ABYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2062</td><td><a href="libsodium.c.html#L2062">(msg_len >= SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2108</td><td><a href="libsodium.c.html#L2108">(npub_len != crypto_aead_chacha20poly1305_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2112</td><td><a href="libsodium.c.html#L2112">(secretkey_len != crypto_aead_chacha20poly1305_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2164</td><td><a href="libsodium.c.html#L2164">(npub_len != crypto_aead_chacha20poly1305_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="libsodium.c.html#L2168">(secretkey_len != crypto_aead_chacha20poly1305_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2172</td><td><a href="libsodium.c.html#L2172">(ciphertext_len < crypto_aead_chacha20poly1305_ABYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2176</td><td><a href="libsodium.c.html#L2176">(msg_len >= SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="libsodium.c.html#L2221">(npub_len != crypto_aead_chacha20poly1305_IETF_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2225</td><td><a href="libsodium.c.html#L2225">(secretkey_len != crypto_aead_chacha20poly1305_IETF_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2233</td><td><a href="libsodium.c.html#L2233">((unsigned long long)msg_len > 64ULL * 1ULL << 32 - 64ULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2281</td><td><a href="libsodium.c.html#L2281">(npub_len != crypto_aead_chacha20poly1305_IETF_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2285</td><td><a href="libsodium.c.html#L2285">(secretkey_len != crypto_aead_chacha20poly1305_IETF_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2290</td><td><a href="libsodium.c.html#L2290">(msg_len >= SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2294</td><td><a href="libsodium.c.html#L2294">(ciphertext_len < crypto_aead_chacha20poly1305_IETF_ABYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2344</td><td><a href="libsodium.c.html#L2344">(npub_len != crypto_aead_xchacha20poly1305_IETF_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2348</td><td><a href="libsodium.c.html#L2348">(secretkey_len != crypto_aead_xchacha20poly1305_IETF_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2400</td><td><a href="libsodium.c.html#L2400">(npub_len != crypto_aead_xchacha20poly1305_IETF_NPUBBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2404</td><td><a href="libsodium.c.html#L2404">(secretkey_len != crypto_aead_xchacha20poly1305_IETF_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2408</td><td><a href="libsodium.c.html#L2408">(ciphertext_len < crypto_aead_xchacha20poly1305_IETF_ABYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2453</td><td><a href="libsodium.c.html#L2453">(bin_len >= SIZE_MAX / 2U)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2520</td><td><a href="libsodium.c.html#L2520">(bin_len >= SIZE_MAX / 4U * 3U - 3U - 1U)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2588</td><td><a href="libsodium.c.html#L2588">(n_len != crypto_scalarmult_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2592</td><td><a href="libsodium.c.html#L2592">(p_len != crypto_scalarmult_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2621</td><td><a href="libsodium.c.html#L2621">(n_len != crypto_scalarmult_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2626</td><td><a href="libsodium.c.html#L2626">(p_len != crypto_scalarmult_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2653</td><td><a href="libsodium.c.html#L2653">(n_len != crypto_scalarmult_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2683</td><td><a href="libsodium.c.html#L2683">(seed_len != crypto_kx_SEEDBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2792</td><td><a href="libsodium.c.html#L2792">(server_pk_len != crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2842</td><td><a href="libsodium.c.html#L2842">(client_pk_len != crypto_kx_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2884</td><td><a href="libsodium.c.html#L2884">(key_len != crypto_auth_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2916</td><td><a href="libsodium.c.html#L2916">(key_len != crypto_auth_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2920</td><td><a href="libsodium.c.html#L2920">(mac_len != crypto_auth_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2943</td><td><a href="libsodium.c.html#L2943">(eddsakey_len != crypto_sign_SECRETKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2970</td><td><a href="libsodium.c.html#L2970">(eddsakey_len != crypto_sign_PUBLICKEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2999</td><td><a href="libsodium.c.html#L2999">(len1 != len2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3156</td><td><a href="libsodium.c.html#L3156">(subkey_len < crypto_kdf_BYTES_MIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3164</td><td><a href="libsodium.c.html#L3164">(subkey_id < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3168</td><td><a href="libsodium.c.html#L3168">(ctx_len != crypto_kdf_CONTEXTBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3172</td><td><a href="libsodium.c.html#L3172">(key_len != crypto_kdf_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3221</td><td><a href="libsodium.c.html#L3221">(blocksize <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3225</td><td><a href="libsodium.c.html#L3225">(blocksize > SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3241</td><td><a href="libsodium.c.html#L3241">(unpadded_len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3245</td><td><a href="libsodium.c.html#L3245">(j <= xpadded_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3267</td><td><a href="libsodium.c.html#L3267">(i < blocksize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3294</td><td><a href="libsodium.c.html#L3294">(blocksize <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3298</td><td><a href="libsodium.c.html#L3298">(blocksize > SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3302</td><td><a href="libsodium.c.html#L3302">(padded_len < blocksize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3322</td><td><a href="libsodium.c.html#L3322">(i < (size_t)blocksize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3368</td><td><a href="libsodium.c.html#L3368">(key_len != crypto_secretstream_xchacha20poly1305_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3410</td><td><a href="libsodium.c.html#L3410">(state_len != sizeof (crypto_secretstream_xchacha20poly1305_state))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3458</td><td><a href="libsodium.c.html#L3458">(header_len != crypto_secretstream_xchacha20poly1305_HEADERBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3462</td><td><a href="libsodium.c.html#L3462">(key_len != crypto_secretstream_xchacha20poly1305_KEYBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3502</td><td><a href="libsodium.c.html#L3502">(state_len != sizeof (crypto_secretstream_xchacha20poly1305_state))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3506</td><td><a href="libsodium.c.html#L3506">(c_len < crypto_secretstream_xchacha20poly1305_ABYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3547</td><td><a href="libsodium.c.html#L3547">(state_len != sizeof (crypto_secretstream_xchacha20poly1305_state))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3569</td><td><a href="libsodium.c.html#L3569">(p_len != crypto_core_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3574</td><td><a href="libsodium.c.html#L3574">(q_len != crypto_core_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3600</td><td><a href="libsodium.c.html#L3600">(s_len != crypto_core_ristretto255_HASHBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3625</td><td><a href="libsodium.c.html#L3625">(s_len != crypto_core_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3659</td><td><a href="libsodium.c.html#L3659">(p_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3664</td><td><a href="libsodium.c.html#L3664">(q_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3686</td><td><a href="libsodium.c.html#L3686">(s_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3708</td><td><a href="libsodium.c.html#L3708">(s_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3736</td><td><a href="libsodium.c.html#L3736">(x_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3741</td><td><a href="libsodium.c.html#L3741">(y_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3763</td><td><a href="libsodium.c.html#L3763">(s_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3798</td><td><a href="libsodium.c.html#L3798">(s_len != crypto_core_ristretto255_NONREDUCEDSCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3822</td><td><a href="libsodium.c.html#L3822">(p_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3827</td><td><a href="libsodium.c.html#L3827">(q_len != crypto_core_ristretto255_SCALARBYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3851</td><td><a href="libsodium.c.html#L3851">(p_len != crypto_core_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3856</td><td><a href="libsodium.c.html#L3856">(q_len != crypto_core_ristretto255_BYTES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">120</td><td><a href="libsodium.c.html#L120">(args)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

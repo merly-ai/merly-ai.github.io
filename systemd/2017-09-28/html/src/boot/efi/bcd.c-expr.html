@@ -1,0 +1,82 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\boot\efi\bcd.c Ctrl Expressions (31) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\boot\efi\bcd.c Ctrl Expressions (31) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\boot\efi\bcd.c Ctrl Expressions (31)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">228</td><td><a href="bcd.c.html#L228">(<span style='background-color:#741da3;'>base_block->sig != SIG_BASE_BLOCK || base_block->version_major != 1 || base_block->version_minor != 3 || base_block->type != 0 || base_block->primary_seqnum != base_block->secondary_seqnum</span>)</a></td><td class="num">1036.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="bcd.c.html#L255">(displayorder_value->data_type != REG_MULTI_SZ || displayorder_value->data_size != sizeof(char16_t[sizeof(order_guid)]) || (uintptr_t)(bcd + displayorder_value->data_offset) % alignof(char16_t) != 0)</a></td><td class="num">55.20</td></tr>
+      <tr><td class="num line">170</td><td><a href="bcd.c.html#L170">(BAD_OFFSET(key->key_values_offset, (sizeof(uint32_t) * (uint64_t)key->n_key_values), bcd_len) || (uintptr_t)(bcd + key->key_values_offset) % alignof(uint32_t) != 0)</a></td><td class="num">53.30</td></tr>
+      <tr><td class="num line">296</td><td><a href="bcd.c.html#L296">(description_value->data_type != REG_SZ || description_value->data_size < sizeof(char16_t) || description_value->data_size % sizeof(char16_t) != 0 || (uintptr_t)(bcd + description_value->data_offset) % alignof(char16_t))</a></td><td class="num">47.05</td></tr>
+      <tr><td class="num line">123</td><td><a href="bcd.c.html#L123">(!strncaseeq8(name, subkey->entries[i].name_hint, sizeof(subkey->entries[i].name_hint)))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">152</td><td><a href="bcd.c.html#L152">(strncaseeq8(name, key->key_name, key->key_name_len) && strlen8(name) == key->key_name_len)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">197</td><td><a href="bcd.c.html#L197">(strncaseeq8(name, kv->name, kv->name_len) && strlen8(name) == kv->name_len)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="bcd.c.html#L191">(FLAGS_SET(kv->data_size, UINT32_C(1) << 31))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">194</td><td><a href="bcd.c.html#L194">(BAD_OFFSET(kv->data_offset, kv->data_size, bcd_len))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">116</td><td><a href="bcd.c.html#L116">(subkey->sig != SIG_SUBKEY_FAST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">122</td><td><a href="bcd.c.html#L122">(i < subkey->n_entries)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">145</td><td><a href="bcd.c.html#L145">(key->sig != SIG_KEY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">167</td><td><a href="bcd.c.html#L167">(key->n_key_values == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">175</td><td><a href="bcd.c.html#L175">(i < key->n_key_values)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">182</td><td><a href="bcd.c.html#L182">(kv->sig != SIG_KEY_VALUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">119</td><td><a href="bcd.c.html#L119">(BAD_ARRAY(SubkeyFast, entries, offset, subkey->n_entries, bcd_len))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">148</td><td><a href="bcd.c.html#L148">(BAD_ARRAY(Key, key_name, offset, key->key_name_len, bcd_len))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">185</td><td><a href="bcd.c.html#L185">(BAD_ARRAY(KeyValue, name, offset, kv->name_len, bcd_len))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">151</td><td><a href="bcd.c.html#L151">(*name)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">224</td><td><a href="bcd.c.html#L224">(HIVE_CELL_OFFSET >= bcd_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="bcd.c.html#L263">(i < sizeof(order_guid) - 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="bcd.c.html#L239">(!objects_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">247</td><td><a href="bcd.c.html#L247">(!displayorder_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">251</td><td><a href="bcd.c.html#L251">(!displayorder_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="bcd.c.html#L284">(!default_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">289</td><td><a href="bcd.c.html#L289">(!description_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">293</td><td><a href="bcd.c.html#L293">(!description_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">112</td><td><a href="bcd.c.html#L112">(BAD_STRUCT(SubkeyFast, offset, bcd_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">141</td><td><a href="bcd.c.html#L141">(BAD_STRUCT(Key, offset, bcd_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="bcd.c.html#L178">(BAD_STRUCT(KeyValue, offset, bcd_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="bcd.c.html#L127">(key)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

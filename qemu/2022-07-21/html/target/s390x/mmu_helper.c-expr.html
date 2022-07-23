@@ -1,0 +1,122 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\s390x\mmu_helper.c Ctrl Expressions (71) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\s390x\mmu_helper.c Ctrl Expressions (71) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\s390x\mmu_helper.c Ctrl Expressions (71)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">194</td><td><a href="mmu_helper.c.html#L194">(<span style='background-color:#741da3;'>VADDR_REGION2_TL(vaddr) < (entry & REGION_ENTRY_TF) >> 6</span> || VADDR_REGION2_TL(vaddr) > (entry & REGION_ENTRY_TL))</a></td><td class="num">1032.75</td></tr>
+      <tr><td class="num line">213</td><td><a href="mmu_helper.c.html#L213">(<span style='background-color:#741da3;'>VADDR_REGION3_TL(vaddr) < (entry & REGION_ENTRY_TF) >> 6</span> || VADDR_REGION3_TL(vaddr) > (entry & REGION_ENTRY_TL))</a></td><td class="num">1032.75</td></tr>
+      <tr><td class="num line">246</td><td><a href="mmu_helper.c.html#L246">(<span style='background-color:#741da3;'>VADDR_SEGMENT_TL(vaddr) < (entry & REGION_ENTRY_TF) >> 6</span> || VADDR_SEGMENT_TL(vaddr) > (entry & REGION_ENTRY_TL))</a></td><td class="num">1032.75</td></tr>
+      <tr><td class="num line">448</td><td><a href="mmu_helper.c.html#L448">(unlikely(rw == MMU_DATA_STORE && !(*flags & PAGE_WRITE)))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">455</td><td><a href="mmu_helper.c.html#L455">(unlikely(rw == MMU_INST_FETCH && !(*flags & PAGE_EXEC)))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">91</td><td><a href="mmu_helper.c.html#L91">(raddr >= env->psa && raddr < env->psa + 0x2000)</a></td><td class="num">31.35</td></tr>
+      <tr><td class="num line">61</td><td><a href="mmu_helper.c.html#L61">(!(env->cregs[0] & CR0_LOWPROT))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">117</td><td><a href="mmu_helper.c.html#L117">(unlikely(address_space_read(cs->as, gaddr, MEMTXATTRS_UNSPECIFIED, entry, sizeof(*entry)) != MEMTX_OK))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">232</td><td><a href="mmu_helper.c.html#L232">(edat2 && (entry & REGION3_ENTRY_CR) && asce_p)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">64</td><td><a href="mmu_helper.c.html#L64">(!(env->psw.mask & PSW_MASK_DAT))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">420</td><td><a href="mmu_helper.c.html#L420">(!(env->psw.mask & PSW_MASK_DAT))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">401</td><td><a href="mmu_helper.c.html#L401">(is_low_address(vaddr & TARGET_PAGE_MASK) && lowprot_enabled(env, asc))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">590</td><td><a href="mmu_helper.c.html#L590">(is_low_address(raddr & TARGET_PAGE_MASK) && lowprot_enabled)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="mmu_helper.c.html#L198">(edat1 && (entry & REGION_ENTRY_P))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">217</td><td><a href="mmu_helper.c.html#L217">(edat1 && (entry & REGION_ENTRY_P))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">235</td><td><a href="mmu_helper.c.html#L235">(edat1 && (entry & REGION_ENTRY_P))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">238</td><td><a href="mmu_helper.c.html#L238">(edat2 && (entry & REGION3_ENTRY_FC))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">239</td><td><a href="mmu_helper.c.html#L239">(iep && (entry & REGION3_ENTRY_IEP))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="mmu_helper.c.html#L262">((entry & SEGMENT_ENTRY_CS) && asce_p)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">268</td><td><a href="mmu_helper.c.html#L268">(edat1 && (entry & SEGMENT_ENTRY_FC))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">269</td><td><a href="mmu_helper.c.html#L269">(iep && (entry & SEGMENT_ENTRY_IEP))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="mmu_helper.c.html#L292">(iep && (entry & PAGE_ENTRY_IEP))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">411</td><td><a href="mmu_helper.c.html#L411">(is_low_address(vaddr) && rw == MMU_DATA_STORE)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">593</td><td><a href="mmu_helper.c.html#L593">(is_low_address(raddr) && rw == MMU_DATA_STORE)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="mmu_helper.c.html#L191">((entry & REGION_ENTRY_TT) != REGION_ENTRY_TT_REGION1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">210</td><td><a href="mmu_helper.c.html#L210">((entry & REGION_ENTRY_TT) != REGION_ENTRY_TT_REGION2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">229</td><td><a href="mmu_helper.c.html#L229">((entry & REGION_ENTRY_TT) != REGION_ENTRY_TT_REGION3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">259</td><td><a href="mmu_helper.c.html#L259">((entry & SEGMENT_ENTRY_TT) != SEGMENT_ENTRY_TT_SEGMENT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">466</td><td><a href="mmu_helper.c.html#L466">(!mmu_absolute_addr_valid(*raddr, rw == MMU_DATA_STORE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">602</td><td><a href="mmu_helper.c.html#L602">(!mmu_absolute_addr_valid(*addr, rw == MMU_DATA_STORE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">320</td><td><a href="mmu_helper.c.html#L320">(!skeyclass->skeys_are_enabled(ss))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">172</td><td><a href="mmu_helper.c.html#L172">(VADDR_REGION1_TX(vaddr) || VADDR_REGION2_TX(vaddr) || VADDR_REGION3_TX(vaddr))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="mmu_helper.c.html#L358">(!(key & SK_C))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">140</td><td><a href="mmu_helper.c.html#L140">(asce & ASCE_REAL_SPACE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">185</td><td><a href="mmu_helper.c.html#L185">(!read_table_entry(env, gaddr, &entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">188</td><td><a href="mmu_helper.c.html#L188">(entry & REGION_ENTRY_I)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="mmu_helper.c.html#L204">(!read_table_entry(env, gaddr, &entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="mmu_helper.c.html#L207">(entry & REGION_ENTRY_I)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">223</td><td><a href="mmu_helper.c.html#L223">(!read_table_entry(env, gaddr, &entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">226</td><td><a href="mmu_helper.c.html#L226">(entry & REGION_ENTRY_I)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">253</td><td><a href="mmu_helper.c.html#L253">(!read_table_entry(env, gaddr, &entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="mmu_helper.c.html#L256">(entry & SEGMENT_ENTRY_I)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="mmu_helper.c.html#L265">(entry & SEGMENT_ENTRY_P)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">280</td><td><a href="mmu_helper.c.html#L280">(!read_table_entry(env, gaddr, &entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="mmu_helper.c.html#L283">(entry & PAGE_ENTRY_I)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">286</td><td><a href="mmu_helper.c.html#L286">(entry & PAGE_ENTRY_0)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="mmu_helper.c.html#L289">(entry & PAGE_ENTRY_P)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">163</td><td><a href="mmu_helper.c.html#L163">(VADDR_REGION1_TX(vaddr) || VADDR_REGION2_TX(vaddr))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">148</td><td><a href="mmu_helper.c.html#L148">(VADDR_REGION1_TL(vaddr) > asce_tl)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">157</td><td><a href="mmu_helper.c.html#L157">(VADDR_REGION2_TL(vaddr) > asce_tl)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">166</td><td><a href="mmu_helper.c.html#L166">(VADDR_REGION3_TL(vaddr) > asce_tl)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">176</td><td><a href="mmu_helper.c.html#L176">(VADDR_SEGMENT_TL(vaddr) > asce_tl)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">45</td><td><a href="mmu_helper.c.html#L45">(type != PGM_ADDRESSING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">89</td><td><a href="mmu_helper.c.html#L89">(raddr < 0x2000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="mmu_helper.c.html#L372">(key != old_key)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="mmu_helper.c.html#L462">(rw >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">488</td><td><a href="mmu_helper.c.html#L488">(i < nr_pages)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">538</td><td><a href="mmu_helper.c.html#L538">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="mmu_helper.c.html#L550">(hostbuf != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">552</td><td><a href="mmu_helper.c.html#L552">(i < nr_pages)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">311</td><td><a href="mmu_helper.c.html#L311">(unlikely(!ss))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">41</td><td><a href="mmu_helper.c.html#L41">(kvm_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="mmu_helper.c.html#L154">(VADDR_REGION1_TX(vaddr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="mmu_helper.c.html#L443">(unlikely(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">504</td><td><a href="mmu_helper.c.html#L504">(kvm_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="mmu_helper.c.html#L536">(kvm_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">570</td><td><a href="mmu_helper.c.html#L570">(tcg_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="mmu_helper.c.html#L344">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">374</td><td><a href="mmu_helper.c.html#L374">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">490</td><td><a href="mmu_helper.c.html#L490">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">548</td><td><a href="mmu_helper.c.html#L548">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

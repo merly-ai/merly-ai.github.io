@@ -1,0 +1,233 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\network\networkd-setlink.c Ctrl Expressions (182) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\network\networkd-setlink.c Ctrl Expressions (182) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\network\networkd-setlink.c Ctrl Expressions (182)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">732</td><td><a href="networkd-setlink.c.html#L732">(<span style='background-color:#741da3;'>link->network->arp < 0 && link->network->multicast < 0 && link->network->allmulticast < 0 && link->network->promiscuous < 0</span>)</a></td><td class="num">1038.75</td></tr>
+      <tr><td class="num line">479</td><td><a href="networkd-setlink.c.html#L479">(link->network->keep_master && link->master_ifindex <= 0 && !streq_ptr(link->kind, "bridge"))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">695</td><td><a href="networkd-setlink.c.html#L695">(!link->network->bridge && !streq_ptr(link->kind, "bridge"))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="networkd-setlink.c.html#L805">(link->network->batadv || link->network->bond || link->network->bridge || link->network->vrf)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">785</td><td><a href="networkd-setlink.c.html#L785">(link->network->ipoib_mode < 0 && link->network->ipoib_umcast < 0)</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">874</td><td><a href="networkd-setlink.c.html#L874">(dev->kind == NETDEV_KIND_VLAN && dev->mtu > 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">878</td><td><a href="networkd-setlink.c.html#L878">(dev->kind == NETDEV_KIND_MACVLAN && dev->mtu > mtu)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">471</td><td><a href="networkd-setlink.c.html#L471">(link->network->keep_master && link->master_ifindex <= 0)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">770</td><td><a href="networkd-setlink.c.html#L770">(hw_addr_equal(&link->hw_addr, &link->requested_hw_addr))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">922</td><td><a href="networkd-setlink.c.html#L922">(link_get_by_index(link->manager, link->dsa_master_ifindex, &master) < 0)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="networkd-setlink.c.html#L1088">(link_get_by_index(link->manager, link->dsa_master_ifindex, &master) < 0)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">952</td><td><a href="networkd-setlink.c.html#L952">(r == -ENETDOWN && up && link_up_dsa_slave(link) > 0)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">626</td><td><a href="networkd-setlink.c.html#L626">(mode != IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_NONE && FLAGS_SET(link->flags, IFF_UP))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1083</td><td><a href="networkd-setlink.c.html#L1083">(up && link->dsa_master_ifindex > 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">761</td><td><a href="networkd-setlink.c.html#L761">(link->network->hw_addr.length == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">518</td><td><a href="networkd-setlink.c.html#L518">(ordered_set_contains(link->manager->request_queue, &req_mac))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">533</td><td><a href="networkd-setlink.c.html#L533">(ordered_set_contains(link->manager->request_queue, &req_mac))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">232</td><td><a href="networkd-setlink.c.html#L232">(link->network->use_bpdu >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">238</td><td><a href="networkd-setlink.c.html#L238">(link->network->hairpin >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">244</td><td><a href="networkd-setlink.c.html#L244">(link->network->isolated >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">250</td><td><a href="networkd-setlink.c.html#L250">(link->network->fast_leave >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">256</td><td><a href="networkd-setlink.c.html#L256">(link->network->allow_port_to_be_root >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">262</td><td><a href="networkd-setlink.c.html#L262">(link->network->unicast_flood >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">268</td><td><a href="networkd-setlink.c.html#L268">(link->network->multicast_flood >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">274</td><td><a href="networkd-setlink.c.html#L274">(link->network->multicast_to_unicast >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="networkd-setlink.c.html#L280">(link->network->neighbor_suppression >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="networkd-setlink.c.html#L286">(link->network->learning >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">292</td><td><a href="networkd-setlink.c.html#L292">(link->network->bridge_proxy_arp >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">298</td><td><a href="networkd-setlink.c.html#L298">(link->network->bridge_proxy_arp_wifi >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">304</td><td><a href="networkd-setlink.c.html#L304">(link->network->cost != 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="networkd-setlink.c.html#L310">(link->network->priority != LINK_BRIDGE_PORT_PRIORITY_INVALID)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="networkd-setlink.c.html#L316">(link->network->multicast_router != _MULTICAST_ROUTER_INVALID)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">359</td><td><a href="networkd-setlink.c.html#L359">(link->network->arp >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">364</td><td><a href="networkd-setlink.c.html#L364">(link->network->multicast >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">369</td><td><a href="networkd-setlink.c.html#L369">(link->network->allmulticast >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">374</td><td><a href="networkd-setlink.c.html#L374">(link->network->promiscuous >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">747</td><td><a href="networkd-setlink.c.html#L747">(link->network->group < 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">833</td><td><a href="networkd-setlink.c.html#L833">(min_mtu < link->network->ipv6_mtu)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">891</td><td><a href="networkd-setlink.c.html#L891">(link->network->mtu > 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">514</td><td><a href="networkd-setlink.c.html#L514">(!netdev_is_ready(link->network->batadv))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="networkd-setlink.c.html#L520">(!netdev_is_ready(link->network->bond))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">535</td><td><a href="networkd-setlink.c.html#L535">(!netdev_is_ready(link->network->bridge))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="networkd-setlink.c.html#L539">(!netdev_is_ready(link->network->vrf))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">649</td><td><a href="networkd-setlink.c.html#L649">(!link->network->bond)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">652</td><td><a href="networkd-setlink.c.html#L652">(!link->network->keep_master)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">670</td><td><a href="networkd-setlink.c.html#L670">(!link->network->bridge)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">673</td><td><a href="networkd-setlink.c.html#L673">(!link->network->keep_master)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">692</td><td><a href="networkd-setlink.c.html#L692">(!link->network->use_br_vlan)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">698</td><td><a href="networkd-setlink.c.html#L698">(!link->network->keep_master)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">73</td><td><a href="networkd-setlink.c.html#L73">(link->set_link_messages == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">335</td><td><a href="networkd-setlink.c.html#L335">(link->master_ifindex <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">427</td><td><a href="networkd-setlink.c.html#L427">(req->type == REQUEST_TYPE_SET_LINK_BOND)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">446</td><td><a href="networkd-setlink.c.html#L446">(netdev->state != NETDEV_STATE_READY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">448</td><td><a href="networkd-setlink.c.html#L448">(netdev->ifindex == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">496</td><td><a href="networkd-setlink.c.html#L496">(req->netlink_handler == link_set_mac_handler)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">619</td><td><a href="networkd-setlink.c.html#L619">(mode == link->ipv6ll_address_gen_mode)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">717</td><td><a href="networkd-setlink.c.html#L717">(link->iftype != ARPHRD_CAN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">782</td><td><a href="networkd-setlink.c.html#L782">(link->iftype != ARPHRD_INFINIBAND)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">845</td><td><a href="networkd-setlink.c.html#L845">(mtu > link->max_mtu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">851</td><td><a href="networkd-setlink.c.html#L851">(link->mtu == mtu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">895</td><td><a href="networkd-setlink.c.html#L895">(link->mtu >= mtu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">916</td><td><a href="networkd-setlink.c.html#L916">(link->dsa_master_ifindex <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">925</td><td><a href="networkd-setlink.c.html#L925">(master->state == LINK_STATE_UNMANAGED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1014</td><td><a href="networkd-setlink.c.html#L1014">(link->set_link_messages > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1095</td><td><a href="networkd-setlink.c.html#L1095">(link->state == LINK_STATE_UNMANAGED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1101</td><td><a href="networkd-setlink.c.html#L1101">(link->set_link_messages > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="networkd-setlink.c.html#L202">(link->network->active_slave)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">208</td><td><a href="networkd-setlink.c.html#L208">(link->network->primary_slave)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="networkd-setlink.c.html#L513">(link->network->batadv)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="networkd-setlink.c.html#L517">(link->network->bond)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">532</td><td><a href="networkd-setlink.c.html#L532">(link->network->bridge)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">538</td><td><a href="networkd-setlink.c.html#L538">(link->network->vrf)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="networkd-setlink.c.html#L798">(link->network->keep_master)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">655</td><td><a href="networkd-setlink.c.html#L655">(link_get_master(link, &master) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">676</td><td><a href="networkd-setlink.c.html#L676">(link_get_master(link, &master) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">701</td><td><a href="networkd-setlink.c.html#L701">(link_get_master(link, &master) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="networkd-setlink.c.html#L462">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="networkd-setlink.c.html#L658">(!streq_ptr(master->kind, "bond"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="networkd-setlink.c.html#L679">(!streq_ptr(master->kind, "bridge"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="networkd-setlink.c.html#L704">(!streq_ptr(master->kind, "bridge"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="networkd-setlink.c.html#L720">(!streq_ptr(link->kind, "can"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="networkd-setlink.c.html#L919">(!streq_ptr(link->driver, "dsa"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1011</td><td><a href="networkd-setlink.c.html#L1011">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="networkd-setlink.c.html#L1091">(!FLAGS_SET(master->flags, IFF_UP))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="networkd-setlink.c.html#L1098">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">468</td><td><a href="networkd-setlink.c.html#L468">(!link->master_set)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">476</td><td><a href="networkd-setlink.c.html#L476">(!link->master_set)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1104</td><td><a href="networkd-setlink.c.html#L1104">(!link->activated)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">429</td><td><a href="networkd-setlink.c.html#L429">(IN_SET(req->type, REQUEST_TYPE_SET_LINK_CAN, REQUEST_TYPE_SET_LINK_IPOIB))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">487</td><td><a href="networkd-setlink.c.html#L487">(FLAGS_SET(link->flags, IFF_UP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">526</td><td><a href="networkd-setlink.c.html#L526">(FLAGS_SET(link->flags, IFF_UP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1154</td><td><a href="networkd-setlink.c.html#L1154">(IN_SET(link->state, LINK_STATE_FAILED, LINK_STATE_LINGER))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1205</td><td><a href="networkd-setlink.c.html#L1205">(IN_SET(link->state, LINK_STATE_FAILED, LINK_STATE_LINGER))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">23</td><td><a href="networkd-setlink.c.html#L23">(get_link_default_handler(rtnl, m, link) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">52</td><td><a href="networkd-setlink.c.html#L52">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">67</td><td><a href="networkd-setlink.c.html#L67">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">83</td><td><a href="networkd-setlink.c.html#L83">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">87</td><td><a href="networkd-setlink.c.html#L87">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">134</td><td><a href="networkd-setlink.c.html#L134">(r == -EBUSY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">142</td><td><a href="networkd-setlink.c.html#L142">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">164</td><td><a href="networkd-setlink.c.html#L164">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="networkd-setlink.c.html#L170">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">186</td><td><a href="networkd-setlink.c.html#L186">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="networkd-setlink.c.html#L191">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">195</td><td><a href="networkd-setlink.c.html#L195">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="networkd-setlink.c.html#L199">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="networkd-setlink.c.html#L204">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">210</td><td><a href="networkd-setlink.c.html#L210">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">215</td><td><a href="networkd-setlink.c.html#L215">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">219</td><td><a href="networkd-setlink.c.html#L219">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">225</td><td><a href="networkd-setlink.c.html#L225">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">229</td><td><a href="networkd-setlink.c.html#L229">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">234</td><td><a href="networkd-setlink.c.html#L234">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="networkd-setlink.c.html#L240">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="networkd-setlink.c.html#L246">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">252</td><td><a href="networkd-setlink.c.html#L252">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="networkd-setlink.c.html#L258">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">264</td><td><a href="networkd-setlink.c.html#L264">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">270</td><td><a href="networkd-setlink.c.html#L270">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="networkd-setlink.c.html#L276">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="networkd-setlink.c.html#L282">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">288</td><td><a href="networkd-setlink.c.html#L288">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">294</td><td><a href="networkd-setlink.c.html#L294">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">300</td><td><a href="networkd-setlink.c.html#L300">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">306</td><td><a href="networkd-setlink.c.html#L306">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="networkd-setlink.c.html#L312">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="networkd-setlink.c.html#L318">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="networkd-setlink.c.html#L323">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">328</td><td><a href="networkd-setlink.c.html#L328">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">332</td><td><a href="networkd-setlink.c.html#L332">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="networkd-setlink.c.html#L338">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="networkd-setlink.c.html#L343">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="networkd-setlink.c.html#L347">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">353</td><td><a href="networkd-setlink.c.html#L353">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">380</td><td><a href="networkd-setlink.c.html#L380">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">387</td><td><a href="networkd-setlink.c.html#L387">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="networkd-setlink.c.html#L392">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="networkd-setlink.c.html#L397">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="networkd-setlink.c.html#L402">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="networkd-setlink.c.html#L407">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">433</td><td><a href="networkd-setlink.c.html#L433">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="networkd-setlink.c.html#L437">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="networkd-setlink.c.html#L490">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">501</td><td><a href="networkd-setlink.c.html#L501">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">529</td><td><a href="networkd-setlink.c.html#L529">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="networkd-setlink.c.html#L569">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="networkd-setlink.c.html#L573">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="networkd-setlink.c.html#L595">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">629</td><td><a href="networkd-setlink.c.html#L629">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">638</td><td><a href="networkd-setlink.c.html#L638">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">767</td><td><a href="networkd-setlink.c.html#L767">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">829</td><td><a href="networkd-setlink.c.html#L829">(min_mtu < IPV6_MIN_MTU)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="networkd-setlink.c.html#L839">(mtu < min_mtu)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">857</td><td><a href="networkd-setlink.c.html#L857">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="networkd-setlink.c.html#L929">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">934</td><td><a href="networkd-setlink.c.html#L934">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="networkd-setlink.c.html#L954">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="networkd-setlink.c.html#L967">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">998</td><td><a href="networkd-setlink.c.html#L998">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1002</td><td><a href="networkd-setlink.c.html#L1002">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="networkd-setlink.c.html#L1031">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="networkd-setlink.c.html#L1047">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1073</td><td><a href="networkd-setlink.c.html#L1073">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1121</td><td><a href="networkd-setlink.c.html#L1121">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1137</td><td><a href="networkd-setlink.c.html#L1137">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1158</td><td><a href="networkd-setlink.c.html#L1158">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="networkd-setlink.c.html#L1162">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1182</td><td><a href="networkd-setlink.c.html#L1182">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1186</td><td><a href="networkd-setlink.c.html#L1186">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="networkd-setlink.c.html#L1191">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="networkd-setlink.c.html#L1209">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="networkd-setlink.c.html#L1226">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1231</td><td><a href="networkd-setlink.c.html#L1231">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="networkd-setlink.c.html#L614">(!socket_ipv6_is_supported())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1027</td><td><a href="networkd-setlink.c.html#L1027">(!link_is_ready_to_activate(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1117</td><td><a href="networkd-setlink.c.html#L1117">(!link_is_ready_to_bring_up_or_down(link, up))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">58</td><td><a href="networkd-setlink.c.html#L58">(!ignore)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">826</td><td><a href="networkd-setlink.c.html#L826">(link_ipv6_enabled(link))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">65</td><td><a href="networkd-setlink.c.html#L65">(get_link_handler)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">601</td><td><a href="networkd-setlink.c.html#L601">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">962</td><td><a href="networkd-setlink.c.html#L962">(on_activate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="networkd-setlink.c.html#L974">(on_activate)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

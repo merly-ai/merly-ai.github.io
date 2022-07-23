@@ -1,0 +1,289 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>php-src Repo - Zend\zend_alloc.c Ctrl Expressions (238) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\zend_alloc.c Ctrl Expressions (238) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\zend_alloc.c Ctrl Expressions (238)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1123</td><td><a href="zend_alloc.c.html#L1123">(<span style='background-color:#741da3;'>free_chunk && chunk != heap->main_chunk && chunk->free_pages == ZEND_MM_PAGES - ZEND_MM_FIRST_PAGE</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">1652</td><td><a href="zend_alloc.c.html#L1652">(<span style='background-color:#741da3;'>page_num + new_pages_count <= ZEND_MM_PAGES && zend_mm_bitset_is_free_range(chunk->free_map, page_num + old_pages_count, new_pages_count - old_pages_count)</span>)</a></td><td class="num">1016.55</td></tr>
+      <tr><td class="num line">1084</td><td><a href="zend_alloc.c.html#L1084">(heap->chunks_count + heap->cached_chunks_count < heap->avg_chunks_count + 0.1 || (heap->chunks_count == heap->last_chunks_delete_boundary && heap->last_chunks_delete_count >= 4))</a></td><td class="num">52.70</td></tr>
+      <tr><td class="num line">2436</td><td><a href="zend_alloc.c.html#L2436">(ZEND_DEBUG && AG(mm_heap)->use_custom_heap == ZEND_MM_CUSTOM_HEAP_DEBUG)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2445</td><td><a href="zend_alloc.c.html#L2445">(ZEND_DEBUG && AG(mm_heap)->use_custom_heap == ZEND_MM_CUSTOM_HEAP_DEBUG)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2454</td><td><a href="zend_alloc.c.html#L2454">(ZEND_DEBUG && AG(mm_heap)->use_custom_heap == ZEND_MM_CUSTOM_HEAP_DEBUG)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2775</td><td><a href="zend_alloc.c.html#L2775">(add_size > heap->limit - heap->size && !heap->overflow)</a></td><td class="num">33.10</td></tr>
+      <tr><td class="num line">2297</td><td><a href="zend_alloc.c.html#L2297">((double)heap->cached_chunks_count + 0.9 > heap->avg_chunks_count && heap->cached_chunks)</a></td><td class="num">32.35</td></tr>
+      <tr><td class="num line">1499</td><td><a href="zend_alloc.c.html#L1499">(zend_mm_gc(heap) && new_size - old_size <= heap->limit - heap->real_size)</a></td><td class="num">31.70</td></tr>
+      <tr><td class="num line">1498</td><td><a href="zend_alloc.c.html#L1498">(UNEXPECTED(new_size - old_size > heap->limit - heap->real_size))</a></td><td class="num">31.45</td></tr>
+      <tr><td class="num line">1791</td><td><a href="zend_alloc.c.html#L1791">(zend_mm_gc(heap) && new_size <= heap->limit - heap->real_size)</a></td><td class="num">29.35</td></tr>
+      <tr><td class="num line">2687</td><td><a href="zend_alloc.c.html#L2687">(memory_limit >= heap->real_size - heap->cached_chunks_count * ZEND_MM_CHUNK_SIZE)</a></td><td class="num">29.20</td></tr>
+      <tr><td class="num line">853</td><td><a href="zend_alloc.c.html#L853">(UNEXPECTED(chunk->free_pages + chunk->free_tail == ZEND_MM_PAGES))</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">972</td><td><a href="zend_alloc.c.html#L972">(UNEXPECTED(ZEND_MM_CHUNK_SIZE > heap->limit - heap->real_size))</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">1790</td><td><a href="zend_alloc.c.html#L1790">(UNEXPECTED(new_size > heap->limit - heap->real_size))</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">2422</td><td><a href="zend_alloc.c.html#L2422">(ptr >= (void*)block && ptr < (void*)((char*)block + block->size))</a></td><td class="num">28.10</td></tr>
+      <tr><td class="num line">988</td><td><a href="zend_alloc.c.html#L988">(zend_mm_gc(heap) && (chunk = (zend_mm_chunk*)zend_mm_chunk_alloc(heap, ZEND_MM_CHUNK_SIZE, ZEND_MM_CHUNK_SIZE)) != NULL)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1806</td><td><a href="zend_alloc.c.html#L1806">(zend_mm_gc(heap) && (ptr = zend_mm_chunk_alloc(heap, new_size, ZEND_MM_CHUNK_SIZE)) != NULL)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1571</td><td><a href="zend_alloc.c.html#L1571">(old_bin_num > 0 && size < bin_data_size[old_bin_num - 1])</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">650</td><td><a href="zend_alloc.c.html#L650">((bitset[pos++] & tmp) != 0)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">2101</td><td><a href="zend_alloc.c.html#L2101">(p->dbg.filename == list->dbg.filename && p->dbg.lineno == list->dbg.lineno)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">854</td><td><a href="zend_alloc.c.html#L854">(UNEXPECTED(ZEND_MM_PAGES - chunk->free_tail < pages_count))</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">2415</td><td><a href="zend_alloc.c.html#L2415">(chunk != AG(mm_heap)->main_chunk)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2427</td><td><a href="zend_alloc.c.html#L2427">(block != AG(mm_heap)->huge_list)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1274</td><td><a href="zend_alloc.c.html#L1274">(EXPECTED(heap->free_slot[bin_num] != NULL))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">2557</td><td><a href="zend_alloc.c.html#L2557">(UNEXPECTED(AG(mm_heap)->use_custom_heap))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2567</td><td><a href="zend_alloc.c.html#L2567">(UNEXPECTED(AG(mm_heap)->use_custom_heap))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2578</td><td><a href="zend_alloc.c.html#L2578">(UNEXPECTED(AG(mm_heap)->use_custom_heap))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2588</td><td><a href="zend_alloc.c.html#L2588">(UNEXPECTED(AG(mm_heap)->use_custom_heap))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2598</td><td><a href="zend_alloc.c.html#L2598">(UNEXPECTED(AG(mm_heap)->use_custom_heap))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2401</td><td><a href="zend_alloc.c.html#L2401">(AG(mm_heap)->use_custom_heap)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">2406</td><td><a href="zend_alloc.c.html#L2406">(AG(mm_heap)->main_chunk)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">2418</td><td><a href="zend_alloc.c.html#L2418">(AG(mm_heap)->huge_list)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">2045</td><td><a href="zend_alloc.c.html#L2045">(dbg->filename == leak->filename && dbg->lineno == leak->lineno)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">2078</td><td><a href="zend_alloc.c.html#L2078">(dbg->filename == leak->filename && dbg->lineno == leak->lineno)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="zend_alloc.c.html#L1103">(!heap->cached_chunks || chunk->num > heap->cached_chunks->num)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">2410</td><td><a href="zend_alloc.c.html#L2410">(ptr >= (void*)chunk && ptr < (void*)((char*)chunk + ZEND_MM_CHUNK_SIZE))</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">2249</td><td><a href="zend_alloc.c.html#L2249">(ZEND_DEBUG && heap->use_custom_heap == ZEND_MM_CUSTOM_HEAP_DEBUG)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="zend_alloc.c.html#L964">(chunk->next == heap->main_chunk)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1015</td><td><a href="zend_alloc.c.html#L1015">(heap->chunks_count > heap->peak_chunks_count)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1096</td><td><a href="zend_alloc.c.html#L1096">(heap->chunks_count != heap->last_chunks_delete_boundary)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2941</td><td><a href="zend_alloc.c.html#L2941">(!_malloc && !_free && !_realloc)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">932</td><td><a href="zend_alloc.c.html#L932">(len >= pages_count && len < best_len)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1029</td><td><a href="zend_alloc.c.html#L1029">(steps > 2 && pages_count < 8)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1615</td><td><a href="zend_alloc.c.html#L1615">(size > ZEND_MM_MAX_SMALL_SIZE && size <= ZEND_MM_MAX_LARGE_SIZE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2070</td><td><a href="zend_alloc.c.html#L2070">(p->map[i] & ZEND_MM_IS_SRUN)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2155</td><td><a href="zend_alloc.c.html#L2155">(p->map[i] & ZEND_MM_IS_SRUN)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1119</td><td><a href="zend_alloc.c.html#L1119">(chunk->free_tail == page_num + pages_count)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">655</td><td><a href="zend_alloc.c.html#L655">(bitset[pos++] != 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2234</td><td><a href="zend_alloc.c.html#L2234">(heap->custom_heap.std._malloc == tracked_malloc)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">930</td><td><a href="zend_alloc.c.html#L930">(i >= free_tail || i == ZEND_MM_PAGES)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">762</td><td><a href="zend_alloc.c.html#L762">(heap->storage->handlers.chunk_truncate)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">781</td><td><a href="zend_alloc.c.html#L781">(heap->storage->handlers.chunk_extend)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">469</td><td><a href="zend_alloc.c.html#L469">(zend_mm_use_huge_pages && size == ZEND_MM_CHUNK_SIZE)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">850</td><td><a href="zend_alloc.c.html#L850">(UNEXPECTED(chunk->free_pages < pages_count))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2686</td><td><a href="zend_alloc.c.html#L2686">(UNEXPECTED(memory_limit < heap->real_size))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">547</td><td><a href="zend_alloc.c.html#L547">((bitset & 0xffffffff) == 0xffffffff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="zend_alloc.c.html#L550">((bitset & 0x0000ffff) == 0x0000ffff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">551</td><td><a href="zend_alloc.c.html#L551">((bitset & 0x000000ff) == 0x000000ff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">552</td><td><a href="zend_alloc.c.html#L552">((bitset & 0x0000000f) == 0x0000000f)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">553</td><td><a href="zend_alloc.c.html#L553">((bitset & 0x00000003) == 0x00000003)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">975</td><td><a href="zend_alloc.c.html#L975">(heap->overflow == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1042</td><td><a href="zend_alloc.c.html#L1042">(page_num == chunk->free_tail)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1501</td><td><a href="zend_alloc.c.html#L1501">(heap->overflow == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1716</td><td><a href="zend_alloc.c.html#L1716">(list->ptr == ptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1739</td><td><a href="zend_alloc.c.html#L1739">(list->ptr == ptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1756</td><td><a href="zend_alloc.c.html#L1756">(list->ptr == ptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1793</td><td><a href="zend_alloc.c.html#L1793">(heap->overflow == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1995</td><td><a href="zend_alloc.c.html#L1995">(i < chunk->free_tail)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2018</td><td><a href="zend_alloc.c.html#L2018">(chunk->free_pages == ZEND_MM_PAGES - ZEND_MM_FIRST_PAGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2026</td><td><a href="zend_alloc.c.html#L2026">(chunk != heap->main_chunk)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2044</td><td><a href="zend_alloc.c.html#L2044">(dbg->size != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2068</td><td><a href="zend_alloc.c.html#L2068">(i < p->free_tail)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2090</td><td><a href="zend_alloc.c.html#L2090">(p != heap->main_chunk)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2153</td><td><a href="zend_alloc.c.html#L2153">(i < p->free_tail)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2161</td><td><a href="zend_alloc.c.html#L2161">(dbg->size != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2215</td><td><a href="zend_alloc.c.html#L2215">(p != heap->main_chunk)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2276</td><td><a href="zend_alloc.c.html#L2276">(p != heap->main_chunk)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2695</td><td><a href="zend_alloc.c.html#L2695">(memory_limit < heap->real_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2641</td><td><a href="zend_alloc.c.html#L2641">(UNEXPECTED(length + 1 == 0))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2653</td><td><a href="zend_alloc.c.html#L2653">(UNEXPECTED(length + 1 == 0))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2667</td><td><a href="zend_alloc.c.html#L2667">(UNEXPECTED(length + 1 == 0))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">2855</td><td><a href="zend_alloc.c.html#L2855">(tmp && !ZEND_ATOL(tmp))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">542</td><td><a href="zend_alloc.c.html#L542">(bitset == zend_mm_bitset - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">869</td><td><a href="zend_alloc.c.html#L869">(tmp == zend_mm_bitset - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">911</td><td><a href="zend_alloc.c.html#L911">(tmp == zend_mm_bitset - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1981</td><td><a href="zend_alloc.c.html#L1981">(ZEND_MM_SRUN_FREE_COUNTER(info) == bin_elements[i])</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2002</td><td><a href="zend_alloc.c.html#L2002">(ZEND_MM_SRUN_FREE_COUNTER(info) == bin_elements[bin_num])</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1095</td><td><a href="zend_alloc.c.html#L1095">(!heap->cached_chunks)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1227</td><td><a href="zend_alloc.c.html#L1227">(bin_pages[bin_num] > 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1233</td><td><a href="zend_alloc.c.html#L1233">(i < bin_pages[bin_num])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1953</td><td><a href="zend_alloc.c.html#L1953">(free_counter == bin_elements[i])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2043</td><td><a href="zend_alloc.c.html#L2043">(j < bin_elements[bin_num])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2160</td><td><a href="zend_alloc.c.html#L2160">(j < bin_elements[bin_num])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2881</td><td><a href="zend_alloc.c.html#L2881">(tmp && ZEND_ATOL(tmp))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">530</td><td><a href="zend_alloc.c.html#L530">(!BitScanForward64(&index, ~bitset))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">738</td><td><a href="zend_alloc.c.html#L738">(UNEXPECTED(heap->storage))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">750</td><td><a href="zend_alloc.c.html#L750">(UNEXPECTED(heap->storage))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">761</td><td><a href="zend_alloc.c.html#L761">(UNEXPECTED(heap->storage))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">780</td><td><a href="zend_alloc.c.html#L780">(UNEXPECTED(heap->storage))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1320</td><td><a href="zend_alloc.c.html#L1320">(EXPECTED(info & ZEND_MM_IS_SRUN))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1390</td><td><a href="zend_alloc.c.html#L1390">(EXPECTED(info & ZEND_MM_IS_SRUN))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1420</td><td><a href="zend_alloc.c.html#L1420">(EXPECTED(info & ZEND_MM_IS_SRUN))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1996</td><td><a href="zend_alloc.c.html#L1996">(zend_mm_bitset_is_set(chunk->free_map, i))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2069</td><td><a href="zend_alloc.c.html#L2069">(zend_mm_bitset_is_set(p->free_map, i))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2154</td><td><a href="zend_alloc.c.html#L2154">(zend_mm_bitset_is_set(p->free_map, i))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">966</td><td><a href="zend_alloc.c.html#L966">(heap->cached_chunks)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="zend_alloc.c.html#L1153">(!BitScanReverse(&index, (unsigned long)size))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1562</td><td><a href="zend_alloc.c.html#L1562">(info & ZEND_MM_IS_SRUN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1929</td><td><a href="zend_alloc.c.html#L1929">(heap->use_custom_heap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1945</td><td><a href="zend_alloc.c.html#L1945">(info & ZEND_MM_IS_LRUN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1974</td><td><a href="zend_alloc.c.html#L1974">(info & ZEND_MM_IS_LRUN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1998</td><td><a href="zend_alloc.c.html#L1998">(info & ZEND_MM_IS_SRUN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2233</td><td><a href="zend_alloc.c.html#L2233">(heap->use_custom_heap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2287</td><td><a href="zend_alloc.c.html#L2287">(heap->cached_chunks)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2960</td><td><a href="zend_alloc.c.html#L2960">(heap->use_custom_heap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3089</td><td><a href="zend_alloc.c.html#L3089">(EXPECTED(tmp || !len))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3108</td><td><a href="zend_alloc.c.html#L3108">(EXPECTED(p || !len))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">405</td><td><a href="zend_alloc.c.html#L405">(!buf[0])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">441</td><td><a href="zend_alloc.c.html#L441">(munmap(ptr, size) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">501</td><td><a href="zend_alloc.c.html#L501">(VirtualFree(addr, 0, MEM_RELEASE) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">507</td><td><a href="zend_alloc.c.html#L507">(munmap(addr, size) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">695</td><td><a href="zend_alloc.c.html#L695">(ZEND_MM_ALIGNED_OFFSET(ptr, alignment) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">986</td><td><a href="zend_alloc.c.html#L986">(UNEXPECTED(chunk == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1185</td><td><a href="zend_alloc.c.html#L1185">(UNEXPECTED(size <= 2))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1219</td><td><a href="zend_alloc.c.html#L1219">(UNEXPECTED(bin == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1341</td><td><a href="zend_alloc.c.html#L1341">(UNEXPECTED(size < real_size))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1346</td><td><a href="zend_alloc.c.html#L1346">(EXPECTED(size <= ZEND_MM_MAX_SMALL_SIZE))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1357</td><td><a href="zend_alloc.c.html#L1357">(EXPECTED(size <= ZEND_MM_MAX_LARGE_SIZE))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1380</td><td><a href="zend_alloc.c.html#L1380">(UNEXPECTED(page_offset == 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1405</td><td><a href="zend_alloc.c.html#L1405">(UNEXPECTED(page_offset == 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1545</td><td><a href="zend_alloc.c.html#L1545">(UNEXPECTED(page_offset == 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1546</td><td><a href="zend_alloc.c.html#L1546">(EXPECTED(ptr == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1785</td><td><a href="zend_alloc.c.html#L1785">(UNEXPECTED(new_size < size))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1804</td><td><a href="zend_alloc.c.html#L1804">(UNEXPECTED(ptr == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1868</td><td><a href="zend_alloc.c.html#L1868">(UNEXPECTED(chunk == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2671</td><td><a href="zend_alloc.c.html#L2671">(UNEXPECTED(p == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3017</td><td><a href="zend_alloc.c.html#L3017">(UNEXPECTED(chunk == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">435</td><td><a href="zend_alloc.c.html#L435">(ptr == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="zend_alloc.c.html#L440">(ptr != addr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="zend_alloc.c.html#L458">(ptr == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="zend_alloc.c.html#L478">(ptr != MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="zend_alloc.c.html#L487">(ptr == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="zend_alloc.c.html#L575">(len == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">583</td><td><a href="zend_alloc.c.html#L583">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="zend_alloc.c.html#L587">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">607</td><td><a href="zend_alloc.c.html#L607">(len == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">615</td><td><a href="zend_alloc.c.html#L615">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">619</td><td><a href="zend_alloc.c.html#L619">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="zend_alloc.c.html#L639">(len == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="zend_alloc.c.html#L647">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">653</td><td><a href="zend_alloc.c.html#L653">(pos != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">693</td><td><a href="zend_alloc.c.html#L693">(ptr == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="zend_alloc.c.html#L711">(offset != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="zend_alloc.c.html#L718">(offset != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">724</td><td><a href="zend_alloc.c.html#L724">(alignment > REAL_PAGE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">791</td><td><a href="zend_alloc.c.html#L791">(ptr == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="zend_alloc.c.html#L871">(i == ZEND_MM_PAGES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="zend_alloc.c.html#L881">(tmp == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">884</td><td><a href="zend_alloc.c.html#L884">(len >= pages_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="zend_alloc.c.html#L886">(i >= free_tail)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">893</td><td><a href="zend_alloc.c.html#L893">(len >= pages_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="zend_alloc.c.html#L913">(i == ZEND_MM_PAGES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="zend_alloc.c.html#L914">(best > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">928</td><td><a href="zend_alloc.c.html#L928">(tmp == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">938</td><td><a href="zend_alloc.c.html#L938">(best > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">950</td><td><a href="zend_alloc.c.html#L950">(len >= pages_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">951</td><td><a href="zend_alloc.c.html#L951">(len == pages_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">953</td><td><a href="zend_alloc.c.html#L953">(len < best_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="zend_alloc.c.html#L1161">(size <= 0x00ff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="zend_alloc.c.html#L1162">(size <= 0x0fff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1163</td><td><a href="zend_alloc.c.html#L1163">(size <= 0x3fff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1164</td><td><a href="zend_alloc.c.html#L1164">(size <= 0x7fff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="zend_alloc.c.html#L1191">(size <= 64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1248</td><td><a href="zend_alloc.c.html#L1248">(p != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1381</td><td><a href="zend_alloc.c.html#L1381">(ptr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1460</td><td><a href="zend_alloc.c.html#L1460">(size > ZEND_MM_MAX_LARGE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="zend_alloc.c.html#L1473">(new_size == old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1480</td><td><a href="zend_alloc.c.html#L1480">(new_size < old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1569</td><td><a href="zend_alloc.c.html#L1569">(size <= old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="zend_alloc.c.html#L1581">(size <= ZEND_MM_MAX_SMALL_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1617</td><td><a href="zend_alloc.c.html#L1617">(new_size == old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1627</td><td><a href="zend_alloc.c.html#L1627">(new_size < old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1715</td><td><a href="zend_alloc.c.html#L1715">(list != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1738</td><td><a href="zend_alloc.c.html#L1738">(list != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1755</td><td><a href="zend_alloc.c.html#L1755">(list != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="zend_alloc.c.html#L1934">(i < ZEND_MM_BINS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1937</td><td><a href="zend_alloc.c.html#L1937">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1966</td><td><a href="zend_alloc.c.html#L1966">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2306</td><td><a href="zend_alloc.c.html#L2306">(p != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2824</td><td><a href="zend_alloc.c.html#L2824">(new_size > old_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1960</td><td><a href="zend_alloc.c.html#L1960">(!has_free_pages)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2260</td><td><a href="zend_alloc.c.html#L2260">(!silent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2794</td><td><a href="zend_alloc.c.html#L2794">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2804</td><td><a href="zend_alloc.c.html#L2804">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2863</td><td><a href="zend_alloc.c.html#L2863">(!tracked)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3063</td><td><a href="zend_alloc.c.html#L3063">(!storage)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">973</td><td><a href="zend_alloc.c.html#L973">(zend_mm_gc(heap))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="zend_alloc.c.html#L1482">(zend_mm_chunk_truncate(heap, ptr, old_size, new_size))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1512</td><td><a href="zend_alloc.c.html#L1512">(zend_mm_chunk_extend(heap, ptr, old_size, new_size))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2674</td><td><a href="zend_alloc.c.html#L2674">(EXPECTED(length))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">546</td><td><a href="zend_alloc.c.html#L546">(sizeof(zend_mm_bitset) == 8)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">696</td><td><a href="zend_alloc.c.html#L696">(zend_mm_use_huge_pages)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">727</td><td><a href="zend_alloc.c.html#L727">(zend_mm_use_huge_pages)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">849</td><td><a href="zend_alloc.c.html#L849">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">860</td><td><a href="zend_alloc.c.html#L860">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">867</td><td><a href="zend_alloc.c.html#L867">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">909</td><td><a href="zend_alloc.c.html#L909">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1008</td><td><a href="zend_alloc.c.html#L1008">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1062</td><td><a href="zend_alloc.c.html#L1062">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1245</td><td><a href="zend_alloc.c.html#L1245">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1256</td><td><a href="zend_alloc.c.html#L1256">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1271</td><td><a href="zend_alloc.c.html#L1271">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1295</td><td><a href="zend_alloc.c.html#L1295">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1442</td><td><a href="zend_alloc.c.html#L1442">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1594</td><td><a href="zend_alloc.c.html#L1594">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1610</td><td><a href="zend_alloc.c.html#L1610">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1660</td><td><a href="zend_alloc.c.html#L1660">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1719</td><td><a href="zend_alloc.c.html#L1719">(prev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1831</td><td><a href="zend_alloc.c.html#L1831">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1837</td><td><a href="zend_alloc.c.html#L1837">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2057</td><td><a href="zend_alloc.c.html#L2057">(empty)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2100</td><td><a href="zend_alloc.c.html#L2100">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2126</td><td><a href="zend_alloc.c.html#L2126">(list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2140</td><td><a href="zend_alloc.c.html#L2140">(repeated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2179</td><td><a href="zend_alloc.c.html#L2179">(repeated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2205</td><td><a href="zend_alloc.c.html#L2205">(repeated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2216</td><td><a href="zend_alloc.c.html#L2216">(total)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2235</td><td><a href="zend_alloc.c.html#L2235">(silent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2239</td><td><a href="zend_alloc.c.html#L2239">(full)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2248</td><td><a href="zend_alloc.c.html#L2248">(full)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2268</td><td><a href="zend_alloc.c.html#L2268">(list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2285</td><td><a href="zend_alloc.c.html#L2285">(full)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2717</td><td><a href="zend_alloc.c.html#L2717">(real_usage)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2730</td><td><a href="zend_alloc.c.html#L2730">(real_usage)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2819</td><td><a href="zend_alloc.c.html#L2819">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2829</td><td><a href="zend_alloc.c.html#L2829">(old_size_zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3075</td><td><a href="zend_alloc.c.html#L3075">(data)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

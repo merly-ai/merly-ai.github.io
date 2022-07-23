@@ -1,0 +1,179 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - sapi\phpdbg\phpdbg_bp.c Ctrl Expressions (128) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - sapi\phpdbg\phpdbg_bp.c Ctrl Expressions (128) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;sapi\phpdbg\phpdbg_bp.c Ctrl Expressions (128)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">353</td><td><a href="phpdbg_bp.c.html#L353">(<span style='background-color:#9c4c02;'>((ZSTR_LEN(cur) < filelen && (<span style='background-color:#741da3;'>file[filelen - ZSTR_LEN(cur) - 1]</span> == '/' || WIN32_PATH_CHECK)) || filelen == ZSTR_LEN(cur)) && !memcmp(file + filelen - ZSTR_LEN(cur), ZSTR_VAL(cur), ZSTR_LEN(cur))</span>)</a></td><td class="num">1122.90</td></tr>
+      <tr><td class="num line">542</td><td><a href="phpdbg_bp.c.html#L542">(op_array->scope != NULL && !(func_table = zend_hash_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_METHOD_OPLINE], op_array->scope->name)))</a></td><td class="num">87.00</td></tr>
+      <tr><td class="num line">1162</td><td><a href="phpdbg_bp.c.html#L1162">(execute_data->opline == op_array->opcodes + op_array->num_args + !!(op_array->fn_flags & ZEND_ACC_VARIADIC))</a></td><td class="num">70.00</td></tr>
+      <tr><td class="num line">579</td><td><a href="phpdbg_bp.c.html#L579">(PHPDBG_G(ops) != NULL && !memcmp(PHPDBG_G(ops)->filename, new_break->class_name, new_break->class_len))</a></td><td class="num">67.75</td></tr>
+      <tr><td class="num line">592</td><td><a href="phpdbg_bp.c.html#L592">(op_array->function_name == NULL && op_array->scope == NULL && new_break->class_len == ZSTR_LEN(op_array->filename) && !memcmp(ZSTR_VAL(op_array->filename), new_break->class_name, new_break->class_len))</a></td><td class="num">66.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="phpdbg_bp.c.html#L946">(EG(current_execute_data) && (brake = zend_hash_index_find_ptr(breaks, EG(current_execute_data)->opline->lineno)))</a></td><td class="num">62.00</td></tr>
+      <tr><td class="num line">547</td><td><a href="phpdbg_bp.c.html#L547">(!(oplines_table = zend_hash_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_FILE_OPLINE], op_array->filename)))</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">942</td><td><a href="phpdbg_bp.c.html#L942">(!(breaks = zend_hash_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_FILE], op_array->filename)))</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">1003</td><td><a href="phpdbg_bp.c.html#L1003">((brake = zend_hash_index_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_OPLINE], (zend_ulong)opline)) && brake->base)</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">666</td><td><a href="phpdbg_bp.c.html#L666">(!(class_table = zend_hash_str_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_METHOD_OPLINE], new_break.class_name, new_break.class_len)))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="phpdbg_bp.c.html#L718">(!(func_table = zend_hash_str_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_FUNCTION_OPLINE], new_break.func_name, new_break.func_len)))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">764</td><td><a href="phpdbg_bp.c.html#L764">(!(file_table = zend_hash_str_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_FILE_OPLINE], new_break.class_name, new_break.class_len)))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="phpdbg_bp.c.html#L320">(!(pending = ((fileht = phpdbg_resolve_pending_file_break_ex(ZSTR_VAL(file), ZSTR_LEN(file), path_str, broken)) == NULL)))</a></td><td class="num">61.00</td></tr>
+      <tr><td class="num line">359</td><td><a href="phpdbg_bp.c.html#L359">(!(master = zend_hash_str_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_FILE], file, filelen)))</a></td><td class="num">57.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="phpdbg_bp.c.html#L450">(!(class_table = zend_hash_str_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_METHOD], class_lcname, class_len)))</a></td><td class="num">57.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="phpdbg_bp.c.html#L550">(!op_array->function_name || !(oplines_table = zend_hash_find_ptr(func_table, op_array->function_name)))</a></td><td class="num">49.75</td></tr>
+      <tr><td class="num line">1155</td><td><a href="phpdbg_bp.c.html#L1155">((PHPDBG_G(flags) & PHPDBG_HAS_FILE_BP) && (base = phpdbg_find_breakpoint_file(&execute_data->func->op_array)))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">607</td><td><a href="phpdbg_bp.c.html#L607">(!(ce = zend_hash_str_find_ptr(EG(class_table), zend_str_tolower_dup(new_break->class_name, new_break->class_len), new_break->class_len)))</a></td><td class="num">45.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="phpdbg_bp.c.html#L613">(!(func = zend_hash_str_find_ptr(func_table, zend_str_tolower_dup(new_break->func_name, new_break->func_len), new_break->func_len)))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">1431</td><td><a href="phpdbg_bp.c.html#L1431">((*table = zend_hash_index_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_MAP], id)))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">987</td><td><a href="phpdbg_bp.c.html#L987">((class_table = zend_hash_find_ptr(&PHPDBG_G(bp)[PHPDBG_BREAK_METHOD], class_lcname)))</a></td><td class="num">40.25</td></tr>
+      <tr><td class="num line">1206</td><td><a href="phpdbg_bp.c.html#L1206">(zend_hash_num_elements(&PHPDBG_G(bp)[type]) == 1)</a></td><td class="num">40.25</td></tr>
+      <tr><td class="num line">1223</td><td><a href="phpdbg_bp.c.html#L1223">(zend_hash_num_elements(&PHPDBG_G(bp)[PHPDBG_BREAK_OPLINE]) == 1)</a></td><td class="num">40.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="phpdbg_bp.c.html#L377">(!zend_hash_num_elements(&PHPDBG_G(bp)[PHPDBG_BREAK_FILE_PENDING]))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="phpdbg_bp.c.html#L415">(!zend_hash_str_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_SYM], name, name_len))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">481</td><td><a href="phpdbg_bp.c.html#L481">(!zend_hash_index_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_OPLINE], opline))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">808</td><td><a href="phpdbg_bp.c.html#L808">(!zend_hash_index_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_OPLINE], (zend_ulong)opline))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="phpdbg_bp.c.html#L905">(!zend_hash_index_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_COND], expr_hash))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="phpdbg_bp.c.html#L923">(!zend_hash_index_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_COND], hash))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="phpdbg_bp.c.html#L1070">(lengths[0] == lengths[1] && memcmp(param->method.class, ops->scope->name, lengths[0]) == SUCCESS)</a></td><td class="num">37.75</td></tr>
+      <tr><td class="num line">1074</td><td><a href="phpdbg_bp.c.html#L1074">(lengths[0] == lengths[1] && memcmp(param->method.name, ops->function_name, lengths[0]) == SUCCESS)</a></td><td class="num">35.75</td></tr>
+      <tr><td class="num line">1149</td><td><a href="phpdbg_bp.c.html#L1149">(!(PHPDBG_G(flags) & PHPDBG_IN_EVAL) && (PHPDBG_G(flags) & PHPDBG_HAS_COND_BP) && (base = phpdbg_find_conditional_breakpoint(execute_data)))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">1173</td><td><a href="phpdbg_bp.c.html#L1173">((PHPDBG_G(flags) & PHPDBG_HAS_OPCODE_BP) && (base = phpdbg_find_breakpoint_opcode(execute_data->opline->opcode)))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">1169</td><td><a href="phpdbg_bp.c.html#L1169">((PHPDBG_G(flags) & PHPDBG_HAS_OPLINE_BP) && (base = phpdbg_find_breakpoint_opline((phpdbg_opline_ptr_t)execute_data->opline)))</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">1041</td><td><a href="phpdbg_bp.c.html#L1041">(len == param->len && memcmp(param->str, str, len) == SUCCESS)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">671</td><td><a href="phpdbg_bp.c.html#L671">(!(method_table = zend_hash_str_find_ptr(class_table, new_break.func_name, new_break.func_len)))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="phpdbg_bp.c.html#L251">((*str) && !(*str)[0])</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">630</td><td><a href="phpdbg_bp.c.html#L630">(phpdbg_resolve_op_array_break(new_break, &func->op_array) == FAILURE)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1109</td><td><a href="phpdbg_bp.c.html#L1109">(!phpdbg_find_breakpoint_param(&bp->param, execute_data))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">124</td><td><a href="phpdbg_bp.c.html#L124">(zend_hash_num_elements(&PHPDBG_G(bp)[PHPDBG_BREAK_MAP]))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">789</td><td><a href="phpdbg_bp.c.html#L789">(zend_hash_index_exists(&PHPDBG_G(bp)[PHPDBG_BREAK_OPCODE], hash))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="phpdbg_bp.c.html#L276">(!zend_hash_str_exists(&PHPDBG_G(file_sources), path, path_len))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">614</td><td><a href="phpdbg_bp.c.html#L614">(new_break->class_name != NULL && new_break->func_name != NULL)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1195</td><td><a href="phpdbg_bp.c.html#L1195">((brake = phpdbg_find_breakbase_ex(num, &table, &numkey, &strkey)))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="phpdbg_bp.c.html#L600">((execute_data = execute_data->prev_execute_data) != NULL)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1163</td><td><a href="phpdbg_bp.c.html#L1163">((base = phpdbg_find_breakpoint_symbol(execute_data->func)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">854</td><td><a href="phpdbg_bp.c.html#L854">(new_break.param.type == FILE_PARAM || new_break.param.type == NUMERIC_FILE_PARAM)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="phpdbg_bp.c.html#L503">(op_array->last <= brake->opline_num)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">297</td><td><a href="phpdbg_bp.c.html#L297">(!(broken = zend_hash_find_ptr(file_breaks, path_str)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="phpdbg_bp.c.html#L1048">(param->file.line == zend_get_executed_lineno())</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">590</td><td><a href="phpdbg_bp.c.html#L590">(ZEND_USER_CODE(execute_data->func->common.type))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">287</td><td><a href="phpdbg_bp.c.html#L287">(!(ssb.sb.st_mode & S_IFREG | S_IFLNK))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">370</td><td><a href="phpdbg_bp.c.html#L370">(zend_hash_index_add_mem(master, brake->line, &new_brake, sizeof(phpdbg_breakfile_t)))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1052</td><td><a href="phpdbg_bp.c.html#L1052">(lengths[0] == lengths[1])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">132</td><td><a href="phpdbg_bp.c.html#L132">(brake->id == id)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">504</td><td><a href="phpdbg_bp.c.html#L504">(brake->class_name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="phpdbg_bp.c.html#L506">(brake->func_name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">546</td><td><a href="phpdbg_bp.c.html#L546">(op_array->function_name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">577</td><td><a href="phpdbg_bp.c.html#L577">(new_break->func_name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">605</td><td><a href="phpdbg_bp.c.html#L605">(new_break->class_name != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">621</td><td><a href="phpdbg_bp.c.html#L621">(func->type != ZEND_USER_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">622</td><td><a href="phpdbg_bp.c.html#L622">(new_break->class_name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">957</td><td><a href="phpdbg_bp.c.html#L957">(fbc->type != ZEND_USER_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1030</td><td><a href="phpdbg_bp.c.html#L1030">(function->type != ZEND_USER_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1061</td><td><a href="phpdbg_bp.c.html#L1061">(function->type != ZEND_USER_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1435</td><td><a href="phpdbg_bp.c.html#L1435">(brake->id == id)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1523</td><td><a href="phpdbg_bp.c.html#L1523">(brake->type == PHPDBG_BREAK_METHOD_OPLINE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1525</td><td><a href="phpdbg_bp.c.html#L1525">(brake->type == PHPDBG_BREAK_FUNCTION_OPLINE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1527</td><td><a href="phpdbg_bp.c.html#L1527">(brake->type == PHPDBG_BREAK_FILE_OPLINE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">277</td><td><a href="phpdbg_bp.c.html#L277">(php_stream_stat_path(path, &ssb) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">408</td><td><a href="phpdbg_bp.c.html#L408">(*name == '\\')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">442</td><td><a href="phpdbg_bp.c.html#L442">(*class_name == '\\')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1144</td><td><a href="phpdbg_bp.c.html#L1144">(!(PHPDBG_G(flags) & PHPDBG_IS_BP_ENABLED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">242</td><td><a href="phpdbg_bp.c.html#L242">((*str)[0])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">278</td><td><a href="phpdbg_bp.c.html#L278">(original_path[0] == '/')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1159</td><td><a href="phpdbg_bp.c.html#L1159">(PHPDBG_G(flags) & PHPDBG_HAS_METHOD_BP | PHPDBG_HAS_SYM_BP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1447</td><td><a href="phpdbg_bp.c.html#L1447">((PHPDBG_G(flags) & PHPDBG_HAS_SYM_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1459</td><td><a href="phpdbg_bp.c.html#L1459">((PHPDBG_G(flags) & PHPDBG_HAS_METHOD_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1475</td><td><a href="phpdbg_bp.c.html#L1475">((PHPDBG_G(flags) & PHPDBG_HAS_FILE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1489</td><td><a href="phpdbg_bp.c.html#L1489">((PHPDBG_G(flags) & PHPDBG_HAS_PENDING_FILE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1505</td><td><a href="phpdbg_bp.c.html#L1505">((PHPDBG_G(flags) & PHPDBG_HAS_OPLINE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1545</td><td><a href="phpdbg_bp.c.html#L1545">((PHPDBG_G(flags) & PHPDBG_HAS_METHOD_OPLINE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1563</td><td><a href="phpdbg_bp.c.html#L1563">((PHPDBG_G(flags) & PHPDBG_HAS_FUNCTION_OPLINE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1579</td><td><a href="phpdbg_bp.c.html#L1579">((PHPDBG_G(flags) & PHPDBG_HAS_FILE_OPLINE_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1595</td><td><a href="phpdbg_bp.c.html#L1595">((PHPDBG_G(flags) & PHPDBG_HAS_COND_BP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1651</td><td><a href="phpdbg_bp.c.html#L1651">(PHPDBG_G(flags) & PHPDBG_HAS_OPCODE_BP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">87</td><td><a href="phpdbg_bp.c.html#L87">(bp->class_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">90</td><td><a href="phpdbg_bp.c.html#L90">(bp->func_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="phpdbg_bp.c.html#L191">(conditional->paramed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">521</td><td><a href="phpdbg_bp.c.html#L521">(op_array->scope)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="phpdbg_bp.c.html#L523">(op_array->function_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="phpdbg_bp.c.html#L919">(param->next)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">963</td><td><a href="phpdbg_bp.c.html#L963">(ops->scope)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">968</td><td><a href="phpdbg_bp.c.html#L968">(ops->function_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="phpdbg_bp.c.html#L1068">(ops->scope)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1104</td><td><a href="phpdbg_bp.c.html#L1104">(((phpdbg_breakbase_t*)bp)->disabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1108</td><td><a href="phpdbg_bp.c.html#L1108">(bp->paramed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1181</td><td><a href="phpdbg_bp.c.html#L1181">(base->disabled)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1362</td><td><a href="phpdbg_bp.c.html#L1362">(((phpdbg_breakcond_t*)brake)->paramed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1601</td><td><a href="phpdbg_bp.c.html#L1601">(brake->paramed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="phpdbg_bp.c.html#L580">(phpdbg_resolve_op_array_break(new_break, PHPDBG_G(ops)) == SUCCESS)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">555</td><td><a href="phpdbg_bp.c.html#L555">(phpdbg_resolve_op_array_break(brake, op_array) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">578</td><td><a href="phpdbg_bp.c.html#L578">(EG(current_execute_data) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">593</td><td><a href="phpdbg_bp.c.html#L593">(phpdbg_resolve_op_array_break(new_break, op_array) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1121</td><td><a href="phpdbg_bp.c.html#L1121">(zend_is_true(&retval))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1203</td><td><a href="phpdbg_bp.c.html#L1203">(zend_hash_num_elements(table) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1213</td><td><a href="phpdbg_bp.c.html#L1213">(zend_hash_num_elements(table) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">858</td><td><a href="phpdbg_bp.c.html#L858">(VCWD_REALPATH(new_break.param.file.name, realpath))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1132</td><td><a href="phpdbg_bp.c.html#L1132">(breakpoint == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">884</td><td><a href="phpdbg_bp.c.html#L884">(new_break.ops)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">304</td><td><a href="phpdbg_bp.c.html#L304">(!zend_hash_index_exists(broken, line_num))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">455</td><td><a href="phpdbg_bp.c.html#L455">(!zend_hash_str_exists(class_table, func_lcname, func_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">267</td><td><a href="phpdbg_bp.c.html#L267">(!path_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1014</td><td><a href="phpdbg_bp.c.html#L1014">(!opname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1282</td><td><a href="phpdbg_bp.c.html#L1282">(!brake)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">268</td><td><a href="phpdbg_bp.c.html#L268">(VCWD_REALPATH(path, realpath))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="phpdbg_bp.c.html#L676">(zend_hash_index_exists(method_table, opline))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">723</td><td><a href="phpdbg_bp.c.html#L723">(zend_hash_index_exists(func_table, opline))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">769</td><td><a href="phpdbg_bp.c.html#L769">(zend_hash_index_exists(file_table, opline))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">313</td><td><a href="phpdbg_bp.c.html#L313">(pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">327</td><td><a href="phpdbg_bp.c.html#L327">(pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">850</td><td><a href="phpdbg_bp.c.html#L850">(param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1229</td><td><a href="phpdbg_bp.c.html#L1229">(strkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1238</td><td><a href="phpdbg_bp.c.html#L1238">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1275</td><td><a href="phpdbg_bp.c.html#L1275">(output)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1371</td><td><a href="phpdbg_bp.c.html#L1371">(param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1397</td><td><a href="phpdbg_bp.c.html#L1397">(brake)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1406</td><td><a href="phpdbg_bp.c.html#L1406">(brake)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

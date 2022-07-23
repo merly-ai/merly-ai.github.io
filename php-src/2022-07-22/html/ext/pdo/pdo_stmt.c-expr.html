@@ -1,0 +1,344 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\pdo\pdo_stmt.c Ctrl Expressions (293) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\pdo\pdo_stmt.c Ctrl Expressions (293) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\pdo\pdo_stmt.c Ctrl Expressions (293)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1007</td><td><a href="pdo_stmt.c.html#L1007">(ce->unserialize(return_value, ce, (unsigned char *)(<span style='background-color:#741da3;'>Z_TYPE(val) == IS_STRING ? Z_STRVAL(val) : ""</span>), <span style='background-color:#741da3;'>Z_TYPE(val) == IS_STRING ? Z_STRLEN(val) : 0</span>, NULL) == FAILURE)</a></td><td class="num">2052.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="pdo_stmt.c.html#L505">(<span style='background-color:#741da3;'>Z_TYPE_P(dest) == IS_STRING && Z_STRLEN_P(dest) == 0 && stmt->dbh->oracle_nulls == PDO_NULL_EMPTY_STRING</span>)</a></td><td class="num">1018.75</td></tr>
+      <tr><td class="num line">2300</td><td><a href="pdo_stmt.c.html#L2300">(<span style='background-color:#741da3;'>Z_LVAL_P(member) >= 0 && Z_LVAL_P(member) < stmt->column_count</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">2059</td><td><a href="pdo_stmt.c.html#L2059">(!pdo_hash_methods(Z_PDO_OBJECT_P(&stmt->database_object_handle), PDO_DBH_DRIVER_METHOD_KIND_STMT) || !stmt->dbh->cls_methods[PDO_DBH_DRIVER_METHOD_KIND_STMT])</a></td><td class="num">67.50</td></tr>
+      <tr><td class="num line">164</td><td><a href="pdo_stmt.c.html#L164">((param = zend_hash_find_ptr(stmt->bound_columns, stmt->columns[col].name)) != NULL)</a></td><td class="num">64.75</td></tr>
+      <tr><td class="num line">954</td><td><a href="pdo_stmt.c.html#L954">((curr_val = zend_hash_find(Z_ARRVAL_P(return_value), stmt->columns[i].name)))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2050</td><td><a href="pdo_stmt.c.html#L2050">((fbc = zend_hash_find_ptr(&object->ce->function_table, lc_method_name)) == NULL)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2066</td><td><a href="pdo_stmt.c.html#L2066">((fbc = zend_hash_find_ptr(stmt->dbh->cls_methods[PDO_DBH_DRIVER_METHOD_KIND_STMT], lc_method_name)) == NULL)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">319</td><td><a href="pdo_stmt.c.html#L319">(is_param && ZSTR_VAL(param->name)[0] != ':')</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="pdo_stmt.c.html#L1369">((how & PDO_FETCH_GROUP) || how == PDO_FETCH_KEY_PAIR || (how == PDO_FETCH_USE_DEFAULT && stmt->default_fetch_type == PDO_FETCH_KEY_PAIR))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">1380</td><td><a href="pdo_stmt.c.html#L1380">((how & PDO_FETCH_GROUP) || how == PDO_FETCH_KEY_PAIR || (how == PDO_FETCH_USE_DEFAULT && stmt->default_fetch_type == PDO_FETCH_KEY_PAIR))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">856</td><td><a href="pdo_stmt.c.html#L856">(zend_call_function(&stmt->fetch.cls.fci, &stmt->fetch.cls.fcc) == FAILURE)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="pdo_stmt.c.html#L1036">(zend_call_function(&stmt->fetch.cls.fci, &stmt->fetch.cls.fcc) == FAILURE)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="pdo_stmt.c.html#L1057">(zend_call_function(&stmt->fetch.func.fci, &stmt->fetch.func.fcc) == FAILURE)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">62</td><td><a href="pdo_stmt.c.html#L62">((name = zend_hash_index_find_ptr(stmt->bound_param_map, param->paramno)) != NULL)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">278</td><td><a href="pdo_stmt.c.html#L278">(PDO_PARAM_TYPE(param->param_type) == PDO_PARAM_STR && param->max_value_len <= 0 && !Z_ISNULL_P(parameter))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="pdo_stmt.c.html#L282">(PDO_PARAM_TYPE(param->param_type) == PDO_PARAM_INT && (Z_TYPE_P(parameter) == IS_FALSE || Z_TYPE_P(parameter) == IS_TRUE))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">2113</td><td><a href="pdo_stmt.c.html#L2113">(!Z_ISUNDEF(stmt->fetch.into) && stmt->default_fetch_type == PDO_FETCH_INTO)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">300</td><td><a href="pdo_stmt.c.html#L300">(zend_string_equals(stmt->columns[i].name, param->name))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">682</td><td><a href="pdo_stmt.c.html#L682">(!make_callable_ex(stmt, &stmt->fetch.func.function, fci, fcc, stmt->column_count))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1083</td><td><a href="pdo_stmt.c.html#L1083">((pgrp = zend_symtable_find(Z_ARRVAL_P(return_all), Z_STR(grp_val))) == NULL)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">826</td><td><a href="pdo_stmt.c.html#L826">((cep = zend_lookup_class(Z_STR(val))) == NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">881</td><td><a href="pdo_stmt.c.html#L881">(Z_OBJ_P(return_value)->ce == ZEND_STANDARD_CLASS_DEF_PTR)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2320</td><td><a href="pdo_stmt.c.html#L2320">(zend_string_equals(stmt->columns[colno].name, Z_STR_P(member)))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2394</td><td><a href="pdo_stmt.c.html#L2394">(zend_string_equals(stmt->columns[colno].name, Z_STR_P(member)))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1809</td><td><a href="pdo_stmt.c.html#L1809">(Z_TYPE(args[1]) != IS_NULL && Z_TYPE(args[1]) != IS_ARRAY)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2436</td><td><a href="pdo_stmt.c.html#L2436">(zend_string_equals_literal(stmt->columns[i].name, "queryString"))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">284</td><td><a href="pdo_stmt.c.html#L284">(PDO_PARAM_TYPE(param->param_type) == PDO_PARAM_BOOL && Z_TYPE_P(parameter) == IS_LONG)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">2303</td><td><a href="pdo_stmt.c.html#L2303">(Z_TYPE_P(member) == IS_STRING && is_numeric_string(Z_STRVAL_P(member), Z_STRLEN_P(member), &lval, NULL, 0) == IS_LONG)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1814</td><td><a href="pdo_stmt.c.html#L1814">(Z_TYPE(args[1]) == IS_ARRAY && zend_hash_num_elements(Z_ARRVAL(args[1])))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2280</td><td><a href="pdo_stmt.c.html#L2280">(zend_string_equals(stmt->columns[colno].name, name))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2356</td><td><a href="pdo_stmt.c.html#L2356">(zend_string_equals(stmt->columns[colno].name, name))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">140</td><td><a href="pdo_stmt.c.html#L140">(stmt->dbh->native_case != stmt->dbh->desired_case && stmt->dbh->desired_case != PDO_CASE_NATURAL)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">705</td><td><a href="pdo_stmt.c.html#L705">(!Z_ISUNDEF(stmt->fetch.cls.ctor_args) && free_ctor_agrs)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2204</td><td><a href="pdo_stmt.c.html#L2204">(!do_fetch(stmt, &I->fetch_ahead, PDO_FETCH_USE_DEFAULT, PDO_FETCH_ORI_NEXT, 0, NULL))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2247</td><td><a href="pdo_stmt.c.html#L2247">(!do_fetch(stmt, &I->fetch_ahead, PDO_FETCH_USE_DEFAULT, PDO_FETCH_ORI_NEXT, 0, NULL))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1296</td><td><a href="pdo_stmt.c.html#L1296">(ctor_args && zend_hash_num_elements(Z_ARRVAL_P(ctor_args)) > 0)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1973</td><td><a href="pdo_stmt.c.html#L1973">(stmt->active_query_string != NULL && stmt->active_query_string != stmt->query_string)</a></td><td class="num">18.00</td></tr>
+      <tr><td class="num line">904</td><td><a href="pdo_stmt.c.html#L904">(flags == PDO_FETCH_GROUP && how == PDO_FETCH_COLUMN && stmt->fetch.column > 0)</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">562</td><td><a href="pdo_stmt.c.html#L562">(Z_TYPE_P(dest) == IS_NULL && stmt->dbh->oracle_nulls == PDO_NULL_TO_STRING)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">694</td><td><a href="pdo_stmt.c.html#L694">(stmt->fetch.cls.fci.size && stmt->fetch.cls.fci.params)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">742</td><td><a href="pdo_stmt.c.html#L742">((flags & PDO_FETCH_GROUP) && stmt->fetch.column == -1)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">295</td><td><a href="pdo_stmt.c.html#L295">(!is_param && param->name && stmt->columns)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="pdo_stmt.c.html#L467">(stmt->dbh->alloc_own_columns && !stmt->columns)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">795</td><td><a href="pdo_stmt.c.html#L795">(flags == PDO_FETCH_GROUP && stmt->fetch.column == -1)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2101</td><td><a href="pdo_stmt.c.html#L2101">(stmt->methods && stmt->methods->dtor)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="pdo_stmt.c.html#L99">(stmt->dbh->skip_param_evt & (1 << event_type))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2273</td><td><a href="pdo_stmt.c.html#L2273">(lval >= 0 && lval < stmt->column_count)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2305</td><td><a href="pdo_stmt.c.html#L2305">(lval >= 0 && lval < stmt->column_count)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1033</td><td><a href="pdo_stmt.c.html#L1033">(ce->constructor && !(flags & PDO_FETCH_PROPS_LATE | PDO_FETCH_SERIALIZE))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">853</td><td><a href="pdo_stmt.c.html#L853">(ce->constructor && (flags & PDO_FETCH_PROPS_LATE))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1860</td><td><a href="pdo_stmt.c.html#L1860">(zend_parse_parameters(ZEND_NUM_ARGS(), "l*", &fetch_mode, &args, &num_args) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="pdo_stmt.c.html#L583">(!stmt->columns && !pdo_stmt_describe_columns(stmt))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">997</td><td><a href="pdo_stmt.c.html#L997">((flags & PDO_FETCH_SERIALIZE) == 0 || idx)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1686</td><td><a href="pdo_stmt.c.html#L1686">(FAILURE == stmt->methods->get_column_meta(stmt, colno, return_value))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2058</td><td><a href="pdo_stmt.c.html#L2058">(!stmt->dbh->cls_methods[PDO_DBH_DRIVER_METHOD_KIND_STMT])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2188</td><td><a href="pdo_stmt.c.html#L2188">(I->key == zend_ulong - 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">234</td><td><a href="pdo_stmt.c.html#L234">(param->stmt->methods->param_hook)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1533</td><td><a href="pdo_stmt.c.html#L1533">(stmt->error_code[0] == '\0')</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1555</td><td><a href="pdo_stmt.c.html#L1555">(stmt->dbh->methods->fetch_err)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1104</td><td><a href="pdo_stmt.c.html#L1104">(mode < 0 || mode > PDO_FETCH__MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1375</td><td><a href="pdo_stmt.c.html#L1375">(!do_fetch(stmt, &data, how | flags, PDO_FETCH_ORI_NEXT, 0, return_all))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">112</td><td><a href="pdo_stmt.c.html#L112">(!stmt->methods->param_hook(stmt, param, event_type))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">135</td><td><a href="pdo_stmt.c.html#L135">(!stmt->methods->describer(stmt, col))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="pdo_stmt.c.html#L342">(!stmt->methods->param_hook(stmt, param, PDO_PARAM_EVT_NORMALIZE))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">368</td><td><a href="pdo_stmt.c.html#L368">(!stmt->methods->param_hook(stmt, pparam, PDO_PARAM_EVT_ALLOC))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="pdo_stmt.c.html#L517">(type_override && Z_TYPE_P(dest) != IS_NULL)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="pdo_stmt.c.html#L578">(!stmt->methods->fetcher(stmt, ori, offset))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1883</td><td><a href="pdo_stmt.c.html#L1883">(!stmt->methods->next_rowset(stmt))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1941</td><td><a href="pdo_stmt.c.html#L1941">(!stmt->methods->cursor_closer(stmt))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">103</td><td><a href="pdo_stmt.c.html#L103">(!stmt->methods->param_hook)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">797</td><td><a href="pdo_stmt.c.html#L797">(flags == PDO_FETCH_GROUP && colno)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">903</td><td><a href="pdo_stmt.c.html#L903">(return_all && how != PDO_FETCH_KEY_PAIR)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1587</td><td><a href="pdo_stmt.c.html#L1587">(!stmt->methods->set_attribute)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1624</td><td><a href="pdo_stmt.c.html#L1624">(!stmt->methods->get_attribute)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1680</td><td><a href="pdo_stmt.c.html#L1680">(!stmt->methods->get_column_meta)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1899</td><td><a href="pdo_stmt.c.html#L1899">(!stmt->methods->next_rowset)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1921</td><td><a href="pdo_stmt.c.html#L1921">(!stmt->methods->cursor_closer)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1926</td><td><a href="pdo_stmt.c.html#L1926">(!stmt->methods->next_rowset)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">643</td><td><a href="pdo_stmt.c.html#L643">(!Z_ISUNDEF(stmt->fetch.cls.ctor_args))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">695</td><td><a href="pdo_stmt.c.html#L695">(!Z_ISUNDEF(stmt->fetch.cls.ctor_args))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">847</td><td><a href="pdo_stmt.c.html#L847">(!stmt->fetch.cls.fci.size)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">861</td><td><a href="pdo_stmt.c.html#L861">(!Z_ISUNDEF(stmt->fetch.cls.retval))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">893</td><td><a href="pdo_stmt.c.html#L893">(!stmt->fetch.func.fci.size)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1041</td><td><a href="pdo_stmt.c.html#L1041">(!Z_ISUNDEF(stmt->fetch.cls.retval))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1383</td><td><a href="pdo_stmt.c.html#L1383">(do_fetch(stmt, &data, how | flags, PDO_FETCH_ORI_NEXT, 0, return_all))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1388</td><td><a href="pdo_stmt.c.html#L1388">(do_fetch(stmt, &data, how | flags, PDO_FETCH_ORI_NEXT, 0, NULL))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">76</td><td><a href="pdo_stmt.c.html#L76">(param->paramno >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">134</td><td><a href="pdo_stmt.c.html#L134">(col < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">180</td><td><a href="pdo_stmt.c.html#L180">(i < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">205</td><td><a href="pdo_stmt.c.html#L205">(new_count == stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">299</td><td><a href="pdo_stmt.c.html#L299">(i < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="pdo_stmt.c.html#L308">(param->paramno == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">355</td><td><a href="pdo_stmt.c.html#L355">(param->paramno >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="pdo_stmt.c.html#L437">(PDO_PLACEHOLDER_NONE == stmt->supports_placeholders)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">463</td><td><a href="pdo_stmt.c.html#L463">(stmt->methods->executer(stmt))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">496</td><td><a href="pdo_stmt.c.html#L496">(colno >= stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">596</td><td><a href="pdo_stmt.c.html#L596">(param->paramno >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">774</td><td><a href="pdo_stmt.c.html#L774">(stmt->column_count != 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">790</td><td><a href="pdo_stmt.c.html#L790">(colno >= stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">843</td><td><a href="pdo_stmt.c.html#L843">((flags & PDO_FETCH_SERIALIZE) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">917</td><td><a href="pdo_stmt.c.html#L917">(i < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1079</td><td><a href="pdo_stmt.c.html#L1079">((flags & PDO_FETCH_UNIQUE) == PDO_FETCH_UNIQUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1129</td><td><a href="pdo_stmt.c.html#L1129">((flags & PDO_FETCH_SERIALIZE) == PDO_FETCH_SERIALIZE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1133</td><td><a href="pdo_stmt.c.html#L1133">((flags & PDO_FETCH_CLASSTYPE) == PDO_FETCH_CLASSTYPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1288</td><td><a href="pdo_stmt.c.html#L1288">(!stmt->fetch.cls.ce)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1363</td><td><a href="pdo_stmt.c.html#L1363">((how & ~PDO_FETCH_FLAGS) == PDO_FETCH_USE_DEFAULT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1593</td><td><a href="pdo_stmt.c.html#L1593">(stmt->methods->set_attribute(stmt, attr, value))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1711</td><td><a href="pdo_stmt.c.html#L1711">(!Z_ISUNDEF(stmt->fetch.into))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1771</td><td><a href="pdo_stmt.c.html#L1771">((flags & PDO_FETCH_CLASSTYPE) == PDO_FETCH_CLASSTYPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1924</td><td><a href="pdo_stmt.c.html#L1924">(stmt->methods->fetcher(stmt, PDO_FETCH_ORI_NEXT, 0))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2279</td><td><a href="pdo_stmt.c.html#L2279">(colno < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2319</td><td><a href="pdo_stmt.c.html#L2319">(colno < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2355</td><td><a href="pdo_stmt.c.html#L2355">(colno < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2393</td><td><a href="pdo_stmt.c.html#L2393">(colno < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2435</td><td><a href="pdo_stmt.c.html#L2435">(i < stmt->column_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">341</td><td><a href="pdo_stmt.c.html#L341">(stmt->methods->param_hook)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">367</td><td><a href="pdo_stmt.c.html#L367">(stmt->methods->param_hook)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="pdo_stmt.c.html#L513">(stmt->dbh->stringify)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2272</td><td><a href="pdo_stmt.c.html#L2272">(is_numeric_string(ZSTR_VAL(name), ZSTR_LEN(name), &lval, NULL, 0) == IS_LONG)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2349</td><td><a href="pdo_stmt.c.html#L2349">(is_numeric_string(ZSTR_VAL(name), ZSTR_LEN(name), &lval, NULL, 0) == IS_LONG)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2382</td><td><a href="pdo_stmt.c.html#L2382">(is_numeric_string(Z_STRVAL_P(member), Z_STRLEN_P(member), &lval, NULL, 0) == IS_LONG)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2431</td><td><a href="pdo_stmt.c.html#L2431">(!stmt->std.properties)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">888</td><td><a href="pdo_stmt.c.html#L888">(Z_ISUNDEF(stmt->fetch.func.function))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">945</td><td><a href="pdo_stmt.c.html#L945">(zend_hash_index_add(Z_ARRVAL_P(return_value), i, &val) != NULL)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">329</td><td><a href="pdo_stmt.c.html#L329">(is_param && !rewrite_name_to_position(stmt, param))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">476</td><td><a href="pdo_stmt.c.html#L476">(ret && !dispatch_param_event(stmt, PDO_PARAM_EVT_EXEC_POST))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">656</td><td><a href="pdo_stmt.c.html#L656">(zend_fcall_info_init(callable, 0, fci, fcc, NULL, &is_callable_error) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">710</td><td><a href="pdo_stmt.c.html#L710">(stmt->fetch.func.values)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">872</td><td><a href="pdo_stmt.c.html#L872">(Z_ISUNDEF(stmt->fetch.into))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">150</td><td><a href="pdo_stmt.c.html#L150">(*s != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">72</td><td><a href="pdo_stmt.c.html#L72">(!zend_string_equals(name, param->name))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">242</td><td><a href="pdo_stmt.c.html#L242">(!Z_ISUNDEF(param->parameter))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="pdo_stmt.c.html#L246">(!Z_ISUNDEF(param->driver_params))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">272</td><td><a href="pdo_stmt.c.html#L272">(!Z_ISREF(param->parameter))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">597</td><td><a href="pdo_stmt.c.html#L597">(!Z_ISREF(param->parameter))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1203</td><td><a href="pdo_stmt.c.html#L1203">(ctor_args && zend_hash_num_elements(Z_ARRVAL_P(ctor_args)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1755</td><td><a href="pdo_stmt.c.html#L1755">(Z_TYPE(args[0]) != IS_LONG)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1759</td><td><a href="pdo_stmt.c.html#L1759">(Z_LVAL(args[0]) < 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1797</td><td><a href="pdo_stmt.c.html#L1797">(Z_TYPE(args[0]) != IS_STRING)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1837</td><td><a href="pdo_stmt.c.html#L1837">(Z_TYPE(args[0]) != IS_OBJECT)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="pdo_stmt.c.html#L2120">(!Z_ISUNDEF(stmt->database_object_handle))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2160</td><td><a href="pdo_stmt.c.html#L2160">(!Z_ISUNDEF(I->fetch_ahead))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2200</td><td><a href="pdo_stmt.c.html#L2200">(!Z_ISUNDEF(I->fetch_ahead))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">60</td><td><a href="pdo_stmt.c.html#L60">(!param->name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">198</td><td><a href="pdo_stmt.c.html#L198">(!stmt->columns)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">464</td><td><a href="pdo_stmt.c.html#L464">(!stmt->executed)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="pdo_stmt.c.html#L570">(!stmt->executed)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1003</td><td><a href="pdo_stmt.c.html#L1003">(!ce->unserialize)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1431</td><td><a href="pdo_stmt.c.html#L1431">(ZSTR_LEN(param.name) == 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1479</td><td><a href="pdo_stmt.c.html#L1479">(ZSTR_LEN(param.name) == 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2053</td><td><a href="pdo_stmt.c.html#L2053">(!stmt->dbh)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2236</td><td><a href="pdo_stmt.c.html#L2236">(!stmt->dbh)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">118</td><td><a href="pdo_stmt.c.html#L118">(ret && is_param)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1436</td><td><a href="pdo_stmt.c.html#L1436">(param.paramno > 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1484</td><td><a href="pdo_stmt.c.html#L1484">(param.paramno > 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">216</td><td><a href="pdo_stmt.c.html#L216">(Z_ISUNDEF(stmt->lazy_object_ref))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">291</td><td><a href="pdo_stmt.c.html#L291">(Z_REFCOUNTED(param->driver_params))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1554</td><td><a href="pdo_stmt.c.html#L1554">(strncmp(stmt->error_code, PDO_ERR_NONE, sizeof(PDO_ERR_NONE)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2177</td><td><a href="pdo_stmt.c.html#L2177">(Z_ISUNDEF(I->fetch_ahead))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">46</td><td><a href="pdo_stmt.c.html#L46">(stmt->bound_param_map)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">56</td><td><a href="pdo_stmt.c.html#L56">(stmt->named_rewrite_template)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">161</td><td><a href="pdo_stmt.c.html#L161">(stmt->bound_columns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="pdo_stmt.c.html#L176">(stmt->columns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="pdo_stmt.c.html#L181">(cols[i].name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">238</td><td><a href="pdo_stmt.c.html#L238">(param->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="pdo_stmt.c.html#L318">(param->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">330</td><td><a href="pdo_stmt.c.html#L330">(param->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="pdo_stmt.c.html#L344">(param->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">360</td><td><a href="pdo_stmt.c.html#L360">(param->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="pdo_stmt.c.html#L372">(pparam->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="pdo_stmt.c.html#L406">(stmt->bound_params)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">428</td><td><a href="pdo_stmt.c.html#L428">(!really_register_bound_param(&param, stmt, 1))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="pdo_stmt.c.html#L444">(stmt->active_query_string)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">591</td><td><a href="pdo_stmt.c.html#L591">(stmt->bound_columns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">632</td><td><a href="pdo_stmt.c.html#L632">(ce->constructor)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">812</td><td><a href="pdo_stmt.c.html#L812">(flags & PDO_FETCH_CLASSTYPE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="pdo_stmt.c.html#L823">(!try_convert_to_string(&val))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1046</td><td><a href="pdo_stmt.c.html#L1046">(flags & PDO_FETCH_CLASSTYPE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1069</td><td><a href="pdo_stmt.c.html#L1069">(idx--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1144</td><td><a href="pdo_stmt.c.html#L1144">(flags & PDO_FETCH_SERIALIZE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1448</td><td><a href="pdo_stmt.c.html#L1448">(!really_register_bound_param(&param, stmt, is_param))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="pdo_stmt.c.html#L1492">(!really_register_bound_param(&param, stmt, true))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1983</td><td><a href="pdo_stmt.c.html#L1983">(stmt->bound_params)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2085</td><td><a href="pdo_stmt.c.html#L2085">(stmt->bound_params)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2090</td><td><a href="pdo_stmt.c.html#L2090">(stmt->bound_param_map)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2095</td><td><a href="pdo_stmt.c.html#L2095">(stmt->bound_columns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2104</td><td><a href="pdo_stmt.c.html#L2104">(stmt->active_query_string)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2107</td><td><a href="pdo_stmt.c.html#L2107">(stmt->query_string)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2457</td><td><a href="pdo_stmt.c.html#L2457">(row->stmt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="pdo_stmt.c.html#L844">(UNEXPECTED(object_init_ex(return_value, ce) != SUCCESS))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">429</td><td><a href="pdo_stmt.c.html#L429">(!Z_ISUNDEF(param.parameter))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">526</td><td><a href="pdo_stmt.c.html#L526">(Z_TYPE_P(dest) == IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">531</td><td><a href="pdo_stmt.c.html#L531">(Z_TYPE_P(dest) == IS_RESOURCE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="pdo_stmt.c.html#L550">(Z_TYPE_P(dest) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">822</td><td><a href="pdo_stmt.c.html#L822">(Z_TYPE(val) != IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">931</td><td><a href="pdo_stmt.c.html#L931">(Z_TYPE(val) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">956</td><td><a href="pdo_stmt.c.html#L956">(Z_TYPE_P(curr_val) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1283</td><td><a href="pdo_stmt.c.html#L1283">(Z_TYPE_P(arg2) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1306</td><td><a href="pdo_stmt.c.html#L1306">(ZEND_NUM_ARGS() != 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1320</td><td><a href="pdo_stmt.c.html#L1320">(do_fetch_func_prepare(stmt) == false)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1326</td><td><a href="pdo_stmt.c.html#L1326">(ZEND_NUM_ARGS() > 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1336</td><td><a href="pdo_stmt.c.html#L1336">(Z_TYPE_P(arg2) != IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1340</td><td><a href="pdo_stmt.c.html#L1340">(Z_LVAL_P(arg2) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1352</td><td><a href="pdo_stmt.c.html#L1352">(ZEND_NUM_ARGS() > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1402</td><td><a href="pdo_stmt.c.html#L1402">(Z_TYPE_P(return_value) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1449</td><td><a href="pdo_stmt.c.html#L1449">(!Z_ISUNDEF(param.parameter))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1493</td><td><a href="pdo_stmt.c.html#L1493">(!Z_ISUNDEF(param.parameter))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2013</td><td><a href="pdo_stmt.c.html#L2013">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2299</td><td><a href="pdo_stmt.c.html#L2299">(Z_TYPE_P(member) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2379</td><td><a href="pdo_stmt.c.html#L2379">(Z_TYPE_P(member) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2381</td><td><a href="pdo_stmt.c.html#L2381">(Z_TYPE_P(member) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">451</td><td><a href="pdo_stmt.c.html#L451">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">455</td><td><a href="pdo_stmt.c.html#L455">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="pdo_stmt.c.html#L490">(colno < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="pdo_stmt.c.html#L537">(str == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="pdo_stmt.c.html#L727">(how == PDO_FETCH_USE_DEFAULT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">737</td><td><a href="pdo_stmt.c.html#L737">(how == PDO_FETCH_BOUND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">753</td><td><a href="pdo_stmt.c.html#L753">(how == PDO_FETCH_LAZY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">785</td><td><a href="pdo_stmt.c.html#L785">(colno < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">910</td><td><a href="pdo_stmt.c.html#L910">(how == PDO_FETCH_COLUMN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="pdo_stmt.c.html#L1109">(mode == PDO_FETCH_USE_DEFAULT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1137</td><td><a href="pdo_stmt.c.html#L1137">(mode >= PDO_FETCH__MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="pdo_stmt.c.html#L1313">(arg2 == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1562</td><td><a href="pdo_stmt.c.html#L1562">(error_expected_count > error_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1566</td><td><a href="pdo_stmt.c.html#L1566">(current_index < error_count_diff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1675</td><td><a href="pdo_stmt.c.html#L1675">(colno < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1738</td><td><a href="pdo_stmt.c.html#L1738">(variadic_num_args != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="pdo_stmt.c.html#L1748">(variadic_num_args != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1772</td><td><a href="pdo_stmt.c.html#L1772">(variadic_num_args != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1782</td><td><a href="pdo_stmt.c.html#L1782">(variadic_num_args == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1790</td><td><a href="pdo_stmt.c.html#L1790">(variadic_num_args > 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1808</td><td><a href="pdo_stmt.c.html#L1808">(variadic_num_args == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="pdo_stmt.c.html#L1830">(total_num_args != arg1_arg_num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1962</td><td><a href="pdo_stmt.c.html#L1962">(out == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2427</td><td><a href="pdo_stmt.c.html#L2427">(purpose != ZEND_PROP_PURPOSE_DEBUG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1430</td><td><a href="pdo_stmt.c.html#L1430">(param.name)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1478</td><td><a href="pdo_stmt.c.html#L1478">(param.name)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">279</td><td><a href="pdo_stmt.c.html#L279">(!try_convert_to_string(parameter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="pdo_stmt.c.html#L459">(!dispatch_param_event(stmt, PDO_PARAM_EVT_EXEC_PRE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">574</td><td><a href="pdo_stmt.c.html#L574">(!dispatch_param_event(stmt, PDO_PARAM_EVT_FETCH_PRE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">587</td><td><a href="pdo_stmt.c.html#L587">(!dispatch_param_event(stmt, PDO_PARAM_EVT_FETCH_POST))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="pdo_stmt.c.html#L733">(!do_fetch_common(stmt, ori, offset))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">848</td><td><a href="pdo_stmt.c.html#L848">(!do_fetch_class_prepare(stmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">894</td><td><a href="pdo_stmt.c.html#L894">(!do_fetch_func_prepare(stmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1065</td><td><a href="pdo_stmt.c.html#L1065">(!Z_ISUNDEF(retval))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1169</td><td><a href="pdo_stmt.c.html#L1169">(!pdo_stmt_verify_mode(stmt, how, 1, false))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1173</td><td><a href="pdo_stmt.c.html#L1173">(!do_fetch(stmt, return_value, how, ori, off, NULL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1214</td><td><a href="pdo_stmt.c.html#L1214">(!do_fetch(stmt, return_value, PDO_FETCH_CLASS, PDO_FETCH_ORI_NEXT, 0, NULL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1239</td><td><a href="pdo_stmt.c.html#L1239">(!do_fetch_common(stmt, PDO_FETCH_ORI_NEXT, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1267</td><td><a href="pdo_stmt.c.html#L1267">(!pdo_stmt_verify_mode(stmt, how, 1, true))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1625</td><td><a href="pdo_stmt.c.html#L1625">(!generic_stmt_attr_get(stmt, return_value, attr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1640</td><td><a href="pdo_stmt.c.html#L1640">(!generic_stmt_attr_get(stmt, return_value, attr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="pdo_stmt.c.html#L1724">(!pdo_stmt_verify_mode(stmt, mode, mode_arg_num, false))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1868</td><td><a href="pdo_stmt.c.html#L1868">(!pdo_stmt_setup_fetch_mode(stmt, fetch_mode, 1, args, num_args))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1906</td><td><a href="pdo_stmt.c.html#L1906">(!pdo_stmt_do_next_rowset(stmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1930</td><td><a href="pdo_stmt.c.html#L1930">(!pdo_stmt_do_next_rowset(stmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2025</td><td><a href="pdo_stmt.c.html#L2025">(!Z_ISUNDEF_P(query_string))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2309</td><td><a href="pdo_stmt.c.html#L2309">(!try_convert_to_string(member))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2386</td><td><a href="pdo_stmt.c.html#L2386">(!try_convert_to_string(member))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">261</td><td><a href="pdo_stmt.c.html#L261">(!hash)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">627</td><td><a href="pdo_stmt.c.html#L627">(!ce)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">749</td><td><a href="pdo_stmt.c.html#L749">(!return_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">766</td><td><a href="pdo_stmt.c.html#L766">(!return_all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">779</td><td><a href="pdo_stmt.c.html#L779">(!return_all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">802</td><td><a href="pdo_stmt.c.html#L802">(!return_all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">838</td><td><a href="pdo_stmt.c.html#L838">(!ce)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1116</td><td><a href="pdo_stmt.c.html#L1116">(!fetch_all)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1379</td><td><a href="pdo_stmt.c.html#L1379">(!error)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1802</td><td><a href="pdo_stmt.c.html#L1802">(!cep)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2074</td><td><a href="pdo_stmt.c.html#L2074">(!fbc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2313</td><td><a href="pdo_stmt.c.html#L2313">(zend_string_equals_literal(Z_STR_P(member), "queryString"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2023</td><td><a href="pdo_stmt.c.html#L2023">(zend_string_equals_literal(name, "queryString"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2035</td><td><a href="pdo_stmt.c.html#L2035">(zend_string_equals_literal(name, "queryString"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2270</td><td><a href="pdo_stmt.c.html#L2270">(zend_string_equals_literal(name, "queryString"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">110</td><td><a href="pdo_stmt.c.html#L110">(ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">265</td><td><a href="pdo_stmt.c.html#L265">(is_param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">400</td><td><a href="pdo_stmt.c.html#L400">(input_params)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">415</td><td><a href="pdo_stmt.c.html#L415">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">657</td><td><a href="pdo_stmt.c.html#L657">(is_callable_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">665</td><td><a href="pdo_stmt.c.html#L665">(is_callable_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1062</td><td><a href="pdo_stmt.c.html#L1062">(return_all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1078</td><td><a href="pdo_stmt.c.html#L1078">(return_all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1123</td><td><a href="pdo_stmt.c.html#L1123">(fetch_all)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1208</td><td><a href="pdo_stmt.c.html#L1208">(ce)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1282</td><td><a href="pdo_stmt.c.html#L1282">(arg2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1334</td><td><a href="pdo_stmt.c.html#L1334">(arg2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1400</td><td><a href="pdo_stmt.c.html#L1400">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1443</td><td><a href="pdo_stmt.c.html#L1443">(driver_params)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1821</td><td><a href="pdo_stmt.c.html#L1821">(constructor_args)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1934</td><td><a href="pdo_stmt.c.html#L1934">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1987</td><td><a href="pdo_stmt.c.html#L1987">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2230</td><td><a href="pdo_stmt.c.html#L2230">(by_ref)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

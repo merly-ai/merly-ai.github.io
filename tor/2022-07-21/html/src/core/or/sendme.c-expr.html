@@ -1,0 +1,97 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\sendme.c Ctrl Expressions (46) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\sendme.c Ctrl Expressions (46) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\sendme.c Ctrl Expressions (46)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">357</td><td><a href="sendme.c.html#L357">((<span style='background-color:#741da3;'>(CIRCWINDOW_START - (deliver_window - 1)) % sendme_inc</span>) != 0)</a></td><td class="num">1025.05</td></tr>
+      <tr><td class="num line">426</td><td><a href="sendme.c.html#L426">(<span style='background-color:#741da3;'>(layer_hint ? layer_hint->deliver_window : circ->deliver_window) <= CIRCWINDOW_START - sendme_inc</span>)</a></td><td class="num">1013.35</td></tr>
+      <tr><td class="num line">64</td><td><a href="sendme.c.html#L64">(circ->sendme_last_digests == NULL || smartlist_len(circ->sendme_last_digests) == 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">732</td><td><a href="sendme.c.html#L732">(!circuit_sendme_cell_is_next(cpath ? cpath->deliver_window : circ->deliver_window, sendme_get_inc_count(circ, cpath)))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">515</td><td><a href="sendme.c.html#L515">((layer_hint->package_window + CIRCWINDOW_INCREMENT) > CIRCWINDOW_START_MAX)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">529</td><td><a href="sendme.c.html#L529">((circ->package_window + CIRCWINDOW_INCREMENT) > CIRCWINDOW_START_MAX)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">571</td><td><a href="sendme.c.html#L571">((conn->package_window + STREAMWINDOW_INCREMENT) > STREAMWINDOW_START_MAX)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">318</td><td><a href="sendme.c.html#L318">(circ->sendme_last_digests == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="sendme.c.html#L396">(conn->deliver_window <= STREAMWINDOW_START - STREAMWINDOW_INCREMENT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">176</td><td><a href="sendme.c.html#L176">(sendme_cell_parse(&cell, cell_payload, cell_payload_len) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">683</td><td><a href="sendme.c.html#L683">(conn->xoff_received)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="sendme.c.html#L283">(BUG(payload_len < 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">300</td><td><a href="sendme.c.html#L300">(relay_send_command_from_edge(0, circ, RELAY_COMMAND_SENDME, (char *)payload, payload_len, layer_hint) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">388</td><td><a href="sendme.c.html#L388">(circuit_get_by_edge_conn(conn) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">401</td><td><a href="sendme.c.html#L401">(connection_edge_send_command(conn, RELAY_COMMAND_SENDME, NULL, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">436</td><td><a href="sendme.c.html#L436">(send_circuit_level_sendme(circ, layer_hint, digest) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">512</td><td><a href="sendme.c.html#L512">(BUG(layer_hint == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">120</td><td><a href="sendme.c.html#L120">(accept_version > SENDME_MAX_SUPPORTED_VERSION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">130</td><td><a href="sendme.c.html#L130">(cell_version < accept_version)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">138</td><td><a href="sendme.c.html#L138">(cell_version > SENDME_MAX_SUPPORTED_VERSION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">172</td><td><a href="sendme.c.html#L172">(cell_payload_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">193</td><td><a href="sendme.c.html#L193">(circ_digest == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">185</td><td><a href="sendme.c.html#L185">(!cell_version_can_be_handled(cell_version))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">206</td><td><a href="sendme.c.html#L206">(!cell_v1_is_valid(cell, circ_digest))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">473</td><td><a href="sendme.c.html#L473">(!sendme_is_valid(circ, cell_payload, cell_payload_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">707</td><td><a href="sendme.c.html#L707">(!circuit_sent_cell_for_sendme(circ, cpath))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">756</td><td><a href="sendme.c.html#L756">(!circuit_sent_cell_for_sendme(circ, cpath))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">490</td><td><a href="sendme.c.html#L490">(!cc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">384</td><td><a href="sendme.c.html#L384">(connection_outbuf_too_full(TO_CONN(conn)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">84</td><td><a href="sendme.c.html#L84">(tor_memneq(circ_digest, cell_digest, TRUNNEL_SENDME_V1_DIGEST_LEN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">380</td><td><a href="sendme.c.html#L380">(edge_uses_flow_control(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="sendme.c.html#L478">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="sendme.c.html#L509">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">561</td><td><a href="sendme.c.html#L561">(edge_uses_flow_control(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="sendme.c.html#L584">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="sendme.c.html#L602">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="sendme.c.html#L625">(edge_uses_flow_control(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">656</td><td><a href="sendme.c.html#L656">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">681</td><td><a href="sendme.c.html#L681">(edge_uses_flow_control(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="sendme.c.html#L429">(layer_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">483</td><td><a href="sendme.c.html#L483">(layer_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">643</td><td><a href="sendme.c.html#L643">(layer_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">651</td><td><a href="sendme.c.html#L651">(cc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">713</td><td><a href="sendme.c.html#L713">(cpath)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">738</td><td><a href="sendme.c.html#L738">(cpath)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">760</td><td><a href="sendme.c.html#L760">(cpath)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

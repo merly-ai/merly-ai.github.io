@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <script>
+    function toggle_popup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
+    }
+  </script>
+  <title>net\util.c - MerlyMentor</title>
+</head>
+<body>
+  <h2>net\util.c - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+                <li class='mr-3'><a title='Expressions' href='util.c-expr.html';>Expressions</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <table class="code">
+<tr><td id='L1' class='num line'>1</td><td><span style='color:#3a6e31;'>/*</span><tr/>
+<tr><td id='L2' class='num line'>2</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;QEMU&nbsp;System&nbsp;Emulator</span><tr/>
+<tr><td id='L3' class='num line'>3</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*</span><tr/>
+<tr><td id='L4' class='num line'>4</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;Copyright&nbsp;(c)&nbsp;2003-2008&nbsp;Fabrice&nbsp;Bellard</span><tr/>
+<tr><td id='L5' class='num line'>5</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*</span><tr/>
+<tr><td id='L6' class='num line'>6</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;Permission&nbsp;is&nbsp;hereby&nbsp;granted,&nbsp;free&nbsp;of&nbsp;charge,&nbsp;to&nbsp;any&nbsp;person&nbsp;obtaining&nbsp;a&nbsp;copy</span><tr/>
+<tr><td id='L7' class='num line'>7</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;of&nbsp;this&nbsp;software&nbsp;and&nbsp;associated&nbsp;documentation&nbsp;files&nbsp;(the&nbsp;&quot;Software&quot;),&nbsp;to&nbsp;deal</span><tr/>
+<tr><td id='L8' class='num line'>8</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;in&nbsp;the&nbsp;Software&nbsp;without&nbsp;restriction,&nbsp;including&nbsp;without&nbsp;limitation&nbsp;the&nbsp;rights</span><tr/>
+<tr><td id='L9' class='num line'>9</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;to&nbsp;use,&nbsp;copy,&nbsp;modify,&nbsp;merge,&nbsp;publish,&nbsp;distribute,&nbsp;sublicense,&nbsp;and/or&nbsp;sell</span><tr/>
+<tr><td id='L10' class='num line'>10</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;copies&nbsp;of&nbsp;the&nbsp;Software,&nbsp;and&nbsp;to&nbsp;permit&nbsp;persons&nbsp;to&nbsp;whom&nbsp;the&nbsp;Software&nbsp;is</span><tr/>
+<tr><td id='L11' class='num line'>11</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;furnished&nbsp;to&nbsp;do&nbsp;so,&nbsp;subject&nbsp;to&nbsp;the&nbsp;following&nbsp;conditions:</span><tr/>
+<tr><td id='L12' class='num line'>12</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*</span><tr/>
+<tr><td id='L13' class='num line'>13</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;The&nbsp;above&nbsp;copyright&nbsp;notice&nbsp;and&nbsp;this&nbsp;permission&nbsp;notice&nbsp;shall&nbsp;be&nbsp;included&nbsp;in</span><tr/>
+<tr><td id='L14' class='num line'>14</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;all&nbsp;copies&nbsp;or&nbsp;substantial&nbsp;portions&nbsp;of&nbsp;the&nbsp;Software.</span><tr/>
+<tr><td id='L15' class='num line'>15</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*</span><tr/>
+<tr><td id='L16' class='num line'>16</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;THE&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;&quot;AS&nbsp;IS&quot;,&nbsp;WITHOUT&nbsp;WARRANTY&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;EXPRESS&nbsp;OR</span><tr/>
+<tr><td id='L17' class='num line'>17</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;IMPLIED,&nbsp;INCLUDING&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO&nbsp;THE&nbsp;WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY,</span><tr/>
+<tr><td id='L18' class='num line'>18</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE&nbsp;AND&nbsp;NONINFRINGEMENT.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL</span><tr/>
+<tr><td id='L19' class='num line'>19</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;THE&nbsp;AUTHORS&nbsp;OR&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;BE&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;CLAIM,&nbsp;DAMAGES&nbsp;OR&nbsp;OTHER</span><tr/>
+<tr><td id='L20' class='num line'>20</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;LIABILITY,&nbsp;WHETHER&nbsp;IN&nbsp;AN&nbsp;ACTION&nbsp;OF&nbsp;CONTRACT,&nbsp;TORT&nbsp;OR&nbsp;OTHERWISE,&nbsp;ARISING&nbsp;FROM,</span><tr/>
+<tr><td id='L21' class='num line'>21</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;OUT&nbsp;OF&nbsp;OR&nbsp;IN&nbsp;CONNECTION&nbsp;WITH&nbsp;THE&nbsp;SOFTWARE&nbsp;OR&nbsp;THE&nbsp;USE&nbsp;OR&nbsp;OTHER&nbsp;DEALINGS&nbsp;IN</span><tr/>
+<tr><td id='L22' class='num line'>22</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*&nbsp;THE&nbsp;SOFTWARE.</span><tr/>
+<tr><td id='L23' class='num line'>23</td><td class='code'><span style='color:#3a6e31;'>&nbsp;*/</span><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L24' class='num line'>24</td><td class='code'><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L25' class='num line'>25</td><td class='code'><span style='color:#3a6e31;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&quot;</span><span style='color:#aa7e6c;'>qemu/osdep.h</span><span style='color:#aa7e6c;'>&quot;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L26' class='num line'>26</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&quot;</span><span style='color:#aa7e6c;'>util.h</span><span style='color:#aa7e6c;'>&quot;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L27' class='num line'>27</td><td class='code'><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L28' class='num line'>28</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#835980;'>int</span>&nbsp;<span style='color:#929270;'>net_parse_macaddr</span><span style='color:#9e9e9e;'>(</span><span style='color:#835980;'>uint8_t</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>macaddr</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>const</span>&nbsp;<span style='color:#835980;'>char</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>p</span><span style='color:#9e9e9e;'>)</span><tr/>
+<tr><td id='L29' class='num line'>29</td><td class='code'><span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L30' class='num line'>30</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#835980;'>int</span>&nbsp;<span style='color:#6892a9;'>i</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L31' class='num line'>31</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#835980;'>char</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#6892a9;'>last_char</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L32' class='num line'>32</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#835980;'>long</span>&nbsp;<span style='color:#835980;'>int</span>&nbsp;<span style='color:#6892a9;'>offset</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L33' class='num line'>33</td><td class='code'><tr/>
+<tr><td id='L34' class='num line'>34</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>errno</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L35' class='num line'>35</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>offset</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#929270;'>strtol</span><span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>p</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#aaa186;'>&amp;</span><span style='color:#6892a9;'>last_char</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L36' class='num line'>36</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>
+  <div class="popuptext" id="2">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (errno&nbsp;==&nbsp;0&nbsp;&amp;&amp;&nbsp;last_char&nbsp;==&nbsp;'\0'&nbsp;&amp;&amp;&nbsp;offset&nbsp;&gt;=&nbsp;0&nbsp;&amp;&amp;&nbsp;offset&nbsp;&lt;=&nbsp;0xFFFFFF)<br/>R2: (<span style='background-color:#0000ff'>(</span>errno&nbsp;==&nbsp;0<span style='background-color:#0000ff'>)</span>&nbsp;&amp;&amp;&nbsp;<span style='background-color:#0000ff'>(</span>last_char&nbsp;==&nbsp;'\0'<span style='background-color:#0000ff'>)</span>&nbsp;&amp;&amp;&nbsp;<span style='background-color:#0000ff'>(</span>offset&nbsp;&gt;=&nbsp;0<span style='background-color:#0000ff'>)</span>&nbsp;&amp;&amp;&nbsp;<span style='background-color:#0000ff'>(</span>offset&nbsp;&lt;=&nbsp;0xFFFFFF<span style='background-color:#0000ff'>)</span>)<br/>R3: (<span style='background-color:#0000ff'>!</span><span style='background-color:#0000ff'>(</span><span style='background-color:#0000ff'>errno</span><span style='background-color:#0000ff'>&nbsp;&gt;=&nbsp;</span><span style='background-color:#0000ff'>0</span><span style='background-color:#0000ff'>&nbsp;&amp;&amp;&nbsp;</span><span style='background-color:#0000ff'>errno</span><span style='background-color:#0000ff'>&nbsp;&lt;=&nbsp;</span><span style='background-color:#0000ff'>'\0'</span><span style='background-color:#0000ff'>)</span>)<br/>R4: (<span style='background-color:#0000ff'>!</span><span style='background-color:#0000ff'>(</span><span style='background-color:#0000ff'>errno</span><span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>0</span><span style='background-color:#0000ff'>&nbsp;||&nbsp;</span><span style='background-color:#0000ff'>errno</span><span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>0xFFFFFF</span><span style='background-color:#0000ff'>)</span>)<br/>R5: (<span style='background-color:#0000ff'>!</span><span style='background-color:#0000ff'>(</span><span style='background-color:#0000ff'>errno</span><span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>{const}</span><span style='background-color:#0000ff'>&nbsp;&amp;&amp;&nbsp;</span><span style='background-color:#0000ff'>last_char</span><span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>"string"</span><span style='background-color:#0000ff'>)</span>)
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 20.00, Total Score: 1020.00<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+errno</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>==</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>0</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&amp;&amp;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>*</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>last_char</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>==</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aa7e6c;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&apos;</span><span style='color:#7456aa;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>\0</span><span style='color:#aa7e6c;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&apos;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&amp;&amp;</span><tr/>
+<tr><td id='L37' class='num line'>37</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>offset</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&gt;=</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>0</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&amp;&amp;</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>offset</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>&lt;=</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>0xFFFFFF</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L38' class='num line'>38</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>macaddr</span><span style='color:#aaa186;'>[</span><span style='color:#788970;'>3</span><span style='color:#aaa186;'>]</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>offset</span>&nbsp;<span style='color:#aaa186;'>&amp;</span>&nbsp;<span style='color:#788970;'>0xFF0000</span><span style='color:#9e9e9e;'>)</span>&nbsp;<span style='color:#aaa186;'>&gt;&gt;</span>&nbsp;<span style='color:#788970;'>16</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L39' class='num line'>39</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>macaddr</span><span style='color:#aaa186;'>[</span><span style='color:#788970;'>4</span><span style='color:#aaa186;'>]</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>offset</span>&nbsp;<span style='color:#aaa186;'>&amp;</span>&nbsp;<span style='color:#788970;'>0xFF00</span><span style='color:#9e9e9e;'>)</span>&nbsp;<span style='color:#aaa186;'>&gt;&gt;</span>&nbsp;<span style='color:#788970;'>8</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L40' class='num line'>40</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>macaddr</span><span style='color:#aaa186;'>[</span><span style='color:#788970;'>5</span><span style='color:#aaa186;'>]</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#6892a9;'>offset</span>&nbsp;<span style='color:#aaa186;'>&amp;</span>&nbsp;<span style='color:#788970;'>0xFF</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L41' class='num line'>41</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L42' class='num line'>42</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L43' class='num line'>43</td><td class='code'><tr/>
+<tr><td id='L44' class='num line'>44</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>for</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>i</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span>&nbsp;<span style='color:#6892a9;background-color:#005c22;'>i</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>&lt;</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#788970;background-color:#005c22;'>6</span><span style='color:#9e9e9e;'>;</span>&nbsp;<span style='color:#6892a9;'>i</span><span style='color:#aaa186;'>++</span><span style='color:#9e9e9e;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L45' class='num line'>45</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>macaddr</span><span style='color:#aaa186;'>[</span><span style='color:#6892a9;'>i</span><span style='color:#aaa186;'>]</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#929270;'>strtol</span><span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>p</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#835980;'>char</span>&nbsp;<span style='color:#aaa186;'>*</span><span style='color:#aaa186;'>*</span><span style='color:#9e9e9e;'>)</span><span style='color:#aaa186;'>&amp;</span><span style='color:#6892a9;'>p</span><span style='color:#9e9e9e;'>,</span>&nbsp;<span style='color:#788970;'>16</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L46' class='num line'>46</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#005c22;'>i</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>==</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#788970;background-color:#005c22;'>5</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L47' class='num line'>47</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#aaa186;background-color:#005c22;'>*</span><span style='color:#6892a9;background-color:#005c22;'>p</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>!=</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='color:#7456aa;background-color:#005c22;'>\0</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L48' class='num line'>48</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#788970;'>-1</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L49' class='num line'>49</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L50' class='num line'>50</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span>&nbsp;<span style='color:#906a94;font-weight:bold;'>else</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L51' class='num line'>51</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#aaa186;background-color:#005c22;'>*</span><span style='color:#6892a9;background-color:#005c22;'>p</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>!=</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='color:#aa7e6c;background-color:#005c22;'>:</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>&amp;&amp;</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>*</span><span style='color:#6892a9;background-color:#005c22;'>p</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aaa186;background-color:#005c22;'>!=</span><span style='background-color:#005c22'>&nbsp;</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='color:#aa7e6c;background-color:#005c22;'>-</span><span style='color:#aa7e6c;background-color:#005c22;'>&apos;</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span>&nbsp;<span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L52' class='num line'>52</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#788970;'>-1</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L53' class='num line'>53</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L54' class='num line'>54</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#6892a9;'>p</span><span style='color:#aaa186;'>++</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L55' class='num line'>55</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L56' class='num line'>56</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#9e9e9e;'>}</span><tr/>
+<tr><td id='L57' class='num line'>57</td><td class='code'><tr/>
+<tr><td id='L58' class='num line'>58</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>return</span>&nbsp;<span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L59' class='num line'>59</td><td class='code'><span style='color:#9e9e9e;'>}</span>
+  </table>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

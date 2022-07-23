@@ -1,0 +1,176 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\ppc\mmu_common.c Ctrl Expressions (125) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\ppc\mmu_common.c Ctrl Expressions (125) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\ppc\mmu_common.c Ctrl Expressions (125)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">319</td><td><a href="mmu_common.c.html#L319">((virtual & 0xF0000000) == BEPIu && <span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>(virtual & 0x0FFE0000) & ~bl</span>) == BEPIl</span>)</a></td><td class="num">2032.75</td></tr>
+      <tr><td class="num line">722</td><td><a href="mmu_common.c.html#L722">(<span style='background-color:#741da3;'>(address & mask) != (tlb->mas2 & MAS2_EPN_MASK)</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">427</td><td><a href="mmu_common.c.html#L427">(<span style='background-color:#741da3;'>curaddr < (ppc_hash32_hpt_base(cpu) + ppc_hash32_hpt_mask(cpu) + 0x80)</span>)</a></td><td class="num">1006.20</td></tr>
+      <tr><td class="num line">1546</td><td><a href="mmu_common.c.html#L1546">(ppc_xlate(cpu, addr, MMU_DATA_LOAD, &raddr, &s, &p, cpu_mmu_index(&cpu->env, false), false) || ppc_xlate(cpu, addr, MMU_INST_FETCH, &raddr, &s, &p, cpu_mmu_index(&cpu->env, true), false))</a></td><td class="num">84.00</td></tr>
+      <tr><td class="num line">276</td><td><a href="mmu_common.c.html#L276">((!FIELD_EX64(env->msr, MSR, PR) && (*BATu & 0x00000002)) || (FIELD_EX64(env->msr, MSR, PR) && (*BATu & 0x00000001)))</a></td><td class="num">58.50</td></tr>
+      <tr><td class="num line">606</td><td><a href="mmu_common.c.html#L606">(env->spr[SPR_BOOKE_PID1] && ppcemb_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID1], 0, i) >= 0)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">612</td><td><a href="mmu_common.c.html#L612">(env->spr[SPR_BOOKE_PID2] && ppcemb_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID2], 0, i) >= 0)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">797</td><td><a href="mmu_common.c.html#L797">(env->spr[SPR_BOOKE_PID1] && ppcmas_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID1]) >= 0)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="mmu_common.c.html#L803">(env->spr[SPR_BOOKE_PID2] && ppcmas_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID2]) >= 0)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">479</td><td><a href="mmu_common.c.html#L479">((access_type == MMU_DATA_STORE || ctx->key != 1) && (access_type == MMU_DATA_LOAD || ctx->key != 0))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">630</td><td><a href="mmu_common.c.html#L630">((access_type == MMU_INST_FETCH ? FIELD_EX64(env->msr, MSR, IR) : FIELD_EX64(env->msr, MSR, DR)) != (tlb->attr & 1))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">1099</td><td><a href="mmu_common.c.html#L1099">(entry < (env->nb_tlb * type + env->tlb_per_way * (way + 1)))</a></td><td class="num">33.90</td></tr>
+      <tr><td class="num line">848</td><td><a href="mmu_common.c.html#L848">(as != ((tlb->mas1 & MAS1_TS) >> MAS1_TS_SHIFT))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">600</td><td><a href="mmu_common.c.html#L600">(ppcemb_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID], !env->nb_pids, i) >= 0)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">538</td><td><a href="mmu_common.c.html#L538">(ppcemb_tlb_check(env, tlb, &raddr, address, env->spr[SPR_40x_PID], 0, i) < 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="mmu_common.c.html#L792">(ppcmas_tlb_check(env, tlb, raddr, address, env->spr[SPR_BOOKE_PID]) >= 0)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="mmu_common.c.html#L509">(tlb->PID != 0 && tlb->PID != pid)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">434</td><td><a href="mmu_common.c.html#L434">(a0 != 0 || a1 != 0 || a2 != 0 || a3 != 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="mmu_common.c.html#L1354">((env->mmu_model == POWERPC_MMU_BOOKE) || (env->mmu_model == POWERPC_MMU_BOOKE206))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1363</td><td><a href="mmu_common.c.html#L1363">((env->mmu_model == POWERPC_MMU_BOOKE) || (env->mmu_model == POWERPC_MMU_BOOKE206))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1376</td><td><a href="mmu_common.c.html#L1376">((env->mmu_model == POWERPC_MMU_BOOKE) || (env->mmu_model == POWERPC_MMU_BOOKE206))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1444</td><td><a href="mmu_common.c.html#L1444">((env->mmu_model == POWERPC_MMU_BOOKE) || (env->mmu_model == POWERPC_MMU_BOOKE206))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">147</td><td><a href="mmu_common.c.html#L147">((ctx->raddr & mmask) != (pte1 & mmask))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">404</td><td><a href="mmu_common.c.html#L404">(type != ACCESS_CODE || ctx->nx == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">121</td><td><a href="mmu_common.c.html#L121">(is_code && env->id_tlbs == 1)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">211</td><td><a href="mmu_common.c.html#L211">((eaddr & TARGET_PAGE_MASK) != tlb->EPN)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">513</td><td><a href="mmu_common.c.html#L513">((address & mask) != tlb->EPN)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">183</td><td><a href="mmu_common.c.html#L183">(access_type == MMU_DATA_STORE && ret == 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">717</td><td><a href="mmu_common.c.html#L717">(tlb_pid != 0 && tlb_pid != pid)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="mmu_common.c.html#L919">(kvm_enabled() && !env->kvm_sw_tlb)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1010</td><td><a href="mmu_common.c.html#L1010">(kvm_enabled() && !env->kvm_sw_tlb)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">145</td><td><a href="mmu_common.c.html#L145">(ctx->raddr != hwaddr - 1ULL)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">500</td><td><a href="mmu_common.c.html#L500">(!(tlb->prot & PAGE_VALID))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="mmu_common.c.html#L704">(!(tlb->mas1 & MAS1_VALID))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">936</td><td><a href="mmu_common.c.html#L936">(!(entry->prot & PAGE_VALID))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="mmu_common.c.html#L972">(!(entry->mas1 & MAS1_VALID))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">820</td><td><a href="mmu_common.c.html#L820">(tlb->mas7_3 & MAS3_UR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">823</td><td><a href="mmu_common.c.html#L823">(tlb->mas7_3 & MAS3_UW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">826</td><td><a href="mmu_common.c.html#L826">(tlb->mas7_3 & MAS3_UX)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">830</td><td><a href="mmu_common.c.html#L830">(tlb->mas7_3 & MAS3_SR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">833</td><td><a href="mmu_common.c.html#L833">(tlb->mas7_3 & MAS3_SW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">836</td><td><a href="mmu_common.c.html#L836">(tlb->mas7_3 & MAS3_SX)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">177</td><td><a href="mmu_common.c.html#L177">(!(*pte1p & 0x00000100))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">182</td><td><a href="mmu_common.c.html#L182">(!(*pte1p & 0x00000080))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">139</td><td><a href="mmu_common.c.html#L139">(ptev && h == pteh)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">144</td><td><a href="mmu_common.c.html#L144">(ptem == ctx->ptem)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">207</td><td><a href="mmu_common.c.html#L207">(way < env->nb_ways)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="mmu_common.c.html#L310">(i < env->nb_BATs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">536</td><td><a href="mmu_common.c.html#L536">(i < env->nb_tlb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">657</td><td><a href="mmu_common.c.html#L657">(i < env->nb_tlb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">929</td><td><a href="mmu_common.c.html#L929">(i < env->nb_tlb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1044</td><td><a href="mmu_common.c.html#L1044">(i < env->nb_BATs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1089</td><td><a href="mmu_common.c.html#L1089">(env->id_tlbs != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1097</td><td><a href="mmu_common.c.html#L1097">(way < env->nb_ways)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1184</td><td><a href="mmu_common.c.html#L1184">(env->nb_BATs != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1439</td><td><a href="mmu_common.c.html#L1439">(env->mmu_model == POWERPC_MMU_SOFT_4xx)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">945</td><td><a href="mmu_common.c.html#L945">(size >= 1 * MiB)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">698</td><td><a href="mmu_common.c.html#L698">(!FIELD_EX64(env->msr, MSR, CM))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">49</td><td><a href="mmu_common.c.html#L49">(value & ~sdr_mask)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">45</td><td><a href="mmu_common.c.html#L45">(mmu_is_64bit(env->mmu_model))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">623</td><td><a href="mmu_common.c.html#L623">(FIELD_EX64(env->msr, MSR, PR))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">638</td><td><a href="mmu_common.c.html#L638">(prot2 & prot_for_access_type(access_type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">854</td><td><a href="mmu_common.c.html#L854">(prot2 & prot_for_access_type(access_type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1071</td><td><a href="mmu_common.c.html#L1071">(sr & 0x80000000)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">809</td><td><a href="mmu_common.c.html#L809">(ppcmas_tlb_check(env, tlb, raddr, address, epid) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">54</td><td><a href="mmu_common.c.html#L54">(htabsize > 28)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">74</td><td><a href="mmu_common.c.html#L74">(key == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="mmu_common.c.html#L99">(nx == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">158</td><td><a href="mmu_common.c.html#L158">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">253</td><td><a href="mmu_common.c.html#L253">(best != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">280</td><td><a href="mmu_common.c.html#L280">(pp != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="mmu_common.c.html#L282">(pp == 0x2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="mmu_common.c.html#L322">(valid != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">330</td><td><a href="mmu_common.c.html#L330">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">340</td><td><a href="mmu_common.c.html#L340">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="mmu_common.c.html#L344">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="mmu_common.c.html#L550">(pr != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="mmu_common.c.html#L560">(pr != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="mmu_common.c.html#L573">(ret == -2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="mmu_common.c.html#L578">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="mmu_common.c.html#L661">(ret != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="mmu_common.c.html#L666">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="mmu_common.c.html#L741">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">764</td><td><a href="mmu_common.c.html#L764">(mmu_idx == PPC_TLB_EPID_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">842</td><td><a href="mmu_common.c.html#L842">(access_type == MMU_INST_FETCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="mmu_common.c.html#L875">(i < BOOKE206_MAX_TLBN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">878</td><td><a href="mmu_common.c.html#L878">(j < ways)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="mmu_common.c.html#L885">(ret != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">893</td><td><a href="mmu_common.c.html#L893">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">968</td><td><a href="mmu_common.c.html#L968">(i < tlbsize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="mmu_common.c.html#L1015">(i < BOOKE206_MAX_TLBN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1018</td><td><a href="mmu_common.c.html#L1018">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1069</td><td><a href="mmu_common.c.html#L1069">(i < 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="mmu_common.c.html#L1096">(type < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1187</td><td><a href="mmu_common.c.html#L1187">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="mmu_common.c.html#L1236">(access_type == MMU_INST_FETCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="mmu_common.c.html#L1295">(access_type == MMU_INST_FETCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1307</td><td><a href="mmu_common.c.html#L1307">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1316</td><td><a href="mmu_common.c.html#L1316">(type == ACCESS_CODE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1390</td><td><a href="mmu_common.c.html#L1390">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1410</td><td><a href="mmu_common.c.html#L1410">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="mmu_common.c.html#L1441">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="mmu_common.c.html#L1450">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1471</td><td><a href="mmu_common.c.html#L1471">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="mmu_common.c.html#L1482">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="mmu_common.c.html#L402">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">791</td><td><a href="mmu_common.c.html#L791">(!use_epid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">880</td><td><a href="mmu_common.c.html#L880">(!tlb)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1255</td><td><a href="mmu_common.c.html#L1255">(!use_epid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1134</td><td><a href="mmu_common.c.html#L1134">(ppc64_v3_radix(env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">341</td><td><a href="mmu_common.c.html#L341">(qemu_log_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">418</td><td><a href="mmu_common.c.html#L418">(qemu_loglevel_mask(CPU_LOG_MMU))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="mmu_common.c.html#L744">(is_epid_mmu(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">762</td><td><a href="mmu_common.c.html#L762">(is_epid_mmu(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1512</td><td><a href="mmu_common.c.html#L1512">(ppc64_v3_radix(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">303</td><td><a href="mmu_common.c.html#L303">(ifetch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">517</td><td><a href="mmu_common.c.html#L517">(ext)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">726</td><td><a href="mmu_common.c.html#L726">(raddrp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">819</td><td><a href="mmu_common.c.html#L819">(pr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1180</td><td><a href="mmu_common.c.html#L1180">(real_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1195</td><td><a href="mmu_common.c.html#L1195">(real_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1213</td><td><a href="mmu_common.c.html#L1213">(real_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1247</td><td><a href="mmu_common.c.html#L1247">(as)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1298</td><td><a href="mmu_common.c.html#L1298">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1314</td><td><a href="mmu_common.c.html#L1314">(guest_visible)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

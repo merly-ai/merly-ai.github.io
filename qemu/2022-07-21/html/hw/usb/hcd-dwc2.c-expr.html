@@ -1,0 +1,139 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\usb\hcd-dwc2.c Ctrl Expressions (88) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\usb\hcd-dwc2.c Ctrl Expressions (88) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\usb\hcd-dwc2.c Ctrl Expressions (88)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">70</td><td><a href="hcd-dwc2.c.html#L70">(<span style='background-color:#741da3;'>(s->gintsts & s->gintmsk) && (s->gahbcfg & GAHBCFG_GLBL_INTR_EN)</span>)</a></td><td class="num">1020.00</td></tr>
+      <tr><td class="num line">126</td><td><a href="hcd-dwc2.c.html#L126">(<span style='background-color:#741da3;'>s->hreg1[index + 2] & s->hreg1[index + 3]</span>)</a></td><td class="num">1017.95</td></tr>
+      <tr><td class="num line">298</td><td><a href="hcd-dwc2.c.html#L298">(p->packet.status != USB_RET_SUCCESS && p->packet.status != USB_RET_NAK && p->packet.status != USB_RET_STALL && p->packet.status != USB_RET_ASYNC)</a></td><td class="num">35.75</td></tr>
+      <tr><td class="num line">275</td><td><a href="hcd-dwc2.c.html#L275">(dma_memory_read(&s->dma_as, hcdma, s->usb_buf[chan], tlen, MEMTXATTRS_UNSPECIFIED) != MEMTX_OK)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="hcd-dwc2.c.html#L331">(dma_memory_write(&s->dma_as, hcdma, s->usb_buf[chan], actual, MEMTXATTRS_UNSPECIFIED) != MEMTX_OK)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">359</td><td><a href="hcd-dwc2.c.html#L359">(p->packet.status == USB_RET_NAK && (eptype == USB_ENDPOINT_XFER_CONTROL || eptype == USB_ENDPOINT_XFER_BULK))</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">1239</td><td><a href="hcd-dwc2.c.html#L1239">(s->uport.dev && s->uport.dev->attached)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1334</td><td><a href="hcd-dwc2.c.html#L1334">(s->uport.dev && s->uport.dev->attached)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">420</td><td><a href="hcd-dwc2.c.html#L420">(!port->dev || !port->dev->attached)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="hcd-dwc2.c.html#L730">((val & GAHBCFG_GLBL_INTR_EN) && !(old & GAHBCFG_GLBL_INTR_EN))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">737</td><td><a href="hcd-dwc2.c.html#L737">(!(old & GRSTCTL_TXFFLSH) && (val & GRSTCTL_TXFFLSH))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">742</td><td><a href="hcd-dwc2.c.html#L742">(!(old & GRSTCTL_RXFFLSH) && (val & GRSTCTL_RXFFLSH))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">747</td><td><a href="hcd-dwc2.c.html#L747">(!(old & GRSTCTL_IN_TKNQ_FLSH) && (val & GRSTCTL_IN_TKNQ_FLSH))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">752</td><td><a href="hcd-dwc2.c.html#L752">(!(old & GRSTCTL_FRMCNTRRST) && (val & GRSTCTL_FRMCNTRRST))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">758</td><td><a href="hcd-dwc2.c.html#L758">(!(old & GRSTCTL_HSFTRST) && (val & GRSTCTL_HSFTRST))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">763</td><td><a href="hcd-dwc2.c.html#L763">(!(old & GRSTCTL_CSFTRST) && (val & GRSTCTL_CSFTRST))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">911</td><td><a href="hcd-dwc2.c.html#L911">(!(old & HPRT0_ENA) && (val & HPRT0_ENA))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">926</td><td><a href="hcd-dwc2.c.html#L926">(!(val & HPRT0_RST) && (old & HPRT0_RST))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1008</td><td><a href="hcd-dwc2.c.html#L1008">((val & HCCHAR_CHDIS) && !(old & HCCHAR_CHDIS))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1013</td><td><a href="hcd-dwc2.c.html#L1013">((val & HCCHAR_CHENA) && !(old & HCCHAR_CHENA))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">116</td><td><a href="hcd-dwc2.c.html#L116">(!(s->haint & s->haintmsk))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">105</td><td><a href="hcd-dwc2.c.html#L105">(s->haint & s->haintmsk)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">354</td><td><a href="hcd-dwc2.c.html#L354">(!pcnt || len == 0 || actual == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">259</td><td><a href="hcd-dwc2.c.html#L259">(eptype == USB_ENDPOINT_XFER_CONTROL && pid == TSIZ_SC_MC_PID_SETUP)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">638</td><td><a href="hcd-dwc2.c.html#L638">(eptype == USB_ENDPOINT_XFER_CONTROL && pid == TSIZ_SC_MC_PID_SETUP)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">83</td><td><a href="hcd-dwc2.c.html#L83">(!(s->gintsts & intr))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">101</td><td><a href="hcd-dwc2.c.html#L101">(!(s->haint & host_intr))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">189</td><td><a href="hcd-dwc2.c.html#L189">(!(s->hprt0 & HPRT0_ENA))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">974</td><td><a href="hcd-dwc2.c.html#L974">(addr < HCCHAR(0) || addr > HCDMAB(DWC2_NB_CHAN - 1))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">997</td><td><a href="hcd-dwc2.c.html#L997">(addr < HCCHAR(0) || addr > HCDMAB(DWC2_NB_CHAN - 1))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">927</td><td><a href="hcd-dwc2.c.html#L927">(dev && dev->attached)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">305</td><td><a href="hcd-dwc2.c.html#L305">(p->packet.status == USB_RET_ASYNC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">323</td><td><a href="hcd-dwc2.c.html#L323">(p->packet.status == USB_RET_SUCCESS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">851</td><td><a href="hcd-dwc2.c.html#L851">(addr < HCFG || addr > HPRT0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="hcd-dwc2.c.html#L883">(addr < HCFG || addr > HPRT0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1069</td><td><a href="hcd-dwc2.c.html#L1069">(addr < PCGCTL || addr > PCGCCTL1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1089</td><td><a href="hcd-dwc2.c.html#L1089">(addr < PCGCTL || addr > PCGCCTL1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">92</td><td><a href="hcd-dwc2.c.html#L92">(s->gintsts & intr)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">113</td><td><a href="hcd-dwc2.c.html#L113">(s->haint & host_intr)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">492</td><td><a href="hcd-dwc2.c.html#L492">(s->hprt0 & HPRT0_SUSP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">515</td><td><a href="hcd-dwc2.c.html#L515">(packet->status == USB_RET_REMOVE_FROM_QUEUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">546</td><td><a href="hcd-dwc2.c.html#L546">(tks >= s->usb_frame_time)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">549</td><td><a href="hcd-dwc2.c.html#L549">(tks < s->usb_bit_time)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">556</td><td><a href="hcd-dwc2.c.html#L556">(tks >= (int64_t)s->fi)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">595</td><td><a href="hcd-dwc2.c.html#L595">(chan++ == DWC2_NB_CHAN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">602</td><td><a href="hcd-dwc2.c.html#L602">(chan != s->next_chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1232</td><td><a href="hcd-dwc2.c.html#L1232">(c->parent_phases.enter)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1315</td><td><a href="hcd-dwc2.c.html#L1315">(c->parent_phases.hold)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1329</td><td><a href="hcd-dwc2.c.html#L1329">(c->parent_phases.exit)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">380</td><td><a href="hcd-dwc2.c.html#L380">(!(intr & HCINTMSK_CHHLTD))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">267</td><td><a href="hcd-dwc2.c.html#L267">(p->small)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="hcd-dwc2.c.html#L578">(s->working)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">588</td><td><a href="hcd-dwc2.c.html#L588">(p->needs_service)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">932</td><td><a href="hcd-dwc2.c.html#L932">(val & HPRT0_OVRCURRCHG | HPRT0_ENACHG | HPRT0_CONNDET)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">73</td><td><a href="hcd-dwc2.c.html#L73">(level != oldlevel)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">193</td><td><a href="hcd-dwc2.c.html#L193">(dev != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="hcd-dwc2.c.html#L241">(len > DWC2_MAX_XFER_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">253</td><td><a href="hcd-dwc2.c.html#L253">(mps == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">268</td><td><a href="hcd-dwc2.c.html#L268">(tlen > mps)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">273</td><td><a href="hcd-dwc2.c.html#L273">(pid != USB_TOKEN_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">324</td><td><a href="hcd-dwc2.c.html#L324">(actual > tlen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">329</td><td><a href="hcd-dwc2.c.html#L329">(pid == USB_TOKEN_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">339</td><td><a href="hcd-dwc2.c.html#L339">(actual % mps)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">341</td><td><a href="hcd-dwc2.c.html#L341">(pid == USB_TOKEN_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="hcd-dwc2.c.html#L541">(tks < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="hcd-dwc2.c.html#L634">(dev == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="hcd-dwc2.c.html#L652">(len > 1536)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="hcd-dwc2.c.html#L677">(addr > GINTSTS2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">709</td><td><a href="hcd-dwc2.c.html#L709">(addr > GINTSTS2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="hcd-dwc2.c.html#L805">(addr != HPTXFSIZ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">825</td><td><a href="hcd-dwc2.c.html#L825">(addr != HPTXFSIZ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="hcd-dwc2.c.html#L954">(iflg > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="hcd-dwc2.c.html#L957">(iflg < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1303</td><td><a href="hcd-dwc2.c.html#L1303">(i < DWC2_NB_CHAN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="hcd-dwc2.c.html#L265">(send)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">377</td><td><a href="hcd-dwc2.c.html#L377">(done)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">401</td><td><a href="hcd-dwc2.c.html#L401">(do_intr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">441</td><td><a href="hcd-dwc2.c.html#L441">(hispd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">443</td><td><a href="hcd-dwc2.c.html#L443">(NANOSECONDS_PER_SECOND >= USB_HZ_HS)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">450</td><td><a href="hcd-dwc2.c.html#L450">(NANOSECONDS_PER_SECOND >= USB_HZ_FS)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">598</td><td><a href="hcd-dwc2.c.html#L598">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">604</td><td><a href="hcd-dwc2.c.html#L604">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">794</td><td><a href="hcd-dwc2.c.html#L794">(iflg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">942</td><td><a href="hcd-dwc2.c.html#L942">(prst)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1044</td><td><a href="hcd-dwc2.c.html#L1044">(disflg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1050</td><td><a href="hcd-dwc2.c.html#L1050">(enflg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1054</td><td><a href="hcd-dwc2.c.html#L1054">(iflg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1358</td><td><a href="hcd-dwc2.c.html#L1358">(NANOSECONDS_PER_SECOND >= USB_HZ_FS)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

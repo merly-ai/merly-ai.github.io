@@ -1,0 +1,187 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\riscv\cpu_helper.c Ctrl Expressions (136) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\riscv\cpu_helper.c Ctrl Expressions (136) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\riscv\cpu_helper.c Ctrl Expressions (136)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">956</td><td><a href="cpu_helper.c.html#L956">((pte & PTE_U) && (<span style='background-color:#741da3;'>(mode != PRV_U) && (!sum || access_type == MMU_INST_FETCH)</span>))</a></td><td class="num">1032.50</td></tr>
+      <tr><td class="num line">1213</td><td><a href="cpu_helper.c.html#L1213">(riscv_cpu_virt_enabled(env) || (<span style='background-color:#741da3;'>(riscv_cpu_two_stage_lookup(mmu_idx) || two_stage_lookup) && access_type != MMU_INST_FETCH</span>))</a></td><td class="num">1026.75</td></tr>
+      <tr><td class="num line">1403</td><td><a href="cpu_helper.c.html#L1403">(<span style='background-color:#741da3;'>env->priv <= PRV_S && cause < TARGET_LONG_BITS && ((deleg >> cause) & 1)</span>)</a></td><td class="num">1020.50</td></tr>
+      <tr><td class="num line">1409</td><td><a href="cpu_helper.c.html#L1409">(<span style='background-color:#741da3;'>riscv_cpu_virt_enabled(env) && ((hdeleg >> cause) & 1)</span>)</a></td><td class="num">1010.50</td></tr>
+      <tr><td class="num line">1025</td><td><a href="cpu_helper.c.html#L1025">(<span style='background-color:#741da3;'>(i != (levels - 1)) || (napot_bits != 4)</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">88</td><td><a href="cpu_helper.c.html#L88">(env->priv == PRV_M || (env->priv == PRV_S && !riscv_cpu_virt_enabled(env)) || (env->priv == PRV_U && !riscv_cpu_virt_enabled(env) && get_field(env->hstatus, HSTATUS_HU)))</a></td><td class="num">51.00</td></tr>
+      <tr><td class="num line">967</td><td><a href="cpu_helper.c.html#L967">(access_type == MMU_DATA_LOAD && !((pte & PTE_R) || ((pte & PTE_X) && mxr)))</a></td><td class="num">49.75</td></tr>
+      <tr><td class="num line">713</td><td><a href="cpu_helper.c.html#L713">(pmp_is_range_in_tlb(env, addr & ~(*tlb_size - 1), &tlb_size_pmp))</a></td><td class="num">44.35</td></tr>
+      <tr><td class="num line">104</td><td><a href="cpu_helper.c.html#L104">(env->cur_pmmask < (env->xl == MXL_RV32 ? UINT32_MAX : UINT64_MAX))</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">443</td><td><a href="cpu_helper.c.html#L443">(riscv_cpu_virt_enabled(env) && !(env->mstatus_hs & MSTATUS_FS))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="cpu_helper.c.html#L456">(riscv_cpu_virt_enabled(env) && !(env->mstatus_hs & MSTATUS_VS))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1044</td><td><a href="cpu_helper.c.html#L1044">((pte & PTE_W) && (access_type == MMU_DATA_STORE || (pte & PTE_D)))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1205</td><td><a href="cpu_helper.c.html#L1205">(mode == PRV_M && access_type != MMU_INST_FETCH && get_field(env->mstatus, MSTATUS_MPRV))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">49</td><td><a href="cpu_helper.c.html#L49">(riscv_has_ext(env, RVV) || cpu->cfg.ext_zve32f || cpu->cfg.ext_zve64f)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1036</td><td><a href="cpu_helper.c.html#L1036">((pte & PTE_R) || ((pte & PTE_X) && mxr))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">942</td><td><a href="cpu_helper.c.html#L942">(!cpu->cfg.ext_svpbmt && (pte & PTE_PBMT))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1023</td><td><a href="cpu_helper.c.html#L1023">(cpu->cfg.ext_svnapot && (pte & PTE_N))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">930</td><td><a href="cpu_helper.c.html#L930">(cpu->cfg.ext_svpbmt || cpu->cfg.ext_svnapot)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1386</td><td><a href="cpu_helper.c.html#L1386">(env->priv == PRV_S && !riscv_cpu_virt_enabled(env))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">961</td><td><a href="cpu_helper.c.html#L961">(!(pte & PTE_U) && (mode != PRV_S))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">971</td><td><a href="cpu_helper.c.html#L971">(access_type == MMU_DATA_STORE && !(pte & PTE_W))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="cpu_helper.c.html#L974">(access_type == MMU_INST_FETCH && !(pte & PTE_X))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1415</td><td><a href="cpu_helper.c.html#L1415">(cause == IRQ_VS_TIMER || cause == IRQ_VS_SOFT || cause == IRQ_VS_EXT)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1384</td><td><a href="cpu_helper.c.html#L1384">(env->priv == PRV_S && riscv_cpu_virt_enabled(env))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">330</td><td><a href="cpu_helper.c.html#L330">((pending & 0x1) && (prio <= best_prio))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="cpu_helper.c.html#L964">(ppn & ((1ULL << ptshift) - 1))</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">776</td><td><a href="cpu_helper.c.html#L776">(mode == PRV_M && access_type != MMU_INST_FETCH)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">864</td><td><a href="cpu_helper.c.html#L864">(masked_msbs != 0 && masked_msbs != mask)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1208</td><td><a href="cpu_helper.c.html#L1208">(riscv_has_ext(env, RVH) && get_field(env->mstatus, MSTATUS_MPV))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">187</td><td><a href="cpu_helper.c.html#L187">(index < 0 || ARRAY_SIZE(hviprio_index2irq) <= index)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">296</td><td><a href="cpu_helper.c.html#L296">(irq < 0 || irq > 63)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">125</td><td><a href="cpu_helper.c.html#L125">(env->mmte & M_PM_ENABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">131</td><td><a href="cpu_helper.c.html#L131">(env->mmte & S_PM_ENABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">137</td><td><a href="cpu_helper.c.html#L137">(env->mmte & U_PM_ENABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">442</td><td><a href="cpu_helper.c.html#L442">(env->mstatus & MSTATUS_FS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">455</td><td><a href="cpu_helper.c.html#L455">(env->mstatus & MSTATUS_VS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">593</td><td><a href="cpu_helper.c.html#L593">(env->miclaim & interrupts)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">620</td><td><a href="cpu_helper.c.html#L620">(env->mip | vsgein)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">705</td><td><a href="cpu_helper.c.html#L705">(!pmp_hart_has_privs(env, addr, size, 1 << access_type, &pmp_priv, mode))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">934</td><td><a href="cpu_helper.c.html#L934">((pte & ~(target_ulong)PTE_PPN_MASK) >> PTE_PPN_SHIFT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">565</td><td><a href="cpu_helper.c.html#L565">(get_field(env->virt, VIRT_ONOFF) != enable)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">107</td><td><a href="cpu_helper.c.html#L107">(env->cur_pmbase != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">147</td><td><a href="cpu_helper.c.html#L147">(env->xl == MXL_RV32)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">788</td><td><a href="cpu_helper.c.html#L788">(mode == PRV_M || !riscv_feature(env, RISCV_FEATURE_MMU))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">950</td><td><a href="cpu_helper.c.html#L950">((pte & PTE_R | PTE_W | PTE_X) == PTE_W)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">953</td><td><a href="cpu_helper.c.html#L953">((pte & PTE_R | PTE_W | PTE_X) == PTE_W | PTE_X)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1345</td><td><a href="cpu_helper.c.html#L1345">(env->priv >= PRV_S)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1382</td><td><a href="cpu_helper.c.html#L1382">(env->priv == PRV_M)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1388</td><td><a href="cpu_helper.c.html#L1388">(env->priv == PRV_U)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1116</td><td><a href="cpu_helper.c.html#L1116">(get_physical_address(env, &phys_addr, &prot, addr, NULL, 0, mmu_idx, true, riscv_cpu_virt_enabled(env), true))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">768</td><td><a href="cpu_helper.c.html#L768">(!riscv_cpu_virt_enabled(env) && two_stage)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1078</td><td><a href="cpu_helper.c.html#L1078">(riscv_cpu_virt_enabled(env) && !first_stage)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1122</td><td><a href="cpu_helper.c.html#L1122">(get_physical_address(env, &phys_addr, &prot, phys_addr, NULL, 0, mmu_idx, false, true, true))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">857</td><td><a href="cpu_helper.c.html#L857">(TARGET_LONG_BITS > (va_bits - 1))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1086</td><td><a href="cpu_helper.c.html#L1086">(two_stage && !first_stage)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1094</td><td><a href="cpu_helper.c.html#L1094">(two_stage && !first_stage)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">939</td><td><a href="cpu_helper.c.html#L939">(!(pte & PTE_V))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">944</td><td><a href="cpu_helper.c.html#L944">(!(pte & PTE_R | PTE_W | PTE_X))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1460</td><td><a href="cpu_helper.c.html#L1460">(riscv_cpu_virt_enabled(env) && tval)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">887</td><td><a href="cpu_helper.c.html#L887">(two_stage && first_stage)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">777</td><td><a href="cpu_helper.c.html#L777">(get_field(env->mstatus, MSTATUS_MPRV))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">426</td><td><a href="cpu_helper.c.html#L426">(interrupt_request & CPU_INTERRUPT_HARD)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="cpu_helper.c.html#L946">(pte & PTE_D | PTE_A | PTE_U | PTE_ATTR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1039</td><td><a href="cpu_helper.c.html#L1039">((pte & PTE_X))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="cpu_helper.c.html#L807">(riscv_cpu_mxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">815</td><td><a href="cpu_helper.c.html#L815">(riscv_cpu_mxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">825</td><td><a href="cpu_helper.c.html#L825">(riscv_cpu_mxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">918</td><td><a href="cpu_helper.c.html#L918">(riscv_cpu_mxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">928</td><td><a href="cpu_helper.c.html#L928">(riscv_cpu_sxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1062</td><td><a href="cpu_helper.c.html#L1062">(riscv_cpu_mxl(env) == MXL_RV32)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="cpu_helper.c.html#L323">(irq == extirq)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">430</td><td><a href="cpu_helper.c.html#L430">(interruptno >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">542</td><td><a href="cpu_helper.c.html#L542">(geilen > TARGET_LONG_BITS - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">648</td><td><a href="cpu_helper.c.html#L648">(priv <= PRV_M)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">656</td><td><a href="cpu_helper.c.html#L656">(newpriv > PRV_M)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">659</td><td><a href="cpu_helper.c.html#L659">(newpriv == PRV_H)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="cpu_helper.c.html#L712">(tlb_size != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="cpu_helper.c.html#L782">(first_stage == false)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">799</td><td><a href="cpu_helper.c.html#L799">(first_stage == true)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="cpu_helper.c.html#L805">(first_stage == true)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="cpu_helper.c.html#L874">(i < levels)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="cpu_helper.c.html#L876">(i == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">897</td><td><a href="cpu_helper.c.html#L897">(vbase_ret != TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="cpu_helper.c.html#L913">(pmp_ret != TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">924</td><td><a href="cpu_helper.c.html#L924">(res != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="cpu_helper.c.html#L983">(updated_pte != pte)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1006</td><td><a href="cpu_helper.c.html#L1006">(old_pte != pte)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1140</td><td><a href="cpu_helper.c.html#L1140">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1142</td><td><a href="cpu_helper.c.html#L1142">(access_type == MMU_DATA_LOAD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="cpu_helper.c.html#L1226">(ret == TRANSLATE_G_STAGE_FAIL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="cpu_helper.c.html#L1236">(ret == TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1251</td><td><a href="cpu_helper.c.html#L1251">(ret == TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="cpu_helper.c.html#L1263">(ret != TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="cpu_helper.c.html#L1284">(ret == TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="cpu_helper.c.html#L1297">(ret == TRANSLATE_PMP_FAIL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="cpu_helper.c.html#L1301">(ret == TRANSLATE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="cpu_helper.c.html#L1344">(cause == RISCV_EXCP_SEMIHOST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1379</td><td><a href="cpu_helper.c.html#L1379">(cause == RISCV_EXCP_U_ECALL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">315</td><td><a href="cpu_helper.c.html#L315">(!riscv_feature(env, RISCV_FEATURE_AIA))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">529</td><td><a href="cpu_helper.c.html#L529">(!riscv_has_ext(env, RVH))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">538</td><td><a href="cpu_helper.c.html#L538">(!riscv_has_ext(env, RVH))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">551</td><td><a href="cpu_helper.c.html#L551">(!riscv_has_ext(env, RVH))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">560</td><td><a href="cpu_helper.c.html#L560">(!riscv_has_ext(env, RVH))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">613</td><td><a href="cpu_helper.c.html#L613">(!qemu_mutex_iothread_locked())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">700</td><td><a href="cpu_helper.c.html#L700">(!riscv_feature(env, RISCV_FEATURE_PMP))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">310</td><td><a href="cpu_helper.c.html#L310">(!pending)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">322</td><td><a href="cpu_helper.c.html#L322">(!prio)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1353</td><td><a href="cpu_helper.c.html#L1353">(!async)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">79</td><td><a href="cpu_helper.c.html#L79">(riscv_cpu_fp_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">83</td><td><a href="cpu_helper.c.html#L83">(riscv_cpu_vector_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">87</td><td><a href="cpu_helper.c.html#L87">(riscv_has_ext(env, RVH))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">122</td><td><a href="cpu_helper.c.html#L122">(riscv_has_ext(env, RVJ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="cpu_helper.c.html#L382">(riscv_cpu_virt_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">471</td><td><a href="cpu_helper.c.html#L471">(riscv_has_ext(env, RVF))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">608</td><td><a href="cpu_helper.c.html#L608">(riscv_cpu_virt_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">774</td><td><a href="cpu_helper.c.html#L774">(riscv_cpu_two_stage_lookup(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">996</td><td><a href="cpu_helper.c.html#L996">(memory_region_is_ram(mr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1121</td><td><a href="cpu_helper.c.html#L1121">(riscv_cpu_virt_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1203</td><td><a href="cpu_helper.c.html#L1203">(riscv_cpu_two_stage_lookup(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1406</td><td><a href="cpu_helper.c.html#L1406">(riscv_has_ext(env, RVH))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1420</td><td><a href="cpu_helper.c.html#L1420">(riscv_cpu_virt_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1454</td><td><a href="cpu_helper.c.html#L1454">(riscv_has_ext(env, RVH))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1455</td><td><a href="cpu_helper.c.html#L1455">(riscv_cpu_virt_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="cpu_helper.c.html#L191">(out_irq)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">195</td><td><a href="cpu_helper.c.html#L195">(out_rdzero)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">320</td><td><a href="cpu_helper.c.html#L320">(pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">400</td><td><a href="cpu_helper.c.html#L400">(irqs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">407</td><td><a href="cpu_helper.c.html#L407">(irqs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">414</td><td><a href="cpu_helper.c.html#L414">(irqs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">478</td><td><a href="cpu_helper.c.html#L478">(current_virt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">571</td><td><a href="cpu_helper.c.html#L571">(enable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">626</td><td><a href="cpu_helper.c.html#L626">(locked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">806</td><td><a href="cpu_helper.c.html#L806">(use_background)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">898</td><td><a href="cpu_helper.c.html#L898">(fault_pte_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1068</td><td><a href="cpu_helper.c.html#L1068">(first_stage)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1305</td><td><a href="cpu_helper.c.html#L1305">(probe)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\dirauth\dirvote.c Ctrl Expressions (390) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\dirauth\dirvote.c Ctrl Expressions (390) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\dirauth\dirvote.c Ctrl Expressions (390)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1230</td><td><a href="dirvote.c.html#L1230">(!(<span style='background-color:#741da3;'>3 * E < T || 3 * G < T</span>) || !(<span style='background-color:#741da3;'>3 * G >= T || 3 * E >= T</span>))</a></td><td class="num">2074.90</td></tr>
+      <tr><td class="num line">1128</td><td><a href="dirvote.c.html#L1128">(<span style='background-color:#741da3;'>3 * E >= T && 3 * G >= T</span>)</a></td><td class="num">1012.95</td></tr>
+      <tr><td class="num line">2580</td><td><a href="dirvote.c.html#L2580">(<span style='background-color:#741da3;'>n_voting_for_entry >= 3 && count > n_voting_for_entry / 2</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">984</td><td><a href="dirvote.c.html#L984">(<span style='background-color:#741da3;'>i > total_authorities / 2 || i >= MIN_VOTES_FOR_PARAM</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">2320</td><td><a href="dirvote.c.html#L2320">(rs_out.has_bandwidth && (!rs_out.is_authority || !dirauth_get_options()->AuthDirDontVoteOnDirAuthBandwidth))</a></td><td class="num">64.00</td></tr>
+      <tr><td class="num line">4573</td><td><a href="dirvote.c.html#L4573">(ri2_pub < ri_pub || (ri2_pub == ri_pub && fast_memcmp(ri->cache_info.signed_descriptor_digest, ri2->cache_info.signed_descriptor_digest, DIGEST_LEN) < 0))</a></td><td class="num">52.00</td></tr>
+      <tr><td class="num line">726</td><td><a href="dirvote.c.html#L726">(compare_vote_rs(most, rs) == 0 && !tor_addr_is_null(&rs->status.ipv6_addr) && rs->status.ipv6_orport)</a></td><td class="num">50.00</td></tr>
+      <tr><td class="num line">694</td><td><a href="dirvote.c.html#L694">(cur && (cur_n > most_n || (cur_n == most_n && cur->published_on > most_published)))</a></td><td class="num">49.75</td></tr>
+      <tr><td class="num line">4096</td><td><a href="dirvote.c.html#L4096">(ep->next && fast_memeq(ep->md->digest, ep->next->md->digest, DIGEST256_LEN) && ep->low == ep->next->high + 1)</a></td><td class="num">48.10</td></tr>
+      <tr><td class="num line">1068</td><td><a href="dirvote.c.html#L1068">(!CHECK_EQ(Wgg * G + Wgd * D, M * scale + Wmd * D + Wme * E + Wmg * G, (margin * T) / 3))</a></td><td class="num">42.95</td></tr>
+      <tr><td class="num line">283</td><td><a href="dirvote.c.html#L283">(!BUG(smartlist_len(v3_ns->bw_file_headers) > MAX_BW_FILE_HEADER_COUNT_IN_VOTE))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">1740</td><td><a href="dirvote.c.html#L1740">(!tor_digest_is_zero(get_voter(v)->legacy_id_digest))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">1062</td><td><a href="dirvote.c.html#L1062">(!CHECK_EQ(Wgg * G + Wgd * D, Wee * E + Wed * D, (margin * T) / 3))</a></td><td class="num">36.05</td></tr>
+      <tr><td class="num line">706</td><td><a href="dirvote.c.html#L706">(cur_n > most_n || (cur && cur_n == most_n && cur->published_on > most_published))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">1987</td><td><a href="dirvote.c.html#L1987">(named_flag[voter_idx] >= 0 && (rs->flags & (UINT64_C(1) << named_flag[voter_idx])))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">638</td><td><a href="dirvote.c.html#L638">((r = tor_addr_compare(&a->status.ipv4_addr, &b->status.ipv4_addr, CMP_EXACT)))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">663</td><td><a href="dirvote.c.html#L663">((r = tor_addr_compare(&a->addr, &b->addr, CMP_EXACT)))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">436</td><td><a href="dirvote.c.html#L436">(!(v = networkstatus_parse_vote_from_string(status, strlen(status), NULL, v3_ns->type)))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">3807</td><td><a href="dirvote.c.html#L3807">(!pending->consensus || networkstatus_check_consensus_signature(pending->consensus, 1) < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2450</td><td><a href="dirvote.c.html#L2450">(!(c = networkstatus_parse_vote_from_string(result, strlen(result), NULL, NS_TYPE_CONSENSUS)))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">4454</td><td><a href="dirvote.c.html#L4454">(tor_addr_family(&(ri->ipv6_addr)) == AF_INET6)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4458</td><td><a href="dirvote.c.html#L4458">(tor_addr_family(&(ri->ipv4_addr)) == AF_INET)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3499</td><td><a href="dirvote.c.html#L3499">(get_options()->V3AuthUseLegacyKey)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">894</td><td><a href="dirvote.c.html#L894">(!strcmpstart(k_v_pair, keyword) && k_v_pair[strlen(keyword)] == '=')</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">2659</td><td><a href="dirvote.c.html#L2659">(!fast_mem_is_zero(digests->d[alg], DIGEST256_LEN))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="dirvote.c.html#L611">((r = fast_memcmp(a->status.identity_digest, b->status.identity_digest, DIGEST_LEN)))</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">614</td><td><a href="dirvote.c.html#L614">((r = fast_memcmp(a->status.descriptor_digest, b->status.descriptor_digest, DIGEST_LEN)))</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">635</td><td><a href="dirvote.c.html#L635">((r = strcmp(b->status.nickname, a->status.nickname)))</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">665</td><td><a href="dirvote.c.html#L665">((r = (((int)b->port) - ((int)a->port))))</a></td><td class="num">16.10</td></tr>
+      <tr><td class="num line">3326</td><td><a href="dirvote.c.html#L3326">(fast_memeq(v->vote->cert->cache_info.identity_digest, vote->cert->cache_info.identity_digest, DIGEST_LEN))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">3971</td><td><a href="dirvote.c.html#L3971">(ri->cache_info.signing_key_cert && ri->cache_info.signing_key_cert->signing_key_included)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4080</td><td><a href="dirvote.c.html#L4080">(cmr->low != -1 && cmr->high != -1)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2224</td><td><a href="dirvote.c.html#L2224">(vsr->status.has_exitsummary && fast_memeq(rs_out.descriptor_digest, vsr->status.descriptor_digest, DIGEST_LEN))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1108</td><td><a href="dirvote.c.html#L1108">(G <= 0 || M <= 0 || E <= 0 || D <= 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="dirvote.c.html#L1155">(3 * E < T && 3 * G < T)</a></td><td class="num">12.95</td></tr>
+      <tr><td class="num line">4111</td><td><a href="dirvote.c.html#L4111">(dirvote_format_microdesc_vote_line(buf, sizeof(buf), ep->md, ep->low, ep->high) >= 0)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1973</td><td><a href="dirvote.c.html#L1973">(rs->version && rs->version[0])</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">2706</td><td><a href="dirvote.c.html#L2706">(!sig->good_signature && !sig->bad_signature)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2660</td><td><a href="dirvote.c.html#L2660">(fast_memeq(target->digests.d[alg], digests->d[alg], DIGEST256_LEN))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1879</td><td><a href="dirvote.c.html#L1879">(d != conflict && fast_memcmp(d, rs->status.identity_digest, DIGEST_LEN))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">3337</td><td><a href="dirvote.c.html#L3337">(v->vote->published < vote->published)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2718</td><td><a href="dirvote.c.html#L2718">(sig->good_signature || !old_sig || old_sig->bad_signature)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">4747</td><td><a href="dirvote.c.html#L4747">(ri->protocol_list && protover_list_is_invalid(ri->protocol_list))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1984</td><td><a href="dirvote.c.html#L1984">(rs->flags & (UINT64_C(1) << flag))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2765</td><td><a href="dirvote.c.html#L2765">(!sig->signature || sig->bad_signature)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2814</td><td><a href="dirvote.c.html#L2814">(ns && ns->flavor == FLAV_NS)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1873</td><td><a href="dirvote.c.html#L1873">((rs->flags & nf) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1897</td><td><a href="dirvote.c.html#L1897">((rs->flags & uf) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2628</td><td><a href="dirvote.c.html#L2628">(target->valid_after != sigs->valid_after)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2633</td><td><a href="dirvote.c.html#L2633">(target->fresh_until != sigs->fresh_until)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2638</td><td><a href="dirvote.c.html#L2638">(target->valid_until != sigs->valid_until)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3217</td><td><a href="dirvote.c.html#L3217">(!authority_cert_get_by_digests(cert->cache_info.identity_digest, cert->signing_key_digest))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3224</td><td><a href="dirvote.c.html#L3224">(!authority_cert_get_by_digests(cert->cache_info.identity_digest, cert->signing_key_digest))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">520</td><td><a href="dirvote.c.html#L520">(num_len == 0 || cp[num_len] != ',')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1989</td><td><a href="dirvote.c.html#L1989">(chosen_name && strcmp(chosen_name, rs->status.nickname))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1212</td><td><a href="dirvote.c.html#L1212">(berr != BW_WEIGHTS_NO_ERROR && berr != BW_WEIGHTS_BALANCE_MID_ERROR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2068</td><td><a href="dirvote.c.html#L2068">(consensus_method >= MIN_METHOD_TO_SUPPRESS_MD_PUBLISHED && flavor == FLAV_MICRODESC)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2415</td><td><a href="dirvote.c.html#L2415">(!(signature = router_get_dirobj_signature(digest, digest_len, signing_key)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2437</td><td><a href="dirvote.c.html#L2437">(!(signature = router_get_dirobj_signature(digest, digest_len, legacy_signing_key)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3036</td><td><a href="dirvote.c.html#L3036">(!(ns = dirserv_generate_networkstatus_vote_obj(key, cert)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3489</td><td><a href="dirvote.c.html#L3489">(!(my_cert = get_my_v3_authority_cert()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3716</td><td><a href="dirvote.c.html#L3716">(!(sigs = networkstatus_parse_detached_signatures(detached_signatures_body, NULL)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2102</td><td><a href="dirvote.c.html#L2102">(flag_counts[fl_sl_idx] > n_flag_voters[fl_sl_idx] / 2)</a></td><td class="num">8.10</td></tr>
+      <tr><td class="num line">2339</td><td><a href="dirvote.c.html#L2339">(rs_out.has_exitsummary && flavor == FLAV_NS)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3309</td><td><a href="dirvote.c.html#L3309">(time_posted && time_posted > voting_schedule.fetch_missing_votes)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">4228</td><td><a href="dirvote.c.html#L4228">((item = dirvote_get_pending_consensus(FLAV_NS)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">4235</td><td><a href="dirvote.c.html#L4235">((item = dirvote_get_pending_detached_signatures()))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">4241</td><td><a href="dirvote.c.html#L4241">((d = dirvote_get_vote(NULL, flags)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">4568</td><td><a href="dirvote.c.html#L4568">((ri2 = digest256map_get(by_ed_key, pk)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3072</td><td><a href="dirvote.c.html#L3072">(!(ds->type & V3_DIRINFO))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4108</td><td><a href="dirvote.c.html#L4108">((ep = entries))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1238</td><td><a href="dirvote.c.html#L1238">(3 * (S + D) < T)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">2299</td><td><a href="dirvote.c.html#L2299">(flavor == FLAV_MICRODESC && !tor_digest256_is_zero(microdesc_digest))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2699</td><td><a href="dirvote.c.html#L2699">(old_sig && old_sig->good_signature)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3286</td><td><a href="dirvote.c.html#L3286">(vote->valid_after != voting_schedule.interval_starts)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3741</td><td><a href="dirvote.c.html#L3741">(n_added && pending_consensuses[FLAV_NS].consensus)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3813</td><td><a href="dirvote.c.html#L3813">(networkstatus_set_current_consensus(pending->body, strlen(pending->body), name, 0, NULL))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3929</td><td><a href="dirvote.c.html#L3929">(crypto_pk_write_public_key_to_string(rsa_pubkey, &key, &keylen) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">4284</td><td><a href="dirvote.c.html#L4284">(dirserv_query_measured_bw_cache_kb(ri->cache_info.identity_digest, &mbw_kb, NULL))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1899</td><td><a href="dirvote.c.html#L1899">(d == conflict || d == unknown)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3330</td><td><a href="dirvote.c.html#L3330">(fast_memeq(vi_old->vote_digest, vi->vote_digest, DIGEST_LEN))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4565</td><td><a href="dirvote.c.html#L4565">(ri->cache_info.signing_key_cert == NULL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4751</td><td><a href="dirvote.c.html#L4751">(ri->cache_info.published_on >= cutoff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4915</td><td><a href="dirvote.c.html#L4915">(crypto_pk_get_digest(c->identity_key, voter->legacy_id_digest))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2855</td><td><a href="dirvote.c.html#L2855">(fast_mem_is_zero(ns->digests.d[alg], DIGEST256_LEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">508</td><td><a href="dirvote.c.html#L508">(num_len == mlen && fast_memeq(mstr, cp, mlen))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2283</td><td><a href="dirvote.c.html#L2283">(flavor == FLAV_MICRODESC && tor_digest256_is_zero(microdesc_digest))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2133</td><td><a href="dirvote.c.html#L2133">(is_middle_only && consensus_method >= MIN_METHOD_FOR_MIDDLEONLY)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2164</td><td><a href="dirvote.c.html#L2164">(is_guard && num_guardfraction_inputs > 2)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2754</td><td><a href="dirvote.c.html#L2754">(for_detached_signatures && flavor != FLAV_NS)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1845</td><td><a href="dirvote.c.html#L1845">(smartlist_len(v->known_flags) > MAX_KNOWN_FLAGS_IN_VOTE)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4674</td><td><a href="dirvote.c.html#L4674">(crypto_pk_get_digest(cert->identity_key, identity_digest) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2846</td><td><a href="dirvote.c.html#L2846">(ns->flavor == FLAV_NS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2866</td><td><a href="dirvote.c.html#L2866">(ns->flavor == FLAV_NS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3032</td><td><a href="dirvote.c.html#L3032">(cert->expires < now)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3111</td><td><a href="dirvote.c.html#L3111">(!consensus || networkstatus_check_consensus_signature(consensus, -1) == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4154</td><td><a href="dirvote.c.html#L4154">(i < tok->n_args)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4230</td><td><a href="dirvote.c.html#L4230">(!current && !strcmp(url, "consensus-signatures"))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4431</td><td><a href="dirvote.c.html#L4431">(addr_count++ > max_with_same_addr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4678</td><td><a href="dirvote.c.html#L4678">(!find_my_address(options, AF_INET, LOG_WARN, &addr, NULL, &hostname))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3402</td><td><a href="dirvote.c.html#L3402">(!any_failed && !pending_vote)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3879</td><td><a href="dirvote.c.html#L3879">(!pending_vote_list && !previous_vote_list)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">583</td><td><a href="dirvote.c.html#L583">(cur && !strcmp(cp, cur))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">691</td><td><a href="dirvote.c.html#L691">(cur && !compare_vote_rs(cur, rs))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">975</td><td><a href="dirvote.c.html#L975">(param_sl_idx + 1 == smartlist_len(param_list))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1904</td><td><a href="dirvote.c.html#L1904">(fast_memeq(d, rs->status.identity_digest, DIGEST_LEN))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2232</td><td><a href="dirvote.c.html#L2232">(strcmp(chosen_exitsummary, vsr->status.exitsummary))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3346</td><td><a href="dirvote.c.html#L3346">(end_of_vote && !strcmpstart(end_of_vote, "network-status-version"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3392</td><td><a href="dirvote.c.html#L3392">(end_of_vote && !strcmpstart(end_of_vote, "network-status-version "))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4487</td><td><a href="dirvote.c.html#L4487">(platform && !strcmpstart(platform, "Tor "))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4489</td><td><a href="dirvote.c.html#L4489">(eos && !strcmpstart(eos, " (r"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4539</td><td><a href="dirvote.c.html#L4539">(tor_version_parse(v, &ver) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4770</td><td><a href="dirvote.c.html#L4770">(digestmap_get(omit_as_sybil, ri->cache_info.identity_digest))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1163</td><td><a href="dirvote.c.html#L1163">(R + D < S)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2099</td><td><a href="dirvote.c.html#L2099">(ed_consensus <= total_authorities / 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1037</td><td><a href="dirvote.c.html#L1037">(!CHECK_EQ(Wed + Wmd + Wgd, scale, margin))</a></td><td class="num">4.45</td></tr>
+      <tr><td class="num line">1998</td><td><a href="dirvote.c.html#L1998">(rs->status.has_guardfraction)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2007</td><td><a href="dirvote.c.html#L2007">(rs->status.has_bandwidth)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2024</td><td><a href="dirvote.c.html#L2024">(n_listing <= total_authorities / 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2028</td><td><a href="dirvote.c.html#L2028">(ed_consensus <= total_authorities / 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2073</td><td><a href="dirvote.c.html#L2073">(chosen_name && !naming_conflict)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2139</td><td><a href="dirvote.c.html#L2139">(!is_bad_exit && badexit_flag_is_listed)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3334</td><td><a href="dirvote.c.html#L3334">(*status_out < 200)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3350</td><td><a href="dirvote.c.html#L3350">(*status_out < 200)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3386</td><td><a href="dirvote.c.html#L3386">(*status_out < 400)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3399</td><td><a href="dirvote.c.html#L3399">(*status_out < 200)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3470</td><td><a href="dirvote.c.html#L3470">(n_votes <= n_voters / 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3736</td><td><a href="dirvote.c.html#L3736">(errors && !n_added)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4203</td><td><a href="dirvote.c.html#L4203">(ns->sr_info.commits)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4368</td><td><a href="dirvote.c.html#L4368">(first_is_auth && !second_is_auth)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4370</td><td><a href="dirvote.c.html#L4370">(!first_is_auth && second_is_auth)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4377</td><td><a href="dirvote.c.html#L4377">(first_is_running && !second_is_running)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4379</td><td><a href="dirvote.c.html#L4379">(!first_is_running && second_is_running)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4765</td><td><a href="dirvote.c.html#L4765">(ri->cache_info.signing_key_cert)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">307</td><td><a href="dirvote.c.html#L307">(!tor_digest256_is_zero((const char *)v3_ns->bw_file_digest256))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="dirvote.c.html#L376">(!tor_digest_is_zero(voter->legacy_id_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3074</td><td><a href="dirvote.c.html#L3074">(!dirvote_get_vote(ds->v3_identity_digest, DGV_BY_ID | DGV_INCLUDE_PENDING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="dirvote.c.html#L373">(ip_str[0] == '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">944</td><td><a href="dirvote.c.html#L944">(!v->net_params)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1346</td><td><a href="dirvote.c.html#L1346">(!rs->has_bandwidth)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1766</td><td><a href="dirvote.c.html#L1766">(!e->is_legacy)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1867</td><td><a href="dirvote.c.html#L1867">(named_flag[v_sl_idx] < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1892</td><td><a href="dirvote.c.html#L1892">(unnamed_flag[v_sl_idx] < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1965</td><td><a href="dirvote.c.html#L1965">(vrs_lst[voter_idx] == NULL)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1983</td><td><a href="dirvote.c.html#L1983">(flag < n_voter_flags[voter_idx])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2542</td><td><a href="dirvote.c.html#L2542">(!v->package_lines)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3726</td><td><a href="dirvote.c.html#L3726">(!pc->consensus)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3955</td><td><a href="dirvote.c.html#L3955">(summary && strcmp(summary, "reject 1-65535"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3963</td><td><a href="dirvote.c.html#L3963">(p6 && strcmp(p6, "reject 1-65535"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4682</td><td><a href="dirvote.c.html#L4682">(!hostname || !strchr(hostname, '.'))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1393</td><td><a href="dirvote.c.html#L1393">(is_exit && is_guard)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2183</td><td><a href="dirvote.c.html#L2183">(rs_out.bandwidth_kb > max_unmeasured_bw_kb)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2422</td><td><a href="dirvote.c.html#L2422">(legacy_id_key_digest && legacy_signing_key)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3029</td><td><a href="dirvote.c.html#L3029">(!cert || !key)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3890</td><td><a href="dirvote.c.html#L3890">(pending_vote_list && include_pending)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3895</td><td><a href="dirvote.c.html#L3895">(previous_vote_list && include_previous)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3901</td><td><a href="dirvote.c.html#L3901">(pending_vote_list && include_pending)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3906</td><td><a href="dirvote.c.html#L3906">(previous_vote_list && include_previous)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3503</td><td><a href="dirvote.c.html#L3503">(crypto_pk_get_digest(cert->identity_key, legacy_dbuf))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">272</td><td><a href="dirvote.c.html#L272">(v3_ns->net_params)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">280</td><td><a href="dirvote.c.html#L280">(v3_ns->bw_file_headers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">980</td><td><a href="dirvote.c.html#L980">(!next_param || strncmp(next_param, param, cur_param_len))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1043</td><td><a href="dirvote.c.html#L1043">(!CHECK_EQ(Wmg + Wgg, scale, margin))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1049</td><td><a href="dirvote.c.html#L1049">(!CHECK_EQ(Wme + Wee, scale, margin))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1373</td><td><a href="dirvote.c.html#L1373">(rs->has_guardfraction)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1396</td><td><a href="dirvote.c.html#L1396">(rs->has_guardfraction)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1407</td><td><a href="dirvote.c.html#L1407">(rs->has_guardfraction)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1594</td><td><a href="dirvote.c.html#L1594">(v->client_versions)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1603</td><td><a href="dirvote.c.html#L1603">(v->server_versions)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1976</td><td><a href="dirvote.c.html#L1976">(rs->protocols)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2004</td><td><a href="dirvote.c.html#L2004">(rs->has_measured_bw)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2011</td><td><a href="dirvote.c.html#L2011">(rs->ed25519_reflects_consensus)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2900</td><td><a href="dirvote.c.html#L2900">(pending[flav].consensus)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3777</td><td><a href="dirvote.c.html#L3777">(pending_consensuses[FLAV_NS].consensus)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3932</td><td><a href="dirvote.c.html#L3932">(ri->declared_family)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3937</td><td><a href="dirvote.c.html#L3937">(ri->onion_curve25519_pkey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3958</td><td><a href="dirvote.c.html#L3958">(ri->ipv6_exit_policy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4592</td><td><a href="dirvote.c.html#L4592">(ri->omit_from_vote)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4692</td><td><a href="dirvote.c.html#L4692">(d_options->VersioningAuthoritativeDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4707</td><td><a href="dirvote.c.html#L4707">(options->V3BandwidthsFile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4777</td><td><a href="dirvote.c.html#L4777">(ri->protocol_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4802</td><td><a href="dirvote.c.html#L4802">(options->GuardfractionFile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4808</td><td><a href="dirvote.c.html#L4808">(options->V3BandwidthsFile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4891</td><td><a href="dirvote.c.html#L4891">(d_options->ConsensusParams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4912</td><td><a href="dirvote.c.html#L4912">(options->V3AuthUseLegacyKey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3352</td><td><a href="dirvote.c.html#L3352">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3384</td><td><a href="dirvote.c.html#L3384">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3401</td><td><a href="dirvote.c.html#L3401">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3690</td><td><a href="dirvote.c.html#L3690">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3754</td><td><a href="dirvote.c.html#L3754">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">287</td><td><a href="dirvote.c.html#L287">(BUG(strlen(bw_file_headers) > MAX_BW_FILE_HEADERS_LINE_LEN))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">412</td><td><a href="dirvote.c.html#L412">(crypto_pk_get_fingerprint(private_signing_key, signing_key_fingerprint, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">949</td><td><a href="dirvote.c.html#L949">(smartlist_len(param_list) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1833</td><td><a href="dirvote.c.html#L1833">(i < smartlist_len(votes))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1964</td><td><a href="dirvote.c.html#L1964">(voter_idx < smartlist_len(votes))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2349</td><td><a href="dirvote.c.html#L2349">(i < smartlist_len(votes))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2500</td><td><a href="dirvote.c.html#L2500">(strcmpstart(params, prefix1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3989</td><td><a href="dirvote.c.html#L3989">(smartlist_len(lst) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4032</td><td><a href="dirvote.c.html#L4032">(tor_snprintf(out_buf, out_buf_len, "m %s sha256=%s\\n", microdesc_consensus_methods, d64) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4670</td><td><a href="dirvote.c.html#L4670">(crypto_pk_get_digest(private_key, signing_key_digest) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4715</td><td><a href="dirvote.c.html#L4715">(dirserv_get_measured_bw_cache_size() > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4819</td><td><a href="dirvote.c.html#L4819">(dirserv_get_measured_bw_cache_size() > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">586</td><td><a href="dirvote.c.html#L586">(count > min)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">592</td><td><a href="dirvote.c.html#L592">(count > min)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="dirvote.c.html#L779">(ai < bi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="dirvote.c.html#L781">(ai == bi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="dirvote.c.html#L782">(ai == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="dirvote.c.html#L844">(i <= high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="dirvote.c.html#L905">(n_found == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1169</td><td><a href="dirvote.c.html#L1169">(E < G)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1200</td><td><a href="dirvote.c.html#L1200">(Wmd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1239</td><td><a href="dirvote.c.html#L1239">(G < E)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1245</td><td><a href="dirvote.c.html#L1245">(E < M)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1254</td><td><a href="dirvote.c.html#L1254">(G < M)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1260</td><td><a href="dirvote.c.html#L1260">(G < E)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1494</td><td><a href="dirvote.c.html#L1494">(idx >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1696</td><td><a href="dirvote.c.html#L1696">(idx < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1724</td><td><a href="dirvote.c.html#L1724">(srv_lines != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1779</td><td><a href="dirvote.c.html#L1779">(consensus_method < MIN_METHOD_FOR_CORRECT_BWWEIGHTSCALE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1785</td><td><a href="dirvote.c.html#L1785">(max_unmeasured_bw_kb < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="dirvote.c.html#L1934">(i < num_routers)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2027</td><td><a href="dirvote.c.html#L2027">(ed_consensus > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2173</td><td><a href="dirvote.c.html#L2173">(num_mbws > 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2177</td><td><a href="dirvote.c.html#L2177">(num_bandwidths > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2181</td><td><a href="dirvote.c.html#L2181">(n_authorities_measuring_bandwidth > 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2371</td><td><a href="dirvote.c.html#L2371">(consensus_method < MIN_METHOD_FOR_CORRECT_BWWEIGHTSCALE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2377</td><td><a href="dirvote.c.html#L2377">(weight_scale < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2406</td><td><a href="dirvote.c.html#L2406">(flavor == FLAV_NS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2428</td><td><a href="dirvote.c.html#L2428">(flavor == FLAV_NS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2571</td><td><a href="dirvote.c.html#L2571">(i < n_votes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2658</td><td><a href="dirvote.c.html#L2658">(alg < N_COMMON_DIGEST_ALGORITHMS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2770</td><td><a href="dirvote.c.html#L2770">(flavor == FLAV_NS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2851</td><td><a href="dirvote.c.html#L2851">(alg < N_COMMON_DIGEST_ALGORITHMS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2899</td><td><a href="dirvote.c.html#L2899">(flav < n_flavors)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3109</td><td><a href="dirvote.c.html#L3109">(i < N_CONSENSUS_FLAVORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3131</td><td><a href="dirvote.c.html#L3131">(i < N_CONSENSUS_FLAVORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3512</td><td><a href="dirvote.c.html#L3512">(flav < N_CONSENSUS_FLAVORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3582</td><td><a href="dirvote.c.html#L3582">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3645</td><td><a href="dirvote.c.html#L3645">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3653</td><td><a href="dirvote.c.html#L3653">(r >= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3682</td><td><a href="dirvote.c.html#L3682">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3722</td><td><a href="dirvote.c.html#L3722">(i < N_CONSENSUS_FLAVORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3730</td><td><a href="dirvote.c.html#L3730">(res < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3802</td><td><a href="dirvote.c.html#L3802">(i < N_CONSENSUS_FLAVORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3881</td><td><a href="dirvote.c.html#L3881">(fp == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3945</td><td><a href="dirvote.c.html#L3945">(consensus_method < MIN_METHOD_FOR_CANONICAL_FAMILIES_IN_MICRODESCS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4144</td><td><a href="dirvote.c.html#L4144">(commits == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4159</td><td><a href="dirvote.c.html#L4159">(commit == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4321</td><td><a href="dirvote.c.html#L4321">(comparison == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4340</td><td><a href="dirvote.c.html#L4340">(comparison == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4385</td><td><a href="dirvote.c.html#L4385">(bw_kb_first > bw_kb_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4387</td><td><a href="dirvote.c.html#L4387">(bw_kb_first < bw_kb_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4412</td><td><a href="dirvote.c.html#L4412">(max_with_same_addr <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4416</td><td><a href="dirvote.c.html#L4416">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">325</td><td><a href="dirvote.c.html#L325">(ip_str[0])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2572</td><td><a href="dirvote.c.html#L2572">(values[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2326</td><td><a href="dirvote.c.html#L2326">(rs_out.has_guardfraction)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2924</td><td><a href="dirvote.c.html#L2924">(voting_schedule.created_on_demand)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">755</td><td><a href="dirvote.c.html#L755">(!vote_routerstatus_find_microdesc_hash(d, rs, consensus_method, DIGEST_SHA256))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">845</td><td><a href="dirvote.c.html#L845">(!consensus_method_is_supported(i))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">899</td><td><a href="dirvote.c.html#L899">(BUG(!ok))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1055</td><td><a href="dirvote.c.html#L1055">(!RANGE_CHECK(Wgg, Wgd, Wmg, Wme, Wmd, Wed, Wee, scale))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1550</td><td><a href="dirvote.c.html#L1550">(!smartlist_len(votes))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1698</td><td><a href="dirvote.c.html#L1698">(BUG(!proto_line))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1854</td><td><a href="dirvote.c.html#L1854">(!strcmp(fl, "Named"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1856</td><td><a href="dirvote.c.html#L1856">(!strcmp(fl, "Unnamed"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2092</td><td><a href="dirvote.c.html#L2092">(!strcmp(fl, "Named"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2095</td><td><a href="dirvote.c.html#L2095">(!strcmp(fl, "Unnamed"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2098</td><td><a href="dirvote.c.html#L2098">(!strcmp(fl, "NoEdConsensus"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2104</td><td><a href="dirvote.c.html#L2104">(!strcmp(fl, "Exit"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2106</td><td><a href="dirvote.c.html#L2106">(!strcmp(fl, "Guard"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2108</td><td><a href="dirvote.c.html#L2108">(!strcmp(fl, "Running"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2110</td><td><a href="dirvote.c.html#L2110">(!strcmp(fl, "BadExit"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2112</td><td><a href="dirvote.c.html#L2112">(!strcmp(fl, "MiddleOnly"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2114</td><td><a href="dirvote.c.html#L2114">(!strcmp(fl, "Valid"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2545</td><td><a href="dirvote.c.html#L2545">(!validate_recommended_package_line(line))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2916</td><td><a href="dirvote.c.html#L2916">(!authdir_mode_v3(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3083</td><td><a href="dirvote.c.html#L3083">(!smartlist_len(missing_fps))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3375</td><td><a href="dirvote.c.html#L3375">(!strcmpstart(end_of_vote, "network-status-version "))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4224</td><td><a href="dirvote.c.html#L4224">(!strcmp(url, "consensus"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4237</td><td><a href="dirvote.c.html#L4237">(!strcmp(url, "authority"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4247</td><td><a href="dirvote.c.html#L4247">(!strcmpstart(url, "d/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="dirvote.c.html#L292">(!bw_file_headers)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">425</td><td><a href="dirvote.c.html#L425">(!sig)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="dirvote.c.html#L514">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1875</td><td><a href="dirvote.c.html#L1875">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1901</td><td><a href="dirvote.c.html#L1901">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2081</td><td><a href="dirvote.c.html#L2081">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2122</td><td><a href="dirvote.c.html#L2122">(!is_running)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2127</td><td><a href="dirvote.c.html#L2127">(!is_valid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2230</td><td><a href="dirvote.c.html#L2230">(!chosen_exitsummary)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2251</td><td><a href="dirvote.c.html#L2251">(!chosen_exitsummary)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2271</td><td><a href="dirvote.c.html#L2271">(!chosen_exitsummary)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2513</td><td><a href="dirvote.c.html#L2513">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2550</td><td><a href="dirvote.c.html#L2550">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2553</td><td><a href="dirvote.c.html#L2553">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2558</td><td><a href="dirvote.c.html#L2558">(!status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2644</td><td><a href="dirvote.c.html#L2644">(!siglist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2654</td><td><a href="dirvote.c.html#L2654">(!digests)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2669</td><td><a href="dirvote.c.html#L2669">(!n_matches)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2690</td><td><a href="dirvote.c.html#L2690">(!target_voter)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2794</td><td><a href="dirvote.c.html#L2794">(!n_sigs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2817</td><td><a href="dirvote.c.html#L2817">(!consensus_ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2869</td><td><a href="dirvote.c.html#L2869">(!sigs_on_this_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2878</td><td><a href="dirvote.c.html#L2878">(!sigs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3041</td><td><a href="dirvote.c.html#L3041">(!contents)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3046</td><td><a href="dirvote.c.html#L3046">(!pending_vote)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3118</td><td><a href="dirvote.c.html#L3118">(!need_any)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3144</td><td><a href="dirvote.c.html#L3144">(!previous_vote_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3146</td><td><a href="dirvote.c.html#L3146">(!pending_vote_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3251</td><td><a href="dirvote.c.html#L3251">(!pending_vote_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3260</td><td><a href="dirvote.c.html#L3260">(!end_of_vote)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3262</td><td><a href="dirvote.c.html#L3262">(!vote)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3272</td><td><a href="dirvote.c.html#L3272">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3454</td><td><a href="dirvote.c.html#L3454">(!pending_vote_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3480</td><td><a href="dirvote.c.html#L3480">(!n_vote_running)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3520</td><td><a href="dirvote.c.html#L3520">(!consensus_body)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3529</td><td><a href="dirvote.c.html#L3529">(!consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3554</td><td><a href="dirvote.c.html#L3554">(!n_generated)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3563</td><td><a href="dirvote.c.html#L3563">(!signatures)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3658</td><td><a href="dirvote.c.html#L3658">(!new_signatures)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3785</td><td><a href="dirvote.c.html#L3785">(!pending_consensus_signature_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4428</td><td><a href="dirvote.c.html#L4428">(!addrs_equal)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4687</td><td><a href="dirvote.c.html#L4687">(!hostname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4700</td><td><a href="dirvote.c.html#L4700">(!contact)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4755</td><td><a href="dirvote.c.html#L4755">(!node)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4773</td><td><a href="dirvote.c.html#L4773">(!vote_on_reachability)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">753</td><td><a href="dirvote.c.html#L753">(compare_vote_rs(rs, most))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">867</td><td><a href="dirvote.c.html#L867">(strchr(v, ' '))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1557</td><td><a href="dirvote.c.html#L1557">(consensus_method_is_supported(consensus_method))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1706</td><td><a href="dirvote.c.html#L1706">(smartlist_len(param_list))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2083</td><td><a href="dirvote.c.html#L2083">(fast_memeq(d, current_rsa_id, DIGEST_LEN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2147</td><td><a href="dirvote.c.html#L2147">(smartlist_len(versions))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2155</td><td><a href="dirvote.c.html#L2155">(smartlist_len(protocols))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4521</td><td><a href="dirvote.c.html#L4521">(strchr(v, ' '))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">172</td><td><a href="dirvote.c.html#L172">(opt_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">395</td><td><a href="dirvote.c.html#L395">(rsf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">506</td><td><a href="dirvote.c.html#L506">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">720</td><td><a href="dirvote.c.html#L720">(best_alt_orport_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">737</td><td><a href="dirvote.c.html#L737">(most_alt_orport)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">748</td><td><a href="dirvote.c.html#L748">(microdesc_digest256_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">761</td><td><a href="dirvote.c.html#L761">(best_microdesc_digest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">814</td><td><a href="dirvote.c.html#L814">(n_ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">994</td><td><a href="dirvote.c.html#L994">(next_param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1060</td><td><a href="dirvote.c.html#L1060">(do_balance)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1076</td><td><a href="dirvote.c.html#L1076">(berr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1142</td><td><a href="dirvote.c.html#L1142">(berr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1191</td><td><a href="dirvote.c.html#L1191">(berr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1285</td><td><a href="dirvote.c.html#L1285">(berr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1400</td><td><a href="dirvote.c.html#L1400">(is_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1404</td><td><a href="dirvote.c.html#L1404">(is_guard)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1469</td><td><a href="dirvote.c.html#L1469">(v)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2013</td><td><a href="dirvote.c.html#L2013">(ed_consensus_val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2093</td><td><a href="dirvote.c.html#L2093">(is_named)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2096</td><td><a href="dirvote.c.html#L2096">(is_unnamed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2240</td><td><a href="dirvote.c.html#L2240">(exitsummary_disagreement)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2276</td><td><a href="dirvote.c.html#L2276">(chosen_exitsummary)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2295</td><td><a href="dirvote.c.html#L2295">(buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2311</td><td><a href="dirvote.c.html#L2311">(chosen_version)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2316</td><td><a href="dirvote.c.html#L2316">(chosen_protocol_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2459</td><td><a href="dirvote.c.html#L2459">(added_weights)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2496</td><td><a href="dirvote.c.html#L2496">(params)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2508</td><td><a href="dirvote.c.html#L2508">(param_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2511</td><td><a href="dirvote.c.html#L2511">(eq)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2709</td><td><a href="dirvote.c.html#L2709">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2724</td><td><a href="dirvote.c.html#L2724">(old_sig)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3158</td><td><a href="dirvote.c.html#L3158">(all_votes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3172</td><td><a href="dirvote.c.html#L3172">(pending_consensus_signature_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3296</td><td><a href="dirvote.c.html#L3296">(time_posted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3502</td><td><a href="dirvote.c.html#L3502">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3574</td><td><a href="dirvote.c.html#L3574">(pending_consensus_signature_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3590</td><td><a href="dirvote.c.html#L3590">(n_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3745</td><td><a href="dirvote.c.html#L3745">(new_detached)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3837</td><td><a href="dirvote.c.html#L3837">(pending_consensus_signature_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3883</td><td><a href="dirvote.c.html#L3883">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3889</td><td><a href="dirvote.c.html#L3889">(by_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3944</td><td><a href="dirvote.c.html#L3944">(family)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4005</td><td><a href="dirvote.c.html#L4005">(chunks)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4083</td><td><a href="dirvote.c.html#L4083">(md)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4190</td><td><a href="dirvote.c.html#L4190">(tok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4278</td><td><a href="dirvote.c.html#L4278">(ri)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4423</td><td><a href="dirvote.c.html#L4423">(last_ri)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4494</td><td><a href="dirvote.c.html#L4494">(eos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4522</td><td><a href="dirvote.c.html#L4522">(warn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4536</td><td><a href="dirvote.c.html#L4536">(warn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4834</td><td><a href="dirvote.c.html#L4834">(current_consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4883</td><td><a href="dirvote.c.html#L4883">(vote_on_reachability)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4885</td><td><a href="dirvote.c.html#L4885">(list_bad_exits)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4887</td><td><a href="dirvote.c.html#L4887">(list_middle_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4914</td><td><a href="dirvote.c.html#L4914">(c)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

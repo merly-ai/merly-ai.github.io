@@ -1,0 +1,117 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\apic.c Ctrl Expressions (66) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\apic.c Ctrl Expressions (66) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\apic.c Ctrl Expressions (66)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">369</td><td><a href="apic.c.html#L369">(<span style='background-color:#741da3;'>ppr && (irrv & 0xf0) <= (ppr & 0xf0)</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">480</td><td><a href="apic.c.html#L480">((dest & 0xf0) == (apic_iter->log_dest & 0xf0) && (dest & apic_iter->log_dest & 0x0f))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="apic.c.html#L613">((s->apicbase & MSR_IA32_APICBASE_ENABLE) == 0 || (lvt0 & APIC_LVT_MASKED) == 0)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="apic.c.html#L429">(!(s->spurious_vec & APIC_SV_DIRECTED_IO) && apic_get_bit(s->tmr, isrv))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">163</td><td><a href="apic.c.html#L163">((vector == APIC_LVT_LINT0 || vector == APIC_LVT_LINT1) && (lvt & APIC_LVT_LEVEL_TRIGGER))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">441</td><td><a href="apic.c.html#L441">(apic && apic->id == dest)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="apic.c.html#L446">(apic && apic->id == dest)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="apic.c.html#L541">(level == 0 && trig_mode == 1)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">360</td><td><a href="apic.c.html#L360">(!(s->spurious_vec & APIC_SV_ENABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="apic.c.html#L578">(!(s->spurious_vec & APIC_SV_ENABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">477</td><td><a href="apic.c.html#L477">(dest & apic_iter->log_dest)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">818</td><td><a href="apic.c.html#L818">(n == APIC_LVT_LINT0 && apic_check_pic(s))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="apic.c.html#L476">(apic_iter->dest_mode == 0xf)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">479</td><td><a href="apic.c.html#L479">(apic_iter->dest_mode == 0x0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">851</td><td><a href="apic.c.html#L851">(s->timer_expiry != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="apic.c.html#L872">(s->id >= MAX_APICS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">749</td><td><a href="apic.c.html#L749">(addr > 0xfff || !index)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="apic.c.html#L587">(intno == 0 || apic_check_pic(s))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">387</td><td><a href="apic.c.html#L387">(!apic_accept_pic_intr(dev) || !pic_get_output(isa_pic))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="apic.c.html#L562">(!apic_accept_pic_intr(dev) || !pic_get_output(isa_pic))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">77</td><td><a href="apic.c.html#L77">(tab[i] != 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">91</td><td><a href="apic.c.html#L91">(!s->vapic_paddr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">181</td><td><a href="apic.c.html#L181">(!(lvt & APIC_LVT_LEVEL_TRIGGER))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">294</td><td><a href="apic.c.html#L294">(!(val & MSR_IA32_APICBASE_ENABLE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">304</td><td><a href="apic.c.html#L304">(!s->vapic_paddr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">504</td><td><a href="apic.c.html#L504">(!s->wait_for_sipi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">94</td><td><a href="apic.c.html#L94">(sync_type & SYNC_FROM_VAPIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="apic.c.html#L99">(sync_type & SYNC_TO_VAPIC | SYNC_ISR_IRR_TO_VAPIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">103</td><td><a href="apic.c.html#L103">(sync_type & SYNC_TO_VAPIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">145</td><td><a href="apic.c.html#L145">(lvt & APIC_LVT_MASKED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">409</td><td><a href="apic.c.html#L409">(s->vapic_paddr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="apic.c.html#L385">(apic_irq_pending(s) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">76</td><td><a href="apic.c.html#L76">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">113</td><td><a href="apic.c.html#L113">(vector < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">121</td><td><a href="apic.c.html#L121">(vector < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="apic.c.html#L227">(i < MAX_APIC_WORDS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="apic.c.html#L233">(d >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="apic.c.html#L334">(isrv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">337</td><td><a href="apic.c.html#L337">(tpr >= isrv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="apic.c.html#L365">(irrv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">426</td><td><a href="apic.c.html#L426">(isrv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="apic.c.html#L444">(i < MAX_APICS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="apic.c.html#L461">(dest_mode == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="apic.c.html#L462">(dest == 0xff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="apic.c.html#L467">(idx >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="apic.c.html#L473">(i < MAX_APICS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="apic.c.html#L590">(intno < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">644</td><td><a href="apic.c.html#L644">(size < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="apic.c.html#L745">(size < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">816</td><td><a href="apic.c.html#L816">(n == APIC_LVT_TIMER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">228</td><td><a href="apic.c.html#L228">(deliver_bitmask[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">383</td><td><a href="apic.c.html#L383">(!qemu_cpu_is_self(cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">314</td><td><a href="apic.c.html#L314">(!dev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">448</td><td><a href="apic.c.html#L448">(!apic)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">576</td><td><a href="apic.c.html#L576">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">608</td><td><a href="apic.c.html#L608">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">649</td><td><a href="apic.c.html#L649">(!dev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">761</td><td><a href="apic.c.html#L761">(!dev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">622</td><td><a href="apic.c.html#L622">(apic_next_timer(s, current_time))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">878</td><td><a href="apic.c.html#L878">(kvm_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">174</td><td><a href="apic.c.html#L174">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">235</td><td><a href="apic.c.html#L235">(apic_iter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">405</td><td><a href="apic.c.html#L405">(trigger_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">475</td><td><a href="apic.c.html#L475">(apic_iter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">664</td><td><a href="apic.c.html#L664">(apic_report_tpr_access)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">775</td><td><a href="apic.c.html#L775">(apic_report_tpr_access)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

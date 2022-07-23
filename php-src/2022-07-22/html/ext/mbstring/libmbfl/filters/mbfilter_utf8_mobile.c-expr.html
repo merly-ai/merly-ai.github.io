@@ -1,0 +1,153 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <title>php-src Repo - ext\mbstring\libmbfl\filters\mbfilter_utf8_mobile.c Ctrl Expressions (102) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\mbstring\libmbfl\filters\mbfilter_utf8_mobile.c Ctrl Expressions (102) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\mbstring\libmbfl\filters\mbfilter_utf8_mobile.c Ctrl Expressions (102)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">247</td><td><a href="mbfilter_utf8_mobile.c.html#L247">((c >= 0x80 && c <= 0xbf) && (<span style='background-color:#741da3;'>(c1 == 0x0 && c >= 0xa0) || (c1 == 0xd && c < 0xa0) || (c1 > 0x0 && c1 != 0xd)</span>))</a></td><td class="num">1054.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="mbfilter_utf8_mobile.c.html#L263">((c >= 0x80 && c <= 0xbf) && (<span style='background-color:#741da3;'>(c1 == 0x0 && c >= 0x90) || (c1 == 0x4 && c < 0x90) || (c1 > 0x0 && c1 != 0x4)</span>))</a></td><td class="num">1054.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="mbfilter_utf8_mobile.c.html#L373">(<span style='background-color:#741da3;'>(c2 & 0xC0) != 0x80 || (c == 0xE0 && c2 < 0xA0) || (c == 0xED && c2 >= 0xA0)</span>)</a></td><td class="num">1025.25</td></tr>
+      <tr><td class="num line">401</td><td><a href="mbfilter_utf8_mobile.c.html#L401">(<span style='background-color:#741da3;'>(c2 & 0xC0) != 0x80 || (c == 0xF0 && c2 < 0x90) || (c == 0xF4 && c2 >= 0x90)</span>)</a></td><td class="num">1025.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="mbfilter_utf8_mobile.c.html#L296">(<span style='background-color:#9c4c02;'>(filter->to->no_encoding == mbfl_no_encoding_utf8_docomo && mbfilter_unicode2sjis_emoji_docomo(c, &s1, filter) > 0 && mbfilter_conv_map_tbl(s1, &c1, mbfl_docomo2uni_pua, 4) > 0) || (filter->to->no_encoding == mbfl_no_encoding_utf8_kddi_a && mbfilter_unicode2sjis_emoji_kddi(c, &s1, filter) > 0 && mbfilter_conv_map_tbl(s1, &c1, mbfl_kddi2uni_pua, 7) > 0) || (filter->to->no_encoding == mbfl_no_encoding_utf8_kddi_b && mbfilter_unicode2sjis_emoji_kddi(c, &s1, filter) > 0 && mbfilter_conv_map_tbl(s1, &c1, mbfl_kddi2uni_pua_b, 8) > 0) || (filter->to->no_encoding == mbfl_no_encoding_utf8_sb && mbfilter_unicode2sjis_emoji_sb(c, &s1, filter) > 0 && mbfilter_conv_map_tbl(s1, &c1, mbfl_sb2uni_pua, 6) > 0)</span>)</a></td><td class="num">157.00</td></tr>
+      <tr><td class="num line">550</td><td><a href="mbfilter_utf8_mobile.c.html#L550">(w == NFLAGS(nflags_s[i][0]) && w2 == NFLAGS(nflags_s[i][1]))</a></td><td class="num">60.50</td></tr>
+      <tr><td class="num line">662</td><td><a href="mbfilter_utf8_mobile.c.html#L662">(w == NFLAGS(nflags_s[i][0]) && w2 == NFLAGS(nflags_s[i][1]))</a></td><td class="num">60.50</td></tr>
+      <tr><td class="num line">453</td><td><a href="mbfilter_utf8_mobile.c.html#L453">((w == '#' || (w >= '0' && w <= '9')) && len)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">530</td><td><a href="mbfilter_utf8_mobile.c.html#L530">((w == '#' || (w >= '0' && w <= '9')) && len)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">642</td><td><a href="mbfilter_utf8_mobile.c.html#L642">((w == '#' || (w >= '0' && w <= '9')) && len)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">223</td><td><a href="mbfilter_utf8_mobile.c.html#L223">(filter->from->no_encoding == mbfl_no_encoding_utf8_docomo && mbfilter_conv_r_map_tbl(s, &s1, mbfl_docomo2uni_pua, 4) > 0)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">225</td><td><a href="mbfilter_utf8_mobile.c.html#L225">(filter->from->no_encoding == mbfl_no_encoding_utf8_kddi_a && mbfilter_conv_r_map_tbl(s, &s1, mbfl_kddi2uni_pua, 7) > 0)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="mbfilter_utf8_mobile.c.html#L227">(filter->from->no_encoding == mbfl_no_encoding_utf8_kddi_b && mbfilter_conv_r_map_tbl(s, &s1, mbfl_kddi2uni_pua_b, 8) > 0)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">229</td><td><a href="mbfilter_utf8_mobile.c.html#L229">(filter->from->no_encoding == mbfl_no_encoding_utf8_sb && mbfilter_conv_r_map_tbl(s, &s1, mbfl_sb2uni_pua, 6) > 0)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="mbfilter_utf8_mobile.c.html#L365">(p < e && (*p & 0xC0) == 0x80)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">390</td><td><a href="mbfilter_utf8_mobile.c.html#L390">(p < e && (*p & 0xC0) == 0x80)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="mbfilter_utf8_mobile.c.html#L488">(s && mbfilter_conv_map_tbl(s, &c1, mbfl_docomo2uni_pua, 4) > 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">585</td><td><a href="mbfilter_utf8_mobile.c.html#L585">(s && mbfilter_conv_map_tbl(s, &c1, emoji_map, n) > 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">697</td><td><a href="mbfilter_utf8_mobile.c.html#L697">(s && mbfilter_conv_map_tbl(s, &c1, mbfl_sb2uni_pua, 6) > 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">389</td><td><a href="mbfilter_utf8_mobile.c.html#L389">((c == 0xF0 && c2 >= 0x90) || (c == 0xF4 && c2 < 0x90))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">352</td><td><a href="mbfilter_utf8_mobile.c.html#L352">(c >= 0xC2 && c <= 0xDF && p < e)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">544</td><td><a href="mbfilter_utf8_mobile.c.html#L544">(w >= NFLAGS('C') && w <= NFLAGS('U'))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">548</td><td><a href="mbfilter_utf8_mobile.c.html#L548">(w2 >= NFLAGS('B') && w2 <= NFLAGS('U'))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">656</td><td><a href="mbfilter_utf8_mobile.c.html#L656">(w >= NFLAGS('C') && w <= NFLAGS('U'))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">660</td><td><a href="mbfilter_utf8_mobile.c.html#L660">(w2 >= NFLAGS('B') && w2 <= NFLAGS('U'))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">201</td><td><a href="mbfilter_utf8_mobile.c.html#L201">(c >= 0xc2 && c <= 0xdf)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="mbfilter_utf8_mobile.c.html#L204">(c >= 0xe0 && c <= 0xef)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="mbfilter_utf8_mobile.c.html#L207">(c >= 0xf0 && c <= 0xf4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">219</td><td><a href="mbfilter_utf8_mobile.c.html#L219">(c >= 0x80 && c <= 0xbf)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="mbfilter_utf8_mobile.c.html#L276">(c >= 0x80 && c <= 0xbf)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="mbfilter_utf8_mobile.c.html#L293">(c >= 0 && c < 0x110000)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="mbfilter_utf8_mobile.c.html#L345">(p < e && out < limit)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">362</td><td><a href="mbfilter_utf8_mobile.c.html#L362">(c >= 0xE0 && c <= 0xEF)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">384</td><td><a href="mbfilter_utf8_mobile.c.html#L384">(c >= 0xF0 && c <= 0xF4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">471</td><td><a href="mbfilter_utf8_mobile.c.html#L471">(w >= mb_tbl_uni_docomo2code2_min && w <= mb_tbl_uni_docomo2code2_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="mbfilter_utf8_mobile.c.html#L476">(w >= mb_tbl_uni_docomo2code3_min && w <= mb_tbl_uni_docomo2code3_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">481</td><td><a href="mbfilter_utf8_mobile.c.html#L481">(w >= mb_tbl_uni_docomo2code5_min && w <= mb_tbl_uni_docomo2code5_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">567</td><td><a href="mbfilter_utf8_mobile.c.html#L567">(w >= mb_tbl_uni_kddi2code2_min && w <= mb_tbl_uni_kddi2code2_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="mbfilter_utf8_mobile.c.html#L572">(w >= mb_tbl_uni_kddi2code3_min && w <= mb_tbl_uni_kddi2code3_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="mbfilter_utf8_mobile.c.html#L577">(w >= mb_tbl_uni_kddi2code5_min && w <= mb_tbl_uni_kddi2code5_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="mbfilter_utf8_mobile.c.html#L679">(w >= mb_tbl_uni_sb2code2_min && w <= mb_tbl_uni_sb2code2_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">684</td><td><a href="mbfilter_utf8_mobile.c.html#L684">(w >= mb_tbl_uni_sb2code3_min && w <= mb_tbl_uni_sb2code3_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="mbfilter_utf8_mobile.c.html#L689">(w >= mb_tbl_uni_sb2code5_min && w <= mb_tbl_uni_sb2code5_max)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">355</td><td><a href="mbfilter_utf8_mobile.c.html#L355">((c2 & 0xC0) == 0x80)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">377</td><td><a href="mbfilter_utf8_mobile.c.html#L377">((c3 & 0xC0) != 0x80)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">405</td><td><a href="mbfilter_utf8_mobile.c.html#L405">((c3 & 0xC0) != 0x80)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">409</td><td><a href="mbfilter_utf8_mobile.c.html#L409">((c4 & 0xC0) != 0x80)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">422</td><td><a href="mbfilter_utf8_mobile.c.html#L422">(mbfilter_conv_r_map_tbl(s, &s1, emoji_map, n) > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">363</td><td><a href="mbfilter_utf8_mobile.c.html#L363">((e - p) < 2)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">385</td><td><a href="mbfilter_utf8_mobile.c.html#L385">((e - p) < 3)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">303</td><td><a href="mbfilter_utf8_mobile.c.html#L303">(filter->status)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="mbfilter_utf8_mobile.c.html#L447">(len--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">524</td><td><a href="mbfilter_utf8_mobile.c.html#L524">(len--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">636</td><td><a href="mbfilter_utf8_mobile.c.html#L636">(len--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="mbfilter_utf8_mobile.c.html#L199">(c < 0x80)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="mbfilter_utf8_mobile.c.html#L233">(snd > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="mbfilter_utf8_mobile.c.html#L307">(c < 0x80)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="mbfilter_utf8_mobile.c.html#L309">(c < 0x800)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="mbfilter_utf8_mobile.c.html#L312">(c < 0x10000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">349</td><td><a href="mbfilter_utf8_mobile.c.html#L349">(c <= 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">387</td><td><a href="mbfilter_utf8_mobile.c.html#L387">(p < e)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">452</td><td><a href="mbfilter_utf8_mobile.c.html#L452">(w < 0x110000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">456</td><td><a href="mbfilter_utf8_mobile.c.html#L456">(w2 == 0x20E3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="mbfilter_utf8_mobile.c.html#L457">(w == '#')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">459</td><td><a href="mbfilter_utf8_mobile.c.html#L459">(w == '0')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="mbfilter_utf8_mobile.c.html#L467">(w == 0xA9)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="mbfilter_utf8_mobile.c.html#L469">(w == 0xAE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="mbfilter_utf8_mobile.c.html#L473">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="mbfilter_utf8_mobile.c.html#L478">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">483</td><td><a href="mbfilter_utf8_mobile.c.html#L483">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">492</td><td><a href="mbfilter_utf8_mobile.c.html#L492">(w <= 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="mbfilter_utf8_mobile.c.html#L494">(w <= 0x7FF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">497</td><td><a href="mbfilter_utf8_mobile.c.html#L497">(w <= 0xFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">529</td><td><a href="mbfilter_utf8_mobile.c.html#L529">(w < 0x110000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">533</td><td><a href="mbfilter_utf8_mobile.c.html#L533">(w2 == 0x20E3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">534</td><td><a href="mbfilter_utf8_mobile.c.html#L534">(w == '#')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="mbfilter_utf8_mobile.c.html#L536">(w == '0')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="mbfilter_utf8_mobile.c.html#L549">(i < 10)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">563</td><td><a href="mbfilter_utf8_mobile.c.html#L563">(w == 0xA9)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="mbfilter_utf8_mobile.c.html#L565">(w == 0xAE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="mbfilter_utf8_mobile.c.html#L569">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="mbfilter_utf8_mobile.c.html#L574">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="mbfilter_utf8_mobile.c.html#L579">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">589</td><td><a href="mbfilter_utf8_mobile.c.html#L589">(w <= 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">591</td><td><a href="mbfilter_utf8_mobile.c.html#L591">(w <= 0x7FF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="mbfilter_utf8_mobile.c.html#L594">(w <= 0xFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="mbfilter_utf8_mobile.c.html#L641">(w < 0x110000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="mbfilter_utf8_mobile.c.html#L645">(w2 == 0x20E3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="mbfilter_utf8_mobile.c.html#L646">(w == '#')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">648</td><td><a href="mbfilter_utf8_mobile.c.html#L648">(w == '0')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="mbfilter_utf8_mobile.c.html#L661">(i < 10)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">675</td><td><a href="mbfilter_utf8_mobile.c.html#L675">(w == 0xA9)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="mbfilter_utf8_mobile.c.html#L677">(w == 0xAE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">681</td><td><a href="mbfilter_utf8_mobile.c.html#L681">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="mbfilter_utf8_mobile.c.html#L686">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">691</td><td><a href="mbfilter_utf8_mobile.c.html#L691">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">701</td><td><a href="mbfilter_utf8_mobile.c.html#L701">(w <= 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="mbfilter_utf8_mobile.c.html#L703">(w <= 0x7FF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">706</td><td><a href="mbfilter_utf8_mobile.c.html#L706">(w <= 0xFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="mbfilter_utf8_mobile.c.html#L424">(snd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">545</td><td><a href="mbfilter_utf8_mobile.c.html#L545">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">657</td><td><a href="mbfilter_utf8_mobile.c.html#L657">(len)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\scsi\spapr_vscsi.c Ctrl Expressions (78) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\scsi\spapr_vscsi.c Ctrl Expressions (78) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\scsi\spapr_vscsi.c Ctrl Expressions (78)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">879</td><td><a href="spapr_vscsi.c.html#L879">(<span style='background-color:#741da3;'>req_iu(tmpreq)->srp.cmd.lun != req_iu(req)->srp.tsk_mgmt.lun</span>)</a></td><td class="num">1052.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="spapr_vscsi.c.html#L787">((srp->cmd.lun == 0 || be64_to_cpu(srp->cmd.lun) == SRP_REPORT_LUNS_WLUN) && srp->cmd.cdb[0] == REPORT_LUNS)</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">130</td><td><a href="spapr_vscsi.c.html#L130">(req_iu(req)->srp.cmd.tag == srp_tag)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="spapr_vscsi.c.html#L743">(dev->channel == 0 && dev->id == 0 && dev->lun == 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1110</td><td><a href="spapr_vscsi.c.html#L1110">(spapr_vio_dma_read(&s->vdev, crq->s.IU_data_ptr, &req->viosrp_iu_buf, crq->s.IU_length))</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="spapr_vscsi.c.html#L759">(dev->id == 0 && dev->channel == 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">699</td><td><a href="spapr_vscsi.c.html#L699">((cdb[1] & 0x01) || cdb[2] != 0)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">883</td><td><a href="spapr_vscsi.c.html#L883">(!tmpreq->active || !tmpreq->sreq)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">796</td><td><a href="spapr_vscsi.c.html#L796">(srp->cmd.cdb[0] == INQUIRY)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">855</td><td><a href="spapr_vscsi.c.html#L855">(tmpreq && tmpreq->sreq)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1102</td><td><a href="spapr_vscsi.c.html#L1102">(crq->s.IU_length > SRP_MAX_IU_LEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1118</td><td><a href="spapr_vscsi.c.html#L1118">(crq->s.format == VIOSRP_MAD_FORMAT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">139</td><td><a href="spapr_vscsi.c.html#L139">(req->sreq != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">153</td><td><a href="spapr_vscsi.c.html#L153">((srp_lun >> 56) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">314</td><td><a href="spapr_vscsi.c.html#L314">(n < req->local_desc)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">318</td><td><a href="spapr_vscsi.c.html#L318">(n < req->total_desc)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">349</td><td><a href="spapr_vscsi.c.html#L349">(buf_offset > ret->len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">565</td><td><a href="spapr_vscsi.c.html#L565">(sreq->status == CHECK_CONDITION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">577</td><td><a href="spapr_vscsi.c.html#L577">(sreq->status == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">849</td><td><a href="spapr_vscsi.c.html#L849">(d->lun != lun)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">862</td><td><a href="spapr_vscsi.c.html#L862">(d->lun != lun)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="spapr_vscsi.c.html#L872">(d->lun != lun)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">113</td><td><a href="spapr_vscsi.c.html#L113">(!req->active)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1146</td><td><a href="spapr_vscsi.c.html#L1146">(crq.s.format == 0x01)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">323</td><td><a href="spapr_vscsi.c.html#L323">(desc_offset >= tbl_desc.len)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">433</td><td><a href="spapr_vscsi.c.html#L433">(md.len == llen)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">271</td><td><a href="spapr_vscsi.c.html#L271">(req->senselen)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">380</td><td><a href="spapr_vscsi.c.html#L380">(req->writing)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="spapr_vscsi.c.html#L415">(req->writing)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="spapr_vscsi.c.html#L490">(req->writing)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">581</td><td><a href="spapr_vscsi.c.html#L581">(req->writing)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="spapr_vscsi.c.html#L595">(req->dma_error)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">111</td><td><a href="spapr_vscsi.c.html#L111">(i < VSCSI_REQ_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">128</td><td><a href="spapr_vscsi.c.html#L128">(i < VSCSI_REQ_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">201</td><td><a href="spapr_vscsi.c.html#L201">(rc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">248</td><td><a href="spapr_vscsi.c.html#L248">(res_in < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">254</td><td><a href="spapr_vscsi.c.html#L254">(res_out < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="spapr_vscsi.c.html#L372">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">374</td><td><a href="spapr_vscsi.c.html#L374">(rc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="spapr_vscsi.c.html#L407">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">409</td><td><a href="spapr_vscsi.c.html#L409">(rc == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="spapr_vscsi.c.html#L531">(req == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">540</td><td><a href="spapr_vscsi.c.html#L540">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="spapr_vscsi.c.html#L560">(req == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="spapr_vscsi.c.html#L722">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">773</td><td><a href="spapr_vscsi.c.html#L773">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">820</td><td><a href="spapr_vscsi.c.html#L820">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">822</td><td><a href="spapr_vscsi.c.html#L822">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">877</td><td><a href="spapr_vscsi.c.html#L877">(i < VSCSI_REQ_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1001</td><td><a href="spapr_vscsi.c.html#L1001">(len > sizeof(cap))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="spapr_vscsi.c.html#L1030">(req_len > len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="spapr_vscsi.c.html#L1092">(req == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1208</td><td><a href="spapr_vscsi.c.html#L1208">(i < VSCSI_REQ_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="spapr_vscsi.c.html#L1240">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1245</td><td><a href="spapr_vscsi.c.html#L1245">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">747</td><td><a href="spapr_vscsi.c.html#L747">(!found_lun0)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">794</td><td><a href="spapr_vscsi.c.html#L794">(!sdev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">844</td><td><a href="spapr_vscsi.c.html#L844">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1078</td><td><a href="spapr_vscsi.c.html#L1078">(!request_handled)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">190</td><td><a href="spapr_vscsi.c.html#L190">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="spapr_vscsi.c.html#L208">(rc1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="spapr_vscsi.c.html#L251">(res_in)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="spapr_vscsi.c.html#L257">(res_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">269</td><td><a href="spapr_vscsi.c.html#L269">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">329</td><td><a href="spapr_vscsi.c.html#L329">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">379</td><td><a href="spapr_vscsi.c.html#L379">(llen)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="spapr_vscsi.c.html#L387">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">405</td><td><a href="spapr_vscsi.c.html#L405">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">420</td><td><a href="spapr_vscsi.c.html#L420">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">536</td><td><a href="spapr_vscsi.c.html#L536">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">652</td><td><a href="spapr_vscsi.c.html#L652">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">810</td><td><a href="spapr_vscsi.c.html#L810">(n)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">909</td><td><a href="spapr_vscsi.c.html#L909">(resp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">967</td><td><a href="spapr_vscsi.c.html#L967">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">981</td><td><a href="spapr_vscsi.c.html#L981">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1011</td><td><a href="spapr_vscsi.c.html#L1011">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1027</td><td><a href="spapr_vscsi.c.html#L1027">(rc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1124</td><td><a href="spapr_vscsi.c.html#L1124">(done)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

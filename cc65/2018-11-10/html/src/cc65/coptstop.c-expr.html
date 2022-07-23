@@ -1,0 +1,153 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptstop.c Ctrl Expressions (102) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptstop.c Ctrl Expressions (102) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptstop.c Ctrl Expressions (102)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1975</td><td><a href="coptstop.c.html#L1975">((E->Use & REG_SP) != 0 && (<span style='background-color:#741da3;'>E->AM != AM65_ZP_INDY || RegValIsUnknown(E->RI->In.RegY) || E->RI->In.RegY < 2</span>))</a></td><td class="num">1051.00</td></tr>
+      <tr><td class="num line">1813</td><td><a href="coptstop.c.html#L1813">(<span style='background-color:#741da3;'>(D->Lhs.A.Flags & D->Lhs.X.Flags & LI_DIRECT) == 0</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">1824</td><td><a href="coptstop.c.html#L1824">(<span style='background-color:#741da3;'>(D->Rhs.A.Flags & D->Rhs.X.Flags & LI_DIRECT) == 0</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">254</td><td><a href="coptstop.c.html#L254">(<span style='background-color:#741da3;'>(E->Use & Reg) && RI->LoadIndex >= 0</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">1111</td><td><a href="coptstop.c.html#L1111">(D->OpEntry->RI->In.RegX == 0 && D->NextEntry->OPC == OP65_LDY && CE_IsKnownImm(D->NextEntry, 0) && !CE_HasLabel(D->NextEntry) && (N = CS_GetNextEntry(D->Code, D->OpIndex + 1)) != 0 && (CE_IsCallTo(N, "ldauidx") || CE_IsCallTo(N, "ldaidx")))</a></td><td class="num">95.85</td></tr>
+      <tr><td class="num line">1185</td><td><a href="coptstop.c.html#L1185">(D->OpEntry->RI->In.RegX == 0 && (RegValIsKnown(D->PushEntry->RI->In.RegX) || (D->Lhs.X.Flags & LI_RELOAD_Y) == 0))</a></td><td class="num">65.75</td></tr>
+      <tr><td class="num line">1793</td><td><a href="coptstop.c.html#L1793">(UnusedRegs != REG_NONE && (GetRegInfo(D->Code, D->OpIndex + 1, UnusedRegs) & UnusedRegs) != 0)</a></td><td class="num">65.35</td></tr>
+      <tr><td class="num line">712</td><td><a href="coptstop.c.html#L712">(strncmp(LoadA->Arg, LoadX->Arg, Len) != 0 || strcmp(LoadX->Arg + Len, "+1") != 0)</a></td><td class="num">49.85</td></tr>
+      <tr><td class="num line">1803</td><td><a href="coptstop.c.html#L1803">((D->OptFunc->Flags & OP_X_ZERO) != 0 && D->OpEntry->RI->In.RegX != 0)</a></td><td class="num">39.50</td></tr>
+      <tr><td class="num line">748</td><td><a href="coptstop.c.html#L748">((D->Lhs.A.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT && (D->Lhs.X.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT)</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">772</td><td><a href="coptstop.c.html#L772">((D->Rhs.A.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT && (D->Rhs.X.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT)</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">796</td><td><a href="coptstop.c.html#L796">((D->Rhs.A.Flags & LI_DIRECT) != 0 && (D->Rhs.X.Flags & LI_DIRECT) != 0)</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">853</td><td><a href="coptstop.c.html#L853">((D->Lhs.A.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT && (D->Lhs.X.Flags & LI_DIRECT | LI_RELOAD_Y) == LI_DIRECT)</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">1798</td><td><a href="coptstop.c.html#L1798">((D->OptFunc->Flags & OP_A_KNOWN) != 0 && RegValIsUnknown(D->OpEntry->RI->In.RegA))</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">295</td><td><a href="coptstop.c.html#L295">(E->AM == AM65_ZP_INDY && RegValIsKnown(E->RI->In.RegY) && strcmp(E->Arg, "sp") == 0)</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">1966</td><td><a href="coptstop.c.html#L1966">(E->Info & OF_STORE && (E->Chg & REG_ZP) == 0)</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="coptstop.c.html#L1631">(RegValIsKnown(D->PushEntry->RI->In.RegX) && RegValIsKnown(D->OpEntry->RI->In.RegX))</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">292</td><td><a href="coptstop.c.html#L292">(E->AM == AM65_IMM || E->AM == AM65_ZP || E->AM == AM65_ABS)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1809</td><td><a href="coptstop.c.html#L1809">(D->Lhs.A.LoadIndex < 0 || D->Lhs.X.LoadIndex < 0)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="coptstop.c.html#L1820">(D->Rhs.A.LoadIndex < 0 || D->Rhs.X.LoadIndex < 0)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="coptstop.c.html#L1830">((D->Rhs.A.Flags | D->Rhs.X.Flags) & LI_DUP_LOAD)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">345</td><td><a href="coptstop.c.html#L345">(LI->A.LoadIndex >= 0 || LI->A.XferIndex >= 0)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">348</td><td><a href="coptstop.c.html#L348">(LI->X.LoadIndex >= 0 || LI->X.XferIndex >= 0)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="coptstop.c.html#L282">(RI->LoadIndex >= 0 || RI->XferIndex >= 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">328</td><td><a href="coptstop.c.html#L328">(Tgt->LoadIndex >= 0 || Tgt->XferIndex >= 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">706</td><td><a href="coptstop.c.html#L706">(LoadA->AM != AM65_ZP || LoadX->AM != AM65_ZP)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2022</td><td><a href="coptstop.c.html#L2022">(Data.Lhs.A.LoadEntry && Data.Lhs.A.LoadEntry->AM == AM65_ZP)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">2025</td><td><a href="coptstop.c.html#L2025">(Data.Lhs.X.LoadEntry && Data.Lhs.X.LoadEntry->AM == AM65_ZP)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">392</td><td><a href="coptstop.c.html#L392">(D->PushEntry && Index <= D->PushIndex)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="coptstop.c.html#L395">(D->OpEntry && Index <= D->OpIndex)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">463</td><td><a href="coptstop.c.html#L463">(P && P->OPC == OP65_LDY && CE_IsConstImm(P))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">339</td><td><a href="coptstop.c.html#L339">(CE_IsCallTo(E, "ldaxysp") && RegValIsKnown(E->RI->In.RegY))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">943</td><td><a href="coptstop.c.html#L943">(D->OpEntry->RI->In.RegA != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">950</td><td><a href="coptstop.c.html#L950">(D->OpEntry->RI->In.RegA <= 0x81)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1172</td><td><a href="coptstop.c.html#L1172">(D->PushEntry->RI->In.RegX == 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1637</td><td><a href="coptstop.c.html#L1637">(D->PushEntry->RI->In.RegX != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1808</td><td><a href="coptstop.c.html#L1808">((D->OptFunc->Flags & OP_LHS_LOAD) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1812</td><td><a href="coptstop.c.html#L1812">((D->OptFunc->Flags & OP_LHS_LOAD_DIRECT) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1819</td><td><a href="coptstop.c.html#L1819">((D->OptFunc->Flags & OP_RHS_LOAD) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1823</td><td><a href="coptstop.c.html#L1823">((D->OptFunc->Flags & OP_RHS_LOAD_DIRECT) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">533</td><td><a href="coptstop.c.html#L533">((D->Lhs.X.Flags & LI_DIRECT) == 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="coptstop.c.html#L536">((D->Lhs.A.Flags & LI_DIRECT) == 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">551</td><td><a href="coptstop.c.html#L551">((LI->A.Flags & LI_DIRECT) != 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">555</td><td><a href="coptstop.c.html#L555">((LI->A.Flags & LI_RELOAD_Y) == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">607</td><td><a href="coptstop.c.html#L607">((LI->X.Flags & LI_DIRECT) != 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="coptstop.c.html#L609">((LI->X.Flags & LI_RELOAD_Y) == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">656</td><td><a href="coptstop.c.html#L656">((LI->A.Flags & LI_REMOVE | LI_DONT_REMOVE) == LI_REMOVE)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">664</td><td><a href="coptstop.c.html#L664">((LI->X.Flags & LI_REMOVE | LI_DONT_REMOVE) == LI_REMOVE)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">933</td><td><a href="coptstop.c.html#L933">(RegAXUsed(D->Code, D->OpIndex + 1))</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">441</td><td><a href="coptstop.c.html#L441">((E->Use & REG_SP) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1053</td><td><a href="coptstop.c.html#L1053">(RegValIsKnown(D->OpEntry->RI->In.RegY))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1062</td><td><a href="coptstop.c.html#L1062">(RegValIsKnown(D->OpEntry->RI->In.RegX))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1191</td><td><a href="coptstop.c.html#L1191">(RegValIsKnown(D->PushEntry->RI->In.RegX))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1836</td><td><a href="coptstop.c.html#L1836">((D->UsedRegs & REG_PTR1) == REG_NONE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1839</td><td><a href="coptstop.c.html#L1839">((D->UsedRegs & REG_SREG) == REG_NONE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1842</td><td><a href="coptstop.c.html#L1842">((D->UsedRegs & REG_PTR2) == REG_NONE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">495</td><td><a href="coptstop.c.html#L495">(D->Rhs.A.Flags & LI_RELOAD_Y)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="coptstop.c.html#L498">(D->Rhs.X.Flags & LI_RELOAD_Y)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1199</td><td><a href="coptstop.c.html#L1199">(D->Lhs.X.Flags & LI_DIRECT)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2002</td><td><a href="coptstop.c.html#L2002">((UsedRegs & ~ChangedRegs) & REG_AX)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">657</td><td><a href="coptstop.c.html#L657">(LI->A.LoadIndex >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">660</td><td><a href="coptstop.c.html#L660">(LI->A.XferIndex >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">665</td><td><a href="coptstop.c.html#L665">(LI->X.LoadIndex >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">668</td><td><a href="coptstop.c.html#L668">(LI->X.XferIndex >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">701</td><td><a href="coptstop.c.html#L701">(LoadA == 0 || LoadX == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">252</td><td><a href="coptstop.c.html#L252">(E->Chg & Reg)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="coptstop.c.html#L264">(E->Info & OF_LOAD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="coptstop.c.html#L269">(E->Chg & REG_A)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">271</td><td><a href="coptstop.c.html#L271">(E->Chg & REG_X)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">273</td><td><a href="coptstop.c.html#L273">(E->Chg & REG_Y)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="coptstop.c.html#L309">(E->Info & OF_XFR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="coptstop.c.html#L478">(RegYUsed(D->Code, I + 1))</a></td><td class="num">5.85</td></tr>
+      <tr><td class="num line">169</td><td><a href="coptstop.c.html#L169">(RI->LoadIndex >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">174</td><td><a href="coptstop.c.html#L174">(RI->XferIndex >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">201</td><td><a href="coptstop.c.html#L201">(Index < RI->LoadIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">203</td><td><a href="coptstop.c.html#L203">(Index == RI->LoadIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">208</td><td><a href="coptstop.c.html#L208">(Index < RI->XferIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">210</td><td><a href="coptstop.c.html#L210">(Index == RI->XferIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">217</td><td><a href="coptstop.c.html#L217">(Index <= RI->LoadIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">220</td><td><a href="coptstop.c.html#L220">(Index <= RI->XferIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">415</td><td><a href="coptstop.c.html#L415">(Index < D->PushIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="coptstop.c.html#L417">(Index == D->PushIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">420</td><td><a href="coptstop.c.html#L420">(Index < D->OpIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">422</td><td><a href="coptstop.c.html#L422">(Index == D->OpIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">436</td><td><a href="coptstop.c.html#L436">(I < D->OpIndex)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1940</td><td><a href="coptstop.c.html#L1940">(E->OPC == OP65_JSR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1952</td><td><a href="coptstop.c.html#L1952">(!HarmlessCall(E->Arg))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2034</td><td><a href="coptstop.c.html#L2034">(!PreCondOk(&Data))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1900</td><td><a href="coptstop.c.html#L1900">(I < (int)CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">199</td><td><a href="coptstop.c.html#L199">(Change < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1946</td><td><a href="coptstop.c.html#L1946">(Data.OptFunc)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">924</td><td><a href="coptstop.c.html#L924">(!IsRegVar(D))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1016</td><td><a href="coptstop.c.html#L1016">(!IsRegVar(D))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1041</td><td><a href="coptstop.c.html#L1041">(!IsRegVar(D))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">450</td><td><a href="coptstop.c.html#L450">(CE_IsCallTo(E, "ldaxysp"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1918</td><td><a href="coptstop.c.html#L1918">(CE_HasLabel(E))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1922</td><td><a href="coptstop.c.html#L1922">(CE_IsCallTo(E, "pushax"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1936</td><td><a href="coptstop.c.html#L1936">(CE_HasLabel(E))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="coptstop.c.html#L457">(NeedCorrection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">597</td><td><a href="coptstop.c.html#L597">(KeepResult)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">637</td><td><a href="coptstop.c.html#L637">(KeepResult)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1140</td><td><a href="coptstop.c.html#L1140">(Signed)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

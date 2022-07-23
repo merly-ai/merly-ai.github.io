@@ -1,0 +1,135 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\ide\atapi.c Ctrl Expressions (84) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\ide\atapi.c Ctrl Expressions (84) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\ide\atapi.c Ctrl Expressions (84)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">770</td><td><a href="atapi.c.html#L770">(<span style='background-color:#741da3;'>s->wwn && (idx + 12 <= max_len)</span>)</a></td><td class="num">1011.60</td></tr>
+      <tr><td class="num line">996</td><td><a href="atapi.c.html#L996">(<span style='background-color:#741da3;'>lba >= total_sectors || lba + nb_sectors - 1 >= total_sectors</span>)</a></td><td class="num">1011.20</td></tr>
+      <tr><td class="num line">1018</td><td><a href="atapi.c.html#L1018">(<span style='background-color:#741da3;'>lba >= total_sectors || lba + nb_sectors - 1 >= total_sectors</span>)</a></td><td class="num">1011.20</td></tr>
+      <tr><td class="num line">1353</td><td><a href="atapi.c.html#L1353">((cmd->flags & CHECK_READY) && (!media_present(s) || !blk_is_inserted(s->blk)))</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">1338</td><td><a href="atapi.c.html#L1338">(!(cmd->flags & ALLOW_UA) && !s->tray_open && blk_is_inserted(s->blk) && s->cdrom_changed)</a></td><td class="num">38.00</td></tr>
+      <tr><td class="num line">1327</td><td><a href="atapi.c.html#L1327">(s->sense_key == UNIT_ATTENTION && !(cmd->flags & ALLOW_UA))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1364</td><td><a href="atapi.c.html#L1364">(cmd->handler && !(cmd->flags & NONDATA | CONDDATA))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="atapi.c.html#L286">(!ide_transfer_start_norecurse(s, s->io_buffer + s->io_buffer_index - size, size, ide_atapi_cmd_reply_end))</a></td><td class="num">28.20</td></tr>
+      <tr><td class="num line">229</td><td><a href="atapi.c.html#L229">(s->lba != -1 && s->io_buffer_index >= s->cd_sector_size)</a></td><td class="num">18.00</td></tr>
+      <tr><td class="num line">379</td><td><a href="atapi.c.html#L379">(s->bus->dma->ops->rw_buf(s->bus->dma, 1) == 0)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="atapi.c.html#L155">(s->cd_sector_size != 2048 && s->cd_sector_size != 2352)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1079</td><td><a href="atapi.c.html#L1079">(!start && !s->tray_open && s->tray_locked)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">271</td><td><a href="atapi.c.html#L271">(size > (s->cd_sector_size - s->io_buffer_index))</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">817</td><td><a href="atapi.c.html#L817">(buf[2] != 0 || buf[3] != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="atapi.c.html#L646">(!(gesn_cdb->polled & 0x01))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="atapi.c.html#L677">(gesn_cdb->class & 1 << GESN_MEDIA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1086</td><td><a href="atapi.c.html#L1086">(s->tray_open != !start)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">608</td><td><a href="atapi.c.html#L608">(s->atapi_dma || atapi_byte_count_limit(s))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">140</td><td><a href="atapi.c.html#L140">(s->cd_sector_size == 2352)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">223</td><td><a href="atapi.c.html#L223">(s->packet_transfer_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">247</td><td><a href="atapi.c.html#L247">(s->elementary_transfer_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="atapi.c.html#L251">(size > s->elementary_transfer_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">270</td><td><a href="atapi.c.html#L270">(s->lba != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">361</td><td><a href="atapi.c.html#L361">(s->io_buffer_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">369</td><td><a href="atapi.c.html#L369">(s->lba != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">370</td><td><a href="atapi.c.html#L370">(s->cd_sector_size == 2352)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">383</td><td><a href="atapi.c.html#L383">(s->packet_transfer_size <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">391</td><td><a href="atapi.c.html#L391">(s->cd_sector_size == 2352)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="atapi.c.html#L699">(s->sense_key == UNIT_ATTENTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1341</td><td><a href="atapi.c.html#L1341">(s->cdrom_changed == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">353</td><td><a href="atapi.c.html#L353">(s->bus->error_status)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">717</td><td><a href="atapi.c.html#L717">(buf[1] & 0x01)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">582</td><td><a href="atapi.c.html#L582">(s->events.new_media)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">585</td><td><a href="atapi.c.html#L585">(s->events.eject_request)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">739</td><td><a href="atapi.c.html#L739">(idx + 24 > max_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">754</td><td><a href="atapi.c.html#L754">(idx + 72 > max_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">352</td><td><a href="atapi.c.html#L352">(ide_handle_rw_error(s, -ret, ide_dma_cmd_to_retry(s->dma_cmd)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="atapi.c.html#L230">(!s->elementary_transfer_size)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">985</td><td><a href="atapi.c.html#L985">(buf[0] == GPCMD_READ_10)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">575</td><td><a href="atapi.c.html#L575">(blk_is_inserted(s->blk))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">262</td><td><a href="atapi.c.html#L262">(byte_count_limit & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="atapi.c.html#L309">(s->atapi_dma)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">445</td><td><a href="atapi.c.html#L445">(s->atapi_dma)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="atapi.c.html#L573">(s->tray_open)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">927</td><td><a href="atapi.c.html#L927">(s->tray_locked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1371</td><td><a href="atapi.c.html#L1371">(cmd->handler)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">40</td><td><a href="atapi.c.html#L40">(i < buf_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">41</td><td><a href="atapi.c.html#L41">(*src)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">106</td><td><a href="atapi.c.html#L106">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">115</td><td><a href="atapi.c.html#L115">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">132</td><td><a href="atapi.c.html#L132">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="atapi.c.html#L199">(ret == -ENOMEDIUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">213</td><td><a href="atapi.c.html#L213">(bcl == 0xffff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="atapi.c.html#L232">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="atapi.c.html#L241">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">260</td><td><a href="atapi.c.html#L260">(size > byte_count_limit)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">302</td><td><a href="atapi.c.html#L302">(size > max_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">351</td><td><a href="atapi.c.html#L351">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="atapi.c.html#L397">(n > IDE_DMA_BUF_SECTORS / 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">412</td><td><a href="atapi.c.html#L412">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">489</td><td><a href="atapi.c.html#L489">(layer != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">493</td><td><a href="atapi.c.html#L493">(total_sectors == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">581</td><td><a href="atapi.c.html#L581">(media_status != MS_TRAY_OPEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">833</td><td><a href="atapi.c.html#L833">(max_len > BDRV_SECTOR_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="atapi.c.html#L990">(nb_sectors == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="atapi.c.html#L1012">(nb_sectors == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1024</td><td><a href="atapi.c.html#L1024">(transfer_request == 0x00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="atapi.c.html#L1057">(lba >= total_sectors)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1123</td><td><a href="atapi.c.html#L1123">(len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1137</td><td><a href="atapi.c.html#L1137">(len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1164</td><td><a href="atapi.c.html#L1164">(type != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1197</td><td><a href="atapi.c.html#L1197">(format < 0xff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1215</td><td><a href="atapi.c.html#L1215">(media == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1218</td><td><a href="atapi.c.html#L1218">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="atapi.c.html#L1314">(i < ATAPI_PACKET_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="atapi.c.html#L1031">(!validate_bcl(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1202</td><td><a href="atapi.c.html#L1202">(!media_present(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1365</td><td><a href="atapi.c.html#L1365">(!validate_bcl(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">843</td><td><a href="atapi.c.html#L843">(media_is_dvd(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">845</td><td><a href="atapi.c.html#L845">(media_is_cd(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="atapi.c.html#L1198">(media_is_cd(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="atapi.c.html#L1310">(trace_event_get_state_backends(TRACE_IDE_ATAPI_CMD_PACKET))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="atapi.c.html#L1072">(pwrcnd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1078</td><td><a href="atapi.c.html#L1078">(loej)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

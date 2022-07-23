@@ -1,0 +1,153 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptind.c Ctrl Expressions (102) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptind.c Ctrl Expressions (102) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptind.c Ctrl Expressions (102)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">899</td><td><a href="coptind.c.html#L899">(<span style='background-color:#741da3;'>RegValIsKnown(In->RegX) && In->RegX == In->RegA && E->AM != AM65_ABSY && E->AM != AM65_ZPY</span>)</a></td><td class="num">1032.00</td></tr>
+      <tr><td class="num line">929</td><td><a href="coptind.c.html#L929">(<span style='background-color:#741da3;'>In->RegY == In->RegX && E->AM != AM65_ABSX && E->AM != AM65_ZPX</span>)</a></td><td class="num">1026.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="coptind.c.html#L255">(<span style='background-color:#741da3;'>E->AM == AM65_BRA && E->JumpTo && E->JumpTo->Owner == CS_GetNextEntry(S, I)</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">1039</td><td><a href="coptind.c.html#L1039">(<span style='background-color:#9c4c02;'>(E->Info & OF_STORE) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && !CE_HasLabel(N) && E->AM == N->AM && ((E->OPC == OP65_STA && N->OPC == OP65_LDA) || (E->OPC == OP65_STX && N->OPC == OP65_LDX) || (E->OPC == OP65_STY && N->OPC == OP65_LDY)) && strcmp(E->Arg, N->Arg) == 0 && (X = CS_GetNextEntry(S, I + 1)) != 0 && !CE_UseLoadFlags(X)</span>)</a></td><td class="num">149.35</td></tr>
+      <tr><td class="num line">1092</td><td><a href="coptind.c.html#L1092">(<span style='background-color:#9c4c02;'>(E->OPC == OP65_TAX && N->OPC == OP65_TXA && !RegXUsed(S, I + 2)) || (E->OPC == OP65_TAY && N->OPC == OP65_TYA && !RegYUsed(S, I + 2)) || (E->OPC == OP65_TXA && N->OPC == OP65_TAX && !RegAUsed(S, I + 2)) || (E->OPC == OP65_TYA && N->OPC == OP65_TAY && !RegAUsed(S, I + 2))</span>)</a></td><td class="num">146.40</td></tr>
+      <tr><td class="num line">306</td><td><a href="coptind.c.html#L306">(<span style='background-color:#9c4c02;'>(E->Info & OF_DEAD) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && (!CE_HasLabel(N) || ((N->Info & OF_UBRA) != 0 && (LN = N->JumpTo) != 0 && LN->Owner == N && CL_GetRefCount(LN) == 1))</span>)</a></td><td class="num">106.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="coptind.c.html#L645">(<span style='background-color:#9c4c02;'>(BC == BC_EQ && E->Num != 0) || (BC == BC_NE && E->Num == 0) || (BC == BC_PL && (E->Num & 0x80) != 0) || (BC == BC_MI && (E->Num & 0x80) == 0)</span>)</a></td><td class="num">101.00</td></tr>
+      <tr><td class="num line">656</td><td><a href="coptind.c.html#L656">(<span style='background-color:#9c4c02;'>(BC == BC_EQ && E->Num == 0) || (BC == BC_NE && E->Num != 0) || (BC == BC_PL && (E->Num & 0x80) == 0) || (BC == BC_MI && (E->Num & 0x80) != 0)</span>)</a></td><td class="num">101.00</td></tr>
+      <tr><td class="num line">670</td><td><a href="coptind.c.html#L670">((E->Info & OF_CBRA) != 0 && (L = E->JumpTo) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_UBRA) != 0 && !CE_HasLabel(N) && L->Owner == CS_GetNextEntry(S, I + 1))</a></td><td class="num">70.10</td></tr>
+      <tr><td class="num line">373</td><td><a href="coptind.c.html#L373">((N->Info & OF_UBRA) != 0 || ((E->Info & OF_CBRA) != 0 && GetBranchCond(E->OPC) == GetBranchCond(N->OPC)))</a></td><td class="num">62.75</td></tr>
+      <tr><td class="num line">634</td><td><a href="coptind.c.html#L634">((E->Info & OF_LOAD) != 0 && E->AM == AM65_IMM && (E->Flags & CEF_NUMARG) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_CBRA) != 0 && !CE_HasLabel(N))</a></td><td class="num">62.50</td></tr>
+      <tr><td class="num line">191</td><td><a href="coptind.c.html#L191">((E->Info & OF_CBRA) != 0 && (E->Info & OF_LBRA) != 0 && E->JumpTo != 0 && E->JumpTo->Owner->OPC == OP65_RTS && (N = CS_GetNextEntry(S, I)) != 0)</a></td><td class="num">62.25</td></tr>
+      <tr><td class="num line">364</td><td><a href="coptind.c.html#L364">((E->Info & OF_BRA) != 0 && (OldLabel = E->JumpTo) != 0 && (N = OldLabel->Owner) != E && (N->Info & OF_BRA) != 0)</a></td><td class="num">62.00</td></tr>
+      <tr><td class="num line">1156</td><td><a href="coptind.c.html#L1156">((E->Info & OF_LOAD) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && !CE_HasLabel(N) && (N->Info & OF_XFR) != 0 && GetRegInfo(S, I + 2, E->Chg) != E->Chg)</a></td><td class="num">59.60</td></tr>
+      <tr><td class="num line">1086</td><td><a href="coptind.c.html#L1086">((E->Info & OF_XFR) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && !CE_HasLabel(N) && (N->Info & OF_XFR) != 0)</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="coptind.c.html#L1447">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && (E->Info & OF_UBRA) != 0 && E->JumpTo != 0 && IsShortDist(GetBranchDist(S, I, E->JumpTo->Owner)))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">950</td><td><a href="coptind.c.html#L950">(RegValIsKnown(In->RegA) && In->RegA == In->RegX && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">960</td><td><a href="coptind.c.html#L960">(RegValIsKnown(In->RegA) && In->RegA == In->RegY && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">970</td><td><a href="coptind.c.html#L970">(RegValIsKnown(In->RegX) && In->RegX == In->RegA && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">980</td><td><a href="coptind.c.html#L980">(RegValIsKnown(In->RegY) && In->RegY == In->RegA && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">149</td><td><a href="coptind.c.html#L149">((E->Info & OF_UBRA) != 0 && E->JumpTo != 0 && E->JumpTo->Owner->OPC == OP65_RTS)</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">546</td><td><a href="coptind.c.html#L546">(E2 != 0 && (E2->Info & OF_UBRA) != 0 && E2->JumpTo && E2->JumpTo->Owner != E2)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">783</td><td><a href="coptind.c.html#L783">((E->Info & OF_STORE) != 0 && E->AM == AM65_ZP && (E->Chg & REG_ZP) != 0)</a></td><td class="num">41.00</td></tr>
+      <tr><td class="num line">493</td><td><a href="coptind.c.html#L493">(E->OPC == OP65_JSR && (N = CS_GetNextEntry(S, I)) != 0 && N->OPC == OP65_RTS)</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">722</td><td><a href="coptind.c.html#L722">((E->Info & OF_LOAD | OF_XFR | OF_REG_INCDEC) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">874</td><td><a href="coptind.c.html#L874">(RegValIsKnown(In->RegA) && E->AM == AM65_ZP && In->RegA == ZPRegVal(E->Chg, In))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">887</td><td><a href="coptind.c.html#L887">(RegValIsKnown(In->RegX) && E->AM == AM65_ZP && In->RegX == ZPRegVal(E->Chg, In))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">913</td><td><a href="coptind.c.html#L913">(RegValIsKnown(In->RegY) && E->AM == AM65_ZP && In->RegY == ZPRegVal(E->Chg, In))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">843</td><td><a href="coptind.c.html#L843">(RegValIsKnown(In->RegA) && CE_IsKnownImm(E, In->RegA) && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">852</td><td><a href="coptind.c.html#L852">(RegValIsKnown(In->RegX) && CE_IsKnownImm(E, In->RegX) && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">861</td><td><a href="coptind.c.html#L861">(RegValIsKnown(In->RegY) && CE_IsKnownImm(E, In->RegY) && (N = CS_GetNextEntry(S, I)) != 0 && !CE_UseLoadFlags(N))</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">419</td><td><a href="coptind.c.html#L419">((E->Info & OF_CBRA) != 0 && (N->Info & OF_CBRA) != 0)</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">1175</td><td><a href="coptind.c.html#L1175">(E->AM == AM65_IMM || E->AM == AM65_ZP || E->AM == AM65_ZPX || E->AM == AM65_ABS || E->AM == AM65_ABSX)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">942</td><td><a href="coptind.c.html#L942">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && E->AM == AM65_ZP)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1267</td><td><a href="coptind.c.html#L1267">((E->Info & OF_CBRA) == 0 && !RegAUsed(S, I) && CS_IsBasicBlock(S, Push, Pop))</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">1101</td><td><a href="coptind.c.html#L1101">((X = CS_GetNextEntry(S, I + 1)) == 0)</a></td><td class="num">27.85</td></tr>
+      <tr><td class="num line">1429</td><td><a href="coptind.c.html#L1429">((E->Info & OF_LBRA) == 0 && !IsShort)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1433</td><td><a href="coptind.c.html#L1433">((E->Info & OF_LBRA) != 0 && IsShort)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1166</td><td><a href="coptind.c.html#L1166">(E->AM == AM65_IMM || E->AM == AM65_ZP || E->AM == AM65_ABS || E->AM == AM65_ABSY)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="coptind.c.html#L437">((X = CS_GetNextEntry(S, CS_GetEntryIndex(S, N))) == 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">746</td><td><a href="coptind.c.html#L746">((GetRegInfo(S, I + 1, R) & R) == 0)</a></td><td class="num">23.85</td></tr>
+      <tr><td class="num line">793</td><td><a href="coptind.c.html#L793">((GetRegInfo(S, I + 1, R) & R) == 0)</a></td><td class="num">23.85</td></tr>
+      <tr><td class="num line">1164</td><td><a href="coptind.c.html#L1164">(E->OPC == OP65_LDA && N->OPC == OP65_TAX)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1173</td><td><a href="coptind.c.html#L1173">(E->OPC == OP65_LDA && N->OPC == OP65_TAY)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1183</td><td><a href="coptind.c.html#L1183">(E->OPC == OP65_LDY && N->OPC == OP65_TYA)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1186</td><td><a href="coptind.c.html#L1186">(E->OPC == OP65_LDX && N->OPC == OP65_TXA)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1322</td><td><a href="coptind.c.html#L1322">(E->AM != AM65_IMM && RegValIsKnown(Out->RegA))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1329</td><td><a href="coptind.c.html#L1329">(E->AM != AM65_IMM && RegValIsKnown(Out->RegX))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1336</td><td><a href="coptind.c.html#L1336">(E->AM != AM65_IMM && RegValIsKnown(Out->RegY))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">385</td><td><a href="coptind.c.html#L385">(LN != 0 && LN->Owner == N)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">927</td><td><a href="coptind.c.html#L927">(In->RegY == In->RegA)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1110</td><td><a href="coptind.c.html#L1110">((P->Info & OF_SETF) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1439</td><td><a href="coptind.c.html#L1439">((E->Info & OF_LBRA) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1420</td><td><a href="coptind.c.html#L1420">(E->Info & OF_CBRA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">943</td><td><a href="coptind.c.html#L943">(ZPRegVal(E->Chg, In) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">97</td><td><a href="coptind.c.html#L97">((Use & REG_TMP1) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">99</td><td><a href="coptind.c.html#L99">((Use & REG_PTR1_LO) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="coptind.c.html#L101">((Use & REG_PTR1_HI) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">103</td><td><a href="coptind.c.html#L103">((Use & REG_SREG_LO) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">105</td><td><a href="coptind.c.html#L105">((Use & REG_SREG_HI) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">117</td><td><a href="coptind.c.html#L117">((Use & REG_A) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">119</td><td><a href="coptind.c.html#L119">((Use & REG_X) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="coptind.c.html#L121">((Use & REG_Y) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1243</td><td><a href="coptind.c.html#L1243">(E->OPC == OP65_PHA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1251</td><td><a href="coptind.c.html#L1251">(E->OPC == OP65_PHA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1254</td><td><a href="coptind.c.html#L1254">(E->OPC == OP65_PLA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1423</td><td><a href="coptind.c.html#L1423">(E->JumpTo != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">926</td><td><a href="coptind.c.html#L926">(RegValIsKnown(In->RegY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1347</td><td><a href="coptind.c.html#L1347">(RegValIsKnown(Out->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1358</td><td><a href="coptind.c.html#L1358">(RegValIsKnown(Out->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1369</td><td><a href="coptind.c.html#L1369">(RegValIsKnown(Out->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">143</td><td><a href="coptind.c.html#L143">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">183</td><td><a href="coptind.c.html#L183">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">247</td><td><a href="coptind.c.html#L247">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="coptind.c.html#L294">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="coptind.c.html#L352">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">429</td><td><a href="coptind.c.html#L429">(BC1 != GetInverseCond(BC2))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">485</td><td><a href="coptind.c.html#L485">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">538</td><td><a href="coptind.c.html#L538">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="coptind.c.html#L625">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">714</td><td><a href="coptind.c.html#L714">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">777</td><td><a href="coptind.c.html#L777">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">826</td><td><a href="coptind.c.html#L826">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1028</td><td><a href="coptind.c.html#L1028">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1076</td><td><a href="coptind.c.html#L1076">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="coptind.c.html#L1146">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1235</td><td><a href="coptind.c.html#L1235">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1307</td><td><a href="coptind.c.html#L1307">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1414</td><td><a href="coptind.c.html#L1414">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">64</td><td><a href="coptind.c.html#L64">(TI >= From)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">67</td><td><a href="coptind.c.html#L67">(J < TI)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">74</td><td><a href="coptind.c.html#L74">(J < From)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="coptind.c.html#L553">(T1 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="coptind.c.html#L1105">(I == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="coptind.c.html#L562">(!CodeEntriesAreEqual(E1, T1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">579</td><td><a href="coptind.c.html#L579">(CE_HasLabel(E1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1104</td><td><a href="coptind.c.html#L1104">(CE_UseLoadFlags(X))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="coptind.c.html#L1354">(CE_IsKnownImm(E, 0xFF))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1365</td><td><a href="coptind.c.html#L1365">(CE_IsKnownImm(E, 0x00))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="coptind.c.html#L995">(Delete)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1195</td><td><a href="coptind.c.html#L1195">(X)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1381</td><td><a href="coptind.c.html#L1381">(Arg)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

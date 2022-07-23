@@ -1,0 +1,361 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\armv7m_nvic.c Ctrl Expressions (310) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\armv7m_nvic.c Ctrl Expressions (310) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\armv7m_nvic.c Ctrl Expressions (310)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">262</td><td><a href="armv7m_nvic.c.html#L262">(vec->enabled && vec->pending && (<span style='background-color:#741da3;'>(prio < pend_prio) || (<span style='background-color:#741da3;'>prio == pend_prio && prio >= 0 && subprio < pend_subprio</span>)</span>))</a></td><td class="num">2042.00</td></tr>
+      <tr><td class="num line">2397</td><td><a href="armv7m_nvic.c.html#L2397">(<span style='background-color:#9c4c02;'>value & (1 << i) && (<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>) && !(setval == 0 && s->vectors[startvec + i].level && !s->vectors[startvec + i].active)</span>)</a></td><td class="num">1109.55</td></tr>
+      <tr><td class="num line">2244</td><td><a href="armv7m_nvic.c.html#L2244">(s->vectors[startvec + i].enabled && (<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>))</a></td><td class="num">1037.95</td></tr>
+      <tr><td class="num line">2257</td><td><a href="armv7m_nvic.c.html#L2257">(s->vectors[startvec + i].pending && (<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>))</a></td><td class="num">1037.95</td></tr>
+      <tr><td class="num line">2273</td><td><a href="armv7m_nvic.c.html#L2273">(s->vectors[startvec + i].active && (<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>))</a></td><td class="num">1037.95</td></tr>
+      <tr><td class="num line">2374</td><td><a href="armv7m_nvic.c.html#L2374">(value & (1 << i) && (<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>))</a></td><td class="num">1035.60</td></tr>
+      <tr><td class="num line">1771</td><td><a href="armv7m_nvic.c.html#L1771">(<span style='background-color:#741da3;'>!attrs.secure && cpu->env.v7m.secure && (cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK) && (value & 1 << 5) == 0</span>)</a></td><td class="num">1029.25</td></tr>
+      <tr><td class="num line">1782</td><td><a href="armv7m_nvic.c.html#L1782">(<span style='background-color:#741da3;'>!attrs.secure && cpu->env.v7m.secure && (cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK) && (value & 1 << 2) == 0</span>)</a></td><td class="num">1029.25</td></tr>
+      <tr><td class="num line">1593</td><td><a href="armv7m_nvic.c.html#L1593">(<span style='background-color:#741da3;'>attrs.secure || cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK</span>)</a></td><td class="num">1011.75</td></tr>
+      <tr><td class="num line">2284</td><td><a href="armv7m_nvic.c.html#L2284">(<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>)</a></td><td class="num">1011.10</td></tr>
+      <tr><td class="num line">2412</td><td><a href="armv7m_nvic.c.html#L2412">(<span style='background-color:#741da3;'>attrs.secure || s->itns[startvec + i]</span>)</a></td><td class="num">1011.10</td></tr>
+      <tr><td class="num line">2489</td><td><a href="armv7m_nvic.c.html#L2489">(s->vectors[ARMV7M_EXCP_RESET].prio != resetprio || s->vectors[ARMV7M_EXCP_NMI].prio != -2 || s->vectors[ARMV7M_EXCP_HARD].prio != -1)</a></td><td class="num">91.50</td></tr>
+      <tr><td class="num line">2532</td><td><a href="armv7m_nvic.c.html#L2532">(s->sec_vectors[ARMV7M_EXCP_HARD].prio != -1 && s->sec_vectors[ARMV7M_EXCP_HARD].prio != -3)</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">640</td><td><a href="armv7m_nvic.c.html#L640">(arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY) && (targets_secure || !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)))</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">736</td><td><a href="armv7m_nvic.c.html#L736">(arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY) && (targets_secure || !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)))</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">109</td><td><a href="armv7m_nvic.c.html#L109">(s->vectors[irq].active || (check_sec && irq < NVIC_INTERNAL_VECTORS && s->sec_vectors[irq].active))</a></td><td class="num">52.25</td></tr>
+      <tr><td class="num line">2678</td><td><a href="armv7m_nvic.c.html#L2678">(!s->cpu || !arm_feature(&s->cpu->env, ARM_FEATURE_M))</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">1088</td><td><a href="armv7m_nvic.c.html#L1088">((attrs.secure || (cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)) && s->vectors[ARMV7M_EXCP_NMI].pending)</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="armv7m_nvic.c.html#L408">(secure ? s->sec_vectors[ARMV7M_EXCP_HARD].active : s->vectors[ARMV7M_EXCP_HARD].active)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1262</td><td><a href="armv7m_nvic.c.html#L1262">(!attrs.secure && !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1811</td><td><a href="armv7m_nvic.c.html#L1811">(!attrs.secure && !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">2196</td><td><a href="armv7m_nvic.c.html#L2196">(!attrs.secure && !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">2318</td><td><a href="armv7m_nvic.c.html#L2318">(!attrs.secure && !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">2445</td><td><a href="armv7m_nvic.c.html#L2445">(!attrs.secure && !(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1234</td><td><a href="armv7m_nvic.c.html#L1234">(arm_feature(&cpu->env, ARM_FEATURE_V8) && s->vectors[ARMV7M_EXCP_NMI].active)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="armv7m_nvic.c.html#L1619">(attrs.secure || !(cpu->env.v7m.aircr & R_V7M_AIRCR_SYSRESETREQS_MASK))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="armv7m_nvic.c.html#L745">(!vec->enabled || nvic_exec_prio(s) <= exc_group_prio(s, vec->prio, secure))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">413</td><td><a href="armv7m_nvic.c.html#L413">(s->vectors[ARMV7M_EXCP_NMI].active && exc_targets_secure(s, ARMV7M_EXCP_NMI) == secure)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1596</td><td><a href="armv7m_nvic.c.html#L1596">(value & 1 << 30 && arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">567</td><td><a href="armv7m_nvic.c.html#L567">(irq == ARMV7M_EXCP_DEBUG && exc_group_prio(s, vec->prio, secure) >= nvic_exec_prio(s))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1054</td><td><a href="armv7m_nvic.c.html#L1054">(!attrs.secure && arm_feature(&cpu->env, ARM_FEATURE_V8_1M) && vectpending_targets_secure(s))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1690</td><td><a href="armv7m_nvic.c.html#L1690">(arm_feature(&cpu->env, ARM_FEATURE_V8_1M) && attrs.secure)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">172</td><td><a href="armv7m_nvic.c.html#L172">(!arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2266</td><td><a href="armv7m_nvic.c.html#L2266">(!arm_feature(&s->cpu->env, ARM_FEATURE_V7))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2290</td><td><a href="armv7m_nvic.c.html#L2290">(!arm_feature(&s->cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2308</td><td><a href="armv7m_nvic.c.html#L2308">(!arm_feature(&s->cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2419</td><td><a href="armv7m_nvic.c.html#L2419">(!arm_feature(&s->cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2437</td><td><a href="armv7m_nvic.c.html#L2437">(!arm_feature(&s->cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2495</td><td><a href="armv7m_nvic.c.html#L2495">(s->vectors[i].prio & ~0xff)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2541</td><td><a href="armv7m_nvic.c.html#L2541">(s->sec_vectors[i].prio & ~0xff)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1005</td><td><a href="armv7m_nvic.c.html#L1005">(!arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1010</td><td><a href="armv7m_nvic.c.html#L1010">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1022</td><td><a href="armv7m_nvic.c.html#L1022">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1037</td><td><a href="armv7m_nvic.c.html#L1037">(!arm_feature(&cpu->env, ARM_FEATURE_V8_1M))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1113</td><td><a href="armv7m_nvic.c.html#L1113">(!arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1132</td><td><a href="armv7m_nvic.c.html#L1132">(!arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1247</td><td><a href="armv7m_nvic.c.html#L1247">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1254</td><td><a href="armv7m_nvic.c.html#L1254">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1259</td><td><a href="armv7m_nvic.c.html#L1259">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1273</td><td><a href="armv7m_nvic.c.html#L1273">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1278</td><td><a href="armv7m_nvic.c.html#L1278">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1283</td><td><a href="armv7m_nvic.c.html#L1283">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1288</td><td><a href="armv7m_nvic.c.html#L1288">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1293</td><td><a href="armv7m_nvic.c.html#L1293">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1298</td><td><a href="armv7m_nvic.c.html#L1298">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1303</td><td><a href="armv7m_nvic.c.html#L1303">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1308</td><td><a href="armv7m_nvic.c.html#L1308">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1313</td><td><a href="armv7m_nvic.c.html#L1313">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1318</td><td><a href="armv7m_nvic.c.html#L1318">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1323</td><td><a href="armv7m_nvic.c.html#L1323">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1328</td><td><a href="armv7m_nvic.c.html#L1328">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1333</td><td><a href="armv7m_nvic.c.html#L1333">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1338</td><td><a href="armv7m_nvic.c.html#L1338">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1428</td><td><a href="armv7m_nvic.c.html#L1428">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1433</td><td><a href="armv7m_nvic.c.html#L1433">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1438</td><td><a href="armv7m_nvic.c.html#L1438">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1446</td><td><a href="armv7m_nvic.c.html#L1446">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1454</td><td><a href="armv7m_nvic.c.html#L1454">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1465</td><td><a href="armv7m_nvic.c.html#L1465">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1480</td><td><a href="armv7m_nvic.c.html#L1480">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1492</td><td><a href="armv7m_nvic.c.html#L1492">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1500</td><td><a href="armv7m_nvic.c.html#L1500">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1570</td><td><a href="armv7m_nvic.c.html#L1570">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1580</td><td><a href="armv7m_nvic.c.html#L1580">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1664</td><td><a href="armv7m_nvic.c.html#L1664">(!arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1679</td><td><a href="armv7m_nvic.c.html#L1679">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1722</td><td><a href="armv7m_nvic.c.html#L1722">(!arm_feature(&cpu->env, ARM_FEATURE_V7))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1793</td><td><a href="armv7m_nvic.c.html#L1793">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1802</td><td><a href="armv7m_nvic.c.html#L1802">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1808</td><td><a href="armv7m_nvic.c.html#L1808">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1949</td><td><a href="armv7m_nvic.c.html#L1949">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1961</td><td><a href="armv7m_nvic.c.html#L1961">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1973</td><td><a href="armv7m_nvic.c.html#L1973">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1982</td><td><a href="armv7m_nvic.c.html#L1982">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1987</td><td><a href="armv7m_nvic.c.html#L1987">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2005</td><td><a href="armv7m_nvic.c.html#L2005">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2022</td><td><a href="armv7m_nvic.c.html#L2022">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2036</td><td><a href="armv7m_nvic.c.html#L2036">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2045</td><td><a href="armv7m_nvic.c.html#L2045">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2057</td><td><a href="armv7m_nvic.c.html#L2057">(!arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2077</td><td><a href="armv7m_nvic.c.html#L2077">(!arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">310</td><td><a href="armv7m_nvic.c.html#L310">(vec->enabled && vec->pending && vec->prio < pend_prio)</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="armv7m_nvic.c.html#L575">(irq == ARMV7M_EXCP_HARD && vec->prio >= s->vectpending_prio)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">215</td><td><a href="armv7m_nvic.c.html#L215">(!targets_secure && (s->cpu->env.v7m.aircr & R_V7M_AIRCR_PRIS_MASK))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1029</td><td><a href="armv7m_nvic.c.html#L1029">(i < 32 && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">1586</td><td><a href="armv7m_nvic.c.html#L1586">(i < 32 && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2243</td><td><a href="armv7m_nvic.c.html#L2243">(i < end && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2256</td><td><a href="armv7m_nvic.c.html#L2256">(i < end && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2272</td><td><a href="armv7m_nvic.c.html#L2272">(i < end && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2283</td><td><a href="armv7m_nvic.c.html#L2283">(i < size && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2373</td><td><a href="armv7m_nvic.c.html#L2373">(i < end && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2391</td><td><a href="armv7m_nvic.c.html#L2391">(i < end && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">2411</td><td><a href="armv7m_nvic.c.html#L2411">(i < size && startvec + i < s->num_irq)</a></td><td class="num">13.85</td></tr>
+      <tr><td class="num line">314</td><td><a href="armv7m_nvic.c.html#L314">(vec->active && vec->prio < active_prio)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1224</td><td><a href="armv7m_nvic.c.html#L1224">(attrs.secure || (cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1763</td><td><a href="armv7m_nvic.c.html#L1763">(attrs.secure || (cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="armv7m_nvic.c.html#L883">(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1531</td><td><a href="armv7m_nvic.c.html#L1531">(s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2102</td><td><a href="armv7m_nvic.c.html#L2102">((s->cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">270</td><td><a href="armv7m_nvic.c.html#L270">(vec->active && prio < active_prio)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1126</td><td><a href="armv7m_nvic.c.html#L1126">(!(cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1712</td><td><a href="armv7m_nvic.c.html#L1712">(!(cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">345</td><td><a href="armv7m_nvic.c.html#L345">(env->v7m.basepri[M_REG_NS] > 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">349</td><td><a href="armv7m_nvic.c.html#L349">(env->v7m.basepri[M_REG_S] > 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">404</td><td><a href="armv7m_nvic.c.html#L404">(s->cpu->env.v7m.faultmask[secure])</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">600</td><td><a href="armv7m_nvic.c.html#L600">(irq >= ARMV7M_EXCP_HARD && irq < ARMV7M_EXCP_PENDSV)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1652</td><td><a href="armv7m_nvic.c.html#L1652">(cpu->env.v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">302</td><td><a href="armv7m_nvic.c.html#L302">(arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">357</td><td><a href="armv7m_nvic.c.html#L357">(env->v7m.aircr & R_V7M_AIRCR_PRIS_MASK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">371</td><td><a href="armv7m_nvic.c.html#L371">(env->v7m.aircr & R_V7M_AIRCR_BFHFNMINS_MASK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="armv7m_nvic.c.html#L374">(env->v7m.aircr & R_V7M_AIRCR_PRIS_MASK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">880</td><td><a href="armv7m_nvic.c.html#L880">(arm_feature(&s->cpu->env, ARM_FEATURE_V8))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2612</td><td><a href="armv7m_nvic.c.html#L2612">(arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2637</td><td><a href="armv7m_nvic.c.html#L2637">(arm_feature(&s->cpu->env, ARM_FEATURE_M_SECURITY))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">855</td><td><a href="armv7m_nvic.c.html#L855">(!exc_is_banked(irq) && exc_targets_secure(s, irq) != secure)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="armv7m_nvic.c.html#L1030">(s->itns[startvec + i])</a></td><td class="num">7.35</td></tr>
+      <tr><td class="num line">140</td><td><a href="armv7m_nvic.c.html#L140">(s->vectors[irq].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1070</td><td><a href="armv7m_nvic.c.html#L1070">(s->sec_vectors[ARMV7M_EXCP_SYSTICK].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1074</td><td><a href="armv7m_nvic.c.html#L1074">(s->sec_vectors[ARMV7M_EXCP_PENDSV].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1079</td><td><a href="armv7m_nvic.c.html#L1079">(s->vectors[ARMV7M_EXCP_SYSTICK].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1083</td><td><a href="armv7m_nvic.c.html#L1083">(s->vectors[ARMV7M_EXCP_PENDSV].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1137</td><td><a href="armv7m_nvic.c.html#L1137">(s->sec_vectors[ARMV7M_EXCP_MEM].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1140</td><td><a href="armv7m_nvic.c.html#L1140">(s->sec_vectors[ARMV7M_EXCP_HARD].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1143</td><td><a href="armv7m_nvic.c.html#L1143">(s->sec_vectors[ARMV7M_EXCP_USAGE].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="armv7m_nvic.c.html#L1146">(s->sec_vectors[ARMV7M_EXCP_SVC].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1149</td><td><a href="armv7m_nvic.c.html#L1149">(s->sec_vectors[ARMV7M_EXCP_PENDSV].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1152</td><td><a href="armv7m_nvic.c.html#L1152">(s->sec_vectors[ARMV7M_EXCP_SYSTICK].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1155</td><td><a href="armv7m_nvic.c.html#L1155">(s->sec_vectors[ARMV7M_EXCP_USAGE].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1158</td><td><a href="armv7m_nvic.c.html#L1158">(s->sec_vectors[ARMV7M_EXCP_MEM].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1161</td><td><a href="armv7m_nvic.c.html#L1161">(s->sec_vectors[ARMV7M_EXCP_SVC].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1164</td><td><a href="armv7m_nvic.c.html#L1164">(s->sec_vectors[ARMV7M_EXCP_MEM].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1167</td><td><a href="armv7m_nvic.c.html#L1167">(s->sec_vectors[ARMV7M_EXCP_USAGE].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1170</td><td><a href="armv7m_nvic.c.html#L1170">(s->sec_vectors[ARMV7M_EXCP_HARD].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1174</td><td><a href="armv7m_nvic.c.html#L1174">(s->vectors[ARMV7M_EXCP_SECURE].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1177</td><td><a href="armv7m_nvic.c.html#L1177">(s->vectors[ARMV7M_EXCP_SECURE].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1180</td><td><a href="armv7m_nvic.c.html#L1180">(s->vectors[ARMV7M_EXCP_SECURE].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1184</td><td><a href="armv7m_nvic.c.html#L1184">(s->vectors[ARMV7M_EXCP_MEM].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1189</td><td><a href="armv7m_nvic.c.html#L1189">(s->vectors[ARMV7M_EXCP_HARD].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1192</td><td><a href="armv7m_nvic.c.html#L1192">(s->vectors[ARMV7M_EXCP_HARD].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1196</td><td><a href="armv7m_nvic.c.html#L1196">(s->vectors[ARMV7M_EXCP_USAGE].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1199</td><td><a href="armv7m_nvic.c.html#L1199">(s->vectors[ARMV7M_EXCP_SVC].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1202</td><td><a href="armv7m_nvic.c.html#L1202">(s->vectors[ARMV7M_EXCP_PENDSV].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1205</td><td><a href="armv7m_nvic.c.html#L1205">(s->vectors[ARMV7M_EXCP_SYSTICK].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1208</td><td><a href="armv7m_nvic.c.html#L1208">(s->vectors[ARMV7M_EXCP_USAGE].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1211</td><td><a href="armv7m_nvic.c.html#L1211">(s->vectors[ARMV7M_EXCP_MEM].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1214</td><td><a href="armv7m_nvic.c.html#L1214">(s->vectors[ARMV7M_EXCP_SVC].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1217</td><td><a href="armv7m_nvic.c.html#L1217">(s->vectors[ARMV7M_EXCP_MEM].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1220</td><td><a href="armv7m_nvic.c.html#L1220">(s->vectors[ARMV7M_EXCP_USAGE].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1225</td><td><a href="armv7m_nvic.c.html#L1225">(s->vectors[ARMV7M_EXCP_BUS].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1228</td><td><a href="armv7m_nvic.c.html#L1228">(s->vectors[ARMV7M_EXCP_BUS].pending)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1231</td><td><a href="armv7m_nvic.c.html#L1231">(s->vectors[ARMV7M_EXCP_BUS].enabled)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1242</td><td><a href="armv7m_nvic.c.html#L1242">(s->vectors[ARMV7M_EXCP_DEBUG].active)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">356</td><td><a href="armv7m_nvic.c.html#L356">(env->v7m.primask[M_REG_NS])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">366</td><td><a href="armv7m_nvic.c.html#L366">(env->v7m.primask[M_REG_S])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="armv7m_nvic.c.html#L370">(env->v7m.faultmask[M_REG_NS])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">384</td><td><a href="armv7m_nvic.c.html#L384">(env->v7m.faultmask[M_REG_S])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2229</td><td><a href="armv7m_nvic.c.html#L2229">(attrs.user && !nvic_user_access_ok(s, addr, attrs))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2360</td><td><a href="armv7m_nvic.c.html#L2360">(attrs.user && !nvic_user_access_ok(s, addr, attrs))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">624</td><td><a href="armv7m_nvic.c.html#L624">(exc_group_prio(s, vec->prio, secure) >= running)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1103</td><td><a href="armv7m_nvic.c.html#L1103">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1187</td><td><a href="armv7m_nvic.c.html#L1187">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1378</td><td><a href="armv7m_nvic.c.html#L1378">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1406</td><td><a href="armv7m_nvic.c.html#L1406">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1635</td><td><a href="armv7m_nvic.c.html#L1635">(arm_feature(&cpu->env, ARM_FEATURE_M_MAIN))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1696</td><td><a href="armv7m_nvic.c.html#L1696">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1749</td><td><a href="armv7m_nvic.c.html#L1749">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1869</td><td><a href="armv7m_nvic.c.html#L1869">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1920</td><td><a href="armv7m_nvic.c.html#L1920">(arm_feature(&cpu->env, ARM_FEATURE_V8))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2540</td><td><a href="armv7m_nvic.c.html#L2540">(i < ARRAY_SIZE(s->sec_vectors))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2646</td><td><a href="armv7m_nvic.c.html#L2646">(i < ARRAY_SIZE(s->itns))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">108</td><td><a href="armv7m_nvic.c.html#L108">(irq < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">135</td><td><a href="armv7m_nvic.c.html#L135">(s->vectpending > NVIC_FIRST_IRQ)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">139</td><td><a href="armv7m_nvic.c.html#L139">(irq < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">243</td><td><a href="armv7m_nvic.c.html#L243">(i < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">307</td><td><a href="armv7m_nvic.c.html#L307">(i < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">647</td><td><a href="armv7m_nvic.c.html#L647">(running <= vec->prio)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">972</td><td><a href="armv7m_nvic.c.html#L972">(level != vec->level)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1359</td><td><a href="armv7m_nvic.c.html#L1359">(!attrs.secure || !cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1388</td><td><a href="armv7m_nvic.c.html#L1388">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1394</td><td><a href="armv7m_nvic.c.html#L1394">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1415</td><td><a href="armv7m_nvic.c.html#L1415">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1421</td><td><a href="armv7m_nvic.c.html#L1421">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1471</td><td><a href="armv7m_nvic.c.html#L1471">(region >= cpu->sau_sregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1486</td><td><a href="armv7m_nvic.c.html#L1486">(region >= cpu->sau_sregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1617</td><td><a href="armv7m_nvic.c.html#L1617">((value >> R_V7M_AIRCR_VECTKEY_SHIFT) == 0x05fa)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1833</td><td><a href="armv7m_nvic.c.html#L1833">(attrs.secure && cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1841</td><td><a href="armv7m_nvic.c.html#L1841">((value & R_V7M_MPU_CTRL_HFNMIENA_MASK | R_V7M_MPU_CTRL_ENABLE_MASK) == R_V7M_MPU_CTRL_HFNMIENA_MASK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1854</td><td><a href="armv7m_nvic.c.html#L1854">(value >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1881</td><td><a href="armv7m_nvic.c.html#L1881">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1894</td><td><a href="armv7m_nvic.c.html#L1894">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1905</td><td><a href="armv7m_nvic.c.html#L1905">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1931</td><td><a href="armv7m_nvic.c.html#L1931">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1939</td><td><a href="armv7m_nvic.c.html#L1939">(region >= cpu->pmsav7_dregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1993</td><td><a href="armv7m_nvic.c.html#L1993">(value >= cpu->sau_sregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2011</td><td><a href="armv7m_nvic.c.html#L2011">(region >= cpu->sau_sregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2028</td><td><a href="armv7m_nvic.c.html#L2028">(region >= cpu->sau_sregion)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2061</td><td><a href="armv7m_nvic.c.html#L2061">(excnum < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2494</td><td><a href="armv7m_nvic.c.html#L2494">(i < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2683</td><td><a href="armv7m_nvic.c.html#L2683">(s->num_irq > NVIC_MAX_IRQ)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">627</td><td><a href="armv7m_nvic.c.html#L627">(!vec->enabled)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">663</td><td><a href="armv7m_nvic.c.html#L663">(!vec->pending)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">709</td><td><a href="armv7m_nvic.c.html#L709">(!(fpccr_s & R_V7M_FPCCR_MONRDY_MASK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">747</td><td><a href="armv7m_nvic.c.html#L747">(!(fpccr_s & R_V7M_FPCCR_HFRDY_MASK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">761</td><td><a href="armv7m_nvic.c.html#L761">(!vec->pending)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">844</td><td><a href="armv7m_nvic.c.html#L844">(secure && exc_is_banked(irq))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">864</td><td><a href="armv7m_nvic.c.html#L864">(!vec->active)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2094</td><td><a href="armv7m_nvic.c.html#L2094">(!(fpccr_s & R_V7M_FPCCR_LSPENS_MASK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2098</td><td><a href="armv7m_nvic.c.html#L2098">(!(fpccr_s & R_V7M_FPCCR_CLRONRETS_MASK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">69</td><td><a href="armv7m_nvic.c.html#L69">(qemu_irq_is_connected(s->sysresetreq))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">523</td><td><a href="armv7m_nvic.c.html#L523">(vec->pending)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">786</td><td><a href="armv7m_nvic.c.html#L786">(s->vectpending_is_s_banked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">810</td><td><a href="armv7m_nvic.c.html#L810">(s->vectpending_is_s_banked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="armv7m_nvic.c.html#L905">(vec->level)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="armv7m_nvic.c.html#L1047">(s->vectpending)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1594</td><td><a href="armv7m_nvic.c.html#L1594">(value & 1 << 31)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1602</td><td><a href="armv7m_nvic.c.html#L1602">(value & 1 << 28)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1604</td><td><a href="armv7m_nvic.c.html#L1604">(value & 1 << 27)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1607</td><td><a href="armv7m_nvic.c.html#L1607">(value & 1 << 26)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1609</td><td><a href="armv7m_nvic.c.html#L1609">(value & 1 << 25)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1618</td><td><a href="armv7m_nvic.c.html#L1618">(value & R_V7M_AIRCR_SYSRESETREQ_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1624</td><td><a href="armv7m_nvic.c.html#L1624">(value & R_V7M_AIRCR_VECTCLRACTIVE_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1629</td><td><a href="armv7m_nvic.c.html#L1629">(value & R_V7M_AIRCR_VECTRESET_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1889</td><td><a href="armv7m_nvic.c.html#L1889">(value & 1 << 4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1952</td><td><a href="armv7m_nvic.c.html#L1952">(cpu->pmsav7_dregion)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="armv7m_nvic.c.html#L1964">(cpu->pmsav7_dregion)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2327</td><td><a href="armv7m_nvic.c.html#L2327">(offset & 3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">113</td><td><a href="armv7m_nvic.c.html#L113">(nhand == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="armv7m_nvic.c.html#L176">(exc >= NVIC_FIRST_IRQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">208</td><td><a href="armv7m_nvic.c.html#L208">(rawprio < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">244</td><td><a href="armv7m_nvic.c.html#L244">(bank >= M_REG_NS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="armv7m_nvic.c.html#L249">(bank == M_REG_S)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">319</td><td><a href="armv7m_nvic.c.html#L319">(active_prio > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="armv7m_nvic.c.html#L323">(pend_prio > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">351</td><td><a href="armv7m_nvic.c.html#L351">(running > basepri)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="armv7m_nvic.c.html#L358">(running > NVIC_NS_PRIO_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="armv7m_nvic.c.html#L375">(running > NVIC_NS_PRIO_LIMIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="armv7m_nvic.c.html#L942">(irq == ARMV7M_EXCP_HARD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="armv7m_nvic.c.html#L1025">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="armv7m_nvic.c.html#L1125">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="armv7m_nvic.c.html#L1441">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1449</td><td><a href="armv7m_nvic.c.html#L1449">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="armv7m_nvic.c.html#L1457">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1468</td><td><a href="armv7m_nvic.c.html#L1468">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="armv7m_nvic.c.html#L1483">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1495</td><td><a href="armv7m_nvic.c.html#L1495">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1503</td><td><a href="armv7m_nvic.c.html#L1503">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="armv7m_nvic.c.html#L1583">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1976</td><td><a href="armv7m_nvic.c.html#L1976">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="armv7m_nvic.c.html#L1990">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2008</td><td><a href="armv7m_nvic.c.html#L2008">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2025</td><td><a href="armv7m_nvic.c.html#L2025">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2039</td><td><a href="armv7m_nvic.c.html#L2039">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2048</td><td><a href="armv7m_nvic.c.html#L2048">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2091</td><td><a href="armv7m_nvic.c.html#L2091">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2203</td><td><a href="armv7m_nvic.c.html#L2203">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2297</td><td><a href="armv7m_nvic.c.html#L2297">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="armv7m_nvic.c.html#L2301">(sbank < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2334</td><td><a href="armv7m_nvic.c.html#L2334">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2424</td><td><a href="armv7m_nvic.c.html#L2424">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2429</td><td><a href="armv7m_nvic.c.html#L2429">(sbank < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2460</td><td><a href="armv7m_nvic.c.html#L2460">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="armv7m_nvic.c.html#L1068">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1099</td><td><a href="armv7m_nvic.c.html#L1099">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1136</td><td><a href="armv7m_nvic.c.html#L1136">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1517</td><td><a href="armv7m_nvic.c.html#L1517">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1642</td><td><a href="armv7m_nvic.c.html#L1642">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1701</td><td><a href="armv7m_nvic.c.html#L1701">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1725</td><td><a href="armv7m_nvic.c.html#L1725">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2452</td><td><a href="armv7m_nvic.c.html#L2452">(attrs.secure)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">250</td><td><a href="armv7m_nvic.c.html#L250">(!exc_is_banked(i))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1354</td><td><a href="armv7m_nvic.c.html#L1354">(!cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1508</td><td><a href="armv7m_nvic.c.html#L1508">(!cpu_isar_feature(aa32_ras, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1514</td><td><a href="armv7m_nvic.c.html#L1514">(!cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1541</td><td><a href="armv7m_nvic.c.html#L1541">(!cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1546</td><td><a href="armv7m_nvic.c.html#L1546">(!cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1822</td><td><a href="armv7m_nvic.c.html#L1822">(!arm_v7m_csselr_razwi(cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2067</td><td><a href="armv7m_nvic.c.html#L2067">(!cpu_isar_feature(aa32_ras, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">900</td><td><a href="armv7m_nvic.c.html#L900">(!vec)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1061</td><td><a href="armv7m_nvic.c.html#L1061">(nvic_isrpending(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="armv7m_nvic.c.html#L1065">(nvic_rettobase(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1827</td><td><a href="armv7m_nvic.c.html#L1827">(cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2073</td><td><a href="armv7m_nvic.c.html#L2073">(cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2127</td><td><a href="armv7m_nvic.c.html#L2127">(cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2133</td><td><a href="armv7m_nvic.c.html#L2133">(cpu_isar_feature(aa32_vfp_simd, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2135</td><td><a href="armv7m_nvic.c.html#L2135">(cpu_isar_feature(any_fp16, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2139</td><td><a href="armv7m_nvic.c.html#L2139">(cpu_isar_feature(aa32_lob, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="armv7m_nvic.c.html#L446">(secure)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">465</td><td><a href="armv7m_nvic.c.html#L465">(secure)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">516</td><td><a href="armv7m_nvic.c.html#L516">(secure)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">563</td><td><a href="armv7m_nvic.c.html#L563">(derived)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">632</td><td><a href="armv7m_nvic.c.html#L632">(escalate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">730</td><td><a href="armv7m_nvic.c.html#L730">(escalate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">758</td><td><a href="armv7m_nvic.c.html#L758">(escalate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">974</td><td><a href="armv7m_nvic.c.html#L974">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">993</td><td><a href="armv7m_nvic.c.html#L993">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1385</td><td><a href="armv7m_nvic.c.html#L1385">(aliasno)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1412</td><td><a href="armv7m_nvic.c.html#L1412">(aliasno)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1878</td><td><a href="armv7m_nvic.c.html#L1878">(aliasno)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1928</td><td><a href="armv7m_nvic.c.html#L1928">(aliasno)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2662</td><td><a href="armv7m_nvic.c.html#L2662">(level)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptadd.c Ctrl Expressions (12) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptadd.c Ctrl Expressions (12) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptadd.c Ctrl Expressions (12)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">396</td><td><a href="coptadd.c.html#L396">(<span style='background-color:#9c4c02;'>CE_IsCallTo(L[0], "pushax") && CS_GetEntries(S, L + 1, I + 1, 3) && !CS_RangeHasLabel(S, I + 1, 3) && L[1]->OPC == OP65_LDA && (L[1]->AM == AM65_ABS || L[1]->AM == AM65_ZP) && L[2]->OPC == OP65_LDX && (L[2]->AM == AM65_ABS || L[2]->AM == AM65_ZP) && CE_IsCallTo(L[3], "tosaddax")</span>)</a></td><td class="num">109.80</td></tr>
+      <tr><td class="num line">530</td><td><a href="coptadd.c.html#L530">(E->OPC == OP65_ADC && CS_GetEntries(S, L, I + 1, 3) && (L[0]->OPC == OP65_BCC || L[0]->OPC == OP65_JCC) && L[0]->JumpTo != 0 && !CE_HasLabel(L[0]) && L[1]->OPC == OP65_INX && !CE_HasLabel(L[1]) && L[0]->JumpTo->Owner == L[2] && !RegXUsed(S, I + 3))</a></td><td class="num">96.95</td></tr>
+      <tr><td class="num line">210</td><td><a href="coptadd.c.html#L210">(L[0]->OPC == OP65_LDY && CE_IsConstImm(L[0]) && !CS_RangeHasLabel(S, I + 1, 3) && CS_GetEntries(S, L + 1, I + 1, 3) && CE_IsCallTo(L[1], "ldaxysp") && L[2]->OPC == OP65_LDY && CE_IsConstImm(L[2]) && CE_IsCallTo(L[3], "addeqysp") && (GetRegInfo(S, I + 4, REG_AX) & REG_AX) == 0)</a></td><td class="num">74.65</td></tr>
+      <tr><td class="num line">90</td><td><a href="coptadd.c.html#L90">(L[0]->OPC == OP65_LDY && CE_IsConstImm(L[0]) && !CS_RangeHasLabel(S, I + 1, 5) && CS_GetEntries(S, L + 1, I + 1, 5) && CE_IsCallTo(L[1], "ldaxysp") && CE_IsCallTo(L[2], "pushax") && L[3]->OPC == OP65_LDY && CE_IsConstImm(L[3]) && CE_IsCallTo(L[4], "ldaxysp") && CE_IsCallTo(L[5], "tosaddax"))</a></td><td class="num">53.80</td></tr>
+      <tr><td class="num line">471</td><td><a href="coptadd.c.html#L471">(E->OPC == OP65_JSR && strncmp(E->Arg, "incax", 5) == 0 && IsDigit(E->Arg[5]) && E->Arg[6] == '\0' && !RegXUsed(S, I + 1))</a></td><td class="num">48.10</td></tr>
+      <tr><td class="num line">318</td><td><a href="coptadd.c.html#L318">(CE_IsCallTo(L[0], "pushax") && CS_GetEntries(S, L + 1, I + 1, 4) && !CS_RangeHasLabel(S, I + 1, 3) && L[1]->OPC == OP65_LDX && CE_IsKnownImm(L[1], 0) && L[2]->OPC == OP65_LDA && CE_IsCallTo(L[3], "tosaddax"))</a></td><td class="num">47.80</td></tr>
+      <tr><td class="num line">82</td><td><a href="coptadd.c.html#L82">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="coptadd.c.html#L202">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="coptadd.c.html#L310">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">388</td><td><a href="coptadd.c.html#L388">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">463</td><td><a href="coptadd.c.html#L463">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">522</td><td><a href="coptadd.c.html#L522">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

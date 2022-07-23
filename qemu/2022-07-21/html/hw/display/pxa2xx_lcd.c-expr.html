@@ -1,0 +1,136 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\display\pxa2xx_lcd.c Ctrl Expressions (85) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\display\pxa2xx_lcd.c Ctrl Expressions (85) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\display\pxa2xx_lcd.c Ctrl Expressions (85)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">736</td><td><a href="pxa2xx_lcd.c.html#L736">(!((descptr >= PXA2XX_SDRAM_BASE && <span style='background-color:#741da3;'>descptr + sizeof(desc) <= PXA2XX_SDRAM_BASE + current_machine->ram_size</span>) || (descptr >= PXA2XX_INTERNAL_BASE && descptr + sizeof(desc) <= PXA2XX_INTERNAL_BASE + PXA2XX_INTERNAL_SIZE)))</a></td><td class="num">1076.05</td></tr>
+      <tr><td class="num line">1280</td><td><a href="pxa2xx_lcd.c.html#L1280">(!((fbptr >= PXA2XX_SDRAM_BASE && fbptr <= PXA2XX_SDRAM_BASE + current_machine->ram_size) || (fbptr >= PXA2XX_INTERNAL_BASE && fbptr <= PXA2XX_INTERNAL_BASE + PXA2XX_INTERNAL_SIZE)))</a></td><td class="num">71.35</td></tr>
+      <tr><td class="num line">858</td><td><a href="pxa2xx_lcd.c.html#L858">(!(s->control[0] & LCCR0_LCDT) && (value & LCCR0_LCDT))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">895</td><td><a href="pxa2xx_lcd.c.html#L895">(!(s->ovl1c[0] & OVLC1_EN) && (value & OVLC1_EN))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">907</td><td><a href="pxa2xx_lcd.c.html#L907">(!(s->ovl2c[0] & OVLC1_EN) && (value & OVLC1_EN))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">663</td><td><a href="pxa2xx_lcd.c.html#L663">(!(s->dma_ch[ch].command & LDCMD_SOFINT))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">686</td><td><a href="pxa2xx_lcd.c.html#L686">(!(s->dma_ch[ch].command & LDCMD_EOFINT))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">862</td><td><a href="pxa2xx_lcd.c.html#L862">((s->control[3] & LCCR3_API) && (value & LCCR0_ENB) && !(value & LCCR0_LCDT))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">855</td><td><a href="pxa2xx_lcd.c.html#L855">((s->control[0] & LCCR0_ENB) && !(value & LCCR0_ENB))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">921</td><td><a href="pxa2xx_lcd.c.html#L921">(!(s->ccr & CCR_CEN) && (value & CCR_CEN))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1295</td><td><a href="pxa2xx_lcd.c.html#L1295">(LCCR4_PALFOR(s->control[4]) != s->pal_for)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">1239</td><td><a href="pxa2xx_lcd.c.html#L1239">(!(s->control[0] & LCCR0_ENB))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="pxa2xx_lcd.c.html#L1263">(!(s->control[0] & LCCR0_ENB))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="pxa2xx_lcd.c.html#L728">(s->dma_ch[i].branch & FBR_BRA)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">730</td><td><a href="pxa2xx_lcd.c.html#L730">(s->dma_ch[i].branch & FBR_BINT)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1288</td><td><a href="pxa2xx_lcd.c.html#L1288">(s->dma_ch[ch].command & LDCMD_PAL)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">725</td><td><a href="pxa2xx_lcd.c.html#L725">(!s->dma_ch[i].up)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1275</td><td><a href="pxa2xx_lcd.c.html#L1275">(!s->dma_ch[ch].source)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1124</td><td><a href="pxa2xx_lcd.c.html#L1124">(s->bpp == pxa_lcdc_19pbpp || s->bpp == pxa_lcdc_18pbpp)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="pxa2xx_lcd.c.html#L1153">(s->bpp == pxa_lcdc_19pbpp || s->bpp == pxa_lcdc_18pbpp)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1184</td><td><a href="pxa2xx_lcd.c.html#L1184">(s->bpp == pxa_lcdc_19pbpp || s->bpp == pxa_lcdc_18pbpp)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1215</td><td><a href="pxa2xx_lcd.c.html#L1215">(s->bpp == pxa_lcdc_19pbpp || s->bpp == pxa_lcdc_18pbpp)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1245</td><td><a href="pxa2xx_lcd.c.html#L1245">(width != s->xres || height != s->yres)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="pxa2xx_lcd.c.html#L1246">(s->orientation == 90 || s->orientation == 270)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">793</td><td><a href="pxa2xx_lcd.c.html#L793">(!(ch >= 0 && ch < PXA_LCDDMA_CHANS))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">943</td><td><a href="pxa2xx_lcd.c.html#L943">(!(ch >= 0 && ch < PXA_LCDDMA_CHANS))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1040</td><td><a href="pxa2xx_lcd.c.html#L1040">(s->control[0] & LCCR0_CMS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="pxa2xx_lcd.c.html#L1052">(s->control[0] & LCCR0_CMS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="pxa2xx_lcd.c.html#L1063">(s->control[0] & LCCR0_CMS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="pxa2xx_lcd.c.html#L1074">(s->control[0] & LCCR0_CMS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1309</td><td><a href="pxa2xx_lcd.c.html#L1309">(s->control[0] & LCCR0_DIS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1274</td><td><a href="pxa2xx_lcd.c.html#L1274">(s->dma_ch[ch].up)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1126</td><td><a href="pxa2xx_lcd.c.html#L1126">(s->bpp > pxa_lcdc_16bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1128</td><td><a href="pxa2xx_lcd.c.html#L1128">(s->bpp > pxa_lcdc_8bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1155</td><td><a href="pxa2xx_lcd.c.html#L1155">(s->bpp > pxa_lcdc_16bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1157</td><td><a href="pxa2xx_lcd.c.html#L1157">(s->bpp > pxa_lcdc_8bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1186</td><td><a href="pxa2xx_lcd.c.html#L1186">(s->bpp > pxa_lcdc_16bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1188</td><td><a href="pxa2xx_lcd.c.html#L1188">(s->bpp > pxa_lcdc_8bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1217</td><td><a href="pxa2xx_lcd.c.html#L1217">(s->bpp > pxa_lcdc_16bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1219</td><td><a href="pxa2xx_lcd.c.html#L1219">(s->bpp > pxa_lcdc_8bpp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="pxa2xx_lcd.c.html#L470">(data[0] & 1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">482</td><td><a href="pxa2xx_lcd.c.html#L482">(data[1] & 1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">494</td><td><a href="pxa2xx_lcd.c.html#L494">(data[2] & 1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">506</td><td><a href="pxa2xx_lcd.c.html#L506">(data[2] & 1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">328</td><td><a href="pxa2xx_lcd.c.html#L328">(data & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">340</td><td><a href="pxa2xx_lcd.c.html#L340">(data & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">436</td><td><a href="pxa2xx_lcd.c.html#L436">(data & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">552</td><td><a href="pxa2xx_lcd.c.html#L552">(data & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="pxa2xx_lcd.c.html#L578">(data & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="pxa2xx_lcd.c.html#L652">(s->irqlevel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">675</td><td><a href="pxa2xx_lcd.c.html#L675">(s->irqlevel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="pxa2xx_lcd.c.html#L698">(s->irqlevel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">709</td><td><a href="pxa2xx_lcd.c.html#L709">(s->irqlevel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">987</td><td><a href="pxa2xx_lcd.c.html#L987">(value & LCSR0_BER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="pxa2xx_lcd.c.html#L1107">(s->transp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1133</td><td><a href="pxa2xx_lcd.c.html#L1133">(s->invalidated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="pxa2xx_lcd.c.html#L1162">(s->invalidated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1194</td><td><a href="pxa2xx_lcd.c.html#L1194">(s->invalidated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1225</td><td><a href="pxa2xx_lcd.c.html#L1225">(s->invalidated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">214</td><td><a href="pxa2xx_lcd.c.html#L214">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="pxa2xx_lcd.c.html#L239">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">264</td><td><a href="pxa2xx_lcd.c.html#L264">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="pxa2xx_lcd.c.html#L289">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="pxa2xx_lcd.c.html#L317">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">355</td><td><a href="pxa2xx_lcd.c.html#L355">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="pxa2xx_lcd.c.html#L377">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">425</td><td><a href="pxa2xx_lcd.c.html#L425">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">452</td><td><a href="pxa2xx_lcd.c.html#L452">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="pxa2xx_lcd.c.html#L520">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="pxa2xx_lcd.c.html#L541">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">567</td><td><a href="pxa2xx_lcd.c.html#L567">(width > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="pxa2xx_lcd.c.html#L643">(ch == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="pxa2xx_lcd.c.html#L666">(ch == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="pxa2xx_lcd.c.html#L689">(ch == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="pxa2xx_lcd.c.html#L722">(i < PXA_LCDDMA_CHANS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="pxa2xx_lcd.c.html#L1036">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1273</td><td><a href="pxa2xx_lcd.c.html#L1273">(ch < PXA_LCDDMA_CHANS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1315</td><td><a href="pxa2xx_lcd.c.html#L1315">(miny >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="pxa2xx_lcd.c.html#L1120">(!fn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1149</td><td><a href="pxa2xx_lcd.c.html#L1149">(!fn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1179</td><td><a href="pxa2xx_lcd.c.html#L1179">(!fn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1210</td><td><a href="pxa2xx_lcd.c.html#L1210">(!fn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">651</td><td><a href="pxa2xx_lcd.c.html#L651">(unmasked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">674</td><td><a href="pxa2xx_lcd.c.html#L674">(unmasked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">697</td><td><a href="pxa2xx_lcd.c.html#L697">(unmasked)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

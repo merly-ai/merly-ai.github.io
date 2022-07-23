@@ -1,0 +1,730 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\arm\helper.c Ctrl Expressions (679) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\arm\helper.c Ctrl Expressions (679) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\arm\helper.c Ctrl Expressions (679)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">8418</td><td><a href="helper.c.html#L8418">((<span style='background-color:#741da3;'>(r->crm == CP_ANY) && crm != 0</span>) || (<span style='background-color:#741da3;'>(r->opc1 == CP_ANY) && opc1 != 0</span>) || (<span style='background-color:#741da3;'>(r->opc2 == CP_ANY) && opc2 != 0</span>))</a></td><td class="num">3051.50</td></tr>
+      <tr><td class="num line">8824</td><td><a href="helper.c.html#L8824">(write_type != CPSRWriteRaw && (<span style='background-color:#741da3;'>(env->uncached_cpsr ^ val) & mask & CPSR_M</span>))</a></td><td class="num">1032.00</td></tr>
+      <tr><td class="num line">7078</td><td><a href="helper.c.html#L7078">(<span style='background-color:#741da3;'>!arm_feature(env, ARM_FEATURE_V8) && arm_current_el(env) < 2 && !arm_is_secure_below_el3(env) && (env->cp15.hstr_el2 & HSTR_TJDBX)</span>)</a></td><td class="num">1021.00</td></tr>
+      <tr><td class="num line">9847</td><td><a href="helper.c.html#L9847">(<span style='background-color:#741da3;'>new_el == 3 && (env->cp15.scr_el3 & SCR_EASE) && syndrome_is_sync_extabt(env->exception.syndrome)</span>)</a></td><td class="num">1021.00</td></tr>
+      <tr><td class="num line">2124</td><td><a href="helper.c.html#L2124">(<span style='background-color:#741da3;'>arm_current_el(env) < 2 && !arm_is_secure_below_el3(env) && (env->cp15.hstr_el2 & HSTR_TTEE)</span>)</a></td><td class="num">1017.50</td></tr>
+      <tr><td class="num line">8777</td><td><a href="helper.c.html#L8777">(<span style='background-color:#741da3;'>write_type != CPSRWriteRaw && !arm_feature(env, ARM_FEATURE_V8) && arm_feature(env, ARM_FEATURE_EL3) && !arm_feature(env, ARM_FEATURE_EL2) && !arm_is_secure(env)</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">10283</td><td><a href="helper.c.html#L10283">(<span style='background-color:#741da3;'>((res ^ a) & 0x8000) && ((a ^ b) & 0x8000)</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">10298</td><td><a href="helper.c.html#L10298">(<span style='background-color:#741da3;'>((res ^ a) & 0x80) && ((a ^ b) & 0x80)</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">8401</td><td><a href="helper.c.html#L8401">(<span style='background-color:#741da3;'>HOST_BIG_ENDIAN && r->state == ARM_CP_STATE_BOTH && r2->fieldoffset</span>)</a></td><td class="num">1015.00</td></tr>
+      <tr><td class="num line">10576</td><td><a href="helper.c.html#L10576">((<span style='background-color:#741da3;'>arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && cur_el <= 2 && !arm_is_secure_below_el3(env)</span>))</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">1108</td><td><a href="helper.c.html#L1108">(<span style='background-color:#741da3;'>el == 2 && (counter < hpmn || counter == 31)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">2206</td><td><a href="helper.c.html#L2206">(<span style='background-color:#741da3;'>!isread && ri->state == ARM_CP_STATE_AA32 && arm_is_secure_below_el3(env)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">6953</td><td><a href="helper.c.html#L6953">(<span style='background-color:#741da3;'>el < 2 && arm_is_el2_enabled(env) && !(hcr & HCR_ENSCXT)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">1244</td><td><a href="helper.c.html#L1244">(<span style='background-color:#741da3;'>env->cp15.c14_pmevcntr[counter] & ~new_pmevcntr & INT32_MIN</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">1360</td><td><a href="helper.c.html#L1360">(<span style='background-color:#741da3;'>env->cp15.c14_pmevcntr[i] & ~new_pmswinc & INT32_MIN</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">1099</td><td><a href="helper.c.html#L1099">(<span style='background-color:#741da3;'>!arm_feature(env, ARM_FEATURE_EL2) || (counter < hpmn || counter == 31)</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">6783</td><td><a href="helper.c.html#L6783">(<span style='background-color:#741da3;'>(arm_current_el(env) < 2) && (arm_hcr_el2_eff(env) & HCR_TID5)</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">7044</td><td><a href="helper.c.html#L7044">(<span style='background-color:#741da3;'>(arm_current_el(env) < 2) && (arm_hcr_el2_eff(env) & HCR_TID3)</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">11096</td><td><a href="helper.c.html#L11096">(<span style='background-color:#9c4c02;'>(env->v7m.fpccr[env->v7m.secure] & R_V7M_FPCCR_ASPEN_MASK) && (!(env->v7m.control[M_REG_S] & R_V7M_CONTROL_FPCA_MASK) || (env->v7m.secure && !(env->v7m.control[M_REG_S] & R_V7M_CONTROL_SFPA_MASK)))</span>)</a></td><td class="num">125.50</td></tr>
+      <tr><td class="num line">10798</td><td><a href="helper.c.html#L10798">(el == 0 && FIELD_EX64(env->svcr, SVCR, SM) && (!arm_is_el2_enabled(env) || (arm_el_is_aa64(env, 2) && !(env->cp15.hcr_el2 & HCR_TGE))) && arm_el_is_aa64(env, 1) && !sme_fa64(env, el))</a></td><td class="num">72.75</td></tr>
+      <tr><td class="num line">9484</td><td><a href="helper.c.html#L9484">(cs->exception_index == EXCP_PREFETCH_ABORT || (cs->exception_index == EXCP_DATA_ABORT && !(env->exception.syndrome & ARM_EL_ISV)) || syn_get_ec(env->exception.syndrome) == EC_UNCATEGORIZED)</a></td><td class="num">63.50</td></tr>
+      <tr><td class="num line">2261</td><td><a href="helper.c.html#L2261">(has_el2 && timeridx == GTIMER_PHYS && (hcr & HCR_E2H ? !extract32(env->cp15.cnthctl_el2, 10, 1) : !extract32(env->cp15.cnthctl_el2, 0, 1)))</a></td><td class="num">53.50</td></tr>
+      <tr><td class="num line">1347</td><td><a href="helper.c.html#L1347">((value & (1 << i)) && pmu_counter_enabled(env, i) && (env->cp15.c14_pmevtyper[i] & PMXEVTYPER_EVTCOUNT) == 0x0)</a></td><td class="num">53.25</td></tr>
+      <tr><td class="num line">115</td><td><a href="helper.c.html#L115">((ri->type & ARM_CP_CONST) || ri->fieldoffset || ((ri->raw_writefn || ri->writefn) && (ri->raw_readfn || ri->readfn)))</a></td><td class="num">50.00</td></tr>
+      <tr><td class="num line">8693</td><td><a href="helper.c.html#L8693">(write_type == CPSRWriteByInstr && ((env->uncached_cpsr & CPSR_M) == ARM_CPU_MODE_HYP || mode == ARM_CPU_MODE_HYP))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">5801</td><td><a href="helper.c.html#L5801">(a->feature && !a->feature(&cpu->isar))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">11090</td><td><a href="helper.c.html#L11090">(arm_feature(env, ARM_FEATURE_M_SECURITY) && FIELD_EX32(env->v7m.fpccr[M_REG_S], V7M_FPCCR, S) != env->v7m.secure)</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">8494</td><td><a href="helper.c.html#L8494">(arm_feature(&cpu->env, ARM_FEATURE_V8) && !arm_feature(&cpu->env, ARM_FEATURE_M))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">5261</td><td><a href="helper.c.html#L5261">(!arm_is_el2_enabled(env) || (arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_HXEN)))</a></td><td class="num">45.75</td></tr>
+      <tr><td class="num line">6194</td><td><a href="helper.c.html#L6194">(arm_current_el(env) < 3 && arm_feature(env, ARM_FEATURE_EL3) && !FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, ESM))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">6007</td><td><a href="helper.c.html#L6007">(arm_feature(env, ARM_FEATURE_EL3) && !FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, EZ))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">6056</td><td><a href="helper.c.html#L6056">(arm_feature(env, ARM_FEATURE_EL3) && !FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, ESM))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">3656</td><td><a href="helper.c.html#L3656">(cpreg_field_is_64bit(ri) && extract64(raw_read(env, ri) ^ value, 48, 16) != 0)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">10938</td><td><a href="helper.c.html#L10938">(tbid && !(env->pstate & PSTATE_TCO) && (sctlr & (el == 0 ? SCTLR_TCF0 : SCTLR_TCF)))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">1043</td><td><a href="helper.c.html#L1043">(arm_feature(env, ARM_FEATURE_V8) && arm_current_el(env) == 0 && (env->cp15.c9_pmuserenr & 1 << 1) != 0 && !isread)</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">8714</td><td><a href="helper.c.html#L8714">(write_type == CPSRWriteByInstr && (env->uncached_cpsr & CPSR_M) == ARM_CPU_MODE_MON && (arm_hcr_el2_eff(env) & HCR_TGE))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">1028</td><td><a href="helper.c.html#L1028">(arm_feature(env, ARM_FEATURE_V8) && arm_current_el(env) == 0 && (env->cp15.c9_pmuserenr & 1 << 3) != 0 && isread)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">1072</td><td><a href="helper.c.html#L1072">(arm_feature(env, ARM_FEATURE_V8) && arm_current_el(env) == 0 && (env->cp15.c9_pmuserenr & 1 << 2) != 0 && isread)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">6797</td><td><a href="helper.c.html#L6797">(!(hcr & HCR_ATA) && (!(hcr & HCR_E2H) || !(hcr & HCR_TGE)))</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">8885</td><td><a href="helper.c.html#L8885">(arm_feature(env, ARM_FEATURE_M) && (env->v7m.ccr[env->v7m.secure] & R_V7M_CCR_DIV_0_TRP_MASK))</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">8389</td><td><a href="helper.c.html#L8389">((r->state == ARM_CP_STATE_BOTH && ns) || (arm_feature(env, ARM_FEATURE_V8) && !ns))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">1058</td><td><a href="helper.c.html#L1058">(arm_feature(env, ARM_FEATURE_V8) && arm_current_el(env) == 0 && (env->cp15.c9_pmuserenr & 1 << 3) != 0)</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">10253</td><td><a href="helper.c.html#L10253">(((res ^ a) & 0x8000) && !((a ^ b) & 0x8000))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">10268</td><td><a href="helper.c.html#L10268">(((res ^ a) & 0x80) && !((a ^ b) & 0x80))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">10784</td><td><a href="helper.c.html#L10784">(el < 2 && env->cp15.hstr_el2 && (arm_hcr_el2_eff(env) & HCR_E2H | HCR_TGE) != HCR_E2H | HCR_TGE)</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">6943</td><td><a href="helper.c.html#L6943">(el == 0 && !((hcr & HCR_E2H) && (hcr & HCR_TGE)))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">10945</td><td><a href="helper.c.html#L10945">(EX_TBFLAG_A64(flags, UNPRIV) && tbid && !(env->pstate & PSTATE_TCO) && (sctlr & SCTLR_TCF0) && allocation_tag_access_enabled(env, 0, sctlr))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">11034</td><td><a href="helper.c.html#L11034">(unlikely(c.flags != r.flags || c.flags2 != r.flags2))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">5237</td><td><a href="helper.c.html#L5237">(arm_current_el(env) < 3 && arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_HXEN))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">6182</td><td><a href="helper.c.html#L6182">(el < 3 && arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_ENTP2))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">6466</td><td><a href="helper.c.html#L6466">(el < 3 && arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_APK))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">6801</td><td><a href="helper.c.html#L6801">(el < 3 && arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_ATA))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">6956</td><td><a href="helper.c.html#L6956">(el < 3 && arm_feature(env, ARM_FEATURE_EL3) && !(env->cp15.scr_el3 & SCR_ENSCXT))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">6950</td><td><a href="helper.c.html#L6950">(el < 2 && (env->cp15.sctlr_el[2] & SCTLR_TSCXT))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">10761</td><td><a href="helper.c.html#L10761">(arm_feature(env, ARM_FEATURE_V8) && !((mmu_idx & ARM_MMU_IDX_M_NEGPRI) && (ccr & R_V7M_CCR_STKOFHFNMIGN_MASK)))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="helper.c.html#L3366">(arm_current_el(env) == 3 && !(env->cp15.scr_el3 & SCR_NS | SCR_EEL2))</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">1010</td><td><a href="helper.c.html#L1010">(el == 0 && !(env->cp15.c9_pmuserenr & 1))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">5991</td><td><a href="helper.c.html#L5991">(el != 0 || !(env->cp15.hcr_el2 & HCR_TGE))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">6040</td><td><a href="helper.c.html#L6040">(el != 0 || !(env->cp15.hcr_el2 & HCR_TGE))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">9950</td><td><a href="helper.c.html#L9950">((env->cp15.sctlr_el[new_el] & SCTLR_SPAN) == 0)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="helper.c.html#L753">(arm_current_el(env) == 1 && arm_is_el2_enabled(env) && FIELD_EX64(env->cp15.cptr_el[2], CPTR_EL2, TCPAC))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="helper.c.html#L757">(arm_current_el(env) < 3 && FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, TCPAC))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">770</td><td><a href="helper.c.html#L770">(arm_current_el(env) == 2 && FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, TCPAC))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2252</td><td><a href="helper.c.html#L2252">(has_el2 && timeridx == GTIMER_PHYS && !extract32(env->cp15.cnthctl_el2, 1, 1))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">4585</td><td><a href="helper.c.html#L4585">(!(env->cp15.sctlr_el[2] & SCTLR_DZE))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">4589</td><td><a href="helper.c.html#L4589">(!(env->cp15.sctlr_el[1] & SCTLR_DZE))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">5856</td><td><a href="helper.c.html#L5856">(!(env->cp15.sctlr_el[2] & SCTLR_UCT))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">5860</td><td><a href="helper.c.html#L5860">(!(env->cp15.sctlr_el[1] & SCTLR_UCT))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">9403</td><td><a href="helper.c.html#L9403">(!(env->cp15.sctlr_el[new_el] & SCTLR_SPAN))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">715</td><td><a href="helper.c.html#L715">(arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && !arm_is_secure(env) && !extract32(env->cp15.nsacr, 10, 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">732</td><td><a href="helper.c.html#L732">(arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && !arm_is_secure(env) && !extract32(env->cp15.nsacr, 10, 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2246</td><td><a href="helper.c.html#L2246">(timeridx == GTIMER_PHYS && !extract32(env->cp15.cnthctl_el2, 10, 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">5276</td><td><a href="helper.c.html#L5276">(arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && !arm_is_secure(env) && !extract32(env->cp15.nsacr, 10, 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">5292</td><td><a href="helper.c.html#L5292">(arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && !arm_is_secure(env) && !extract32(env->cp15.nsacr, 10, 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">6461</td><td><a href="helper.c.html#L6461">(el < 2 && arm_is_el2_enabled(env) && !(arm_hcr_el2_eff(env) & HCR_APK))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4424</td><td><a href="helper.c.html#L4424">(page_size_granule != (param.using64k ? 3 : param.using16k ? 2 : 1))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">3673</td><td><a href="helper.c.html#L3673">(extract64(raw_read(env, ri) ^ value, 48, 16) && (arm_hcr_el2_eff(env) & HCR_E2H))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">4031</td><td><a href="helper.c.html#L4031">(arm_current_el(env) == 0 && !(arm_sctlr(env, 0) & SCTLR_UMA))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">158</td><td><a href="helper.c.html#L158">(read_raw_cp_reg(&cpu->env, ri) != oldval)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">192</td><td><a href="helper.c.html#L192">(read_raw_cp_reg(&cpu->env, ri) != v)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">6072</td><td><a href="helper.c.html#L6072">(!FIELD_EX64(env->vfp.smcr_el[1], SMCR, FA64))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">6077</td><td><a href="helper.c.html#L6077">(!FIELD_EX64(env->vfp.smcr_el[2], SMCR, FA64))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">6082</td><td><a href="helper.c.html#L6082">(!FIELD_EX64(env->vfp.smcr_el[3], SMCR, FA64))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">10028</td><td><a href="helper.c.html#L10028">(qemu_loglevel_mask(CPU_LOG_INT) && !excp_is_internal(cs->exception_index))</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">3298</td><td><a href="helper.c.html#L3298">(ri->crm == 9 && (env->uncached_cpsr & CPSR_PAN))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">3385</td><td><a href="helper.c.html#L3385">(ri->crm == 9 && (env->pstate & PSTATE_PAN))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">3149</td><td><a href="helper.c.html#L3149">(fi.type == ARMFault_SyncExternalOnWalk && (env->cp15.scr_el3 & SCR_EA))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">8570</td><td><a href="helper.c.html#L8570">(r->state != state && r->state != ARM_CP_STATE_BOTH)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">9477</td><td><a href="helper.c.html#L9477">(cs->exception_index != EXCP_IRQ && cs->exception_index != EXCP_FIQ)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">316</td><td><a href="helper.c.html#L316">(el < 3 && (env->cp15.mdcr_el3 & MDCR_TPM))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">1016</td><td><a href="helper.c.html#L1016">(el < 3 && (env->cp15.mdcr_el3 & MDCR_TPM))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">5891</td><td><a href="helper.c.html#L5891">(el < 3 && (env->cp15.scr_el3 & SCR_TERR))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">5904</td><td><a href="helper.c.html#L5904">(el < 3 && (env->cp15.scr_el3 & SCR_EA))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">5918</td><td><a href="helper.c.html#L5918">(el < 3 && (env->cp15.scr_el3 & SCR_EA))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">6411</td><td><a href="helper.c.html#L6411">(el < 3 && (env->cp15.scr_el3 & SCR_TLOR))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2134</td><td><a href="helper.c.html#L2134">(arm_current_el(env) == 0 && (env->teecr & 1))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">8258</td><td><a href="helper.c.html#L8258">(cp == 0 && r->state == ARM_CP_STATE_BOTH)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">5083</td><td><a href="helper.c.html#L5083">((env->cp15.hcr_el2 ^ value) & HCR_VM | HCR_PTW | HCR_DC | HCR_DCT | HCR_FWB)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">391</td><td><a href="helper.c.html#L391">(raw_read(env, ri) != value && !arm_feature(env, ARM_FEATURE_PMSA) && !extended_addresses_enabled(env))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">8811</td><td><a href="helper.c.html#L8811">((A32_BANKED_CURRENT_REG_GET(env, sctlr) & SCTLR_NMFI) && (val & CPSR_F))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">10884</td><td><a href="helper.c.html#L10884">(sctlr & (SCTLR_EnIA | SCTLR_EnIB | SCTLR_EnDA | SCTLR_EnDB))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">11145</td><td><a href="helper.c.html#L11145">(EX_TBFLAG_ANY(flags, SS_ACTIVE) && (env->pstate & PSTATE_SS))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1188</td><td><a href="helper.c.html#L1188">(env->cp15.c15_ccnt & ~new_pmccntr & overflow_mask)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3139</td><td><a href="helper.c.html#L3139">(fi.s1ptw && current_el == 1 && arm_mmu_idx_is_stage1_of_2(mmu_idx))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">4649</td><td><a href="helper.c.html#L4649">(ri->state == ARM_CP_STATE_AA64 && !cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">275</td><td><a href="helper.c.html#L275">(!is_a64(env) && arm_current_el(env) == 3 && arm_is_secure_below_el3(env))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3219</td><td><a href="helper.c.html#L3219">(mmu_idx == ARMMMUIdx_E10_0 || mmu_idx == ARMMMUIdx_E10_1 || mmu_idx == ARMMMUIdx_E10_1_PAN)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">5215</td><td><a href="helper.c.html#L5215">((env->cp15.hcr_el2 & mask) != mask)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">8271</td><td><a href="helper.c.html#L8271">(cp == 0 || r->state == ARM_CP_STATE_BOTH)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">8393</td><td><a href="helper.c.html#L8393">((secstate != r->secure) && !ns)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">339</td><td><a href="helper.c.html#L339">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TSW))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">349</td><td><a href="helper.c.html#L349">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TACR))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">359</td><td><a href="helper.c.html#L359">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TTLB))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1749</td><td><a href="helper.c.html#L1749">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TID2))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1814</td><td><a href="helper.c.html#L1814">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TID1))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">5872</td><td><a href="helper.c.html#L5872">(arm_current_el(env) < 2 && arm_hcr_el2_eff(env) & HCR_TID2)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">7064</td><td><a href="helper.c.html#L7064">(arm_current_el(env) == 1 && (arm_hcr_el2_eff(env) & HCR_TID0))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">5888</td><td><a href="helper.c.html#L5888">(el < 2 && (arm_hcr_el2_eff(env) & HCR_TERR))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">5901</td><td><a href="helper.c.html#L5901">(el < 2 && (arm_hcr_el2_eff(env) & HCR_AMO))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">5914</td><td><a href="helper.c.html#L5914">(el < 2 && (arm_hcr_el2_eff(env) & HCR_AMO))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">6408</td><td><a href="helper.c.html#L6408">(el < 2 && (arm_hcr_el2_eff(env) & HCR_TLOR))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">6944</td><td><a href="helper.c.html#L6944">(env->cp15.sctlr_el[1] & SCTLR_TSCXT)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">9371</td><td><a href="helper.c.html#L9371">(env->cp15.sctlr_el[new_el] & SCTLR_EE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">9379</td><td><a href="helper.c.html#L9379">(env->cp15.sctlr_el[new_el] & SCTLR_DSSBS_32)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">9961</td><td><a href="helper.c.html#L9961">(env->cp15.sctlr_el[new_el] & SCTLR_DSSBS_64)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">10560</td><td><a href="helper.c.html#L10560">(!arm_el_is_aa64(env, 3) && (cur_el == 3 || arm_is_secure_below_el3(env)))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">11109</td><td><a href="helper.c.html#L11109">(env->v7m.fpccr[is_secure] & R_V7M_FPCCR_LSPACT_MASK)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">11127</td><td><a href="helper.c.html#L11127">(env->vfp.xregs[ARM_VFP_FPEXC] & 1 << 30)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">313</td><td><a href="helper.c.html#L313">(el < 2 && (mdcr_el2 & MDCR_TPM))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1013</td><td><a href="helper.c.html#L1013">(el < 2 && (mdcr_el2 & MDCR_TPM))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">10530</td><td><a href="helper.c.html#L10530">(arm_feature(env, ARM_FEATURE_M_SECURITY) && !env->v7m.secure)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="helper.c.html#L977">(cnt->supported(&cpu->env))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">8649</td><td><a href="helper.c.html#L8649">(strcmp(r->name, m->name) == 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">8309</td><td><a href="helper.c.html#L8309">((r->access & max_el) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">8826</td><td><a href="helper.c.html#L8826">((env->uncached_cpsr & CPSR_M) == ARM_CPU_MODE_USR)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">9681</td><td><a href="helper.c.html#L9681">((env->uncached_cpsr & CPSR_M) == ARM_CPU_MODE_MON)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1209</td><td><a href="helper.c.html#L1209">(!(env->cp15.c9_pmcr & PMCRLC))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2354</td><td><a href="helper.c.html#L2354">(!(env->cp15.scr_el3 & SCR_ST))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">8788</td><td><a href="helper.c.html#L8788">(!(env->cp15.scr_el3 & SCR_AW))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">8800</td><td><a href="helper.c.html#L8800">(!(env->cp15.scr_el3 & SCR_FW))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">9121</td><td><a href="helper.c.html#L9121">(idx >= 0 && idx < ARRAY_SIZE(excnames))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">9494</td><td><a href="helper.c.html#L9494">(arm_current_el(env) != 2 && addr < 0x14)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">9499</td><td><a href="helper.c.html#L9499">(!(env->cp15.scr_el3 & SCR_EA))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">9502</td><td><a href="helper.c.html#L9502">(!(env->cp15.scr_el3 & SCR_IRQ))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">9505</td><td><a href="helper.c.html#L9505">(!(env->cp15.scr_el3 & SCR_FIQ))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">10592</td><td><a href="helper.c.html#L10592">(cur_el != 0 || !(hcr_el2 & HCR_TGE))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">8905</td><td><a href="helper.c.html#L8905">(num == INT_MIN && den == -1)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4642</td><td><a href="helper.c.html#L4642">(arm_feature(env, ARM_FEATURE_PMSA) && !cpu->has_mpu)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">295</td><td><a href="helper.c.html#L295">(env->cp15.scr_el3 & SCR_EEL2)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1179</td><td><a href="helper.c.html#L1179">(env->cp15.c9_pmcr & PMCRD)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1223</td><td><a href="helper.c.html#L1223">(env->cp15.c9_pmcr & PMCRD)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2291</td><td><a href="helper.c.html#L2291">(!extract32(env->cp15.c14_cntkctl, 9 - timeridx, 1))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">3095</td><td><a href="helper.c.html#L3095">(env->cp15.scr_el3 & SCR_EEL2)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5574</td><td><a href="helper.c.html#L5574">(env->cp15.scr_el3 & SCR_EEL2)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5988</td><td><a href="helper.c.html#L5988">(env->cp15.hcr_el2 & HCR_E2H)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">6037</td><td><a href="helper.c.html#L6037">(env->cp15.hcr_el2 & HCR_E2H)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">9600</td><td><a href="helper.c.html#L9600">(env->cp15.scr_el3 & SCR_IRQ)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">9611</td><td><a href="helper.c.html#L9611">(env->cp15.scr_el3 & SCR_FIQ)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">10526</td><td><a href="helper.c.html#L10526">(!v7m_cpacr_pass(env, env->v7m.secure, cur_el != 0))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">10891</td><td><a href="helper.c.html#L10891">(sctlr & (el == 0 ? SCTLR_BT0 : SCTLR_BT1))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">10914</td><td><a href="helper.c.html#L10914">(env->cp15.hcr_el2 & HCR_TGE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">205</td><td><a href="helper.c.html#L205">(!(ri->type & ARM_CP_NO_RAW | ARM_CP_ALIAS))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">219</td><td><a href="helper.c.html#L219">(!(ri->type & ARM_CP_NO_RAW | ARM_CP_ALIAS))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3615</td><td><a href="helper.c.html#L3615">(arm_feature(env, ARM_FEATURE_LPAE) && (value & TTBCR_EAE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4618</td><td><a href="helper.c.html#L4618">(!(env->pstate & PSTATE_SP))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">8281</td><td><a href="helper.c.html#L8281">(!(r->type & ARM_CP_OVERRIDE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">8349</td><td><a href="helper.c.html#L8349">(!(r->type & ARM_CP_EL3_NO_EL2_C_NZ))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">8429</td><td><a href="helper.c.html#L8429">(!(r2->type & ARM_CP_NO_RAW))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">8552</td><td><a href="helper.c.html#L8552">(!(r->type & ARM_CP_SPECIAL_MASK | ARM_CP_CONST))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">8644</td><td><a href="helper.c.html#L8644">(pat && g_pattern_match_string(pat, r->name))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">10897</td><td><a href="helper.c.html#L10897">(!(env->pstate & PSTATE_UAO))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2217</td><td><a href="helper.c.html#L2217">(!isread && el < arm_highest_el(env))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5973</td><td><a href="helper.c.html#L5973">(el <= 1 && !el_is_in_host(env, el))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6022</td><td><a href="helper.c.html#L6022">(el <= 1 && !el_is_in_host(env, el))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6071</td><td><a href="helper.c.html#L6071">(el <= 1 && !el_is_in_host(env, el))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6105</td><td><a href="helper.c.html#L6105">(el <= 1 && !el_is_in_host(env, el))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6707</td><td><a href="helper.c.html#L6707">(qemu_guest_getrandom(&ret, sizeof(ret), &err) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">8300</td><td><a href="helper.c.html#L8300">(min_el == 2 && !arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">7637</td><td><a href="helper.c.html#L7637">(arm_feature(env, ARM_FEATURE_EL2) || (arm_feature(env, ARM_FEATURE_EL3) && arm_feature(env, ARM_FEATURE_V8)))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">9166</td><td><a href="helper.c.html#L9166">(mode == ARM_CPU_MODE_USR || mode == ARM_CPU_MODE_SYS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">9272</td><td><a href="helper.c.html#L9272">(mode == ARM_CPU_MODE_USR || mode == ARM_CPU_MODE_SYS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">9549</td><td><a href="helper.c.html#L9549">(env->exception.target_el == 2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">10091</td><td><a href="helper.c.html#L10091">(mmu_idx == ARMMMUIdx_Stage2 || mmu_idx == ARMMMUIdx_Stage2_S)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">10103</td><td><a href="helper.c.html#L10103">(mmu_idx == ARMMMUIdx_Stage2 || mmu_idx == ARMMMUIdx_Stage2_S)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">10134</td><td><a href="helper.c.html#L10134">(mmu_idx == ARMMMUIdx_Stage2 || mmu_idx == ARMMMUIdx_Stage2_S)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">11067</td><td><a href="helper.c.html#L11067">(env->v7m.ltpsize < 4)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">72</td><td><a href="helper.c.html#L72">(ri->type & ARM_CP_CONST)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">91</td><td><a href="helper.c.html#L91">(ri->type & ARM_CP_CONST)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">139</td><td><a href="helper.c.html#L139">(ri->type & ARM_CP_NO_RAW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">184</td><td><a href="helper.c.html#L184">(ri->type & ARM_CP_NO_RAW)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">980</td><td><a href="helper.c.html#L980">(cnt->number & 0x20)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="helper.c.html#L1783">(cs->interrupt_request & CPU_INTERRUPT_VIRQ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1787</td><td><a href="helper.c.html#L1787">(cs->interrupt_request & CPU_INTERRUPT_HARD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1793</td><td><a href="helper.c.html#L1793">(cs->interrupt_request & CPU_INTERRUPT_VFIQ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1797</td><td><a href="helper.c.html#L1797">(cs->interrupt_request & CPU_INTERRUPT_FIQ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1803</td><td><a href="helper.c.html#L1803">(cs->interrupt_request & CPU_INTERRUPT_VSERR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2379</td><td><a href="helper.c.html#L2379">(gt->ctl & 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2516</td><td><a href="helper.c.html#L2516">((oldval ^ value) & 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2519</td><td><a href="helper.c.html#L2519">((oldval ^ value) & 2)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3087</td><td><a href="helper.c.html#L3087">(ri->opc2 & 4)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4670</td><td><a href="helper.c.html#L4670">(ri->type & ARM_CP_SUPPRESS_TB_END)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6000</td><td><a href="helper.c.html#L6000">(FIELD_EX64(env->cp15.cptr_el[2], CPTR_EL2, TZ))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6049</td><td><a href="helper.c.html#L6049">(FIELD_EX64(env->cp15.cptr_el[2], CPTR_EL2, TSM))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">8301</td><td><a href="helper.c.html#L8301">(r->type & ARM_CP_EL3_NO_EL2_UNDEF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">8415</td><td><a href="helper.c.html#L8415">(r2->type & ARM_CP_SPECIAL_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">8553</td><td><a href="helper.c.html#L8553">(r->access & PL3_R)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">8558</td><td><a href="helper.c.html#L8558">(r->access & PL3_W)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10601</td><td><a href="helper.c.html#L10601">(FIELD_EX64(env->cp15.cptr_el[2], CPTR_EL2, TFP))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10608</td><td><a href="helper.c.html#L10608">(FIELD_EX64(env->cp15.cptr_el[3], CPTR_EL3, TFP))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10675</td><td><a href="helper.c.html#L10675">(env->pstate & PSTATE_PAN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10684</td><td><a href="helper.c.html#L10684">(env->pstate & PSTATE_PAN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10789</td><td><a href="helper.c.html#L10789">(env->uncached_cpsr & CPSR_IL)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">10923</td><td><a href="helper.c.html#L10923">(env->pstate & PSTATE_IL)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3258</td><td><a href="helper.c.html#L3258">(page_size == 1 << 24 && arm_feature(env, ARM_FEATURE_V7))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3944</td><td><a href="helper.c.html#L3944">(arm_is_el2_enabled(env) && cur_el == 1)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3972</td><td><a href="helper.c.html#L3972">(arm_is_el2_enabled(env) && cur_el == 1)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">5986</td><td><a href="helper.c.html#L5986">(el <= 2 && arm_is_el2_enabled(env))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6035</td><td><a href="helper.c.html#L6035">(el <= 2 && arm_is_el2_enabled(env))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6076</td><td><a href="helper.c.html#L6076">(el <= 2 && arm_is_el2_enabled(env))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6108</td><td><a href="helper.c.html#L6108">(el <= 2 && arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6795</td><td><a href="helper.c.html#L6795">(el < 2 && arm_is_el2_enabled(env))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">8844</td><td><a href="helper.c.html#L8844">(write_type != CPSRWriteByGDBStub && arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1118</td><td><a href="helper.c.html#L1118">(prohibited && counter == 31)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2297</td><td><a href="helper.c.html#L2297">(has_el2 && timeridx == GTIMER_PHYS)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3179</td><td><a href="helper.c.html#L3179">(target_el == 2 || arm_el_is_aa64(env, target_el) || arm_s1_regime_using_lpae_format(env, mmu_idx))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">11238</td><td><a href="helper.c.html#L11238">(old_a64 != new_a64 && sm)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1684</td><td><a href="helper.c.html#L1684">(!cpu_isar_feature(aa64_aa32_el1, cpu) && !cpu_isar_feature(aa64_aa32_el2, cpu))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7616</td><td><a href="helper.c.html#L7616">(!arm_feature(env, ARM_FEATURE_EL3) && !arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">9942</td><td><a href="helper.c.html#L9942">((arm_hcr_el2_eff(env) & HCR_E2H | HCR_TGE) != HCR_E2H | HCR_TGE)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">129</td><td><a href="helper.c.html#L129">(i < cpu->cpreg_array_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">174</td><td><a href="helper.c.html#L174">(i < cpu->cpreg_array_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2196</td><td><a href="helper.c.html#L2196">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2234</td><td><a href="helper.c.html#L2234">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2240</td><td><a href="helper.c.html#L2240">(!extract32(env->cp15.c14_cntkctl, timeridx, 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2281</td><td><a href="helper.c.html#L2281">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2300</td><td><a href="helper.c.html#L2300">(!extract32(env->cp15.cnthctl_el2, 11, 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2305</td><td><a href="helper.c.html#L2305">(!extract32(env->cp15.cnthctl_el2, 1, 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2449</td><td><a href="helper.c.html#L2449">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3154</td><td><a href="helper.c.html#L3154">(arm_is_secure_below_el3(env) && fi.s1ns)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4168</td><td><a href="helper.c.html#L4168">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4202</td><td><a href="helper.c.html#L4202">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4584</td><td><a href="helper.c.html#L4584">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4650</td><td><a href="helper.c.html#L4650">(ri->opc1 == 6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5037</td><td><a href="helper.c.html#L5037">(cpu->psci_conduit != QEMU_PSCI_CONDUIT_SMC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5855</td><td><a href="helper.c.html#L5855">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">8489</td><td><a href="helper.c.html#L8489">(r->cp == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">8513</td><td><a href="helper.c.html#L8513">(r->state != ARM_CP_STATE_AA32)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">9819</td><td><a href="helper.c.html#L9819">((hcr & HCR_E2H | HCR_TGE) != HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">10047</td><td><a href="helper.c.html#L10047">(cs->exception_index == EXCP_SEMIHOST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">10531</td><td><a href="helper.c.html#L10531">(!extract32(env->v7m.nsacr, 10, 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">10548</td><td><a href="helper.c.html#L10548">((hcr_el2 & HCR_E2H | HCR_TGE) != HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">10578</td><td><a href="helper.c.html#L10578">(!extract32(env->cp15.nsacr, 10, 1))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">10668</td><td><a href="helper.c.html#L10668">((hcr & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1725</td><td><a href="helper.c.html#L1725">(arm_feature(env, ARM_FEATURE_V7) && !arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">5547</td><td><a href="helper.c.html#L5547">(arm_current_el(env) == 3 || arm_is_secure_below_el3(env))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">7325</td><td><a href="helper.c.html#L7325">(arm_feature(env, ARM_FEATURE_V7MP) && !arm_feature(env, ARM_FEATURE_PMSA))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2408</td><td><a href="helper.c.html#L2408">(nexttick > INT64_MAX / gt_cntfrq_period_ns(cpu))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">11064</td><td><a href="helper.c.html#L11064">(env->v7m.vpr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3031</td><td><a href="helper.c.html#L3031">(!(arm_hcr_el2_eff(env) & HCR_E2H))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4123</td><td><a href="helper.c.html#L4123">(!(arm_sctlr(env, 0) & SCTLR_UCI))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4145</td><td><a href="helper.c.html#L4145">(!(arm_sctlr(env, 0) & SCTLR_UCI))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">8091</td><td><a href="helper.c.html#L8091">(arm_feature(env, ARM_FEATURE_EL2) && cpu_isar_feature(aa64_vh, cpu))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">8161</td><td><a href="helper.c.html#L8161">(arm_feature(env, ARM_FEATURE_EL2) && cpu_isar_feature(aa64_vh, cpu))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5834</td><td><a href="helper.c.html#L5834">(!src_reg->raw_readfn)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5837</td><td><a href="helper.c.html#L5837">(!src_reg->raw_writefn)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6177</td><td><a href="helper.c.html#L6177">(!(sctlr & SCTLR_EnTP2))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6991</td><td><a href="helper.c.html#L6991">(!(sctlr & SCTLR_EnRCTX))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3160</td><td><a href="helper.c.html#L3160">(fi.type == ARMFault_SyncExternalOnWalk)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">328</td><td><a href="helper.c.html#L328">(arm_hcr_el2_eff(env) & trap)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4129</td><td><a href="helper.c.html#L4129">(arm_hcr_el2_eff(env) & HCR_TPCP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">4151</td><td><a href="helper.c.html#L4151">(arm_hcr_el2_eff(env) & HCR_TPU)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">8834</td><td><a href="helper.c.html#L8834">(bad_mode_switch(env, val & CPSR_M, write_type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">9669</td><td><a href="helper.c.html#L9669">(A32_BANKED_CURRENT_REG_GET(env, sctlr) & SCTLR_V)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">9836</td><td><a href="helper.c.html#L9836">(pstate_read(env) & PSTATE_SP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">10035</td><td><a href="helper.c.html#L10035">(arm_is_psci_call(cpu, cs->exception_index))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">10683</td><td><a href="helper.c.html#L10683">(arm_hcr_el2_eff(env) & HCR_E2H)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">10776</td><td><a href="helper.c.html#L10776">(arm_sctlr(env, el) & SCTLR_A)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">74</td><td><a href="helper.c.html#L74">(ri->raw_readfn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">76</td><td><a href="helper.c.html#L76">(ri->readfn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">93</td><td><a href="helper.c.html#L93">(ri->raw_writefn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">95</td><td><a href="helper.c.html#L95">(ri->writefn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1323</td><td><a href="helper.c.html#L1323">(value & PMCRC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1328</td><td><a href="helper.c.html#L1328">(value & PMCRP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1782</td><td><a href="helper.c.html#L1782">(hcr_el2 & HCR_IMO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1792</td><td><a href="helper.c.html#L1792">(hcr_el2 & HCR_FMO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1802</td><td><a href="helper.c.html#L1802">(hcr_el2 & HCR_AMO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2245</td><td><a href="helper.c.html#L2245">(hcr & HCR_E2H)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2298</td><td><a href="helper.c.html#L2298">(hcr & HCR_E2H)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2443</td><td><a href="helper.c.html#L2443">(hcr & HCR_E2H)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3961</td><td><a href="helper.c.html#L3961">(cpu->mp_is_up)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4592</td><td><a href="helper.c.html#L4592">(hcr & HCR_TDZ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4596</td><td><a href="helper.c.html#L4596">(hcr & HCR_TDZ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5174</td><td><a href="helper.c.html#L5174">(ret & HCR_TGE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5176</td><td><a href="helper.c.html#L5176">(ret & HCR_E2H)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5206</td><td><a href="helper.c.html#L5206">(el & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5863</td><td><a href="helper.c.html#L5863">(hcr & HCR_TID2)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5867</td><td><a href="helper.c.html#L5867">(hcr & HCR_TID2)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6381</td><td><a href="helper.c.html#L6381">(env->gicv3state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6393</td><td><a href="helper.c.html#L6393">(env->gicv3state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6945</td><td><a href="helper.c.html#L6945">(hcr & HCR_TGE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6996</td><td><a href="helper.c.html#L6996">(hcr & HCR_NV)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8638</td><td><a href="helper.c.html#L8638">(m->is_glob)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8747</td><td><a href="helper.c.html#L8747">(mask & CPSR_NZCV)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8753</td><td><a href="helper.c.html#L8753">(mask & CPSR_Q)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8755</td><td><a href="helper.c.html#L8755">(mask & CPSR_T)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8757</td><td><a href="helper.c.html#L8757">(mask & CPSR_IT_0_1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8761</td><td><a href="helper.c.html#L8761">(mask & CPSR_IT_2_7)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8765</td><td><a href="helper.c.html#L8765">(mask & CPSR_GE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8784</td><td><a href="helper.c.html#L8784">(changed_daif & CPSR_A)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">8796</td><td><a href="helper.c.html#L8796">(changed_daif & CPSR_F)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">9559</td><td><a href="helper.c.html#L9559">(env->thumb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">9753</td><td><a href="helper.c.html#L9753">(ret & CPSR_DIT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10254</td><td><a href="helper.c.html#L10254">(a & 0x8000)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10269</td><td><a href="helper.c.html#L10269">(a & 0x80)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10284</td><td><a href="helper.c.html#L10284">(a & 0x8000)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10299</td><td><a href="helper.c.html#L10299">(a & 0x80)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10474</td><td><a href="helper.c.html#L10474">(flags & 1)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10476</td><td><a href="helper.c.html#L10476">(flags & 2)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10478</td><td><a href="helper.c.html#L10478">(flags & 4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10480</td><td><a href="helper.c.html#L10480">(flags & 8)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10589</td><td><a href="helper.c.html#L10589">(hcr_el2 & HCR_E2H)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10619</td><td><a href="helper.c.html#L10619">(mmu_idx & ARM_MMU_IDX_M)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10748</td><td><a href="helper.c.html#L10748">(ccr & R_V7M_CCR_UNALIGN_TRP_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">10869</td><td><a href="helper.c.html#L10869">(sctlr & SCTLR_A)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">11183</td><td><a href="helper.c.html#L11183">(vq & 3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7910</td><td><a href="helper.c.html#L7910">(arm_feature(env, ARM_FEATURE_OMAPCP) || arm_feature(env, ARM_FEATURE_STRONGARM))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">8087</td><td><a href="helper.c.html#L8087">(cpu_isar_feature(aa64_vh, cpu) || cpu_isar_feature(aa64_debugv8p2, cpu))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">11225</td><td><a href="helper.c.html#L11225">(fp_exception_el(env, old_el) || fp_exception_el(env, new_el))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">291</td><td><a href="helper.c.html#L291">(arm_current_el(env) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">326</td><td><a href="helper.c.html#L326">(arm_current_el(env) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">377</td><td><a href="helper.c.html#L377">(raw_read(env, ri) != value)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">965</td><td><a href="helper.c.html#L965">(i < ARRAY_SIZE(supported_event_map))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">971</td><td><a href="helper.c.html#L971">(i < ARRAY_SIZE(pm_events))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1280</td><td><a href="helper.c.html#L1280">(i < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1289</td><td><a href="helper.c.html#L1289">(i < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1330</td><td><a href="helper.c.html#L1330">(i < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1345</td><td><a href="helper.c.html#L1345">(i < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1467</td><td><a href="helper.c.html#L1467">(counter < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1502</td><td><a href="helper.c.html#L1502">(counter < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1563</td><td><a href="helper.c.html#L1563">(counter < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1577</td><td><a href="helper.c.html#L1577">(counter < pmu_num_counters(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3093</td><td><a href="helper.c.html#L3093">(arm_current_el(env) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3698</td><td><a href="helper.c.html#L3698">(raw_read(env, ri) != value)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4609</td><td><a href="helper.c.html#L4609">(aa64_zva_access(env, NULL, false) == CP_ACCESS_OK)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4658</td><td><a href="helper.c.html#L4658">(raw_read(env, ri) == value)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5570</td><td><a href="helper.c.html#L5570">(arm_current_el(env) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5796</td><td><a href="helper.c.html#L5796">(i < ARRAY_SIZE(aliases))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7919</td><td><a href="helper.c.html#L7919">(i < ARRAY_SIZE(id_pre_v8_midr_cp_reginfo))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7922</td><td><a href="helper.c.html#L7922">(i < ARRAY_SIZE(id_cp_reginfo))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">8176</td><td><a href="helper.c.html#L8176">(strcmp(name_a, TYPE_ARM_CPU) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">8178</td><td><a href="helper.c.html#L8178">(strcmp(name_b, TYPE_ARM_CPU) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">153</td><td><a href="helper.c.html#L153">(oldval == newval)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">229</td><td><a href="helper.c.html#L229">(aidx > bidx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="helper.c.html#L232">(aidx < bidx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="helper.c.html#L994">(number > MAX_EVENT_ID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1122</td><td><a href="helper.c.html#L1122">(counter == 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="helper.c.html#L1136">(el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1138</td><td><a href="helper.c.html#L1138">(el == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1140</td><td><a href="helper.c.html#L1140">(el == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="helper.c.html#L1146">(counter != 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1214</td><td><a href="helper.c.html#L1214">(overflow_in > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="helper.c.html#L1263">(overflow_in > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1465</td><td><a href="helper.c.html#L1465">(counter == 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1479</td><td><a href="helper.c.html#L1479">(old_event != new_event)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1500</td><td><a href="helper.c.html#L1500">(counter == 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3166</td><td><a href="helper.c.html#L3166">(current_el == 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3234</td><td><a href="helper.c.html#L3234">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3264</td><td><a href="helper.c.html#L3264">(!attrs.secure)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3445</td><td><a href="helper.c.html#L3445">(i < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3460</td><td><a href="helper.c.html#L3460">(i < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3522</td><td><a href="helper.c.html#L3522">(value >= nrgs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4580</td><td><a href="helper.c.html#L4580">(cur_el < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4583</td><td><a href="helper.c.html#L4583">(cur_el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5703</td><td><a href="helper.c.html#L5703">(readfn == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5721</td><td><a href="helper.c.html#L5721">(writefn == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5851</td><td><a href="helper.c.html#L5851">(cur_el < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5854</td><td><a href="helper.c.html#L5854">(cur_el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5976</td><td><a href="helper.c.html#L5976">(el != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6025</td><td><a href="helper.c.html#L6025">(el != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6116</td><td><a href="helper.c.html#L6116">(map != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6146</td><td><a href="helper.c.html#L6146">(new_len < old_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6175</td><td><a href="helper.c.html#L6175">(el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6229</td><td><a href="helper.c.html#L6229">(new_len < old_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6311</td><td><a href="helper.c.html#L6311">(i < pmcrn)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6989</td><td><a href="helper.c.html#L6989">(el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6994</td><td><a href="helper.c.html#L6994">(el == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8376</td><td><a href="helper.c.html#L8376">(state == ARM_CP_STATE_AA32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8565</td><td><a href="helper.c.html#L8565">(crm <= crmmax)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8566</td><td><a href="helper.c.html#L8566">(opc1 <= opc1max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8567</td><td><a href="helper.c.html#L8567">(opc2 <= opc2max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8569</td><td><a href="helper.c.html#L8569">(state <= ARM_CP_STATE_AA64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8573</td><td><a href="helper.c.html#L8573">(state == ARM_CP_STATE_AA32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8617</td><td><a href="helper.c.html#L8617">(i < len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8634</td><td><a href="helper.c.html#L8634">(mi < mods_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8641</td><td><a href="helper.c.html#L8641">(ri < regs_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8901</td><td><a href="helper.c.html#L8901">(den == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8913</td><td><a href="helper.c.html#L8913">(den == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8931</td><td><a href="helper.c.html#L8931">(mode != ARM_CPU_MODE_USR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8955</td><td><a href="helper.c.html#L8955">(mode == old_mode)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8958</td><td><a href="helper.c.html#L8958">(old_mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">8961</td><td><a href="helper.c.html#L8961">(mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9143</td><td><a href="helper.c.html#L9143">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9151</td><td><a href="helper.c.html#L9151">(mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9152</td><td><a href="helper.c.html#L9152">(i < 13)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9156</td><td><a href="helper.c.html#L9156">(i < 13)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9172</td><td><a href="helper.c.html#L9172">(mode == ARM_CPU_MODE_HYP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9179</td><td><a href="helper.c.html#L9179">(mode == ARM_CPU_MODE_HYP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9185</td><td><a href="helper.c.html#L9185">(mode == ARM_CPU_MODE_IRQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9193</td><td><a href="helper.c.html#L9193">(mode == ARM_CPU_MODE_SVC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9201</td><td><a href="helper.c.html#L9201">(mode == ARM_CPU_MODE_ABT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9209</td><td><a href="helper.c.html#L9209">(mode == ARM_CPU_MODE_UND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9222</td><td><a href="helper.c.html#L9222">(mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9223</td><td><a href="helper.c.html#L9223">(i < 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9227</td><td><a href="helper.c.html#L9227">(i < 29)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9248</td><td><a href="helper.c.html#L9248">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9256</td><td><a href="helper.c.html#L9256">(mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9257</td><td><a href="helper.c.html#L9257">(i < 13)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9261</td><td><a href="helper.c.html#L9261">(i < 13)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9282</td><td><a href="helper.c.html#L9282">(mode == ARM_CPU_MODE_HYP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9289</td><td><a href="helper.c.html#L9289">(mode == ARM_CPU_MODE_HYP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9295</td><td><a href="helper.c.html#L9295">(mode == ARM_CPU_MODE_IRQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9303</td><td><a href="helper.c.html#L9303">(mode == ARM_CPU_MODE_SVC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9311</td><td><a href="helper.c.html#L9311">(mode == ARM_CPU_MODE_ABT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9319</td><td><a href="helper.c.html#L9319">(mode == ARM_CPU_MODE_UND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9331</td><td><a href="helper.c.html#L9331">(mode == ARM_CPU_MODE_FIQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9332</td><td><a href="helper.c.html#L9332">(i < 31)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9336</td><td><a href="helper.c.html#L9336">(i < 29)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9386</td><td><a href="helper.c.html#L9386">(new_mode == ARM_CPU_MODE_HYP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9667</td><td><a href="helper.c.html#L9667">(new_mode == ARM_CPU_MODE_MON)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">9806</td><td><a href="helper.c.html#L9806">(cur_el < new_el)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10079</td><td><a href="helper.c.html#L10079">(el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10209</td><td><a href="helper.c.html#L10209">(tsz > max_tsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10212</td><td><a href="helper.c.html#L10212">(tsz < min_tsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10320</td><td><a href="helper.c.html#L10320">(res < a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10327</td><td><a href="helper.c.html#L10327">(a > b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10337</td><td><a href="helper.c.html#L10337">(res < a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10344</td><td><a href="helper.c.html#L10344">(a > b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10451</td><td><a href="helper.c.html#L10451">(a > b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10553</td><td><a href="helper.c.html#L10553">(cur_el != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10564</td><td><a href="helper.c.html#L10564">(cur_el <= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10588</td><td><a href="helper.c.html#L10588">(cur_el <= 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10837</td><td><a href="helper.c.html#L10837">(fp_el != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10838</td><td><a href="helper.c.html#L10838">(sve_el > fp_el)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10841</td><td><a href="helper.c.html#L10841">(sve_el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">10851</td><td><a href="helper.c.html#L10851">(sme_el == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">11177</td><td><a href="helper.c.html#L11177">(i < 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">11186</td><td><a href="helper.c.html#L11186">(j < ARM_MAX_VQ / 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">11187</td><td><a href="helper.c.html#L11187">(i < 17)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">11264</td><td><a href="helper.c.html#L11264">(new_len < old_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3165</td><td><a href="helper.c.html#L3165">(fi.stage2)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">3244</td><td><a href="helper.c.html#L3244">(fi.stage2)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">3247</td><td><a href="helper.c.html#L3247">(fi.s1ptw)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4437</td><td><a href="helper.c.html#L4437">(param.select)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">4442</td><td><a href="helper.c.html#L4442">(param.ds)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">703</td><td><a href="helper.c.html#L703">(!cpu_isar_feature(aa32_simd_r32, env_archcpu(env)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">6067</td><td><a href="helper.c.html#L6067">(!cpu_isar_feature(aa64_sme_fa64, env_archcpu(env)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">683</td><td><a href="helper.c.html#L683">(!arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">695</td><td><a href="helper.c.html#L695">(!arm_feature(env, ARM_FEATURE_NEON))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1095</td><td><a href="helper.c.html#L1095">(!arm_feature(env, ARM_FEATURE_PMU))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1152</td><td><a href="helper.c.html#L1152">(!event_supported(event))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1716</td><td><a href="helper.c.html#L1716">(!arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2201</td><td><a href="helper.c.html#L2201">(!extract32(cntkctl, 0, 2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2351</td><td><a href="helper.c.html#L2351">(!arm_is_secure(env))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3614</td><td><a href="helper.c.html#L3614">(!arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5136</td><td><a href="helper.c.html#L5136">(!arm_is_el2_enabled(env))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5160</td><td><a href="helper.c.html#L5160">(!arm_el_is_aa64(env, 2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7222</td><td><a href="helper.c.html#L7222">(!arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7685</td><td><a href="helper.c.html#L7685">(!arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7934</td><td><a href="helper.c.html#L7934">(!arm_feature(env, ARM_FEATURE_PMSA))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">9394</td><td><a href="helper.c.html#L9394">(!arm_is_secure_below_el3(env))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">9478</td><td><a href="helper.c.html#L9478">(!arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">10070</td><td><a href="helper.c.html#L10070">(!kvm_enabled())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">10129</td><td><a href="helper.c.html#L10129">(!regime_has_2_ranges(mmu_idx))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">10520</td><td><a href="helper.c.html#L10520">(!arm_feature(env, ARM_FEATURE_V6))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">11220</td><td><a href="helper.c.html#L11220">(!cpu_isar_feature(aa64_sve, cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">135</td><td><a href="helper.c.html#L135">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">180</td><td><a href="helper.c.html#L180">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1107</td><td><a href="helper.c.html#L1107">(!secure)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3232</td><td><a href="helper.c.html#L3232">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3256</td><td><a href="helper.c.html#L3256">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3493</td><td><a href="helper.c.html#L3493">(!u32p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3507</td><td><a href="helper.c.html#L3507">(!u32p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">9124</td><td><a href="helper.c.html#L9124">(!exc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">10150</td><td><a href="helper.c.html#L10150">(!select)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">10221</td><td><a href="helper.c.html#L10221">(!data)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="helper.c.html#L688">(cpu_isar_feature(aa32_vfp_simd, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">9378</td><td><a href="helper.c.html#L9378">(cpu_isar_feature(aa32_ssbs, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">9391</td><td><a href="helper.c.html#L9391">(cpu_isar_feature(aa32_pan, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">10828</td><td><a href="helper.c.html#L10828">(cpu_isar_feature(aa64_sve, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">10846</td><td><a href="helper.c.html#L10846">(cpu_isar_feature(aa64_sme, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">10877</td><td><a href="helper.c.html#L10877">(cpu_isar_feature(aa64_pauth, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">10889</td><td><a href="helper.c.html#L10889">(cpu_isar_feature(aa64_bti, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">10927</td><td><a href="helper.c.html#L10927">(cpu_isar_feature(aa64_mte, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">11061</td><td><a href="helper.c.html#L11061">(cpu_isar_feature(aa32_mve, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">11083</td><td><a href="helper.c.html#L11083">(cpu_isar_feature(aa64_bti, env_archcpu(env)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">47</td><td><a href="helper.c.html#L47">(cpreg_field_is_64bit(ri))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">57</td><td><a href="helper.c.html#L57">(cpreg_field_is_64bit(ri))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">294</td><td><a href="helper.c.html#L294">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">451</td><td><a href="helper.c.html#L451">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="helper.c.html#L465">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="helper.c.html#L478">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">492</td><td><a href="helper.c.html#L492">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="helper.c.html#L751">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1177</td><td><a href="helper.c.html#L1177">(pmu_counter_enabled(env, 31))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1205</td><td><a href="helper.c.html#L1205">(pmu_counter_enabled(env, 31))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="helper.c.html#L1236">(event_supported(event))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1241</td><td><a href="helper.c.html#L1241">(pmu_counter_enabled(env, counter))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1255</td><td><a href="helper.c.html#L1255">(pmu_counter_enabled(env, counter))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1481</td><td><a href="helper.c.html#L1481">(event_supported(new_event))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1536</td><td><a href="helper.c.html#L1536">(event_supported(event))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1633</td><td><a href="helper.c.html#L1633">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="helper.c.html#L1680">(arm_el_is_aa64(env, 3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1688</td><td><a href="helper.c.html#L1688">(cpu_isar_feature(aa64_ras, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1691</td><td><a href="helper.c.html#L1691">(cpu_isar_feature(aa64_lor, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1694</td><td><a href="helper.c.html#L1694">(cpu_isar_feature(aa64_pauth, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1697</td><td><a href="helper.c.html#L1697">(cpu_isar_feature(aa64_sel2, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1700</td><td><a href="helper.c.html#L1700">(cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1703</td><td><a href="helper.c.html#L1703">(cpu_isar_feature(aa64_scxtnum, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1706</td><td><a href="helper.c.html#L1706">(cpu_isar_feature(aa64_doublefault, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1711</td><td><a href="helper.c.html#L1711">(cpu_isar_feature(aa32_ras, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1824</td><td><a href="helper.c.html#L1824">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3072</td><td><a href="helper.c.html#L3072">(arm_feature(env, ARM_FEATURE_LPAE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3074</td><td><a href="helper.c.html#L3074">(arm_feature(env, ARM_FEATURE_V7))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3094</td><td><a href="helper.c.html#L3094">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3199</td><td><a href="helper.c.html#L3199">(is_a64(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3201</td><td><a href="helper.c.html#L3201">(arm_feature(env, ARM_FEATURE_LPAE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3218</td><td><a href="helper.c.html#L3218">(arm_feature(env, ARM_FEATURE_EL2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3621</td><td><a href="helper.c.html#L3621">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3633</td><td><a href="helper.c.html#L3633">(arm_feature(env, ARM_FEATURE_LPAE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3679</td><td><a href="helper.c.html#L3679">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3703</td><td><a href="helper.c.html#L3703">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3955</td><td><a href="helper.c.html#L3955">(arm_feature(env, ARM_FEATURE_V7MP))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4178</td><td><a href="helper.c.html#L4178">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4208</td><td><a href="helper.c.html#L4208">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4230</td><td><a href="helper.c.html#L4230">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4244</td><td><a href="helper.c.html#L4244">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4257</td><td><a href="helper.c.html#L4257">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4375</td><td><a href="helper.c.html#L4375">(tlb_force_broadcast(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5029</td><td><a href="helper.c.html#L5029">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5035</td><td><a href="helper.c.html#L5035">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5048</td><td><a href="helper.c.html#L5048">(arm_feature(env, ARM_FEATURE_AARCH64))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5049</td><td><a href="helper.c.html#L5049">(cpu_isar_feature(aa64_vh, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5052</td><td><a href="helper.c.html#L5052">(cpu_isar_feature(aa64_ras, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5055</td><td><a href="helper.c.html#L5055">(cpu_isar_feature(aa64_lor, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5058</td><td><a href="helper.c.html#L5058">(cpu_isar_feature(aa64_pauth, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5061</td><td><a href="helper.c.html#L5061">(cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5064</td><td><a href="helper.c.html#L5064">(cpu_isar_feature(aa64_scxtnum, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5067</td><td><a href="helper.c.html#L5067">(cpu_isar_feature(aa64_fwb, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5573</td><td><a href="helper.c.html#L5573">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5696</td><td><a href="helper.c.html#L5696">(redirect_for_e2h(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5714</td><td><a href="helper.c.html#L5714">(redirect_for_e2h(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6081</td><td><a href="helper.c.html#L6081">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6111</td><td><a href="helper.c.html#L6111">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6347</td><td><a href="helper.c.html#L6347">(cpu_isar_feature(aa32_pmu_8_1, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6360</td><td><a href="helper.c.html#L6360">(cpu_isar_feature(any_pmu_8_4, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6420</td><td><a href="helper.c.html#L6420">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7054</td><td><a href="helper.c.html#L7054">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7216</td><td><a href="helper.c.html#L7216">(arm_feature(env, ARM_FEATURE_M))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7229</td><td><a href="helper.c.html#L7229">(arm_feature(env, ARM_FEATURE_V6))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7322</td><td><a href="helper.c.html#L7322">(arm_feature(env, ARM_FEATURE_V6K))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7329</td><td><a href="helper.c.html#L7329">(arm_feature(env, ARM_FEATURE_V7VE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7332</td><td><a href="helper.c.html#L7332">(arm_feature(env, ARM_FEATURE_V7))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7347</td><td><a href="helper.c.html#L7347">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7678</td><td><a href="helper.c.html#L7678">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7681</td><td><a href="helper.c.html#L7681">(cpu_isar_feature(aa64_sel2, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7697</td><td><a href="helper.c.html#L7697">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7723</td><td><a href="helper.c.html#L7723">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7724</td><td><a href="helper.c.html#L7724">(arm_feature(env, ARM_FEATURE_AARCH64))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7743</td><td><a href="helper.c.html#L7743">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7754</td><td><a href="helper.c.html#L7754">(arm_feature(env, ARM_FEATURE_PMSA))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7755</td><td><a href="helper.c.html#L7755">(arm_feature(env, ARM_FEATURE_V6))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7767</td><td><a href="helper.c.html#L7767">(cpu_isar_feature(aa32_hpd, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7771</td><td><a href="helper.c.html#L7771">(arm_feature(env, ARM_FEATURE_THUMB2EE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7774</td><td><a href="helper.c.html#L7774">(arm_feature(env, ARM_FEATURE_GENERIC_TIMER))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7777</td><td><a href="helper.c.html#L7777">(arm_feature(env, ARM_FEATURE_VAPA))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7780</td><td><a href="helper.c.html#L7780">(arm_feature(env, ARM_FEATURE_CACHE_TEST_CLEAN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7783</td><td><a href="helper.c.html#L7783">(arm_feature(env, ARM_FEATURE_CACHE_DIRTY_REG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7786</td><td><a href="helper.c.html#L7786">(arm_feature(env, ARM_FEATURE_CACHE_BLOCK_OPS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7789</td><td><a href="helper.c.html#L7789">(arm_feature(env, ARM_FEATURE_OMAPCP))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7792</td><td><a href="helper.c.html#L7792">(arm_feature(env, ARM_FEATURE_STRONGARM))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7795</td><td><a href="helper.c.html#L7795">(arm_feature(env, ARM_FEATURE_XSCALE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7798</td><td><a href="helper.c.html#L7798">(arm_feature(env, ARM_FEATURE_DUMMY_C15_REGS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7801</td><td><a href="helper.c.html#L7801">(arm_feature(env, ARM_FEATURE_LPAE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7804</td><td><a href="helper.c.html#L7804">(cpu_isar_feature(aa32_jazelle, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7928</td><td><a href="helper.c.html#L7928">(arm_feature(env, ARM_FEATURE_V8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7936</td><td><a href="helper.c.html#L7936">(arm_feature(env, ARM_FEATURE_V7))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7941</td><td><a href="helper.c.html#L7941">(arm_feature(env, ARM_FEATURE_MPIDR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7957</td><td><a href="helper.c.html#L7957">(arm_feature(env, ARM_FEATURE_AUXCR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7973</td><td><a href="helper.c.html#L7973">(cpu_isar_feature(aa32_ac2, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7978</td><td><a href="helper.c.html#L7978">(arm_feature(env, ARM_FEATURE_CBAR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7992</td><td><a href="helper.c.html#L7992">(arm_feature(env, ARM_FEATURE_AARCH64))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8017</td><td><a href="helper.c.html#L8017">(arm_feature(env, ARM_FEATURE_CBAR_RO))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8026</td><td><a href="helper.c.html#L8026">(arm_feature(env, ARM_FEATURE_VBAR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8049</td><td><a href="helper.c.html#L8049">(arm_feature(env, ARM_FEATURE_XSCALE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8059</td><td><a href="helper.c.html#L8059">(cpu_isar_feature(aa64_lor, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8062</td><td><a href="helper.c.html#L8062">(cpu_isar_feature(aa64_pan, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8066</td><td><a href="helper.c.html#L8066">(cpu_isar_feature(aa64_ats1e1, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8069</td><td><a href="helper.c.html#L8069">(cpu_isar_feature(aa32_ats1e1, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8073</td><td><a href="helper.c.html#L8073">(cpu_isar_feature(aa64_uao, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8077</td><td><a href="helper.c.html#L8077">(cpu_isar_feature(aa64_dit, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8080</td><td><a href="helper.c.html#L8080">(cpu_isar_feature(aa64_ssbs, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8083</td><td><a href="helper.c.html#L8083">(cpu_isar_feature(any_ras, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8095</td><td><a href="helper.c.html#L8095">(cpu_isar_feature(aa64_sve, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8099</td><td><a href="helper.c.html#L8099">(cpu_isar_feature(aa64_hcx, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8104</td><td><a href="helper.c.html#L8104">(cpu_isar_feature(aa64_sme, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8107</td><td><a href="helper.c.html#L8107">(cpu_isar_feature(aa64_pauth, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8110</td><td><a href="helper.c.html#L8110">(cpu_isar_feature(aa64_rndr, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8113</td><td><a href="helper.c.html#L8113">(cpu_isar_feature(aa64_tlbirange, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8116</td><td><a href="helper.c.html#L8116">(cpu_isar_feature(aa64_tlbios, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8121</td><td><a href="helper.c.html#L8121">(cpu_isar_feature(aa64_dcpop, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8124</td><td><a href="helper.c.html#L8124">(cpu_isar_feature(aa64_dcpodp, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8135</td><td><a href="helper.c.html#L8135">(cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8138</td><td><a href="helper.c.html#L8138">(cpu_isar_feature(aa64_mte_insn_reg, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8143</td><td><a href="helper.c.html#L8143">(cpu_isar_feature(aa64_scxtnum, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8148</td><td><a href="helper.c.html#L8148">(cpu_isar_feature(any_predinv, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8152</td><td><a href="helper.c.html#L8152">(cpu_isar_feature(any_ccidx, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">8294</td><td><a href="helper.c.html#L8294">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9049</td><td><a href="helper.c.html#L9049">(arm_feature(env, ARM_FEATURE_EL3))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9093</td><td><a href="helper.c.html#L9093">(qemu_loglevel_mask(CPU_LOG_INT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9413</td><td><a href="helper.c.html#L9413">(arm_feature(env, ARM_FEATURE_V4T))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9640</td><td><a href="helper.c.html#L9640">(extended_addresses_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9919</td><td><a href="helper.c.html#L9919">(is_a64(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9936</td><td><a href="helper.c.html#L9936">(cpu_isar_feature(aa64_pan, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9956</td><td><a href="helper.c.html#L9956">(cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9960</td><td><a href="helper.c.html#L9960">(cpu_isar_feature(aa64_ssbs, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">9992</td><td><a href="helper.c.html#L9992">(is_a64(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10062</td><td><a href="helper.c.html#L10062">(arm_el_is_aa64(env, new_el))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10089</td><td><a href="helper.c.html#L10089">(regime_has_2_ranges(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10101</td><td><a href="helper.c.html#L10101">(regime_has_2_ranges(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10113</td><td><a href="helper.c.html#L10113">(regime_has_2_ranges(mmu_idx))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10170</td><td><a href="helper.c.html#L10170">(cpu_isar_feature(aa64_st, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10182</td><td><a href="helper.c.html#L10182">(cpu_isar_feature(aa64_lva, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10524</td><td><a href="helper.c.html#L10524">(arm_feature(env, ARM_FEATURE_M))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10600</td><td><a href="helper.c.html#L10600">(arm_is_el2_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10660</td><td><a href="helper.c.html#L10660">(arm_feature(env, ARM_FEATURE_M))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10699</td><td><a href="helper.c.html#L10699">(arm_is_secure_below_el3(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10718</td><td><a href="helper.c.html#L10718">(arm_singlestep_active(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10733</td><td><a href="helper.c.html#L10733">(arm_cpu_data_is_big_endian_a32(env, sctlr_b))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10752</td><td><a href="helper.c.html#L10752">(arm_v7m_is_handler_mode(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10780</td><td><a href="helper.c.html#L10780">(arm_el_is_aa64(env, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10873</td><td><a href="helper.c.html#L10873">(arm_cpu_data_is_big_endian_a64(el, sctlr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10936</td><td><a href="helper.c.html#L10936">(allocation_tag_access_enabled(env, el, sctlr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10965</td><td><a href="helper.c.html#L10965">(is_a64(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">10967</td><td><a href="helper.c.html#L10967">(arm_feature(env, ARM_FEATURE_M))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">11081</td><td><a href="helper.c.html#L11081">(EX_TBFLAG_ANY(flags, AARCH64_STATE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">11089</td><td><a href="helper.c.html#L11089">(arm_feature(env, ARM_FEATURE_M))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">11113</td><td><a href="helper.c.html#L11113">(mve_no_pred(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">11121</td><td><a href="helper.c.html#L11121">(arm_feature(env, ARM_FEATURE_XSCALE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">144</td><td><a href="helper.c.html#L144">(kvm_sync)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2396</td><td><a href="helper.c.html#L2396">(istatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3129</td><td><a href="helper.c.html#L3129">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3177</td><td><a href="helper.c.html#L3177">(take_exc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3229</td><td><a href="helper.c.html#L3229">(format64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4465</td><td><a href="helper.c.html#L4465">(synced)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5580</td><td><a href="helper.c.html#L5580">(isread)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6100</td><td><a href="helper.c.html#L6100">(sm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6751</td><td><a href="helper.c.html#L6751">(haddr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6759</td><td><a href="helper.c.html#L6759">(mr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8283</td><td><a href="helper.c.html#L8283">(oldreg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8330</td><td><a href="helper.c.html#L8330">(opaque)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8334</td><td><a href="helper.c.html#L8334">(make_const)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8368</td><td><a href="helper.c.html#L8368">(isbanked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8377</td><td><a href="helper.c.html#L8377">(isbanked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8657</td><td><a href="helper.c.html#L8657">(pat)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">8865</td><td><a href="helper.c.html#L8865">(rebuild_hflags)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">9545</td><td><a href="helper.c.html#L9545">(moe)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">9831</td><td><a href="helper.c.html#L9831">(is_aa64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10181</td><td><a href="helper.c.html#L10181">(using64k)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10186</td><td><a href="helper.c.html#L10186">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10190</td><td><a href="helper.c.html#L10190">(using16k)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10197</td><td><a href="helper.c.html#L10197">(using16k)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10204</td><td><a href="helper.c.html#L10204">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10730</td><td><a href="helper.c.html#L10730">(sctlr_b)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10855</td><td><a href="helper.c.html#L10855">(sm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">10860</td><td><a href="helper.c.html#L10860">(sm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">11198</td><td><a href="helper.c.html#L11198">(sm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">11203</td><td><a href="helper.c.html#L11203">(exc_el)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">11256</td><td><a href="helper.c.html#L11256">(old_a64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">11259</td><td><a href="helper.c.html#L11259">(new_a64)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

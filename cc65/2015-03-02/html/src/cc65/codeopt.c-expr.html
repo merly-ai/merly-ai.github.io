@@ -1,0 +1,117 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\codeopt.c Ctrl Expressions (66) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\codeopt.c Ctrl Expressions (66) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\codeopt.c Ctrl Expressions (66)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">154</td><td><a href="codeopt.c.html#L154">(<span style='background-color:#9c4c02;'>CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_STA && L[2]->OPC == OP65_STX && (L[1]->Arg == 0 || L[2]->Arg == 0 || strcmp(L[1]->Arg, L[2]->Arg) != 0) && !CS_RangeHasLabel(S, I + 1, 2) && !RegXUsed(S, I + 3)</span>)</a></td><td class="num">106.90</td></tr>
+      <tr><td class="num line">256</td><td><a href="codeopt.c.html#L256">(<span style='background-color:#9c4c02;'>Load != 0 && E->OPC == Load->OPC && E->AM == Load->AM && ((E->Arg == 0 && Load->Arg == 0) || strcmp(E->Arg, Load->Arg) == 0) && (N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_CBRA) == 0</span>)</a></td><td class="num">101.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="codeopt.c.html#L570">(E->OPC == OP65_JSR && (Dec1 = IsDecSP(E)) > 0 && (N = CS_GetNextEntry(S, I)) != 0 && (Dec2 = IsDecSP(N)) > 0 && (Dec1 += Dec2) <= 255 && !CE_HasLabel(N))</a></td><td class="num">66.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="codeopt.c.html#L279">((E->Info & OF_CMP) == 0 && (E->Info & OF_CBRA) == 0)</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">537</td><td><a href="codeopt.c.html#L537">(E->Arg[5] >= '1' && E->Arg[5] <= '8')</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">540</td><td><a href="codeopt.c.html#L540">(strcmp(E->Arg, "subysp") == 0 && RegValIsKnown(E->RI->In.RegY))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">99</td><td><a href="codeopt.c.html#L99">(CE_IsCallTo(E, "ldaxysp") && RegValIsKnown(E->RI->In.RegY) && !RegXUsed(S, I + 1))</a></td><td class="num">28.35</td></tr>
+      <tr><td class="num line">953</td><td><a href="codeopt.c.html#L953">(Len > 0 && IsSpace(B[Len - 1]))</a></td><td class="num">24.60</td></tr>
+      <tr><td class="num line">964</td><td><a href="codeopt.c.html#L964">(*B == '\0' || *B == ';' || *B == '#')</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">1079</td><td><a href="codeopt.c.html#L1079">(F->Disabled || F->CodeSizeFactor > S->CodeSizeFactor)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1106</td><td><a href="codeopt.c.html#L1106">(Max-- && C > 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="codeopt.c.html#L473">(E->RI->In.RegA >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">480</td><td><a href="codeopt.c.html#L480">(E->RI->In.RegA >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">487</td><td><a href="codeopt.c.html#L487">(E->RI->In.RegX >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">494</td><td><a href="codeopt.c.html#L494">(E->RI->In.RegY >= 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1317</td><td><a href="codeopt.c.html#L1317">((CPUIsets[CPU] & CPU_ISET_65SC02) == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">969</td><td><a href="codeopt.c.html#L969">(sscanf(B, "%31s %lu %*u %lu %*u", Name, &TotalRuns, &TotalChanges) != 3)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">249</td><td><a href="codeopt.c.html#L249">(E->Info & OF_LOAD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">536</td><td><a href="codeopt.c.html#L536">(strncmp(E->Arg, "decsp", 5) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">380</td><td><a href="codeopt.c.html#L380">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">411</td><td><a href="codeopt.c.html#L411">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">442</td><td><a href="codeopt.c.html#L442">(E->AM == AM65_ZP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1284</td><td><a href="codeopt.c.html#L1284">(CPUIsets[CPU] & CPU_ISET_65SC02)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">244</td><td><a href="codeopt.c.html#L244">(Load && CE_HasLabel(E))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="codeopt.c.html#L1389">(!S->Optimize)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">338</td><td><a href="codeopt.c.html#L338">(RegValIsKnown(In->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">345</td><td><a href="codeopt.c.html#L345">(RegValIsKnown(In->RegX))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="codeopt.c.html#L352">(RegValIsKnown(In->RegY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">359</td><td><a href="codeopt.c.html#L359">(RegValIsKnown(In->RegA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">366</td><td><a href="codeopt.c.html#L366">(RegValIsKnown(In->RegX))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">373</td><td><a href="codeopt.c.html#L373">(RegValIsKnown(In->RegY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1034</td><td><a href="codeopt.c.html#L1034">(S->Func)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1400</td><td><a href="codeopt.c.html#L1400">(S->Func)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">91</td><td><a href="codeopt.c.html#L91">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">141</td><td><a href="codeopt.c.html#L141">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">238</td><td><a href="codeopt.c.html#L238">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="codeopt.c.html#L323">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">560</td><td><a href="codeopt.c.html#L560">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">883</td><td><a href="codeopt.c.html#L883">(strcmp(Name, "any") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">898</td><td><a href="codeopt.c.html#L898">(strcmp(Name, "any") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">936</td><td><a href="codeopt.c.html#L936">(fgets(Buf, sizeof (Buf), F) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">959</td><td><a href="codeopt.c.html#L959">(IsSpace(*B))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">581</td><td><a href="codeopt.c.html#L581">(Dec1 <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="codeopt.c.html#L871">(F == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="codeopt.c.html#L885">(I < OPTFUNC_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">900</td><td><a href="codeopt.c.html#L900">(I < OPTFUNC_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="codeopt.c.html#L914">(I < OPTFUNC_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="codeopt.c.html#L929">(F == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">976</td><td><a href="codeopt.c.html#L976">(Func == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1000</td><td><a href="codeopt.c.html#L1000">(F == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="codeopt.c.html#L1012">(I < OPTFUNC_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1056</td><td><a href="codeopt.c.html#L1056">(Step == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="codeopt.c.html#L149">(CE_IsCallTo(L[0], "ldaxysp"))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="codeopt.c.html#L507">(X)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1032</td><td><a href="codeopt.c.html#L1032">(DebugOptOutput)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1051</td><td><a href="codeopt.c.html#L1051">(DebugOptOutput)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1098</td><td><a href="codeopt.c.html#L1098">(C)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1099</td><td><a href="codeopt.c.html#L1099">(Debug)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1247</td><td><a href="codeopt.c.html#L1247">(C)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1288</td><td><a href="codeopt.c.html#L1288">(Changes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1341</td><td><a href="codeopt.c.html#L1341">(C)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="codeopt.c.html#L1353">(C)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1373</td><td><a href="codeopt.c.html#L1373">(C)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1395</td><td><a href="codeopt.c.html#L1395">(StatFileName)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1426</td><td><a href="codeopt.c.html#L1426">(DebugOptOutput)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1431</td><td><a href="codeopt.c.html#L1431">(StatFileName)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

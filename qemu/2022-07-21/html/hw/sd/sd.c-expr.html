@@ -1,0 +1,204 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\sd\sd.c Ctrl Expressions (153) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\sd\sd.c Ctrl Expressions (153) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\sd\sd.c Ctrl Expressions (153)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">931</td><td><a href="sd.c.html#L931">(<span style='background-color:#9c4c02;'>(pwd_len && !set_pwd) || (clr_pwd && (set_pwd || lock)) || (lock && !sd->pwd_len && !set_pwd) || (!set_pwd && !clr_pwd && (((sd->card_status & CARD_IS_LOCKED) && lock) || (!(sd->card_status & CARD_IS_LOCKED) && !lock)))</span>)</a></td><td class="num">115.25</td></tr>
+      <tr><td class="num line">1128</td><td><a href="sd.c.html#L1128">(!(req.arg >> 8) || (req.arg >> (ctz32(req.arg & ~0xff) + 1)))</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">993</td><td><a href="sd.c.html#L993">(sd->multi_blk_cnt != 0 && !(req.cmd == 18 || req.cmd == 25))</a></td><td class="num">50.25</td></tr>
+      <tr><td class="num line">903</td><td><a href="sd.c.html#L903">(!(sd->card_status & CARD_IS_LOCKED) || sd->blk_len > 1 || set_pwd || clr_pwd || lock || sd->wp_switch || (sd->csd[14] & 0x20))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">918</td><td><a href="sd.c.html#L918">(sd->blk_len < 2 + pwd_len || pwd_len <= sd->pwd_len || pwd_len > sd->pwd_len + 16)</a></td><td class="num">40.20</td></tr>
+      <tr><td class="num line">1918</td><td><a href="sd.c.html#L1918">((sd->csd[i] | sd_csd_rw_mask[i]) != (sd->data[i] | sd_csd_rw_mask[i]))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">925</td><td><a href="sd.c.html#L925">(sd->pwd_len && memcmp(sd->pwd, sd->data + 2, sd->pwd_len))</a></td><td class="num">33.60</td></tr>
+      <tr><td class="num line">1899</td><td><a href="sd.c.html#L1899">((sd->cid[i] | 0x00) != sd->data[i])</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">755</td><td><a href="sd.c.html#L755">(!sd->blk || blk_pread(sd->blk, addr, len, sd->data, 0) < 0)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">763</td><td><a href="sd.c.html#L763">(!sd->blk || blk_pwrite(sd->blk, addr, len, sd->data, 0) < 0)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1720</td><td><a href="sd.c.html#L1720">(!sd->blk || !blk_is_inserted(sd->blk) || !sd->enable)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1827</td><td><a href="sd.c.html#L1827">(!sd->blk || !blk_is_inserted(sd->blk) || !sd->enable)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1981</td><td><a href="sd.c.html#L1981">(!sd->blk || !blk_is_inserted(sd->blk) || !sd->enable)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">267</td><td><a href="sd.c.html#L267">((shift_reg >> 7) ^ ((*msg >> bit) & 1))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">1923</td><td><a href="sd.c.html#L1923">(sd->csd[14] & ~sd->data[14] & 0x60)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">986</td><td><a href="sd.c.html#L986">(sd_cmd_type[req.cmd] == sd_ac || sd_cmd_type[req.cmd] == sd_adtc)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">997</td><td><a href="sd.c.html#L997">(sd_cmd_class[req.cmd] == 6 && FIELD_EX32(sd->ocr, OCR, CARD_CAPACITY))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">783</td><td><a href="sd.c.html#L783">(sd->erase_start == INVALID_ADDRESS || sd->erase_end == INVALID_ADDRESS)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="sd.c.html#L798">(erase_start > sd->size || erase_end > sd->size)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1200</td><td><a href="sd.c.html#L1200">(!sd->spi && sd->rca != rca)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="sd.c.html#L977">(req.cmd != 55 || sd->expecting_acmd)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1845</td><td><a href="sd.c.html#L1845">(sd->data_offset >= sd->blk_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1871</td><td><a href="sd.c.html#L1871">(sd->data_offset >= sd->blk_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1882</td><td><a href="sd.c.html#L1882">(sd->multi_blk_cnt-- == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1938</td><td><a href="sd.c.html#L1938">(sd->data_offset >= sd->blk_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1949</td><td><a href="sd.c.html#L1949">(sd->data_offset >= sd->blk_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2045</td><td><a href="sd.c.html#L2045">(sd->multi_blk_cnt-- == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2087</td><td><a href="sd.c.html#L2087">(sd->data_offset >= sd->blk_len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1309</td><td><a href="sd.c.html#L1309">(sd->csd[14] & 0x30)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="sd.c.html#L1441">(sd->csd[14] & 0x30)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1633</td><td><a href="sd.c.html#L1633">(FIELD_EX32(sd->ocr & req.arg, OCR, VDD_VOLTAGE_WINDOW))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="sd.c.html#L959">(addr + length > sd->size)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1859</td><td><a href="sd.c.html#L1859">(!address_in_range(sd, "WRITE_MULTIPLE_BLOCK", sd->data_start, sd->blk_len))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1902</td><td><a href="sd.c.html#L1902">(!(sd->card_status & CID_CSD_OVERWRITE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1926</td><td><a href="sd.c.html#L1926">(!(sd->card_status & CID_CSD_OVERWRITE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1620</td><td><a href="sd.c.html#L1620">((req.arg & ACMD41_ENQUIRY_MASK) != 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2154</td><td><a href="sd.c.html#L2154">(blk_size > 0 && !is_power_of_2(blk_size))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1708</td><td><a href="sd.c.html#L1708">(cmd == 16 || cmd == 55)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1736</td><td><a href="sd.c.html#L1736">(sd->card_status & CARD_IS_LOCKED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1836</td><td><a href="sd.c.html#L1836">(sd->card_status & ADDRESS_ERROR | WP_VIOLATION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1990</td><td><a href="sd.c.html#L1990">(sd->card_status & ADDRESS_ERROR | WP_VIOLATION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="sd.c.html#L872">(mode && new_func != 0x0f)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1399</td><td><a href="sd.c.html#L1399">(!address_in_range(sd, "SEND_WRITE_PROT", req.arg, sd->blk_len))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="sd.c.html#L302">(sd->size > SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">326</td><td><a href="sd.c.html#L326">(sd->spec_version == SD_PHY_SPECv1_10_VERS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="sd.c.html#L334">(sd->spec_version >= SD_PHY_SPECv3_01_VERS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">833</td><td><a href="sd.c.html#L833">(addr >= sd->size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">892</td><td><a href="sd.c.html#L892">(sd->blk_len > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1085</td><td><a href="sd.c.html#L1085">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1093</td><td><a href="sd.c.html#L1093">(sd->rca == rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1100</td><td><a href="sd.c.html#L1100">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1107</td><td><a href="sd.c.html#L1107">(sd->rca == rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1119</td><td><a href="sd.c.html#L1119">(sd->spec_version < SD_PHY_SPECv2_00_VERS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1122</td><td><a href="sd.c.html#L1122">(sd->state != sd_idle_state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1139</td><td><a href="sd.c.html#L1139">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1161</td><td><a href="sd.c.html#L1161">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1216</td><td><a href="sd.c.html#L1216">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1265</td><td><a href="sd.c.html#L1265">(sd->spec_version < SD_PHY_SPECv3_01_VERS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1268</td><td><a href="sd.c.html#L1268">(sd->state == sd_transfer_state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1276</td><td><a href="sd.c.html#L1276">(sd->spec_version < SD_PHY_SPECv3_01_VERS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1304</td><td><a href="sd.c.html#L1304">(sd->size <= SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1349</td><td><a href="sd.c.html#L1349">(sd->size > SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1371</td><td><a href="sd.c.html#L1371">(sd->size > SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1393</td><td><a href="sd.c.html#L1393">(sd->size > SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1496</td><td><a href="sd.c.html#L1496">(sd->rca != rca)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1608</td><td><a href="sd.c.html#L1608">(sd->state != sd_idle_state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1730</td><td><a href="sd.c.html#L1730">(req->cmd >= SDMMC_CMD_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1830</td><td><a href="sd.c.html#L1830">(sd->state != sd_receivingdata_state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1857</td><td><a href="sd.c.html#L1857">(sd->data_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1863</td><td><a href="sd.c.html#L1863">(sd->size <= SDSC_MAX_CAPACITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1881</td><td><a href="sd.c.html#L1881">(sd->multi_blk_cnt != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1895</td><td><a href="sd.c.html#L1895">(sd->data_offset >= sizeof(sd->cid))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1914</td><td><a href="sd.c.html#L1914">(sd->data_offset >= sizeof(sd->csd))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1984</td><td><a href="sd.c.html#L1984">(sd->state != sd_sendingdata_state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2002</td><td><a href="sd.c.html#L2002">(sd->data_offset >= 64)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2010</td><td><a href="sd.c.html#L2010">(sd->data_offset >= 16)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2017</td><td><a href="sd.c.html#L2017">(sd->data_offset >= sizeof(sd->sd_status))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2022</td><td><a href="sd.c.html#L2022">(sd->data_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2026</td><td><a href="sd.c.html#L2026">(sd->data_offset >= io_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2031</td><td><a href="sd.c.html#L2031">(sd->data_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2040</td><td><a href="sd.c.html#L2040">(sd->data_offset >= io_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2044</td><td><a href="sd.c.html#L2044">(sd->multi_blk_cnt != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2055</td><td><a href="sd.c.html#L2055">(sd->data_offset >= SD_TUNING_BLOCK_SIZE - 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2064</td><td><a href="sd.c.html#L2064">(sd->data_offset >= 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2071</td><td><a href="sd.c.html#L2071">(sd->data_offset >= 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2078</td><td><a href="sd.c.html#L2078">(sd->data_offset >= sizeof(sd->scr))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2083</td><td><a href="sd.c.html#L2083">(sd->data_offset == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1508</td><td><a href="sd.c.html#L1508">(req.arg & 1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1250</td><td><a href="sd.c.html#L1250">(!address_in_range(sd, "READ_BLOCK", addr, sd->blk_len))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="sd.c.html#L1295">(!address_in_range(sd, "WRITE_BLOCK", addr, sd->blk_len))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="sd.c.html#L1619">(!FIELD_EX32(sd->ocr, OCR, CARD_POWER_UP))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1625</td><td><a href="sd.c.html#L1625">(!timer_pending(sd->ocr_power_timer))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1737</td><td><a href="sd.c.html#L1737">(!cmd_valid_while_locked(sd, req->cmd))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2032</td><td><a href="sd.c.html#L2032">(!address_in_range(sd, "READ_MULTIPLE_BLOCK", sd->data_start, io_len))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2148</td><td><a href="sd.c.html#L2148">(!blk_supports_write_perm(sd->blk))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1017</td><td><a href="sd.c.html#L1017">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1145</td><td><a href="sd.c.html#L1145">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1167</td><td><a href="sd.c.html#L1167">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1495</td><td><a href="sd.c.html#L1495">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1520</td><td><a href="sd.c.html#L1520">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1526</td><td><a href="sd.c.html#L1526">(!sd->spi)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1231</td><td><a href="sd.c.html#L1231">(req.arg > 1 << HWBLOCK_SHIFT)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">791</td><td><a href="sd.c.html#L791">(FIELD_EX32(sd->ocr, OCR, CARD_CAPACITY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">816</td><td><a href="sd.c.html#L816">(test_bit(wpnum, sd->wp_group_bmap))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">841</td><td><a href="sd.c.html#L841">(test_bit(wpnum, sd->wp_group_bmap))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1305</td><td><a href="sd.c.html#L1305">(sd_wp_addr(sd, sd->data_start))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1864</td><td><a href="sd.c.html#L1864">(sd_wp_addr(sd, sd->data_start))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="sd.c.html#L312">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">561</td><td><a href="sd.c.html#L561">(sd->blk)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="sd.c.html#L620">(sd->me_no_qdev_me_kill_mammoth_with_rocks)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">719</td><td><a href="sd.c.html#L719">(!qdev_prop_set_drive_err(dev, "drive", blk, &err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1024</td><td><a href="sd.c.html#L1024">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1037</td><td><a href="sd.c.html#L1037">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="sd.c.html#L1052">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="sd.c.html#L1081">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1212</td><td><a href="sd.c.html#L1212">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1320</td><td><a href="sd.c.html#L1320">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1550</td><td><a href="sd.c.html#L1550">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1603</td><td><a href="sd.c.html#L1603">(sd->spi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="sd.c.html#L1705">(sd->expecting_acmd)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1749</td><td><a href="sd.c.html#L1749">(sd->expecting_acmd)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2145</td><td><a href="sd.c.html#L2145">(sd->blk)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">161</td><td><a href="sd.c.html#L161">(state == sd_inactive_state)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">179</td><td><a href="sd.c.html#L179">(rsp == sd_illegal)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">182</td><td><a href="sd.c.html#L182">(rsp == sd_r1b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">264</td><td><a href="sd.c.html#L264">(i < width)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="sd.c.html#L265">(bit >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="sd.c.html#L392">(size == SDSC_MAX_CAPACITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="sd.c.html#L397">(size <= SDSC_MAX_CAPACITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">810</td><td><a href="sd.c.html#L810">(erase_addr <= erase_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">832</td><td><a href="sd.c.html#L832">(i < 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="sd.c.html#L870">(i < 6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1756</td><td><a href="sd.c.html#L1756">(rtype == sd_illegal)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1809</td><td><a href="sd.c.html#L1809">(rtype != sd_illegal)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="sd.c.html#L1898">(i < sizeof(sd->cid))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1903</td><td><a href="sd.c.html#L1903">(i < sizeof(sd->cid))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1917</td><td><a href="sd.c.html#L1917">(i < sizeof(sd->csd))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1927</td><td><a href="sd.c.html#L1927">(i < sizeof(sd->csd))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2177</td><td><a href="sd.c.html#L2177">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1355</td><td><a href="sd.c.html#L1355">(!address_in_range(sd, "SET_WRITE_PROT", addr, 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1377</td><td><a href="sd.c.html#L1377">(!address_in_range(sd, "CLR_WRITE_PROT", addr, 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="sd.c.html#L1724">(sd_req_crc_validate(req))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">613</td><td><a href="sd.c.html#L613">(inserted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">622</td><td><a href="sd.c.html#L622">(inserted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">628</td><td><a href="sd.c.html#L628">(inserted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">734</td><td><a href="sd.c.html#L734">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">812</td><td><a href="sd.c.html#L812">(sdsc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">897</td><td><a href="sd.c.html#L897">(lock)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">902</td><td><a href="sd.c.html#L902">(erase)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">941</td><td><a href="sd.c.html#L941">(set_pwd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">946</td><td><a href="sd.c.html#L946">(clr_pwd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">950</td><td><a href="sd.c.html#L950">(lock)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1488</td><td><a href="sd.c.html#L1488">(rca)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

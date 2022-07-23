@@ -1,0 +1,109 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\ppc\mmu-radix64.c Ctrl Expressions (58) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\ppc\mmu-radix64.c Ctrl Expressions (58) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\ppc\mmu-radix64.c Ctrl Expressions (58)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">197</td><td><a href="mmu-radix64.c.html#L197">(<span style='background-color:#741da3;'>mmuidx_pr(mmu_idx) || (pte & R_PTE_EAA_PRIV) || partition_scoped</span>)</a></td><td class="num">1006.75</td></tr>
+      <tr><td class="num line">379</td><td><a href="mmu-radix64.c.html#L379">(ppc_radix64_walk_tree(CPU(cpu)->as, g_raddr, pate.dw0 & PRTBE_R_RPDB, pate.dw0 & PRTBE_R_RPDS, h_raddr, h_page_size, &pte, &fault_cause, &pte_addr) || ppc_radix64_check_prot(cpu, access_type, pte, &fault_cause, h_prot, mmu_idx, true))</a></td><td class="num">59.50</td></tr>
+      <tr><td class="num line">620</td><td><a href="mmu-radix64.c.html#L620">(!ppc_radix64_get_fully_qualified_addr(&cpu->env, eaddr, &lpid, &pid))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">350</td><td><a href="mmu-radix64.c.html#L350">(lpid == 0 && !FIELD_EX64(env->msr, MSR, HV))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">194</td><td><a href="mmu-radix64.c.html#L194">(!partition_scoped && (pte & R_PTE_EAA_PRIV) && FIELD_EX64(env->msr, MSR, PR))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">184</td><td><a href="mmu-radix64.c.html#L184">((pte & R_PTE_ATT) == R_PTE_ATT_NI_IO && access_type == MMU_INST_FETCH)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">631</td><td><a href="mmu-radix64.c.html#L631">(!vhc->get_pate(cpu->vhyp, cpu, lpid, &pate))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">353</td><td><a href="mmu-radix64.c.html#L353">((pate->dw0 & PATE1_R_PRTS) < 5)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">347</td><td><a href="mmu-radix64.c.html#L347">(!(pate->dw0 & PATE0_HR))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="mmu-radix64.c.html#L594">(!relocation && (mmuidx_hv(mmu_idx) || vhyp_flat_addressing(cpu)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="mmu-radix64.c.html#L322">(!ppc_radix64_is_valid_level(level++, *psize, nls))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="mmu-radix64.c.html#L520">(!ppc_radix64_is_valid_level(level++, *g_page_size, nls))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">599</td><td><a href="mmu-radix64.c.html#L599">(mmuidx_hv(mmu_idx) || !env->has_hv_mode)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">207</td><td><a href="mmu-radix64.c.html#L207">(need_prot & ~*prot)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">484</td><td><a href="mmu-radix64.c.html#L484">(FIELD_EX64(env->msr, MSR, HV) || vhyp_flat_addressing(cpu))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">439</td><td><a href="mmu-radix64.c.html#L439">(prtb & (size - 1))</a></td><td class="num">5.60</td></tr>
+      <tr><td class="num line">613</td><td><a href="mmu-radix64.c.html#L613">(guest_visible && !ppc64_use_proc_tbl(cpu))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">272</td><td><a href="mmu-radix64.c.html#L272">(!(pde & R_PTE_VALID))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">279</td><td><a href="mmu-radix64.c.html#L279">(!(pde & R_PTE_LEAF))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">332</td><td><a href="mmu-radix64.c.html#L332">(!(pde & R_PTE_LEAF))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">535</td><td><a href="mmu-radix64.c.html#L535">(!(pte & R_PTE_LEAF))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="mmu-radix64.c.html#L600">(!(eaddr >> 63))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">40</td><td><a href="mmu-radix64.c.html#L40">(FIELD_EX64(env->msr, MSR, HV))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">36</td><td><a href="mmu-radix64.c.html#L36">(eaddr & ~R_EADDR_VALID_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">234</td><td><a href="mmu-radix64.c.html#L234">(pte ^ npte)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">286</td><td><a href="mmu-radix64.c.html#L286">(nlb & mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">310</td><td><a href="mmu-radix64.c.html#L310">(base_addr & mask)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">412</td><td><a href="mmu-radix64.c.html#L412">(cpu->vhyp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">628</td><td><a href="mmu-radix64.c.html#L628">(cpu->vhyp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="mmu-radix64.c.html#L639">(!ppc64_v3_get_pate(cpu, lpid, &pate))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="mmu-radix64.c.html#L646">(!validate_pate(cpu, lpid, &pate))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">687</td><td><a href="mmu-radix64.c.html#L687">(lpid || !mmuidx_hv(mmu_idx))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">544</td><td><a href="mmu-radix64.c.html#L544">(ppc_radix64_check_prot(cpu, access_type, pte, &fault_cause, g_prot, mmu_idx, false))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">224</td><td><a href="mmu-radix64.c.html#L224">(access_type == MMU_DATA_STORE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="mmu-radix64.c.html#L449">(offset >= size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="mmu-radix64.c.html#L458">(vhyp_flat_addressing(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="mmu-radix64.c.html#L679">(vhyp_flat_addressing(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">329</td><td><a href="mmu-radix64.c.html#L329">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">384</td><td><a href="mmu-radix64.c.html#L384">(pde_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="mmu-radix64.c.html#L387">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">393</td><td><a href="mmu-radix64.c.html#L393">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">441</td><td><a href="mmu-radix64.c.html#L441">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">451</td><td><a href="mmu-radix64.c.html#L451">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">474</td><td><a href="mmu-radix64.c.html#L474">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">491</td><td><a href="mmu-radix64.c.html#L491">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">493</td><td><a href="mmu-radix64.c.html#L493">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">516</td><td><a href="mmu-radix64.c.html#L516">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">527</td><td><a href="mmu-radix64.c.html#L527">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">529</td><td><a href="mmu-radix64.c.html#L529">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">547</td><td><a href="mmu-radix64.c.html#L547">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">553</td><td><a href="mmu-radix64.c.html#L553">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="mmu-radix64.c.html#L621">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">632</td><td><a href="mmu-radix64.c.html#L632">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">640</td><td><a href="mmu-radix64.c.html#L640">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">647</td><td><a href="mmu-radix64.c.html#L647">(guest_visible)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="mmu-radix64.c.html#L666">(relocation)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">670</td><td><a href="mmu-radix64.c.html#L670">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">694</td><td><a href="mmu-radix64.c.html#L694">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\core\cgroup.c Ctrl Expressions (299) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\core\cgroup.c Ctrl Expressions (299) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\cgroup.c Ctrl Expressions (299)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1031</td><td><a href="cgroup.c.html#L1031">(<span style='background-color:#741da3;'>c->cpu_accounting || cgroup_context_has_cpu_weight(c) || cgroup_context_has_cpu_shares(c) || c->cpu_quota_per_sec_usec != USEC_INFINITY</span>)</a></td><td class="num">1013.50</td></tr>
+      <tr><td class="num line">1040</td><td><a href="cgroup.c.html#L1040">(<span style='background-color:#741da3;'>c->memory_accounting || c->memory_limit != CGROUP_LIMIT_MAX || cgroup_context_has_unified_memory_config(c)</span>)</a></td><td class="num">1012.25</td></tr>
+      <tr><td class="num line">1279</td><td><a href="cgroup.c.html#L1279">(UNIT_ISSET(u->slice) && !unit_has_name(UNIT_DEREF(u->slice), SPECIAL_ROOT_SLICE))</a></td><td class="num">42.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="cgroup.c.html#L958">(c->device_policy == CGROUP_CLOSED || (c->device_policy == CGROUP_AUTO && c->device_allow))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">1259</td><td><a href="cgroup.c.html#L1259">(u->cgroup_path && u->cgroup_realized && (u->cgroup_realized_mask & mask) == mask)</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">891</td><td><a href="cgroup.c.html#L891">(!cgroup_apply_blkio_device_limit(u, l->path, l->limits[CGROUP_IO_RBPS_MAX], l->limits[CGROUP_IO_WBPS_MAX]))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">1735</td><td><a href="cgroup.c.html#L1735">((r = cg_read_pid(f, &pid)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1752</td><td><a href="cgroup.c.html#L1752">((r = cg_read_subgroup(d, &fn)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1704</td><td><a href="cgroup.c.html#L1704">(get_process_ppid(npid, &ppid) >= 0 && ppid != mypid)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1809</td><td><a href="cgroup.c.html#L1809">(UNIT_VTABLE(u)->notify_cgroup_empty)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">331</td><td><a href="cgroup.c.html#L331">(!S_ISCHR(st.st_mode) && !S_ISBLK(st.st_mode))</a></td><td class="num">22.00</td></tr>
+      <tr><td class="num line">1423</td><td><a href="cgroup.c.html#L1423">(u->type != UNIT_SLICE && !c->delegate)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1184</td><td><a href="cgroup.c.html#L1184">(c->ip_accounting || c->ip_address_allow || c->ip_address_deny)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">1216</td><td><a href="cgroup.c.html#L1216">(u->cgroup_subtree_mask_valid && m == u->cgroup_subtree_mask)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2209</td><td><a href="cgroup.c.html#L2209">(r == -ENODATA && u->cpu_usage_last != NSEC_INFINITY)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">950</td><td><a href="cgroup.c.html#L950">(c->device_allow || c->device_policy != CGROUP_AUTO)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1045</td><td><a href="cgroup.c.html#L1045">(c->device_allow || c->device_policy != CGROUP_AUTO)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1049</td><td><a href="cgroup.c.html#L1049">(c->tasks_accounting || c->tasks_max != (uint64_t)-1)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1642</td><td><a href="cgroup.c.html#L1642">(inotify_rm_watch(u->manager->cgroup_inotify_fd, u->cgroup_inotify_wd) < 0)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">898</td><td><a href="cgroup.c.html#L898">(!cgroup_apply_blkio_device_limit(u, b->path, b->rbps, b->wbps))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">998</td><td><a href="cgroup.c.html#L998">((val = startswith(a->path, "block-")))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1000</td><td><a href="cgroup.c.html#L1000">((val = startswith(a->path, "char-")))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1573</td><td><a href="cgroup.c.html#L1573">((slice = UNIT_DEREF(u->slice)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1892</td><td><a href="cgroup.c.html#L1892">((e = endswith(m->cgroup_root, "/")))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1553</td><td><a href="cgroup.c.html#L1553">((i = m->cgroup_queue))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1977</td><td><a href="cgroup.c.html#L1977">(!all_unified && m->test_run_flags == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">436</td><td><a href="cgroup.c.html#L436">(IN_SET(state, MANAGER_STARTING, MANAGER_INITIALIZING) && c->startup_cpu_weight != CGROUP_WEIGHT_INVALID)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">446</td><td><a href="cgroup.c.html#L446">(IN_SET(state, MANAGER_STARTING, MANAGER_INITIALIZING) && c->startup_cpu_shares != CGROUP_CPU_SHARES_INVALID)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">531</td><td><a href="cgroup.c.html#L531">(IN_SET(state, MANAGER_STARTING, MANAGER_INITIALIZING) && c->startup_io_weight != CGROUP_WEIGHT_INVALID)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">541</td><td><a href="cgroup.c.html#L541">(IN_SET(state, MANAGER_STARTING, MANAGER_INITIALIZING) && c->startup_blockio_weight != CGROUP_BLKIO_WEIGHT_INVALID)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1944</td><td><a href="cgroup.c.html#L1944">(MANAGER_IS_SYSTEM(m) && m->test_run_flags == 0)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">231</td><td><a href="cgroup.c.html#L231">(il->limits[type] != cgroup_io_limit_defaults[type])</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1195</td><td><a href="cgroup.c.html#L1195">(c->ip_address_allow || c->ip_address_deny)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2102</td><td><a href="cgroup.c.html#L2102">((u->cgroup_realized_mask & CGROUP_MASK_MEMORY) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2133</td><td><a href="cgroup.c.html#L2133">((u->cgroup_realized_mask & CGROUP_MASK_PIDS) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2164</td><td><a href="cgroup.c.html#L2164">((u->cgroup_realized_mask & CGROUP_MASK_CPU) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2177</td><td><a href="cgroup.c.html#L2177">((u->cgroup_realized_mask & CGROUP_MASK_CPUACCT) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2328</td><td><a href="cgroup.c.html#L2328">((u->cgroup_realized_mask & m) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1737</td><td><a href="cgroup.c.html#L1737">(r < 0 && ret >= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="cgroup.c.html#L1741">(r < 0 && ret >= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1762</td><td><a href="cgroup.c.html#L1762">(r < 0 && ret >= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1766</td><td><a href="cgroup.c.html#L1766">(r < 0 && ret >= 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="cgroup.c.html#L718">((apply_mask & CGROUP_MASK_CPU) && !is_root)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="cgroup.c.html#L903">((apply_mask & CGROUP_MASK_MEMORY) && !is_root)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">943</td><td><a href="cgroup.c.html#L943">((apply_mask & CGROUP_MASK_DEVICES) && !is_root)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1007</td><td><a href="cgroup.c.html#L1007">((apply_mask & CGROUP_MASK_PIDS) && !is_root)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">811</td><td><a href="cgroup.c.html#L811">(!cgroup_apply_io_device_limit(u, l->path, l->limits))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1996</td><td><a href="cgroup.c.html#L1996">(delete && m->cgroup_root)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">704</td><td><a href="cgroup.c.html#L704">(apply_mask == 0 && !apply_bpf)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1077</td><td><a href="cgroup.c.html#L1077">(!e || exec_context_maintains_privileges(e) || cg_all_unified() > 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1829</td><td><a href="cgroup.c.html#L1829">(errno == EINTR || errno == EAGAIN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1842</td><td><a href="cgroup.c.html#L1842">(e->mask & IN_IGNORED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">370</td><td><a href="cgroup.c.html#L370">(type == 'c' && streq(line, "Character devices:"))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="cgroup.c.html#L375">(type == 'b' && streq(line, "Block devices:"))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">325</td><td><a href="cgroup.c.html#L325">(errno == ENOENT && ignore_notfound)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">605</td><td><a href="cgroup.c.html#L605">(limits[type] != cgroup_io_limit_defaults[type])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1106</td><td><a href="cgroup.c.html#L1106">(UNIT_DEREF(member->slice) != u)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1583</td><td><a href="cgroup.c.html#L1583">(UNIT_DEREF(m->slice) != slice)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2357</td><td><a href="cgroup.c.html#L2357">(UNIT_DEREF(member->slice) != u)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">250</td><td><a href="cgroup.c.html#L250">(b->rbps != CGROUP_LIMIT_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">256</td><td><a href="cgroup.c.html#L256">(b->wbps != CGROUP_LIMIT_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">439</td><td><a href="cgroup.c.html#L439">(c->cpu_weight != CGROUP_WEIGHT_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">449</td><td><a href="cgroup.c.html#L449">(c->cpu_shares != CGROUP_CPU_SHARES_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">534</td><td><a href="cgroup.c.html#L534">(c->io_weight != CGROUP_WEIGHT_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">544</td><td><a href="cgroup.c.html#L544">(c->blockio_weight != CGROUP_BLKIO_WEIGHT_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">672</td><td><a href="cgroup.c.html#L672">(u->type == UNIT_SLICE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1009</td><td><a href="cgroup.c.html#L1009">(c->tasks_max != CGROUP_LIMIT_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1097</td><td><a href="cgroup.c.html#L1097">(u->type == UNIT_SLICE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1177</td><td><a href="cgroup.c.html#L1177">(u->type == UNIT_SLICE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1335</td><td><a href="cgroup.c.html#L1335">(u->cgroup_inotify_wd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1358</td><td><a href="cgroup.c.html#L1358">(u->cgroup_inotify_wd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1641</td><td><a href="cgroup.c.html#L1641">(u->cgroup_inotify_wd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1838</td><td><a href="cgroup.c.html#L1838">(e->wd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1929</td><td><a href="cgroup.c.html#L1929">(m->cgroup_inotify_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1973</td><td><a href="cgroup.c.html#L1973">(m->pin_cgroupfs_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2220</td><td><a href="cgroup.c.html#L2220">(ns > u->cpu_usage_base)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2249</td><td><a href="cgroup.c.html#L2249">(u->type == UNIT_SLICE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2301</td><td><a href="cgroup.c.html#L2301">(u->ip_accounting_ingress_map_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="cgroup.c.html#L2304">(u->ip_accounting_egress_map_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2341</td><td><a href="cgroup.c.html#L2341">(u->cgroup_bpf_state == UNIT_CGROUP_BPF_INVALIDATED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2349</td><td><a href="cgroup.c.html#L2349">(u->type == UNIT_SLICE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2025</td><td><a href="cgroup.c.html#L2025">(!e || e == p)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">324</td><td><a href="cgroup.c.html#L324">(stat(node, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1697</td><td><a href="cgroup.c.html#L1697">(cg_read_pid(f, &npid) > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1881</td><td><a href="cgroup.c.html#L1881">(!e && MANAGER_IS_SYSTEM(m))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">830</td><td><a href="cgroup.c.html#L830">(!cgroup_apply_io_device_limit(u, b->path, limits))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="cgroup.c.html#L1457">(!MANAGER_IS_SYSTEM(u->manager))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">292</td><td><a href="cgroup.c.html#L292">(major(st.st_dev) != 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">317</td><td><a href="cgroup.c.html#L317">(node[0] == '-')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1332</td><td><a href="cgroup.c.html#L1332">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1390</td><td><a href="cgroup.c.html#L1390">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1658</td><td><a href="cgroup.c.html#L1658">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1689</td><td><a href="cgroup.c.html#L1689">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1783</td><td><a href="cgroup.c.html#L1783">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1800</td><td><a href="cgroup.c.html#L1800">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2099</td><td><a href="cgroup.c.html#L2099">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2130</td><td><a href="cgroup.c.html#L2130">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2153</td><td><a href="cgroup.c.html#L2153">(!u->cgroup_path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">996</td><td><a href="cgroup.c.html#L996">(path_startswith(a->path, "/dev/"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1126</td><td><a href="cgroup.c.html#L1126">(UNIT_ISSET(u->slice))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1227</td><td><a href="cgroup.c.html#L1227">(UNIT_ISSET(u->slice))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1309</td><td><a href="cgroup.c.html#L1309">(streq_ptr(u->cgroup_path, p))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1460</td><td><a href="cgroup.c.html#L1460">(sd_id128_is_null(u->invocation_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1517</td><td><a href="cgroup.c.html#L1517">(UNIT_ISSET(u->slice))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">131</td><td><a href="cgroup.c.html#L131">(c->io_device_weights)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">134</td><td><a href="cgroup.c.html#L134">(c->io_device_limits)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">137</td><td><a href="cgroup.c.html#L137">(c->blockio_device_weights)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="cgroup.c.html#L140">(c->blockio_device_bandwidths)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">143</td><td><a href="cgroup.c.html#L143">(c->device_allow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="cgroup.c.html#L759">(apply_mask & CGROUP_MASK_IO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">836</td><td><a href="cgroup.c.html#L836">(apply_mask & CGROUP_MASK_BLKIO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">984</td><td><a href="cgroup.c.html#L984">(a->r)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">986</td><td><a href="cgroup.c.html#L986">(a->w)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="cgroup.c.html#L988">(a->m)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1073</td><td><a href="cgroup.c.html#L1073">(c->delegate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="cgroup.c.html#L1092">(u->cgroup_members_mask_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1499</td><td><a href="cgroup.c.html#L1499">(u->in_cgroup_queue)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1538</td><td><a href="cgroup.c.html#L1538">(u->in_cgroup_queue)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1636</td><td><a href="cgroup.c.html#L1636">(u->cgroup_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2322</td><td><a href="cgroup.c.html#L2322">(m & CGROUP_MASK_IO | CGROUP_MASK_BLKIO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2325</td><td><a href="cgroup.c.html#L2325">(m & CGROUP_MASK_CPU | CGROUP_MASK_CPUACCT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1037</td><td><a href="cgroup.c.html#L1037">(cgroup_context_has_io_config(c) || cgroup_context_has_blockio_config(c))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">404</td><td><a href="cgroup.c.html#L404">(fnmatch(name, w, 0) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">724</td><td><a href="cgroup.c.html#L724">(cg_all_unified() > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">904</td><td><a href="cgroup.c.html#L904">(cg_all_unified() > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1920</td><td><a href="cgroup.c.html#L1920">(cg_unified_controller(SYSTEMD_CGROUP_CONTROLLER) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">230</td><td><a href="cgroup.c.html#L230">(type < _CGROUP_IO_LIMIT_TYPE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">287</td><td><a href="cgroup.c.html#L287">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="cgroup.c.html#L343">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">396</td><td><a href="cgroup.c.html#L396">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">398</td><td><a href="cgroup.c.html#L398">(maj <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">414</td><td><a href="cgroup.c.html#L414">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="cgroup.c.html#L461">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="cgroup.c.html#L465">(quota != USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="cgroup.c.html#L473">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">484</td><td><a href="cgroup.c.html#L484">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="cgroup.c.html#L490">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="cgroup.c.html#L494">(quota != USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="cgroup.c.html#L499">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="cgroup.c.html#L566">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">571</td><td><a href="cgroup.c.html#L571">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="cgroup.c.html#L582">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="cgroup.c.html#L587">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="cgroup.c.html#L601">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="cgroup.c.html#L604">(type < _CGROUP_IO_LIMIT_TYPE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">617</td><td><a href="cgroup.c.html#L617">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">630</td><td><a href="cgroup.c.html#L630">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">633</td><td><a href="cgroup.c.html#L633">(rbps != CGROUP_LIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="cgroup.c.html#L637">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="cgroup.c.html#L641">(wbps != CGROUP_LIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="cgroup.c.html#L645">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">660</td><td><a href="cgroup.c.html#L660">(v != CGROUP_LIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">664</td><td><a href="cgroup.c.html#L664">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="cgroup.c.html#L677">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="cgroup.c.html#L781">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="cgroup.c.html#L821">(type < _CGROUP_IO_LIMIT_TYPE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">858</td><td><a href="cgroup.c.html#L858">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="cgroup.c.html#L913">(max != CGROUP_LIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="cgroup.c.html#L931">(val == CGROUP_LIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">937</td><td><a href="cgroup.c.html#L937">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="cgroup.c.html#L954">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="cgroup.c.html#L991">(k == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1017</td><td><a href="cgroup.c.html#L1017">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="cgroup.c.html#L1103">(member == u)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="cgroup.c.html#L1281">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="cgroup.c.html#L1314">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="cgroup.c.html#L1340">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1342</td><td><a href="cgroup.c.html#L1342">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1350</td><td><a href="cgroup.c.html#L1350">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="cgroup.c.html#L1354">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1360</td><td><a href="cgroup.c.html#L1360">(errno == ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="cgroup.c.html#L1369">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1398</td><td><a href="cgroup.c.html#L1398">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1400</td><td><a href="cgroup.c.html#L1400">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1406</td><td><a href="cgroup.c.html#L1406">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="cgroup.c.html#L1414">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1429</td><td><a href="cgroup.c.html#L1429">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="cgroup.c.html#L1441">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1445</td><td><a href="cgroup.c.html#L1445">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1467</td><td><a href="cgroup.c.html#L1467">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1519</td><td><a href="cgroup.c.html#L1519">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="cgroup.c.html#L1525">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1557</td><td><a href="cgroup.c.html#L1557">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1578</td><td><a href="cgroup.c.html#L1578">(m == u)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1666</td><td><a href="cgroup.c.html#L1666">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1693</td><td><a href="cgroup.c.html#L1693">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1700</td><td><a href="cgroup.c.html#L1700">(npid == pid)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1707</td><td><a href="cgroup.c.html#L1707">(pid != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="cgroup.c.html#L1730">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1746</td><td><a href="cgroup.c.html#L1746">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1747</td><td><a href="cgroup.c.html#L1747">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1787</td><td><a href="cgroup.c.html#L1787">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1789</td><td><a href="cgroup.c.html#L1789">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1804</td><td><a href="cgroup.c.html#L1804">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1828</td><td><a href="cgroup.c.html#L1828">(l < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1871</td><td><a href="cgroup.c.html#L1871">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1897</td><td><a href="cgroup.c.html#L1897">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1901</td><td><a href="cgroup.c.html#L1901">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1905</td><td><a href="cgroup.c.html#L1905">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1907</td><td><a href="cgroup.c.html#L1907">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1911</td><td><a href="cgroup.c.html#L1911">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="cgroup.c.html#L1913">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1933</td><td><a href="cgroup.c.html#L1933">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1939</td><td><a href="cgroup.c.html#L1939">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1950</td><td><a href="cgroup.c.html#L1950">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1952</td><td><a href="cgroup.c.html#L1952">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1954</td><td><a href="cgroup.c.html#L1954">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="cgroup.c.html#L1961">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1967</td><td><a href="cgroup.c.html#L1967">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1982</td><td><a href="cgroup.c.html#L1982">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1985</td><td><a href="cgroup.c.html#L1985">(c < _CGROUP_CONTROLLER_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2042</td><td><a href="cgroup.c.html#L2042">(pid <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2046</td><td><a href="cgroup.c.html#L2046">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2057</td><td><a href="cgroup.c.html#L2057">(pid <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2060</td><td><a href="cgroup.c.html#L2060">(pid == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2106</td><td><a href="cgroup.c.html#L2106">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2108</td><td><a href="cgroup.c.html#L2108">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2112</td><td><a href="cgroup.c.html#L2112">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2114</td><td><a href="cgroup.c.html#L2114">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2137</td><td><a href="cgroup.c.html#L2137">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2139</td><td><a href="cgroup.c.html#L2139">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2157</td><td><a href="cgroup.c.html#L2157">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2159</td><td><a href="cgroup.c.html#L2159">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="cgroup.c.html#L2168">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2172</td><td><a href="cgroup.c.html#L2172">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2181</td><td><a href="cgroup.c.html#L2181">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2183</td><td><a href="cgroup.c.html#L2183">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="cgroup.c.html#L2187">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2217</td><td><a href="cgroup.c.html#L2217">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2259</td><td><a href="cgroup.c.html#L2259">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2266</td><td><a href="cgroup.c.html#L2266">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2287</td><td><a href="cgroup.c.html#L2287">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2318</td><td><a href="cgroup.c.html#L2318">(m == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2354</td><td><a href="cgroup.c.html#L2354">(member == u)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">290</td><td><a href="cgroup.c.html#L290">(S_ISBLK(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1594</td><td><a href="cgroup.c.html#L1594">(unit_has_mask_realized(m, unit_get_target_mask(m), unit_get_enable_mask(m), unit_get_needs_bpf(m)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1610</td><td><a href="cgroup.c.html#L1610">(!UNIT_HAS_CGROUP_CONTEXT(u))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2096</td><td><a href="cgroup.c.html#L2096">(!UNIT_CGROUP_BOOL(u, memory_accounting))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2127</td><td><a href="cgroup.c.html#L2127">(!UNIT_CGROUP_BOOL(u, tasks_accounting))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2205</td><td><a href="cgroup.c.html#L2205">(!UNIT_CGROUP_BOOL(u, cpu_accounting))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2252</td><td><a href="cgroup.c.html#L2252">(!UNIT_CGROUP_BOOL(u, ip_accounting))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2315</td><td><a href="cgroup.c.html#L2315">(!UNIT_HAS_CGROUP_CONTEXT(u))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2338</td><td><a href="cgroup.c.html#L2338">(!UNIT_HAS_CGROUP_CONTEXT(u))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">361</td><td><a href="cgroup.c.html#L361">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">385</td><td><a href="cgroup.c.html#L385">(!good)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">391</td><td><a href="cgroup.c.html#L391">(!w)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">763</td><td><a href="cgroup.c.html#L763">(!is_root)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">840</td><td><a href="cgroup.c.html#L840">(!is_root)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1062</td><td><a href="cgroup.c.html#L1062">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1181</td><td><a href="cgroup.c.html#L1181">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1192</td><td><a href="cgroup.c.html#L1192">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1286</td><td><a href="cgroup.c.html#L1286">(!escaped)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1304</td><td><a href="cgroup.c.html#L1304">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1387</td><td><a href="cgroup.c.html#L1387">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1394</td><td><a href="cgroup.c.html#L1394">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1758</td><td><a href="cgroup.c.html#L1758">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1847</td><td><a href="cgroup.c.html#L1847">(!u)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1883</td><td><a href="cgroup.c.html#L1883">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2083</td><td><a href="cgroup.c.html#L2083">(!u)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1588</td><td><a href="cgroup.c.html#L1588">(UNIT_IS_INACTIVE_OR_FAILED(unit_active_state(m)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">380</td><td><a href="cgroup.c.html#L380">(isempty(line))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="cgroup.c.html#L907">(cgroup_context_has_unified_memory_config(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="cgroup.c.html#L925">(cgroup_context_has_unified_memory_config(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1276</td><td><a href="cgroup.c.html#L1276">(unit_has_name(u, SPECIAL_ROOT_SLICE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1346</td><td><a href="cgroup.c.html#L1346">(unit_has_name(u, SPECIAL_ROOT_SLICE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1508</td><td><a href="cgroup.c.html#L1508">(unit_has_mask_realized(u, target_mask, enable_mask, needs_bpf))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2262</td><td><a href="cgroup.c.html#L2262">(IN_SET(metric, CGROUP_IP_INGRESS_BYTES, CGROUP_IP_EGRESS_BYTES))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">43</td><td><a href="cgroup.c.html#L43">(cgroup_compat_warned)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">710</td><td><a href="cgroup.c.html#L710">(is_root)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">727</td><td><a href="cgroup.c.html#L727">(has_weight)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">729</td><td><a href="cgroup.c.html#L729">(has_shares)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">743</td><td><a href="cgroup.c.html#L743">(has_weight)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="cgroup.c.html#L750">(has_shares)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">767</td><td><a href="cgroup.c.html#L767">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">769</td><td><a href="cgroup.c.html#L769">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">785</td><td><a href="cgroup.c.html#L785">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">791</td><td><a href="cgroup.c.html#L791">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">807</td><td><a href="cgroup.c.html#L807">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">814</td><td><a href="cgroup.c.html#L814">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">844</td><td><a href="cgroup.c.html#L844">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">851</td><td><a href="cgroup.c.html#L851">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">862</td><td><a href="cgroup.c.html#L862">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">874</td><td><a href="cgroup.c.html#L874">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">884</td><td><a href="cgroup.c.html#L884">(has_io)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">894</td><td><a href="cgroup.c.html#L894">(has_blockio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1022</td><td><a href="cgroup.c.html#L1022">(apply_bpf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1230</td><td><a href="cgroup.c.html#L1230">(more)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1258</td><td><a href="cgroup.c.html#L1258">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1289</td><td><a href="cgroup.c.html#L1289">(slice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1302</td><td><a href="cgroup.c.html#L1302">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1312</td><td><a href="cgroup.c.html#L1312">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1671</td><td><a href="cgroup.c.html#L1671">(is_root_slice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1886</td><td><a href="cgroup.c.html#L1886">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2017</td><td><a href="cgroup.c.html#L2017">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2031</td><td><a href="cgroup.c.html#L2031">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2064</td><td><a href="cgroup.c.html#L2064">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2068</td><td><a href="cgroup.c.html#L2068">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2213</td><td><a href="cgroup.c.html#L2213">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2226</td><td><a href="cgroup.c.html#L2226">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - crypto\tlscredsx509.c Ctrl Expressions (76) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - crypto\tlscredsx509.c Ctrl Expressions (76) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;crypto\tlscredsx509.c Ctrl Expressions (76)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">546</td><td><a href="tlscredsx509.c.html#L546">(<span style='background-color:#9c4c02;'>qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_CA_CERT, true, &cacert, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_CA_CRL, false, &cacrl, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_SERVER_CERT, true, &cert, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_SERVER_KEY, true, &key, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_DH_PARAMS, false, &dhparams, errp) < 0</span>)</a></td><td class="num">147.00</td></tr>
+      <tr><td class="num line">564</td><td><a href="tlscredsx509.c.html#L564">(qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_CA_CERT, true, &cacert, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_CLIENT_CERT, false, &cert, errp) < 0 || qcrypto_tls_creds_get_path(&creds->parent_obj, QCRYPTO_TLS_CREDS_X509_CLIENT_KEY, false, &key, errp) < 0)</a></td><td class="num">95.00</td></tr>
+      <tr><td class="num line">577</td><td><a href="tlscredsx509.c.html#L577">(creds->sanityCheck && qcrypto_tls_creds_x509_sanity_check(creds, creds->parent_obj.endpoint == QCRYPTO_TLS_CREDS_ENDPOINT_SERVER, cacert, cert, errp) < 0)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="tlscredsx509.c.html#L634">(qcrypto_tls_creds_get_dh_params_file(&creds->parent_obj, dhparams, &creds->parent_obj.dh_params, errp) < 0)</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">513</td><td><a href="tlscredsx509.c.html#L513">(cert && ncacerts && qcrypto_tls_creds_check_cert_pair(cert, certFile, cacerts, ncacerts, cacertFile, isServer, errp) < 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">600</td><td><a href="tlscredsx509.c.html#L600">(cert != NULL && key != NULL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">395</td><td><a href="tlscredsx509.c.html#L395">(!g_file_get_contents(certFile, &buf, &buflen, &gerr))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">442</td><td><a href="tlscredsx509.c.html#L442">(!g_file_get_contents(certFile, &buf, &buflen, &gerr))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">308</td><td><a href="tlscredsx509.c.html#L308">(!isCA && qcrypto_tls_creds_check_cert_key_purpose(creds, cert, certFile, isServer, errp) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">330</td><td><a href="tlscredsx509.c.html#L330">(gnutls_x509_crt_list_verify(&cert, 1, cacerts, ncacerts, NULL, 0, 0, &status) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="tlscredsx509.c.html#L452">(gnutls_x509_crt_list_import(certs, &certMax, &data, GNUTLS_X509_FMT_PEM, 0) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">545</td><td><a href="tlscredsx509.c.html#L545">(creds->parent_obj.endpoint == QCRYPTO_TLS_CREDS_ENDPOINT_SERVER)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">633</td><td><a href="tlscredsx509.c.html#L633">(creds->parent_obj.endpoint == QCRYPTO_TLS_CREDS_ENDPOINT_SERVER)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">480</td><td><a href="tlscredsx509.c.html#L480">(certFile && access(certFile, R_OK) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">498</td><td><a href="tlscredsx509.c.html#L498">(cert && qcrypto_tls_creds_check_cert(creds, cert, certFile, isServer, false, errp) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="tlscredsx509.c.html#L490">(qcrypto_tls_creds_load_ca_cert_list(creds, cacertFile, cacerts, MAX_CERTS, &ncacerts, errp) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">46</td><td><a href="tlscredsx509.c.html#L46">(now == (time_t - 1))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">661</td><td><a href="tlscredsx509.c.html#L661">(creds->parent_obj.dh_params)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="tlscredsx509.c.html#L506">(qcrypto_tls_creds_check_cert(creds, cacerts[i], cacertFile, isServer, true, errp) < 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">157</td><td><a href="tlscredsx509.c.html#L157">(!(usage & GNUTLS_KEY_KEY_CERT_SIGN))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">166</td><td><a href="tlscredsx509.c.html#L166">(!(usage & GNUTLS_KEY_DIGITAL_SIGNATURE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">174</td><td><a href="tlscredsx509.c.html#L174">(!(usage & GNUTLS_KEY_KEY_ENCIPHERMENT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">346</td><td><a href="tlscredsx509.c.html#L346">(status & GNUTLS_CERT_INVALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">350</td><td><a href="tlscredsx509.c.html#L350">(status & GNUTLS_CERT_SIGNER_NOT_FOUND)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="tlscredsx509.c.html#L354">(status & GNUTLS_CERT_REVOKED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="tlscredsx509.c.html#L358">(status & GNUTLS_CERT_INSECURE_ALGORITHM)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="tlscredsx509.c.html#L602">(creds->passwordid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="tlscredsx509.c.html#L657">(creds->data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">51</td><td><a href="tlscredsx509.c.html#L51">(gnutls_x509_crt_get_expiration_time(cert) < now)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">62</td><td><a href="tlscredsx509.c.html#L62">(gnutls_x509_crt_get_activation_time(cert) > now)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">289</td><td><a href="tlscredsx509.c.html#L289">(qcrypto_tls_creds_check_cert_times(cert, certFile, isServer, isCA, errp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">295</td><td><a href="tlscredsx509.c.html#L295">(qcrypto_tls_creds_check_cert_basic_constraints(creds, cert, certFile, isServer, isCA, errp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">302</td><td><a href="tlscredsx509.c.html#L302">(qcrypto_tls_creds_check_cert_key_usage(creds, cert, certFile, isCA, errp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">489</td><td><a href="tlscredsx509.c.html#L489">(access(cacertFile, R_OK) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">91</td><td><a href="tlscredsx509.c.html#L91">(status > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">101</td><td><a href="tlscredsx509.c.html#L101">(status == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">109</td><td><a href="tlscredsx509.c.html#L109">(status == GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">144</td><td><a href="tlscredsx509.c.html#L144">(status < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">145</td><td><a href="tlscredsx509.c.html#L145">(status == GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">209</td><td><a href="tlscredsx509.c.html#L209">(status == GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">213</td><td><a href="tlscredsx509.c.html#L213">(i == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="tlscredsx509.c.html#L218">(status != GNUTLS_E_SHORT_MEMORY_BUFFER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="tlscredsx509.c.html#L230">(status < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="tlscredsx509.c.html#L343">(status != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="tlscredsx509.c.html#L389">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="tlscredsx509.c.html#L406">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">418</td><td><a href="tlscredsx509.c.html#L418">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="tlscredsx509.c.html#L505">(i < ncacerts)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">526</td><td><a href="tlscredsx509.c.html#L526">(i < ncacerts)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">585</td><td><a href="tlscredsx509.c.html#L585">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="tlscredsx509.c.html#L594">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">615</td><td><a href="tlscredsx509.c.html#L615">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="tlscredsx509.c.html#L622">(cacrl != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">626</td><td><a href="tlscredsx509.c.html#L626">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">92</td><td><a href="tlscredsx509.c.html#L92">(!isCA)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">258</td><td><a href="tlscredsx509.c.html#L258">(!allowServer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">267</td><td><a href="tlscredsx509.c.html#L267">(!allowClient)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">485</td><td><a href="tlscredsx509.c.html#L485">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">605</td><td><a href="tlscredsx509.c.html#L605">(!password)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">245</td><td><a href="tlscredsx509.c.html#L245">(g_str_equal(buffer, GNUTLS_KP_TLS_WWW_SERVER))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">247</td><td><a href="tlscredsx509.c.html#L247">(g_str_equal(buffer, GNUTLS_KP_TLS_WWW_CLIENT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="tlscredsx509.c.html#L249">(g_str_equal(buffer, GNUTLS_KP_ANY))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">102</td><td><a href="tlscredsx509.c.html#L102">(isCA)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">111</td><td><a href="tlscredsx509.c.html#L111">(isCA)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">156</td><td><a href="tlscredsx509.c.html#L156">(isCA)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">158</td><td><a href="tlscredsx509.c.html#L158">(critical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">167</td><td><a href="tlscredsx509.c.html#L167">(critical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">175</td><td><a href="tlscredsx509.c.html#L175">(critical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">241</td><td><a href="tlscredsx509.c.html#L241">(purposeCritical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="tlscredsx509.c.html#L257">(isServer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">259</td><td><a href="tlscredsx509.c.html#L259">(critical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">268</td><td><a href="tlscredsx509.c.html#L268">(critical)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">523</td><td><a href="tlscredsx509.c.html#L523">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">781</td><td><a href="tlscredsx509.c.html#L781">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">789</td><td><a href="tlscredsx509.c.html#L789">(creds_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">792</td><td><a href="tlscredsx509.c.html#L792">(creds_dh_params)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

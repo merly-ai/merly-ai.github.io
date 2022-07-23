@@ -1,0 +1,216 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\network\networkd-dhcp-prefix-delegation.c Ctrl Expressions (165) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\network\networkd-dhcp-prefix-delegation.c Ctrl Expressions (165) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\network\networkd-dhcp-prefix-delegation.c Ctrl Expressions (165)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">843</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L843">(ipv4address->s_addr & htobe32(<span style='background-color:#741da3;'>UINT32_C(1) << (32 - ipv4masklen - i - 1)</span>))</a></td><td class="num">1029.55</td></tr>
+      <tr><td class="num line">441</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L441">(<span style='background-color:#741da3;'>subnet_id >= UINT64_C(1) << (64 - pd_prefix_len)</span>)</a></td><td class="num">1008.10</td></tr>
+      <tr><td class="num line">642</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L642">(uplink->dhcp4_6rd_tunnel_name && link_get_by_name(uplink->manager, uplink->dhcp4_6rd_tunnel_name, &tunnel) >= 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">986</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L986">(uplink->dhcp4_6rd_tunnel_name && link_get_by_name(uplink->manager, uplink->dhcp4_6rd_tunnel_name, &old_tunnel) >= 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">501</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L501">(link_get_by_dhcp_pd_subnet_prefix(link->manager, &prefix, &assigned_link) < 0 || assigned_link == link)</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">138</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L138">(in6_addr_prefix_covers(pd_prefix, pd_prefix_len, &address->in_addr.in6) <= 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">157</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L157">(in6_addr_prefix_covers(pd_prefix, pd_prefix_len, &route->dst.in6) > 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">568</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L568">(link_radv_enabled(link) && link->network->dhcp_pd_announce && !link->radv)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">535</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L535">(link_radv_enabled(link) && link->network->dhcp_pd_announce)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L994">(link_get_by_name(uplink->manager, uplink->dhcp4_6rd_tunnel_name, NULL) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">720</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L720">(route_get(link->manager, NULL, route, &existing) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">81</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L81">(hashmap_get(link->manager->links_by_dhcp_pd_subnet_prefix, prefix) != link)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">497</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L497">(set_contains(link->manager->dhcp_pd_subnet_ids, &n))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">44</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L44">(link->network->dhcp_pd_uplink_index > 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">47</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L47">(link->network->dhcp_pd_uplink_index == UPLINK_INDEX_SELF)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L470">(link->network->dhcp_pd_subnet_id >= 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1190</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1190">(link->network->dhcp_pd_uplink_index > 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1192</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1192">(link->network->dhcp_pd_uplink_index == UPLINK_INDEX_SELF)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">889</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L889">(streq_ptr(uplink->dhcp4_6rd_tunnel_name, link->ifname))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">180</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L180">(!link->network->dhcp_pd_assign)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">389</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L389">(!link->network->dhcp_pd_assign)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1137</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1137">(!link->network->dhcp_use_6rd)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1161</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1161">(!link->network->dhcp6_use_pd_prefix)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1146</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1146">(sd_dhcp_client_is_running(link->dhcp_client) <= 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1170</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1170">(sd_dhcp6_client_is_running(link->dhcp6_client) <= 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">134</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L134">(address->source != NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">153</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L153">(route->source != NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">184</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L184">(route->source != NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">206</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L206">(address->source != NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">239</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L239">(a->source == NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L251">(link->dhcp_pd_messages > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">261</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L261">(address->source != NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">271</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L271">(address->source == NETWORK_CONFIG_SOURCE_DHCP_PD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L583">(link->dhcp_pd_messages == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">618</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L618">(route->family != AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">620</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L620">(route->type != RTN_UNREACHABLE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">40</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L40">(link->network->dhcp_pd_uplink_name)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">130</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L130">(link->network->dhcp_pd_assign)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L256">(link->network->dhcp_pd_assign)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">316</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L316">(link->network->dhcp_pd_assign)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1188</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1188">(link->network->dhcp_pd_uplink_name)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">186</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L186">(only_marked && !route_is_marked(route))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">208</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L208">(only_marked && !address_is_marked(address))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L331">(route_get(NULL, link, route, &existing) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">415</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L415">(address_get(link, address, &existing) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">812</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L812">(route_get(NULL, link, route, &existing) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">842</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L842">(i < (unsigned)(32 - ipv4masklen))</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">562</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L562">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L580">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L616">(!IN_SET(route->source, NETWORK_CONFIG_SOURCE_DHCP4, NETWORK_CONFIG_SOURCE_DHCP6))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L622">(!set_contains(uplink->dhcp_pd_prefixes, &(struct in_addr_prefix){                                          .family = AF_INET6,                                          .prefixlen = route->dst_prefixlen,                                          .address = route->dst }))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L983">(!streq_ptr(uplink->dhcp4_6rd_tunnel_name, tunnel_name))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1140</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1140">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1164</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1164">(!IN_SET(link->state, LINK_STATE_CONFIGURING, LINK_STATE_CONFIGURED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">27</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L27">(!link->network)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">591</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L591">(!link->dhcp_pd_configured)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1134</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1134">(!link->network)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1143</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1143">(!link->dhcp_client)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1149</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1149">(!link->dhcp_lease)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1158">(!link->network)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1167</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1167">(!link->dhcp6_client)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1173</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1173">(!link->dhcp6_lease)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">910</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L910">(IN_SET(link->state, LINK_STATE_FAILED, LINK_STATE_LINGER))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">189</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L189">(link->radv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">214</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L214">(link->radv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1269</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1269">(isempty(rvalue) || streq(rvalue, "auto"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">366</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L366">(log_level < log_get_max_level())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">483</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L483">(dhcp_pd_get_assigned_subnet_prefix(link, pd_prefix, pd_prefix_len, ret) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">100</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L100">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">102</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L102">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">195</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L195">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L220">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">284</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L284">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">297</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L297">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L301">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L320">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L338">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">350</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L350">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L354">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L393">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">401</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L401">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L422">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L446">(pd_prefix_len < 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">474</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L474">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">491</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L491">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L507">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">530</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L530">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">540</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L540">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">548</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L548">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L553">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L587">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L611">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">653</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L653">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L657">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">669</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L669">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">673</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L673">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">700</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L700">(prefixlen >= 64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L707">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">726</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L726">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">785</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L785">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">800</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L800">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">819</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L819">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">866</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L866">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L870">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">877</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L877">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">882</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L882">(pd_prefixlen > 64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L886">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">891</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L891">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">896</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L896">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L914">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">940</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L940">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">944</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L944">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">951</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L951">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">955</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L955">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">969</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L969">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">974</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L974">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">979</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L979">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">996</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L996">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1006</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1006">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1011</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1011">(link == uplink)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1030">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1034">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1044</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1044">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1047">(pd_prefix_len > 64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1052">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1059</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1059">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1076">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1080">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1091">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1096">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1100</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1100">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1106</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1106">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1116</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1116">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1121</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1121">(link == uplink)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1194</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1194">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1237</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1237">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1275</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1275">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1281">(t > INT64_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">37</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L37">(!link_dhcp_pd_is_enabled(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">127</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L127">(!link_dhcp_pd_is_enabled(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">174</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L174">(!link_dhcp_pd_is_enabled(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">565</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L565">(!link_dhcp_pd_is_enabled(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">607</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L607">(!dhcp_pd_is_uplink(link, uplink, true))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1002</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1002">(!dhcp_pd_is_uplink(link, uplink, true))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1112</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1112">(!dhcp_pd_is_uplink(link, uplink, true))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1233</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1233">(!link_dhcp_pd_is_enabled(link))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">55</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L55">(!lease)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">66</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L66">(!lease)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">96</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L96">(!copy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">115</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L115">(!link)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">177</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L177">(!only_marked)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">269</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L269">(!has_ready)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">765</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L765">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">263</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L263">(address_is_ready(address))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1198">(dhcp4_pd_uplink_is_ready(uplink))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1203</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1203">(dhcp6_pd_uplink_is_ready(uplink))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1213</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1213">(dhcp4_pd_uplink_is_ready(uplink))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1218</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1218">(dhcp6_pd_uplink_is_ready(uplink))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">118</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L118">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">141</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L141">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">158</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L158">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">536</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L536">(is_uplink)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">847</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L847">(ret_pd_prefixlen)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">958</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L958">(DEBUG_LOGGING)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1197</td><td><a href="networkd-dhcp-prefix-delegation.c.html#L1197">(uplink)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

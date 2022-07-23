@@ -1,0 +1,354 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\nodelist\routerlist.c Ctrl Expressions (303) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\nodelist\routerlist.c Ctrl Expressions (303) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\nodelist\routerlist.c Ctrl Expressions (303)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1693</td><td><a href="routerlist.c.html#L1693">(<span style='background-color:#741da3;'>router->purpose == ROUTER_PURPOSE_BRIDGE && from_cache && !authdir_mode_bridge(options) && !routerinfo_is_a_configured_bridge(router)</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">2968</td><td><a href="routerlist.c.html#L2968">(<span style='background-color:#9c4c02;'>!tor_addr_eq(&r1->ipv4_addr, &r2->ipv4_addr) || strcasecmp(r1->nickname, r2->nickname) || r1->ipv4_orport != r2->ipv4_orport || !tor_addr_eq(&r1->ipv6_addr, &r2->ipv6_addr) || r1->ipv6_orport != r2->ipv6_orport || r1->ipv4_dirport != r2->ipv4_dirport || r1->purpose != r2->purpose || r1->onion_pkey_len != r2->onion_pkey_len || !tor_memeq(r1->onion_pkey, r2->onion_pkey, r1->onion_pkey_len) || !crypto_pk_eq_keys(r1->identity_pkey, r2->identity_pkey) || strcasecmp(r1->platform, r2->platform) || (r1->contact_info && !r2->contact_info) || (!r1->contact_info && r2->contact_info) || (r1->contact_info && r2->contact_info && strcasecmp(r1->contact_info, r2->contact_info)) || r1->is_hibernating != r2->is_hibernating || !addr_policies_eq(r1->exit_policy, r2->exit_policy) || (r1->supports_tunnelled_dir_requests != r2->supports_tunnelled_dir_requests)</span>)</a></td><td class="num">221.50</td></tr>
+      <tr><td class="num line">1877</td><td><a href="routerlist.c.html#L1877">(!must_keep[lifespans[i].idx - lo] && !lifespans[i].old)</a></td><td class="num">62.60</td></tr>
+      <tr><td class="num line">2692</td><td><a href="routerlist.c.html#L2692">(!(ri = router_get_by_id_digest(rs->identity_digest)) || tor_memneq(ri->cache_info.signed_descriptor_digest, sd->signed_descriptor_digest, DIGEST_LEN))</a></td><td class="num">53.75</td></tr>
+      <tr><td class="num line">1648</td><td><a href="routerlist.c.html#L1648">(!signed_desc_digest_is_recognized(&router->cache_info) && !routerinfo_is_a_configured_bridge(router))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">3003</td><td><a href="routerlist.c.html#L3003">((r1->bandwidthcapacity < r2->bandwidthcapacity / 2) || (r2->bandwidthcapacity < r1->bandwidthcapacity / 2))</a></td><td class="num">39.20</td></tr>
+      <tr><td class="num line">1942</td><td><a href="routerlist.c.html#L1942">(router->cache_info.published_on <= cutoff && router->cache_info.last_listed_as_valid_until < now && !digestset_probably_contains(retain, router->cache_info.signed_descriptor_digest))</a></td><td class="num">38.00</td></tr>
+      <tr><td class="num line">3024</td><td><a href="routerlist.c.html#L3024">(time_difference > ROUTER_ALLOW_UPTIME_DRIFT && time_difference > r1->uptime * .05 && time_difference > r2->uptime * .05)</a></td><td class="num">35.95</td></tr>
+      <tr><td class="num line">1963</td><td><a href="routerlist.c.html#L1963">(sd->published_on <= cutoff && sd->last_listed_as_valid_until < now && !digestset_probably_contains(retain, sd->signed_descriptor_digest))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="routerlist.c.html#L698">(len > HEX_DIGEST_LEN && (hexdigest[HEX_DIGEST_LEN] == '=' || hexdigest[HEX_DIGEST_LEN] == '~') && len <= HEX_DIGEST_LEN + 1 + MAX_NICKNAME_LEN)</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1248</td><td><a href="routerlist.c.html#L1248">(should_cache_old_descriptors() && ri->purpose == ROUTER_PURPOSE_GENERAL && !sdmap_get(rl->desc_digest_map, ri->cache_info.signed_descriptor_digest))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">3091</td><td><a href="routerlist.c.html#L3091">(crypto_pk_public_checksig(identity_pkey, signed_digest, sizeof(signed_digest), ei->pending_sig, ei->pending_sig_len) != DIGEST_LEN || tor_memneq(signed_digest, ei->cache_info.signed_descriptor_digest, DIGEST_LEN))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1862</td><td><a href="routerlist.c.html#L1862">(!must_keep[i - lo] && r->published_on < cutoff && n_rmv < n_extra)</a></td><td class="num">31.60</td></tr>
+      <tr><td class="num line">1849</td><td><a href="routerlist.c.html#L1849">(r->last_listed_as_valid_until >= now || (retain && digestset_probably_contains(retain, r->signed_descriptor_digest)))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">582</td><td><a href="routerlist.c.html#L582">(node->rs && !routerstatus_version_supports_extend2_cells(node->rs, 1))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2708</td><td><a href="routerlist.c.html#L2708">(!download_status_is_ready(&rs->dl_status, now))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2854</td><td><a href="routerlist.c.html#L2854">(!download_status_is_ready(&sd->ei_dl_status, now))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2716</td><td><a href="routerlist.c.html#L2716">(!we_want_to_fetch_flavor(options, consensus->flavor) && !client_would_use_router(rs, now))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">2841</td><td><a href="routerlist.c.html#L2841">(old_routers && !router_get_by_id_digest(sd->identity_digest))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">2384</td><td><a href="routerlist.c.html#L2384">(conn->type == CONN_TYPE_DIR && conn->purpose == purpose && !conn->marked_for_close)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">3008</td><td><a href="routerlist.c.html#L3008">((r1->bandwidthrate != r2->bandwidthrate) || (r1->bandwidthburst != r2->bandwidthburst))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1677</td><td><a href="routerlist.c.html#L1677">(router->purpose == ROUTER_PURPOSE_GENERAL && consensus && !in_consensus && !authdir)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1706</td><td><a href="routerlist.c.html#L1706">(!in_consensus && (router->cache_info.published_on <= old_router->cache_info.published_on))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1781</td><td><a href="routerlist.c.html#L1781">((i = fast_memcmp(r1->identity_digest, r2->identity_digest, DIGEST_LEN)))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">3013</td><td><a href="routerlist.c.html#L3013">(r1->cache_info.published_on + ROUTER_MAX_COSMETIC_TIME_DIFFERENCE < r2->cache_info.published_on)</a></td><td class="num">13.60</td></tr>
+      <tr><td class="num line">585</td><td><a href="routerlist.c.html#L585">((node->ri || node->md) && !node_has_curve25519_onion_key(node))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">2988</td><td><a href="routerlist.c.html#L2988">((r1->declared_family == NULL) != (r2->declared_family == NULL))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1445</td><td><a href="routerlist.c.html#L1445">(should_cache_old_descriptors() && ri_old->purpose == ROUTER_PURPOSE_GENERAL && !same_descriptors)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1613</td><td><a href="routerlist.c.html#L1613">(routerinfo_is_a_configured_bridge(router) && router->purpose == ROUTER_PURPOSE_BRIDGE && !was_bridge)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1299</td><td><a href="routerlist.c.html#L1299">(make_old && should_cache_old_descriptors() && ri->purpose == ROUTER_PURPOSE_GENERAL)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1670</td><td><a href="routerlist.c.html#L1670">(rs && tor_memeq(rs->descriptor_digest, router->cache_info.signed_descriptor_digest, DIGEST_LEN))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">574</td><td><a href="routerlist.c.html#L574">(direct_bridge && node->ri->purpose != ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2961</td><td><a href="routerlist.c.html#L2961">(r1->cache_info.published_on > r2->cache_info.published_on)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2689</td><td><a href="routerlist.c.html#L2689">((sd = router_get_by_descriptor_digest(rs->descriptor_digest)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2323</td><td><a href="routerlist.c.html#L2323">(rs && tor_memeq(rs->descriptor_digest, desc->signed_descriptor_digest, DIGEST_LEN))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">569</td><td><a href="routerlist.c.html#L569">(!node->is_running || !node->is_valid)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2990</td><td><a href="routerlist.c.html#L2990">(r1->declared_family && r2->declared_family)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3106</td><td><a href="routerlist.c.html#L3106">(ei->cache_info.published_on < sd->published_on)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3109</td><td><a href="routerlist.c.html#L3109">(ei->cache_info.published_on > sd->published_on)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">843</td><td><a href="routerlist.c.html#L843">(desc->saved_location == SAVED_IN_CACHE && routerlist)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="routerlist.c.html#L1424">(tor_memneq(ri_old->cache_info.identity_digest, ri_new->cache_info.identity_digest, DIGEST_LEN))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1463</td><td><a href="routerlist.c.html#L1463">(tor_memneq(ri_old->cache_info.extra_info_digest, ri_new->cache_info.extra_info_digest, DIGEST_LEN))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1983</td><td><a href="routerlist.c.html#L1983">(smartlist_len(routerlist->old_routers) < smartlist_len(routerlist->routers))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2992</td><td><a href="routerlist.c.html#L2992">(smartlist_len(r1->declared_family) != smartlist_len(r2->declared_family))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="routerlist.c.html#L645">(router->bandwidthcapacity < router->bandwidthrate)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3083</td><td><a href="routerlist.c.html#L3083">(!tor_cert_opt_eq(sd->signing_key_cert, ei->cache_info.signing_key_cert))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1876</td><td><a href="routerlist.c.html#L1876">(i < n && n_rmv < n_extra)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2090</td><td><a href="routerlist.c.html#L2090">(!(ri = router_parse_entry_from_string(s, NULL, 1, 0, annotation_buf, NULL)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1184</td><td><a href="routerlist.c.html#L1184">(tor_memneq(ei->cache_info.signed_descriptor_digest, sd->extra_info_digest, DIGEST_LEN))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1602</td><td><a href="routerlist.c.html#L1602">(sdmap_get(routerlist->desc_digest_map, router->cache_info.signed_descriptor_digest))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3076</td><td><a href="routerlist.c.html#L3076">(tor_memneq(sd->identity_digest, ei->cache_info.identity_digest, DIGEST_LEN))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1637</td><td><a href="routerlist.c.html#L1637">(authdir_wants_to_reject_router(router, msg, !from_cache && !from_fetch, &authdir_believes_valid))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2581</td><td><a href="routerlist.c.html#L2581">((last_descriptor_download_attempted + options->TestingClientMaxIntervalWithoutRequest) > now)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">576</td><td><a href="routerlist.c.html#L576">(node->ri->purpose != ROUTER_PURPOSE_GENERAL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">598</td><td><a href="routerlist.c.html#L598">(direct_conn && check_reach && !reachable_addr_allows_node(node, FIREWALL_OR_CONNECTION, pref_addr))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">753</td><td><a href="routerlist.c.html#L753">(strlen(hexdigest) < HEX_DIGEST_LEN || base16_decode(digest, DIGEST_LEN, hexdigest, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1734</td><td><a href="routerlist.c.html#L1734">(!in_consensus && from_cache && router_descriptor_is_older_than(router, OLD_ROUTER_DESC_MAX_AGE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2996</td><td><a href="routerlist.c.html#L2996">(strcasecmp(smartlist_get(r1->declared_family, i), smartlist_get(r2->declared_family, i)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">845</td><td><a href="routerlist.c.html#L845">(store && store->mmap)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2712</td><td><a href="routerlist.c.html#L2712">(authdir && is_vote && dirserv_would_reject_router(rs, vrs))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">463</td><td><a href="routerlist.c.html#L463">(router_reload_router_list_impl(&rl->desc_store))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="routerlist.c.html#L465">(router_reload_router_list_impl(&rl->extrainfo_store))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1125</td><td><a href="routerlist.c.html#L1125">(idx < smartlist_len(rl->old_routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1194</td><td><a href="routerlist.c.html#L1194">(routerinfo_incompatible_with_extrainfo(ri->identity_pkey, ei, sd, &compatibility_error_msg))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1290</td><td><a href="routerlist.c.html#L1290">(idx < smartlist_len(rl->routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1351</td><td><a href="routerlist.c.html#L1351">(idx < smartlist_len(rl->old_routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1595</td><td><a href="routerlist.c.html#L1595">(router->cert_expiration_time < approx_time())</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1940</td><td><a href="routerlist.c.html#L1940">(i < smartlist_len(routerlist->routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1961</td><td><a href="routerlist.c.html#L1961">(i < smartlist_len(routerlist->old_routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1990</td><td><a href="routerlist.c.html#L1990">(i < smartlist_len(routerlist->old_routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2032</td><td><a href="routerlist.c.html#L2032">(i < smartlist_len(routerlist->routers))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">176</td><td><a href="routerlist.c.html#L176">(store->store_len > 1 << 16)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">251</td><td><a href="routerlist.c.html#L251">(!force && !router_should_rebuild_store(store))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="routerlist.c.html#L260">(store->type == EXTRAINFO_STORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">279</td><td><a href="routerlist.c.html#L279">(store->type == EXTRAINFO_STORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">660</td><td><a href="routerlist.c.html#L660">(result > router->bandwidthrate)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1134</td><td><a href="routerlist.c.html#L1134">(!tor_digest_is_zero(ri->cache_info.extra_info_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1321</td><td><a href="routerlist.c.html#L1321">(!tor_digest_is_zero(ri->cache_info.extra_info_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1436</td><td><a href="routerlist.c.html#L1436">(!tor_digest_is_zero(ri_new->cache_info.extra_info_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1474</td><td><a href="routerlist.c.html#L1474">(!tor_digest_is_zero(ri_old->cache_info.extra_info_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1620</td><td><a href="routerlist.c.html#L1620">(router->purpose == ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1888</td><td><a href="routerlist.c.html#L1888">(i-- >= lo)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2034</td><td><a href="routerlist.c.html#L2034">(router->purpose == ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2054</td><td><a href="routerlist.c.html#L2054">(ri->purpose == ROUTER_PURPOSE_BRIDGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3156</td><td><a href="routerlist.c.html#L3156">(fast_mem_is_zero((const char*)ri->onion_curve25519_pkey->public_key, CURVE25519_PUBKEY_LEN))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3115</td><td><a href="routerlist.c.html#L3115">(!digest256_matches && !digest_matches)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3177</td><td><a href="routerlist.c.html#L3177">(!rs->pv.protocols_known)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2741</td><td><a href="routerlist.c.html#L2741">(!authdir_mode_v3(options) && smartlist_len(no_longer_old))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">571</td><td><a href="routerlist.c.html#L571">(need_desc && !node_has_preferred_descriptor(node, direct_conn))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">594</td><td><a href="routerlist.c.html#L594">(rendezvous_v3 && !node_supports_v3_rendezvous_point(node))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">603</td><td><a href="routerlist.c.html#L603">(initiate_ipv6_extend && !node_supports_initiating_ipv6_extends(node))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">727</td><td><a href="routerlist.c.html#L727">(hex_digest_nickname_decode(hexdigest, digest, &nn_char, nn_buf) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1658</td><td><a href="routerlist.c.html#L1658">(!from_cache && should_cache_old_descriptors())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1681</td><td><a href="routerlist.c.html#L1681">(!from_cache && should_cache_old_descriptors())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1712</td><td><a href="routerlist.c.html#L1712">(!from_cache && should_cache_old_descriptors())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1766</td><td><a href="routerlist.c.html#L1766">(WRA_WAS_ADDED(inserted) && !from_cache)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1042</td><td><a href="routerlist.c.html#L1042">(rl->desc_store.mmap)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1048</td><td><a href="routerlist.c.html#L1048">(rl->extrainfo_store.mmap)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2465</td><td><a href="routerlist.c.html#L2465">(hi - lo <= 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">861</td><td><a href="routerlist.c.html#L861">(fast_memcmp("router ", r, 7) && fast_memcmp("extra-info ", r, 11))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="routerlist.c.html#L1256">(!tor_digest_is_zero(sd->extra_info_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="routerlist.c.html#L1306">(!tor_digest_is_zero(sd->extra_info_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="routerlist.c.html#L1369">(!tor_digest_is_zero(sd->extra_info_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1454</td><td><a href="routerlist.c.html#L1454">(!tor_digest_is_zero(sd->extra_info_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">267</td><td><a href="routerlist.c.html#L267">(!(flags & RRS_DONT_REMOVE_OLD))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">338</td><td><a href="routerlist.c.html#L338">(!store->mmap)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">692</td><td><a href="routerlist.c.html#L692">(hexdigest[0] == '$')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">751</td><td><a href="routerlist.c.html#L751">(hexdigest[0] == '$')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1886</td><td><a href="routerlist.c.html#L1886">(rmv[i - lo])</a></td><td class="num">4.10</td></tr>
+      <tr><td class="num line">2262</td><td><a href="routerlist.c.html#L2262">(WRA_WAS_ADDED(added) && requested_fingerprints)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2819</td><td><a href="routerlist.c.html#L2819">(!options->DownloadExtraInfo)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3152</td><td><a href="routerlist.c.html#L3152">(!ri->onion_curve25519_pkey)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1912</td><td><a href="routerlist.c.html#L1912">(!routerlist || !consensus)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2209</td><td><a href="routerlist.c.html#L2209">(requested_fingerprints && descriptor_digests)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2721</td><td><a href="routerlist.c.html#L2721">(is_vote && source)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2003</td><td><a href="routerlist.c.html#L2003">(tor_memneq(cur_id, r->identity_digest, DIGEST_LEN))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2704</td><td><a href="routerlist.c.html#L2704">(digestmap_get(map, rs->descriptor_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2850</td><td><a href="routerlist.c.html#L2850">(eimap_get(rl->extra_info_map, d))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">188</td><td><a href="routerlist.c.html#L188">(sd->is_extrainfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">306</td><td><a href="routerlist.c.html#L306">(sd->do_not_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="routerlist.c.html#L323">(store->mmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="routerlist.c.html#L358">(sd->do_not_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">361</td><td><a href="routerlist.c.html#L361">(store->mmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="routerlist.c.html#L402">(store->mmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">414</td><td><a href="routerlist.c.html#L414">(store->mmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="routerlist.c.html#L444">(store->journal_len)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="routerlist.c.html#L573">(node->ri)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">930</td><td><a href="routerlist.c.html#L930">(router->onion_pkey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="routerlist.c.html#L933">(router->identity_pkey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">936</td><td><a href="routerlist.c.html#L936">(router->declared_family)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="routerlist.c.html#L2056">(ri->needs_retest_if_added)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2839</td><td><a href="routerlist.c.html#L2839">(sd->is_extrainfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2843</td><td><a href="routerlist.c.html#L2843">(sd->extrainfo_is_bogus)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3060</td><td><a href="routerlist.c.html#L3060">(ei->bad_sig)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3089</td><td><a href="routerlist.c.html#L3089">(ei->pending_sig)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3320</td><td><a href="routerlist.c.html#L3320">(options->EntryNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3322</td><td><a href="routerlist.c.html#L3322">(options->ExitNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3324</td><td><a href="routerlist.c.html#L3324">(options->MiddleNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3326</td><td><a href="routerlist.c.html#L3326">(options->ExcludeNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3328</td><td><a href="routerlist.c.html#L3328">(options->ExcludeExitNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3330</td><td><a href="routerlist.c.html#L3330">(options->ExcludeExitNodesUnion_)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="routerlist.c.html#L317">(write_chunks_to_file(fname_tmp, chunk_list, 1, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">331</td><td><a href="routerlist.c.html#L331">(replace_file(fname_tmp, fname) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">429</td><td><a href="routerlist.c.html#L429">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">709</td><td><a href="routerlist.c.html#L709">(base16_decode(digest_out, DIGEST_LEN, hexdigest, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2462</td><td><a href="routerlist.c.html#L2462">(hi > smartlist_len(digests))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2832</td><td><a href="routerlist.c.html#L2832">(i < smartlist_len(lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2907</td><td><a href="routerlist.c.html#L2907">(i < smartlist_len(wanted))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">326</td><td><a href="routerlist.c.html#L326">(res != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">339</td><td><a href="routerlist.c.html#L339">(errno == ERANGE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="routerlist.c.html#L406">(res != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="routerlist.c.html#L662">(result > DEFAULT_MAX_BELIEVABLE_BANDWIDTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">696</td><td><a href="routerlist.c.html#L696">(len < HEX_DIGEST_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="routerlist.c.html#L703">(len == HEX_DIGEST_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="routerlist.c.html#L730">(nn_char == '=')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">734</td><td><a href="routerlist.c.html#L734">(nn_char == '~')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1044</td><td><a href="routerlist.c.html#L1044">(res != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1050</td><td><a href="routerlist.c.html#L1050">(res != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1085</td><td><a href="routerlist.c.html#L1085">(idx < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1224</td><td><a href="routerlist.c.html#L1224">(r != ROUTER_ADDED_SUCCESSFULLY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="routerlist.c.html#L1339">(idx == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="routerlist.c.html#L1413">(idx >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1827</td><td><a href="routerlist.c.html#L1827">(i <= hi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1835</td><td><a href="routerlist.c.html#L1835">(n <= mdpr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1845</td><td><a href="routerlist.c.html#L1845">(i <= hi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1854</td><td><a href="routerlist.c.html#L1854">(i < hi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1869</td><td><a href="routerlist.c.html#L1869">(n_rmv < n_extra)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1997</td><td><a href="routerlist.c.html#L1997">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="routerlist.c.html#L2010">(hi >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2115</td><td><a href="routerlist.c.html#L2115">(r == ROUTER_AUTHDIR_REJECTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2378</td><td><a href="routerlist.c.html#L2378">(purpose == DIR_PURPOSE_FETCH_MICRODESC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2446</td><td><a href="routerlist.c.html#L2446">(purpose == DIR_PURPOSE_FETCH_MICRODESC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2460</td><td><a href="routerlist.c.html#L2460">(lo < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="routerlist.c.html#L2470">(lo < hi)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2520</td><td><a href="routerlist.c.html#L2520">(purpose == DIR_PURPOSE_FETCH_MICRODESC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="routerlist.c.html#L2569">(n_downloadable >= MAX_DL_TO_DELAY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2619</td><td><a href="routerlist.c.html#L2619">(n_per_request > max_dl_per_req)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2622</td><td><a href="routerlist.c.html#L2622">(n_per_request < MIN_DL_PER_REQUEST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2626</td><td><a href="routerlist.c.html#L2626">(n_downloadable > n_per_request)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2628</td><td><a href="routerlist.c.html#L2628">(n_downloadable > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2636</td><td><a href="routerlist.c.html#L2636">(i < n_downloadable)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2765</td><td><a href="routerlist.c.html#L2765">(r == ROUTER_CERTS_EXPIRED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2830</td><td><a href="routerlist.c.html#L2830">(old_routers < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2864</td><td><a href="routerlist.c.html#L2864">(sd2 != sd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2865</td><td><a href="routerlist.c.html#L2865">(sd2 != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2995</td><td><a href="routerlist.c.html#L2995">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3022</td><td><a href="routerlist.c.html#L3022">(time_difference < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="routerlist.c.html#L282">(!eimap_iter_done(iter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">618</td><td><a href="routerlist.c.html#L618">(!router_can_choose_node(node, flags))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">897</td><td><a href="routerlist.c.html#L897">(PREDICT_UNLIKELY(!routerlist))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2112</td><td><a href="routerlist.c.html#L2112">(!WRA_WAS_ADDED(r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2210</td><td><a href="routerlist.c.html#L2210">(!smartlist_contains_string(requested_fingerprints, fp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2289</td><td><a href="routerlist.c.html#L2289">(!smartlist_contains_string(requested_fingerprints, fp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2388</td><td><a href="routerlist.c.html#L2388">(!strcmpstart(resource, prefix))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2568</td><td><a href="routerlist.c.html#L2568">(!dirclient_fetches_dir_info_early(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2573</td><td><a href="routerlist.c.html#L2573">(!router_have_minimum_dir_info())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2600</td><td><a href="routerlist.c.html#L2600">(!authdir_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2802</td><td><a href="routerlist.c.html#L2802">(!we_fetch_router_descriptors(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2823</td><td><a href="routerlist.c.html#L2823">(!router_have_minimum_dir_info())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="routerlist.c.html#L255">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="routerlist.c.html#L302">(!body)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">447</td><td><a href="routerlist.c.html#L447">(!extrainfo)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">629</td><td><a href="routerlist.c.html#L629">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">735</td><td><a href="routerlist.c.html#L735">(!nickname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">766</td><td><a href="routerlist.c.html#L766">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">788</td><td><a href="routerlist.c.html#L788">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">801</td><td><a href="routerlist.c.html#L801">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">814</td><td><a href="routerlist.c.html#L814">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">855</td><td><a href="routerlist.c.html#L855">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">860</td><td><a href="routerlist.c.html#L860">(!with_annotations)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">922</td><td><a href="routerlist.c.html#L922">(!router)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">952</td><td><a href="routerlist.c.html#L952">(!extrainfo)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">969</td><td><a href="routerlist.c.html#L969">(!sd)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1030</td><td><a href="routerlist.c.html#L1030">(!rl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1064</td><td><a href="routerlist.c.html#L1064">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1166</td><td><a href="routerlist.c.html#L1166">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1171</td><td><a href="routerlist.c.html#L1171">(!sd)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1458</td><td><a href="routerlist.c.html#L1458">(!same_descriptors)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1500</td><td><a href="routerlist.c.html#L1500">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1535</td><td><a href="routerlist.c.html#L1535">(!warned_nicknames)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1587</td><td><a href="routerlist.c.html#L1587">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1723</td><td><a href="routerlist.c.html#L1723">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1744</td><td><a href="routerlist.c.html#L1744">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1999</td><td><a href="routerlist.c.html#L1999">(!cur_id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2029</td><td><a href="routerlist.c.html#L2029">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2104</td><td><a href="routerlist.c.html#L2104">(!cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2565</td><td><a href="routerlist.c.html#L2565">(!n_downloadable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2661</td><td><a href="routerlist.c.html#L2661">(!consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2752</td><td><a href="routerlist.c.html#L2752">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2929</td><td><a href="routerlist.c.html#L2929">(!routerlist)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3121</td><td><a href="routerlist.c.html#L3121">(!digest256_matches)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3126</td><td><a href="routerlist.c.html#L3126">(!digest_matches)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3148</td><td><a href="routerlist.c.html#L3148">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3173</td><td><a href="routerlist.c.html#L3173">(!rs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3191</td><td><a href="routerlist.c.html#L3191">(!rl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3281</td><td><a href="routerlist.c.html#L3281">(!router)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2335</td><td><a href="routerlist.c.html#L2335">(should_delay_dir_fetches(get_options(), NULL))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">205</td><td><a href="routerlist.c.html#L205">(append_bytes_to_file(fname, body, len, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="routerlist.c.html#L579">(node_is_unreliable(node, need_uptime, need_capacity, need_guard))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="routerlist.c.html#L590">(node_allows_single_hop_exits(node))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">737</td><td><a href="routerlist.c.html#L737">(strcasecmp(nn_buf, nickname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2097</td><td><a href="routerlist.c.html#L2097">(router_is_me(ri))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2173</td><td><a href="routerlist.c.html#L2173">(smartlist_contains_string(requested_fingerprints, fp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2190</td><td><a href="routerlist.c.html#L2190">(WRA_WAS_ADDED(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2195</td><td><a href="routerlist.c.html#L2195">(WRA_NEVER_DOWNLOADABLE(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2273</td><td><a href="routerlist.c.html#L2273">(WRA_NEVER_DOWNLOADABLE(added))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2525</td><td><a href="routerlist.c.html#L2525">(dirclient_must_use_begindir(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2659</td><td><a href="routerlist.c.html#L2659">(dirclient_too_idle_to_fetch_descriptors(options, now))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2760</td><td><a href="routerlist.c.html#L2760">(WRA_WAS_OUTDATED(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2800</td><td><a href="routerlist.c.html#L2800">(should_delay_dir_fetches(options, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2821</td><td><a href="routerlist.c.html#L2821">(should_delay_dir_fetches(options, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2846</td><td><a href="routerlist.c.html#L2846">(tor_digest_is_zero(d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2858</td><td><a href="routerlist.c.html#L2858">(digestmap_get(pending, d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">341</td><td><a href="routerlist.c.html#L341">(total_expected_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">344</td><td><a href="routerlist.c.html#L344">(had_any)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">381</td><td><a href="routerlist.c.html#L381">(chunk_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">416</td><td><a href="routerlist.c.html#L416">(extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">431</td><td><a href="routerlist.c.html#L431">(contents)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">432</td><td><a href="routerlist.c.html#L432">(extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">837</td><td><a href="routerlist.c.html#L837">(with_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">848</td><td><a href="routerlist.c.html#L848">(store)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1121</td><td><a href="routerlist.c.html#L1121">(sd_old)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1217</td><td><a href="routerlist.c.html#L1217">(ei_tmp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1316</td><td><a href="routerlist.c.html#L1316">(ei_tmp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1359</td><td><a href="routerlist.c.html#L1359">(store)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1364</td><td><a href="routerlist.c.html#L1364">(ei_tmp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1467</td><td><a href="routerlist.c.html#L1467">(ei_tmp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1522</td><td><a href="routerlist.c.html#L1522">(warned_nicknames)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1636</td><td><a href="routerlist.c.html#L1636">(authdir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1644</td><td><a href="routerlist.c.html#L1644">(from_fetch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1667</td><td><a href="routerlist.c.html#L1667">(consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1705</td><td><a href="routerlist.c.html#L1705">(old_router)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1761</td><td><a href="routerlist.c.html#L1761">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1928</td><td><a href="routerlist.c.html#L1928">(consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1937</td><td><a href="routerlist.c.html#L1937">(consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2168</td><td><a href="routerlist.c.html#L2168">(requested_fingerprints)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2198</td><td><a href="routerlist.c.html#L2198">(dl_status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2218</td><td><a href="routerlist.c.html#L2218">(dls)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2229</td><td><a href="routerlist.c.html#L2229">(any_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2275</td><td><a href="routerlist.c.html#L2275">(sd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2288</td><td><a href="routerlist.c.html#L2288">(requested_fingerprints)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2297</td><td><a href="routerlist.c.html#L2297">(sd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2321</td><td><a href="routerlist.c.html#L2321">(consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2394</td><td><a href="routerlist.c.html#L2394">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2472</td><td><a href="routerlist.c.html#L2472">(b64_256)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2488</td><td><a href="routerlist.c.html#L2488">(source)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2585</td><td><a href="routerlist.c.html#L2585">(last_descriptor_download_attempted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2664</td><td><a href="routerlist.c.html#L2664">(is_vote)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2670</td><td><a href="routerlist.c.html#L2670">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2681</td><td><a href="routerlist.c.html#L2681">(is_vote)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2726</td><td><a href="routerlist.c.html#L2726">(oldrouter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2835</td><td><a href="routerlist.c.html#L2835">(old_routers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3061</td><td><a href="routerlist.c.html#L3061">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3079</td><td><a href="routerlist.c.html#L3079">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3085</td><td><a href="routerlist.c.html#L3085">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3098</td><td><a href="routerlist.c.html#L3098">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3107</td><td><a href="routerlist.c.html#L3107">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3110</td><td><a href="routerlist.c.html#L3110">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3116</td><td><a href="routerlist.c.html#L3116">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3122</td><td><a href="routerlist.c.html#L3122">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3127</td><td><a href="routerlist.c.html#L3127">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3133</td><td><a href="routerlist.c.html#L3133">(digest_matches)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3257</td><td><a href="routerlist.c.html#L3257">(sd)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

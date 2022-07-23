@@ -1,0 +1,89 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\lib\encoding\time_fmt.c Ctrl Expressions (38) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\lib\encoding\time_fmt.c Ctrl Expressions (38) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\lib\encoding\time_fmt.c Ctrl Expressions (38)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">496</td><td><a href="time_fmt.c.html#L496">(<span style='background-color:#741da3;'>tm->tm_year < 0 || tm->tm_mon < 0 || tm->tm_mon > 11 || tm->tm_mday < 1 || tm->tm_mday > 31 || tm->tm_hour < 0 || tm->tm_hour > 23 || tm->tm_min < 0 || tm->tm_min > 59 || tm->tm_sec < 0 || tm->tm_sec > 60</span>)</a></td><td class="num">1071.75</td></tr>
+      <tr><td class="num line">134</td><td><a href="time_fmt.c.html#L134">(<span style='background-color:#741da3;'>invalid_year || tm->tm_mon < 0 || tm->tm_mon > 11 || tm->tm_mday < 1 || tm->tm_mday > dpm || tm->tm_hour < 0 || tm->tm_hour > 23 || tm->tm_min < 0 || tm->tm_min > 59 || tm->tm_sec < 0 || tm->tm_sec > 60</span>)</a></td><td class="num">1066.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="time_fmt.c.html#L389">(<span style='background-color:#741da3;'>year < 1970 || month < 1 || month > 12 || day < 1 || day > 31 || hour > 23 || minute > 59 || second > 60 || year >= INT32_MAX</span>)</a></td><td class="num">1029.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="time_fmt.c.html#L280">(<span style='background-color:#741da3;'>invalid_year || tm_mday < 1 || tm_mday > dpm || tm_hour > 23 || tm_min > 59 || tm_sec > 60</span>)</a></td><td class="num">1017.50</td></tr>
+      <tr><td class="num line">377</td><td><a href="time_fmt.c.html#L377">(<span style='background-color:#741da3;'>strict ? (n_fields != 7) : (n_fields < 7)</span>)</a></td><td class="num">1006.75</td></tr>
+      <tr><td class="num line">126</td><td><a href="time_fmt.c.html#L126">(tm->tm_mon == 1 && !invalid_year && IS_LEAPYEAR(tm->tm_year))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">124</td><td><a href="time_fmt.c.html#L124">(tm->tm_mon >= 0 && tm->tm_mon <= 11)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">249</td><td><a href="time_fmt.c.html#L249">(tor_sscanf(buf, "%3s, %2u %3s %u %2u:%2u:%2u GMT", weekday, &tm_mday, month, &tm_year, &tm_hour, &tm_min, &tm_sec) < 7)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">457</td><td><a href="time_fmt.c.html#L457">(tor_sscanf(cp, "%2u %3s %4u %2u:%2u:%2u GMT", &tm_mday, month, &tm_year, &tm_hour, &tm_min, &tm_sec) == 6)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="time_fmt.c.html#L462">(tor_sscanf(cp, "%2u-%3s-%2u %2u:%2u:%2u GMT", &tm_mday, month, &tm_year, &tm_hour, &tm_min, &tm_sec) == 6)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">471</td><td><a href="time_fmt.c.html#L471">(tor_sscanf(date, "%3s %3s %2u %2u:%2u:%2u %4u", wkday, month, &tm_mday, &tm_hour, &tm_min, &tm_sec, &tm_year) == 7)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">146</td><td><a href="time_fmt.c.html#L146">(tm->tm_mon > 1 && IS_LEAPYEAR(year))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">276</td><td><a href="time_fmt.c.html#L276">(m == 1 && !invalid_year && IS_LEAPYEAR(tm_year))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">452</td><td><a href="time_fmt.c.html#L452">((cp = strchr(date, ',')))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">158</td><td><a href="time_fmt.c.html#L158">(seconds < TIME_MIN || seconds > TIME_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">116</td><td><a href="time_fmt.c.html#L116">(tm->tm_year < INT32_MAX - 1900)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">144</td><td><a href="time_fmt.c.html#L144">(i < tm->tm_mon)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">383</td><td><a href="time_fmt.c.html#L383">(separator_char != (nospace ? 'T' : ' '))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">454</td><td><a href="time_fmt.c.html#L454">(*cp != ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">293</td><td><a href="time_fmt.c.html#L293">(tm.tm_year < 1970)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">404</td><td><a href="time_fmt.c.html#L404">(st_tm.tm_year < 70)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">260</td><td><a href="time_fmt.c.html#L260">(!strcmp(month, MONTH_NAMES[i]))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">491</td><td><a href="time_fmt.c.html#L491">(!strcasecmp(MONTH_NAMES[i], month))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">246</td><td><a href="time_fmt.c.html#L246">(strlen(buf) != RFC1123_TIME_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">182</td><td><a href="time_fmt.c.html#L182">(result == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">259</td><td><a href="time_fmt.c.html#L259">(i < 12)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="time_fmt.c.html#L265">(m < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="time_fmt.c.html#L490">(i < 12)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">518</td><td><a href="time_fmt.c.html#L518">(interval < -LONG_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="time_fmt.c.html#L520">(interval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="time_fmt.c.html#L523">(interval >= 86400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">527</td><td><a href="time_fmt.c.html#L527">(interval >= 3600)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="time_fmt.c.html#L531">(interval >= 60)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">52</td><td><a href="time_fmt.c.html#L52">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">71</td><td><a href="time_fmt.c.html#L71">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">537</td><td><a href="time_fmt.c.html#L537">(day)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">540</td><td><a href="time_fmt.c.html#L540">(hour)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">542</td><td><a href="time_fmt.c.html#L542">(min)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

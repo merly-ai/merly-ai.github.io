@@ -1,0 +1,178 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - linux-user\mmap.c Ctrl Expressions (127) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - linux-user\mmap.c Ctrl Expressions (127) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;linux-user\mmap.c Ctrl Expressions (127)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">497</td><td><a href="mmap.c.html#L497">(<span style='background-color:#741da3;'>(qemu_real_host_page_size() < qemu_host_page_size) && !(flags & MAP_ANONYMOUS)</span>)</a></td><td class="num">1010.25</td></tr>
+      <tr><td class="num line">299</td><td><a href="mmap.c.html#L299">(<span style='background-color:#741da3;'>addr && addr + size == end_addr</span>)</a></td><td class="num">1008.35</td></tr>
+      <tr><td class="num line">757</td><td><a href="mmap.c.html#L757">(!guest_range_valid_untagged(old_addr, old_size) || ((flags & MREMAP_FIXED) && !guest_range_valid_untagged(new_addr, new_size)) || ((flags & MREMAP_MAYMOVE) == 0 && !guest_range_valid_untagged(old_addr, new_size)))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="mmap.c.html#L560">(!(flags & MAP_ANONYMOUS) && (offset & ~qemu_host_page_mask) != (start & ~qemu_host_page_mask))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">221</td><td><a href="mmap.c.html#L221">((flags & MAP_TYPE) == MAP_SHARED && (prot & PROT_WRITE))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">564</td><td><a href="mmap.c.html#L564">((flags & MAP_TYPE) == MAP_SHARED && (host_prot & PROT_WRITE))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">367</td><td><a href="mmap.c.html#L367">(start == mmap_next_start && addr >= TASK_UNMAPPED_BASE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="mmap.c.html#L365">((addr & (align - 1)) == 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">98</td><td><a href="mmap.c.html#L98">((prot & TARGET_PROT_BTI) && cpu_isar_feature(aa64_bti, cpu))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">103</td><td><a href="mmap.c.html#L103">((prot & TARGET_PROT_MTE) && cpu_isar_feature(aa64_mte, cpu))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="mmap.c.html#L464">(!(cpu->tcg_cflags & CF_PARALLEL))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">894</td><td><a href="mmap.c.html#L894">((advice & MADV_DONTNEED) && can_passthrough_madv_dontneed(start, end))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">843</td><td><a href="mmap.c.html#L843">((start | end) & ~qemu_host_page_mask)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">203</td><td><a href="mmap.c.html#L203">(addr < start || addr >= end)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">417</td><td><a href="mmap.c.html#L417">(wrapped && addr >= start)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">505</td><td><a href="mmap.c.html#L505">(offset + len > sb.st_size)</a></td><td class="num">6.10</td></tr>
+      <tr><td class="num line">772</td><td><a href="mmap.c.html#L772">(reserved_va && host_addr != MAP_FAILED)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">795</td><td><a href="mmap.c.html#L795">(reserved_va && old_size < new_size)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">815</td><td><a href="mmap.c.html#L815">(reserved_va && old_size > new_size)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">31</td><td><a href="mmap.c.html#L31">(mmap_lock_count++ == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">38</td><td><a href="mmap.c.html#L38">(mmap_lock_count-- == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="mmap.c.html#L121">((start & ~TARGET_PAGE_MASK) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">234</td><td><a href="mmap.c.html#L234">(prot_new != (prot1 | PROT_WRITE))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">553</td><td><a href="mmap.c.html#L553">(end < start || !guest_range_valid_untagged(start, len))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="mmap.c.html#L699">(len == 0 || !guest_range_valid_untagged(start, len))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">230</td><td><a href="mmap.c.html#L230">(pread(fd, g2h_untagged(start), end - start, offset) == -1)</a></td><td class="num">5.10</td></tr>
+      <tr><td class="num line">501</td><td><a href="mmap.c.html#L501">(fstat(fd, &sb) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">146</td><td><a href="mmap.c.html#L146">(host_end == host_start + qemu_host_page_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">276</td><td><a href="mmap.c.html#L276">(start > reserved_va - size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">362</td><td><a href="mmap.c.html#L362">(h2g_valid(ptr + size - 1))</a></td><td class="num">4.70</td></tr>
+      <tr><td class="num line">405</td><td><a href="mmap.c.html#L405">(addr == abi_ulong - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">479</td><td><a href="mmap.c.html#L479">(start == abi_ulong - 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">585</td><td><a href="mmap.c.html#L585">(real_end == real_start + qemu_host_page_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">665</td><td><a href="mmap.c.html#L665">(real_end == real_start + qemu_host_page_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">714</td><td><a href="mmap.c.html#L714">(real_end == real_start + qemu_host_page_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">798</td><td><a href="mmap.c.html#L798">(addr < old_addr + new_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">866</td><td><a href="mmap.c.html#L866">(len_in && !len)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">848</td><td><a href="mmap.c.html#L848">(!(page_get_flags(addr) & PAGE_ANON))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="mmap.c.html#L218">(!(flags & MAP_ANONYMOUS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">226</td><td><a href="mmap.c.html#L226">(!(prot1 & PROT_WRITE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">475</td><td><a href="mmap.c.html#L475">(!(flags & MAP_FIXED))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">513</td><td><a href="mmap.c.html#L513">(!(flags & MAP_FIXED))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">530</td><td><a href="mmap.c.html#L530">(!(flags & MAP_ANONYMOUS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">576</td><td><a href="mmap.c.html#L576">(!(host_prot & PROT_WRITE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">240</td><td><a href="mmap.c.html#L240">(prot_new & PROT_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">451</td><td><a href="mmap.c.html#L451">(offset & ~TARGET_PAGE_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="mmap.c.html#L462">(flags & MAP_SHARED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="mmap.c.html#L541">(start & ~TARGET_PAGE_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="mmap.c.html#L614">(flags & MAP_ANONYMOUS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="mmap.c.html#L625">(flags & MAP_ANONYMOUS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">696</td><td><a href="mmap.c.html#L696">(start & ~TARGET_PAGE_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="mmap.c.html#L768">(flags & MREMAP_FIXED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">777</td><td><a href="mmap.c.html#L777">(flags & MREMAP_MAYMOVE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">861</td><td><a href="mmap.c.html#L861">(start & ~TARGET_PAGE_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="mmap.c.html#L574">(pread(fd, g2h_untagged(start), len, offset) == -1)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">133</td><td><a href="mmap.c.html#L133">(len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="mmap.c.html#L140">(start > host_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">143</td><td><a href="mmap.c.html#L143">(addr < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">147</td><td><a href="mmap.c.html#L147">(addr < host_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="mmap.c.html#L154">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">159</td><td><a href="mmap.c.html#L159">(end < host_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">161</td><td><a href="mmap.c.html#L161">(addr < host_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">166</td><td><a href="mmap.c.html#L166">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">173</td><td><a href="mmap.c.html#L173">(host_start < host_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="mmap.c.html#L176">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">202</td><td><a href="mmap.c.html#L202">(addr < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="mmap.c.html#L207">(prot1 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">211</td><td><a href="mmap.c.html#L211">(p == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">237</td><td><a href="mmap.c.html#L237">(prot_new != prot1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">269</td><td><a href="mmap.c.html#L269">(size > reserved_va)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">286</td><td><a href="mmap.c.html#L286">(addr > end_addr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="mmap.c.html#L301">(start == mmap_next_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">325</td><td><a href="mmap.c.html#L325">(start == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="mmap.c.html#L354">(ptr == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="mmap.c.html#L407">(addr == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="mmap.c.html#L525">(p == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">533</td><td><a href="mmap.c.html#L533">(p == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">572</td><td><a href="mmap.c.html#L572">(retaddr == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="mmap.c.html#L584">(start > real_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">589</td><td><a href="mmap.c.html#L589">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="mmap.c.html#L595">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="mmap.c.html#L600">(end < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">605</td><td><a href="mmap.c.html#L605">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="mmap.c.html#L611">(real_start < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="mmap.c.html#L620">(p == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">659</td><td><a href="mmap.c.html#L659">(start > real_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="mmap.c.html#L662">(addr < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="mmap.c.html#L666">(addr < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">671</td><td><a href="mmap.c.html#L671">(prot != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">674</td><td><a href="mmap.c.html#L674">(end < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="mmap.c.html#L676">(addr < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="mmap.c.html#L679">(prot != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">682</td><td><a href="mmap.c.html#L682">(real_start != real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="mmap.c.html#L708">(start > real_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="mmap.c.html#L711">(addr < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">715</td><td><a href="mmap.c.html#L715">(addr < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="mmap.c.html#L720">(prot != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">723</td><td><a href="mmap.c.html#L723">(end < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">725</td><td><a href="mmap.c.html#L725">(addr < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="mmap.c.html#L728">(prot != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">734</td><td><a href="mmap.c.html#L734">(real_start < real_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">742</td><td><a href="mmap.c.html#L742">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">782</td><td><a href="mmap.c.html#L782">(mmap_start == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="mmap.c.html#L803">(prot == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="mmap.c.html#L807">(host_addr != MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">825</td><td><a href="mmap.c.html#L825">(host_addr == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">847</td><td><a href="mmap.c.html#L847">(addr < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="mmap.c.html#L871">(end < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="mmap.c.html#L875">(end == start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">809</td><td><a href="mmap.c.html#L809">(!guest_range_valid_untagged(h2g(host_addr), new_size))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">130</td><td><a href="mmap.c.html#L130">(!guest_range_valid_untagged(start, len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">879</td><td><a href="mmap.c.html#L879">(!guest_range_valid_untagged(start, len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">125</td><td><a href="mmap.c.html#L125">(!page_flags)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">433</td><td><a href="mmap.c.html#L433">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">439</td><td><a href="mmap.c.html#L439">(!page_flags)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">446</td><td><a href="mmap.c.html#L446">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">632</td><td><a href="mmap.c.html#L632">(qemu_loglevel_mask(CPU_LOG_PAGE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">51</td><td><a href="mmap.c.html#L51">(mmap_lock_count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">58</td><td><a href="mmap.c.html#L58">(child)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">284</td><td><a href="mmap.c.html#L284">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">287</td><td><a href="mmap.c.html#L287">(looped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">296</td><td><a href="mmap.c.html#L296">(prot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">334</td><td><a href="mmap.c.html#L334">(reserved_va)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">408</td><td><a href="mmap.c.html#L408">(wrapped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">634</td><td><a href="mmap.c.html#L634">(f)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">735</td><td><a href="mmap.c.html#L735">(reserved_va)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">789</td><td><a href="mmap.c.html#L789">(reserved_va)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\congestion_control_flow.c Ctrl Expressions (58) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\congestion_control_flow.c Ctrl Expressions (58) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\congestion_control_flow.c Ctrl Expressions (58)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">515</td><td><a href="congestion_control_flow.c.html#L515">(<span style='background-color:#741da3;'>stream->ewma_drain_rate > (100 + (uint64_t)xon_change_pct) * stream->ewma_rate_last_sent / 100</span>)</a></td><td class="num">1015.55</td></tr>
+      <tr><td class="num line">520</td><td><a href="congestion_control_flow.c.html#L520">(<span style='background-color:#741da3;'>stream->ewma_drain_rate < (100 - (uint64_t)xon_change_pct) * stream->ewma_rate_last_sent / 100</span>)</a></td><td class="num">1015.55</td></tr>
+      <tr><td class="num line">294</td><td><a href="congestion_control_flow.c.html#L294">(TO_CONN(conn)->type == CONN_TYPE_AP || conn->hs_ident != NULL)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="congestion_control_flow.c.html#L389">(TO_CONN(conn)->type == CONN_TYPE_AP || conn->hs_ident != NULL)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">464</td><td><a href="congestion_control_flow.c.html#L464">(TO_CONN(stream)->type == CONN_TYPE_AP || stream->hs_ident != NULL)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">183</td><td><a href="congestion_control_flow.c.html#L183">(stream->prev_drained_bytes > INT32_MAX / 1000 || stream->prev_drained_bytes / delta > INT32_MAX / 1000)</a></td><td class="num">31.35</td></tr>
+      <tr><td class="num line">143</td><td><a href="congestion_control_flow.c.html#L143">((xoff_size = xoff_cell_encode(payload, CELL_PAYLOAD_SIZE, &xoff)) < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">211</td><td><a href="congestion_control_flow.c.html#L211">((xon_size = xon_cell_encode(payload, CELL_PAYLOAD_SIZE, &xon)) < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">364</td><td><a href="congestion_control_flow.c.html#L364">(xon_cell_parse(&xon, cell->payload + RELAY_HEADER_SIZE, CELL_PAYLOAD_SIZE - RELAY_HEADER_SIZE) < 0)</a></td><td class="num">26.10</td></tr>
+      <tr><td class="num line">153</td><td><a href="congestion_control_flow.c.html#L153">(TO_CONN(stream)->type == CONN_TYPE_AP)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">226</td><td><a href="congestion_control_flow.c.html#L226">(TO_CONN(stream)->type == CONN_TYPE_AP)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">318</td><td><a href="congestion_control_flow.c.html#L318">(TO_CONN(conn)->type == CONN_TYPE_AP)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">429</td><td><a href="congestion_control_flow.c.html#L429">(TO_CONN(conn)->type == CONN_TYPE_AP)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">648</td><td><a href="congestion_control_flow.c.html#L648">(stream->drained_bytes >= xon_rate_bytes && stream->ewma_rate_last_sent)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">68</td><td><a href="congestion_control_flow.c.html#L68">(edge->on_circuit && edge->on_circuit->ccontrol)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">70</td><td><a href="congestion_control_flow.c.html#L70">(edge->cpath_layer && edge->cpath_layer->ccontrol)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="congestion_control_flow.c.html#L708">(stream->on_circuit && stream->on_circuit->ccontrol)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="congestion_control_flow.c.html#L710">(stream->cpath_layer && stream->cpath_layer->ccontrol)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="congestion_control_flow.c.html#L301">(conn->total_bytes_xmit < limit * conn->num_xoff_recv)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">397</td><td><a href="congestion_control_flow.c.html#L397">(conn->total_bytes_xmit < limit * conn->num_xon_recv)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">568</td><td><a href="congestion_control_flow.c.html#L568">(!stream->drain_start_usec && total_buffered > 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">258</td><td><a href="congestion_control_flow.c.html#L258">(layer_hint && layer_hint != conn->cpath_layer)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">352</td><td><a href="congestion_control_flow.c.html#L352">(layer_hint && layer_hint != conn->cpath_layer)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="congestion_control_flow.c.html#L541">(stream->drained_bytes >= UINT32_MAX - n_written)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">676</td><td><a href="congestion_control_flow.c.html#L676">(stream->total_bytes_xmit >= TOTAL_XMIT_SCALE_AT - len)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">415</td><td><a href="congestion_control_flow.c.html#L415">(rate == 0 || INT32_MAX < rate)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">277</td><td><a href="congestion_control_flow.c.html#L277">(conn->num_xoff_recv == XOFF_COUNT_SCALE_AT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">372</td><td><a href="congestion_control_flow.c.html#L372">(conn->num_xon_recv == XON_COUNT_SCALE_AT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="congestion_control_flow.c.html#L583">(stream->drained_bytes > xon_rate_bytes)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">591</td><td><a href="congestion_control_flow.c.html#L591">(stream->prev_drained_bytes == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">471</td><td><a href="congestion_control_flow.c.html#L471">(!stream->xoff_sent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">511</td><td><a href="congestion_control_flow.c.html#L511">(!stream->ewma_rate_last_sent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="congestion_control_flow.c.html#L621">(!stream->xoff_sent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">270</td><td><a href="congestion_control_flow.c.html#L270">(conn->xoff_received)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="congestion_control_flow.c.html#L296">(conn->hs_ident)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="congestion_control_flow.c.html#L392">(conn->hs_ident)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">421</td><td><a href="congestion_control_flow.c.html#L421">(conn->xoff_received)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">546</td><td><a href="congestion_control_flow.c.html#L546">(stream->drain_start_usec)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="congestion_control_flow.c.html#L580">(stream->drain_start_usec)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="congestion_control_flow.c.html#L457">(BUG(edge_get_ccontrol(stream) == NULL))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">148</td><td><a href="congestion_control_flow.c.html#L148">(connection_edge_send_command(stream, RELAY_COMMAND_XOFF, (char*)payload, (size_t)xoff_size) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">220</td><td><a href="congestion_control_flow.c.html#L220">(connection_edge_send_command(stream, RELAY_COMMAND_XON, (char*)payload, (size_t)xon_size) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="congestion_control_flow.c.html#L264">(edge_get_ccontrol(conn) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">358</td><td><a href="congestion_control_flow.c.html#L358">(edge_get_ccontrol(conn) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">177</td><td><a href="congestion_control_flow.c.html#L177">(delta == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">470</td><td><a href="congestion_control_flow.c.html#L470">(total_buffered > buffer_limit_xoff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">489</td><td><a href="congestion_control_flow.c.html#L489">(total_buffered > MAX_EXPECTED_CELL_BURST * RELAY_PAYLOAD_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">632</td><td><a href="congestion_control_flow.c.html#L632">(total_buffered == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="congestion_control_flow.c.html#L643">(total_buffered == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="congestion_control_flow.c.html#L170">(BUG(!is_monotime_clock_reliable()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">251</td><td><a href="congestion_control_flow.c.html#L251">(BUG(!conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">345</td><td><a href="congestion_control_flow.c.html#L345">(BUG(!conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="congestion_control_flow.c.html#L507">(!is_monotime_clock_reliable())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">559</td><td><a href="congestion_control_flow.c.html#L559">(!is_monotime_clock_reliable())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">622</td><td><a href="congestion_control_flow.c.html#L622">(stream_drain_rate_changed(stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="congestion_control_flow.c.html#L722">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">725</td><td><a href="congestion_control_flow.c.html#L725">(edge_uses_flow_control(edge))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="congestion_control_flow.c.html#L600">(drain_rate)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

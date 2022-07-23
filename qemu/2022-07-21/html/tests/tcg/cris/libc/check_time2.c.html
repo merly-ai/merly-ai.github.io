@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <script>
+    function toggle_popup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
+    }
+  </script>
+  <title>tests\tcg\cris\libc\check_time2.c - MerlyMentor</title>
+</head>
+<body>
+  <h2>tests\tcg\cris\libc\check_time2.c - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+                <li class='mr-3'><a title='Expressions' href='check_time2.c-expr.html';>Expressions</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <table class="code">
+<tr><td id='L1' class='num line'>1</td><td><span style='color:#3a6e31;'>/*&nbsp;CB_SYS_time&nbsp;doesn&apos;t&nbsp;implement&nbsp;the&nbsp;Linux&nbsp;time&nbsp;syscall;&nbsp;the&nbsp;return</span><tr/>
+<tr><td id='L2' class='num line'>2</td><td class='code'><span style='color:#3a6e31;'>&nbsp;&nbsp;&nbsp;value&nbsp;isn&apos;t&nbsp;written&nbsp;to&nbsp;the&nbsp;argument.&nbsp;&nbsp;*/</span><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L3' class='num line'>3</td><td class='code'><span style='color:#3a6e31;'></span><tr/>
+<tr><td id='L4' class='num line'>4</td><td class='code'><span style='color:#3a6e31;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&lt;time.h&gt;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L5' class='num line'>5</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&lt;stdio.h&gt;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L6' class='num line'>6</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#676762;'>#include</span>&nbsp;<span style='color:#aa7e6c;'>&lt;stdlib.h&gt;</span><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L7' class='num line'>7</td><td class='code'><span style='color:#9e9e9e;'></span><tr/>
+<tr><td id='L8' class='num line'>8</td><td class='code'><span style='color:#9e9e9e;'></span><span style='color:#835980;'>int</span><tr/>
+<tr><td id='L9' class='num line'>9</td><td class='code'><span style='color:#929270;'>main</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#835980;'>void</span><span style='color:#9e9e9e;'>)</span><tr/>
+<tr><td id='L10' class='num line'>10</td><td class='code'><span style='color:#9e9e9e;'>{</span><tr/>
+<tr><td id='L11' class='num line'>11</td><td class='code'>&nbsp;&nbsp;<span style='color:#348675;'>time_t</span>&nbsp;<span style='color:#6892a9;'>x</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#6892a9;'>time_t</span><span style='color:#9e9e9e;'>)</span>&nbsp;<span style='color:#aaa186;'>-</span><span style='color:#788970;'>1</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L12' class='num line'>12</td><td class='code'>&nbsp;&nbsp;<span style='color:#348675;'>time_t</span>&nbsp;<span style='color:#6892a9;'>t</span>&nbsp;<span style='color:#aaa186;'>=</span>&nbsp;<span style='color:#929270;'>time</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#aaa186;'>&amp;</span><span style='color:#6892a9;'>x</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L13' class='num line'>13</td><td class='code'><tr/>
+<tr><td id='L14' class='num line'>14</td><td class='code'>&nbsp;&nbsp;<span style='color:#906a94;font-weight:bold;'>if</span>&nbsp;<span style='color:#9e9e9e;background-color:#005c22;'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>
+  <div class="popuptext" id="2">
+    <fieldset>
+      <legend>&nbsp;Recommendations (Experimental)&nbsp;</legend>
+      R1: (t&nbsp;==&nbsp;time_t&nbsp;-&nbsp;1&nbsp;||&nbsp;t<span style='background-color:#0000ff'>&nbsp;==&nbsp;</span>x)<br/>R2: (<span style='background-color:#0000ff'>(</span>t&nbsp;==&nbsp;time_t&nbsp;-&nbsp;1<span style='background-color:#0000ff'>)</span>&nbsp;||&nbsp;<span style='background-color:#0000ff'>(</span>t<span style='background-color:#0000ff'>&nbsp;==&nbsp;</span>x<span style='background-color:#0000ff'>)</span>)<br/>R3: (t&nbsp;==&nbsp;time_t&nbsp;-&nbsp;1&nbsp;||&nbsp;t<span style='background-color:#0000ff'>&nbsp;&gt;=&nbsp;</span>x)<br/>R4: (t&nbsp;==&nbsp;time_t&nbsp;-&nbsp;1&nbsp;||&nbsp;t<span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>time_t</span>)<br/>R5: (t&nbsp;==&nbsp;<span style='background-color:#0000ff'>(</span>time_t&nbsp;-&nbsp;1<span style='background-color:#0000ff'>)</span>&nbsp;||&nbsp;t<span style='background-color:#0000ff'>&nbsp;==&nbsp;</span><span style='background-color:#0000ff'>time_t</span>)
+    </fieldset>
+
+    <fieldset>
+      <legend>&nbsp;Score&nbsp;</legend> 
+      Issue: <span style="background-color: #741da3">&nbsp;1 unfamiliar pattern(s) detected&nbsp;</span><br/>
+      Cost: 9.10, Total Score: 1009.10<br/>
+      Class: complex_2<br/>
+    </fieldset>
+  </div>
+t</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>==</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#9e9e9e;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>(</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>time_t</span><span style='color:#9e9e9e;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>)</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>-</span><span style='color:#788970;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>1</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>||</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>t</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#aaa186;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>!=</span><span style='background-color:#741da3'>&nbsp;</span><span style='color:#6892a9;background-color:#741da3;' class='popup' onclick='toggle_popup(2)'>x</span><span style='color:#9e9e9e;background-color:#005c22;'>)</span><tr/>
+<tr><td id='L15' class='num line'>15</td><td class='code'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#929270;'>abort</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L16' class='num line'>16</td><td class='code'>&nbsp;&nbsp;<span style='color:#929270;'>printf</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#aa7e6c;'>&quot;</span><span style='color:#aa7e6c;'>pass</span><span style='color:#7456aa;'>\n</span><span style='color:#aa7e6c;'>&quot;</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L17' class='num line'>17</td><td class='code'>&nbsp;&nbsp;<span style='color:#929270;'>exit</span>&nbsp;<span style='color:#9e9e9e;'>(</span><span style='color:#788970;'>0</span><span style='color:#9e9e9e;'>)</span><span style='color:#9e9e9e;'>;</span><tr/>
+<tr><td id='L18' class='num line'>18</td><td class='code'><span style='color:#9e9e9e;'>}</span>
+  </table>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

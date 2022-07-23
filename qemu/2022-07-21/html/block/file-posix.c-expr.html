@@ -1,0 +1,403 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - block\file-posix.c Ctrl Expressions (352) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - block\file-posix.c Ctrl Expressions (352) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;block\file-posix.c Ctrl Expressions (352)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1753</td><td><a href="file-posix.c.html#L1753">(<span style='background-color:#741da3;'>s->has_fallocate && len >= 0 && aiocb->aio_offset >= len</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">1563</td><td><a href="file-posix.c.html#L1563">(<span style='background-color:#741da3;'>nbytes == aiocb->aio_nbytes || (nbytes < 0 && nbytes != -ENOSYS)</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">1075</td><td><a href="file-posix.c.html#L1075">(<span style='background-color:#741da3;'>(*open_flags & ~fcntl_flags) == (s->open_flags & ~fcntl_flags)</span>)</a></td><td class="num">1015.25</td></tr>
+      <tr><td class="num line">2566</td><td><a href="file-posix.c.html#L2566">(<span style='background-color:#741da3;'>result < 0 && file_opts->has_extent_size_hint && file_opts->extent_size_hint</span>)</a></td><td class="num">1015.00</td></tr>
+      <tr><td class="num line">2425</td><td><a href="file-posix.c.html#L2425">(<span style='background-color:#741da3;'>size <= 0 && !reopened && cdrom_reopen(bs) >= 0</span>)</a></td><td class="num">1011.75</td></tr>
+      <tr><td class="num line">1099</td><td><a href="file-posix.c.html#L1099">(<span style='background-color:#741da3;'>fd != -1 && (*open_flags & O_RDWR)</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">2659</td><td><a href="file-posix.c.html#L2659">(!(stat(bs->filename, &st) == 0) || !S_ISREG(st.st_mode))</a></td><td class="num">45.50</td></tr>
+      <tr><td class="num line">1519</td><td><a href="file-posix.c.html#L1519">(len == -1 && errno == EINVAL && (aiocb->bs->open_flags & BDRV_O_NOCACHE) && !(aiocb->aio_type & QEMU_AIO_WRITE) && offset > 0)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">976</td><td><a href="file-posix.c.html#L976">((s->perm | new_perm) == s->perm && (s->shared_perm & new_shared) == s->shared_perm)</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">3610</td><td><a href="file-posix.c.html#L3610">(io_hdr->cmdp[0] == PERSISTENT_RESERVE_OUT || io_hdr->cmdp[0] == PERSISTENT_RESERVE_IN)</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="file-posix.c.html#L352">((bs->open_flags & BDRV_O_NOCACHE) != 0 && !dio_byte_aligned(s->fd))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">3266</td><td><a href="file-posix.c.html#L3266">(fd_open(src->bs) < 0 || fd_open(dst->bs) < 0)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">3462</td><td><a href="file-posix.c.html#L3462">(stat(filename, &st) >= 0 && (S_ISCHR(st.st_mode) || S_ISBLK(st.st_mode)))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">3487</td><td><a href="file-posix.c.html#L3487">(stat(bs->filename, &st) < 0 || !S_ISCHR(st.st_mode))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">2406</td><td><a href="file-posix.c.html#L2406">(ioctl(fd, DKIOCGETBLOCKCOUNT, &sectors) == 0 && ioctl(fd, DKIOCGETBLOCKSIZE, &sector_size) == 0)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">774</td><td><a href="file-posix.c.html#L774">(ioctl(s->fd, BLKDISCARDZEROES, &arg) == 0 && arg)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2386</td><td><a href="file-posix.c.html#L2386">(!fstat(fd, &sb) && (S_IFCHR & sb.st_mode))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1606</td><td><a href="file-posix.c.html#L1606">(copy > aiocb->io.iov[i].iov_len)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">402</td><td><a href="file-posix.c.html#L402">(probe_logical_blocksize(fd, &bs->bl.request_alignment) < 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">762</td><td><a href="file-posix.c.html#L762">(!(S_ISCHR(st.st_mode) || S_ISBLK(st.st_mode)))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">3737</td><td><a href="file-posix.c.html#L3737">(ret == -1 || !S_ISBLK(st.st_mode))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">3212</td><td><a href="file-posix.c.html#L3212">(s->perm_change_fd && s->fd != s->perm_change_fd)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">879</td><td><a href="file-posix.c.html#L879">(unlock && (locked_perm & bit) && !(perm_lock_bits & bit))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">901</td><td><a href="file-posix.c.html#L901">(unlock && (locked_shared_perm & bit) && !(shared_perm_lock_bits & bit))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1638</td><td><a href="file-posix.c.html#L1638">(err == -ENODEV || err == -ENOSYS || err == -EOPNOTSUPP || err == -ENOTTY)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1254</td><td><a href="file-posix.c.html#L1254">(ret == 0 && end && *end == '\n')</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">1070</td><td><a href="file-posix.c.html#L1070">(!force_dup && *open_flags == s->open_flags)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="file-posix.c.html#L462">(!s->buf_align || !bs->bl.request_alignment)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">809</td><td><a href="file-posix.c.html#L809">(ret < 0 && s->fd != -1)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1621</td><td><a href="file-posix.c.html#L1621">(nbytes >= 0 && nbytes < aiocb->aio_nbytes)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">870</td><td><a href="file-posix.c.html#L870">((perm_lock_bits & bit) && !(locked_perm & bit))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">892</td><td><a href="file-posix.c.html#L892">((shared_perm_lock_bits & bit) && !(locked_shared_perm & bit))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1604</td><td><a href="file-posix.c.html#L1604">(i < aiocb->io.niov && count)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1720</td><td><a href="file-posix.c.html#L1720">(s->has_discard && s->has_fallocate)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3016</td><td><a href="file-posix.c.html#L3016">(offset + bytes > bs->total_sectors * BDRV_SECTOR_SIZE)</a></td><td class="num">10.20</td></tr>
+      <tr><td class="num line">3188</td><td><a href="file-posix.c.html#L3188">(s->perm_change_fd && s->use_lock)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1365</td><td><a href="file-posix.c.html#L1365">(!ioctl_geo.heads || !ioctl_geo.sectors || !ioctl_geo.cylinders)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">341</td><td><a href="file-posix.c.html#L341">(ret == 0 && buf.f_type == NFS_SUPER_MAGIC)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3261</td><td><a href="file-posix.c.html#L3261">(src->bs->drv->bdrv_co_copy_range_to != raw_co_copy_range_to)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3608</td><td><a href="file-posix.c.html#L3608">(req == SG_IO && s->pr_mgr)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1429</td><td><a href="file-posix.c.html#L1429">((s->open_flags & O_DIRECT) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3553</td><td><a href="file-posix.c.html#L3553">(strncmp(mediaType, kIOCDMediaClass, 9) == 0 && setup_cdrom(bsd_path, errp) == false)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2594</td><td><a href="file-posix.c.html#L2594">(qemu_close(fd) != 0 && result == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1243</td><td><a href="file-posix.c.html#L1243">(ret == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="file-posix.c.html#L1301">(ret > 0 && ret <= BDRV_REQUEST_MAX_BYTES)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1393</td><td><a href="file-posix.c.html#L1393">(ret == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1486</td><td><a href="file-posix.c.html#L1486">(len == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1517</td><td><a href="file-posix.c.html#L1517">(len == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="file-posix.c.html#L1913">(n == -1 && errno == EINTR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="file-posix.c.html#L1940">(current_length > offset && prealloc != PREALLOC_MODE_OFF)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2032</td><td><a href="file-posix.c.html#L2032">(current_length == 0 && offset > current_length)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="file-posix.c.html#L745">(fstat(s->fd, &st) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1360</td><td><a href="file-posix.c.html#L1360">(ioctl(s->fd, HDIO_GETGEO, &ioctl_geo) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1870</td><td><a href="file-posix.c.html#L1870">(fcntl(s->fd, F_PUNCHHOLE, &fpunchhole) == -1)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2079</td><td><a href="file-posix.c.html#L2079">(s->needs_alignment && !bdrv_qiov_is_aligned(bs, qiov))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2464</td><td><a href="file-posix.c.html#L2464">(fstat(s->fd, &st) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3909</td><td><a href="file-posix.c.html#L3909">(ioctl(s->fd, (locked ? CDIOCPREVENT : CDIOCALLOW)) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2824</td><td><a href="file-posix.c.html#L2824">(!QEMU_IS_ALIGNED(*pnum, bs->bl.request_alignment))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">706</td><td><a href="file-posix.c.html#L706">(!(s->open_flags & O_DIRECT))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">783</td><td><a href="file-posix.c.html#L783">(!(bs->open_flags & BDRV_O_NOCACHE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1298</td><td><a href="file-posix.c.html#L1298">(bs->sg || S_ISBLK(st.st_mode))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1546</td><td><a href="file-posix.c.html#L1546">(!(aiocb->aio_type & QEMU_AIO_MISALIGNED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1599</td><td><a href="file-posix.c.html#L1599">(!(aiocb->aio_type & QEMU_AIO_WRITE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1671</td><td><a href="file-posix.c.html#L1671">(!(aiocb->aio_type & QEMU_AIO_NO_FALLBACK))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">812</td><td><a href="file-posix.c.html#L812">(filename && (bdrv_flags & BDRV_O_TEMPORARY))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1551</td><td><a href="file-posix.c.html#L1551">(aiocb->io.niov == 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1591</td><td><a href="file-posix.c.html#L1591">(i < aiocb->io.niov)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1707</td><td><a href="file-posix.c.html#L1707">(ret == 0 || ret != -EINVAL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1726</td><td><a href="file-posix.c.html#L1726">(ret == 0 || ret != -ENOTSUP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1755</td><td><a href="file-posix.c.html#L1755">(ret == 0 || ret != -ENOTSUP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">300</td><td><a href="file-posix.c.html#L300">(ioctl(fd, ioctl_list[i], &sector_size) >= 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">393</td><td><a href="file-posix.c.html#L393">(bdrv_is_sg(bs) || !s->needs_alignment)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">692</td><td><a href="file-posix.c.html#L692">(s->open_flags & O_RDWR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1292</td><td><a href="file-posix.c.html#L1292">(!fstatfs(s->fd, &buf))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1476</td><td><a href="file-posix.c.html#L1476">(aiocb->aio_type & QEMU_AIO_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1506</td><td><a href="file-posix.c.html#L1506">(aiocb->aio_type & QEMU_AIO_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1587</td><td><a href="file-posix.c.html#L1587">(aiocb->aio_type & QEMU_AIO_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1622</td><td><a href="file-posix.c.html#L1622">(aiocb->aio_type & QEMU_AIO_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1697</td><td><a href="file-posix.c.html#L1697">(aiocb->aio_type & QEMU_AIO_BLKDEV)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1848</td><td><a href="file-posix.c.html#L1848">(aiocb->aio_type & QEMU_AIO_BLKDEV)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2931</td><td><a href="file-posix.c.html#L2931">(s->open_flags & O_DIRECT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2277</td><td><a href="file-posix.c.html#L2277">(offset != cur_length && exact)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1034</td><td><a href="file-posix.c.html#L1034">(fcntl(fd, F_SETFL, flags | flag) == -1)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1285</td><td><a href="file-posix.c.html#L1285">(fstat(s->fd, &st))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1334</td><td><a href="file-posix.c.html#L1334">(check_for_dasd(s->fd) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1357</td><td><a href="file-posix.c.html#L1357">(check_for_dasd(s->fd) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1674</td><td><a href="file-posix.c.html#L1674">(ioctl(aiocb->aio_fildes, BLKZEROOUT, range) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1852</td><td><a href="file-posix.c.html#L1852">(ioctl(aiocb->aio_fildes, BLKDISCARD, range) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2257</td><td><a href="file-posix.c.html#L2257">(fstat(s->fd, &st))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2274</td><td><a href="file-posix.c.html#L2274">(S_ISCHR(st.st_mode) || S_ISBLK(st.st_mode))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2301</td><td><a href="file-posix.c.html#L2301">(S_ISCHR(st.st_mode) || S_ISBLK(st.st_mode))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2320</td><td><a href="file-posix.c.html#L2320">(S_ISCHR(st.st_mode) || S_ISBLK(st.st_mode))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3766</td><td><a href="file-posix.c.html#L3766">(ioctl(s->fd, CDROMEJECT, NULL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3769</td><td><a href="file-posix.c.html#L3769">(ioctl(s->fd, CDROMCLOSETRAY, NULL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3778</td><td><a href="file-posix.c.html#L3778">(ioctl(s->fd, CDROM_LOCKDOOR, locked) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3893</td><td><a href="file-posix.c.html#L3893">(ioctl(s->fd, CDIOCEJECT) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3896</td><td><a href="file-posix.c.html#L3896">(ioctl(s->fd, CDIOCCLOSE) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">186</td><td><a href="file-posix.c.html#L186">(s->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1055</td><td><a href="file-posix.c.html#L1055">(s->type == FTYPE_CD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1505</td><td><a href="file-posix.c.html#L1505">(offset < aiocb->aio_nbytes)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1619</td><td><a href="file-posix.c.html#L1619">(nbytes == aiocb->aio_nbytes)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2217</td><td><a href="file-posix.c.html#L2217">(s->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2492</td><td><a href="file-posix.c.html#L2492">(file_opts->extent_size_hint > UINT32_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3163</td><td><a href="file-posix.c.html#L3163">(ret != s->fd)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3864</td><td><a href="file-posix.c.html#L3864">(s->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3887</td><td><a href="file-posix.c.html#L3887">(s->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3907</td><td><a href="file-posix.c.html#L3907">(s->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">432</td><td><a href="file-posix.c.html#L432">(!bs->bl.request_alignment)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">417</td><td><a href="file-posix.c.html#L417">(ioctl(fd, _IOR('X', 30, xfs_dioattr), &da) >= 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2897</td><td><a href="file-posix.c.html#L2897">(vec[i] & 0x1)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3402</td><td><a href="file-posix.c.html#L3402">(CFStringGetCString(bsdPathAsCFString, bsdPath + devPathLength, maxPathSize - devPathLength, kCFStringEncodingASCII))</a></td><td class="num">4.95</td></tr>
+      <tr><td class="num line">249</td><td><a href="file-posix.c.html#L249">(lstat(fname, &sb) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">490</td><td><a href="file-posix.c.html#L490">(ioctl(fd, BLKROGET, &readonly) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1198</td><td><a href="file-posix.c.html#L1198">(ioctl(fd, BLKSECTGET, &max_sectors) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1203</td><td><a href="file-posix.c.html#L1203">(ioctl(fd, BLKSECTGET, &max_bytes) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1224</td><td><a href="file-posix.c.html#L1224">(ioctl(fd, SG_GET_SG_TABLESIZE, &ret) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1933</td><td><a href="file-posix.c.html#L1933">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2323</td><td><a href="file-posix.c.html#L2323">(ioctl(fd, DIOCGWEDGEINFO, &dkw) != -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2396</td><td><a href="file-posix.c.html#L2396">(ioctl(fd, DIOCGPART, &pi) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2547</td><td><a href="file-posix.c.html#L2547">(ioctl(fd, FS_IOC_GETFLAGS, &attr) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3375</td><td><a href="file-posix.c.html#L3375">(*mediaIterator != 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1129</td><td><a href="file-posix.c.html#L1129">(!qemu_opts_absorb_qdict(opts, state->options, errp))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="file-posix.c.html#L1230">(!S_ISBLK(st->st_mode))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="file-posix.c.html#L447">(!s->buf_align)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">941</td><td><a href="file-posix.c.html#L941">(!(shared_perm & p))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">966</td><td><a href="file-posix.c.html#L966">(!s->use_lock)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1663</td><td><a href="file-posix.c.html#L1663">(!s->has_write_zeroes)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1844</td><td><a href="file-posix.c.html#L1844">(!s->has_discard)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2483</td><td><a href="file-posix.c.html#L2483">(!file_opts->has_nocow)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2486</td><td><a href="file-posix.c.html#L2486">(!file_opts->has_preallocation)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2489</td><td><a href="file-posix.c.html#L2489">(!file_opts->has_extent_size_hint)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2927</td><td><a href="file-posix.c.html#L2927">(!s->drop_cache)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3546</td><td><a href="file-posix.c.html#L3546">(bsd_path[0] == '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1369</td><td><a href="file-posix.c.html#L1369">(ioctl_geo.start != 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="file-posix.c.html#L970">(bdrv_get_flags(bs) & BDRV_O_INACTIVE)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1196</td><td><a href="file-posix.c.html#L1196">(S_ISBLK(st->st_mode))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1223</td><td><a href="file-posix.c.html#L1223">(S_ISCHR(st->st_mode))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">509</td><td><a href="file-posix.c.html#L509">(bdrv_flags & BDRV_O_AUTO_RDONLY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">511</td><td><a href="file-posix.c.html#L511">(bdrv_flags & BDRV_O_RDWR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="file-posix.c.html#L523">((bdrv_flags & BDRV_O_NOCACHE))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">608</td><td><a href="file-posix.c.html#L608">(bdrv_flags & BDRV_O_NATIVE_AIO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="file-posix.c.html#L611">(bdrv_flags & BDRV_O_IO_URING)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">705</td><td><a href="file-posix.c.html#L705">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="file-posix.c.html#L718">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="file-posix.c.html#L727">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">734</td><td><a href="file-posix.c.html#L734">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="file-posix.c.html#L925">(perm & p)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="file-posix.c.html#L1408">(s->page_cache_inconsistent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1702</td><td><a href="file-posix.c.html#L1702">(s->has_write_zeroes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2082</td><td><a href="file-posix.c.html#L2082">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2088</td><td><a href="file-posix.c.html#L2088">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2131</td><td><a href="file-posix.c.html#L2131">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2137</td><td><a href="file-posix.c.html#L2137">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2148</td><td><a href="file-posix.c.html#L2148">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2154</td><td><a href="file-posix.c.html#L2154">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2179</td><td><a href="file-posix.c.html#L2179">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2192</td><td><a href="file-posix.c.html#L2192">(s->use_linux_aio)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2194</td><td><a href="file-posix.c.html#L2194">(!aio_setup_linux_aio(new_context, &local_err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2202</td><td><a href="file-posix.c.html#L2202">(s->use_linux_io_uring)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2204</td><td><a href="file-posix.c.html#L2204">(!aio_setup_linux_io_uring(new_context, &local_err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2539</td><td><a href="file-posix.c.html#L2539">(file_opts->nocow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2953</td><td><a href="file-posix.c.html#L2953">(s->check_cache_dropped)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3060</td><td><a href="file-posix.c.html#L3060">(flags & BDRV_REQ_NO_FALLBACK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3064</td><td><a href="file-posix.c.html#L3064">(flags & BDRV_REQ_MAY_UNMAP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3199</td><td><a href="file-posix.c.html#L3199">(s->perm_change_fd)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3230</td><td><a href="file-posix.c.html#L3230">(s->perm_change_fd)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3398</td><td><a href="file-posix.c.html#L3398">(flags & BDRV_O_NOCACHE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3849</td><td><a href="file-posix.c.html#L3849">(strstart(filename, "/dev/cd", NULL) || strstart(filename, "/dev/acd", NULL))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">254</td><td><a href="file-posix.c.html#L254">(!S_ISBLK(sb.st_mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">299</td><td><a href="file-posix.c.html#L299">(i < (int)ARRAY_SIZE(ioctl_list))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">317</td><td><a href="file-posix.c.html#L317">(ioctl(fd, BLKPBSZGET, blk_size) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">436</td><td><a href="file-posix.c.html#L436">(i < ARRAY_SIZE(alignments))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">451</td><td><a href="file-posix.c.html#L451">(i < ARRAY_SIZE(alignments))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">453</td><td><a href="file-posix.c.html#L453">(raw_is_io_aligned(fd, buf + align, max_align))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">482</td><td><a href="file-posix.c.html#L482">(fstat(fd, &st))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">486</td><td><a href="file-posix.c.html#L486">(!S_ISBLK(st.st_mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">752</td><td><a href="file-posix.c.html#L752">(!S_ISREG(st.st_mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1650</td><td><a href="file-posix.c.html#L1650">(fallocate(fd, mode, offset, len) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1987</td><td><a href="file-posix.c.html#L1987">(ftruncate(fd, offset) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2029</td><td><a href="file-posix.c.html#L2029">(ftruncate(fd, offset) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2046</td><td><a href="file-posix.c.html#L2046">(ftruncate(fd, current_length) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2070</td><td><a href="file-posix.c.html#L2070">(fd_open(bs) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2299</td><td><a href="file-posix.c.html#L2299">(fstat(fd, &st))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="file-posix.c.html#L2304">(ioctl(fd, DIOCGDINFO, &dl))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2318</td><td><a href="file-posix.c.html#L2318">(fstat(fd, &st))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2328</td><td><a href="file-posix.c.html#L2328">(ioctl(fd, DIOCGDINFO, &dl))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2389</td><td><a href="file-posix.c.html#L2389">(ioctl(fd, DIOCGMEDIASIZE, (off_t *)&size))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3357</td><td><a href="file-posix.c.html#L3357">(index < ARRAY_SIZE(matching_array))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3525</td><td><a href="file-posix.c.html#L3525">(strcmp(filename, "/dev/cdrom") == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3582</td><td><a href="file-posix.c.html#L3582">(strncmp(filename, "/dev/", 5) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">258</td><td><a href="file-posix.c.html#L258">(dp == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">367</td><td><a href="file-posix.c.html#L367">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="file-posix.c.html#L376">(errno != EINVAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="file-posix.c.html#L604">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">683</td><td><a href="file-posix.c.html#L683">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">684</td><td><a href="file-posix.c.html#L684">(ret == -EROFS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="file-posix.c.html#L694">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="file-posix.c.html#L1031">(flags == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1078</td><td><a href="file-posix.c.html#L1078">(fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="file-posix.c.html#L1088">(fd == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="file-posix.c.html#L1091">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1093</td><td><a href="file-posix.c.html#L1093">(fd == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1101</td><td><a href="file-posix.c.html#L1101">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1182</td><td><a href="file-posix.c.html#L1182">(rs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1237</td><td><a href="file-posix.c.html#L1237">(sysfd == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1244</td><td><a href="file-posix.c.html#L1244">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1247</td><td><a href="file-posix.c.html#L1247">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1259</td><td><a href="file-posix.c.html#L1259">(sysfd != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="file-posix.c.html#L1306">(ret > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1338</td><td><a href="file-posix.c.html#L1338">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1394</td><td><a href="file-posix.c.html#L1394">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="file-posix.c.html#L1413">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1488</td><td><a href="file-posix.c.html#L1488">(len == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1528</td><td><a href="file-posix.c.html#L1528">(len == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1531</td><td><a href="file-posix.c.html#L1531">(len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1582</td><td><a href="file-posix.c.html#L1582">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1653</td><td><a href="file-posix.c.html#L1653">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1677</td><td><a href="file-posix.c.html#L1677">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="file-posix.c.html#L1680">(ret == -ENOTSUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="file-posix.c.html#L1705">(ret == -ENOTSUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1724</td><td><a href="file-posix.c.html#L1724">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="file-posix.c.html#L1730">(ret == -EINVAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="file-posix.c.html#L1741">(ret != -ENOTSUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1818</td><td><a href="file-posix.c.html#L1818">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1823</td><td><a href="file-posix.c.html#L1823">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1855</td><td><a href="file-posix.c.html#L1855">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1878</td><td><a href="file-posix.c.html#L1878">(ret == -ENOTSUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="file-posix.c.html#L1953">(offset != current_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1956</td><td><a href="file-posix.c.html#L1956">(result != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1960</td><td><a href="file-posix.c.html#L1960">(current_length == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1996</td><td><a href="file-posix.c.html#L1996">(seek_result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2003</td><td><a href="file-posix.c.html#L2003">(left > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2006</td><td><a href="file-posix.c.html#L2006">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2007</td><td><a href="file-posix.c.html#L2007">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2017</td><td><a href="file-posix.c.html#L2017">(result >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2019</td><td><a href="file-posix.c.html#L2019">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2045</td><td><a href="file-posix.c.html#L2045">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="file-posix.c.html#L2168">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2268</td><td><a href="file-posix.c.html#L2268">(prealloc != PREALLOC_MODE_OFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2280</td><td><a href="file-posix.c.html#L2280">(offset > cur_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2345</td><td><a href="file-posix.c.html#L2345">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2353</td><td><a href="file-posix.c.html#L2353">(ret != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2362</td><td><a href="file-posix.c.html#L2362">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2380</td><td><a href="file-posix.c.html#L2380">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2394</td><td><a href="file-posix.c.html#L2394">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2402</td><td><a href="file-posix.c.html#L2402">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2412</td><td><a href="file-posix.c.html#L2412">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2415</td><td><a href="file-posix.c.html#L2415">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2422</td><td><a href="file-posix.c.html#L2422">(size == 2048LL * (unsigned)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2433</td><td><a href="file-posix.c.html#L2433">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2447</td><td><a href="file-posix.c.html#L2447">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2452</td><td><a href="file-posix.c.html#L2452">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2500</td><td><a href="file-posix.c.html#L2500">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2520</td><td><a href="file-posix.c.html#L2520">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2526</td><td><a href="file-posix.c.html#L2526">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="file-posix.c.html#L2535">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2561</td><td><a href="file-posix.c.html#L2561">(result == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2579</td><td><a href="file-posix.c.html#L2579">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2666</td><td><a href="file-posix.c.html#L2666">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2704</td><td><a href="file-posix.c.html#L2704">(offs < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2708</td><td><a href="file-posix.c.html#L2708">(offs < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2714</td><td><a href="file-posix.c.html#L2714">(offs > start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2741</td><td><a href="file-posix.c.html#L2741">(offs < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2745</td><td><a href="file-posix.c.html#L2745">(offs < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2751</td><td><a href="file-posix.c.html#L2751">(offs > start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2795</td><td><a href="file-posix.c.html#L2795">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2807</td><td><a href="file-posix.c.html#L2807">(ret == -ENXIO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2811</td><td><a href="file-posix.c.html#L2811">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2815</td><td><a href="file-posix.c.html#L2815">(data == offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2826</td><td><a href="file-posix.c.html#L2826">(file_length > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2864</td><td><a href="file-posix.c.html#L2864">(offset < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2873</td><td><a href="file-posix.c.html#L2873">(new_length != length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2881</td><td><a href="file-posix.c.html#L2881">(new_window == MAP_FAILED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2890</td><td><a href="file-posix.c.html#L2890">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2896</td><td><a href="file-posix.c.html#L2896">(i < vec_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2901</td><td><a href="file-posix.c.html#L2901">(i < vec_end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2922</td><td><a href="file-posix.c.html#L2922">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="file-posix.c.html#L2938">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2948</td><td><a href="file-posix.c.html#L2948">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3161</td><td><a href="file-posix.c.html#L3161">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3183</td><td><a href="file-posix.c.html#L3183">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3191</td><td><a href="file-posix.c.html#L3191">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3352</td><td><a href="file-posix.c.html#L3352">(KERN_SUCCESS != kernResult)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3359</td><td><a href="file-posix.c.html#L3359">(classesToMatch == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3368</td><td><a href="file-posix.c.html#L3368">(kernResult != KERN_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3421</td><td><a href="file-posix.c.html#L3421">(index < num_of_test_partitions)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3425</td><td><a href="file-posix.c.html#L3425">(fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3433</td><td><a href="file-posix.c.html#L3433">(partition_found == false)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3492</td><td><a href="file-posix.c.html#L3492">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3497</td><td><a href="file-posix.c.html#L3497">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3531</td><td><a href="file-posix.c.html#L3531">(mediaType == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3539</td><td><a href="file-posix.c.html#L3539">(ret_val != KERN_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3576</td><td><a href="file-posix.c.html#L3576">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3578</td><td><a href="file-posix.c.html#L3578">(*bsd_path)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3604</td><td><a href="file-posix.c.html#L3604">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3639</td><td><a href="file-posix.c.html#L3639">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3652</td><td><a href="file-posix.c.html#L3652">(rc < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3733</td><td><a href="file-posix.c.html#L3733">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3743</td><td><a href="file-posix.c.html#L3743">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3867</td><td><a href="file-posix.c.html#L3867">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">771</td><td><a href="file-posix.c.html#L771">(S_ISBLK(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">790</td><td><a href="file-posix.c.html#L790">(S_ISCHR(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">803</td><td><a href="file-posix.c.html#L803">(S_ISREG(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2263</td><td><a href="file-posix.c.html#L2263">(S_ISREG(st.st_mode))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">712</td><td><a href="file-posix.c.html#L712">(!aio_setup_linux_aio(bdrv_get_aio_context(bs), errp))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">728</td><td><a href="file-posix.c.html#L728">(!aio_setup_linux_io_uring(bdrv_get_aio_context(bs), errp))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">596</td><td><a href="file-posix.c.html#L596">(!qemu_opts_absorb_qdict(opts, options, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="file-posix.c.html#L645">(!qemu_has_ofd_lock())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">751</td><td><a href="file-posix.c.html#L751">(!device)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">991</td><td><a href="file-posix.c.html#L991">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">993</td><td><a href="file-posix.c.html#L993">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2799</td><td><a href="file-posix.c.html#L2799">(!want_zero)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">438</td><td><a href="file-posix.c.html#L438">(raw_is_io_aligned(fd, buf, align))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2622</td><td><a href="file-posix.c.html#L2622">(qemu_opt_get(opts, BLOCK_OPT_EXTENT_SIZE_HINT))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3459</td><td><a href="file-posix.c.html#L3459">(strstart(filename, "/dev/cdrom", NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="file-posix.c.html#L494">(readonly)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">515</td><td><a href="file-posix.c.html#L515">(read_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">621</td><td><a href="file-posix.c.html#L621">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">637</td><td><a href="file-posix.c.html#L637">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">663</td><td><a href="file-posix.c.html#L663">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">665</td><td><a href="file-posix.c.html#L665">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">850</td><td><a href="file-posix.c.html#L850">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">858</td><td><a href="file-posix.c.html#L858">(unlock)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">872</td><td><a href="file-posix.c.html#L872">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">876</td><td><a href="file-posix.c.html#L876">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">881</td><td><a href="file-posix.c.html#L881">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">884</td><td><a href="file-posix.c.html#L884">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">894</td><td><a href="file-posix.c.html#L894">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">898</td><td><a href="file-posix.c.html#L898">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">904</td><td><a href="file-posix.c.html#L904">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">907</td><td><a href="file-posix.c.html#L907">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">927</td><td><a href="file-posix.c.html#L927">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">943</td><td><a href="file-posix.c.html#L943">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1004</td><td><a href="file-posix.c.html#L1004">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1014</td><td><a href="file-posix.c.html#L1014">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1080</td><td><a href="file-posix.c.html#L1080">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1561</td><td><a href="file-posix.c.html#L1561">(preadv_present)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1811</td><td><a href="file-posix.c.html#L1811">(bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2585</td><td><a href="file-posix.c.html#L2585">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2632</td><td><a href="file-posix.c.html#L2632">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2907</td><td><a href="file-posix.c.html#L2907">(window)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2968</td><td><a href="file-posix.c.html#L2968">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2992</td><td><a href="file-posix.c.html#L2992">(blkdev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3057</td><td><a href="file-posix.c.html#L3057">(blkdev)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3171</td><td><a href="file-posix.c.html#L3171">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3391</td><td><a href="file-posix.c.html#L3391">(nextMedia)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3395</td><td><a href="file-posix.c.html#L3395">(bsdPathAsCFString)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3564</td><td><a href="file-posix.c.html#L3564">(mediaIterator)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3567</td><td><a href="file-posix.c.html#L3567">(error_occurred)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3765</td><td><a href="file-posix.c.html#L3765">(eject_flag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3838</td><td><a href="file-posix.c.html#L3838">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3892</td><td><a href="file-posix.c.html#L3892">(eject_flag)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

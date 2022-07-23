@@ -1,0 +1,99 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\scsi\vmw_pvscsi.c Ctrl Expressions (48) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\scsi\vmw_pvscsi.c Ctrl Expressions (48) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\scsi\vmw_pvscsi.c Ctrl Expressions (48)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">826</td><td><a href="vmw_pvscsi.c.html#L826">(<span style='background-color:#741da3;'>!rc->reqRingNumPages || rc->reqRingNumPages > PVSCSI_SETUP_RINGS_MAX_NUM_PAGES || !rc->cmpRingNumPages || rc->cmpRingNumPages > PVSCSI_SETUP_RINGS_MAX_NUM_PAGES</span>)</a></td><td class="num">1023.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="vmw_pvscsi.c.html#L645">(<span style='background-color:#741da3;'>requested_lun[0] || requested_lun[2] || requested_lun[3] || requested_lun[4] || requested_lun[5] || requested_lun[6] || requested_lun[7] || (target > PVSCSI_MAX_DEVS)</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">683</td><td><a href="vmw_pvscsi.c.html#L683">(<span style='background-color:#741da3;'>!sg.resid && elmcnt++ < PVSCSI_MAX_SG_ELEM</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">767</td><td><a href="vmw_pvscsi.c.html#L767">((next_descr_pa = pvscsi_ring_pop_req_descr(&s->rings)) != 0)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">257</td><td><a href="vmw_pvscsi.c.html#L257">(ready_ptr != mgr->consumed_ptr && ready_ptr - mgr->consumed_ptr < ring_size)</a></td><td class="num">31.35</td></tr>
+      <tr><td class="num line">591</td><td><a href="vmw_pvscsi.c.html#L591">(s->msg_ring_info_valid && pvscsi_ring_msg_has_room(&s->rings))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">996</td><td><a href="vmw_pvscsi.c.html#L996">(bytes_arrived >= pvscsi_commands[s->curr_cmd].data_size)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">915</td><td><a href="vmw_pvscsi.c.html#L915">(pvscsi_ring_init_msg(&s->rings, rc) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">430</td><td><a href="vmw_pvscsi.c.html#L430">(!QTAILQ_EMPTY(&s->completion_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">459</td><td><a href="vmw_pvscsi.c.html#L459">(!QTAILQ_EMPTY(&s->completion_queue))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">734</td><td><a href="vmw_pvscsi.c.html#L734">(r->sreq->cmd.mode == SCSI_XFER_FROM_DEV && (descr->flags & PVSCSI_FLAG_CMD_DIR_TODEVICE))</a></td><td class="num">19.00</td></tr>
+      <tr><td class="num line">741</td><td><a href="vmw_pvscsi.c.html#L741">(r->sreq->cmd.mode == SCSI_XFER_TO_DEV && (descr->flags & PVSCSI_FLAG_CMD_DIR_TOHOST))</a></td><td class="num">19.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="vmw_pvscsi.c.html#L208">(!ri->numPages || ri->numPages > PVSCSI_SETUP_MSG_RING_MAX_NUM_PAGES)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">849</td><td><a href="vmw_pvscsi.c.html#L849">(r->req.context == cmd->context)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1017</td><td><a href="vmw_pvscsi.c.html#L1017">((cmd_id > PVSCSI_CMD_FIRST) && (cmd_id < PVSCSI_CMD_LAST))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">705</td><td><a href="vmw_pvscsi.c.html#L705">(r->req.flags & PVSCSI_FLAG_CMD_WITH_SG_LIST)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1313</td><td><a href="vmw_pvscsi.c.html#L1313">(!(s->compat_flags & PVSCSI_COMPAT_DISABLE_PCIE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">496</td><td><a href="vmw_pvscsi.c.html#L496">((elem.flags & ~PVSCSI_KNOWN_FLAGS) != 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">576</td><td><a href="vmw_pvscsi.c.html#L576">(pvscsi_req->cmp.scsiStatus == CHECK_CONDITION)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">155</td><td><a href="vmw_pvscsi.c.html#L155">(input >> log++)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">729</td><td><a href="vmw_pvscsi.c.html#L729">(descr->flags & PVSCSI_FLAG_CMD_WITH_SG_LIST)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">682</td><td><a href="vmw_pvscsi.c.html#L682">(data_length && elmcnt < PVSCSI_MAX_SG_ELEM)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">179</td><td><a href="vmw_pvscsi.c.html#L179">(i < ri->reqRingNumPages)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">183</td><td><a href="vmw_pvscsi.c.html#L183">(i < ri->cmpRingNumPages)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">218</td><td><a href="vmw_pvscsi.c.html#L218">(i < ri->numPages)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">471</td><td><a href="vmw_pvscsi.c.html#L471">(r->sreq != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">787</td><td><a href="vmw_pvscsi.c.html#L787">(i < rc->reqRingNumPages)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="vmw_pvscsi.c.html#L792">(i < rc->cmpRingNumPages)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">632</td><td><a href="vmw_pvscsi.c.html#L632">(pvscsi_req->dev->resetting)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1183</td><td><a href="vmw_pvscsi.c.html#L1183">(pci_is_express(pci_dev) && pci_bus_is_express(pci_get_bus(pci_dev)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">763</td><td><a href="vmw_pvscsi.c.html#L763">(!s->rings_info_valid)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">910</td><td><a href="vmw_pvscsi.c.html#L910">(!s->use_msg)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">628</td><td><a href="vmw_pvscsi.c.html#L628">(pvscsi_req->completed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="vmw_pvscsi.c.html#L914">(s->rings_info_valid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">669</td><td><a href="vmw_pvscsi.c.html#L669">(*d)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="vmw_pvscsi.c.html#L881">(sdev != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1115</td><td><a href="vmw_pvscsi.c.html#L1115">(res < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="vmw_pvscsi.c.html#L525">(!pvscsi_req)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">563</td><td><a href="vmw_pvscsi.c.html#L563">(!pvscsi_req)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">722</td><td><a href="vmw_pvscsi.c.html#L722">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">370</td><td><a href="vmw_pvscsi.c.html#L370">(msi_enabled(d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="vmw_pvscsi.c.html#L1161">(PVSCSI_USE_OLD_PCI_CONFIGURATION(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">371</td><td><a href="vmw_pvscsi.c.html#L371">(should_raise)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">438</td><td><a href="vmw_pvscsi.c.html#L438">(has_completed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">569</td><td><a href="vmw_pvscsi.c.html#L569">(resid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">689</td><td><a href="vmw_pvscsi.c.html#L689">(chunk_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">752</td><td><a href="vmw_pvscsi.c.html#L752">(n)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">853</td><td><a href="vmw_pvscsi.c.html#L853">(r)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

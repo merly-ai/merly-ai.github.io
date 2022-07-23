@@ -1,0 +1,233 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>qemu Repo - target\i386\whpx\whpx-all.c Ctrl Expressions (182) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\i386\whpx\whpx-all.c Ctrl Expressions (182) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\i386\whpx\whpx-all.c Ctrl Expressions (182)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1520</td><td><a href="whpx-all.c.html#L1520">(<span style='background-color:#741da3;'>!vcpu->interruption_pending && vcpu->interruptable && (env->eflags & IF_MASK)</span>)</a></td><td class="num">1020.00</td></tr>
+      <tr><td class="num line">1458</td><td><a href="whpx-all.c.html#L1458">(!((cpu->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)) && !(cpu->interrupt_request & CPU_INTERRUPT_NMI))</a></td><td class="num">59.00</td></tr>
+      <tr><td class="num line">1341</td><td><a href="whpx-all.c.html#L1341">(!QTAILQ_EMPTY(&cpu->breakpoints) || (whpx->breakpoints.breakpoints && whpx->breakpoints.breakpoints->used))</a></td><td class="num">55.50</td></tr>
+      <tr><td class="num line">2012</td><td><a href="whpx-all.c.html#L2012">((vcpu->exit_ctx.VpException.ExceptionType == WHvX64ExceptionTypeDebugTrapOrFault) && (vcpu->exit_ctx.VpException.InstructionByteCount >= 1) && (vcpu->exit_ctx.VpException.InstructionBytes[0] == whpx_breakpoint_instruction))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1637</td><td><a href="whpx-all.c.html#L1637">(((cpu->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)) || (cpu->interrupt_request & CPU_INTERRUPT_NMI))</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">1349</td><td><a href="whpx-all.c.html#L1349">(i >= whpx->breakpoints.original_address_count || bp->pc != whpx->breakpoints.original_addresses[i])</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">1509</td><td><a href="whpx-all.c.html#L1509">((cpu->interrupt_request & CPU_INTERRUPT_INIT) && !(env->hflags & HF_SMM_MASK))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1625</td><td><a href="whpx-all.c.html#L1625">((cpu->interrupt_request & CPU_INTERRUPT_INIT) && !(env->hflags & HF_SMM_MASK))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">2629</td><td><a href="whpx-all.c.html#L2629">(whpx->kernel_irqchip_required && (!features.LocalApicEmulation || !whp_dispatch.WHvSetVirtualProcessorInterruptControllerState2))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">1106</td><td><a href="whpx-all.c.html#L1106">(address == whpx->breakpoints.breakpoints->data[i].address)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1206</td><td><a href="whpx-all.c.html#L1206">(new_breakpoints->data[i].address == bp->pc)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1181</td><td><a href="whpx-all.c.html#L1181">(breakpoints->breakpoints->data[i].state != WHPX_BP_CLEARED)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">1208</td><td><a href="whpx-all.c.html#L1208">(new_breakpoints->data[i].state == WHPX_BP_CLEAR_PENDING)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1210</td><td><a href="whpx-all.c.html#L1210">(new_breakpoints->data[i].state == WHPX_BP_SET)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2381</td><td><a href="whpx-all.c.html#L2381">(!size || (start_pa & ~qemu_real_host_page_mask()))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1375</td><td><a href="whpx-all.c.html#L1375">(whpx->step_pending || (whpx->breakpoints.breakpoints && whpx->breakpoints.breakpoints->used))</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">1677</td><td><a href="whpx-all.c.html#L1677">(whpx->breakpoints.breakpoints && whpx->breakpoints.breakpoints->used > 0)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">2019</td><td><a href="whpx-all.c.html#L2019">((vcpu->exit_ctx.VpException.ExceptionType == WHvX64ExceptionTypeDebugTrapOrFault) && !cpu->singlestep_enabled)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1490</td><td><a href="whpx-all.c.html#L1490">(!vcpu->interruption_pending && cpu->interrupt_request & CPU_INTERRUPT_NMI | CPU_INTERRUPT_SMI)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="whpx-all.c.html#L1567">(!vcpu->window_registered && cpu->interrupt_request & CPU_INTERRUPT_HARD)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1540</td><td><a href="whpx-all.c.html#L1540">(vcpu->ready_for_pic_interrupt && (cpu->interrupt_request & CPU_INTERRUPT_HARD))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1219</td><td><a href="whpx-all.c.html#L1219">(!found && new_breakpoints->used < new_breakpoints->allocated)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2637</td><td><a href="whpx-all.c.html#L2637">(whpx->kernel_irqchip_allowed && features.LocalApicEmulation && whp_dispatch.WHvSetVirtualProcessorInterruptControllerState2)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2245</td><td><a href="whpx-all.c.html#L2245">(x86_cpu->vmware_cpuid_freq && env->tsc_khz)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1869</td><td><a href="whpx-all.c.html#L1869">(i == cpu->cpu_index && !include_self)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1682</td><td><a href="whpx-all.c.html#L1682">(stepped_over_bp && stepped_over_bp->state != WHPX_BP_SET)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="whpx-all.c.html#L1105">(i < whpx->breakpoints.breakpoints->used)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1669</td><td><a href="whpx-all.c.html#L1669">(whpx->running_cpus++ == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2073</td><td><a href="whpx-all.c.html#L2073">(whpx->running_cpus-- == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1810</td><td><a href="whpx-all.c.html#L1810">((delivery_mode != APIC_DM_INIT) && (delivery_mode != APIC_DM_SIPI))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1698</td><td><a href="whpx-all.c.html#L1698">(cpu->halted && !whpx_apic_in_platform())</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1747</td><td><a href="whpx-all.c.html#L1747">(exclusive_step_mode != WHPX_STEP_NONE || cpu->singlestep_enabled)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1762</td><td><a href="whpx-all.c.html#L1762">(exclusive_step_mode != WHPX_STEP_NONE || cpu->singlestep_enabled)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1180</td><td><a href="whpx-all.c.html#L1180">(i < breakpoints->breakpoints->used)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1357</td><td><a href="whpx-all.c.html#L1357">(i != whpx->breakpoints.original_address_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1492</td><td><a href="whpx-all.c.html#L1492">(cpu->interrupt_request & CPU_INTERRUPT_NMI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1499</td><td><a href="whpx-all.c.html#L1499">(cpu->interrupt_request & CPU_INTERRUPT_SMI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1508</td><td><a href="whpx-all.c.html#L1508">(cpu->interrupt_request & CPU_INTERRUPT_INIT | CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1513</td><td><a href="whpx-all.c.html#L1513">(cpu->interrupt_request & CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1523</td><td><a href="whpx-all.c.html#L1523">(cpu->interrupt_request & CPU_INTERRUPT_HARD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1632</td><td><a href="whpx-all.c.html#L1632">(cpu->interrupt_request & CPU_INTERRUPT_POLL)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1643</td><td><a href="whpx-all.c.html#L1643">(cpu->interrupt_request & CPU_INTERRUPT_SIPI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1648</td><td><a href="whpx-all.c.html#L1648">(cpu->interrupt_request & CPU_INTERRUPT_TPR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2602</td><td><a href="whpx-all.c.html#L2602">(FAILED(hr) && hr != WHV_E_UNKNOWN_PROPERTY)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1742</td><td><a href="whpx-all.c.html#L1742">(qatomic_read(&cpu->exit_request))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">695</td><td><a href="whpx-all.c.html#L695">(tpr != vcpu->tpr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="whpx-all.c.html#L753">(apic_base != vcpu->apic_base)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="whpx-all.c.html#L954">(exceptions == whpx->exception_exit_bitmap)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1196</td><td><a href="whpx-all.c.html#L1196">(i < new_breakpoints->used)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1257</td><td><a href="whpx-all.c.html#L1257">(i < breakpoints->used)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1558</td><td><a href="whpx-all.c.html#L1558">(tpr != vcpu->tpr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1603</td><td><a href="whpx-all.c.html#L1603">(vcpu->tpr != tpr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2282</td><td><a href="whpx-all.c.html#L2282">(cpu->exception_index >= EXCP_INTERRUPT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2719</td><td><a href="whpx-all.c.html#L2719">(NULL != whpx->partition)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1864</td><td><a href="whpx-all.c.html#L1864">(!broadcast && !include_self)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2175</td><td><a href="whpx-all.c.html#L2175">(migrate_add_blocker(whpx_migration_blocker, &local_error) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2566</td><td><a href="whpx-all.c.html#L2566">(FAILED(hr) || !whpx_cap.HypervisorPresent)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1104</td><td><a href="whpx-all.c.html#L1104">(whpx->breakpoints.breakpoints)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">624</td><td><a href="whpx-all.c.html#L624">(!env->tsc_valid)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2084</td><td><a href="whpx-all.c.html#L2084">(!cpu->vcpu_dirty)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2116</td><td><a href="whpx-all.c.html#L2116">(!cpu->vcpu_dirty)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2217</td><td><a href="whpx-all.c.html#L2217">(!env->tsc_khz)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1178</td><td><a href="whpx-all.c.html#L1178">(breakpoints->breakpoints)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1228</td><td><a href="whpx-all.c.html#L1228">(breakpoints->breakpoints)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="whpx-all.c.html#L1413">(cpu->vcpu_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1734</td><td><a href="whpx-all.c.html#L1734">(cpu->vcpu_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2509</td><td><a href="whpx-all.c.html#L2509">(!visit_type_OnOffSplit(v, name, &mode, errp))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="whpx-all.c.html#L2649">(whpx->kernel_irqchip_required)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2777</td><td><a href="whpx-all.c.html#L2777">(!load_whp_dispatch_fns(&hWinHvPlatform, WINHV_PLATFORM_FNS_DEFAULT))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2781</td><td><a href="whpx-all.c.html#L2781">(!load_whp_dispatch_fns(&hWinHvEmulation, WINHV_EMULATION_FNS_DEFAULT))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">409</td><td><a href="whpx-all.c.html#L409">(level >= WHPX_SET_RESET_STATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">425</td><td><a href="whpx-all.c.html#L425">(idx < CPU_NB_REGS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">439</td><td><a href="whpx-all.c.html#L439">(i < 6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">482</td><td><a href="whpx-all.c.html#L482">(i < sizeof(env->xmm_regs) / sizeof(ZMMReg))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="whpx-all.c.html#L490">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="whpx-all.c.html#L503">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">654</td><td><a href="whpx-all.c.html#L654">(idx < CPU_NB_REGS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">667</td><td><a href="whpx-all.c.html#L667">(i < 6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="whpx-all.c.html#L711">(i < sizeof(env->xmm_regs) / sizeof(ZMMReg))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">719</td><td><a href="whpx-all.c.html#L719">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">731</td><td><a href="whpx-all.c.html#L731">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="whpx-all.c.html#L907">(!emu_status.EmulationSuccessful)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">932</td><td><a href="whpx-all.c.html#L932">(!emu_status.EmulationSuccessful)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1283</td><td><a href="whpx-all.c.html#L1283">(state == WHPX_BP_SET_PENDING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="whpx-all.c.html#L1306">(state == WHPX_BP_CLEAR_PENDING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="whpx-all.c.html#L1526">(irq >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1544</td><td><a href="whpx-all.c.html#L1544">(irq >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1672</td><td><a href="whpx-all.c.html#L1672">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1696</td><td><a href="whpx-all.c.html#L1696">(exclusive_step_mode == WHPX_STEP_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1707</td><td><a href="whpx-all.c.html#L1707">(exclusive_step_mode != WHPX_STEP_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1739</td><td><a href="whpx-all.c.html#L1739">(exclusive_step_mode == WHPX_STEP_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="whpx-all.c.html#L1817">(delivery_mode == APIC_DM_INIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1868</td><td><a href="whpx-all.c.html#L1868">(i <= max_vcpu_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1893</td><td><a href="whpx-all.c.html#L1893">(exclusive_step_mode != WHPX_STEP_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2060</td><td><a href="whpx-all.c.html#L2060">(exclusive_step_mode != WHPX_STEP_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2170</td><td><a href="whpx-all.c.html#L2170">(whpx_migration_blocker == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="whpx-all.c.html#L2221">(hr != WHV_E_UNKNOWN_CAPABILITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2233</td><td><a href="whpx-all.c.html#L2233">(hr != WHV_E_UNKNOWN_CAPABILITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2375</td><td><a href="whpx-all.c.html#L2375">(delta > size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="whpx-all.c.html#L1076">(reg_value.PendingDebugException.SingleStep)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">344</td><td><a href="whpx-all.c.html#L344">(whp_dispatch.WHvSuspendPartitionTime)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1535</td><td><a href="whpx-all.c.html#L1535">(new_int.InterruptionPending)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">318</td><td><a href="whpx-all.c.html#L318">(!whpx_has_xsave())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">594</td><td><a href="whpx-all.c.html#L594">(!whpx_has_xsave())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1391</td><td><a href="whpx-all.c.html#L1391">(!SUCCEEDED(hr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1519</td><td><a href="whpx-all.c.html#L1519">(!whpx_apic_in_platform())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1715</td><td><a href="whpx-all.c.html#L1715">(!SUCCEEDED(hr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2369</td><td><a href="whpx-all.c.html#L2369">(!memory_region_is_ram(mr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2419</td><td><a href="whpx-all.c.html#L2419">(!memory_region_is_ram(mr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2556</td><td><a href="whpx-all.c.html#L2556">(!init_whp_dispatch())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2606</td><td><a href="whpx-all.c.html#L2606">(!whpx_has_xsave())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1054</td><td><a href="whpx-all.c.html#L1054">(!set)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1253</td><td><a href="whpx-all.c.html#L1253">(!breakpoints)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1267</td><td><a href="whpx-all.c.html#L1267">(!resuming)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1272</td><td><a href="whpx-all.c.html#L1272">(!resuming)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1291</td><td><a href="whpx-all.c.html#L1291">(!rc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1300</td><td><a href="whpx-all.c.html#L1300">(!rc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1314</td><td><a href="whpx-all.c.html#L1314">(!rc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2049</td><td><a href="whpx-all.c.html#L2049">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2185</td><td><a href="whpx-all.c.html#L2185">(!vcpu)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">326</td><td><a href="whpx-all.c.html#L326">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">352</td><td><a href="whpx-all.c.html#L352">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">360</td><td><a href="whpx-all.c.html#L360">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="whpx-all.c.html#L558">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">576</td><td><a href="whpx-all.c.html#L576">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="whpx-all.c.html#L601">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="whpx-all.c.html#L634">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">639</td><td><a href="whpx-all.c.html#L639">(whpx_apic_in_platform())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="whpx-all.c.html#L781">(whpx_apic_in_platform())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">824</td><td><a href="whpx-all.c.html#L824">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="whpx-all.c.html#L846">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="whpx-all.c.html#L874">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="whpx-all.c.html#L902">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">927</td><td><a href="whpx-all.c.html#L927">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">966</td><td><a href="whpx-all.c.html#L966">(SUCCEEDED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1000</td><td><a href="whpx-all.c.html#L1000">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1027</td><td><a href="whpx-all.c.html#L1027">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="whpx-all.c.html#L1047">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="whpx-all.c.html#L1070">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1086</td><td><a href="whpx-all.c.html#L1086">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1443</td><td><a href="whpx-all.c.html#L1443">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1585</td><td><a href="whpx-all.c.html#L1585">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1755</td><td><a href="whpx-all.c.html#L1755">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1840</td><td><a href="whpx-all.c.html#L1840">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1882</td><td><a href="whpx-all.c.html#L1882">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1933</td><td><a href="whpx-all.c.html#L1933">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2002</td><td><a href="whpx-all.c.html#L2002">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2194</td><td><a href="whpx-all.c.html#L2194">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2203</td><td><a href="whpx-all.c.html#L2203">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2222</td><td><a href="whpx-all.c.html#L2222">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2234</td><td><a href="whpx-all.c.html#L2234">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2254</td><td><a href="whpx-all.c.html#L2254">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2353</td><td><a href="whpx-all.c.html#L2353">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2574</td><td><a href="whpx-all.c.html#L2574">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2581</td><td><a href="whpx-all.c.html#L2581">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2618</td><td><a href="whpx-all.c.html#L2618">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2647</td><td><a href="whpx-all.c.html#L2647">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2664</td><td><a href="whpx-all.c.html#L2664">(whpx_apic_in_platform())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2673</td><td><a href="whpx-all.c.html#L2673">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2685</td><td><a href="whpx-all.c.html#L2685">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2699</td><td><a href="whpx-all.c.html#L2699">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2706</td><td><a href="whpx-all.c.html#L2706">(FAILED(hr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="whpx-all.c.html#L278">(v86)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">288</td><td><a href="whpx-all.c.html#L288">(r86)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1005</td><td><a href="whpx-all.c.html#L1005">(exit_context_rflags)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1009</td><td><a href="whpx-all.c.html#L1009">(set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1016</td><td><a href="whpx-all.c.html#L1016">(exit_context_rflags)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1262</td><td><a href="whpx-all.c.html#L1262">(resuming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1277</td><td><a href="whpx-all.c.html#L1277">(resuming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1361</td><td><a href="whpx-all.c.html#L1361">(update_pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1417</td><td><a href="whpx-all.c.html#L1417">(exit_context_valid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1581</td><td><a href="whpx-all.c.html#L1581">(reg_count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1686</td><td><a href="whpx-all.c.html#L1686">(stepped_over_bp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1721</td><td><a href="whpx-all.c.html#L1721">(stepped_over_bp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2051</td><td><a href="whpx-all.c.html#L2051">(stepped_over_bp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2151</td><td><a href="whpx-all.c.html#L2151">(running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2290</td><td><a href="whpx-all.c.html#L2290">(fatal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2339</td><td><a href="whpx-all.c.html#L2339">(add)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2495</td><td><a href="whpx-all.c.html#L2495">(hLib)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2773</td><td><a href="whpx-all.c.html#L2773">(whp_dispatch_initialized)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2791</td><td><a href="whpx-all.c.html#L2791">(hWinHvPlatform)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2795</td><td><a href="whpx-all.c.html#L2795">(hWinHvEmulation)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

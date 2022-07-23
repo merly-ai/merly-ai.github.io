@@ -1,0 +1,393 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\session\session.c Ctrl Expressions (342) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\session\session.c Ctrl Expressions (342) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\session\session.c Ctrl Expressions (342)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">737</td><td><a href="session.c.html#L737">(<span style='background-color:#741da3;'>endptr && (*endptr == '\0') && val >= 22 && val <= PS_MAX_SID_LENGTH</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">757</td><td><a href="session.c.html#L757">(<span style='background-color:#741da3;'>endptr && (*endptr == '\0') && val >= 4 && val <= 6</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">652</td><td><a href="session.c.html#L652">(<span style='background-color:#741da3;'>PG(open_basedir) && *p && php_check_open_basedir(p)</span>)</a></td><td class="num">1009.00</td></tr>
+      <tr><td class="num line">2336</td><td><a href="session.c.html#L2336">(<span style='background-color:#741da3;'>!PS(in_save_handler) && PS(session_status) == php_session_active</span>)</a></td><td class="num">1007.25</td></tr>
+      <tr><td class="num line">1669</td><td><a href="session.c.html#L1669">(<span style='background-color:#741da3;'>APPLY_TRANS_SID && (PS(session_status) == php_session_active)</span>)</a></td><td class="num">1006.25</td></tr>
+      <tr><td class="num line">1596</td><td><a href="session.c.html#L1596">(PS(id) && PS(extern_referer_chk)[0] != '\0' && !Z_ISUNDEF(PG(http_globals)[TRACK_VARS_SERVER]) && (data = zend_hash_str_find(Z_ARRVAL(PG(http_globals)[TRACK_VARS_SERVER]), "HTTP_REFERER", sizeof("HTTP_REFERER") - 1)) && Z_TYPE_P(data) == IS_STRING && Z_STRLEN_P(data) != 0 && strstr(Z_STRVAL_P(data), PS(extern_referer_chk)) == NULL)</a></td><td class="num">94.00</td></tr>
+      <tr><td class="num line">419</td><td><a href="session.c.html#L419">(PS(use_strict_mode) && PS(mod)->s_validate_sid && PS(mod)->s_validate_sid(&PS(mod_data), PS(id)) == FAILURE)</a></td><td class="num">87.25</td></tr>
+      <tr><td class="num line">2278</td><td><a href="session.c.html#L2278">(PS(use_strict_mode) && PS(mod)->s_validate_sid && PS(mod)->s_validate_sid(&PS(mod_data), PS(id)) == SUCCESS)</a></td><td class="num">87.25</td></tr>
+      <tr><td class="num line">1582</td><td><a href="session.c.html#L1582">(!PS(id) && zend_is_auto_global(ZSTR_KNOWN(ZEND_STR_AUTOGLOBAL_SERVER)) == SUCCESS && (data = zend_hash_str_find(Z_ARRVAL(PG(http_globals)[TRACK_VARS_SERVER]), "REQUEST_URI", sizeof("REQUEST_URI") - 1)) && Z_TYPE_P(data) == IS_STRING && (p = strstr(Z_STRVAL_P(data), PS(session_name))) && p[lensess] == '=')</a></td><td class="num">77.50</td></tr>
+      <tr><td class="num line">482</td><td><a href="session.c.html#L482">(PS(lazy_write) && PS(session_vars) && PS(mod)->s_update_timestamp && PS(mod)->s_update_timestamp != php_session_update_timestamp && zend_string_equals(val, PS(session_vars)))</a></td><td class="num">69.25</td></tr>
+      <tr><td class="num line">2925</td><td><a href="session.c.html#L2925">((ppid = zend_hash_str_find(Z_ARRVAL(PG(http_globals)[where]), PS(session_name), progress->sname_len)) && Z_TYPE_P(ppid) == IS_STRING)</a></td><td class="num">63.25</td></tr>
+      <tr><td class="num line">160</td><td><a href="session.c.html#L160">(PS(id) && PS(mod)->s_destroy(&PS(mod_data), PS(id)) == FAILURE)</a></td><td class="num">62.75</td></tr>
+      <tr><td class="num line">1997</td><td><a href="session.c.html#L1997">((current_mptr = zend_hash_find_ptr(&Z_OBJCE_P(obj)->function_table, func_name)))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">2016</td><td><a href="session.c.html#L2016">((current_mptr = zend_hash_find_ptr(&Z_OBJCE_P(obj)->function_table, func_name)))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">2036</td><td><a href="session.c.html#L2036">((current_mptr = zend_hash_find_ptr(&Z_OBJCE_P(obj)->function_table, func_name)))</a></td><td class="num">61.75</td></tr>
+      <tr><td class="num line">2956</td><td><a href="session.c.html#L2956">((progress_ary = zend_symtable_find(Z_ARRVAL_P(Z_REFVAL(PS(http_session_vars))), progress->key.s)) == NULL)</a></td><td class="num">60.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="session.c.html#L338">(!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == ',' || c == '-'))</a></td><td class="num">51.50</td></tr>
+      <tr><td class="num line">441</td><td><a href="session.c.html#L441">(PS(mod)->s_read(&PS(mod_data), PS(id), &val, PS(gc_maxlifetime)) == FAILURE)</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2292</td><td><a href="session.c.html#L2292">(PS(mod)->s_read(&PS(mod_data), PS(id), &data, PS(gc_maxlifetime)) == FAILURE)</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">393</td><td><a href="session.c.html#L393">(PS(mod)->s_open(&PS(mod_data), PS(save_path), PS(session_name)) == FAILURE)</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">2262</td><td><a href="session.c.html#L2262">(PS(mod)->s_open(&PS(mod_data), PS(save_path), PS(session_name)) == FAILURE)</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">2228</td><td><a href="session.c.html#L2228">(PS(mod)->s_destroy(&PS(mod_data), PS(id)) == FAILURE)</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">2344</td><td><a href="session.c.html#L2344">(PS(mod)->s_validate_sid(&PS(mod_data), new_id) == SUCCESS)</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="session.c.html#L787">(ZSTR_LEN(new_value) > 0 && ZSTR_VAL(new_value)[ZSTR_LEN(new_value) - 1] == '%')</a></td><td class="num">43.10</td></tr>
+      <tr><td class="num line">1400</td><td><a href="session.c.html#L1400">(*mod && !strcasecmp(name, (*mod)->s_name))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">248</td><td><a href="session.c.html#L248">(PS(serializer)->decode(ZSTR_VAL(data), ZSTR_LEN(data)) == FAILURE)</a></td><td class="num">42.25</td></tr>
+      <tr><td class="num line">1487</td><td><a href="session.c.html#L1487">(Z_TYPE_P(data) == IS_ARRAY && (ppid = zend_hash_str_find(Z_ARRVAL_P(data), PS(session_name), strlen(PS(session_name)))))</a></td><td class="num">39.75</td></tr>
+      <tr><td class="num line">1567</td><td><a href="session.c.html#L1567">(!PS(id) && (data = zend_hash_str_find(&EG(symbol_table), "_GET", sizeof("_GET") - 1)))</a></td><td class="num">39.75</td></tr>
+      <tr><td class="num line">1573</td><td><a href="session.c.html#L1573">(!PS(id) && (data = zend_hash_str_find(&EG(symbol_table), "_POST", sizeof("_POST") - 1)))</a></td><td class="num">39.75</td></tr>
+      <tr><td class="num line">1484</td><td><a href="session.c.html#L1484">(PS(use_cookies) && (data = zend_hash_str_find(&EG(symbol_table), "_COOKIE", sizeof("_COOKIE") - 1)))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">1557</td><td><a href="session.c.html#L1557">(PS(use_cookies) && (data = zend_hash_str_find(&EG(symbol_table), "_COOKIE", sizeof("_COOKIE") - 1)))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">1998</td><td><a href="session.c.html#L1998">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2017</td><td><a href="session.c.html#L2017">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2025</td><td><a href="session.c.html#L2025">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2037</td><td><a href="session.c.html#L2037">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2045</td><td><a href="session.c.html#L2045">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2125</td><td><a href="session.c.html#L2125">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2766</td><td><a href="session.c.html#L2766">(!Z_ISUNDEF(PS(mod_user_names).names[i]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">404</td><td><a href="session.c.html#L404">(!PS(id) || !ZSTR_VAL(PS(id))[0])</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">1285</td><td><a href="session.c.html#L1285">(header->header_len > len && header->header[len] == ':' && !strncmp(header->header, session_cookie, session_cookie_len))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">3055</td><td><a href="session.c.html#L3055">(name_len == progress->sname_len && memcmp(data->name, PS(session_name), name_len) == 0)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">3058</td><td><a href="session.c.html#L3058">(name_len == strlen(PS(rfc1867_name)) && memcmp(data->name, PS(rfc1867_name), name_len + 1) == 0)</a></td><td class="num">29.10</td></tr>
+      <tr><td class="num line">1559</td><td><a href="session.c.html#L1559">(Z_TYPE_P(data) == IS_ARRAY && (ppid = zend_hash_str_find(Z_ARRVAL_P(data), PS(session_name), lensess)))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1569</td><td><a href="session.c.html#L1569">(Z_TYPE_P(data) == IS_ARRAY && (ppid = zend_hash_str_find(Z_ARRVAL_P(data), PS(session_name), lensess)))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1575</td><td><a href="session.c.html#L1575">(Z_TYPE_P(data) == IS_ARRAY && (ppid = zend_hash_str_find(Z_ARRVAL_P(data), PS(session_name), lensess)))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">2082</td><td><a href="session.c.html#L2082">(PS(session_status) != php_session_active && (!PS(mod) || PS(mod) != &ps_mod_user))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1918</td><td><a href="session.c.html#L1918">(PS(mod) && PS(mod)->s_name)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3075</td><td><a href="session.c.html#L3075">(!Z_TYPE(progress->sid) || !progress->key.s)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3134</td><td><a href="session.c.html#L3134">(!Z_TYPE(progress->sid) || !progress->key.s)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3147</td><td><a href="session.c.html#L3147">(!Z_TYPE(progress->sid) || !progress->key.s)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">2962</td><td><a href="session.c.html#L2962">((cancel_upload = zend_hash_str_find(Z_ARRVAL_P(progress_ary), "cancel_upload", sizeof("cancel_upload") - 1)) == NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2340</td><td><a href="session.c.html#L2340">(!PS(mod)->s_validate_sid)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">2100</td><td><a href="session.c.html#L2100">(!zend_is_callable(&args[i], IS_CALLABLE_SUPPRESS_DEPRECATIONS, NULL))</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="session.c.html#L312">(php_random_bytes_throw(rbuf, PS(sid_length) + PS_EXTRA_RAND_BYTES) == FAILURE)</a></td><td class="num">20.85</td></tr>
+      <tr><td class="num line">2188</td><td><a href="session.c.html#L2188">(UNEXPECTED(len != ZSTR_LEN(PS(id))))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1611</td><td><a href="session.c.html#L1611">(PS(id) && strpbrk(ZSTR_VAL(PS(id)), "\\r\\n\\t <>'\\\"\\\\"))</a></td><td class="num">18.00</td></tr>
+      <tr><td class="num line">3052</td><td><a href="session.c.html#L3052">(data->name && data->value && value_len)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">933</td><td><a href="session.c.html#L933">(namelen < 0 || namelen > PS_BIN_MAX || (p + namelen) >= endptr)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">3041</td><td><a href="session.c.html#L3041">(Z_TYPE(progress->sid) && progress->key.s)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3166</td><td><a href="session.c.html#L3166">(Z_TYPE(progress->sid) && progress->key.s)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2867</td><td><a href="session.c.html#L2867">(*mod && (*mod)->s_name)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">671</td><td><a href="session.c.html#L671">(stage == ZEND_INI_STAGE_RUNTIME || stage == ZEND_INI_STAGE_ACTIVATE || stage == ZEND_INI_STAGE_STARTUP)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">336</td><td><a href="session.c.html#L336">(c = *p)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2971</td><td><a href="session.c.html#L2971">(Z_LVAL_P(progress->post_bytes_processed) < progress->next_update)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">373</td><td><a href="session.c.html#L373">(PS(gc_probability) > 0 && nrand < PS(gc_probability))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1655</td><td><a href="session.c.html#L1655">(PS(session_status) == php_session_active && php_session_initialize() == SUCCESS)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1979</td><td><a href="session.c.html#L1979">(argc > 0 && argc <= 2)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="session.c.html#L2120">(!PS(mod) || PS(mod) != &ps_mod_user)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">642</td><td><a href="session.c.html#L642">((p = strchr(ZSTR_VAL(new_value), ';')))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">645</td><td><a href="session.c.html#L645">((p2 = strchr(p, ';')))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1590</td><td><a href="session.c.html#L1590">((q = strpbrk(p, "/?\\\\")))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1616</td><td><a href="session.c.html#L1616">(php_session_initialize() == FAILURE || php_session_cache_limiter() == -2)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1985</td><td><a href="session.c.html#L1985">(zend_parse_parameters(ZEND_NUM_ARGS(), "O|b", &obj, php_session_iface_entry, &register_shutdown) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2404</td><td><a href="session.c.html#L2404">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l!", &expires, &expires_is_null) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2736</td><td><a href="session.c.html#L2736">(PS(mod) == NULL || PS(serializer) == NULL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="session.c.html#L500">((ret == FAILURE) && !EG(exception))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="session.c.html#L570">(!PS(set_handler) && tmp == ps_user_ptr)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2094</td><td><a href="session.c.html#L2094">(zend_parse_parameters(argc, "+", &args, &num_args) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2408</td><td><a href="session.c.html#L2408">(!expires_is_null && PS(session_status) == php_session_active)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2875</td><td><a href="session.c.html#L2875">(ser && ser->name)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3192</td><td><a href="session.c.html#L3192">(progress && progress->cancel_upload)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">352</td><td><a href="session.c.html#L352">(len == 0 || len > PS_MAX_SID_LENGTH)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">634</td><td><a href="session.c.html#L634">(stage == PHP_INI_STAGE_RUNTIME || stage == PHP_INI_STAGE_HTACCESS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2090</td><td><a href="session.c.html#L2090">(argc < 6 || PS_NUM_APIS < argc)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2179</td><td><a href="session.c.html#L2179">(name && PS(use_cookies) && SG(headers_sent))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1877</td><td><a href="session.c.html#L1877">(name && PS(session_status) == php_session_active)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1907</td><td><a href="session.c.html#L1907">(name && PS(session_status) == php_session_active)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2145</td><td><a href="session.c.html#L2145">(name && PS(session_status) == php_session_active)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2174</td><td><a href="session.c.html#L2174">(name && PS(session_status) == php_session_active)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2378</td><td><a href="session.c.html#L2378">(limiter && PS(session_status) == php_session_active)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2940</td><td><a href="session.c.html#L2940">(early_find_sid_in(&progress->sid, TRACK_VARS_COOKIE, progress))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1006</td><td><a href="session.c.html#L1006">(q++ >= endptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1052</td><td><a href="session.c.html#L1052">(ps_serializers[i].name == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2980</td><td><a href="session.c.html#L2980">(dtv < progress->next_update_time)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1873</td><td><a href="session.c.html#L1873">(zend_parse_parameters(ZEND_NUM_ARGS(), "|S!", &name) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1903</td><td><a href="session.c.html#L1903">(zend_parse_parameters(ZEND_NUM_ARGS(), "|S!", &name) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2141</td><td><a href="session.c.html#L2141">(zend_parse_parameters(ZEND_NUM_ARGS(), "|P!", &name) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2170</td><td><a href="session.c.html#L2170">(zend_parse_parameters(ZEND_NUM_ARGS(), "|S!", &name) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2212</td><td><a href="session.c.html#L2212">(zend_parse_parameters(ZEND_NUM_ARGS(), "|b", &del_ses) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2322</td><td><a href="session.c.html#L2322">(zend_parse_parameters(ZEND_NUM_ARGS(), "|S", &prefix) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2374</td><td><a href="session.c.html#L2374">(zend_parse_parameters(ZEND_NUM_ARGS(), "|S!", &limiter) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2453</td><td><a href="session.c.html#L2453">(zend_parse_parameters(ZEND_NUM_ARGS(), "S", &str) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2490</td><td><a href="session.c.html#L2490">(zend_parse_parameters(ZEND_NUM_ARGS(), "|a", &options) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">560</td><td><a href="session.c.html#L560">(PG(modules_activated) && !tmp)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">591</td><td><a href="session.c.html#L591">(PG(modules_activated) && !tmp)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">942</td><td><a href="session.c.html#L942">(php_var_unserialize(current, (const unsigned char **)&p, (const unsigned char *)endptr, &var_hash))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1017</td><td><a href="session.c.html#L1017">(php_var_unserialize(current, (const unsigned char **)&q, (const unsigned char *)endptr, &var_hash))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1158</td><td><a href="session.c.html#L1158">(VCWD_STAT(path, &sb) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1521</td><td><a href="session.c.html#L1521">(!PS(mod) && value)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1529</td><td><a href="session.c.html#L1529">(!PS(serializer) && value)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2413</td><td><a href="session.c.html#L2413">(!expires_is_null && SG(headers_sent))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1005</td><td><a href="session.c.html#L1005">(*q != PS_DELIMITER)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1249</td><td><a href="session.c.html#L1249">(!strcasecmp(lim->name, PS(cache_limiter)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1232</td><td><a href="session.c.html#L1232">(PS(cache_limiter)[0] == '\0')</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1415</td><td><a href="session.c.html#L1415">(!strcasecmp(name, mod->name))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="session.c.html#L1447">(PS(use_cookies) && PS(send_cookie))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2504</td><td><a href="session.c.html#L2504">(PS(use_cookies) && SG(headers_sent))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3170</td><td><a href="session.c.html#L3170">(!Z_ISUNDEF(progress->data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3180</td><td><a href="session.c.html#L3180">(!Z_ISUNDEF(progress->data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">668</td><td><a href="session.c.html#L668">((!ZSTR_LEN(new_value) || is_numeric_string(ZSTR_VAL(new_value), ZSTR_LEN(new_value), NULL, NULL, 0)))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1882</td><td><a href="session.c.html#L1882">(name && SG(headers_sent))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1912</td><td><a href="session.c.html#L1912">(name && SG(headers_sent))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2150</td><td><a href="session.c.html#L2150">(name && SG(headers_sent))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2326</td><td><a href="session.c.html#L2326">(prefix && ZSTR_LEN(prefix))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2383</td><td><a href="session.c.html#L2383">(limiter && SG(headers_sent))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3080</td><td><a href="session.c.html#L3080">(Z_ISUNDEF(progress->data))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="session.c.html#L280">(outlen--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1248</td><td><a href="session.c.html#L1248">(lim->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1287</td><td><a href="session.c.html#L1287">(current->prev)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="session.c.html#L1414">(mod->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2072</td><td><a href="session.c.html#L2072">(!register_user_shutdown_function("session_shutdown", sizeof("session_shutdown") - 1, &shutdown_function_entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2338</td><td><a href="session.c.html#L2338">(limit--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2694</td><td><a href="session.c.html#L2694">(!append_user_shutdown_function(&shutdown_function_entry))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3046</td><td><a href="session.c.html#L3046">(data->newlength)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3103</td><td><a href="session.c.html#L3103">(progress->apply_trans_sid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3151</td><td><a href="session.c.html#L3151">(data->temp_filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="session.c.html#L637">(memchr(ZSTR_VAL(new_value), '\0', ZSTR_LEN(new_value)) != NULL)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">130</td><td><a href="session.c.html#L130">(PS(mod_data) || PS(mod_user_implemented))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">367</td><td><a href="session.c.html#L367">((PS(mod_data) || PS(mod_user_implemented)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">477</td><td><a href="session.c.html#L477">(PS(mod_data) || PS(mod_user_implemented))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">520</td><td><a href="session.c.html#L520">(PS(mod_data) || PS(mod_user_implemented))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">693</td><td><a href="session.c.html#L693">(atol(ZSTR_VAL(new_value)) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1325</td><td><a href="session.c.html#L1325">(strpbrk(PS(session_name), "=,; \\t\\r\\n\\013\\014") != NULL)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1643</td><td><a href="session.c.html#L1643">(PS(mod_data) || PS(mod_user_implemented))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1935</td><td><a href="session.c.html#L1935">(PS(mod_data) || PS(mod_user_implemented))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2327</td><td><a href="session.c.html#L2327">(php_session_valid_key(ZSTR_VAL(prefix)) == FAILURE)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">155</td><td><a href="session.c.html#L155">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">434</td><td><a href="session.c.html#L434">(php_session_reset_id() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">882</td><td><a href="session.c.html#L882">(Z_TYPE(session_vars) == IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1082</td><td><a href="session.c.html#L1082">(!ps_modules[i])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1233</td><td><a href="session.c.html#L1233">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1340</td><td><a href="session.c.html#L1340">(PS(cookie_lifetime) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1426</td><td><a href="session.c.html#L1426">(Z_TYPE_P(ppid) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1631</td><td><a href="session.c.html#L1631">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1642</td><td><a href="session.c.html#L1642">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1705</td><td><a href="session.c.html#L1705">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1852</td><td><a href="session.c.html#L1852">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1948</td><td><a href="session.c.html#L1948">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1989</td><td><a href="session.c.html#L1989">(save_handler_check_session() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2108</td><td><a href="session.c.html#L2108">(save_handler_check_session() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2216</td><td><a href="session.c.html#L2216">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2307</td><td><a href="session.c.html#L2307">(php_session_reset_id() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2435</td><td><a href="session.c.html#L2435">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2457</td><td><a href="session.c.html#L2457">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2462</td><td><a href="session.c.html#L2462">(php_session_decode(str) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2494</td><td><a href="session.c.html#L2494">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2523</td><td><a href="session.c.html#L2523">(php_session_start_set_ini(str_idx, val) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2542</td><td><a href="session.c.html#L2542">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2563</td><td><a href="session.c.html#L2563">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2574</td><td><a href="session.c.html#L2574">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2578</td><td><a href="session.c.html#L2578">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2598</td><td><a href="session.c.html#L2598">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2602</td><td><a href="session.c.html#L2602">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2620</td><td><a href="session.c.html#L2620">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2624</td><td><a href="session.c.html#L2624">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2635</td><td><a href="session.c.html#L2635">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2639</td><td><a href="session.c.html#L2639">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2650</td><td><a href="session.c.html#L2650">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2654</td><td><a href="session.c.html#L2654">(PS(session_status) != php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2665</td><td><a href="session.c.html#L2665">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2727</td><td><a href="session.c.html#L2727">(PS(serializer) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2757</td><td><a href="session.c.html#L2757">(PS(session_status) == php_session_active)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2959</td><td><a href="session.c.html#L2959">(Z_TYPE_P(progress_ary) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2975</td><td><a href="session.c.html#L2975">(PS(rfc1867_min_freq) > 0.0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3082</td><td><a href="session.c.html#L3082">(PS(rfc1867_freq) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3084</td><td><a href="session.c.html#L3084">(PS(rfc1867_freq) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">281</td><td><a href="session.c.html#L281">(have < nbits)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">282</td><td><a href="session.c.html#L282">(p < q)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="session.c.html#L507">(handler_class_name != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">556</td><td><a href="session.c.html#L556">(stage == ZEND_INI_STAGE_RUNTIME)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="session.c.html#L562">(stage != ZEND_INI_STAGE_DEACTIVATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="session.c.html#L594">(stage == ZEND_INI_STAGE_RUNTIME)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="session.c.html#L601">(stage != ZEND_INI_STAGE_DEACTIVATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">678</td><td><a href="session.c.html#L678">(stage != ZEND_INI_STAGE_DEACTIVATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">783</td><td><a href="session.c.html#L783">(tmp < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">788</td><td><a href="session.c.html#L788">(tmp > 100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="session.c.html#L929">(p < endptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1003</td><td><a href="session.c.html#L1003">(p < endptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="session.c.html#L1051">(i < MAX_SERIALIZERS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="session.c.html#L1081">(i < MAX_MODULES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="session.c.html#L1347">(t > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1399</td><td><a href="session.c.html#L1399">(i < MAX_MODULES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1769</td><td><a href="session.c.html#L1769">(found == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1786</td><td><a href="session.c.html#L1786">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1795</td><td><a href="session.c.html#L1795">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1804</td><td><a href="session.c.html#L1804">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1813</td><td><a href="session.c.html#L1813">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1822</td><td><a href="session.c.html#L1822">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1831</td><td><a href="session.c.html#L1831">(result == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1841</td><td><a href="session.c.html#L1841">(found > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2099</td><td><a href="session.c.html#L2099">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2124</td><td><a href="session.c.html#L2124">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2245</td><td><a href="session.c.html#L2245">(ret == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2440</td><td><a href="session.c.html#L2440">(enc == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2608</td><td><a href="session.c.html#L2608">(num < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2765</td><td><a href="session.c.html#L2765">(i < PS_NUM_APIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2795</td><td><a href="session.c.html#L2795">(i < PS_NUM_APIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2846</td><td><a href="session.c.html#L2846">(php_rfc1867_callback == php_session_rfc1867_callback)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2866</td><td><a href="session.c.html#L2866">(i < MAX_MODULES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2874</td><td><a href="session.c.html#L2874">(i < MAX_SERIALIZERS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2921</td><td><a href="session.c.html#L2921">(Z_ISUNDEF(PG(http_globals)[where]))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1358</td><td><a href="session.c.html#L1358">(PS(cookie_path)[0])</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1363</td><td><a href="session.c.html#L1363">(PS(cookie_domain)[0])</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1376</td><td><a href="session.c.html#L1376">(PS(cookie_samesite)[0])</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">2884</td><td><a href="session.c.html#L2884">(save_handlers.s)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2892</td><td><a href="session.c.html#L2892">(ser_handlers.s)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">126</td><td><a href="session.c.html#L126">(!Z_ISUNDEF(PS(http_session_vars)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">179</td><td><a href="session.c.html#L179">(!zend_hash_exists(Z_ARRVAL_P(sess_var), name))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">215</td><td><a href="session.c.html#L215">(!Z_ISUNDEF(PS(http_session_vars)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">879</td><td><a href="session.c.html#L879">(!Z_ISUNDEF(PS(http_session_vars)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1929</td><td><a href="session.c.html#L1929">(!_php_find_ps_module(ZSTR_VAL(name)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">162</td><td><a href="session.c.html#L162">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">230</td><td><a href="session.c.html#L230">(!PS(serializer))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">244</td><td><a href="session.c.html#L244">(!PS(serializer))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="session.c.html#L386">(!PS(mod))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">397</td><td><a href="session.c.html#L397">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">409</td><td><a href="session.c.html#L409">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">411</td><td><a href="session.c.html#L411">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">426</td><td><a href="session.c.html#L426">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">444</td><td><a href="session.c.html#L444">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">501</td><td><a href="session.c.html#L501">(!PS(mod_user_implemented))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1442</td><td><a href="session.c.html#L1442">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1523</td><td><a href="session.c.html#L1523">(!PS(mod))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1531</td><td><a href="session.c.html#L1531">(!PS(serializer))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1556</td><td><a href="session.c.html#L1556">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1566</td><td><a href="session.c.html#L1566">(!PS(use_only_cookies))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1692</td><td><a href="session.c.html#L1692">(!PS(use_cookies))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2231</td><td><a href="session.c.html#L2231">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2264</td><td><a href="session.c.html#L2264">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2271</td><td><a href="session.c.html#L2271">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2273</td><td><a href="session.c.html#L2273">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2282</td><td><a href="session.c.html#L2282">(!PS(id))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2285</td><td><a href="session.c.html#L2285">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2295</td><td><a href="session.c.html#L2295">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3022</td><td><a href="session.c.html#L3022">(!PS(rfc1867_enabled))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">874</td><td><a href="session.c.html#L874">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">973</td><td><a href="session.c.html#L973">(memchr(ZSTR_VAL(key), PS_DELIMITER, ZSTR_LEN(key)))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1135</td><td><a href="session.c.html#L1135">(!res)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1729</td><td><a href="session.c.html#L1729">(!secure_null)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1734</td><td><a href="session.c.html#L1734">(!httponly_null)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1809</td><td><a href="session.c.html#L1809">(!secure_null)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1818</td><td><a href="session.c.html#L1818">(!httponly_null)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2420</td><td><a href="session.c.html#L2420">(!expires_is_null)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2970</td><td><a href="session.c.html#L2970">(!force_update)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">135</td><td><a href="session.c.html#L135">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="session.c.html#L140">(PS(session_vars))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">405</td><td><a href="session.c.html#L405">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">416</td><td><a href="session.c.html#L416">(PS(use_cookies))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="session.c.html#L422">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="session.c.html#L429">(PS(use_cookies))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">453</td><td><a href="session.c.html#L453">(PS(session_vars))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="session.c.html#L458">(PS(lazy_write))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">617</td><td><a href="session.c.html#L617">(zend_string_equals_literal_ci(new_value, "on"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1235</td><td><a href="session.c.html#L1235">(SG(headers_sent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1312</td><td><a href="session.c.html#L1312">(SG(headers_sent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1368</td><td><a href="session.c.html#L1368">(PS(cookie_secure))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1372</td><td><a href="session.c.html#L1372">(PS(cookie_httponly))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="session.c.html#L1457">(PS(define_sid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="session.c.html#L1619">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1710</td><td><a href="session.c.html#L1710">(SG(headers_sent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="session.c.html#L1741">(zend_string_equals_literal_ci(key, "lifetime"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1744</td><td><a href="session.c.html#L1744">(zend_string_equals_literal_ci(key, "path"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1747</td><td><a href="session.c.html#L1747">(zend_string_equals_literal_ci(key, "domain"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1750</td><td><a href="session.c.html#L1750">(zend_string_equals_literal_ci(key, "secure"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1754</td><td><a href="session.c.html#L1754">(zend_string_equals_literal_ci(key, "httponly"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1758</td><td><a href="session.c.html#L1758">(zend_string_equals_literal_ci(key, "samesite"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="session.c.html#L1778">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1925</td><td><a href="session.c.html#L1925">(zend_string_equals_literal_ci(name, "user"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="session.c.html#L1953">(SG(headers_sent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2054</td><td><a href="session.c.html#L2054">(PS(mod_user_class_name))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2112</td><td><a href="session.c.html#L2112">(PS(mod_user_class_name))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2184</td><td><a href="session.c.html#L2184">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2198</td><td><a href="session.c.html#L2198">(PS(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="session.c.html#L2221">(SG(headers_sent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2255</td><td><a href="session.c.html#L2255">(PS(session_vars))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2304</td><td><a href="session.c.html#L2304">(PS(use_cookies))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2518</td><td><a href="session.c.html#L2518">(zend_string_equals_literal(str_idx, "read_and_close"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="session.c.html#L2938">(PS(use_cookies))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2945</td><td><a href="session.c.html#L2945">(PS(use_only_cookies))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3167</td><td><a href="session.c.html#L3167">(PS(rfc1867_cleanup))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">368</td><td><a href="session.c.html#L368">(immediate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">457</td><td><a href="session.c.html#L457">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">472</td><td><a href="session.c.html#L472">(write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">481</td><td><a href="session.c.html#L481">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1157</td><td><a href="session.c.html#L1157">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1240</td><td><a href="session.c.html#L1240">(output_start_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1282</td><td><a href="session.c.html#L1282">(current)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1292</td><td><a href="session.c.html#L1292">(next)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1316</td><td><a href="session.c.html#L1316">(output_start_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1464</td><td><a href="session.c.html#L1464">(sid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1472</td><td><a href="session.c.html#L1472">(sid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1482</td><td><a href="session.c.html#L1482">(APPLY_TRANS_SID)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1494</td><td><a href="session.c.html#L1494">(apply_trans_sid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1715</td><td><a href="session.c.html#L1715">(options_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1719</td><td><a href="session.c.html#L1719">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="session.c.html#L1724">(domain)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1739</td><td><a href="session.c.html#L1739">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1782</td><td><a href="session.c.html#L1782">(lifetime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1791</td><td><a href="session.c.html#L1791">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1800</td><td><a href="session.c.html#L1800">(domain)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1827</td><td><a href="session.c.html#L1827">(samesite)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1840</td><td><a href="session.c.html#L1840">(lifetime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1842</td><td><a href="session.c.html#L1842">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1843</td><td><a href="session.c.html#L1843">(domain)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1844</td><td><a href="session.c.html#L1844">(samesite)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1889</td><td><a href="session.c.html#L1889">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1924</td><td><a href="session.c.html#L1924">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2059</td><td><a href="session.c.html#L2059">(register_shutdown)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2157</td><td><a href="session.c.html#L2157">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2197</td><td><a href="session.c.html#L2197">(name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2227</td><td><a href="session.c.html#L2227">(del_ses)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2239</td><td><a href="session.c.html#L2239">(data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2300</td><td><a href="session.c.html#L2300">(data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2356</td><td><a href="session.c.html#L2356">(new_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2390</td><td><a href="session.c.html#L2390">(limiter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2510</td><td><a href="session.c.html#L2510">(options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2512</td><td><a href="session.c.html#L2512">(str_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2552</td><td><a href="session.c.html#L2552">(read_and_close)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2722</td><td><a href="session.c.html#L2722">(value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2731</td><td><a href="session.c.html#L2731">(value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2742</td><td><a href="session.c.html#L2742">(auto_start)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3019</td><td><a href="session.c.html#L3019">(php_session_rfc1867_orig_callback)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

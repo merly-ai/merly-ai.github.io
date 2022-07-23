@@ -1,0 +1,140 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\dirauth\process_descs.c Ctrl Expressions (87) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\dirauth\process_descs.c Ctrl Expressions (87) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\dirauth\process_descs.c Ctrl Expressions (87)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">770</td><td><a href="process_descs.c.html#L770">(<span style='background-color:#741da3;'>ri_old && ri_old->cache_info.published_on < ri->cache_info.published_on && router_differences_are_cosmetic(ri_old, ri) && !router_is_me(ri)</span>)</a></td><td class="num">1021.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="process_descs.c.html#L550">(!tor_addr_is_null(&ri->ipv6_addr) && tor_addr_is_internal(&ri->ipv6_addr, 0))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">540</td><td><a href="process_descs.c.html#L540">(tor_addr_is_null(&ri->ipv4_addr) || tor_addr_is_internal(&ri->ipv4_addr, 0))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">666</td><td><a href="process_descs.c.html#L666">(tor_snprintf(annotation_buf, sizeof(annotation_buf), "@uploaded-at %s\\n\"
+                   \"@source %s\\n\"
+                   \"%s%s%s", time_buf, escaped(source), !general ? "@purpose " : "", !general ? router_purpose_to_string(purpose) : "", !general ? "\\n" : "") < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">901</td><td><a href="process_descs.c.html#L901">((r = routerinfo_incompatible_with_extrainfo(ri->identity_pkey, ei, &ri->cache_info, msg)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">537</td><td><a href="process_descs.c.html#L537">(get_options()->DirAllowPrivateAddresses)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">337</td><td><a href="process_descs.c.html#L337">(KEYPIN_MISMATCH == keypin_check((const uint8_t*)router->cache_info.identity_digest, router->cache_info.signing_key_cert->signing_key.pubkey))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">584</td><td><a href="process_descs.c.html#L584">(ri->cache_info.published_on > now + ROUTER_ALLOW_SKEW)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">595</td><td><a href="process_descs.c.html#L595">(ri->cache_info.published_on < now - ROUTER_MAX_AGE_TO_PUBLISH)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">953</td><td><a href="process_descs.c.html#L953">(bool_neq((r & RTR_INVALID), !node->is_valid))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">353</td><td><a href="process_descs.c.html#L353">(KEYPIN_MISMATCH == keypin_check_lone_rsa((const uint8_t*)router->cache_info.identity_digest))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">751</td><td><a href="process_descs.c.html#L751">(ri->cache_info.signed_descriptor_len > MAX_DESCRIPTOR_UPLOAD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">890</td><td><a href="process_descs.c.html#L890">(ei->cache_info.signed_descriptor_len > MAX_EXTRAINFO_UPLOAD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">958</td><td><a href="process_descs.c.html#L958">(bool_neq((r & RTR_BADEXIT), node->is_bad_exit))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">963</td><td><a href="process_descs.c.html#L963">(bool_neq((r & RTR_MIDDLEONLY), node->is_middle_only))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">807</td><td><a href="process_descs.c.html#L807">(keypin_status == KEYPIN_MISMATCH && key_pinning)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="process_descs.c.html#L679">(!router_parse_list_from_string(&s, s + desclen, list, SAVED_NOWHERE, 0, 0, annotation_buf, NULL))</a></td><td class="num">5.60</td></tr>
+      <tr><td class="num line">695</td><td><a href="process_descs.c.html#L695">(!router_parse_list_from_string(&s, s + desclen, list, SAVED_NOWHERE, 1, 0, NULL, NULL))</a></td><td class="num">5.60</td></tr>
+      <tr><td class="num line">444</td><td><a href="process_descs.c.html#L444">(tor_version_parse_platform(platform, &ver_tmp, 1) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">309</td><td><a href="process_descs.c.html#L309">(router->cache_info.signing_key_cert)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">335</td><td><a href="process_descs.c.html#L335">(router->cache_info.signing_key_cert)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">785</td><td><a href="process_descs.c.html#L785">(ri->cache_info.signing_key_cert)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">453</td><td><a href="process_descs.c.html#L453">(platform && dirserv_rejects_tor_version(platform, msg))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="process_descs.c.html#L255">(ed25519_not_ok && rsa_not_ok)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">301</td><td><a href="process_descs.c.html#L301">(crypto_pk_get_digest(router->identity_pkey, d))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">469</td><td><a href="process_descs.c.html#L469">(result & RTR_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="process_descs.c.html#L476">(result & RTR_INVALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="process_descs.c.html#L579">(status & RTR_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">947</td><td><a href="process_descs.c.html#L947">(r & RTR_REJECT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="process_descs.c.html#L710">(!*msg)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">843</td><td><a href="process_descs.c.html#L843">(!*msg)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">111</td><td><a href="process_descs.c.html#L111">(base16_decode(d, DIGEST_LEN, fingerprint, strlen(fingerprint)) != DIGEST_LEN)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">143</td><td><a href="process_descs.c.html#L143">(ed25519_validate_pubkey(edkey) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">164</td><td><a href="process_descs.c.html#L164">(crypto_pk_get_fingerprint(pk, fp, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">170</td><td><a href="process_descs.c.html#L170">(add_rsa_fingerprint_to_dir(fp, fingerprint_list, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">174</td><td><a href="process_descs.c.html#L174">(add_ed25519_to_dir(edkey, fingerprint_list, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">237</td><td><a href="process_descs.c.html#L237">(strlen(fingerprint) == HEX_DIGEST_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">246</td><td><a href="process_descs.c.html#L246">(strlen(fingerprint) == BASE64_DIGEST256_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">247</td><td><a href="process_descs.c.html#L247">(!digest256_from_base64((char *)ed25519_pubkey_tmp.pubkey, fingerprint))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">606</td><td><a href="process_descs.c.html#L606">(dirserv_router_has_valid_address(ri) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">788</td><td><a href="process_descs.c.html#L788">(ed25519_validate_pubkey(pkey) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">210</td><td><a href="process_descs.c.html#L210">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="process_descs.c.html#L803">(keypin_status == KEYPIN_MISMATCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">903</td><td><a href="process_descs.c.html#L903">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">223</td><td><a href="process_descs.c.html#L223">(!strcasecmp(nickname, "!reject"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">225</td><td><a href="process_descs.c.html#L225">(!strcasecmp(nickname, "!badexit"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">227</td><td><a href="process_descs.c.html#L227">(!strcasecmp(nickname, "!invalid"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">229</td><td><a href="process_descs.c.html#L229">(!strcasecmp(nickname, "!middleonly"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">325</td><td><a href="process_descs.c.html#L325">(!routerinfo_has_curve25519_onion_key(router))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">408</td><td><a href="process_descs.c.html#L408">(!tor_version_as_new_as(platform, "0.4.5.6"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">495</td><td><a href="process_descs.c.html#L495">(!authdir_policy_permits_address(ipv4_addr, ipv4_orport))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">505</td><td><a href="process_descs.c.html#L505">(!authdir_policy_valid_address(ipv4_addr, ipv4_orport))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">660</td><td><a href="process_descs.c.html#L660">(!string_is_utf8_no_bom(desc, desclen))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">831</td><td><a href="process_descs.c.html#L831">(!WRA_WAS_ADDED(r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">120</td><td><a href="process_descs.c.html#L120">(!status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">149</td><td><a href="process_descs.c.html#L149">(!status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">168</td><td><a href="process_descs.c.html#L168">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">201</td><td><a href="process_descs.c.html#L201">(!cf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">401</td><td><a href="process_descs.c.html#L401">(!platform)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">435</td><td><a href="process_descs.c.html#L435">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">519</td><td><a href="process_descs.c.html#L519">(!fingerprint_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">711</td><td><a href="process_descs.c.html#L711">(!n_parsed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">882</td><td><a href="process_descs.c.html#L882">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">943</td><td><a href="process_descs.c.html#L943">(!ent)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">481</td><td><a href="process_descs.c.html#L481">(authdir_policy_badexit_address(ipv4_addr, ipv4_orport))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">488</td><td><a href="process_descs.c.html#L488">(authdir_policy_middleonly_address(ipv4_addr, ipv4_orport))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="process_descs.c.html#L685">(WRA_MORE_SEVERE(r_tmp, r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">701</td><td><a href="process_descs.c.html#L701">(WRA_MORE_SEVERE(r_tmp, r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="process_descs.c.html#L713">(WRA_WAS_ADDED(r))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">303</td><td><a href="process_descs.c.html#L303">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">317</td><td><a href="process_descs.c.html#L317">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">330</td><td><a href="process_descs.c.html#L330">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">344</td><td><a href="process_descs.c.html#L344">(key_pinning)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">345</td><td><a href="process_descs.c.html#L345">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">361</td><td><a href="process_descs.c.html#L361">(key_pinning)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">362</td><td><a href="process_descs.c.html#L362">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">409</td><td><a href="process_descs.c.html#L409">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">442</td><td><a href="process_descs.c.html#L442">(platform)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">445</td><td><a href="process_descs.c.html#L445">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="process_descs.c.html#L459">(status_by_digest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">462</td><td><a href="process_descs.c.html#L462">(ed25519_public_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">465</td><td><a href="process_descs.c.html#L465">(status_by_digest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">470</td><td><a href="process_descs.c.html#L470">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">477</td><td><a href="process_descs.c.html#L477">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="process_descs.c.html#L498">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">858</td><td><a href="process_descs.c.html#L858">(dls)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">916</td><td><a href="process_descs.c.html#L916">(sd)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

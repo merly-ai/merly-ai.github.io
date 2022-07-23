@@ -1,0 +1,246 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>tor Repo - src\or\networkstatus.c Ctrl Expressions (195) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\or\networkstatus.c Ctrl Expressions (195) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\or\networkstatus.c Ctrl Expressions (195)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1412</td><td><a href="networkstatus.c.html#L1412">(<span style='background-color:#741da3;'>from_cache && !accept_obsolete && c->valid_until < now - OLD_ROUTER_DESC_MAX_AGE</span>)</a></td><td class="num">1014.85</td></tr>
+      <tr><td class="num line">441</td><td><a href="networkstatus.c.html#L441">(<span style='background-color:#741da3;'>warn > 1 || (warn >= 0 && n_good < n_required)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">1479</td><td><a href="networkstatus.c.html#L1479">(<span style='background-color:#741da3;'>was_waiting_for_certs && (r < -1) && from_cache</span>)</a></td><td class="num">1008.50</td></tr>
+      <tr><td class="num line">585</td><td><a href="networkstatus.c.html#L585">(!(trusted_dir = router_get_trusteddirserver_by_digest(ns->identity_digest)) || !(trusted_dir->type & V2_AUTHORITY))</a></td><td class="num">53.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="networkstatus.c.html#L208">(!current_consensus || (stat(options->FallbackNetworkstatusFile, &st) == 0 && st.st_mtime > current_consensus->valid_after))</a></td><td class="num">51.75</td></tr>
+      <tr><td class="num line">359</td><td><a href="networkstatus.c.html#L359">(crypto_pk_public_checksig(cert->signing_key, signed_digest, voter->signature, voter->signature_len) != DIGEST_LEN || memcmp(signed_digest, consensus->networkstatus_digest, DIGEST_LEN))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1269</td><td><a href="networkstatus.c.html#L1269">(current_consensus && current_consensus->valid_after <= now && now <= current_consensus->valid_until + REASONABLY_LIVE_TIME)</a></td><td class="num">32.35</td></tr>
+      <tr><td class="num line">1740</td><td><a href="networkstatus.c.html#L1740">(rs->is_named && !strcasecmp(router->nickname, rs->nickname))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">1421</td><td><a href="networkstatus.c.html#L1421">(current_consensus && !memcmp(c->networkstatus_digest, current_consensus->networkstatus_digest, DIGEST_LEN))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">892</td><td><a href="networkstatus.c.html#L892">(base16_decode(digest, DIGEST_LEN, nickname + 1, strlen(nickname + 1)) < 0)</a></td><td class="num">23.20</td></tr>
+      <tr><td class="num line">895</td><td><a href="networkstatus.c.html#L895">(strlen(nickname) == HEX_DIGEST_LEN && (base16_decode(digest, DIGEST_LEN, nickname, strlen(nickname)) == 0))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">1355</td><td><a href="networkstatus.c.html#L1355">(!old_c || !smartlist_len(old_c->routerstatus_list))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1714</td><td><a href="networkstatus.c.html#L1714">(!ns || !smartlist_len(ns->routerstatus_list))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1252</td><td><a href="networkstatus.c.html#L1252">(current_consensus && current_consensus->valid_after <= now && now <= current_consensus->valid_until)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">1513</td><td><a href="networkstatus.c.html#L1513">(c->valid_after <= now && now <= c->valid_until)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">619</td><td><a href="networkstatus.c.html#L619">((source == NS_FROM_DIR_BY_FP || source == NS_FROM_DIR_ALL) && router_digest_is_me(ns->identity_digest))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">308</td><td><a href="networkstatus.c.html#L308">(ns->type == NS_TYPE_VOTE || ns->type == NS_TYPE_OPINION)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1429</td><td><a href="networkstatus.c.html#L1429">(current_consensus && c->valid_after <= current_consensus->valid_after)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1499</td><td><a href="networkstatus.c.html#L1499">(consensus_waiting_for_certs && consensus_waiting_for_certs->valid_after <= c->valid_after)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1447</td><td><a href="networkstatus.c.html#L1447">(!current_consensus || c->valid_after > current_consensus->valid_after)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">953</td><td><a href="networkstatus.c.html#L953">(warn_if_unnamed && best && !best->name_lookup_warned)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="networkstatus.c.html#L1748">(ns->valid_until > router->cache_info.last_listed_as_valid_until)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1440</td><td><a href="networkstatus.c.html#L1440">((r = networkstatus_check_consensus_signature(c, 1)) < 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">506</td><td><a href="networkstatus.c.html#L506">(a->published_on < b->published_on)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">508</td><td><a href="networkstatus.c.html#L508">(a->published_on > b->published_on)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">683</td><td><a href="networkstatus.c.html#L683">(old_ns->published_on >= ns->published_on)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1746</td><td><a href="networkstatus.c.html#L1746">(!memcmp(router->cache_info.signed_descriptor_digest, rs->descriptor_digest, DIGEST_LEN))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1812</td><td><a href="networkstatus.c.html#L1812">(ns->valid_until > d->last_listed_as_valid_until)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">413</td><td><a href="networkstatus.c.html#L413">(!cert || cert->expires < now)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1187</td><td><a href="networkstatus.c.html#L1187">(options->UseBridges && !any_bridge_descriptors_known())</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">602</td><td><a href="networkstatus.c.html#L602">(ns->published_on > now + NETWORKSTATUS_ALLOW_SKEW)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">758</td><td><a href="networkstatus.c.html#L758">(ns->published_on + MAX_NETWORKSTATUS_AGE > now)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">661</td><td><a href="networkstatus.c.html#L661">(!memcmp(old_ns->identity_digest, ns->identity_digest, DIGEST_LEN))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">662</td><td><a href="networkstatus.c.html#L662">(!memcmp(old_ns->networkstatus_digest, ns->networkstatus_digest, DIGEST_LEN))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">855</td><td><a href="networkstatus.c.html#L855">((rs = router_get_consensus_status_by_descriptor_digest(d)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1367</td><td><a href="networkstatus.c.html#L1367">(!memcmp(rs_old->descriptor_digest, rs_new->descriptor_digest, DIGEST_LEN))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1023</td><td><a href="networkstatus.c.html#L1023">(!(ds->type & V2_AUTHORITY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">332</td><td><a href="networkstatus.c.html#L332">(!vote || !vote->voters)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1764</td><td><a href="networkstatus.c.html#L1764">(router->is_running && ds)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="networkstatus.c.html#L1616">(status == VS_NEW || status == VS_NEW_IN_SERIES)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">939</td><td><a href="networkstatus.c.html#L939">(smartlist_len(matches) > 1 && warn_if_unnamed)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="networkstatus.c.html#L704">(source != NS_FROM_CACHE && trusted_dir)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1489</td><td><a href="networkstatus.c.html#L1489">(r != 1 && dl_certs)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">353</td><td><a href="networkstatus.c.html#L353">(crypto_pk_get_digest(cert->signing_key, d) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1029</td><td><a href="networkstatus.c.html#L1029">(connection_get_by_type_addr_port_purpose(CONN_TYPE_DIR, &addr, ds->dir_port, DIR_PURPOSE_FETCH_V2_NETWORKSTATUS))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">671</td><td><a href="networkstatus.c.html#L671">(old_ns->received_on < arrived_at)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">722</td><td><a href="networkstatus.c.html#L722">(sd->last_listed_as_valid_until < live_until)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1730</td><td><a href="networkstatus.c.html#L1730">(router->purpose == ROUTER_PURPOSE_GENERAL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">149</td><td><a href="networkstatus.c.html#L149">(strlen(fn) != HEX_DIGEST_LEN || base16_decode(buf, sizeof(buf), fn, strlen(fn)))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1591</td><td><a href="networkstatus.c.html#L1591">(!consensus || dir_version < 3)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1917</td><td><a href="networkstatus.c.html#L1917">(base16_decode(d, DIGEST_LEN, question + 6, strlen(question + 6)))</a></td><td class="num">5.20</td></tr>
+      <tr><td class="num line">134</td><td><a href="networkstatus.c.html#L134">(!smartlist_len(entries) && maybe_delete)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">484</td><td><a href="networkstatus.c.html#L484">(n_good + n_missing_key >= n_required)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1012</td><td><a href="networkstatus.c.html#L1012">(last_networkstatus_download_attempted + interval >= now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1091</td><td><a href="networkstatus.c.html#L1091">(consensus_waiting_for_certs_set_at + DELAY_WHILE_FETCHING_CERTS > now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">158</td><td><a href="networkstatus.c.html#L158">(router_set_networkstatus_v2(s, st.st_mtime, NS_FROM_CACHE, NULL) < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">838</td><td><a href="networkstatus.c.html#L838">(!current_consensus->desc_digest_map)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">891</td><td><a href="networkstatus.c.html#L891">(nickname[0] == '$')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">907</td><td><a href="networkstatus.c.html#L907">(unnamed_server_map && strmap_get_lc(unnamed_server_map, nickname))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1801</td><td><a href="networkstatus.c.html#L1801">(!ns->desc_digest_map)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">887</td><td><a href="networkstatus.c.html#L887">(!current_consensus || !nickname)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1468</td><td><a href="networkstatus.c.html#L1468">(was_waiting_for_certs && from_cache)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">199</td><td><a href="networkstatus.c.html#L199">(networkstatus_set_current_consensus(s, flags | NSSET_WAS_WAITING_FOR_CERTS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">214</td><td><a href="networkstatus.c.html#L214">(networkstatus_set_current_consensus(s, flags | NSSET_ACCEPT_OBSOLETE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">355</td><td><a href="networkstatus.c.html#L355">(memcmp(voter->signing_key_digest, d, DIGEST_LEN))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1025</td><td><a href="networkstatus.c.html#L1025">(router_digest_is_me(ds->digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1535</td><td><a href="networkstatus.c.html#L1535">(ftime_definitely_before(now, current_consensus->valid_after))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="networkstatus.c.html#L264">(ns->signing_key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">268</td><td><a href="networkstatus.c.html#L268">(ns->entries)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">285</td><td><a href="networkstatus.c.html#L285">(ns->known_flags)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="networkstatus.c.html#L289">(ns->supported_methods)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="networkstatus.c.html#L293">(ns->voters)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">304</td><td><a href="networkstatus.c.html#L304">(ns->cert)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="networkstatus.c.html#L307">(ns->routerstatus_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="networkstatus.c.html#L318">(ns->desc_digest_map)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="networkstatus.c.html#L424">(voter->good_signature)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">426</td><td><a href="networkstatus.c.html#L426">(voter->bad_signature)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">927</td><td><a href="networkstatus.c.html#L927">(lrs->is_unnamed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1082</td><td><a href="networkstatus.c.html#L1082">(!download_status_is_ready(&consensus_dl_status, now, CONSENSUS_NETWORKSTATUS_MAX_DL_TRIES))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1601</td><td><a href="networkstatus.c.html#L1601">(rl->old_routers)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1696</td><td><a href="networkstatus.c.html#L1696">(rs->is_unnamed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">188</td><td><a href="networkstatus.c.html#L188">(networkstatus_set_current_consensus(s, flags) < -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">418</td><td><a href="networkstatus.c.html#L418">(networkstatus_check_voter_signature(consensus, voter, cert) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">524</td><td><a href="networkstatus.c.html#L524">(write_str_to_file(fn, s, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">658</td><td><a href="networkstatus.c.html#L658">(i < smartlist_len(networkstatus_v2_list))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">755</td><td><a href="networkstatus.c.html#L755">(i < smartlist_len(networkstatus_v2_list))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">764</td><td><a href="networkstatus.c.html#L764">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1566</td><td><a href="networkstatus.c.html#L1566">(networkstatus_check_consensus_signature(consensus_waiting_for_certs, 0) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">446</td><td><a href="networkstatus.c.html#L446">(warn >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">480</td><td><a href="networkstatus.c.html#L480">(n_good == n_v3_authorities)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">482</td><td><a href="networkstatus.c.html#L482">(n_good >= n_required)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">522</td><td><a href="networkstatus.c.html#L522">(source != NS_FROM_CACHE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="networkstatus.c.html#L595">(arrived_at > now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">630</td><td><a href="networkstatus.c.html#L630">(source != NS_FROM_DIR_ALL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="networkstatus.c.html#L672">(source != NS_FROM_CACHE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1078</td><td><a href="networkstatus.c.html#L1078">(time_to_download_next_consensus > now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="networkstatus.c.html#L1155">(dl_interval < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1318</td><td><a href="networkstatus.c.html#L1318">(old_c == new_c)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1353</td><td><a href="networkstatus.c.html#L1353">(old_c == new_c)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="networkstatus.c.html#L1441">(r == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1503</td><td><a href="networkstatus.c.html#L1503">(consensus != consensus_waiting_for_certs_body)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1611</td><td><a href="networkstatus.c.html#L1611">(status == VS_RECOMMENDED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="networkstatus.c.html#L1613">(status == VS_EMPTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1847</td><td><a href="networkstatus.c.html#L1847">(purpose == ROUTER_PURPOSE_UNKNOWN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">576</td><td><a href="networkstatus.c.html#L576">(!directory_caches_v2_dir_info(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">107</td><td><a href="networkstatus.c.html#L107">(!digestmap_iter_done(iter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="networkstatus.c.html#L1056">(!connection_get_by_type_purpose(CONN_TYPE_DIR, DIR_PURPOSE_FETCH_V2_NETWORKSTATUS))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1076</td><td><a href="networkstatus.c.html#L1076">(!networkstatus_get_live_consensus(now))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1325</td><td><a href="networkstatus.c.html#L1325">(!control_event_is_interesting(EVENT_NS))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1568</td><td><a href="networkstatus.c.html#L1568">(!networkstatus_set_current_consensus(consensus_waiting_for_certs_body, NSSET_WAS_WAITING_FOR_CERTS))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1903</td><td><a href="networkstatus.c.html#L1903">(!strcmp(question, "ns/all"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">127</td><td><a href="networkstatus.c.html#L127">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">131</td><td><a href="networkstatus.c.html#L131">(!entries)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">227</td><td><a href="networkstatus.c.html#L227">(!current_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">228</td><td><a href="networkstatus.c.html#L228">(!named_server_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">230</td><td><a href="networkstatus.c.html#L230">(!unnamed_server_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">280</td><td><a href="networkstatus.c.html#L280">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">409</td><td><a href="networkstatus.c.html#L409">(!is_v3_auth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">580</td><td><a href="networkstatus.c.html#L580">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">616</td><td><a href="networkstatus.c.html#L616">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">643</td><td><a href="networkstatus.c.html#L643">(!trusted_dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">644</td><td><a href="networkstatus.c.html#L644">(!skewed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">708</td><td><a href="networkstatus.c.html#L708">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">740</td><td><a href="networkstatus.c.html#L740">(!skewed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="networkstatus.c.html#L752">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">826</td><td><a href="networkstatus.c.html#L826">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">837</td><td><a href="networkstatus.c.html#L837">(!current_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">868</td><td><a href="networkstatus.c.html#L868">(!current_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">975</td><td><a href="networkstatus.c.html#L975">(!named_server_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">985</td><td><a href="networkstatus.c.html#L985">(!unnamed_server_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1094</td><td><a href="networkstatus.c.html#L1094">(!consensus_waiting_for_certs_dl_failed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1328</td><td><a href="networkstatus.c.html#L1328">(!old_c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1406</td><td><a href="networkstatus.c.html#L1406">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1443</td><td><a href="networkstatus.c.html#L1443">(!was_waiting_for_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1457</td><td><a href="networkstatus.c.html#L1457">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1474</td><td><a href="networkstatus.c.html#L1474">(!was_waiting_for_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1485</td><td><a href="networkstatus.c.html#L1485">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1516</td><td><a href="networkstatus.c.html#L1516">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1527</td><td><a href="networkstatus.c.html#L1527">(!from_cache)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1604</td><td><a href="networkstatus.c.html#L1604">(!have_warned_about_old_version)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1617</td><td><a href="networkstatus.c.html#L1617">(!have_warned_about_new_version)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1651</td><td><a href="networkstatus.c.html#L1651">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1653</td><td><a href="networkstatus.c.html#L1653">(!v2_download_status_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1681</td><td><a href="networkstatus.c.html#L1681">(!current_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1716</td><td><a href="networkstatus.c.html#L1716">(!networkstatus_v2_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1729</td><td><a href="networkstatus.c.html#L1729">(!authdir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1739</td><td><a href="networkstatus.c.html#L1739">(!namingdir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1752</td><td><a href="networkstatus.c.html#L1752">(!authdir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1798</td><td><a href="networkstatus.c.html#L1798">(!ns)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1898</td><td><a href="networkstatus.c.html#L1898">(!current_consensus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">530</td><td><a href="networkstatus.c.html#L530">(directory_caches_v2_dir_info(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">769</td><td><a href="networkstatus.c.html#L769">(directory_caches_v2_dir_info(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1531</td><td><a href="networkstatus.c.html#L1531">(directory_caches_dir_info(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">627</td><td><a href="networkstatus.c.html#L627">(smartlist_string_isin(requested_fingerprints, fp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="networkstatus.c.html#L1080">(authdir_mode_v3(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1085</td><td><a href="networkstatus.c.html#L1085">(connection_get_by_type_purpose(CONN_TYPE_DIR, DIR_PURPOSE_FETCH_CONSENSUS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1132</td><td><a href="networkstatus.c.html#L1132">(directory_fetches_dir_info_early(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="networkstatus.c.html#L1147">(directory_fetches_dir_info_later(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1200</td><td><a href="networkstatus.c.html#L1200">(should_delay_dir_fetches(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1202</td><td><a href="networkstatus.c.html#L1202">(directory_fetches_dir_info_early(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="networkstatus.c.html#L1339">(routerstatus_has_changed(rs_old, rs_new))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">76</td><td><a href="networkstatus.c.html#L76">(current_consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">101</td><td><a href="networkstatus.c.html#L101">(v2_download_status_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">143</td><td><a href="networkstatus.c.html#L143">(maybe_delete)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">157</td><td><a href="networkstatus.c.html#L157">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">187</td><td><a href="networkstatus.c.html#L187">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">198</td><td><a href="networkstatus.c.html#L198">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">213</td><td><a href="networkstatus.c.html#L213">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">626</td><td><a href="networkstatus.c.html#L626">(requested_fingerprints)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">721</td><td><a href="networkstatus.c.html#L721">(sd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">857</td><td><a href="networkstatus.c.html#L857">(v2_download_status_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">901</td><td><a href="networkstatus.c.html#L901">(named_server_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">903</td><td><a href="networkstatus.c.html#L903">(named_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">948</td><td><a href="networkstatus.c.html#L948">(any_unwarned)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1017</td><td><a href="networkstatus.c.html#L1017">(authority)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1089</td><td><a href="networkstatus.c.html#L1089">(consensus_waiting_for_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1128</td><td><a href="networkstatus.c.html#L1128">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1213</td><td><a href="networkstatus.c.html#L1213">(consensus_waiting_for_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1449</td><td><a href="networkstatus.c.html#L1449">(consensus_waiting_for_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1460</td><td><a href="networkstatus.c.html#L1460">(dl_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1494</td><td><a href="networkstatus.c.html#L1494">(current_consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1553</td><td><a href="networkstatus.c.html#L1553">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1565</td><td><a href="networkstatus.c.html#L1565">(consensus_waiting_for_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1588</td><td><a href="networkstatus.c.html#L1588">(networkstatus_v2_list_has_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1684</td><td><a href="networkstatus.c.html#L1684">(named_server_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1687</td><td><a href="networkstatus.c.html#L1687">(unnamed_server_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1767</td><td><a href="networkstatus.c.html#L1767">(reset_failures)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1811</td><td><a href="networkstatus.c.html#L1811">(rs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1929</td><td><a href="networkstatus.c.html#L1929">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1938</td><td><a href="networkstatus.c.html#L1938">(networkstatus_v2_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1944</td><td><a href="networkstatus.c.html#L1944">(v2_download_status_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1948</td><td><a href="networkstatus.c.html#L1948">(current_consensus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1952</td><td><a href="networkstatus.c.html#L1952">(consensus_waiting_for_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1957</td><td><a href="networkstatus.c.html#L1957">(named_server_map)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1960</td><td><a href="networkstatus.c.html#L1960">(unnamed_server_map)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

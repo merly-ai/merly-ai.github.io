@@ -1,0 +1,347 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\relay\router.c Ctrl Expressions (296) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\relay\router.c Ctrl Expressions (296) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\relay\router.c Ctrl Expressions (296)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2620</td><td><a href="router.c.html#L2620">((<span style='background-color:#741da3;'>prev != cur && (!prev || !cur)</span>) || cur > (prev * BANDWIDTH_CHANGE_FACTOR) || cur < (prev / BANDWIDTH_CHANGE_FACTOR))</a></td><td class="num">1037.95</td></tr>
+      <tr><td class="num line">1208</td><td><a href="router.c.html#L1208">(<span style='background-color:#741da3;'>v3_digest_set && (ds->type & V3_DIRINFO) && tor_memneq(v3_digest, ds->v3_identity_digest, DIGEST_LEN)</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">2795</td><td><a href="router.c.html#L2795">(!router->cache_info.signing_key_cert->signing_key_included || !ed25519_pubkey_eq(&router->cache_info.signing_key_cert->signed_key, &signing_keypair->pubkey))</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">3263</td><td><a href="router.c.html#L3263">(!extrainfo->cache_info.signing_key_cert->signing_key_included || !ed25519_pubkey_eq(&extrainfo->cache_info.signing_key_cert->signed_key, &signing_keypair->pubkey))</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">715</td><td><a href="router.c.html#L715">(get_options()->V3AuthUseLegacyKey && load_authority_keyset(1, &legacy_signing_key, &legacy_key_certificate) < 0)</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">2938</td><td><a href="router.c.html#L2938">(!omit_ipv6_on_publish && router->ipv6_orport && tor_addr_family(&router->ipv6_addr) == AF_INET6)</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">1264</td><td><a href="router.c.html#L1264">(accounting_is_enabled(options) && get_options()->AccountingRule != ACCT_IN)</a></td><td class="num">44.00</td></tr>
+      <tr><td class="num line">998</td><td><a href="router.c.html#L998">(crypto_pk_get_digest(get_my_v3_authority_cert()->identity_key, v3_digest) < 0)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">2359</td><td><a href="router.c.html#L2359">(!(ri->cache_info.signed_descriptor_body = router_dump_router_to_string(ri, get_server_identity_key(), get_onion_key(), get_current_curve25519_keypair(), get_master_signing_keypair())))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">2145</td><td><a href="router.c.html#L2145">(BUG(crypto_pk_get_digest(ri->identity_pkey, ri->cache_info.identity_digest) < 0))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">2423</td><td><a href="router.c.html#L2423">(BUG(routerinfo_incompatible_with_extrainfo(ri->identity_pkey, ei, &ri->cache_info, NULL)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">3037</td><td><a href="router.c.html#L3037">(!router->exit_policy || !smartlist_len(router->exit_policy))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">3345</td><td><a href="router.c.html#L3345">(options->DirReqStatistics && load_stats_file("stats\"PATH_SEPARATOR\"dirreq-stats", "dirreq-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3350</td><td><a href="router.c.html#L3350">(options->HiddenServiceStatistics && load_stats_file("stats\"PATH_SEPARATOR\"hidserv-stats", "hidserv-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3355</td><td><a href="router.c.html#L3355">(options->HiddenServiceStatistics && load_stats_file("stats\"PATH_SEPARATOR\"hidserv-v3-stats", "hidserv-v3-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3360</td><td><a href="router.c.html#L3360">(options->EntryStatistics && load_stats_file("stats\"PATH_SEPARATOR\"entry-stats", "entry-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3365</td><td><a href="router.c.html#L3365">(options->CellStatistics && load_stats_file("stats\"PATH_SEPARATOR\"buffer-stats", "cell-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3370</td><td><a href="router.c.html#L3370">(options->ExitPortStatistics && load_stats_file("stats\"PATH_SEPARATOR\"exit-stats", "exit-stats-end", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">3375</td><td><a href="router.c.html#L3375">(options->ConnDirectionStatistics && load_stats_file("stats\"PATH_SEPARATOR\"conn-stats", "conn-bi-direct", now, &contents) > 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1287</td><td><a href="router.c.html#L1287">(get_options()->AccountingRule == ACCT_SUM)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1979</td><td><a href="router.c.html#L1979">(options->Nickname && !strcasecmp(name, options->Nickname))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2266</td><td><a href="router.c.html#L2266">(extrainfo_dump_to_string(&ei->cache_info.signed_descriptor_body, ei, get_server_identity_key(), get_master_signing_keypair()) < 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">978</td><td><a href="router.c.html#L978">(!server_mode(options) && !(options->command == CMD_KEY_EXPIRATION))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3452</td><td><a href="router.c.html#L3452">(router_get_extrainfo_hash(extrainfo_string, strlen(extrainfo_string), digest) < 0 || router_append_dirobj_signature(sig, sizeof(sig), digest, DIGEST_LEN, ident_key) < 0)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1489</td><td><a href="router.c.html#L1489">(conn->type == listener_type && !conn->marked_for_close && conn->socket_family == family)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">731</td><td><a href="router.c.html#L731">(!authdir_mode_v3(get_options()) || !authority_key_certificate)</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">2650</td><td><a href="router.c.html#L2650">(BUG(!server_mode(get_options())))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">2849</td><td><a href="router.c.html#L2849">(tap_key && router->cache_info.signing_key_cert && router->cache_info.signing_key_cert->signing_key_included)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">2879</td><td><a href="router.c.html#L2879">(ntor_keypair && router->cache_info.signing_key_cert && router->cache_info.signing_key_cert->signing_key_included)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">2815</td><td><a href="router.c.html#L2815">(base64_encode(ed_cert_base64, sizeof(ed_cert_base64), (const char*)router->cache_info.signing_key_cert->encoded, router->cache_info.signing_key_cert->encoded_len, BASE64_ENCODE_MULTILINE) < 0)</a></td><td class="num">15.50</td></tr>
+      <tr><td class="num line">3272</td><td><a href="router.c.html#L3272">(base64_encode(ed_cert_base64, sizeof(ed_cert_base64), (const char*)extrainfo->cache_info.signing_key_cert->encoded, extrainfo->cache_info.signing_key_cert->encoded_len, BASE64_ENCODE_MULTILINE) < 0)</a></td><td class="num">15.50</td></tr>
+      <tr><td class="num line">1051</td><td><a href="router.c.html#L1051">(state->LastRotatedOnionKey > 100 && state->LastRotatedOnionKey < now)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1243</td><td><a href="router.c.html#L1243">(options->RelayBandwidthRate > 0 && options->RelayBandwidthRate < MIN_BW_TO_ADVERTISE_DIRSERVER)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2557</td><td><a href="router.c.html#L2557">(rs->is_staledesc && ns->valid_after > desc_clean_since)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3216</td><td><a href="router.c.html#L3216">(written < now - 25 * 60 * 60 || written > now + 1 * 60 * 60)</a></td><td class="num">11.45</td></tr>
+      <tr><td class="num line">2914</td><td><a href="router.c.html#L2914">(router->declared_family && smartlist_len(router->declared_family))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">3002</td><td><a href="router.c.html#L3002">(options->ContactInfo && strlen(options->ContactInfo))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">3012</td><td><a href="router.c.html#L3012">(options->BridgeDistribution && strlen(options->BridgeDistribution))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2842</td><td><a href="router.c.html#L2842">(crypto_pk_write_public_key_to_string(router->identity_pkey, &identity_pkey, &identity_pkeylen) < 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3159</td><td><a href="router.c.html#L3159">((!router->exit_policy) || (router->policy_is_reject_star))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2895</td><td><a href="router.c.html#L2895">(base64_encode(buf, sizeof(buf), (const char*)cert->encoded, cert->encoded_len, BASE64_ENCODE_MULTILINE) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">501</td><td><a href="router.c.html#L501">(!(prkey = crypto_pk_new()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="router.c.html#L942">(!(prkey = crypto_pk_new()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="router.c.html#L1025">(!(prkey = crypto_pk_new()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="router.c.html#L1088">(fast_mem_is_zero((const char *)last_curve25519_onion_key.pubkey.public_key, CURVE25519_PUBKEY_LEN) && file_status(keydir) == FN_FILE)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3095</td><td><a href="router.c.html#L3095">(!(sig = router_get_dirobj_signature(digest, DIGEST_LEN, ident_key)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1708</td><td><a href="router.c.html#L1708">((tor_addr_family(addr) == AF_INET || tor_addr_family(addr) == AF_INET6))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2573</td><td><a href="router.c.html#L2573">(server_mode(options) && options->PublishServerDescriptor_)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="router.c.html#L711">(load_authority_keyset(0, &authority_signing_key, &authority_key_certificate) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1068</td><td><a href="router.c.html#L1068">(!lastonionkey && file_status(keydir) == FN_FILE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1217</td><td><a href="router.c.html#L1217">(trusted_dirs_load_certs_from_string(cert->cache_info.signed_descriptor_body, TRUSTED_DIRS_CERTS_SRC_SELF, 0, NULL) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1887</td><td><a href="router.c.html#L1887">(port_cfg != 0 && !port_exists_by_type_addr_port(listener_type, addr, port_cfg, 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2606</td><td><a href="router.c.html#L2606">(get_uptime() > MAX_UPTIME_BANDWIDTH_CHANGE && !hibernating)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2835</td><td><a href="router.c.html#L2835">(crypto_pk_write_public_key_to_string(rsa_pubkey, &onion_pkey, &onion_pkeylen) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3331</td><td><a href="router.c.html#L3331">(options->ExtraInfoStatistics && write_stats_to_extrainfo)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2057</td><td><a href="router.c.html#L2057">(n == DIGEST_LEN && fast_memeq(d, router_get_my_id_digest(), DIGEST_LEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2561</td><td><a href="router.c.html#L2561">(retry_fast_reason && desc_clean_since < fast_cutoff)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1988</td><td><a href="router.c.html#L1988">(!smartlist_contains_string(warned_family, name) && !is_legal_hexdigest(name))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2013</td><td><a href="router.c.html#L2013">(!is_legal_hexdigest(name) && !smartlist_contains_string(warned_family, name))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2127</td><td><a href="router.c.html#L2127">(relay_find_addr_to_publish(options, AF_INET6, RELAY_FIND_ADDR_NO_FLAG, &ri->ipv6_addr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2806</td><td><a href="router.c.html#L2806">(crypto_pk_get_fingerprint(router->identity_pkey, fingerprint, 1) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1048</td><td><a href="router.c.html#L1048">(options->command == CMD_RUN_TOR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1202</td><td><a href="router.c.html#L1202">(ds->type != type)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1240</td><td><a href="router.c.html#L1240">(options->BandwidthRate < MIN_BW_TO_ADVERTISE_DIRSERVER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1382</td><td><a href="router.c.html#L1382">(options->RefuseUnknownExits != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1420</td><td><a href="router.c.html#L1420">(options->PublishServerDescriptor_ == NO_DIRINFO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1437</td><td><a href="router.c.html#L1437">(!omit_ipv6_on_publish && !router_orport_seems_reachable(options, AF_INET6))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2923</td><td><a href="router.c.html#L2923">(!tor_digest_is_zero(router->cache_info.extra_info_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2927</td><td><a href="router.c.html#L2927">(!tor_digest256_is_zero(router->cache_info.extra_info_digest256))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1336</td><td><a href="router.c.html#L1336">(!dir_port && !supports_tunnelled_dir_requests)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="router.c.html#L1539">(!addr || port == 0)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1662</td><td><a href="router.c.html#L1662">(!force && !desc_needs_upload)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3659</td><td><a href="router.c.html#L3659">(!pkey || pkey_len == 0)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="router.c.html#L312">(!fast_mem_is_zero((const char*)last_pk, CURVE25519_PUBKEY_LEN) && tor_memneq(cur_pk, last_pk, CURVE25519_PUBKEY_LEN))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="router.c.html#L1158">(!public_server_mode(options) && router_write_fingerprint(1, 0))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3205</td><td><a href="router.c.html#L3205">(strlen(ts_tok) < strlen(ts_tag) + 1 + sizeof(timestr))</a></td><td class="num">5.10</td></tr>
+      <tr><td class="num line">517</td><td><a href="router.c.html#L517">(curve25519_keypair_generate(&new_curve25519_keypair, 1) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">524</td><td><a href="router.c.html#L524">(curve25519_keypair_write_to_file(&new_curve25519_keypair, fname, "onion") < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="router.c.html#L624">(curve25519_keypair_read_from_file(keys_out, &tag_in, fname) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1108</td><td><a href="router.c.html#L1108">(generate_ed_link_cert(options, now, new_signing_key > 0) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1342</td><td><a href="router.c.html#L1342">(dir_port && !routerconf_find_dir_port(options, dir_port))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1344</td><td><a href="router.c.html#L1344">(supports_tunnelled_dir_requests && !routerconf_find_or_port(options, AF_INET))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3080</td><td><a href="router.c.html#L3080">(ed25519_sign(&sig, (const uint8_t*)digest, DIGEST256_LEN, signing_keypair) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3211</td><td><a href="router.c.html#L3211">(parse_iso_time(timestr, &written) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3421</td><td><a href="router.c.html#L3421">(ed25519_sign(&ed_sig, (const uint8_t*)sha256_digest, DIGEST256_LEN, signing_keypair) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">753</td><td><a href="router.c.html#L753">(last_warned + warn_interval > now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1289</td><td><a href="router.c.html#L1289">(effective_bw >= acc_bytes / interval_length)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2457</td><td><a href="router.c.html#L2457">(desc_clean_since && !force)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">682</td><td><a href="router.c.html#L682">(!crypto_pk_eq_keys(signing_key, parsed->signing_key))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2789</td><td><a href="router.c.html#L2789">(!crypto_pk_eq_keys(ident_key, router->identity_pkey))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">202</td><td><a href="router.c.html#L202">(onionkey && crypto_pk_eq_keys(onionkey, k))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1469</td><td><a href="router.c.html#L1469">(rebuilt && decide_if_publishable_server())</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1548</td><td><a href="router.c.html#L1548">(tor_addr_is_internal(addr, 0) && default_auth)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1963</td><td><a href="router.c.html#L1963">(!options->MyFamily)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2054</td><td><a href="router.c.html#L2054">(singleton[0] == '$')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2626</td><td><a href="router.c.html#L2626">(change_recent_enough || testing_network || !prev)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3051</td><td><a href="router.c.html#L3051">(p6 && strcmp(p6, "reject 1-65535"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3058</td><td><a href="router.c.html#L3058">(router_should_advertise_begindir(options, router->supports_tunnelled_dir_requests))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">629</td><td><a href="router.c.html#L629">(!tag_in || strcmp(tag_in, tag))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="router.c.html#L1418">(options->ClientOnly)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1966</td><td><a href="router.c.html#L1966">(options->BridgeRelay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2179</td><td><a href="router.c.html#L2179">(options->IPv6Exit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2188</td><td><a href="router.c.html#L2188">(options->BridgeRelay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2241</td><td><a href="router.c.html#L2241">(options->BridgeRelay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2717</td><td><a href="router.c.html#L2717">(!tor_addr_eq(previous, &current))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2950</td><td><a href="router.c.html#L2950">(router->protocol_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3009</td><td><a href="router.c.html#L3009">(options->BridgeRelay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3026</td><td><a href="router.c.html#L3026">(router->onion_curve25519_pkey)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3039</td><td><a href="router.c.html#L3039">(router->exit_policy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3049</td><td><a href="router.c.html#L3049">(router->ipv6_exit_policy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3064</td><td><a href="router.c.html#L3064">(options->OverloadStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3325</td><td><a href="router.c.html#L3325">(options->ServerTransportPlugin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3380</td><td><a href="router.c.html#L3380">(options->PaddingStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3385</td><td><a href="router.c.html#L3385">(options->OverloadStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">597</td><td><a href="router.c.html#L597">(try_locking(get_options(), 0) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">852</td><td><a href="router.c.html#L852">(crypto_pk_get_hashed_fingerprint(get_server_identity_key(), fingerprint) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">890</td><td><a href="router.c.html#L890">(crypto_pk_get_fingerprint(get_server_identity_key(), fingerprint, 0) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">896</td><td><a href="router.c.html#L896">(crypto_pk_get_hashed_fingerprint(get_server_identity_key(), fingerprint) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2167</td><td><a href="router.c.html#L2167">(dns_seems_to_be_broken() || has_dns_init_failed())</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3004</td><td><a href="router.c.html#L3004">(strchr(ci, '\n') || strchr(ci, '\r'))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">271</td><td><a href="router.c.html#L271">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">272</td><td><a href="router.c.html#L272">(tor_unlink(fname) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">280</td><td><a href="router.c.html#L280">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">281</td><td><a href="router.c.html#L281">(tor_unlink(fname) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">356</td><td><a href="router.c.html#L356">(crypto_pk_get_digest(server_identitykey, server_identitykey_digest) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">497</td><td><a href="router.c.html#L497">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="router.c.html#L520">(file_status(fname) == FN_FILE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">609</td><td><a href="router.c.html#L609">(curve25519_keypair_generate(keys_out, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">611</td><td><a href="router.c.html#L611">(curve25519_keypair_write_to_file(keys_out, fname, tag) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">939</td><td><a href="router.c.html#L939">(init_keys_common() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">950</td><td><a href="router.c.html#L950">(router_initialize_tls_context() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">981</td><td><a href="router.c.html#L981">(init_keys_common() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">984</td><td><a href="router.c.html#L984">(create_keys_directory(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">990</td><td><a href="router.c.html#L990">(init_v3_authority_keys() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1101</td><td><a href="router.c.html#L1101">(router_initialize_tls_context() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1174</td><td><a href="router.c.html#L1174">(dirserv_load_fingerprint_file() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1444</td><td><a href="router.c.html#L1444">(router_have_consensus_path() == CONSENSUS_PATH_INTERNAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1713</td><td><a href="router.c.html#L1713">(tor_addr_family(addr) == AF_INET6)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2049</td><td><a href="router.c.html#L2049">(smartlist_len(result) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2475</td><td><a href="router.c.html#L2475">(BUG(desc_gen_reason == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2570</td><td><a href="router.c.html#L2570">(BUG(reason == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2653</td><td><a href="router.c.html#L2653">(tor_addr_to_str(addrbuf_prev, prev, sizeof(addrbuf_prev), 1) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2655</td><td><a href="router.c.html#L2655">(tor_addr_to_str(addrbuf_cur, cur, sizeof(addrbuf_cur), 1) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2691</td><td><a href="router.c.html#L2691">(i < ARRAY_LENGTH(families))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2863</td><td><a href="router.c.html#L2863">(base64_encode(buf, sizeof(buf), (const char*)tap_cc, tap_cc_len, BASE64_ENCODE_MULTILINE) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3515</td><td><a href="router.c.html#L3515">(strlen(s) > MAX_EXTRAINFO_UPLOAD_SIZE - DIROBJ_MAX_SIG_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3521</td><td><a href="router.c.html#L3521">(smartlist_len(chunks) > required_chunks)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3641</td><td><a href="router.c.html#L3641">(BUG(len < 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">737</td><td><a href="router.c.html#L737">(time_left <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">740</td><td><a href="router.c.html#L740">(time_left <= 24 * 60 * 60)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="router.c.html#L743">(time_left <= 24 * 60 * 60 * 7)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">746</td><td><a href="router.c.html#L746">(time_left <= 24 * 60 * 60 * 30)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">756</td><td><a href="router.c.html#L756">(time_left <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="router.c.html#L759">(time_left <= 24 * 60 * 60)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="router.c.html#L1036">(new_signing_key < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="router.c.html#L1084">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1300</td><td><a href="router.c.html#L1300">(advertising != new_choice)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="router.c.html#L1301">(new_choice == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1302</td><td><a href="router.c.html#L1302">(dir_port > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1511</td><td><a href="router.c.html#L1511">(port == CFG_AUTO_PORT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1615</td><td><a href="router.c.html#L1615">(dirport_configured == CFG_AUTO_PORT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1660</td><td><a href="router.c.html#L1660">(auth == NO_DIRINFO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2308</td><td><a href="router.c.html#L2308">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2401</td><td><a href="router.c.html#L2401">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2419</td><td><a href="router.c.html#L2419">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2463</td><td><a href="router.c.html#L2463">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2512</td><td><a href="router.c.html#L2512">(previous != omit_ipv6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2542</td><td><a href="router.c.html#L2542">(desc_clean_since < slow_cutoff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2555</td><td><a href="router.c.html#L2555">(rs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2687</td><td><a href="router.c.html#L2687">(my_ri == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2698</td><td><a href="router.c.html#L2698">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3193</td><td><a href="router.c.html#L3193">(contents == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3499</td><td><a href="router.c.html#L3499">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3506</td><td><a href="router.c.html#L3506">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3542</td><td><a href="router.c.html#L3542">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1465</td><td><a href="router.c.html#L1465">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1856</td><td><a href="router.c.html#L1856">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="router.c.html#L307">(!fast_mem_is_zero((const char *)cur_pk, CURVE25519_PUBKEY_LEN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="router.c.html#L596">(!have_lockfile())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1134</td><td><a href="router.c.html#L1134">(!WRA_WAS_ADDED(added))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1135</td><td><a href="router.c.html#L1135">(!WRA_WAS_OUTDATED(added))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1168</td><td><a href="router.c.html#L1168">(!public_server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1171</td><td><a href="router.c.html#L1171">(!authdir_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1294</td><td><a href="router.c.html#L1294">(!router_has_bandwidth_to_be_dirserver(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1422</td><td><a href="router.c.html#L1422">(!server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1426</td><td><a href="router.c.html#L1426">(!routerconf_find_or_port(options, AF_INET))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1428</td><td><a href="router.c.html#L1428">(!router_orport_seems_reachable(options, AF_INET))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1858</td><td><a href="router.c.html#L1858">(!router_rebuild_descriptor(0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2095</td><td><a href="router.c.html#L2095">(BUG(!ri_out))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2227</td><td><a href="router.c.html#L2227">(BUG(!ri))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2263</td><td><a href="router.c.html#L2263">(BUG(!ei))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2299</td><td><a href="router.c.html#L2299">(BUG(!ri))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2304</td><td><a href="router.c.html#L2304">(BUG(!ei))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2329</td><td><a href="router.c.html#L2329">(BUG(!ei))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2356</td><td><a href="router.c.html#L2356">(BUG(!ri))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2394</td><td><a href="router.c.html#L2394">(BUG(!r))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2397</td><td><a href="router.c.html#L2397">(BUG(!e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2406</td><td><a href="router.c.html#L2406">(BUG(!ri))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2658</td><td><a href="router.c.html#L2658">(!tor_addr_is_null(prev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">334</td><td><a href="router.c.html#L334">(!map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">664</td><td><a href="router.c.html#L664">(!signing_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">672</td><td><a href="router.c.html#L672">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">678</td><td><a href="router.c.html#L678">(!parsed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">820</td><td><a href="router.c.html#L820">(!lifetime)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">889</td><td><a href="router.c.html#L889">(!hashed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">929</td><td><a href="router.c.html#L929">(!key_lock)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1014</td><td><a href="router.c.html#L1014">(!prkey)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1046</td><td><a href="router.c.html#L1046">(!prkey)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1121</td><td><a href="router.c.html#L1121">(dirserv_add_own_fingerprint(get_server_identity_key(), get_master_identity_key()))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1129</td><td><a href="router.c.html#L1129">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1185</td><td><a href="router.c.html#L1185">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1195</td><td><a href="router.c.html#L1195">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1274</td><td><a href="router.c.html#L1274">(!interval_length)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1430</td><td><a href="router.c.html#L1430">(!publish_even_when_ipv4_orport_unreachable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1440</td><td><a href="router.c.html#L1440">(!publish_even_when_ipv6_orport_unreachable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1612</td><td><a href="router.c.html#L1612">(!dirport_configured)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1655</td><td><a href="router.c.html#L1655">(!ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1695</td><td><a href="router.c.html#L1695">(!me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1758</td><td><a href="router.c.html#L1758">(!ei)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1785</td><td><a href="router.c.html#L1785">(!me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1841</td><td><a href="router.c.html#L1841">(!me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1969</td><td><a href="router.c.html#L1969">(!warned_family)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1984</td><td><a href="router.c.html#L1984">(!member)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2037</td><td><a href="router.c.html#L2037">(!nf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2062</td><td><a href="router.c.html#L2062">(!is_me)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2106</td><td><a href="router.c.html#L2106">(!have_v4)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2537</td><td><a href="router.c.html#L2537">(!desc_clean_since)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2577</td><td><a href="router.c.html#L2577">(!desc_dirty_reason)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2611</td><td><a href="router.c.html#L2611">(!my_ri)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2858</td><td><a href="router.c.html#L2858">(!tap_cc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2889</td><td><a href="router.c.html#L2889">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2957</td><td><a href="router.c.html#L2957">(!address)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3042</td><td><a href="router.c.html#L3042">(!exit_policy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3114</td><td><a href="router.c.html#L3114">(!ri_tmp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3200</td><td><a href="router.c.html#L3200">(!ts_tok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3550</td><td><a href="router.c.html#L3550">(!ei_tmp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">381</td><td><a href="router.c.html#L381">(public_server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="router.c.html#L498">(replace_file(fname, fname_prev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="router.c.html#L505">(crypto_pk_generate_key(prkey))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="router.c.html#L509">(crypto_pk_write_private_key_to_filename(prkey, fname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">521</td><td><a href="router.c.html#L521">(replace_file(fname, fname_prev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">818</td><td><a href="router.c.html#L818">(public_server_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="router.c.html#L828">(crypto_rand_int(2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="router.c.html#L907">(write_str_to_file_if_not_equal(keydir, fingerprint_line))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">944</td><td><a href="router.c.html#L944">(crypto_pk_generate_key(prkey))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="router.c.html#L989">(authdir_mode_v3(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1022</td><td><a href="router.c.html#L1022">(public_server_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1027</td><td><a href="router.c.html#L1027">(crypto_pk_generate_key(prkey))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1116</td><td><a href="router.c.html#L1116">(authdir_mode_v3(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1154</td><td><a href="router.c.html#L1154">(router_write_fingerprint(0, 0))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="router.c.html#L1162">(router_write_fingerprint(0, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1338</td><td><a href="router.c.html#L1338">(authdir_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="router.c.html#L1340">(net_is_disabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="router.c.html#L1424">(authdir_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1700</td><td><a href="router.c.html#L1700">(tor_addr_is_null(addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3339</td><td><a href="router.c.html#L3339">(geoip_is_loaded(AF_INET))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3342</td><td><a href="router.c.html#L3342">(geoip_is_loaded(AF_INET6))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3392</td><td><a href="router.c.html#L3392">(should_record_bridge_info(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="router.c.html#L233">(onionkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">237</td><td><a href="router.c.html#L237">(lastonionkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">259</td><td><a href="router.c.html#L259">(lastonionkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">378</td><td><a href="router.c.html#L378">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="router.c.html#L387">(server_identitykey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">546</td><td><a href="router.c.html#L546">(prkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">562</td><td><a href="router.c.html#L562">(already_logged)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">595</td><td><a href="router.c.html#L595">(generate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">885</td><td><a href="router.c.html#L885">(ed25519_identity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">997</td><td><a href="router.c.html#L997">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1015</td><td><a href="router.c.html#L1015">(created)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1043</td><td><a href="router.c.html#L1043">(created)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1072</td><td><a href="router.c.html#L1072">(prkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1126</td><td><a href="router.c.html#L1126">(mydesc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1215</td><td><a href="router.c.html#L1215">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1675</td><td><a href="router.c.html#L1675">(ei)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1990</td><td><a href="router.c.html#L1990">(is_legal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2002</td><td><a href="router.c.html#L2002">(is_legal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2181</td><td><a href="router.c.html#L2181">(p_tmp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2414</td><td><a href="router.c.html#L2414">(ei)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2422</td><td><a href="router.c.html#L2422">(ei)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2553</td><td><a href="router.c.html#L2553">(ns)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2730</td><td><a href="router.c.html#L2730">(has_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2794</td><td><a href="router.c.html#L2794">(emit_ed_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2811</td><td><a href="router.c.html#L2811">(emit_ed_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2943</td><td><a href="router.c.html#L2943">(a)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3067</td><td><a href="router.c.html#L3067">(overload_general)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3073</td><td><a href="router.c.html#L3073">(emit_ed_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3130</td><td><a href="router.c.html#L3130">(chunks)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3262</td><td><a href="router.c.html#L3262">(emit_ed_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3327</td><td><a href="router.c.html#L3327">(pluggable_transports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3382</td><td><a href="router.c.html#L3382">(contents)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3387</td><td><a href="router.c.html#L3387">(contents)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3394</td><td><a href="router.c.html#L3394">(bridge_stats)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3504</td><td><a href="router.c.html#L3504">(emit_ed_sigs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3551</td><td><a href="router.c.html#L3551">(write_stats_to_extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3590</td><td><a href="router.c.html#L3590">(warned_family)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3620</td><td><a href="router.c.html#L3620">(warned_family)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

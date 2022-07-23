@@ -1,0 +1,183 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>php-src Repo - main\output.c Ctrl Expressions (132) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - main\output.c Ctrl Expressions (132) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;main\output.c Ctrl Expressions (132)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1243</td><td><a href="output.c.html#L1243">(<span style='background-color:#741da3;'>context.out.data && context.out.used && !(flags & PHP_OUTPUT_POP_DISCARD)</span>)</a></td><td class="num">1013.75</td></tr>
+      <tr><td class="num line">1066</td><td><a href="output.c.html#L1066">((active = zend_stack_top(&OG(handlers))) && (!((*active)->flags & PHP_OUTPUT_HANDLER_DISABLED)))</a></td><td class="num">64.50</td></tr>
+      <tr><td class="num line">970</td><td><a href="output.c.html#L970">(SUCCESS == zend_fcall_info_call(&handler->func.user->fci, &handler->func.user->fcc, &retval, NULL) && PHP_OUTPUT_USER_SUCCESS(retval))</a></td><td class="num">56.25</td></tr>
+      <tr><td class="num line">277</td><td><a href="output.c.html#L277">(OG(active) && (OG(active)->flags & PHP_OUTPUT_HANDLER_FLUSHABLE))</a></td><td class="num">45.00</td></tr>
+      <tr><td class="num line">308</td><td><a href="output.c.html#L308">(OG(active) && (OG(active)->flags & PHP_OUTPUT_HANDLER_CLEANABLE))</a></td><td class="num">45.00</td></tr>
+      <tr><td class="num line">1060</td><td><a href="output.c.html#L1060">(OG(active) && (obh_cnt = zend_stack_count(&OG(handlers))))</a></td><td class="num">39.00</td></tr>
+      <tr><td class="num line">500</td><td><a href="output.c.html#L500">(SUCCESS == zend_fcall_info_init(output_handler, 0, &user->fci, &user->fcc, &handler_name, &error))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">557</td><td><a href="output.c.html#L557">(NULL != (conflict = zend_hash_find_ptr(&php_output_handler_conflicts, handler->name)))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">562</td><td><a href="output.c.html#L562">(NULL != (rconflicts = zend_hash_find_ptr(&php_output_handler_reverse_conflicts, handler->name)))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1213</td><td><a href="output.c.html#L1213">(!(flags & PHP_OUTPUT_POP_FORCE) && !(orphan->flags & PHP_OUTPUT_HANDLER_REMOVABLE))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="output.c.html#L994">(SUCCESS == handler->func.internal(&handler->opaq, context))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="output.c.html#L641">(NULL != (rev_ptr = zend_hash_str_find_ptr(&php_output_handler_reverse_conflicts, name, name_len)))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">951</td><td><a href="output.c.html#L951">(php_output_handler_append(handler, &context->in) && !context->op)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">493</td><td><a href="output.c.html#L493">(Z_STRLEN_P(output_handler) && (alias = php_output_handler_alias(Z_STRVAL_P(output_handler), Z_STRLEN_P(output_handler))))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="output.c.html#L558">(SUCCESS != conflict(ZSTR_VAL(handler->name), ZSTR_LEN(handler->name)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">564</td><td><a href="output.c.html#L564">(SUCCESS != conflict(ZSTR_VAL(handler->name), ZSTR_LEN(handler->name)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="output.c.html#L190">((handler = zend_stack_top(&OG(handlers))))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">1236</td><td><a href="output.c.html#L1236">((current = zend_stack_top(&OG(handlers))))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">907</td><td><a href="output.c.html#L907">(handler->size && (handler->buffer.used >= handler->size))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">895</td><td><a href="output.c.html#L895">((handler->buffer.size - handler->buffer.used) <= buf->used)</a></td><td class="num">16.85</td></tr>
+      <tr><td class="num line">1105</td><td><a href="output.c.html#L1105">((was_disabled = (handler->flags & PHP_OUTPUT_HANDLER_DISABLED)))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">813</td><td><a href="output.c.html#L813">(context->in.free && context->in.data)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">827</td><td><a href="output.c.html#L827">(context->in.free && context->in.data)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">860</td><td><a href="output.c.html#L860">(context->in.free && context->in.data)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">864</td><td><a href="output.c.html#L864">(context->out.free && context->out.data)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1013</td><td><a href="output.c.html#L1013">(context->out.data && context->out.free)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1549</td><td><a href="output.c.html#L1549">(zend_parse_parameters(ZEND_NUM_ARGS(), "ss", &name, &name_len, &value, &value_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">539</td><td><a href="output.c.html#L539">(handler->dtor && handler->opaq)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="output.c.html#L727">(handler->dtor && handler->opaq)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="output.c.html#L1310">(zend_parse_parameters(ZEND_NUM_ARGS(), "|zll", &output_handler, &chunk_size, &flags) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">973</td><td><a href="output.c.html#L973">(Z_TYPE(retval) != IS_FALSE && Z_TYPE(retval) != IS_TRUE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">280</td><td><a href="output.c.html#L280">(context.out.data && context.out.used)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">956</td><td><a href="output.c.html#L956">(!(handler->flags & PHP_OUTPUT_HANDLER_STARTED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="output.c.html#L1076">(context.out.data && context.out.used)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="output.c.html#L1222">(!(orphan->flags & PHP_OUTPUT_HANDLER_DISABLED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1224</td><td><a href="output.c.html#L1224">(!(orphan->flags & PHP_OUTPUT_HANDLER_STARTED))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="output.c.html#L779">(op && OG(active) && OG(running))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">723</td><td><a href="output.c.html#L723">(handler->flags & PHP_OUTPUT_HANDLER_USER)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">961</td><td><a href="output.c.html#L961">(handler->flags & PHP_OUTPUT_HANDLER_USER)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">587</td><td><a href="output.c.html#L587">(zend_string_equals_cstr(handlers[i]->name, name, name_len))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1497</td><td><a href="output.c.html#L1497">(zend_parse_parameters(ZEND_NUM_ARGS(), "|b", &full_status) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1520</td><td><a href="output.c.html#L1520">(zend_parse_parameters(ZEND_NUM_ARGS(), "|b", &flag) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">602</td><td><a href="output.c.html#L602">(handler_new_len != handler_set_len || memcmp(handler_new, handler_set, handler_set_len))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">647</td><td><a href="output.c.html#L647">(NULL == zend_hash_next_index_insert_ptr(&rev, check_func))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">720</td><td><a href="output.c.html#L720">(handler->buffer.data)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">995</td><td><a href="output.c.html#L995">(context->out.used)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">345</td><td><a href="output.c.html#L345">(OG(active) && php_output_stack_pop(PHP_OUTPUT_POP_FORCE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="output.c.html#L1079">(!(OG(flags) & PHP_OUTPUT_DISABLED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1130</td><td><a href="output.c.html#L1130">(!handler->level)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1209</td><td><a href="output.c.html#L1209">(!(flags & PHP_OUTPUT_POP_SILENT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1214</td><td><a href="output.c.html#L1214">(!(flags & PHP_OUTPUT_POP_SILENT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">181</td><td><a href="output.c.html#L181">((OG(flags) & PHP_OUTPUT_ACTIVATED))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">249</td><td><a href="output.c.html#L249">(OG(flags) & PHP_OUTPUT_ACTIVATED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="output.c.html#L260">(OG(flags) & PHP_OUTPUT_ACTIVATED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="output.c.html#L264">(OG(flags) & PHP_OUTPUT_DISABLED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">945</td><td><a href="output.c.html#L945">(php_output_lock_error(context->op))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1085</td><td><a href="output.c.html#L1085">(OG(flags) & PHP_OUTPUT_IMPLICITFLUSH)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">554</td><td><a href="output.c.html#L554">(php_output_lock_error(PHP_OUTPUT_HANDLER_START) || !handler)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">717</td><td><a href="output.c.html#L717">(handler->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">892</td><td><a href="output.c.html#L892">(buf->used)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1121</td><td><a href="output.c.html#L1121">(handler->level)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="output.c.html#L1135">(handler->level)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1228</td><td><a href="output.c.html#L1228">(flags & PHP_OUTPUT_POP_DISCARD)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">420</td><td><a href="output.c.html#L420">(SUCCESS == php_output_handler_start(handler))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">435</td><td><a href="output.c.html#L435">(SUCCESS == php_output_handler_start(handler))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">454</td><td><a href="output.c.html#L454">(SUCCESS == php_output_handler_start(handler))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">470</td><td><a href="output.c.html#L470">(SUCCESS == php_output_handler_start(handler))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1318</td><td><a href="output.c.html#L1318">(php_output_start_user(output_handler, chunk_size, flags) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1329</td><td><a href="output.c.html#L1329">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1338</td><td><a href="output.c.html#L1338">(SUCCESS != php_output_flush())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1349</td><td><a href="output.c.html#L1349">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1358</td><td><a href="output.c.html#L1358">(SUCCESS != php_output_clean())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1369</td><td><a href="output.c.html#L1369">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1385</td><td><a href="output.c.html#L1385">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1401</td><td><a href="output.c.html#L1401">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1405</td><td><a href="output.c.html#L1405">(php_output_get_contents(return_value) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1410</td><td><a href="output.c.html#L1410">(SUCCESS != php_output_end())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1419</td><td><a href="output.c.html#L1419">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1427</td><td><a href="output.c.html#L1427">(php_output_get_contents(return_value) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1432</td><td><a href="output.c.html#L1432">(SUCCESS != php_output_discard())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1441</td><td><a href="output.c.html#L1441">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1445</td><td><a href="output.c.html#L1445">(php_output_get_contents(return_value) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1454</td><td><a href="output.c.html#L1454">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1465</td><td><a href="output.c.html#L1465">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1469</td><td><a href="output.c.html#L1469">(php_output_get_length(return_value) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1478</td><td><a href="output.c.html#L1478">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1531</td><td><a href="output.c.html#L1531">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1535</td><td><a href="output.c.html#L1535">(php_url_scanner_reset_vars() == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1553</td><td><a href="output.c.html#L1553">(php_url_scanner_add_var(name, name_len, value, value_len, 1) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">586</td><td><a href="output.c.html#L586">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="output.c.html#L738">(*h)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1064</td><td><a href="output.c.html#L1064">(obh_cnt > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="output.c.html#L1314">(chunk_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">189</td><td><a href="output.c.html#L189">(OG(handlers).elements)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">105</td><td><a href="output.c.html#L105">(!SG(headers_sent))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">106</td><td><a href="output.c.html#L106">(!OG(output_start_filename))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">122</td><td><a href="output.c.html#L122">(!php_header())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">619</td><td><a href="output.c.html#L619">(!EG(current_module))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">636</td><td><a href="output.c.html#L636">(!EG(current_module))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">673</td><td><a href="output.c.html#L673">(!EG(current_module))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1333</td><td><a href="output.c.html#L1333">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="output.c.html#L1353">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1373</td><td><a href="output.c.html#L1373">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="output.c.html#L1389">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1423</td><td><a href="output.c.html#L1423">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1484</td><td><a href="output.c.html#L1484">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1501</td><td><a href="output.c.html#L1501">(!OG(active))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1208</td><td><a href="output.c.html#L1208">(!orphan)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">107</td><td><a href="output.c.html#L107">(zend_is_compiling())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">110</td><td><a href="output.c.html#L110">(zend_is_executing())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">114</td><td><a href="output.c.html#L114">(OG(output_start_filename))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="output.c.html#L198">(OG(output_start_filename))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="output.c.html#L296">(OG(active))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">324</td><td><a href="output.c.html#L324">(OG(active))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="output.c.html#L334">(php_output_stack_pop(PHP_OUTPUT_POP_TRY))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">353</td><td><a href="output.c.html#L353">(php_output_stack_pop(PHP_OUTPUT_POP_DISCARD | PHP_OUTPUT_POP_TRY))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">364</td><td><a href="output.c.html#L364">(OG(active))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="output.c.html#L382">(OG(active))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">395</td><td><a href="output.c.html#L395">(OG(active))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="output.c.html#L601">(php_output_handler_started(handler_set, handler_set_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">688</td><td><a href="output.c.html#L688">(OG(running))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="output.c.html#L975">(Z_STRLEN(retval))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1049</td><td><a href="output.c.html#L1049">(php_output_lock_error(op))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="output.c.html#L449">(output_handler)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="output.c.html#L507">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">511</td><td><a href="output.c.html#L511">(handler_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">583</td><td><a href="output.c.html#L583">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="output.c.html#L750">(flush)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1128</td><td><a href="output.c.html#L1128">(was_disabled)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1262</td><td><a href="output.c.html#L1262">(func)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1268</td><td><a href="output.c.html#L1268">(out_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1506</td><td><a href="output.c.html#L1506">(full_status)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

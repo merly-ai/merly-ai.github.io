@@ -1,0 +1,237 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\mainloop\mainloop.c Ctrl Expressions (186) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\mainloop\mainloop.c Ctrl Expressions (186) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\mainloop\mainloop.c Ctrl Expressions (186)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1166</td><td><a href="mainloop.c.html#L1166">(<span style='background-color:#741da3;'>conn->outbuf && !connection_get_outbuf_len(conn) && conn->type == CONN_TYPE_OR</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">1009</td><td><a href="mainloop.c.html#L1009">(<span style='background-color:#741da3;'>retval >= 0 && conn->hold_open_until_flushed && connection_wants_to_flush(conn)</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">1177</td><td><a href="mainloop.c.html#L1177">(<span style='background-color:#9c4c02;'>conn->type == CONN_TYPE_DIR && ((DIR_CONN_IS_SERVER(conn) && conn->timestamp_last_write_allowed + options->TestingDirConnectionMaxStall < now) || (!DIR_CONN_IS_SERVER(conn) && conn->timestamp_last_read_allowed + options->TestingDirConnectionMaxStall < now))</span>)</a></td><td class="num">100.95</td></tr>
+      <tr><td class="num line">1257</td><td><a href="mainloop.c.html#L1257">(now >= or_conn->timestamp_lastempty + options->KeepalivePeriod * 10 && now >= conn->timestamp_last_write_allowed + options->KeepalivePeriod * 10)</a></td><td class="num">75.40</td></tr>
+      <tr><td class="num line">351</td><td><a href="mainloop.c.html#L351">(!tor_digest_is_zero(TO_OR_CONN(conn)->identity_digest))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="mainloop.c.html#L717">(!conn->linked_conn || (conn->linked_conn->writing_to_linked_conn && buf_datalen(conn->linked_conn->outbuf)))</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">567</td><td><a href="mainloop.c.html#L567">(conn->type == CONN_TYPE_AP && TO_EDGE_CONN(conn)->is_dns_request)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">1246</td><td><a href="mainloop.c.html#L1246">(!have_any_circuits && now - or_conn->idle_timeout >= chan->timestamp_last_had_circuits)</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">2411</td><td><a href="mainloop.c.html#L2411">(sec_str && (sec = tor_parse_long(sec_str, 10, 0, INT_MAX, &sec_ok, NULL)) && sec_ok)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">636</td><td><a href="mainloop.c.html#L636">(CONN_IS_EDGE(conn) && TO_EDGE_CONN(conn)->xoff_received)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">977</td><td><a href="mainloop.c.html#L977">((SOCKET_OK(conn->s) || conn->linked_conn) && connection_wants_to_flush(conn))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="mainloop.c.html#L1146">(server_mode(options) && !net_is_disabled() && !from_cache && (have_completed_a_circuit() || !any_predicted_circuits(now)))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2455</td><td><a href="mainloop.c.html#L2455">(get_options()->MainloopStats)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">2473</td><td><a href="mainloop.c.html#L2473">(get_options()->MainloopStats)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1218</td><td><a href="mainloop.c.html#L1218">(channel_is_bad_for_new_circs(TLS_CHAN_TO_BASE(or_conn->chan)) && !have_any_circuits)</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">2177</td><td><a href="mainloop.c.html#L2177">(!have_completed_a_circuit() || net_is_disabled() || !networkstatus_get_reasonably_live_consensus(now, usable_consensus_flavor()))</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">340</td><td><a href="mainloop.c.html#L340">(!conn->linked_conn->marked_for_close && conn->linked_conn->reading_from_linked_conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">300</td><td><a href="mainloop.c.html#L300">(conn->type == CONN_TYPE_AP && conn->socket_family == AF_UNIX)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1188</td><td><a href="mainloop.c.html#L1188">(conn->purpose == DIR_PURPOSE_FETCH_SERVERDESC && connection_get_inbuf_len(conn) >= 1024)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">696</td><td><a href="mainloop.c.html#L696">(conn->linked_conn && connection_should_read_from_linked_conn(conn->linked_conn))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">716</td><td><a href="mainloop.c.html#L716">(conn->linked && conn->reading_from_linked_conn)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2097</td><td><a href="mainloop.c.html#L2097">(options->TestingTorNetwork || (we_are_bootstrapping && prefer_mirrors))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="mainloop.c.html#L258">(SOCKET_OK(conn->s) || conn->linked)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1237</td><td><a href="mainloop.c.html#L1237">(we_are_hibernating() && !have_any_circuits && !connection_get_outbuf_len(conn))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="mainloop.c.html#L1701">(options->UseBridges && !net_is_disabled())</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1073</td><td><a href="mainloop.c.html#L1073">((conn = connection_get_by_type_state(CONN_TYPE_AP, AP_CONN_STATE_CIRCUIT_WAIT)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1899</td><td><a href="mainloop.c.html#L1899">(ns && !networkstatus_consensus_reasonably_live(ns, now) && router_have_minimum_dir_info())</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">881</td><td><a href="mainloop.c.html#L881">(conn->marked_for_close && connection_is_reading(conn))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2494</td><td><a href="mainloop.c.html#L2494">(e != EINTR && !ERRNO_IS_EINPROGRESS(e))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1948</td><td><a href="mainloop.c.html#L1948">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1953</td><td><a href="mainloop.c.html#L1953">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1958</td><td><a href="mainloop.c.html#L1958">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1963</td><td><a href="mainloop.c.html#L1963">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1967</td><td><a href="mainloop.c.html#L1967">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1972</td><td><a href="mainloop.c.html#L1972">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1977</td><td><a href="mainloop.c.html#L1977">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1982</td><td><a href="mainloop.c.html#L1982">(next_write && next_write < next_time_to_write_stats_files)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">605</td><td><a href="mainloop.c.html#L605">(connection_check_event(conn, conn->read_event) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">627</td><td><a href="mainloop.c.html#L627">(connection_check_event(conn, conn->read_event) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">667</td><td><a href="mainloop.c.html#L667">(connection_check_event(conn, conn->write_event) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">690</td><td><a href="mainloop.c.html#L690">(connection_check_event(conn, conn->write_event) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">279</td><td><a href="mainloop.c.html#L279">(conn->type == CONN_TYPE_AP_DNS_LISTENER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">335</td><td><a href="mainloop.c.html#L335">(conn->conn_array_index >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">347</td><td><a href="mainloop.c.html#L347">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">350</td><td><a href="mainloop.c.html#L350">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">841</td><td><a href="mainloop.c.html#L841">(conn->conn_array_index < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">974</td><td><a href="mainloop.c.html#L974">(conn->proxy_state == PROXY_INFANT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1002</td><td><a href="mainloop.c.html#L1002">(conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1225</td><td><a href="mainloop.c.html#L1225">(conn->state == OR_CONN_STATE_CONNECTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1873</td><td><a href="mainloop.c.html#L1873">(time_since_last_activity >= options->DormantClientTimeout)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="mainloop.c.html#L309">(current_index == smartlist_len(connection_array) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">1268</td><td><a href="mainloop.c.html#L1268">(past_keepalive && !connection_get_outbuf_len(conn))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1742</td><td><a href="mainloop.c.html#L1742">(have_dir_info && !net_is_disabled())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2384</td><td><a href="mainloop.c.html#L2384">(sd_watchdog_enabled(1, &watchdog_delay) > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1318</td><td><a href="mainloop.c.html#L1318">(time_of_last_signewnym + MAX_SIGNEWNYM_RATE > now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2271</td><td><a href="mainloop.c.html#L2271">(clock_jumped || seconds_elapsed >= NUM_IDLE_SECONDS_BEFORE_WARN)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">844</td><td><a href="mainloop.c.html#L844">(!conn_close_if_marked(conn->conn_array_index))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="mainloop.c.html#L805">(!conn->active_on_link)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">891</td><td><a href="mainloop.c.html#L891">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">924</td><td><a href="mainloop.c.html#L924">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">933</td><td><a href="mainloop.c.html#L933">(!edge_conn->end_reason)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">963</td><td><a href="mainloop.c.html#L963">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">982</td><td><a href="mainloop.c.html#L982">(!conn->hold_open_until_flushed)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1844</td><td><a href="mainloop.c.html#L1844">(!options->DormantTimeoutEnabled)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2135</td><td><a href="mainloop.c.html#L2135">(!options->HeartbeatPeriod)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2406</td><td><a href="mainloop.c.html#L2406">(first_time && getenv("TOR_DEBUG_RESTART"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2502</td><td><a href="mainloop.c.html#L2502">(libevent_error_ratelim.n_calls_since_last_time > 8)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">613</td><td><a href="mainloop.c.html#L613">(event_del(conn->read_event))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">643</td><td><a href="mainloop.c.html#L643">(event_add(conn->read_event, NULL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">676</td><td><a href="mainloop.c.html#L676">(event_del(conn->write_event))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">700</td><td><a href="mainloop.c.html#L700">(event_add(conn->write_event, NULL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">338</td><td><a href="mainloop.c.html#L338">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="mainloop.c.html#L487">(events & READ_EVENT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">492</td><td><a href="mainloop.c.html#L492">(events & WRITE_EVENT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">609</td><td><a href="mainloop.c.html#L609">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="mainloop.c.html#L631">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">671</td><td><a href="mainloop.c.html#L671">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">673</td><td><a href="mainloop.c.html#L673">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="mainloop.c.html#L694">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="mainloop.c.html#L823">(conn->active_on_link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="mainloop.c.html#L990">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1142</td><td><a href="mainloop.c.html#L1142">(options->DownloadExtraInfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1170</td><td><a href="mainloop.c.html#L1170">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1530</td><td><a href="mainloop.c.html#L1530">(mainloop_periodic_events[i].name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1858</td><td><a href="mainloop.c.html#L1858">(options->DormantTimeoutDisabledByIdleStreams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1945</td><td><a href="mainloop.c.html#L1945">(options->CellStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1951</td><td><a href="mainloop.c.html#L1951">(options->DirReqStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1956</td><td><a href="mainloop.c.html#L1956">(options->EntryStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="mainloop.c.html#L1961">(options->HiddenServiceStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1970</td><td><a href="mainloop.c.html#L1970">(options->ExitPortStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1975</td><td><a href="mainloop.c.html#L1975">(options->ConnDirectionStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1980</td><td><a href="mainloop.c.html#L1980">(options->BridgeAuthoritativeDir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1992</td><td><a href="mainloop.c.html#L1992">(options->PaddingStatistics)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="mainloop.c.html#L839">(i < smartlist_len(closeable_connection_lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">890</td><td><a href="mainloop.c.html#L890">(connection_handle_read(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">923</td><td><a href="mainloop.c.html#L923">(connection_handle_write(conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1211</td><td><a href="mainloop.c.html#L1211">(channel_num_circuits(chan) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1637</td><td><a href="mainloop.c.html#L1637">(PREDICT_UNLIKELY(postloop_cleanup_ev == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1751</td><td><a href="mainloop.c.html#L1751">(i < smartlist_len(connection_array))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1796</td><td><a href="mainloop.c.html#L1796">(router_initialize_tls_context() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1822</td><td><a href="mainloop.c.html#L1822">(crypto_seed_rng() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1859</td><td><a href="mainloop.c.html#L1859">(connection_get_by_type_nonlinked(CONN_TYPE_AP) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1871</td><td><a href="mainloop.c.html#L1871">(get_last_user_activity_time() < now)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2146</td><td><a href="mainloop.c.html#L2146">(log_heartbeat(now) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2218</td><td><a href="mainloop.c.html#L2218">(PREDICT_LIKELY(now == current_second))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2237</td><td><a href="mainloop.c.html#L2237">(ABS(seconds_elapsed) >= NUM_JUMPED_SECONDS_BEFORE_NETSTATUS_UPDATE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2316</td><td><a href="mainloop.c.html#L2316">(init_keys_client() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2321</td><td><a href="mainloop.c.html#L2321">(get_uptime() > UPTIME_CUTOFF_FOR_NEW_BANDWIDTH_TEST)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">992</td><td><a href="mainloop.c.html#L992">(retval >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="mainloop.c.html#L1012">(retval > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1018</td><td><a href="mainloop.c.html#L1018">(sz == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1916</td><td><a href="mainloop.c.html#L1916">(next_write == TIME_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1928</td><td><a href="mainloop.c.html#L1928">(save_state_event == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2249</td><td><a href="mainloop.c.html#L2249">(seconds_elapsed < -NUM_JUMPED_SECONDS_BEFORE_WARN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2253</td><td><a href="mainloop.c.html#L2253">(seconds_elapsed >= NUM_JUMPED_SECONDS_BEFORE_WARN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2274</td><td><a href="mainloop.c.html#L2274">(seconds_elapsed > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2475</td><td><a href="mainloop.c.html#L2475">(loop_result == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2478</td><td><a href="mainloop.c.html#L2478">(loop_result == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2481</td><td><a href="mainloop.c.html#L2481">(loop_result == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2491</td><td><a href="mainloop.c.html#L2491">(loop_result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2499</td><td><a href="mainloop.c.html#L2499">(e == EINVAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2537</td><td><a href="mainloop.c.html#L2537">(loop_result == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">771</td><td><a href="mainloop.c.html#L771">(!tor_libevent_is_initialized())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1127</td><td><a href="mainloop.c.html#L1127">(!router_have_minimum_dir_info())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1199</td><td><a href="mainloop.c.html#L1199">(!connection_speaks_cells(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1230</td><td><a href="mainloop.c.html#L1230">(!connection_state_is_open(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1286</td><td><a href="mainloop.c.html#L1286">(!proxy_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2070</td><td><a href="mainloop.c.html#L2070">(!net_is_disabled())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2116</td><td><a href="mainloop.c.html#L2116">(!net_is_disabled())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">406</td><td><a href="mainloop.c.html#L406">(!connection_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">408</td><td><a href="mainloop.c.html#L408">(!closeable_connection_lst)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">410</td><td><a href="mainloop.c.html#L410">(!active_linked_connection_lst)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1102</td><td><a href="mainloop.c.html#L1102">(!directory_all_unreachable_cb_event)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1321</td><td><a href="mainloop.c.html#L1321">(!signewnym_is_pending)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1323</td><td><a href="mainloop.c.html#L1323">(!handle_deferred_signewnym_ev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1663</td><td><a href="mainloop.c.html#L1663">(!scheduled_shutdown_ev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2022</td><td><a href="mainloop.c.html#L2022">(!should_init_bridge_stats)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2314</td><td><a href="mainloop.c.html#L2314">(!server)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2353</td><td><a href="mainloop.c.html#L2353">(!schedule_active_linked_connections_event)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2357</td><td><a href="mainloop.c.html#L2357">(!postloop_cleanup_ev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2385</td><td><a href="mainloop.c.html#L2385">(!systemd_watchdog_timer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1031</td><td><a href="mainloop.c.html#L1031">(BUG(connection_is_writing(conn)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2341</td><td><a href="mainloop.c.html#L2341">(server_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="mainloop.c.html#L396">(smartlist_len(active_linked_connection_lst))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">633</td><td><a href="mainloop.c.html#L633">(connection_should_read_from_linked_conn(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">898</td><td><a href="mainloop.c.html#L898">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="mainloop.c.html#L905">(smartlist_len(closeable_connection_lst))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">930</td><td><a href="mainloop.c.html#L930">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">943</td><td><a href="mainloop.c.html#L943">(smartlist_len(closeable_connection_lst))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1001</td><td><a href="mainloop.c.html#L1001">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1043</td><td><a href="mainloop.c.html#L1043">(connection_wants_to_flush(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="mainloop.c.html#L1136">(dirclient_fetches_from_authorities(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1709</td><td><a href="mainloop.c.html#L1709">(accounting_is_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1767</td><td><a href="mainloop.c.html#L1767">(should_delay_dir_fetches(options, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1772</td><td><a href="mainloop.c.html#L1772">(router_have_minimum_dir_info())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1800</td><td><a href="mainloop.c.html#L1800">(generate_ed_link_cert(options, now, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1838</td><td><a href="mainloop.c.html#L1838">(server_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1851</td><td><a href="mainloop.c.html#L1851">(hs_service_get_num_services())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2010</td><td><a href="mainloop.c.html#L2010">(should_record_bridge_info(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2102</td><td><a href="mainloop.c.html#L2102">(should_delay_dir_fetches(options, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2160</td><td><a href="mainloop.c.html#L2160">(dir_server_mode(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2238</td><td><a href="mainloop.c.html#L2238">(is_participating_on_network())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2444</td><td><a href="mainloop.c.html#L2444">(nt_service_is_stopping())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="mainloop.c.html#L580">(bad)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">765</td><td><a href="mainloop.c.html#L765">(main_loop_should_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1122</td><td><a href="mainloop.c.html#L1122">(invalidate_circs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1231</td><td><a href="mainloop.c.html#L1231">(past_keepalive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1487</td><td><a href="mainloop.c.html#L1487">(is_bridge)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1488</td><td><a href="mainloop.c.html#L1488">(is_client)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1489</td><td><a href="mainloop.c.html#L1489">(is_relay)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1490</td><td><a href="mainloop.c.html#L1490">(is_dirauth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1491</td><td><a href="mainloop.c.html#L1491">(is_bridgeauth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1492</td><td><a href="mainloop.c.html#L1492">(is_hidden_service)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1493</td><td><a href="mainloop.c.html#L1493">(is_dirserver)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1494</td><td><a href="mainloop.c.html#L1494">(is_net_participant)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1495</td><td><a href="mainloop.c.html#L1495">(sending_control_events)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1525</td><td><a href="mainloop.c.html#L1525">(periodic_events_initialized)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1788</td><td><a href="mainloop.c.html#L1788">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2011</td><td><a href="mainloop.c.html#L2011">(should_init_bridge_stats)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2140</td><td><a href="mainloop.c.html#L2140">(heartbeat_callback_first_time)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2313</td><td><a href="mainloop.c.html#L2313">(on_client_conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2320</td><td><a href="mainloop.c.html#L2320">(server)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2343</td><td><a href="mainloop.c.html#L2343">(check_dns_honesty_event)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2447</td><td><a href="mainloop.c.html#L2447">(main_loop_should_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2516</td><td><a href="mainloop.c.html#L2516">(main_loop_should_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2539</td><td><a href="mainloop.c.html#L2539">(main_loop_should_exit)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

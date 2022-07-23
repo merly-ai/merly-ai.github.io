@@ -1,0 +1,189 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - sapi\litespeed\lsapi_main.c Ctrl Expressions (138) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - sapi\litespeed\lsapi_main.c Ctrl Expressions (138) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;sapi\litespeed\lsapi_main.c Ctrl Expressions (138)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1201</td><td><a href="lsapi_main.c.html#L1201">(*(<span style='background-color:#741da3;'>(*(p - 1)) + 2</span>) == 's')</a></td><td class="num">1041.95</td></tr>
+      <tr><td class="num line">385</td><td><a href="lsapi_main.c.html#L385">(<span style='background-color:#9c4c02;'>SG(sapi_headers).http_status_line && (s = strchr(SG(sapi_headers).http_status_line, ' ')) != 0 && (s - SG(sapi_headers).http_status_line) >= 5 && strncasecmp(SG(sapi_headers).http_status_line, "HTTP/", 5) == 0</span>)</a></td><td class="num">101.85</td></tr>
+      <tr><td class="num line">222</td><td><a href="lsapi_main.c.html#L222">(Z_TYPE(PG(http_globals)[TRACK_VARS_ENV]) == IS_ARRAY && Z_ARR_P(array_ptr) != Z_ARR(PG(http_globals)[TRACK_VARS_ENV]) && zend_hash_num_elements(Z_ARRVAL(PG(http_globals)[TRACK_VARS_ENV])) > 0)</a></td><td class="num">97.00</td></tr>
+      <tr><td class="num line">229</td><td><a href="lsapi_main.c.html#L229">(Z_TYPE(PG(http_globals)[TRACK_VARS_SERVER]) == IS_ARRAY && Z_ARR_P(array_ptr) != Z_ARR(PG(http_globals)[TRACK_VARS_SERVER]) && zend_hash_num_elements(Z_ARRVAL(PG(http_globals)[TRACK_VARS_SERVER])) > 0)</a></td><td class="num">97.00</td></tr>
+      <tr><td class="num line">569</td><td><a href="lsapi_main.c.html#L569">(!IS_SLASH(SG(request_info).path_translated[path_len]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="lsapi_main.c.html#L437">(response_status == 304 && h->header_len > sizeof("Content-Type:") - 1 && strncasecmp(h->header, "Content-Type:", sizeof("Content-Type:") - 1) == 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="lsapi_main.c.html#L395">(h->header_len > sizeof("Status:") - 1 && strncasecmp(h->header, "Status:", sizeof("Status:") - 1) == 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">430</td><td><a href="lsapi_main.c.html#L430">(h->header_len > sizeof("Status:") - 1 && strncasecmp(h->header, "Status:", sizeof("Status:") - 1) == 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="lsapi_main.c.html#L929">(!ctx->path || !*ctx->path)</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="lsapi_main.c.html#L1567">((result = LSAPI_Prefork_Accept_r(&g_req)) >= 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1174</td><td><a href="lsapi_main.c.html#L1174">((p < argend) && (**p == '-'))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1259</td><td><a href="lsapi_main.c.html#L1259">((p < argend) && (**p == '-'))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">845</td><td><a href="lsapi_main.c.html#L845">(len > 1 && path[len - 1] == DEFAULT_SLASH)</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">1704</td><td><a href="lsapi_main.c.html#L1704">(len > 0 && (isspace(headerBuf[len - 1])))</a></td><td class="num">24.60</td></tr>
+      <tr><td class="num line">1392</td><td><a href="lsapi_main.c.html#L1392">(sigaction(SIGTERM, &act, &old_term) || sigaction(SIGINT, &act, &old_int) || sigaction(SIGUSR1, &act, &old_usr1) || sigaction(SIGQUIT, &act, &old_quit))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="lsapi_main.c.html#L923">(!PG(user_ini_filename) || !*PG(user_ini_filename))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1692</td><td><a href="lsapi_main.c.html#L1692">(!&SG(sapi_headers).headers)</a></td><td class="num">21.00</td></tr>
+      <tr><td class="num line">1034</td><td><a href="lsapi_main.c.html#L1034">(!ctx->entry->expires || request_time > ctx->entry->expires)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1437</td><td><a href="lsapi_main.c.html#L1437">((p > argv[0]) && (p[-1] != '/'))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1702</td><td><a href="lsapi_main.c.html#L1702">(p && len > 0 && len < LSAPI_RESP_HTTP_HEADER_MAX)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">239</td><td><a href="lsapi_main.c.html#L239">(env != NULL && *env != NULL)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">894</td><td><a href="lsapi_main.c.html#L894">((pos = skip_slash(pos))[0])</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="lsapi_main.c.html#L1482">(parse_opt(argc, argv, &climode, &php_ini_path, &php_bind) == -1)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="lsapi_main.c.html#L1619">(*p == '1' || 0 == strcasecmp(p, "on"))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1621</td><td><a href="lsapi_main.c.html#L1621">(*p == '0' || 0 == strcasecmp(p, "off"))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="lsapi_main.c.html#L507">(*(message + len - 1) != '\n')</a></td><td class="num">8.95</td></tr>
+      <tr><td class="num line">812</td><td><a href="lsapi_main.c.html#L812">((keyLen == 7) && (strncasecmp(pKey, "engine", 6) == 0))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">254</td><td><a href="lsapi_main.c.html#L254">(t != buf && t != NULL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="lsapi_main.c.html#L970">(!IS_ABSOLUTE_PATH(ctx->path, ctx->path_len))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">407</td><td><a href="lsapi_main.c.html#L407">(err->code == SG(sapi_headers).http_response_code)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1521</td><td><a href="lsapi_main.c.html#L1521">(php_module_startup(&lsapi_sapi_module, &litespeed_module_entry) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1401</td><td><a href="lsapi_main.c.html#L1401">((!s_stop) && (running < children))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">209</td><td><a href="lsapi_main.c.html#L209">(sapi_module.input_filter(filter_arg, (char *)pKey, &new_val, valLen, &new_val_len))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="lsapi_main.c.html#L586">(parse_user_ini && lsapi_activate_user_ini() == FAILURE)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1614</td><td><a href="lsapi_main.c.html#L1614">(p && 0 == strcasecmp(p, "on"))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1709</td><td><a href="lsapi_main.c.html#L1709">(isspace(*p++))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">406</td><td><a href="lsapi_main.c.html#L406">(err->code != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">476</td><td><a href="lsapi_main.c.html#L476">(h->header_len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1699</td><td><a href="lsapi_main.c.html#L1699">(h->header_len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">791</td><td><a href="lsapi_main.c.html#L791">('\001' == *pKey)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">793</td><td><a href="lsapi_main.c.html#L793">(*pKey == 4)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">814</td><td><a href="lsapi_main.c.html#L814">(*pValue == '0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">855</td><td><a href="lsapi_main.c.html#L855">(*s == DEFAULT_SLASH)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1213</td><td><a href="lsapi_main.c.html#L1213">(p - argv < argc)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1569</td><td><a href="lsapi_main.c.html#L1569">(is_criu && !result)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">373</td><td><a href="lsapi_main.c.html#L373">(SG(request_info).no_headers == 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">378</td><td><a href="lsapi_main.c.html#L378">(SG(sapi_headers).http_response_code != 200)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">998</td><td><a href="lsapi_main.c.html#L998">(!ctx->entry)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1439</td><td><a href="lsapi_main.c.html#L1439">(p > argv[0])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">412</td><td><a href="lsapi_main.c.html#L412">(err->msg)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="lsapi_main.c.html#L429">(h->header_len)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">100</td><td><a href="lsapi_main.c.html#L100">(php_module_startup(sapi_module, NULL) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">166</td><td><a href="lsapi_main.c.html#L166">(LSAPI_Flush() == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">548</td><td><a href="lsapi_main.c.html#L548">(!SG(request_info).path_translated)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">746</td><td><a href="lsapi_main.c.html#L746">(php_request_startup() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1126</td><td><a href="lsapi_main.c.html#L1126">(lsapi_module_main(source_highlight) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1266</td><td><a href="lsapi_main.c.html#L1266">(php_request_startup() != FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1278</td><td><a href="lsapi_main.c.html#L1278">(php_request_startup() != FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1324</td><td><a href="lsapi_main.c.html#L1324">(php_request_startup() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1667</td><td><a href="lsapi_main.c.html#L1667">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1688</td><td><a href="lsapi_main.c.html#L1688">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1730</td><td><a href="lsapi_main.c.html#L1730">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1747</td><td><a href="lsapi_main.c.html#L1747">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1754</td><td><a href="lsapi_main.c.html#L1754">(LSAPI_End_Response() != -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">141</td><td><a href="lsapi_main.c.html#L141">(ret < str_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">147</td><td><a href="lsapi_main.c.html#L147">(remain > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="lsapi_main.c.html#L149">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">245</td><td><a href="lsapi_main.c.html#L245">(nlen >= alloc_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">511</td><td><a href="lsapi_main.c.html#L511">(len > 8191)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="lsapi_main.c.html#L657">(len > 45)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">936</td><td><a href="lsapi_main.c.html#L936">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">955</td><td><a href="lsapi_main.c.html#L955">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">981</td><td><a href="lsapi_main.c.html#L981">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1008</td><td><a href="lsapi_main.c.html#L1008">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="lsapi_main.c.html#L1055">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1071</td><td><a href="lsapi_main.c.html#L1071">(*fn_next)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1179</td><td><a href="lsapi_main.c.html#L1179">(p >= argend)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1187</td><td><a href="lsapi_main.c.html#L1187">(p >= argend)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1251</td><td><a href="lsapi_main.c.html#L1251">(*ini)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="lsapi_main.c.html#L1310">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1311</td><td><a href="lsapi_main.c.html#L1311">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1328</td><td><a href="lsapi_main.c.html#L1328">(source_highlight == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="lsapi_main.c.html#L1333">(source_highlight == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1337</td><td><a href="lsapi_main.c.html#L1337">(ret == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1445</td><td><a href="lsapi_main.c.html#L1445">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1481</td><td><a href="lsapi_main.c.html#L1481">(argc > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1534</td><td><a href="lsapi_main.c.html#L1534">(bindFd == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="lsapi_main.c.html#L1539">(bindFd != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="lsapi_main.c.html#L1581">(n > slow_script_msec)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="lsapi_main.c.html#L1735">(*name)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">177</td><td><a href="lsapi_main.c.html#L177">(SG(request_info).path_translated)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">264</td><td><a href="lsapi_main.c.html#L264">((SG(request_info).request_uri))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">481</td><td><a href="lsapi_main.c.html#L481">(SG(sapi_headers).send_default_content_type)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1316</td><td><a href="lsapi_main.c.html#L1316">(file_handle.handle.fp)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">241</td><td><a href="lsapi_main.c.html#L241">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">403</td><td><a href="lsapi_main.c.html#L403">(!has_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">420</td><td><a href="lsapi_main.c.html#L420">(!has_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">433</td><td><a href="lsapi_main.c.html#L433">(!ignore_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">725</td><td><a href="lsapi_main.c.html#L725">(!clean_onexit)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">735</td><td><a href="lsapi_main.c.html#L735">(!clean_onexit)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">801</td><td><a href="lsapi_main.c.html#L801">(!mod_lsapi_mode)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">896</td><td><a href="lsapi_main.c.html#L896">(!pos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">972</td><td><a href="lsapi_main.c.html#L972">(!real_path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">552</td><td><a href="lsapi_main.c.html#L552">(php_ini_has_per_host_config())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">564</td><td><a href="lsapi_main.c.html#L564">(php_ini_has_per_dir_config())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">93</td><td><a href="lsapi_main.c.html#L93">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">139</td><td><a href="lsapi_main.c.html#L139">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">165</td><td><a href="lsapi_main.c.html#L165">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">192</td><td><a href="lsapi_main.c.html#L192">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">263</td><td><a href="lsapi_main.c.html#L263">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">289</td><td><a href="lsapi_main.c.html#L289">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">304</td><td><a href="lsapi_main.c.html#L304">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">394</td><td><a href="lsapi_main.c.html#L394">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">427</td><td><a href="lsapi_main.c.html#L427">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">465</td><td><a href="lsapi_main.c.html#L465">(mod_lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">471</td><td><a href="lsapi_main.c.html#L471">(lsapi_mode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">475</td><td><a href="lsapi_main.c.html#L475">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">555</td><td><a href="lsapi_main.c.html#L555">(server_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="lsapi_main.c.html#L750">(do_clean_shutdown)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">765</td><td><a href="lsapi_main.c.html#L765">(show_source)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">985</td><td><a href="lsapi_main.c.html#L985">(real_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1044</td><td><a href="lsapi_main.c.html#L1044">(is_outside_of_docroot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1123</td><td><a href="lsapi_main.c.html#L1123">(engine)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1400</td><td><a href="lsapi_main.c.html#L1400">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1421</td><td><a href="lsapi_main.c.html#L1421">(s_stop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1487</td><td><a href="lsapi_main.c.html#L1487">(climode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1511</td><td><a href="lsapi_main.c.html#L1511">(ignore_php_ini)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1514</td><td><a href="lsapi_main.c.html#L1514">(php_ini_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1528</td><td><a href="lsapi_main.c.html#L1528">(climode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1532</td><td><a href="lsapi_main.c.html#L1532">(php_bind)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1556</td><td><a href="lsapi_main.c.html#L1556">(php_bind)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1564</td><td><a href="lsapi_main.c.html#L1564">(do_clean_shutdown)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1573</td><td><a href="lsapi_main.c.html#L1573">(slow_script_msec)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1577</td><td><a href="lsapi_main.c.html#L1577">(slow_script_msec)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1592</td><td><a href="lsapi_main.c.html#L1592">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1618</td><td><a href="lsapi_main.c.html#L1618">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1698</td><td><a href="lsapi_main.c.html#L1698">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1708</td><td><a href="lsapi_main.c.html#L1708">(len)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

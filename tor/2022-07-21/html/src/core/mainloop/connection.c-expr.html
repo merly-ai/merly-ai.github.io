@@ -1,0 +1,516 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\mainloop\connection.c Ctrl Expressions (465) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\mainloop\connection.c Ctrl Expressions (465) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\mainloop\connection.c Ctrl Expressions (465)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1820</td><td><a href="connection.c.html#L1820">(<span style='background-color:#741da3;'>port->is_unix_addr && !geteuid() && (options->User) && strcmp(options->User, "root")</span>)</a></td><td class="num">1019.75</td></tr>
+      <tr><td class="num line">4024</td><td><a href="connection.c.html#L4024">(<span style='background-color:#741da3;'>!conn->marked_for_close && connection_is_reading(conn) && !conn->inbuf_reached_eof && max_to_read > 0</span>)</a></td><td class="num">1019.25</td></tr>
+      <tr><td class="num line">4058</td><td><a href="connection.c.html#L4058">(<span style='background-color:#741da3;'>!conn->marked_for_close && conn->inbuf_reached_eof && connection_reached_eof(conn) < 0</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">3308</td><td><a href="connection.c.html#L3308">(<span style='background-color:#741da3;'>old_or_port != routerconf_find_or_port(options, AF_INET) || old_or_port_ipv6 != routerconf_find_or_port(options, AF_INET6) || old_dir_port != routerconf_find_dir_port(options, 0)</span>)</a></td><td class="num">1010.75</td></tr>
+      <tr><td class="num line">4735</td><td><a href="connection.c.html#L4735">(<span style='background-color:#741da3;'>!len && !(zlib < 0)</span>)</a></td><td class="num">1007.50</td></tr>
+      <tr><td class="num line">3383</td><td><a href="connection.c.html#L3383">(!options->CountPrivateBandwidth && !conn->always_rate_limit_as_remote && (tor_addr_family(&conn->addr) == AF_UNSPEC || tor_addr_family(&conn->addr) == AF_UNIX || tor_addr_is_internal(&conn->addr, 0)))</a></td><td class="num">97.25</td></tr>
+      <tr><td class="num line">5521</td><td><a href="connection.c.html#L5521">(n_socks >= get_options()->ConnLimit_high_thresh && get_options()->ConnLimit_high_thresh != 0 && get_options()->ConnLimit_ != 0)</a></td><td class="num">95.25</td></tr>
+      <tr><td class="num line">3753</td><td><a href="connection.c.html#L3753">(connection_speaks_cells(conn) && conn->state == OR_CONN_STATE_OPEN && token_bucket_rw_get_read(&TO_OR_CONN(conn)->bucket) <= 0)</a></td><td class="num">86.50</td></tr>
+      <tr><td class="num line">3782</td><td><a href="connection.c.html#L3782">(connection_speaks_cells(conn) && conn->state == OR_CONN_STATE_OPEN && token_bucket_rw_get_write(&TO_OR_CONN(conn)->bucket) <= 0)</a></td><td class="num">86.50</td></tr>
+      <tr><td class="num line">5019</td><td><a href="connection.c.html#L5019">((conn->type == CONN_TYPE_OR && conn->state == OR_CONN_STATE_OPEN) || (conn->type == CONN_TYPE_EXT_OR) || (conn->type == CONN_TYPE_AP && conn->state == AP_CONN_STATE_OPEN) || (conn->type == CONN_TYPE_EXIT && conn->state == EXIT_CONN_STATE_OPEN) || (conn->type == CONN_TYPE_CONTROL && conn->state == CONTROL_CONN_STATE_OPEN))</a></td><td class="num">82.50</td></tr>
+      <tr><td class="num line">3742</td><td><a href="connection.c.html#L3742">(CONN_IS_EDGE(conn) && token_bucket_rw_get_read(&TO_EDGE_CONN(conn)->bucket) <= 0)</a></td><td class="num">80.00</td></tr>
+      <tr><td class="num line">465</td><td><a href="connection.c.html#L465">(!scrub && (!tor_addr_eq(addr, &or_conn->canonical_orport.addr) || conn->port != or_conn->canonical_orport.port))</a></td><td class="num">70.75</td></tr>
+      <tr><td class="num line">4994</td><td><a href="connection.c.html#L4994">(conn->type == CONN_TYPE_OR_LISTENER || conn->type == CONN_TYPE_EXT_OR_LISTENER || conn->type == CONN_TYPE_AP_LISTENER || conn->type == CONN_TYPE_AP_TRANS_LISTENER || conn->type == CONN_TYPE_AP_DNS_LISTENER || conn->type == CONN_TYPE_AP_NATD_LISTENER || conn->type == CONN_TYPE_AP_HTTP_CONNECT_LISTENER || conn->type == CONN_TYPE_DIR_LISTENER || conn->type == CONN_TYPE_METRICS_LISTENER || conn->type == CONN_TYPE_CONTROL_LISTENER)</a></td><td class="num">65.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="connection.c.html#L954">(conn->type == CONN_TYPE_OR && !tor_digest_is_zero(TO_OR_CONN(conn)->identity_digest))</a></td><td class="num">64.25</td></tr>
+      <tr><td class="num line">2337</td><td><a href="connection.c.html#L2337">((!pref_ipv6 && tor_addr_family(&real_addr) == AF_INET6) || (pref_ipv6 && tor_addr_family(&real_addr) == AF_INET))</a></td><td class="num">64.25</td></tr>
+      <tr><td class="num line">2311</td><td><a href="connection.c.html#L2311">((must_ipv4 && tor_addr_family(&real_addr) == AF_INET6) || (must_ipv6 && tor_addr_family(&real_addr) == AF_INET))</a></td><td class="num">62.50</td></tr>
+      <tr><td class="num line">4570</td><td><a href="connection.c.html#L4570">(n_written && get_options()->TestingEnableConnBwEvent && (conn->type == CONN_TYPE_OR || conn->type == CONN_TYPE_DIR || conn->type == CONN_TYPE_EXIT))</a></td><td class="num">62.25</td></tr>
+      <tr><td class="num line">4247</td><td><a href="connection.c.html#L4247">(get_options()->TestingEnableConnBwEvent && (conn->type == CONN_TYPE_OR || conn->type == CONN_TYPE_DIR || conn->type == CONN_TYPE_EXIT))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="connection.c.html#L2376">(!tor_addr_is_null(&options->OutboundBindAddresses[OUTBOUND_ADDR_EXIT][fam_index]))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">2380</td><td><a href="connection.c.html#L2380">(!tor_addr_is_null(&options->OutboundBindAddresses[OUTBOUND_ADDR_ANY][fam_index]))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">2387</td><td><a href="connection.c.html#L2387">(!tor_addr_is_null(&options->OutboundBindAddresses[OUTBOUND_ADDR_OR][fam_index]))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">2391</td><td><a href="connection.c.html#L2391">(!tor_addr_is_null(&options->OutboundBindAddresses[OUTBOUND_ADDR_ANY][fam_index]))</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">4198</td><td><a href="connection.c.html#L4198">(!conn->linked_conn || (conn->linked_conn->marked_for_close && buf_datalen(conn->linked_conn->outbuf) == 0))</a></td><td class="num">53.00</td></tr>
+      <tr><td class="num line">2710</td><td><a href="connection.c.html#L2710">((options->Socks5ProxyUsername) || (conn_get_proxy_type(conn) == PROXY_PLUGGABLE && (get_socks_args_by_bridge_addrport(&conn->addr, conn->port))))</a></td><td class="num">50.75</td></tr>
+      <tr><td class="num line">3409</td><td><a href="connection.c.html#L3409">(conn->type == CONN_TYPE_OR && connection_or_client_used(TO_OR_CONN(conn)) + CLIENT_IDLE_TIME_FOR_PRIORITY < now)</a></td><td class="num">44.35</td></tr>
+      <tr><td class="num line">501</td><td><a href="connection.c.html#L501">(scrub && get_options()->SafeLogging_ != SAFELOG_SCRUB_NONE)</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">3129</td><td><a href="connection.c.html#L3129">((conn->socket_family != AF_UNIX && wanted->is_unix_addr) || (conn->socket_family == AF_UNIX && !wanted->is_unix_addr))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">986</td><td><a href="connection.c.html#L986">(!tor_digest_is_zero(TO_OR_CONN(conn)->identity_digest))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">1990</td><td><a href="connection.c.html#L1990">(conn->socket_family == AF_INET || conn->socket_family == AF_INET6 || (conn->socket_family == AF_UNIX && new_type == CONN_TYPE_AP))</a></td><td class="num">40.50</td></tr>
+      <tr><td class="num line">1186</td><td><a href="connection.c.html#L1186">(conn->type == CONN_TYPE_EXIT || (conn->type == CONN_TYPE_DIR && conn->purpose == DIR_PURPOSE_SERVER))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">1663</td><td><a href="connection.c.html#L1663">(fstat(s, &st) == 0 && st.st_uid == pw->pw_uid && st.st_gid == pw->pw_gid)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">4005</td><td><a href="connection.c.html#L4005">(conn->type == CONN_TYPE_AP && TO_ENTRY_CONN(conn)->socks_request)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">5479</td><td><a href="connection.c.html#L5479">(conn != NULL && (conn->conn_array_index < 0 || conn->marked_for_close))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">3137</td><td><a href="connection.c.html#L3137">(conn->socket_family == AF_UNIX && !strcmp(wanted->unix_addr, conn->address))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1691</td><td><a href="connection.c.html#L1691">(fstat(s, &st) == 0 && (st.st_mode & 0777) == mode)</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">3151</td><td><a href="connection.c.html#L3151">(port_matches && tor_addr_eq(&wanted->addr, &conn->addr))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">4227</td><td><a href="connection.c.html#L4227">(CONN_IS_EDGE(conn) && TO_EDGE_CONN(conn)->hs_ident)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">4483</td><td><a href="connection.c.html#L4483">(buf_datalen(conn->outbuf) == 0 && or_conn->chan)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">853</td><td><a href="connection.c.html#L853">(unlink(conn->address) < 0 && errno != ENOENT)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">4239</td><td><a href="connection.c.html#L4239">(PREDICT_LIKELY(UINT32_MAX - edge_conn->n_read > n_read))</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">4251</td><td><a href="connection.c.html#L4251">(PREDICT_LIKELY(UINT32_MAX - conn->n_read_conn_bw > n_read))</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">4562</td><td><a href="connection.c.html#L4562">(PREDICT_LIKELY(UINT32_MAX - edge_conn->n_written > n_written))</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">4574</td><td><a href="connection.c.html#L4574">(PREDICT_LIKELY(UINT32_MAX - conn->n_written_conn_bw > n_written))</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">4054</td><td><a href="connection.c.html#L4054">(!buf_datalen(linked->outbuf) && conn->active_on_link)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">4388</td><td><a href="connection.c.html#L4388">(conn->marked_for_close || !SOCKET_OK(conn->s))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2629</td><td><a href="connection.c.html#L2629">(tor_addr_family(&conn->addr) != AF_INET)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2882</td><td><a href="connection.c.html#L2882">(tor_addr_family(&conn->addr) == AF_INET)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2994</td><td><a href="connection.c.html#L2994">(get_options()->Socks5ProxyUsername)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">4344</td><td><a href="connection.c.html#L4344">(get_options()->ConstrainedSockets)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">5500</td><td><a href="connection.c.html#L5500">(get_options()->DisableOOSCheck)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">3750</td><td><a href="connection.c.html#L3750">(connection_counts_as_relayed_traffic(conn, approx_time()) && token_bucket_rw_get_read(&global_relayed_bucket) <= 0)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">3779</td><td><a href="connection.c.html#L3779">(connection_counts_as_relayed_traffic(conn, approx_time()) && token_bucket_rw_get_write(&global_relayed_bucket) <= 0)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">1614</td><td><a href="connection.c.html#L1614">(check_location_for_unix_socket(options, address, (type == CONN_TYPE_CONTROL_LISTENER) ? UNIX_SOCKET_PURPOSE_CONTROL_SOCKET : UNIX_SOCKET_PURPOSE_SOCKS_SOCKET, port_cfg) < 0)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2326</td><td><a href="connection.c.html#L2326">(options->UseBridges && conn->type == CONN_TYPE_OR && options->ClientPreferIPv6ORPort == -1)</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">980</td><td><a href="connection.c.html#L980">(!conn->linked_conn->marked_for_close && conn->linked_conn->reading_from_linked_conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2061</td><td><a href="connection.c.html#L2061">(conn->socket_family == AF_UNIX && conn->type != CONN_TYPE_AP)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2298</td><td><a href="connection.c.html#L2298">(conn->type != CONN_TYPE_OR && conn->type != CONN_TYPE_DIR)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3610</td><td><a href="connection.c.html#L3610">(conn->type == CONN_TYPE_DIR && conn->purpose == DIR_PURPOSE_SERVER)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">5202</td><td><a href="connection.c.html#L5202">(conn->type == CONN_TYPE_DIR && conn->state == DIR_CONN_STATE_SERVER_WRITING)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">5346</td><td><a href="connection.c.html#L5346">(a->type == CONN_TYPE_OR && b->type == CONN_TYPE_OR)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1873</td><td><a href="connection.c.html#L1873">(sin->sin_addr.s_addr == 0 || sin->sin_port == 0)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">959</td><td><a href="connection.c.html#L959">(conn->type == CONN_TYPE_OR || conn->type == CONN_TYPE_EXT_OR)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1494</td><td><a href="connection.c.html#L1494">(listensockaddr->sa_family == AF_INET || listensockaddr->sa_family == AF_INET6)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4120</td><td><a href="connection.c.html#L4120">(conn->state == OR_CONN_STATE_TLS_HANDSHAKING || conn->state == OR_CONN_STATE_TLS_CLIENT_RENEGOTIATING)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4450</td><td><a href="connection.c.html#L4450">(conn->state == OR_CONN_STATE_TLS_HANDSHAKING || conn->state == OR_CONN_STATE_TLS_CLIENT_RENEGOTIATING)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1885</td><td><a href="connection.c.html#L1885">(fast_mem_is_zero((void*)sin6->sin6_addr.s6_addr, 16) || sin6->sin6_port == 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1538</td><td><a href="connection.c.html#L1538">(options->TransProxyType_parsed == TPT_TPROXY && type == CONN_TYPE_AP_TRANS_LISTENER)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2037</td><td><a href="connection.c.html#L2037">(new_type == CONN_TYPE_AP && conn->socket_family == AF_UNIX)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2045</td><td><a href="connection.c.html#L2045">(new_type == CONN_TYPE_AP && conn->socket_family != AF_UNIX)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2049</td><td><a href="connection.c.html#L2049">(new_type == CONN_TYPE_AP && conn->socket_family == AF_UNIX)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">5839</td><td><a href="connection.c.html#L5839">(get_proxy_addrport(&proxy_addr, &proxy_port, &proxy_type, &is_pt, conn) != 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">4339</td><td><a href="connection.c.html#L4339">(osvi.dwMajorVersion == 6 && osvi.dwMinorVersion < 2)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4669</td><td><a href="connection.c.html#L4669">(conn->marked_for_close && !conn->hold_open_until_flushed)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">4031</td><td><a href="connection.c.html#L4031">(!conn->marked_for_close && connection_process_inbuf(conn, 1) < 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">4402</td><td><a href="connection.c.html#L4402">(getsockopt(conn->s, SOL_SOCKET, SO_ERROR, (void*)&e, &len) < 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1285</td><td><a href="connection.c.html#L1285">((m = rate_limit_log(&last_warned, approx_time())))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1449</td><td><a href="connection.c.html#L1449">((r = listen(fd, listen_limit)) < 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1452</td><td><a href="connection.c.html#L1452">((r = listen(fd, SOMAXCONN)) == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2293</td><td><a href="connection.c.html#L2293">(server_mode(options) || !conn || conn->type == CONN_TYPE_EXIT)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3413</td><td><a href="connection.c.html#L3413">(conn->type == CONN_TYPE_DIR && DIR_CONN_IS_SERVER(conn))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3698</td><td><a href="connection.c.html#L3698">(connection_speaks_cells(conn) && conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3860</td><td><a href="connection.c.html#L3860">(connection_speaks_cells(conn) && conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">4115</td><td><a href="connection.c.html#L4115">(connection_speaks_cells(conn) && conn->state > OR_CONN_STATE_PROXY_HANDSHAKING)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">4446</td><td><a href="connection.c.html#L4446">(connection_speaks_cells(conn) && conn->state > OR_CONN_STATE_PROXY_HANDSHAKING)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1666</td><td><a href="connection.c.html#L1666">(chown(sandbox_intern_string(address), pw->pw_uid, pw->pw_gid) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2831</td><td><a href="connection.c.html#L2831">(parse_http_response(headers, &status_code, &date_header, NULL, &reason) < 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">4558</td><td><a href="connection.c.html#L4558">(n_written && conn->type == CONN_TYPE_AP)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1348</td><td><a href="connection.c.html#L1348">(get_parent_directory(p) < 0 || p[0] != '/')</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3127</td><td><a href="connection.c.html#L3127">(conn->type != wanted->type)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">5699</td><td><a href="connection.c.html#L5699">(entry_conn->chosen_exit_optional || entry_conn->chosen_exit_retries)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1626</td><td><a href="connection.c.html#L1626">(unlink(address) < 0 && errno != ENOENT)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3444</td><td><a href="connection.c.html#L3444">(conn_bucket >= 0 && at_most > conn_bucket)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4108</td><td><a href="connection.c.html#L4108">((size_t)at_most > slack_in_buf && slack_in_buf >= 1024)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3233</td><td><a href="connection.c.html#L3233">(connection_is_listener(conn) && !conn->marked_for_close)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1184</td><td><a href="connection.c.html#L1184">(now - conn->timestamp_last_write_allowed >= 15)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">469</td><td><a href="connection.c.html#L469">(tor_addr_to_str(canonical_addr_buf, &or_conn->canonical_orport.addr, sizeof(canonical_addr_buf), 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1596</td><td><a href="connection.c.html#L1596">(getsockname(s, (struct sockaddr*)&ss, &ss_len) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3991</td><td><a href="connection.c.html#L3991">(connection_buf_read_from_socket(conn, &max_to_read, &socket_error) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1738</td><td><a href="connection.c.html#L1738">(port_cfg->entry_cfg.session_group >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2520</td><td><a href="connection.c.html#L2520">(state < PROXY_NONE || state > PROXY_CONNECTED)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3664</td><td><a href="connection.c.html#L3664">(num_written >= INT_MAX || num_read >= INT_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2227</td><td><a href="connection.c.html#L2227">(bindaddr && bind(s, bindaddr, bindaddr_len) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3681</td><td><a href="connection.c.html#L3681">(CONN_IS_EDGE(conn) && num_read > 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4019</td><td><a href="connection.c.html#L4019">(CONN_IS_EDGE(conn) && try_to_read != max_to_read)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4270</td><td><a href="connection.c.html#L4270">(n_written > 0 && connection_is_writing(conn))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4614</td><td><a href="connection.c.html#L4614">(n_read > 0 && connection_is_reading(conn))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2541</td><td><a href="connection.c.html#L2541">(r == 0 && transport)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3648</td><td><a href="connection.c.html#L3648">(now > last_recorded_accounting_at && last_recorded_accounting_at)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4260</td><td><a href="connection.c.html#L4260">(more_to_read && result == at_most)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1225</td><td><a href="connection.c.html#L1225">(strlcpy(sockaddr->sun_path, listenaddress, sizeof(sockaddr->sun_path)) >= sizeof(sockaddr->sun_path))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1368</td><td><a href="connection.c.html#L1368">(check_private_dir(p, flags, options->User) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1985</td><td><a href="connection.c.html#L1985">(check_sockaddr_family_match(remote->sa_family, conn) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3579</td><td><a href="connection.c.html#L3579">(nodelist_probably_contains_address(&conn->addr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">440</td><td><a href="connection.c.html#L440">(conn->socket_family == AF_UNIX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">443</td><td><a href="connection.c.html#L443">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="connection.c.html#L478">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">505</td><td><a href="connection.c.html#L505">(conn->port != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">848</td><td><a href="connection.c.html#L848">(conn->socket_family == AF_UNIX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">898</td><td><a href="connection.c.html#L898">(conn->type == CONN_TYPE_AP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">914</td><td><a href="connection.c.html#L914">(conn->type == CONN_TYPE_CONTROL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">933</td><td><a href="connection.c.html#L933">(conn->type == CONN_TYPE_DIR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">990</td><td><a href="connection.c.html#L990">(conn->type == CONN_TYPE_CONTROL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">995</td><td><a href="connection.c.html#L995">(conn->type == CONN_TYPE_AP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1003</td><td><a href="connection.c.html#L1003">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1095</td><td><a href="connection.c.html#L1095">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1144</td><td><a href="connection.c.html#L1144">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1555</td><td><a href="connection.c.html#L1555">(listensockaddr->sa_family == AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1608</td><td><a href="connection.c.html#L1608">(listensockaddr->sa_family == AF_UNIX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1710</td><td><a href="connection.c.html#L1710">(!getsockopt(s, SOL_SOCKET, SO_ACCEPTCONN, &value, &len))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1866</td><td><a href="connection.c.html#L1866">(sa->sa_family == AF_INET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1878</td><td><a href="connection.c.html#L1878">(sa->sa_family == AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1891</td><td><a href="connection.c.html#L1891">(sa->sa_family == AF_UNIX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1907</td><td><a href="connection.c.html#L1907">(got != listener->socket_family)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3328</td><td><a href="connection.c.html#L3328">(conn->type == CONN_TYPE_CONTROL_LISTENER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3473</td><td><a href="connection.c.html#L3473">(conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3484</td><td><a href="connection.c.html#L3484">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3528</td><td><a href="connection.c.html#L3528">(conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3630</td><td><a href="connection.c.html#L3630">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3640</td><td><a href="connection.c.html#L3640">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3893</td><td><a href="connection.c.html#L3893">(conn->read_blocked_on_bw == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3897</td><td><a href="connection.c.html#L3897">(conn->write_blocked_on_bw == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3993</td><td><a href="connection.c.html#L3993">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4235</td><td><a href="connection.c.html#L4235">(conn->type == CONN_TYPE_AP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4348</td><td><a href="connection.c.html#L4348">(!WSAIoctl(sock, SIO_IDEAL_SEND_BACKLOG_QUERY, NULL, 0, &isb, sizeof(isb), &bytesReturned, NULL, NULL))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4404</td><td><a href="connection.c.html#L4404">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4422</td><td><a href="connection.c.html#L4422">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4468</td><td><a href="connection.c.html#L4468">(conn->state == OR_CONN_STATE_TLS_SERVER_RENEGOTIATING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4545</td><td><a href="connection.c.html#L4545">(conn->type == CONN_TYPE_AP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4601</td><td><a href="connection.c.html#L4601">(!connection_wants_to_flush(conn) && !dont_stop_writing)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4690</td><td><a href="connection.c.html#L4690">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4766</td><td><a href="connection.c.html#L4766">(dir_conn->compress_state != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5205</td><td><a href="connection.c.html#L5205">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5353</td><td><a href="connection.c.html#L5353">(a->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5354</td><td><a href="connection.c.html#L5354">(b->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5462</td><td><a href="connection.c.html#L5462">(c->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5678</td><td><a href="connection.c.html#L5678">(conn->type == CONN_TYPE_OR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5680</td><td><a href="connection.c.html#L5680">(conn->state == OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5691</td><td><a href="connection.c.html#L5691">(conn->state > OR_CONN_STATE_PROXY_HANDSHAKING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5697</td><td><a href="connection.c.html#L5697">(conn->type == CONN_TYPE_AP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5703</td><td><a href="connection.c.html#L5703">(conn->state == AP_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5711</td><td><a href="connection.c.html#L5711">(conn->type == CONN_TYPE_EXIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5715</td><td><a href="connection.c.html#L5715">(conn->type == CONN_TYPE_DIR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1407</td><td><a href="connection.c.html#L1407">(setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, (void*)&one, (socklen_t)sizeof(one)) == -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1541</td><td><a href="connection.c.html#L1541">(setsockopt(s, SOL_IP, IP_TRANSPARENT, (void*)&one, (socklen_t)sizeof(one)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1559</td><td><a href="connection.c.html#L1559">(setsockopt(s, IPPROTO_IPV6, IPV6_V6ONLY, (void*)&one, (socklen_t)sizeof(one)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2006</td><td><a href="connection.c.html#L2006">(socks_policy_permits_address(&addr) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2016</td><td><a href="connection.c.html#L2016">(dir_policy_permits_address(&addr) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2026</td><td><a href="connection.c.html#L2026">(dos_conn_addr_get_defense_type(&addr) == DOS_CONN_DEFENSE_CLOSE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2476</td><td><a href="connection.c.html#L2476">(strlen(socket_path) + 1 > sizeof(dest_addr.sun_path))</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">3748</td><td><a href="connection.c.html#L3748">(token_bucket_rw_get_read(&global_bucket) <= 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3777</td><td><a href="connection.c.html#L3777">(token_bucket_rw_get_write(&global_bucket) <= 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4135</td><td><a href="connection.c.html#L4135">(TOR_TLS_IS_ERROR(result) || result == TOR_TLS_CLOSE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5085</td><td><a href="connection.c.html#L5085">(tor_addr_from_getsockname(&out_addr, sock) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5117</td><td><a href="connection.c.html#L5117">(get_interface_address6(LOG_INFO, family, &iface_addr) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5120</td><td><a href="connection.c.html#L5120">(tor_addr_eq(&iface_addr, *last_interface_ip_ptr))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1736</td><td><a href="connection.c.html#L1736">(port_cfg->entry_cfg.isolation_flags)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1810</td><td><a href="connection.c.html#L1810">(port->server_cfg.no_listen)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3133</td><td><a href="connection.c.html#L3133">(wanted->server_cfg.no_listen)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">5555</td><td><a href="connection.c.html#L5555">(moribund_socks < n_socks - target_n_socks)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">865</td><td><a href="connection.c.html#L865">(!SOCKET_OK(conn->s))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5400</td><td><a href="connection.c.html#L5400">(!(SOCKET_OK(c->s)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2083</td><td><a href="connection.c.html#L2083">(!newconn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5426</td><td><a href="connection.c.html#L5426">(conn_counts_by_type[i] > 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5705</td><td><a href="connection.c.html#L5705">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3169</td><td><a href="connection.c.html#L3169">(replacements && may_need_rebind)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3200</td><td><a href="connection.c.html#L3200">(conn && new_conns)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">447</td><td><a href="connection.c.html#L447">(fast_digest_is_zero(or_conn->identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">948</td><td><a href="connection.c.html#L948">(SOCKET_OK(conn->s))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">978</td><td><a href="connection.c.html#L978">(BUG(conn->linked_conn))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1076</td><td><a href="connection.c.html#L1076">(SOCKET_OK(conn->s))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">835</td><td><a href="connection.c.html#L835">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">864</td><td><a href="connection.c.html#L864">(or_conn->tls)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="connection.c.html#L881">(or_conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">902</td><td><a href="connection.c.html#L902">(entry_conn->socks_request)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">904</td><td><a href="connection.c.html#L904">(entry_conn->pending_optimistic_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">907</td><td><a href="connection.c.html#L907">(entry_conn->sending_optimistic_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="connection.c.html#L919">(control_conn->ephemeral_onion_services)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">941</td><td><a href="connection.c.html#L941">(dir_conn->guard_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="connection.c.html#L1079">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="connection.c.html#L1081">(conn->outbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="connection.c.html#L1136">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1182</td><td><a href="connection.c.html#L1182">(conn->hold_open_until_flushed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="connection.c.html#L1354">(port->is_world_writable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1360</td><td><a href="connection.c.html#L1360">(port->is_group_writable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1364</td><td><a href="connection.c.html#L1364">(port->relax_dirmode_check)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1656</td><td><a href="connection.c.html#L1656">(options->User)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1679</td><td><a href="connection.c.html#L1679">(port_cfg->is_world_writable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1682</td><td><a href="connection.c.html#L1682">(port_cfg->is_group_writable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1828</td><td><a href="connection.c.html#L1828">(port->is_unix_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1982</td><td><a href="connection.c.html#L1982">(options->ConstrainedSockets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2249</td><td><a href="connection.c.html#L2249">(options->ConstrainedSockets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="connection.c.html#L2535">(options->ClientTransportPlugin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="connection.c.html#L2546">(options->HTTPSProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2548</td><td><a href="connection.c.html#L2548">(options->Socks4Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2550</td><td><a href="connection.c.html#L2550">(options->Socks5Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2552</td><td><a href="connection.c.html#L2552">(options->TCPProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3136</td><td><a href="connection.c.html#L3136">(wanted->is_unix_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3326</td><td><a href="connection.c.html#L3326">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3340</td><td><a href="connection.c.html#L3340">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3353</td><td><a href="connection.c.html#L3353">(orconn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3381</td><td><a href="connection.c.html#L3381">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3695</td><td><a href="connection.c.html#L3695">(flags & TB_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3805</td><td><a href="connection.c.html#L3805">(options->RelayBandwidthRate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3827</td><td><a href="connection.c.html#L3827">(options->RelayBandwidthRate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3957</td><td><a href="connection.c.html#L3957">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4035</td><td><a href="connection.c.html#L4035">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4156</td><td><a href="connection.c.html#L4156">(conn->in_connection_handle_write)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4189</td><td><a href="connection.c.html#L4189">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4190</td><td><a href="connection.c.html#L4190">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4391</td><td><a href="connection.c.html#L4391">(conn->in_flushed_some)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4716</td><td><a href="connection.c.html#L4716">(conn->write_event)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5016</td><td><a href="connection.c.html#L5016">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5036</td><td><a href="connection.c.html#L5036">(conn->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5595</td><td><a href="connection.c.html#L5595">(c->inbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5599</td><td><a href="connection.c.html#L5599">(c->outbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5659</td><td><a href="connection.c.html#L5659">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5663</td><td><a href="connection.c.html#L5663">(conn->linked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5666</td><td><a href="connection.c.html#L5666">(conn->hold_open_until_flushed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5673</td><td><a href="connection.c.html#L5673">(conn->inbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5675</td><td><a href="connection.c.html#L5675">(conn->outbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5783</td><td><a href="connection.c.html#L5783">(options->ClientTransportPlugin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5800</td><td><a href="connection.c.html#L5800">(options->HTTPSProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5805</td><td><a href="connection.c.html#L5805">(options->Socks4Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5810</td><td><a href="connection.c.html#L5810">(options->Socks5Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5815</td><td><a href="connection.c.html#L5815">(options->TCPProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5100</td><td><a href="connection.c.html#L5100">(!*last_interface_ip_ptr)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1693</td><td><a href="connection.c.html#L1693">(chmod(sandbox_intern_string(address), mode) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2082</td><td><a href="connection.c.html#L2082">(connection_init_accepted_conn(newconn, TO_LISTENER_CONN(conn)) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3237</td><td><a href="connection.c.html#L3237">(retry_listener_ports(listeners, get_configured_ports(), new_conns, replacements, close_all_noncontrol) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">488</td><td><a href="connection.c.html#L488">(tor_addr_family(addr) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1274</td><td><a href="connection.c.html#L1274">(get_max_sockets() > 65535)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="connection.c.html#L1428">(setsockopt(sock, SOL_SOCKET, SO_EXCLUSIVEADDRUSE, (void*)&one, (socklen_t)sizeof(one)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1523</td><td><a href="connection.c.html#L1523">(make_socket_reuseable(s) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1530</td><td><a href="connection.c.html#L1530">(make_win32_socket_exclusive(s) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1569</td><td><a href="connection.c.html#L1569">(bind(s, listensockaddr, socklen) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1583</td><td><a href="connection.c.html#L1583">(tor_listen(s) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1648</td><td><a href="connection.c.html#L1648">(bind(s, listensockaddr, (socklen_t)sizeof(struct sockaddr_un)) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1699</td><td><a href="connection.c.html#L1699">(listen(s, SOMAXCONN) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1751</td><td><a href="connection.c.html#L1751">(connection_add(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1969</td><td><a href="connection.c.html#L1969">(make_socket_reuseable(news) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1970</td><td><a href="connection.c.html#L1970">(tor_socket_errno(news) == EINVAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1994</td><td><a href="connection.c.html#L1994">(check_sockaddr(remote, remotelen, LOG_INFO) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2077</td><td><a href="connection.c.html#L2077">(connection_add(newconn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2211</td><td><a href="connection.c.html#L2211">(ERRNO_IS_RESOURCE_LIMIT(*socket_error))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2222</td><td><a href="connection.c.html#L2222">(make_socket_reuseable(s) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2229</td><td><a href="connection.c.html#L2229">(ERRNO_IS_EADDRINUSE(*socket_error))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2252</td><td><a href="connection.c.html#L2252">(connect(s, sa, sa_len) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2274</td><td><a href="connection.c.html#L2274">(connection_add_connecting(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2639</td><td><a href="connection.c.html#L2639">(conn_get_proxy_type(conn) == PROXY_PLUGGABLE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2970</td><td><a href="connection.c.html#L2970">(conn_get_proxy_type(conn) == PROXY_PLUGGABLE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2983</td><td><a href="connection.c.html#L2983">(strlen(socks_args_string) > MAX_SOCKS5_AUTH_FIELD_SIZE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3934</td><td><a href="connection.c.html#L3934">(BUG(reenable_blocked_connections_ev == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4021</td><td><a href="connection.c.html#L4021">(connection_process_inbuf(conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4048</td><td><a href="connection.c.html#L4048">(connection_flushed_some(linked) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4180</td><td><a href="connection.c.html#L4180">(BUG(r2 < 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4439</td><td><a href="connection.c.html#L4439">(connection_finished_connecting(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4453</td><td><a href="connection.c.html#L4453">(connection_tls_continue_handshake(or_conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4585</td><td><a href="connection.c.html#L4585">(connection_flushed_some(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4603</td><td><a href="connection.c.html#L4603">(connection_finished_flushing(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5063</td><td><a href="connection.c.html#L5063">(base64_encode(base64_authenticator, base64_authenticator_length, authenticator, authenticator_length, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5102</td><td><a href="connection.c.html#L5102">(get_interface_address6(LOG_INFO, family, a) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5150</td><td><a href="connection.c.html#L5150">(setsockopt(sock, SOL_SOCKET, SO_SNDBUF, sz, sz_sz) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5155</td><td><a href="connection.c.html#L5155">(setsockopt(sock, SOL_SOCKET, SO_RCVBUF, sz, sz_sz) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5421</td><td><a href="connection.c.html#L5421">(smartlist_len(conns) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5436</td><td><a href="connection.c.html#L5436">(smartlist_len(eligible) > n)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5614</td><td><a href="connection.c.html#L5614">(!n_conns_by_type[i])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="connection.c.html#L310">(state == LISTENER_STATE_READY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">380</td><td><a href="connection.c.html#L380">(state == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="connection.c.html#L487">(address == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">589</td><td><a href="connection.c.html#L589">(type == CONN_TYPE_EXT_OR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="connection.c.html#L614">(socket_family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="connection.c.html#L616">(socket_family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="connection.c.html#L1450">(listen_limit == SOMAXCONN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1545</td><td><a href="connection.c.html#L1545">(e == EPERM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1590</td><td><a href="connection.c.html#L1590">(usePort != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1659</td><td><a href="connection.c.html#L1659">(pw == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1711</td><td><a href="connection.c.html#L1711">(value == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1868</td><td><a href="connection.c.html#L1868">(len != sizeof(struct sockaddr_in))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1880</td><td><a href="connection.c.html#L1880">(len != sizeof(struct sockaddr_in6))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2004</td><td><a href="connection.c.html#L2004">(new_type == CONN_TYPE_AP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2014</td><td><a href="connection.c.html#L2014">(new_type == CONN_TYPE_DIR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2023</td><td><a href="connection.c.html#L2023">(new_type == CONN_TYPE_OR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2052</td><td><a href="connection.c.html#L2052">(new_type == CONN_TYPE_CONTROL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="connection.c.html#L2056">(new_type == CONN_TYPE_METRICS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2117</td><td><a href="connection.c.html#L2117">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2375</td><td><a href="connection.c.html#L2375">(conn_type == CONN_TYPE_EXIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2436</td><td><a href="connection.c.html#L2436">(bind_addr_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2740</td><td><a href="connection.c.html#L2740">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2798</td><td><a href="connection.c.html#L2798">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2842</td><td><a href="connection.c.html#L2842">(status_code == 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2932</td><td><a href="connection.c.html#L2932">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2940</td><td><a href="connection.c.html#L2940">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2949</td><td><a href="connection.c.html#L2949">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2961</td><td><a href="connection.c.html#L2961">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2964</td><td><a href="connection.c.html#L2964">(ret == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3034</td><td><a href="connection.c.html#L3034">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3044</td><td><a href="connection.c.html#L3044">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3059</td><td><a href="connection.c.html#L3059">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3068</td><td><a href="connection.c.html#L3068">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3436</td><td><a href="connection.c.html#L3436">(at_most > num_bytes_high)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3438</td><td><a href="connection.c.html#L3438">(at_most < num_bytes_low)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3441</td><td><a href="connection.c.html#L3441">(at_most > global_bucket_val)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3447</td><td><a href="connection.c.html#L3447">(at_most < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3460</td><td><a href="connection.c.html#L3460">(global_bucket_val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3514</td><td><a href="connection.c.html#L3514">(global_bucket_val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3587</td><td><a href="connection.c.html#L3587">(smaller_bucket < attempt)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3592</td><td><a href="connection.c.html#L3592">(diff <= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3611</td><td><a href="connection.c.html#L3611">(num_read > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3613</td><td><a href="connection.c.html#L3613">(num_written > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3634</td><td><a href="connection.c.html#L3634">(num_read > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3637</td><td><a href="connection.c.html#L3637">(num_written > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3671</td><td><a href="connection.c.html#L3671">(num_written >= INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3673</td><td><a href="connection.c.html#L3673">(num_read >= INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3854</td><td><a href="connection.c.html#L3854">(now_ts != last_refilled_global_buckets_ts)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4095</td><td><a href="connection.c.html#L4095">(at_most == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4102</td><td><a href="connection.c.html#L4102">(at_most > maximum)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4217</td><td><a href="connection.c.html#L4217">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4222</td><td><a href="connection.c.html#L4222">(n_read > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4334</td><td><a href="connection.c.html#L4334">(isVistaOr7 == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4477</td><td><a href="connection.c.html#L4477">(result >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4542</td><td><a href="connection.c.html#L4542">(result < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4582</td><td><a href="connection.c.html#L4582">(result > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4750</td><td><a href="connection.c.html#L4750">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4792</td><td><a href="connection.c.html#L4792">(len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4979</td><td><a href="connection.c.html#L4979">(conn != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5093</td><td><a href="connection.c.html#L5093">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5095</td><td><a href="connection.c.html#L5095">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5322</td><td><a href="connection.c.html#L5322">(a_circs < b_circs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5323</td><td><a href="connection.c.html#L5323">(a_circs > b_circs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5424</td><td><a href="connection.c.html#L5424">(i <= CONN_TYPE_MAX_)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5441</td><td><a href="connection.c.html#L5441">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5544</td><td><a href="connection.c.html#L5544">(target_n_socks > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5604</td><td><a href="connection.c.html#L5604">(i <= CONN_TYPE_MAX_)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5613</td><td><a href="connection.c.html#L5613">(i <= CONN_TYPE_MAX_)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5787</td><td><a href="connection.c.html#L5787">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5266</td><td><a href="connection.c.html#L5266">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="connection.c.html#L744">(!connection_is_listener(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">844</td><td><a href="connection.c.html#L844">(!connection_is_listener(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">890</td><td><a href="connection.c.html#L890">(!CHANNEL_FINISHED(base_chan))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1507</td><td><a href="connection.c.html#L1507">(!SOCKET_OK(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1633</td><td><a href="connection.c.html#L1633">(!SOCKET_OK(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1938</td><td><a href="connection.c.html#L1938">(!SOCKET_OK(news))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2205</td><td><a href="connection.c.html#L2205">(!SOCKET_OK(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2254</td><td><a href="connection.c.html#L2254">(!ERRNO_IS_CONN_EINPROGRESS(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2427</td><td><a href="connection.c.html#L2427">(!tor_addr_is_loopback(addr))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3491</td><td><a href="connection.c.html#L3491">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3520</td><td><a href="connection.c.html#L3520">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3572</td><td><a href="connection.c.html#L3572">(!dirauth_should_reject_requests_under_load())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3584</td><td><a href="connection.c.html#L3584">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3626</td><td><a href="connection.c.html#L3626">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3686</td><td><a href="connection.c.html#L3686">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3746</td><td><a href="connection.c.html#L3746">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3773</td><td><a href="connection.c.html#L3773">(!connection_is_rate_limited(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4050</td><td><a href="connection.c.html#L4050">(!connection_wants_to_flush(linked))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4164</td><td><a href="connection.c.html#L4164">(!connection_is_reading(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4417</td><td><a href="connection.c.html#L4417">(!ERRNO_IS_CONN_EINPROGRESS(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4513</td><td><a href="connection.c.html#L4513">(!connection_is_reading(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4738</td><td><a href="connection.c.html#L4738">(!connection_may_write_to_buf(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4795</td><td><a href="connection.c.html#L4795">(!connection_may_write_to_buf(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">492</td><td><a href="connection.c.html#L492">(!address)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">511</td><td><a href="connection.c.html#L511">(!include_preposition)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">793</td><td><a href="connection.c.html#L793">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">974</td><td><a href="connection.c.html#L974">(!conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2318</td><td><a href="connection.c.html#L2318">(!logged_backtrace)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2587</td><td><a href="connection.c.html#L2587">(!base64_authenticator)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2840</td><td><a href="connection.c.html#L2840">(!reason)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2973</td><td><a href="connection.c.html#L2973">(!socks_args_string)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3202</td><td><a href="connection.c.html#L3202">(!skip)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3276</td><td><a href="connection.c.html#L3276">(!new_conn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3913</td><td><a href="connection.c.html#L3913">(!reenable_blocked_connections_ev)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4342</td><td><a href="connection.c.html#L4342">(!isVistaOr7)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5082</td><td><a href="connection.c.html#L5082">(!outgoing_addrs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3570</td><td><a href="connection.c.html#L3570">(authdir_mode_v3(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">3647</td><td><a href="connection.c.html#L3647">(accounting_is_enabled(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">480</td><td><a href="connection.c.html#L480">(tor_addr_is_null(addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="connection.c.html#L862">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">911</td><td><a href="connection.c.html#L911">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="connection.c.html#L985">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1058</td><td><a href="connection.c.html#L1058">(CONN_IS_CLOSED(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="connection.c.html#L1063">(connection_get_outbuf_len(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1509</td><td><a href="connection.c.html#L1509">(ERRNO_IS_RESOURCE_LIMIT(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1572</td><td><a href="connection.c.html#L1572">(ERRNO_IS_EADDRINUSE(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1635</td><td><a href="connection.c.html#L1635">(ERRNO_IS_RESOURCE_LIMIT(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1779</td><td><a href="connection.c.html#L1779">(SOCKET_OK(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="connection.c.html#L1940">(ERRNO_IS_ACCEPT_EAGAIN(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1948</td><td><a href="connection.c.html#L1948">(ERRNO_IS_RESOURCE_LIMIT(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2185</td><td><a href="connection.c.html#L2185">(net_is_completely_disabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2331</td><td><a href="connection.c.html#L2331">(reachable_addr_use_ipv6(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3245</td><td><a href="connection.c.html#L3245">(smartlist_len(replacements))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3330</td><td><a href="connection.c.html#L3330">(connection_is_listener(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3471</td><td><a href="connection.c.html#L3471">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3481</td><td><a href="connection.c.html#L3481">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3496</td><td><a href="connection.c.html#L3496">(connection_counts_as_relayed_traffic(conn, now))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3525</td><td><a href="connection.c.html#L3525">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3534</td><td><a href="connection.c.html#L3534">(connection_counts_as_relayed_traffic(conn, now))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3690</td><td><a href="connection.c.html#L3690">(connection_counts_as_relayed_traffic(conn, now))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3865</td><td><a href="connection.c.html#L3865">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4002</td><td><a href="connection.c.html#L4002">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4401</td><td><a href="connection.c.html#L4401">(connection_state_is_connecting(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4408</td><td><a href="connection.c.html#L4408">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4420</td><td><a href="connection.c.html#L4420">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4543</td><td><a href="connection.c.html#L4543">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4586</td><td><a href="connection.c.html#L4586">(connection_speaks_cells(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4620</td><td><a href="connection.c.html#L4620">(conn_uses_flow_control(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4683</td><td><a href="connection.c.html#L4683">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5207</td><td><a href="connection.c.html#L5207">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5227</td><td><a href="connection.c.html#L5227">(CONN_IS_CLOSED(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5405</td><td><a href="connection.c.html#L5405">(connection_is_moribund(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5695</td><td><a href="connection.c.html#L5695">(CONN_IS_EDGE(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">455</td><td><a href="connection.c.html#L455">(ed_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1233</td><td><a href="connection.c.html#L1233">(readable_address)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1491</td><td><a href="connection.c.html#L1491">(addr_in_use)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1497</td><td><a href="connection.c.html#L1497">(is_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1574</td><td><a href="connection.c.html#L1574">(addr_in_use)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1582</td><td><a href="connection.c.html#L1582">(is_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1761</td><td><a href="connection.c.html#L1761">(start_reading)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1781</td><td><a href="connection.c.html#L1781">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1807</td><td><a href="connection.c.html#L1807">(defer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1811</td><td><a href="connection.c.html#L1811">(defer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1822</td><td><a href="connection.c.html#L1822">(defer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1841</td><td><a href="connection.c.html#L1841">(listensockaddr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2431</td><td><a href="connection.c.html#L2431">(ext_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2585</td><td><a href="connection.c.html#L2585">(authenticator)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2591</td><td><a href="connection.c.html#L2591">(base64_authenticator)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2642</td><td><a href="connection.c.html#L2642">(socks_args_string)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2654</td><td><a href="connection.c.html#L2654">(socks_args_string)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2671</td><td><a href="connection.c.html#L2671">(socks_args_string)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3019</td><td><a href="connection.c.html#L3019">(socks_args_string)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3060</td><td><a href="connection.c.html#L3060">(reason)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3106</td><td><a href="connection.c.html#L3106">(control_listeners_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3185</td><td><a href="connection.c.html#L3185">(found_port)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3260</td><td><a href="connection.c.html#L3260">(skip)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3269</td><td><a href="connection.c.html#L3269">(addr_in_use)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3932</td><td><a href="connection.c.html#L3932">(reenable_blocked_connections_is_scheduled)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4040</td><td><a href="connection.c.html#L4040">(n_read)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4175</td><td><a href="connection.c.html#L4175">(pending)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4212</td><td><a href="connection.c.html#L4212">(reached_eof)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4415</td><td><a href="connection.c.html#L4415">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4741</td><td><a href="connection.c.html#L4741">(zlib)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5531</td><td><a href="connection.c.html#L5531">(failed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5559</td><td><a href="connection.c.html#L5559">(conns)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5789</td><td><a href="connection.c.html#L5789">(transport)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5894</td><td><a href="connection.c.html#L5894">(outgoing_addrs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5922</td><td><a href="connection.c.html#L5922">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5935</td><td><a href="connection.c.html#L5935">(trusted)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

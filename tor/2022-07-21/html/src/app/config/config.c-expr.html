@@ -1,0 +1,792 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\app\config\config.c Ctrl Expressions (741) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\app\config\config.c Ctrl Expressions (741) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\app\config\config.c Ctrl Expressions (741)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">3499</td><td><a href="config.c.html#L3499">((<span style='background-color:#741da3;'>options->ReachableAddresses || options->ReachableORAddresses || options->ReachableDirAddresses || options->ClientUseIPv4 == 0</span>) && server_mode(options))</a></td><td class="num">1037.75</td></tr>
+      <tr><td class="num line">4879</td><td><a href="config.c.html#L4879">(<span style='background-color:#741da3;'>1000 % options->LogTimeGranularity != 0</span> && options->LogTimeGranularity % 1000 != 0)</a></td><td class="num">1033.70</td></tr>
+      <tr><td class="num line">6407</td><td><a href="config.c.html#L6407">(<span style='background-color:#741da3;'>cfg->entry_cfg.ipv4_traffic == 0 && cfg->entry_cfg.ipv6_traffic == 0 && cfg->entry_cfg.onion_traffic == 0 && listener_type != CONN_TYPE_AP_DNS_LISTENER</span>)</a></td><td class="num">1031.25</td></tr>
+      <tr><td class="num line">6415</td><td><a href="config.c.html#L6415">(<span style='background-color:#741da3;'>cfg->entry_cfg.dns_request == 1 && cfg->entry_cfg.ipv4_traffic == 0 && cfg->entry_cfg.ipv6_traffic == 0 && listener_type != CONN_TYPE_AP_DNS_LISTENER</span>)</a></td><td class="num">1031.25</td></tr>
+      <tr><td class="num line">6550</td><td><a href="config.c.html#L6550">(port_parse_config(ports, options->SocksPort_lines, "Socks", CONN_TYPE_AP_LISTENER, "127.0.0.1", 9050, (<span style='background-color:#741da3;'>(validate_only ? 0 : CL_PORT_WARN_NONLOCAL) | CL_PORT_TAKES_HOSTNAMES | gw_flag</span>)) < 0)</a></td><td class="num">1029.00</td></tr>
+      <tr><td class="num line">6583</td><td><a href="config.c.html#L6583">(port_parse_config(ports, options->HTTPTunnelPort_lines, "HTTP Tunnel", CONN_TYPE_AP_HTTP_CONNECT_LISTENER, "127.0.0.1", 0, (<span style='background-color:#741da3;'>(validate_only ? 0 : CL_PORT_WARN_NONLOCAL) | CL_PORT_TAKES_HOSTNAMES | gw_flag</span>)) < 0)</a></td><td class="num">1029.00</td></tr>
+      <tr><td class="num line">3921</td><td><a href="config.c.html#L3921">(<span style='background-color:#741da3;'>options->ConstrainedSockSize < MIN_CONSTRAINED_TCP_BUFFER || options->ConstrainedSockSize > MAX_CONSTRAINED_TCP_BUFFER || options->ConstrainedSockSize % 1024</span>)</a></td><td class="num">1019.85</td></tr>
+      <tr><td class="num line">3634</td><td><a href="config.c.html#L3634">(<span style='background-color:#741da3;'>!options->LearnCircuitBuildTimeout && options->CircuitBuildTimeout && options->CircuitBuildTimeout < RECOMMENDED_MIN_CIRCUIT_BUILD_TIMEOUT</span>)</a></td><td class="num">1019.00</td></tr>
+      <tr><td class="num line">3611</td><td><a href="config.c.html#L3611">(<span style='background-color:#741da3;'>options->EntryNodes && routerset_is_list(options->EntryNodes) && (options->RendConfigLines != NULL)</span>)</a></td><td class="num">1018.50</td></tr>
+      <tr><td class="num line">3579</td><td><a href="config.c.html#L3579">(<span style='background-color:#741da3;'>!(options->UseEntryGuards) && (options->RendConfigLines != NULL) && !hs_service_allow_non_anonymous_connection(options)</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">6832</td><td><a href="config.c.html#L6832">(<span style='background-color:#741da3;'>cfg->port == port || (check_wildcard && port == -1)</span>)</a></td><td class="num">1013.75</td></tr>
+      <tr><td class="num line">4930</td><td><a href="config.c.html#L4930">(<span style='background-color:#741da3;'>options->Logs == NULL && !run_as_daemon && !validate_only</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">5696</td><td><a href="config.c.html#L5696">(<span style='background-color:#741da3;'>!validate_only && (!required_type || required_type & type)</span>)</a></td><td class="num">1010.75</td></tr>
+      <tr><td class="num line">2296</td><td><a href="config.c.html#L2296">(<span style='background-color:#9c4c02;'>(options->UseEntryGuards && !old_options->UseEntryGuards) || options->UseBridges != old_options->UseBridges || (options->UseBridges && !config_lines_eq(options->Bridges, old_options->Bridges)) || !routerset_equal(old_options->ExcludeNodes, options->ExcludeNodes) || !routerset_equal(old_options->ExcludeExitNodes, options->ExcludeExitNodes) || !routerset_equal(old_options->EntryNodes, options->EntryNodes) || !routerset_equal(old_options->ExitNodes, options->ExitNodes) || !routerset_equal(old_options->HSLayer2Nodes, options->HSLayer2Nodes) || !routerset_equal(old_options->HSLayer3Nodes, options->HSLayer3Nodes) || !routerset_equal(old_options->MiddleNodes, options->MiddleNodes) || options->StrictNodes != old_options->StrictNodes</span>)</a></td><td class="num">129.75</td></tr>
+      <tr><td class="num line">1236</td><td><a href="config.c.html#L1236">(<span style='background-color:#9c4c02;'>(options->DirAuthorities && (!old_options || !config_lines_eq(options->DirAuthorities, old_options->DirAuthorities))) || (options->AlternateDirAuthority && (!old_options || !config_lines_eq(options->AlternateDirAuthority, old_options->AlternateDirAuthority)))</span>)</a></td><td class="num">112.00</td></tr>
+      <tr><td class="num line">2543</td><td><a href="config.c.html#L2543">(!strcmp(argv[i], CMDLINE_ONLY_OPTIONS[j].name) || (CMDLINE_ONLY_OPTIONS[j].short_name && !strcmp(argv[i], CMDLINE_ONLY_OPTIONS[j].short_name)))</a></td><td class="num">83.75</td></tr>
+      <tr><td class="num line">5630</td><td><a href="config.c.html#L5630">(tor_addr_port_parse(LOG_WARN, flag + strlen("ipv6="), &ipv6_addrport.addr, &ipv6_addrport.port, -1) < 0 || tor_addr_family(&ipv6_addrport.addr) != AF_INET6)</a></td><td class="num">68.35</td></tr>
+      <tr><td class="num line">5772</td><td><a href="config.c.html#L5772">(tor_addr_port_parse(LOG_WARN, cp + strlen("ipv6="), &ipv6_addrport.addr, &ipv6_addrport.port, -1) < 0 || tor_addr_family(&ipv6_addrport.addr) != AF_INET6)</a></td><td class="num">68.35</td></tr>
+      <tr><td class="num line">7423</td><td><a href="config.c.html#L7423">(options->GeoIPFile && ((!old_options || !opt_streq(old_options->GeoIPFile, options->GeoIPFile)) || !geoip_is_loaded(AF_INET)))</a></td><td class="num">66.50</td></tr>
+      <tr><td class="num line">7433</td><td><a href="config.c.html#L7433">(options->GeoIPv6File && ((!old_options || !opt_streq(old_options->GeoIPv6File, options->GeoIPv6File)) || !geoip_is_loaded(AF_INET6)))</a></td><td class="num">66.50</td></tr>
+      <tr><td class="num line">2588</td><td><a href="config.c.html#L2588">(want_arg == ARGUMENT_OPTIONAL && (is_last || argv[i + 1][0] == '-'))</a></td><td class="num">62.10</td></tr>
+      <tr><td class="num line">4351</td><td><a href="config.c.html#L4351">((ignore_opt && !strcmp(p_index->key, ignore_opt)) || (keygen_opt && !strcmp(p_index->key, keygen_opt)))</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">3998</td><td><a href="config.c.html#L3998">(!options->ClientDNSRejectInternalAddresses && !(options->DirAuthorities || (options->AlternateDirAuthority && options->AlternateBridgeAuthority)))</a></td><td class="num">54.75</td></tr>
+      <tr><td class="num line">3796</td><td><a href="config.c.html#L3796">(!!options->Socks4Proxy + !!options->Socks5Proxy + !!options->HTTPSProxy + !!options->TCPProxy > 1)</a></td><td class="num">54.00</td></tr>
+      <tr><td class="num line">3950</td><td><a href="config.c.html#L3950">(options->TestingTorNetwork && !(options->DirAuthorities || (options->AlternateDirAuthority && options->AlternateBridgeAuthority)))</a></td><td class="num">54.00</td></tr>
+      <tr><td class="num line">6730</td><td><a href="config.c.html#L6730">(cfg->type == listener_type && tor_addr_family(&cfg->addr) != AF_UNSPEC)</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">5974</td><td><a href="config.c.html#L5974">(!*rest_out || (*addrport_out && sz != strlen(*addrport_out)))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">7257</td><td><a href="config.c.html#L7257">(fallback_lines_seen == 0 && get_options()->UseDefaultFallbackDirs == 1)</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">7155</td><td><a href="config.c.html#L7155">(check_private_dir(statsdir, CPD_CREATE, get_options()->User) < 0)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">4952</td><td><a href="config.c.html#L4952">(smartlist_len(elts) == 1 && (!strcasecmp(smartlist_get(elts, 0), "stdout") || !strcasecmp(smartlist_get(elts, 0), "stderr")))</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">3802</td><td><a href="config.c.html#L3802">(options->HTTPProxy && !(options->Socks4Proxy || options->Socks5Proxy || options->HTTPSProxy || options->TCPProxy))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">3594</td><td><a href="config.c.html#L3594">(options->EntryNodes && routerset_is_list(options->EntryNodes) && (routerset_len(options->EntryNodes) == 1) && (options->RendConfigLines != NULL))</a></td><td class="num">38.00</td></tr>
+      <tr><td class="num line">4427</td><td><a href="config.c.html#L4427">(fname == NULL || !(st == FN_FILE || st == FN_EMPTY) || !(cf = read_file_to_str(fname, 0, NULL)))</a></td><td class="num">37.00</td></tr>
+      <tr><td class="num line">3741</td><td><a href="config.c.html#L3741">(tor_addr_port_lookup(options->HTTPProxy, &options->HTTPProxyAddr, &options->HTTPProxyPort) < 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">3755</td><td><a href="config.c.html#L3755">(tor_addr_port_lookup(options->HTTPSProxy, &options->HTTPSProxyAddr, &options->HTTPSProxyPort) < 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">3769</td><td><a href="config.c.html#L3769">(tor_addr_port_lookup(options->Socks4Proxy, &options->Socks4ProxyAddr, &options->Socks4ProxyPort) < 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">3779</td><td><a href="config.c.html#L3779">(tor_addr_port_lookup(options->Socks5Proxy, &options->Socks5ProxyAddr, &options->Socks5ProxyPort) < 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">2346</td><td><a href="config.c.html#L2346">(!opt_streq(old_options->VirtualAddrNetworkIPv4, options->VirtualAddrNetworkIPv4) || !opt_streq(old_options->VirtualAddrNetworkIPv6, options->VirtualAddrNetworkIPv6))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">6430</td><td><a href="config.c.html#L6430">(!(cfg->entry_cfg.isolation_flags & ISO_SOCKSAUTH) && cfg->entry_cfg.socks_iso_keep_alive)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">5139</td><td><a href="config.c.html#L5139">(tor_addr_port_parse(LOG_INFO, addrport, &bridge_line->addr, &bridge_line->port, 443) < 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">5256</td><td><a href="config.c.html#L5256">(tor_addr_port_lookup(addrport_string, &options->TCPProxyAddr, &options->TCPProxyPort) < 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">5813</td><td><a href="config.c.html#L5813">(tor_addr_port_split(LOG_INFO, smartlist_get(positional, 0), &address, &dirport) < 0 || tor_addr_parse(&addr, address) < 0)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">3148</td><td><a href="config.c.html#L3148">(!options->Schedulers || smartlist_len(options->Schedulers) == 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2407</td><td><a href="config.c.html#L2407">(!bool_eq(dirclient_fetches_dir_info_early(options), dirclient_fetches_dir_info_early(old_options)) || !bool_eq(dirclient_fetches_dir_info_later(options), dirclient_fetches_dir_info_later(old_options)) || !config_lines_eq(old_options->Bridges, options->Bridges))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">6228</td><td><a href="config.c.html#L6228">(cfg->server_cfg.bind_ipv4_only && tor_addr_family(&addr) != AF_INET)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">6239</td><td><a href="config.c.html#L6239">(cfg->server_cfg.bind_ipv6_only && tor_addr_family(&addr) != AF_INET6)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1617</td><td><a href="config.c.html#L1617">(set_max_file_descriptors((unsigned)options->ConnLimit, &options->ConnLimit_) < 0)</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">3529</td><td><a href="config.c.html#L3529">(!options->SafeLogging || !strcasecmp(options->SafeLogging, "0"))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">3859</td><td><a href="config.c.html#L3859">((options->ControlPort_set || world_writable_control_socket) && !options->HashedControlPassword && !options->HashedControlSessionPassword && !options->CookieAuthentication)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="config.c.html#L1120">(get_options()->SafeLogging_ == SAFELOG_SCRUB_ALL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1132</td><td><a href="config.c.html#L1132">(get_options()->SafeLogging_ != SAFELOG_SCRUB_NONE)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2674</td><td><a href="config.c.html#L2674">((r = config_assign(get_options_mgr(), trial_options, list, flags, msg)) < 0)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2839</td><td><a href="config.c.html#L2839">(get_options()->keygen_force_passphrase == FORCE_PASSPHRASE_OFF)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">4334</td><td><a href="config.c.html#L4334">(!strcmp(p_index->key, fname_opt) || !strcmp(p_index->key, fname_long_opt))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">6156</td><td><a href="config.c.html#L6156">(tor_addr_port_lookup(addrtmp, &addr, &ptmp) < 0 || ptmp)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">3721</td><td><a href="config.c.html#L3721">(config_ensure_bandwidth_cap(&options->BandwidthRate, "BandwidthRate", msg) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3724</td><td><a href="config.c.html#L3724">(config_ensure_bandwidth_cap(&options->BandwidthBurst, "BandwidthBurst", msg) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">5886</td><td><a href="config.c.html#L5886">(!tor_addr_is_internal(&port->addr, 1))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">5892</td><td><a href="config.c.html#L5892">(!tor_addr_is_loopback(&port->addr))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">5915</td><td><a href="config.c.html#L5915">(!tor_addr_is_loopback(&port->addr))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">974</td><td><a href="config.c.html#L974">(subsystems_set_options(get_options_mgr(), new_val) < 0 || options_act(old_options) < 0)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">4998</td><td><a href="config.c.html#L4998">(smartlist_len(elts) == 2 && !strcasecmp(smartlist_get(elts, 0), "file"))</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">5421</td><td><a href="config.c.html#L5421">(!server && (options->Socks4Proxy || options->Socks5Proxy || options->HTTPSProxy || options->TCPProxy))</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">3589</td><td><a href="config.c.html#L3589">(options->NumPrimaryGuards && options->NumEntryGuards && options->NumEntryGuards > options->NumPrimaryGuards)</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">2365</td><td><a href="config.c.html#L2365">(options->BandwidthRate != old_options->BandwidthRate || options->BandwidthBurst != old_options->BandwidthBurst)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">4246</td><td><a href="config.c.html#L4246">(!SUCCEEDED(SHGetSpecialFolderLocation(NULL, APPDATA_PATH, &idl)))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">3710</td><td><a href="config.c.html#L3710">(options->HeartbeatPeriod && options->HeartbeatPeriod < MIN_HEARTBEAT_PERIOD && !options->TestingTorNetwork)</a></td><td class="num">19.00</td></tr>
+      <tr><td class="num line">4029</td><td><a href="config.c.html#L4029">(options->TestingEnableConnBwEvent && !options->TestingTorNetwork && !options->UsingTestNetworkDefaults_)</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">4035</td><td><a href="config.c.html#L4035">(options->TestingEnableCellStatsEvent && !options->TestingTorNetwork && !options->UsingTestNetworkDefaults_)</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">1228</td><td><a href="config.c.html#L1228">(options->DirAuthorities && (options->AlternateDirAuthority || options->AlternateBridgeAuthority))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">6779</td><td><a href="config.c.html#L6779">((address_family == AF_INET && port_binds_ipv4(cfg)) || (address_family == AF_INET6 && port_binds_ipv6(cfg)))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">6778</td><td><a href="config.c.html#L6778">(cfg->type == listener_type && !cfg->server_cfg.no_advertise)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">3370</td><td><a href="config.c.html#L3370">(options->TokenBucketRefillInterval <= 0 || options->TokenBucketRefillInterval > 1000)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3429</td><td><a href="config.c.html#L3429">(options->MaxClientCircuitsPending <= 0 || options->MaxClientCircuitsPending > MAX_MAX_CLIENT_CIRCUITS_PENDING)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3656</td><td><a href="config.c.html#L3656">(options->DormantClientTimeout < 10 * 60 && !options->TestingTorNetwork)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">6215</td><td><a href="config.c.html#L6215">(cfg->server_cfg.no_advertise && cfg->server_cfg.no_listen)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">6221</td><td><a href="config.c.html#L6221">(cfg->server_cfg.bind_ipv4_only && cfg->server_cfg.bind_ipv6_only)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">6401</td><td><a href="config.c.html#L6401">(cfg->entry_cfg.dns_request == 0 && listener_type == CONN_TYPE_AP_DNS_LISTENER)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">7292</td><td><a href="config.c.html#L7292">(type >= OUTBOUND_ADDR_MAX || (family != AF_INET && family != AF_INET6))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1666</td><td><a href="config.c.html#L1666">(options->TransPort_set && options->TransProxyType_parsed == TPT_DEFAULT)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2148</td><td><a href="config.c.html#L2148">(running_tor && !old_options && options->OwningControllerFD != UINT64_MAX)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3375</td><td><a href="config.c.html#L3375">(options->AssumeReachable && options->AssumeReachableIPv6 == 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3703</td><td><a href="config.c.html#L3703">(options->CircuitStreamTimeout && options->CircuitStreamTimeout < MIN_CIRCUIT_STREAM_TIMEOUT)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">6109</td><td><a href="config.c.html#L6109">(port_cfg_line_extract_addrport(ports->value, &addrport, &is_unix_tagged_addr, &rest_of_line) < 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1535</td><td><a href="config.c.html#L1535">(check_and_create_data_directory(running_tor, options->DataDirectory, options->DataDirectoryGroupReadable, options->User, msg_out) < 0)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">3643</td><td><a href="config.c.html#L3643">(!options->LearnCircuitBuildTimeout && !options->CircuitBuildTimeout)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3971</td><td><a href="config.c.html#L3971">(!options->TestingTorNetwork && !options->UsingTestNetworkDefaults_)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">6437</td><td><a href="config.c.html#L6437">(unix_socket_path && (cfg->entry_cfg.isolation_flags & ISO_CLIENTADDR))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3360</td><td><a href="config.c.html#L3360">(strcasecmp(options->TransProxyType, "default") && !options->TransPort_set)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="config.c.html#L1314">(!options->FallbackDir && options->UseDefaultFallbackDirs)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2339</td><td><a href="config.c.html#L2339">(!options->AutomapHostsOnResolve && old_options->AutomapHostsOnResolve)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3203</td><td><a href="config.c.html#L3203">(options->HiddenServiceSingleHopMode && !options->HiddenServiceNonAnonymousMode)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3208</td><td><a href="config.c.html#L3208">(options->HiddenServiceNonAnonymousMode && !options->HiddenServiceSingleHopMode)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3280</td><td><a href="config.c.html#L3280">(options->ControlSocketsGroupWritable && !options->ControlSocket)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3406</td><td><a href="config.c.html#L3406">(options->FetchDirInfoExtraEarly && !options->FetchDirInfoEarly)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3452</td><td><a href="config.c.html#L3452">(options->FascistFirewall && !options->ReachableAddresses)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3521</td><td><a href="config.c.html#L3521">(options->UseBridges && !options->UseEntryGuards)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3575</td><td><a href="config.c.html#L3575">(options->EntryNodes && !options->UseEntryGuards)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3871</td><td><a href="config.c.html#L3871">(options->CookieAuthFileGroupReadable && !options->CookieAuthFile)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3900</td><td><a href="config.c.html#L3900">(options->UseBridges && !options->Bridges)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3453</td><td><a href="config.c.html#L3453">(options->FirewallPorts && smartlist_len(options->FirewallPorts))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">4361</td><td><a href="config.c.html#L4361">(dflt && (st == FN_FILE || st == FN_EMPTY))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1735</td><td><a href="config.c.html#L1735">(xn->set_conn_limit && xn->old_conn_limit)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2064</td><td><a href="config.c.html#L2064">(options->DisableDebuggerAttachment && !disabled_debugger_attach && running_tor)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3397</td><td><a href="config.c.html#L3397">(options->ExcludeNodes && options->StrictNodes)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3516</td><td><a href="config.c.html#L3516">(options->UseBridges && options->EntryNodes)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3890</td><td><a href="config.c.html#L3890">(options->UseDefaultFallbackDirs && options->FallbackDir)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">4783</td><td><a href="config.c.html#L4783">(to[0] == '.' || from[0] == '.')</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3323</td><td><a href="config.c.html#L3323">(n_ports == 0 && !options->RendConfigLines)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">4371</td><td><a href="config.c.html#L4371">(hmst == FN_FILE || hmst == FN_EMPTY || dflt == NULL)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">6847</td><td><a href="config.c.html#L6847">((cfg_any_v4 && addr_v4) || (cfg_v4 && addr_any_v4))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">6856</td><td><a href="config.c.html#L6856">((cfg_any_v6 && addr_v6) || (cfg_v6 && addr_any_v6))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1480</td><td><a href="config.c.html#L1480">(options->KeepBindCapabilities == -1 && have_low_ports)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1551</td><td><a href="config.c.html#L1551">(check_and_create_data_directory(running_tor, options->KeyDirectory, key_dir_group_readable, options->User, msg_out) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1565</td><td><a href="config.c.html#L1565">(check_and_create_data_directory(running_tor, options->CacheDirectory, cache_dir_group_readable, options->User, msg_out) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1648</td><td><a href="config.c.html#L1648">(retry_all_listeners(xn->new_listeners, options->DisableNetwork) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">3389</td><td><a href="config.c.html#L3389">(routerset_parse(rs, cl->value, cl->key) == 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">6616</td><td><a href="config.c.html#L6616">(port_parse_config(ports, options->ControlSocket, "ControlSocket", CONN_TYPE_CONTROL_LISTENER, NULL, 0, control_port_flags | CL_PORT_IS_UNIXSOCKET) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">2052</td><td><a href="config.c.html#L2052">(options->NoExec || options->Sandbox)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2369</td><td><a href="config.c.html#L2369">(options->MainloopStats != old_options->MainloopStats)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3274</td><td><a href="config.c.html#L3274">(options->ControlSocket || options->ControlSocketsGroupWritable)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3379</td><td><a href="config.c.html#L3379">(options->ExcludeExitNodes || options->ExcludeNodes)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3731</td><td><a href="config.c.html#L3731">(options->BandwidthRate > options->BandwidthBurst)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2074</td><td><a href="config.c.html#L2074">(!options->DisableDebuggerAttachment && !warned_debugger_attach)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">6456</td><td><a href="config.c.html#L6456">(!(cfg->entry_cfg.isolation_flags & ISO_SOCKSAUTH))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">5541</td><td><a href="config.c.html#L5541">(ds != NULL && rv == 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5703</td><td><a href="config.c.html#L5703">(!(ds = trusted_dir_server_new(nickname, address, dir_port, or_port, ipv6_addrport_ptr, digest, v3_digest, type, weight)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">6997</td><td><a href="config.c.html#L6997">(!(new_conf = options_dump(options, OPTIONS_DUMP_MINIMAL)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">7410</td><td><a href="config.c.html#L7410">(r < 0 && severity == LOG_WARN)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2215</td><td><a href="config.c.html#L2215">(options->PidFile && !sandbox_is_active())</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">4709</td><td><a href="config.c.html#L4709">(newoptions->TestingTorNetwork && !testing_network_configured)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5384</td><td><a href="config.c.html#L5384">(!server && !validate_only && is_useless_proxy)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">6519</td><td><a href="config.c.html#L6519">(!count_sockets && port->is_unix_addr)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">6781</td><td><a href="config.c.html#L6781">(cfg->explicit_addr && !first_port_explicit_addr)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2332</td><td><a href="config.c.html#L2332">(!smartlist_strings_eq(old_options->TrackHostExits, options->TrackHostExits))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2343</td><td><a href="config.c.html#L2343">(!smartlist_strings_eq(old_options->AutomapHostsSuffixes, options->AutomapHostsSuffixes))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">5010</td><td><a href="config.c.html#L5010">(!strcmp(opt->value, opt2->value))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">5397</td><td><a href="config.c.html#L5397">(!validate_only && (server || !is_useless_proxy))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2279</td><td><a href="config.c.html#L2279">(geoip_is_loaded(AF_INET) && options->GeoIPExcludeUnknown)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3231</td><td><a href="config.c.html#L3231">(hs_service_allow_non_anonymous_connection(options) && options->UseEntryGuards)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3305</td><td><a href="config.c.html#L3305">(warn_about_relative_paths(options) && options->RunAsDaemon)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3508</td><td><a href="config.c.html#L3508">(options->UseBridges && server_mode(options))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">5182</td><td><a href="config.c.html#L5182">(bridge_line->transport_name && smartlist_len(items))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">5618</td><td><a href="config.c.html#L5618">(strlen(idstr) != HEX_DIGEST_LEN || base16_decode(v3_digest, DIGEST_LEN, idstr, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3269</td><td><a href="config.c.html#L3269">(parse_ports(options, 1, msg, &n_ports, &world_writable_control_socket) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5364</td><td><a href="config.c.html#L5364">(is_managed && options->Sandbox)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5372</td><td><a href="config.c.html#L5372">(is_managed && options->NoExec)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5438</td><td><a href="config.c.html#L5438">(tor_addr_port_lookup(addrport, &addr, &port) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5661</td><td><a href="config.c.html#L5661">(tor_addr_port_split(LOG_WARN, addrport, &address, &dir_port) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6170</td><td><a href="config.c.html#L6170">(tor_addr_port_lookup(addrport, &addr, &ptmp) == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">7218</td><td><a href="config.c.html#L7218">(strcmp(var->member.name, "DirAuthority") == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">7225</td><td><a href="config.c.html#L7225">(strcmp(var->member.name, "FallbackDir") == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="config.c.html#L1389">(check_private_dir(options->DataDirectory, cpd_opts, options->User))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1396</td><td><a href="config.c.html#L1396">(check_private_dir(options->KeyDirectory, CPD_CREATE, options->User))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2848</td><td><a href="config.c.html#L2848">(fd < 0 || ok == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2948</td><td><a href="config.c.html#L2948">(i < 1 || i > 65535)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3118</td><td><a href="config.c.html#L3118">(cv->member.type != CONFIG_TYPE_FILENAME)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3816</td><td><a href="config.c.html#L3816">(len < 1 || len > MAX_SOCKS5_AUTH_FIELD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3823</td><td><a href="config.c.html#L3823">(len < 1 || len > MAX_SOCKS5_AUTH_FIELD_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3879</td><td><a href="config.c.html#L3879">(routerset_parse(rs, cl->value, cl->key))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4144</td><td><a href="config.c.html#L4144">(!is_server && val < ONE_MEGABYTE * MIN_UNWARNED_CLIENT_MB)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">6264</td><td><a href="config.c.html#L6264">(cfg->entry_cfg.session_group >= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">7009</td><td><a href="config.c.html#L7009">(fn_tmp_status == FN_DIR || fn_tmp_status == FN_ERROR)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2132</td><td><a href="config.c.html#L2132">(running_tor && hs_config_service_all(options, 0) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2140</td><td><a href="config.c.html#L2140">(running_tor && hs_config_client_auth_all(options, 0) < 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">5640</td><td><a href="config.c.html#L5640">(!strcasecmpstart(flag, "upload=") || !strcasecmpstart(flag, "download=") || !strcasecmpstart(flag, "vote="))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">6079</td><td><a href="config.c.html#L6079">(defaultport && defaultaddr && out)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">986</td><td><a href="config.c.html#L986">(old_options && old_options != global_options)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2068</td><td><a href="config.c.html#L2068">(warned_debugger_attach && ok == 1)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2579</td><td><a href="config.c.html#L2579">(want_arg == ARGUMENT_NECESSARY && is_last)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4132</td><td><a href="config.c.html#L4132">(is_server && val < ONE_MEGABYTE * MIN_SERVER_MB)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4138</td><td><a href="config.c.html#L4138">(is_server && val < ONE_MEGABYTE * MIN_UNWARNED_SERVER_MB)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1257</td><td><a href="config.c.html#L1257">(parse_dir_authority_line(cl->value, NO_DIRINFO, 1) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1260</td><td><a href="config.c.html#L1260">(parse_dir_authority_line(cl->value, NO_DIRINFO, 1) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1263</td><td><a href="config.c.html#L1263">(parse_dir_authority_line(cl->value, NO_DIRINFO, 1) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1266</td><td><a href="config.c.html#L1266">(parse_dir_fallback_line(cl->value, 1) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1325</td><td><a href="config.c.html#L1325">(parse_dir_authority_line(cl->value, NO_DIRINFO, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1328</td><td><a href="config.c.html#L1328">(parse_dir_authority_line(cl->value, NO_DIRINFO, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1331</td><td><a href="config.c.html#L1331">(parse_dir_authority_line(cl->value, NO_DIRINFO, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1334</td><td><a href="config.c.html#L1334">(parse_dir_fallback_line(cl->value, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1483</td><td><a href="config.c.html#L1483">(switch_id(options->User, switch_id_flags) != 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1845</td><td><a href="config.c.html#L1845">(get_min_log_level() != xn->old_min_log_level)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2175</td><td><a href="config.c.html#L2175">(pt_parse_transport_line(options, cl->value, 0, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2216</td><td><a href="config.c.html#L2216">(write_pidfile(options->PidFile) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2235</td><td><a href="config.c.html#L2235">(init_control_cookie_authentication(options->CookieAuthentication) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3438</td><td><a href="config.c.html#L3438">(validate_ports_csv(options->FirewallPorts, "FirewallPorts", msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3441</td><td><a href="config.c.html#L3441">(validate_ports_csv(options->LongLivedPorts, "LongLivedPorts", msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3444</td><td><a href="config.c.html#L3444">(validate_ports_csv(options->RejectPlaintextPorts, "RejectPlaintextPorts", msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3448</td><td><a href="config.c.html#L3448">(validate_ports_csv(options->WarnPlaintextPorts, "WarnPlaintextPorts", msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3750</td><td><a href="config.c.html#L3750">(strlen(options->HTTPProxyAuthenticator) >= 512)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3764</td><td><a href="config.c.html#L3764">(strlen(options->HTTPSProxyAuthenticator) >= 512)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3851</td><td><a href="config.c.html#L3851">(tor_validate_process_specifier(options->OwningControllerProcess, &validate_pspec_msg))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3911</td><td><a href="config.c.html#L3911">(pt_parse_transport_line(options, cl->value, 1, 0) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3943</td><td><a href="config.c.html#L3943">(parse_virtual_addr_network(options->VirtualAddrNetworkIPv4, AF_INET, 1, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3946</td><td><a href="config.c.html#L3946">(parse_virtual_addr_network(options->VirtualAddrNetworkIPv6, AF_INET6, 1, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4585</td><td><a href="config.c.html#L4585">(handle_cmdline_format(command, format_line->value) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4604</td><td><a href="config.c.html#L4604">(handle_cmdline_passphrase_fd(command, fd_line->value) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4613</td><td><a href="config.c.html#L4613">(handle_cmdline_master_key(command, key_line->value) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5173</td><td><a href="config.c.html#L5173">(base16_decode(bridge_line->digest, DIGEST_LEN, fingerprint, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5194</td><td><a href="config.c.html#L5194">(validate_transport_socks_arguments(bridge_line->socks_args) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6559</td><td><a href="config.c.html#L6559">(port_parse_config(ports, options->DNSPort_lines, "DNS", CONN_TYPE_AP_DNS_LISTENER, "127.0.0.1", 0, CL_PORT_WARN_NONLOCAL | CL_PORT_TAKES_HOSTNAMES) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6567</td><td><a href="config.c.html#L6567">(port_parse_config(ports, options->TransPort_lines, "Trans", CONN_TYPE_AP_TRANS_LISTENER, "127.0.0.1", 0, CL_PORT_WARN_NONLOCAL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6575</td><td><a href="config.c.html#L6575">(port_parse_config(ports, options->NATDPort_lines, "NATD", CONN_TYPE_AP_NATD_LISTENER, "127.0.0.1", 0, CL_PORT_WARN_NONLOCAL) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6607</td><td><a href="config.c.html#L6607">(port_parse_config(ports, options->ControlPort_lines, "Control", CONN_TYPE_CONTROL_LISTENER, "127.0.0.1", 0, control_port_flags) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6738</td><td><a href="config.c.html#L6738">(tor_addr_is_null(&cfg->addr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6834</td><td><a href="config.c.html#L6834">(tor_addr_eq(&cfg->addr, addr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6925</td><td><a href="config.c.html#L6925">(strlen(options->DataDirectory) > 512 - 128)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7352</td><td><a href="config.c.html#L7352">(parse_outbound_address_lines(options->OutboundBindAddress, OUTBOUND_ADDR_ANY, options, validate_only, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7358</td><td><a href="config.c.html#L7358">(parse_outbound_address_lines(options->OutboundBindAddressOR, OUTBOUND_ADDR_OR, options, validate_only, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7364</td><td><a href="config.c.html#L7364">(parse_outbound_address_lines(options->OutboundBindAddressExit, OUTBOUND_ADDR_EXIT, options, validate_only, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">7370</td><td><a href="config.c.html#L7370">(parse_outbound_address_lines(options->OutboundBindAddressPT, OUTBOUND_ADDR_PT, options, validate_only, msg) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1087</td><td><a href="config.c.html#L1087">(options->SafeLogging_ == SAFELOG_SCRUB_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1108</td><td><a href="config.c.html#L1108">(options->SafeLogging_ != SAFELOG_SCRUB_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1476</td><td><a href="config.c.html#L1476">(options->KeepBindCapabilities == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1838</td><td><a href="config.c.html#L1838">(options->SafeLogging_ != SAFELOG_SCRUB_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2542</td><td><a href="config.c.html#L2542">(CMDLINE_ONLY_OPTIONS[j].name != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2548</td><td><a href="config.c.html#L2548">(CMDLINE_ONLY_OPTIONS[j].command != CMD_RUN_TOR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2553</td><td><a href="config.c.html#L2553">(quiet > result->quiet_level)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3180</td><td><a href="config.c.html#L3180">(options->KISTSockBufSizeFactor < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3186</td><td><a href="config.c.html#L3186">(options->KISTSchedRunInterval > KIST_SCHED_RUN_INTERVAL_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3410</td><td><a href="config.c.html#L3410">(options->ConnLimit <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3417</td><td><a href="config.c.html#L3417">(options->PathsNeededToBuildCircuits >= 0.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3418</td><td><a href="config.c.html#L3418">(options->PathsNeededToBuildCircuits < 0.25)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3422</td><td><a href="config.c.html#L3422">(options->PathsNeededToBuildCircuits > 0.95)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3552</td><td><a href="config.c.html#L3552">(options->RendPostPeriod < min_rendpostperiod)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3558</td><td><a href="config.c.html#L3558">(options->RendPostPeriod > MAX_DIR_PERIOD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3568</td><td><a href="config.c.html#L3568">(options->CircuitsAvailableTimeout > MAX_CIRCS_AVAILABLE_TIME)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3660</td><td><a href="config.c.html#L3660">(options->PathBiasNoticeRate > 1.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3666</td><td><a href="config.c.html#L3666">(options->PathBiasWarnRate > 1.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3672</td><td><a href="config.c.html#L3672">(options->PathBiasExtremeRate > 1.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3678</td><td><a href="config.c.html#L3678">(options->PathBiasNoticeUseRate > 1.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3684</td><td><a href="config.c.html#L3684">(options->PathBiasExtremeUseRate > 1.0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3691</td><td><a href="config.c.html#L3691">(options->MaxCircuitDirtiness < MIN_MAX_CIRCUIT_DIRTINESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3697</td><td><a href="config.c.html#L3697">(options->MaxCircuitDirtiness > MAX_MAX_CIRCUIT_DIRTINESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3718</td><td><a href="config.c.html#L3718">(options->KeepalivePeriod < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3744</td><td><a href="config.c.html#L3744">(options->HTTPProxyPort == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3758</td><td><a href="config.c.html#L3758">(options->HTTPSProxyPort == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3773</td><td><a href="config.c.html#L3773">(options->Socks4ProxyPort == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3783</td><td><a href="config.c.html#L3783">(options->Socks5ProxyPort == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4008</td><td><a href="config.c.html#L4008">(options->TestingClientMaxIntervalWithoutRequest < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4010</td><td><a href="config.c.html#L4010">(options->TestingClientMaxIntervalWithoutRequest > 3600)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4014</td><td><a href="config.c.html#L4014">(options->TestingDirConnectionMaxStall < 5)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4016</td><td><a href="config.c.html#L4016">(options->TestingDirConnectionMaxStall > 3600)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4020</td><td><a href="config.c.html#L4020">(options->ClientBootstrapConsensusMaxInProgressTries < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4023</td><td><a href="config.c.html#L4023">(options->ClientBootstrapConsensusMaxInProgressTries > 100)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4875</td><td><a href="config.c.html#L4875">(options->LogTimeGranularity <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5349</td><td><a href="config.c.html#L5349">(!server && !strcmp(type, "socks4"))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5353</td><td><a href="config.c.html#L5353">(!server && !strcmp(type, "socks5"))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5882</td><td><a href="config.c.html#L5882">(port->type != listener_type)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5911</td><td><a href="config.c.html#L5911">(port->type != CONN_TYPE_CONTROL_LISTENER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6521</td><td><a href="config.c.html#L6521">(port->type != listenertype)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6746</td><td><a href="config.c.html#L6746">(cfg->port == CFG_AUTO_PORT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6831</td><td><a href="config.c.html#L6831">(cfg->type == listener_type)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6899</td><td><a href="config.c.html#L6899">(!val && !strcmp(fn, "/.tor"))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7060</td><td><a href="config.c.html#L7060">(options->NumCPUs == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7217</td><td><a href="config.c.html#L7217">(var->initvalue != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2196</td><td><a href="config.c.html#L2196">(pt_proxies_configuration_pending() && !net_is_disabled())</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2897</td><td><a href="config.c.html#L2897">(config_assign(get_options_mgr(), options, dflts, CAL_WARN_DEPRECATIONS, &msg) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2085</td><td><a href="config.c.html#L2085">(running_tor && !have_lockfile())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2107</td><td><a href="config.c.html#L2107">(parse_outbound_addresses(options, 0, &msg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2162</td><td><a href="config.c.html#L2162">(!or_state_loaded() && running_tor)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2392</td><td><a href="config.c.html#L2392">(options_act_relay_stats(old_options, &print_notice) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2394</td><td><a href="config.c.html#L2394">(options_act_dirauth_stats(old_options, &print_notice) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4076</td><td><a href="config.c.html#L4076">(get_total_system_memory(&ram) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4789</td><td><a href="config.c.html#L4789">(addressmap_register_auto(from, to, 0, ADDRMAPSRC_TORRC, &msg) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4940</td><td><a href="config.c.html#L4940">(parse_log_severity_config(&cfg, severity) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5339</td><td><a href="config.c.html#L5339">(!validate_only && transport_is_needed(transport_name))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5346</td><td><a href="config.c.html#L5346">(server && !strcmp(type, "proxy"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">6134</td><td><a href="config.c.html#L6134">(unix_socket_path && !conn_listener_type_supports_af_unix(listener_type))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">6625</td><td><a href="config.c.html#L6625">(port_parse_ports_relay(options, msg, ports, &have_low_ports) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2562</td><td><a href="config.c.html#L2562">(*s == '-')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2564</td><td><a href="config.c.html#L2564">(*s == '-')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2567</td><td><a href="config.c.html#L2567">(*s == '+')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2570</td><td><a href="config.c.html#L2570">(*s == '/')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2963</td><td><a href="config.c.html#L2963">(*value > ROUTER_MAX_DECLARED_BANDWIDTH)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2968</td><td><a href="config.c.html#L2968">(*value > ROUTER_MAX_DECLARED_BANDWIDTH)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4124</td><td><a href="config.c.html#L4124">(is_server && !notice_sent)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4415</td><td><a href="config.c.html#L4415">(*fname_var == NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4430</td><td><a href="config.c.html#L4430">(using_default_torrc == 1 || ignore_missing_torrc)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4832</td><td><a href="config.c.html#L4832">(to_wildcard && !from_wildcard)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4884</td><td><a href="config.c.html#L4884">(1000 % granularity != 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">4887</td><td><a href="config.c.html#L4887">(1000 % granularity != 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">5037</td><td><a href="config.c.html#L5037">(ok && !validate_only)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6424</td><td><a href="config.c.html#L6424">(has_used_unix_socket_only_option && !unix_socket_path)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6517</td><td><a href="config.c.html#L6517">(port->server_cfg.no_listen)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6727</td><td><a href="config.c.html#L6727">(cfg->server_cfg.no_listen)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7250</td><td><a href="config.c.html#L7250">(*i != NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7268</td><td><a href="config.c.html#L7268">(*i != NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1197</td><td><a href="config.c.html#L1197">(parse_dir_authority_line(default_authorities[i], type, 0) < 0)</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3130</td><td><a href="config.c.html#L3130">(!strcasecmp(hs_line->key, "HiddenServiceDir"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3332</td><td><a href="config.c.html#L3332">(!strcasecmp(options->TransProxyType, "default"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3334</td><td><a href="config.c.html#L3334">(!strcasecmp(options->TransProxyType, "pf-divert"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3342</td><td><a href="config.c.html#L3342">(!strcasecmp(options->TransProxyType, "tproxy"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3348</td><td><a href="config.c.html#L3348">(!strcasecmp(options->TransProxyType, "ipfw"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3532</td><td><a href="config.c.html#L3532">(!strcasecmp(options->SafeLogging, "relay"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3534</td><td><a href="config.c.html#L3534">(!strcasecmp(options->SafeLogging, "1"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">4818</td><td><a href="config.c.html#L4818">(!strcmp(to, "*") || !strcmp(from, "*"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5592</td><td><a href="config.c.html#L5592">(!strcasecmp(flag, "hs") || !strcasecmp(flag, "no-hs"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1303</td><td><a href="config.c.html#L1303">(!options->DirAuthorities)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1306</td><td><a href="config.c.html#L1306">(!options->AlternateBridgeAuthority)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1309</td><td><a href="config.c.html#L1309">(!options->AlternateDirAuthority)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2172</td><td><a href="config.c.html#L2172">(!options->DisableNetwork)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3093</td><td><a href="config.c.html#L3093">(filepath && path_is_relative(filepath))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3225</td><td><a href="config.c.html#L3225">(hs_service_non_anonymous_mode_enabled(options) && client_port_set)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3480</td><td><a href="config.c.html#L3480">(!options->ReachableDirAddresses)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3488</td><td><a href="config.c.html#L3488">(!options->ReachableORAddresses)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3819</td><td><a href="config.c.html#L3819">(!options->Socks5ProxyPassword)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5183</td><td><a href="config.c.html#L5183">(!bridge_line->socks_args)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5526</td><td><a href="config.c.html#L5526">(eos && strcmp(eos, "/"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6923</td><td><a href="config.c.html#L6923">(!options->DataDirectory)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6933</td><td><a href="config.c.html#L6933">(!options->KeyDirectory)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">6945</td><td><a href="config.c.html#L6945">(!options->CacheDirectory)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1848</td><td><a href="config.c.html#L1848">(bad_safelog && bad_severity)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1978</td><td><a href="config.c.html#L1978">(routerset_usage && reason_out)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1982</td><td><a href="config.c.html#L1982">(bridge_usage && reason_out)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">4544</td><td><a href="config.c.html#L4544">(f_line && f_line_long)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">6188</td><td><a href="config.c.html#L6188">(unix_socket_path && default_to_group_writable)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">6444</td><td><a href="config.c.html#L6444">(out && port)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">6471</td><td><a href="config.c.html#L6471">(warn_nonlocal && out)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">6480</td><td><a href="config.c.html#L6480">(got_zero_port && got_nonzero_port)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">6828</td><td><a href="config.c.html#L6828">(!configured_ports || !addr)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">947</td><td><a href="config.c.html#L947">(testing_tor_network_defaults[i].k)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1014</td><td><a href="config.c.html#L1014">(options->NodeFamilySets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1019</td><td><a href="config.c.html#L1019">(options->SchedulerTypes_)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1023</td><td><a href="config.c.html#L1023">(options->FilesOpenedByIncludes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1387</td><td><a href="config.c.html#L1387">(options->DataDirectoryGroupReadable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1422</td><td><a href="config.c.html#L1422">(options->RunAsDaemon)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1452</td><td><a href="config.c.html#L1452">(options->DisableAllSwap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="config.c.html#L1473">(options->User)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1654</td><td><a href="config.c.html#L1654">(options->DisableNetwork)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1690</td><td><a href="config.c.html#L1690">(xn->set_conn_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="config.c.html#L1820">(xn->logs_marked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1831</td><td><a href="config.c.html#L1831">(xn->logs_initialized)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1840</td><td><a href="config.c.html#L1840">(xn->safelogging_changed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1874</td><td><a href="config.c.html#L1874">(xn->logs_marked)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2116</td><td><a href="config.c.html#L2116">(options->Bridges)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2173</td><td><a href="config.c.html#L2173">(options->ClientTransportPlugin)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2205</td><td><a href="config.c.html#L2205">(options->RunAsDaemon)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2261</td><td><a href="config.c.html#L2261">(options->BridgePassword)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2319</td><td><a href="config.c.html#L2319">(options->ReconfigDropsBridgeDescs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3153</td><td><a href="config.c.html#L3153">(options->SchedulerTypes_)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3331</td><td><a href="config.c.html#L3331">(options->TransProxyType)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="config.c.html#L3366">(options->TransPort_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3385</td><td><a href="config.c.html#L3385">(options->NodeFamilies)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3740</td><td><a href="config.c.html#L3740">(options->HTTPProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3749</td><td><a href="config.c.html#L3749">(options->HTTPProxyAuthenticator)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3754</td><td><a href="config.c.html#L3754">(options->HTTPSProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3763</td><td><a href="config.c.html#L3763">(options->HTTPSProxyAuthenticator)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3768</td><td><a href="config.c.html#L3768">(options->Socks4Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3778</td><td><a href="config.c.html#L3778">(options->Socks5Proxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3788</td><td><a href="config.c.html#L3788">(options->TCPProxy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3812</td><td><a href="config.c.html#L3812">(options->Socks5ProxyUsername)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3825</td><td><a href="config.c.html#L3825">(options->Socks5ProxyPassword)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3828</td><td><a href="config.c.html#L3828">(options->HashedControlPassword)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3838</td><td><a href="config.c.html#L3838">(options->HashedControlSessionPassword)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3849</td><td><a href="config.c.html#L3849">(options->OwningControllerProcess)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3918</td><td><a href="config.c.html#L3918">(options->ConstrainedSockets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4041</td><td><a href="config.c.html#L4041">(options->TestingTorNetwork)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5005</td><td><a href="config.c.html#L5005">(options->TruncateLogFile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5086</td><td><a href="config.c.html#L5086">(bridge_line->socks_args)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5149</td><td><a href="config.c.html#L5149">(bridge_line->transport_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5193</td><td><a href="config.c.html#L5193">(bridge_line->socks_args)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5884</td><td><a href="config.c.html#L5884">(port->is_unix_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5913</td><td><a href="config.c.html#L5913">(port->is_unix_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6230</td><td><a href="config.c.html#L6230">(cfg->explicit_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6241</td><td><a href="config.c.html#L6241">(cfg->explicit_addr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6604</td><td><a href="config.c.html#L6604">(options->ControlSocketsGroupWritable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6931</td><td><a href="config.c.html#L6931">(options->KeyDirectory_option)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6942</td><td><a href="config.c.html#L6942">(options->CacheDirectory_option)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6982</td><td><a href="config.c.html#L6982">(!old_val || strcmpstart(old_val, GENERATED_FILE_PREFIX))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1634</td><td><a href="config.c.html#L1634">(!*msg_out)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">6259</td><td><a href="config.c.html#L6259">(!ok || allow_no_stream_options)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2803</td><td><a href="config.c.html#L2803">(!strcmp(value, formats[i]))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4204</td><td><a href="config.c.html#L4204">(server_mode(old) != server_mode(new_val))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4477</td><td><a href="config.c.html#L4477">(config_line_find(cmdline_only_options, "-h") || config_line_find(cmdline_only_options, "--help"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="config.c.html#L903">(PREDICT_UNLIKELY(options_mgr == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">969</td><td><a href="config.c.html#L969">(options_act_reversible(old_options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1355</td><td><a href="config.c.html#L1355">(check_private_dir(directory, cpd_opts, owner) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1453</td><td><a href="config.c.html#L1453">(tor_mlockall() == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1511</td><td><a href="config.c.html#L1511">(0 == strcmp(subdir, datadir))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1633</td><td><a href="config.c.html#L1633">(parse_ports(options, 0, msg_out, &n_ports, NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1668</td><td><a href="config.c.html#L1668">(get_pf_socket() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1797</td><td><a href="config.c.html#L1797">(options_init_logs(old_options, options, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1843</td><td><a href="config.c.html#L1843">(get_min_log_level() >= LOG_INFO)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1912</td><td><a href="config.c.html#L1912">(options_act_once_on_startup(msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1924</td><td><a href="config.c.html#L1924">(options_switch_id(msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1933</td><td><a href="config.c.html#L1933">(options_create_directories(msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2086</td><td><a href="config.c.html#L2086">(try_locking(options, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2095</td><td><a href="config.c.html#L2095">(consider_adding_dir_servers(options, old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2154</td><td><a href="config.c.html#L2154">(control_connection_add_local_fd(ctrl_sock, ctrl_flags) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2165</td><td><a href="config.c.html#L2165">(options_act_dirauth_mtbf(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2187</td><td><a href="config.c.html#L2187">(options_act_server_transport(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2210</td><td><a href="config.c.html#L2210">(options_act_relay(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2229</td><td><a href="config.c.html#L2229">(policies_parse_from_options(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2243</td><td><a href="config.c.html#L2243">(hs_service_load_all_keys() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2252</td><td><a href="config.c.html#L2252">(options_act_relay_accounting(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2356</td><td><a href="config.c.html#L2356">(options_act_bridge_stats(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2362</td><td><a href="config.c.html#L2362">(options_act_relay_bandwidth(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2399</td><td><a href="config.c.html#L2399">(options_act_relay_desc(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2402</td><td><a href="config.c.html#L2402">(options_act_dirauth(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2420</td><td><a href="config.c.html#L2420">(options_act_relay_dos(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2422</td><td><a href="config.c.html#L2422">(options_act_relay_dir(old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2802</td><td><a href="config.c.html#L2802">(i < ARRAY_LENGTH(formats))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3293</td><td><a href="config.c.html#L3293">(options_validate_relay_os(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3297</td><td><a href="config.c.html#L3297">(parse_outbound_addresses(options, 1, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3300</td><td><a href="config.c.html#L3300">(validate_data_directories(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3311</td><td><a href="config.c.html#L3311">(options_validate_relay_info(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3318</td><td><a href="config.c.html#L3318">(options_init_logs(old_options, options, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3403</td><td><a href="config.c.html#L3403">(options_validate_dirauth_mode(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3543</td><td><a href="config.c.html#L3543">(options_validate_publish_server(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3546</td><td><a href="config.c.html#L3546">(options_validate_relay_padding(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3565</td><td><a href="config.c.html#L3565">(options_validate_single_onion(options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3728</td><td><a href="config.c.html#L3728">(options_validate_relay_bandwidth(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3734</td><td><a href="config.c.html#L3734">(options_validate_relay_accounting(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3737</td><td><a href="config.c.html#L3737">(options_validate_relay_mode(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3886</td><td><a href="config.c.html#L3886">(validate_addr_policies(options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3896</td><td><a href="config.c.html#L3896">(validate_dir_servers(options, old_options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3915</td><td><a href="config.c.html#L3915">(options_validate_server_transport(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3932</td><td><a href="config.c.html#L3932">(options_validate_dirauth_schedule(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3935</td><td><a href="config.c.html#L3935">(hs_config_service_all(options, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3939</td><td><a href="config.c.html#L3939">(hs_config_client_auth_all(options, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4003</td><td><a href="config.c.html#L4003">(options_validate_relay_testing(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4005</td><td><a href="config.c.html#L4005">(options_validate_dirauth_testing(old_options, options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4048</td><td><a href="config.c.html#L4048">(options_validate_scheduler(options, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4576</td><td><a href="config.c.html#L4576">(handle_cmdline_no_passphrase(command) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4595</td><td><a href="config.c.html#L4595">(handle_cmdline_newpass(command) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4774</td><td><a href="config.c.html#L4774">(smartlist_len(elts) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4795</td><td><a href="config.c.html#L4795">(smartlist_len(elts) > 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4924</td><td><a href="config.c.html#L4924">(options_init_log_granularity(options, validate_only) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4949</td><td><a href="config.c.html#L4949">(smartlist_len(elts) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4969</td><td><a href="config.c.html#L4969">(smartlist_len(elts) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5016</td><td><a href="config.c.html#L5016">(open_and_add_file_log(severity, fname, truncate_log) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5117</td><td><a href="config.c.html#L5117">(smartlist_len(items) < 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5129</td><td><a href="config.c.html#L5129">(smartlist_len(items) < 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5169</td><td><a href="config.c.html#L5169">(strlen(fingerprint) != HEX_DIGEST_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5236</td><td><a href="config.c.html#L5236">(smartlist_len(sl) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5429</td><td><a href="config.c.html#L5429">(smartlist_len(transport_list) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5578</td><td><a href="config.c.html#L5578">(smartlist_len(items) < 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5654</td><td><a href="config.c.html#L5654">(smartlist_len(items) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5678</td><td><a href="config.c.html#L5678">(strlen(fingerprint) != HEX_DIGEST_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5683</td><td><a href="config.c.html#L5683">(base16_decode(digest, DIGEST_LEN, fingerprint, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5691</td><td><a href="config.c.html#L5691">(parse_dirauth_dirport(NULL, cp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5709</td><td><a href="config.c.html#L5709">(parse_dirauth_dirport(ds, cp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">5798</td><td><a href="config.c.html#L5798">(smartlist_len(positional) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6115</td><td><a href="config.c.html#L6115">(strlen(addrport) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6592</td><td><a href="config.c.html#L6592">(metrics_parse_ports(options, ports, msg) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7017</td><td><a href="config.c.html#L7017">(replace_file(fname, fn_tmp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7027</td><td><a href="config.c.html#L7027">(write_str_to_file(fname, new_val, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7175</td><td><a href="config.c.html#L7175">(write_str_to_file(filename, str, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7322</td><td><a href="config.c.html#L7322">(verify_and_store_outbound_address(family, &addr, type, options, validate_only))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">993</td><td><a href="config.c.html#L993">(old_options != global_options)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1320</td><td><a href="config.c.html#L1320">(type != NO_DIRINFO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1505</td><td><a href="config.c.html#L1505">(subdir_gr != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="config.c.html#L1704">(socks_in_reserve > 64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1920</td><td><a href="config.c.html#L1920">(listener_transaction == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="config.c.html#L1940">(log_transaction == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="config.c.html#L2535">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2785</td><td><a href="config.c.html#L2785">(command == CMD_KEYGEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2798</td><td><a href="config.c.html#L2798">(command == CMD_KEY_EXPIRATION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2809</td><td><a href="config.c.html#L2809">(format < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2826</td><td><a href="config.c.html#L2826">(command == CMD_KEYGEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2842</td><td><a href="config.c.html#L2842">(command != CMD_KEYGEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2863</td><td><a href="config.c.html#L2863">(command != CMD_KEYGEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3028</td><td><a href="config.c.html#L3028">(vs == VSTAT_TRANSITION_ERR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3031</td><td><a href="config.c.html#L3031">(vs < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3465</td><td><a href="config.c.html#L3465">(p < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3790</td><td><a href="config.c.html#L3790">(res < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4069</td><td><a href="config.c.html#L4069">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4114</td><td><a href="config.c.html#L4114">(avail > MAX_DEFAULT_MEMORY_QUEUE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4118</td><td><a href="config.c.html#L4118">(avail < ONE_GIGABYTE / 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4357</td><td><a href="config.c.html#L4357">(*using_default_fname)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4467</td><td><a href="config.c.html#L4467">(global_cmdline == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4471</td><td><a href="config.c.html#L4471">(global_cmdline == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4536</td><td><a href="config.c.html#L4536">(command == CMD_HASH_PASSWORD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4572</td><td><a href="config.c.html#L4572">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4660</td><td><a href="config.c.html#L4660">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4669</td><td><a href="config.c.html#L4669">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4676</td><td><a href="config.c.html#L4676">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4680</td><td><a href="config.c.html#L4680">(i == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4684</td><td><a href="config.c.html#L4684">(newdefaultoptions == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4698</td><td><a href="config.c.html#L4698">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4717</td><td><a href="config.c.html#L4717">(err < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4735</td><td><a href="config.c.html#L4735">(*msg)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4860</td><td><a href="config.c.html#L4860">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4882</td><td><a href="config.c.html#L4882">(granularity < 40)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4885</td><td><a href="config.c.html#L4885">(granularity < 1000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5069</td><td><a href="config.c.html#L5069">(socks_string_len > MAX_SOCKS5_AUTH_SIZE_TOTAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5316</td><td><a href="config.c.html#L5316">(line_length < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5403</td><td><a href="config.c.html#L5403">(i < proxy_argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5543</td><td><a href="config.c.html#L5543">(rv == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5808</td><td><a href="config.c.html#L5808">(orport <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6171</td><td><a href="config.c.html#L6171">(ptmp == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6773</td><td><a href="config.c.html#L6773">(address_family == AF_UNSPEC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7133</td><td><a href="config.c.html#L7133">(sub1 == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7136</td><td><a href="config.c.html#L7136">(sub2 == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7239</td><td><a href="config.c.html#L7239">(dirauth_lines_seen == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7296</td><td><a href="config.c.html#L7296">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7464</td><td><a href="config.c.html#L7464">(*cookie_is_set_out)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7472</td><td><a href="config.c.html#L7472">(*cookie_out)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5590</td><td><a href="config.c.html#L5590">(TOR_ISDIGIT(flag[0]))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1196</td><td><a href="config.c.html#L1196">(default_authorities[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">4970</td><td><a href="config.c.html#L4970">(!strcasecmp(smartlist_get(elts, 0), "syslog"))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">4983</td><td><a href="config.c.html#L4983">(!strcasecmp(smartlist_get(elts, 0), "android"))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">976</td><td><a href="config.c.html#L976">(!tor_event_loop_shutdown_is_pending())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1423</td><td><a href="config.c.html#L1423">(!start_daemon_has_been_called())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="config.c.html#L1616">(!sandbox_is_active())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1647</td><td><a href="config.c.html#L1647">(!we_are_hibernating())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2384</td><td><a href="config.c.html#L2384">(!public_server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2706</td><td><a href="config.c.html#L2706">(!config_var_is_settable(var))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3160</td><td><a href="config.c.html#L3160">(!strcasecmp("KISTLite", type))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3164</td><td><a href="config.c.html#L3164">(!strcasecmp("KIST", type))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3168</td><td><a href="config.c.html#L3168">(!strcasecmp("Vanilla", type))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4176</td><td><a href="config.c.html#L4176">(BUG(!old))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4271</td><td><a href="config.c.html#L4271">(!SUCCEEDED(result))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4823</td><td><a href="config.c.html#L4823">(!strncmp(from, "*.", 2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4827</td><td><a href="config.c.html#L4827">(!strncmp(to, "*.", 2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5056</td><td><a href="config.c.html#L5056">(!string_is_key_value(LOG_WARN, s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5332</td><td><a href="config.c.html#L5332">(!string_is_C_identifier(transport_name))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5344</td><td><a href="config.c.html#L5344">(!strcmp(type, "exec"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5501</td><td><a href="config.c.html#L5501">(!strcasecmpstart(flag, "upload="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5503</td><td><a href="config.c.html#L5503">(!strcasecmpstart(flag, "download="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5505</td><td><a href="config.c.html#L5505">(!strcasecmpstart(flag, "vote="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5596</td><td><a href="config.c.html#L5596">(!strcasecmp(flag, "bridge"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5598</td><td><a href="config.c.html#L5598">(!strcasecmp(flag, "no-v2"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5601</td><td><a href="config.c.html#L5601">(!strcasecmpstart(flag, "orport="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5608</td><td><a href="config.c.html#L5608">(!strcmpstart(flag, "weight="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5616</td><td><a href="config.c.html#L5616">(!strcasecmpstart(flag, "v3ident="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5626</td><td><a href="config.c.html#L5626">(!strcasecmpstart(flag, "ipv6="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5666</td><td><a href="config.c.html#L5666">(!string_is_valid_ipv4_address(address))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5762</td><td><a href="config.c.html#L5762">(!strcmpstart(cp, "orport="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5765</td><td><a href="config.c.html#L5765">(!strcmpstart(cp, "id="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5768</td><td><a href="config.c.html#L5768">(!strcasecmpstart(cp, "ipv6="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5782</td><td><a href="config.c.html#L5782">(!strcmpstart(cp, "weight="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5967</td><td><a href="config.c.html#L5967">(!strcmpstart(line, unix_q_socket_prefix))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5982</td><td><a href="config.c.html#L5982">(!strcmpstart(line, unix_socket_prefix))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5990</td><td><a href="config.c.html#L5990">(BUG(!end))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6143</td><td><a href="config.c.html#L6143">(BUG(!addrport))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6146</td><td><a href="config.c.html#L6146">(!strcmp(addrport, "0"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6150</td><td><a href="config.c.html#L6150">(!strcasecmp(addrport, "auto"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6153</td><td><a href="config.c.html#L6153">(!strcasecmpend(addrport, ":auto"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6195</td><td><a href="config.c.html#L6195">(!strcasecmp(elt, "NoAdvertise"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6197</td><td><a href="config.c.html#L6197">(!strcasecmp(elt, "NoListen"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6201</td><td><a href="config.c.html#L6201">(!strcasecmp(elt, "AllAddrs"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6207</td><td><a href="config.c.html#L6207">(!strcasecmp(elt, "IPv6Only"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6256</td><td><a href="config.c.html#L6256">(!strcasecmpstart(elt, "SessionGroup="))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6273</td><td><a href="config.c.html#L6273">(!strcasecmpstart(elt, "No"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6278</td><td><a href="config.c.html#L6278">(!strcasecmp(elt, "GroupWritable"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6282</td><td><a href="config.c.html#L6282">(!strcasecmp(elt, "WorldWritable"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6286</td><td><a href="config.c.html#L6286">(!strcasecmp(elt, "RelaxDirModeCheck"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6299</td><td><a href="config.c.html#L6299">(!strcasecmp(elt, "IPv4Traffic"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6302</td><td><a href="config.c.html#L6302">(!strcasecmp(elt, "IPv6Traffic"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6305</td><td><a href="config.c.html#L6305">(!strcasecmp(elt, "PreferIPv6"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6308</td><td><a href="config.c.html#L6308">(!strcasecmp(elt, "DNSRequest"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6311</td><td><a href="config.c.html#L6311">(!strcasecmp(elt, "OnionTraffic"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6314</td><td><a href="config.c.html#L6314">(!strcasecmp(elt, "OnionTrafficOnly"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6330</td><td><a href="config.c.html#L6330">(!strcasecmp(elt, "CacheIPv4DNS"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6334</td><td><a href="config.c.html#L6334">(!strcasecmp(elt, "CacheIPv6DNS"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6338</td><td><a href="config.c.html#L6338">(!strcasecmp(elt, "CacheDNS"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6343</td><td><a href="config.c.html#L6343">(!strcasecmp(elt, "UseIPv4Cache"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6347</td><td><a href="config.c.html#L6347">(!strcasecmp(elt, "UseIPv6Cache"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6351</td><td><a href="config.c.html#L6351">(!strcasecmp(elt, "UseDNSCache"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6356</td><td><a href="config.c.html#L6356">(!strcasecmp(elt, "PreferIPv6Automap"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6359</td><td><a href="config.c.html#L6359">(!strcasecmp(elt, "PreferSOCKSNoAuth"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6362</td><td><a href="config.c.html#L6362">(!strcasecmp(elt, "KeepAliveIsolateSOCKSAuth"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6365</td><td><a href="config.c.html#L6365">(!strcasecmp(elt, "ExtendedErrors"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6370</td><td><a href="config.c.html#L6370">(!strcasecmpend(elt, "s"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6373</td><td><a href="config.c.html#L6373">(!strcasecmp(elt, "IsolateDestPort"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6375</td><td><a href="config.c.html#L6375">(!strcasecmp(elt, "IsolateDestAddr"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6377</td><td><a href="config.c.html#L6377">(!strcasecmp(elt, "IsolateSOCKSAuth"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6379</td><td><a href="config.c.html#L6379">(!strcasecmp(elt, "IsolateClientProtocol"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6381</td><td><a href="config.c.html#L6381">(!strcasecmp(elt, "IsolateClientAddr"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">6893</td><td><a href="config.c.html#L6893">(!strcmpstart(d, "~/"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7194</td><td><a href="config.c.html#L7194">(!strcmp(question, "config/names"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7199</td><td><a href="config.c.html#L7199">(!config_var_is_listable(var))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7210</td><td><a href="config.c.html#L7210">(!strcmp(question, "config/defaults"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7300</td><td><a href="config.c.html#L7300">(!tor_addr_is_null(dest))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7398</td><td><a href="config.c.html#L7398">(!strcmp(fname, "<default>"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1083</td><td><a href="config.c.html#L1083">(!options)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1104</td><td><a href="config.c.html#L1104">(!options)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1290</td><td><a href="config.c.html#L1290">(!need_to_update)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1416</td><td><a href="config.c.html#L1416">(!running_tor)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1610</td><td><a href="config.c.html#L1610">(!running_tor)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1730</td><td><a href="config.c.html#L1730">(!xn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1791</td><td><a href="config.c.html#L1791">(!running_tor)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1871</td><td><a href="config.c.html#L1871">(!xn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2120</td><td><a href="config.c.html#L2120">(!bridge_line)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2201</td><td><a href="config.c.html#L2201">(!running_tor)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2264</td><td><a href="config.c.html#L2264">(!http_authenticator)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2629</td><td><a href="config.c.html#L2629">(!cmdline)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2942</td><td><a href="config.c.html#L2942">(!sl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3830</td><td><a href="config.c.html#L3830">(!sl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3841</td><td><a href="config.c.html#L3841">(!sl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3905</td><td><a href="config.c.html#L3905">(!bridge_line)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4366</td><td><a href="config.c.html#L4366">(!defaults_file)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4431</td><td><a href="config.c.html#L4431">(!defaults_file)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4561</td><td><a href="config.c.html#L4561">(!cf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4662</td><td><a href="config.c.html#L4662">(!body)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4897</td><td><a href="config.c.html#L4897">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4900</td><td><a href="config.c.html#L4900">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4957</td><td><a href="config.c.html#L4957">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4972</td><td><a href="config.c.html#L4972">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4988</td><td><a href="config.c.html#L4988">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5000</td><td><a href="config.c.html#L5000">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5063</td><td><a href="config.c.html#L5063">(!socks_string)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5083</td><td><a href="config.c.html#L5083">(!bridge_line)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5444</td><td><a href="config.c.html#L5444">(!port)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5450</td><td><a href="config.c.html#L5450">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5455</td><td><a href="config.c.html#L5455">(!server)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5605</td><td><a href="config.c.html#L5605">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5612</td><td><a href="config.c.html#L5612">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5672</td><td><a href="config.c.html#L5672">(!dir_port)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5758</td><td><a href="config.c.html#L5758">(!eq)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5786</td><td><a href="config.c.html#L5786">(!num_ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5792</td><td><a href="config.c.html#L5792">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5821</td><td><a href="config.c.html#L5821">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5825</td><td><a href="config.c.html#L5825">(!ds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5917</td><td><a href="config.c.html#L5917">(!warned)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6078</td><td><a href="config.c.html#L6078">(!ports)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6602</td><td><a href="config.c.html#L6602">(!any_passwords)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6659</td><td><a href="config.c.html#L6659">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6723</td><td><a href="config.c.html#L6723">(!configured_ports)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6749</td><td><a href="config.c.html#L6749">(!port)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6783</td><td><a href="config.c.html#L6783">(!first_port)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6838</td><td><a href="config.c.html#L6838">(!check_wildcard)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6890</td><td><a href="config.c.html#L6890">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6895</td><td><a href="config.c.html#L6895">(!fn)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6974</td><td><a href="config.c.html#L6974">(!fname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7128</td><td><a href="config.c.html#L7128">(!suffix)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7202</td><td><a href="config.c.html#L7202">(!type)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7303</td><td><a href="config.c.html#L7303">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7347</td><td><a href="config.c.html#L7347">(!validate_only)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5583</td><td><a href="config.c.html#L5583">(is_legal_nickname(smartlist_get(items, 0)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1368</td><td><a href="config.c.html#L1368">(chmod(directory, 0750))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1426</td><td><a href="config.c.html#L1426">(start_daemon())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2101</td><td><a href="config.c.html#L2101">(hs_service_non_anonymous_mode_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2163</td><td><a href="config.c.html#L2163">(or_state_load())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2321</td><td><a href="config.c.html#L2321">(guards_update_all())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2359</td><td><a href="config.c.html#L2359">(dns_reset())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2757</td><td><a href="config.c.html#L2757">(tor_compress_supports_method(ZLIB_METHOD))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2762</td><td><a href="config.c.html#L2762">(tor_compress_supports_method(LZMA_METHOD))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2767</td><td><a href="config.c.html#L2767">(tor_compress_supports_method(ZSTD_METHOD))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2772</td><td><a href="config.c.html#L2772">(tor_libc_get_name())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3037</td><td><a href="config.c.html#L3037">(set_options(new_options, msg_out))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3624</td><td><a href="config.c.html#L3624">(hs_service_non_anonymous_mode_enabled(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3648</td><td><a href="config.c.html#L3648">(circuit_build_times_disabled_(options, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4097</td><td><a href="config.c.html#L4097">(RAM_IS_VERY_LARGE(ram))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4185</td><td><a href="config.c.html#L4185">(sandbox_is_active())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4482</td><td><a href="config.c.html#L4482">(config_line_find(cmdline_only_options, "--list-torrc-options"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4487</td><td><a href="config.c.html#L4487">(config_line_find(cmdline_only_options, "--list-deprecated-options"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4492</td><td><a href="config.c.html#L4492">(config_line_find(cmdline_only_options, "--dbg-dump-subsystem-list"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4497</td><td><a href="config.c.html#L4497">(config_line_find(cmdline_only_options, "--version"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4521</td><td><a href="config.c.html#L4521">(config_line_find(cmdline_only_options, "--list-modules"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4526</td><td><a href="config.c.html#L4526">(config_line_find(cmdline_only_options, "--library-versions"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4562</td><td><a href="config.c.html#L4562">(config_line_find(cmdline_only_options, "--allow-missing-torrc"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4575</td><td><a href="config.c.html#L4575">(config_line_find(cmdline_only_options, "--no-passphrase"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4594</td><td><a href="config.c.html#L4594">(config_line_find(cmdline_only_options, "--newpass"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4838</td><td><a href="config.c.html#L4838">(address_is_invalid_destination(to, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5126</td><td><a href="config.c.html#L5126">(string_is_C_identifier(field))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5148</td><td><a href="config.c.html#L5148">(smartlist_len(items))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5155</td><td><a href="config.c.html#L5155">(string_is_key_value(LOG_DEBUG, field))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5245</td><td><a href="config.c.html#L5245">(strcasecmp(protocol_string, "haproxy"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5518</td><td><a href="config.c.html#L5518">(strcmpstart(target, "http://"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5588</td><td><a href="config.c.html#L5588">(smartlist_len(items))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5803</td><td><a href="config.c.html#L5803">(tor_digest_is_zero(id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7482</td><td><a href="config.c.html#L7482">(write_bytes_to_file(fname, cookie_file_str, cookie_file_str_len, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7489</td><td><a href="config.c.html#L7489">(chmod(fname, 0640))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="config.c.html#L946">(testing_network_configured)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="config.c.html#L1056">(configured_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="config.c.html#L1353">(group_readable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1366</td><td><a href="config.c.html#L1366">(group_readable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1410</td><td><a href="config.c.html#L1410">(have_set_startup_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1624</td><td><a href="config.c.html#L1624">(old_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1851</td><td><a href="config.c.html#L1851">(bad_safelog)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1855</td><td><a href="config.c.html#L1855">(new_badness)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1923</td><td><a href="config.c.html#L1923">(first_time)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1932</td><td><a href="config.c.html#L1932">(first_time)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2287</td><td><a href="config.c.html#L2287">(changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2292</td><td><a href="config.c.html#L2292">(old_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2318</td><td><a href="config.c.html#L2318">(transition_affects_guards)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2326</td><td><a href="config.c.html#L2326">(abandon_circuits)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2336</td><td><a href="config.c.html#L2336">(revise_trackexithosts)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2353</td><td><a href="config.c.html#L2353">(revise_automap_entries)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2396</td><td><a href="config.c.html#L2396">(print_notice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2406</td><td><a href="config.c.html#L2406">(old_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2580</td><td><a href="config.c.html#L2580">(ignore_errors)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2607</td><td><a href="config.c.html#L2607">(is_a_command)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2611</td><td><a href="config.c.html#L2611">(is_cmdline)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3122</td><td><a href="config.c.html#L3122">(line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3256</td><td><a href="config.c.html#L3256">(old_options_)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4235</td><td><a href="config.c.html#L4235">(is_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4267</td><td><a href="config.c.html#L4267">(m)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4289</td><td><a href="config.c.html#L4289">(defaults_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4329</td><td><a href="config.c.html#L4329">(defaults_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4336</td><td><a href="config.c.html#L4336">(fname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4369</td><td><a href="config.c.html#L4369">(fn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4548</td><td><a href="config.c.html#L4548">(f_line_long)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4555</td><td><a href="config.c.html#L4555">(read_torrc_from_stdin)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4584</td><td><a href="config.c.html#L4584">(format_line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4603</td><td><a href="config.c.html#L4603">(fd_line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4612</td><td><a href="config.c.html#L4612">(key_line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4622</td><td><a href="config.c.html#L4622">(errmsg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4691</td><td><a href="config.c.html#L4691">(global_cmdline)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4729</td><td><a href="config.c.html#L4729">(opened_files)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4740</td><td><a href="config.c.html#L4740">(retry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4753</td><td><a href="config.c.html#L4753">(fname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4958</td><td><a href="config.c.html#L4958">(run_as_daemon)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5007</td><td><a href="config.c.html#L5007">(old_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5168</td><td><a href="config.c.html#L5168">(fingerprint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5381</td><td><a href="config.c.html#L5381">(is_managed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5411</td><td><a href="config.c.html#L5411">(server)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5472</td><td><a href="config.c.html#L5472">(transport_list)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5529</td><td><a href="config.c.html#L5529">(eos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5627</td><td><a href="config.c.html#L5627">(ipv6_addrport_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5689</td><td><a href="config.c.html#L5689">(validate_only)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5698</td><td><a href="config.c.html#L5698">(required_type)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5769</td><td><a href="config.c.html#L5769">(ipv6_addrport_ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5916</td><td><a href="config.c.html#L5916">(forbid_nonlocal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6003</td><td><a href="config.c.html#L6003">(disabling)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6073</td><td><a href="config.c.html#L6073">(defaultaddr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6082</td><td><a href="config.c.html#L6082">(is_unix_socket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6125</td><td><a href="config.c.html#L6125">(is_unix_tagged_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6140</td><td><a href="config.c.html#L6140">(unix_socket_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6142</td><td><a href="config.c.html#L6142">(is_unix_socket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6167</td><td><a href="config.c.html#L6167">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6192</td><td><a href="config.c.html#L6192">(use_server_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6292</td><td><a href="config.c.html#L6292">(allow_no_stream_options)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6298</td><td><a href="config.c.html#L6298">(takes_hostnames)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6318</td><td><a href="config.c.html#L6318">(no)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6388</td><td><a href="config.c.html#L6388">(no)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6396</td><td><a href="config.c.html#L6396">(port)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6446</td><td><a href="config.c.html#L6446">(unix_socket_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6472</td><td><a href="config.c.html#L6472">(is_control)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6474</td><td><a href="config.c.html#L6474">(is_ext_orport)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6649</td><td><a href="config.c.html#L6649">(world_writable_control_socket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6660</td><td><a href="config.c.html#L6660">(configured_ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6670</td><td><a href="config.c.html#L6670">(ports)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6883</td><td><a href="config.c.html#L6883">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7005</td><td><a href="config.c.html#L7005">(rename_old)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7320</td><td><a href="config.c.html#L7320">(lines)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7324</td><td><a href="config.c.html#L7324">(msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7488</td><td><a href="config.c.html#L7488">(group_readable)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

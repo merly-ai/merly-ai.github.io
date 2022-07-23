@@ -1,0 +1,99 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>tor Repo - src\or\command.c Ctrl Expressions (48) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\or\command.c Ctrl Expressions (48) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\or\command.c Ctrl Expressions (48)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">484</td><td><a href="command.c.html#L484">(<span style='background-color:#741da3;'>conn->link_proto != 0 || conn->_base.state != OR_CONN_STATE_OR_HANDSHAKING || (conn->handshake_state && conn->handshake_state->received_versions)</span>)</a></td><td class="num">1027.75</td></tr>
+      <tr><td class="num line">388</td><td><a href="command.c.html#L388">(!CIRCUIT_IS_ORIGIN(circ) && cell->circ_id == TO_OR_CIRCUIT(circ)->p_circ_id)</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">454</td><td><a href="command.c.html#L454">(!CIRCUIT_IS_ORIGIN(circ) && cell->circ_id == TO_OR_CIRCUIT(circ)->p_circ_id)</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">246</td><td><a href="command.c.html#L246">((id_is_high && conn->circ_id_type == CIRC_ID_TYPE_HIGHER) || (!id_is_high && conn->circ_id_type == CIRC_ID_TYPE_LOWER))</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">335</td><td><a href="command.c.html#L335">((err_reason = circuit_finish_handshake(origin_circ, cell->command, cell->payload)) < 0)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">559</td><td><a href="command.c.html#L559">(labs(now - conn->handshake_state->sent_versions_at) < 180)</a></td><td class="num">25.85</td></tr>
+      <tr><td class="num line">123</td><td><a href="command.c.html#L123">(handshaking && cell->command != CELL_VERSIONS && cell->command != CELL_NETINFO)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="command.c.html#L342">((err_reason = circuit_send_next_onion_skin(origin_circ)) < 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">418</td><td><a href="command.c.html#L418">((reason = circuit_receive_relay_cell(cell, circ, direction)) < 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">600</td><td><a href="command.c.html#L600">(labs(apparent_skew) > NETINFO_NOTICE_SKEW && router_get_by_digest(conn->identity_digest))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">324</td><td><a href="command.c.html#L324">(circ->n_circ_id != cell->circ_id)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">578</td><td><a href="command.c.html#L578">(n_other_addrs && cp < end - 2)</a></td><td class="num">8.35</td></tr>
+      <tr><td class="num line">573</td><td><a href="command.c.html#L573">(my_addr_type == RESOLVED_TYPE_IPV4 && my_addr_len == 4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">589</td><td><a href="command.c.html#L589">(tor_addr_eq(&addr, &conn->real_addr))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">196</td><td><a href="command.c.html#L196">(conn->_base.state != OR_CONN_STATE_OR_HANDSHAKING)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">550</td><td><a href="command.c.html#L550">(conn->_base.state != OR_CONN_STATE_OR_HANDSHAKING)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">496</td><td><a href="command.c.html#L496">(is_or_protocol_version_known(v) && v > highest_supported_version)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="command.c.html#L289">(fast_server_handshake(cell->payload, reply, keys, sizeof(keys)) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">272</td><td><a href="command.c.html#L272">(cell->command == CELL_CREATE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">376</td><td><a href="command.c.html#L376">(circ->state == CIRCUIT_STATE_ONIONSKIN_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="command.c.html#L396">(cell->command == CELL_RELAY_EARLY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">406</td><td><a href="command.c.html#L406">(or_circ->remaining_relay_early_cells == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">544</td><td><a href="command.c.html#L544">(conn->link_proto < 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">494</td><td><a href="command.c.html#L494">(cp + 1 < end)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">256</td><td><a href="command.c.html#L256">(circuit_id_in_use_on_orconn(cell->circ_id, conn))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">605</td><td><a href="command.c.html#L605">(router_digest_is_trusted_dir(conn->identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">277</td><td><a href="command.c.html#L277">(assign_onionskin_to_cpuworker(NULL, circ, onionskin) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="command.c.html#L294">(onionskin_answer(circ, CELL_CREATED_FAST, reply, keys) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">522</td><td><a href="command.c.html#L522">(connection_or_send_netinfo(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="command.c.html#L625">(connection_or_set_state_open(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">63</td><td><a href="command.c.html#L63">(time_passed > 10000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">66</td><td><a href="command.c.html#L66">(time_passed < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">93</td><td><a href="command.c.html#L93">(now > current_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">180</td><td><a href="command.c.html#L180">(now > current_second)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="command.c.html#L397">(direction == CELL_DIRECTION_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="command.c.html#L505">(highest_supported_version == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">568</td><td><a href="command.c.html#L568">(cp >= end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">583</td><td><a href="command.c.html#L583">(next == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">233</td><td><a href="command.c.html#L233">(!server_mode(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="command.c.html#L317">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">369</td><td><a href="command.c.html#L369">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">447</td><td><a href="command.c.html#L447">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">499</td><td><a href="command.c.html#L499">(!highest_supported_version)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">224</td><td><a href="command.c.html#L224">(we_are_hibernating())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">331</td><td><a href="command.c.html#L331">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="command.c.html#L382">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="command.c.html#L461">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">262</td><td><a href="command.c.html#L262">(router)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

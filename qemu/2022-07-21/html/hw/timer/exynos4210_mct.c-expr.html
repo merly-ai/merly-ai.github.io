@@ -1,0 +1,126 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\timer\exynos4210_mct.c Ctrl Expressions (75) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\timer\exynos4210_mct.c Ctrl Expressions (75) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\timer\exynos4210_mct.c Ctrl Expressions (75)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">538</td><td><a href="exynos4210_mct.c.html#L538">(<span style='background-color:#741da3;'>(s->reg.int_cstat & G_INT_CSTAT_COMP(id)) && (s->reg.int_enb & G_INT_ENABLE(id))</span>)</a></td><td class="num">1019.75</td></tr>
+      <tr><td class="num line">1285</td><td><a href="exynos4210_mct.c.html#L1285">(<span style='background-color:#741da3;'>(value & G_INT_ENABLE(i)) > (s->g_timer.reg.tcon & G_INT_ENABLE(i))</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">1292</td><td><a href="exynos4210_mct.c.html#L1292">(<span style='background-color:#741da3;'>(value & G_INT_ENABLE(i)) < (s->g_timer.reg.tcon & G_INT_ENABLE(i))</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">1405</td><td><a href="exynos4210_mct.c.html#L1405">(s->l_timer[lt_i].reg.cnt[L_REG_CNT_ICNTB] * s->l_timer[lt_i].reg.cnt[L_REG_CNT_TCNTB] < MCT_LT_CNT_LOW_LIMIT)</a></td><td class="num">84.50</td></tr>
+      <tr><td class="num line">1353</td><td><a href="exynos4210_mct.c.html#L1353">((value & L_TCON_FRC_START) > (s->l_timer[lt_i].reg.tcon & L_TCON_FRC_START))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">1358</td><td><a href="exynos4210_mct.c.html#L1358">((value & L_TCON_FRC_START) < (s->l_timer[lt_i].reg.tcon & L_TCON_FRC_START))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">1407</td><td><a href="exynos4210_mct.c.html#L1407">(!s->l_timer[lt_i].reg.cnt[L_REG_CNT_TCNTB])</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">501</td><td><a href="exynos4210_mct.c.html#L501">(s->g_timer.reg.comp[id] - s->g_timer.reg.cnt < MCT_GT_COUNTER_STEP)</a></td><td class="num">31.60</td></tr>
+      <tr><td class="num line">1469</td><td><a href="exynos4210_mct.c.html#L1469">(s->l_timer[lt_i].reg.int_cstat & L_INT_CSTAT_INTCNT)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1458</td><td><a href="exynos4210_mct.c.html#L1458">(!s->l_timer[lt_i].reg.int_cstat)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">863</td><td><a href="exynos4210_mct.c.html#L863">((s->cnt_run && s->last_tcnto) || (s->int_run && s->last_icnto))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">572</td><td><a href="exynos4210_mct.c.html#L572">(s->g_timer.reg.cnt == s->g_timer.reg.comp[i])</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">946</td><td><a href="exynos4210_mct.c.html#L946">(!icnto && s->reg.tcon & L_TCON_INT_START)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1264</td><td><a href="exynos4210_mct.c.html#L1264">((value & G_TCON_COMP_ENABLE(i)) != (old_val & G_TCON_COMP_ENABLE(i)))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">453</td><td><a href="exynos4210_mct.c.html#L453">(s->g_timer.reg.comp[i] > gfrc)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">464</td><td><a href="exynos4210_mct.c.html#L464">(s->g_timer.reg.comp[i] <= min)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1253</td><td><a href="exynos4210_mct.c.html#L1253">((value & G_TCON_TIMER_ENABLE) > (old_val & G_TCON_TIMER_ENABLE))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1257</td><td><a href="exynos4210_mct.c.html#L1257">((value & G_TCON_TIMER_ENABLE) < (old_val & G_TCON_TIMER_ENABLE))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1323</td><td><a href="exynos4210_mct.c.html#L1323">((value & L_TCON_TICK_START) < (old_val & L_TCON_TICK_START))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1330</td><td><a href="exynos4210_mct.c.html#L1330">((value & L_TCON_INT_START) < (old_val & L_TCON_INT_START))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1337</td><td><a href="exynos4210_mct.c.html#L1337">((value & L_TCON_TICK_START) > (old_val & L_TCON_TICK_START))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1344</td><td><a href="exynos4210_mct.c.html#L1344">((value & L_TCON_INT_START) > (old_val & L_TCON_INT_START))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1468</td><td><a href="exynos4210_mct.c.html#L1468">((value & L_INT_INTENB_ICNTEIE) > (old_val & L_INT_INTENB_ICNTEIE))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">449</td><td><a href="exynos4210_mct.c.html#L449">(s->g_timer.reg.tcon & G_TCON_COMP_ENABLE(i))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="exynos4210_mct.c.html#L578">(s->g_timer.reg.tcon & G_TCON_AUTO_ICREMENT(i))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1287</td><td><a href="exynos4210_mct.c.html#L1287">(s->g_timer.reg.int_cstat & G_INT_CSTAT_COMP(i))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="exynos4210_mct.c.html#L666">(s->reg.int_enb & L_INT_INTENB_FRCEIE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">952</td><td><a href="exynos4210_mct.c.html#L952">(s->reg.int_enb & L_INT_INTENB_ICNTEIE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">963</td><td><a href="exynos4210_mct.c.html#L963">(s->reg.tcon & L_TCON_INTERVAL_MODE)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">612</td><td><a href="exynos4210_mct.c.html#L612">(!s->reg.cnt[L_REG_CNT_FRCCNTB])</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1005</td><td><a href="exynos4210_mct.c.html#L1005">(freq != s->freq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">522</td><td><a href="exynos4210_mct.c.html#L522">(distance > MCT_GT_COUNTER_STEP || !distance)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="exynos4210_mct.c.html#L590">(distance > MCT_GT_COUNTER_STEP || !distance)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">683</td><td><a href="exynos4210_mct.c.html#L683">(!s->int_run)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">722</td><td><a href="exynos4210_mct.c.html#L722">(!s->int_run)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">739</td><td><a href="exynos4210_mct.c.html#L739">(!s->cnt_run)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">805</td><td><a href="exynos4210_mct.c.html#L805">(!s->cnt_run)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">808</td><td><a href="exynos4210_mct.c.html#L808">(!s->int_run)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1383</td><td><a href="exynos4210_mct.c.html#L1383">(tcntb_min[lt_i] > value)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1386</td><td><a href="exynos4210_mct.c.html#L1386">(tcntb_max[lt_i] < value)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1424</td><td><a href="exynos4210_mct.c.html#L1424">(icntb_min[lt_i] > value)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1427</td><td><a href="exynos4210_mct.c.html#L1427">(icntb_max[lt_i] < value)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1276</td><td><a href="exynos4210_mct.c.html#L1276">(value & G_INT_CSTAT_COMP(i))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">693</td><td><a href="exynos4210_mct.c.html#L693">(s->int_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">755</td><td><a href="exynos4210_mct.c.html#L755">(s->cnt_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="exynos4210_mct.c.html#L759">(s->int_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">834</td><td><a href="exynos4210_mct.c.html#L834">(s->cnt_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="exynos4210_mct.c.html#L839">(s->int_run)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">869</td><td><a href="exynos4210_mct.c.html#L869">(s->last_tcnto)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="exynos4210_mct.c.html#L876">(s->icntb)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="exynos4210_mct.c.html#L1232">(offset & 0x4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="exynos4210_mct.c.html#L1417">(value & L_ICNTB_MANUAL_UPDATE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="exynos4210_mct.c.html#L447">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="exynos4210_mct.c.html#L457">(distance <= distance_min)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">475</td><td><a href="exynos4210_mct.c.html#L475">(comp_i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">497</td><td><a href="exynos4210_mct.c.html#L497">(id == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">570</td><td><a href="exynos4210_mct.c.html#L570">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="exynos4210_mct.c.html#L886">(to_count > MCT_LT_COUNTER_STEP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="exynos4210_mct.c.html#L1036">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1195</td><td><a href="exynos4210_mct.c.html#L1195">(offset == G_CNT_L)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1202</td><td><a href="exynos4210_mct.c.html#L1202">(offset == G_CNT_U)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="exynos4210_mct.c.html#L1263">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1275</td><td><a href="exynos4210_mct.c.html#L1275">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="exynos4210_mct.c.html#L1284">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="exynos4210_mct.c.html#L1510">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1521</td><td><a href="exynos4210_mct.c.html#L1521">(i < MCT_GT_CMP_NUM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1524</td><td><a href="exynos4210_mct.c.html#L1524">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1540</td><td><a href="exynos4210_mct.c.html#L1540">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">472</td><td><a href="exynos4210_mct.c.html#L472">(!enabled)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="exynos4210_mct.c.html#L970">(!tcnto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">711</td><td><a href="exynos4210_mct.c.html#L711">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">794</td><td><a href="exynos4210_mct.c.html#L794">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">814</td><td><a href="exynos4210_mct.c.html#L814">(icnto)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">847</td><td><a href="exynos4210_mct.c.html#L847">(cnt_stopped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">850</td><td><a href="exynos4210_mct.c.html#L850">(int_stopped)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\ca65\instr.c Ctrl Expressions (39) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\ca65\instr.c Ctrl Expressions (39) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\ca65\instr.c Ctrl Expressions (39)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1216</td><td><a href="instr.c.html#L1216">(<span style='background-color:#741da3;'>ED.AddrSize > ADDR_SIZE_ZP && (A->AddrModeSet & AM65_SET_ZP)</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">1258</td><td><a href="instr.c.html#L1258">((A->Expr->Op == EXPR_BYTE0 || A->Expr->Op == EXPR_BYTE1) && Left->Op == EXPR_SYMBOL && GetSymAddrSize(Left->V.Sym) != ADDR_SIZE_ZP)</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">1252</td><td><a href="instr.c.html#L1252">(A->Expr && (Ins->AddrMode & AM65_ALL_IMM) && (A->AddrModeSet & AM65_DIR | AM65_ABS | AM65_ABS_LONG) && ExtBytes[A->AddrMode] == 1)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">1273</td><td><a href="instr.c.html#L1273">(A->AddrMode == AM65I_IMM_ACCU || A->AddrMode == AM65I_IMM_INDEX || A->AddrMode == AM65I_IMM_IMPLICIT || A->AddrMode == AM65I_IMM_IMPLICIT_WORD)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="instr.c.html#L1301">(CPU == CPU_65816 && (A->AddrModeBit & AM65_ABS | AM65_ABS_X | AM65_ABS_Y))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1635</td><td><a href="instr.c.html#L1635">(SmartMode && CurrentScope->AddrSize == ADDR_SIZE_FAR)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1201</td><td><a href="instr.c.html#L1201">((A->AddrModeSet & ~AM65_ALL_ZP) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1203</td><td><a href="instr.c.html#L1203">((A->AddrModeSet & ~AM65_ALL_ABS) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1205</td><td><a href="instr.c.html#L1205">((A->AddrModeSet & ~AM65_ALL_FAR) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1532</td><td><a href="instr.c.html#L1532">((Val & (Val - 1)) != 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1787</td><td><a href="instr.c.html#L1787">(NewCPU != CPU_UNKNOWN && InsTabs[NewCPU])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1275</td><td><a href="instr.c.html#L1275">(ForceRange && A->Expr)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1453</td><td><a href="instr.c.html#L1453">(CPU == CPU_65816 && SmartMode)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1481</td><td><a href="instr.c.html#L1481">(CPU == CPU_65816 && SmartMode)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1239</td><td><a href="instr.c.html#L1239">(A->AddrModeSet == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1817</td><td><a href="instr.c.html#L1817">(InsTab->Count == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1334</td><td><a href="instr.c.html#L1334">(EvalEA(Ins, &A) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1608</td><td><a href="instr.c.html#L1608">(A.AddrModeBit & AM65_ABS_IND)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1195</td><td><a href="instr.c.html#L1195">(ED.AddrSize == ADDR_SIZE_DEFAULT)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1394</td><td><a href="instr.c.html#L1394">(CurTok.Tok == TOK_HASH)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1406</td><td><a href="instr.c.html#L1406">(CurTok.Tok == TOK_HASH)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1563</td><td><a href="instr.c.html#L1563">(CurTok.Tok != TOK_HASH)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1725</td><td><a href="instr.c.html#L1725">(A.AddrModeSet == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1185</td><td><a href="instr.c.html#L1185">(A->Expr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1460</td><td><a href="instr.c.html#L1460">(Val & 0x10)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1464</td><td><a href="instr.c.html#L1464">(Val & 0x20)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1488</td><td><a href="instr.c.html#L1488">(Val & 0x10)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="instr.c.html#L1492">(Val & 0x20)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1574</td><td><a href="instr.c.html#L1574">(EvalEA(Ins, &A))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1605</td><td><a href="instr.c.html#L1605">(EvalEA(Ins, &A))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1650</td><td><a href="instr.c.html#L1650">(EvalEA(Ins, &A))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1683</td><td><a href="instr.c.html#L1683">(EvalEA(Ins, &A))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1824</td><td><a href="instr.c.html#L1824">(I < SB_GetLen(Ident))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1456</td><td><a href="instr.c.html#L1456">(Val < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1484</td><td><a href="instr.c.html#L1484">(Val < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1527</td><td><a href="instr.c.html#L1527">(Val < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1828</td><td><a href="instr.c.html#L1828">(I >= sizeof(Key) - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1839</td><td><a href="instr.c.html#L1839">(ID == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="instr.c.html#L1340">(A.Expr)</a></td><td class="num">1.50</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,518 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>CMake Repo - Utilities\cmcurl\lib\http.c Ctrl Expressions (467) - MerlyMentor</title>
+</head>
+<body>
+  <h2>CMake Repo - Utilities\cmcurl\lib\http.c Ctrl Expressions (467) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Utilities\cmcurl\lib\http.c Ctrl Expressions (467)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2350</td><td><a href="http.c.html#L2350">((conn->handler->protocol & PROTO_FAMILY_HTTP) && (((httpreq == HTTPREQ_POST_MIME || httpreq == HTTPREQ_POST_FORM) && http->postsize < 0) || (<span style='background-color:#741da3;'>(data->set.upload || httpreq == HTTPREQ_POST) && data->state.infilesize == -1</span>)))</a></td><td class="num">1080.00</td></tr>
+      <tr><td class="num line">1648</td><td><a href="http.c.html#L1648">(!premature && !conn->bits.retry && !data->set.connect_only && <span style='background-color:#741da3;'>(data->req.bytecount + data->req.headerbytecount - data->req.deductheadercount) <= 0</span>)</a></td><td class="num">1050.45</td></tr>
+      <tr><td class="num line">1266</td><td><a href="http.c.html#L1266">((<span style='background-color:#741da3;'>conn->handler->flags & PROTOPT_SSL || conn->http_proxy.proxytype == CURLPROXY_HTTPS</span>) && conn->httpversion != 20)</a></td><td class="num">1041.00</td></tr>
+      <tr><td class="num line">493</td><td><a href="http.c.html#L493">(<span style='background-color:#741da3;'>(data->state.authproxy.picked == CURLAUTH_NTLM) || (data->state.authhost.picked == CURLAUTH_NTLM) || (data->state.authproxy.picked == CURLAUTH_NTLM_WB) || (data->state.authhost.picked == CURLAUTH_NTLM_WB)</span>)</a></td><td class="num">1032.25</td></tr>
+      <tr><td class="num line">2932</td><td><a href="http.c.html#L2932">(<span style='background-color:#741da3;'>data->state.resume_from && !k->content_range && (data->state.httpreq == HTTPREQ_GET) && !k->ignorebody</span>)</a></td><td class="num">1028.00</td></tr>
+      <tr><td class="num line">1192</td><td><a href="http.c.html#L1192">(<span style='background-color:#741da3;'>data->set.max_send_speed && (data->set.max_send_speed < (curl_off_t)fullsize) && (data->set.max_send_speed < http->postsize)</span>)</a></td><td class="num">1027.50</td></tr>
+      <tr><td class="num line">3267</td><td><a href="http.c.html#L3267">(<span style='background-color:#741da3;'>(http->postsize > -1) && (http->postsize <= data->req.writebytecount) && (http->sending != HTTPSEND_REQUEST)</span>)</a></td><td class="num">1027.25</td></tr>
+      <tr><td class="num line">615</td><td><a href="http.c.html#L615">(<span style='background-color:#741da3;'>(data->state.httpreq != HTTPREQ_GET) && (data->state.httpreq != HTTPREQ_HEAD) && !conn->bits.rewindaftersend</span>)</a></td><td class="num">1025.00</td></tr>
+      <tr><td class="num line">630</td><td><a href="http.c.html#L630">(<span style='background-color:#741da3;'>(data->req.httpcode < 300) && (!data->state.authhost.done) && conn->bits.authneg</span>)</a></td><td class="num">1023.00</td></tr>
+      <tr><td class="num line">2589</td><td><a href="http.c.html#L2589">(<span style='background-color:#741da3;'>conn->httpversion != 20 && !data->state.expect100header && (http->postsize < MAX_INITIAL_POST_SIZE)</span>)</a></td><td class="num">1022.50</td></tr>
+      <tr><td class="num line">4069</td><td><a href="http.c.html#L4069">(<span style='background-color:#741da3;'>(!conn->bits.authneg) && !conn->bits.close && !conn->bits.rewindaftersend</span>)</a></td><td class="num">1022.00</td></tr>
+      <tr><td class="num line">497</td><td><a href="http.c.html#L497">(<span style='background-color:#741da3;'>((expectsend - bytessent) < 2000) || (conn->http_ntlm_state != NTLMSTATE_NONE) || (conn->proxy_ntlm_state != NTLMSTATE_NONE)</span>)</a></td><td class="num">1018.85</td></tr>
+      <tr><td class="num line">525</td><td><a href="http.c.html#L525">(<span style='background-color:#741da3;'>((expectsend - bytessent) < 2000) || (conn->http_negotiate_state != GSS_AUTHNONE) || (conn->proxy_negotiate_state != GSS_AUTHNONE)</span>)</a></td><td class="num">1018.85</td></tr>
+      <tr><td class="num line">1718</td><td><a href="http.c.html#L1718">(<span style='background-color:#741da3;'>!data->state.disableexpect && Curl_use_http_1_1plus(data, conn) && (conn->httpversion < 20)</span>)</a></td><td class="num">1017.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="http.c.html#L991">(<span style='background-color:#741da3;'>(authp->avail & CURLAUTH_NTLM) || (authp->avail & CURLAUTH_NTLM_WB) || Curl_auth_is_ntlm_supported()</span>)</a></td><td class="num">1016.50</td></tr>
+      <tr><td class="num line">4236</td><td><a href="http.c.html#L4236">(<span style='background-color:#741da3;'>(nc >= 4) && (' ' == separator)</span>)</a></td><td class="num">1008.25</td></tr>
+      <tr><td class="num line">740</td><td><a href="http.c.html#L740">(CURL_DISABLE_PROXY(proxy && conn->bits.proxy_user_passwd && !Curl_checkProxyheaders(data, conn, STRCONST("Proxy-authorization"))) || (!proxy && data->state.aptr.user && !Curl_checkheaders(data, STRCONST("Authorization"))))</a></td><td class="num">86.50</td></tr>
+      <tr><td class="num line">4003</td><td><a href="http.c.html#L4003">(conn->bits.close && (((data->req.httpcode == 401) && (conn->http_ntlm_state == NTLMSTATE_TYPE2)) || ((data->req.httpcode == 407) && (conn->proxy_ntlm_state == NTLMSTATE_TYPE2))))</a></td><td class="num">71.50</td></tr>
+      <tr><td class="num line">4013</td><td><a href="http.c.html#L4013">(conn->bits.close && (((data->req.httpcode == 401) && (conn->http_negotiate_state == GSS_AUTHRECV)) || ((data->req.httpcode == 407) && (conn->proxy_negotiate_state == GSS_AUTHRECV))))</a></td><td class="num">71.50</td></tr>
+      <tr><td class="num line">590</td><td><a href="http.c.html#L590">((data->state.aptr.user || data->set.str[STRING_BEARER]) && ((data->req.httpcode == 401) || (conn->bits.authneg && data->req.httpcode < 300)))</a></td><td class="num">71.00</td></tr>
+      <tr><td class="num line">604</td><td><a href="http.c.html#L604">(conn->bits.proxy_user_passwd && ((data->req.httpcode == 407) || (conn->bits.authneg && data->req.httpcode < 300)))</a></td><td class="num">62.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="http.c.html#L876">(((authhost->multipass && !authhost->done) || (authproxy->multipass && !authproxy->done)) && (httpreq != HTTPREQ_GET) && (httpreq != HTTPREQ_HEAD))</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">3979</td><td><a href="http.c.html#L3979">((k->size == -1) && !k->chunk && !conn->bits.close && (conn->httpversion == 11) && !(conn->handler->protocol & CURLPROTO_RTSP) && data->state.httpreq != HTTPREQ_HEAD)</a></td><td class="num">57.25</td></tr>
+      <tr><td class="num line">2406</td><td><a href="http.c.html#L2406">((http->postsize != -1) && !data->req.upload_chunky && (conn->bits.authneg || !Curl_checkheaders(data, STRCONST("Content-Length"))))</a></td><td class="num">53.50</td></tr>
+      <tr><td class="num line">2467</td><td><a href="http.c.html#L2467">(http->postsize != -1 && !data->req.upload_chunky && (conn->bits.authneg || !Curl_checkheaders(data, STRCONST("Content-Length"))))</a></td><td class="num">53.50</td></tr>
+      <tr><td class="num line">2548</td><td><a href="http.c.html#L2548">((http->postsize != -1) && !data->req.upload_chunky && (conn->bits.authneg || !Curl_checkheaders(data, STRCONST("Content-Length"))))</a></td><td class="num">53.50</td></tr>
+      <tr><td class="num line">2152</td><td><a href="http.c.html#L2152">(((conn->given->protocol & CURLPROTO_HTTPS) && (conn->remote_port == PORT_HTTPS)) || ((conn->given->protocol & CURLPROTO_HTTP) && (conn->remote_port == PORT_HTTP)))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">4217</td><td><a href="http.c.html#L4217">(nc == 1 && httpversion_major >= 2 && 2 == sscanf(HEADER1, " HTTP/%1[23] %d", twoorthree, &k->httpcode))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">825</td><td><a href="http.c.html#L825">(CURL_DISABLE_PROXY(conn->bits.httpproxy && conn->bits.proxy_user_passwd) || data->state.aptr.user || data->set.str[STRING_BEARER])</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">3235</td><td><a href="http.c.html#L3235">(!(conn->handler->flags & PROTOPT_SSL) && conn->httpversion != 20 && (data->state.httpwant == CURL_HTTP_VERSION_2))</a></td><td class="num">40.50</td></tr>
+      <tr><td class="num line">3725</td><td><a href="http.c.html#L3725">(conn->httpversion == 20 || (k->upgr101 == UPGR101_REQUESTED && k->httpcode == 101))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">2101</td><td><a href="http.c.html#L2101">(ptr && (!data->state.this_is_a_follow || strcasecompare(data->state.first_host, conn->host.name)))</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">4231</td><td><a href="http.c.html#L4231">(ISDIGIT(digit4) || (nc >= 4 && k->httpcode < 100))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">3538</td><td><a href="http.c.html#L3538">(*ptr && !ISDIGIT(*ptr) && *ptr != '*')</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">759</td><td><a href="http.c.html#L759">((!proxy && data->set.str[STRING_BEARER] && !Curl_checkheaders(data, STRCONST("Authorization"))))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">2786</td><td><a href="http.c.html#L2786">(((httpreq == HTTPREQ_GET) || (httpreq == HTTPREQ_HEAD)) && !Curl_checkheaders(data, STRCONST("Range")))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2793</td><td><a href="http.c.html#L2793">((httpreq == HTTPREQ_POST || httpreq == HTTPREQ_PUT) && !Curl_checkheaders(data, STRCONST("Content-Range")))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">226</td><td><a href="http.c.html#L226">(strncasecompare(head->data, thisheader, thislen) && Curl_headersep(head->data[thislen]))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2718</td><td><a href="http.c.html#L2718">(data->set.str[STRING_COOKIE] && !Curl_checkheaders(data, STRCONST("Cookie")))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">3112</td><td><a href="http.c.html#L3112">(!Curl_checkheaders(data, STRCONST("Accept-Encoding")) && data->set.str[STRING_ENCODING])</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1773</td><td><a href="http.c.html#L1773">(ptr && *(ptr + 1) == ' ')</a></td><td class="num">24.85</td></tr>
+      <tr><td class="num line">2979</td><td><a href="http.c.html#L2979">(!Curl_checkheaders(data, STRCONST("TE")) && data->set.http_transfer_encoding)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3106</td><td><a href="http.c.html#L3106">(data->state.referer && !Curl_checkheaders(data, STRCONST("Referer")))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3165</td><td><a href="http.c.html#L3165">(conn->bits.altused && !Curl_checkheaders(data, STRCONST("Alt-Used")))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3711</td><td><a href="http.c.html#L3711">(data->state.resume_from && data->state.httpreq == HTTPREQ_GET && k->httpcode == 416)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">3543</td><td><a href="http.c.html#L3543">(!curlx_strtoofft(ptr, NULL, 10, &k->offset))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1124</td><td><a href="http.c.html#L1124">(data->state.resume_from && data->state.httpreq == HTTPREQ_GET && httpcode == 416)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">3777</td><td><a href="http.c.html#L3777">(data->set.max_filesize && k->size > data->set.max_filesize)</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">3698</td><td><a href="http.c.html#L3698">(!data->state.httpversion || data->state.httpversion > conn->httpversion)</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="http.c.html#L583">(100 <= data->req.httpcode && 199 >= data->req.httpcode)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="http.c.html#L637">((data->state.httpreq != HTTPREQ_GET) && (data->state.httpreq != HTTPREQ_HEAD))</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">2035</td><td><a href="http.c.html#L2035">((conn->handler->protocol & PROTO_FAMILY_HTTP | CURLPROTO_FTP) && data->set.upload)</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">3494</td><td><a href="http.c.html#L3494">(!k->http_bodyless && checkprefix("Content-Encoding:", headp) && data->set.str[STRING_ENCODING])</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">523</td><td><a href="http.c.html#L523">((data->state.authproxy.picked == CURLAUTH_NEGOTIATE) || (data->state.authhost.picked == CURLAUTH_NEGOTIATE))</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">596</td><td><a href="http.c.html#L596">(data->state.authhost.picked == CURLAUTH_NTLM && conn->httpversion > 11)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">1681</td><td><a href="http.c.html#L1681">((data->state.httpwant == CURL_HTTP_VERSION_1_0) && (conn->httpversion <= 10))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">4021</td><td><a href="http.c.html#L4021">((conn->http_negotiate_state == GSS_AUTHDONE) && (data->req.httpcode != 401))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">4025</td><td><a href="http.c.html#L4025">((conn->proxy_negotiate_state == GSS_AUTHDONE) && (data->req.httpcode != 407))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">3381</td><td><a href="http.c.html#L3381">(!k->http_bodyless && !data->set.ignorecl && checkprefix("Content-Length:", headp))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">851</td><td><a href="http.c.html#L851">(conn->bits.httpproxy && (conn->bits.tunnel_proxy == (bit)proxytunnel))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1275</td><td><a href="http.c.html#L1275">(data->set.max_send_speed && (included_body_bytes > data->set.max_send_speed))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1326</td><td><a href="http.c.html#L1326">(data->set.max_send_speed && (included_body_bytes > data->set.max_send_speed))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2837</td><td><a href="http.c.html#L2837">((HTTPREQ_POST == httpreq || HTTPREQ_PUT == httpreq) && data->state.resume_from)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">3924</td><td><a href="http.c.html#L3924">(100 <= k->httpcode && 199 >= k->httpcode)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">504</td><td><a href="http.c.html#L504">(!conn->bits.authneg && (conn->writesockfd != CURL_SOCKET_BAD))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">532</td><td><a href="http.c.html#L532">(!conn->bits.authneg && (conn->writesockfd != CURL_SOCKET_BAD))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1679</td><td><a href="http.c.html#L1679">((data->state.httpversion == 10) || (conn->httpversion == 10))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1693</td><td><a href="http.c.html#L1693">((data->state.httpwant == CURL_HTTP_VERSION_3) || (conn->httpversion == 30))</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">3732</td><td><a href="http.c.html#L3732">(conn->httpversion >= 11 && !conn->bits.close)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">3292</td><td><a href="http.c.html#L3292">((conn->httpversion == 20) && data->req.upload_chunky)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">4095</td><td><a href="http.c.html#L4095">((k->httpcode == 417) && data->state.expect100header)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2193</td><td><a href="http.c.html#L2193">(conn->bits.httpproxy && !conn->bits.tunnel_proxy)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">2856</td><td><a href="http.c.html#L2856">(data->state.resume_from && !data->state.this_is_a_follow)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">2955</td><td><a href="http.c.html#L2955">(data->set.timecondition && !data->state.range)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">3052</td><td><a href="http.c.html#L3052">(conn->bits.httpproxy && !conn->bits.tunnel_proxy)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">997</td><td><a href="http.c.html#L997">(authp->picked == CURLAUTH_NTLM || authp->picked == CURLAUTH_NTLM_WB)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="http.c.html#L1161">((httpcode == 407) && !data->conn->bits.proxy_user_passwd)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2501</td><td><a href="http.c.html#L2501">(http->postsize > EXPECT_100_THRESHOLD || http->postsize < 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2575</td><td><a href="http.c.html#L2575">(http->postsize > EXPECT_100_THRESHOLD || http->postsize < 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2663</td><td><a href="http.c.html#L2663">(data->req.upload_chunky && conn->bits.authneg)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2255</td><td><a href="http.c.html#L2255">(type && type[6] && type[7] == 0)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="http.c.html#L1158">((httpcode == 401) && !data->state.aptr.user)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1756</td><td><a href="http.c.html#L1756">(CURL_DO_LINEEND_CONV(handle->state.prefer_ascii) || (handle->set.crlf))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2726</td><td><a href="http.c.html#L2726">(data->cookies && data->state.cookie_engine)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2207</td><td><a href="http.c.html#L2207">(conn->host.dispname != conn->host.name)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">3915</td><td><a href="http.c.html#L3915">((0x0a == *headp) || (0x0d == *headp))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">837</td><td><a href="http.c.html#L837">(authhost->want && !authhost->picked)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">843</td><td><a href="http.c.html#L843">(authproxy->want && !authproxy->picked)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1894</td><td><a href="http.c.html#L1894">(data->state.httpreq == HTTPREQ_POST_FORM && checkprefix("Content-Type:", compare))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1898</td><td><a href="http.c.html#L1898">(data->state.httpreq == HTTPREQ_POST_MIME && checkprefix("Content-Type:", compare))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">252</td><td><a href="http.c.html#L252">(*header && (*header != ':'))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1078</td><td><a href="http.c.html#L1078">(*auth && *auth != ',')</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">2936</td><td><a href="http.c.html#L2936">(k->size == data->state.resume_from)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3544</td><td><a href="http.c.html#L3544">(data->state.resume_from == k->offset)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3773</td><td><a href="http.c.html#L3773">(data->req.ignore_cl || k->chunk)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1912</td><td><a href="http.c.html#L1912">((conn->httpversion >= 20) && checkprefix("Transfer-Encoding:", compare))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1877</td><td><a href="http.c.html#L1877">(ptr && (ptr != headers->data))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="http.c.html#L965">((authp->avail & CURLAUTH_NEGOTIATE) || Curl_auth_is_spnego_supported())</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1029</td><td><a href="http.c.html#L1029">((authp->avail & CURLAUTH_DIGEST) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1889</td><td><a href="http.c.html#L1889">(data->state.aptr.host && checkprefix("Host:", compare))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1907</td><td><a href="http.c.html#L1907">(data->state.aptr.te && checkprefix("Connection:", compare))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">188</td><td><a href="http.c.html#L188">(conn->handler->flags & PROTOPT_SSL)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">261</td><td><a href="http.c.html#L261">(*start && ISSPACE(*start))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">275</td><td><a href="http.c.html#L275">((end > start) && ISSPACE(*end))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1082</td><td><a href="http.c.html#L1082">(*auth && ISSPACE(*auth))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1456</td><td><a href="http.c.html#L1456">(*start && ISSPACE(*start))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1519</td><td><a href="http.c.html#L1519">(conn->given->protocol & CURLPROTO_HTTPS)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1607</td><td><a href="http.c.html#L1607">(conn->handler->flags & PROTOPT_SSL)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1851</td><td><a href="http.c.html#L1851">(*ptr && ISSPACE(*ptr))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1881</td><td><a href="http.c.html#L1881">(*ptr && ISSPACE(*ptr))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1902</td><td><a href="http.c.html#L1902">(conn->bits.authneg && checkprefix("Content-Length:", compare))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3363</td><td><a href="http.c.html#L3363">(conn->handler->protocol & CURLPROTO_RTSP)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4197</td><td><a href="http.c.html#L4197">(conn->handler->protocol & PROTO_FAMILY_HTTP)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4292</td><td><a href="http.c.html#L4292">(conn->handler->protocol & CURLPROTO_RTSP)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1132</td><td><a href="http.c.html#L1132">((httpcode != 401) && (httpcode != 407))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4301</td><td><a href="http.c.html#L4301">((nc == 4) && (' ' == separator))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3470</td><td><a href="http.c.html#L3470">(!k->http_bodyless && checkprefix("Transfer-Encoding:", headp))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3523</td><td><a href="http.c.html#L3523">(!k->http_bodyless && checkprefix("Content-Range:", headp))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1859</td><td><a href="http.c.html#L1859">(*(ptr--) == ';')</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4334</td><td><a href="http.c.html#L4334">(k->httpcode / 100 == 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1916</td><td><a href="http.c.html#L1916">((checkprefix("Authorization:", compare) || checkprefix("Cookie:", compare)) && !Curl_allow_auth_to_host(data))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2327</td><td><a href="http.c.html#L2327">(http->sendit->kind == MIMEKIND_MULTIPART)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">4189</td><td><a href="http.c.html#L4189">(!k->headerline++)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="http.c.html#L580">(!data->set.str[STRING_BEARER])</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">867</td><td><a href="http.c.html#L867">(Curl_allow_auth_to_host(data) || conn->bits.netrc)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">187</td><td><a href="http.c.html#L187">(data->state.httpwant == CURL_HTTP_VERSION_3)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">476</td><td><a href="http.c.html#L476">(data->state.infilesize != -1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">490</td><td><a href="http.c.html#L490">((expectsend == -1) || (expectsend > bytessent))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1301</td><td><a href="http.c.html#L1301">(sendsize > (size_t)data->set.upload_buffer_size)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1958</td><td><a href="http.c.html#L1958">(data->set.timecondition == CURL_TIMECOND_NONE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2799</td><td><a href="http.c.html#L2799">(data->set.set_resume_from < 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2848</td><td><a href="http.c.html#L2848">(data->state.resume_from < 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2888</td><td><a href="http.c.html#L2888">((actuallyread == 0) || (actuallyread > readthisamountnow))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2895</td><td><a href="http.c.html#L2895">(passed < data->state.resume_from)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2899</td><td><a href="http.c.html#L2899">(data->state.infilesize > 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2902</td><td><a href="http.c.html#L2902">(data->state.infilesize <= 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3050</td><td><a href="http.c.html#L3050">(data->state.httpwant == CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3255</td><td><a href="http.c.html#L3255">((httpreq == HTTPREQ_GET) || (httpreq == HTTPREQ_HEAD))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2040</td><td><a href="http.c.html#L2040">(data->set.str[STRING_CUSTOMREQUEST])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="http.c.html#L2187">(data->set.str[STRING_TARGET])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3337</td><td><a href="http.c.html#L3337">((rc != STATUS_DONE) && (checkprefixmax("HTTP/", s, len)))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="http.c.html#L964">(checkprefix("Negotiate", auth) && is_valid_auth_separator(auth[9]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">990</td><td><a href="http.c.html#L990">(checkprefix("NTLM", auth) && is_valid_auth_separator(auth[4]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1028</td><td><a href="http.c.html#L1028">(checkprefix("Digest", auth) && is_valid_auth_separator(auth[6]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1050</td><td><a href="http.c.html#L1050">(checkprefix("Basic", auth) && is_valid_auth_separator(auth[5]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1064</td><td><a href="http.c.html#L1064">(checkprefix("Bearer", auth) && is_valid_auth_separator(auth[6]))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">691</td><td><a href="http.c.html#L691">(authstatus->picked == CURLAUTH_AWS_SIGV4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">700</td><td><a href="http.c.html#L700">(authstatus->picked == CURLAUTH_NEGOTIATE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">709</td><td><a href="http.c.html#L709">(authstatus->picked == CURLAUTH_NTLM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">718</td><td><a href="http.c.html#L718">(authstatus->picked == CURLAUTH_NTLM_WB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">727</td><td><a href="http.c.html#L727">(authstatus->picked == CURLAUTH_DIGEST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">738</td><td><a href="http.c.html#L738">(authstatus->picked == CURLAUTH_BASIC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">757</td><td><a href="http.c.html#L757">(authstatus->picked == CURLAUTH_BEARER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">970</td><td><a href="http.c.html#L970">(authp->picked == CURLAUTH_NEGOTIATE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1004</td><td><a href="http.c.html#L1004">(authp->picked == CURLAUTH_NTLM_WB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1054</td><td><a href="http.c.html#L1054">(authp->picked == CURLAUTH_BASIC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1068</td><td><a href="http.c.html#L1068">(authp->picked == CURLAUTH_BEARER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1198</td><td><a href="http.c.html#L1198">(http->postsize <= (curl_off_t)fullsize)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1588</td><td><a href="http.c.html#L1588">(conn->transport == TRNSPRT_QUIC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2140</td><td><a href="http.c.html#L2140">(!data->state.aptr.host)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2169</td><td><a href="http.c.html#L2169">(!data->state.aptr.host)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2359</td><td><a href="http.c.html#L2359">(conn->httpversion < 20)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2722</td><td><a href="http.c.html#L2722">(data->cookies || addcookies)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2826</td><td><a href="http.c.html#L2826">(!data->state.aptr.rangeline)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3002</td><td><a href="http.c.html#L3002">(!data->state.aptr.te)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3033</td><td><a href="http.c.html#L3033">(conn->transport != TRNSPRT_QUIC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3034</td><td><a href="http.c.html#L3034">(conn->httpversion < 20)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3108</td><td><a href="http.c.html#L3108">(!data->state.aptr.ref)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3117</td><td><a href="http.c.html#L3117">(!data->state.aptr.accept_encoding)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3600</td><td><a href="http.c.html#L3600">(authp->picked == CURLAUTH_NEGOTIATE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3718</td><td><a href="http.c.html#L3718">(conn->httpversion == 10)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3776</td><td><a href="http.c.html#L3776">(k->size != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3799</td><td><a href="http.c.html#L3799">(k->headerline < 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3939</td><td><a href="http.c.html#L3939">(k->exp100 > EXP100_SEND_DATA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3947</td><td><a href="http.c.html#L3947">(k->upgr101 == UPGR101_REQUESTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4068</td><td><a href="http.c.html#L4068">(k->httpcode >= 300)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4106</td><td><a href="http.c.html#L4106">(k->exp100 > EXP100_SEND_DATA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4255</td><td><a href="http.c.html#L4255">(k->upgr101 == UPGR101_RECEIVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4257</td><td><a href="http.c.html#L4257">(conn->httpversion != 20)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4260</td><td><a href="http.c.html#L4260">(conn->httpversion < 20)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4350</td><td><a href="http.c.html#L4350">(*k->str)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="http.c.html#L467">(!conn->bits.protoconnstart)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">627</td><td><a href="http.c.html#L627">(!data->req.newurl)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">640</td><td><a href="http.c.html#L640">(!data->req.newurl)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="http.c.html#L975">(!data->req.newurl)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1111</td><td><a href="http.c.html#L1111">(!data->set.http_fail_on_error)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1554</td><td><a href="http.c.html#L1554">(data->conn->unix_domain_socket)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2087</td><td><a href="http.c.html#L2087">(!data->state.this_is_a_follow)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2092</td><td><a href="http.c.html#L2092">(!data->state.first_host)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2604</td><td><a href="http.c.html#L2604">(!data->req.upload_chunky)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2678</td><td><a href="http.c.html#L2678">(!conn->bits.authneg)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3629</td><td><a href="http.c.html#L3629">(!data->req.newurl)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3858</td><td><a href="http.c.html#L3858">(!data->set.http09_allowed)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3893</td><td><a href="http.c.html#L3893">(!data->set.http09_allowed)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2220</td><td><a href="http.c.html#L2220">(strcasecompare("http", data->state.up.scheme))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2251</td><td><a href="http.c.html#L2251">(strcasecompare("ftp", data->state.up.scheme))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1699</td><td><a href="http.c.html#L1699">(conn->proto.httpc.h2)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3093</td><td><a href="http.c.html#L3093">(data->state.up.query)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="http.c.html#L462">(conn->bits.authneg)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">512</td><td><a href="http.c.html#L512">(conn->bits.close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">540</td><td><a href="http.c.html#L540">(conn->bits.close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">587</td><td><a href="http.c.html#L587">(data->state.authproblem)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1080</td><td><a href="http.c.html#L1080">(*auth == ',')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1202</td><td><a href="http.c.html#L1202">(http->backup.postsize)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1500</td><td><a href="http.c.html#L1500">(conn->bits.proxy_connect_closed)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1511</td><td><a href="http.c.html#L1511">(data->set.haproxyprotocol)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1820</td><td><a href="http.c.html#L1820">(data->set.sep_headers)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1826</td><td><a href="http.c.html#L1826">(data->set.sep_headers)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1884</td><td><a href="http.c.html#L1884">(*ptr || semicolonp)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2043</td><td><a href="http.c.html#L2043">(data->set.opt_no_body)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2118</td><td><a href="http.c.html#L2118">(*cookiehost == '[')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2252</td><td><a href="http.c.html#L2252">(data->set.proxy_transfer_mode)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2325</td><td><a href="http.c.html#L2325">(*cthdr == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2355</td><td><a href="http.c.html#L2355">(conn->bits.authneg)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2373</td><td><a href="http.c.html#L2373">(data->req.upload_chunky)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2401</td><td><a href="http.c.html#L2401">(conn->bits.authneg)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2446</td><td><a href="http.c.html#L2446">(conn->bits.authneg)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2539</td><td><a href="http.c.html#L2539">(conn->bits.authneg)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2585</td><td><a href="http.c.html#L2585">(data->set.postfields)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2672</td><td><a href="http.c.html#L2672">(data->state.infilesize)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2759</td><td><a href="http.c.html#L2759">(addcookies && !result)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2767</td><td><a href="http.c.html#L2767">(count && !result)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2780</td><td><a href="http.c.html#L2780">(data->state.use_range)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2809</td><td><a href="http.c.html#L2809">(data->state.resume_from)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2919</td><td><a href="http.c.html#L2919">(data->req.newurl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2920</td><td><a href="http.c.html#L2920">(conn->bits.close)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3272</td><td><a href="http.c.html#L3272">(data->req.writebytecount)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3393</td><td><a href="http.c.html#L3393">(data->set.max_filesize)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3576</td><td><a href="http.c.html#L3576">(data->set.get_filetime)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3626</td><td><a href="http.c.html#L3626">(data->set.http_follow_location)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3746</td><td><a href="http.c.html#L3746">(data->set.timecondition)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3919</td><td><a href="http.c.html#L3919">('\r' == *headp)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3921</td><td><a href="http.c.html#L3921">('\n' == *headp)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4104</td><td><a href="http.c.html#L4104">(data->set.http_keep_sending_on_error)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4118</td><td><a href="http.c.html#L4118">(data->state.expect100header)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4129</td><td><a href="http.c.html#L4129">(conn->bits.rewindaftersend)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4144</td><td><a href="http.c.html#L4144">(data->set.opt_no_body)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">4332</td><td><a href="http.c.html#L4332">(data->set.include_header)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2960</td><td><a href="http.c.html#L2960">(!Curl_meets_timecondition(data, k->timeofdoc))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1185</td><td><a href="http.c.html#L1185">(!http->postsize)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3279</td><td><a href="http.c.html#L3279">(!http->postsize)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3487</td><td><a href="http.c.html#L3487">(!k->chunk)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3846</td><td><a href="http.c.html#L3846">(!k->headerline)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3885</td><td><a href="http.c.html#L3885">(!k->headerline)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3994</td><td><a href="http.c.html#L3994">(!k->header)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4094</td><td><a href="http.c.html#L4094">(!k->upload_done)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4137</td><td><a href="http.c.html#L4137">(!k->header)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3330</td><td><a href="http.c.html#L3330">(checkprefixmax(head->data, s, len))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">394</td><td><a href="http.c.html#L394">(avail & CURLAUTH_NEGOTIATE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">396</td><td><a href="http.c.html#L396">(avail & CURLAUTH_BEARER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">398</td><td><a href="http.c.html#L398">(avail & CURLAUTH_DIGEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">400</td><td><a href="http.c.html#L400">(avail & CURLAUTH_NTLM)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="http.c.html#L402">(avail & CURLAUTH_NTLM_WB)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">404</td><td><a href="http.c.html#L404">(avail & CURLAUTH_BASIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="http.c.html#L406">(avail & CURLAUTH_AWS_SIGV4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2316</td><td><a href="http.c.html#L2316">(http->sendit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2416</td><td><a href="http.c.html#L2416">(http->postsize)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2612</td><td><a href="http.c.html#L2612">(http->postsize)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2743</td><td><a href="http.c.html#L2743">(co->value)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2862</td><td><a href="http.c.html#L2862">(conn->seek_func)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="http.c.html#L343">(!*userp)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">369</td><td><a href="http.c.html#L369">(!*userp)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2112</td><td><a href="http.c.html#L2112">(!*cookiehost)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3411</td><td><a href="http.c.html#L3411">(!*contenttype)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3620</td><td><a href="http.c.html#L3620">(!*location)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3542</td><td><a href="http.c.html#L3542">(ISDIGIT(*ptr))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">255</td><td><a href="http.c.html#L255">(*header)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="http.c.html#L614">(pickhost || pickproxy)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">962</td><td><a href="http.c.html#L962">(*auth)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1117</td><td><a href="http.c.html#L1117">(httpcode < 400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1367</td><td><a href="http.c.html#L1367">((size_t)amount != size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1400</td><td><a href="http.c.html#L1400">((size_t)amount != size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="http.c.html#L1473">(len >= clen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1838</td><td><a href="http.c.html#L1838">(i < numlists)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1854</td><td><a href="http.c.html#L1854">(*ptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2744</td><td><a href="http.c.html#L2744">(0 == count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2869</td><td><a href="http.c.html#L2869">(seekerr != CURL_SEEKFUNC_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2872</td><td><a href="http.c.html#L2872">(seekerr != CURL_SEEKFUNC_CANTSEEK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3387</td><td><a href="http.c.html#L3387">(offt == CURL_OFFT_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3391</td><td><a href="http.c.html#L3391">(offt == CURL_OFFT_FLOW)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3513</td><td><a href="http.c.html#L3513">(-1 == date)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3853</td><td><a href="http.c.html#L3853">(st == STATUS_BAD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3890</td><td><a href="http.c.html#L3890">(st == STATUS_BAD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3898</td><td><a href="http.c.html#L3898">(*nread)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4170</td><td><a href="http.c.html#L4170">(*stop_reading)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4280</td><td><a href="http.c.html#L4280">(check == STATUS_DONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2559</td><td><a href="http.c.html#L2559">(!Curl_checkheaders(data, STRCONST("Content-Type")))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="http.c.html#L198">(!CONN_INUSE(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1449</td><td><a href="http.c.html#L1449">(!strncasecompare(headerline, header, hlen))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">181</td><td><a href="http.c.html#L181">(!http)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">267</td><td><a href="http.c.html#L267">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">269</td><td><a href="http.c.html#L269">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">271</td><td><a href="http.c.html#L271">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="http.c.html#L282">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">326</td><td><a href="http.c.html#L326">(!out)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">333</td><td><a href="http.c.html#L333">(!authorization)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">447</td><td><a href="http.c.html#L447">(!http)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">594</td><td><a href="http.c.html#L594">(!pickhost)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">609</td><td><a href="http.c.html#L609">(!pickproxy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">972</td><td><a href="http.c.html#L972">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1001</td><td><a href="http.c.html#L1001">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="http.c.html#L1339">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1461</td><td><a href="http.c.html#L1461">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1465</td><td><a href="http.c.html#L1465">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1573</td><td><a href="http.c.html#L1573">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1635</td><td><a href="http.c.html#L1635">(!http)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1730</td><td><a href="http.c.html#L1730">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1844</td><td><a href="http.c.html#L1844">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1862</td><td><a href="http.c.html#L1862">(!semicolonp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2110</td><td><a href="http.c.html#L2110">(!cookiehost)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2204</td><td><a href="http.c.html#L2204">(!h)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2265</td><td><a href="http.c.html#L2265">(!type)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2334</td><td><a href="http.c.html#L2334">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2617</td><td><a href="http.c.html#L2617">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2621</td><td><a href="http.c.html#L2621">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2626</td><td><a href="http.c.html#L2626">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2760</td><td><a href="http.c.html#L2760">(!count)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2762</td><td><a href="http.c.html#L2762">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2993</td><td><a href="http.c.html#L2993">(!cptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3095</td><td><a href="http.c.html#L3095">(!pq)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3157</td><td><a href="http.c.html#L3157">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3168</td><td><a href="http.c.html#L3168">(!altused)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3248</td><td><a href="http.c.html#L3248">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3250</td><td><a href="http.c.html#L3250">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3253</td><td><a href="http.c.html#L3253">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3409</td><td><a href="http.c.html#L3409">(!contenttype)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3460</td><td><a href="http.c.html#L3460">(Curl_compareheader(headp, STRCONST("Connection:"), STRCONST("close")))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3586</td><td><a href="http.c.html#L3586">(!auth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3602</td><td><a href="http.c.html#L3602">(!persistentauth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3618</td><td><a href="http.c.html#L3618">(!location)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3803</td><td><a href="http.c.html#L3803">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3839</td><td><a href="http.c.html#L3839">(!end_ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4265</td><td><a href="http.c.html#L4265">(!nc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4275</td><td><a href="http.c.html#L4275">(!nc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2076</td><td><a href="http.c.html#L2076">(Curl_checkheaders(data, STRCONST("User-Agent")))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">645</td><td><a href="http.c.html#L645">(http_should_fail(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="http.c.html#L1031">(Curl_auth_is_digest_supported())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1474</td><td><a href="http.c.html#L1474">(strncasecompare(start, content, clen))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1504</td><td><a href="http.c.html#L1504">(CONNECT_FIRSTSOCKET_PROXY_SSL())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1507</td><td><a href="http.c.html#L1507">(Curl_connect_ongoing(conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1703</td><td><a href="http.c.html#L1703">(Curl_use_http_1_1plus(data, conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1987</td><td><a href="http.c.html#L1987">(Curl_checkheaders(data, condp, len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2138</td><td><a href="http.c.html#L2138">(strcmp("Host:", ptr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2358</td><td><a href="http.c.html#L2358">(Curl_use_http_1_1plus(data, conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3276</td><td><a href="http.c.html#L3276">(Curl_pgrsUpdate(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3351</td><td><a href="http.c.html#L3351">(checkprefixmax("RTSP/", s, len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3407</td><td><a href="http.c.html#L3407">(checkprefix("Content-Type:", headp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3509</td><td><a href="http.c.html#L3509">(checkprefix("Retry-After:", headp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4051</td><td><a href="http.c.html#L4051">(http_should_fail(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">310</td><td><a href="http.c.html#L310">(proxy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">330</td><td><a href="http.c.html#L330">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">558</td><td><a href="http.c.html#L558">(bytessent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">619</td><td><a href="http.c.html#L619">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">694</td><td><a href="http.c.html#L694">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">703</td><td><a href="http.c.html#L703">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">712</td><td><a href="http.c.html#L712">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">721</td><td><a href="http.c.html#L721">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="http.c.html#L733">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">749</td><td><a href="http.c.html#L749">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">763</td><td><a href="http.c.html#L763">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">772</td><td><a href="http.c.html#L772">(auth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">854</td><td><a href="http.c.html#L854">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">937</td><td><a href="http.c.html#L937">(proxy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1011</td><td><a href="http.c.html#L1011">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1042</td><td><a href="http.c.html#L1042">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1291</td><td><a href="http.c.html#L1291">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1313</td><td><a href="http.c.html#L1313">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1315</td><td><a href="http.c.html#L1315">(altsize)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1351</td><td><a href="http.c.html#L1351">(bodylen)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1361</td><td><a href="http.c.html#L1361">(http)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1497</td><td><a href="http.c.html#L1497">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1514</td><td><a href="http.c.html#L1514">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1522</td><td><a href="http.c.html#L1522">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1596</td><td><a href="http.c.html#L1596">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1645</td><td><a href="http.c.html#L1645">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="http.c.html#L1724">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1770</td><td><a href="http.c.html#L1770">(trailers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1775</td><td><a href="http.c.html#L1775">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1778</td><td><a href="http.c.html#L1778">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1808</td><td><a href="http.c.html#L1808">(is_connect)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1841</td><td><a href="http.c.html#L1841">(headers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1848</td><td><a href="http.c.html#L1848">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1929</td><td><a href="http.c.html#L1929">(semicolonp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1931</td><td><a href="http.c.html#L1931">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1963</td><td><a href="http.c.html#L1963">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2124</td><td><a href="http.c.html#L2124">(closingbracket)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2130</td><td><a href="http.c.html#L2130">(colon)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2209</td><td><a href="http.c.html#L2209">(uc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2215</td><td><a href="http.c.html#L2215">(uc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2223</td><td><a href="http.c.html#L2223">(uc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2228</td><td><a href="http.c.html#L2228">(uc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2237</td><td><a href="http.c.html#L2237">(uc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2248</td><td><a href="http.c.html#L2248">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2268</td><td><a href="http.c.html#L2268">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2281</td><td><a href="http.c.html#L2281">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2283</td><td><a href="http.c.html#L2283">(query)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2307</td><td><a href="http.c.html#L2307">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2324</td><td><a href="http.c.html#L2324">(cthdr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2336</td><td><a href="http.c.html#L2336">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2343</td><td><a href="http.c.html#L2343">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2412</td><td><a href="http.c.html#L2412">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2418</td><td><a href="http.c.html#L2418">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2424</td><td><a href="http.c.html#L2424">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2433</td><td><a href="http.c.html#L2433">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2439</td><td><a href="http.c.html#L2439">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2449</td><td><a href="http.c.html#L2449">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2454</td><td><a href="http.c.html#L2454">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2475</td><td><a href="http.c.html#L2475">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2486</td><td><a href="http.c.html#L2486">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2497</td><td><a href="http.c.html#L2497">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2503</td><td><a href="http.c.html#L2503">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2511</td><td><a href="http.c.html#L2511">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2525</td><td><a href="http.c.html#L2525">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2531</td><td><a href="http.c.html#L2531">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2555</td><td><a href="http.c.html#L2555">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2562</td><td><a href="http.c.html#L2562">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2571</td><td><a href="http.c.html#L2571">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2577</td><td><a href="http.c.html#L2577">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2601</td><td><a href="http.c.html#L2601">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2632</td><td><a href="http.c.html#L2632">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2651</td><td><a href="http.c.html#L2651">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2660</td><td><a href="http.c.html#L2660">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2668</td><td><a href="http.c.html#L2668">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2686</td><td><a href="http.c.html#L2686">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2695</td><td><a href="http.c.html#L2695">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2701</td><td><a href="http.c.html#L2701">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2739</td><td><a href="http.c.html#L2739">(co)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2742</td><td><a href="http.c.html#L2742">(co)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2746</td><td><a href="http.c.html#L2746">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2751</td><td><a href="http.c.html#L2751">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2770</td><td><a href="http.c.html#L2770">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2991</td><td><a href="http.c.html#L2991">(cptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3041</td><td><a href="http.c.html#L3041">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3063</td><td><a href="http.c.html#L3063">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3073</td><td><a href="http.c.html#L3073">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3081</td><td><a href="http.c.html#L3081">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3085</td><td><a href="http.c.html#L3085">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3101</td><td><a href="http.c.html#L3101">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3126</td><td><a href="http.c.html#L3126">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3131</td><td><a href="http.c.html#L3131">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3138</td><td><a href="http.c.html#L3138">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3142</td><td><a href="http.c.html#L3142">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3159</td><td><a href="http.c.html#L3159">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3230</td><td><a href="http.c.html#L3230">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3241</td><td><a href="http.c.html#L3241">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3262</td><td><a href="http.c.html#L3262">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3329</td><td><a href="http.c.html#L3329">(head)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3485</td><td><a href="http.c.html#L3485">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3506</td><td><a href="http.c.html#L3506">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3593</td><td><a href="http.c.html#L3593">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3635</td><td><a href="http.c.html#L3635">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3648</td><td><a href="http.c.html#L3648">(check)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3674</td><td><a href="http.c.html#L3674">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3680</td><td><a href="http.c.html#L3680">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3794</td><td><a href="http.c.html#L3794">(ptr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3843</td><td><a href="http.c.html#L3843">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3878</td><td><a href="http.c.html#L3878">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3959</td><td><a href="http.c.html#L3959">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3996</td><td><a href="http.c.html#L3996">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4041</td><td><a href="http.c.html#L4041">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4065</td><td><a href="http.c.html#L4065">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4115</td><td><a href="http.c.html#L4115">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4309</td><td><a href="http.c.html#L4309">(nc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4311</td><td><a href="http.c.html#L4311">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4322</td><td><a href="http.c.html#L4322">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4326</td><td><a href="http.c.html#L4326">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4342</td><td><a href="http.c.html#L4342">(result)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

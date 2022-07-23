@@ -1,0 +1,144 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\nodelist\authcert.c Ctrl Expressions (93) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\nodelist\authcert.c Ctrl Expressions (93) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\nodelist\authcert.c Ctrl Expressions (93)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">463</td><td><a href="authcert.c.html#L463">(<span style='background-color:#9c4c02;'>!tor_addr_is_null(&cert->ipv4_addr) && cert->ipv4_dirport && (!tor_addr_eq(&ds->ipv4_addr, &cert->ipv4_addr) || ds->ipv4_dirport != cert->ipv4_dirport)</span>)</a></td><td class="num">100.00</td></tr>
+      <tr><td class="num line">918</td><td><a href="authcert.c.html#L918">(!found && download_status_is_ready(&(cl->dl_status_by_id), now) && !digestmap_get(pending_id, ds->v3_identity_digest))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">981</td><td><a href="authcert.c.html#L981">(download_status_is_ready_by_sk_in_cl(cl, sig->signing_key_digest, now) && !fp_pair_map_get_by_digests(pending_cert, voter->identity_digest, sig->signing_key_digest))</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">605</td><td><a href="authcert.c.html#L605">(!trusted_dir_certs || !(cl = digestmap_get(trusted_dir_certs, id_digest)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">652</td><td><a href="authcert.c.html#L652">(!trusted_dir_certs || !(cl = digestmap_get(trusted_dir_certs, id_digest)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">689</td><td><a href="authcert.c.html#L689">(!trusted_dir_certs || !(cl = digestmap_get(trusted_dir_certs, id_digest)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">768</td><td><a href="authcert.c.html#L768">(!trusted_dir_certs || !(cl = digestmap_get(trusted_dir_certs, id_digest)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">561</td><td><a href="authcert.c.html#L561">(cert_sl_idx == smartlist_len(cl->certs) - 1)</a></td><td class="num">23.85</td></tr>
+      <tr><td class="num line">945</td><td><a href="authcert.c.html#L945">(!keep_unknown && !trusteddirserver_get_by_v3_auth_digest(voter->identity_digest))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1191</td><td><a href="authcert.c.html#L1191">(conn->type == CONN_TYPE_DIR && conn->purpose == DIR_PURPOSE_FETCH_CERTIFICATE && !conn->marked_for_close)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="authcert.c.html#L807">(options->UseBridges && node && node->ri && !get_via_tor)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">627</td><td><a href="authcert.c.html#L627">((c = get_my_v3_authority_cert()) && tor_memeq(c->signing_key_digest, sk_digest, DIGEST_LEN))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">630</td><td><a href="authcert.c.html#L630">((c = get_my_v3_legacy_cert()) && tor_memeq(c->signing_key_digest, sk_digest, DIGEST_LEN))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">460</td><td><a href="authcert.c.html#L460">(ds && cert->cache_info.published_on > ds->addr_current_at)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">534</td><td><a href="authcert.c.html#L534">(cert1->cache_info.published_on < cert2->cache_info.published_on)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="authcert.c.html#L536">(cert1->cache_info.published_on > cert2->cache_info.published_on)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="authcert.c.html#L573">(cert->expires + DEAD_CERT_LIFETIME < now)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">901</td><td><a href="authcert.c.html#L901">(!(ds->type & V3_DIRINFO))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="authcert.c.html#L289">(cl && cl->dl_status_map)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="authcert.c.html#L488">(failure_code == 0 && added_trusted_cert)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">956</td><td><a href="authcert.c.html#L956">(smartlist_len(cl->certs) == 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">908</td><td><a href="authcert.c.html#L908">(now < cert->expires)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">977</td><td><a href="authcert.c.html#L977">(now < cert->expires)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1051</td><td><a href="authcert.c.html#L1051">(!node && !rs)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">792</td><td><a href="authcert.c.html#L792">(node && !node_is_a_configured_bridge(node))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">577</td><td><a href="authcert.c.html#L577">(next_cert_published + SUPERSEDED_CERT_LIFETIME < now)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">942</td><td><a href="authcert.c.html#L942">(!smartlist_len(voter->sigs))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">115</td><td><a href="authcert.c.html#L115">(!(cl->dl_status_map))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">148</td><td><a href="authcert.c.html#L148">(!(cl->dl_status_map))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">504</td><td><a href="authcert.c.html#L504">(!trusted_dir_servers_certs_changed || !trusted_dir_certs)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="authcert.c.html#L903">(smartlist_contains_digest(missing_id_digests, ds->v3_identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">960</td><td><a href="authcert.c.html#L960">(digestmap_get(pending_id, voter->identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">967</td><td><a href="authcert.c.html#L967">(smartlist_contains_digest(missing_id_digests, voter->identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="authcert.c.html#L260">(cl->dl_status_map)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">791</td><td><a href="authcert.c.html#L791">(options->UseBridges)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="authcert.c.html#L995">(voter->nickname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1032</td><td><a href="authcert.c.html#L1032">(options->UseBridges)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">752</td><td><a href="authcert.c.html#L752">(!strcasecmp(hex_digest, BAD_SIGNING_KEYS[i]))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1060</td><td><a href="authcert.c.html#L1060">(smartlist_len(missing_id_digests) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1086</td><td><a href="authcert.c.html#L1086">(smartlist_len(fps) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1100</td><td><a href="authcert.c.html#L1100">(smartlist_len(missing_cert_digests) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1131</td><td><a href="authcert.c.html#L1131">(smartlist_len(fp_pairs) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">382</td><td><a href="authcert.c.html#L382">(*s)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">427</td><td><a href="authcert.c.html#L427">(source == TRUSTED_DIRS_CERTS_SRC_DL_BY_ID_DIGEST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">430</td><td><a href="authcert.c.html#L430">(source == TRUSTED_DIRS_CERTS_SRC_DL_BY_ID_SK_DIGEST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">567</td><td><a href="authcert.c.html#L567">(next_cert_published > now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="authcert.c.html#L751">(BAD_SIGNING_KEYS[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">206</td><td><a href="authcert.c.html#L206">(!(digestmap_iter_done(i)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="authcert.c.html#L262">(!(dsmap_iter_done(i)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1195</td><td><a href="authcert.c.html#L1195">(!strcmpstart(resource, pfx))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">121</td><td><a href="authcert.c.html#L121">(!dlstatus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">178</td><td><a href="authcert.c.html#L178">(!trusted_dir_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">181</td><td><a href="authcert.c.html#L181">(!cl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">304</td><td><a href="authcert.c.html#L304">(!cl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">333</td><td><a href="authcert.c.html#L333">(!contents)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">386</td><td><a href="authcert.c.html#L386">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">409</td><td><a href="authcert.c.html#L409">(!from_store)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">452</td><td><a href="authcert.c.html#L452">(!adding)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">476</td><td><a href="authcert.c.html#L476">(!from_store)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">553</td><td><a href="authcert.c.html#L553">(!trusted_dir_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="authcert.c.html#L624">(!trusted_dir_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">667</td><td><a href="authcert.c.html#L667">(!trusted_dir_certs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">697</td><td><a href="authcert.c.html#L697">(!signing_key_digest)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">795</td><td><a href="authcert.c.html#L795">(!node)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1042</td><td><a href="authcert.c.html#L1042">(!rs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1164</td><td><a href="authcert.c.html#L1164">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">410</td><td><a href="authcert.c.html#L410">(authdir_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="authcert.c.html#L395">(already_have_cert(cert))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">519</td><td><a href="authcert.c.html#L519">(write_chunks_to_file(filename, chunks, 0, 0))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">878</td><td><a href="authcert.c.html#L878">(should_delay_dir_fetches(options, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1069</td><td><a href="authcert.c.html#L1069">(digestmap_get(pending_id, d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="authcert.c.html#L1109">(fp_pair_map_get(pending_cert, d))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="authcert.c.html#L154">(dlstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">204</td><td><a href="authcert.c.html#L204">(trusted_dir_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">232</td><td><a href="authcert.c.html#L232">(trusted_dir_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">234</td><td><a href="authcert.c.html#L234">(cl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">256</td><td><a href="authcert.c.html#L256">(trusted_dir_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">258</td><td><a href="authcert.c.html#L258">(cl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">287</td><td><a href="authcert.c.html#L287">(trusted_dir_certs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">440</td><td><a href="authcert.c.html#L440">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">480</td><td><a href="authcert.c.html#L480">(flush)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">583</td><td><a href="authcert.c.html#L583">(should_remove)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">707</td><td><a href="authcert.c.html#L707">(dlstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">816</td><td><a href="authcert.c.html#L816">(dir_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">818</td><td><a href="authcert.c.html#L818">(rs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">825</td><td><a href="authcert.c.html#L825">(req)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">939</td><td><a href="authcert.c.html#L939">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">976</td><td><a href="authcert.c.html#L976">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1031</td><td><a href="authcert.c.html#L1031">(dir_hint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1046</td><td><a href="authcert.c.html#L1046">(ds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1075</td><td><a href="authcert.c.html#L1075">(need_plus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1119</td><td><a href="authcert.c.html#L1119">(need_plus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1154</td><td><a href="authcert.c.html#L1154">(trusted_dir_certs)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="merly.css">
+  <title>git Repo - add-patch.c Ctrl Expressions (217) - MerlyMentor</title>
+</head>
+<body>
+  <h2>git Repo - add-patch.c Ctrl Expressions (217) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;add-patch.c Ctrl Expressions (217)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1740</td><td><a href="add-patch.c.html#L1740">(discard_index(r->index) < 0 || repo_read_index(r) < 0 || (<span style='background-color:#741da3;'>!s.mode->index_only && repo_refresh_and_write_index(r, REFRESH_QUIET, 0, 1, NULL, NULL, NULL) < 0</span>) || parse_diff(&s, ps) < 0)</a></td><td class="num">1042.50</td></tr>
+      <tr><td class="num line">1422</td><td><a href="add-patch.c.html#L1422">(<span style='background-color:#741da3;'>undecided_previous < 0 && undecided_next < 0 && hunk->use != UNDECIDED_HUNK</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">1456</td><td><a href="add-patch.c.html#L1456">(<span style='background-color:#741da3;'>hunk_index + 1 > file_diff->mode_change && !file_diff->deleted</span>)</a></td><td class="num">1015.60</td></tr>
+      <tr><td class="num line">338</td><td><a href="add-patch.c.html#L338">(!skip_prefix(p, "@@ -", &p) || parse_range(&p, &header->old_offset, &header->old_count) < 0 || !skip_prefix(p, " +", &p) || parse_range(&p, &header->new_offset, &header->new_count) < 0 || !skip_prefix(p, " @@", &p))</a></td><td class="num">90.75</td></tr>
+      <tr><td class="num line">754</td><td><a href="add-patch.c.html#L754">((!use_all && hunk->use != USE_HUNK) || header->new_offset >= next->new_offset + merged->delta || header->new_offset + header->new_count < next->new_offset + merged->delta)</a></td><td class="num">63.30</td></tr>
+      <tr><td class="num line">574</td><td><a href="add-patch.c.html#L574">(!!file_diff->deleted + !!file_diff->added + !!file_diff->mode_change > 1)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="add-patch.c.html#L500">(starts_with(p, "@@ ") || (hunk == &file_diff->head && (skip_prefix(p, "deleted file", &deleted))))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">1750</td><td><a href="add-patch.c.html#L1750">(s.file_diff[i].binary && !s.file_diff[i].hunk_nr)</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">809</td><td><a href="add-patch.c.html#L809">(len > merged->end - merged->start || memcmp(plain + merged->end - len, plain + overlap_start, len))</a></td><td class="num">39.40</td></tr>
+      <tr><td class="num line">1671</td><td><a href="add-patch.c.html#L1671">(i < file_diff->hunk_nr || (!file_diff->hunk_nr && file_diff->head.use == USE_HUNK))</a></td><td class="num">38.00</td></tr>
+      <tr><td class="num line">460</td><td><a href="add-patch.c.html#L460">(pipe_command(&filter_cp, colored->buf, colored->len, &s->buf, colored->len, NULL, 0) < 0)</a></td><td class="num">35.75</td></tr>
+      <tr><td class="num line">1137</td><td><a href="add-patch.c.html#L1137">(s->plain.buf[hunk->start] == '@' && parse_hunk_header(s, hunk) < 0)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">531</td><td><a href="add-patch.c.html#L531">(hunk == &file_diff->head && skip_prefix(p, "old mode ", &mode_change) && is_octal(mode_change, eol - mode_change))</a></td><td class="num">30.85</td></tr>
+      <tr><td class="num line">552</td><td><a href="add-patch.c.html#L552">(hunk == &file_diff->head && skip_prefix(p, "new mode ", &mode_change) && is_octal(mode_change, eol - mode_change))</a></td><td class="num">30.85</td></tr>
+      <tr><td class="num line">381</td><td><a href="add-patch.c.html#L381">(*p < '0' || *(p++) > '7')</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1657</td><td><a href="add-patch.c.html#L1657">(*p != '?' && !strchr(s->buf.buf, *p))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">1065</td><td><a href="add-patch.c.html#L1065">(eol > current && plain[eol - 1] == '\r')</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">528</td><td><a href="add-patch.c.html#L528">(hunk == &file_diff->head && starts_with(p, "new file"))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="add-patch.c.html#L570">(hunk == &file_diff->head && starts_with(p, "Binary files "))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1409</td><td><a href="add-patch.c.html#L1409">(file_diff->hunk[i].use == UNDECIDED_HUNK)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1415</td><td><a href="add-patch.c.html#L1415">(file_diff->hunk[i].use == UNDECIDED_HUNK)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1668</td><td><a href="add-patch.c.html#L1668">(file_diff->hunk[i].use == USE_HUNK)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1112</td><td><a href="add-patch.c.html#L1112">(strbuf_edit_interactively(&s->buf, "addp-hunk-edit.diff", NULL) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1197</td><td><a href="add-patch.c.html#L1197">(git_read_line_interactively(&s->answer) == EOF)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1558</td><td><a href="add-patch.c.html#L1558">(strbuf_getline(&s->answer, stdin) == EOF)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1589</td><td><a href="add-patch.c.html#L1589">(strbuf_getline(&s->answer, stdin) == EOF)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1627</td><td><a href="add-patch.c.html#L1627">(!split_hunk(s, file_diff, hunk - file_diff->hunk))</a></td><td class="num">22.85</td></tr>
+      <tr><td class="num line">764</td><td><a href="add-patch.c.html#L764">(merged->start < hunk->start && merged->end > hunk->start)</a></td><td class="num">21.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="add-patch.c.html#L646">(hunk->header.old_offset != 0 || hunk->header.new_offset != 0)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">581</td><td><a href="add-patch.c.html#L581">((marker == '-' || marker == '+') && *p == ' ')</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="add-patch.c.html#L566">(p - plain->buf != file_diff->hunk->end)</a></td><td class="num">13.10</td></tr>
+      <tr><td class="num line">945</td><td><a href="add-patch.c.html#L945">((marker == '-' || marker == '+') && ch == ' ')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">960</td><td><a href="add-patch.c.html#L960">(marker != ' ' || (ch != '-' && ch != '+'))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1392</td><td><a href="add-patch.c.html#L1392">(!file_diff->hunk_nr && !file_diff->added)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1183</td><td><a href="add-patch.c.html#L1183">(pipe_command(&cp, s->buf.buf, s->buf.len, NULL, 0, NULL, 0))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1569</td><td><a href="add-patch.c.html#L1569">(0 < response && response <= file_diff->hunk_nr)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1684</td><td><a href="add-patch.c.html#L1684">(pipe_command(&cp, s->buf.buf, s->buf.len, NULL, 0, NULL, 0))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1566</td><td><a href="add-patch.c.html#L1566">(*pend || pend == s->answer.buf)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">737</td><td><a href="add-patch.c.html#L737">(!use_all && hunk->use != USE_HUNK)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">824</td><td><a href="add-patch.c.html#L824">(merged->end != s->plain.len)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">870</td><td><a href="add-patch.c.html#L870">(!use_all && hunk->use != USE_HUNK)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1611</td><td><a href="add-patch.c.html#L1611">(regexec(&regex, s->buf.buf, 0, NULL, 0) != REG_NOMATCH)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">992</td><td><a href="add-patch.c.html#L992">(header->old_count || header->new_count)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1126</td><td><a href="add-patch.c.html#L1126">(hunk->end == hunk->start)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1120</td><td><a href="add-patch.c.html#L1120">(s->buf.buf[i] != comment_line_char)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1519</td><td><a href="add-patch.c.html#L1519">(s->answer.buf[0] == 'K')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1524</td><td><a href="add-patch.c.html#L1524">(s->answer.buf[0] == 'J')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1529</td><td><a href="add-patch.c.html#L1529">(s->answer.buf[0] == 'k')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1534</td><td><a href="add-patch.c.html#L1534">(s->answer.buf[0] == 'j')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1539</td><td><a href="add-patch.c.html#L1539">(s->answer.buf[0] == 'g')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1576</td><td><a href="add-patch.c.html#L1576">(s->answer.buf[0] == '/')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1623</td><td><a href="add-patch.c.html#L1623">(s->answer.buf[0] == 's')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1632</td><td><a href="add-patch.c.html#L1632">(s->answer.buf[0] == 'e')</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="add-patch.c.html#L583">(marker && *p != '\\')</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="add-patch.c.html#L744">(i + 1 < file_diff->hunk_nr)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">917</td><td><a href="add-patch.c.html#L917">(hunk_index + splittable_into < file_diff->hunk_nr)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1324</td><td><a href="add-patch.c.html#L1324">(out->len - len < SUMMARY_HEADER_WIDTH)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1332</td><td><a href="add-patch.c.html#L1332">(out->len - len > SUMMARY_LINE_WIDTH)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1444</td><td><a href="add-patch.c.html#L1444">(hunk_index + 1 < file_diff->hunk_nr)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1466</td><td><a href="add-patch.c.html#L1466">(file_diff->mode_change && !hunk_index)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">303</td><td><a href="add-patch.c.html#L303">((arg = va_arg(ap, const)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1328</td><td><a href="add-patch.c.html#L1328">(plain->buf[i] != ' ')</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="add-patch.c.html#L1036">(header->old_offset != remaining.old_offset)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1039</td><td><a href="add-patch.c.html#L1039">(header->new_offset != remaining.new_offset)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1688</td><td><a href="add-patch.c.html#L1688">(repo_read_index(s->s.r) >= 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">388</td><td><a href="add-patch.c.html#L388">(marker == '-' || marker == '+')</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">503</td><td><a href="add-patch.c.html#L503">(marker == '-' || marker == '+')</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="add-patch.c.html#L1117">(i < s->buf.len)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1478</td><td><a href="add-patch.c.html#L1478">(*s->s.reset_color)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1505</td><td><a href="add-patch.c.html#L1505">(ch == 'd' || ch == 'q')</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1552</td><td><a href="add-patch.c.html#L1552">(s->answer.len == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1586</td><td><a href="add-patch.c.html#L1586">(s->answer.len == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1593</td><td><a href="add-patch.c.html#L1593">(s->answer.len == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1752</td><td><a href="add-patch.c.html#L1752">(patch_update_file(&s, s.file_diff + i))</a></td><td class="num">6.35</td></tr>
+      <tr><td class="num line">277</td><td><a href="add-patch.c.html#L277">(i < s->file_diff_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">423</td><td><a href="add-patch.c.html#L423">(i < ps->nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">495</td><td><a href="add-patch.c.html#L495">(p == plain->buf)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">563</td><td><a href="add-patch.c.html#L563">(file_diff->hunk_nr != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">604</td><td><a href="add-patch.c.html#L604">(file_diff->hunk_nr != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">631</td><td><a href="add-patch.c.html#L631">(offset >= sb->len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">672</td><td><a href="add-patch.c.html#L672">(header->old_count != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">675</td><td><a href="add-patch.c.html#L675">(header->new_count != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">789</td><td><a href="add-patch.c.html#L789">(overlap_next > hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">866</td><td><a href="add-patch.c.html#L866">(i < file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">902</td><td><a href="add-patch.c.html#L902">(hunk_index >= file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">906</td><td><a href="add-patch.c.html#L906">(hunk->splittable_into < 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1060</td><td><a href="add-patch.c.html#L1060">(current < hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1061</td><td><a href="add-patch.c.html#L1061">(eol < hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="add-patch.c.html#L1151">(i < hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1327</td><td><a href="add-patch.c.html#L1327">(i < hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1330</td><td><a href="add-patch.c.html#L1330">(i < hunk->end)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1343</td><td><a href="add-patch.c.html#L1343">(end_index > file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1399</td><td><a href="add-patch.c.html#L1399">(hunk_index >= file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1414</td><td><a href="add-patch.c.html#L1414">(i < file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1448</td><td><a href="add-patch.c.html#L1448">(file_diff->hunk_nr > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1452</td><td><a href="add-patch.c.html#L1452">(hunk->splittable_into > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1497</td><td><a href="add-patch.c.html#L1497">(hunk_index < file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1499</td><td><a href="add-patch.c.html#L1499">(hunk->use == UNDECIDED_HUNK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1502</td><td><a href="add-patch.c.html#L1502">(hunk->use == UNDECIDED_HUNK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1507</td><td><a href="add-patch.c.html#L1507">(hunk_index < file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1509</td><td><a href="add-patch.c.html#L1509">(hunk->use == UNDECIDED_HUNK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1512</td><td><a href="add-patch.c.html#L1512">(hunk->use == UNDECIDED_HUNK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1550</td><td><a href="add-patch.c.html#L1550">(i < file_diff->mode_change)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1615</td><td><a href="add-patch.c.html#L1615">(i == file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1667</td><td><a href="add-patch.c.html#L1667">(i < file_diff->hunk_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">350</td><td><a href="add-patch.c.html#L350">(!s->colored.len)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="add-patch.c.html#L666">(s->mode->is_reverse)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1056</td><td><a href="add-patch.c.html#L1056">(!s->colored.len)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1484</td><td><a href="add-patch.c.html#L1484">(!s->answer.len)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1678</td><td><a href="add-patch.c.html#L1678">(s->mode->apply_for_checkout)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="add-patch.c.html#L875">(merge_hunks(s, file_diff, &i, use_all, &merged))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">318</td><td><a href="add-patch.c.html#L318">(pend == *p)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">320</td><td><a href="add-patch.c.html#L320">(*pend != ',')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">849</td><td><a href="add-patch.c.html#L849">(i == *hunk_index)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1191</td><td><a href="add-patch.c.html#L1191">(s->s.use_single_key)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">433</td><td><a href="add-patch.c.html#L433">(!plain->len)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">560</td><td><a href="add-patch.c.html#L560">(!file_diff->mode_change)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">796</td><td><a href="add-patch.c.html#L796">(plain[overlap_end] != ' ')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1062</td><td><a href="add-patch.c.html#L1062">(plain[eol] == '\n')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1543</td><td><a href="add-patch.c.html#L1543">(!(permitted & ALLOW_SEARCH_AND_GOTO))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1580</td><td><a href="add-patch.c.html#L1580">(!(permitted & ALLOW_SEARCH_AND_GOTO))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1625</td><td><a href="add-patch.c.html#L1625">(!(permitted & ALLOW_SPLIT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1633</td><td><a href="add-patch.c.html#L1633">(!(permitted & ALLOW_EDIT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1718</td><td><a href="add-patch.c.html#L1718">(!revision || !strcmp(revision, "HEAD"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1281</td><td><a href="add-patch.c.html#L1281">(applies_worktree && applies_index)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1749</td><td><a href="add-patch.c.html#L1749">(i < s.file_diff_nr)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1755</td><td><a href="add-patch.c.html#L1755">(s.file_diff_nr == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1757</td><td><a href="add-patch.c.html#L1757">(binary_count == s.file_diff_nr)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">380</td><td><a href="add-patch.c.html#L380">(len--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">412</td><td><a href="add-patch.c.html#L412">(s->revision)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">498</td><td><a href="add-patch.c.html#L498">(file_diff->deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">534</td><td><a href="add-patch.c.html#L534">(file_diff->mode_change)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="add-patch.c.html#L537">(file_diff->hunk_nr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1407</td><td><a href="add-patch.c.html#L1407">(file_diff->hunk_nr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1427</td><td><a href="add-patch.c.html#L1427">(file_diff->hunk_nr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1462</td><td><a href="add-patch.c.html#L1462">(file_diff->deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1464</td><td><a href="add-patch.c.html#L1464">(file_diff->added)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1496</td><td><a href="add-patch.c.html#L1496">(file_diff->hunk_nr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1506</td><td><a href="add-patch.c.html#L1506">(file_diff->hunk_nr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1520</td><td><a href="add-patch.c.html#L1520">(permitted & ALLOW_GOTO_PREVIOUS_HUNK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="add-patch.c.html#L1525">(permitted & ALLOW_GOTO_NEXT_HUNK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1530</td><td><a href="add-patch.c.html#L1530">(permitted & ALLOW_GOTO_PREVIOUS_UNDECIDED_HUNK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1535</td><td><a href="add-patch.c.html#L1535">(permitted & ALLOW_GOTO_NEXT_UNDECIDED_HUNK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="add-patch.c.html#L1297">(prompt_yesno(s, _("Apply them to the worktree \"
+					  \"anyway? ")) > 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">520</td><td><a href="add-patch.c.html#L520">(parse_hunk_header(s, hunk) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1207</td><td><a href="add-patch.c.html#L1207">(read_single_character(s) == EOF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1481</td><td><a href="add-patch.c.html#L1481">(read_single_character(s) == EOF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1635</td><td><a href="add-patch.c.html#L1635">(edit_hunk_loop(s, file_diff, hunk) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="add-patch.c.html#L478">(p != pend)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">594</td><td><a href="add-patch.c.html#L594">(p != pend)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="add-patch.c.html#L616">(colored_p != colored_pend)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">785</td><td><a href="add-patch.c.html#L785">(j < overlapping_line_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">935</td><td><a href="add-patch.c.html#L935">(splittable_into > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">963</td><td><a href="add-patch.c.html#L963">(ch == '\\')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="add-patch.c.html#L967">(ch == ' ')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">969</td><td><a href="add-patch.c.html#L969">(ch == '-')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="add-patch.c.html#L971">(ch == '+')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="add-patch.c.html#L1076">(next > eol)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="add-patch.c.html#L1226">(res == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="add-patch.c.html#L1232">(res > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="add-patch.c.html#L1256">(res < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1346</td><td><a href="add-patch.c.html#L1346">(start_index < end_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="add-patch.c.html#L1408">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1432</td><td><a href="add-patch.c.html#L1432">(undecided_previous >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1440</td><td><a href="add-patch.c.html#L1440">(undecided_next >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1487</td><td><a href="add-patch.c.html#L1487">(ch == 'y')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="add-patch.c.html#L1492">(ch == 'n')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1495</td><td><a href="add-patch.c.html#L1495">(ch == 'a')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1515</td><td><a href="add-patch.c.html#L1515">(ch == 'q')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1617</td><td><a href="add-patch.c.html#L1617">(i != hunk_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1649</td><td><a href="add-patch.c.html#L1649">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1707</td><td><a href="add-patch.c.html#L1707">(mode == ADD_P_STASH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1709</td><td><a href="add-patch.c.html#L1709">(mode == ADD_P_RESET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1722</td><td><a href="add-patch.c.html#L1722">(mode == ADD_P_CHECKOUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1729</td><td><a href="add-patch.c.html#L1729">(mode == ADD_P_WORKTREE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1237</td><td><a href="add-patch.c.html#L1237">(!run_apply_check(s, file_diff))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1725</td><td><a href="add-patch.c.html#L1725">(!strcmp(revision, "HEAD"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1732</td><td><a href="add-patch.c.html#L1732">(!strcmp(revision, "HEAD"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="add-patch.c.html#L335">(!eol)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">358</td><td><a href="add-patch.c.html#L358">(!eol)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">361</td><td><a href="add-patch.c.html#L361">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">365</td><td><a href="add-patch.c.html#L365">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">377</td><td><a href="add-patch.c.html#L377">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">482</td><td><a href="add-patch.c.html#L482">(!eol)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">636</td><td><a href="add-patch.c.html#L636">(!eol)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">656</td><td><a href="add-patch.c.html#L656">(!colored)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">708</td><td><a href="add-patch.c.html#L708">(!skip_mode_change)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">938</td><td><a href="add-patch.c.html#L938">(!ch)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1295</td><td><a href="add-patch.c.html#L1295">(!applies_index)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1723</td><td><a href="add-patch.c.html#L1723">(!revision)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1730</td><td><a href="add-patch.c.html#L1730">(!revision)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">439</td><td><a href="add-patch.c.html#L439">(want_color_fd(1, -1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="add-patch.c.html#L485">(starts_with(p, "diff "))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">410</td><td><a href="add-patch.c.html#L410">(diff_algorithm)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">429</td><td><a href="add-patch.c.html#L429">(res)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">449</td><td><a href="add-patch.c.html#L449">(res)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="add-patch.c.html#L452">(diff_filter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">492</td><td><a href="add-patch.c.html#L492">(colored_p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">515</td><td><a href="add-patch.c.html#L515">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">518</td><td><a href="add-patch.c.html#L518">(deleted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">549</td><td><a href="add-patch.c.html#L549">(colored_p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">589</td><td><a href="add-patch.c.html#L589">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">592</td><td><a href="add-patch.c.html#L592">(colored_eol)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">603</td><td><a href="add-patch.c.html#L603">(mode_change)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="add-patch.c.html#L609">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="add-patch.c.html#L679">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">681</td><td><a href="add-patch.c.html#L681">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">687</td><td><a href="add-patch.c.html#L687">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">713</td><td><a href="add-patch.c.html#L713">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">930</td><td><a href="add-patch.c.html#L930">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">948</td><td><a href="add-patch.c.html#L948">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">977</td><td><a href="add-patch.c.html#L977">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">991</td><td><a href="add-patch.c.html#L991">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1020</td><td><a href="add-patch.c.html#L1020">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1045</td><td><a href="add-patch.c.html#L1045">(colored)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1436</td><td><a href="add-patch.c.html#L1436">(hunk_index)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1598</td><td><a href="add-patch.c.html#L1598">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

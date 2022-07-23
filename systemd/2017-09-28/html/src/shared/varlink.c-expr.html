@@ -1,0 +1,358 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\shared\varlink.c Ctrl Expressions (307) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\shared\varlink.c Ctrl Expressions (307) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\shared\varlink.c Ctrl Expressions (307)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1108</td><td><a href="varlink.c.html#L1108">(<span style='background-color:#741da3;'>!v->read_disconnected && IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING, VARLINK_IDLE_SERVER) && !v->current && v->input_buffer_unscanned <= 0</span>)</a></td><td class="num">1025.75</td></tr>
+      <tr><td class="num line">430</td><td><a href="varlink.c.html#L430">(IN_SET(v->state, VARLINK_PENDING_METHOD, VARLINK_PENDING_METHOD_MORE) && (v->write_disconnected || v->output_buffer_size == 0) && v->got_pollhup)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">2178</td><td><a href="varlink.c.html#L2178">(asprintf(&desc, "%s-%i", server->description ?  : "varlink", v->fd) >= 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">1270</td><td><a href="varlink.c.html#L1270">(!GREEDY_REALLOC(v->output_buffer, v->output_buffer_size + r + 1))</a></td><td class="num">27.20</td></tr>
+      <tr><td class="num line">523</td><td><a href="varlink.c.html#L523">(!GREEDY_REALLOC(v->input_buffer, v->input_buffer_size + add))</a></td><td class="num">26.10</td></tr>
+      <tr><td class="num line">1180</td><td><a href="varlink.c.html#L1180">(v->server->by_uid && v->ucred_acquired && uid_is_valid(v->ucred.uid))</a></td><td class="num">19.50</td></tr>
+      <tr><td class="num line">424</td><td><a href="varlink.c.html#L424">(IN_SET(v->state, VARLINK_IDLE_CLIENT) && (v->write_disconnected || v->got_pollhup))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1768</td><td><a href="varlink.c.html#L1768">(callback && v->reply_callback && callback != v->reply_callback)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2462</td><td><a href="varlink.c.html#L2462">(callback && s->connect_callback && callback != s->connect_callback)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2472</td><td><a href="varlink.c.html#L2472">(callback && s->disconnect_callback && callback != s->disconnect_callback)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">516</td><td><a href="varlink.c.html#L516">(MALLOC_SIZEOF_SAFE(v->input_buffer) <= v->input_buffer_index + v->input_buffer_size)</a></td><td class="num">14.60</td></tr>
+      <tr><td class="num line">410</td><td><a href="varlink.c.html#L410">(v->output_buffer_size > 0 && !v->write_disconnected)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1114</td><td><a href="varlink.c.html#L1114">(!v->write_disconnected && v->output_buffer_size > 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="varlink.c.html#L1063">(timeout != USEC_INFINITY && (t == USEC_INFINITY || timeout < t))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1127</td><td><a href="varlink.c.html#L1127">(IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING) && v->timeout != USEC_INFINITY)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">2052</td><td><a href="varlink.c.html#L2052">((m = hashmap_steal_first_key(s->methods)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">418</td><td><a href="varlink.c.html#L418">(IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING, VARLINK_IDLE_SERVER) && v->read_disconnected)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">414</td><td><a href="varlink.c.html#L414">(v->read_disconnected && v->write_disconnected)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="varlink.c.html#L743">(v->state != VARLINK_AWAITING_REPLY_MORE && FLAGS_SET(flags, VARLINK_REPLY_CONTINUES))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">628</td><td><a href="varlink.c.html#L628">(now(CLOCK_MONOTONIC) < usec_add(v->timestamp, v->timeout))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="varlink.c.html#L994">(r >= 0 && v->defer_event_source)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="varlink.c.html#L1256">(v->output_buffer_size + r + 1 > VARLINK_BUFFER_MAX)</a></td><td class="num">8.95</td></tr>
+      <tr><td class="num line">2085</td><td><a href="varlink.c.html#L2085">(server->n_connections >= server->connections_max)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2145</td><td><a href="varlink.c.html#L2145">((server->flags & VARLINK_SERVER_ROOT_ONLY | VARLINK_SERVER_ACCOUNT_UID) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">464</td><td><a href="varlink.c.html#L464">(n < 0 && errno == ENOTSOCK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">545</td><td><a href="varlink.c.html#L545">(n < 0 && errno == ENOTSOCK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1696</td><td><a href="varlink.c.html#L1696">(json_variant_is_object(parameters) && json_variant_elements(parameters) > 0)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2169</td><td><a href="varlink.c.html#L2169">(server->flags & VARLINK_SERVER_INHERIT_USERDATA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">236</td><td><a href="varlink.c.html#L236">(v->state < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="varlink.c.html#L286">(v->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">450</td><td><a href="varlink.c.html#L450">(v->output_buffer_size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">485</td><td><a href="varlink.c.html#L485">(v->output_buffer_size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="varlink.c.html#L506">(v->input_buffer_unscanned > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">511</td><td><a href="varlink.c.html#L511">(v->input_buffer_size >= VARLINK_BUFFER_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">521</td><td><a href="varlink.c.html#L521">(v->input_buffer_index == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">581</td><td><a href="varlink.c.html#L581">(v->input_buffer_unscanned <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">611</td><td><a href="varlink.c.html#L611">(v->input_buffer_size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="varlink.c.html#L625">(v->timeout == USEC_INFINITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">655</td><td><a href="varlink.c.html#L655">(v->state != VARLINK_PENDING_TIMEOUT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="varlink.c.html#L668">(v->state != VARLINK_PENDING_DISCONNECT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">765</td><td><a href="varlink.c.html#L765">(v->state == VARLINK_PROCESSING_REPLY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">802</td><td><a href="varlink.c.html#L802">(v->state != VARLINK_IDLE_SERVER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">830</td><td><a href="varlink.c.html#L830">((flags & VARLINK_METHOD_ONEWAY | VARLINK_METHOD_MORE) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">841</td><td><a href="varlink.c.html#L841">((flags & VARLINK_METHOD_ONEWAY | VARLINK_METHOD_MORE) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">938</td><td><a href="varlink.c.html#L938">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1023</td><td><a href="varlink.c.html#L1023">((revents & POLLOUT | POLLHUP) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="varlink.c.html#L1047">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1087</td><td><a href="varlink.c.html#L1087">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1089</td><td><a href="varlink.c.html#L1089">(v->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1100</td><td><a href="varlink.c.html#L1100">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1124</td><td><a href="varlink.c.html#L1124">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1144</td><td><a href="varlink.c.html#L1144">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1148</td><td><a href="varlink.c.html#L1148">(v->output_buffer_size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1213</td><td><a href="varlink.c.html#L1213">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1261</td><td><a href="varlink.c.html#L1261">(v->output_buffer_size == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1268</td><td><a href="varlink.c.html#L1268">(v->output_buffer_index == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1301</td><td><a href="varlink.c.html#L1301">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1352</td><td><a href="varlink.c.html#L1352">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1404</td><td><a href="varlink.c.html#L1404">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1409</td><td><a href="varlink.c.html#L1409">(v->state != VARLINK_IDLE_CLIENT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1465</td><td><a href="varlink.c.html#L1465">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1490</td><td><a href="varlink.c.html#L1490">(v->state == VARLINK_CALLING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1565</td><td><a href="varlink.c.html#L1565">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1622</td><td><a href="varlink.c.html#L1622">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1725</td><td><a href="varlink.c.html#L1725">(v->state == VARLINK_DISCONNECTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1819</td><td><a href="varlink.c.html#L1819">(!uid_is_valid(v->ucred.uid))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1836</td><td><a href="varlink.c.html#L1836">(!pid_is_valid(v->ucred.pid))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2099</td><td><a href="varlink.c.html#L2099">(c >= server->connections_per_uid_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2230</td><td><a href="varlink.c.html#L2230">(ss->server->connect_callback)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2490</td><td><a href="varlink.c.html#L2490">(VARLINK_DEFAULT_CONNECTIONS_MAX > (unsigned)dts / 4 * 3)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">402</td><td><a href="varlink.c.html#L402">(!VARLINK_STATE_IS_ALIVE(v->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">445</td><td><a href="varlink.c.html#L445">(!VARLINK_STATE_IS_ALIVE(v->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="varlink.c.html#L500">(!IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING, VARLINK_IDLE_SERVER))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">623</td><td><a href="varlink.c.html#L623">(!IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">700</td><td><a href="varlink.c.html#L700">(!IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE, VARLINK_CALLING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="varlink.c.html#L707">(!json_variant_is_object(v->current))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="varlink.c.html#L807">(!json_variant_is_object(v->current))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1305</td><td><a href="varlink.c.html#L1305">(!IN_SET(v->state, VARLINK_IDLE_CLIENT, VARLINK_AWAITING_REPLY))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1356</td><td><a href="varlink.c.html#L1356">(!IN_SET(v->state, VARLINK_IDLE_CLIENT, VARLINK_AWAITING_REPLY))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1467</td><td><a href="varlink.c.html#L1467">(!IN_SET(v->state, VARLINK_IDLE_CLIENT))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="varlink.c.html#L1567">(!IN_SET(v->state, VARLINK_PROCESSING_METHOD, VARLINK_PROCESSING_METHOD_MORE, VARLINK_PENDING_METHOD, VARLINK_PENDING_METHOD_MORE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1624</td><td><a href="varlink.c.html#L1624">(!IN_SET(v->state, VARLINK_PROCESSING_METHOD, VARLINK_PROCESSING_METHOD_MORE, VARLINK_PENDING_METHOD, VARLINK_PENDING_METHOD_MORE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1727</td><td><a href="varlink.c.html#L1727">(!IN_SET(v->state, VARLINK_PROCESSING_METHOD_MORE, VARLINK_PENDING_METHOD_MORE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2093</td><td><a href="varlink.c.html#L2093">(!uid_is_valid(ucred->uid))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">642</td><td><a href="varlink.c.html#L642">(!v->reply_callback)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">702</td><td><a href="varlink.c.html#L702">(!v->current)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">747</td><td><a href="varlink.c.html#L747">(error && FLAGS_SET(flags, VARLINK_REPLY_CONTINUES))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">804</td><td><a href="varlink.c.html#L804">(!v->current)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1177</td><td><a href="varlink.c.html#L1177">(!v->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">754</td><td><a href="varlink.c.html#L754">(IN_SET(v->state, VARLINK_AWAITING_REPLY, VARLINK_AWAITING_REPLY_MORE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1004</td><td><a href="varlink.c.html#L1004">(VARLINK_STATE_IS_ALIVE(v->state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1584</td><td><a href="varlink.c.html#L1584">(IN_SET(v->state, VARLINK_PENDING_METHOD, VARLINK_PENDING_METHOD_MORE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1643</td><td><a href="varlink.c.html#L1643">(IN_SET(v->state, VARLINK_PENDING_METHOD, VARLINK_PENDING_METHOD_MORE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2073</td><td><a href="varlink.c.html#L2073">(FLAGS_SET(server->flags, VARLINK_SERVER_ROOT_ONLY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2076</td><td><a href="varlink.c.html#L2076">(FLAGS_SET(server->flags, VARLINK_SERVER_MYSELF_ONLY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2090</td><td><a href="varlink.c.html#L2090">(FLAGS_SET(server->flags, VARLINK_SERVER_ACCOUNT_UID))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2118</td><td><a href="varlink.c.html#L2118">(FLAGS_SET(server->flags, VARLINK_SERVER_ACCOUNT_UID))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">406</td><td><a href="varlink.c.html#L406">(v->connecting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="varlink.c.html#L447">(v->connecting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">452</td><td><a href="varlink.c.html#L452">(v->write_disconnected)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">502</td><td><a href="varlink.c.html#L502">(v->connecting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">504</td><td><a href="varlink.c.html#L504">(v->current)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">508</td><td><a href="varlink.c.html#L508">(v->read_disconnected)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="varlink.c.html#L579">(v->current)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">684</td><td><a href="varlink.c.html#L684">(!json_variant_is_object(*v))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="varlink.c.html#L757">(v->reply_callback)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1019</td><td><a href="varlink.c.html#L1019">(v->connecting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="varlink.c.html#L1103">(v->connecting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1150</td><td><a href="varlink.c.html#L1150">(v->write_disconnected)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1203</td><td><a href="varlink.c.html#L1203">(saved_server->disconnect_callback)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1798</td><td><a href="varlink.c.html#L1798">(v->ucred_acquired)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2189</td><td><a href="varlink.c.html#L2189">(server->event)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2262</td><td><a href="varlink.c.html#L2262">(s->event)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2337</td><td><a href="varlink.c.html#L2337">(ss->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2351</td><td><a href="varlink.c.html#L2351">(s->sockets)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">682</td><td><a href="varlink.c.html#L682">(!*v)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2305</td><td><a href="varlink.c.html#L2305">(listen(fd, SOMAXCONN) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">282</td><td><a href="varlink.c.html#L282">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">292</td><td><a href="varlink.c.html#L292">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="varlink.c.html#L293">(r != -ENAMETOOLONG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">303</td><td><a href="varlink.c.html#L303">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">332</td><td><a href="varlink.c.html#L332">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">336</td><td><a href="varlink.c.html#L336">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="varlink.c.html#L469">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">470</td><td><a href="varlink.c.html#L470">(errno == EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="varlink.c.html#L550">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">551</td><td><a href="varlink.c.html#L551">(errno == EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">561</td><td><a href="varlink.c.html#L561">(n == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="varlink.c.html#L602">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">646</td><td><a href="varlink.c.html#L646">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="varlink.c.html#L751">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="varlink.c.html#L759">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">858</td><td><a href="varlink.c.html#L858">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="varlink.c.html#L881">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">887</td><td><a href="varlink.c.html#L887">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">895</td><td><a href="varlink.c.html#L895">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">944</td><td><a href="varlink.c.html#L944">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">946</td><td><a href="varlink.c.html#L946">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">950</td><td><a href="varlink.c.html#L950">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">952</td><td><a href="varlink.c.html#L952">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">956</td><td><a href="varlink.c.html#L956">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="varlink.c.html#L958">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">962</td><td><a href="varlink.c.html#L962">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="varlink.c.html#L964">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">968</td><td><a href="varlink.c.html#L968">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="varlink.c.html#L970">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="varlink.c.html#L975">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">980</td><td><a href="varlink.c.html#L980">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="varlink.c.html#L985">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">990</td><td><a href="varlink.c.html#L990">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">999</td><td><a href="varlink.c.html#L999">(q < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1003</td><td><a href="varlink.c.html#L1003">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="varlink.c.html#L1051">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1053</td><td><a href="varlink.c.html#L1053">(t != USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="varlink.c.html#L1057">(t < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="varlink.c.html#L1068">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="varlink.c.html#L1072">(events < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="varlink.c.html#L1076">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1154</td><td><a href="varlink.c.html#L1154">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1156</td><td><a href="varlink.c.html#L1156">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1162</td><td><a href="varlink.c.html#L1162">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1188</td><td><a href="varlink.c.html#L1188">(c == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1252</td><td><a href="varlink.c.html#L1252">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1309</td><td><a href="varlink.c.html#L1309">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1316</td><td><a href="varlink.c.html#L1316">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1320</td><td><a href="varlink.c.html#L1320">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="varlink.c.html#L1339">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1360</td><td><a href="varlink.c.html#L1360">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1366</td><td><a href="varlink.c.html#L1366">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="varlink.c.html#L1370">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1391</td><td><a href="varlink.c.html#L1391">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="varlink.c.html#L1413">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1420</td><td><a href="varlink.c.html#L1420">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="varlink.c.html#L1424">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1445</td><td><a href="varlink.c.html#L1445">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="varlink.c.html#L1473">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1479</td><td><a href="varlink.c.html#L1479">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="varlink.c.html#L1483">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1493</td><td><a href="varlink.c.html#L1493">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1495</td><td><a href="varlink.c.html#L1495">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1499</td><td><a href="varlink.c.html#L1499">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1553</td><td><a href="varlink.c.html#L1553">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="varlink.c.html#L1573">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1577</td><td><a href="varlink.c.html#L1577">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="varlink.c.html#L1581">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1609</td><td><a href="varlink.c.html#L1609">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1630</td><td><a href="varlink.c.html#L1630">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1636</td><td><a href="varlink.c.html#L1636">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1640</td><td><a href="varlink.c.html#L1640">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1664</td><td><a href="varlink.c.html#L1664">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1690</td><td><a href="varlink.c.html#L1690">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1703</td><td><a href="varlink.c.html#L1703">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="varlink.c.html#L1731">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1737</td><td><a href="varlink.c.html#L1737">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1741</td><td><a href="varlink.c.html#L1741">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1759</td><td><a href="varlink.c.html#L1759">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1802</td><td><a href="varlink.c.html#L1802">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1816</td><td><a href="varlink.c.html#L1816">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1833</td><td><a href="varlink.c.html#L1833">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1905</td><td><a href="varlink.c.html#L1905">(e < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1909</td><td><a href="varlink.c.html#L1909">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1913</td><td><a href="varlink.c.html#L1913">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1919</td><td><a href="varlink.c.html#L1919">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1924</td><td><a href="varlink.c.html#L1924">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1952</td><td><a href="varlink.c.html#L1952">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1957</td><td><a href="varlink.c.html#L1957">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="varlink.c.html#L1961">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1967</td><td><a href="varlink.c.html#L1967">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1971</td><td><a href="varlink.c.html#L1971">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1977</td><td><a href="varlink.c.html#L1977">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1981</td><td><a href="varlink.c.html#L1981">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1985</td><td><a href="varlink.c.html#L1985">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1991</td><td><a href="varlink.c.html#L1991">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1995</td><td><a href="varlink.c.html#L1995">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2079</td><td><a href="varlink.c.html#L2079">(allowed == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="varlink.c.html#L2120">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2129</td><td><a href="varlink.c.html#L2129">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2147</td><td><a href="varlink.c.html#L2147">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2153</td><td><a href="varlink.c.html#L2153">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2155</td><td><a href="varlink.c.html#L2155">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2161</td><td><a href="varlink.c.html#L2161">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2165</td><td><a href="varlink.c.html#L2165">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2191</td><td><a href="varlink.c.html#L2191">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2217</td><td><a href="varlink.c.html#L2217">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2225</td><td><a href="varlink.c.html#L2225">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2232</td><td><a href="varlink.c.html#L2232">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2250</td><td><a href="varlink.c.html#L2250">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2264</td><td><a href="varlink.c.html#L2264">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2268</td><td><a href="varlink.c.html#L2268">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2287</td><td><a href="varlink.c.html#L2287">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2292</td><td><a href="varlink.c.html#L2292">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="varlink.c.html#L2301">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="varlink.c.html#L2309">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2367</td><td><a href="varlink.c.html#L2367">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2375</td><td><a href="varlink.c.html#L2375">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2379</td><td><a href="varlink.c.html#L2379">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2423</td><td><a href="varlink.c.html#L2423">(r == -ENOMEM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2425</td><td><a href="varlink.c.html#L2425">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2427</td><td><a href="varlink.c.html#L2427">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2451</td><td><a href="varlink.c.html#L2451">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2504</td><td><a href="varlink.c.html#L2504">(VARLINK_DEFAULT_CONNECTIONS_PER_UID_MAX > m)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">304</td><td><a href="varlink.c.html#L304">(!IN_SET(r, -EAGAIN, -EINPROGRESS))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">715</td><td><a href="varlink.c.html#L715">(!json_variant_is_string(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">724</td><td><a href="varlink.c.html#L724">(!json_variant_is_object(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="varlink.c.html#L733">(!json_variant_is_boolean(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">769</td><td><a href="varlink.c.html#L769">(!FLAGS_SET(flags, VARLINK_REPLY_CONTINUES))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">815</td><td><a href="varlink.c.html#L815">(!json_variant_is_string(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">823</td><td><a href="varlink.c.html#L823">(!json_variant_is_object(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">833</td><td><a href="varlink.c.html#L833">(!json_variant_is_boolean(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">844</td><td><a href="varlink.c.html#L844">(!json_variant_is_boolean(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">885</td><td><a href="varlink.c.html#L885">(!FLAGS_SET(flags, VARLINK_METHOD_ONEWAY))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">891</td><td><a href="varlink.c.html#L891">(!FLAGS_SET(flags, VARLINK_METHOD_ONEWAY))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1033</td><td><a href="varlink.c.html#L1033">(!FLAGS_SET(revents, POLLHUP))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">254</td><td><a href="varlink.c.html#L254">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">379</td><td><a href="varlink.c.html#L379">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="varlink.c.html#L462">(!prefer_write)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">530</td><td><a href="varlink.c.html#L530">(!b)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">543</td><td><a href="varlink.c.html#L543">(!prefer_read)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">590</td><td><a href="varlink.c.html#L590">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">854</td><td><a href="varlink.c.html#L854">(!method)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1229</td><td><a href="varlink.c.html#L1229">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1237</td><td><a href="varlink.c.html#L1237">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1281</td><td><a href="varlink.c.html#L1281">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2009</td><td><a href="varlink.c.html#L2009">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2030</td><td><a href="varlink.c.html#L2030">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2047</td><td><a href="varlink.c.html#L2047">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2254</td><td><a href="varlink.c.html#L2254">(!ss)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2334</td><td><a href="varlink.c.html#L2334">(!ss)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2419</td><td><a href="varlink.c.html#L2419">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2445</td><td><a href="varlink.c.html#L2445">(!method)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">473</td><td><a href="varlink.c.html#L473">(ERRNO_IS_DISCONNECT(errno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">554</td><td><a href="varlink.c.html#L554">(ERRNO_IS_DISCONNECT(errno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="varlink.c.html#L712">(streq(k, "error"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">721</td><td><a href="varlink.c.html#L721">(streq(k, "parameters"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">729</td><td><a href="varlink.c.html#L729">(streq(k, "continues"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="varlink.c.html#L730">(FLAGS_SET(flags, VARLINK_REPLY_CONTINUES))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">736</td><td><a href="varlink.c.html#L736">(json_variant_boolean(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">812</td><td><a href="varlink.c.html#L812">(streq(k, "method"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">820</td><td><a href="varlink.c.html#L820">(streq(k, "parameters"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="varlink.c.html#L828">(streq(k, "oneway"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">836</td><td><a href="varlink.c.html#L836">(json_variant_boolean(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="varlink.c.html#L839">(streq(k, "more"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">847</td><td><a href="varlink.c.html#L847">(json_variant_boolean(e))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">867</td><td><a href="varlink.c.html#L867">(STR_IN_SET(method, "org.varlink.service.GetInfo", "org.varlink.service.GetInterface"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="varlink.c.html#L871">(startswith(method, "org.varlink.service."))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1684</td><td><a href="varlink.c.html#L1684">(json_variant_is_string(parameters))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2218</td><td><a href="varlink.c.html#L2218">(ERRNO_IS_ACCEPT_AGAIN(errno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2415</td><td><a href="varlink.c.html#L2415">(startswith(method, "org.varlink.service."))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="varlink.c.html#L467">(prefer_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">548</td><td><a href="varlink.c.html#L548">(prefer_read)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">713</td><td><a href="varlink.c.html#L713">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">722</td><td><a href="varlink.c.html#L722">(parameters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">813</td><td><a href="varlink.c.html#L813">(method)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">821</td><td><a href="varlink.c.html#L821">(parameters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">879</td><td><a href="varlink.c.html#L879">(callback)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1129</td><td><a href="varlink.c.html#L1129">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1133</td><td><a href="varlink.c.html#L1133">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1515</td><td><a href="varlink.c.html#L1515">(ret_parameters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1517</td><td><a href="varlink.c.html#L1517">(ret_error_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1519</td><td><a href="varlink.c.html#L1519">(ret_flags)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1917</td><td><a href="varlink.c.html#L1917">(have_timeout)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1948</td><td><a href="varlink.c.html#L1948">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2172</td><td><a href="varlink.c.html#L2172">(ucred_acquired)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2199</td><td><a href="varlink.c.html#L2199">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2363</td><td><a href="varlink.c.html#L2363">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2483</td><td><a href="varlink.c.html#L2483">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2499</td><td><a href="varlink.c.html#L2499">(s)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

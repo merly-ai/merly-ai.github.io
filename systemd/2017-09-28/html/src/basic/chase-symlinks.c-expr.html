@@ -1,0 +1,140 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\basic\chase-symlinks.c Ctrl Expressions (89) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\basic\chase-symlinks.c Ctrl Expressions (89) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\basic\chase-symlinks.c Ctrl Expressions (89)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">277</td><td><a href="chase-symlinks.c.html#L277">(<span style='background-color:#741da3;'>errno == ENOENT && (flags & CHASE_NONEXISTENT) && (isempty(todo) || path_is_safe(todo))</span>)</a></td><td class="num">1014.50</td></tr>
+      <tr><td class="num line">143</td><td><a href="chase-symlinks.c.html#L143">(<span style='background-color:#741da3;'>!original_root && !ret_path && !(flags & CHASE_NONEXISTENT | CHASE_NO_AUTOFS | CHASE_SAFE | CHASE_STEP) && ret_fd</span>)</a></td><td class="num">1014.25</td></tr>
+      <tr><td class="num line">423</td><td><a href="chase-symlinks.c.html#L423">(<span style='background-color:#741da3;'>empty_or_root(root) && !ret_path && (chase_flags & CHASE_NO_AUTOFS | CHASE_SAFE) == 0</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">464</td><td><a href="chase-symlinks.c.html#L464">(<span style='background-color:#741da3;'>empty_or_root(root) && !ret_path && (chase_flags & CHASE_NO_AUTOFS | CHASE_SAFE) == 0</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">508</td><td><a href="chase-symlinks.c.html#L508">(<span style='background-color:#741da3;'>empty_or_root(root) && !ret_path && (chase_flags & CHASE_NO_AUTOFS | CHASE_SAFE) == 0</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">306</td><td><a href="chase-symlinks.c.html#L306">(S_ISLNK(st.st_mode) && !((flags & CHASE_NOFOLLOW) && isempty(todo)))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">296</td><td><a href="chase-symlinks.c.html#L296">((flags & CHASE_SAFE) && unsafe_transition(&previous_stat, &st))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="chase-symlinks.c.html#L302">((flags & CHASE_NO_AUTOFS) && fd_is_fs_type(child, AUTOFS_SUPER_MAGIC) > 0)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">244</td><td><a href="chase-symlinks.c.html#L244">(root && path_startswith(done, root) && !path_startswith(parent, root))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">78</td><td><a href="chase-symlinks.c.html#L78">((flags & CHASE_NONEXISTENT) && ret_fd)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">81</td><td><a href="chase-symlinks.c.html#L81">((flags & CHASE_STEP) && ret_fd)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">21</td><td><a href="chase-symlinks.c.html#L21">(a->st_uid == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">311</td><td><a href="chase-symlinks.c.html#L311">(max_follow-- <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">88</td><td><a href="chase-symlinks.c.html#L88">(FLAGS_SET(flags, CHASE_PREFIX_ROOT) && !path_is_absolute(path))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">37</td><td><a href="chase-symlinks.c.html#L37">(fstat(a, &st) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">39</td><td><a href="chase-symlinks.c.html#L39">(fstat(b, &st) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">185</td><td><a href="chase-symlinks.c.html#L185">(fstat(fd, &previous_stat) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">259</td><td><a href="chase-symlinks.c.html#L259">(fstat(fd_parent, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">262</td><td><a href="chase-symlinks.c.html#L262">(unsafe_transition(&previous_stat, &st))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">294</td><td><a href="chase-symlinks.c.html#L294">(fstat(child, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">331</td><td><a href="chase-symlinks.c.html#L331">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">334</td><td><a href="chase-symlinks.c.html#L334">(unsafe_transition(&previous_stat, &st))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">167</td><td><a href="chase-symlinks.c.html#L167">(flags & CHASE_PREFIX_ROOT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">184</td><td><a href="chase-symlinks.c.html#L184">(flags & CHASE_SAFE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">188</td><td><a href="chase-symlinks.c.html#L188">(flags & CHASE_TRAIL_SLASH)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="chase-symlinks.c.html#L220">(!strextend(&done, "/"))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">251</td><td><a href="chase-symlinks.c.html#L251">(flags & CHASE_STEP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="chase-symlinks.c.html#L258">(flags & CHASE_SAFE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">284</td><td><a href="chase-symlinks.c.html#L284">(!path_extend(&done, first, todo))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">330</td><td><a href="chase-symlinks.c.html#L330">(flags & CHASE_SAFE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="chase-symlinks.c.html#L348">(!path_extend(&destination, todo))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">354</td><td><a href="chase-symlinks.c.html#L354">(flags & CHASE_STEP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">361</td><td><a href="chase-symlinks.c.html#L361">(!path_extend(&done, first))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">380</td><td><a href="chase-symlinks.c.html#L380">(flags & CHASE_STEP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">420</td><td><a href="chase-symlinks.c.html#L420">(chase_flags & CHASE_NONEXISTENT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">461</td><td><a href="chase-symlinks.c.html#L461">(chase_flags & CHASE_NONEXISTENT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="chase-symlinks.c.html#L505">(chase_flags & CHASE_NONEXISTENT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">510</td><td><a href="chase-symlinks.c.html#L510">(stat(path, ret_stat) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">521</td><td><a href="chase-symlinks.c.html#L521">(fstat(path_fd, ret_stat) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">147</td><td><a href="chase-symlinks.c.html#L147">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">156</td><td><a href="chase-symlinks.c.html#L156">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="chase-symlinks.c.html#L176">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="chase-symlinks.c.html#L181">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">216</td><td><a href="chase-symlinks.c.html#L216">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="chase-symlinks.c.html#L218">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="chase-symlinks.c.html#L240">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">255</td><td><a href="chase-symlinks.c.html#L255">(fd_parent < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="chase-symlinks.c.html#L276">(child < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">315</td><td><a href="chase-symlinks.c.html#L315">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="chase-symlinks.c.html#L327">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="chase-symlinks.c.html#L342">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">391</td><td><a href="chase-symlinks.c.html#L391">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="chase-symlinks.c.html#L393">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">426</td><td><a href="chase-symlinks.c.html#L426">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">433</td><td><a href="chase-symlinks.c.html#L433">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">438</td><td><a href="chase-symlinks.c.html#L438">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">475</td><td><a href="chase-symlinks.c.html#L475">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="chase-symlinks.c.html#L517">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="chase-symlinks.c.html#L549">(mode_flags < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="chase-symlinks.c.html#L553">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">557</td><td><a href="chase-symlinks.c.html#L557">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">31</td><td><a href="chase-symlinks.c.html#L31">(!FLAGS_SET(flags, CHASE_WARN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">50</td><td><a href="chase-symlinks.c.html#L50">(!FLAGS_SET(flags, CHASE_WARN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">169</td><td><a href="chase-symlinks.c.html#L169">(!buffer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">174</td><td><a href="chase-symlinks.c.html#L174">(!buffer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">195</td><td><a href="chase-symlinks.c.html#L195">(!todo)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">206</td><td><a href="chase-symlinks.c.html#L206">(!done)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">226</td><td><a href="chase-symlinks.c.html#L226">(!first)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">399</td><td><a href="chase-symlinks.c.html#L399">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">459</td><td><a href="chase-symlinks.c.html#L459">(!ret_dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">467</td><td><a href="chase-symlinks.c.html#L467">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">480</td><td><a href="chase-symlinks.c.html#L480">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">84</td><td><a href="chase-symlinks.c.html#L84">(isempty(path))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="chase-symlinks.c.html#L140">(empty_or_root(original_root))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="chase-symlinks.c.html#L230">(path_equal(first, ".."))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="chase-symlinks.c.html#L236">(empty_or_root(done))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="chase-symlinks.c.html#L317">(isempty(destination))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="chase-symlinks.c.html#L320">(path_is_absolute(destination))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="chase-symlinks.c.html#L154">(original_root)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">191</td><td><a href="chase-symlinks.c.html#L191">(root)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">219</td><td><a href="chase-symlinks.c.html#L219">(append_trail_slash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">369</td><td><a href="chase-symlinks.c.html#L369">(ret_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">372</td><td><a href="chase-symlinks.c.html#L372">(ret_fd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="chase-symlinks.c.html#L386">(ret_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">441</td><td><a href="chase-symlinks.c.html#L441">(ret_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">483</td><td><a href="chase-symlinks.c.html#L483">(ret_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">524</td><td><a href="chase-symlinks.c.html#L524">(ret_path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">526</td><td><a href="chase-symlinks.c.html#L526">(ret_fd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">560</td><td><a href="chase-symlinks.c.html#L560">(ret_path)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

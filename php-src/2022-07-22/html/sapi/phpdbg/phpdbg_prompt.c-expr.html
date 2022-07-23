@@ -1,0 +1,255 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - sapi\phpdbg\phpdbg_prompt.c Ctrl Expressions (204) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - sapi\phpdbg\phpdbg_prompt.c Ctrl Expressions (204) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;sapi\phpdbg\phpdbg_prompt.c Ctrl Expressions (204)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">606</td><td><a href="phpdbg_prompt.c.html#L606">(<span style='background-color:#741da3;'>opline->lineno != ex->opline->lineno || opline->opcode == ZEND_RETURN || opline->opcode == ZEND_FAST_RET || opline->opcode == ZEND_GENERATOR_RETURN || opline->opcode == ZEND_EXIT || opline->opcode == ZEND_YIELD || opline->opcode == ZEND_YIELD_FROM</span>)</a></td><td class="num">1051.00</td></tr>
+      <tr><td class="num line">1792</td><td><a href="phpdbg_prompt.c.html#L1792">((PHPDBG_G(flags) & PHPDBG_BP_MASK) && (brake = phpdbg_find_breakpoint(execute_data)) && (<span style='background-color:#741da3;'>brake->type != PHPDBG_BREAK_FILE || execute_data->opline->lineno != PHPDBG_G(last_line)</span>))</a></td><td class="num">1045.50</td></tr>
+      <tr><td class="num line">1775</td><td><a href="phpdbg_prompt.c.html#L1775">(PHPDBG_G(flags) & PHPDBG_IS_STEPPING && (<span style='background-color:#741da3;'>PHPDBG_G(flags) & PHPDBG_STEP_OPCODE || execute_data->opline->lineno != PHPDBG_G(last_line)</span>))</a></td><td class="num">1035.00</td></tr>
+      <tr><td class="num line">222</td><td><a href="phpdbg_prompt.c.html#L222">(<span style='background-color:#741da3;'>*cmd && cmd_len > 0L && cmd[0] != '#'</span>)</a></td><td class="num">1014.75</td></tr>
+      <tr><td class="num line">486</td><td><a href="phpdbg_prompt.c.html#L486">(<span style='background-color:#741da3;'>buf != nl && buf <= nl + seplen</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">498</td><td><a href="phpdbg_prompt.c.html#L498">((bytes = phpdbg_mixed_read(PHPDBG_G(io)[PHPDBG_STDIN].fd, PHPDBG_G(input_buffer) + PHPDBG_G(input_buflen), PHPDBG_MAX_CMD - PHPDBG_G(input_buflen), -1)) > 0)</a></td><td class="num">65.95</td></tr>
+      <tr><td class="num line">828</td><td><a href="phpdbg_prompt.c.html#L828">(*p == '\\' && (p[1] == sep || p[1] == '\\' || (p[1] == '#' && sep == ' ')))</a></td><td class="num">59.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="phpdbg_prompt.c.html#L475">(!memcmp(sep, nl, seplen) && (*buf == '\n' || (*buf == '\r' && buf[1] == '\n')))</a></td><td class="num">53.75</td></tr>
+      <tr><td class="num line">1813</td><td><a href="phpdbg_prompt.c.html#L1813">((execute_data->opline->opcode == ZEND_DO_FCALL || execute_data->opline->opcode == ZEND_DO_UCALL || execute_data->opline->opcode == ZEND_DO_FCALL_BY_NAME) && execute_data->call->func->type == ZEND_USER_FUNCTION)</a></td><td class="num">53.25</td></tr>
+      <tr><td class="num line">1270</td><td><a href="phpdbg_prompt.c.html#L1270">(extension_version_info->zend_extension_api_no != ZEND_EXTENSION_API_NO && (!new_extension->api_no_check || new_extension->api_no_check(ZEND_EXTENSION_API_NO) != SUCCESS))</a></td><td class="num">51.25</td></tr>
+      <tr><td class="num line">1274</td><td><a href="phpdbg_prompt.c.html#L1274">(strcmp(ZEND_EXTENSION_BUILD_ID, extension_version_info->build_id) && (!new_extension->build_id_check || new_extension->build_id_check(ZEND_EXTENSION_BUILD_ID) != SUCCESS))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">671</td><td><a href="phpdbg_prompt.c.html#L671">(zend_hash_index_exists(&PHPDBG_G(seek), (zend_ulong)phpdbg_user_execute_data(EG(current_execute_data))->opline))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">688</td><td><a href="phpdbg_prompt.c.html#L688">(zend_hash_index_exists(&PHPDBG_G(seek), (zend_ulong)phpdbg_user_execute_data(EG(current_execute_data))->opline))</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">824</td><td><a href="phpdbg_prompt.c.html#L824">(*p == '\\' && (p[1] == '<' || p[1] == '\'' || p[1] == '"'))</a></td><td class="num">37.75</td></tr>
+      <tr><td class="num line">1034</td><td><a href="phpdbg_prompt.c.html#L1034">(i < EG(objects_store).top && *obj && IS_OBJ_VALID(*obj) && (*obj)->ce == zend_ce_generator)</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="phpdbg_prompt.c.html#L792">(*p == '\\' && (p[1] == sep || p[1] == '\\'))</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">565</td><td><a href="phpdbg_prompt.c.html#L565">(php_stream_open_for_zend_ex(&fh, USE_PATH | STREAM_OPEN_FOR_INCLUDE) == SUCCESS && zend_stream_fixup(&fh, &buf, &len) == SUCCESS)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1372</td><td><a href="phpdbg_prompt.c.html#L1372">((type = phpdbg_load_module_or_extension(&path, &name)) == NULL)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">1688</td><td><a href="phpdbg_prompt.c.html#L1688">(!prev_ex->func || !ZEND_USER_CODE(prev_ex->func->common.type))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">1538</td><td><a href="phpdbg_prompt.c.html#L1538">(!input && !(input = phpdbg_read_input(NULL)))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">1037</td><td><a href="phpdbg_prompt.c.html#L1037">(zend_generator_get_current(gen)->flags & ZEND_GENERATOR_CURRENTLY_RUNNING)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1219</td><td><a href="phpdbg_prompt.c.html#L1219">(strchr(*path, '/') != NULL || strchr(*path, DEFAULT_SLASH) != NULL)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">817</td><td><a href="phpdbg_prompt.c.html#L817">(argc >= 4 && argc == (argc & -argc))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">1651</td><td><a href="phpdbg_prompt.c.html#L1651">((PHPDBG_G(flags) & PHPDBG_IS_STOPPING) && !(PHPDBG_G(flags) & PHPDBG_IS_RUNNING))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1682</td><td><a href="phpdbg_prompt.c.html#L1682">(exception && PHPDBG_G(handled_exception) != exception && !(PHPDBG_G(flags) & PHPDBG_IN_EVAL))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1724</td><td><a href="phpdbg_prompt.c.html#L1724">((PHPDBG_G(flags) & PHPDBG_SEEK_MASK) && !(PHPDBG_G(flags) & PHPDBG_IN_EVAL))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">216</td><td><a href="phpdbg_prompt.c.html#L216">(cmd_len > 0L && isspace(cmd[cmd_len - 1]))</a></td><td class="num">24.60</td></tr>
+      <tr><td class="num line">1558</td><td><a href="phpdbg_prompt.c.html#L1558">(!allow_async_unsafe || phpdbg_call_register(&stack) == FAILURE)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">408</td><td><a href="phpdbg_prompt.c.html#L408">((res_len != PHPDBG_G(exec_len)) || (memcmp(res, PHPDBG_G(exec), res_len) != SUCCESS))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">1572</td><td><a href="phpdbg_prompt.c.html#L1572">(!PHPDBG_G(in_execution) && !(PHPDBG_G(flags) & PHPDBG_IS_STOPPING))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">311</td><td><a href="phpdbg_prompt.c.html#L311">(init_file && VCWD_STAT(init_file, &sb) != -1)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">995</td><td><a href="phpdbg_prompt.c.html#L995">(stepping && !(PHPDBG_G(flags) & PHPDBG_IS_STEPONEVAL))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="phpdbg_prompt.c.html#L1424">(!zend_hash_str_exists(&PHPDBG_G(registered), lcname, lcname_len))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">768</td><td><a href="phpdbg_prompt.c.html#L768">(param && param->type != EMPTY_PARAM && param->len != 0)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="phpdbg_prompt.c.html#L616">(opline++ < op_array->opcodes + op_array->last)</a></td><td class="num">14.35</td></tr>
+      <tr><td class="num line">659</td><td><a href="phpdbg_prompt.c.html#L659">(opline++ < op_array->opcodes + op_array->last)</a></td><td class="num">14.35</td></tr>
+      <tr><td class="num line">1051</td><td><a href="phpdbg_prompt.c.html#L1051">(obj && IS_OBJ_VALID(obj) && obj->ce == zend_ce_generator)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">775</td><td><a href="phpdbg_prompt.c.html#L775">(*end == '\r' || *end == '\n')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">788</td><td><a href="phpdbg_prompt.c.html#L788">(*p == '\'' || *p == '"')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="phpdbg_prompt.c.html#L821">(*p == '\'' || *p == '"')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="phpdbg_prompt.c.html#L970">(zend_eval_stringl(param->str, param->len, &retval, "eval()'d code") == SUCCESS)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="phpdbg_prompt.c.html#L1191">((fd = VCWD_POPEN((char*)param->str, "w")))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">791</td><td><a href="phpdbg_prompt.c.html#L791">(*p && *p != sep)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">827</td><td><a href="phpdbg_prompt.c.html#L827">(*p && *p != sep)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1695</td><td><a href="phpdbg_prompt.c.html#L1695">((prev_ex = prev_ex->prev_execute_data))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1323</td><td><a href="phpdbg_prompt.c.html#L1323">((module_entry = zend_register_module_ex(module_entry)) == NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">833</td><td><a href="phpdbg_prompt.c.html#L833">(!*p && sep != ' ')</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1336</td><td><a href="phpdbg_prompt.c.html#L1336">(module_entry->request_startup_func(MODULE_PERSISTENT, module_entry->module_number) == FAILURE)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">103</td><td><a href="phpdbg_prompt.c.html#L103">(!name || name->type != STR_PARAM)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1074</td><td><a href="phpdbg_prompt.c.html#L1074">(!param || param->type == EMPTY_PARAM)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1360</td><td><a href="phpdbg_prompt.c.html#L1360">(!param || param->type == EMPTY_PARAM)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1513</td><td><a href="phpdbg_prompt.c.html#L1513">(!param || param->type == EMPTY_PARAM)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">403</td><td><a href="phpdbg_prompt.c.html#L403">(VCWD_STAT(param->str, &sb) != FAILURE)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1395</td><td><a href="phpdbg_prompt.c.html#L1395">(VCWD_STAT(param->str, &sb) != -1)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1425</td><td><a href="phpdbg_prompt.c.html#L1425">((function = zend_hash_str_find_ptr(EG(function_table), lcname, lcname_len)))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">357</td><td><a href="phpdbg_prompt.c.html#L357">(scan_dir[i++] == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">866</td><td><a href="phpdbg_prompt.c.html#L866">(ex && (ZEND_CALL_INFO(ex) & ZEND_CALL_HAS_SYMBOL_TABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1058</td><td><a href="phpdbg_prompt.c.html#L1058">(gen->node.parent != current)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1533</td><td><a href="phpdbg_prompt.c.html#L1533">(ret == SUCCESS || ret == FAILURE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1849</td><td><a href="phpdbg_prompt.c.html#L1849">(data->func->internal_function.function_name)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">109</td><td><a href="phpdbg_prompt.c.html#L109">(zend_hash_str_exists(&PHPDBG_G(registered), lc_name, name->len))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1285</td><td><a href="phpdbg_prompt.c.html#L1285">(new_extension->startup(new_extension) != SUCCESS)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">98</td><td><a href="phpdbg_prompt.c.html#L98">(stack->type == STACK_PARAM)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">240</td><td><a href="phpdbg_prompt.c.html#L240">(state->code == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">541</td><td><a href="phpdbg_prompt.c.html#L541">(i <= data->lines)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1221</td><td><a href="phpdbg_prompt.c.html#L1221">(extension_dir && extension_dir[0])</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1242</td><td><a href="phpdbg_prompt.c.html#L1242">(err && err[0])</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1843</td><td><a href="phpdbg_prompt.c.html#L1843">(ZEND_USER_CODE(data->func->type))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">185</td><td><a href="phpdbg_prompt.c.html#L185">(zend_call_function(&fci, NULL) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">262</td><td><a href="phpdbg_prompt.c.html#L262">(phpdbg_do_parse(&stack, input) <= 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">266</td><td><a href="phpdbg_prompt.c.html#L266">(phpdbg_call_register(&stack) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">389</td><td><a href="phpdbg_prompt.c.html#L389">(!resubmit && PHPDBG_G(cur_command))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">404</td><td><a href="phpdbg_prompt.c.html#L404">(sb.st_mode & S_IFREG | S_IFLNK)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1545</td><td><a href="phpdbg_prompt.c.html#L1545">(phpdbg_do_parse(&stack, input) <= 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">354</td><td><a href="phpdbg_prompt.c.html#L354">(*scan_dir != 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">474</td><td><a href="phpdbg_prompt.c.html#L474">(buf == nl + seplen)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">481</td><td><a href="phpdbg_prompt.c.html#L481">(*buf == '\n')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">779</td><td><a href="phpdbg_prompt.c.html#L779">(*p == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">784</td><td><a href="phpdbg_prompt.c.html#L784">(*p == '<')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">786</td><td><a href="phpdbg_prompt.c.html#L786">(*p == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="phpdbg_prompt.c.html#L799">(*p == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">849</td><td><a href="phpdbg_prompt.c.html#L849">(*p == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">888</td><td><a href="phpdbg_prompt.c.html#L888">(!(PHPDBG_G(flags) & PHPDBG_IS_STOPPING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">963</td><td><a href="phpdbg_prompt.c.html#L963">(!(PHPDBG_G(flags) & PHPDBG_IS_STEPONEVAL))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1224</td><td><a href="phpdbg_prompt.c.html#L1224">(IS_SLASH(extension_dir[extension_dir_len - 1]))</a></td><td class="num">4.35</td></tr>
+      <tr><td class="num line">1557</td><td><a href="phpdbg_prompt.c.html#L1557">(!(PHPDBG_G(flags) & PHPDBG_IS_STOPPING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1607</td><td><a href="phpdbg_prompt.c.html#L1607">(!(PHPDBG_G(flags) & PHPDBG_IN_EVAL))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="phpdbg_prompt.c.html#L356">(scan_dir[i] != ':')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">508</td><td><a href="phpdbg_prompt.c.html#L508">(phpdbg_compile_stdin(code.s) == FAILURE)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1049</td><td><a href="phpdbg_prompt.c.html#L1049">(i < EG(objects_store).top)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1671</td><td><a href="phpdbg_prompt.c.html#L1671">(exception && zend_is_unwind_exit(exception))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">471</td><td><a href="phpdbg_prompt.c.html#L471">(sep && seplen)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1267</td><td><a href="phpdbg_prompt.c.html#L1267">(!extension_version_info || !new_extension)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="phpdbg_prompt.c.html#L284">(PHPDBG_G(flags) & PHPDBG_IS_QUITTING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">485</td><td><a href="phpdbg_prompt.c.html#L485">(PHPDBG_G(input_buflen)--)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">903</td><td><a href="phpdbg_prompt.c.html#L903">(PHPDBG_G(flags) & PHPDBG_IS_STOPPING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">952</td><td><a href="phpdbg_prompt.c.html#L952">(PHPDBG_G(flags) & PHPDBG_IN_SIGNAL_HANDLER)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1313</td><td><a href="phpdbg_prompt.c.html#L1313">(strcmp(ZEND_EXTENSION_BUILD_ID, module_entry->build_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1534</td><td><a href="phpdbg_prompt.c.html#L1534">(PHPDBG_G(flags) & PHPDBG_IS_STOPPING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1660</td><td><a href="phpdbg_prompt.c.html#L1660">((PHPDBG_G(flags) & PHPDBG_BP_RESOLVE_MASK))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1676</td><td><a href="phpdbg_prompt.c.html#L1676">(PHPDBG_G(flags) & PHPDBG_PREVENT_INTERACTIVE)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1715</td><td><a href="phpdbg_prompt.c.html#L1715">(PHPDBG_G(flags) & PHPDBG_IN_COND_BP | PHPDBG_IS_INITIALIZING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1729</td><td><a href="phpdbg_prompt.c.html#L1729">(PHPDBG_G(flags) & PHPDBG_IS_STEPPING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1738</td><td><a href="phpdbg_prompt.c.html#L1738">(PHPDBG_G(flags) & PHPDBG_IN_UNTIL)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1749</td><td><a href="phpdbg_prompt.c.html#L1749">(PHPDBG_G(flags) & PHPDBG_IN_FINISH)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1759</td><td><a href="phpdbg_prompt.c.html#L1759">(PHPDBG_G(flags) & PHPDBG_IN_LEAVE)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1800</td><td><a href="phpdbg_prompt.c.html#L1800">(PHPDBG_G(flags) & PHPDBG_IS_SIGNALED)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1868</td><td><a href="phpdbg_prompt.c.html#L1868">(PHPDBG_G(flags) & PHPDBG_IS_STOPPING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="phpdbg_prompt.c.html#L121">(name->next)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="phpdbg_prompt.c.html#L239">(state->in_code)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="phpdbg_prompt.c.html#L246">(state->code)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">267</td><td><a href="phpdbg_prompt.c.html#L267">(state->init_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="phpdbg_prompt.c.html#L1036">(gen->execute_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1053</td><td><a href="phpdbg_prompt.c.html#L1053">(gen->execute_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="phpdbg_prompt.c.html#L1284">(new_extension->startup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1335</td><td><a href="phpdbg_prompt.c.html#L1335">(module_entry->request_startup_func)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1842</td><td><a href="phpdbg_prompt.c.html#L1842">(data->func)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">748</td><td><a href="phpdbg_prompt.c.html#L748">(PHPDBG_G(ops) || PHPDBG_G(exec))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1666</td><td><a href="phpdbg_prompt.c.html#L1666">(zend_atomic_bool_load_ex(&EG(timed_out)))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">224</td><td><a href="phpdbg_prompt.c.html#L224">(memcmp(cmd, "<:", sizeof("<:") - 1) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">228</td><td><a href="phpdbg_prompt.c.html#L228">(memcmp(cmd, ":>", sizeof(":>") - 1) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">319</td><td><a href="phpdbg_prompt.c.html#L319">(fgets(cmd, PHPDBG_MAX_CMD, fp) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">410</td><td><a href="phpdbg_prompt.c.html#L410">(phpdbg_ask_user_permission("Do you really want to stop execution to set a new execution context?") == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="phpdbg_prompt.c.html#L467">(PHPDBG_G(input_buflen) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="phpdbg_prompt.c.html#L753">(phpdbg_ask_user_permission("Do you really want to restart execution?") == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">761</td><td><a href="phpdbg_prompt.c.html#L761">(phpdbg_compile() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">808</td><td><a href="phpdbg_prompt.c.html#L808">(PHPDBG_G(stdin_file) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1329</td><td><a href="phpdbg_prompt.c.html#L1329">(zend_startup_module_ex(module_entry) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1452</td><td><a href="phpdbg_prompt.c.html#L1452">(phpdbg_ask_user_permission("Do you really want to clean your current environment?") == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1728</td><td><a href="phpdbg_prompt.c.html#L1728">(PHPDBG_G(seek_ex) != execute_data)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="phpdbg_prompt.c.html#L1783">(phpdbg_print_changed_zvals() == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1822</td><td><a href="phpdbg_prompt.c.html#L1822">(PHPDBG_G(vmret) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1823</td><td><a href="phpdbg_prompt.c.html#L1823">(PHPDBG_G(vmret) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">223</td><td><a href="phpdbg_prompt.c.html#L223">(cmd_len == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">362</td><td><a href="phpdbg_prompt.c.html#L362">(i != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="phpdbg_prompt.c.html#L369">(i == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="phpdbg_prompt.c.html#L500">(bytes < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="phpdbg_prompt.c.html#L780">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="phpdbg_prompt.c.html#L798">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">802</td><td><a href="phpdbg_prompt.c.html#L802">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">837</td><td><a href="phpdbg_prompt.c.html#L837">(i < argc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="phpdbg_prompt.c.html#L848">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="phpdbg_prompt.c.html#L1057">(gen != current)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1559</td><td><a href="phpdbg_prompt.c.html#L1559">(PHPDBG_G(err_buf).active)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="phpdbg_prompt.c.html#L302">(state.code)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="phpdbg_prompt.c.html#L323">(state.code)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">559</td><td><a href="phpdbg_prompt.c.html#L559">(!PHPDBG_G(exec))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">624</td><td><a href="phpdbg_prompt.c.html#L624">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">634</td><td><a href="phpdbg_prompt.c.html#L634">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">665</td><td><a href="phpdbg_prompt.c.html#L665">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">682</td><td><a href="phpdbg_prompt.c.html#L682">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">760</td><td><a href="phpdbg_prompt.c.html#L760">(!PHPDBG_G(ops))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1008</td><td><a href="phpdbg_prompt.c.html#L1008">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1026</td><td><a href="phpdbg_prompt.c.html#L1026">(!PHPDBG_G(in_execution))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">351</td><td><a href="phpdbg_prompt.c.html#L351">(!scan_dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">700</td><td><a href="phpdbg_prompt.c.html#L700">(!param)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1013</td><td><a href="phpdbg_prompt.c.html#L1013">(!param)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1137</td><td><a href="phpdbg_prompt.c.html#L1137">(!param)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1239</td><td><a href="phpdbg_prompt.c.html#L1239">(!handle)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1260</td><td><a href="phpdbg_prompt.c.html#L1260">(!extension_version_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1264</td><td><a href="phpdbg_prompt.c.html#L1264">(!new_extension)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1302</td><td><a href="phpdbg_prompt.c.html#L1302">(!get_module)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1306</td><td><a href="phpdbg_prompt.c.html#L1306">(!get_module)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1489</td><td><a href="phpdbg_prompt.c.html#L1489">(!param)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">383</td><td><a href="phpdbg_prompt.c.html#L383">(PHPDBG_G(ops))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">409</td><td><a href="phpdbg_prompt.c.html#L409">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="phpdbg_prompt.c.html#L415">(PHPDBG_G(exec))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="phpdbg_prompt.c.html#L422">(PHPDBG_G(ops))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="phpdbg_prompt.c.html#L437">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="phpdbg_prompt.c.html#L520">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">524</td><td><a href="phpdbg_prompt.c.html#L524">(PHPDBG_G(exec))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="phpdbg_prompt.c.html#L569">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="phpdbg_prompt.c.html#L586">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">722</td><td><a href="phpdbg_prompt.c.html#L722">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">736</td><td><a href="phpdbg_prompt.c.html#L736">(EG(prev_exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">752</td><td><a href="phpdbg_prompt.c.html#L752">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">908</td><td><a href="phpdbg_prompt.c.html#L908">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="phpdbg_prompt.c.html#L971">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1110</td><td><a href="phpdbg_prompt.c.html#L1110">(PHPDBG_G(ops))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1116</td><td><a href="phpdbg_prompt.c.html#L1116">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1138</td><td><a href="phpdbg_prompt.c.html#L1138">(PHPDBG_G(exec))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1151</td><td><a href="phpdbg_prompt.c.html#L1151">(PHPDBG_G(exec))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1451</td><td><a href="phpdbg_prompt.c.html#L1451">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1595</td><td><a href="phpdbg_prompt.c.html#L1595">(PHPDBG_G(in_execution))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1692</td><td><a href="phpdbg_prompt.c.html#L1692">(phpdbg_check_caught_ex(prev_ex, exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="phpdbg_prompt.c.html#L127">(next)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">296</td><td><a href="phpdbg_prompt.c.html#L296">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">313</td><td><a href="phpdbg_prompt.c.html#L313">(fp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">332</td><td><a href="phpdbg_prompt.c.html#L332">(free_init)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">340</td><td><a href="phpdbg_prompt.c.html#L340">(init_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">342</td><td><a href="phpdbg_prompt.c.html#L342">(use_default)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">394</td><td><a href="phpdbg_prompt.c.html#L394">(full)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">895</td><td><a href="phpdbg_prompt.c.html#L895">(restore)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">982</td><td><a href="phpdbg_prompt.c.html#L982">(ex)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1031</td><td><a href="phpdbg_prompt.c.html#L1031">(param)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1294</td><td><a href="phpdbg_prompt.c.html#L1294">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1344</td><td><a href="phpdbg_prompt.c.html#L1344">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1408</td><td><a href="phpdbg_prompt.c.html#L1408">(handle)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1589</td><td><a href="phpdbg_prompt.c.html#L1589">(input)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1657</td><td><a href="phpdbg_prompt.c.html#L1657">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1739</td><td><a href="phpdbg_prompt.c.html#L1739">(INDEX_EXISTS_CHECK)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1750</td><td><a href="phpdbg_prompt.c.html#L1750">(INDEX_EXISTS_CHECK)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1760</td><td><a href="phpdbg_prompt.c.html#L1760">(INDEX_EXISTS_CHECK)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1841</td><td><a href="phpdbg_prompt.c.html#L1841">(data)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

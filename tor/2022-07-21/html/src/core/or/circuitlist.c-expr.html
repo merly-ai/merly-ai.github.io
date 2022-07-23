@@ -1,0 +1,277 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\circuitlist.c Ctrl Expressions (226) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\circuitlist.c Ctrl Expressions (226) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\circuitlist.c Ctrl Expressions (226)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1909</td><td><a href="circuitlist.c.html#L1909">(<span style='background-color:#741da3;'>(!need_uptime || circ->build_state->need_uptime) && (!need_capacity || circ->build_state->need_capacity) && (internal == circ->build_state->is_internal) && !circ->unusable_for_new_conns && circ->remaining_relay_early_cells && !circ->build_state->onehop_tunnel && !circ->isolation_values_set</span>)</a></td><td class="num">1057.50</td></tr>
+      <tr><td class="num line">1886</td><td><a href="circuitlist.c.html#L1886">(<span style='background-color:#741da3;'>CIRCUIT_IS_ORIGIN(circ_) && circ_->state == CIRCUIT_STATE_OPEN && !circ_->marked_for_close && circ_->purpose == purpose_to_search_for && !circ_->timestamp_dirty</span>)</a></td><td class="num">1030.50</td></tr>
+      <tr><td class="num line">328</td><td><a href="circuitlist.c.html#L328">(<span style='background-color:#741da3;'>chan && id != 0 && (old_chan != chan || old_id != id) && !(circ->marked_for_close)</span>)</a></td><td class="num">1021.75</td></tr>
+      <tr><td class="num line">278</td><td><a href="circuitlist.c.html#L278">(<span style='background-color:#741da3;'>old_id != 0 && (old_chan != chan || old_id != id) && !(circ->marked_for_close)</span>)</a></td><td class="num">1019.25</td></tr>
+      <tr><td class="num line">724</td><td><a href="circuitlist.c.html#L724">(<span style='background-color:#9c4c02;'>!TO_CIRCUIT(next_circ)->marked_for_close && next_circ->has_opened && TO_CIRCUIT(next_circ)->state == CIRCUIT_STATE_OPEN && TO_CIRCUIT(next_circ)->purpose != CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT && next_circ->build_state && next_circ->build_state->desired_path_len == DEFAULT_ROUTE_LEN</span>)</a></td><td class="num">110.75</td></tr>
+      <tr><td class="num line">1606</td><td><a href="circuitlist.c.html#L1606">(circ->n_chan == chan || (!CIRCUIT_IS_ORIGIN(circ) && TO_OR_CIRCUIT(circ)->p_chan == chan))</a></td><td class="num">68.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="circuitlist.c.html#L263">(_last_circid_chan_ent && ((old_id == _last_circid_chan_ent->circ_id && old_chan == _last_circid_chan_ent->chan) || (id == _last_circid_chan_ent->circ_id && chan == _last_circid_chan_ent->chan)))</a></td><td class="num">65.50</td></tr>
+      <tr><td class="num line">1425</td><td><a href="circuitlist.c.html#L1425">(CIRCUIT_IS_ORIGIN(circ) && TO_ORIGIN_CIRCUIT(circ)->global_identifier == id)</a></td><td class="num">44.00</td></tr>
+      <tr><td class="num line">2472</td><td><a href="circuitlist.c.html#L2472">(NULL != (cell = TOR_SIMPLEQ_FIRST(&c->n_chan_cells.head)))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">2477</td><td><a href="circuitlist.c.html#L2477">(NULL != (cell = TOR_SIMPLEQ_FIRST(&orcirc->p_chan_cells.head)))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">1756</td><td><a href="circuitlist.c.html#L1756">(circ->marked_for_close || circ->state != CIRCUIT_STATE_OPEN || (circ->purpose != CIRCUIT_PURPOSE_S_CONNECT_REND && circ->purpose != CIRCUIT_PURPOSE_S_REND_JOINED))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">2681</td><td><a href="circuitlist.c.html#L2681">((conn->type == CONN_TYPE_DIR && conn->linked_conn == NULL) || CONN_IS_EDGE(conn))</a></td><td class="num">33.00</td></tr>
+      <tr><td class="num line">1925</td><td><a href="circuitlist.c.html#L1925">(ri1 && (ri2 = node_get_by_id(hop->extend_info->identity_digest)) && nodes_in_same_family(ri1, ri2))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">1199</td><td><a href="circuitlist.c.html#L1199">(get_options()->CellStatistics)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1711</td><td><a href="circuitlist.c.html#L1711">(circ->purpose != CIRCUIT_PURPOSE_C_INTRODUCING && circ->purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT && circ->purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACKED)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1792</td><td><a href="circuitlist.c.html#L1792">(BUG(!CIRCUIT_PURPOSE_IS_ORIGIN(circ->purpose)))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1043</td><td><a href="circuitlist.c.html#L1043">(!circuit_build_times_disabled(get_options()) && circuit_build_times_needs_circuits(get_circuit_build_times()))</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1452</td><td><a href="circuitlist.c.html#L1452">(_last_circid_chan_ent && circ_id == _last_circid_chan_ent->circ_id && chan == _last_circid_chan_ent->chan)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="circuitlist.c.html#L415">(circ->n_chan == chan && circ->n_circ_id == id)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">419</td><td><a href="circuitlist.c.html#L419">(orcirc->p_chan == chan && orcirc->p_circ_id == id)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">435</td><td><a href="circuitlist.c.html#L435">(circ->n_chan == chan && circ->n_circ_id == id)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">439</td><td><a href="circuitlist.c.html#L439">(orcirc->p_chan == chan && orcirc->p_circ_id == id)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1720</td><td><a href="circuitlist.c.html#L1720">(circ->purpose != CIRCUIT_PURPOSE_S_ESTABLISH_INTRO && circ->purpose != CIRCUIT_PURPOSE_S_INTRO)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2019</td><td><a href="circuitlist.c.html#L2019">(cpath->state == CPATH_STATE_OPEN && cpath_next != circ->cpath)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2287</td><td><a href="circuitlist.c.html#L2287">(circ->state != CIRCUIT_STATE_OPEN && circ->state != CIRCUIT_STATE_GUARD_WAIT)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2052</td><td><a href="circuitlist.c.html#L2052">(CIRCUIT_IS_ORIGIN(circ) && !circ->marked_for_close && !circ->timestamp_dirty)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">2071</td><td><a href="circuitlist.c.html#L2071">(CIRCUIT_IS_ORIGIN(circ) && !circ->marked_for_close && circ->timestamp_dirty)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2777</td><td><a href="circuitlist.c.html#L2777">(c->state == CIRCUIT_STATE_OPEN || c->state == CIRCUIT_STATE_GUARD_WAIT)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2784</td><td><a href="circuitlist.c.html#L2784">(c->state == CIRCUIT_STATE_CHAN_WAIT && !c->marked_for_close)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="circuitlist.c.html#L1953">(!best || (best->build_state->need_uptime && !need_uptime))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1293</td><td><a href="circuitlist.c.html#L1293">(cpath->next && cpath->next != head)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2035</td><td><a href="circuitlist.c.html#L2035">(circ && circ->cpath && hopnum > 0)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">600</td><td><a href="circuitlist.c.html#L600">(tor_memneq(chan->identity_digest, circ->n_hop->identity_digest, DIGEST_LEN))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1922</td><td><a href="circuitlist.c.html#L1922">(tor_memeq(hop->extend_info->identity_digest, info->identity_digest, DIGEST_LEN))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">260</td><td><a href="circuitlist.c.html#L260">(id == old_id && chan == old_chan)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1946</td><td><a href="circuitlist.c.html#L1946">((flags & CIRCLAUNCH_IS_V3_RP) && !circuit_can_be_cannibalized_for_v3_rp(circ))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1897</td><td><a href="circuitlist.c.html#L1897">(circ->build_state->desired_path_len != route_len_for_purpose(purpose_to_search_for, NULL))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2217</td><td><a href="circuitlist.c.html#L2217">(!or_circ->rend_splice->base_.marked_for_close)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">366</td><td><a href="circuitlist.c.html#L366">(ent && ent->circuit)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">398</td><td><a href="circuitlist.c.html#L398">(ent && ent->circuit)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">466</td><td><a href="circuitlist.c.html#L466">(circ->p_delete_pending && old_chan)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="circuitlist.c.html#L488">(circ->n_delete_pending && old_chan)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1117</td><td><a href="circuitlist.c.html#L1117">(!circ || !circ->testing_cell_stats)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1462</td><td><a href="circuitlist.c.html#L1462">(found && found->circuit)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2000</td><td><a href="circuitlist.c.html#L2000">(circ && circ->cpath)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2016</td><td><a href="circuitlist.c.html#L2016">(circ && circ->cpath)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2762</td><td><a href="circuitlist.c.html#L2762">(or_circ && or_circ->p_chan)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2791</td><td><a href="circuitlist.c.html#L2791">(origin_circ && origin_circ->cpath)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">568</td><td><a href="circuitlist.c.html#L568">(state == CIRCUIT_STATE_GUARD_WAIT || state == CIRCUIT_STATE_OPEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1939</td><td><a href="circuitlist.c.html#L1939">(routerset_contains_extendinfo(options->ExcludeNodes, hop->extend_info))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2203</td><td><a href="circuitlist.c.html#L2203">(reason < END_CIRC_REASON_MIN_ || reason > END_CIRC_REASON_MAX_)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1517</td><td><a href="circuitlist.c.html#L1517">(!circ || circ->marked_for_close)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1567</td><td><a href="circuitlist.c.html#L1567">(!found || found->circuit)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">548</td><td><a href="circuitlist.c.html#L548">(state == circ->state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">554</td><td><a href="circuitlist.c.html#L554">(circ->state == CIRCUIT_STATE_CHAN_WAIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">562</td><td><a href="circuitlist.c.html#L562">(circ->state == CIRCUIT_STATE_GUARD_WAIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">594</td><td><a href="circuitlist.c.html#L594">(tor_digest_is_zero(circ->n_hop->identity_digest))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1065</td><td><a href="circuitlist.c.html#L1065">(circ->circuit_idle_timeout <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1226</td><td><a href="circuitlist.c.html#L1226">(circ->global_circuitlist_idx != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1645</td><td><a href="circuitlist.c.html#L1645">(circ->n_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1652</td><td><a href="circuitlist.c.html#L1652">(chan->reason_for_closing != CHANNEL_CLOSE_REQUESTED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1657</td><td><a href="circuitlist.c.html#L1657">(or_circ->p_chan == chan)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1717</td><td><a href="circuitlist.c.html#L1717">(circ->state != CIRCUIT_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1788</td><td><a href="circuitlist.c.html#L1788">(circ->purpose != purpose)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1930</td><td><a href="circuitlist.c.html#L1930">(hop != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1943</td><td><a href="circuitlist.c.html#L1943">(hop != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1973</td><td><a href="circuitlist.c.html#L1973">(!circuits_pending_other_guards || smartlist_len(circuits_pending_other_guards) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2002</td><td><a href="circuitlist.c.html#L2002">(cpath_next != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2037</td><td><a href="circuitlist.c.html#L2037">(cpath_next != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2039</td><td><a href="circuitlist.c.html#L2039">(hopnum-- <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2280</td><td><a href="circuitlist.c.html#L2280">(circ->state == CIRCUIT_STATE_ONIONSKIN_PENDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2294</td><td><a href="circuitlist.c.html#L2294">(circ->state == CIRCUIT_STATE_CHAN_WAIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2393</td><td><a href="circuitlist.c.html#L2393">(conn->type == CONN_TYPE_DIR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2676</td><td><a href="circuitlist.c.html#L2676">(conn_age < circ->age_tmp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2687</td><td><a href="circuitlist.c.html#L2687">(conn->type == CONN_TYPE_DIR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2794</td><td><a href="circuitlist.c.html#L2794">(c->purpose == CIRCUIT_PURPOSE_REND_ESTABLISHED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2329</td><td><a href="circuitlist.c.html#L2329">(!conn->base_.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1546</td><td><a href="circuitlist.c.html#L1546">(circuit_get_by_circid_channel_impl(circ_id, chan, &found) != NULL)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">596</td><td><a href="circuitlist.c.html#L596">(!channel_matches_extend_info(chan, circ->n_hop))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1905</td><td><a href="circuitlist.c.html#L1905">(!entry_guard_could_succeed(circ->guard_state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2312</td><td><a href="circuitlist.c.html#L2312">(!CHANNEL_CONDEMNED(circ->n_chan))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2344</td><td><a href="circuitlist.c.html#L2344">(!CHANNEL_CONDEMNED(or_circ->p_chan))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="circuitlist.c.html#L372">(!ent->made_placeholder_at)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">591</td><td><a href="circuitlist.c.html#L591">(!circ->n_hop)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1667</td><td><a href="circuitlist.c.html#L1667">(!circ->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1805</td><td><a href="circuitlist.c.html#L1805">(!circ->build_state)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1986</td><td><a href="circuitlist.c.html#L1986">(circuits_upgraded && smartlist_len(result))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2204</td><td><a href="circuitlist.c.html#L2204">(!(orig_reason & END_CIRC_REASON_FLAG_REMOTE))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2370</td><td><a href="circuitlist.c.html#L2370">(!circ->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2683</td><td><a href="circuitlist.c.html#L2683">(!conn->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2702</td><td><a href="circuitlist.c.html#L2702">(!circ->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2796</td><td><a href="circuitlist.c.html#L2796">(!c->marked_for_close)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">339</td><td><a href="circuitlist.c.html#L339">(make_active && attached)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">589</td><td><a href="circuitlist.c.html#L589">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1158</td><td><a href="circuitlist.c.html#L1158">(ocirc->half_streams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1166</td><td><a href="circuitlist.c.html#L1166">(ocirc->build_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1172</td><td><a href="circuitlist.c.html#L1172">(ocirc->guard_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1187</td><td><a href="circuitlist.c.html#L1187">(ocirc->socks_username)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="circuitlist.c.html#L1191">(ocirc->socks_password)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1209</td><td><a href="circuitlist.c.html#L1209">(ocirc->rend_splice)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1245</td><td><a href="circuitlist.c.html#L1245">(circ->sendme_last_digests)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="circuitlist.c.html#L1313">(or_circ->resolving_streams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1388</td><td><a href="circuitlist.c.html#L1388">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1427</td><td><a href="circuitlist.c.html#L1427">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="circuitlist.c.html#L1704">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1786</td><td><a href="circuitlist.c.html#L1786">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1932</td><td><a href="circuitlist.c.html#L1932">(options->ExcludeNodes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2171</td><td><a href="circuitlist.c.html#L2171">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2200</td><td><a href="circuitlist.c.html#L2200">(reason & END_CIRC_REASON_FLAG_REMOTE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2216</td><td><a href="circuitlist.c.html#L2216">(or_circ->rend_splice)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2252</td><td><a href="circuitlist.c.html#L2252">(circ->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2261</td><td><a href="circuitlist.c.html#L2261">(or_circ->p_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="circuitlist.c.html#L2309">(circ->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2326</td><td><a href="circuitlist.c.html#L2326">(or_circ->resolving_streams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2341</td><td><a href="circuitlist.c.html#L2341">(or_circ->p_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2351</td><td><a href="circuitlist.c.html#L2351">(or_circ->n_cells_discarded_at_end)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2385</td><td><a href="circuitlist.c.html#L2385">(conn->inbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2389</td><td><a href="circuitlist.c.html#L2389">(conn->outbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2395</td><td><a href="circuitlist.c.html#L2395">(dir_conn->compress_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2413</td><td><a href="circuitlist.c.html#L2413">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2452</td><td><a href="circuitlist.c.html#L2452">(ocirc->half_streams)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2494</td><td><a href="circuitlist.c.html#L2494">(conn->outbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2499</td><td><a href="circuitlist.c.html#L2499">(conn->inbuf)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2519</td><td><a href="circuitlist.c.html#L2519">(conn->linked_conn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2751</td><td><a href="circuitlist.c.html#L2751">(c->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2754</td><td><a href="circuitlist.c.html#L2754">(c->n_circ_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2763</td><td><a href="circuitlist.c.html#L2763">(or_circ->p_circ_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1614</td><td><a href="circuitlist.c.html#L1614">(smartlist_len(detached) != smartlist_len(detached_2))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2188</td><td><a href="circuitlist.c.html#L2188">(pathbias_check_close(TO_ORIGIN_CIRCUIT(circ), reason) == -1)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">641</td><td><a href="circuitlist.c.html#L641">(origin_idx < smartlist_len(global_origin_circuit_list))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">676</td><td><a href="circuitlist.c.html#L676">(idx < smartlist_len(lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1231</td><td><a href="circuitlist.c.html#L1231">(idx < smartlist_len(global_circuitlist))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1399</td><td><a href="circuitlist.c.html#L1399">(TO_CONN(tmpconn) == conn)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1409</td><td><a href="circuitlist.c.html#L1409">(TO_CONN(tmpconn) == conn)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1700</td><td><a href="circuitlist.c.html#L1700">(idx < smartlist_len(lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1751</td><td><a href="circuitlist.c.html#L1751">(idx < smartlist_len(lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="circuitlist.c.html#L1783">(idx < smartlist_len(lst))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2673</td><td><a href="circuitlist.c.html#L2673">(conn_idx < smartlist_len(connection_array))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">247</td><td><a href="circuitlist.c.html#L247">(direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">290</td><td><a href="circuitlist.c.html#L290">(direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">305</td><td><a href="circuitlist.c.html#L305">(chan == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="circuitlist.c.html#L343">(direction == CELL_DIRECTION_OUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">403</td><td><a href="circuitlist.c.html#L403">(_last_circid_chan_ent == ent)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="circuitlist.c.html#L558">(state == CIRCUIT_STATE_CHAN_WAIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="circuitlist.c.html#L565">(state == CIRCUIT_STATE_GUARD_WAIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="circuitlist.c.html#L634">(origin_idx < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="circuitlist.c.html#L666">(circuits_pending_close == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="circuitlist.c.html#L707">(NULL == global_origin_circuit_list)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="circuitlist.c.html#L983">(num < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1632</td><td><a href="circuitlist.c.html#L1632">(badlen || mismatch)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="circuitlist.c.html#L1778">(start == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2110</td><td><a href="circuitlist.c.html#L2110">(dir == CIRCUIT_N_CHAN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2178</td><td><a href="circuitlist.c.html#L2178">(reason == END_CIRC_AT_ORIGIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2228</td><td><a href="circuitlist.c.html#L2228">(circuits_pending_close == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2479</td><td><a href="circuitlist.c.html#L2479">(age2 > age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2496</td><td><a href="circuitlist.c.html#L2496">(age2 > age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2501</td><td><a href="circuitlist.c.html#L2501">(age2 > age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2517</td><td><a href="circuitlist.c.html#L2517">(age2 > age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2521</td><td><a href="circuitlist.c.html#L2521">(age2 > age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2551</td><td><a href="circuitlist.c.html#L2551">(cell_age > data_age)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2567</td><td><a href="circuitlist.c.html#L2567">(age_a < age_b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="circuitlist.c.html#L2569">(age_a == age_b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2587</td><td><a href="circuitlist.c.html#L2587">(age_a < age_b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2589</td><td><a href="circuitlist.c.html#L2589">(age_a == age_b)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2632</td><td><a href="circuitlist.c.html#L2632">(current_allocation <= mem_target)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2693</td><td><a href="circuitlist.c.html#L2693">(mem_recovered >= mem_to_recover)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2714</td><td><a href="circuitlist.c.html#L2714">(mem_recovered >= mem_to_recover)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="circuitlist.c.html#L550">(PREDICT_UNLIKELY(!circuits_pending_chans))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">552</td><td><a href="circuitlist.c.html#L552">(PREDICT_UNLIKELY(!circuits_pending_other_guards))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1311</td><td><a href="circuitlist.c.html#L1311">(!CIRCUIT_IS_ORIGIN(tmp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1392</td><td><a href="circuitlist.c.html#L1392">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1406</td><td><a href="circuitlist.c.html#L1406">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1655</td><td><a href="circuitlist.c.html#L1655">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1810</td><td><a href="circuitlist.c.html#L1810">(BUG(!chosen_exit))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2105</td><td><a href="circuitlist.c.html#L2105">(!CIRCUIT_IS_ORCIRC(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2179</td><td><a href="circuitlist.c.html#L2179">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2214</td><td><a href="circuitlist.c.html#L2214">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2258</td><td><a href="circuitlist.c.html#L2258">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2319</td><td><a href="circuitlist.c.html#L2319">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2375</td><td><a href="circuitlist.c.html#L2375">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2437</td><td><a href="circuitlist.c.html#L2437">(!CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2448</td><td><a href="circuitlist.c.html#L2448">(!CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2475</td><td><a href="circuitlist.c.html#L2475">(!CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">585</td><td><a href="circuitlist.c.html#L585">(!circuits_pending_chans)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1134</td><td><a href="circuitlist.c.html#L1134">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1288</td><td><a href="circuitlist.c.html#L1288">(!cpath)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1662</td><td><a href="circuitlist.c.html#L1662">(!mark)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1977</td><td><a href="circuitlist.c.html#L1977">(!global_origin_circuit_list)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">573</td><td><a href="circuitlist.c.html#L573">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">683</td><td><a href="circuitlist.c.html#L683">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1150</td><td><a href="circuitlist.c.html#L1150">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1372</td><td><a href="circuitlist.c.html#L1372">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1396</td><td><a href="circuitlist.c.html#L1396">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1816</td><td><a href="circuitlist.c.html#L1816">(node_supports_v3_rendezvous_point(rp_node))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="circuitlist.c.html#L1830">(circuit_should_use_vanguards(purpose))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2167</td><td><a href="circuitlist.c.html#L2167">(circpad_marked_circuit_for_padding(circ, reason))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="circuitlist.c.html#L2187">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2289</td><td><a href="circuitlist.c.html#L2289">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2301</td><td><a href="circuitlist.c.html#L2301">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2425</td><td><a href="circuitlist.c.html#L2425">(CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2534</td><td><a href="circuitlist.c.html#L2534">(CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2746</td><td><a href="circuitlist.c.html#L2746">(CIRCUIT_IS_ORIGIN(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">271</td><td><a href="circuitlist.c.html#L271">(old_chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">288</td><td><a href="circuitlist.c.html#L288">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">312</td><td><a href="circuitlist.c.html#L312">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">370</td><td><a href="circuitlist.c.html#L370">(ent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">414</td><td><a href="circuitlist.c.html#L414">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">434</td><td><a href="circuitlist.c.html#L434">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">462</td><td><a href="circuitlist.c.html#L462">(chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">484</td><td><a href="circuitlist.c.html#L484">(chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1101</td><td><a href="circuitlist.c.html#L1101">(p_chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1265</td><td><a href="circuitlist.c.html#L1265">(should_free)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1468</td><td><a href="circuitlist.c.html#L1468">(found_entry_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1480</td><td><a href="circuitlist.c.html#L1480">(found_entry_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1548</td><td><a href="circuitlist.c.html#L1548">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1629</td><td><a href="circuitlist.c.html#L1629">(mismatch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1696</td><td><a href="circuitlist.c.html#L1696">(start)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1710</td><td><a href="circuitlist.c.html#L1710">(want_client_circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1747</td><td><a href="circuitlist.c.html#L1747">(start)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1815</td><td><a href="circuitlist.c.html#L1815">(rp_node)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1916</td><td><a href="circuitlist.c.html#L1916">(info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2120</td><td><a href="circuitlist.c.html#L2120">(chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2295</td><td><a href="circuitlist.c.html#L2295">(circuits_pending_chans)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2298</td><td><a href="circuitlist.c.html#L2298">(circuits_pending_other_guards)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2771</td><td><a href="circuitlist.c.html#L2771">(or_circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2780</td><td><a href="circuitlist.c.html#L2780">(or_circ)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <title>CMake Repo - Utilities\cmcurl\lib\vtls\vtls.c Ctrl Expressions (116) - MerlyMentor</title>
+</head>
+<body>
+  <h2>CMake Repo - Utilities\cmcurl\lib\vtls\vtls.c Ctrl Expressions (116) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Utilities\cmcurl\lib\vtls\vtls.c Ctrl Expressions (116)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">133</td><td><a href="vtls.c.html#L133">(<span style='background-color:#741da3;'>(data->version == needle->version) && (data->version_max == needle->version_max) && (data->ssl_options == needle->ssl_options) && (data->verifypeer == needle->verifypeer) && (data->verifyhost == needle->verifyhost) && (data->verifystatus == needle->verifystatus) && blobcmp(data->cert_blob, needle->cert_blob) && blobcmp(data->ca_info_blob, needle->ca_info_blob) && blobcmp(data->issuercert_blob, needle->issuercert_blob) && Curl_safecmp(data->CApath, needle->CApath) && Curl_safecmp(data->CAfile, needle->CAfile) && Curl_safecmp(data->issuercert, needle->issuercert) && Curl_safecmp(data->clientcert, needle->clientcert) && Curl_safecmp(data->random_file, needle->random_file) && Curl_safecmp(data->egdsocket, needle->egdsocket) && Curl_safecmp(data->username, needle->username) && Curl_safecmp(data->password, needle->password) && (data->authtype == needle->authtype) && Curl_safe_strcasecompare(data->cipher_list, needle->cipher_list) && Curl_safe_strcasecompare(data->cipher_list13, needle->cipher_list13) && Curl_safe_strcasecompare(data->curves, needle->curves) && Curl_safe_strcasecompare(data->CRLfile, needle->CRLfile) && Curl_safe_strcasecompare(data->pinned_key, needle->pinned_key)</span>)</a></td><td class="num">1225.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="vtls.c.html#L456">(<span style='background-color:#9c4c02;'>strcasecompare(name, check->name) && ((!conn->bits.conn_to_host && !check->conn_to_host) || (conn->bits.conn_to_host && check->conn_to_host && strcasecompare(conn->conn_to_host.name, check->conn_to_host))) && ((!conn->bits.conn_to_port && check->conn_to_port == -1) || (<span style='background-color:#741da3;'>conn->bits.conn_to_port && check->conn_to_port != -1 && conn->conn_to_port == check->conn_to_port</span>)) && (port == check->remote_port) && strcasecompare(conn->handler->scheme, check->scheme) && Curl_ssl_config_matches(ssl_config, &check->ssl_config)</span>)</a></td><td class="num">1154.00</td></tr>
+      <tr><td class="num line">303</td><td><a href="vtls.c.html#L303">(ssl_connection_complete == conn->ssl[sockindex].state && !conn->proxy_ssl[sockindex].use)</a></td><td class="num">66.00</td></tr>
+      <tr><td class="num line">1482</td><td><a href="vtls.c.html#L1482">(available_backends[i]->info.id == id || (name && strcasecompare(available_backends[i]->info.name, name)))</a></td><td class="num">51.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="vtls.c.html#L596">((i < data->set.general_ssl.max_ssl_sessions) && data->state.session[i].sessionid)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">645</td><td><a href="vtls.c.html#L645">((conn->sock[SECONDARYSOCKET] != CURL_SOCKET_BAD) && conn->bits.sock_accepted)</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">656</td><td><a href="vtls.c.html#L656">((conn->sock[SECONDARYSOCKET] != CURL_SOCKET_BAD) && conn->bits.sock_accepted)</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">937</td><td><a href="vtls.c.html#L937">(0 != pem_count && '\n' != pem[pem_count - 1])</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">1044</td><td><a href="vtls.c.html#L1044">(encodedlen == strlen(begin_pos + 8) && !memcmp(encoded, begin_pos + 8, encodedlen))</a></td><td class="num">26.20</td></tr>
+      <tr><td class="num line">440</td><td><a href="vtls.c.html#L440">(!SSL_SET_OPTION(primary.sessionid) || !data->state.session)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">598</td><td><a href="vtls.c.html#L598">(data->state.session[i].age < oldest_age)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">904</td><td><a href="vtls.c.html#L904">(len && (host[len - 1] == '.'))</a></td><td class="num">24.35</td></tr>
+      <tr><td class="num line">623</td><td><a href="vtls.c.html#L623">(!Curl_clone_primary_ssl_config(ssl_config, &store->ssl_config))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">960</td><td><a href="vtls.c.html#L960">('\n' != pem[pem_count] && '\r' != pem[pem_count])</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">289</td><td><a href="vtls.c.html#L289">((data->set.ssl.primary.version_max >> 16) < sslver)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">665</td><td><a href="vtls.c.html#L665">(data->state.session && !SSLSESSION_SHARED(data))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">123</td><td><a href="vtls.c.html#L123">(first->len != second->len)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">307</td><td><a href="vtls.c.html#L307">(!(Curl_ssl->supports & SSLSUPP_HTTPS_PROXY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">451</td><td><a href="vtls.c.html#L451">(i < data->set.general_ssl.max_ssl_sessions)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">512</td><td><a href="vtls.c.html#L512">(i < data->set.general_ssl.max_ssl_sessions)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">603</td><td><a href="vtls.c.html#L603">(i == data->set.general_ssl.max_ssl_sessions)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">667</td><td><a href="vtls.c.html#L667">(i < data->set.general_ssl.max_ssl_sessions)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1123</td><td><a href="vtls.c.html#L1123">(pubkeylen == pem_len && !memcmp(pubkey, pem_ptr, pubkeylen))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">278</td><td><a href="vtls.c.html#L278">((sslver < 0) || (sslver >= CURL_SSLVERSION_LAST))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">378</td><td><a href="vtls.c.html#L378">(*done && !isproxy)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">906</td><td><a href="vtls.c.html#L906">((long)len >= data->set.buffer_size)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1079</td><td><a href="vtls.c.html#L1079">(filesize < 0 || filesize > MAX_PINNED_PUBKEY_SIZE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1449</td><td><a href="vtls.c.html#L1449">(strcasecompare(env, available_backends[i]->info.name))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">333</td><td><a href="vtls.c.html#L333">(conn->bits.proxy_ssl_connected[sockindex])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">364</td><td><a href="vtls.c.html#L364">(conn->bits.proxy_ssl_connected[sockindex])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">515</td><td><a href="vtls.c.html#L515">(check->sessionid == ssl_sessionid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">682</td><td><a href="vtls.c.html#L682">(connssl->connecting_state == ssl_connect_2_writing)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">687</td><td><a href="vtls.c.html#L687">(connssl->connecting_state == ssl_connect_2_reading)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="vtls.c.html#L799">(i < ci->num_of_certs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">119</td><td><a href="vtls.c.html#L119">(!first && !second)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">558</td><td><a href="vtls.c.html#L558">(!data->state.session)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1403</td><td><a href="vtls.c.html#L1403">(available_backends[i]->version(vb, sizeof(vb)))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="vtls.c.html#L569">(conn->bits.conn_to_host)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">579</td><td><a href="vtls.c.html#L579">(conn->bits.conn_to_port)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">747</td><td><a href="vtls.c.html#L747">(data->state.session)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1430</td><td><a href="vtls.c.html#L1430">(Curl_ssl != &Curl_ssl_multi)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1471</td><td><a href="vtls.c.html#L1471">(Curl_ssl != &Curl_ssl_multi)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">453</td><td><a href="vtls.c.html#L453">(!check->sessionid)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">999</td><td><a href="vtls.c.html#L999">(!Curl_ssl->sha256sum)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">121</td><td><a href="vtls.c.html#L121">(!first || !second)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">989</td><td><a href="vtls.c.html#L989">(!pubkey || !pubkeylen)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1058</td><td><a href="vtls.c.html#L1058">(end_pos && begin_pos)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">707</td><td><a href="vtls.c.html#L707">(Curl_ssl->shut_down(data, conn, sockindex))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">489</td><td><a href="vtls.c.html#L489">(session->sessionid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="vtls.c.html#L643">(Curl_ssl->associate_connection)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">654</td><td><a href="vtls.c.html#L654">(Curl_ssl->disassociate_connection)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">796</td><td><a href="vtls.c.html#L796">(ci->num_of_certs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">993</td><td><a href="vtls.c.html#L993">(strncmp(pinnedpubkey, "sha256//", 8) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1099</td><td><a href="vtls.c.html#L1099">((int)fread(buf, size, 1, fp) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1438</td><td><a href="vtls.c.html#L1438">(!available_backends[0])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">959</td><td><a href="vtls.c.html#L959">(pem_count < pem_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1011</td><td><a href="vtls.c.html#L1011">(encode != CURLE_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1087</td><td><a href="vtls.c.html#L1087">(pubkeylen > size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="vtls.c.html#L1103">(pubkeylen == size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1390</td><td><a href="vtls.c.html#L1390">(current != selected)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1415</td><td><a href="vtls.c.html#L1415">(size <= backends_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1399</td><td><a href="vtls.c.html#L1399">(available_backends[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1448</td><td><a href="vtls.c.html#L1448">(available_backends[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">340</td><td><a href="vtls.c.html#L340">(!ssl_prefs_check(data))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">370</td><td><a href="vtls.c.html#L370">(!ssl_prefs_check(data))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1104</td><td><a href="vtls.c.html#L1104">(!memcmp(pubkey, buf, pubkeylen))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">103</td><td><a href="vtls.c.html#L103">(!d)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">349</td><td><a href="vtls.c.html#L349">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">566</td><td><a href="vtls.c.html#L566">(!clone_host)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">571</td><td><a href="vtls.c.html#L571">(!clone_conn_to_host)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="vtls.c.html#L752">(!session)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">820</td><td><a href="vtls.c.html#L820">(!table)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">846</td><td><a href="vtls.c.html#L846">(!output)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">859</td><td><a href="vtls.c.html#L859">(!nl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">928</td><td><a href="vtls.c.html#L928">(!pem)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">932</td><td><a href="vtls.c.html#L932">(!begin_pos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">945</td><td><a href="vtls.c.html#L945">(!end_pos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">951</td><td><a href="vtls.c.html#L951">(!stripped_pem)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">987</td><td><a href="vtls.c.html#L987">(!pinnedpubkey)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1006</td><td><a href="vtls.c.html#L1006">(!sha256sumdigest)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1027</td><td><a href="vtls.c.html#L1027">(!pinkeycopy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1065</td><td><a href="vtls.c.html#L1065">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1095</td><td><a href="vtls.c.html#L1095">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1412</td><td><a href="vtls.c.html#L1412">(!size)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1443</td><td><a href="vtls.c.html#L1443">(!env)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">388</td><td><a href="vtls.c.html#L388">(SSLSESSION_SHARED(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="vtls.c.html#L397">(SSLSESSION_SHARED(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="vtls.c.html#L446">(SSLSESSION_SHARED(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">588</td><td><a href="vtls.c.html#L588">(SSLSESSION_SHARED(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="vtls.c.html#L1074">(fseek(fp, 0, SEEK_END))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1077</td><td><a href="vtls.c.html#L1077">(fseek(fp, 0, SEEK_SET))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="vtls.c.html#L1246">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1254</td><td><a href="vtls.c.html#L1254">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="vtls.c.html#L1263">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1270</td><td><a href="vtls.c.html#L1270">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="vtls.c.html#L1278">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1286</td><td><a href="vtls.c.html#L1286">(multissl_setup(NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="vtls.c.html#L99">(src)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">250</td><td><a href="vtls.c.html#L250">(init_ssl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">264</td><td><a href="vtls.c.html#L264">(init_ssl)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="vtls.c.html#L335">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">366</td><td><a href="vtls.c.html#L366">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">376</td><td><a href="vtls.c.html#L376">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">434</td><td><a href="vtls.c.html#L434">(isProxy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">470</td><td><a href="vtls.c.html#L470">(idsize)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">555</td><td><a href="vtls.c.html#L555">(added)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">631</td><td><a href="vtls.c.html#L631">(added)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">911</td><td><a href="vtls.c.html#L911">(olen)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1019</td><td><a href="vtls.c.html#L1019">(encode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1040</td><td><a href="vtls.c.html#L1040">(end_pos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1054</td><td><a href="vtls.c.html#L1054">(end_pos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1116</td><td><a href="vtls.c.html#L1116">(pem_read)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1125</td><td><a href="vtls.c.html#L1125">(0)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1433</td><td><a href="vtls.c.html#L1433">(backend)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1446</td><td><a href="vtls.c.html#L1446">(env)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1468</td><td><a href="vtls.c.html#L1468">(avail)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

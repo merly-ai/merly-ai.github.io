@@ -1,0 +1,317 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - Zend\Optimizer\sccp.c Ctrl Expressions (266) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\Optimizer\sccp.c Ctrl Expressions (266) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\Optimizer\sccp.c Ctrl Expressions (266)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2201</td><td><a href="sccp.c.html#L2201">(<span style='background-color:#9c4c02;'>(ssa_op->op2_use >= 0 && !value_known(&ctx->values[ssa_op->op2_use])) || ((ssa_op + 1)->op1_use >= 0 && !value_known(&<span style='background-color:#741da3;'>ctx->values[(ssa_op + 1)->op1_use]</span>))</span>)</a></td><td class="num">1175.45</td></tr>
+      <tr><td class="num line">2127</td><td><a href="sccp.c.html#L2127">(<span style='background-color:#741da3;'>value && (opline->result_type & IS_VAR | IS_TMP_VAR) && opline->opcode != ZEND_QM_ASSIGN && opline->opcode != ZEND_FETCH_CLASS && opline->opcode != ZEND_ROPE_INIT && opline->opcode != ZEND_ROPE_ADD && opline->opcode != ZEND_INIT_ARRAY && opline->opcode != ZEND_ADD_ARRAY_ELEMENT && opline->opcode != ZEND_ADD_ARRAY_UNPACK</span>)</a></td><td class="num">1066.25</td></tr>
+      <tr><td class="num line">2285</td><td><a href="sccp.c.html#L2285">(<span style='background-color:#741da3;'>var->definition_phi && var->use_chain < 0 && var->phi_use_chain == NULL</span>)</a></td><td class="num">1020.50</td></tr>
+      <tr><td class="num line">1061</td><td><a href="sccp.c.html#L1061">(<span style='background-color:#741da3;'>IS_TOP(op1) || !call || !call->caller_call_opline || call->caller_call_opline->opcode != ZEND_DO_ICALL</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">1114</td><td><a href="sccp.c.html#L1114">(<span style='background-color:#741da3;'>(op1 && IS_BOT(op1)) || (opline->extended_value & ZEND_ARRAY_ELEMENT_REF)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">2154</td><td><a href="sccp.c.html#L2154">((opline->op2_type & IS_VAR | IS_TMP_VAR) && (<span style='background-color:#9c4c02;'>!value_known(&ctx->values[ssa_op->op2_use]) || IS_PARTIAL_ARRAY(&ctx->values[ssa_op->op2_use]) || IS_PARTIAL_OBJECT(&ctx->values[ssa_op->op2_use])</span>))</a></td><td class="num">145.00</td></tr>
+      <tr><td class="num line">2159</td><td><a href="sccp.c.html#L2159">((opline->op1_type & IS_VAR | IS_TMP_VAR) && (<span style='background-color:#9c4c02;'>!value_known(&ctx->values[ssa_op->op1_use]) || IS_PARTIAL_ARRAY(&ctx->values[ssa_op->op1_use]) || IS_PARTIAL_OBJECT(&ctx->values[ssa_op->op1_use])</span>))</a></td><td class="num">145.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="sccp.c.html#L1724">(<span style='background-color:#9c4c02;'>ssa->vars[var_num].definition >= 0 && ctx->scdf.op_array->opcodes[ssa->vars[var_num].definition].opcode == ZEND_VERIFY_RETURN_TYPE</span>)</a></td><td class="num">109.50</td></tr>
+      <tr><td class="num line">1732</td><td><a href="sccp.c.html#L1732">(<span style='background-color:#9c4c02;'>ssa->vars[var_num].definition >= 0 && ctx->scdf.op_array->opcodes[ssa->vars[var_num].definition].opcode == ZEND_VERIFY_RETURN_TYPE</span>)</a></td><td class="num">109.50</td></tr>
+      <tr><td class="num line">1740</td><td><a href="sccp.c.html#L1740">(<span style='background-color:#9c4c02;'>ssa->vars[var_num].definition >= 0 && ctx->scdf.op_array->opcodes[ssa->vars[var_num].definition].opcode == ZEND_VERIFY_RETURN_TYPE</span>)</a></td><td class="num">109.50</td></tr>
+      <tr><td class="num line">2230</td><td><a href="sccp.c.html#L2230">(ssa->vars[ssa_op->result_def].use_chain < 0 && ssa->vars[ssa_op->result_def].phi_use_chain == NULL)</a></td><td class="num">73.50</td></tr>
+      <tr><td class="num line">2210</td><td><a href="sccp.c.html#L2210">(ssa_op->op2_use >= 0 && !value_known(&ctx->values[ssa_op->op2_use]))</a></td><td class="num">69.00</td></tr>
+      <tr><td class="num line">2310</td><td><a href="sccp.c.html#L2310">(IS_PARTIAL_ARRAY(&ctx->values[i]) || IS_PARTIAL_OBJECT(&ctx->values[i]))</a></td><td class="num">67.50</td></tr>
+      <tr><td class="num line">2113</td><td><a href="sccp.c.html#L2113">(opline->opcode == ZEND_JMPZ_EX || opline->opcode == ZEND_JMPNZ_EX || opline->opcode == ZEND_JMP_SET || opline->opcode == ZEND_COALESCE || opline->opcode == ZEND_JMP_NULL || opline->opcode == ZEND_FE_RESET_R || opline->opcode == ZEND_FE_RESET_RW || opline->opcode == ZEND_FE_FETCH_R || opline->opcode == ZEND_FE_FETCH_RW || opline->opcode == ZEND_NEW)</a></td><td class="num">65.25</td></tr>
+      <tr><td class="num line">1321</td><td><a href="sccp.c.html#L1321">(op1 && IS_PARTIAL_OBJECT(op1) && ssa_op->op1_def >= 0 && ctx->scdf.ssa->vars[ssa_op->op1_def].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">1372</td><td><a href="sccp.c.html#L1372">(IS_PARTIAL_OBJECT(op1) && ssa_op->op1_def >= 0 && ctx->scdf.ssa->vars[ssa_op->op1_def].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">55.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="sccp.c.html#L970">(ssa_op->op1_def >= 0 && ctx->scdf.ssa->vars[ssa_op->op1_def].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">1195</td><td><a href="sccp.c.html#L1195">(ssa_op->result_def >= 0 && ctx->scdf.ssa->vars[ssa_op->result_def].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">54.50</td></tr>
+      <tr><td class="num line">1748</td><td><a href="sccp.c.html#L1748">(!(info->type & MAY_BE_ANY | MAY_BE_UNDEF - MAY_BE_LONG) && info->has_range && !info->range.overflow && !info->range.underflow && info->range.min == info->range.max)</a></td><td class="num">52.25</td></tr>
+      <tr><td class="num line">1645</td><td><a href="sccp.c.html#L1645">(ssa_op->result_def < 0 || IS_BOT(&ctx->values[ssa_op->result_def]))</a></td><td class="num">52.00</td></tr>
+      <tr><td class="num line">869</td><td><a href="sccp.c.html#L869">(IS_BOT(op1) && (ctx->scdf.ssa->var_info[ssa_op->op1_use].type & MAY_BE_REF))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">882</td><td><a href="sccp.c.html#L882">((ctx->scdf.ssa->var_info[ssa_op->op1_use].type & MAY_BE_ANY) == 0)</a></td><td class="num">49.00</td></tr>
+      <tr><td class="num line">1675</td><td><a href="sccp.c.html#L1675">(!IS_TOP(&ctx->values[ssa_op->result_def]))</a></td><td class="num">45.50</td></tr>
+      <tr><td class="num line">1979</td><td><a href="sccp.c.html#L1979">(!IS_BOT(&ctx->values[phi->ssa_var]))</a></td><td class="num">45.50</td></tr>
+      <tr><td class="num line">789</td><td><a href="sccp.c.html#L789">(num_args == 1 && Z_TYPE_P(args[0]) == IS_STRING && zend_optimizer_eval_special_func_call(result, name, Z_STR_P(args[0])) == SUCCESS)</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">1833</td><td><a href="sccp.c.html#L1833">(Z_TYPE_P(op1) != IS_ARRAY || (IS_PARTIAL_ARRAY(op1) && zend_hash_num_elements(Z_ARR_P(op1)) == 0))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">978</td><td><a href="sccp.c.html#L978">(!var_info->ce || (var_info->ce->ce_flags & ZEND_ACC_HAS_TYPE_HINTS) || !(var_info->ce->ce_flags & ZEND_ACC_ALLOW_DYNAMIC_PROPERTIES))</a></td><td class="num">40.75</td></tr>
+      <tr><td class="num line">2316</td><td><a href="sccp.c.html#L2316">((var->use_chain < 0 && var->phi_use_chain == NULL) || var->no_val)</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">914</td><td><a href="sccp.c.html#L914">((IS_PARTIAL_ARRAY(op1) || Z_TYPE_P(op1) == IS_NULL || Z_TYPE_P(op1) == IS_FALSE || Z_TYPE_P(op1) == IS_ARRAY) && ssa_op->op1_def >= 0)</a></td><td class="num">35.50</td></tr>
+      <tr><td class="num line">1377</td><td><a href="sccp.c.html#L1377">(ct_eval_fetch_obj(&tmp1, op1, op2) == SUCCESS && ct_eval_incdec(&tmp2, opline->opcode, &tmp1) == SUCCESS)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">1914</td><td><a href="sccp.c.html#L1914">((Z_TYPE_P(a) != IS_ARRAY && !IS_PARTIAL_ARRAY(a)) || (Z_TYPE_P(b) != IS_ARRAY && !IS_PARTIAL_ARRAY(b)))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">1277</td><td><a href="sccp.c.html#L1277">((IS_PARTIAL_ARRAY(op1) || Z_TYPE_P(op1) == IS_ARRAY) && ssa_op->op1_def >= 0 && op2)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">563</td><td><a href="sccp.c.html#L563">(!key || Z_TYPE_P(value) == IS_ARRAY || zval_to_string_offset(&index, key) == FAILURE || index < 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">1514</td><td><a href="sccp.c.html#L1514">(ct_eval_fetch_dim(&zv, op1, op2, (opline->opcode != ZEND_FETCH_LIST_R)) == SUCCESS)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">2320</td><td><a href="sccp.c.html#L2320">(value_known(&ctx->values[i]))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">2355</td><td><a href="sccp.c.html#L2355">(value_known(&ctx->values[i]))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">391</td><td><a href="sccp.c.html#L391">(fetch_array_elem(&value, op1, op2) == SUCCESS && value && !IS_BOT(value))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">601</td><td><a href="sccp.c.html#L601">(fetch_obj_prop(&value, op1, op2) == SUCCESS && value && !IS_BOT(value))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">174</td><td><a href="sccp.c.html#L174">(Z_TYPE_P(value) != Z_TYPE_P(new) || zend_hash_num_elements(Z_ARR_P(new)) != zend_hash_num_elements(Z_ARR_P(value)))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">1471</td><td><a href="sccp.c.html#L1471">(Z_TYPE_P(op1) == IS_ARRAY && zend_hash_num_elements(Z_ARR_P(op1)) == 0)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">2312</td><td><a href="sccp.c.html#L2312">(!Z_DELREF(ctx->values[i]))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1650</td><td><a href="sccp.c.html#L1650">(call->num_args > 3 || call->send_unpack || call->is_prototype)</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">1657</td><td><a href="sccp.c.html#L1657">(opline->opcode != ZEND_SEND_VAL && opline->opcode != ZEND_SEND_VAR)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2072</td><td><a href="sccp.c.html#L2072">(var->use_chain < 0 && var->phi_use_chain == NULL)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2079</td><td><a href="sccp.c.html#L2079">(var->use_chain < 0 && var->phi_use_chain == NULL)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2234</td><td><a href="sccp.c.html#L2234">(opline->opcode != ZEND_PRE_INC && opline->opcode != ZEND_PRE_DEC)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">293</td><td><a href="sccp.c.html#L293">(ssa_op->op1_use == var && can_replace_op1(ctx->scdf.op_array, opline, ssa_op))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">306</td><td><a href="sccp.c.html#L306">(ssa_op->op2_use == var && can_replace_op2(ctx->scdf.op_array, opline, ssa_op))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="sccp.c.html#L733">(Z_TYPE_P(op1) != IS_STRING && Z_TYPE_P(op1) != IS_LONG && Z_TYPE_P(op1) != IS_NULL)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">671</td><td><a href="sccp.c.html#L671">(opcode == ZEND_PRE_INC || opcode == ZEND_POST_INC || opcode == ZEND_PRE_INC_OBJ || opcode == ZEND_POST_INC_OBJ)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1382</td><td><a href="sccp.c.html#L1382">(opline->opcode == ZEND_PRE_INC_OBJ || opline->opcode == ZEND_PRE_DEC_OBJ)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2078</td><td><a href="sccp.c.html#L2078">(ssa_op->op1_def >= 0 || ssa_op->op2_def >= 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2125</td><td><a href="sccp.c.html#L2125">(var->use_chain >= 0 || var->phi_use_chain != NULL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2163</td><td><a href="sccp.c.html#L2163">(opline->opcode == ZEND_TYPE_CHECK || opline->opcode == ZEND_BOOL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2278</td><td><a href="sccp.c.html#L2278">(var->use_chain >= 0 || var->phi_use_chain != NULL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1679</td><td><a href="sccp.c.html#L1679">(ct_eval_func_call(scdf->op_array, &zv, Z_STR_P(name), call->num_args, args) == SUCCESS)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1217</td><td><a href="sccp.c.html#L1217">((op1 && IS_BOT(op1)) || (op2 && IS_BOT(op2)))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="sccp.c.html#L1295">(ct_eval_binary_op(&tmp, opline->extended_value, &tmp, data) == FAILURE)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="sccp.c.html#L1340">(ct_eval_binary_op(&tmp, opline->extended_value, &tmp, data) == FAILURE)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2245</td><td><a href="sccp.c.html#L2245">(ssa_op->op2_use != ssa_op->op1_use)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2337</td><td><a href="sccp.c.html#L2337">(ssa_op->op1_use != ssa_op->op2_use)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2347</td><td><a href="sccp.c.html#L2347">(ssa_op->op2_use != ssa_op->op1_use)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2389</td><td><a href="sccp.c.html#L2389">(i < sccp->scdf.ssa->vars_count)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">400</td><td><a href="sccp.c.html#L400">(index >= 0 && index < Z_STRLEN_P(op1))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">785</td><td><a href="sccp.c.html#L785">(!func || func->type != ZEND_INTERNAL_FUNCTION)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1006</td><td><a href="sccp.c.html#L1006">(IS_PARTIAL_OBJECT(op1) || Z_TYPE_P(op1) == IS_NULL || Z_TYPE_P(op1) == IS_FALSE)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1252</td><td><a href="sccp.c.html#L1252">(ct_eval_binary_op(&zv, opline->opcode, op1, op2) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1270</td><td><a href="sccp.c.html#L1270">(ct_eval_binary_op(&zv, opline->extended_value, op1, op2) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1401</td><td><a href="sccp.c.html#L1401">(ct_eval_incdec(&zv, opline->opcode, op1) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1414</td><td><a href="sccp.c.html#L1414">(ct_eval_incdec(&zv, opline->opcode, op1) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1428</td><td><a href="sccp.c.html#L1428">(zend_optimizer_eval_unary_op(&zv, opline->opcode, op1) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1441</td><td><a href="sccp.c.html#L1441">(zend_optimizer_eval_cast(&zv, opline->extended_value, op1) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1491</td><td><a href="sccp.c.html#L1491">(ct_eval_in_array(&zv, opline->extended_value, op1, op2) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1525</td><td><a href="sccp.c.html#L1525">(ct_eval_isset_dim(&zv, opline->extended_value, op1, op2) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1551</td><td><a href="sccp.c.html#L1551">(ct_eval_isset_obj(&zv, opline->extended_value, op1, op2) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1585</td><td><a href="sccp.c.html#L1585">(ct_eval_isset_isempty(&zv, opline->extended_value, op1) == SUCCESS)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">481</td><td><a href="sccp.c.html#L481">((value = zend_hash_next_index_insert(Z_ARR_P(result), value)))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="sccp.c.html#L752">(func->common.fn_flags & ZEND_ACC_COMPILE_TIME_EVAL)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">431</td><td><a href="sccp.c.html#L431">(IS_PARTIAL_ARRAY(op1) && (!value || IS_BOT(value)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="sccp.c.html#L730">(Z_TYPE_P(op2) != IS_ARRAY && !IS_PARTIAL_ARRAY(op2))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">739</td><td><a href="sccp.c.html#L739">(IS_PARTIAL_ARRAY(op2) && (!value || IS_BOT(value)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">920</td><td><a href="sccp.c.html#L920">(Z_TYPE_P(op1) == IS_NULL || Z_TYPE_P(op1) == IS_FALSE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1010</td><td><a href="sccp.c.html#L1010">(Z_TYPE_P(op1) == IS_NULL || Z_TYPE_P(op1) == IS_FALSE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1717</td><td><a href="sccp.c.html#L1717">(!(info->type & MAY_BE_ANY))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1723</td><td><a href="sccp.c.html#L1723">(!(info->type & MAY_BE_ANY | MAY_BE_UNDEF - MAY_BE_NULL))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="sccp.c.html#L1731">(!(info->type & MAY_BE_ANY | MAY_BE_UNDEF - MAY_BE_FALSE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1739</td><td><a href="sccp.c.html#L1739">(!(info->type & MAY_BE_ANY | MAY_BE_UNDEF - MAY_BE_TRUE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="sccp.c.html#L296">(zend_optimizer_update_op1_const(ctx->scdf.op_array, opline, &zv))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">309</td><td><a href="sccp.c.html#L309">(zend_optimizer_update_op2_const(ctx->scdf.op_array, opline, &zv))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">948</td><td><a href="sccp.c.html#L948">(!op2 && IS_PARTIAL_ARRAY(&zv))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1150</td><td><a href="sccp.c.html#L1150">(!op2 && IS_PARTIAL_ARRAY(&zv))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1308</td><td><a href="sccp.c.html#L1308">(ct_eval_assign_dim(&zv, &tmp, op2) == SUCCESS)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1349</td><td><a href="sccp.c.html#L1349">(ct_eval_assign_obj(&zv, &tmp, op2) == SUCCESS)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1991</td><td><a href="sccp.c.html#L1991">(scdf_is_edge_feasible(scdf, phi->pi, phi->block))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1713</td><td><a href="sccp.c.html#L1713">(info->type & MAY_BE_UNDEF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2379</td><td><a href="sccp.c.html#L2379">(ssa->vars[i].alias)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2409</td><td><a href="sccp.c.html#L2409">(ctx->debug_level & ZEND_DUMP_SCCP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="sccp.c.html#L395">(support_strings && Z_TYPE_P(op1) == IS_STRING)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="sccp.c.html#L1096">(result && Z_TYPE_P(result) == IS_NULL)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1665</td><td><a href="sccp.c.html#L1665">(IS_BOT(args[i]) || IS_PARTIAL_ARRAY(args[i]))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">190</td><td><a href="sccp.c.html#L190">(opline->op1_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">192</td><td><a href="sccp.c.html#L192">(ssa_op->op1_use != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">200</td><td><a href="sccp.c.html#L200">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="sccp.c.html#L202">(ssa_op->op2_use != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="sccp.c.html#L269">(ssa_op->op1_def != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">901</td><td><a href="sccp.c.html#L901">(ssa_op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1075</td><td><a href="sccp.c.html#L1075">(opline->opcode == ZEND_ADD_ARRAY_ELEMENT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1104</td><td><a href="sccp.c.html#L1104">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1118</td><td><a href="sccp.c.html#L1118">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1269</td><td><a href="sccp.c.html#L1269">(opline->opcode == ZEND_ASSIGN_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1276</td><td><a href="sccp.c.html#L1276">(opline->opcode == ZEND_ASSIGN_DIM_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1320</td><td><a href="sccp.c.html#L1320">(opline->opcode == ZEND_ASSIGN_OBJ_OP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1655</td><td><a href="sccp.c.html#L1655">(i < call->num_args)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1788</td><td><a href="sccp.c.html#L1788">(s < block->successors_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1879</td><td><a href="sccp.c.html#L1879">(s < block->successors_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1989</td><td><a href="sccp.c.html#L1989">(phi->pi >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1995</td><td><a href="sccp.c.html#L1995">(i < block->predecessors_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2035</td><td><a href="sccp.c.html#L2035">(i < call->num_args)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2065</td><td><a href="sccp.c.html#L2065">(var->definition >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2069</td><td><a href="sccp.c.html#L2069">(ssa_op->result_def == var_num)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2070</td><td><a href="sccp.c.html#L2070">(opline->opcode == ZEND_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2141</td><td><a href="sccp.c.html#L2141">(opline->opcode == ZEND_DO_ICALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2177</td><td><a href="sccp.c.html#L2177">(opline->opcode == ZEND_DO_ICALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2184</td><td><a href="sccp.c.html#L2184">(ssa_op->op1_def == var_num)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2185</td><td><a href="sccp.c.html#L2185">(opline->opcode == ZEND_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2216</td><td><a href="sccp.c.html#L2216">(opline->op2_type == IS_UNUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2229</td><td><a href="sccp.c.html#L2229">(ssa_op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2242</td><td><a href="sccp.c.html#L2242">(opline->op2_type == IS_CONST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2244</td><td><a href="sccp.c.html#L2244">(ssa_op->op2_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2305</td><td><a href="sccp.c.html#L2305">(i >= op_array->last_var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2333</td><td><a href="sccp.c.html#L2333">(opline->opcode == ZEND_NOP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2373</td><td><a href="sccp.c.html#L2373">(i < op_array->last_var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2378</td><td><a href="sccp.c.html#L2378">(i < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2412</td><td><a href="sccp.c.html#L2412">(i < ssa->vars_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1997</td><td><a href="sccp.c.html#L1997">(scdf_is_edge_feasible(scdf, predecessors[i], phi->block))</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">106</td><td><a href="sccp.c.html#L106">(Z_TYPE_P(zv) == IS_ARRAY || IS_PARTIAL_ARRAY(zv))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">389</td><td><a href="sccp.c.html#L389">(Z_TYPE_P(op1) == IS_ARRAY || IS_PARTIAL_ARRAY(op1))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">426</td><td><a href="sccp.c.html#L426">(Z_TYPE_P(op1) == IS_ARRAY || IS_PARTIAL_ARRAY(op1))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="sccp.c.html#L666">(Z_TYPE_P(op1) == IS_ARRAY || IS_PARTIAL_ARRAY(op1))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">397</td><td><a href="sccp.c.html#L397">(zval_to_string_offset(&index, op2) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">417</td><td><a href="sccp.c.html#L417">(ct_eval_bool_cast(&zv, op1) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">428</td><td><a href="sccp.c.html#L428">(fetch_array_elem(&value, op1, op2) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">612</td><td><a href="sccp.c.html#L612">(fetch_obj_prop(&value, op1, op2) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="sccp.c.html#L717">(zend_compare(op1, &key_tmp) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">736</td><td><a href="sccp.c.html#L736">(fetch_array_elem(&value, op2, op1) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">929</td><td><a href="sccp.c.html#L929">(ct_eval_del_array_elem(&zv, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">952</td><td><a href="sccp.c.html#L952">(ct_eval_assign_dim(&zv, data, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1016</td><td><a href="sccp.c.html#L1016">(ct_eval_del_obj_prop(&zv, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1034</td><td><a href="sccp.c.html#L1034">(ct_eval_assign_obj(&zv, data, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1129</td><td><a href="sccp.c.html#L1129">(ct_eval_del_array_elem(&zv, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1153</td><td><a href="sccp.c.html#L1153">(ct_eval_add_array_elem(&zv, op1, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1186</td><td><a href="sccp.c.html#L1186">(ct_eval_add_array_unpack(&zv, op1) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1284</td><td><a href="sccp.c.html#L1284">(ct_eval_fetch_dim(&tmp, op1, op2, 0) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1329</td><td><a href="sccp.c.html#L1329">(ct_eval_fetch_obj(&tmp, op1, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1452</td><td><a href="sccp.c.html#L1452">(ct_eval_bool_cast(&zv, op1) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1461</td><td><a href="sccp.c.html#L1461">(zend_optimizer_eval_strlen(&zv, op1) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1501</td><td><a href="sccp.c.html#L1501">(ct_eval_array_key_exists(&zv, op1, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1538</td><td><a href="sccp.c.html#L1538">(ct_eval_fetch_obj(&zv, op1, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1609</td><td><a href="sccp.c.html#L1609">(zend_optimizer_eval_cast(&zv, IS_STRING, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1623</td><td><a href="sccp.c.html#L1623">(ct_eval_binary_op(&zv, ZEND_CONCAT, op1, op2) == SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1803</td><td><a href="sccp.c.html#L1803">(ct_eval_bool_cast(&zv, op1) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1815</td><td><a href="sccp.c.html#L1815">(ct_eval_bool_cast(&zv, op1) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1963</td><td><a href="sccp.c.html#L1963">(escape || join_partial_objects(a, b) == FAILURE)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1931</td><td><a href="sccp.c.html#L1931">(!IS_PARTIAL_OBJECT(a) || !IS_PARTIAL_OBJECT(b))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">411</td><td><a href="sccp.c.html#L411">(!(extended_value & ZEND_ISEMPTY))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">898</td><td><a href="sccp.c.html#L898">(op2 && IS_BOT(op2))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="sccp.c.html#L1056">(!ctx->call_map)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1101</td><td><a href="sccp.c.html#L1101">(op2 && IS_BOT(op2))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1636</td><td><a href="sccp.c.html#L1636">(!ctx->call_map)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1899</td><td><a href="sccp.c.html#L1899">(val2 && zend_is_identical(val1, val2))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">615</td><td><a href="sccp.c.html#L615">(!value || IS_BOT(value))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1787</td><td><a href="sccp.c.html#L1787">(!op1 || IS_BOT(op1))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="sccp.c.html#L348">(IS_LONG == is_numeric_string(Z_STRVAL_P(op), Z_STRLEN_P(op), result, NULL, 0))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">151</td><td><a href="sccp.c.html#L151">(IS_BOT(value) || IS_TOP(new))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">165</td><td><a href="sccp.c.html#L165">(IS_TOP(value) || IS_BOT(new))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">173</td><td><a href="sccp.c.html#L173">(IS_PARTIAL_ARRAY(new) || IS_PARTIAL_OBJECT(new))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">319</td><td><a href="sccp.c.html#L319">(IS_PARTIAL_ARRAY(op1) || IS_PARTIAL_ARRAY(op2))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">328</td><td><a href="sccp.c.html#L328">(zend_hash_num_elements(Z_ARRVAL_P(op)) == 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">700</td><td><a href="sccp.c.html#L700">(EXPECTED(Z_TYPE_P(op1) == IS_STRING))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">703</td><td><a href="sccp.c.html#L703">(EXPECTED(Z_TYPE_P(op1) == IS_LONG))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1171</td><td><a href="sccp.c.html#L1171">(IS_BOT(result) || IS_BOT(op1))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1944</td><td><a href="sccp.c.html#L1944">(IS_BOT(a) || IS_TOP(b))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1957</td><td><a href="sccp.c.html#L1957">(IS_PARTIAL_ARRAY(a) || IS_PARTIAL_ARRAY(b))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1962</td><td><a href="sccp.c.html#L1962">(IS_PARTIAL_OBJECT(a) || IS_PARTIAL_OBJECT(b))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2415</td><td><a href="sccp.c.html#L2415">(IS_TOP(zv) || IS_BOT(zv))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">435</td><td><a href="sccp.c.html#L435">(Z_TYPE_P(op1) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">530</td><td><a href="sccp.c.html#L530">(Z_TYPE_P(array) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">568</td><td><a href="sccp.c.html#L568">(index >= Z_STRLEN_P(result))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">696</td><td><a href="sccp.c.html#L696">(Z_TYPE_P(op2) != IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">708</td><td><a href="sccp.c.html#L708">(Z_TYPE_P(op1) <= IS_FALSE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">836</td><td><a href="sccp.c.html#L836">(EG(capture_warnings_during_sccp) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1179</td><td><a href="sccp.c.html#L1179">(Z_TYPE_P(result) == IS_NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1480</td><td><a href="sccp.c.html#L1480">(Z_TYPE_P(op1) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1958</td><td><a href="sccp.c.html#L1958">(join_partial_arrays(a, b) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1968</td><td><a href="sccp.c.html#L1968">(join_partial_arrays(a, b) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">684</td><td><a href="sccp.c.html#L684">(type == PARTIAL_ARRAY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="sccp.c.html#L686">(type == PARTIAL_OBJECT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="sccp.c.html#L763">(num_args == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">820</td><td><a href="sccp.c.html#L820">(i < num_args)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">825</td><td><a href="sccp.c.html#L825">(i < num_args)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1668</td><td><a href="sccp.c.html#L1668">(IS_TOP(args[i]))</a></td><td class="num">2.00</td></tr>
+      <tr><td class="num line">1664</td><td><a href="sccp.c.html#L1664">(args[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="sccp.c.html#L374">(!zend_is_long_compatible(Z_DVAL_P(op2), lval))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="sccp.c.html#L462">(!zend_is_long_compatible(Z_DVAL_P(key), lval))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="sccp.c.html#L507">(!zend_is_long_compatible(Z_DVAL_P(key), lval))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">794</td><td><a href="sccp.c.html#L794">(!can_ct_eval_func_call(func, name, num_args, args))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1967</td><td><a href="sccp.c.html#L1967">(!zend_is_identical(a, b))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">414</td><td><a href="sccp.c.html#L414">(!op1)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">479</td><td><a href="sccp.c.html#L479">(!key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">541</td><td><a href="sccp.c.html#L541">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">926</td><td><a href="sccp.c.html#L926">(!op2)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1119</td><td><a href="sccp.c.html#L1119">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1126</td><td><a href="sccp.c.html#L1126">(!op2)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2192</td><td><a href="sccp.c.html#L2192">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2324</td><td><a href="sccp.c.html#L2324">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">102</td><td><a href="sccp.c.html#L102">(IS_TOP(zv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">104</td><td><a href="sccp.c.html#L104">(IS_BOT(zv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">110</td><td><a href="sccp.c.html#L110">(IS_PARTIAL_OBJECT(zv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="sccp.c.html#L327">(IS_PARTIAL_ARRAY(op))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="sccp.c.html#L599">(IS_PARTIAL_OBJECT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">610</td><td><a href="sccp.c.html#L610">(IS_PARTIAL_OBJECT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">758</td><td><a href="sccp.c.html#L758">(zend_string_equals_literal(name, "dirname"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">764</td><td><a href="sccp.c.html#L764">(zend_string_equals_literal(name, "str_repeat"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="sccp.c.html#L830">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="sccp.c.html#L886">(IS_BOT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">911</td><td><a href="sccp.c.html#L911">(IS_BOT(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="sccp.c.html#L942">(IS_PARTIAL_ARRAY(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="sccp.c.html#L954">(IS_PARTIAL_ARRAY(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="sccp.c.html#L985">(IS_BOT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="sccp.c.html#L995">(IS_BOT(op2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="sccp.c.html#L1004">(IS_BOT(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1028</td><td><a href="sccp.c.html#L1028">(IS_PARTIAL_OBJECT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1077</td><td><a href="sccp.c.html#L1077">(IS_BOT(result))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1154</td><td><a href="sccp.c.html#L1154">(IS_PARTIAL_ARRAY(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1285</td><td><a href="sccp.c.html#L1285">(IS_BOT(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1302</td><td><a href="sccp.c.html#L1302">(IS_PARTIAL_ARRAY(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1330</td><td><a href="sccp.c.html#L1330">(IS_BOT(data))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="sccp.c.html#L1424">(IS_PARTIAL_ARRAY(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1437</td><td><a href="sccp.c.html#L1437">(IS_PARTIAL_ARRAY(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1605</td><td><a href="sccp.c.html#L1605">(IS_PARTIAL_ARRAY(op2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1781</td><td><a href="sccp.c.html#L1781">(IS_BOT(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1795</td><td><a href="sccp.c.html#L1795">(IS_TOP(op1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1947</td><td><a href="sccp.c.html#L1947">(IS_TOP(a))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1952</td><td><a href="sccp.c.html#L1952">(IS_BOT(b))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="sccp.c.html#L2221">(zend_may_throw(opline, ssa_op, op_array, ssa))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2332</td><td><a href="sccp.c.html#L2332">(try_replace_op1(ctx, opline, ssa_op, i, value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2345</td><td><a href="sccp.c.html#L2345">(try_replace_op2(ctx, opline, ssa_op, i, value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="sccp.c.html#L536">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">702</td><td><a href="sccp.c.html#L702">(extended_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">894</td><td><a href="sccp.c.html#L894">(op2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1085</td><td><a href="sccp.c.html#L1085">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1089</td><td><a href="sccp.c.html#L1089">(op2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1142</td><td><a href="sccp.c.html#L1142">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1149</td><td><a href="sccp.c.html#L1149">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1263</td><td><a href="sccp.c.html#L1263">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1266</td><td><a href="sccp.c.html#L1266">(op2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1369</td><td><a href="sccp.c.html#L1369">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1534</td><td><a href="sccp.c.html#L1534">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1547</td><td><a href="sccp.c.html#L1547">(op1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1852</td><td><a href="sccp.c.html#L1852">(correct_type)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1861</td><td><a href="sccp.c.html#L1861">(jmp_zv)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1868</td><td><a href="sccp.c.html#L1868">(strict_comparison)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1894</td><td><a href="sccp.c.html#L1894">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1900</td><td><a href="sccp.c.html#L1900">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2269</td><td><a href="sccp.c.html#L2269">(value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2418</td><td><a href="sccp.c.html#L2418">(first)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\connection_or.c Ctrl Expressions (179) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\connection_or.c Ctrl Expressions (179) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\connection_or.c Ctrl Expressions (179)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1143</td><td><a href="connection_or.c.html#L1143">(<span style='background-color:#741da3;'>or_conn->base_.marked_for_close || connection_or_is_bad_for_new_circs(or_conn) || or_conn->base_.state != OR_CONN_STATE_OPEN</span>)</a></td><td class="num">1014.75</td></tr>
+      <tr><td class="num line">1162</td><td><a href="connection_or.c.html#L1162">(tor_addr_eq(&TO_CONN(or_conn)->addr, &TO_CONN(best)->addr))</a></td><td class="num">69.50</td></tr>
+      <tr><td class="num line">960</td><td><a href="connection_or.c.html#L960">(tor_addr_eq(&conn->base_.addr, &node_ipv4_ap.addr) || tor_addr_eq(&conn->base_.addr, &node_ipv6_ap.addr))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2546</td><td><a href="connection_or.c.html#L2546">((public_server_mode(get_options()) || !conn->is_outgoing) && (me = router_get_my_routerinfo()))</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="connection_or.c.html#L1147">(or_conn != best && channel_is_better(TLS_CHAN_TO_BASE(best->chan), TLS_CHAN_TO_BASE(or_conn->chan)))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1036</td><td><a href="connection_or.c.html#L1036">(force || or_conn->base_.timestamp_created + TIME_BEFORE_OR_CONN_IS_TOO_OLD < now)</a></td><td class="num">27.10</td></tr>
+      <tr><td class="num line">2316</td><td><a href="connection_or.c.html#L2316">(TLS_CHAN_TO_BASE(conn->chan)->padding_enabled)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1118</td><td><a href="connection_or.c.html#L1118">(!best || channel_is_better(TLS_CHAN_TO_BASE(or_conn->chan), TLS_CHAN_TO_BASE(best->chan)))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1427</td><td><a href="connection_or.c.html#L1427">(TO_CONN(conn)->state == OR_CONN_STATE_CONNECTING)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">966</td><td><a href="connection_or.c.html#L966">(tor_addr_family(&conn->base_.addr) == AF_INET)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">224</td><td><a href="connection_or.c.html#L224">(!ed25519_public_key_is_zero(&chan->ed25519_identity))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1979</td><td><a href="connection_or.c.html#L1979">(!ed25519_public_key_is_zero(&chan->ed25519_identity))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2554</td><td><a href="connection_or.c.html#L2554">(!tor_addr_is_null(&me->ipv6_addr))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">884</td><td><a href="connection_or.c.html#L884">(bool_eq(is_canonical, or_conn->is_canonical) && or_conn->idle_timeout != 0)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">791</td><td><a href="connection_or.c.html#L791">(reason == END_OR_CONN_REASON_TLS_ERROR && or_conn->tls)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="connection_or.c.html#L318">(b->count < a->count)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">320</td><td><a href="connection_or.c.html#L320">(b->count == a->count)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2488</td><td><a href="connection_or.c.html#L2488">(BUG(addr_family != AF_INET && addr_family != AF_INET6))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1104</td><td><a href="connection_or.c.html#L1104">(n_canonical && !or_conn->is_canonical)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">947</td><td><a href="connection_or.c.html#L947">(r && node_supports_ed25519_link_authentication(r, 1) && !node_ed25519_id_matches(r, ed_id))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2561</td><td><a href="connection_or.c.html#L2561">((errmsg = netinfo_cell_check(netinfo_cell)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">203</td><td><a href="connection_or.c.html#L203">(tor_digest_is_zero(rsa_digest) && (!ed_id || ed25519_public_key_is_zero(ed_id)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="connection_or.c.html#L221">(conn && conn->chan)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">581</td><td><a href="connection_or.c.html#L581">(buf_datalen(conn->base_.inbuf) != 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">614</td><td><a href="connection_or.c.html#L614">(buf_datalen(conn->base_.inbuf) != 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1032</td><td><a href="connection_or.c.html#L1032">(or_conn->base_.marked_for_close || connection_or_is_bad_for_new_circs(or_conn))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1098</td><td><a href="connection_or.c.html#L1098">(or_conn->base_.marked_for_close || connection_or_is_bad_for_new_circs(or_conn))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1086</td><td><a href="connection_or.c.html#L1086">(or_conn->base_.state != OR_CONN_STATE_OPEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1101</td><td><a href="connection_or.c.html#L1101">(or_conn->base_.state != OR_CONN_STATE_OPEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2323</td><td><a href="connection_or.c.html#L2323">(conn->base_.state == OR_CONN_STATE_OR_HANDSHAKING_V3)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2343</td><td><a href="connection_or.c.html#L2343">(conn->base_.state == OR_CONN_STATE_OR_HANDSHAKING_V3)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2469</td><td><a href="connection_or.c.html#L2469">(v < min_version || v > max_version)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2532</td><td><a href="connection_or.c.html#L2532">(public_server_mode(get_options()) || !conn->is_outgoing)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1845</td><td><a href="connection_or.c.html#L1845">(started_here && v < 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">689</td><td><a href="connection_or.c.html#L689">(conn->proxy_type == PROXY_HAPROXY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">778</td><td><a href="connection_or.c.html#L778">(conn->state != OR_CONN_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">785</td><td><a href="connection_or.c.html#L785">(conn->state >= OR_CONN_STATE_TLS_HANDSHAKING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1344</td><td><a href="connection_or.c.html#L1344">(entry->last_failed_connect_ts <= cutoff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2278</td><td><a href="connection_or.c.html#L2278">(conn->link_proto < 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2307</td><td><a href="connection_or.c.html#L2307">(cell->command == CELL_PADDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2318</td><td><a href="connection_or.c.html#L2318">(cell->command == CELL_PADDING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">190</td><td><a href="connection_or.c.html#L190">(!rsa_changed && !ed_changed)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="connection_or.c.html#L925">(!conn->base_.address)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1935</td><td><a href="connection_or.c.html#L1935">(!expected_rsa_key && !expected_ed_key)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2520</td><td><a href="connection_or.c.html#L2520">(conn->handshake_state->sent_netinfo)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2166</td><td><a href="connection_or.c.html#L2166">(!started_here && get_current_link_cert_cert())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1831</td><td><a href="connection_or.c.html#L1831">(started_here && !has_cert)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2039</td><td><a href="connection_or.c.html#L2039">(!expected_ed_key && ed_peer_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">806</td><td><a href="connection_or.c.html#L806">(!tor_digest_is_zero(or_conn->identity_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1478</td><td><a href="connection_or.c.html#L1478">(server_mode(options) && router_digest_is_me(id_digest))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="connection_or.c.html#L1482">(server_mode(options) && router_ed25519_id_is_me(ed_id))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1743</td><td><a href="connection_or.c.html#L1743">(!tor_tls_used_v1_handshake(conn->tls))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1744</td><td><a href="connection_or.c.html#L1744">(!tor_tls_is_server(conn->tls))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1674</td><td><a href="connection_or.c.html#L1674">(!conn->tls)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1786</td><td><a href="connection_or.c.html#L1786">(!conn->tls)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2207</td><td><a href="connection_or.c.html#L2207">(!state->digest_received_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2210</td><td><a href="connection_or.c.html#L2210">(!state->digest_sent_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2248</td><td><a href="connection_or.c.html#L2248">(!state->digest_received_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2251</td><td><a href="connection_or.c.html#L2251">(!state->digest_sent_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2441</td><td><a href="connection_or.c.html#L2441">(or_protocol_versions[i] == v)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2567</td><td><a href="connection_or.c.html#L2567">(netinfo_cell_encode(cell.payload, CELL_PAYLOAD_SIZE, netinfo_cell) < 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">839</td><td><a href="connection_or.c.html#L839">(connection_or_digest_is_known_relay(conn->identity_digest))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2113</td><td><a href="connection_or.c.html#L2113">(tor_tls_used_v1_handshake(conn->tls))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">167</td><td><a href="connection_or.c.html#L167">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="connection_or.c.html#L397">(conn->is_pt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="connection_or.c.html#L407">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">427</td><td><a href="connection_or.c.html#L427">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="connection_or.c.html#L440">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">593</td><td><a href="connection_or.c.html#L593">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="connection_or.c.html#L634">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">717</td><td><a href="connection_or.c.html#L717">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">767</td><td><a href="connection_or.c.html#L767">(or_conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">801</td><td><a href="connection_or.c.html#L801">(conn->hold_open_until_flushed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">943</td><td><a href="connection_or.c.html#L943">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="connection_or.c.html#L989">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1002</td><td><a href="connection_or.c.html#L1002">(or_conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="connection_or.c.html#L1012">(or_conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="connection_or.c.html#L1088">(or_conn->is_canonical)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1151</td><td><a href="connection_or.c.html#L1151">(best->is_canonical)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1319</td><td><a href="connection_or.c.html#L1319">(or_conn->potentially_used_for_bootstrapping)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1431</td><td><a href="connection_or.c.html#L1431">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="connection_or.c.html#L1613">(orconn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1634</td><td><a href="connection_or.c.html#L1634">(orconn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1788</td><td><a href="connection_or.c.html#L1788">(conn->handshake_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2051</td><td><a href="connection_or.c.html#L2051">(conn->tls)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2075</td><td><a href="connection_or.c.html#L2075">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2158</td><td><a href="connection_or.c.html#L2158">(conn->handshake_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2313</td><td><a href="connection_or.c.html#L2313">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2348</td><td><a href="connection_or.c.html#L2348">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2397</td><td><a href="connection_or.c.html#L2397">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2413</td><td><a href="connection_or.c.html#L2413">(conn->chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">338</td><td><a href="connection_or.c.html#L338">(!broken_connection_counts || disable_broken_connection_counts)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2219</td><td><a href="connection_or.c.html#L2219">(!*dptr)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2255</td><td><a href="connection_or.c.html#L2255">(!*dptr)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2408</td><td><a href="connection_or.c.html#L2408">(connection_get_inbuf_len(TO_CONN(conn)) < cell_network_size)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">590</td><td><a href="connection_or.c.html#L590">(connection_tls_start_handshake(conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">640</td><td><a href="connection_or.c.html#L640">(datalen < or_conn_lowwatermark())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">664</td><td><a href="connection_or.c.html#L664">(datalen < or_conn_highwatermark())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">698</td><td><a href="connection_or.c.html#L698">(connection_tls_start_handshake(conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">740</td><td><a href="connection_or.c.html#L740">(connection_proxy_connect(conn, proxy_type) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">751</td><td><a href="connection_or.c.html#L751">(connection_tls_start_handshake(or_conn, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1584</td><td><a href="connection_or.c.html#L1584">(connection_or_finished_connecting(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1685</td><td><a href="connection_or.c.html#L1685">(connection_tls_continue_handshake(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1713</td><td><a href="connection_or.c.html#L1713">(connection_tls_finish_handshake(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1863</td><td><a href="connection_or.c.html#L1863">(crypto_pk_get_digest(identity_rcvd, digest_rcvd_out) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1998</td><td><a href="connection_or.c.html#L1998">(server_mode(options) || non_anonymous_mode)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2107</td><td><a href="connection_or.c.html#L2107">(connection_or_check_valid_tls_handshake(conn, started_here, digest_rcvd) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2123</td><td><a href="connection_or.c.html#L2123">(connection_init_or_handshake_state(conn, started_here) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2146</td><td><a href="connection_or.c.html#L2146">(connection_init_or_handshake_state(conn, 1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2392</td><td><a href="connection_or.c.html#L2392">(connection_fetch_var_cell_from_buf(conn, &var_cell))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">356</td><td><a href="connection_or.c.html#L356">(c_sl_idx > MAX_REASONS_TO_REPORT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">532</td><td><a href="connection_or.c.html#L532">(src != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">579</td><td><a href="connection_or.c.html#L579">(ret == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">596</td><td><a href="connection_or.c.html#L596">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="connection_or.c.html#L738">(proxy_type != PROXY_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">794</td><td><a href="connection_or.c.html#L794">(warning == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1327</td><td><a href="connection_or.c.html#L1327">(ocf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1342</td><td><a href="connection_or.c.html#L1342">(ptr != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1372</td><td><a href="connection_or.c.html#L1372">(or_connect_failure_map_next_cleanup_ts <= now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1386</td><td><a href="connection_or.c.html#L1386">(connect_failed_since_ts > cutoff)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1517</td><td><a href="connection_or.c.html#L1517">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1519</td><td><a href="connection_or.c.html#L1519">(proxy_type != PROXY_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1850</td><td><a href="connection_or.c.html#L1850">(v < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="connection_or.c.html#L1964">(rsa_mismatch || ed25519_mismatch)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2440</td><td><a href="connection_or.c.html#L2440">(i < n_or_protocol_versions)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2467</td><td><a href="connection_or.c.html#L2467">(i < n_or_protocol_versions)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2493</td><td><a href="connection_or.c.html#L2493">(addr_family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2497</td><td><a href="connection_or.c.html#L2497">(addr_family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1407</td><td><a href="connection_or.c.html#L1407">(!authdir_mode_tests_reachability(get_options()))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">789</td><td><a href="connection_or.c.html#L789">(!authdir_mode_tests_reachability(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1434</td><td><a href="connection_or.c.html#L1434">(!CHANNEL_CONDEMNED(chan))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1504</td><td><a href="connection_or.c.html#L1504">(!should_connect_to_relay(conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="connection_or.c.html#L1616">(!CHANNEL_CONDEMNED(chan))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1637</td><td><a href="connection_or.c.html#L1637">(!CHANNEL_CONDEMNED(chan))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2031</td><td><a href="connection_or.c.html#L2031">(!authdir_mode_tests_reachability(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">252</td><td><a href="connection_or.c.html#L252">(!broken_connection_counts)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1125</td><td><a href="connection_or.c.html#L1125">(!best)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1663</td><td><a href="connection_or.c.html#L1663">(!chan_listener)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1696</td><td><a href="connection_or.c.html#L1696">(!tls)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1836</td><td><a href="connection_or.c.html#L1836">(!has_cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2178</td><td><a href="connection_or.c.html#L2178">(!state)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2213</td><td><a href="connection_or.c.html#L2213">(!incoming)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2393</td><td><a href="connection_or.c.html#L2393">(!var_cell)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">780</td><td><a href="connection_or.c.html#L780">(connection_or_nonopen_was_started_here(or_conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">817</td><td><a href="connection_or.c.html#L817">(router_get_consensus_status_by_id(id_digest))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">819</td><td><a href="connection_or.c.html#L819">(router_get_by_id_digest(id_digest))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="connection_or.c.html#L1081">(connection_or_single_set_badness_(now, or_conn, force))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="connection_or.c.html#L1084">(connection_or_is_bad_for_new_circs(or_conn))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="connection_or.c.html#L2056">(authdir_mode_tests_reachability(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">194</td><td><a href="connection_or.c.html#L194">(rsa_id_was_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">196</td><td><a href="connection_or.c.html#L196">(chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="connection_or.c.html#L208">(chan)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">249</td><td><a href="connection_or.c.html#L249">(disable_broken_connection_counts)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">267</td><td><a href="connection_or.c.html#L267">(broken_connection_counts)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">270</td><td><a href="connection_or.c.html#L270">(stop_recording)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">300</td><td><a href="connection_or.c.html#L300">(disable_broken_connection_counts)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">458</td><td><a href="connection_or.c.html#L458">(wide_circ_ids)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">478</td><td><a href="connection_or.c.html#L478">(wide_circ_ids)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">495</td><td><a href="connection_or.c.html#L495">(wide_circ_ids)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">858</td><td><a href="connection_or.c.html#L858">(reset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">955</td><td><a href="connection_or.c.html#L955">(r)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1277</td><td><a href="connection_or.c.html#L1277">(identity_digest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1281</td><td><a href="connection_or.c.html#L1281">(addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1381</td><td><a href="connection_or.c.html#L1381">(ocf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1541</td><td><a href="connection_or.c.html#L1541">(transport_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1611</td><td><a href="connection_or.c.html#L1611">(flush)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1632</td><td><a href="connection_or.c.html#L1632">(flush)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1659</td><td><a href="connection_or.c.html#L1659">(receiving)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1842</td><td><a href="connection_or.c.html#L1842">(has_cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1862</td><td><a href="connection_or.c.html#L1862">(identity_rcvd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1876</td><td><a href="connection_or.c.html#L1876">(started_here)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1974</td><td><a href="connection_or.c.html#L1974">(ed_peer_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2001</td><td><a href="connection_or.c.html#L2001">(using_hardcoded_fingerprints)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2004</td><td><a href="connection_or.c.html#L2004">(is_authority_fingerprint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2006</td><td><a href="connection_or.c.html#L2006">(is_fallback_fingerprint)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2047</td><td><a href="connection_or.c.html#L2047">(changed_identity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2206</td><td><a href="connection_or.c.html#L2206">(incoming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2247</td><td><a href="connection_or.c.html#L2247">(incoming)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2386</td><td><a href="connection_or.c.html#L2386">(1)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

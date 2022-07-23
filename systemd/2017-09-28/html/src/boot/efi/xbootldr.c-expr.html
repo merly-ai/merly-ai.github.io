@@ -1,0 +1,85 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\boot\efi\xbootldr.c Ctrl Expressions (34) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\boot\efi\xbootldr.c Ctrl Expressions (34) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\boot\efi\xbootldr.c Ctrl Expressions (34)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">210</td><td><a href="xbootldr.c.html#L210">(<span style='background-color:#741da3;'>block_io->Media->LogicalPartition || !block_io->Media->MediaPresent || block_io->Media->LastBlock <= 1</span>)</a></td><td class="num">1022.00</td></tr>
+      <tr><td class="num line">54</td><td><a href="xbootldr.c.html#L54">(memcmp(&h->Header.Signature, "EFI PART", sizeof(h->Header.Signature)) != 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">142</td><td><a href="xbootldr.c.html#L142">(memcmp(&entry->PartitionTypeGUID, XBOOTLDR_GUID, sizeof(entry->PartitionTypeGUID)) != 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">57</td><td><a href="xbootldr.c.html#L57">(h->Header.HeaderSize < 92 || h->Header.HeaderSize > 512)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">228</td><td><a href="xbootldr.c.html#L228">(nr == 2 && backup_lba != block_io->Media->LastBlock)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">77</td><td><a href="xbootldr.c.html#L77">(h->NumberOfPartitionEntries <= 0 || h->NumberOfPartitionEntries > 1024)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">81</td><td><a href="xbootldr.c.html#L81">(h->SizeOfPartitionEntry > UINTN_MAX / h->NumberOfPartitionEntries)</a></td><td class="num">11.10</td></tr>
+      <tr><td class="num line">132</td><td><a href="xbootldr.c.html#L132">(err != EFI_SUCCESS || crc32 != gpt.gpt_header.PartitionEntryArrayCRC32)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">226</td><td><a href="xbootldr.c.html#L226">(nr == 1 && backup_lba != 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">60</td><td><a href="xbootldr.c.html#L60">(h->Header.Revision != 0x00010000U)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">68</td><td><a href="xbootldr.c.html#L68">(err != EFI_SUCCESS || crc32 != crc32_saved)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">71</td><td><a href="xbootldr.c.html#L71">(h->MyLBA != lba_expected)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">74</td><td><a href="xbootldr.c.html#L74">(h->SizeOfPartitionEntry < sizeof(EFI_PARTITION_ENTRY))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">136</td><td><a href="xbootldr.c.html#L136">(i < gpt.gpt_header.NumberOfPartitionEntries)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">115</td><td><a href="xbootldr.c.html#L115">(!verify_gpt(&gpt, lba))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="xbootldr.c.html#L181">(DevicePathType(node) != MEDIA_DEVICE_PATH)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">184</td><td><a href="xbootldr.c.html#L184">(DevicePathSubType(node) != MEDIA_HARDDRIVE_DP)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">108</td><td><a href="xbootldr.c.html#L108">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="xbootldr.c.html#L127">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="xbootldr.c.html#L149">(end < start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">175</td><td><a href="xbootldr.c.html#L175">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">200</td><td><a href="xbootldr.c.html#L200">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="xbootldr.c.html#L204">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="xbootldr.c.html#L218">(nr < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">224</td><td><a href="xbootldr.c.html#L224">(nr == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">237</td><td><a href="xbootldr.c.html#L237">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="xbootldr.c.html#L239">(err == EFI_NOT_FOUND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">267</td><td><a href="xbootldr.c.html#L267">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">272</td><td><a href="xbootldr.c.html#L272">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="xbootldr.c.html#L276">(err != EFI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">33</td><td><a href="xbootldr.c.html#L33">(!IsDevicePathEnd(node))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">180</td><td><a href="xbootldr.c.html#L180">(!IsDevicePathEnd(node))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">190</td><td><a href="xbootldr.c.html#L190">(!part_node)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">112</td><td><a href="xbootldr.c.html#L112">(ret_backup_lba)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

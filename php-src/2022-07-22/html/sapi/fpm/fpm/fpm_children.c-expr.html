@@ -1,0 +1,104 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>php-src Repo - sapi\fpm\fpm\fpm_children.c Ctrl Expressions (53) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - sapi\fpm\fpm\fpm_children.c Ctrl Expressions (53) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;sapi\fpm\fpm\fpm_children.c Ctrl Expressions (53)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">153</td><td><a href="fpm_children.c.html#L153">(<span style='background-color:#741da3;'>0 > fpm_stdio_init_child(wp) || 0 > fpm_log_init_child(wp) || 0 > fpm_status_init_child(wp) || 0 > fpm_unix_init_child(wp) || 0 > fpm_signals_init_child() || 0 > fpm_env_init_child(wp) || 0 > fpm_php_init_child(wp)</span>)</a></td><td class="num">1024.75</td></tr>
+      <tr><td class="num line">442</td><td><a href="fpm_children.c.html#L442">(<span style='background-color:#741da3;'>!warned && fpm_global_config.process_max > 0 && fpm_globals.running_children >= fpm_global_config.process_max</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">398</td><td><a href="fpm_children.c.html#L398">(fpm_pctl_can_spawn_children() && wp->running_children < max && (fpm_global_config.process_max < 1 || fpm_globals.running_children < fpm_global_config.process_max))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">186</td><td><a href="fpm_children.c.html#L186">((pid = waitpid(-1, &status, WNOHANG | WUNTRACED)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">268</td><td><a href="fpm_children.c.html#L268">(last_faults && (WTERMSIG(status) == SIGSEGV || WTERMSIG(status) == SIGBUS))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">349</td><td><a href="fpm_children.c.html#L349">(wp == child->wp || wp == child->wp->shared)</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">225</td><td><a href="fpm_children.c.html#L225">(child && child->idle_kill && WTERMSIG(status) == SIGQUIT)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">280</td><td><a href="fpm_children.c.html#L280">(now - last_faults[i] > fpm_global_config.emergency_restart_interval)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">375</td><td><a href="fpm_children.c.html#L375">(wp->config->pm == PM_STYLE_DYNAMIC)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">381</td><td><a href="fpm_children.c.html#L381">(wp->config->pm == PM_STYLE_ONDEMAND)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">455</td><td><a href="fpm_children.c.html#L455">(wp->config->pm == PM_STYLE_ONDEMAND)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">200</td><td><a href="fpm_children.c.html#L200">(child && child->idle_kill)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">236</td><td><a href="fpm_children.c.html#L236">(child && child->tracer)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">477</td><td><a href="fpm_children.c.html#L477">(fpm_global_config.emergency_restart_threshold && fpm_global_config.emergency_restart_interval)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">69</td><td><a href="fpm_children.c.html#L69">(child->fd_stdout != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">73</td><td><a href="fpm_children.c.html#L73">(child->fd_stdout != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">78</td><td><a href="fpm_children.c.html#L78">(child->fd_stderr != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">82</td><td><a href="fpm_children.c.html#L82">(child->fd_stderr != -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">132</td><td><a href="fpm_children.c.html#L132">(child->pid == pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">443</td><td><a href="fpm_children.c.html#L443">(wp->running_children < max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">458</td><td><a href="fpm_children.c.html#L458">(!wp->ondemand_event)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">275</td><td><a href="fpm_children.c.html#L275">(fault == fpm_global_config.emergency_restart_threshold)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">279</td><td><a href="fpm_children.c.html#L279">(i < fpm_global_config.emergency_restart_threshold)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">59</td><td><a href="fpm_children.c.html#L59">(child->log_stream)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">99</td><td><a href="fpm_children.c.html#L99">(child->next)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">112</td><td><a href="fpm_children.c.html#L112">(child->prev)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">118</td><td><a href="fpm_children.c.html#L118">(child->next)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="fpm_children.c.html#L204">(WEXITSTATUS(status) != FPM_EXIT_OK)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">229</td><td><a href="fpm_children.c.html#L229">(WTERMSIG(status) != SIGQUIT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">322</td><td><a href="fpm_children.c.html#L322">(0 > fpm_stdio_prepare_pipes(c))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">327</td><td><a href="fpm_children.c.html#L327">(0 > fpm_scoreboard_proc_alloc(c))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">408</td><td><a href="fpm_children.c.html#L408">(0 > fpm_signals_child_block())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">489</td><td><a href="fpm_children.c.html#L489">(0 > fpm_cleanup_add(FPM_CLEANUP_ALL, fpm_children_cleanup, 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">216</td><td><a href="fpm_children.c.html#L216">(signame == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">297</td><td><a href="fpm_children.c.html#L297">(fpm_globals.is_child)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">256</td><td><a href="fpm_children.c.html#L256">(!fpm_pctl_can_spawn_children())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">47</td><td><a href="fpm_children.c.html#L47">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">140</td><td><a href="fpm_children.c.html#L140">(!child)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">314</td><td><a href="fpm_children.c.html#L314">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">376</td><td><a href="fpm_children.c.html#L376">(!in_event_loop)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">382</td><td><a href="fpm_children.c.html#L382">(!in_event_loop)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">403</td><td><a href="fpm_children.c.html#L403">(!child)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">482</td><td><a href="fpm_children.c.html#L482">(!last_faults)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">193</td><td><a href="fpm_children.c.html#L193">(WIFEXITED(status))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">208</td><td><a href="fpm_children.c.html#L208">(WIFSIGNALED(status))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="fpm_children.c.html#L232">(WIFSTOPPED(status))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">70</td><td><a href="fpm_children.c.html#L70">(in_event_loop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">79</td><td><a href="fpm_children.c.html#L79">(in_event_loop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">137</td><td><a href="fpm_children.c.html#L137">(child)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">243</td><td><a href="fpm_children.c.html#L243">(child)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="fpm_children.c.html#L255">(restart_child)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">286</td><td><a href="fpm_children.c.html#L286">(restart_condition)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">294</td><td><a href="fpm_children.c.html#L294">(restart_child)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

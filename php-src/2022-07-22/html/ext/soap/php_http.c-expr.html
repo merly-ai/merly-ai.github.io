@@ -1,0 +1,293 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\soap\php_http.c Ctrl Expressions (242) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\soap\php_http.c Ctrl Expressions (242) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\soap\php_http.c Ctrl Expressions (242)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">124</td><td><a href="php_http.c.html#L124">((name_len != sizeof("host") - 1 || strncasecmp(s, "host", sizeof("host") - 1) != 0) && (name_len != sizeof("connection") - 1 || strncasecmp(s, "connection", sizeof("connection") - 1) != 0) && (name_len != sizeof("user-agent") - 1 || strncasecmp(s, "user-agent", sizeof("user-agent") - 1) != 0) && (name_len != sizeof("content-length") - 1 || strncasecmp(s, "content-length", sizeof("content-length") - 1) != 0) && (name_len != sizeof("content-type") - 1 || strncasecmp(s, "content-type", sizeof("content-type") - 1) != 0) && (<span style='background-color:#741da3;'>!has_cookies || name_len != sizeof("cookie") - 1 || strncasecmp(s, "cookie", sizeof("cookie") - 1) != 0</span>) && (<span style='background-color:#741da3;'>!has_authorization || name_len != sizeof("authorization") - 1 || strncasecmp(s, "authorization", sizeof("authorization") - 1) != 0</span>) && (<span style='background-color:#741da3;'>!has_proxy_authorization || name_len != sizeof("proxy-authorization") - 1 || strncasecmp(s, "proxy-authorization", sizeof("proxy-authorization") - 1) != 0</span>))</a></td><td class="num">3079.25</td></tr>
+      <tr><td class="num line">486</td><td><a href="php_http.c.html#L486">(Z_TYPE_P(tmp) == IS_RESOURCE && (orig = (php_url *)zend_fetch_resource_ex(tmp, "httpurl", le_url)) != NULL && ((use_proxy && !use_ssl) || (<span style='background-color:#9c4c02;'>((<span style='background-color:#741da3;'>use_ssl && orig->scheme != NULL && zend_string_equals_literal(orig->scheme, "https")</span>) || (!use_ssl && orig->scheme == NULL) || (!use_ssl && !zend_string_equals_literal(orig->scheme, "https"))) && zend_string_equals(orig->host, phpurl->host) && orig->port == phpurl->port</span>)))</a></td><td class="num">1155.50</td></tr>
+      <tr><td class="num line">1148</td><td><a href="php_http.c.html#L1148">(<span style='background-color:#741da3;'>auth && strstr(auth, "Digest") == auth && Z_TYPE_P(digest) != IS_ARRAY && Z_TYPE_P(login) == IS_STRING && Z_TYPE_P(password) == IS_STRING</span>)</a></td><td class="num">1021.25</td></tr>
+      <tr><td class="num line">838</td><td><a href="php_http.c.html#L838">(<span style='background-color:#9c4c02;'>((tmp = zend_hash_index_find(Z_ARRVAL_P(data), 1)) == NULL || Z_TYPE_P(tmp) != IS_STRING || strncmp(phpurl->path ? ZSTR_VAL(phpurl->path) : "/", Z_STRVAL_P(tmp), Z_STRLEN_P(tmp)) == 0) && ((tmp = zend_hash_index_find(Z_ARRVAL_P(data), 2)) == NULL || Z_TYPE_P(tmp) != IS_STRING || in_domain(ZSTR_VAL(phpurl->host), Z_STRVAL_P(tmp))) && (use_ssl || (tmp = zend_hash_index_find(Z_ARRVAL_P(data), 3)) == NULL)</span>)</a></td><td class="num">207.75</td></tr>
+      <tr><td class="num line">696</td><td><a href="php_http.c.html#L696">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "algorithm", sizeof("algorithm") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING && Z_STRLEN_P(tmp) == sizeof("md5-sess") - 1 && stricmp(Z_STRVAL_P(tmp), "md5-sess") == 0)</a></td><td class="num">51.50</td></tr>
+      <tr><td class="num line">1364</td><td><a href="php_http.c.html#L1364">(eol > tmp && (*(eol - 1) == ' ' || *(eol - 1) == '\t'))</a></td><td class="num">50.95</td></tr>
+      <tr><td class="num line">673</td><td><a href="php_http.c.html#L673">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "nc", sizeof("nc") - 1)) != NULL && Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="php_http.c.html#L685">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "realm", sizeof("realm") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="php_http.c.html#L703">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "nonce", sizeof("nonce") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">731</td><td><a href="php_http.c.html#L731">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "nonce", sizeof("nonce") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">736</td><td><a href="php_http.c.html#L736">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "qop", sizeof("qop") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">752</td><td><a href="php_http.c.html#L752">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "realm", sizeof("realm") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="php_http.c.html#L757">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "nonce", sizeof("nonce") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">776</td><td><a href="php_http.c.html#L776">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "qop", sizeof("qop") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="php_http.c.html#L787">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "opaque", sizeof("opaque") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">792</td><td><a href="php_http.c.html#L792">((tmp = zend_hash_str_find(Z_ARRVAL_P(digest), "algorithm", sizeof("algorithm") - 1)) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">835</td><td><a href="php_http.c.html#L835">((value = zend_hash_index_find(Z_ARRVAL_P(data), 0)) != NULL && Z_TYPE_P(value) == IS_STRING)</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">1109</td><td><a href="php_http.c.html#L1109">(new_url->path && ZSTR_VAL(new_url->path)[0] != '/')</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">614</td><td><a href="php_http.c.html#L614">(context && (tmp = php_stream_context_get_option(context, "http", "content_type")) != NULL && Z_TYPE_P(tmp) == IS_STRING && Z_STRLEN_P(tmp) > 0)</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">631</td><td><a href="php_http.c.html#L631">(context && (tmp = php_stream_context_get_option(context, "http", "content_type")) != NULL && Z_TYPE_P(tmp) == IS_STRING && Z_STRLEN_P(tmp) > 0)</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">540</td><td><a href="php_http.c.html#L540">(context && (tmp = php_stream_context_get_option(context, "http", "protocol_version")) != NULL && Z_TYPE_P(tmp) == IS_DOUBLE && Z_DVAL_P(tmp) == 1.0)</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1494</td><td><a href="php_http.c.html#L1494">((headerbuf[0] == '\r' && headerbuf[1] == '\n') || (headerbuf[0] == '\n'))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1545</td><td><a href="php_http.c.html#L1545">((headerbuf[0] == '\r' && headerbuf[1] == '\n') || (headerbuf[0] == '\n'))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">92</td><td><a href="php_http.c.html#L92">(context && (tmp = php_stream_context_get_option(context, "http", "header")) != NULL && Z_TYPE_P(tmp) == IS_STRING && Z_STRLEN_P(tmp))</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">595</td><td><a href="php_http.c.html#L595">(context && (tmp = php_stream_context_get_option(context, "http", "user_agent")) != NULL && Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">237</td><td><a href="php_http.c.html#L237">(!context || (tmp = php_stream_context_get_option(context, "ssl", "peer_name")) == NULL)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">433</td><td><a href="php_http.c.html#L433">(context && (tmp = php_stream_context_get_option(context, "http", "max_redirects")) != NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">455</td><td><a href="php_http.c.html#L455">(phpurl->scheme == NULL || !zend_string_equals_literal(phpurl->scheme, "http"))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">396</td><td><a href="php_http.c.html#L396">(call_user_function(CG(function_table), (zval*)NULL, &func, &retval, n, params) == SUCCESS && Z_TYPE(retval) == IS_STRING)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1272</td><td><a href="php_http.c.html#L1272">(call_user_function(CG(function_table), (zval*)NULL, &func, &retval, 1, params) == SUCCESS && Z_TYPE(retval) == IS_STRING)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">1098</td><td><a href="php_http.c.html#L1098">((loc = get_http_header_value(ZSTR_VAL(http_headers), "Location: ")) != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1253</td><td><a href="php_http.c.html#L1253">((strcmp(content_encoding, "gzip") == 0 || strcmp(content_encoding, "x-gzip") == 0) && zend_hash_str_exists(EG(function_table), "gzinflate", sizeof("gzinflate") - 1))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">435</td><td><a href="php_http.c.html#L435">(Z_TYPE_P(tmp) != IS_STRING || !is_numeric_string(Z_STRVAL_P(tmp), Z_STRLEN_P(tmp), &redirect_max, NULL, 1))</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">257</td><td><a href="php_http.c.html#L257">(php_stream_write(stream, ZSTR_VAL(soap_headers.s), ZSTR_LEN(soap_headers.s)) != ZSTR_LEN(soap_headers.s))</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="php_http.c.html#L101">(*s == ' ' || *s == '\t' || *s == '\r' || *s == '\n')</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="php_http.c.html#L826">(zend_hash_num_elements(Z_ARRVAL_P(cookies)) != 0 && !HT_IS_PACKED(Z_ARRVAL_P(cookies)))</a></td><td class="num">22.00</td></tr>
+      <tr><td class="num line">581</td><td><a href="php_http.c.html#L581">(!http_1_1 || Z_TYPE_P(Z_CLIENT_KEEP_ALIVE_P(this_ptr)) == IS_FALSE)</a></td><td class="num">21.50</td></tr>
+      <tr><td class="num line">1169</td><td><a href="php_http.c.html#L1169">(*s != '\0' && *s != ' ' && *s != ',')</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">120</td><td><a href="php_http.c.html#L120">(*p && *p != '\r' && *p != '\n')</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">1105</td><td><a href="php_http.c.html#L1105">(new_url->scheme == NULL && new_url->path != NULL)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">453</td><td><a href="php_http.c.html#L453">(phpurl->scheme != NULL && zend_string_equals_literal(phpurl->scheme, "https"))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">964</td><td><a href="php_http.c.html#L964">(eqpos != NULL && (sempos == NULL || sempos > eqpos))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1159</td><td><a href="php_http.c.html#L1159">(*s != '\0' && *s != '=')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1166</td><td><a href="php_http.c.html#L1166">(*s != '\0' && *s != '"')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1175</td><td><a href="php_http.c.html#L1175">(*s != '\0' && *s != ',')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1306</td><td><a href="php_http.c.html#L1306">(*s != '\0' && *s < ' ')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">111</td><td><a href="php_http.c.html#L111">(*p == ' ' || *p == '\t')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">113</td><td><a href="php_http.c.html#L113">(*p == '\r' || *p == '\n')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1351</td><td><a href="php_http.c.html#L1351">(*tmp == ' ' || *tmp == '\t')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="php_http.c.html#L424">(location != NULL && location[0] != '\000')</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">442</td><td><a href="php_http.c.html#L442">(phpurl == NULL || phpurl->host == NULL)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">957</td><td><a href="php_http.c.html#L957">((cookie_itt = get_http_header_value_nodup(cookie_itt, "Set-Cookie: ", &cookie_len)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">62</td><td><a href="php_http.c.html#L62">(Z_TYPE_P(login) == IS_STRING && Z_TYPE_P(use_digest) != IS_TRUE)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">168</td><td><a href="php_http.c.html#L168">(Z_TYPE_P(proxy_host) == IS_STRING && Z_TYPE_P(proxy_port) == IS_LONG)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">178</td><td><a href="php_http.c.html#L178">(Z_TYPE_P(tmp) == IS_LONG && Z_LVAL_P(tmp) > 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">233</td><td><a href="php_http.c.html#L233">(stream && *use_proxy && use_ssl)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1095</td><td><a href="php_http.c.html#L1095">(http_status >= 300 && http_status < 400)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="php_http.c.html#L577">(phpurl->port != (use_ssl ? 443 : 80))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">301</td><td><a href="php_http.c.html#L301">(php_stream_xport_crypto_setup(stream, crypto_method, NULL) < 0 || php_stream_xport_crypto_enable(stream, 1) < 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1227</td><td><a href="php_http.c.html#L1227">(strncmp(content_type, "text/xml", cmplen) == 0 || strncmp(content_type, "application/soap+xml", cmplen) == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">362</td><td><a href="php_http.c.html#L362">(this_ptr == NULL || Z_TYPE_P(this_ptr) != IS_OBJECT)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">188</td><td><a href="php_http.c.html#L188">(use_ssl && !*use_proxy)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1258</td><td><a href="php_http.c.html#L1258">(strcmp(content_encoding, "deflate") == 0 && zend_hash_str_exists(EG(function_table), "gzuncompress", sizeof("gzuncompress") - 1))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1359</td><td><a href="php_http.c.html#L1359">(*(eol - 1) == '\r')</a></td><td class="num">6.85</td></tr>
+      <tr><td class="num line">1506</td><td><a href="php_http.c.html#L1506">(header_length < 0 || header_length >= INT_MAX)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">467</td><td><a href="php_http.c.html#L467">(use_ssl && php_stream_locate_url_wrapper("https://", NULL, STREAM_LOCATE_WRAPPERS_ONLY) == NULL)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="php_http.c.html#L505">(stream != NULL && php_stream_eof(stream))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">832</td><td><a href="php_http.c.html#L832">(key && Z_TYPE_P(data) == IS_ARRAY)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="php_http.c.html#L375">((Z_LVAL_P(tmp) & SOAP_COMPRESSION_ACCEPT) != 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1439</td><td><a href="php_http.c.html#L1439">(http_buf_size + buf_size + 1 < 0)</a></td><td class="num">5.70</td></tr>
+      <tr><td class="num line">250</td><td><a href="php_http.c.html#L250">(phpurl->port != 80)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="php_http.c.html#L478">(phpurl->port == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1133</td><td><a href="php_http.c.html#L1133">(redirect_max-- < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1420</td><td><a href="php_http.c.html#L1420">(!header_length && !header_chunked)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1435</td><td><a href="php_http.c.html#L1435">(sscanf(headerbuf, "%x", &buf_size) > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">108</td><td><a href="php_http.c.html#L108">(*p == ':')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">118</td><td><a href="php_http.c.html#L118">(*p == ':')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="php_http.c.html#L550">(use_proxy && !use_ssl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">819</td><td><a href="php_http.c.html#L819">(use_proxy && !use_ssl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">984</td><td><a href="php_http.c.html#L984">(*options == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1025</td><td><a href="php_http.c.html#L1025">(use_proxy && !use_ssl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1045</td><td><a href="php_http.c.html#L1045">(use_proxy && !use_ssl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1155</td><td><a href="php_http.c.html#L1155">(*s != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1157</td><td><a href="php_http.c.html#L1157">(*s == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1160</td><td><a href="php_http.c.html#L1160">(*s == '=')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1163</td><td><a href="php_http.c.html#L1163">(*s == '"')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1171</td><td><a href="php_http.c.html#L1171">(*s != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1172</td><td><a href="php_http.c.html#L1172">(*s != ',')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1176</td><td><a href="php_http.c.html#L1176">(*s != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">315</td><td><a href="php_http.c.html#L315">(domain[0] == '.')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">870</td><td><a href="php_http.c.html#L870">(err != ZSTR_LEN(soap_headers.s))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">557</td><td><a href="php_http.c.html#L557">(phpurl->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="php_http.c.html#L562">(phpurl->query)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="php_http.c.html#L566">(phpurl->fragment)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">715</td><td><a href="php_http.c.html#L715">(phpurl->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="php_http.c.html#L720">(phpurl->query)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="php_http.c.html#L763">(phpurl->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="php_http.c.html#L768">(phpurl->query)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">772</td><td><a href="php_http.c.html#L772">(phpurl->fragment)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1110</td><td><a href="php_http.c.html#L1110">(phpurl->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1196</td><td><a href="php_http.c.html#L1196">(phpurl->scheme)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1197</td><td><a href="php_http.c.html#L1197">(phpurl->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="php_http.c.html#L1198">(phpurl->pass)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1199</td><td><a href="php_http.c.html#L1199">(phpurl->host)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1200</td><td><a href="php_http.c.html#L1200">(phpurl->path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1201</td><td><a href="php_http.c.html#L1201">(phpurl->query)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1202</td><td><a href="php_http.c.html#L1202">(phpurl->fragment)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">860</td><td><a href="php_http.c.html#L860">(Z_TYPE_P(Z_CLIENT_TRACE_P(this_ptr)) == IS_TRUE)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">911</td><td><a href="php_http.c.html#L911">(Z_TYPE_P(Z_CLIENT_TRACE_P(this_ptr)) == IS_TRUE)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">36</td><td><a href="php_http.c.html#L36">(Z_TYPE_P(login) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">42</td><td><a href="php_http.c.html#L42">(Z_TYPE_P(password) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">68</td><td><a href="php_http.c.html#L68">(Z_TYPE_P(password) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">190</td><td><a href="php_http.c.html#L190">(Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">278</td><td><a href="php_http.c.html#L278">(Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">369</td><td><a href="php_http.c.html#L369">(Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">414</td><td><a href="php_http.c.html#L414">(Z_TYPE_P(tmp) == IS_RESOURCE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="php_http.c.html#L417">(Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">429</td><td><a href="php_http.c.html#L429">(Z_TYPE_P(tmp) == IS_RESOURCE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">436</td><td><a href="php_http.c.html#L436">(Z_TYPE_P(tmp) == IS_LONG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">589</td><td><a href="php_http.c.html#L589">(Z_TYPE_P(tmp) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">590</td><td><a href="php_http.c.html#L590">(Z_STRLEN_P(tmp) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">598</td><td><a href="php_http.c.html#L598">(Z_STRLEN_P(tmp) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">654</td><td><a href="php_http.c.html#L654">(Z_TYPE_P(login) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">658</td><td><a href="php_http.c.html#L658">(Z_TYPE_P(digest) == IS_ARRAY)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">691</td><td><a href="php_http.c.html#L691">(Z_TYPE_P(password) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">805</td><td><a href="php_http.c.html#L805">(Z_TYPE_P(password) == IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">986</td><td><a href="php_http.c.html#L986">(strstr(options, "path=") == options)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">989</td><td><a href="php_http.c.html#L989">(strstr(options, "domain=") == options)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">992</td><td><a href="php_http.c.html#L992">(strstr(options, "secure") == options)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1028</td><td><a href="php_http.c.html#L1028">(strncasecmp(connection, "close", sizeof("close") - 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1037</td><td><a href="php_http.c.html#L1037">(strncasecmp(connection, "close", sizeof("close") - 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1048</td><td><a href="php_http.c.html#L1048">(strncasecmp(connection, "Keep-Alive", sizeof("Keep-Alive") - 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1057</td><td><a href="php_http.c.html#L1057">(strncasecmp(connection, "Keep-Alive", sizeof("Keep-Alive") - 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1182</td><td><a href="php_http.c.html#L1182">(Z_TYPE(digest) == IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1189</td><td><a href="php_http.c.html#L1189">(Z_TYPE(digest) != IS_UNDEF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1300</td><td><a href="php_http.c.html#L1300">(Z_STRLEN_P(return_value) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1302</td><td><a href="php_http.c.html#L1302">(Z_STRLEN_P(return_value) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1344</td><td><a href="php_http.c.html#L1344">(strncasecmp(pos, type, typelen) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">99</td><td><a href="php_http.c.html#L99">(*s)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">107</td><td><a href="php_http.c.html#L107">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">109</td><td><a href="php_http.c.html#L109">(name_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">112</td><td><a href="php_http.c.html#L112">(name_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="php_http.c.html#L318">(l1 > l2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="php_http.c.html#L373">(level > 9)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">378</td><td><a href="php_http.c.html#L378">(level > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">386</td><td><a href="php_http.c.html#L386">(kind == SOAP_COMPRESSION_DEFLATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">404</td><td><a href="php_http.c.html#L404">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="php_http.c.html#L443">(phpurl != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="php_http.c.html#L444">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">457</td><td><a href="php_http.c.html#L457">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="php_http.c.html#L469">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">483</td><td><a href="php_http.c.html#L483">(stream != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="php_http.c.html#L523">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">613</td><td><a href="php_http.c.html#L613">(soap_version == SOAP_1_2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="php_http.c.html#L871">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">900</td><td><a href="php_http.c.html#L900">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">928</td><td><a href="php_http.c.html#L928">(tmp != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="php_http.c.html#L933">(tmp != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">943</td><td><a href="php_http.c.html#L943">(http_status == 100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">947</td><td><a href="php_http.c.html#L947">(http_status == 100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">969</td><td><a href="php_http.c.html#L969">(sempos != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">981</td><td><a href="php_http.c.html#L981">(sempos != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="php_http.c.html#L983">(*options)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="php_http.c.html#L995">(sempos != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="php_http.c.html#L1034">(http_close == false)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1054</td><td><a href="php_http.c.html#L1054">(http_close == true)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="php_http.c.html#L1068">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1083</td><td><a href="php_http.c.html#L1083">(request != buf)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1101</td><td><a href="php_http.c.html#L1101">(new_url != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1142</td><td><a href="php_http.c.html#L1142">(http_status == 401)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="php_http.c.html#L1222">(pos != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="php_http.c.html#L1297">(http_status >= 400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1356</td><td><a href="php_http.c.html#L1356">(eol == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1358</td><td><a href="php_http.c.html#L1358">(eol > tmp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1436</td><td><a href="php_http.c.html#L1436">(buf_size > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1452</td><td><a href="php_http.c.html#L1452">(len_size < buf_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1454</td><td><a href="php_http.c.html#L1454">(len_read <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1465</td><td><a href="php_http.c.html#L1465">(ch == '\r')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1468</td><td><a href="php_http.c.html#L1468">(ch != '\n')</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="php_http.c.html#L1483">(buf_size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1501</td><td><a href="php_http.c.html#L1501">(http_buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="php_http.c.html#L1510">(http_buf_size < header_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1512</td><td><a href="php_http.c.html#L1512">(len_read <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="php_http.c.html#L1526">(len_read > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1002</td><td><a href="php_http.c.html#L1002">(!zend_hash_index_exists(Z_ARRVAL(zcookie), 1))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1009</td><td><a href="php_http.c.html#L1009">(!zend_hash_index_exists(Z_ARRVAL(zcookie), 2))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="php_http.c.html#L923">(!strncmp(http_version, "1.1", 3))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1407</td><td><a href="php_http.c.html#L1407">(!strncasecmp(header, "close", sizeof("close") - 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1413</td><td><a href="php_http.c.html#L1413">(!strncasecmp(header, "chunked", sizeof("chunked") - 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1490</td><td><a href="php_http.c.html#L1490">(!php_stream_gets(stream, headerbuf, sizeof(headerbuf)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1529</td><td><a href="php_http.c.html#L1529">(!php_stream_eof(stream))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">514</td><td><a href="php_http.c.html#L514">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">889</td><td><a href="php_http.c.html#L889">(!return_value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">899</td><td><a href="php_http.c.html#L899">(!http_headers)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1067</td><td><a href="php_http.c.html#L1067">(!http_body)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1303</td><td><a href="php_http.c.html#L1303">(!content_type_xml)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1404</td><td><a href="php_http.c.html#L1404">(!close)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1431</td><td><a href="php_http.c.html#L1431">(!done)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">603</td><td><a href="php_http.c.html#L603">(FG(user_agent))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1309</td><td><a href="php_http.c.html#L1309">(strncmp(s, "<?xml", 5))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1544</td><td><a href="php_http.c.html#L1544">(php_stream_gets(stream, headerbuf, sizeof(headerbuf)))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="php_http.c.html#L263">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">265</td><td><a href="php_http.c.html#L265">(http_headers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">273</td><td><a href="php_http.c.html#L273">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">516</td><td><a href="php_http.c.html#L516">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">534</td><td><a href="php_http.c.html#L534">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="php_http.c.html#L570">(http_1_1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">624</td><td><a href="php_http.c.html#L624">(soapaction)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">642</td><td><a href="php_http.c.html#L642">(soapaction)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">920</td><td><a href="php_http.c.html#L920">(http_version)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">935</td><td><a href="php_http.c.html#L935">(http_msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1005</td><td><a href="php_http.c.html#L1005">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1023</td><td><a href="php_http.c.html#L1023">(http_1_1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1027</td><td><a href="php_http.c.html#L1027">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1036</td><td><a href="php_http.c.html#L1036">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1047</td><td><a href="php_http.c.html#L1047">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="php_http.c.html#L1056">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1076</td><td><a href="php_http.c.html#L1076">(http_msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1087</td><td><a href="php_http.c.html#L1087">(http_close)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1113</td><td><a href="php_http.c.html#L1113">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1212</td><td><a href="php_http.c.html#L1212">(auth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1218</td><td><a href="php_http.c.html#L1218">(content_type)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1248</td><td><a href="php_http.c.html#L1248">(content_encoding)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1266</td><td><a href="php_http.c.html#L1266">(http_msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1285</td><td><a href="php_http.c.html#L1285">(http_msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1315</td><td><a href="php_http.c.html#L1315">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1324</td><td><a href="php_http.c.html#L1324">(http_msg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1375</td><td><a href="php_http.c.html#L1375">(pos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1379</td><td><a href="php_http.c.html#L1379">(pos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1391</td><td><a href="php_http.c.html#L1391">(value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1406</td><td><a href="php_http.c.html#L1406">(header)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1412</td><td><a href="php_http.c.html#L1412">(header)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1417</td><td><a href="php_http.c.html#L1417">(header)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1426</td><td><a href="php_http.c.html#L1426">(header_chunked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1440</td><td><a href="php_http.c.html#L1440">(http_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1446</td><td><a href="php_http.c.html#L1446">(http_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1470</td><td><a href="php_http.c.html#L1470">(http_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1478</td><td><a href="php_http.c.html#L1478">(http_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1489</td><td><a href="php_http.c.html#L1489">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1505</td><td><a href="php_http.c.html#L1505">(header_length)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1517</td><td><a href="php_http.c.html#L1517">(header_close)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1520</td><td><a href="php_http.c.html#L1520">(http_buf)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

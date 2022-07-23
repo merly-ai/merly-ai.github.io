@@ -1,0 +1,501 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>systemd Repo - src\libsystemd\sd-bus\sd-bus.c Ctrl Expressions (450) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\libsystemd\sd-bus\sd-bus.c Ctrl Expressions (450) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\libsystemd\sd-bus\sd-bus.c Ctrl Expressions (450)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1898</td><td><a href="sd-bus.c.html#L1898">(<span style='background-color:#741da3;'>BUS_MESSAGE_COOKIE(incoming) == cookie && bus->unique_name && incoming->sender && streq(bus->unique_name, incoming->sender)</span>)</a></td><td class="num">1024.50</td></tr>
+      <tr><td class="num line">989</td><td><a href="sd-bus.c.html#L989">(<span style='background-color:#741da3;'>bus->address || bus->sockaddr.sa.sa_family != AF_UNSPEC || bus->exec_path || bus->machine</span>)</a></td><td class="num">1021.00</td></tr>
+      <tr><td class="num line">1876</td><td><a href="sd-bus.c.html#L1876">(<span style='background-color:#741da3;'>incoming->n_fds <= 0 || (bus->hello_flags & KDBUS_HELLO_ACCEPT_FD)</span>)</a></td><td class="num">1014.25</td></tr>
+      <tr><td class="num line">1614</td><td><a href="sd-bus.c.html#L1614">((bus->state == BUS_RUNNING || bus->state == BUS_HELLO) && bus->wqueue_size <= 0)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">1426</td><td><a href="sd-bus.c.html#L1426">(b->message_version != 0 && b->message_version != (*m)->header->version)</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">1430</td><td><a href="sd-bus.c.html#L1430">(b->message_endian != 0 && b->message_endian != (*m)->header->endian)</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">910</td><td><a href="sd-bus.c.html#L910">((b->nspid > 0 || b->machine) && b->sockaddr.sa.sa_family != AF_UNSPEC)</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">2151</td><td><a href="sd-bus.c.html#L2151">(m->destination && bus->unique_name && !streq_ptr(m->destination, bus->unique_name))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">1322</td><td><a href="sd-bus.c.html#L1322">(bus->state != BUS_OPENING && bus->state != BUS_AUTHENTICATING && bus->state != BUS_HELLO && bus->state != BUS_RUNNING)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">2162</td><td><a href="sd-bus.c.html#L2162">(m->n_fds > 0 && !(bus->hello_flags & KDBUS_HELLO_ACCEPT_FD))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">535</td><td><a href="sd-bus.c.html#L535">(**p != 0 && **p != ';')</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">600</td><td><a href="sd-bus.c.html#L600">(**p != 0 && **p != ';')</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="sd-bus.c.html#L668">(**p != 0 && **p != ';')</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">758</td><td><a href="sd-bus.c.html#L758">(**p != 0 && **p != ';')</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">1534</td><td><a href="sd-bus.c.html#L1534">(!GREEDY_REALLOC(bus->rqueue, bus->rqueue_allocated, bus->rqueue_size + 1))</a></td><td class="num">29.35</td></tr>
+      <tr><td class="num line">1644</td><td><a href="sd-bus.c.html#L1644">(!GREEDY_REALLOC(bus->wqueue, bus->wqueue_allocated, bus->wqueue_size + 1))</a></td><td class="num">29.35</td></tr>
+      <tr><td class="num line">686</td><td><a href="sd-bus.c.html#L686">(errno > 0 || **p != '=' || ul > 256)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">1983</td><td><a href="sd-bus.c.html#L1983">(!BUS_IS_OPEN(bus->state) && bus->state != BUS_CLOSING)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2012</td><td><a href="sd-bus.c.html#L2012">(!BUS_IS_OPEN(bus->state) && bus->state != BUS_CLOSING)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1499</td><td><a href="sd-bus.c.html#L1499">(bus->windex >= BUS_MESSAGE_SIZE(bus->wqueue[0]))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">466</td><td><a href="sd-bus.c.html#L466">(*a != ';' && *a != ',' && *a != 0)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">1791</td><td><a href="sd-bus.c.html#L1791">(bus->state == BUS_UNSET || bus->state == BUS_CLOSED || bus->state == BUS_CLOSING)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">2127</td><td><a href="sd-bus.c.html#L2127">(m->header->type != SD_BUS_MESSAGE_METHOD_RETURN && m->header->type != SD_BUS_MESSAGE_METHOD_ERROR)</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">2147</td><td><a href="sd-bus.c.html#L2147">(m->header->type != SD_BUS_MESSAGE_METHOD_RETURN && m->header->type != SD_BUS_MESSAGE_METHOD_ERROR)</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">1697</td><td><a href="sd-bus.c.html#L1697">(x->timeout != 0 && y->timeout == 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1700</td><td><a href="sd-bus.c.html#L1700">(x->timeout == 0 && y->timeout != 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2030</td><td><a href="sd-bus.c.html#L2030">(bus->state != BUS_RUNNING && bus->state != BUS_HELLO)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1995</td><td><a href="sd-bus.c.html#L1995">(bus->state == BUS_RUNNING || bus->state == BUS_HELLO)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2733</td><td><a href="sd-bus.c.html#L2733">(timeout_usec != (uint64_t)-1 && (m == (uint64_t)-1 || timeout_usec < m))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">116</td><td><a href="sd-bus.c.html#L116">((s = b->slots))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">830</td><td><a href="sd-bus.c.html#L830">(b->address[b->address_index] == 0)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">984</td><td><a href="sd-bus.c.html#L984">(bus->is_server && bus->bus_client)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3455</td><td><a href="sd-bus.c.html#L3455">(sep - path_pos < (ssize_t)length || strncmp(sep - length, template_pos, length))</a></td><td class="num">9.45</td></tr>
+      <tr><td class="num line">84</td><td><a href="sd-bus.c.html#L84">(b->input_fd != b->output_fd)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">959</td><td><a href="sd-bus.c.html#L959">(b->input_fd != b->output_fd)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1703</td><td><a href="sd-bus.c.html#L1703">(x->timeout < y->timeout)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1706</td><td><a href="sd-bus.c.html#L1706">(x->timeout > y->timeout)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2232</td><td><a href="sd-bus.c.html#L2232">(l->last_iteration == bus->iteration_counter)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2737</td><td><a href="sd-bus.c.html#L2737">(bus->output_fd == bus->input_fd)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2986</td><td><a href="sd-bus.c.html#L2986">(bus->output_fd != bus->input_fd)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3061</td><td><a href="sd-bus.c.html#L3061">(bus->output_fd != bus->input_fd)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1596</td><td><a href="sd-bus.c.html#L1596">(!cookie && !m->sealed)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2299</td><td><a href="sd-bus.c.html#L2299">(m->header->flags & BUS_MESSAGE_NO_REPLY_EXPECTED)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">969</td><td><a href="sd-bus.c.html#L969">(fstat(b->input_fd, &st) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">725</td><td><a href="sd-bus.c.html#L725">(argv && argv[0] == NULL)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">191</td><td><a href="sd-bus.c.html#L191">(!GREEDY_REALLOC(r->wqueue, r->wqueue_allocated, 1))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1874</td><td><a href="sd-bus.c.html#L1874">(incoming->header->type == SD_BUS_MESSAGE_METHOD_RETURN)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1889</td><td><a href="sd-bus.c.html#L1889">(incoming->header->type == SD_BUS_MESSAGE_METHOD_ERROR)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2293</td><td><a href="sd-bus.c.html#L2293">(m->header->type != SD_BUS_MESSAGE_METHOD_CALL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2354</td><td><a href="sd-bus.c.html#L2354">(m->header->type != SD_BUS_MESSAGE_METHOD_CALL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2451</td><td><a href="sd-bus.c.html#L2451">(m->header->type == SD_BUS_MESSAGE_METHOD_CALL)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">395</td><td><a href="sd-bus.c.html#L395">(!service_name_is_valid(s) || s[0] != ':')</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1374</td><td><a href="sd-bus.c.html#L1374">(!(bus->hello_flags & KDBUS_HELLO_ACCEPT_FD))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="sd-bus.c.html#L913">(b->sockaddr.sa.sa_family != AF_UNSPEC)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">521</td><td><a href="sd-bus.c.html#L521">(**p == ',')</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1767</td><td><a href="sd-bus.c.html#L1767">(s->reply_callback.timeout != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1370</td><td><a href="sd-bus.c.html#L1370">(bus->hello_flags & KDBUS_HELLO_MONITOR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1442</td><td><a href="sd-bus.c.html#L1442">(b->attach_flags & KDBUS_ATTACH_TIMESTAMP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2287</td><td><a href="sd-bus.c.html#L2287">(bus->hello_flags & KDBUS_HELLO_MONITOR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2345</td><td><a href="sd-bus.c.html#L2345">(bus->hello_flags & KDBUS_HELLO_MONITOR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2351</td><td><a href="sd-bus.c.html#L2351">(bus->hello_flags & KDBUS_HELLO_ACCEPT_FD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="sd-bus.c.html#L456">((*p)[l] != '=')</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="sd-bus.c.html#L2470">(r >= 0 && ret)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3480</td><td><a href="sd-bus.c.html#L3480">(label_pos && *label_pos)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">92</td><td><a href="sd-bus.c.html#L92">(b->rqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">98</td><td><a href="sd-bus.c.html#L98">(b->wqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="sd-bus.c.html#L294">(bus->attach_flags == new_flags)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">317</td><td><a href="sd-bus.c.html#L317">(bus->attach_flags == new_flags)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">402</td><td><a href="sd-bus.c.html#L402">(bus->state == BUS_HELLO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">987</td><td><a href="sd-bus.c.html#L987">(bus->input_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1292</td><td><a href="sd-bus.c.html#L1292">(bus->state == BUS_CLOSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1443</td><td><a href="sd-bus.c.html#L1443">(m->realtime <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1446</td><td><a href="sd-bus.c.html#L1446">(m->monotonic <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1491</td><td><a href="sd-bus.c.html#L1491">(bus->wqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1531</td><td><a href="sd-bus.c.html#L1531">(bus->rqueue_size >= BUS_RQUEUE_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1552</td><td><a href="sd-bus.c.html#L1552">(bus->rqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1586</td><td><a href="sd-bus.c.html#L1586">(m->n_fds > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1641</td><td><a href="sd-bus.c.html#L1641">(bus->wqueue_size >= BUS_WQUEUE_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1793</td><td><a href="sd-bus.c.html#L1793">(bus->state == BUS_RUNNING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1800</td><td><a href="sd-bus.c.html#L1800">(bus->state == BUS_RUNNING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1862</td><td><a href="sd-bus.c.html#L1862">(i < bus->rqueue_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1867</td><td><a href="sd-bus.c.html#L1867">(incoming->reply_cookie == cookie)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1986</td><td><a href="sd-bus.c.html#L1986">(bus->state == BUS_OPENING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1988</td><td><a href="sd-bus.c.html#L1988">(bus->state == BUS_AUTHENTICATING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1996</td><td><a href="sd-bus.c.html#L1996">(bus->rqueue_size <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1998</td><td><a href="sd-bus.c.html#L1998">(bus->wqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2020</td><td><a href="sd-bus.c.html#L2020">(bus->state == BUS_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2025</td><td><a href="sd-bus.c.html#L2025">(bus->state == BUS_AUTHENTICATING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2035</td><td><a href="sd-bus.c.html#L2035">(bus->rqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2046</td><td><a href="sd-bus.c.html#L2046">(c->timeout == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2070</td><td><a href="sd-bus.c.html#L2070">(c->timeout > n)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2119</td><td><a href="sd-bus.c.html#L2119">(bus->state != BUS_HELLO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2131</td><td><a href="sd-bus.c.html#L2131">(m->reply_cookie != 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2191</td><td><a href="sd-bus.c.html#L2191">(c->timeout != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2348</td><td><a href="sd-bus.c.html#L2348">(m->n_fds <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2522</td><td><a href="sd-bus.c.html#L2522">(c->timeout != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2703</td><td><a href="sd-bus.c.html#L2703">(bus->state == BUS_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2759</td><td><a href="sd-bus.c.html#L2759">(bus->state == BUS_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2765</td><td><a href="sd-bus.c.html#L2765">(bus->rqueue_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2777</td><td><a href="sd-bus.c.html#L2777">(bus->state == BUS_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2787</td><td><a href="sd-bus.c.html#L2787">(bus->wqueue_size <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2801</td><td><a href="sd-bus.c.html#L2801">(bus->wqueue_size <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3035</td><td><a href="sd-bus.c.html#L3035">(bus->input_fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3278</td><td><a href="sd-bus.c.html#L3278">(b->tid != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">557</td><td><a href="sd-bus.c.html#L557">(!path && !abstract)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2879</td><td><a href="sd-bus.c.html#L2879">(!s->match_callback.match_string)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1180</td><td><a href="sd-bus.c.html#L1180">(!in_charset(m, "0123456789") && machine_name_is_valid(m))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">453</td><td><a href="sd-bus.c.html#L453">(strncmp(*p, key, l) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1123</td><td><a href="sd-bus.c.html#L1123">(asprintf(&s, UNIX_USER_BUS_ADDRESS_FMT, ee) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1470</td><td><a href="sd-bus.c.html#L1470">(*idx >= BUS_MESSAGE_SIZE(m))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">469</td><td><a href="sd-bus.c.html#L469">(*a == '%')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">504</td><td><a href="sd-bus.c.html#L504">(*a == ',')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">837</td><td><a href="sd-bus.c.html#L837">(*a != 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">839</td><td><a href="sd-bus.c.html#L839">(*a == ';')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1583</td><td><a href="sd-bus.c.html#L1583">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1671</td><td><a href="sd-bus.c.html#L1671">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1674</td><td><a href="sd-bus.c.html#L1674">(!streq_ptr(m->destination, destination))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1734</td><td><a href="sd-bus.c.html#L1734">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1834</td><td><a href="sd-bus.c.html#L1834">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2296</td><td><a href="sd-bus.c.html#L2296">(!streq_ptr(m->interface, "org.freedesktop.DBus.Peer"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2706</td><td><a href="sd-bus.c.html#L2706">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2762</td><td><a href="sd-bus.c.html#L2762">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2780</td><td><a href="sd-bus.c.html#L2780">(!BUS_IS_OPEN(bus->state))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="sd-bus.c.html#L399">(!bus->unique_name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">414</td><td><a href="sd-bus.c.html#L414">(!bus->bus_client)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">828</td><td><a href="sd-bus.c.html#L828">(!b->address)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1200</td><td><a href="sd-bus.c.html#L1200">(!b->address)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1249</td><td><a href="sd-bus.c.html#L1249">(!b->address)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2405</td><td><a href="sd-bus.c.html#L2405">(!bus->track_queue)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2484</td><td><a href="sd-bus.c.html#L2484">(!bus->exit_triggered)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2486</td><td><a href="sd-bus.c.html#L2486">(!bus->exit_on_disconnect)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3038</td><td><a href="sd-bus.c.html#L3038">(!bus->event)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3041</td><td><a href="sd-bus.c.html#L3041">(!bus->input_io_event_source)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3064</td><td><a href="sd-bus.c.html#L3064">(!bus->output_io_event_source)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3152</td><td><a href="sd-bus.c.html#L3152">(!bus->event)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3522</td><td><a href="sd-bus.c.html#L3522">(!bus->cgroup_root)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">560</td><td><a href="sd-bus.c.html#L560">(path && abstract)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">628</td><td><a href="sd-bus.c.html#L628">(!host || !port)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">780</td><td><a href="sd-bus.c.html#L780">(!machine == !pid)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2302</td><td><a href="sd-bus.c.html#L2302">(streq_ptr(m->member, "Ping"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="sd-bus.c.html#L2304">(streq_ptr(m->member, "GetMachineId"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">129</td><td><a href="sd-bus.c.html#L129">(b->default_bus_ptr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">433</td><td><a href="sd-bus.c.html#L433">(bus->bus_client)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">491</td><td><a href="sd-bus.c.html#L491">(!GREEDY_REALLOC(r, allocated, n + 2))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">694</td><td><a href="sd-bus.c.html#L694">(!GREEDY_REALLOC0(argv, allocated, ul + 2))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">907</td><td><a href="sd-bus.c.html#L907">(b->exec_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1406</td><td><a href="sd-bus.c.html#L1406">(m->sealed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1611</td><td><a href="sd-bus.c.html#L1611">(m->dont_send)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2015</td><td><a href="sd-bus.c.html#L2015">(bus->track_queue)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2105</td><td><a href="sd-bus.c.html#L2105">(slot->floating)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2204</td><td><a href="sd-bus.c.html#L2204">(slot->floating)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2228</td><td><a href="sd-bus.c.html#L2228">(bus->filter_callbacks_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2257</td><td><a href="sd-bus.c.html#L2257">(bus->filter_callbacks_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2275</td><td><a href="sd-bus.c.html#L2275">(bus->match_callbacks_modified)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2290</td><td><a href="sd-bus.c.html#L2290">(bus->manual_peer_interface)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2482</td><td><a href="sd-bus.c.html#L2482">(bus->exited)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2493</td><td><a href="sd-bus.c.html#L2493">(bus->event)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="sd-bus.c.html#L2544">(slot->floating)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2568</td><td><a href="sd-bus.c.html#L2568">(bus->tracks)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2866</td><td><a href="sd-bus.c.html#L2866">(bus->bus_client)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3087</td><td><a href="sd-bus.c.html#L3087">(bus->input_io_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3092</td><td><a href="sd-bus.c.html#L3092">(bus->output_io_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3157</td><td><a href="sd-bus.c.html#L3157">(bus->time_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3162</td><td><a href="sd-bus.c.html#L3162">(bus->quit_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3283</td><td><a href="sd-bus.c.html#L3283">(b->event)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3516</td><td><a href="sd-bus.c.html#L3516">(bus->cgroup_root)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3536</td><td><a href="sd-bus.c.html#L3536">(bus->is_user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3541</td><td><a href="sd-bus.c.html#L3541">(bus->is_system)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3555</td><td><a href="sd-bus.c.html#L3555">(bus->address)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3382</td><td><a href="sd-bus.c.html#L3382">(!*sep)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">3440</td><td><a href="sd-bus.c.html#L3440">(!*template_pos)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">681</td><td><a href="sd-bus.c.html#L681">(startswith(*p, "argv"))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">720</td><td><a href="sd-bus.c.html#L720">(!argv[j])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">727</td><td><a href="sd-bus.c.html#L727">(!argv[0])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1023</td><td><a href="sd-bus.c.html#L1023">(cg_pid_get_owner_uid(0, NULL) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1627</td><td><a href="sd-bus.c.html#L1627">(idx < BUS_MESSAGE_SIZE(m))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3267</td><td><a href="sd-bus.c.html#L3267">(cg_pid_get_owner_uid(0, NULL) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">388</td><td><a href="sd-bus.c.html#L388">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="sd-bus.c.html#L392">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="sd-bus.c.html#L424">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">459</td><td><a href="sd-bus.c.html#L459">(*value)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="sd-bus.c.html#L473">(x < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">479</td><td><a href="sd-bus.c.html#L479">(y < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="sd-bus.c.html#L537">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="sd-bus.c.html#L539">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="sd-bus.c.html#L543">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">545</td><td><a href="sd-bus.c.html#L545">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="sd-bus.c.html#L549">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">551</td><td><a href="sd-bus.c.html#L551">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">565</td><td><a href="sd-bus.c.html#L565">(l > sizeof(b->sockaddr.un.sun_path))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="sd-bus.c.html#L573">(l > sizeof(b->sockaddr.un.sun_path) - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="sd-bus.c.html#L602">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="sd-bus.c.html#L604">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">608</td><td><a href="sd-bus.c.html#L608">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">610</td><td><a href="sd-bus.c.html#L610">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="sd-bus.c.html#L614">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="sd-bus.c.html#L616">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="sd-bus.c.html#L620">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="sd-bus.c.html#L622">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">641</td><td><a href="sd-bus.c.html#L641">(r == EAI_SYSTEM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="sd-bus.c.html#L643">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">670</td><td><a href="sd-bus.c.html#L670">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="sd-bus.c.html#L672">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="sd-bus.c.html#L676">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">678</td><td><a href="sd-bus.c.html#L678">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">693</td><td><a href="sd-bus.c.html#L693">(ul >= n_argv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="sd-bus.c.html#L703">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">719</td><td><a href="sd-bus.c.html#L719">(j < n_argv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="sd-bus.c.html#L741">(j < n_argv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">760</td><td><a href="sd-bus.c.html#L760">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">762</td><td><a href="sd-bus.c.html#L762">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="sd-bus.c.html#L766">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">768</td><td><a href="sd-bus.c.html#L768">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">772</td><td><a href="sd-bus.c.html#L772">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">774</td><td><a href="sd-bus.c.html#L774">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">796</td><td><a href="sd-bus.c.html#L796">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="sd-bus.c.html#L848">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="sd-bus.c.html#L856">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">865</td><td><a href="sd-bus.c.html#L865">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="sd-bus.c.html#L874">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">887</td><td><a href="sd-bus.c.html#L887">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="sd-bus.c.html#L919">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">921</td><td><a href="sd-bus.c.html#L921">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="sd-bus.c.html#L929">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="sd-bus.c.html#L931">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">952</td><td><a href="sd-bus.c.html#L952">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">956</td><td><a href="sd-bus.c.html#L956">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">961</td><td><a href="sd-bus.c.html#L961">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="sd-bus.c.html#L965">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="sd-bus.c.html#L994">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="sd-bus.c.html#L1030">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="sd-bus.c.html#L1034">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="sd-bus.c.html#L1047">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="sd-bus.c.html#L1076">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="sd-bus.c.html#L1080">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1094</td><td><a href="sd-bus.c.html#L1094">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1139</td><td><a href="sd-bus.c.html#L1139">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1143</td><td><a href="sd-bus.c.html#L1143">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1155</td><td><a href="sd-bus.c.html#L1155">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1214</td><td><a href="sd-bus.c.html#L1214">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1218</td><td><a href="sd-bus.c.html#L1218">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1227</td><td><a href="sd-bus.c.html#L1227">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1264</td><td><a href="sd-bus.c.html#L1264">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1268</td><td><a href="sd-bus.c.html#L1268">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1277</td><td><a href="sd-bus.c.html#L1277">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1348</td><td><a href="sd-bus.c.html#L1348">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1373</td><td><a href="sd-bus.c.html#L1373">(type == SD_BUS_TYPE_UNIX_FD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1378</td><td><a href="sd-bus.c.html#L1378">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1395</td><td><a href="sd-bus.c.html#L1395">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="sd-bus.c.html#L1414">(timeout == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1467</td><td><a href="sd-bus.c.html#L1467">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1494</td><td><a href="sd-bus.c.html#L1494">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1496</td><td><a href="sd-bus.c.html#L1496">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1563</td><td><a href="sd-bus.c.html#L1563">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1565</td><td><a href="sd-bus.c.html#L1565">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1588</td><td><a href="sd-bus.c.html#L1588">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1590</td><td><a href="sd-bus.c.html#L1590">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1600</td><td><a href="sd-bus.c.html#L1600">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1606</td><td><a href="sd-bus.c.html#L1606">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1618</td><td><a href="sd-bus.c.html#L1618">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="sd-bus.c.html#L1680">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1688</td><td><a href="sd-bus.c.html#L1688">(usec == (uint64_t)-1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1738</td><td><a href="sd-bus.c.html#L1738">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1742</td><td><a href="sd-bus.c.html#L1742">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1746</td><td><a href="sd-bus.c.html#L1746">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1750</td><td><a href="sd-bus.c.html#L1750">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1761</td><td><a href="sd-bus.c.html#L1761">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1769</td><td><a href="sd-bus.c.html#L1769">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1776</td><td><a href="sd-bus.c.html#L1776">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1798</td><td><a href="sd-bus.c.html#L1798">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1802</td><td><a href="sd-bus.c.html#L1802">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1806</td><td><a href="sd-bus.c.html#L1806">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1840</td><td><a href="sd-bus.c.html#L1840">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1846</td><td><a href="sd-bus.c.html#L1846">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1850</td><td><a href="sd-bus.c.html#L1850">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1854</td><td><a href="sd-bus.c.html#L1854">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1921</td><td><a href="sd-bus.c.html#L1921">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1929</td><td><a href="sd-bus.c.html#L1929">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1932</td><td><a href="sd-bus.c.html#L1932">(timeout > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1936</td><td><a href="sd-bus.c.html#L1936">(n >= timeout)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1946</td><td><a href="sd-bus.c.html#L1946">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1948</td><td><a href="sd-bus.c.html#L1948">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1954</td><td><a href="sd-bus.c.html#L1954">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2078</td><td><a href="sd-bus.c.html#L2078">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2082</td><td><a href="sd-bus.c.html#L2082">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2172</td><td><a href="sd-bus.c.html#L2172">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2181</td><td><a href="sd-bus.c.html#L2181">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="sd-bus.c.html#L2187">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2238</td><td><a href="sd-bus.c.html#L2238">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2252</td><td><a href="sd-bus.c.html#L2252">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2272</td><td><a href="sd-bus.c.html#L2272">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="sd-bus.c.html#L2309">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2313</td><td><a href="sd-bus.c.html#L2313">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2324</td><td><a href="sd-bus.c.html#L2324">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2328</td><td><a href="sd-bus.c.html#L2328">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2372</td><td><a href="sd-bus.c.html#L2372">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="sd-bus.c.html#L2376">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2380</td><td><a href="sd-bus.c.html#L2380">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2384</td><td><a href="sd-bus.c.html#L2384">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2388</td><td><a href="sd-bus.c.html#L2388">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2392</td><td><a href="sd-bus.c.html#L2392">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2420</td><td><a href="sd-bus.c.html#L2420">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2424</td><td><a href="sd-bus.c.html#L2424">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2428</td><td><a href="sd-bus.c.html#L2428">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2432</td><td><a href="sd-bus.c.html#L2432">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2438</td><td><a href="sd-bus.c.html#L2438">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2443</td><td><a href="sd-bus.c.html#L2443">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2463</td><td><a href="sd-bus.c.html#L2463">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2515</td><td><a href="sd-bus.c.html#L2515">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2519</td><td><a href="sd-bus.c.html#L2519">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2580</td><td><a href="sd-bus.c.html#L2580">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2586</td><td><a href="sd-bus.c.html#L2586">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2595</td><td><a href="sd-bus.c.html#L2595">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2599</td><td><a href="sd-bus.c.html#L2599">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2648</td><td><a href="sd-bus.c.html#L2648">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2659</td><td><a href="sd-bus.c.html#L2659">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2710</td><td><a href="sd-bus.c.html#L2710">(e < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2724</td><td><a href="sd-bus.c.html#L2724">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2726</td><td><a href="sd-bus.c.html#L2726">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2748</td><td><a href="sd-bus.c.html#L2748">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2784</td><td><a href="sd-bus.c.html#L2784">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2792</td><td><a href="sd-bus.c.html#L2792">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2805</td><td><a href="sd-bus.c.html#L2805">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2854</td><td><a href="sd-bus.c.html#L2854">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2873</td><td><a href="sd-bus.c.html#L2873">(scope != BUS_MATCH_LOCAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2885</td><td><a href="sd-bus.c.html#L2885">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2894</td><td><a href="sd-bus.c.html#L2894">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2924</td><td><a href="sd-bus.c.html#L2924">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="sd-bus.c.html#L2928">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2955</td><td><a href="sd-bus.c.html#L2955">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2968</td><td><a href="sd-bus.c.html#L2968">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2983</td><td><a href="sd-bus.c.html#L2983">(e < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2989</td><td><a href="sd-bus.c.html#L2989">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2993</td><td><a href="sd-bus.c.html#L2993">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2997</td><td><a href="sd-bus.c.html#L2997">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3002</td><td><a href="sd-bus.c.html#L3002">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3004</td><td><a href="sd-bus.c.html#L3004">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3008</td><td><a href="sd-bus.c.html#L3008">(j < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3013</td><td><a href="sd-bus.c.html#L3013">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3043</td><td><a href="sd-bus.c.html#L3043">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3047</td><td><a href="sd-bus.c.html#L3047">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3051</td><td><a href="sd-bus.c.html#L3051">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3058</td><td><a href="sd-bus.c.html#L3058">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3066</td><td><a href="sd-bus.c.html#L3066">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3070</td><td><a href="sd-bus.c.html#L3070">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3077</td><td><a href="sd-bus.c.html#L3077">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3112</td><td><a href="sd-bus.c.html#L3112">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3119</td><td><a href="sd-bus.c.html#L3119">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3123</td><td><a href="sd-bus.c.html#L3123">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3127</td><td><a href="sd-bus.c.html#L3127">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3131</td><td><a href="sd-bus.c.html#L3131">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3135</td><td><a href="sd-bus.c.html#L3135">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3139</td><td><a href="sd-bus.c.html#L3139">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3211</td><td><a href="sd-bus.c.html#L3211">(*default_bus)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3217</td><td><a href="sd-bus.c.html#L3217">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3362</td><td><a href="sd-bus.c.html#L3362">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3379</td><td><a href="sd-bus.c.html#L3379">(*template_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3426</td><td><a href="sd-bus.c.html#L3426">(*template_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3468</td><td><a href="sd-bus.c.html#L3468">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3475</td><td><a href="sd-bus.c.html#L3475">(*path_pos)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3520</td><td><a href="sd-bus.c.html#L3520">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">784</td><td><a href="sd-bus.c.html#L784">(!machine_name_is_valid(machine))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">176</td><td><a href="sd-bus.c.html#L176">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">209</td><td><a href="sd-bus.c.html#L209">(!a)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">240</td><td><a href="sd-bus.c.html#L240">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">244</td><td><a href="sd-bus.c.html#L244">(!a)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">497</td><td><a href="sd-bus.c.html#L497">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">499</td><td><a href="sd-bus.c.html#L499">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">712</td><td><a href="sd-bus.c.html#L712">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">881</td><td><a href="sd-bus.c.html#L881">(!a)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1022</td><td><a href="sd-bus.c.html#L1022">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1116</td><td><a href="sd-bus.c.html#L1116">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1120</td><td><a href="sd-bus.c.html#L1120">(!ee)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1186</td><td><a href="sd-bus.c.html#L1186">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1193</td><td><a href="sd-bus.c.html#L1193">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1195</td><td><a href="sd-bus.c.html#L1195">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1245</td><td><a href="sd-bus.c.html#L1245">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1290</td><td><a href="sd-bus.c.html#L1290">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1310</td><td><a href="sd-bus.c.html#L1310">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1333</td><td><a href="sd-bus.c.html#L1333">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1344</td><td><a href="sd-bus.c.html#L1344">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1578</td><td><a href="sd-bus.c.html#L1578">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1666</td><td><a href="sd-bus.c.html#L1666">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1676</td><td><a href="sd-bus.c.html#L1676">(!destination)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1729</td><td><a href="sd-bus.c.html#L1729">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1754</td><td><a href="sd-bus.c.html#L1754">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1829</td><td><a href="sd-bus.c.html#L1829">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2041</td><td><a href="sd-bus.c.html#L2041">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2066</td><td><a href="sd-bus.c.html#L2066">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2155</td><td><a href="sd-bus.c.html#L2155">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2434</td><td><a href="sd-bus.c.html#L2434">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2823</td><td><a href="sd-bus.c.html#L2823">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2858</td><td><a href="sd-bus.c.html#L2858">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3208</td><td><a href="sd-bus.c.html#L3208">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3298</td><td><a href="sd-bus.c.html#L3298">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3302</td><td><a href="sd-bus.c.html#L3302">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3318</td><td><a href="sd-bus.c.html#L3318">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3324</td><td><a href="sd-bus.c.html#L3324">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3350</td><td><a href="sd-bus.c.html#L3350">(!arg)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3356</td><td><a href="sd-bus.c.html#L3356">(!label)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3373</td><td><a href="sd-bus.c.html#L3373">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3464</td><td><a href="sd-bus.c.html#L3464">(!label)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3608</td><td><a href="sd-bus.c.html#L3608">(!bus)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">632</td><td><a href="sd-bus.c.html#L632">(streq(family, "ipv4"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="sd-bus.c.html#L634">(streq(family, "ipv6"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="sd-bus.c.html#L844">(startswith(a, "unix:"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="sd-bus.c.html#L852">(startswith(a, "tcp:"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">861</td><td><a href="sd-bus.c.html#L861">(startswith(a, "unixexec:"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="sd-bus.c.html#L870">(startswith(a, "x-machine-unix:"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="sd-bus.c.html#L1015">(streq(e, "system"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1017</td><td><a href="sd-bus.c.html#L1017">(STR_IN_SET(e, "session", "user"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1294</td><td><a href="sd-bus.c.html#L1294">(bus_pid_changed(bus))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1619</td><td><a href="sd-bus.c.html#L1619">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1922</td><td><a href="sd-bus.c.html#L1922">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1955</td><td><a href="sd-bus.c.html#L1955">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="sd-bus.c.html#L1990">(bus_socket_auth_needs_write(bus))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2645</td><td><a href="sd-bus.c.html#L2645">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2656</td><td><a href="sd-bus.c.html#L2656">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2670</td><td><a href="sd-bus.c.html#L2670">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2793</td><td><a href="sd-bus.c.html#L2793">(IN_SET(r, -ENOTCONN, -ECONNRESET, -EPIPE, -ESHUTDOWN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3249</td><td><a href="sd-bus.c.html#L3249">(streq(e, "system"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3251</td><td><a href="sd-bus.c.html#L3251">(STR_IN_SET(e, "user", "session"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3434</td><td><a href="sd-bus.c.html#L3434">(strncmp(path_pos, template_pos, length))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">451</td><td><a href="sd-bus.c.html#L451">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">563</td><td><a href="sd-bus.c.html#L563">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">571</td><td><a href="sd-bus.c.html#L571">(abstract)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">631</td><td><a href="sd-bus.c.html#L631">(family)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">783</td><td><a href="sd-bus.c.html#L783">(machine)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">794</td><td><a href="sd-bus.c.html#L794">(pid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">885</td><td><a href="sd-bus.c.html#L885">(guid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1014</td><td><a href="sd-bus.c.html#L1014">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1063</td><td><a href="sd-bus.c.html#L1063">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1112</td><td><a href="sd-bus.c.html#L1112">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1175</td><td><a href="sd-bus.c.html#L1175">(m)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1651</td><td><a href="sd-bus.c.html#L1651">(cookie)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1779</td><td><a href="sd-bus.c.html#L1779">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1877</td><td><a href="sd-bus.c.html#L1877">(reply)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2441</td><td><a href="sd-bus.c.html#L2441">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2564</td><td><a href="sd-bus.c.html#L2564">(c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2606</td><td><a href="sd-bus.c.html#L2606">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2650</td><td><a href="sd-bus.c.html#L2650">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2662</td><td><a href="sd-bus.c.html#L2662">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2674</td><td><a href="sd-bus.c.html#L2674">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2713</td><td><a href="sd-bus.c.html#L2713">(need_more)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2831</td><td><a href="sd-bus.c.html#L2831">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2897</td><td><a href="sd-bus.c.html#L2897">(slot)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3108</td><td><a href="sd-bus.c.html#L3108">(event)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3248</td><td><a href="sd-bus.c.html#L3248">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3259</td><td><a href="sd-bus.c.html#L3259">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3484</td><td><a href="sd-bus.c.html#L3484">(arg)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

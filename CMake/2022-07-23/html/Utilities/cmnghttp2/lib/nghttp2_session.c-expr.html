@@ -1,0 +1,868 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>CMake Repo - Utilities\cmnghttp2\lib\nghttp2_session.c Ctrl Expressions (817) - MerlyMentor</title>
+</head>
+<body>
+  <h2>CMake Repo - Utilities\cmnghttp2\lib\nghttp2_session.c Ctrl Expressions (817) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Utilities\cmnghttp2\lib\nghttp2_session.c Ctrl Expressions (817)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">5673</td><td><a href="nghttp2_session.c.html#L5673">((iframe->frame.hd.length % NGHTTP2_FRAME_SETTINGS_ENTRY_LENGTH) || (<span style='background-color:#741da3;'>(iframe->frame.hd.flags & NGHTTP2_FLAG_ACK) && iframe->payloadleft > 0</span>))</a></td><td class="num">1042.35</td></tr>
+      <tr><td class="num line">6010</td><td><a href="nghttp2_session.c.html#L6010">(padlen < 0 || <span style='background-color:#741da3;'>(size_t)padlen + 4 > 1 + iframe->payloadleft</span>)</a></td><td class="num">1030.45</td></tr>
+      <tr><td class="num line">4635</td><td><a href="nghttp2_session.c.html#L4635">(<span style='background-color:#741da3;'>!stream || stream->state == NGHTTP2_STREAM_CLOSING || !session->pending_enable_push || session->num_incoming_reserved_streams >= session->max_incoming_reserved_streams</span>)</a></td><td class="num">1023.25</td></tr>
+      <tr><td class="num line">7227</td><td><a href="nghttp2_session.c.html#L7227">(<span style='background-color:#741da3;'>frame->hd.length == 0 && (data_flags & NGHTTP2_DATA_FLAG_EOF) && (data_flags & NGHTTP2_DATA_FLAG_NO_END_STREAM)</span>)</a></td><td class="num">1019.50</td></tr>
+      <tr><td class="num line">5851</td><td><a href="nghttp2_session.c.html#L5851">(<span style='background-color:#741da3;'>session->server || iframe->frame.hd.stream_id || (iframe->frame.hd.flags & 0xf0)</span>)</a></td><td class="num">1019.25</td></tr>
+      <tr><td class="num line">285</td><td><a href="nghttp2_session.c.html#L285">(<span style='background-color:#741da3;'>stream == NULL || (stream->flags & NGHTTP2_STREAM_FLAG_CLOSED) || stream->state == NGHTTP2_STREAM_IDLE</span>)</a></td><td class="num">1017.50</td></tr>
+      <tr><td class="num line">5014</td><td><a href="nghttp2_session.c.html#L5014">(<span style='background-color:#741da3;'>*recv_window_size_ptr > local_window_size - (int32_t)delta || *recv_window_size_ptr > NGHTTP2_MAX_WINDOW_SIZE - (int32_t)delta</span>)</a></td><td class="num">1015.95</td></tr>
+      <tr><td class="num line">6868</td><td><a href="nghttp2_session.c.html#L6868">(<span style='background-color:#741da3;'>(flags & NGHTTP2_FLAG_ACK) && session->obq_flood_counter_ >= session->max_outbound_ack</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">7740</td><td><a href="nghttp2_session.c.html#L7740">(<span style='background-color:#741da3;'>stream_id == 0 || stream_id == pri_spec->stream_id || !session_detect_idle_stream(session, stream_id)</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">7659</td><td><a href="nghttp2_session.c.html#L7659">(<span style='background-color:#741da3;'>next_stream_id <= 0 || session->next_stream_id > (uint32_t)next_stream_id</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">5416</td><td><a href="nghttp2_session.c.html#L5416">(memcmp(&NGHTTP2_CLIENT_MAGIC[NGHTTP2_CLIENT_MAGIC_LEN - iframe->payloadleft], in, readlen) != 0)</a></td><td class="num">60.35</td></tr>
+      <tr><td class="num line">4733</td><td><a href="nghttp2_session.c.html#L4733">((frame->goaway.last_stream_id > 0 && !nghttp2_session_is_my_stream_id(session, frame->goaway.last_stream_id)) || session->remote_last_stream_id < frame->goaway.last_stream_id)</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">7262</td><td><a href="nghttp2_session.c.html#L7262">(session->server || !nghttp2_session_is_my_stream_id(session, stream_id) || !nghttp2_outbound_queue_top(&session->ob_syn))</a></td><td class="num">45.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="nghttp2_session.c.html#L566">(server && ((*session_ptr)->opt_flags & NGHTTP2_OPTMASK_NO_RECV_CLIENT_MAGIC) == 0)</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">7450</td><td><a href="nghttp2_session.c.html#L7450">((!session->server && session->next_stream_id != 1) || (session->server && session->last_recv_stream_id >= 1))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2425</td><td><a href="nghttp2_session.c.html#L2425">(stream->state != NGHTTP2_STREAM_IDLE && (stream->flags & NGHTTP2_STREAM_FLAG_CLOSED) == 0 && stream->stream_id > arg->last_stream_id)</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">4254</td><td><a href="nghttp2_session.c.html#L4254">(!(arg->session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE) && stream->window_update_queued == 0 && nghttp2_should_send_window_update(stream->local_window_size, stream->recv_window_size))</a></td><td class="num">40.50</td></tr>
+      <tr><td class="num line">5049</td><td><a href="nghttp2_session.c.html#L5049">(send_window_update && !(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE) && stream->window_update_queued == 0 && nghttp2_should_send_window_update(stream->local_window_size, stream->recv_window_size))</a></td><td class="num">39.50</td></tr>
+      <tr><td class="num line">4701</td><td><a href="nghttp2_session.c.html#L4701">((session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_PING_ACK) == 0 && (frame->hd.flags & NGHTTP2_FLAG_ACK) == 0 && !session_is_closing(session))</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">5087</td><td><a href="nghttp2_session.c.html#L5087">(!(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE) && session->window_update_queued == 0 && nghttp2_should_send_window_update(session->local_window_size, session->recv_window_size))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">5441</td><td><a href="nghttp2_session.c.html#L5441">(iframe->sbuf.pos[3] != NGHTTP2_SETTINGS || (iframe->sbuf.pos[4] & NGHTTP2_FLAG_ACK))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">2944</td><td><a href="nghttp2_session.c.html#L2944">(frame->hd.type != NGHTTP2_WINDOW_UPDATE && session->callbacks.on_frame_not_send_callback(session, frame, rv, session->user_data) != 0)</a></td><td class="num">35.00</td></tr>
+      <tr><td class="num line">1332</td><td><a href="nghttp2_session.c.html#L1332">(session->num_closed_streams > 0 && session->num_closed_streams + session->num_incoming_streams > num_stream_max)</a></td><td class="num">34.60</td></tr>
+      <tr><td class="num line">874</td><td><a href="nghttp2_session.c.html#L874">(frame->headers.cat == NGHTTP2_HCAT_REQUEST || (stream && stream->state == NGHTTP2_STREAM_RESERVED))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">1216</td><td><a href="nghttp2_session.c.html#L1216">((session->opt_flags & NGHTTP2_OPTMASK_NO_CLOSED_STREAMS) == 0 && session->server && !is_my_stream_id && nghttp2_stream_in_dep_tree(stream))</a></td><td class="num">33.00</td></tr>
+      <tr><td class="num line">5925</td><td><a href="nghttp2_session.c.html#L5925">(padlen < 0 || (size_t)padlen + pri_fieldlen > 1 + iframe->payloadleft)</a></td><td class="num">30.45</td></tr>
+      <tr><td class="num line">958</td><td><a href="nghttp2_session.c.html#L958">(!session->server && nghttp2_session_is_my_stream_id(session, stream_id) && nghttp2_outbound_queue_top(&session->ob_syn))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">4575</td><td><a href="nghttp2_session.c.html#L4575">(min_header_size_entry.value != iframe->iv[i].value)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">5298</td><td><a href="nghttp2_session.c.html#L5298">(iframe->iv[i].settings_id == iv.settings_id)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">4568</td><td><a href="nghttp2_session.c.html#L4568">(iframe->iv[i].settings_id == NGHTTP2_SETTINGS_HEADER_TABLE_SIZE)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">7077</td><td><a href="nghttp2_session.c.html#L7077">(iv[i - 1].settings_id == NGHTTP2_SETTINGS_MAX_CONCURRENT_STREAMS)</a></td><td class="num">23.60</td></tr>
+      <tr><td class="num line">7084</td><td><a href="nghttp2_session.c.html#L7084">(iv[i - 1].settings_id == NGHTTP2_SETTINGS_ENABLE_PUSH)</a></td><td class="num">23.60</td></tr>
+      <tr><td class="num line">7091</td><td><a href="nghttp2_session.c.html#L7091">(iv[i - 1].settings_id == NGHTTP2_SETTINGS_ENABLE_CONNECT_PROTOCOL)</a></td><td class="num">23.60</td></tr>
+      <tr><td class="num line">4524</td><td><a href="nghttp2_session.c.html#L4524">(!session->server && session->remote_settings.enable_connect_protocol && entry->value == 0)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">3797</td><td><a href="nghttp2_session.c.html#L3797">(frame->hd.type == NGHTTP2_HEADERS && (frame->hd.flags & NGHTTP2_FLAG_END_STREAM))</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="nghttp2_session.c.html#L2938">(item->frame.hd.type != NGHTTP2_DATA && session->callbacks.on_frame_not_send_callback && is_non_fatal(rv))</a></td><td class="num">18.00</td></tr>
+      <tr><td class="num line">5921</td><td><a href="nghttp2_session.c.html#L5921">(iframe->padlen == 0 && (iframe->frame.hd.flags & NGHTTP2_FLAG_PADDED))</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">6007</td><td><a href="nghttp2_session.c.html#L6007">(iframe->padlen == 0 && (iframe->frame.hd.flags & NGHTTP2_FLAG_PADDED))</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">674</td><td><a href="nghttp2_session.c.html#L674">(item && !item->queued && item != session->aob.item)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">966</td><td><a href="nghttp2_session.c.html#L966">(headers_frame->hd.stream_id <= stream_id && (uint32_t)stream_id < session->next_stream_id)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">2591</td><td><a href="nghttp2_session.c.html#L2591">(frame->hd.type == NGHTTP2_HEADERS || frame->hd.type == NGHTTP2_PUSH_PROMISE)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">2804</td><td><a href="nghttp2_session.c.html#L2804">(frame->hd.type == NGHTTP2_HEADERS || frame->hd.type == NGHTTP2_PUSH_PROMISE)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">7188</td><td><a href="nghttp2_session.c.html#L7188">((aux_data->flags & NGHTTP2_FLAG_END_STREAM) && (data_flags & NGHTTP2_DATA_FLAG_NO_END_STREAM) == 0)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">4454</td><td><a href="nghttp2_session.c.html#L4454">(entry->value != 0 && entry->value != 1)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">4518</td><td><a href="nghttp2_session.c.html#L4518">(entry->value != 0 && entry->value != 1)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1176</td><td><a href="nghttp2_session.c.html#L1176">(!item->queued && item != session->aob.item)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">6405</td><td><a href="nghttp2_session.c.html#L6405">(cont_hd.type != NGHTTP2_CONTINUATION || cont_hd.stream_id != iframe->frame.hd.stream_id)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">7270</td><td><a href="nghttp2_session.c.html#L7270">(frame->hd.stream_id > stream_id || (uint32_t)stream_id >= session->next_stream_id)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">159</td><td><a href="nghttp2_session.c.html#L159">(!session->callbacks.error_callback && !session->callbacks.error_callback2)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">4069</td><td><a href="nghttp2_session.c.html#L4069">(stream->state == NGHTTP2_STREAM_OPENING && nghttp2_session_is_my_stream_id(session, frame->hd.stream_id))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">3778</td><td><a href="nghttp2_session.c.html#L3778">(rv == 0 && (frame->hd.flags & NGHTTP2_FLAG_END_STREAM))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">3844</td><td><a href="nghttp2_session.c.html#L3844">(frame->hd.stream_id == 0 || nghttp2_session_is_my_stream_id(session, frame->hd.stream_id))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">463</td><td><a href="nghttp2_session.c.html#L463">((option->opt_set_mask & NGHTTP2_OPT_NO_AUTO_WINDOW_UPDATE) && option->no_auto_window_update)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">481</td><td><a href="nghttp2_session.c.html#L481">((option->opt_set_mask & NGHTTP2_OPT_NO_RECV_CLIENT_MAGIC) && option->no_recv_client_magic)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">487</td><td><a href="nghttp2_session.c.html#L487">((option->opt_set_mask & NGHTTP2_OPT_NO_HTTP_MESSAGING) && option->no_http_messaging)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">502</td><td><a href="nghttp2_session.c.html#L502">((option->opt_set_mask & NGHTTP2_OPT_NO_AUTO_PING_ACK) && option->no_auto_ping_ack)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">516</td><td><a href="nghttp2_session.c.html#L516">((option->opt_set_mask & NGHTTP2_OPT_NO_CLOSED_STREAMS) && option->no_closed_streams)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">814</td><td><a href="nghttp2_session.c.html#L814">(dep_stream == stream->dep_prev && !pri_spec->exclusive)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4460</td><td><a href="nghttp2_session.c.html#L4460">(!session->server && entry->value != 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">4501</td><td><a href="nghttp2_session.c.html#L4501">(entry->value < NGHTTP2_MAX_FRAME_SIZE_MIN || entry->value > NGHTTP2_MAX_FRAME_SIZE_MAX)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">3273</td><td><a href="nghttp2_session.c.html#L3273">(rv < 0 && rv != NGHTTP2_ERR_WOULDBLOCK && rv != NGHTTP2_ERR_EOF)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">978</td><td><a href="nghttp2_session.c.html#L978">(item->frame.hd.stream_id > stream_id || aux_data->canceled)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">4778</td><td><a href="nghttp2_session.c.html#L4778">(NGHTTP2_MAX_WINDOW_SIZE - frame->window_update.window_size_increment < session->remote_window_size)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">4811</td><td><a href="nghttp2_session.c.html#L4811">(NGHTTP2_MAX_WINDOW_SIZE - frame->window_update.window_size_increment < stream->remote_window_size)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">4603</td><td><a href="nghttp2_session.c.html#L4603">(session->server || session->local_settings.enable_push == 0)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">4960</td><td><a href="nghttp2_session.c.html#L4960">(session_enforce_http_messaging(session) && (frame->hd.flags & NGHTTP2_FLAG_END_STREAM))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3701</td><td><a href="nghttp2_session.c.html#L3701">((inflate_flags & NGHTTP2_HD_INFLATE_EMIT) == 0 && inlen == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3892</td><td><a href="nghttp2_session.c.html#L3892">(frame->headers.pri_spec.stream_id == frame->hd.stream_id)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">4089</td><td><a href="nghttp2_session.c.html#L4089">(frame->priority.pri_spec.stream_id == frame->hd.stream_id)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">5485</td><td><a href="nghttp2_session.c.html#L5485">(iframe->frame.hd.length > session->local_settings.max_frame_size)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1872</td><td><a href="nghttp2_session.c.html#L1872">(rv < (ssize_t)frame->hd.length || rv > (ssize_t)max_paddedlen)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">910</td><td><a href="nghttp2_session.c.html#L910">(!nghttp2_session_open_stream(session, frame->push_promise.promised_stream_id, NGHTTP2_STREAM_FLAG_NONE, &pri_spec, NGHTTP2_STREAM_RESERVED, aux_data->stream_user_data))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">6183</td><td><a href="nghttp2_session.c.html#L6183">(data_readlen > 0 || (data_readlen == 0 && final))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1190</td><td><a href="nghttp2_session.c.html#L1190">(session->callbacks.on_stream_close_callback(session, stream_id, error_code, session->user_data) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3024</td><td><a href="nghttp2_session.c.html#L3024">(session->callbacks.on_frame_not_send_callback(session, frame, rv, session->user_data) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3465</td><td><a href="nghttp2_session.c.html#L3465">(session->callbacks.on_invalid_frame_recv_callback(session, frame, lib_error_code, session->user_data) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3484</td><td><a href="nghttp2_session.c.html#L3484">(session->callbacks.on_invalid_frame_recv_callback(session, frame, lib_error_code, session->user_data) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3518</td><td><a href="nghttp2_session.c.html#L3518">(session->callbacks.on_invalid_frame_recv_callback(session, frame, lib_error_code, session->user_data) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3872</td><td><a href="nghttp2_session.c.html#L3872">(stream && (stream->shut_flags & NGHTTP2_SHUT_RD))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">5203</td><td><a href="nghttp2_session.c.html#L5203">(stream && (stream->shut_flags & NGHTTP2_SHUT_RD))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">6252</td><td><a href="nghttp2_session.c.html#L6252">((iframe->frame.hd.flags & NGHTTP2_FLAG_END_HEADERS) == 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3723</td><td><a href="nghttp2_session.c.html#L3723">((frame->hd.flags & NGHTTP2_FLAG_END_STREAM) == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">7163</td><td><a href="nghttp2_session.c.html#L7163">(payloadlen == NGHTTP2_ERR_DEFERRED || payloadlen == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE || payloadlen == NGHTTP2_ERR_PAUSE)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">7708</td><td><a href="nghttp2_session.c.html#L7708">(stream_id == 0 || stream_id == pri_spec->stream_id)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">95</td><td><a href="nghttp2_session.c.html#L95">(!stream || frame->hd.type != NGHTTP2_HEADERS)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">4205</td><td><a href="nghttp2_session.c.html#L4205">(stream->remote_window_size > 0 && nghttp2_stream_check_deferred_by_flow_control(stream))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">4818</td><td><a href="nghttp2_session.c.html#L4818">(stream->remote_window_size > 0 && nghttp2_stream_check_deferred_by_flow_control(stream))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">952</td><td><a href="nghttp2_session.c.html#L952">(stream && stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2109</td><td><a href="nghttp2_session.c.html#L2109">(stream && stream->state == NGHTTP2_STREAM_RESERVED)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3599</td><td><a href="nghttp2_session.c.html#L3599">(subject_stream && subject_stream->state != NGHTTP2_STREAM_CLOSING)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1503</td><td><a href="nghttp2_session.c.html#L1503">((session->goaway_flags & NGHTTP2_GOAWAY_RECV) || session_is_closing(session))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">346</td><td><a href="nghttp2_session.c.html#L346">((session->builtin_recv_ext_types & NGHTTP2_TYPEMASK_ALTSVC) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">352</td><td><a href="nghttp2_session.c.html#L352">((session->builtin_recv_ext_types & NGHTTP2_TYPEMASK_ORIGIN) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1424</td><td><a href="nghttp2_session.c.html#L1424">((stream->shut_flags & NGHTTP2_SHUT_RDWR) == NGHTTP2_SHUT_RDWR)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2714</td><td><a href="nghttp2_session.c.html#L2714">((aux_data->flags & NGHTTP2_GOAWAY_AUX_SHUTDOWN_NOTICE) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3086</td><td><a href="nghttp2_session.c.html#L3086">(buf->pos == buf->last)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3191</td><td><a href="nghttp2_session.c.html#L3191">(buf->pos == buf->last)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">5810</td><td><a href="nghttp2_session.c.html#L5810">((session->builtin_recv_ext_types & NGHTTP2_TYPEMASK_ALTSVC) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">7014</td><td><a href="nghttp2_session.c.html#L7014">(session->obq_flood_counter_ >= session->max_outbound_ack)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">3744</td><td><a href="nghttp2_session.c.html#L3744">(!stream || stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4953</td><td><a href="nghttp2_session.c.html#L4953">(!stream || stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">340</td><td><a href="nghttp2_session.c.html#L340">(check_ext_type_set(session->user_recv_ext_types, iframe->frame.hd.type))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5790</td><td><a href="nghttp2_session.c.html#L5790">(check_ext_type_set(session->user_recv_ext_types, iframe->frame.hd.type))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="nghttp2_session.c.html#L781">(!dep_stream && session_detect_idle_stream(session, pri_spec->stream_id))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1045</td><td><a href="nghttp2_session.c.html#L1045">(!dep_stream && session_detect_idle_stream(session, pri_spec->stream_id))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2188</td><td><a href="nghttp2_session.c.html#L2188">(frame->hd.flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2246</td><td><a href="nghttp2_session.c.html#L2246">(frame->hd.flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2559</td><td><a href="nghttp2_session.c.html#L2559">(frame->hd.flags & NGHTTP2_FLAG_END_STREAM)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2614</td><td><a href="nghttp2_session.c.html#L2614">(frame->hd.flags & NGHTTP2_FLAG_END_STREAM)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2643</td><td><a href="nghttp2_session.c.html#L2643">(frame->hd.flags & NGHTTP2_FLAG_END_STREAM)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4396</td><td><a href="nghttp2_session.c.html#L4396">(frame->hd.flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4981</td><td><a href="nghttp2_session.c.html#L4981">(frame->hd.flags & NGHTTP2_FLAG_END_STREAM)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">5349</td><td><a href="nghttp2_session.c.html#L5349">(padlen - 1 > iframe->payloadleft)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">5841</td><td><a href="nghttp2_session.c.html#L5841">(!(session->builtin_recv_ext_types & NGHTTP2_TYPEMASK_ORIGIN))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">7588</td><td><a href="nghttp2_session.c.html#L7588">(!(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">7616</td><td><a href="nghttp2_session.c.html#L7616">(!(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">7638</td><td><a href="nghttp2_session.c.html#L7638">(!(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="nghttp2_session.c.html#L972">(item->frame.hd.stream_id < stream_id)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2543</td><td><a href="nghttp2_session.c.html#L2543">(stream && aux_data->eof)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2958</td><td><a href="nghttp2_session.c.html#L2958">(item->frame.headers.cat == NGHTTP2_HCAT_REQUEST)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3004</td><td><a href="nghttp2_session.c.html#L3004">(item->frame.hd.type != NGHTTP2_DATA)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3034</td><td><a href="nghttp2_session.c.html#L3034">(item->frame.headers.cat == NGHTTP2_HCAT_REQUEST)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3625</td><td><a href="nghttp2_session.c.html#L3625">(call_header_cb && (inflate_flags & NGHTTP2_HD_INFLATE_EMIT))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5312</td><td><a href="nghttp2_session.c.html#L5312">(iv.value < min_header_table_size_entry->value)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">6127</td><td><a href="nghttp2_session.c.html#L6127">(iframe->frame.hd.length > 2)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">7276</td><td><a href="nghttp2_session.c.html#L7276">(item->frame.hd.stream_id < stream_id)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">7280</td><td><a href="nghttp2_session.c.html#L7280">(item->frame.hd.stream_id > stream_id)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">929</td><td><a href="nghttp2_session.c.html#L929">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1320</td><td><a href="nghttp2_session.c.html#L1320">(session->local_settings.max_concurrent_streams == NGHTTP2_DEFAULT_MAX_CONCURRENT_STREAMS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1686</td><td><a href="nghttp2_session.c.html#L1686">(session->remote_settings.enable_push == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1860</td><td><a href="nghttp2_session.c.html#L1860">(frame->hd.length >= max_payloadlen)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1947</td><td><a href="nghttp2_session.c.html#L1947">(rv < 0 || (size_t)rv > buflen)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2080</td><td><a href="nghttp2_session.c.html#L2080">(frame->headers.cat == NGHTTP2_HCAT_REQUEST)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2160</td><td><a href="nghttp2_session.c.html#L2160">(frame->headers.cat == NGHTTP2_HCAT_REQUEST)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2417</td><td><a href="nghttp2_session.c.html#L2417">(nghttp2_session_is_my_stream_id(arg->session, stream->stream_id))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2529</td><td><a href="nghttp2_session.c.html#L2529">(frame->hd.type == NGHTTP2_DATA)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2733</td><td><a href="nghttp2_session.c.html#L2733">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2802</td><td><a href="nghttp2_session.c.html#L2802">(frame->hd.type != NGHTTP2_DATA)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3340</td><td><a href="nghttp2_session.c.html#L3340">(rv == NGHTTP2_ERR_PAUSE || rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3365</td><td><a href="nghttp2_session.c.html#L3365">(rv == NGHTTP2_ERR_PAUSE || rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3581</td><td><a href="nghttp2_session.c.html#L3581">(frame->hd.type == NGHTTP2_PUSH_PROMISE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3598</td><td><a href="nghttp2_session.c.html#L3598">(session->iframe.state == NGHTTP2_IB_READ_HEADER_BLOCK)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3749</td><td><a href="nghttp2_session.c.html#L3749">(frame->hd.type == NGHTTP2_PUSH_PROMISE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3785</td><td><a href="nghttp2_session.c.html#L3785">(frame->hd.type == NGHTTP2_PUSH_PROMISE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3812</td><td><a href="nghttp2_session.c.html#L3812">(frame->hd.type != NGHTTP2_HEADERS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3823</td><td><a href="nghttp2_session.c.html#L3823">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3931</td><td><a href="nghttp2_session.c.html#L3931">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3960</td><td><a href="nghttp2_session.c.html#L3960">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4004</td><td><a href="nghttp2_session.c.html#L4004">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4084</td><td><a href="nghttp2_session.c.html#L4084">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4150</td><td><a href="nghttp2_session.c.html#L4150">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4392</td><td><a href="nghttp2_session.c.html#L4392">(frame->hd.stream_id != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4397</td><td><a href="nghttp2_session.c.html#L4397">(frame->settings.niv != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4432</td><td><a href="nghttp2_session.c.html#L4432">(i < frame->settings.niv)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4599</td><td><a href="nghttp2_session.c.html#L4599">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4697</td><td><a href="nghttp2_session.c.html#L4697">(frame->hd.stream_id != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4727</td><td><a href="nghttp2_session.c.html#L4727">(frame->hd.stream_id != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4772</td><td><a href="nghttp2_session.c.html#L4772">(frame->window_update.window_size_increment == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4806</td><td><a href="nghttp2_session.c.html#L4806">(frame->window_update.window_size_increment == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4833</td><td><a href="nghttp2_session.c.html#L4833">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4859</td><td><a href="nghttp2_session.c.html#L4859">(frame->hd.stream_id == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5113</td><td><a href="nghttp2_session.c.html#L5113">((size_t)*consumed_size_ptr > NGHTTP2_MAX_WINDOW_SIZE - delta_size)</a></td><td class="num">6.85</td></tr>
+      <tr><td class="num line">6772</td><td><a href="nghttp2_session.c.html#L6772">(!busy && in == last)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">6795</td><td><a href="nghttp2_session.c.html#L6795">(readlen == 0 || readlen == NGHTTP2_ERR_WOULDBLOCK)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">7172</td><td><a href="nghttp2_session.c.html#L7172">(payloadlen < 0 || datamax < (size_t)payloadlen)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">7195</td><td><a href="nghttp2_session.c.html#L7195">(session->callbacks.send_data_callback == NULL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">218</td><td><a href="nghttp2_session.c.html#L218">(session->goaway_flags & NGHTTP2_GOAWAY_TERM_ON_SEND)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">469</td><td><a href="nghttp2_session.c.html#L469">(option->opt_set_mask & NGHTTP2_OPT_PEER_MAX_CONCURRENT_STREAMS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="nghttp2_session.c.html#L475">(option->opt_set_mask & NGHTTP2_OPT_MAX_RESERVED_REMOTE_STREAMS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">493</td><td><a href="nghttp2_session.c.html#L493">(option->opt_set_mask & NGHTTP2_OPT_USER_RECV_EXT_TYPES)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="nghttp2_session.c.html#L498">(option->opt_set_mask & NGHTTP2_OPT_BUILTIN_RECV_EXT_TYPES)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">507</td><td><a href="nghttp2_session.c.html#L507">(option->opt_set_mask & NGHTTP2_OPT_MAX_SEND_HEADER_BLOCK_LENGTH)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">512</td><td><a href="nghttp2_session.c.html#L512">(option->opt_set_mask & NGHTTP2_OPT_MAX_DEFLATE_DYNAMIC_TABLE_SIZE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">521</td><td><a href="nghttp2_session.c.html#L521">(option->opt_set_mask & NGHTTP2_OPT_MAX_OUTBOUND_ACK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1201</td><td><a href="nghttp2_session.c.html#L1201">((stream->flags & NGHTTP2_STREAM_FLAG_PUSH))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1469</td><td><a href="nghttp2_session.c.html#L1469">(stream->shut_flags & NGHTTP2_SHUT_WR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1598</td><td><a href="nghttp2_session.c.html#L1598">(session->goaway_flags & NGHTTP2_GOAWAY_RECV)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1692</td><td><a href="nghttp2_session.c.html#L1692">(session->goaway_flags & NGHTTP2_GOAWAY_RECV)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2252</td><td><a href="nghttp2_session.c.html#L2252">(session->goaway_flags & NGHTTP2_GOAWAY_TERM_ON_SEND)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2716</td><td><a href="nghttp2_session.c.html#L2716">(aux_data->flags & NGHTTP2_GOAWAY_AUX_TERM_ON_SEND)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2735</td><td><a href="nghttp2_session.c.html#L2735">(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2757</td><td><a href="nghttp2_session.c.html#L2757">(stream->shut_flags & NGHTTP2_SHUT_RD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2761</td><td><a href="nghttp2_session.c.html#L2761">(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3768</td><td><a href="nghttp2_session.c.html#L3768">(stream->http_flags & NGHTTP2_HTTP_FLAG_EXPECT_FINAL_RESPONSE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3935</td><td><a href="nghttp2_session.c.html#L3935">(stream->shut_flags & NGHTTP2_SHUT_RD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4008</td><td><a href="nghttp2_session.c.html#L4008">((stream->shut_flags & NGHTTP2_SHUT_RD))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">4650</td><td><a href="nghttp2_session.c.html#L4650">(stream->shut_flags & NGHTTP2_SHUT_RD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5211</td><td><a href="nghttp2_session.c.html#L5211">(stream->shut_flags & NGHTTP2_SHUT_RD)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5325</td><td><a href="nghttp2_session.c.html#L5325">(hd->flags & NGHTTP2_FLAG_PADDED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6573</td><td><a href="nghttp2_session.c.html#L6573">(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6646</td><td><a href="nghttp2_session.c.html#L6646">(session->opt_flags & NGHTTP2_OPTMASK_NO_AUTO_WINDOW_UPDATE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6819</td><td><a href="nghttp2_session.c.html#L6819">(session->goaway_flags & NGHTTP2_GOAWAY_TERM_SENT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">6841</td><td><a href="nghttp2_session.c.html#L6841">(session->goaway_flags & NGHTTP2_GOAWAY_TERM_SENT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">705</td><td><a href="nghttp2_session.c.html#L705">(!(*settings_ptr)->iv)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2325</td><td><a href="nghttp2_session.c.html#L2325">(nghttp2_outbound_queue_top(&session->ob_urgent))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2329</td><td><a href="nghttp2_session.c.html#L2329">(nghttp2_outbound_queue_top(&session->ob_reg))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2334</td><td><a href="nghttp2_session.c.html#L2334">(nghttp2_outbound_queue_top(&session->ob_syn))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5437</td><td><a href="nghttp2_session.c.html#L5437">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5474</td><td><a href="nghttp2_session.c.html#L5474">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">5915</td><td><a href="nghttp2_session.c.html#L5915">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6323</td><td><a href="nghttp2_session.c.html#L6323">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6395</td><td><a href="nghttp2_session.c.html#L6395">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">6452</td><td><a href="nghttp2_session.c.html#L6452">(nghttp2_buf_mark_avail(&iframe->sbuf))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">135</td><td><a href="nghttp2_session.c.html#L135">(session->last_sent_stream_id < stream_id)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">778</td><td><a href="nghttp2_session.c.html#L778">(pri_spec->stream_id != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="nghttp2_session.c.html#L799">(pri_spec->stream_id == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1042</td><td><a href="nghttp2_session.c.html#L1042">(pri_spec->stream_id != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1127</td><td><a href="nghttp2_session.c.html#L1127">(pri_spec->stream_id == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1379</td><td><a href="nghttp2_session.c.html#L1379">(session->num_idle_streams > max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1595</td><td><a href="nghttp2_session.c.html#L1595">(stream->state != NGHTTP2_STREAM_RESERVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1689</td><td><a href="nghttp2_session.c.html#L1689">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1731</td><td><a href="nghttp2_session.c.html#L1731">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1756</td><td><a href="nghttp2_session.c.html#L1756">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1837</td><td><a href="nghttp2_session.c.html#L1837">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1840</td><td><a href="nghttp2_session.c.html#L1840">(stream->state == NGHTTP2_STREAM_RESERVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1846</td><td><a href="nghttp2_session.c.html#L1846">(stream->state == NGHTTP2_STREAM_OPENED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1849</td><td><a href="nghttp2_session.c.html#L1849">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2137</td><td><a href="nghttp2_session.c.html#L2137">(estimated_payloadlen > session->max_send_header_block_length)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2225</td><td><a href="nghttp2_session.c.html#L2225">(estimated_payloadlen > session->max_send_header_block_length)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2284</td><td><a href="nghttp2_session.c.html#L2284">(aux_data->builtin == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2339</td><td><a href="nghttp2_session.c.html#L2339">(session->remote_window_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2373</td><td><a href="nghttp2_session.c.html#L2373">(session->remote_window_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2677</td><td><a href="nghttp2_session.c.html#L2677">(!session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3843</td><td><a href="nghttp2_session.c.html#L3843">(!session_is_new_peer_stream_id(session, frame->hd.stream_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4021</td><td><a href="nghttp2_session.c.html#L4021">(stream->state == NGHTTP2_STREAM_OPENED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4035</td><td><a href="nghttp2_session.c.html#L4035">(stream->state != NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4063</td><td><a href="nghttp2_session.c.html#L4063">(stream->state == NGHTTP2_STREAM_RESERVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4104</td><td><a href="nghttp2_session.c.html#L4104">(!session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4478</td><td><a href="nghttp2_session.c.html#L4478">(entry->value > NGHTTP2_MAX_WINDOW_SIZE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4539</td><td><a href="nghttp2_session.c.html#L4539">(!noack && !session_is_closing(session))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4567</td><td><a href="nghttp2_session.c.html#L4567">(i < iframe->niv)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4608</td><td><a href="nghttp2_session.c.html#L4608">(!nghttp2_session_is_my_stream_id(session, frame->hd.stream_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4618</td><td><a href="nghttp2_session.c.html#L4618">(!session_is_new_peer_stream_id(session, frame->push_promise.promised_stream_id))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4860</td><td><a href="nghttp2_session.c.html#L4860">(altsvc->origin_len == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4865</td><td><a href="nghttp2_session.c.html#L4865">(altsvc->origin_len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4875</td><td><a href="nghttp2_session.c.html#L4875">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4880</td><td><a href="nghttp2_session.c.html#L4880">(altsvc->field_value_len == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5218</td><td><a href="nghttp2_session.c.html#L5218">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5221</td><td><a href="nghttp2_session.c.html#L5221">(stream->state != NGHTTP2_STREAM_OPENED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5227</td><td><a href="nghttp2_session.c.html#L5227">(stream->state == NGHTTP2_STREAM_RESERVED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5231</td><td><a href="nghttp2_session.c.html#L5231">(stream->state == NGHTTP2_STREAM_CLOSING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5297</td><td><a href="nghttp2_session.c.html#L5297">(i < iframe->niv)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5304</td><td><a href="nghttp2_session.c.html#L5304">(i == iframe->niv)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5326</td><td><a href="nghttp2_session.c.html#L5326">(hd->length < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5425</td><td><a href="nghttp2_session.c.html#L5425">(iframe->payloadleft == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5510</td><td><a href="nghttp2_session.c.html#L5510">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5571</td><td><a href="nghttp2_session.c.html#L5571">(iframe->payloadleft < pri_fieldlen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5602</td><td><a href="nghttp2_session.c.html#L5602">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5629</td><td><a href="nghttp2_session.c.html#L5629">(iframe->payloadleft != NGHTTP2_PRIORITY_SPECLEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5657</td><td><a href="nghttp2_session.c.html#L5657">(iframe->payloadleft != 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5734</td><td><a href="nghttp2_session.c.html#L5734">(iframe->payloadleft < 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5750</td><td><a href="nghttp2_session.c.html#L5750">(iframe->payloadleft != 8)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5765</td><td><a href="nghttp2_session.c.html#L5765">(iframe->payloadleft < 8)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5828</td><td><a href="nghttp2_session.c.html#L5828">(iframe->payloadleft < 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5863</td><td><a href="nghttp2_session.c.html#L5863">(iframe->raw_lbuf == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5937</td><td><a href="nghttp2_session.c.html#L5937">(iframe->payloadleft < pri_fieldlen)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5958</td><td><a href="nghttp2_session.c.html#L5958">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5986</td><td><a href="nghttp2_session.c.html#L5986">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5999</td><td><a href="nghttp2_session.c.html#L5999">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6023</td><td><a href="nghttp2_session.c.html#L6023">(iframe->payloadleft < 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6043</td><td><a href="nghttp2_session.c.html#L6043">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6072</td><td><a href="nghttp2_session.c.html#L6072">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6088</td><td><a href="nghttp2_session.c.html#L6088">(iframe->raw_lbuf == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6107</td><td><a href="nghttp2_session.c.html#L6107">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6121</td><td><a href="nghttp2_session.c.html#L6121">(origin_len > iframe->payloadleft)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6131</td><td><a href="nghttp2_session.c.html#L6131">(iframe->raw_lbuf == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6158</td><td><a href="nghttp2_session.c.html#L6158">(iframe->state == NGHTTP2_IB_READ_HEADER_BLOCK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6197</td><td><a href="nghttp2_session.c.html#L6197">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6235</td><td><a href="nghttp2_session.c.html#L6235">(iframe->payloadleft == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6258</td><td><a href="nghttp2_session.c.html#L6258">(iframe->state == NGHTTP2_IB_READ_HEADER_BLOCK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6264</td><td><a href="nghttp2_session.c.html#L6264">(iframe->state == NGHTTP2_IB_READ_HEADER_BLOCK)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6341</td><td><a href="nghttp2_session.c.html#L6341">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6375</td><td><a href="nghttp2_session.c.html#L6375">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6385</td><td><a href="nghttp2_session.c.html#L6385">(iframe->state == NGHTTP2_IB_EXPECT_CONTINUATION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6429</td><td><a href="nghttp2_session.c.html#L6429">(iframe->state == NGHTTP2_IB_EXPECT_CONTINUATION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6462</td><td><a href="nghttp2_session.c.html#L6462">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6474</td><td><a href="nghttp2_session.c.html#L6474">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6532</td><td><a href="nghttp2_session.c.html#L6532">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6563</td><td><a href="nghttp2_session.c.html#L6563">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6582</td><td><a href="nghttp2_session.c.html#L6582">(iframe->state == NGHTTP2_IB_IGN_DATA)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6642</td><td><a href="nghttp2_session.c.html#L6642">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6655</td><td><a href="nghttp2_session.c.html#L6655">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6696</td><td><a href="nghttp2_session.c.html#L6696">(iframe->payloadleft > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">6763</td><td><a href="nghttp2_session.c.html#L6763">(iframe->state == NGHTTP2_IB_IGN_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7038</td><td><a href="nghttp2_session.c.html#L7038">((flags & NGHTTP2_FLAG_ACK) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">7295</td><td><a href="nghttp2_session.c.html#L7295">(stream == NULL || !nghttp2_stream_check_deferred_item(stream))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5792</td><td><a href="nghttp2_session.c.html#L5792">(!session->callbacks.unpack_extension_callback)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1497</td><td><a href="nghttp2_session.c.html#L1497">(item->aux_data.headers.canceled)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2960</td><td><a href="nghttp2_session.c.html#L2960">(item->aux_data.headers.canceled)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3066</td><td><a href="nghttp2_session.c.html#L3066">(item->aux_data.data.no_copy)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3832</td><td><a href="nghttp2_session.c.html#L3832">(session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4020</td><td><a href="nghttp2_session.c.html#L4020">(nghttp2_session_is_my_stream_id(session, frame->hd.stream_id))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4155</td><td><a href="nghttp2_session.c.html#L4155">(session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4628</td><td><a href="nghttp2_session.c.html#L4628">(session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4793</td><td><a href="nghttp2_session.c.html#L4793">(session_detect_idle_stream(session, frame->hd.stream_id))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">194</td><td><a href="nghttp2_session.c.html#L194">(session->callbacks.error_callback2)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="nghttp2_session.c.html#L417">(*session_ptr == NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1189</td><td><a href="nghttp2_session.c.html#L1189">(session->callbacks.on_stream_close_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1864</td><td><a href="nghttp2_session.c.html#L1864">(session->callbacks.select_padding_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2383</td><td><a href="nghttp2_session.c.html#L2383">(session->callbacks.before_frame_send_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2400</td><td><a href="nghttp2_session.c.html#L2400">(session->callbacks.on_frame_send_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2552</td><td><a href="nghttp2_session.c.html#L2552">(session->callbacks.on_frame_send_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2579</td><td><a href="nghttp2_session.c.html#L2579">(session->callbacks.on_frame_send_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2623</td><td><a href="nghttp2_session.c.html#L2623">(aux_data->data_prd.read_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2652</td><td><a href="nghttp2_session.c.html#L2652">(aux_data->data_prd.read_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3023</td><td><a href="nghttp2_session.c.html#L3023">(session->callbacks.on_frame_not_send_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3220</td><td><a href="nghttp2_session.c.html#L3220">(session->aob.item)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3283</td><td><a href="nghttp2_session.c.html#L3283">(session->callbacks.on_begin_frame_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3299</td><td><a href="nghttp2_session.c.html#L3299">(session->callbacks.on_frame_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3314</td><td><a href="nghttp2_session.c.html#L3314">(session->callbacks.on_begin_headers_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3331</td><td><a href="nghttp2_session.c.html#L3331">(session->callbacks.on_header_callback2)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3334</td><td><a href="nghttp2_session.c.html#L3334">(session->callbacks.on_header_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3354</td><td><a href="nghttp2_session.c.html#L3354">(session->callbacks.on_invalid_header_callback2)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3357</td><td><a href="nghttp2_session.c.html#L3357">(session->callbacks.on_invalid_header_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3382</td><td><a href="nghttp2_session.c.html#L3382">(session->callbacks.on_extension_chunk_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3464</td><td><a href="nghttp2_session.c.html#L3464">(session->callbacks.on_invalid_frame_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3483</td><td><a href="nghttp2_session.c.html#L3483">(session->callbacks.on_invalid_frame_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3517</td><td><a href="nghttp2_session.c.html#L3517">(session->callbacks.on_invalid_frame_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6597</td><td><a href="nghttp2_session.c.html#L6597">(session->callbacks.on_data_chunk_recv_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">6916</td><td><a href="nghttp2_session.c.html#L6916">(opaque_data_len + 8 > NGHTTP2_MAX_PAYLOADLEN)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">7115</td><td><a href="nghttp2_session.c.html#L7115">(session->callbacks.read_length_callback)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">7668</td><td><a href="nghttp2_session.c.html#L7668">(next_stream_id % 2 == 0)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">3989</td><td><a href="nghttp2_session.c.html#L3989">(!nghttp2_session_is_my_stream_id(session, stream->stream_id))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">793</td><td><a href="nghttp2_session.c.html#L793">(!dep_stream || !nghttp2_stream_in_dep_tree(dep_stream))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1062</td><td><a href="nghttp2_session.c.html#L1062">(!dep_stream || !nghttp2_stream_in_dep_tree(dep_stream))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1542</td><td><a href="nghttp2_session.c.html#L1542">(!session->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1592</td><td><a href="nghttp2_session.c.html#L1592">(!session->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1675</td><td><a href="nghttp2_session.c.html#L1675">(!session->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2421</td><td><a href="nghttp2_session.c.html#L2421">(!arg->incoming)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3831</td><td><a href="nghttp2_session.c.html#L3831">(!session->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4094</td><td><a href="nghttp2_session.c.html#L4094">(!session->server)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4426</td><td><a href="nghttp2_session.c.html#L4426">(!session->remote_settings_received)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5694</td><td><a href="nghttp2_session.c.html#L5694">(!iframe->iv)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4564</td><td><a href="nghttp2_session.c.html#L4564">(min_header_size_entry.value < UINT32_MAX)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">5308</td><td><a href="nghttp2_session.c.html#L5308">(iv.settings_id == NGHTTP2_SETTINGS_HEADER_TABLE_SIZE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1545</td><td><a href="nghttp2_session.c.html#L1545">(nghttp2_session_is_my_stream_id(session, stream->stream_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1639</td><td><a href="nghttp2_session.c.html#L1639">(nghttp2_session_is_my_stream_id(session, stream->stream_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1832</td><td><a href="nghttp2_session.c.html#L1832">(nghttp2_session_is_my_stream_id(session, stream->stream_id))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">98</td><td><a href="nghttp2_session.c.html#L98">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">273</td><td><a href="nghttp2_session.c.html#L273">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="nghttp2_session.c.html#L826">(pri_spec->exclusive)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="nghttp2_session.c.html#L856">(stream->item)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1133</td><td><a href="nghttp2_session.c.html#L1133">(pri_spec->exclusive)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1161</td><td><a href="nghttp2_session.c.html#L1161">(stream->item)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="nghttp2_session.c.html#L1261">(session->closed_stream_tail)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1277</td><td><a href="nghttp2_session.c.html#L1277">(session->idle_stream_tail)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1353</td><td><a href="nghttp2_session.c.html#L1353">(session->closed_stream_head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1397</td><td><a href="nghttp2_session.c.html#L1397">(session->idle_stream_head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2114</td><td><a href="nghttp2_session.c.html#L2114">(aux_data->stream_user_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2418</td><td><a href="nghttp2_session.c.html#L2418">(arg->incoming)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2434</td><td><a href="nghttp2_session.c.html#L2434">(arg->head)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2669</td><td><a href="nghttp2_session.c.html#L2669">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2830</td><td><a href="nghttp2_session.c.html#L2830">(aux_data->eof)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3697</td><td><a href="nghttp2_session.c.html#L3697">(inflate_flags & NGHTTP2_HD_INFLATE_FINAL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3966</td><td><a href="nghttp2_session.c.html#L3966">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4561</td><td><a href="nghttp2_session.c.html#L4561">(iframe->max_niv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5683</td><td><a href="nghttp2_session.c.html#L5683">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5822</td><td><a href="nghttp2_session.c.html#L5822">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5860</td><td><a href="nghttp2_session.c.html#L5860">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6248</td><td><a href="nghttp2_session.c.html#L6248">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6284</td><td><a href="nghttp2_session.c.html#L6284">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6330</td><td><a href="nghttp2_session.c.html#L6330">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6363</td><td><a href="nghttp2_session.c.html#L6363">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6612</td><td><a href="nghttp2_session.c.html#L6612">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6661</td><td><a href="nghttp2_session.c.html#L6661">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6722</td><td><a href="nghttp2_session.c.html#L6722">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6751</td><td><a href="nghttp2_session.c.html#L6751">(iframe->payloadleft)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">6892</td><td><a href="nghttp2_session.c.html#L6892">(flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7009</td><td><a href="nghttp2_session.c.html#L7009">(flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7066</td><td><a href="nghttp2_session.c.html#L7066">(flags & NGHTTP2_FLAG_ACK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7184</td><td><a href="nghttp2_session.c.html#L7184">(data_flags & NGHTTP2_DATA_FLAG_EOF)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7194</td><td><a href="nghttp2_session.c.html#L7194">(data_flags & NGHTTP2_DATA_FLAG_NO_COPY)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7463</td><td><a href="nghttp2_session.c.html#L7463">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7489</td><td><a href="nghttp2_session.c.html#L7489">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">7664</td><td><a href="nghttp2_session.c.html#L7664">(session->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">699</td><td><a href="nghttp2_session.c.html#L699">(!*settings_ptr)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">2118</td><td><a href="nghttp2_session.c.html#L2118">(session_predicate_response_headers_send(session, stream) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2843</td><td><a href="nghttp2_session.c.html#L2843">(nghttp2_session_predicate_data_send(session, stream) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4962</td><td><a href="nghttp2_session.c.html#L4962">(nghttp2_http_on_remote_end_stream(stream) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">6572</td><td><a href="nghttp2_session.c.html#L6572">(nghttp2_http_on_data_chunk(stream, (size_t)data_readlen) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">7133</td><td><a href="nghttp2_session.c.html#L7133">((size_t)payloadlen > nghttp2_buf_avail(buf))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">170</td><td><a href="nghttp2_session.c.html#L170">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">177</td><td><a href="nghttp2_session.c.html#L177">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">185</td><td><a href="nghttp2_session.c.html#L185">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="nghttp2_session.c.html#L204">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">226</td><td><a href="nghttp2_session.c.html#L226">(reason == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">238</td><td><a href="nghttp2_session.c.html#L238">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">269</td><td><a href="nghttp2_session.c.html#L269">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">412</td><td><a href="nghttp2_session.c.html#L412">(mem == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">528</td><td><a href="nghttp2_session.c.html#L528">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">532</td><td><a href="nghttp2_session.c.html#L532">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="nghttp2_session.c.html#L536">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">544</td><td><a href="nghttp2_session.c.html#L544">(nbuffer == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">552</td><td><a href="nghttp2_session.c.html#L552">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">618</td><td><a href="nghttp2_session.c.html#L618">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="nghttp2_session.c.html#L652">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">703</td><td><a href="nghttp2_session.c.html#L703">(niv > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">733</td><td><a href="nghttp2_session.c.html#L733">(session == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="nghttp2_session.c.html#L790">(dep_stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">807</td><td><a href="nghttp2_session.c.html#L807">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">832</td><td><a href="nghttp2_session.c.html#L832">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">862</td><td><a href="nghttp2_session.c.html#L862">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">991</td><td><a href="nghttp2_session.c.html#L991">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1001</td><td><a href="nghttp2_session.c.html#L1001">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="nghttp2_session.c.html#L1030">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1035</td><td><a href="nghttp2_session.c.html#L1035">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="nghttp2_session.c.html#L1055">(dep_stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1077</td><td><a href="nghttp2_session.c.html#L1077">(initial_state == NGHTTP2_STREAM_RESERVED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1089</td><td><a href="nghttp2_session.c.html#L1089">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="nghttp2_session.c.html#L1135">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1168</td><td><a href="nghttp2_session.c.html#L1168">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1225</td><td><a href="nghttp2_session.c.html#L1225">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1244</td><td><a href="nghttp2_session.c.html#L1244">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1345</td><td><a href="nghttp2_session.c.html#L1345">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1389</td><td><a href="nghttp2_session.c.html#L1389">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1463</td><td><a href="nghttp2_session.c.html#L1463">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1538</td><td><a href="nghttp2_session.c.html#L1538">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1588</td><td><a href="nghttp2_session.c.html#L1588">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1628</td><td><a href="nghttp2_session.c.html#L1628">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="nghttp2_session.c.html#L1680">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1723</td><td><a href="nghttp2_session.c.html#L1723">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1728</td><td><a href="nghttp2_session.c.html#L1728">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="nghttp2_session.c.html#L1748">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1753</td><td><a href="nghttp2_session.c.html#L1753">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1828</td><td><a href="nghttp2_session.c.html#L1828">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1912</td><td><a href="nghttp2_session.c.html#L1912">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1943</td><td><a href="nghttp2_session.c.html#L1943">(rv == NGHTTP2_ERR_CANCEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1991</td><td><a href="nghttp2_session.c.html#L1991">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2012</td><td><a href="nghttp2_session.c.html#L2012">(next_readmax == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2033</td><td><a href="nghttp2_session.c.html#L2033">(rv == NGHTTP2_ERR_PAUSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2036</td><td><a href="nghttp2_session.c.html#L2036">(rv == NGHTTP2_ERR_DEFERRED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2047</td><td><a href="nghttp2_session.c.html#L2047">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2061</td><td><a href="nghttp2_session.c.html#L2061">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2089</td><td><a href="nghttp2_session.c.html#L2089">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2097</td><td><a href="nghttp2_session.c.html#L2097">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2111</td><td><a href="nghttp2_session.c.html#L2111">(rv == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2128</td><td><a href="nghttp2_session.c.html#L2128">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2144</td><td><a href="nghttp2_session.c.html#L2144">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2153</td><td><a href="nghttp2_session.c.html#L2153">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2201</td><td><a href="nghttp2_session.c.html#L2201">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2216</td><td><a href="nghttp2_session.c.html#L2216">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2231</td><td><a href="nghttp2_session.c.html#L2231">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2235</td><td><a href="nghttp2_session.c.html#L2235">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2259</td><td><a href="nghttp2_session.c.html#L2259">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2267</td><td><a href="nghttp2_session.c.html#L2267">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2295</td><td><a href="nghttp2_session.c.html#L2295">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2304</td><td><a href="nghttp2_session.c.html#L2304">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="nghttp2_session.c.html#L2309">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2386</td><td><a href="nghttp2_session.c.html#L2386">(rv == NGHTTP2_ERR_CANCEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2390</td><td><a href="nghttp2_session.c.html#L2390">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2403</td><td><a href="nghttp2_session.c.html#L2403">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2918</td><td><a href="nghttp2_session.c.html#L2918">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2923</td><td><a href="nghttp2_session.c.html#L2923">(rv == NGHTTP2_ERR_PAUSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2926</td><td><a href="nghttp2_session.c.html#L2926">(rv == NGHTTP2_ERR_DEFERRED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2930</td><td><a href="nghttp2_session.c.html#L2930">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2988</td><td><a href="nghttp2_session.c.html#L2988">(rv == NGHTTP2_ERR_HEADER_COMP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3019</td><td><a href="nghttp2_session.c.html#L3019">(rv == NGHTTP2_ERR_CANCEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3094</td><td><a href="nghttp2_session.c.html#L3094">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3101</td><td><a href="nghttp2_session.c.html#L3101">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3129</td><td><a href="nghttp2_session.c.html#L3129">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3142</td><td><a href="nghttp2_session.c.html#L3142">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3160</td><td><a href="nghttp2_session.c.html#L3160">(rv == NGHTTP2_ERR_WOULDBLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3167</td><td><a href="nghttp2_session.c.html#L3167">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3172</td><td><a href="nghttp2_session.c.html#L3172">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3216</td><td><a href="nghttp2_session.c.html#L3216">(len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3226</td><td><a href="nghttp2_session.c.html#L3226">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3245</td><td><a href="nghttp2_session.c.html#L3245">(datalen <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3250</td><td><a href="nghttp2_session.c.html#L3250">(sentlen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3251</td><td><a href="nghttp2_session.c.html#L3251">(sentlen == NGHTTP2_ERR_WOULDBLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3269</td><td><a href="nghttp2_session.c.html#L3269">(rv > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3270</td><td><a href="nghttp2_session.c.html#L3270">((size_t)rv > len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3288</td><td><a href="nghttp2_session.c.html#L3288">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3302</td><td><a href="nghttp2_session.c.html#L3302">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3317</td><td><a href="nghttp2_session.c.html#L3317">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3320</td><td><a href="nghttp2_session.c.html#L3320">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3343</td><td><a href="nghttp2_session.c.html#L3343">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3368</td><td><a href="nghttp2_session.c.html#L3368">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3385</td><td><a href="nghttp2_session.c.html#L3385">(rv == NGHTTP2_ERR_CANCEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3388</td><td><a href="nghttp2_session.c.html#L3388">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3404</td><td><a href="nghttp2_session.c.html#L3404">(rv == NGHTTP2_ERR_CANCEL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3407</td><td><a href="nghttp2_session.c.html#L3407">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3480</td><td><a href="nghttp2_session.c.html#L3480">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3597</td><td><a href="nghttp2_session.c.html#L3597">(proclen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3632</td><td><a href="nghttp2_session.c.html#L3632">(rv == NGHTTP2_ERR_IGN_HTTP_HEADER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3637</td><td><a href="nghttp2_session.c.html#L3637">(rv2 == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3640</td><td><a href="nghttp2_session.c.html#L3640">(rv2 != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3662</td><td><a href="nghttp2_session.c.html#L3662">(rv == NGHTTP2_ERR_HTTP_HEADER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3687</td><td><a href="nghttp2_session.c.html#L3687">(rv == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3691</td><td><a href="nghttp2_session.c.html#L3691">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3782</td><td><a href="nghttp2_session.c.html#L3782">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3917</td><td><a href="nghttp2_session.c.html#L3917">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3949</td><td><a href="nghttp2_session.c.html#L3949">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3994</td><td><a href="nghttp2_session.c.html#L3994">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4023</td><td><a href="nghttp2_session.c.html#L4023">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4037</td><td><a href="nghttp2_session.c.html#L4037">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4053</td><td><a href="nghttp2_session.c.html#L4053">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4112</td><td><a href="nghttp2_session.c.html#L4112">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4167</td><td><a href="nghttp2_session.c.html#L4167">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4198</td><td><a href="nghttp2_session.c.html#L4198">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4250</td><td><a href="nghttp2_session.c.html#L4250">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4262</td><td><a href="nghttp2_session.c.html#L4262">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4318</td><td><a href="nghttp2_session.c.html#L4318">(i < niv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4331</td><td><a href="nghttp2_session.c.html#L4331">(min_header_table_size < header_table_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4334</td><td><a href="nghttp2_session.c.html#L4334">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4341</td><td><a href="nghttp2_session.c.html#L4341">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4345</td><td><a href="nghttp2_session.c.html#L4345">(new_initial_window_size != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4349</td><td><a href="nghttp2_session.c.html#L4349">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4354</td><td><a href="nghttp2_session.c.html#L4354">(i < niv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4417</td><td><a href="nghttp2_session.c.html#L4417">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4440</td><td><a href="nghttp2_session.c.html#L4440">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4491</td><td><a href="nghttp2_session.c.html#L4491">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4542</td><td><a href="nghttp2_session.c.html#L4542">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4644</td><td><a href="nghttp2_session.c.html#L4644">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4672</td><td><a href="nghttp2_session.c.html#L4672">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4686</td><td><a href="nghttp2_session.c.html#L4686">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4707</td><td><a href="nghttp2_session.c.html#L4707">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4916</td><td><a href="nghttp2_session.c.html#L4916">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4938</td><td><a href="nghttp2_session.c.html#L4938">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5041</td><td><a href="nghttp2_session.c.html#L5041">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5057</td><td><a href="nghttp2_session.c.html#L5057">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5083</td><td><a href="nghttp2_session.c.html#L5083">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5095</td><td><a href="nghttp2_session.c.html#L5095">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5120</td><td><a href="nghttp2_session.c.html#L5120">(window_update_queued == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5130</td><td><a href="nghttp2_session.c.html#L5130">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5186</td><td><a href="nghttp2_session.c.html#L5186">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5370</td><td><a href="nghttp2_session.c.html#L5370">(trail_padlen > payloadleft)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5373</td><td><a href="nghttp2_session.c.html#L5373">(readlen < padlen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5513</td><td><a href="nghttp2_session.c.html#L5513">(rv == NGHTTP2_ERR_IGN_PAYLOAD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5525</td><td><a href="nghttp2_session.c.html#L5525">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5536</td><td><a href="nghttp2_session.c.html#L5536">(rv == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5553</td><td><a href="nghttp2_session.c.html#L5553">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5563</td><td><a href="nghttp2_session.c.html#L5563">(rv == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5570</td><td><a href="nghttp2_session.c.html#L5570">(pri_fieldlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5606</td><td><a href="nghttp2_session.c.html#L5606">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5616</td><td><a href="nghttp2_session.c.html#L5616">(rv == NGHTTP2_ERR_IGN_HEADER_BLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5719</td><td><a href="nghttp2_session.c.html#L5719">(rv < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5729</td><td><a href="nghttp2_session.c.html#L5729">(rv == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5936</td><td><a href="nghttp2_session.c.html#L5936">(pri_fieldlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5962</td><td><a href="nghttp2_session.c.html#L5962">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5972</td><td><a href="nghttp2_session.c.html#L5972">(rv == NGHTTP2_ERR_IGN_HEADER_BLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6047</td><td><a href="nghttp2_session.c.html#L6047">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6058</td><td><a href="nghttp2_session.c.html#L6058">(rv == NGHTTP2_ERR_IGN_HEADER_BLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6085</td><td><a href="nghttp2_session.c.html#L6085">(debuglen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6173</td><td><a href="nghttp2_session.c.html#L6173">(data_readlen == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6201</td><td><a href="nghttp2_session.c.html#L6201">(rv == NGHTTP2_ERR_PAUSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6208</td><td><a href="nghttp2_session.c.html#L6208">(rv == NGHTTP2_ERR_TEMPORAL_CALLBACK_FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6233</td><td><a href="nghttp2_session.c.html#L6233">(rv == NGHTTP2_ERR_HEADER_COMP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6327</td><td><a href="nghttp2_session.c.html#L6327">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6353</td><td><a href="nghttp2_session.c.html#L6353">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6492</td><td><a href="nghttp2_session.c.html#L6492">(padlen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6524</td><td><a href="nghttp2_session.c.html#L6524">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6547</td><td><a href="nghttp2_session.c.html#L6547">(data_readlen == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6554</td><td><a href="nghttp2_session.c.html#L6554">(padlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6570</td><td><a href="nghttp2_session.c.html#L6570">(data_readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6601</td><td><a href="nghttp2_session.c.html#L6601">(rv == NGHTTP2_ERR_PAUSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6634</td><td><a href="nghttp2_session.c.html#L6634">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6680</td><td><a href="nghttp2_session.c.html#L6680">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6687</td><td><a href="nghttp2_session.c.html#L6687">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6712</td><td><a href="nghttp2_session.c.html#L6712">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6741</td><td><a href="nghttp2_session.c.html#L6741">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6789</td><td><a href="nghttp2_session.c.html#L6789">(readlen > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6791</td><td><a href="nghttp2_session.c.html#L6791">(proclen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6797</td><td><a href="nghttp2_session.c.html#L6797">(readlen == NGHTTP2_ERR_EOF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6799</td><td><a href="nghttp2_session.c.html#L6799">(readlen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6828</td><td><a href="nghttp2_session.c.html#L6828">(num_active_streams > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6874</td><td><a href="nghttp2_session.c.html#L6874">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6886</td><td><a href="nghttp2_session.c.html#L6886">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6920</td><td><a href="nghttp2_session.c.html#L6920">(opaque_data_copy == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6927</td><td><a href="nghttp2_session.c.html#L6927">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6947</td><td><a href="nghttp2_session.c.html#L6947">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6965</td><td><a href="nghttp2_session.c.html#L6965">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6978</td><td><a href="nghttp2_session.c.html#L6978">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">6991</td><td><a href="nghttp2_session.c.html#L6991">(*i)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7010</td><td><a href="nghttp2_session.c.html#L7010">(niv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7024</td><td><a href="nghttp2_session.c.html#L7024">(item == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7028</td><td><a href="nghttp2_session.c.html#L7028">(niv > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7030</td><td><a href="nghttp2_session.c.html#L7030">(iv_copy == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7040</td><td><a href="nghttp2_session.c.html#L7040">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7054</td><td><a href="nghttp2_session.c.html#L7054">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7076</td><td><a href="nghttp2_session.c.html#L7076">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7083</td><td><a href="nghttp2_session.c.html#L7083">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7090</td><td><a href="nghttp2_session.c.html#L7090">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7129</td><td><a href="nghttp2_session.c.html#L7129">(payloadlen <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7139</td><td><a href="nghttp2_session.c.html#L7139">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7221</td><td><a href="nghttp2_session.c.html#L7221">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7321</td><td><a href="nghttp2_session.c.html#L7321">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7332</td><td><a href="nghttp2_session.c.html#L7332">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7343</td><td><a href="nghttp2_session.c.html#L7343">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7351</td><td><a href="nghttp2_session.c.html#L7351">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7377</td><td><a href="nghttp2_session.c.html#L7377">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7454</td><td><a href="nghttp2_session.c.html#L7454">(settings_payloadlen % NGHTTP2_FRAME_SETTINGS_ENTRY_LENGTH)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">7459</td><td><a href="nghttp2_session.c.html#L7459">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7473</td><td><a href="nghttp2_session.c.html#L7473">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7482</td><td><a href="nghttp2_session.c.html#L7482">(stream == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7510</td><td><a href="nghttp2_session.c.html#L7510">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7539</td><td><a href="nghttp2_session.c.html#L7539">(rv != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7584</td><td><a href="nghttp2_session.c.html#L7584">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7634</td><td><a href="nghttp2_session.c.html#L7634">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">7665</td><td><a href="nghttp2_session.c.html#L7665">(next_stream_id % 2)</a></td><td class="num">2.35</td></tr>
+      <tr><td class="num line">7686</td><td><a href="nghttp2_session.c.html#L7686">(stream_id == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">774</td><td><a href="nghttp2_session.c.html#L774">(!nghttp2_stream_in_dep_tree(stream))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2333</td><td><a href="nghttp2_session.c.html#L2333">(!session_is_outgoing_concurrent_streams_max(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2364</td><td><a href="nghttp2_session.c.html#L2364">(!session_is_outgoing_concurrent_streams_max(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3887</td><td><a href="nghttp2_session.c.html#L3887">(!session_allow_incoming_new_stream(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3978</td><td><a href="nghttp2_session.c.html#L3978">(!session_allow_incoming_new_stream(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4613</td><td><a href="nghttp2_session.c.html#L4613">(!session_allow_incoming_new_stream(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">5407</td><td><a href="nghttp2_session.c.html#L5407">(!nghttp2_session_want_read(session))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">7019</td><td><a href="nghttp2_session.c.html#L7019">(!nghttp2_iv_check(iv, niv))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">574</td><td><a href="nghttp2_session.c.html#L574">(!server)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">721</td><td><a href="nghttp2_session.c.html#L721">(!settings)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">852</td><td><a href="nghttp2_session.c.html#L852">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="nghttp2_session.c.html#L903">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1155</td><td><a href="nghttp2_session.c.html#L1155">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1202</td><td><a href="nghttp2_session.c.html#L1202">(!is_my_stream_id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2607</td><td><a href="nghttp2_session.c.html#L2607">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2676</td><td><a href="nghttp2_session.c.html#L2676">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2684</td><td><a href="nghttp2_session.c.html#L2684">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2749</td><td><a href="nghttp2_session.c.html#L2749">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3905</td><td><a href="nghttp2_session.c.html#L3905">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4058</td><td><a href="nghttp2_session.c.html#L4058">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4101</td><td><a href="nghttp2_session.c.html#L4101">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4405</td><td><a href="nghttp2_session.c.html#L4405">(!settings)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4663</td><td><a href="nghttp2_session.c.html#L4663">(!promised_stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4799</td><td><a href="nghttp2_session.c.html#L4799">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4871</td><td><a href="nghttp2_session.c.html#L4871">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5201</td><td><a href="nghttp2_session.c.html#L5201">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5886</td><td><a href="nghttp2_session.c.html#L5886">(!on_begin_frame_called)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">6509</td><td><a href="nghttp2_session.c.html#L6509">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7559</td><td><a href="nghttp2_session.c.html#L7559">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7572</td><td><a href="nghttp2_session.c.html#L7572">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7600</td><td><a href="nghttp2_session.c.html#L7600">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7644</td><td><a href="nghttp2_session.c.html#L7644">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7713</td><td><a href="nghttp2_session.c.html#L7713">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">7756</td><td><a href="nghttp2_session.c.html#L7756">(!stream)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">134</td><td><a href="nghttp2_session.c.html#L134">(nghttp2_session_is_my_stream_id(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="nghttp2_session.c.html#L140">(session_is_new_peer_stream_id(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">801</td><td><a href="nghttp2_session.c.html#L801">(nghttp2_stream_dep_find_ancestor(dep_stream, stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="nghttp2_session.c.html#L1103">(nghttp2_session_is_my_stream_id(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="nghttp2_session.c.html#L1120">(nghttp2_session_is_my_stream_id(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1242</td><td><a href="nghttp2_session.c.html#L1242">(nghttp2_stream_in_dep_tree(stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1466</td><td><a href="nghttp2_session.c.html#L1466">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1719</td><td><a href="nghttp2_session.c.html#L1719">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1734</td><td><a href="nghttp2_session.c.html#L1734">(state_reserved_local(session, stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1744</td><td><a href="nghttp2_session.c.html#L1744">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1764</td><td><a href="nghttp2_session.c.html#L1764">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1901</td><td><a href="nghttp2_session.c.html#L1901">(nghttp2_is_fatal((int)padded_payloadlen))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2001</td><td><a href="nghttp2_session.c.html#L2001">(nghttp2_is_fatal(rv2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2021</td><td><a href="nghttp2_session.c.html#L2021">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2039</td><td><a href="nghttp2_session.c.html#L2039">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2050</td><td><a href="nghttp2_session.c.html#L2050">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="nghttp2_session.c.html#L2056">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2066</td><td><a href="nghttp2_session.c.html#L2066">(nghttp2_is_fatal(rv2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2101</td><td><a href="nghttp2_session.c.html#L2101">(session_enforce_http_messaging(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2168</td><td><a href="nghttp2_session.c.html#L2168">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2182</td><td><a href="nghttp2_session.c.html#L2182">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2195</td><td><a href="nghttp2_session.c.html#L2195">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2285</td><td><a href="nghttp2_session.c.html#L2285">(session_is_closing(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="nghttp2_session.c.html#L2470">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2545</td><td><a href="nghttp2_session.c.html#L2545">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2554</td><td><a href="nghttp2_session.c.html#L2554">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2568</td><td><a href="nghttp2_session.c.html#L2568">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2581</td><td><a href="nghttp2_session.c.html#L2581">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2593</td><td><a href="nghttp2_session.c.html#L2593">(nghttp2_bufs_next_present(framebufs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2599</td><td><a href="nghttp2_session.c.html#L2599">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2618</td><td><a href="nghttp2_session.c.html#L2618">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2627</td><td><a href="nghttp2_session.c.html#L2627">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2647</td><td><a href="nghttp2_session.c.html#L2647">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2655</td><td><a href="nghttp2_session.c.html#L2655">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2690</td><td><a href="nghttp2_session.c.html#L2690">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2697</td><td><a href="nghttp2_session.c.html#L2697">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2705</td><td><a href="nghttp2_session.c.html#L2705">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2725</td><td><a href="nghttp2_session.c.html#L2725">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2741</td><td><a href="nghttp2_session.c.html#L2741">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2767</td><td><a href="nghttp2_session.c.html#L2767">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2807</td><td><a href="nghttp2_session.c.html#L2807">(nghttp2_bufs_next_present(framebufs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2847</td><td><a href="nghttp2_session.c.html#L2847">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2908</td><td><a href="nghttp2_session.c.html#L2908">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2979</td><td><a href="nghttp2_session.c.html#L2979">(nghttp2_is_fatal(rv2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2994</td><td><a href="nghttp2_session.c.html#L2994">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3015</td><td><a href="nghttp2_session.c.html#L3015">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3054</td><td><a href="nghttp2_session.c.html#L3054">(nghttp2_is_fatal(rv2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3138</td><td><a href="nghttp2_session.c.html#L3138">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3145</td><td><a href="nghttp2_session.c.html#L3145">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3151</td><td><a href="nghttp2_session.c.html#L3151">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3504</td><td><a href="nghttp2_session.c.html#L3504">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3534</td><td><a href="nghttp2_session.c.html#L3534">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3594</td><td><a href="nghttp2_session.c.html#L3594">(nghttp2_is_fatal((int)proclen))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3606</td><td><a href="nghttp2_session.c.html#L3606">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3613</td><td><a href="nghttp2_session.c.html#L3613">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3628</td><td><a href="nghttp2_session.c.html#L3628">(session_enforce_http_messaging(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3656</td><td><a href="nghttp2_session.c.html#L3656">(nghttp2_is_fatal(rv2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3674</td><td><a href="nghttp2_session.c.html#L3674">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3681</td><td><a href="nghttp2_session.c.html#L3681">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3729</td><td><a href="nghttp2_session.c.html#L3729">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3748</td><td><a href="nghttp2_session.c.html#L3748">(session_enforce_http_messaging(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3793</td><td><a href="nghttp2_session.c.html#L3793">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3808</td><td><a href="nghttp2_session.c.html#L3808">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3881</td><td><a href="nghttp2_session.c.html#L3881">(session_is_incoming_concurrent_streams_max(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3897</td><td><a href="nghttp2_session.c.html#L3897">(session_is_incoming_concurrent_streams_pending_max(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3910</td><td><a href="nghttp2_session.c.html#L3910">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3972</td><td><a href="nghttp2_session.c.html#L3972">(session_is_incoming_concurrent_streams_max(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3983</td><td><a href="nghttp2_session.c.html#L3983">(session_is_incoming_concurrent_streams_pending_max(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4117</td><td><a href="nghttp2_session.c.html#L4117">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4124</td><td><a href="nghttp2_session.c.html#L4124">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4129</td><td><a href="nghttp2_session.c.html#L4129">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4172</td><td><a href="nghttp2_session.c.html#L4172">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4211</td><td><a href="nghttp2_session.c.html#L4211">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4418</td><td><a href="nghttp2_session.c.html#L4418">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4441</td><td><a href="nghttp2_session.c.html#L4441">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4487</td><td><a href="nghttp2_session.c.html#L4487">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4543</td><td><a href="nghttp2_session.c.html#L4543">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4747</td><td><a href="nghttp2_session.c.html#L4747">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4802</td><td><a href="nghttp2_session.c.html#L4802">(state_reserved_remote(session, stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4824</td><td><a href="nghttp2_session.c.html#L4824">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4917</td><td><a href="nghttp2_session.c.html#L4917">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4933</td><td><a href="nghttp2_session.c.html#L4933">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4965</td><td><a href="nghttp2_session.c.html#L4965">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4977</td><td><a href="nghttp2_session.c.html#L4977">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4984</td><td><a href="nghttp2_session.c.html#L4984">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4996</td><td><a href="nghttp2_session.c.html#L4996">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5126</td><td><a href="nghttp2_session.c.html#L5126">(nghttp2_should_send_window_update(local_window_size, recv_size))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5194</td><td><a href="nghttp2_session.c.html#L5194">(session_detect_idle_stream(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5217</td><td><a href="nghttp2_session.c.html#L5217">(nghttp2_session_is_my_stream_id(session, stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5238</td><td><a href="nghttp2_session.c.html#L5238">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5403</td><td><a href="nghttp2_session.c.html#L5403">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5449</td><td><a href="nghttp2_session.c.html#L5449">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5456</td><td><a href="nghttp2_session.c.html#L5456">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5492</td><td><a href="nghttp2_session.c.html#L5492">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5520</td><td><a href="nghttp2_session.c.html#L5520">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5530</td><td><a href="nghttp2_session.c.html#L5530">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5557</td><td><a href="nghttp2_session.c.html#L5557">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5589</td><td><a href="nghttp2_session.c.html#L5589">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5596</td><td><a href="nghttp2_session.c.html#L5596">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5609</td><td><a href="nghttp2_session.c.html#L5609">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5723</td><td><a href="nghttp2_session.c.html#L5723">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5782</td><td><a href="nghttp2_session.c.html#L5782">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5897</td><td><a href="nghttp2_session.c.html#L5897">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5929</td><td><a href="nghttp2_session.c.html#L5929">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5952</td><td><a href="nghttp2_session.c.html#L5952">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5965</td><td><a href="nghttp2_session.c.html#L5965">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5982</td><td><a href="nghttp2_session.c.html#L5982">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5995</td><td><a href="nghttp2_session.c.html#L5995">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6015</td><td><a href="nghttp2_session.c.html#L6015">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6037</td><td><a href="nghttp2_session.c.html#L6037">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6051</td><td><a href="nghttp2_session.c.html#L6051">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6068</td><td><a href="nghttp2_session.c.html#L6068">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6103</td><td><a href="nghttp2_session.c.html#L6103">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6193</td><td><a href="nghttp2_session.c.html#L6193">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6222</td><td><a href="nghttp2_session.c.html#L6222">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6266</td><td><a href="nghttp2_session.c.html#L6266">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6306</td><td><a href="nghttp2_session.c.html#L6306">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6337</td><td><a href="nghttp2_session.c.html#L6337">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6371</td><td><a href="nghttp2_session.c.html#L6371">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6414</td><td><a href="nghttp2_session.c.html#L6414">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6434</td><td><a href="nghttp2_session.c.html#L6434">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6458</td><td><a href="nghttp2_session.c.html#L6458">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6470</td><td><a href="nghttp2_session.c.html#L6470">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6484</td><td><a href="nghttp2_session.c.html#L6484">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6495</td><td><a href="nghttp2_session.c.html#L6495">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6528</td><td><a href="nghttp2_session.c.html#L6528">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6540</td><td><a href="nghttp2_session.c.html#L6540">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6559</td><td><a href="nghttp2_session.c.html#L6559">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6571</td><td><a href="nghttp2_session.c.html#L6571">(session_enforce_http_messaging(session))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6578</td><td><a href="nghttp2_session.c.html#L6578">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6589</td><td><a href="nghttp2_session.c.html#L6589">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6605</td><td><a href="nghttp2_session.c.html#L6605">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6617</td><td><a href="nghttp2_session.c.html#L6617">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6638</td><td><a href="nghttp2_session.c.html#L6638">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6651</td><td><a href="nghttp2_session.c.html#L6651">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6683</td><td><a href="nghttp2_session.c.html#L6683">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6701</td><td><a href="nghttp2_session.c.html#L6701">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6729</td><td><a href="nghttp2_session.c.html#L6729">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6759</td><td><a href="nghttp2_session.c.html#L6759">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">6911</td><td><a href="nghttp2_session.c.html#L6911">(nghttp2_session_is_my_stream_id(session, last_stream_id))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7211</td><td><a href="nghttp2_session.c.html#L7211">(nghttp2_is_fatal((int)padded_payloadlen))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7302</td><td><a href="nghttp2_session.c.html#L7302">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7594</td><td><a href="nghttp2_session.c.html#L7594">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7606</td><td><a href="nghttp2_session.c.html#L7606">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7622</td><td><a href="nghttp2_session.c.html#L7622">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7650</td><td><a href="nghttp2_session.c.html#L7650">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">7722</td><td><a href="nghttp2_session.c.html#L7722">(nghttp2_is_fatal(rv))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="nghttp2_session.c.html#L446">(server)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">462</td><td><a href="nghttp2_session.c.html#L462">(option)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">563</td><td><a href="nghttp2_session.c.html#L563">(nghttp2_enable_strict_preface)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">891</td><td><a href="nghttp2_session.c.html#L891">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">927</td><td><a href="nghttp2_session.c.html#L927">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1025</td><td><a href="nghttp2_session.c.html#L1025">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1056</td><td><a href="nghttp2_session.c.html#L1056">(stream_alloc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1081</td><td><a href="nghttp2_session.c.html#L1081">(stream_alloc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1206</td><td><a href="nghttp2_session.c.html#L1206">(is_my_stream_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1298</td><td><a href="nghttp2_session.c.html#L1298">(prev_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1304</td><td><a href="nghttp2_session.c.html#L1304">(next_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1986</td><td><a href="nghttp2_session.c.html#L1986">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1996</td><td><a href="nghttp2_session.c.html#L1996">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2351</td><td><a href="nghttp2_session.c.html#L2351">(item)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2358</td><td><a href="nghttp2_session.c.html#L2358">(item)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2366</td><td><a href="nghttp2_session.c.html#L2366">(item)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2460</td><td><a href="nghttp2_session.c.html#L2460">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2472</td><td><a href="nghttp2_session.c.html#L2472">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2539</td><td><a href="nghttp2_session.c.html#L2539">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2572</td><td><a href="nghttp2_session.c.html#L2572">(stream_closed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2844</td><td><a href="nghttp2_session.c.html#L2844">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2973</td><td><a href="nghttp2_session.c.html#L2973">(opened_stream_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3048</td><td><a href="nghttp2_session.c.html#L3048">(opened_stream_id)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3090</td><td><a href="nghttp2_session.c.html#L3090">(fast_cb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3179</td><td><a href="nghttp2_session.c.html#L3179">(pause)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3627</td><td><a href="nghttp2_session.c.html#L3627">(subject_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3754</td><td><a href="nghttp2_session.c.html#L3754">(subject_stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4161</td><td><a href="nghttp2_session.c.html#L4161">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4330</td><td><a href="nghttp2_session.c.html#L4330">(header_table_size_seen)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6479</td><td><a href="nghttp2_session.c.html#L6479">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6786</td><td><a href="nghttp2_session.c.html#L6786">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">6915</td><td><a href="nghttp2_session.c.html#L6915">(opaque_data_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7242</td><td><a href="nghttp2_session.c.html#L7242">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7257</td><td><a href="nghttp2_session.c.html#L7257">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7546</td><td><a href="nghttp2_session.c.html#L7546">(head_request)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">7746</td><td><a href="nghttp2_session.c.html#L7746">(stream)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

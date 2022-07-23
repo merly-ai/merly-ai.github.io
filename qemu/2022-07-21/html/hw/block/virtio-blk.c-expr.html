@@ -1,0 +1,157 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\block\virtio-blk.c Ctrl Expressions (106) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\block\virtio-blk.c Ctrl Expressions (106) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\block\virtio-blk.c Ctrl Expressions (106)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">947</td><td><a href="virtio-blk.c.html#L947">(<span style='background-color:#741da3;'>length > 0 && <span style='background-color:#741da3;'>length / conf->heads / conf->secs % blk_size</span></span>)</a></td><td class="num">2018.05</td></tr>
+      <tr><td class="num line">689</td><td><a href="virtio-blk.c.html#L689">(mrb->num_reqs > 0 && (<span style='background-color:#741da3;'>mrb->num_reqs == VIRTIO_BLK_MAX_MERGE_REQS || is_write != mrb->is_write || !s->conf.request_merging</span>))</a></td><td class="num">1043.00</td></tr>
+      <tr><td class="num line">476</td><td><a href="virtio-blk.c.html#L476">(sector_num + nb_sectors != req->sector_num || niov > blk_get_max_iov(blk) - req->qiov.niov || req->qiov.size > max_transfer || nb_sectors > (max_transfer - req->qiov.size) / BDRV_SECTOR_SIZE)</a></td><td class="num">71.15</td></tr>
+      <tr><td class="num line">1174</td><td><a href="virtio-blk.c.html#L1174">(!blkconf_apply_backend_options(&conf->conf, !blk_supports_write_perm(conf->conf.blk), true, errp))</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">632</td><td><a href="virtio-blk.c.html#L632">(unlikely(iov_to_buf(out_iov, out_num, 0, &req->out, sizeof(req->out)) != sizeof(req->out)))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">1188</td><td><a href="virtio-blk.c.html#L1188">(virtio_has_feature(s->host_features, VIRTIO_BLK_F_DISCARD) && (!conf->max_discard_sectors || conf->max_discard_sectors > BDRV_REQUEST_MAX_SECTORS))</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">1197</td><td><a href="virtio-blk.c.html#L1197">(virtio_has_feature(s->host_features, VIRTIO_BLK_F_WRITE_ZEROES) && (!conf->max_write_zeroes_sectors || conf->max_write_zeroes_sectors > BDRV_REQUEST_MAX_SECTORS))</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">1166</td><td><a href="virtio-blk.c.html#L1166">(!is_power_of_2(conf->queue_size) || conf->queue_size > VIRTQUEUE_MAX_SIZE)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">739</td><td><a href="virtio-blk.c.html#L739">(unlikely(!(type & VIRTIO_BLK_T_OUT) || out_len > sizeof(dwz_hdr)))</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">641</td><td><a href="virtio-blk.c.html#L641">(in_iov[in_num - 1].iov_len < sizeof(struct virtio_blk_inhdr))</a></td><td class="num">23.60</td></tr>
+      <tr><td class="num line">746</td><td><a href="virtio-blk.c.html#L746">(unlikely(iov_to_buf(out_iov, out_num, 0, &dwz_hdr, sizeof(dwz_hdr)) != sizeof(dwz_hdr)))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1180</td><td><a href="virtio-blk.c.html#L1180">(!blkconf_geometry(&conf->conf, NULL, 65535, 255, 255, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1184</td><td><a href="virtio-blk.c.html#L1184">(!blkconf_blocksizes(&conf->conf, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">627</td><td><a href="virtio-blk.c.html#L627">(req->elem.out_num < 1 || req->elem.in_num < 1)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">236</td><td><a href="virtio-blk.c.html#L236">(hdr->status == 0 && hdr->sb_len_wr > 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">307</td><td><a href="virtio-blk.c.html#L307">(elem->out_num > 2 && elem->in_num > 3)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1016</td><td><a href="virtio-blk.c.html#L1016">(blk_enable_write_cache(s->blk) || (s->conf.x_enable_wce_if_config_wce && virtio_has_feature(features, VIRTIO_BLK_F_CONFIG_WCE)))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">288</td><td><a href="virtio-blk.c.html#L288">(elem->out_num < 2 || elem->in_num < 3)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">511</td><td><a href="virtio-blk.c.html#L511">(mrb->is_write && mrb->num_reqs > 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">87</td><td><a href="virtio-blk.c.html#L87">(s->dataplane_started && !s->dataplane_disabled)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">810</td><td><a href="virtio-blk.c.html#L810">(s->dataplane && !s->dataplane_started)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">959</td><td><a href="virtio-blk.c.html#L959">(discard_granularity == -1 || !s->conf.report_discard_granularity)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">533</td><td><a href="virtio-blk.c.html#L533">(sector > total_sectors || nb_sectors > total_sectors - sector)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">441</td><td><a href="virtio-blk.c.html#L441">(req1->sector_num > req2->sector_num)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">443</td><td><a href="virtio-blk.c.html#L443">(req1->sector_num < req2->sector_num)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">676</td><td><a href="virtio-blk.c.html#L676">(!virtio_blk_sect_range_ok(s, req->sector_num, req->qiov.size))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">881</td><td><a href="virtio-blk.c.html#L881">(!s->bh && !virtio_bus_ioeventfd_enabled(bus))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">785</td><td><a href="virtio-blk.c.html#L785">((req = virtio_blk_get_request(s, vq)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">529</td><td><a href="virtio-blk.c.html#L529">(size % dev->conf.conf.logical_block_size)</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">130</td><td><a href="virtio-blk.c.html#L130">(req->qiov.nalloc != -1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">328</td><td><a href="virtio-blk.c.html#L328">(i < ioctl_req->hdr.iovec_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">341</td><td><a href="virtio-blk.c.html#L341">(i < ioctl_req->hdr.iovec_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1024</td><td><a href="virtio-blk.c.html#L1024">(s->conf.num_queues > 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1075</td><td><a href="virtio-blk.c.html#L1075">(s->conf.num_queues > 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">526</td><td><a href="virtio-blk.c.html#L526">(sector & dev->sector_mask)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">320</td><td><a href="virtio-blk.c.html#L320">(elem->out_num > 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="virtio-blk.c.html#L334">(elem->in_num > 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">456</td><td><a href="virtio-blk.c.html#L456">(mrb->num_reqs == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="virtio-blk.c.html#L467">(i < mrb->num_reqs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1150</td><td><a href="virtio-blk.c.html#L1150">(!blk_is_inserted(conf->conf.blk))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1154</td><td><a href="virtio-blk.c.html#L1154">(conf->num_queues == VIRTIO_BLK_AUTO_NUM_QUEUES)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1161</td><td><a href="virtio-blk.c.html#L1161">(conf->queue_size <= 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1215</td><td><a href="virtio-blk.c.html#L1215">(i < conf->num_queues)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1222</td><td><a href="virtio-blk.c.html#L1222">(i < conf->num_queues)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1251</td><td><a href="virtio-blk.c.html#L1251">(i < conf->num_queues)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="virtio-blk.c.html#L1146">(!conf->conf.blk)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="virtio-blk.c.html#L408">(i < start + num_reqs)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">299</td><td><a href="virtio-blk.c.html#L299">(!virtio_has_feature(blk->host_features, VIRTIO_BLK_F_SCSI))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1021</td><td><a href="virtio-blk.c.html#L1021">(!blk_is_writable(s->blk))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">815</td><td><a href="virtio-blk.c.html#L815">(!s->dataplane_disabled)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1035</td><td><a href="virtio-blk.c.html#L1035">(!(status & VIRTIO_CONFIG_S_DRIVER | VIRTIO_CONFIG_S_DRIVER_OK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1039</td><td><a href="virtio-blk.c.html#L1039">(!(status & VIRTIO_CONFIG_S_DRIVER_OK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1157</td><td><a href="virtio-blk.c.html#L1157">(!conf->num_queues)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">576</td><td><a href="virtio-blk.c.html#L576">(unlikely(flags & ~VIRTIO_BLK_WRITE_ZEROES_FLAG_UNMAP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">599</td><td><a href="virtio-blk.c.html#L599">(unlikely(flags & VIRTIO_BLK_WRITE_ZEROES_FLAG_UNMAP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">957</td><td><a href="virtio-blk.c.html#L957">(virtio_has_feature(s->host_features, VIRTIO_BLK_F_DISCARD))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">973</td><td><a href="virtio-blk.c.html#L973">(virtio_has_feature(s->host_features, VIRTIO_BLK_F_WRITE_ZEROES))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1007</td><td><a href="virtio-blk.c.html#L1007">(virtio_has_feature(s->host_features, VIRTIO_BLK_F_SCSI))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">584</td><td><a href="virtio-blk.c.html#L584">(flags & VIRTIO_BLK_WRITE_ZEROES_FLAG_UNMAP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">901</td><td><a href="virtio-blk.c.html#L901">(s->rq)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="virtio-blk.c.html#L560">(unlikely(num_sectors > max_sectors))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">786</td><td><a href="virtio-blk.c.html#L786">(virtio_blk_handle_request(req, &mrb))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">832</td><td><a href="virtio-blk.c.html#L832">(virtio_blk_handle_request(req, &mrb))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">100</td><td><a href="virtio-blk.c.html#L100">(action == BLOCK_ERROR_ACTION_STOP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">106</td><td><a href="virtio-blk.c.html#L106">(action == BLOCK_ERROR_ACTION_REPORT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="virtio-blk.c.html#L381">(status != -EINPROGRESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">394</td><td><a href="virtio-blk.c.html#L394">(num_reqs > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">404</td><td><a href="virtio-blk.c.html#L404">(i < tmp_niov)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="virtio-blk.c.html#L469">(num_reqs > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">486</td><td><a href="virtio-blk.c.html#L486">(num_reqs == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="virtio-blk.c.html#L523">(nb_sectors > BDRV_REQUEST_MAX_SECTORS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">757</td><td><a href="virtio-blk.c.html#L757">(err_status != VIRTIO_BLK_S_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1095</td><td><a href="virtio-blk.c.html#L1095">(nvqs > 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="virtio-blk.c.html#L1098">(vq_idx >= nvqs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1220</td><td><a href="virtio-blk.c.html#L1220">(err != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="virtio-blk.c.html#L798">(mrb.num_reqs)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">847</td><td><a href="virtio-blk.c.html#L847">(mrb.num_reqs)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">567</td><td><a href="virtio-blk.c.html#L567">(unlikely(!virtio_blk_sect_range_ok(s, sector, bytes)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">796</td><td><a href="virtio-blk.c.html#L796">(!virtio_queue_empty(vq))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1058</td><td><a href="virtio-blk.c.html#L1058">(!virtio_vdev_has_feature(vdev, VIRTIO_BLK_F_CONFIG_WCE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">148</td><td><a href="virtio-blk.c.html#L148">(virtio_blk_handle_rw_error(req, -ret, is_read, true))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">167</td><td><a href="virtio-blk.c.html#L167">(virtio_blk_handle_rw_error(req, -ret, 0, true))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">189</td><td><a href="virtio-blk.c.html#L189">(virtio_blk_handle_rw_error(req, -ret, false, is_write_zeroes))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">358</td><td><a href="virtio-blk.c.html#L358">(!acb)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">873</td><td><a href="virtio-blk.c.html#L873">(!running)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1006</td><td><a href="virtio-blk.c.html#L1006">(virtio_has_feature(features, VIRTIO_F_VERSION_1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1090</td><td><a href="virtio-blk.c.html#L1090">(qemu_get_sbyte(f))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">108</td><td><a href="virtio-blk.c.html#L108">(acct_failed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">125</td><td><a href="virtio-blk.c.html#L125">(next)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">137</td><td><a href="virtio-blk.c.html#L137">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">166</td><td><a href="virtio-blk.c.html#L166">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">188</td><td><a href="virtio-blk.c.html#L188">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">195</td><td><a href="virtio-blk.c.html#L195">(is_write_zeroes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">222</td><td><a href="virtio-blk.c.html#L222">(status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">261</td><td><a href="virtio-blk.c.html#L261">(req)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">370</td><td><a href="virtio-blk.c.html#L370">(scsi)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">423</td><td><a href="virtio-blk.c.html#L423">(is_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">581</td><td><a href="virtio-blk.c.html#L581">(is_write_zeroes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">611</td><td><a href="virtio-blk.c.html#L611">(is_write_zeroes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="virtio-blk.c.html#L666">(is_write)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">781</td><td><a href="virtio-blk.c.html#L781">(suppress_notifications)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">793</td><td><a href="virtio-blk.c.html#L793">(suppress_notifications)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">830</td><td><a href="virtio-blk.c.html#L830">(req)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">836</td><td><a href="virtio-blk.c.html#L836">(req)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">850</td><td><a href="virtio-blk.c.html#L850">(is_bh)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1072</td><td><a href="virtio-blk.c.html#L1072">(req)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

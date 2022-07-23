@@ -1,0 +1,172 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="merly.css">
+  <title>cc65 Repo - Ctrl Expression Anomalies (121) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - Ctrl Expression Anomalies (121) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Ctrl Expression Anomalies (121)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">ID</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">817:2</td><td><a href="test\val\cq85.c.html#L228">(<span style='background-color:#741da3;'>(char *)u0.u1 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u2 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u3 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u4 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u5 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u6 - (char *)&u0 != 0</span> || <span style='background-color:#741da3;'>(char *)u0.u7 - (char *)&u0 != 0</span>)</a></td><td class="num">7075.45</td></tr>
+      <tr><td class="num line">814:1</td><td><a href="test\val\cq7813.c.html#L327">(<span style='background-color:#741da3;'><span style='background-color:#741da3;'>(one ? zero : 1) != 0</span> || <span style='background-color:#741da3;'>(zero ? 1 : zero) != 0</span></span>)</a></td><td class="num">3011.25</td></tr>
+      <tr><td class="num line">813:2</td><td><a href="test\val\cq757.c.html#L210">(<span style='background-color:#741da3;'>(j < k) != ((rs & rt) == 0)</span> || <span style='background-color:#741da3;'>(j < k) != ((ls & lt) == 0)</span>)</a></td><td class="num">2037.00</td></tr>
+      <tr><td class="num line">762:23</td><td><a href="test\ref\paranoia.c.html#L1830">(StickyBit >= One && <span style='background-color:#741da3;'><span style='background-color:#741da3;'>(Radix - Two) * (Radix - Nine - One)</span> == Zero</span>)</a></td><td class="num">2030.65</td></tr>
+      <tr><td class="num line">144:1</td><td><a href="libsrc\common\pmemalign.c.html#L78">(alignment == 0 || <span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>alignment & alignment--</span>) != 0</span>)</a></td><td class="num">2029.00</td></tr>
+      <tr><td class="num line">762:11</td><td><a href="test\ref\paranoia.c.html#L1199">(<span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>MaxSqEr + U2 > U2 - Half</span>) || (MinSqEr > Half) || (MinSqEr + Radix < Half)</span>)</a></td><td class="num">2017.05</td></tr>
+      <tr><td class="num line">763:1</td><td><a href="test\ref\pointer2.c.html#L47">(<span style='background-color:#741da3;'>!(<span style='background-color:#741da3;'>(c1 == c2) & (c1 == c3) & (c1 == c4)</span>)</span>)</a></td><td class="num">2012.75</td></tr>
+      <tr><td class="num line">813:3</td><td><a href="test\val\cq757.c.html#L230">(<span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>a < b < c</span>) != 1</span>)</a></td><td class="num">2005.50</td></tr>
+      <tr><td class="num line">812:1</td><td><a href="test\val\cq72.c.html#L207">(<span style='background-color:#741da3;'><span style='background-color:#741da3;'>k + (-k)</span> != 0</span>)</a></td><td class="num">2005.10</td></tr>
+      <tr><td class="num line">422:4</td><td><a href="src\cc65\stdfunc.c.html#L980">(<span style='background-color:#9c4c02;'>((ED_IsRVal(&Arg2.Expr) && ED_IsLocConst(&Arg2.Expr)) || (ED_IsLVal(&Arg2.Expr) && ED_IsLocRegister(&Arg2.Expr))) && ((ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr)) || (ED_IsLVal(&Arg1.Expr) && ED_IsLocRegister(&Arg1.Expr))) && (<span style='background-color:#741da3;'>IS_Get(&InlineStdFuncs) || (ECount != UNSPECIFIED && ECount < 256)</span>)</span>)</a></td><td class="num">1165.00</td></tr>
+      <tr><td class="num line">811:1</td><td><a href="test\val\cq715.c.html#L74">(i++, i++, i++, <span style='background-color:#741da3;'>i++, i++ != 6</span>)</a></td><td class="num">1072.75</td></tr>
+      <tr><td class="num line">762:18</td><td><a href="test\ref\paranoia.c.html#L1683">(<span style='background-color:#741da3;'>Y / (One - Radix * E9)</span> < Z || Y > (One + Radix * E9) * Z)</a></td><td class="num">1068.10</td></tr>
+      <tr><td class="num line">762:24</td><td><a href="test\ref\paranoia.c.html#L1834">((Radix == Two) && (<span style='background-color:#741da3;'>(Precision - Four * Three * Two) * (Precision - TwentySeven - TwentySeven + One)</span> == Zero))</a></td><td class="num">1051.95</td></tr>
+      <tr><td class="num line">349:4</td><td><a href="src\cc65\coptstop.c.html#L1983">((E->Use & REG_SP) != 0 && (<span style='background-color:#741da3;'>E->AM != AM65_ZP_INDY || RegValIsUnknown(E->RI->In.RegY) || E->RI->In.RegY < 2</span>))</a></td><td class="num">1051.00</td></tr>
+      <tr><td class="num line">762:19</td><td><a href="test\ref\paranoia.c.html#L1701">(((V9 < <span style='background-color:#741da3;'>(One - Two * Radix * E9) * Z</span>) || (V9 > Z)))</a></td><td class="num">1046.40</td></tr>
+      <tr><td class="num line">762:15</td><td><a href="test\ref\paranoia.c.html#L1516">(!((V9 >= Zero) && (V9 <= <span style='background-color:#741da3;'>(Radix + Radix + E9) * UfThold</span>)))</a></td><td class="num">1045.30</td></tr>
+      <tr><td class="num line">262:1</td><td><a href="src\ca65\main.c.html#L677">(CurTok.Tok == TOK_LOCAL_IDENT || CurTok.Tok == TOK_NAMESPACE || (<span style='background-color:#741da3;'>CurTok.Tok == TOK_IDENT && Instr < 0 && Mac == 0</span>))</a></td><td class="num">1040.00</td></tr>
+      <tr><td class="num line">813:4</td><td><a href="test\val\cq757.c.html#L266">((<span style='background-color:#741da3;'>a < b == c < d</span>) != x[8 * a + 4 * b + 2 * c + d])</a></td><td class="num">1038.10</td></tr>
+      <tr><td class="num line">762:17</td><td><a href="test\ref\paranoia.c.html#L1665">(!(<span style='background-color:#741da3;'>-V < V && -V0 < V0 && -UfThold < V && UfThold < V</span>))</a></td><td class="num">1036.25</td></tr>
+      <tr><td class="num line">762:25</td><td><a href="test\ref\paranoia.c.html#L1959">(!(<span style='background-color:#741da3;'>(X - Radix < Z2 - Radix) || (X - Z2 > W - Z2)</span>))</a></td><td class="num">1033.15</td></tr>
+      <tr><td class="num line">762:4</td><td><a href="test\ref\paranoia.c.html#L918">(<span style='background-color:#741da3;'>(GMult == Yes) && (GDiv == Yes) && (GAddSub == Yes) && (RMult == Rounded) && (RDiv == Rounded) && (RAddSub == Rounded) && (FLOOR(RadixD2) == RadixD2)</span>)</a></td><td class="num">1032.25</td></tr>
+      <tr><td class="num line">335:5</td><td><a href="src\cc65\coptind.c.html#L1216">(<span style='background-color:#741da3;'>RegValIsKnown(In->RegX) && In->RegX == In->RegA && E->AM != AM65_ABSY && E->AM != AM65_ZPY</span>)</a></td><td class="num">1032.00</td></tr>
+      <tr><td class="num line">808:1</td><td><a href="test\val\cq71.c.html#L109">(x[5] != 1942 || <span style='background-color:#741da3;'>x[5] != *(x + 5)</span>)</a></td><td class="num">1030.60</td></tr>
+      <tr><td class="num line">170:1</td><td><a href="libsrc\zlib\uncompress.c.html#L30">(<span style='background-color:#741da3;'>(unsigned char)csum != ptr[3] || (unsigned char)(csum >> 8) != ptr[2] || (unsigned char)(csum >> 16) != ptr[1] || (unsigned char)(csum >> 24) != ptr[0]</span>)</a></td><td class="num">1030.00</td></tr>
+      <tr><td class="num line">812:2</td><td><a href="test\val\cq72.c.html#L229">(<span style='background-color:#741da3;'>k++ != 6 || k-- != 5 || k++ != 5 || k-- != 6 || k != 5</span>)</a></td><td class="num">1029.50</td></tr>
+      <tr><td class="num line">762:8</td><td><a href="test\ref\paranoia.c.html#L944">(T == Zero && <span style='background-color:#741da3;'>X + Radix * U2 - Z == Zero</span>)</a></td><td class="num">1029.30</td></tr>
+      <tr><td class="num line">811:2</td><td><a href="test\val\cq715.c.html#L91">(s715f(a, (<span style='background-color:#741da3;'>t = 3, t + 2</span>), c) != 5)</a></td><td class="num">1028.10</td></tr>
+      <tr><td class="num line">762:3</td><td><a href="test\ref\paranoia.c.html#L802">(<span style='background-color:#741da3;'>(X == Zero) && (Y == Zero) && (Z == Zero) && (T == Zero) && (StickyBit == Zero) && (Y1 == Half)</span>)</a></td><td class="num">1027.25</td></tr>
+      <tr><td class="num line">774:1</td><td><a href="test\ref\yacc.c.html#L565">((<span style='background-color:#741da3;'>*(lsp - 1) - yysvec - 1</span>) < 0)</a></td><td class="num">1026.05</td></tr>
+      <tr><td class="num line">762:14</td><td><a href="test\ref\paranoia.c.html#L1466">(!(<span style='background-color:#741da3;'>(X == Z) || (X - Z != Zero)</span>))</a></td><td class="num">1026.10</td></tr>
+      <tr><td class="num line">335:6</td><td><a href="src\cc65\coptind.c.html#L1246">(<span style='background-color:#741da3;'>In->RegY == In->RegX && E->AM != AM65_ABSX && E->AM != AM65_ZPX</span>)</a></td><td class="num">1026.00</td></tr>
+      <tr><td class="num line">800:1</td><td><a href="test\val\cq241.c.html#L124">(<span style='background-color:#741da3;'>0x00abcdef != 0xabcdef || 0xabcdef != Xabcdef || Xabcdef != XAbcdef || XAbcdef != XABcdef || XABcdef != XABCdef || XABCdef != XABCDef || XABCDef != XABCDEf || XABCDEf != XABCDEF || 0xABCDEF != 11259375</span>)</a></td><td class="num">1025.00</td></tr>
+      <tr><td class="num line">416:1</td><td><a href="src\cc65\shiftexpr.c.html#L182">(<span style='background-color:#741da3;'>Tok == TOK_SHR && IsTypeInt(Expr->Type) && ED_IsLVal(Expr) && (ED_IsLocConst(Expr) || ED_IsLocStack(Expr)) && Expr2.IVal >= 8</span>)</a></td><td class="num">1023.75</td></tr>
+      <tr><td class="num line">335:1</td><td><a href="src\cc65\coptind.c.html#L355">(<span style='background-color:#741da3;'>E->AM == AM65_BRA && E->JumpTo && E->JumpTo->Owner == CS_GetNextEntry(S, I)</span>)</a></td><td class="num">1022.75</td></tr>
+      <tr><td class="num line">438:1</td><td><a href="src\cc65\typecmp.c.html#L110">(<span style='background-color:#741da3;'>Sym1 && (Sym1->Flags & SC_PARAM) && Sym2 && (Sym2->Flags & SC_PARAM)</span>)</a></td><td class="num">1021.75</td></tr>
+      <tr><td class="num line">438:2</td><td><a href="src\cc65\typecmp.c.html#L267">(<span style='background-color:#741da3;'>(LeftQual & T_QUAL_CONST) < (RightQual & T_QUAL_CONST) || (LeftQual & T_QUAL_VOLATILE) < (RightQual & T_QUAL_VOLATILE)</span>)</a></td><td class="num">1019.75</td></tr>
+      <tr><td class="num line">367:3</td><td><a href="src\cc65\expr.c.html#L2070">(<span style='background-color:#741da3;'>TypeCmp(left, right) < TC_EQUAL && left->C != T_VOID && right->C != T_VOID</span>)</a></td><td class="num">1019.75</td></tr>
+      <tr><td class="num line">803:1</td><td><a href="test\val\cq25.c.html#L72">(<span style='background-color:#741da3;'>s[0] != s[1] || s[1] != s[2] || s[2] != '.'</span>)</a></td><td class="num">1018.75</td></tr>
+      <tr><td class="num line">806:1</td><td><a href="test\val\cq61.c.html#L128">(<span style='background-color:#741da3;'>(shortint != longint && shortint != 3) || (charint != longint && charint != 3)</span>)</a></td><td class="num">1018.75</td></tr>
+      <tr><td class="num line">710:1</td><td><a href="src\sp65\main.c.html#L262">(<span style='background-color:#741da3;'>W > BM_MAX_WIDTH || H > BM_MAX_HEIGHT || X + W > GetBitmapWidth(C) || Y + H > GetBitmapHeight(C)</span>)</a></td><td class="num">1018.45</td></tr>
+      <tr><td class="num line">730:1</td><td><a href="test\ref\8q.c.html#L29">(<span style='background-color:#741da3;'>rows[r] && up[r - c + 7] && down[r + c]</span>)</a></td><td class="num">1018.30</td></tr>
+      <tr><td class="num line">432:1</td><td><a href="src\cc65\symtab.c.html#L164">(<span style='background-color:#741da3;'>((Flags & SC_AUTO) || (Flags & SC_STATIC)) && (Flags & SC_EXTERN) == 0</span>)</a></td><td class="num">1018.00</td></tr>
+      <tr><td class="num line">762:2</td><td><a href="test\ref\paranoia.c.html#L787">(<span style='background-color:#741da3;'>(X == Zero) && (Y == Zero) && (Z == Zero) && (T <= Zero)</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">349:2</td><td><a href="src\cc65\coptstop.c.html#L1821">(<span style='background-color:#741da3;'>(D->Lhs.A.Flags & D->Lhs.X.Flags & LI_DIRECT) == 0</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">349:3</td><td><a href="src\cc65\coptstop.c.html#L1832">(<span style='background-color:#741da3;'>(D->Rhs.A.Flags & D->Rhs.X.Flags & LI_DIRECT) == 0</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">412:1</td><td><a href="src\cc65\scanstrbuf.c.html#L127">(<span style='background-color:#741da3;'>SB_Peek(B) >= '0' && SB_Peek(B) <= '7' && I++ <= 3</span>)</a></td><td class="num">1016.75</td></tr>
+      <tr><td class="num line">258:1</td><td><a href="src\ca65\listing.c.html#L255">(<span style='background-color:#741da3;'>PageLength > 0 && PageLines >= PageLength && L->Next != 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">317:2</td><td><a href="src\cc65\codegen.c.html#L1337">(<span style='background-color:#741da3;'>ltype == CF_LONG && rtype != CF_LONG && (rhs & CF_CONST) == 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">317:3</td><td><a href="src\cc65\codegen.c.html#L1343">(<span style='background-color:#741da3;'>ltype != CF_LONG && (lhs & CF_CONST) == 0 && rtype == CF_LONG</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">152:1</td><td><a href="libsrc\common\strtok.c.html#L48">(<span style='background-color:#741da3;'>(c = *s1) && strchr(s2, c) != 0</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">152:2</td><td><a href="libsrc\common\strtok.c.html#L61">(<span style='background-color:#741da3;'>(c = *s1) && strchr(s2, c) == 0</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">293:1</td><td><a href="src\ca65\symentry.c.html#L219">(<span style='background-color:#741da3;'>(Flags & SF_VAR) != 0 && (S->Flags & SF_EXPORT | SF_GLOBAL)</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">349:1</td><td><a href="src\cc65\coptstop.c.html#L254">(<span style='background-color:#741da3;'>(E->Use & Reg) && RI->LoadIndex >= 0</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">871:1</td><td><a href="testcode\lib\scanf-test.c.html#L256">(<span style='background-color:#741da3;'>p1 != NULL || p2 != NULL || p3 != (void *)Pause || p4 != (void *)&c</span>)</a></td><td class="num">1015.50</td></tr>
+      <tr><td class="num line">406:1</td><td><a href="src\cc65\preproc.c.html#L463">(<span style='background-color:#741da3;'>CurC != ')' || SB_NotEmpty(&Arg) || E->M->ArgCount > 0</span>)</a></td><td class="num">1015.50</td></tr>
+      <tr><td class="num line">361:2</td><td><a href="src\cc65\declare.c.html#L1891">(<span style='background-color:#741da3;'>ElementCount != UNSPECIFIED && ElementCount != FLEXIBLE && Count == ElementCount + 1</span>)</a></td><td class="num">1015.35</td></tr>
+      <tr><td class="num line">601:1</td><td><a href="src\dbginfo\dbgsh.c.html#L389">(<span style='background-color:#741da3;'>E->ArgCount > 0 && (int)CollCount(Args) != E->ArgCount</span>)</a></td><td class="num">1015.00</td></tr>
+      <tr><td class="num line">410:1</td><td><a href="src\cc65\scanner.c.html#L583">(<span style='background-color:#741da3;'>IVal <= 0xFFFF && (Types & IT_UINT) == 0 && !HaveSuffix</span>)</a></td><td class="num">1014.75</td></tr>
+      <tr><td class="num line">120:1</td><td><a href="libsrc\common\_scanf.c.html#L653">(<span style='background-color:#741da3;'>C != EOF && (bool)isspace(C) == false && Width++</span>)</a></td><td class="num">1014.25</td></tr>
+      <tr><td class="num line">759:1</td><td><a href="test\ref\mandel.c.html#L50">(<span style='background-color:#741da3;'>(count < maxiterations) && (fpabs(r) < tofp(2)) && (fpabs(i) < tofp(2))</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">191:1</td><td><a href="samples\mandelbrot.c.html#L67">(<span style='background-color:#741da3;'>(count < maxiterations) && (fpabs(r) < tofp(2)) && (fpabs(i) < tofp(2))</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">762:7</td><td><a href="test\ref\paranoia.c.html#L938">(<span style='background-color:#741da3;'>(T - F9 == Zero) && (F9 - U1 - Q == Zero)</span>)</a></td><td class="num">1014.05</td></tr>
+      <tr><td class="num line">252:1</td><td><a href="src\ca65\instr.c.html#L976">(<span style='background-color:#741da3;'>ED.AddrSize > ADDR_SIZE_ZP && (A->AddrModeSet & AM65_SET_ZP)</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">762:22</td><td><a href="test\ref\paranoia.c.html#L1803">(<span style='background-color:#741da3;'>(ErrCnt[Failure] + ErrCnt[Serious] + ErrCnt[Defect] + ErrCnt[Flaw]) > 0</span>)</a></td><td class="num">1013.80</td></tr>
+      <tr><td class="num line">367:2</td><td><a href="src\cc65\expr.c.html#L1943">(<span style='background-color:#741da3;'>lconst && (Gen->Flags & GEN_COMM) && !rconst</span>)</a></td><td class="num">1013.50</td></tr>
+      <tr><td class="num line">813:1</td><td><a href="test\val\cq757.c.html#L189">(<span style='background-color:#741da3;'>t << 3 << 2 != 1280 || t >> 3 >> 2 != 1</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">762:5</td><td><a href="test\ref\paranoia.c.html#L929">(<span style='background-color:#741da3;'>(Z - T >= U2) && (Y - T == Zero)</span>)</a></td><td class="num">1012.95</td></tr>
+      <tr><td class="num line">762:6</td><td><a href="test\ref\paranoia.c.html#L934">(<span style='background-color:#741da3;'>(Z - One == Zero) && (T - F9 == Zero)</span>)</a></td><td class="num">1012.95</td></tr>
+      <tr><td class="num line">108:1</td><td><a href="libsrc\cbm\exec.c.html#L82">(<span style='background-color:#741da3;'>dv < 8 && dv != 1 || dv > 30</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">706:1</td><td><a href="src\sp65\koala.c.html#L74">(<span style='background-color:#741da3;'>!BitmapIsIndexed(B) || GetBitmapColors(B) > 16 || GetBitmapHeight(B) != HEIGHT || GetBitmapWidth(B) != WIDTH</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">702:1</td><td><a href="src\sp65\geosicon.c.html#L81">(<span style='background-color:#741da3;'>!BitmapIsIndexed(B) || GetBitmapHeight(B) != HEIGHT || GetBitmapWidth(B) != WIDTH || GetBitmapColors(B) > 2</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">708:1</td><td><a href="src\sp65\lynxsprite.c.html#L285">(<span style='background-color:#741da3;'>V == LineBuffer[i] && len && count != 15</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">708:2</td><td><a href="src\sp65\lynxsprite.c.html#L334">(<span style='background-color:#741da3;'>V == LineBuffer[i] && len && count != 15</span>)</a></td><td class="num">1012.50</td></tr>
+      <tr><td class="num line">172:1</td><td><a href="samples\diodemo.c.html#L104">(<span style='background-color:#741da3;'>Buffer == NULL && Chunks++ <= MAX_CHUNKS</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">762:21</td><td><a href="test\ref\paranoia.c.html#L1721">(<span style='background-color:#741da3;'>X * Y < U1 || X > Y / U1</span>)</a></td><td class="num">1011.45</td></tr>
+      <tr><td class="num line">599:1</td><td><a href="src\dbginfo\dbginfo.c.html#L3983">(<span style='background-color:#741da3;'>InfoBits != ibNone && InfoBits != (ibOutputName | ibOutputOffs)</span>)</a></td><td class="num">1011.50</td></tr>
+      <tr><td class="num line">774:2</td><td><a href="test\ref\yacc.c.html#L863">(<span style='background-color:#741da3;'>(*yyxi != -1) || (yyxi[1] != yystate)</span>)</a></td><td class="num">1010.75</td></tr>
+      <tr><td class="num line">762:1</td><td><a href="test\ref\paranoia.c.html#L734">(<span style='background-color:#741da3;'>F9 != One && F9 - One >= Zero</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">822:1</td><td><a href="test\val\mult1.c.html#L56">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:2</td><td><a href="test\val\mult1.c.html#L57">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:3</td><td><a href="test\val\mult1.c.html#L58">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:4</td><td><a href="test\val\mult1.c.html#L59">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:5</td><td><a href="test\val\mult1.c.html#L60">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:6</td><td><a href="test\val\mult1.c.html#L61">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:7</td><td><a href="test\val\mult1.c.html#L62">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:8</td><td><a href="test\val\mult1.c.html#L63">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:9</td><td><a href="test\val\mult1.c.html#L64">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:10</td><td><a href="test\val\mult1.c.html#L65">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:11</td><td><a href="test\val\mult1.c.html#L66">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:12</td><td><a href="test\val\mult1.c.html#L67">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:13</td><td><a href="test\val\mult1.c.html#L68">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:14</td><td><a href="test\val\mult1.c.html#L69">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:15</td><td><a href="test\val\mult1.c.html#L70">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:16</td><td><a href="test\val\mult1.c.html#L71">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:17</td><td><a href="test\val\mult1.c.html#L72">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:18</td><td><a href="test\val\mult1.c.html#L73">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:19</td><td><a href="test\val\mult1.c.html#L74">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:20</td><td><a href="test\val\mult1.c.html#L75">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:21</td><td><a href="test\val\mult1.c.html#L76">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:22</td><td><a href="test\val\mult1.c.html#L77">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:23</td><td><a href="test\val\mult1.c.html#L78">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">822:24</td><td><a href="test\val\mult1.c.html#L79">(<span style='background-color:#741da3;'>uc1 != (uc2 += TESTLIT)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">762:9</td><td><a href="test\ref\paranoia.c.html#L1160">(<span style='background-color:#741da3;'>D * Radix - D != W - D</span>)</a></td><td class="num">1009.30</td></tr>
+      <tr><td class="num line">762:13</td><td><a href="test\ref\paranoia.c.html#L1414">(<span style='background-color:#741da3;'>(CInvrse * Q) != ((CInvrse * Y) * S)</span>)</a></td><td class="num">1009.30</td></tr>
+      <tr><td class="num line">877:1</td><td><a href="testcode\lib\strchr-test.c.html#L33">(<span style='background-color:#741da3;'>P == 0 || (P - S) != I</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">593:1</td><td><a href="src\da65\output.c.html#L175">(<span style='background-color:#741da3;'>Col > LBreak + 2 || Col > MCol</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">361:1</td><td><a href="src\cc65\declare.c.html#L757">(<span style='background-color:#741da3;'>FieldWidth <= 0 || (BitOffs + FieldWidth) > (int)INT_BITS</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">762:20</td><td><a href="test\ref\paranoia.c.html#L1720">(<span style='background-color:#741da3;'>X * Y < One || X > Y</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">317:1</td><td><a href="src\cc65\codegen.c.html#L311">(<span style='background-color:#741da3;'>(Offs & 0xFF) > 256 - sizeofarg(Flags)</span>)</a></td><td class="num">1008.10</td></tr>
+      <tr><td class="num line">795:1</td><td><a href="test\val\compare6.c.html#L46">(<span style='background-color:#741da3;'>(char0 + 5) >= (char1 + 9)</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">146:1</td><td><a href="libsrc\common\qsort.c.html#L42">(<span style='background-color:#741da3;'>((unsigned)J) * 2 > (Hi + Lo)</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">795:2</td><td><a href="test\val\compare6.c.html#L86">(<span style='background-color:#741da3;'>(int0 + 5) >= (int1 + 9)</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">795:3</td><td><a href="test\val\compare6.c.html#L126">(<span style='background-color:#741da3;'>(long0 + 5) >= (long1 + 9)</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">762:10</td><td><a href="test\ref\paranoia.c.html#L1172">(<span style='background-color:#741da3;'>D - Z2 != W - Z2</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">762:16</td><td><a href="test\ref\paranoia.c.html#L1633">(<span style='background-color:#741da3;'>V - Y == V + V0</span>)</a></td><td class="num">1006.95</td></tr>
+      <tr><td class="num line">825:1</td><td><a href="test\val\pointer1.c.html#L120">(<span style='background-color:#741da3;'>(acharP == 0) || (*acharP)</span>)</a></td><td class="num">1006.75</td></tr>
+      <tr><td class="num line">656:1</td><td><a href="src\ld65\segments.c.html#L435">(<span style='background-color:#741da3;'>((unsigned long)Val) > U_Hi[Size - 1]</span>)</a></td><td class="num">1006.35</td></tr>
+      <tr><td class="num line">367:1</td><td><a href="src\cc65\expr.c.html#L898">(<span style='background-color:#741da3;'>GetQualifier(ElementType) != (GetQualifier(ElementType) | Qualifiers)</span>)</a></td><td class="num">1006.00</td></tr>
+      <tr><td class="num line">799:1</td><td><a href="test\val\cq22.c.html#L81">(<span style='background-color:#741da3;'>a + _ + _234 + a234 != 10</span>)</a></td><td class="num">1005.70</td></tr>
+      <tr><td class="num line">147:1</td><td><a href="libsrc\common\realloc.c.html#L77">(<span style='background-color:#741da3;'>((unsigned)b) + oldsize == ((unsigned)_heapptr)</span>)</a></td><td class="num">1004.60</td></tr>
+      <tr><td class="num line">762:12</td><td><a href="test\ref\paranoia.c.html#L1349">(<span style='background-color:#741da3;'>E1 + E1 <= E1</span>)</a></td><td class="num">1004.60</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

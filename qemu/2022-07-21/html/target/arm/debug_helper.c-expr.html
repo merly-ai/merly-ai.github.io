@@ -1,0 +1,120 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\arm\debug_helper.c Ctrl Expressions (69) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\arm\debug_helper.c Ctrl Expressions (69) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\arm\debug_helper.c Ctrl Expressions (69)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">184</td><td><a href="debug_helper.c.html#L184">(<span style='background-color:#741da3;'>lbn >= brps || lbn < (brps - ctx_cmps)</span>)</a></td><td class="num">1009.10</td></tr>
+      <tr><td class="num line">280</td><td><a href="debug_helper.c.html#L280">(!env->cpu_breakpoint[n] || env->cpu_breakpoint[n]->pc != pc)</a></td><td class="num">50.00</td></tr>
+      <tr><td class="num line">399</td><td><a href="debug_helper.c.html#L399">((is_a64(env) || !env->thumb) && (pc & 3) != 0)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">441</td><td><a href="debug_helper.c.html#L441">(arm_feature(env, ARM_FEATURE_LPAE) && (env->cp15.tcr_el[target_el] & TTBCR_EAE))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">265</td><td><a href="debug_helper.c.html#L265">(!wp || !(wp->flags & BP_WATCHPOINT_HIT))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="debug_helper.c.html#L358">(extract32(env->cp15.mdscr_el1, 15, 1) == 0 || !arm_generate_debug_exceptions(env))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">382</td><td><a href="debug_helper.c.html#L382">(extract32(env->cp15.mdscr_el1, 15, 1) == 0 || !arm_generate_debug_exceptions(env))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">391</td><td><a href="debug_helper.c.html#L391">(arm_singlestep_active(env) && !(env->pstate & PSTATE_SS))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">145</td><td><a href="debug_helper.c.html#L145">((env->cp15.oslsr_el1 & 1) || (env->cp15.osdlr_el1 & 1))</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">100</td><td><a href="debug_helper.c.html#L100">(el == 0 && (env->cp15.sder & 1))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">551</td><td><a href="debug_helper.c.html#L551">(el < 3 && (env->cp15.mdcr_el3 & MDCR_TDOSA))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">572</td><td><a href="debug_helper.c.html#L572">(el < 3 && (env->cp15.mdcr_el3 & MDCR_TDA))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">593</td><td><a href="debug_helper.c.html#L593">(el < 3 && (env->cp15.mdcr_el3 & MDCR_TDA))</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">69</td><td><a href="debug_helper.c.html#L69">(arm_is_secure_below_el3(env) && extract32(env->cp15.mdcr_el3, 16, 1))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">30</td><td><a href="debug_helper.c.html#L30">(arm_feature(env, ARM_FEATURE_EL3) && !arm_el_is_aa64(env, 3) && secure)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">826</td><td><a href="debug_helper.c.html#L826">(i < ARRAY_SIZE(cpu->env.cpu_watchpoint))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">962</td><td><a href="debug_helper.c.html#L962">(i < ARRAY_SIZE(cpu->env.cpu_breakpoint))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">765</td><td><a href="debug_helper.c.html#L765">(mask == 1 || mask == 2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1008</td><td><a href="debug_helper.c.html#L1008">(cpu->isar.dbgdidr != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="debug_helper.c.html#L465">(wp_hit->flags & BP_CPU)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">93</td><td><a href="debug_helper.c.html#L93">(el == 0 && arm_el_is_aa64(env, 1))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">548</td><td><a href="debug_helper.c.html#L548">(el < 2 && mdcr_el2_tdosa)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">569</td><td><a href="debug_helper.c.html#L569">(el < 2 && mdcr_el2_tdra)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">590</td><td><a href="debug_helper.c.html#L590">(el < 2 && mdcr_el2_tda)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="debug_helper.c.html#L363">(n < ARRAY_SIZE(env->cpu_watchpoint))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">409</td><td><a href="debug_helper.c.html#L409">(n < ARRAY_SIZE(env->cpu_breakpoint))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1062</td><td><a href="debug_helper.c.html#L1062">(arm_feature(&cpu->env, ARM_FEATURE_LPAE))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">215</td><td><a href="debug_helper.c.html#L215">((hcr_el2 & HCR_E2H | HCR_TGE) == HCR_E2H | HCR_TGE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">608</td><td><a href="debug_helper.c.html#L608">(ri->state == ARM_CP_STATE_AA32)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">734</td><td><a href="debug_helper.c.html#L734">(env->cpu_watchpoint[n])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">873</td><td><a href="debug_helper.c.html#L873">(env->cpu_breakpoint[n])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">342</td><td><a href="debug_helper.c.html#L342">(wt && !linked_bp_matches(cpu, lbn))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">438</td><td><a href="debug_helper.c.html#L438">(target_el == 2 || arm_el_is_aa64(env, target_el))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1028</td><td><a href="debug_helper.c.html#L1028">(extract32(cpu->isar.dbgdidr, 15, 1))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">269</td><td><a href="debug_helper.c.html#L269">(wp->hitattrs.user)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">205</td><td><a href="debug_helper.c.html#L205">(!(hcr_el2 & HCR_E2H))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">484</td><td><a href="debug_helper.c.html#L484">(cpu_breakpoint_test(cs, pc, BP_GDB) || !cpu_breakpoint_test(cs, pc, BP_CPU))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="debug_helper.c.html#L625">(arm_feature(env, ARM_FEATURE_AARCH64) ? cpu_isar_feature(aa64_doublelock, cpu) : cpu_isar_feature(aa32_doublelock, cpu))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">190</td><td><a href="debug_helper.c.html#L190">(extract64(bcr, 0, 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">326</td><td><a href="debug_helper.c.html#L326">(extract32(pac, 0, 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">331</td><td><a href="debug_helper.c.html#L331">(extract32(pac, 1, 1) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">64</td><td><a href="debug_helper.c.html#L64">(cur_el == 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">80</td><td><a href="debug_helper.c.html#L80">(cur_el == debug_el)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">525</td><td><a href="debug_helper.c.html#L525">(debug_el < cur_el)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">794</td><td><a href="debug_helper.c.html#L794">(bas == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">920</td><td><a href="debug_helper.c.html#L920">(bas == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="debug_helper.c.html#L923">(bas == 0xc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1066</td><td><a href="debug_helper.c.html#L1066">(i < brps)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="debug_helper.c.html#L1088">(i < wrps)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1126</td><td><a href="debug_helper.c.html#L1126">(len == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1128</td><td><a href="debug_helper.c.html#L1128">(len == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">739</td><td><a href="debug_helper.c.html#L739">(!FIELD_EX64(wcr, DBGWCR, E))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">878</td><td><a href="debug_helper.c.html#L878">(!extract64(bcr, 0, 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">312</td><td><a href="debug_helper.c.html#L312">(!is_secure)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">321</td><td><a href="debug_helper.c.html#L321">(!hmc)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">23</td><td><a href="debug_helper.c.html#L23">(arm_is_el2_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">97</td><td><a href="debug_helper.c.html#L97">(arm_is_secure(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">148</td><td><a href="debug_helper.c.html#L148">(is_a64(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">364</td><td><a href="debug_helper.c.html#L364">(bp_wp_matches(cpu, n, true))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">410</td><td><a href="debug_helper.c.html#L410">(bp_wp_matches(cpu, n, false))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">786</td><td><a href="debug_helper.c.html#L786">(extract64(wvr, 2, 1))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1037</td><td><a href="debug_helper.c.html#L1037">(cpu_isar_feature(aa32_debugv7p1, cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="debug_helper.c.html#L1125">(arm_sctlr_b(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">28</td><td><a href="debug_helper.c.html#L28">(route_to_el2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="debug_helper.c.html#L262">(is_wp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">307</td><td><a href="debug_helper.c.html#L307">(is_secure)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">447</td><td><a href="debug_helper.c.html#L447">(using_lpae)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">464</td><td><a href="debug_helper.c.html#L464">(wp_hit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">772</td><td><a href="debug_helper.c.html#L772">(mask)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

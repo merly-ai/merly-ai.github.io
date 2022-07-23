@@ -1,0 +1,94 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\pci\msix.c Ctrl Expressions (43) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\pci\msix.c Ctrl Expressions (43) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\pci\msix.c Ctrl Expressions (43)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">333</td><td><a href="msix.c.html#L333">(<span style='background-color:#741da3;'>(table_bar_nr == pba_bar_nr && ranges_overlap(table_offset, table_size, pba_offset, pba_size)) || table_offset + table_size > memory_region_size(table_bar) || pba_offset + pba_size > memory_region_size(pba_bar) || (table_offset | pba_offset) & PCI_MSIX_FLAGS_BIRMASK</span>)</a></td><td class="num">1026.70</td></tr>
+      <tr><td class="num line">628</td><td><a href="msix.c.html#L628">((dev->config[dev->msix_cap + MSIX_CONTROL_OFFSET] & MSIX_ENABLE_MASK | MSIX_MASKALL_MASK) == MSIX_ENABLE_MASK)</a></td><td class="num">46.60</td></tr>
+      <tr><td class="num line">658</td><td><a href="msix.c.html#L658">((dev->config[dev->msix_cap + MSIX_CONTROL_OFFSET] & MSIX_ENABLE_MASK | MSIX_MASKALL_MASK) == MSIX_ENABLE_MASK)</a></td><td class="num">46.60</td></tr>
+      <tr><td class="num line">525</td><td><a href="msix.c.html#L525">(vector >= dev->msix_entries_nr || !dev->msix_entry_used[vector])</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="msix.c.html#L574">(vector >= dev->msix_entries_nr || !dev->msix_entry_used[vector])</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="msix.c.html#L577">(dev->msix_entry_used[vector]--)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">324</td><td><a href="msix.c.html#L324">(nentries < 1 || nentries > PCI_MSIX_FLAGS_QSIZE + 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">145</td><td><a href="msix.c.html#L145">(vector > dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">197</td><td><a href="msix.c.html#L197">(dev->msix_function_masked == was_masked)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">201</td><td><a href="msix.c.html#L201">(vector < dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">430</td><td><a href="msix.c.html#L430">(vector < dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">440</td><td><a href="msix.c.html#L440">(vector < dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">563</td><td><a href="msix.c.html#L563">(vector >= dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">630</td><td><a href="msix.c.html#L630">(vector < dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">643</td><td><a href="msix.c.html#L643">(vector-- >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">660</td><td><a href="msix.c.html#L660">(vector < dev->msix_entries_nr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">133</td><td><a href="msix.c.html#L133">(!is_masked && msix_is_pending(dev, vector))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">93</td><td><a href="msix.c.html#L93">(xen_enabled() && xen_is_pirq_msi(pci_get_long(data)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">398</td><td><a href="msix.c.html#L398">(nentries * PCI_MSIX_ENTRY_SIZE > bar_pba_offset)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">402</td><td><a href="msix.c.html#L402">(bar_pba_offset + bar_pba_size > 4096)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">182</td><td><a href="msix.c.html#L182">(!msix_present(dev) || !range_covers_byte(addr, len, enable_pos))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">111</td><td><a href="msix.c.html#L111">(!dev->msix_vector_use_notifier)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">247</td><td><a href="msix.c.html#L247">(dev->msix_vector_poll_notifier)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="msix.c.html#L637">(dev->msix_vector_poll_notifier)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="msix.c.html#L127">(is_masked == was_masked)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="msix.c.html#L278">(vector < nentries)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="msix.c.html#L345">(cap < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">501</td><td><a href="msix.c.html#L501">(vector < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">632</td><td><a href="msix.c.html#L632">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="msix.c.html#L191">(!msix_enabled(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">448</td><td><a href="msix.c.html#L448">(!msix_present(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">478</td><td><a href="msix.c.html#L478">(!msix_present(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">492</td><td><a href="msix.c.html#L492">(!msix_present(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">541</td><td><a href="msix.c.html#L541">(!msix_present(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">585</td><td><a href="msix.c.html#L585">(!msix_present(dev))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">319</td><td><a href="msix.c.html#L319">(!msi_nonbroken)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">469</td><td><a href="msix.c.html#L469">(msix_present(dev))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">529</td><td><a href="msix.c.html#L529">(msix_is_masked(dev, vector))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">600</td><td><a href="msix.c.html#L600">(msix_is_masked(dev, vector))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">609</td><td><a href="msix.c.html#L609">(msix_is_masked(dev, vector))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">114</td><td><a href="msix.c.html#L114">(is_masked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="msix.c.html#L155">(mask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">416</td><td><a href="msix.c.html#L416">(ret)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\xive.c Ctrl Expressions (98) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\xive.c Ctrl Expressions (98) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\xive.c Ctrl Expressions (98)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1543</td><td><a href="xive.c.html#L1543">(<span style='background-color:#741da3;'>(be32_to_cpu(qw1w2) & TM_QW1W2_VO) && (cam == xive_get_field32(TM_QW1W2_OS_CAM, qw1w2)) && (be32_to_cpu(qw0w2) & TM_QW0W2_VU) && (logic_serv == xive_get_field32(TM_QW0W2_LOGIC_SERV, qw0w2))</span>)</a></td><td class="num">1020.75</td></tr>
+      <tr><td class="num line">1523</td><td><a href="xive.c.html#L1523">(<span style='background-color:#741da3;'>(be32_to_cpu(qw3w2) & TM_QW3W2_VT) && cam == xive_tctx_hw_cam_line(xptr, tctx)</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">1529</td><td><a href="xive.c.html#L1529">(<span style='background-color:#741da3;'>(be32_to_cpu(qw2w2) & TM_QW2W2_VP) && cam == xive_get_field32(TM_QW2W2_POOL_CAM, qw2w2)</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">1535</td><td><a href="xive.c.html#L1535">(<span style='background-color:#741da3;'>(be32_to_cpu(qw1w2) & TM_QW1W2_VO) && cam == xive_get_field32(TM_QW1W2_OS_CAM, qw1w2)</span>)</a></td><td class="num">1009.75</td></tr>
+      <tr><td class="num line">278</td><td><a href="xive.c.html#L278">(<span style='background-color:#741da3;'>size < 4 || !mask || ring_offset == TM_QW0_USER</span>)</a></td><td class="num">1008.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="xive.c.html#L309">(<span style='background-color:#741da3;'>size < 4 || !mask || ring_offset == TM_QW0_USER</span>)</a></td><td class="num">1008.50</td></tr>
+      <tr><td class="num line">510</td><td><a href="xive.c.html#L510">(xto->page_offset >= page_offset && xto->op_offset == op_offset && xto->size == size && ((write && xto->write_handler) || (!write && xto->read_handler)))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">1210</td><td><a href="xive.c.html#L1210">(xsrc->esb_shift != XIVE_ESB_4K && xsrc->esb_shift != XIVE_ESB_4K_2PAGE && xsrc->esb_shift != XIVE_ESB_64K && xsrc->esb_shift != XIVE_ESB_64K_2PAGE)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1984</td><td><a href="xive.c.html#L1984">(xsrc->esb_shift != XIVE_ESB_4K && xsrc->esb_shift != XIVE_ESB_64K)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">258</td><td><a href="xive.c.html#L258">(xive_tm_views[page_offset][reg_offset + i] & reg_mask)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">1672</td><td><a href="xive.c.html#L1672">(format == 0 && priority == 0xff)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1094</td><td><a href="xive.c.html#L1094">(!(xsrc->esb_flags & XIVE_SRC_STORE_EOI))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">933</td><td><a href="xive.c.html#L933">(xive_source_irq_is_lsi(xsrc, srcno) && xive_source_esb_get(xsrc, srcno) == XIVE_ESB_QUEUED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">99</td><td><a href="xive.c.html#L99">(regs[TM_PIPR] < regs[TM_CPPR])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1608</td><td><a href="xive.c.html#L1608">(pq != xive_get_field32(end_esmask, end->w1))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1903</td><td><a href="xive.c.html#L1903">(xive_router_get_end(xsrc->xrtr, end_blk, end_idx, &end))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1173</td><td><a href="xive.c.html#L1173">(i < xsrc->nr_irqs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">75</td><td><a href="xive.c.html#L75">(regs[TM_NSR] & mask)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1297</td><td><a href="xive.c.html#L1297">(dma_memory_read(&address_space_memory, qaddr, &qdata, sizeof(qdata), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1362</td><td><a href="xive.c.html#L1362">(dma_memory_write(&address_space_memory, qaddr, &qdata, sizeof(qdata), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">963</td><td><a href="xive.c.html#L963">(xive_source_irq_is_lsi(xsrc, srcno) && xive_source_is_asserted(xsrc, srcno))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1205</td><td><a href="xive.c.html#L1205">(!xsrc->nr_irqs)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1941</td><td><a href="xive.c.html#L1941">(pq != xive_get_field32(end_esmask, end.w1))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1979</td><td><a href="xive.c.html#L1979">(!xsrc->nr_ends)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="xive.c.html#L645">(xive_in_kernel(tctx->xptr))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">709</td><td><a href="xive.c.html#L709">(xive_in_kernel(tctx->xptr))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">722</td><td><a href="xive.c.html#L722">(xive_in_kernel(tctx->xptr))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">739</td><td><a href="xive.c.html#L739">(xive_in_kernel(tctx->xptr))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">537</td><td><a href="xive.c.html#L537">(offset & 0x800)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">576</td><td><a href="xive.c.html#L576">(offset & 0x800)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">979</td><td><a href="xive.c.html#L979">(xnc->notify)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1640</td><td><a href="xive.c.html#L1640">(!xive_end_is_valid(&end))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="xive.c.html#L1680">(!xive_end_is_notify(&end))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1682</td><td><a href="xive.c.html#L1682">(!xive_router_end_es_notify(xrtr, end_blk, end_idx, &end, END_W1_ESn))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="xive.c.html#L1701">(!xive_nvt_is_valid(&nvt))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1752</td><td><a href="xive.c.html#L1752">(!xive_end_is_escalate(&end))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1760</td><td><a href="xive.c.html#L1760">(!xive_end_is_uncond_escalation(&end))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1762</td><td><a href="xive.c.html#L1762">(!xive_router_end_es_notify(xrtr, end_blk, end_idx, &end, END_W1_ESe))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1816</td><td><a href="xive.c.html#L1816">(!xive_eas_is_valid(&eas))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1909</td><td><a href="xive.c.html#L1909">(!xive_end_is_valid(&end))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">417</td><td><a href="xive.c.html#L417">(xive_router_get_nvt(xrtr, nvt_blk, nvt_idx, &nvt))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="xive.c.html#L506">(i < ARRAY_SIZE(xive_tm_operations))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">710</td><td><a href="xive.c.html#L710">(kvmppc_xive_cpu_connect(tctx, errp) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1634</td><td><a href="xive.c.html#L1634">(xive_router_get_end(xrtr, end_blk, end_idx, &end))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1647</td><td><a href="xive.c.html#L1647">(xive_end_is_enqueue(&end))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1656</td><td><a href="xive.c.html#L1656">(xive_end_is_silent_escalation(&end))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1695</td><td><a href="xive.c.html#L1695">(xive_router_get_nvt(xrtr, nvt_blk, nvt_idx, &nvt))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1723</td><td><a href="xive.c.html#L1723">(xive_end_is_backlog(&end))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1789</td><td><a href="xive.c.html#L1789">(xive_router_get_eas(xrtr, eas_blk, eas_idx, &eas))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1799</td><td><a href="xive.c.html#L1799">(xive_router_get_pq(xrtr, eas_blk, eas_idx, &pq))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1806</td><td><a href="xive.c.html#L1806">(xive_router_set_pq(xrtr, eas_blk, eas_idx, &pq))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1821</td><td><a href="xive.c.html#L1821">(xive_eas_is_masked(&eas))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">136</td><td><a href="xive.c.html#L136">(cppr > XIVE_PRIORITY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">257</td><td><a href="xive.c.html#L257">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">288</td><td><a href="xive.c.html#L288">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="xive.c.html#L317">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="xive.c.html#L658">(i < XIVE_TM_RING_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">724</td><td><a href="xive.c.html#L724">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="xive.c.html#L745">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1176</td><td><a href="xive.c.html#L1176">(pq == XIVE_ESB_OFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1293</td><td><a href="xive.c.html#L1293">(i < width)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1370</td><td><a href="xive.c.html#L1370">(qindex == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1509</td><td><a href="xive.c.html#L1509">(format == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="xive.c.html#L1510">(cam_ignore == true)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1582</td><td><a href="xive.c.html#L1582">(count < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1726</td><td><a href="xive.c.html#L1726">(format == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">804</td><td><a href="xive.c.html#L804">(!qdev_realize(DEVICE(obj), NULL, errp))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">1323</td><td><a href="xive.c.html#L1323">(!xive_end_is_valid(end))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1383</td><td><a href="xive.c.html#L1383">(!xive_end_is_escalate(end))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1869</td><td><a href="xive.c.html#L1869">(!xive_eas_is_valid(eas))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">394</td><td><a href="xive.c.html#L394">(!vo)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">539</td><td><a href="xive.c.html#L539">(!xto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">578</td><td><a href="xive.c.html#L578">(!xto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">639</td><td><a href="xive.c.html#L639">(!tctx)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1794</td><td><a href="xive.c.html#L1794">(!pq_checked)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1811</td><td><a href="xive.c.html#L1811">(!notify)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">927</td><td><a href="xive.c.html#L927">(xive_source_esb_disabled(xsrc, srcno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">951</td><td><a href="xive.c.html#L951">(xive_source_esb_disabled(xsrc, srcno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1021</td><td><a href="xive.c.html#L1021">(xive_source_is_trigger_page(xsrc, addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1083</td><td><a href="xive.c.html#L1083">(xive_source_is_trigger_page(xsrc, addr))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1151</td><td><a href="xive.c.html#L1151">(xive_source_irq_is_lsi(xsrc, srcno))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">290</td><td><a href="xive.c.html#L290">(byte_mask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">357</td><td><a href="xive.c.html#L357">(nvt_blk)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">360</td><td><a href="xive.c.html#L360">(nvt_idx)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">363</td><td><a href="xive.c.html#L363">(vo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">425</td><td><a href="xive.c.html#L425">(ipb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="xive.c.html#L459">(vo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">552</td><td><a href="xive.c.html#L552">(xto)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">591</td><td><a href="xive.c.html#L591">(xto)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">649</td><td><a href="xive.c.html#L649">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1033</td><td><a href="xive.c.html#L1033">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1127</td><td><a href="xive.c.html#L1127">(notify)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1152</td><td><a href="xive.c.html#L1152">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="xive.c.html#L1158">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1164</td><td><a href="xive.c.html#L1164">(notify)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1343</td><td><a href="xive.c.html#L1343">(qaddr_base)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1587</td><td><a href="xive.c.html#L1587">(count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1714</td><td><a href="xive.c.html#L1714">(found)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

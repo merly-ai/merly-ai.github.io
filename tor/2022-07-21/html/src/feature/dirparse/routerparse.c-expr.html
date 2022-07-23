@@ -1,0 +1,192 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\dirparse\routerparse.c Ctrl Expressions (141) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\dirparse\routerparse.c Ctrl Expressions (141) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\dirparse\routerparse.c Ctrl Expressions (141)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1152</td><td><a href="routerparse.c.html#L1152">(<span style='background-color:#741da3;'>strcmp(tok->object_type, "SIGNATURE") || tok->object_size < 128 || tok->object_size > 512</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">1208</td><td><a href="routerparse.c.html#L1208">(<span style='background-color:#9c4c02;'>((tok->tp == K_ACCEPT6 || tok->tp == K_REJECT6) && tor_addr_family(&newe->addr) == AF_INET) || ((tok->tp == K_ACCEPT || tok->tp == K_REJECT) && tor_addr_family(&newe->addr) == AF_INET6)</span>)</a></td><td class="num">127.00</td></tr>
+      <tr><td class="num line">1042</td><td><a href="routerparse.c.html#L1042">(strlen(tok->args[1]) != HEX_DIGEST_LEN || base16_decode(extrainfo->cache_info.identity_digest, DIGEST_LEN, tok->args[1], HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">68.00</td></tr>
+      <tr><td class="num line">355</td><td><a href="routerparse.c.html#L355">(tor_addr_parse_mask_ports(t->args[0], 0, &a, &bits, &port_min, &port_max) == AF_INET6 && bits == 128 && port_min == port_max)</a></td><td class="num">55.75</td></tr>
+      <tr><td class="num line">724</td><td><a href="routerparse.c.html#L724">(ntor_cc_cert->cert_type != CERT_TYPE_ONION_ID || !ed25519_pubkey_eq(&ntor_cc_cert->signed_key, &cert->signing_key))</a></td><td class="num">51.75</td></tr>
+      <tr><td class="num line">801</td><td><a href="routerparse.c.html#L801">(base16_decode(d, DIGEST_LEN, tok->args[0], strlen(tok->args[0])) != DIGEST_LEN)</a></td><td class="num">48.25</td></tr>
+      <tr><td class="num line">765</td><td><a href="routerparse.c.html#L765">(ed25519_signature_from_base64(&check[2].signature, ed_sig_tok->args[0]) < 0)</a></td><td class="num">47.50</td></tr>
+      <tr><td class="num line">1124</td><td><a href="routerparse.c.html#L1124">(ed25519_signature_from_base64(&check[1].signature, ed_sig_tok->args[0]) < 0)</a></td><td class="num">47.50</td></tr>
+      <tr><td class="num line">1253</td><td><a href="routerparse.c.html#L1253">(!(sandbox_is_active() || get_options()->Sandbox))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">227</td><td><a href="routerparse.c.html#L227">(!(s = memchr(s + 1, '\n', eos - (s + 1))))</a></td><td class="num">42.30</td></tr>
+      <tr><td class="num line">421</td><td><a href="routerparse.c.html#L421">(end > s + 2 && *(end - 1) == '\n' && *(end - 2) == '\n')</a></td><td class="num">36.30</td></tr>
+      <tr><td class="num line">637</td><td><a href="routerparse.c.html#L637">((n_ed_toks != 0 && n_ed_toks != 4) || (n_ed_toks == 4 && !router->onion_curve25519_pkey))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">997</td><td><a href="routerparse.c.html#L997">(end > s + 2 && *(end - 1) == '\n' && *(end - 2) == '\n')</a></td><td class="num">36.30</td></tr>
+      <tr><td class="num line">651</td><td><a href="routerparse.c.html#L651">(ed_cert_token_pos == -1 || router_token_pos == -1 || (ed_cert_token_pos != router_token_pos + 1 && ed_cert_token_pos != router_token_pos - 1))</a></td><td class="num">35.45</td></tr>
+      <tr><td class="num line">781</td><td><a href="routerparse.c.html#L781">(check_tap_onion_key_crosscert((const uint8_t*)cc_tap_tok->object_body, (int)cc_tap_tok->object_size, rsa_pubkey, &cert->signing_key, (const uint8_t*)router->cache_info.identity_digest) < 0)</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">867</td><td><a href="routerparse.c.html#L867">(policy_is_reject_star(router->exit_policy, AF_INET, 1) && (!router->ipv6_exit_policy || short_policy_is_reject_star(router->ipv6_exit_policy)))</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="routerparse.c.html#L595">(parse_iso_time(tok->args[0], &router->cache_info.published_on) < 0)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">1145</td><td><a href="routerparse.c.html#L1145">(routermap && (router = digestmap_get((digestmap_t*)routermap, extrainfo->cache_info.identity_digest)))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">894</td><td><a href="routerparse.c.html#L894">(base16_decode(router->cache_info.extra_info_digest, DIGEST_LEN, tok->args[0], HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="routerparse.c.html#L903">(digest256_from_base64(router->cache_info.extra_info_digest256, tok->args[1]) < 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">676</td><td><a href="routerparse.c.html#L676">(strcmp(cc_ntor_tok->args[0], "0") && strcmp(cc_ntor_tok->args[0], "1"))</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">759</td><td><a href="routerparse.c.html#L759">(tor_cert_get_checkable_sig(&check[1], ntor_cc_cert, &ntor_cc_pk, &expires) < 0)</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">611</td><td><a href="routerparse.c.html#L611">(curve25519_public_from_base64(&k, tok->args[0]) < 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">706</td><td><a href="routerparse.c.html#L706">(ed25519_public_from_base64(&pkey, master_key_tok->args[0]) < 0)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">524</td><td><a href="routerparse.c.html#L524">(!tor_inet_aton(tok->args[1], &in))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">755</td><td><a href="routerparse.c.html#L755">(tor_cert_get_checkable_sig(&check[0], cert, NULL, &expires) < 0)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">893</td><td><a href="routerparse.c.html#L893">(strlen(tok->args[0]) == HEX_DIGEST_LEN)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">876</td><td><a href="routerparse.c.html#L876">(!is_legal_nickname_or_hexdigest(tok->args[i]))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1037</td><td><a href="routerparse.c.html#L1037">(!is_legal_nickname(tok->args[0]))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1119</td><td><a href="routerparse.c.html#L1119">(tor_cert_get_checkable_sig(&check[0], cert, NULL, NULL) < 0)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="routerparse.c.html#L657">(ed_sig_tok != smartlist_get(tokens, smartlist_len(tokens) - 2))</a></td><td class="num">20.85</td></tr>
+      <tr><td class="num line">1075</td><td><a href="routerparse.c.html#L1075">(ed_sig_tok != smartlist_get(tokens, smartlist_len(tokens) - 2))</a></td><td class="num">20.85</td></tr>
+      <tr><td class="num line">859</td><td><a href="routerparse.c.html#L859">((tok = find_opt_by_keyword(tokens, K_IPV6_POLICY)) && tok->n_args)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="routerparse.c.html#L872">((tok = find_opt_by_keyword(tokens, K_FAMILY)) && tok->n_args)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1051</td><td><a href="routerparse.c.html#L1051">(parse_iso_time(tok->args[0], &extrainfo->cache_info.published_on))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">695</td><td><a href="routerparse.c.html#L695">(cert->cert_type != CERT_TYPE_ID_SIGNING || !cert->signing_key_included)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1097</td><td><a href="routerparse.c.html#L1097">(cert->cert_type != CERT_TYPE_ID_SIGNING || !cert->signing_key_included)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">316</td><td><a href="routerparse.c.html#L316">(!elt && !dl_again && have_raw_digest && invalid_digests_out)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="routerparse.c.html#L738">(router_get_hash_impl_helper(s, end - s, "router ", "\\nrouter-sig-ed25519", ' ', LOG_WARN, &signed_start, &signed_end) < 0)</a></td><td class="num">9.35</td></tr>
+      <tr><td class="num line">1103</td><td><a href="routerparse.c.html#L1103">(router_get_hash_impl_helper(s, end - s, "extra-info ", "\\nrouter-sig-ed25519", ' ', LOG_WARN, &signed_start, &signed_end) < 0)</a></td><td class="num">9.35</td></tr>
+      <tr><td class="num line">217</td><td><a href="routerparse.c.html#L217">(*s == 'r' && !strcmpstart(s, "router "))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="routerparse.c.html#L221">(*s == 'e' && !strcmpstart(s, "extra-info "))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">215</td><td><a href="routerparse.c.html#L215">(*s == '@' && !annotations)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">711</td><td><a href="routerparse.c.html#L711">(fast_memneq(&cert->signing_key.pubkey, pkey.pubkey, ED25519_PUBKEY_LEN))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1062</td><td><a href="routerparse.c.html#L1062">(n_ed_toks != 0 && n_ed_toks != 2)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="routerparse.c.html#L622">(crypto_pk_get_digest(router->identity_pkey, router->cache_info.identity_digest))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">731</td><td><a href="routerparse.c.html#L731">(ed25519_public_key_from_curve25519_public_key(&ntor_cc_pk, router->onion_curve25519_pkey, ntor_cc_sign_bit) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">917</td><td><a href="routerparse.c.html#L917">(find_opt_by_keyword(tokens, K_DIR_TUNNELLED) || router->ipv4_dirport > 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="routerparse.c.html#L566">((tok = find_opt_by_keyword(tokens, A_PURPOSE)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">578</td><td><a href="routerparse.c.html#L578">((tok = find_opt_by_keyword(tokens, K_UPTIME)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">587</td><td><a href="routerparse.c.html#L587">((tok = find_opt_by_keyword(tokens, K_HIBERNATING)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">608</td><td><a href="routerparse.c.html#L608">((tok = find_opt_by_keyword(tokens, K_ONION_KEY_NTOR)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">796</td><td><a href="routerparse.c.html#L796">((tok = find_opt_by_keyword(tokens, K_FINGERPRINT)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">816</td><td><a href="routerparse.c.html#L816">((tok = find_opt_by_keyword(tokens, K_PLATFORM)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">821</td><td><a href="routerparse.c.html#L821">((tok = find_opt_by_keyword(tokens, K_PROTO)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">829</td><td><a href="routerparse.c.html#L829">((tok = find_opt_by_keyword(tokens, K_CONTACT)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">891</td><td><a href="routerparse.c.html#L891">((tok = find_opt_by_keyword(tokens, K_EXTRA_INFO_DIGEST)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="routerparse.c.html#L437">(end - s < 7 || strcmpstart(s, "router "))</a></td><td class="num">7.10</td></tr>
+      <tr><td class="num line">931</td><td><a href="routerparse.c.html#L931">(check_signature_token(digest, DIGEST_LEN, tok, router->identity_pkey, 0, "router descriptor") < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">569</td><td><a href="routerparse.c.html#L569">(router->purpose == ROUTER_PURPOSE_UNKNOWN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">875</td><td><a href="routerparse.c.html#L875">(i < tok->n_args)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">902</td><td><a href="routerparse.c.html#L902">(tok->n_args >= 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1023</td><td><a href="routerparse.c.html#L1023">(tok->tp != K_EXTRA_INFO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">302</td><td><a href="routerparse.c.html#L302">(!have_extrainfo && !want_extrainfo)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="routerparse.c.html#L278">(find_start_of_next_router_or_extrainfo(s, eos, &have_extrainfo) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="routerparse.c.html#L465">(router_get_router_hash(s, end - s, digest) < 0)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">807</td><td><a href="routerparse.c.html#L807">(tor_memneq(d, router->cache_info.identity_digest, DIGEST_LEN))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1005</td><td><a href="routerparse.c.html#L1005">(router_get_extrainfo_hash(s, end - s, digest) < 0)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">211</td><td><a href="routerparse.c.html#L211">(s < eos - 32)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">643</td><td><a href="routerparse.c.html#L643">(master_key_tok && !ed_sig_tok)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="routerparse.c.html#L520">(!is_legal_nickname(router->nickname))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="routerparse.c.html#L599">(!crypto_pk_public_exponent_ok(tok->key))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">861</td><td><a href="routerparse.c.html#L861">(!router->ipv6_exit_policy)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">924</td><td><a href="routerparse.c.html#L924">(!router->ipv4_orport)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">935</td><td><a href="routerparse.c.html#L935">(!router->platform)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1201</td><td><a href="routerparse.c.html#L1201">(!router->exit_policy)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="routerparse.c.html#L292">(have_extrainfo && want_extrainfo)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">661</td><td><a href="routerparse.c.html#L661">(strcmp(ed_cert_tok->object_type, "ED25519 CERT"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">666</td><td><a href="routerparse.c.html#L666">(strcmp(cc_ntor_tok->object_type, "ED25519 CERT"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">671</td><td><a href="routerparse.c.html#L671">(strcmp(cc_tap_tok->object_type, "CROSSCERT"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1079</td><td><a href="routerparse.c.html#L1079">(strcmp(ed_cert_tok->object_type, "ED25519 CERT"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">459</td><td><a href="routerparse.c.html#L459">(!tor_memstr(s, end - s, "\\nproto "))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1000</td><td><a href="routerparse.c.html#L1000">(!tor_memstr(s, end - s, "\\nidentity-ed25519"))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">833</td><td><a href="routerparse.c.html#L833">(find_opt_by_keyword(tokens, K_REJECT6) || find_opt_by_keyword(tokens, K_ACCEPT6))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">482</td><td><a href="routerparse.c.html#L482">(smartlist_len(tokens) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">774</td><td><a href="routerparse.c.html#L774">(ed25519_checksig_batch(check_ok, check, 3) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">989</td><td><a href="routerparse.c.html#L989">(BUG(s == NULL))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1016</td><td><a href="routerparse.c.html#L1016">(smartlist_len(tokens) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1133</td><td><a href="routerparse.c.html#L1133">(ed25519_checksig_batch(check_ok, check, 2) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1159</td><td><a href="routerparse.c.html#L1159">(check_signature_token(digest, DIGEST_LEN, tok, key, 0, "extra-info") < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">323</td><td><a href="routerparse.c.html#L323">(saved_location != SAVED_NOWHERE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">445</td><td><a href="routerparse.c.html#L445">(start_of_annotations != s)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="routerparse.c.html#L1070">(ed_cert_token_pos != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="routerparse.c.html#L848">(!smartlist_len(exit_policy_tokens))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">269</td><td><a href="routerparse.c.html#L269">(!eos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">287</td><td><a href="routerparse.c.html#L287">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">319</td><td><a href="routerparse.c.html#L319">(!elt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">416</td><td><a href="routerparse.c.html#L416">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">436</td><td><a href="routerparse.c.html#L436">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">532</td><td><a href="routerparse.c.html#L532">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">538</td><td><a href="routerparse.c.html#L538">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">548</td><td><a href="routerparse.c.html#L548">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">555</td><td><a href="routerparse.c.html#L555">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">561</td><td><a href="routerparse.c.html#L561">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">581</td><td><a href="routerparse.c.html#L581">(!ok)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="routerparse.c.html#L688">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">720</td><td><a href="routerparse.c.html#L720">(!ntor_cc_cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">992</td><td><a href="routerparse.c.html#L992">(!end)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1090</td><td><a href="routerparse.c.html#L1090">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1199</td><td><a href="routerparse.c.html#L1199">(!newe)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">427</td><td><a href="routerparse.c.html#L427">(tokenize_string(area, prepend_annotations, NULL, tokens, routerdesc_token_table, TS_NOCHECK))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="routerparse.c.html#L447">(tokenize_string(area, start_of_annotations, s, tokens, routerdesc_token_table, TS_NOCHECK))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">476</td><td><a href="routerparse.c.html#L476">(tokenize_string(area, s, end, tokens, routerdesc_token_table, flags))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="routerparse.c.html#L885">(find_opt_by_keyword(tokens, K_CACHES_EXTRA_INFO))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">888</td><td><a href="routerparse.c.html#L888">(find_opt_by_keyword(tokens, K_ALLOW_SINGLE_HOP_EXITS))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">911</td><td><a href="routerparse.c.html#L911">(find_opt_by_keyword(tokens, K_HIDDEN_SERVICE_DIR))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1011</td><td><a href="routerparse.c.html#L1011">(tokenize_string(area, s, end, tokens, extrainfo_token_table, 0))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="routerparse.c.html#L274">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">282</td><td><a href="routerparse.c.html#L282">(end)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">284</td><td><a href="routerparse.c.html#L284">(end)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">298</td><td><a href="routerparse.c.html#L298">(extrainfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">308</td><td><a href="routerparse.c.html#L308">(router)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">426</td><td><a href="routerparse.c.html#L426">(prepend_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">446</td><td><a href="routerparse.c.html#L446">(allow_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">471</td><td><a href="routerparse.c.html#L471">(allow_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">473</td><td><a href="routerparse.c.html#L473">(prepend_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">496</td><td><a href="routerparse.c.html#L496">(cache_copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">501</td><td><a href="routerparse.c.html#L501">(prepend_annotations)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">648</td><td><a href="routerparse.c.html#L648">(ed_sig_tok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">701</td><td><a href="routerparse.c.html#L701">(master_key_tok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">841</td><td><a href="routerparse.c.html#L841">(or_addresses)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">947</td><td><a href="routerparse.c.html#L947">(tokens)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">952</td><td><a href="routerparse.c.html#L952">(area)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">956</td><td><a href="routerparse.c.html#L956">(can_dl_again_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1030</td><td><a href="routerparse.c.html#L1030">(cache_copy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1067</td><td><a href="routerparse.c.html#L1067">(ed_sig_tok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="routerparse.c.html#L1158">(key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1163</td><td><a href="routerparse.c.html#L1163">(router)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1178</td><td><a href="routerparse.c.html#L1178">(tokens)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1182</td><td><a href="routerparse.c.html#L1182">(area)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1186</td><td><a href="routerparse.c.html#L1186">(can_dl_again_out)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

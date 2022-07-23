@@ -1,0 +1,330 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\core\or\circuituse.c Ctrl Expressions (279) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\core\or\circuituse.c Ctrl Expressions (279) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\or\circuituse.c Ctrl Expressions (279)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2739</td><td><a href="circuituse.c.html#L2739">(!circ->base_.timestamp_dirty || (<span style='background-color:#741da3;'>(conn->entry_cfg.isolation_flags & ISO_SOCKSAUTH) && (conn->entry_cfg.socks_iso_keep_alive) && (conn->socks_request->usernamelen || conn->socks_request->passwordlen)</span>))</a></td><td class="num">1054.50</td></tr>
+      <tr><td class="num line">2507</td><td><a href="circuituse.c.html#L2507">(<span style='background-color:#741da3;'>desired_circuit_purpose == CIRCUIT_PURPOSE_C_REND_JOINED && new_circ_purpose == CIRCUIT_PURPOSE_C_ESTABLISH_REND && ENTRY_TO_EDGE_CONN(conn)->hs_ident</span>)</a></td><td class="num">1034.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="circuituse.c.html#L575">(<span style='background-color:#741da3;'>TO_ORIGIN_CIRCUIT(victim)->has_opened && victim->state != CIRCUIT_STATE_OPEN</span>)</a></td><td class="num">1032.75</td></tr>
+      <tr><td class="num line">679</td><td><a href="circuituse.c.html#L679">(<span style='background-color:#741da3;'>TO_ORIGIN_CIRCUIT(victim)->hs_ident || victim->timestamp_dirty > cutoff.tv_sec</span>)</a></td><td class="num">1032.75</td></tr>
+      <tr><td class="num line">1798</td><td><a href="circuituse.c.html#L1798">(<span style='background-color:#741da3;'>circ->cpath && circ->cpath->prev->state != CPATH_STATE_OPEN && circ->cpath->prev->prev->state == CPATH_STATE_OPEN</span>)</a></td><td class="num">1030.50</td></tr>
+      <tr><td class="num line">1605</td><td><a href="circuituse.c.html#L1605">(<span style='background-color:#741da3;'>!circ->marked_for_close && CIRCUIT_IS_ORIGIN(circ) && circ->purpose == CIRCUIT_PURPOSE_TESTING && circ->state == CIRCUIT_STATE_OPEN</span>)</a></td><td class="num">1024.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="circuituse.c.html#L358">(<span style='background-color:#741da3;'>purpose == CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT && !must_be_open && origin_circ->hs_circ_has_timed_out && !circ->marked_for_close</span>)</a></td><td class="num">1019.00</td></tr>
+      <tr><td class="num line">1037</td><td><a href="circuituse.c.html#L1037">(CIRCUIT_IS_ORIGIN(circ) && !circ->marked_for_close && circ->purpose == CIRCUIT_PURPOSE_C_GENERAL && (!circ->timestamp_dirty || circ->timestamp_dirty + get_options()->MaxCircuitDirtiness > now))</a></td><td class="num">98.85</td></tr>
+      <tr><td class="num line">85</td><td><a href="circuituse.c.html#L85">((edge_conn->hs_ident && !origin_circ->hs_ident) || (!edge_conn->hs_ident && origin_circ->hs_ident) || (edge_conn->hs_ident && origin_circ->hs_ident && !ed25519_pubkey_eq(&edge_conn->hs_ident->identity_pk, &origin_circ->hs_ident->identity_pk)))</a></td><td class="num">97.75</td></tr>
+      <tr><td class="num line">1466</td><td><a href="circuituse.c.html#L1466">(circ->timestamp_dirty && circ->timestamp_dirty + get_options()->MaxCircuitDirtiness < now.tv_sec && !TO_ORIGIN_CIRCUIT(circ)->p_streams)</a></td><td class="num">95.10</td></tr>
+      <tr><td class="num line">1484</td><td><a href="circuituse.c.html#L1484">(circ->purpose == CIRCUIT_PURPOSE_C_GENERAL || circ->purpose == CIRCUIT_PURPOSE_C_HSDIR_GET || circ->purpose == CIRCUIT_PURPOSE_S_HSDIR_POST || circ->purpose == CIRCUIT_PURPOSE_HS_VANGUARDS || circ->purpose == CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT || circ->purpose == CIRCUIT_PURPOSE_S_ESTABLISH_INTRO || circ->purpose == CIRCUIT_PURPOSE_TESTING || circ->purpose == CIRCUIT_PURPOSE_C_CIRCUIT_PADDING || (circ->purpose >= CIRCUIT_PURPOSE_C_INTRODUCING && circ->purpose <= CIRCUIT_PURPOSE_C_REND_READY_INTRO_ACKED) || circ->purpose == CIRCUIT_PURPOSE_S_CONNECT_REND)</a></td><td class="num">82.25</td></tr>
+      <tr><td class="num line">146</td><td><a href="circuituse.c.html#L146">(circ->timestamp_dirty && circ->timestamp_dirty + get_options()->MaxCircuitDirtiness <= now)</a></td><td class="num">68.35</td></tr>
+      <tr><td class="num line">1349</td><td><a href="circuituse.c.html#L1349">(get_options()->RunTesting && circ && circ->timestamp_began.tv_sec + TESTING_CIRCUIT_INTERVAL < now)</a></td><td class="num">51.60</td></tr>
+      <tr><td class="num line">1563</td><td><a href="circuituse.c.html#L1563">(or_circ->p_chan && channel_is_client(or_circ->p_chan) && !circ->n_chan && !or_circ->n_streams && !or_circ->resolving_streams && !or_circ->rend_splice && channel_when_last_xmit(or_circ->p_chan) <= cutoff)</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="circuituse.c.html#L792">(!(TO_ORIGIN_CIRCUIT(victim)->hs_circ_has_timed_out) && victim->purpose == CIRCUIT_PURPOSE_S_CONNECT_REND)</a></td><td class="num">47.75</td></tr>
+      <tr><td class="num line">2845</td><td><a href="circuituse.c.html#L2845">(networkstatus_consensus_is_already_downloading(TO_DIR_CONN(base_conn->linked_conn)->requested_resource))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">2664</td><td><a href="circuituse.c.html#L2664">(cp[1] == '\0' || !strcasecmpend(address, cp) || !strcasecmp(address, &cp[1]))</a></td><td class="num">44.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="circuituse.c.html#L392">(circ->marked_for_close || circ->state == CIRCUIT_STATE_OPEN || !CIRCUIT_PURPOSE_COUNTS_TOWARDS_MAXPENDING(circ->purpose) || !CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">33.00</td></tr>
+      <tr><td class="num line">266</td><td><a href="circuituse.c.html#L266">(a->timestamp_dirty || timercmp(&a->timestamp_began, &b->timestamp_began, OP_GT))</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">2528</td><td><a href="circuituse.c.html#L2528">(conn->num_circuits_launched < NUM_CIRCUITS_LAUNCHED_THRESHOLD && conn->num_circuits_launched++ == NUM_CIRCUITS_LAUNCHED_THRESHOLD)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">194</td><td><a href="circuituse.c.html#L194">(family < 0 || !extend_info_has_orport(build_state->chosen_exit, &addr, conn->socks_request->port))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">886</td><td><a href="circuituse.c.html#L886">(hs_service_allow_non_anonymous_connection(options) && (circ->purpose == CIRCUIT_PURPOSE_S_INTRO || circ->purpose == CIRCUIT_PURPOSE_S_REND_JOINED))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">2637</td><td><a href="circuituse.c.html#L2637">(circ->base_.purpose == CIRCUIT_PURPOSE_C_GENERAL || circ->base_.purpose == CIRCUIT_PURPOSE_C_HSDIR_GET || circ->base_.purpose == CIRCUIT_PURPOSE_S_HSDIR_POST || circ->base_.purpose == CIRCUIT_PURPOSE_C_REND_JOINED)</a></td><td class="num">31.25</td></tr>
+      <tr><td class="num line">121</td><td><a href="circuituse.c.html#L121">(circ->purpose != CIRCUIT_PURPOSE_C_ESTABLISH_REND && circ->purpose != CIRCUIT_PURPOSE_C_REND_READY && circ->purpose != CIRCUIT_PURPOSE_C_REND_READY_INTRO_ACKED && circ->purpose != CIRCUIT_PURPOSE_C_REND_JOINED)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">2701</td><td><a href="circuituse.c.html#L2701">(!hostname_in_track_host_exits(options, conn->socks_request->address) || !circ->build_state->chosen_exit)</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">114</td><td><a href="circuituse.c.html#L114">(must_be_open && (circ->state != CIRCUIT_STATE_OPEN || !circ->n_chan))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">558</td><td><a href="circuituse.c.html#L558">(TO_ORIGIN_CIRCUIT(victim)->cpath->state == CPATH_STATE_CLOSED)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1048</td><td><a href="circuituse.c.html#L1048">(origin_circ->isolation_values_set && (conn == NULL || !connection_edge_compatible_with_circuit(conn, origin_circ)))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">711</td><td><a href="circuituse.c.html#L711">(TO_ORIGIN_CIRCUIT(victim)->p_streams != NULL)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">1788</td><td><a href="circuituse.c.html#L1788">(TO_CIRCUIT(circ)->purpose == CIRCUIT_PURPOSE_S_CONNECT_REND)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2235</td><td><a href="circuituse.c.html#L2235">(ENTRY_TO_CONN(conn)->state != AP_CONN_STATE_CIRCUIT_WAIT)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2822</td><td><a href="circuituse.c.html#L2822">(conn_age >= get_options()->SocksTimeout)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2960</td><td><a href="circuituse.c.html#L2960">(ENTRY_TO_CONN(conn)->state != AP_CONN_STATE_CIRCUIT_WAIT)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2440</td><td><a href="circuituse.c.html#L2440">(want_onehop && conn->chosen_exit_name[0] == '$')</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">2840</td><td><a href="circuituse.c.html#L2840">(base_conn->linked_conn && base_conn->linked_conn->type == CONN_TYPE_DIR && base_conn->linked_conn->purpose == DIR_PURPOSE_FETCH_CONSENSUS)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">597</td><td><a href="circuituse.c.html#L597">(!TO_ORIGIN_CIRCUIT(victim)->relaxed_timeout)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">765</td><td><a href="circuituse.c.html#L765">(!(TO_ORIGIN_CIRCUIT(victim)->hs_circ_has_timed_out))</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1503</td><td><a href="circuituse.c.html#L1503">(!TO_ORIGIN_CIRCUIT(circ)->is_ancient)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">2426</td><td><a href="circuituse.c.html#L2426">(r && node_has_preferred_descriptor(r, conn->want_onehop ? 1 : 0))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">583</td><td><a href="circuituse.c.html#L583">(TO_ORIGIN_CIRCUIT(victim)->hs_circ_has_timed_out)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">849</td><td><a href="circuituse.c.html#L849">(TO_CIRCUIT(circ)->marked_for_close)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1195</td><td><a href="circuituse.c.html#L1195">(num < networkstatus_get_param(NULL, "cbtmaxopencircs", DFLT_CBT_UNUSED_OPEN_CIRCS, MIN_CBT_UNUSED_OPEN_CIRCS, MAX_CBT_UNUSED_OPEN_CIRCS) && !circuit_build_times_disabled(get_options()) && circuit_build_times_needs_circuits_now(get_circuit_build_times()))</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">2091</td><td><a href="circuituse.c.html#L2091">(!onehop_tunnel && (!router_have_minimum_dir_info() || !have_path))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2283</td><td><a href="circuituse.c.html#L2283">(!want_onehop && (!router_have_minimum_dir_info() || !have_path))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1805</td><td><a href="circuituse.c.html#L1805">(circ->cpath && circ->cpath->state != CPATH_STATE_OPEN && !circ->base_.received_destroy)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1719</td><td><a href="circuituse.c.html#L1719">(circ->base_.state == CIRCUIT_STATE_OPEN && circ->isolation_values_set && !circ->isolation_any_streams_attached)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">1623</td><td><a href="circuituse.c.html#L1623">(have_performed_bandwidth_test || !router_orport_seems_reachable(get_options(), AF_INET))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="circuituse.c.html#L2544">(circ->base_.purpose == CIRCUIT_PURPOSE_C_ESTABLISH_REND && circ->base_.state == CIRCUIT_STATE_OPEN)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">141</td><td><a href="circuituse.c.html#L141">(purpose == CIRCUIT_PURPOSE_C_GENERAL || purpose == CIRCUIT_PURPOSE_C_HSDIR_GET || purpose == CIRCUIT_PURPOSE_S_HSDIR_POST || purpose == CIRCUIT_PURPOSE_HS_VANGUARDS || purpose == CIRCUIT_PURPOSE_C_REND_JOINED)</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">2118</td><td><a href="circuituse.c.html#L2118">((purpose == CIRCUIT_PURPOSE_S_CONNECT_REND || purpose == CIRCUIT_PURPOSE_C_INTRODUCING) && circ->path_state == PATH_STATE_BUILD_SUCCEEDED)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="circuituse.c.html#L262">(a->timestamp_dirty && a->timestamp_dirty > b->timestamp_dirty)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1385</td><td><a href="circuituse.c.html#L1385">(prevconn && prevconn->next_stream && prevconn->next_stream != conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1422</td><td><a href="circuituse.c.html#L1422">(prevconn && prevconn->next_stream && prevconn->next_stream != conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1431</td><td><a href="circuituse.c.html#L1431">(prevconn && prevconn->next_stream && prevconn->next_stream != conn)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2696</td><td><a href="circuituse.c.html#L2696">(!options->TrackHostExits || addressmap_have_mapping(conn->socks_request->address, options->TrackHostExitsExpire))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">128</td><td><a href="circuituse.c.html#L128">(circ->purpose != CIRCUIT_PURPOSE_C_INTRODUCING && circ->purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">647</td><td><a href="circuituse.c.html#L647">(victim->purpose >= CIRCUIT_PURPOSE_C_INTRODUCING && victim->purpose <= CIRCUIT_PURPOSE_C_REND_READY_INTRO_ACKED)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1095</td><td><a href="circuituse.c.html#L1095">(circ->purpose != CIRCUIT_PURPOSE_C_GENERAL && circ->purpose != CIRCUIT_PURPOSE_HS_VANGUARDS)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1509</td><td><a href="circuituse.c.html#L1509">(circ->purpose != CIRCUIT_PURPOSE_S_REND_JOINED && circ->purpose != CIRCUIT_PURPOSE_S_INTRO)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2784</td><td><a href="circuituse.c.html#L2784">(base_conn->linked_conn && base_conn->linked_conn->type == CONN_TYPE_DIR)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1482</td><td><a href="circuituse.c.html#L1482">(!circ->timestamp_dirty && circ->state == CIRCUIT_STATE_OPEN)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">2998</td><td><a href="circuituse.c.html#L2998">(rendcirc && introcirc && rendcirc->base_.purpose == CIRCUIT_PURPOSE_C_REND_READY)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">892</td><td><a href="circuituse.c.html#L892">(ocirc->build_state && ocirc->build_state->onehop_tunnel)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="circuituse.c.html#L249">(oa->relaxed_timeout && !ob->relaxed_timeout)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="circuituse.c.html#L251">(!oa->relaxed_timeout && ob->relaxed_timeout)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">426</td><td><a href="circuituse.c.html#L426">(routerset_contains_extendinfo(options->ExcludeExitNodes, circ->cpath->prev->extend_info))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2967</td><td><a href="circuituse.c.html#L2967">(rendcirc && (rendcirc->base_.purpose == CIRCUIT_PURPOSE_C_REND_READY_INTRO_ACKED))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1230</td><td><a href="circuituse.c.html#L1230">(build_state->need_uptime && build_state->is_internal)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">168</td><td><a href="circuituse.c.html#L168">(purpose == CIRCUIT_PURPOSE_C_GENERAL || purpose == CIRCUIT_PURPOSE_S_HSDIR_POST || purpose == CIRCUIT_PURPOSE_C_HSDIR_GET)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">207</td><td><a href="circuituse.c.html#L207">(tor_addr_parse(&addr, conn->socks_request->address) != -1)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">594</td><td><a href="circuituse.c.html#L594">(!any_opened_circs && victim->state != CIRCUIT_STATE_OPEN)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1054</td><td><a href="circuituse.c.html#L1054">(exitnode && (!need_uptime || build_state->need_uptime))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2390</td><td><a href="circuituse.c.html#L2390">((m = rate_limit_log(&delay_limit, approx_time())))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2419</td><td><a href="circuituse.c.html#L2419">(desired_circuit_purpose == CIRCUIT_PURPOSE_C_GENERAL || desired_circuit_purpose == CIRCUIT_PURPOSE_S_HSDIR_POST || desired_circuit_purpose == CIRCUIT_PURPOSE_C_HSDIR_GET)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2456</td><td><a href="circuituse.c.html#L2456">(tor_addr_parse(&addr, conn->socks_request->address) < 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2522</td><td><a href="circuituse.c.html#L2522">(desired_circuit_purpose == CIRCUIT_PURPOSE_C_GENERAL || desired_circuit_purpose == CIRCUIT_PURPOSE_C_HSDIR_GET || desired_circuit_purpose == CIRCUIT_PURPOSE_S_HSDIR_POST)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3111</td><td><a href="circuituse.c.html#L3111">(options->MaxCircuitDirtiness >= circ->base_.timestamp_dirty)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">578</td><td><a href="circuituse.c.html#L578">(build_state && build_state->desired_path_len >= 4)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="circuituse.c.html#L279">(a->purpose > b->purpose)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="circuituse.c.html#L284">(a->purpose > b->purpose)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1044</td><td><a href="circuituse.c.html#L1044">(build_state->is_internal || build_state->onehop_tunnel)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2260</td><td><a href="circuituse.c.html#L2260">(conn->use_begindir || conn->want_onehop)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">172</td><td><a href="circuituse.c.html#L172">(!exitnode && !build_state->onehop_tunnel)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3080</td><td><a href="circuituse.c.html#L3080">(circuit_purpose_is_hidden_service(circ->purpose) && !circuit_purpose_is_hidden_service(new_purpose))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="circuituse.c.html#L586">(timercmp(&victim->timestamp_began, &cutoff, OP_GT))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="circuituse.c.html#L596">(timercmp(&victim->timestamp_began, &close_cutoff, OP_GT))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">741</td><td><a href="circuituse.c.html#L741">(timercmp(&victim->timestamp_began, &extremely_old_cutoff, OP_LT))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1483</td><td><a href="circuituse.c.html#L1483">(timercmp(&circ->timestamp_began, &cutoff, OP_LT))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">163</td><td><a href="circuituse.c.html#L163">(need_uptime && !build_state->need_uptime)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1778</td><td><a href="circuituse.c.html#L1778">(circuit_get_cpath_len(circ) < circ->build_state->desired_path_len)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2332</td><td><a href="circuituse.c.html#L2332">(tor_inet_aton(conn->socks_request->address, &in))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2755</td><td><a href="circuituse.c.html#L2755">(conn->socks_request->command == SOCKS_COMMAND_CONNECT)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2787</td><td><a href="circuituse.c.html#L2787">(base_conn->linked_conn->purpose == DIR_PURPOSE_UPLOAD_HSDESC)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2789</td><td><a href="circuituse.c.html#L2789">(base_conn->linked_conn->purpose == DIR_PURPOSE_FETCH_HSDESC)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2450</td><td><a href="circuituse.c.html#L2450">(strlen(hexdigest) < HEX_DIGEST_LEN || base16_decode(digest, DIGEST_LEN, hexdigest, HEX_DIGEST_LEN) != DIGEST_LEN)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">563</td><td><a href="circuituse.c.html#L563">(build_state && build_state->onehop_tunnel)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">703</td><td><a href="circuituse.c.html#L703">(victim->timestamp_dirty > cutoff.tv_sec)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1388</td><td><a href="circuituse.c.html#L1388">(prevconn && prevconn->next_stream)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1425</td><td><a href="circuituse.c.html#L1425">(prevconn && prevconn->next_stream)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1434</td><td><a href="circuituse.c.html#L1434">(prevconn && prevconn->next_stream)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">120</td><td><a href="circuituse.c.html#L120">(purpose == CIRCUIT_PURPOSE_C_REND_JOINED && !must_be_open)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">126</td><td><a href="circuituse.c.html#L126">(purpose == CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT && !must_be_open)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">420</td><td><a href="circuituse.c.html#L420">(routerset_contains_extendinfo(options->ExcludeNodes, cpath->extend_info))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">882</td><td><a href="circuituse.c.html#L882">(circ->timestamp_created.tv_sec >= cutoff)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1370</td><td><a href="circuituse.c.html#L1370">(conn->base_.type == CONN_TYPE_AP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1871</td><td><a href="circuituse.c.html#L1871">(circ->base_.state != CIRCUIT_STATE_OPEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2037</td><td><a href="circuituse.c.html#L2037">(purpose_to_build == CIRCUIT_PURPOSE_C_GENERAL && !has_extend_info)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2047</td><td><a href="circuituse.c.html#L2047">(purpose_to_build == CIRCUIT_PURPOSE_TESTING || purpose_to_build == CIRCUIT_PURPOSE_HS_VANGUARDS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3010</td><td><a href="circuituse.c.html#L3010">(introcirc->base_.state == CIRCUIT_STATE_OPEN)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">546</td><td><a href="circuituse.c.html#L546">(!CIRCUIT_IS_ORIGIN(victim) || victim->marked_for_close)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1457</td><td><a href="circuituse.c.html#L1457">(circ->marked_for_close || !CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2180</td><td><a href="circuituse.c.html#L2180">(did_circs_fail_last_period && n_circuit_failures > MAX_CIRCUIT_FAILURES)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2209</td><td><a href="circuituse.c.html#L2209">(timeout && n_circuit_failures > MAX_CIRCUIT_FAILURES)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">185</td><td><a href="circuituse.c.html#L185">(hexdigest_to_digest(conn->chosen_exit_name, digest) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1554</td><td><a href="circuituse.c.html#L1554">(circ->marked_for_close || CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">132</td><td><a href="circuituse.c.html#L132">(purpose != circ->purpose)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">165</td><td><a href="circuituse.c.html#L165">(need_internal != build_state->is_internal)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">187</td><td><a href="circuituse.c.html#L187">(tor_memneq(digest, build_state->chosen_exit->identity_digest, DIGEST_LEN))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">418</td><td><a href="circuituse.c.html#L418">(cpath_next != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">565</td><td><a href="circuituse.c.html#L565">(victim->purpose == CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">567</td><td><a href="circuituse.c.html#L567">(victim->purpose == CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">569</td><td><a href="circuituse.c.html#L569">(victim->purpose == CIRCUIT_PURPOSE_S_ESTABLISH_INTRO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">571</td><td><a href="circuituse.c.html#L571">(victim->purpose == CIRCUIT_PURPOSE_C_ESTABLISH_REND)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">573</td><td><a href="circuituse.c.html#L573">(victim->purpose == CIRCUIT_PURPOSE_PATH_BIAS_TESTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">667</td><td><a href="circuituse.c.html#L667">(victim->state == CIRCUIT_STATE_OPEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">730</td><td><a href="circuituse.c.html#L730">(victim->purpose != CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">830</td><td><a href="circuituse.c.html#L830">(victim->purpose == CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">851</td><td><a href="circuituse.c.html#L851">(circ->guard_state == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">947</td><td><a href="circuituse.c.html#L947">(stream_num++ >= 5)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1064</td><td><a href="circuituse.c.html#L1064">(num++ >= min)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1380</td><td><a href="circuituse.c.html#L1380">(conn == origin_circ->p_streams)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1400</td><td><a href="circuituse.c.html#L1400">(circ->purpose == CIRCUIT_PURPOSE_S_REND_JOINED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1412</td><td><a href="circuituse.c.html#L1412">(conn == or_circ->n_streams)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1416</td><td><a href="circuituse.c.html#L1416">(conn == or_circ->resolving_streams)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1477</td><td><a href="circuituse.c.html#L1477">(circ->purpose != CIRCUIT_PURPOSE_PATH_BIAS_TESTING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2336</td><td><a href="circuituse.c.html#L2336">(router_exit_policy_all_nodes_reject(addrp, conn->socks_request->port, need_uptime))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2387</td><td><a href="circuituse.c.html#L2387">(n_pending >= options->MaxClientCircuitsPending)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2577</td><td><a href="circuituse.c.html#L2577">(cpath_next != circ->cpath)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3062</td><td><a href="circuituse.c.html#L3062">(circ->purpose == new_purpose)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="circuituse.c.html#L269">(ob->build_state->is_internal)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2863</td><td><a href="circuituse.c.html#L2863">(!node && !want_onehop)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3109</td><td><a href="circuituse.c.html#L3109">(!circ->base_.timestamp_dirty)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">748</td><td><a href="circuituse.c.html#L748">(circuit_build_times_count_close(get_circuit_build_times_mutable(), first_hop_succeeded, (time_t)victim->timestamp_created.tv_sec))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">215</td><td><a href="circuituse.c.html#L215">(exitnode && !connection_ap_can_use_exit(conn, exitnode))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">721</td><td><a href="circuituse.c.html#L721">(circuit_timeout_want_to_count_circ(TO_ORIGIN_CIRCUIT(victim)) && circuit_build_times_enough_to_compute(get_circuit_build_times()))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1239</td><td><a href="circuituse.c.html#L1239">(needs_exit_circuits(now, &port_needs_uptime, &port_needs_capacity))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1264</td><td><a href="circuituse.c.html#L1264">(needs_hs_client_circuits(now, &hidserv_needs_uptime, &hidserv_needs_capacity, num_internal, num_uptime_internal))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2350</td><td><a href="circuituse.c.html#L2350">(node && !connection_ap_can_use_exit(conn, node))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2880</td><td><a href="circuituse.c.html#L2880">(node && !connection_ap_can_use_exit(conn, node))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">377</td><td><a href="circuituse.c.html#L377">(!best && intro_going_on_but_too_old)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1814</td><td><a href="circuituse.c.html#L1814">(circ->base_.n_chan)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="circuituse.c.html#L1644">(server_mode(options) && router_all_orports_seem_reachable(options))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="circuituse.c.html#L178">(!conn->want_onehop)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">649</td><td><a href="circuituse.c.html#L649">(!victim->timestamp_dirty)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">972</td><td><a href="circuituse.c.html#L972">(!c->linked_conn)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1322</td><td><a href="circuituse.c.html#L1322">(!options->DisablePredictedCircuits)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1405</td><td><a href="circuituse.c.html#L1405">(!origin_circ->p_streams)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2329</td><td><a href="circuituse.c.html#L2329">(!conn->chosen_exit_name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2601</td><td><a href="circuituse.c.html#L2601">(!circ->p_streams)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2660</td><td><a href="circuituse.c.html#L2660">(!options->TrackHostExits)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2663</td><td><a href="circuituse.c.html#L2663">(cp[0] == '.')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2756</td><td><a href="circuituse.c.html#L2756">(!conn->use_begindir)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">853</td><td><a href="circuituse.c.html#L853">(entry_guard_state_should_expire(circ->guard_state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">116</td><td><a href="circuituse.c.html#L116">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">137</td><td><a href="circuituse.c.html#L137">(origin_circ->hs_circ_has_timed_out)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">151</td><td><a href="circuituse.c.html#L151">(origin_circ->unusable_for_new_conns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">177</td><td><a href="circuituse.c.html#L177">(build_state->onehop_tunnel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">183</td><td><a href="circuituse.c.html#L183">(build_state->chosen_exit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">201</td><td><a href="circuituse.c.html#L201">(conn->want_onehop)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">206</td><td><a href="circuituse.c.html#L206">(origin_circ->prepend_policy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="circuituse.c.html#L261">(b->timestamp_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="circuituse.c.html#L372">(!best || circuit_is_better(origin_circ, best, conn))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">804</td><td><a href="circuituse.c.html#L804">(victim->n_chan)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">919</td><td><a href="circuituse.c.html#L919">(circ->timestamp_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1046</td><td><a href="circuituse.c.html#L1046">(origin_circ->unusable_for_new_conns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="circuituse.c.html#L1091">(circ->marked_for_close)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1093</td><td><a href="circuituse.c.html#L1093">(circ->timestamp_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1101</td><td><a href="circuituse.c.html#L1101">(origin_circ->unusable_for_new_conns)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="circuituse.c.html#L1105">(build_state->onehop_tunnel)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1228</td><td><a href="circuituse.c.html#L1228">(build_state->is_internal)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="circuituse.c.html#L1817">(n_chan->is_bad_for_new_circs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1846</td><td><a href="circuituse.c.html#L1846">(circ->guard_state)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2422</td><td><a href="circuituse.c.html#L2422">(conn->chosen_exit_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2540</td><td><a href="circuituse.c.html#L2540">(edge_conn->hs_ident)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2633</td><td><a href="circuituse.c.html#L2633">(cpath->extend_info)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2860</td><td><a href="circuituse.c.html#L2860">(conn->chosen_exit_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">305</td><td><a href="circuituse.c.html#L305">(n_bits_set_u8(a_bits) < n_bits_set_u8(b_bits))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">365</td><td><a href="circuituse.c.html#L365">(!circuit_is_acceptable(origin_circ, conn, must_be_open, purpose, need_uptime, need_internal, (time_t)now.tv_sec))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">895</td><td><a href="circuituse.c.html#L895">(smartlist_len(log_these) < MAX_ANCIENT_ONEHOP_CIRCUITS_TO_LOG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1006</td><td><a href="circuituse.c.html#L1006">(i < smartlist_len(needed_ports))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1009</td><td><a href="circuituse.c.html#L1009">(circuit_stream_is_being_handled(NULL, *port, MIN_CIRCUITS_HANDLING_STREAM))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1141</td><td><a href="circuituse.c.html#L1141">(router_have_consensus_path() == CONSENSUS_PATH_UNKNOWN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1194</td><td><a href="circuituse.c.html#L1194">(router_have_consensus_path() != CONSENSUS_PATH_UNKNOWN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1290</td><td><a href="circuituse.c.html#L1290">(router_have_consensus_path() == CONSENSUS_PATH_INTERNAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1317</td><td><a href="circuituse.c.html#L1317">(router_have_consensus_path() != CONSENSUS_PATH_UNKNOWN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2102</td><td><a href="circuituse.c.html#L2102">(circuit_should_cannibalize_to_build(purpose, extend_info != NULL, onehop_tunnel))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2164</td><td><a href="circuituse.c.html#L2164">(circuit_extend_to_new_exit(circ, extend_info) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2668</td><td><a href="circuituse.c.html#L2668">(strcasecmp(cp, address) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2759</td><td><a href="circuituse.c.html#L2759">(connection_ap_handshake_send_begin(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2762</td><td><a href="circuituse.c.html#L2762">(connection_ap_handshake_send_resolve(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2950</td><td><a href="circuituse.c.html#L2950">(connection_ap_handshake_send_begin(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">211</td><td><a href="circuituse.c.html#L211">(r == ADDR_POLICY_REJECTED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">298</td><td><a href="circuituse.c.html#L298">(a_bits < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">300</td><td><a href="circuituse.c.html#L300">(b_bits < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">901</td><td><a href="circuituse.c.html#L901">(n_found == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="circuituse.c.html#L1136">(num_uptime_internal >= SUFFICIENT_UPTIME_INTERNAL_HS_SERVERS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="circuituse.c.html#L1236">(num >= MAX_UNUSED_OPEN_CIRCUITS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1336</td><td><a href="circuituse.c.html#L1336">(time_to_expire_and_reset < now)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="circuituse.c.html#L2056">(purpose_to_build == CIRCUIT_PURPOSE_S_ESTABLISH_INTRO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2087</td><td><a href="circuituse.c.html#L2087">(purpose == CIRCUIT_PURPOSE_S_CONNECT_REND)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2258</td><td><a href="circuituse.c.html#L2258">(desired_circuit_purpose != CIRCUIT_PURPOSE_C_GENERAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2402</td><td><a href="circuituse.c.html#L2402">(desired_circuit_purpose == CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2491</td><td><a href="circuituse.c.html#L2491">(desired_circuit_purpose == CIRCUIT_PURPOSE_C_REND_JOINED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2493</td><td><a href="circuituse.c.html#L2493">(desired_circuit_purpose == CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2579</td><td><a href="circuituse.c.html#L2579">(crypt_path == cpath)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2902</td><td><a href="circuituse.c.html#L2902">(retval < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="circuituse.c.html#L2928">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2930</td><td><a href="circuituse.c.html#L2930">(retval > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2980</td><td><a href="circuituse.c.html#L2980">(retval < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2982</td><td><a href="circuituse.c.html#L2982">(retval > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">770</td><td><a href="circuituse.c.html#L770">(!hs_circ_is_rend_sent_in_intro1(CONST_TO_ORIGIN_CIRCUIT(victim)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">2834</td><td><a href="circuituse.c.html#L2834">(!connection_edge_is_rendezvous_stream(ENTRY_TO_EDGE_CONN(conn)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="circuituse.c.html#L221">(!circuit_matches_with_rend_stream(edge_conn, origin_circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">226</td><td><a href="circuituse.c.html#L226">(!connection_edge_compatible_with_circuit(conn, origin_circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">352</td><td><a href="circuituse.c.html#L352">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">880</td><td><a href="circuituse.c.html#L880">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1088</td><td><a href="circuituse.c.html#L1088">(!CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1131</td><td><a href="circuituse.c.html#L1131">(!hs_service_get_num_services())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1222</td><td><a href="circuituse.c.html#L1222">(!circuit_is_available_for_use(circ))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2287</td><td><a href="circuituse.c.html#L2287">(!connection_get_by_type(CONN_TYPE_DIR))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2688</td><td><a href="circuituse.c.html#L2688">(BUG(!conn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="circuituse.c.html#L600">(!fixed_time)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">626</td><td><a href="circuituse.c.html#L626">(!fixed_time)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1840</td><td><a href="circuituse.c.html#L1840">(!already_marked)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2377</td><td><a href="circuituse.c.html#L2377">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2406</td><td><a href="circuituse.c.html#L2406">(!extend_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2432</td><td><a href="circuituse.c.html#L2432">(!extend_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3127</td><td><a href="circuituse.c.html#L3127">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3148</td><td><a href="circuituse.c.html#L3148">(!circ)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="circuituse.c.html#L1339">(proxy_mode(get_options()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">2611</td><td><a href="circuituse.c.html#L2611">(connection_edge_is_rendezvous_stream(ENTRY_TO_EDGE_CONN(apconn)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">190</td><td><a href="circuituse.c.html#L190">(tor_digest_is_zero(digest))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1252</td><td><a href="circuituse.c.html#L1252">(needs_hs_server_circuits(now, num_uptime_internal))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1286</td><td><a href="circuituse.c.html#L1286">(needs_circuits_for_build(num))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1377</td><td><a href="circuituse.c.html#L1377">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="circuituse.c.html#L1631">(circuit_enough_testing_circs())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1747</td><td><a href="circuituse.c.html#L1747">(circuit_try_clearing_isolation_state(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1948</td><td><a href="circuituse.c.html#L1948">(circuit_purpose_is_hs_vanguards(purpose))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="circuituse.c.html#L1953">(circuit_purpose_is_hs_client(purpose))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1958</td><td><a href="circuituse.c.html#L1958">(circuit_purpose_is_hs_service(purpose))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2011</td><td><a href="circuituse.c.html#L2011">(circuit_purpose_is_hidden_service(purpose))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2291</td><td><a href="circuituse.c.html#L2291">(entry_list_is_constrained(options))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3064</td><td><a href="circuituse.c.html#L3064">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3091</td><td><a href="circuituse.c.html#L3091">(CIRCUIT_IS_ORIGIN(circ))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1056</td><td><a href="circuituse.c.html#L1056">(conn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1063</td><td><a href="circuituse.c.html#L1063">(ok)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1240</td><td><a href="circuituse.c.html#L1240">(port_needs_uptime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1242</td><td><a href="circuituse.c.html#L1242">(port_needs_capacity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1268</td><td><a href="circuituse.c.html#L1268">(hidserv_needs_uptime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1270</td><td><a href="circuituse.c.html#L1270">(hidserv_needs_capacity)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1393</td><td><a href="circuituse.c.html#L1393">(removed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1601</td><td><a href="circuituse.c.html#L1601">(have_performed_bandwidth_test)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1860</td><td><a href="circuituse.c.html#L1860">(failed_at_last_hop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1935</td><td><a href="circuituse.c.html#L1935">(need_exit)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2031</td><td><a href="circuituse.c.html#L2031">(onehop_tunnel)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2109</td><td><a href="circuituse.c.html#L2109">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2271</td><td><a href="circuituse.c.html#L2271">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2328</td><td><a href="circuituse.c.html#L2328">(check_exit_policy)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2355</td><td><a href="circuituse.c.html#L2355">(opt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2374</td><td><a href="circuituse.c.html#L2374">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2475</td><td><a href="circuituse.c.html#L2475">(opt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2501</td><td><a href="circuituse.c.html#L2501">(want_onehop)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2502</td><td><a href="circuituse.c.html#L2502">(need_uptime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2503</td><td><a href="circuituse.c.html#L2503">(need_internal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2538</td><td><a href="circuituse.c.html#L2538">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2554</td><td><a href="circuituse.c.html#L2554">(circ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2618</td><td><a href="circuituse.c.html#L2618">(cpath)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2872</td><td><a href="circuituse.c.html#L2872">(opt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2885</td><td><a href="circuituse.c.html#L2885">(opt)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\usb\hcd-musb.c Ctrl Expressions (91) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\usb\hcd-musb.c Ctrl Expressions (91) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\usb\hcd-musb.c Ctrl Expressions (91)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1324</td><td><a href="hcd-musb.c.html#L1324">(<span style='background-color:#741da3;'>(value & MGC_M_POWER_HSENAB) && s->port.dev->speed == USB_SPEED_HIGH</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">826</td><td><a href="hcd-musb.c.html#L826">(<span style='background-color:#9c4c02;'>!usb_packet_is_inflight(&s->ep[ep].packey[dir].p) || s->ep[ep].packey[dir].p.ep->dev != dev</span>)</a></td><td class="num">173.00</td></tr>
+      <tr><td class="num line">882</td><td><a href="hcd-musb.c.html#L882">(ep->packey[1].p.pid == USB_TOKEN_IN && ep->status[1] >= 0 && (ep->fifostart[1]) + ep->rxcount < ep->packey[1].p.iov.size)</a></td><td class="num">86.60</td></tr>
+      <tr><td class="num line">1211</td><td><a href="hcd-musb.c.html#L1211">((value & MGC_M_RXCSR_H_AUTOREQ) && !(value & MGC_M_RXCSR_RXPKTRDY) && (s->ep[ep].csr[1] & MGC_M_RXCSR_RXPKTRDY))</a></td><td class="num">68.75</td></tr>
+      <tr><td class="num line">728</td><td><a href="hcd-musb.c.html#L728">(!epnum && ep->packey[0].pid == USB_TOKEN_SETUP)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">1136</td><td><a href="hcd-musb.c.html#L1136">(s->ep[ep].csr[1] & MGC_M_RXCSR_AUTOCLEAR)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">863</td><td><a href="hcd-musb.c.html#L863">(!epnum && (ep->csr[0] & MGC_M_CSR0_H_SETUPPKT))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">807</td><td><a href="hcd-musb.c.html#L807">(!(ep->csr[1] & MGC_M_RXCSR_H_RXSTALL | MGC_M_RXCSR_DATAERROR))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="hcd-musb.c.html#L856">(epnum && (ep->fifostart[0]) < total)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="hcd-musb.c.html#L643">(ep->packey[dir].p.status == USB_RET_ASYNC)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">649</td><td><a href="hcd-musb.c.html#L649">(ep->packey[dir].p.status == USB_RET_SUCCESS)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">927</td><td><a href="hcd-musb.c.html#L927">(ep->packey[0].p.devaddr == 2)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1168</td><td><a href="hcd-musb.c.html#L1168">((ep && (value & MGC_M_TXCSR_FLUSHFIFO)) || (!ep && (value & MGC_M_CSR0_FLUSHFIFO)))</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">1195</td><td><a href="hcd-musb.c.html#L1195">(!ep && (value & MGC_M_CSR0_H_REQPKT) && !(value & MGC_M_CSR0_H_NAKTIMEOUT | MGC_M_CSR0_RXPKTRDY))</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1321</td><td><a href="hcd-musb.c.html#L1321">((value & MGC_M_POWER_RESET) && s->port.dev)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1230</td><td><a href="hcd-musb.c.html#L1230">((value & MGC_M_RXCSR_H_REQPKT) && !(value & MGC_M_RXCSR_DATAERROR))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">409</td><td><a href="hcd-musb.c.html#L409">(s->mask & (1 << line))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">421</td><td><a href="hcd-musb.c.html#L421">(s->tx_mask & (1 << line))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">434</td><td><a href="hcd-musb.c.html#L434">(s->rx_mask & (1 << line))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">482</td><td><a href="hcd-musb.c.html#L482">(s->port.dev->speed == USB_SPEED_LOW)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">554</td><td><a href="hcd-musb.c.html#L554">(ep->status[dir] == USB_RET_NAK)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">668</td><td><a href="hcd-musb.c.html#L668">(ep->status[0] != USB_RET_NAK)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="hcd-musb.c.html#L686">(ep->status[0] == USB_RET_STALL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">696</td><td><a href="hcd-musb.c.html#L696">(ep->status[0] == USB_RET_NAK)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="hcd-musb.c.html#L711">(ep->status[0] < 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="hcd-musb.c.html#L712">(ep->status[0] == USB_RET_BABBLE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="hcd-musb.c.html#L749">(ep->status[1] != USB_RET_NAK)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">765</td><td><a href="hcd-musb.c.html#L765">(ep->status[1] == USB_RET_STALL)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">773</td><td><a href="hcd-musb.c.html#L773">(ep->status[1] == USB_RET_NAK)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">789</td><td><a href="hcd-musb.c.html#L789">(ep->status[1] < 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="hcd-musb.c.html#L790">(ep->status[1] == USB_RET_BABBLE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="hcd-musb.c.html#L942">(ep->fifolen[1] >= 64)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="hcd-musb.c.html#L959">(ep->fifolen[0] >= 64)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="hcd-musb.c.html#L1261">(ret & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1407</td><td><a href="hcd-musb.c.html#L1407">(ret & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1414</td><td><a href="hcd-musb.c.html#L1414">(ret & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">563</td><td><a href="hcd-musb.c.html#L563">(!ep->intv_timer[dir])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">556</td><td><a href="hcd-musb.c.html#L556">(ep->interrupt[dir])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">701</td><td><a href="hcd-musb.c.html#L701">(ep->interrupt[0])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">778</td><td><a href="hcd-musb.c.html#L778">(ep->interrupt[1])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">849</td><td><a href="hcd-musb.c.html#L849">(ep->ext_size[0])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">971</td><td><a href="hcd-musb.c.html#L971">(ep->intv_timer[dir])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">476</td><td><a href="hcd-musb.c.html#L476">(detect && !detect_prev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="hcd-musb.c.html#L498">(!detect && detect_prev)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">419</td><td><a href="hcd-musb.c.html#L419">(!s->tx_intr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">432</td><td><a href="hcd-musb.c.html#L432">(!s->rx_intr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">451</td><td><a href="hcd-musb.c.html#L451">(!s->rx_intr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">457</td><td><a href="hcd-musb.c.html#L457">(!s->tx_intr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">449</td><td><a href="hcd-musb.c.html#L449">(s->rx_intr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">455</td><td><a href="hcd-musb.c.html#L455">(s->tx_intr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1222</td><td><a href="hcd-musb.c.html#L1222">(value & MGC_M_RXCSR_FLUSHFIFO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="hcd-musb.c.html#L1232">(value & MGC_M_RXCSR_H_REQPKT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1329</td><td><a href="hcd-musb.c.html#L1329">(value & MGC_M_POWER_SUSPENDM)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="hcd-musb.c.html#L1334">(value & MGC_M_POWER_RESUME)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="hcd-musb.c.html#L365">(i < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="hcd-musb.c.html#L381">(i < musb_irq_max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="hcd-musb.c.html#L578">(val < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">580</td><td><a href="hcd-musb.c.html#L580">(speed == USB_SPEED_HIGH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="hcd-musb.c.html#L586">(speed == USB_SPEED_HIGH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="hcd-musb.c.html#L587">(val < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">596</td><td><a href="hcd-musb.c.html#L596">(val < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">598</td><td><a href="hcd-musb.c.html#L598">(speed == USB_SPEED_HIGH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="hcd-musb.c.html#L631">(dev == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">824</td><td><a href="hcd-musb.c.html#L824">(ep < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">825</td><td><a href="hcd-musb.c.html#L825">(dir < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">865</td><td><a href="hcd-musb.c.html#L865">(total != 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1260</td><td><a href="hcd-musb.c.html#L1260">(i < sizeof(ret) * 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1406</td><td><a href="hcd-musb.c.html#L1406">(i < sizeof(ret) * 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="hcd-musb.c.html#L1413">(i < sizeof(ret) * 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="hcd-musb.c.html#L406">(!level)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">417</td><td><a href="hcd-musb.c.html#L417">(!level)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">430</td><td><a href="hcd-musb.c.html#L430">(!level)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="hcd-musb.c.html#L752">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">761</td><td><a href="hcd-musb.c.html#L761">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">769</td><td><a href="hcd-musb.c.html#L769">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">785</td><td><a href="hcd-musb.c.html#L785">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">798</td><td><a href="hcd-musb.c.html#L798">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">809</td><td><a href="hcd-musb.c.html#L809">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">859</td><td><a href="hcd-musb.c.html#L859">(!valid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">893</td><td><a href="hcd-musb.c.html#L893">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">899</td><td><a href="hcd-musb.c.html#L899">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">904</td><td><a href="hcd-musb.c.html#L904">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">926</td><td><a href="hcd-musb.c.html#L926">(!epnum)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">396</td><td><a href="hcd-musb.c.html#L396">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">429</td><td><a href="hcd-musb.c.html#L429">(line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">679</td><td><a href="hcd-musb.c.html#L679">(epnum)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">690</td><td><a href="hcd-musb.c.html#L690">(epnum)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">705</td><td><a href="hcd-musb.c.html#L705">(epnum)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">717</td><td><a href="hcd-musb.c.html#L717">(epnum)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1158</td><td><a href="hcd-musb.c.html#L1158">(ep)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1172</td><td><a href="hcd-musb.c.html#L1172">(ep)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

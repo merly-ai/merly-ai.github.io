@@ -1,0 +1,83 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptshift.c Ctrl Expressions (32) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptshift.c Ctrl Expressions (32) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptshift.c Ctrl Expressions (32)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">604</td><td><a href="coptshift.c.html#L604">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && (L[0]->AM == AM65_ABS || L[0]->AM == AM65_ZP) && CS_GetEntries(S, L + 1, I + 1, 4) && !CS_RangeHasLabel(S, I + 1, 4) && L[1]->OPC == OP65_LDX && (L[1]->AM == AM65_ABS || L[1]->AM == AM65_ZP) && L[2]->OPC == OP65_JSR && (ShiftType = GetShift(L[2]->Arg)) != SHIFT_NONE && SHIFT_COUNT(ShiftType) == 1 && L[3]->OPC == OP65_STA && (L[3]->AM == AM65_ABS || L[3]->AM == AM65_ZP) && L[4]->OPC == OP65_STX && (L[4]->AM == AM65_ABS || L[4]->AM == AM65_ZP) && !RegAXUsed(S, I + 5)</span>)</a></td><td class="num">239.65</td></tr>
+      <tr><td class="num line">344</td><td><a href="coptshift.c.html#L344">(<span style='background-color:#9c4c02;'>(L[0]->OPC == OP65_BPL || L[0]->OPC == OP65_BCC || L[0]->OPC == OP65_JPL || L[0]->OPC == OP65_JCC) && L[0]->JumpTo != 0 && CS_GetEntries(S, L + 1, I + 1, 3) && L[1]->OPC == OP65_DEX && L[0]->JumpTo->Owner == L[2] && !CS_RangeHasLabel(S, I, 2) && L[2]->OPC == OP65_JSR && SHIFT_TYPE(Shift = GetShift(L[2]->Arg)) == SHIFT_TYPE_ASR && (Count = SHIFT_COUNT(Shift)) > 0</span>)</a></td><td class="num">177.70</td></tr>
+      <tr><td class="num line">435</td><td><a href="coptshift.c.html#L435">(<span style='background-color:#9c4c02;'>(L[0]->OPC == OP65_BCC || L[0]->OPC == OP65_JCC) && L[0]->JumpTo != 0 && L[0]->RI->In.RegX == 0 && CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_INX && L[0]->JumpTo->Owner == L[2] && !CS_RangeHasLabel(S, I, 2) && L[2]->OPC == OP65_JSR && (Shift = GetShift(L[2]->Arg)) != SHIFT_NONE && SHIFT_DIR(Shift) == SHIFT_DIR_RIGHT && (Count = SHIFT_COUNT(Shift)) > 0</span>)</a></td><td class="num">160.20</td></tr>
+      <tr><td class="num line">357</td><td><a href="coptshift.c.html#L357">(L[3]->OPC == OP65_JSR && SHIFT_TYPE(Shift = GetShift(L[3]->Arg)) == SHIFT_TYPE_ASR && (Count2 = SHIFT_COUNT(Shift)) > 0)</a></td><td class="num">95.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="coptshift.c.html#L710">(E->OPC == OP65_JSR && (Shift = GetShift(E->Arg)) != SHIFT_NONE && SHIFT_DIR(Shift) == SHIFT_DIR_LEFT && (Count = SHIFT_COUNT(Shift)) > 0)</a></td><td class="num">66.50</td></tr>
+      <tr><td class="num line">493</td><td><a href="coptshift.c.html#L493">(E->OPC == OP65_JSR && (Shift = GetShift(E->Arg)) != SHIFT_NONE && SHIFT_DIR(Shift) == SHIFT_DIR_RIGHT && E->RI->In.RegX == 0)</a></td><td class="num">65.50</td></tr>
+      <tr><td class="num line">218</td><td><a href="coptshift.c.html#L218">(E->OPC == OP65_JSR && (Shift = GetShift(E->Arg)) != SHIFT_NONE && SHIFT_DIR(Shift) == SHIFT_DIR_LEFT)</a></td><td class="num">55.75</td></tr>
+      <tr><td class="num line">267</td><td><a href="coptshift.c.html#L267">(E->RI->In.RegX == 0 && Count == 1 && (N = CS_GetNextEntry(S, I)) != 0)</a></td><td class="num">39.75</td></tr>
+      <tr><td class="num line">367</td><td><a href="coptshift.c.html#L367">(Count * 100 <= S->CodeSizeFactor && !RegXUsed(S, I + K))</a></td><td class="num">29.20</td></tr>
+      <tr><td class="num line">729</td><td><a href="coptshift.c.html#L729">(Count > 1 || S->CodeSizeFactor > 200)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">731</td><td><a href="coptshift.c.html#L731">((Size * 100 / 3) > S->CodeSizeFactor)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">230</td><td><a href="coptshift.c.html#L230">(S->CodeSizeFactor < 200)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="coptshift.c.html#L506">(S->CodeSizeFactor < 200)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">176</td><td><a href="coptshift.c.html#L176">(Name[6] == '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">224</td><td><a href="coptshift.c.html#L224">(!RegXUsed(S, I + 1))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">261</td><td><a href="coptshift.c.html#L261">(Count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="coptshift.c.html#L382">(Count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="coptshift.c.html#L450">(Count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="coptshift.c.html#L543">(Count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">744</td><td><a href="coptshift.c.html#L744">(Count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="coptshift.c.html#L149">(strncmp(Name, "aslax", 5) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">151</td><td><a href="coptshift.c.html#L151">(strncmp(Name, "asrax", 5) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">153</td><td><a href="coptshift.c.html#L153">(strncmp(Name, "shlax", 5) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">155</td><td><a href="coptshift.c.html#L155">(strncmp(Name, "shrax", 5) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">207</td><td><a href="coptshift.c.html#L207">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="coptshift.c.html#L334">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">425</td><td><a href="coptshift.c.html#L425">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">484</td><td><a href="coptshift.c.html#L484">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">595</td><td><a href="coptshift.c.html#L595">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="coptshift.c.html#L699">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">226</td><td><a href="coptshift.c.html#L226">(Count == SHIFT_COUNT_Y)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">502</td><td><a href="coptshift.c.html#L502">(Count == SHIFT_COUNT_Y)</a></td><td class="num">2.25</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

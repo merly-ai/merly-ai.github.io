@@ -1,0 +1,103 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - target\riscv\pmp.c Ctrl Expressions (52) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\riscv\pmp.c Ctrl Expressions (52) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\riscv\pmp.c Ctrl Expressions (52)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">603</td><td><a href="pmp.c.html#L603">(<span style='background-color:#741da3;'>pmp_ea <= tlb_ea && pmp_ea >= tlb_sa && pmp_sa <= tlb_sa</span>)</a></td><td class="num">1013.00</td></tr>
+      <tr><td class="num line">354</td><td><a href="pmp.c.html#L354">(<span style='background-color:#741da3;'>((s + e) == 2) && (PMP_AMATCH_OFF != a_field)</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">511</td><td><a href="pmp.c.html#L511">(<span style='background-color:#741da3;'>pmp_cfg & PMP_LOCK && PMP_AMATCH_TOR == pmp_get_a_field(pmp_cfg)</span>)</a></td><td class="num">1009.50</td></tr>
+      <tr><td class="num line">223</td><td><a href="pmp.c.html#L223">((addr >= env->pmp_state.addr[pmp_index].sa) && (addr <= env->pmp_state.addr[pmp_index].ea))</a></td><td class="num">69.50</td></tr>
+      <tr><td class="num line">49</td><td><a href="pmp.c.html#L49">(env->pmp_state.pmp[pmp_index].cfg_reg & PMP_LOCK)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">105</td><td><a href="pmp.c.html#L105">((val & PMP_LOCK) != 0 && (val & PMP_EXEC) != PMP_EXEC)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">109</td><td><a href="pmp.c.html#L109">((val & PMP_LOCK) != PMP_LOCK && (val & 0x7) != PMP_WRITE | PMP_EXEC)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">599</td><td><a href="pmp.c.html#L599">(pmp_sa >= tlb_sa && pmp_sa <= tlb_ea && pmp_ea >= tlb_ea)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">624</td><td><a href="pmp.c.html#L624">(*tlb_size == 0 || *tlb_size > val)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="pmp.c.html#L256">(mode == PRV_M && !(privs & PMP_EXEC))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">595</td><td><a href="pmp.c.html#L595">(pmp_sa >= tlb_sa && pmp_ea <= tlb_ea)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">98</td><td><a href="pmp.c.html#L98">(!MSECCFG_MML_ISSET(env) && !pmp_is_locked(env, pmp_index))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">268</td><td><a href="pmp.c.html#L268">((!riscv_feature(env, RISCV_FEATURE_PMP)) || (mode == PRV_M))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">365</td><td><a href="pmp.c.html#L365">((mode != PRV_M) || pmp_is_locked(env, i))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">54</td><td><a href="pmp.c.html#L54">((pmp_index + 1u) >= MAX_RISCV_PMPS)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">333</td><td><a href="pmp.c.html#L333">((s + e) == 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">508</td><td><a href="pmp.c.html#L508">(addr_index + 1 < MAX_RISCV_PMPS)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">630</td><td><a href="pmp.c.html#L630">(*tlb_size != 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">644</td><td><a href="pmp.c.html#L644">(pmp_priv & PMP_READ)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="pmp.c.html#L647">(pmp_priv & PMP_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">650</td><td><a href="pmp.c.html#L650">(pmp_priv & PMP_EXEC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="pmp.c.html#L307">(0 == pmp_get_num_rules(env))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">74</td><td><a href="pmp.c.html#L74">(pmp_index < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">88</td><td><a href="pmp.c.html#L88">(pmp_index < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">157</td><td><a href="pmp.c.html#L157">(pmp_index >= 1u)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">170</td><td><a href="pmp.c.html#L170">(sa > ea)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="pmp.c.html#L199">(i < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">202</td><td><a href="pmp.c.html#L202">(PMP_AMATCH_OFF != a_field)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">312</td><td><a href="pmp.c.html#L312">(size == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">328</td><td><a href="pmp.c.html#L328">(i < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="pmp.c.html#L372">(mode == PRV_M)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">445</td><td><a href="pmp.c.html#L445">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="pmp.c.html#L465">(i < pmpcfg_nums)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="pmp.c.html#L485">(i < pmpcfg_nums)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="pmp.c.html#L503">(addr_index < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">540</td><td><a href="pmp.c.html#L540">(addr_index < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="pmp.c.html#L562">(i < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">621</td><td><a href="pmp.c.html#L621">(i < MAX_RISCV_PMPS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">115</td><td><a href="pmp.c.html#L115">(!pmp_is_locked(env, pmp_index))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">359</td><td><a href="pmp.c.html#L359">(!MSECCFG_MML_ISSET(env))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">519</td><td><a href="pmp.c.html#L519">(!pmp_is_locked(env, addr_index))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">561</td><td><a href="pmp.c.html#L561">(!MSECCFG_RLB_ISSET(env))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">91</td><td><a href="pmp.c.html#L91">(riscv_feature(env, RISCV_FEATURE_EPMP))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">93</td><td><a href="pmp.c.html#L93">(MSECCFG_RLB_ISSET(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">103</td><td><a href="pmp.c.html#L103">(MSECCFG_MML_ISSET(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">242</td><td><a href="pmp.c.html#L242">(riscv_feature(env, RISCV_FEATURE_EPMP))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">243</td><td><a href="pmp.c.html#L243">(MSECCFG_MMWP_ISSET(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">250</td><td><a href="pmp.c.html#L250">(MSECCFG_MML_ISSET(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">313</td><td><a href="pmp.c.html#L313">(riscv_feature(env, RISCV_FEATURE_MMU))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">563</td><td><a href="pmp.c.html#L563">(pmp_is_locked(env, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">120</td><td><a href="pmp.c.html#L120">(locked)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">623</td><td><a href="pmp.c.html#L623">(val)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

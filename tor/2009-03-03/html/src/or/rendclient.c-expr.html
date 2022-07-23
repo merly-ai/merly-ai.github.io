@@ -1,0 +1,125 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>tor Repo - src\or\rendclient.c Ctrl Expressions (74) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\or\rendclient.c Ctrl Expressions (74) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\or\rendclient.c Ctrl Expressions (74)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">512</td><td><a href="rendclient.c.html#L512">(rend_compute_v2_desc_id(descriptor_id, rend_query->onion_address, <span style='background-color:#741da3;'>rend_query->auth_type == REND_STEALTH_AUTH ? rend_query->descriptor_cookie : NULL</span>, time(NULL), chosen_replica) < 0)</a></td><td class="num">1052.50</td></tr>
+      <tr><td class="num line">748</td><td><a href="rendclient.c.html#L748">(rend_version >= 0 && !connection_get_by_type_state_rendquery(CONN_TYPE_DIR, 0, query, rend_version == 0 ? 2 : 0))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">636</td><td><a href="rendclient.c.html#L636">((circ->_base.purpose != CIRCUIT_PURPOSE_C_REND_READY && circ->_base.purpose != CIRCUIT_PURPOSE_C_REND_READY_INTRO_ACKED) || !circ->build_state->pending_final_cpath)</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">725</td><td><a href="rendclient.c.html#L725">(rend_cache_lookup_entry(conn->rend_data->onion_address, -1, &entry) == 1 && smartlist_len(entry->parsed->intro_nodes) > 0)</a></td><td class="num">35.75</td></tr>
+      <tr><td class="num line">461</td><td><a href="rendclient.c.html#L461">(!get_options()->FetchHidServDescriptors)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">489</td><td><a href="rendclient.c.html#L489">(!get_options()->FetchHidServDescriptors)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">141</td><td><a href="rendclient.c.html#L141">(entry->parsed->protocols & 1 << 3 || entry->parsed->protocols & 1 << 2)</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">39</td><td><a href="rendclient.c.html#L39">(relay_send_command_from_edge(0, TO_CIRCUIT(circ), RELAY_COMMAND_ESTABLISH_RENDEZVOUS, circ->rend_data->rend_cookie, REND_COOKIE_LEN, circ->cpath->prev) < 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">112</td><td><a href="rendclient.c.html#L112">(!(cpath->dh_handshake_state = crypto_dh_new()))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="rendclient.c.html#L264">(rend_client_remove_intro_point(circ->build_state->chosen_exit, circ->rend_data) > 0)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">586</td><td><a href="rendclient.c.html#L586">((conn = connection_get_by_type_state_rendquery(CONN_TYPE_AP, AP_CONN_STATE_CIRCUIT_WAIT, rend_query->onion_address, -1)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">75</td><td><a href="rendclient.c.html#L75">(rend_cache_lookup_entry(introcirc->rend_data->onion_address, -1, &entry) < 1)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="rendclient.c.html#L566">(!memcmp(failed_intro->identity_digest, intro->extend_info->identity_digest, DIGEST_LEN))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">123</td><td><a href="rendclient.c.html#L123">(entry->parsed->protocols & 1 << 3)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">136</td><td><a href="rendclient.c.html#L136">(entry->parsed->protocols & 1 << 2)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">165</td><td><a href="rendclient.c.html#L165">(crypto_dh_get_public(cpath->dh_handshake_state, tmp + dh_offset, DH_KEY_LEN) < 0)</a></td><td class="num">8.10</td></tr>
+      <tr><td class="num line">187</td><td><a href="rendclient.c.html#L187">(relay_send_command_from_edge(0, TO_CIRCUIT(introcirc), RELAY_COMMAND_INTRODUCE1, payload, payload_len, introcirc->cpath->prev) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">495</td><td><a href="rendclient.c.html#L495">(rend_cache_lookup_entry(rend_query->onion_address, -1, &e) > 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">771</td><td><a href="rendclient.c.html#L771">(rend_cache_lookup_entry(rend_query->onion_address, -1, &entry) < 1)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">34</td><td><a href="rendclient.c.html#L34">(crypto_rand(circ->rend_data->rend_cookie, REND_COOKIE_LEN) < 0)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">564</td><td><a href="rendclient.c.html#L564">(i < smartlist_len(ent->parsed->intro_nodes))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">574</td><td><a href="rendclient.c.html#L574">(smartlist_len(ent->parsed->intro_nodes) == 0)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">779</td><td><a href="rendclient.c.html#L779">(smartlist_len(entry->parsed->intro_nodes) == 0)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">84</td><td><a href="rendclient.c.html#L84">(entry->parsed->version == 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">127</td><td><a href="rendclient.c.html#L127">(introcirc->rend_data->auth_type != REND_NO_AUTH)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">230</td><td><a href="rendclient.c.html#L230">(circ->_base.purpose != CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">610</td><td><a href="rendclient.c.html#L610">(circ->_base.purpose != CIRCUIT_PURPOSE_C_ESTABLISH_REND)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="rendclient.c.html#L903">(auth_type_val < 1 || auth_type_val > 2)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">928</td><td><a href="rendclient.c.html#L928">(!validate_only && res == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">785</td><td><a href="rendclient.c.html#L785">(!intro->extend_info->onion_key)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">116</td><td><a href="rendclient.c.html#L116">(crypto_dh_generate_public(cpath->dh_handshake_state) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">421</td><td><a href="rendclient.c.html#L421">(base64_encode(descriptor_cookie_base64, sizeof(descriptor_cookie_base64), rend_query->descriptor_cookie, REND_DESC_COOKIE_LEN) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">658</td><td><a href="rendclient.c.html#L658">(crypto_dh_compute_secret(hop->dh_handshake_state, request, DH_KEY_LEN, keys, DIGEST_LEN + CPATH_KEY_MATERIAL_LEN) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">420</td><td><a href="rendclient.c.html#L420">(rend_query->auth_type != REND_NO_AUTH)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">559</td><td><a href="rendclient.c.html#L559">(rend_query->auth_type == REND_NO_AUTH)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">582</td><td><a href="rendclient.c.html#L582">(rend_query->auth_type == REND_NO_AUTH)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">722</td><td><a href="rendclient.c.html#L722">(rend_cmp_service_ids(query, conn->rend_data->onion_address))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">742</td><td><a href="rendclient.c.html#L742">(!conn->_base.marked_for_close)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">872</td><td><a href="rendclient.c.html#L872">(strlen(onion_address) != REND_SERVICE_ADDRESS_LEN || strcmpend(onion_address, ".onion"))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">664</td><td><a href="rendclient.c.html#L664">(circuit_init_cpath_crypto(hop, keys + DIGEST_LEN, 0) < 0)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">362</td><td><a href="rendclient.c.html#L362">(*ent < cutoff)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">879</td><td><a href="rendclient.c.html#L879">(!rend_valid_service_id(auth->onion_address))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="rendclient.c.html#L720">(!conn->rend_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">911</td><td><a href="rendclient.c.html#L911">(strmap_get(parsed, auth->onion_address))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">277</td><td><a href="rendclient.c.html#L277">(circ->remaining_relay_early_cells)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">895</td><td><a href="rendclient.c.html#L895">(base64_decode(descriptor_cookie_tmp, sizeof(descriptor_cookie_tmp), descriptor_cookie_base64ext, strlen(descriptor_cookie_base64ext)) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">101</td><td><a href="rendclient.c.html#L101">(crypto_pk_get_digest(intro_key, payload) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">216</td><td><a href="rendclient.c.html#L216">(rend_client_send_establish_rendezvous(circ) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">520</td><td><a href="rendclient.c.html#L520">(directory_get_from_hs_dir(descriptor_id, rend_query) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">668</td><td><a href="rendclient.c.html#L668">(memcmp(keys, request + DH_KEY_LEN, DIGEST_LEN))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">739</td><td><a href="rendclient.c.html#L739">(connection_ap_handshake_attach_circuit(conn) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">863</td><td><a href="rendclient.c.html#L863">(smartlist_len(sl) < 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">886</td><td><a href="rendclient.c.html#L886">(strlen(descriptor_cookie) != REND_DESC_COOKIE_LEN_BASE64)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">178</td><td><a href="rendclient.c.html#L178">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="rendclient.c.html#L241">(request_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="rendclient.c.html#L505">(i < REND_NUMBER_OF_NON_CONSECUTIVE_REPLICAS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">507</td><td><a href="rendclient.c.html#L507">(tries_left > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="rendclient.c.html#L547">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">552</td><td><a href="rendclient.c.html#L552">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="rendclient.c.html#L645">(request_len != DH_KEY_LEN + DIGEST_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="rendclient.c.html#L293">(!circuit_launch_by_extend_info(CIRCUIT_PURPOSE_C_INTRODUCING, extend_info, CIRCLAUNCH_IS_INTERNAL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">356</td><td><a href="rendclient.c.html#L356">(!strmap_iter_done(iter))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">96</td><td><a href="rendclient.c.html#L96">(!intro_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">108</td><td><a href="rendclient.c.html#L108">(!cpath)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">271</td><td><a href="rendclient.c.html#L271">(!extend_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">353</td><td><a href="rendclient.c.html#L353">(!last_hid_serv_requests)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">408</td><td><a href="rendclient.c.html#L408">(!hs_dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">787</td><td><a href="rendclient.c.html#L787">(!router)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">811</td><td><a href="rendclient.c.html#L811">(!auth_hid_servs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">834</td><td><a href="rendclient.c.html#L834">(!auth_hid_servs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">465</td><td><a href="rendclient.c.html#L465">(connection_get_by_type_state_rendquery(CONN_TYPE_DIR, 0, query, 0))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="rendclient.c.html#L249">(rendcirc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">335</td><td><a href="rendclient.c.html#L335">(set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">924</td><td><a href="rendclient.c.html#L924">(auth)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

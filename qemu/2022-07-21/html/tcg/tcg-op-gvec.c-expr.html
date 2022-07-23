@@ -1,0 +1,215 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - tcg\tcg-op-gvec.c Ctrl Expressions (164) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - tcg\tcg-op-gvec.c Ctrl Expressions (164) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;tcg\tcg-op-gvec.c Ctrl Expressions (164)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">446</td><td><a href="tcg-op-gvec.c.html#L446">(TCG_TARGET_HAS_v256 && check_size_impl(size, 32) && tcg_can_emit_vecop_list(list, TCG_TYPE_V256, vece) && (<span style='background-color:#741da3;'>!(size & 16) || (TCG_TARGET_HAS_v128 && tcg_can_emit_vecop_list(list, TCG_TYPE_V128, vece))</span>) && (<span style='background-color:#741da3;'>!(size & 8) || (TCG_TARGET_HAS_v64 && tcg_can_emit_vecop_list(list, TCG_TYPE_V64, vece))</span>))</a></td><td class="num">2040.00</td></tr>
+      <tr><td class="num line">457</td><td><a href="tcg-op-gvec.c.html#L457">(TCG_TARGET_HAS_v128 && check_size_impl(size, 16) && tcg_can_emit_vecop_list(list, TCG_TYPE_V128, vece) && (<span style='background-color:#741da3;'>!(size & 8) || (TCG_TARGET_HAS_v64 && tcg_can_emit_vecop_list(list, TCG_TYPE_V64, vece))</span>))</a></td><td class="num">1029.75</td></tr>
+      <tr><td class="num line">595</td><td><a href="tcg-op-gvec.c.html#L595">(vece == MO_64 || (TCG_TARGET_REG_BITS == 64 && (in_c == 0 || in_c == -1 || !check_size_impl(oprsz, 4))))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">577</td><td><a href="tcg-op-gvec.c.html#L577">(TCG_TARGET_REG_BITS == 64 && (vece != MO_32 || !check_size_impl(oprsz, 4)))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">465</td><td><a href="tcg-op-gvec.c.html#L465">(TCG_TARGET_HAS_v64 && !prefer_i64 && check_size_impl(size, 8) && tcg_can_emit_vecop_list(list, TCG_TYPE_V64, vece))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">537</td><td><a href="tcg-op-gvec.c.html#L537">(in_32 == NULL && in_64 == NULL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">632</td><td><a href="tcg-op-gvec.c.html#L632">(oprsz == maxsz && vece == MO_8)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1244</td><td><a href="tcg-op-gvec.c.html#L1244">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1246</td><td><a href="tcg-op-gvec.c.html#L1246">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1308</td><td><a href="tcg-op-gvec.c.html#L1308">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="tcg-op-gvec.c.html#L1310">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1388</td><td><a href="tcg-op-gvec.c.html#L1388">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1394</td><td><a href="tcg-op-gvec.c.html#L1394">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1455</td><td><a href="tcg-op-gvec.c.html#L1455">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1457</td><td><a href="tcg-op-gvec.c.html#L1457">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1523</td><td><a href="tcg-op-gvec.c.html#L1523">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="tcg-op-gvec.c.html#L1525">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1589</td><td><a href="tcg-op-gvec.c.html#L1589">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1592</td><td><a href="tcg-op-gvec.c.html#L1592">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1660</td><td><a href="tcg-op-gvec.c.html#L1660">(g->fni8 && check_size_impl(oprsz, 8))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1662</td><td><a href="tcg-op-gvec.c.html#L1662">(g->fni4 && check_size_impl(oprsz, 4))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3757</td><td><a href="tcg-op-gvec.c.html#L3757">(cond == TCG_COND_NEVER || cond == TCG_COND_ALWAYS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3221</td><td><a href="tcg-op-gvec.c.html#L3221">(vece == MO_32 && check_size_impl(oprsz, 4))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3223</td><td><a href="tcg-op-gvec.c.html#L3223">(vece == MO_64 && check_size_impl(oprsz, 8))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3795</td><td><a href="tcg-op-gvec.c.html#L3795">(vece == MO_64 && check_size_impl(oprsz, 8))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3797</td><td><a href="tcg-op-gvec.c.html#L3797">(vece == MO_32 && check_size_impl(oprsz, 4))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">496</td><td><a href="tcg-op-gvec.c.html#L496">(i + 32 <= oprsz)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">501</td><td><a href="tcg-op-gvec.c.html#L501">(i + 16 <= oprsz)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">484</td><td><a href="tcg-op-gvec.c.html#L484">(dofs & 8)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1214</td><td><a href="tcg-op-gvec.c.html#L1214">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="tcg-op-gvec.c.html#L1278">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="tcg-op-gvec.c.html#L1313">(g->fno)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="tcg-op-gvec.c.html#L1344">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="tcg-op-gvec.c.html#L1424">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1491</td><td><a href="tcg-op-gvec.c.html#L1491">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1557</td><td><a href="tcg-op-gvec.c.html#L1557">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1627</td><td><a href="tcg-op-gvec.c.html#L1627">(g->fniv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">542</td><td><a href="tcg-op-gvec.c.html#L542">(in_c == dup_const(MO_8, in_c))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="tcg-op-gvec.c.html#L101">(oprsz == maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">341</td><td><a href="tcg-op-gvec.c.html#L341">(oprsz < lnsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">349</td><td><a href="tcg-op-gvec.c.html#L349">(lnsz < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">351</td><td><a href="tcg-op-gvec.c.html#L351">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">506</td><td><a href="tcg-op-gvec.c.html#L506">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">514</td><td><a href="tcg-op-gvec.c.html#L514">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="tcg-op-gvec.c.html#L539">(in_c == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">553</td><td><a href="tcg-op-gvec.c.html#L553">(type != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">607</td><td><a href="tcg-op-gvec.c.html#L607">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="tcg-op-gvec.c.html#L614">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">656</td><td><a href="tcg-op-gvec.c.html#L656">(vece == MO_64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="tcg-op-gvec.c.html#L679">(vece == MO_8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">681</td><td><a href="tcg-op-gvec.c.html#L681">(vece == MO_16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">693</td><td><a href="tcg-op-gvec.c.html#L693">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="tcg-op-gvec.c.html#L712">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">732</td><td><a href="tcg-op-gvec.c.html#L732">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">752</td><td><a href="tcg-op-gvec.c.html#L752">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">775</td><td><a href="tcg-op-gvec.c.html#L775">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="tcg-op-gvec.c.html#L798">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="tcg-op-gvec.c.html#L823">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="tcg-op-gvec.c.html#L850">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">871</td><td><a href="tcg-op-gvec.c.html#L871">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">891</td><td><a href="tcg-op-gvec.c.html#L891">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">911</td><td><a href="tcg-op-gvec.c.html#L911">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">934</td><td><a href="tcg-op-gvec.c.html#L934">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="tcg-op-gvec.c.html#L957">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">982</td><td><a href="tcg-op-gvec.c.html#L982">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1009</td><td><a href="tcg-op-gvec.c.html#L1009">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1032</td><td><a href="tcg-op-gvec.c.html#L1032">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1055</td><td><a href="tcg-op-gvec.c.html#L1055">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="tcg-op-gvec.c.html#L1076">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1100</td><td><a href="tcg-op-gvec.c.html#L1100">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1129</td><td><a href="tcg-op-gvec.c.html#L1129">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1156</td><td><a href="tcg-op-gvec.c.html#L1156">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1188</td><td><a href="tcg-op-gvec.c.html#L1188">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="tcg-op-gvec.c.html#L1226">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1260</td><td><a href="tcg-op-gvec.c.html#L1260">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1290</td><td><a href="tcg-op-gvec.c.html#L1290">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1329</td><td><a href="tcg-op-gvec.c.html#L1329">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="tcg-op-gvec.c.html#L1347">(type != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1364</td><td><a href="tcg-op-gvec.c.html#L1364">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1406</td><td><a href="tcg-op-gvec.c.html#L1406">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1436</td><td><a href="tcg-op-gvec.c.html#L1436">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1472</td><td><a href="tcg-op-gvec.c.html#L1472">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1504</td><td><a href="tcg-op-gvec.c.html#L1504">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1539</td><td><a href="tcg-op-gvec.c.html#L1539">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1569</td><td><a href="tcg-op-gvec.c.html#L1569">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1608</td><td><a href="tcg-op-gvec.c.html#L1608">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1640</td><td><a href="tcg-op-gvec.c.html#L1640">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1677</td><td><a href="tcg-op-gvec.c.html#L1677">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1700</td><td><a href="tcg-op-gvec.c.html#L1700">(dofs != aofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="tcg-op-gvec.c.html#L1704">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="tcg-op-gvec.c.html#L1730">(vece <= MO_64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1732</td><td><a href="tcg-op-gvec.c.html#L1732">(type != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1737</td><td><a href="tcg-op-gvec.c.html#L1737">(vece <= MO_32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1758</td><td><a href="tcg-op-gvec.c.html#L1758">(vece == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1767</td><td><a href="tcg-op-gvec.c.html#L1767">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1777</td><td><a href="tcg-op-gvec.c.html#L1777">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1784</td><td><a href="tcg-op-gvec.c.html#L1784">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1787</td><td><a href="tcg-op-gvec.c.html#L1787">(vece == 5)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1797</td><td><a href="tcg-op-gvec.c.html#L1797">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1807</td><td><a href="tcg-op-gvec.c.html#L1807">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="tcg-op-gvec.c.html#L1817">(j < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1821</td><td><a href="tcg-op-gvec.c.html#L1821">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1822</td><td><a href="tcg-op-gvec.c.html#L1822">(j < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1826</td><td><a href="tcg-op-gvec.c.html#L1826">(j < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="tcg-op-gvec.c.html#L1830">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2615</td><td><a href="tcg-op-gvec.c.html#L2615">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2632</td><td><a href="tcg-op-gvec.c.html#L2632">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="tcg-op-gvec.c.html#L2649">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2666</td><td><a href="tcg-op-gvec.c.html#L2666">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2683</td><td><a href="tcg-op-gvec.c.html#L2683">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2700</td><td><a href="tcg-op-gvec.c.html#L2700">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2717</td><td><a href="tcg-op-gvec.c.html#L2717">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2734</td><td><a href="tcg-op-gvec.c.html#L2734">(aofs == bofs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2871</td><td><a href="tcg-op-gvec.c.html#L2871">(shift == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2936</td><td><a href="tcg-op-gvec.c.html#L2936">(shift == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3029</td><td><a href="tcg-op-gvec.c.html#L3029">(shift == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3088</td><td><a href="tcg-op-gvec.c.html#L3088">(shift == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3126</td><td><a href="tcg-op-gvec.c.html#L3126">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3153</td><td><a href="tcg-op-gvec.c.html#L3153">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3182</td><td><a href="tcg-op-gvec.c.html#L3182">(vece == MO_64)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3196</td><td><a href="tcg-op-gvec.c.html#L3196">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3247</td><td><a href="tcg-op-gvec.c.html#L3247">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3665</td><td><a href="tcg-op-gvec.c.html#L3665">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3683</td><td><a href="tcg-op-gvec.c.html#L3683">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3702</td><td><a href="tcg-op-gvec.c.html#L3702">(i < oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3778</td><td><a href="tcg-op-gvec.c.html#L3778">(some == oprsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3802</td><td><a href="tcg-op-gvec.c.html#L3802">(fn == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3819</td><td><a href="tcg-op-gvec.c.html#L3819">(oprsz < maxsz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="tcg-op-gvec.c.html#L569">(check_size_impl(oprsz, TCG_TARGET_REG_BITS / 8))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">556</td><td><a href="tcg-op-gvec.c.html#L556">(in_32)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">558</td><td><a href="tcg-op-gvec.c.html#L558">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">573</td><td><a href="tcg-op-gvec.c.html#L573">(in_32)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">586</td><td><a href="tcg-op-gvec.c.html#L586">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">606</td><td><a href="tcg-op-gvec.c.html#L606">(t_32)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">613</td><td><a href="tcg-op-gvec.c.html#L613">(t_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">636</td><td><a href="tcg-op-gvec.c.html#L636">(in_32)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">638</td><td><a href="tcg-op-gvec.c.html#L638">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">646</td><td><a href="tcg-op-gvec.c.html#L646">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">657</td><td><a href="tcg-op-gvec.c.html#L657">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">671</td><td><a href="tcg-op-gvec.c.html#L671">(in_32)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">673</td><td><a href="tcg-op-gvec.c.html#L673">(in_64)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">714</td><td><a href="tcg-op-gvec.c.html#L714">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">734</td><td><a href="tcg-op-gvec.c.html#L734">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">754</td><td><a href="tcg-op-gvec.c.html#L754">(scalar_first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">778</td><td><a href="tcg-op-gvec.c.html#L778">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">801</td><td><a href="tcg-op-gvec.c.html#L801">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">829</td><td><a href="tcg-op-gvec.c.html#L829">(write_aofs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">873</td><td><a href="tcg-op-gvec.c.html#L873">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">893</td><td><a href="tcg-op-gvec.c.html#L893">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">913</td><td><a href="tcg-op-gvec.c.html#L913">(scalar_first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">937</td><td><a href="tcg-op-gvec.c.html#L937">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">960</td><td><a href="tcg-op-gvec.c.html#L960">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">988</td><td><a href="tcg-op-gvec.c.html#L988">(write_aofs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1034</td><td><a href="tcg-op-gvec.c.html#L1034">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1057</td><td><a href="tcg-op-gvec.c.html#L1057">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1078</td><td><a href="tcg-op-gvec.c.html#L1078">(scalar_first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1103</td><td><a href="tcg-op-gvec.c.html#L1103">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1132</td><td><a href="tcg-op-gvec.c.html#L1132">(load_dest)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1162</td><td><a href="tcg-op-gvec.c.html#L1162">(write_aofs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1763</td><td><a href="tcg-op-gvec.c.html#L1763">(TCG_TARGET_HAS_v128)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1793</td><td><a href="tcg-op-gvec.c.html#L1793">(TCG_TARGET_HAS_v256)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1801</td><td><a href="tcg-op-gvec.c.html#L1801">(TCG_TARGET_HAS_v128)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3146</td><td><a href="tcg-op-gvec.c.html#L3146">(type)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3178</td><td><a href="tcg-op-gvec.c.html#L3178">(type)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

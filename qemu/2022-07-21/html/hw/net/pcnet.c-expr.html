@@ -1,0 +1,138 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\net\pcnet.c Ctrl Expressions (87) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\net\pcnet.c Ctrl Expressions (87) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\net\pcnet.c Ctrl Expressions (87)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">725</td><td><a href="pcnet.c.html#L725">((!(s->csr[3] & 0x4000) && !!(s->csr[0] & 0x4000)) || (!(s->csr[3] & 0x1000) && !!(s->csr[0] & 0x1000)) || (!(s->csr[3] & 0x0100) && !!(s->csr[0] & 0x0100)) || (!(s->csr[3] & 0x0200) && !!(s->csr[0] & 0x0200)) || (!(s->csr[3] & 0x0400) && !!(s->csr[0] & 0x0400)) || (!(s->csr[3] & 0x0800) && !!(s->csr[0] & 0x0800)) || (!(s->csr[4] & 0x0001) && !!(s->csr[4] & 0x0002)) || (!(s->csr[4] & 0x0004) && !!(s->csr[4] & 0x0008)) || (!(s->csr[4] & 0x0010) && !!(s->csr[4] & 0x0020)) || (!(s->csr[4] & 0x0100) && !!(s->csr[4] & 0x0200)) || (<span style='background-color:#9c4c02;'>!!(s->csr[5] & 0x0040) && !!(s->csr[5] & 0x0080)</span>) || (<span style='background-color:#9c4c02;'>!!(s->csr[5] & 0x0008) && !!(s->csr[5] & 0x0010)</span>))</a></td><td class="num">1076.00</td></tr>
+      <tr><td class="num line">1011</td><td><a href="pcnet.c.html#L1011">(<span style='background-color:#741da3;'>CSR_PROM(s) || (is_padr = padr_match(s, buf, size)) || (is_bcast = padr_bcast(s, buf, size)) || (is_ladr = ladr_match(s, buf, size))</span>)</a></td><td class="num">1027.00</td></tr>
+      <tr><td class="num line">1067</td><td><a href="pcnet.c.html#L1067">(<span style='background-color:#741da3;'>s->looptest == PCNET_LOOPTEST_CRC || !CSR_DXMTFCS(s) || size < MIN_BUF_SIZE + 4</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">755</td><td><a href="pcnet.c.html#L755">((<span style='background-color:#9c4c02;'>!!(s->csr[5] & 0x0400) && !!(s->csr[5] & 0x0800)</span>) || (<span style='background-color:#9c4c02;'>!!(s->csr[5] & 0x0100) && !!(s->csr[5] & 0x0200)</span>))</a></td><td class="num">220.00</td></tr>
+      <tr><td class="num line">721</td><td><a href="pcnet.c.html#L721">(<span style='background-color:#9c4c02;'>((s->csr[0] & ~s->csr[3]) & 0x5f00) || (((s->csr[4] >> 1) & ~s->csr[4]) & 0x0115) || (((s->csr[5] >> 1) & s->csr[5]) & 0x0048)</span>)</a></td><td class="num">164.50</td></tr>
+      <tr><td class="num line">634</td><td><a href="pcnet.c.html#L634">((*(hdr->ether_dhost) & 0x01) && ((uint64_t *)&s->csr[8])[0] != 0LL)</a></td><td class="num">70.00</td></tr>
+      <tr><td class="num line">744</td><td><a href="pcnet.c.html#L744">(!!(s->csr[4] & 0x0080) && CSR_INEA(s))</a></td><td class="num">60.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="pcnet.c.html#L753">(((s->csr[5] >> 1) & s->csr[5]) & 0x0500)</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">1213</td><td><a href="pcnet.c.html#L1213">(s->lnkst == 0 && (!CSR_LOOP(s) || (!CSR_INTL(s) && !BCR_TMAULOOP(s))))</a></td><td class="num">48.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="pcnet.c.html#L995">(CSR_DRX(s) || CSR_STOP(s) || CSR_SPND(s) || !size || (CSR_LOOP(s) && !s->looptest))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">1306</td><td><a href="pcnet.c.html#L1306">(CSR_TDMD(s) || (CSR_TXON(s) && !CSR_DPOLL(s) && pcnet_tdte_poll(s)))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">1018</td><td><a href="pcnet.c.html#L1018">(!(CSR_CRST(s) & 0x8000) && s->rdra)</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">1269</td><td><a href="pcnet.c.html#L1269">(!CSR_TOKINTD(s) || (CSR_LTINTEN(s) && GET_FIELD(tmd.status, TMDS, LTINT)))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="pcnet.c.html#L1117">((remaining > 0) && (nrda = CSR_NNRD(s)))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1327</td><td><a href="pcnet.c.html#L1327">(!CSR_STOP(s) && !CSR_SPND(s) && !CSR_DPOLL(s))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1364</td><td><a href="pcnet.c.html#L1364">(!CSR_STOP(s) && (val & 4))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1367</td><td><a href="pcnet.c.html#L1367">(!CSR_INIT(s) && (val & 1))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1370</td><td><a href="pcnet.c.html#L1370">(!CSR_STRT(s) && (val & 2))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1233</td><td><a href="pcnet.c.html#L1233">(s->xmit_pos + bcnt > sizeof(s->buffer) - 4)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1329</td><td><a href="pcnet.c.html#L1329">(!s->timer || !now)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1072</td><td><a href="pcnet.c.html#L1072">(p != &src[size])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="pcnet.c.html#L1080">(p != &src[size])</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="pcnet.c.html#L1105">((remaining > 0) && CSR_NRDA(s))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">763</td><td><a href="pcnet.c.html#L763">(isr != s->isr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1223</td><td><a href="pcnet.c.html#L1223">(s->xmit_pos < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1281</td><td><a href="pcnet.c.html#L1281">(s->xmit_pos >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1361</td><td><a href="pcnet.c.html#L1361">((val & 7) == 7)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1646</td><td><a href="pcnet.c.html#L1646">((addr & 0x0f) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">899</td><td><a href="pcnet.c.html#L899">(bad || (nrda == crda))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">901</td><td><a href="pcnet.c.html#L901">(bad || (nnrd == crda))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1041</td><td><a href="pcnet.c.html#L1041">(!(CSR_CRST(s) & 0x8000))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1053</td><td><a href="pcnet.c.html#L1053">(!s->looptest)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1491</td><td><a href="pcnet.c.html#L1491">(!(CSR_STOP(s) || CSR_SPND(s)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">949</td><td><a href="pcnet.c.html#L949">(s->tdra)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1156</td><td><a href="pcnet.c.html#L1156">(pktcount--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="pcnet.c.html#L1256">(s->nic)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="pcnet.c.html#L1278">(count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1292</td><td><a href="pcnet.c.html#L1292">(count--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1308</td><td><a href="pcnet.c.html#L1308">(s->tx_busy)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1425</td><td><a href="pcnet.c.html#L1425">(CSR_STOP(s) || CSR_SPND(s))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">321</td><td><a href="pcnet.c.html#L321">(BCR_SWSTYLE(s) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">356</td><td><a href="pcnet.c.html#L356">(BCR_SWSTYLE(s) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">387</td><td><a href="pcnet.c.html#L387">(BCR_SWSTYLE(s) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">422</td><td><a href="pcnet.c.html#L422">(BCR_SWSTYLE(s) == 3)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">956</td><td><a href="pcnet.c.html#L956">(CSR_CXDA(s) != cxda)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1157</td><td><a href="pcnet.c.html#L1157">(CSR_RCVRC(s) <= 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1210</td><td><a href="pcnet.c.html#L1210">(BCR_SWSTYLE(s) != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1242</td><td><a href="pcnet.c.html#L1242">(!GET_FIELD(tmd.status, TMDS, ENP))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1250</td><td><a href="pcnet.c.html#L1250">(BCR_SWSTYLE(s) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1273</td><td><a href="pcnet.c.html#L1273">(CSR_XMTRC(s) <= 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">650</td><td><a href="pcnet.c.html#L650">(idx < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">661</td><td><a href="pcnet.c.html#L661">(next_time <= current_time)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="pcnet.c.html#L1004">(size < MIN_BUF_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1022</td><td><a href="pcnet.c.html#L1022">(i > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1023</td><td><a href="pcnet.c.html#L1023">(rcvrc <= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1054</td><td><a href="pcnet.c.html#L1054">(size > 4092)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1130</td><td><a href="pcnet.c.html#L1130">(remaining == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1333</td><td><a href="pcnet.c.html#L1333">(t > 0xffffLL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1746</td><td><a href="pcnet.c.html#L1746">(i < 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1029</td><td><a href="pcnet.c.html#L1029">(GET_FIELD(rmd.status, RMDS, OWN))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1111</td><td><a href="pcnet.c.html#L1111">(GET_FIELD(rmd.status, RMDS, OWN))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1119</td><td><a href="pcnet.c.html#L1119">(GET_FIELD(rmd.status, RMDS, OWN))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1207</td><td><a href="pcnet.c.html#L1207">(GET_FIELD(tmd.status, TMDS, STP))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="pcnet.c.html#L302">(!BCR_SSIZE32(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">332</td><td><a href="pcnet.c.html#L332">(!BCR_SSIZE32(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">368</td><td><a href="pcnet.c.html#L368">(!BCR_SSIZE32(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">398</td><td><a href="pcnet.c.html#L398">(!BCR_SSIZE32(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">848</td><td><a href="pcnet.c.html#L848">(!CSR_DTX(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">851</td><td><a href="pcnet.c.html#L851">(!CSR_DRX(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1190</td><td><a href="pcnet.c.html#L1190">(!CSR_TXON(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1290</td><td><a href="pcnet.c.html#L1290">(!CSR_DXSUFLO(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1582</td><td><a href="pcnet.c.html#L1582">(!BCR_DWIO(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1603</td><td><a href="pcnet.c.html#L1603">(!BCR_DWIO(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">955</td><td><a href="pcnet.c.html#L955">(!bad)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">778</td><td><a href="pcnet.c.html#L778">(BCR_SSIZE32(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">920</td><td><a href="pcnet.c.html#L920">(CSR_CRDA(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">935</td><td><a href="pcnet.c.html#L935">(CSR_NRDA(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="pcnet.c.html#L970">(CSR_CXDA(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="pcnet.c.html#L1198">(pcnet_tdte_poll(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1249</td><td><a href="pcnet.c.html#L1249">(CSR_LOOP(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1302</td><td><a href="pcnet.c.html#L1302">(CSR_RXON(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1321</td><td><a href="pcnet.c.html#L1321">(CSR_TDMD(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1373</td><td><a href="pcnet.c.html#L1373">(CSR_TDMD(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1634</td><td><a href="pcnet.c.html#L1634">(BCR_DWIO(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1661</td><td><a href="pcnet.c.html#L1661">(BCR_DWIO(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">910</td><td><a href="pcnet.c.html#L910">(bad)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1136</td><td><a href="pcnet.c.html#L1136">(crc_err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

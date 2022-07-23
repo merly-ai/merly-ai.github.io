@@ -1,0 +1,221 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\shared\logs-show.c Ctrl Expressions (170) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\shared\logs-show.c Ctrl Expressions (170) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\shared\logs-show.c Ctrl Expressions (170)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">546</td><td><a href="logs-show.c.html#L546">((flags & OUTPUT_SHOW_ALL) || (<span style='background-color:#741da3;'>(<span style='background-color:#741da3;'>(length < PRINT_CHAR_THRESHOLD) || flags & OUTPUT_FULL_WIDTH</span>) && utf8_is_printable(data, length)</span>))</a></td><td class="num">2033.00</td></tr>
+      <tr><td class="num line">169</td><td><a href="logs-show.c.html#L169">(flags & OUTPUT_FULL_WIDTH | OUTPUT_SHOW_ALL || (<span style='background-color:#741da3;'>prefix + len + 1 < n_columns && !tail_line</span>))</a></td><td class="num">1031.45</td></tr>
+      <tr><td class="num line">278</td><td><a href="logs-show.c.html#L278">(strftime(buf, sizeof(buf), "%Y-%m-%dT%H:%M:%S%z", gettime_r(&t, &tm)) <= 0)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">286</td><td><a href="logs-show.c.html#L286">(strftime(buf, sizeof(buf), "%Y-%m-%dT%H:%M:%S.xxxxxx%z", gettime_r(&t, &tm)) <= 0)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">297</td><td><a href="logs-show.c.html#L297">(strftime(buf, sizeof(buf), "%b %d %H:%M:%S", gettime_r(&t, &tm)) <= 0)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">421</td><td><a href="logs-show.c.html#L421">(priority_len == 1 && *priority >= '0' && *priority <= '7')</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">1272</td><td><a href="logs-show.c.html#L1272">(r < 0 || si.si_code != CLD_EXITED || si.si_status != EXIT_SUCCESS)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="logs-show.c.html#L155">(end < message + message_len && *end != '\n')</a></td><td class="num">12.85</td></tr>
+      <tr><td class="num line">686</td><td><a href="logs-show.c.html#L686">(*p == '"' || *p == '\\')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="logs-show.c.html#L1079">(warn_cutoff && line < how_many && not_before > 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">180</td><td><a href="logs-show.c.html#L180">(prefix < n_columns && n_columns - prefix >= 3)</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">661</td><td><a href="logs-show.c.html#L661">(!(flags & OUTPUT_SHOW_ALL) && l >= JSON_THRESHOLD)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">460</td><td><a href="logs-show.c.html#L460">(!(flags & OUTPUT_SHOW_ALL) && !utf8_is_printable(message, message_len))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">664</td><td><a href="logs-show.c.html#L664">(!(flags & OUTPUT_SHOW_ALL) && !utf8_is_printable(p, l))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">773</td><td><a href="logs-show.c.html#L773">(length >= 9 && memcmp(data, "_BOOT_ID=", 9) == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">820</td><td><a href="logs-show.c.html#L820">(length >= 9 && memcmp(data, "_BOOT_ID=", 9) == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1093</td><td><a href="logs-show.c.html#L1093">(r > 0 && not_before < cutoff)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="logs-show.c.html#L914">((k = hashmap_steal_first_key(h)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">541</td><td><a href="logs-show.c.html#L541">(flags & OUTPUT_COLOR && startswith(data, "MESSAGE="))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">181</td><td><a href="logs-show.c.html#L181">(n_columns - prefix > (unsigned)len + 3)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">874</td><td><a href="logs-show.c.html#L874">(sd_journal_enumerate_data(j, &data, &length) > 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">309</td><td><a href="logs-show.c.html#L309">(r <= 0 || (size_t)r >= k)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">618</td><td><a href="logs-show.c.html#L618">(length >= 9 && startswith(data, "_BOOT_ID="))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="logs-show.c.html#L1004">(!(*flags & OUTPUT_BEGIN_NEWLINE))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="logs-show.c.html#L1146">(r == 0 && endswith(unit, ".slice"))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="logs-show.c.html#L1198">(r == 0 && endswith(unit, ".slice"))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">994</td><td><a href="logs-show.c.html#L994">(ellipsized && ret > 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">150</td><td><a href="logs-show.c.html#L150">(pos < message + message_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">689</td><td><a href="logs-show.c.html#L689">(*p == '\n')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">691</td><td><a href="logs-show.c.html#L691">((uint8_t)*p < ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">875</td><td><a href="logs-show.c.html#L875">(length < m + 1)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">418</td><td><a href="logs-show.c.html#L418">(!(flags & OUTPUT_SHOW_ALL))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">438</td><td><a href="logs-show.c.html#L438">(hostname && shall_print(hostname, hostname_len, flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">443</td><td><a href="logs-show.c.html#L443">(identifier && shall_print(identifier, identifier_len, flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">446</td><td><a href="logs-show.c.html#L446">(comm && shall_print(comm, comm_len, flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="logs-show.c.html#L452">(pid && shall_print(pid, pid_len, flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">455</td><td><a href="logs-show.c.html#L455">(fake_pid && shall_print(fake_pid, fake_pid_len, flags))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">881</td><td><a href="logs-show.c.html#L881">(((const char*)data)[m] != '=')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1101</td><td><a href="logs-show.c.html#L1101">(!(flags & OUTPUT_FOLLOW))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">116</td><td><a href="logs-show.c.html#L116">(flags & OUTPUT_SHOW_ALL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">134</td><td><a href="logs-show.c.html#L134">(flags & OUTPUT_COLOR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="logs-show.c.html#L256">(flags & OUTPUT_UTC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">432</td><td><a href="logs-show.c.html#L432">(flags & OUTPUT_NO_HOSTNAME)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="logs-show.c.html#L469">(flags & OUTPUT_CATALOG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">567</td><td><a href="logs-show.c.html#L567">(flags & OUTPUT_CATALOG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="logs-show.c.html#L1354">(_unlikely_(log_get_max_level() >= LOG_DEBUG))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">878</td><td><a href="logs-show.c.html#L878">(memcmp(data, n, m) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1237</td><td><a href="logs-show.c.html#L1237">(socketpair(AF_UNIX, SOCK_DGRAM, 0, pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">68</td><td><a href="logs-show.c.html#L68">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">91</td><td><a href="logs-show.c.html#L91">(length < fl)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">119</td><td><a href="logs-show.c.html#L119">(l >= PRINT_CHAR_THRESHOLD)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">135</td><td><a href="logs-show.c.html#L135">(priority <= LOG_ERR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">138</td><td><a href="logs-show.c.html#L138">(priority <= LOG_NOTICE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">146</td><td><a href="logs-show.c.html#L146">(message_len == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="logs-show.c.html#L220">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">222</td><td><a href="logs-show.c.html#L222">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">243</td><td><a href="logs-show.c.html#L243">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">245</td><td><a href="logs-show.c.html#L245">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">248</td><td><a href="logs-show.c.html#L248">(x > USEC_TIMESTAMP_FORMATTABLE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">253</td><td><a href="logs-show.c.html#L253">(mode == OUTPUT_SHORT_FULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">302</td><td><a href="logs-show.c.html#L302">(mode == OUTPUT_SHORT_PRECISE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">355</td><td><a href="logs-show.c.html#L355">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">357</td><td><a href="logs-show.c.html#L357">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">361</td><td><a href="logs-show.c.html#L361">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">363</td><td><a href="logs-show.c.html#L363">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">367</td><td><a href="logs-show.c.html#L367">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="logs-show.c.html#L369">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">373</td><td><a href="logs-show.c.html#L373">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">375</td><td><a href="logs-show.c.html#L375">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">379</td><td><a href="logs-show.c.html#L379">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="logs-show.c.html#L381">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="logs-show.c.html#L385">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">387</td><td><a href="logs-show.c.html#L387">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">391</td><td><a href="logs-show.c.html#L391">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="logs-show.c.html#L393">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="logs-show.c.html#L397">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="logs-show.c.html#L399">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">403</td><td><a href="logs-show.c.html#L403">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="logs-show.c.html#L406">(r == -EBADMSG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">410</td><td><a href="logs-show.c.html#L410">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="logs-show.c.html#L424">(mode == OUTPUT_SHORT_MONOTONIC)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">428</td><td><a href="logs-show.c.html#L428">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">496</td><td><a href="logs-show.c.html#L496">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">498</td><td><a href="logs-show.c.html#L498">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">504</td><td><a href="logs-show.c.html#L504">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="logs-show.c.html#L509">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="logs-show.c.html#L513">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">515</td><td><a href="logs-show.c.html#L515">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="logs-show.c.html#L520">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">564</td><td><a href="logs-show.c.html#L564">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">593</td><td><a href="logs-show.c.html#L593">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">597</td><td><a href="logs-show.c.html#L597">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">601</td><td><a href="logs-show.c.html#L601">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">644</td><td><a href="logs-show.c.html#L644">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">669</td><td><a href="logs-show.c.html#L669">(l > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">685</td><td><a href="logs-show.c.html#L685">(l > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">726</td><td><a href="logs-show.c.html#L726">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="logs-show.c.html#L730">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">734</td><td><a href="logs-show.c.html#L734">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">737</td><td><a href="logs-show.c.html#L737">(mode == OUTPUT_JSON_PRETTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="logs-show.c.html#L749">(mode == OUTPUT_JSON_SSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">788</td><td><a href="logs-show.c.html#L788">(u == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="logs-show.c.html#L790">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="logs-show.c.html#L798">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="logs-show.c.html#L805">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">829</td><td><a href="logs-show.c.html#L829">(mode == OUTPUT_JSON_PRETTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="logs-show.c.html#L844">(u == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">850</td><td><a href="logs-show.c.html#L850">(u == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">904</td><td><a href="logs-show.c.html#L904">(mode == OUTPUT_JSON_PRETTY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">906</td><td><a href="logs-show.c.html#L906">(mode == OUTPUT_JSON_SSE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">939</td><td><a href="logs-show.c.html#L939">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">941</td><td><a href="logs-show.c.html#L941">(r == -ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="logs-show.c.html#L989">(n_columns <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1035</td><td><a href="logs-show.c.html#L1035">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1039</td><td><a href="logs-show.c.html#L1039">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="logs-show.c.html#L1048">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="logs-show.c.html#L1052">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="logs-show.c.html#L1057">(not_before > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1062</td><td><a href="logs-show.c.html#L1062">(r == -ESTALE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1064</td><td><a href="logs-show.c.html#L1064">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1067</td><td><a href="logs-show.c.html#L1067">(usec < not_before)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1075</td><td><a href="logs-show.c.html#L1075">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1086</td><td><a href="logs-show.c.html#L1086">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1090</td><td><a href="logs-show.c.html#L1090">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1105</td><td><a href="logs-show.c.html#L1105">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="logs-show.c.html#L1230">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1234</td><td><a href="logs-show.c.html#L1234">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1241</td><td><a href="logs-show.c.html#L1241">(child < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1244</td><td><a href="logs-show.c.html#L1244">(child == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="logs-show.c.html#L1250">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1254</td><td><a href="logs-show.c.html#L1254">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1259</td><td><a href="logs-show.c.html#L1259">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1263</td><td><a href="logs-show.c.html#L1263">(k != 36)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1276</td><td><a href="logs-show.c.html#L1276">(k != 36)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="logs-show.c.html#L1281">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1296</td><td><a href="logs-show.c.html#L1296">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1300</td><td><a href="logs-show.c.html#L1300">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1306</td><td><a href="logs-show.c.html#L1306">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="logs-show.c.html#L1310">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1336</td><td><a href="logs-show.c.html#L1336">(how_many <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="logs-show.c.html#L1340">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="logs-show.c.html#L1344">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1351</td><td><a href="logs-show.c.html#L1351">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">122</td><td><a href="logs-show.c.html#L122">(!utf8_is_printable(p, l))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1226</td><td><a href="logs-show.c.html#L1226">(!machine_name_is_valid(machine))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">72</td><td><a href="logs-show.c.html#L72">(!z)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">101</td><td><a href="logs-show.c.html#L101">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">190</td><td><a href="logs-show.c.html#L190">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">260</td><td><a href="logs-show.c.html#L260">(!k)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">413</td><td><a href="logs-show.c.html#L413">(!message)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">535</td><td><a href="logs-show.c.html#L535">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">629</td><td><a href="logs-show.c.html#L629">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">764</td><td><a href="logs-show.c.html#L764">(!h)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">778</td><td><a href="logs-show.c.html#L778">(!eq)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">782</td><td><a href="logs-show.c.html#L782">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">825</td><td><a href="logs-show.c.html#L825">(!eq)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">838</td><td><a href="logs-show.c.html#L838">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">902</td><td><a href="logs-show.c.html#L902">(!done)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1358</td><td><a href="logs-show.c.html#L1358">(!filter)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">94</td><td><a href="logs-show.c.html#L94">(memcmp(data, field, fl))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="logs-show.c.html#L622">(utf8_is_printable_newline(data, length, false))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">107</td><td><a href="logs-show.c.html#L107">(target_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">202</td><td><a href="logs-show.c.html#L202">(tail_line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">218</td><td><a href="logs-show.c.html#L218">(monotonic)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">241</td><td><a href="logs-show.c.html#L241">(realtime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">670</td><td><a href="logs-show.c.html#L670">(not_first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">828</td><td><a href="logs-show.c.html#L828">(separator)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1046</td><td><a href="logs-show.c.html#L1046">(need_seek)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1294</td><td><a href="logs-show.c.html#L1294">(machine)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1347</td><td><a href="logs-show.c.html#L1347">(system_unit)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

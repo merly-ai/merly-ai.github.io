@@ -1,0 +1,94 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>qemu Repo - target\i386\hvf\hvf.c Ctrl Expressions (43) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\i386\hvf\hvf.c Ctrl Expressions (43) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\i386\hvf\hvf.c Ctrl Expressions (43)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">381</td><td><a href="hvf.c.html#L381">(<span style='background-color:#741da3;'>index < 0x40000000 || index > 0x40000010 || !tsc_is_known(env) || !apic_bus_freq_is_known(env)</span>)</a></td><td class="num">1010.75</td></tr>
+      <tr><td class="num line">462</td><td><a href="hvf.c.html#L462">(!((cpu->interrupt_request & CPU_INTERRUPT_HARD) && (env->eflags & IF_MASK)) && !(cpu->interrupt_request & CPU_INTERRUPT_NMI) && !(idtvec_info & VMCS_IDT_VEC_VALID))</a></td><td class="num">64.00</td></tr>
+      <tr><td class="num line">153</td><td><a href="hvf.c.html#L153">(!memory_region_is_ram(slot->region) && !(read && memory_region_is_romd(slot->region)))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">433</td><td><a href="hvf.c.html#L433">(!cpu_is_bsp(X86_CPU(cpu)) && cpu->halted)</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">483</td><td><a href="hvf.c.html#L483">(((idtvec_info & VMCS_IDT_VEC_VALID) == 0) && ((exit_qual & EXIT_QUAL_NMIUDTI) != 0))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">145</td><td><a href="hvf.c.html#L145">((ept_qual & EPT_VIOLATION_GLA_VALID) == 0 || (ept_qual & EPT_VIOLATION_XLAT_VALID) == 0)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="hvf.c.html#L344">((idtvec_info & VMCS_IDT_VEC_TYPE) == VMCS_IDT_VEC_SWEXCEPTION || (idtvec_info & VMCS_IDT_VEC_TYPE) == VMCS_IDT_VEC_SWINTR)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">353</td><td><a href="hvf.c.html#L353">((rvmcs(cpu->hvf->fd, VMCS_GUEST_INTERRUPTIBILITY) & VMCS_INTERRUPTIBILITY_NMI_BLOCKING))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">359</td><td><a href="hvf.c.html#L359">(rvmcs(cpu->hvf->fd, VMCS_GUEST_INTERRUPTIBILITY) & VMCS_INTERRUPTIBILITY_STI_BLOCKING | VMCS_INTERRUPTIBILITY_MOVSS_BLOCKING)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">241</td><td><a href="hvf.c.html#L241">(hv_vmx_read_capability(HV_VMX_CAP_PINBASED, &hvf_state->hvf_caps->vmx_cap_pinbased))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">245</td><td><a href="hvf.c.html#L245">(hv_vmx_read_capability(HV_VMX_CAP_PROCBASED, &hvf_state->hvf_caps->vmx_cap_procbased))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">249</td><td><a href="hvf.c.html#L249">(hv_vmx_read_capability(HV_VMX_CAP_PROCBASED2, &hvf_state->hvf_caps->vmx_cap_procbased2))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">253</td><td><a href="hvf.c.html#L253">(hv_vmx_read_capability(HV_VMX_CAP_ENTRY, &hvf_state->hvf_caps->vmx_cap_entry))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">133</td><td><a href="hvf.c.html#L133">(slot->flags & HVF_SLOT_LOG)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">128</td><td><a href="hvf.c.html#L128">((read | write) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">173</td><td><a href="hvf.c.html#L173">(env->tsc_khz != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">189</td><td><a href="hvf.c.html#L189">(env->apic_bus_freq != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">525</td><td><a href="hvf.c.html#L525">(!string && !in)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="hvf.c.html#L178">(sysctlbyname("machdep.tsc.frequency", &tsc_freq, &length, NULL, 0))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">194</td><td><a href="hvf.c.html#L194">(sysctlbyname("hw.busfrequency", &bus_freq, &length, NULL, 0))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">509</td><td><a href="hvf.c.html#L509">(!string && in)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">236</td><td><a href="hvf.c.html#L236">(!tsc_is_known(env) || !apic_bus_freq_is_known(env))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">132</td><td><a href="hvf.c.html#L132">(write && slot)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">275</td><td><a href="hvf.c.html#L275">(hvf_get_supported_cpuid(0x80000001, 0, R_EDX) & CPUID_EXT2_RDTSCP)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="hvf.c.html#L121">(ept_qual & EPT_VIOLATION_INST_FETCH)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="hvf.c.html#L232">(x86cpu->vmware_cpuid_freq)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">326</td><td><a href="hvf.c.html#L326">(idtvec_info & VMCS_IDT_VEC_VALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="hvf.c.html#L348">(idtvec_info & VMCS_IDT_VEC_ERRCODE_VALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="hvf.c.html#L422">(cpu->vcpu_dirty)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">621</td><td><a href="hvf.c.html#L621">(exit_qual & 0x10)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">85</td><td><a href="hvf.c.html#L85">(irr == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">108</td><td><a href="hvf.c.html#L108">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="hvf.c.html#L513">(size == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">515</td><td><a href="hvf.c.html#L515">(size == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">517</td><td><a href="hvf.c.html#L517">(size == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="hvf.c.html#L547">(rax == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">593</td><td><a href="hvf.c.html#L593">(exit_reason == EXIT_REASON_RDMSR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">678</td><td><a href="hvf.c.html#L678">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">150</td><td><a href="hvf.c.html#L150">(!slot)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">417</td><td><a href="hvf.c.html#L417">(hvf_process_events(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">427</td><td><a href="hvf.c.html#L427">(hvf_inject_interrupts(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="hvf.c.html#L490">(ept_emulation_fault(slot, gpa, exit_qual))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">568</td><td><a href="hvf.c.html#L568">(ecx)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

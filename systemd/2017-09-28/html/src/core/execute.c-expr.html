@@ -1,0 +1,613 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\core\execute.c Ctrl Expressions (562) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\core\execute.c Ctrl Expressions (562) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\execute.c Ctrl Expressions (562)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1718</td><td><a href="execute.c.html#L1718">(<span style='background-color:#741da3;'>context->private_devices || context->protect_system != PROTECT_SYSTEM_NO || context->protect_home != PROTECT_HOME_NO || context->protect_kernel_tunables || context->protect_kernel_modules || context->protect_control_groups</span>)</a></td><td class="num">1030.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="execute.c.html#L549">(<span style='background-color:#741da3;'>(e == o && e != EXEC_OUTPUT_NAMED_FD) || e == EXEC_OUTPUT_INHERIT</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">2822</td><td><a href="execute.c.html#L2822">(<span style='background-color:#741da3;'>use_selinux && params->selinux_context_net && socket_fd >= 0</span>)</a></td><td class="num">1011.75</td></tr>
+      <tr><td class="num line">148</td><td><a href="execute.c.html#L148">(<span style='background-color:#741da3;'>nfd != i + 3 && restart_from < 0</span>)</a></td><td class="num">1010.60</td></tr>
+      <tr><td class="num line">4147</td><td><a href="execute.c.html#L4147">(c->private_network && (*rt)->netns_storage_socket[0] < 0)</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">2004</td><td><a href="execute.c.html#L2004">(!strv_isempty(context->directories[i].paths))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">3407</td><td><a href="execute.c.html#L3407">(named_iofds[STDIN_FILENO] < 0 && c->std_input == EXEC_INPUT_NAMED_FD && stdio_fdname[STDIN_FILENO] && streq(p->fd_names[i], stdio_fdname[STDIN_FILENO]))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">3415</td><td><a href="execute.c.html#L3415">(named_iofds[STDOUT_FILENO] < 0 && c->std_output == EXEC_OUTPUT_NAMED_FD && stdio_fdname[STDOUT_FILENO] && streq(p->fd_names[i], stdio_fdname[STDOUT_FILENO]))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">3423</td><td><a href="execute.c.html#L3423">(named_iofds[STDERR_FILENO] < 0 && c->std_error == EXEC_OUTPUT_NAMED_FD && stdio_fdname[STDERR_FILENO] && streq(p->fd_names[i], stdio_fdname[STDERR_FILENO]))</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">541</td><td><a href="execute.c.html#L541">(e == EXEC_OUTPUT_INHERIT && o == EXEC_OUTPUT_INHERIT && i == EXEC_INPUT_NULL && !is_terminal_input(context->std_input) && getppid() != 1)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">603</td><td><a href="execute.c.html#L603">(fstat(fileno, &st) >= 0 && (*journal_stream_ino == 0 || fileno == STDERR_FILENO))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1704</td><td><a href="execute.c.html#L1704">(!strv_isempty(context->read_write_paths) || !strv_isempty(context->read_only_paths) || !strv_isempty(context->inaccessible_paths))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">2789</td><td><a href="execute.c.html#L2789">(context->private_network && runtime && runtime->netns_storage_socket[0] >= 0)</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">640</td><td><a href="execute.c.html#L640">(st.st_uid != uid || (st.st_mode & 0777) != TTY_MODE)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">4152</td><td><a href="execute.c.html#L4152">(c->private_tmp && !(*rt)->tmp_dir)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">2871</td><td><a href="execute.c.html#L2871">(context->restrict_realtime && !context->rlimit[RLIMIT_RTPRIO])</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2644</td><td><a href="execute.c.html#L2644">(sched_setaffinity(0, CPU_ALLOC_SIZE(context->cpuset_ncpus), context->cpuset) < 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1621</td><td><a href="execute.c.html#L1621">(asprintf(&x, SD_ID128_FORMAT_STR, SD_ID128_FORMAT_VAL(u->invocation_id)) < 0)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">4148</td><td><a href="execute.c.html#L4148">(socketpair(AF_UNIX, SOCK_DGRAM | SOCK_CLOEXEC, 0, (*rt)->netns_storage_socket) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4265</td><td><a href="execute.c.html#L4265">(safe_atoi(value, &fd) < 0 || !fdset_contains(fds, fd))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4278</td><td><a href="execute.c.html#L4278">(safe_atoi(value, &fd) < 0 || !fdset_contains(fds, fd))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2872</td><td><a href="execute.c.html#L2872">(setrlimit(RLIMIT_RTPRIO, &RLIMIT_MAKE_CONST(0)) < 0)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">3133</td><td><a href="execute.c.html#L3133">(context->std_input == EXEC_INPUT_SOCKET || context->std_output == EXEC_OUTPUT_SOCKET || context->std_error == EXEC_OUTPUT_SOCKET)</a></td><td class="num">19.75</td></tr>
+      <tr><td class="num line">2688</td><td><a href="execute.c.html#L2688">(params->cgroup_path && context->user && (params->flags & EXEC_CGROUP_DELEGATE))</a></td><td class="num">19.25</td></tr>
+      <tr><td class="num line">1715</td><td><a href="execute.c.html#L1715">(context->private_tmp && runtime && (runtime->tmp_dir || runtime->var_tmp_dir))</a></td><td class="num">18.25</td></tr>
+      <tr><td class="num line">1574</td><td><a href="execute.c.html#L1574">((p->flags & EXEC_SET_WATCHDOG) && p->watchdog_usec > 0)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1726</td><td><a href="execute.c.html#L1726">(context->mount_apivfs && (context->root_image || context->root_directory))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1978</td><td><a href="execute.c.html#L1978">(r < 0 && r != -ENODATA && r != -EOPNOTSUPP)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">3091</td><td><a href="execute.c.html#L3091">(errno == ENOENT && (command->flags & EXEC_COMMAND_IGNORE_FAILURE))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3935</td><td><a href="execute.c.html#L3935">(s->pid && s->pid != pid)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">4140</td><td><a href="execute.c.html#L4140">(!c->private_network && !c->private_tmp)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">515</td><td><a href="execute.c.html#L515">(fileno == STDOUT_FILENO && params->stdout_fd >= 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">523</td><td><a href="execute.c.html#L523">(fileno == STDERR_FILENO && params->stderr_fd >= 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2154</td><td><a href="execute.c.html#L2154">(chdir(d) < 0 && !context->working_directory_missing_ok)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1512</td><td><a href="execute.c.html#L1512">(idle_pipe[3] >= 0 && r == 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2897</td><td><a href="execute.c.html#L2897">(!needs_ambient_hack && context->capability_ambient_set != 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2915</td><td><a href="execute.c.html#L2915">(!needs_ambient_hack && context->capability_ambient_set != 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2970</td><td><a href="execute.c.html#L2970">(r < 0 && !context->apparmor_profile_ignore)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1885</td><td><a href="execute.c.html#L1885">(si.si_code != CLD_EXITED || si.si_status != 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">556</td><td><a href="execute.c.html#L556">(i == EXEC_INPUT_NULL && is_terminal_input(context->std_input))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">214</td><td><a href="execute.c.html#L214">(p && p->stdin_fd >= 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">221</td><td><a href="execute.c.html#L221">(p && p->stdin_fd >= 0)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3704</td><td><a href="execute.c.html#L3704">(IN_SET(c->std_output, EXEC_OUTPUT_SYSLOG, EXEC_OUTPUT_KMSG, EXEC_OUTPUT_JOURNAL, EXEC_OUTPUT_SYSLOG_AND_CONSOLE, EXEC_OUTPUT_KMSG_AND_CONSOLE, EXEC_OUTPUT_JOURNAL_AND_CONSOLE) || IN_SET(c->std_error, EXEC_OUTPUT_SYSLOG, EXEC_OUTPUT_KMSG, EXEC_OUTPUT_JOURNAL, EXEC_OUTPUT_SYSLOG_AND_CONSOLE, EXEC_OUTPUT_KMSG_AND_CONSOLE, EXEC_OUTPUT_JOURNAL_AND_CONSOLE))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3903</td><td><a href="execute.c.html#L3903">(streq(c->user, "root") || streq(c->user, "0"))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">888</td><td><a href="execute.c.html#L888">(user && gid_is_valid(gid) && gid != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">414</td><td><a href="execute.c.html#L414">(std_input == EXEC_INPUT_SOCKET && socket_fd < 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="execute.c.html#L422">(std_output == EXEC_OUTPUT_SOCKET && socket_fd < 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1647</td><td><a href="execute.c.html#L1647">(journal_stream_dev != 0 && journal_stream_ino != 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3406</td><td><a href="execute.c.html#L3406">(i < n_fds && targets > 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1579</td><td><a href="execute.c.html#L1579">(asprintf(&x, "WATCHDOG_USEC=", p->watchdog_usec) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2089</td><td><a href="execute.c.html#L2089">(!context->dynamic_user && root_dir)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2144</td><td><a href="execute.c.html#L2144">(!needs_mount_ns && context->root_directory)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2182</td><td><a href="execute.c.html#L2182">(!(p->flags & EXEC_NEW_KEYRING))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3341</td><td><a href="execute.c.html#L3341">((i = c))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4200</td><td><a href="execute.c.html#L4200">(rt->netns_storage_socket[0] >= 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4210</td><td><a href="execute.c.html#L4210">(rt->netns_storage_socket[1] >= 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="execute.c.html#L227">(context->tty_vt_disallocate && path)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1180</td><td><a href="execute.c.html#L1180">(sigwait(&ss, &sig) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2066</td><td><a href="execute.c.html#L2066">(context->private_tmp && runtime)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2507</td><td><a href="execute.c.html#L2507">(context->dynamic_user && dcreds)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2780</td><td><a href="execute.c.html#L2780">(context->pam_name && username)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2968</td><td><a href="execute.c.html#L2968">(use_apparmor && context->apparmor_profile)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3677</td><td><a href="execute.c.html#L3677">(CPU_ISSET_S(i, CPU_ALLOC_SIZE(c->cpuset_ncpus), c->cpuset))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1587</td><td><a href="execute.c.html#L1587">(p->flags & EXEC_NSS_BYPASS_BUS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1636</td><td><a href="execute.c.html#L1636">(path_equal(tty_path, "/dev/console") && getppid() == 1)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1917</td><td><a href="execute.c.html#L1917">(params->flags & EXEC_CHOWN_DIRECTORIES)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2077</td><td><a href="execute.c.html#L2077">(params->flags & EXEC_APPLY_CHROOT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2143</td><td><a href="execute.c.html#L2143">(params->flags & EXEC_APPLY_CHROOT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">136</td><td><a href="execute.c.html#L136">(fds[i] == i + 3)</a></td><td class="num">6.35</td></tr>
+      <tr><td class="num line">1749</td><td><a href="execute.c.html#L1749">(uid != 0 && uid_is_valid(uid))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1762</td><td><a href="execute.c.html#L1762">(gid != 0 && gid_is_valid(gid))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2234</td><td><a href="execute.c.html#L2234">(gid_is_valid(gid) && gid != saved_gid)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2239</td><td><a href="execute.c.html#L2239">(uid_is_valid(uid) && uid != saved_uid)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2258</td><td><a href="execute.c.html#L2258">(uid_is_valid(uid) && uid != saved_uid)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2265</td><td><a href="execute.c.html#L2265">(gid_is_valid(gid) && gid != saved_gid)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="execute.c.html#L440">(dup2(params->stdin_fd, STDIN_FILENO) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">517</td><td><a href="execute.c.html#L517">(dup2(params->stdout_fd, STDOUT_FILENO) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">524</td><td><a href="execute.c.html#L524">(dup2(params->stderr_fd, STDERR_FILENO) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1914</td><td><a href="execute.c.html#L1914">(!params->prefix[type])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2018</td><td><a href="execute.c.html#L2018">(!params->prefix[i])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2145</td><td><a href="execute.c.html#L2145">(chroot(context->root_directory) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2345</td><td><a href="execute.c.html#L2345">(!uid_is_valid(uid) && !gid_is_valid(gid))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2622</td><td><a href="execute.c.html#L2622">(setpriority(PRIO_PROCESS, 0, context->nice) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2650</td><td><a href="execute.c.html#L2650">(ioprio_set(IOPRIO_WHO_PROCESS, 0, context->ioprio) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2656</td><td><a href="execute.c.html#L2656">(prctl(PR_SET_TIMERSLACK, context->timer_slack_nsec) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2860</td><td><a href="execute.c.html#L2860">(!context->rlimit[i])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3259</td><td><a href="execute.c.html#L3259">(l < ELEMENTSOF(c->rlimit))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3761</td><td><a href="execute.c.html#L3761">(strv_length(c->supplementary_groups) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3770</td><td><a href="execute.c.html#L3770">(strv_length(c->read_write_paths) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3776</td><td><a href="execute.c.html#L3776">(strv_length(c->read_only_paths) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3782</td><td><a href="execute.c.html#L3782">(strv_length(c->inaccessible_paths) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3967</td><td><a href="execute.c.html#L3967">(dual_timestamp_is_set(&s->start_timestamp))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">3972</td><td><a href="execute.c.html#L3972">(dual_timestamp_is_set(&s->exit_timestamp))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">439</td><td><a href="execute.c.html#L439">(params->stdin_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">994</td><td><a href="execute.c.html#L994">(context->capability_ambient_set != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1709</td><td><a href="execute.c.html#L1709">(context->n_bind_mounts > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1712</td><td><a href="execute.c.html#L1712">(context->mount_flags != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2185</td><td><a href="execute.c.html#L2185">(context->keyring_mode == EXEC_KEYRING_INHERIT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2223</td><td><a href="execute.c.html#L2223">(context->keyring_mode == EXEC_KEYRING_SHARED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2300</td><td><a href="execute.c.html#L2300">(params->stdin_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2302</td><td><a href="execute.c.html#L2302">(params->stdout_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="execute.c.html#L2304">(params->stderr_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2655</td><td><a href="execute.c.html#L2655">(context->timer_slack_nsec != NSEC_INFINITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2661</td><td><a href="execute.c.html#L2661">(context->personality != PERSONALITY_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3137</td><td><a href="execute.c.html#L3137">(params->n_socket_fds > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3142</td><td><a href="execute.c.html#L3142">(params->n_socket_fds == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3373</td><td><a href="execute.c.html#L3373">(c->std_input != EXEC_INPUT_NAMED_FD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3377</td><td><a href="execute.c.html#L3377">(c->std_output != EXEC_OUTPUT_NAMED_FD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3381</td><td><a href="execute.c.html#L3381">(c->std_error != EXEC_OUTPUT_NAMED_FD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3676</td><td><a href="execute.c.html#L3676">(i < c->cpuset_ncpus)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3682</td><td><a href="execute.c.html#L3682">(c->timer_slack_nsec != NSEC_INFINITY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3738</td><td><a href="execute.c.html#L3738">(c->capability_bounding_set != CAP_ALL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3746</td><td><a href="execute.c.html#L3746">(c->capability_ambient_set != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3788</td><td><a href="execute.c.html#L3788">(c->n_bind_mounts > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3789</td><td><a href="execute.c.html#L3789">(i < c->n_bind_mounts)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3817</td><td><a href="execute.c.html#L3817">(c->personality != PERSONALITY_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3883</td><td><a href="execute.c.html#L3883">(c->syscall_errno > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3958</td><td><a href="execute.c.html#L3958">(s->pid <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4177</td><td><a href="execute.c.html#L4177">(r->n_ref > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4304</td><td><a href="execute.c.html#L4304">(rt->n_ref > 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1556</td><td><a href="execute.c.html#L1556">(asprintf(&x, "LISTEN_PID=", getpid_cached()) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1575</td><td><a href="execute.c.html#L1575">(asprintf(&x, "WATCHDOG_PID=", getpid_cached()) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3643</td><td><a href="execute.c.html#L3643">(c->rlimit[i])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">411</td><td><a href="execute.c.html#L411">(is_terminal_input(std_input) && !apply_tty_stdin)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">637</td><td><a href="execute.c.html#L637">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">723</td><td><a href="execute.c.html#L723">(dup2(*saved_stdin, STDIN_FILENO) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">727</td><td><a href="execute.c.html#L727">(dup2(*saved_stdout, STDOUT_FILENO) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">922</td><td><a href="execute.c.html#L922">(getgrouplist(user, gid, l_gids, &k) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1560</td><td><a href="execute.c.html#L1560">(asprintf(&x, "LISTEN_FDS=%u", n_fds) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1648</td><td><a href="execute.c.html#L1648">(asprintf(&x, "JOURNAL_STREAM=\" DEV_FMT \":", journal_stream_dev, journal_stream_ino) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1802</td><td><a href="execute.c.html#L1802">(read(unshare_ready_fd, &c, sizeof(c)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1864</td><td><a href="execute.c.html#L1864">(write(unshare_ready_fd, &c, sizeof(c)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2028</td><td><a href="execute.c.html#L2028">(strv_consume(&l, s) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">722</td><td><a href="execute.c.html#L722">(*saved_stdin >= 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">726</td><td><a href="execute.c.html#L726">(*saved_stdout >= 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1620</td><td><a href="execute.c.html#L1620">(!sd_id128_is_null(u->invocation_id))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2203</td><td><a href="execute.c.html#L2203">(!sd_id128_is_null(u->invocation_id))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3056</td><td><a href="execute.c.html#L3056">(!strv_isempty(context->unset_environment))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">837</td><td><a href="execute.c.html#L837">(!c->user)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">858</td><td><a href="execute.c.html#L858">(!c->group)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">896</td><td><a href="execute.c.html#L896">(!c->supplementary_groups)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1392</td><td><a href="execute.c.html#L1392">(!c->memory_deny_write_execute)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1405</td><td><a href="execute.c.html#L1405">(!c->restrict_realtime)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1421</td><td><a href="execute.c.html#L1421">(!c->protect_kernel_tunables)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1436</td><td><a href="execute.c.html#L1436">(!c->protect_kernel_modules)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1451</td><td><a href="execute.c.html#L1451">(!c->private_devices)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1480</td><td><a href="execute.c.html#L1480">(!c->lock_personality)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1507</td><td><a href="execute.c.html#L1507">(idle_pipe[0] >= 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2281</td><td><a href="execute.c.html#L2281">(pair[0] >= 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2283</td><td><a href="execute.c.html#L2283">(pair[1] >= 0)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2370</td><td><a href="execute.c.html#L2370">(!c->working_directory_home)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2477</td><td><a href="execute.c.html#L2477">(!context->same_pgrp)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3451</td><td><a href="execute.c.html#L3451">(fn[0] == '-')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3837</td><td><a href="execute.c.html#L3837">(!c->syscall_whitelist)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3900</td><td><a href="execute.c.html#L3900">(!c->user)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3477</td><td><a href="execute.c.html#L3477">(n < pglob.gl_pathc)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">263</td><td><a href="execute.c.html#L263">(is_terminal_input(c->std_input))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">266</td><td><a href="execute.c.html#L266">(is_terminal_output(c->std_output))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="execute.c.html#L269">(is_terminal_output(c->std_error))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">755</td><td><a href="execute.c.html#L755">(manager_is_confirm_spawn_disabled(u->manager))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1366</td><td><a href="execute.c.html#L1366">(set_isempty(c->syscall_archs))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2002</td><td><a href="execute.c.html#L2002">(strv_isempty(context->read_write_paths))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">197</td><td><a href="execute.c.html#L197">(context->stdio_as_fds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">200</td><td><a href="execute.c.html#L200">(context->tty_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">213</td><td><a href="execute.c.html#L213">(context->tty_vhangup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="execute.c.html#L220">(context->tty_reset)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">970</td><td><a href="execute.c.html#L970">(context->supplementary_groups)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1221</td><td><a href="execute.c.html#L1221">(!barrier_place_and_sync(&barrier))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1300</td><td><a href="execute.c.html#L1300">(c->no_new_privileges)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1345</td><td><a href="execute.c.html#L1345">(c->syscall_whitelist)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1679</td><td><a href="execute.c.html#L1679">(!GREEDY_REALLOC(pass_env, n_bufsize, n_env + 2))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">1701</td><td><a href="execute.c.html#L1701">(context->root_image)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1968</td><td><a href="execute.c.html#L1968">(context->smack_process_label)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2067</td><td><a href="execute.c.html#L2067">(runtime->tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2069</td><td><a href="execute.c.html#L2069">(runtime->var_tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2129</td><td><a href="execute.c.html#L2129">(context->working_directory_home)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2138</td><td><a href="execute.c.html#L2138">(context->working_directory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2318</td><td><a href="execute.c.html#L2318">(dcreds->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2320</td><td><a href="execute.c.html#L2320">(dcreds->group)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2447</td><td><a href="execute.c.html#L2447">(context->ignore_sigpipe)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2456</td><td><a href="execute.c.html#L2456">(params->idle_pipe)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2533</td><td><a href="execute.c.html#L2533">(dcreds->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2595</td><td><a href="execute.c.html#L2595">(params->cgroup_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2603</td><td><a href="execute.c.html#L2603">(context->oom_score_adjust_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2621</td><td><a href="execute.c.html#L2621">(context->nice_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2627</td><td><a href="execute.c.html#L2627">(context->cpu_sched_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2643</td><td><a href="execute.c.html#L2643">(context->cpuset)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2649</td><td><a href="execute.c.html#L2649">(context->ioprio_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2669</td><td><a href="execute.c.html#L2669">(context->utmp_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2677</td><td><a href="execute.c.html#L2677">(context->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2831</td><td><a href="execute.c.html#L2831">(context->private_users)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2908</td><td><a href="execute.c.html#L2908">(context->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3220</td><td><a href="execute.c.html#L3220">(params->cgroup_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3283</td><td><a href="execute.c.html#L3283">(c->cpuset)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3608</td><td><a href="execute.c.html#L3608">(c->root_image)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3632</td><td><a href="execute.c.html#L3632">(c->nice_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3637</td><td><a href="execute.c.html#L3637">(c->oom_score_adjust_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3650</td><td><a href="execute.c.html#L3650">(c->ioprio_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3660</td><td><a href="execute.c.html#L3660">(c->cpu_sched_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3674</td><td><a href="execute.c.html#L3674">(c->cpuset)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3693</td><td><a href="execute.c.html#L3693">(c->tty_path)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3730</td><td><a href="execute.c.html#L3730">(c->secure_bits)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3754</td><td><a href="execute.c.html#L3754">(c->user)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3756</td><td><a href="execute.c.html#L3756">(c->group)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3767</td><td><a href="execute.c.html#L3767">(c->pam_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3797</td><td><a href="execute.c.html#L3797">(c->utmp_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3802</td><td><a href="execute.c.html#L3802">(c->selinux_context)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3807</td><td><a href="execute.c.html#L3807">(c->apparmor_profile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3812</td><td><a href="execute.c.html#L3812">(c->smack_process_label)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3826</td><td><a href="execute.c.html#L3826">(c->syscall_filter)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3857</td><td><a href="execute.c.html#L3857">(c->syscall_archs)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3888</td><td><a href="execute.c.html#L3888">(c->apparmor_profile)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3914</td><td><a href="execute.c.html#L3914">(c->ioprio_set)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3945</td><td><a href="execute.c.html#L3945">(context->utmp_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4194</td><td><a href="execute.c.html#L4194">(rt->tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4197</td><td><a href="execute.c.html#L4197">(rt->var_tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4307</td><td><a href="execute.c.html#L4307">(rt->tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4319</td><td><a href="execute.c.html#L4319">(rt->var_tmp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4121</td><td><a href="execute.c.html#L4121">(!*rt)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1833</td><td><a href="execute.c.html#L1833">(write(fd, gid_map, strlen(gid_map)) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1846</td><td><a href="execute.c.html#L1846">(write(fd, uid_map, strlen(uid_map)) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2218</td><td><a href="execute.c.html#L2218">(uid_is_valid(uid) || gid_is_valid(gid))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3075</td><td><a href="execute.c.html#L3075">(_unlikely_(log_get_max_level() >= LOG_DEBUG))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">305</td><td><a href="execute.c.html#L305">(setegid(gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="execute.c.html#L312">(seteuid(uid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">359</td><td><a href="execute.c.html#L359">(shutdown(fd, SHUT_RD) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">564</td><td><a href="execute.c.html#L564">(getppid() != 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">630</td><td><a href="execute.c.html#L630">(isatty(fd) < 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">673</td><td><a href="execute.c.html#L673">(dup2(fd, STDIN_FILENO) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">676</td><td><a href="execute.c.html#L676">(dup2(fd, STDOUT_FILENO) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">890</td><td><a href="execute.c.html#L890">(initgroups(user, gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">978</td><td><a href="execute.c.html#L978">(setresgid(gid, gid, gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1002</td><td><a href="execute.c.html#L1002">(prctl(PR_GET_SECUREBITS) != sb)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1003</td><td><a href="execute.c.html#L1003">(prctl(PR_SET_SECUREBITS, sb) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1009</td><td><a href="execute.c.html#L1009">(setresuid(uid, uid, uid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1075</td><td><a href="execute.c.html#L1075">(log_get_max_level() < LOG_DEBUG)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1149</td><td><a href="execute.c.html#L1149">(setresgid(gid, gid, gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="execute.c.html#L1151">(setresuid(uid, uid, uid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1161</td><td><a href="execute.c.html#L1161">(prctl(PR_SET_PDEATHSIG, SIGTERM) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1173</td><td><a href="execute.c.html#L1173">(getppid() == parent_pid)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1193</td><td><a href="execute.c.html#L1193">(getppid() != parent_pid)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1783</td><td><a href="execute.c.html#L1783">(pipe2(errno_pipe, O_CLOEXEC) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1818</td><td><a href="execute.c.html#L1818">(write(fd, "deny\\n", 5) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1860</td><td><a href="execute.c.html#L1860">(unshare(CLONE_NEWUSER) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2210</td><td><a href="execute.c.html#L2210">(keyctl(KEYCTL_SETPERM, key, KEY_POS_VIEW | KEY_POS_READ | KEY_POS_SEARCH | KEY_USR_VIEW | KEY_USR_READ | KEY_USR_SEARCH, 0, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2219</td><td><a href="execute.c.html#L2219">(keyctl(KEYCTL_CHOWN, keyring, uid, gid, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2235</td><td><a href="execute.c.html#L2235">(setregid(gid, -1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2240</td><td><a href="execute.c.html#L2240">(setreuid(uid, -1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2246</td><td><a href="execute.c.html#L2246">(keyctl(KEYCTL_LINK, KEY_SPEC_USER_KEYRING, KEY_SPEC_SESSION_KEYRING, 0, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2259</td><td><a href="execute.c.html#L2259">(setreuid(saved_uid, -1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2266</td><td><a href="execute.c.html#L2266">(setregid(saved_gid, -1) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2348</td><td><a href="execute.c.html#L2348">(writev(user_lookup_fd, (struct iovec[]){                           IOVEC_INIT(&uid, sizeof(uid)),                           IOVEC_INIT(&gid, sizeof(gid)),                           IOVEC_INIT_STRING(unit->id) }, 3) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2478</td><td><a href="execute.c.html#L2478">(setsid() < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2510</td><td><a href="execute.c.html#L2510">(putenv((char*)"SYSTEMD_NSS_DYNAMIC_BYPASS=1") != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2979</td><td><a href="execute.c.html#L2979">(prctl(PR_GET_SECUREBITS) != secure_bits)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2980</td><td><a href="execute.c.html#L2980">(prctl(PR_SET_SECUREBITS, secure_bits) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2986</td><td><a href="execute.c.html#L2986">(prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4005</td><td><a href="execute.c.html#L4005">(strpbrk(*a, WHITESPACE))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">119</td><td><a href="execute.c.html#L119">(n_fds <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">132</td><td><a href="execute.c.html#L132">(i < (int)n_fds)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="execute.c.html#L140">(nfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">152</td><td><a href="execute.c.html#L152">(restart_from < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">166</td><td><a href="execute.c.html#L166">(n_fds <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">174</td><td><a href="execute.c.html#L174">(i < n_fds)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">176</td><td><a href="execute.c.html#L176">(i < n_socket_fds)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="execute.c.html#L178">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">187</td><td><a href="execute.c.html#L187">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">281</td><td><a href="execute.c.html#L281">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">284</td><td><a href="execute.c.html#L284">(fd != nfd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">352</td><td><a href="execute.c.html#L352">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="execute.c.html#L356">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="execute.c.html#L382">(fd == nfd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="execute.c.html#L397">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">400</td><td><a href="execute.c.html#L400">(fd != nfd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">467</td><td><a href="execute.c.html#L467">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">470</td><td><a href="execute.c.html#L470">(fd != STDIN_FILENO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">533</td><td><a href="execute.c.html#L533">(fileno == STDERR_FILENO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">554</td><td><a href="execute.c.html#L554">(o == EXEC_OUTPUT_INHERIT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="execute.c.html#L560">(i != EXEC_INPUT_NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">590</td><td><a href="execute.c.html#L590">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">654</td><td><a href="execute.c.html#L654">(saved_stdin < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">658</td><td><a href="execute.c.html#L658">(saved_stdout < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="execute.c.html#L662">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">666</td><td><a href="execute.c.html#L666">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">670</td><td><a href="execute.c.html#L670">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">679</td><td><a href="execute.c.html#L679">(fd >= 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="execute.c.html#L694">(err == -ETIMEDOUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="execute.c.html#L708">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="execute.c.html#L749">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">769</td><td><a href="execute.c.html#L769">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">845</td><td><a href="execute.c.html#L845">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">863</td><td><a href="execute.c.html#L863">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="execute.c.html#L905">(ngroups_max <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">906</td><td><a href="execute.c.html#L906">(errno > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">930</td><td><a href="execute.c.html#L930">(k >= ngroups_max)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">935</td><td><a href="execute.c.html#L935">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">945</td><td><a href="execute.c.html#L945">(k == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="execute.c.html#L972">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">999</td><td><a href="execute.c.html#L999">(uid != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="execute.c.html#L1072">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="execute.c.html#L1079">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1086</td><td><a href="execute.c.html#L1086">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="execute.c.html#L1092">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1097</td><td><a href="execute.c.html#L1097">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1101</td><td><a href="execute.c.html#L1101">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="execute.c.html#L1120">(pam_pid < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="execute.c.html#L1125">(pam_pid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1147</td><td><a href="execute.c.html#L1147">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1181</td><td><a href="execute.c.html#L1181">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1195</td><td><a href="execute.c.html#L1195">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="execute.c.html#L1230">(pam_code != PAM_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1267</td><td><a href="execute.c.html#L1267">(l > 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1355</td><td><a href="execute.c.html#L1355">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1489</td><td><a href="execute.c.html#L1489">(personality == PERSONALITY_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="execute.c.html#L1492">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1517</td><td><a href="execute.c.html#L1517">(n > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1553</td><td><a href="execute.c.html#L1553">(n_fds > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1754</td><td><a href="execute.c.html#L1754">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1767</td><td><a href="execute.c.html#L1767">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="execute.c.html#L1778">(unshare_ready_fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1787</td><td><a href="execute.c.html#L1787">(pid < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1790</td><td><a href="execute.c.html#L1790">(pid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1810</td><td><a href="execute.c.html#L1810">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1811</td><td><a href="execute.c.html#L1811">(errno != ENOENT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1829</td><td><a href="execute.c.html#L1829">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1842</td><td><a href="execute.c.html#L1842">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1869</td><td><a href="execute.c.html#L1869">(n < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1871</td><td><a href="execute.c.html#L1871">(n == sizeof(r))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1872</td><td><a href="execute.c.html#L1872">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1876</td><td><a href="execute.c.html#L1876">(n != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1880</td><td><a href="execute.c.html#L1880">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="execute.c.html#L1934">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1938</td><td><a href="execute.c.html#L1938">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1943</td><td><a href="execute.c.html#L1943">(type == EXEC_DIRECTORY_CONFIGURATION)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1947</td><td><a href="execute.c.html#L1947">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1970</td><td><a href="execute.c.html#L1970">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1982</td><td><a href="execute.c.html#L1982">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2003</td><td><a href="execute.c.html#L2003">(i < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2007</td><td><a href="execute.c.html#L2007">(i == _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2017</td><td><a href="execute.c.html#L2017">(i < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2074</td><td><a href="execute.c.html#L2074">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2189</td><td><a href="execute.c.html#L2189">(keyring == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2190</td><td><a href="execute.c.html#L2190">(errno == ENOSYS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2194</td><td><a href="execute.c.html#L2194">(errno == EDQUOT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2207</td><td><a href="execute.c.html#L2207">(key == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2307</td><td><a href="execute.c.html#L2307">(socket_fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2309</td><td><a href="execute.c.html#L2309">(n_fds > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2324</td><td><a href="execute.c.html#L2324">(user_lookup_fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2342</td><td><a href="execute.c.html#L2342">(user_lookup_fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2367</td><td><a href="execute.c.html#L2367">(*home)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2373</td><td><a href="execute.c.html#L2373">(uid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2380</td><td><a href="execute.c.html#L2380">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2451</td><td><a href="execute.c.html#L2451">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2472</td><td><a href="execute.c.html#L2472">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2496</td><td><a href="execute.c.html#L2496">(r != CONFIRM_EXECUTE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2497</td><td><a href="execute.c.html#L2497">(r == CONFIRM_PRETEND_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2516</td><td><a href="execute.c.html#L2516">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2538</td><td><a href="execute.c.html#L2538">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2544</td><td><a href="execute.c.html#L2544">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2553</td><td><a href="execute.c.html#L2553">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2559</td><td><a href="execute.c.html#L2559">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2567</td><td><a href="execute.c.html#L2567">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2574</td><td><a href="execute.c.html#L2574">(socket_fd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2578</td><td><a href="execute.c.html#L2578">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2584</td><td><a href="execute.c.html#L2584">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2590</td><td><a href="execute.c.html#L2590">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2597</td><td><a href="execute.c.html#L2597">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2615</td><td><a href="execute.c.html#L2615">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2637</td><td><a href="execute.c.html#L2637">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2663</td><td><a href="execute.c.html#L2663">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2679</td><td><a href="execute.c.html#L2679">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2690</td><td><a href="execute.c.html#L2690">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2696</td><td><a href="execute.c.html#L2696">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2702</td><td><a href="execute.c.html#L2702">(dt < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2704</td><td><a href="execute.c.html#L2704">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2719</td><td><a href="execute.c.html#L2719">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2725</td><td><a href="execute.c.html#L2725">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2746</td><td><a href="execute.c.html#L2746">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2782</td><td><a href="execute.c.html#L2782">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2791</td><td><a href="execute.c.html#L2791">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2800</td><td><a href="execute.c.html#L2800">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2808</td><td><a href="execute.c.html#L2808">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2814</td><td><a href="execute.c.html#L2814">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2824</td><td><a href="execute.c.html#L2824">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2833</td><td><a href="execute.c.html#L2833">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2844</td><td><a href="execute.c.html#L2844">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2846</td><td><a href="execute.c.html#L2846">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2848</td><td><a href="execute.c.html#L2848">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2858</td><td><a href="execute.c.html#L2858">(i < _RLIMIT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2864</td><td><a href="execute.c.html#L2864">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2889</td><td><a href="execute.c.html#L2889">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2900</td><td><a href="execute.c.html#L2900">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2910</td><td><a href="execute.c.html#L2910">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2920</td><td><a href="execute.c.html#L2920">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2949</td><td><a href="execute.c.html#L2949">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2960</td><td><a href="execute.c.html#L2960">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2993</td><td><a href="execute.c.html#L2993">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2999</td><td><a href="execute.c.html#L2999">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3005</td><td><a href="execute.c.html#L3005">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3011</td><td><a href="execute.c.html#L3011">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3017</td><td><a href="execute.c.html#L3017">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3023</td><td><a href="execute.c.html#L3023">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3029</td><td><a href="execute.c.html#L3029">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3035</td><td><a href="execute.c.html#L3035">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3041</td><td><a href="execute.c.html#L3041">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3049</td><td><a href="execute.c.html#L3049">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3156</td><td><a href="execute.c.html#L3156">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3160</td><td><a href="execute.c.html#L3160">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3176</td><td><a href="execute.c.html#L3176">(pid < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3179</td><td><a href="execute.c.html#L3179">(pid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3198</td><td><a href="execute.c.html#L3198">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3242</td><td><a href="execute.c.html#L3242">(i < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3262</td><td><a href="execute.c.html#L3262">(l < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3295</td><td><a href="execute.c.html#L3295">(i < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3334</td><td><a href="execute.c.html#L3334">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3353</td><td><a href="execute.c.html#L3353">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3401</td><td><a href="execute.c.html#L3401">(i < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3466</td><td><a href="execute.c.html#L3466">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3479</td><td><a href="execute.c.html#L3479">(k < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3496</td><td><a href="execute.c.html#L3496">(r == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3625</td><td><a href="execute.c.html#L3625">(dt < _EXEC_DIRECTORY_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3642</td><td><a href="execute.c.html#L3642">(i < RLIM_NLIMITS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3654</td><td><a href="execute.c.html#L3654">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3664</td><td><a href="execute.c.html#L3664">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3722</td><td><a href="execute.c.html#L3722">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3726</td><td><a href="execute.c.html#L3726">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3734</td><td><a href="execute.c.html#L3734">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3742</td><td><a href="execute.c.html#L3742">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3750</td><td><a href="execute.c.html#L3750">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3878</td><td><a href="execute.c.html#L3878">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3918</td><td><a href="execute.c.html#L3918">(p < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4055</td><td><a href="execute.c.html#L4055">(*l)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4108</td><td><a href="execute.c.html#L4108">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4117</td><td><a href="execute.c.html#L4117">(*rt)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4137</td><td><a href="execute.c.html#L4137">(*rt)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4144</td><td><a href="execute.c.html#L4144">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4154</td><td><a href="execute.c.html#L4154">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4204</td><td><a href="execute.c.html#L4204">(copy < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4214</td><td><a href="execute.c.html#L4214">(copy < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4234</td><td><a href="execute.c.html#L4234">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4248</td><td><a href="execute.c.html#L4248">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4262</td><td><a href="execute.c.html#L4262">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4275</td><td><a href="execute.c.html#L4275">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4311</td><td><a href="execute.c.html#L4311">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4323</td><td><a href="execute.c.html#L4323">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="execute.c.html#L988">(!uid_is_valid(uid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1337</td><td><a href="execute.c.html#L1337">(!context_has_syscall_filters(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1379</td><td><a href="execute.c.html#L1379">(!context_has_address_families(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1464</td><td><a href="execute.c.html#L1464">(!exec_context_restrict_namespaces_set(c))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1918</td><td><a href="execute.c.html#L1918">(!uid_is_valid(uid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1920</td><td><a href="execute.c.html#L1920">(!gid_is_valid(gid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2521</td><td><a href="execute.c.html#L2521">(!uid_is_valid(uid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2527</td><td><a href="execute.c.html#L2527">(!gid_is_valid(gid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2887</td><td><a href="execute.c.html#L2887">(!cap_test_all(bset))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3456</td><td><a href="execute.c.html#L3456">(!path_is_absolute(fn))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">761</td><td><a href="execute.c.html#L761">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">913</td><td><a href="execute.c.html#L913">(!l_gids)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">952</td><td><a href="execute.c.html#L952">(!groups)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1107</td><td><a href="execute.c.html#L1107">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1550</td><td><a href="execute.c.html#L1550">(!our_env)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1565</td><td><a href="execute.c.html#L1565">(!joined)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1569</td><td><a href="execute.c.html#L1569">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1589</td><td><a href="execute.c.html#L1589">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1596</td><td><a href="execute.c.html#L1596">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1603</td><td><a href="execute.c.html#L1603">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1608</td><td><a href="execute.c.html#L1608">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1615</td><td><a href="execute.c.html#L1615">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1638</td><td><a href="execute.c.html#L1638">(!term)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1642</td><td><a href="execute.c.html#L1642">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1673</td><td><a href="execute.c.html#L1673">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1676</td><td><a href="execute.c.html#L1676">(!x)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1758</td><td><a href="execute.c.html#L1758">(!uid_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1771</td><td><a href="execute.c.html#L1771">(!gid_map)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1928</td><td><a href="execute.c.html#L1928">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2014</td><td><a href="execute.c.html#L2014">(!l)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2025</td><td><a href="execute.c.html#L2025">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2080</td><td><a href="execute.c.html#L2080">(!root_image)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2131</td><td><a href="execute.c.html#L2131">(!home)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2278</td><td><a href="execute.c.html#L2278">(!pair)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2490</td><td><a href="execute.c.html#L2490">(!cmdline)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2737</td><td><a href="execute.c.html#L2737">(!accum_env)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3060</td><td><a href="execute.c.html#L3060">(!ee)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3070</td><td><a href="execute.c.html#L3070">(!final_argv)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3165</td><td><a href="execute.c.html#L3165">(!line)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3304</td><td><a href="execute.c.html#L3304">(!runtime_prefix)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3311</td><td><a href="execute.c.html#L3311">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3504</td><td><a href="execute.c.html#L3504">(!m)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3521</td><td><a href="execute.c.html#L3521">(!tty)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3532</td><td><a href="execute.c.html#L3532">(!console)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3994</td><td><a href="execute.c.html#L3994">(!n)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4000</td><td><a href="execute.c.html#L4000">(!first)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4074</td><td><a href="execute.c.html#L4074">(!l)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4078</td><td><a href="execute.c.html#L4078">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4104</td><td><a href="execute.c.html#L4104">(!l)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4171</td><td><a href="execute.c.html#L4171">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4191</td><td><a href="execute.c.html#L4191">(!rt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4238</td><td><a href="execute.c.html#L4238">(!copy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4252</td><td><a href="execute.c.html#L4252">(!copy)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4300</td><td><a href="execute.c.html#L4300">(!rt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="execute.c.html#L302">(gid_is_valid(gid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="execute.c.html#L309">(uid_is_valid(uid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="execute.c.html#L323">(uid_is_valid(uid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="execute.c.html#L327">(gid_is_valid(gid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">577</td><td><a href="execute.c.html#L577">(is_terminal_input(i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">976</td><td><a href="execute.c.html#L976">(gid_is_valid(gid))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="execute.c.html#L1261">(isempty(p))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1303</td><td><a href="execute.c.html#L1303">(have_effective_cap(CAP_SYS_ADMIN))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1323</td><td><a href="execute.c.html#L1323">(is_seccomp_available())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="execute.c.html#L1340">(skip_seccomp_unavailable(u, "SystemCallFilter="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="execute.c.html#L1369">(skip_seccomp_unavailable(u, "SystemCallArchitectures="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1382</td><td><a href="execute.c.html#L1382">(skip_seccomp_unavailable(u, "RestrictAddressFamilies="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1395</td><td><a href="execute.c.html#L1395">(skip_seccomp_unavailable(u, "MemoryDenyWriteExecute="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="execute.c.html#L1408">(skip_seccomp_unavailable(u, "RestrictRealtime="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1424</td><td><a href="execute.c.html#L1424">(skip_seccomp_unavailable(u, "ProtectKernelTunables="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1439</td><td><a href="execute.c.html#L1439">(skip_seccomp_unavailable(u, "ProtectKernelModules="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1454</td><td><a href="execute.c.html#L1454">(skip_seccomp_unavailable(u, "PrivateDevices="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1467</td><td><a href="execute.c.html#L1467">(skip_seccomp_unavailable(u, "RestrictNamespaces="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="execute.c.html#L1483">(skip_seccomp_unavailable(u, "LockPersonality="))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1627</td><td><a href="execute.c.html#L1627">(exec_context_needs_term(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2109</td><td><a href="execute.c.html#L2109">(IN_SET(r, -EPERM, -EACCES))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2192</td><td><a href="execute.c.html#L2192">(IN_SET(errno, EACCES, EPERM))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2485</td><td><a href="execute.c.html#L2485">(unit_shall_confirm_spawn(unit))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2613</td><td><a href="execute.c.html#L2613">(IN_SET(r, -EPERM, -EACCES))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2985</td><td><a href="execute.c.html#L2985">(context_has_no_new_privileges(context))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3527</td><td><a href="execute.c.html#L3527">(streq(tty, "console"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3874</td><td><a href="execute.c.html#L3874">(exec_context_restrict_namespaces_set(c))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4230</td><td><a href="execute.c.html#L4230">(streq(key, "tmp-dir"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4244</td><td><a href="execute.c.html#L4244">(streq(key, "var-tmp-dir"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4258</td><td><a href="execute.c.html#L4258">(streq(key, "netns-socket-0"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4271</td><td><a href="execute.c.html#L4271">(streq(key, "netns-socket-1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">216</td><td><a href="execute.c.html#L216">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">223</td><td><a href="execute.c.html#L223">(path)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">916</td><td><a href="execute.c.html#L916">(keep_groups)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1084</td><td><a href="execute.c.html#L1084">(tty)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1236</td><td><a href="execute.c.html#L1236">(handle)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1237</td><td><a href="execute.c.html#L1237">(close_session)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="execute.c.html#L1353">(needs_ambient_hack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1594</td><td><a href="execute.c.html#L1594">(home)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1601</td><td><a href="execute.c.html#L1601">(username)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1613</td><td><a href="execute.c.html#L1613">(shell)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2314</td><td><a href="execute.c.html#L2314">(runtime)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2317</td><td><a href="execute.c.html#L2317">(dcreds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2758</td><td><a href="execute.c.html#L2758">(needs_ambient_hack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2763</td><td><a href="execute.c.html#L2763">(needs_sandboxing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2779</td><td><a href="execute.c.html#L2779">(needs_setuid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2798</td><td><a href="execute.c.html#L2798">(needs_mount_namespace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2812</td><td><a href="execute.c.html#L2812">(needs_setuid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2820</td><td><a href="execute.c.html#L2820">(needs_sandboxing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2855</td><td><a href="execute.c.html#L2855">(needs_sandboxing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2882</td><td><a href="execute.c.html#L2882">(needs_ambient_hack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2907</td><td><a href="execute.c.html#L2907">(needs_setuid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2937</td><td><a href="execute.c.html#L2937">(needs_sandboxing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2944</td><td><a href="execute.c.html#L2944">(use_selinux)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2947</td><td><a href="execute.c.html#L2947">(exec_context)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2958</td><td><a href="execute.c.html#L2958">(use_smack)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3079</td><td><a href="execute.c.html#L3079">(line)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3457</td><td><a href="execute.c.html#L3457">(ignore)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3467</td><td><a href="execute.c.html#L3467">(ignore)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3480</td><td><a href="execute.c.html#L3480">(ignore)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3487</td><td><a href="execute.c.html#L3487">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3844</td><td><a href="execute.c.html#L3844">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3944</td><td><a href="execute.c.html#L3944">(context)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

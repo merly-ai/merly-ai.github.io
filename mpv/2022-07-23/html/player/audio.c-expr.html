@@ -1,0 +1,168 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>mpv Repo - player\audio.c Ctrl Expressions (117) - MerlyMentor</title>
+</head>
+<body>
+  <h2>mpv Repo - player\audio.c Ctrl Expressions (117) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;player\audio.c Ctrl Expressions (117)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">357</td><td><a href="audio.c.html#L357">((<span style='background-color:#741da3;'>mpctx->ao_filter_fmt && mpctx->ao && opts->gapless_audio < 0 && keep_weak_gapless_format(mpctx->ao_filter_fmt, out_fmt)</span>) || (mpctx->ao && opts->gapless_audio > 0))</a></td><td class="num">1054.75</td></tr>
+      <tr><td class="num line">809</td><td><a href="audio.c.html#L809">(<span style='background-color:#741da3;'>pts != MP_NOPTS_VALUE && apts != MP_NOPTS_VALUE && pts < apts && mpctx->video_status != STATUS_EOF</span>)</a></td><td class="num">1021.00</td></tr>
+      <tr><td class="num line">372</td><td><a href="audio.c.html#L372">(<span style='background-color:#741da3;'>ao_c->ao_queue && mp_async_queue_get_frames(ao_c->ao_queue) && mpctx->audio_status == STATUS_SYNCING</span>)</a></td><td class="num">1018.50</td></tr>
+      <tr><td class="num line">879</td><td><a href="audio.c.html#L879">(<span style='background-color:#741da3;'>mpctx->ao && ao_is_playing(mpctx->ao) && mpctx->video_status != STATUS_EOF</span>)</a></td><td class="num">1018.50</td></tr>
+      <tr><td class="num line">109</td><td><a href="audio.c.html#L109">(<span style='background-color:#741da3;'>mpctx->audio_status == STATUS_PLAYING && delay - ndelay >= 0.2</span>)</a></td><td class="num">1013.85</td></tr>
+      <tr><td class="num line">944</td><td><a href="audio.c.html#L944">(!ao_c->ao || (!ao_is_playing(ao_c->ao) || (opts->gapless_audio && !ao_untimed(ao_c->ao))))</a></td><td class="num">69.75</td></tr>
+      <tr><td class="num line">903</td><td><a href="audio.c.html#L903">(ao_c->ao && !ao_is_playing(ao_c->ao) && !ao_c->underrun && (mpctx->audio_status == STATUS_PLAYING || mpctx->audio_status == STATUS_DRAINING))</a></td><td class="num">44.75</td></tr>
+      <tr><td class="num line">220</td><td><a href="audio.c.html#L220">((mpctx->opts->gapless_audio || mpctx->stop_play == AT_END_OF_FILE) && ao_is_playing(mpctx->ao) && !get_internal_paused(mpctx))</a></td><td class="num">36.50</td></tr>
+      <tr><td class="num line">653</td><td><a href="audio.c.html#L653">(!mp_pin_can_transfer_data(ao_c->queue_filter->pins[0], f->ppins[0]))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">429</td><td><a href="audio.c.html#L429">(out_rate != ao_rate || out_format != ao_format || !mp_chmap_equals(&out_channels, &ao_channels))</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">862</td><td><a href="audio.c.html#L862">(mpctx->vo_chain && ao_c->track && ao_c->track->dec && mp_decoder_wrapper_get_pts_reset(ao_c->track->dec))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">909</td><td><a href="audio.c.html#L909">(ao_c->out_eof && !mp_async_queue_get_frames(ao_c->ao_queue))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">67</td><td><a href="audio.c.html#L67">(mpctx->display_sync_active && mpctx->video_out->opts->video_sync == VS_DISP_ADROP)</a></td><td class="num">16.50</td></tr>
+      <tr><td class="num line">440</td><td><a href="audio.c.html#L440">(spdif_fallback && ao_c->track && ao_c->track->dec)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">803</td><td><a href="audio.c.html#L803">(!ao_c || !ao_c->ao || mpctx->audio_status != STATUS_READY)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">647</td><td><a href="audio.c.html#L647">(mpctx->audio_status == STATUS_SYNCING && !ao_c->start_pts_known)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="audio.c.html#L686">(mpctx->audio_status == STATUS_DRAINING || mpctx->audio_status == STATUS_EOF)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="audio.c.html#L885">(ao_c->start_pts_known != ok || ao_c->start_pts != pts)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="audio.c.html#L643">(mpctx->audio_status != STATUS_PLAYING && mp_async_queue_is_full(ao_c->ao_queue))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">713</td><td><a href="audio.c.html#L713">(mpctx->audio_status == STATUS_SYNCING && ao_is_playing(ao_c->ao))</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">935</td><td><a href="audio.c.html#L935">(mpctx->audio_status == STATUS_PLAYING && ao_c->out_eof)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">406</td><td><a href="audio.c.html#L406">(!opts->audio_output_channels.set || opts->audio_output_channels.auto_safe)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">367</td><td><a href="audio.c.html#L367">(mpctx->ao && ao_is_playing(mpctx->ao))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">839</td><td><a href="audio.c.html#L839">(mpctx->ao && ao_query_and_reset_events(mpctx->ao, AO_EVENT_RELOAD))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">842</td><td><a href="audio.c.html#L842">(mpctx->ao && ao_query_and_reset_events(mpctx->ao, AO_EVENT_INITIAL_UNBLOCK))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">891</td><td><a href="audio.c.html#L891">(ao_c->ao && mp_async_queue_is_full(ao_c->ao_queue))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">552</td><td><a href="audio.c.html#L552">(!ao_c->filter || !ao_c->ao_filter)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">80</td><td><a href="audio.c.html#L80">(!mp_output_chain_update_filters(ao_c->filter, mpctx->opts->af_settings))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">610</td><td><a href="audio.c.html#L610">(ao_c && new_throttle != ao_c->untimed_throttle)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="audio.c.html#L925">(ao_c->out_eof || mp_async_queue_is_full(ao_c->ao_queue))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="audio.c.html#L596">(pts == MP_NOPTS_VALUE || !mpctx->ao)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="audio.c.html#L396">(opts->ao_null_fallback && !spdif_fallback)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">428</td><td><a href="audio.c.html#L428">(mpctx->ao && af_fmt_is_spdif(out_format))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">129</td><td><a href="audio.c.html#L129">(opts->rgain_mode && rg)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">165</td><td><a href="audio.c.html#L165">(!ao_c || !ao_c->ao)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">202</td><td><a href="audio.c.html#L202">(t && t->dec)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">520</td><td><a href="audio.c.html#L520">(!track || !track->stream)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">752</td><td><a href="audio.c.html#L752">(ao_c && ao_c->track)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">754</td><td><a href="audio.c.html#L754">(dec && ao_c->spdif_failed)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">350</td><td><a href="audio.c.html#L350">(opts->audio_output_channels.num_chmaps == 1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">445</td><td><a href="audio.c.html#L445">(!mp_decoder_wrapper_reinit(ao_c->track->dec))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">62</td><td><a href="audio.c.html#L62">(!mpctx->opts->pitch_correction)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">135</td><td><a href="audio.c.html#L135">(opts->rgain_mode == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">171</td><td><a href="audio.c.html#L171">(opts->softvol_mute == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="audio.c.html#L308">(ao_c->ao != ao)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">380</td><td><a href="audio.c.html#L380">(mpctx->audio_status == STATUS_READY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="audio.c.html#L475">(mpctx->audio_status == STATUS_PLAYING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">783</td><td><a href="audio.c.html#L783">(mpctx->video_status < STATUS_READY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">785</td><td><a href="audio.c.html#L785">(mpctx->video_pts != MP_NOPTS_VALUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">815</td><td><a href="audio.c.html#L815">(mpctx->logged_async_diff != diff)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">870</td><td><a href="audio.c.html#L870">(mpctx->audio_status == STATUS_SYNCING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">941</td><td><a href="audio.c.html#L941">(mpctx->audio_status == STATUS_DRAINING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">320</td><td><a href="audio.c.html#L320">(ao_c->filter->ao_needs_update)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="audio.c.html#L852">(ao_c->filter->failed_output_conversion)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">857</td><td><a href="audio.c.html#L857">(ao_c->filter->ao_needs_update)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="audio.c.html#L503">(!mp_decoder_wrapper_reinit(track->dec))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">148</td><td><a href="audio.c.html#L148">(!opts->rgain_clip)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">438</td><td><a href="audio.c.html#L438">(!mpctx->ao)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">493</td><td><a href="audio.c.html#L493">(!track->stream)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">497</td><td><a href="audio.c.html#L497">(!track->dec)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">521</td><td><a href="audio.c.html#L521">(!mpctx->encode_lavc_ctx)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">622</td><td><a href="audio.c.html#L622">(!ao_c->queue_filter)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">666</td><td><a href="audio.c.html#L666">(!ao_c->out_eof)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">735</td><td><a href="audio.c.html#L735">(!mpctx->ao)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">776</td><td><a href="audio.c.html#L776">(!opts->initial_audio_sync)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">917</td><td><a href="audio.c.html#L917">(!ao_c->ao_underrun)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">629</td><td><a href="audio.c.html#L629">(frame.type == MP_FRAME_EOF)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">657</td><td><a href="audio.c.html#L657">(frame.type == MP_FRAME_AUDIO)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">720</td><td><a href="audio.c.html#L720">(frame.type == MP_FRAME_EOF)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">152</td><td><a href="audio.c.html#L152">(opts->rgain_fallback)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">199</td><td><a href="audio.c.html#L199">(mpctx->ao_chain)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">218</td><td><a href="audio.c.html#L218">(mpctx->ao)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="audio.c.html#L240">(ao_c->dec_src)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="audio.c.html#L246">(ao_c->filter_src)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">256</td><td><a href="audio.c.html#L256">(mpctx->ao_chain)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">346</td><td><a href="audio.c.html#L346">(opts->force_srate)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="audio.c.html#L348">(opts->audio_output_format)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="audio.c.html#L399">(opts->audio_stream_silence)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="audio.c.html#L402">(opts->audio_exclusive)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">424</td><td><a href="audio.c.html#L424">(mpctx->ao)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">500</td><td><a href="audio.c.html#L500">(track->ao_c)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="audio.c.html#L509">(track->sink)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="audio.c.html#L573">(mpctx->ao)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">650</td><td><a href="audio.c.html#L650">(ao_c->untimed_throttle)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="audio.c.html#L787">(mpctx->hrseek_active)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">806</td><td><a href="audio.c.html#L806">(!get_sync_pts(mpctx, &pts))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="audio.c.html#L826">(ao_c->out_eof)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">895</td><td><a href="audio.c.html#L895">(ao_c->out_eof)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">953</td><td><a href="audio.c.html#L953">(mpctx->restart_complete)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">960</td><td><a href="audio.c.html#L960">(mpctx->ao)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">102</td><td><a href="audio.c.html#L102">(recreate_audio_filters(mpctx) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">272</td><td><a href="audio.c.html#L272">(strcmp(hr_ch, ch) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">293</td><td><a href="audio.c.html#L293">(af_format_conversion_score(old_fmt, new_fmt) == INT_MIN)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">570</td><td><a href="audio.c.html#L570">(recreate_audio_filters(mpctx) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">664</td><td><a href="audio.c.html#L664">(mp_aframe_get_pts(af) >= endpts)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">858</td><td><a href="audio.c.html#L858">(reinit_audio_filters_and_output(mpctx) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">661</td><td><a href="audio.c.html#L661">(endpts != MP_NOPTS_VALUE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="audio.c.html#L634">(frame.type)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">296</td><td><a href="audio.c.html#L296">(!mp_aframe_set_format(new_mod, old_fmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">340</td><td><a href="audio.c.html#L340">(!mp_aframe_config_is_valid(out_fmt))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">562</td><td><a href="audio.c.html#L562">(!init_audio_decoder(mpctx, track))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">758</td><td><a href="audio.c.html#L758">(!mp_decoder_wrapper_reinit(dec))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">813</td><td><a href="audio.c.html#L813">(!get_internal_paused(mpctx))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">55</td><td><a href="audio.c.html#L55">(!ao_c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">97</td><td><a href="audio.c.html#L97">(!ao_c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">284</td><td><a href="audio.c.html#L284">(!new_mod)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">337</td><td><a href="audio.c.html#L337">(!out_fmt)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">678</td><td><a href="audio.c.html#L678">(!samples)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">849</td><td><a href="audio.c.html#L849">(!ao_c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">345</td><td><a href="audio.c.html#L345">(af_fmt_is_pcm(mp_aframe_get_format(out_fmt)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">405</td><td><a href="audio.c.html#L405">(af_fmt_is_pcm(out_format))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">127</td><td><a href="audio.c.html#L127">(track)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">213</td><td><a href="audio.c.html#L213">(ao_c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">237</td><td><a href="audio.c.html#L237">(track)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">559</td><td><a href="audio.c.html#L559">(track)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">744</td><td><a href="audio.c.html#L744">(ao_c)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">782</td><td><a href="audio.c.html#L782">(sync_to_video)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

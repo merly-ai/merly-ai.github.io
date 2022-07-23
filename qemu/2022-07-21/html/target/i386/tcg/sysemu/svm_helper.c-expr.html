@@ -1,0 +1,98 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../../merly.css">
+  <title>qemu Repo - target\i386\tcg\sysemu\svm_helper.c Ctrl Expressions (47) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - target\i386\tcg\sysemu\svm_helper.c Ctrl Expressions (47) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;target\i386\tcg\sysemu\svm_helper.c Ctrl Expressions (47)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">648</td><td><a href="svm_helper.c.html#L648">(<span style='background-color:#741da3;'>x86_ldub_phys(cs, addr + t1) & ((1 << param) << t0)</span>)</a></td><td class="num">1012.35</td></tr>
+      <tr><td class="num line">105</td><td><a href="svm_helper.c.html#L105">((env->efer & MSR_EFER_LME) && (env->cr[0] & CR0_PG_MASK) && (env->cr[4] & CR4_PAE_MASK) && (env->segs[R_CS].flags & DESC_L_MASK) && (env->segs[R_CS].flags & DESC_B_MASK))</a></td><td class="num">91.00</td></tr>
+      <tr><td class="num line">95</td><td><a href="svm_helper.c.html#L95">((env->efer & MSR_EFER_LME) && (env->cr[0] & CR0_PG_MASK) && !(env->cr[4] & CR4_PAE_MASK))</a></td><td class="num">59.00</td></tr>
+      <tr><td class="num line">100</td><td><a href="svm_helper.c.html#L100">((env->efer & MSR_EFER_LME) && (env->cr[0] & CR0_PG_MASK) && !(env->cr[0] & CR0_PE_MASK))</a></td><td class="num">59.00</td></tr>
+      <tr><td class="num line">129</td><td><a href="svm_helper.c.html#L129">(likely(!(env->hflags2 & HF2_NPT_MASK)) || !(env->efer & MSR_EFER_LMA))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">90</td><td><a href="svm_helper.c.html#L90">((env->efer & MSR_EFER_LMA | MSR_EFER_LME) && !(env->features[FEAT_8000_0001_EDX] & CPUID_EXT2_LM))</a></td><td class="num">49.75</td></tr>
+      <tr><td class="num line">290</td><td><a href="svm_helper.c.html#L290">((env->efer & MSR_EFER_LMA) && (new_cr3 & (~0ULL << cpu->phys_bits)))</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">250</td><td><a href="svm_helper.c.html#L250">((msrpm_base_pa & ~0xfff) >= (1ull << cpu->phys_bits) - SVM_MSRPM_SIZE)</a></td><td class="num">30.10</td></tr>
+      <tr><td class="num line">254</td><td><a href="svm_helper.c.html#L254">((iopm_base_pa & ~0xfff) >= (1ull << cpu->phys_bits) - SVM_IOPM_SIZE)</a></td><td class="num">30.10</td></tr>
+      <tr><td class="num line">673</td><td><a href="svm_helper.c.html#L673">(x86_lduw_phys(cs, addr + port / 8) & (mask << (port & 7)))</a></td><td class="num">29.45</td></tr>
+      <tr><td class="num line">612</td><td><a href="svm_helper.c.html#L612">(likely(!(env->hflags & HF_GUEST_MASK)))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="svm_helper.c.html#L574">(env->intercept_cr_read & (1 << (type - SVM_EXIT_READ_CR0)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">579</td><td><a href="svm_helper.c.html#L579">(env->intercept_cr_write & (1 << (type - SVM_EXIT_WRITE_CR0)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">584</td><td><a href="svm_helper.c.html#L584">(env->intercept_dr_read & (1 << (type - SVM_EXIT_READ_DR0)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">589</td><td><a href="svm_helper.c.html#L589">(env->intercept_dr_write & (1 << (type - SVM_EXIT_WRITE_DR0)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">594</td><td><a href="svm_helper.c.html#L594">(env->intercept_exceptions & (1 << (type - SVM_EXIT_EXCP_BASE)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">599</td><td><a href="svm_helper.c.html#L599">(env->intercept & (1ULL << (type - SVM_EXIT_INTR)))</a></td><td class="num">12.10</td></tr>
+      <tr><td class="num line">286</td><td><a href="svm_helper.c.html#L286">((new_cr0 & CR0_NW_MASK) && !(new_cr0 & CR0_CD_MASK))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">352</td><td><a href="svm_helper.c.html#L352">(env->dr[6] & DR_RESERVED_MASK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">355</td><td><a href="svm_helper.c.html#L355">(env->dr[7] & DR_RESERVED_MASK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">82</td><td><a href="svm_helper.c.html#L82">(!(env->efer & MSR_EFER_SVME))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">117</td><td><a href="svm_helper.c.html#L117">(likely(env->hflags & HF_GUEST_MASK))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">128</td><td><a href="svm_helper.c.html#L128">(likely(env->hflags & HF_GUEST_MASK))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">417</td><td><a href="svm_helper.c.html#L417">(vector == EXCP02_NMI || vector >= 31)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">86</td><td><a href="svm_helper.c.html#L86">(env->efer & MSR_EFER_RESERVED)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="svm_helper.c.html#L310">(env->int_ctl & V_INTR_MASKING_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="svm_helper.c.html#L312">(env->eflags & IF_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">667</td><td><a href="svm_helper.c.html#L667">(env->intercept & 1ULL << SVM_EXIT_IOIO - SVM_EXIT_INTR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">713</td><td><a href="svm_helper.c.html#L713">(env->hflags & HF_INHIBIT_IRQ_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">295</td><td><a href="svm_helper.c.html#L295">(new_cr4 & cr4_reserved_bits(env))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">267</td><td><a href="svm_helper.c.html#L267">(nested_ctl & SVM_NPT_ENABLED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="svm_helper.c.html#L283">(new_cr0 & SVM_CR0_RESERVED_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">389</td><td><a href="svm_helper.c.html#L389">(event_inj & SVM_EVTINJ_VALID)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">162</td><td><a href="svm_helper.c.html#L162">(aflag == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">263</td><td><a href="svm_helper.c.html#L263">(asid == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">458</td><td><a href="svm_helper.c.html#L458">(aflag == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="svm_helper.c.html#L505">(aflag == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="svm_helper.c.html#L620">(type == SVM_EXIT_MSR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">260</td><td><a href="svm_helper.c.html#L260">(!cpu_svm_has_intercept(env, SVM_EXIT_VMRUN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">616</td><td><a href="svm_helper.c.html#L616">(!cpu_svm_has_intercept(env, type))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">464</td><td><a href="svm_helper.c.html#L464">(virtual_vm_load_save_enabled(env, SVM_EXIT_VMLOAD, GETPC()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">511</td><td><a href="svm_helper.c.html#L511">(virtual_vm_load_save_enabled(env, SVM_EXIT_VMSAVE, GETPC()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">360</td><td><a href="svm_helper.c.html#L360">(is_efer_invalid_state(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">376</td><td><a href="svm_helper.c.html#L376">(ctl_has_irq(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="svm_helper.c.html#L382">(virtual_gif_set(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">550</td><td><a href="svm_helper.c.html#L550">(virtual_gif_enabled(env))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">562</td><td><a href="svm_helper.c.html#L562">(virtual_gif_enabled(env))</a></td><td class="num">0.25</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

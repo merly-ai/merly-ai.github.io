@@ -1,0 +1,498 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\core\service.c Ctrl Expressions (447) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\core\service.c Ctrl Expressions (447) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\service.c Ctrl Expressions (447)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1356</td><td><a href="service.c.html#L1356">(<span style='background-color:#741da3;'>(flags & EXEC_IS_CONTROL) && UNIT(s)->cgroup_path</span>)</a></td><td class="num">1030.50</td></tr>
+      <tr><td class="num line">309</td><td><a href="service.c.html#L309">(<span style='background-color:#741da3;'>!s->fd_store && s->stdin_fd < 0 && s->stdout_fd < 0 && s->stderr_fd < 0</span>)</a></td><td class="num">1029.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="service.c.html#L1261">(<span style='background-color:#741da3;'>(flags & EXEC_PASS_FDS) || s->exec_context.std_input == EXEC_INPUT_SOCKET || s->exec_context.std_output == EXEC_OUTPUT_SOCKET || s->exec_context.std_error == EXEC_OUTPUT_SOCKET</span>)</a></td><td class="num">1027.75</td></tr>
+      <tr><td class="num line">2986</td><td><a href="service.c.html#L2986">(<span style='background-color:#741da3;'>s->main_command && s->main_command->command_next && s->type == SERVICE_ONESHOT && f == SERVICE_SUCCESS</span>)</a></td><td class="num">1025.00</td></tr>
+      <tr><td class="num line">3547</td><td><a href="service.c.html#L3547">(<span style='background-color:#741da3;'>new_owner && s->main_pid <= 0 && IN_SET(s->state, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD)</span>)</a></td><td class="num">1015.25</td></tr>
+      <tr><td class="num line">1956</td><td><a href="service.c.html#L1956">(UNIT(s)->job && UNIT(s)->job->type == JOB_STOP)</a></td><td class="num">69.25</td></tr>
+      <tr><td class="num line">935</td><td><a href="service.c.html#L935">(!IN_SET(state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL) && !(state == SERVICE_DEAD && UNIT(s)->job))</a></td><td class="num">65.50</td></tr>
+      <tr><td class="num line">1022</td><td><a href="service.c.html#L1022">(s->main_pid > 0 && pid_is_unwaited(s->main_pid) && ((s->deserialized_state == SERVICE_START && IN_SET(s->type, SERVICE_FORKING, SERVICE_DBUS, SERVICE_ONESHOT, SERVICE_NOTIFY)) || IN_SET(s->deserialized_state, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL)))</a></td><td class="num">62.25</td></tr>
+      <tr><td class="num line">948</td><td><a href="service.c.html#L948">(state == SERVICE_EXITED && !MANAGER_IS_RELOADING(UNIT(s)->manager))</a></td><td class="num">61.00</td></tr>
+      <tr><td class="num line">532</td><td><a href="service.c.html#L532">(s->exec_context.pam_name && !(s->kill_context.kill_mode == KILL_CONTROL_GROUP || s->kill_context.kill_mode == KILL_MIXED))</a></td><td class="num">55.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="service.c.html#L954">(state == SERVICE_EXITED && s->remain_after_exit && UNIT(s)->manager->n_on_console > 0)</a></td><td class="num">52.25</td></tr>
+      <tr><td class="num line">1282</td><td><a href="service.c.html#L1282">(asprintf(our_env + n_env++, "NOTIFY_SOCKET=%s", UNIT(s)->manager->notify_socket) < 0)</a></td><td class="num">49.35</td></tr>
+      <tr><td class="num line">519</td><td><a href="service.c.html#L519">(s->type == SERVICE_ONESHOT && !exit_status_set_is_empty(&s->restart_force_status))</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">1541</td><td><a href="service.c.html#L1541">(s->exec_context.runtime_directory_preserve_mode == EXEC_PRESERVE_NO || (s->exec_context.runtime_directory_preserve_mode == EXEC_PRESERVE_RESTART && !service_will_restart(s)))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">2922</td><td><a href="service.c.html#L2922">(is_clean_exit(code, status, s->type == SERVICE_ONESHOT ? EXIT_CLEAN_COMMAND : EXIT_CLEAN_DAEMON, &s->success_status))</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="service.c.html#L509">(s->type != SERVICE_ONESHOT && s->exec_command[SERVICE_EXEC_START]->command_next)</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">1335</td><td><a href="service.c.html#L1335">(s->main_exec_status.pid > 0 && dual_timestamp_is_set(&s->main_exec_status.exit_timestamp))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">499</td><td><a href="service.c.html#L499">(s->type != SERVICE_ONESHOT && !s->exec_command[SERVICE_EXEC_START])</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">1337</td><td><a href="service.c.html#L1337">(asprintf(our_env + n_env++, "EXIT_CODE=%s", sigchld_code_to_string(s->main_exec_status.code)) < 0)</a></td><td class="num">28.60</td></tr>
+      <tr><td class="num line">494</td><td><a href="service.c.html#L494">(!s->exec_command[SERVICE_EXEC_START] && !s->exec_command[SERVICE_EXEC_STOP])</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">504</td><td><a href="service.c.html#L504">(!s->remain_after_exit && !s->exec_command[SERVICE_EXEC_START])</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1497</td><td><a href="service.c.html#L1497">(UNIT(s)->job->type == JOB_START)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1332</td><td><a href="service.c.html#L1332">(asprintf(our_env + n_env++, "SERVICE_RESULT=%s", service_result_to_string(s->result)) < 0)</a></td><td class="num">27.35</td></tr>
+      <tr><td class="num line">1286</td><td><a href="service.c.html#L1286">(asprintf(our_env + n_env++, "MAINPID=", s->main_pid) < 0)</a></td><td class="num">27.10</td></tr>
+      <tr><td class="num line">2596</td><td><a href="service.c.html#L2596">(safe_atoi(value, &fd) < 0 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2610</td><td><a href="service.c.html#L2610">(safe_atoi(fdv, &fd) < 0 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2665</td><td><a href="service.c.html#L2665">(safe_atoi(value, &fd) < 0 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2675</td><td><a href="service.c.html#L2675">(safe_atoi(value, &fd) < 0 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">2685</td><td><a href="service.c.html#L2685">(safe_atoi(value, &fd) < 0 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">597</td><td><a href="service.c.html#L597">(s->exec_context.std_error == EXEC_OUTPUT_INHERIT && s->exec_context.std_output == EXEC_OUTPUT_INHERIT && s->exec_context.std_input == EXEC_INPUT_NULL)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">2960</td><td><a href="service.c.html#L2960">(s->exec_command[SERVICE_EXEC_START]->flags & EXEC_COMMAND_IGNORE_FAILURE)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">491</td><td><a href="service.c.html#L491">(UNIT(s)->load_state != UNIT_LOADED)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3582</td><td><a href="service.c.html#L3582">(UNIT(s)->load_state != UNIT_LOADED)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">176</td><td><a href="service.c.html#L176">(get_process_ppid(pid, &ppid) >= 0 && ppid != getpid_cached())</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3449</td><td><a href="service.c.html#L3449">(safe_atoi(e, &status_errno) < 0 || status_errno < 0)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1303</td><td><a href="service.c.html#L1303">(r != -ENOTCONN || !IN_SET(s->control_command_id, SERVICE_EXEC_STOP, SERVICE_EXEC_STOP_POST))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">554</td><td><a href="service.c.html#L554">(!UNIT(s)->default_dependencies)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1437</td><td><a href="service.c.html#L1437">(!UNIT(s)->cgroup_path)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1495</td><td><a href="service.c.html#L1495">(!UNIT(s)->job)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">1290</td><td><a href="service.c.html#L1290">(asprintf(our_env + n_env++, "MANAGERPID=", getpid_cached()) < 0)</a></td><td class="num">24.10</td></tr>
+      <tr><td class="num line">560</td><td><a href="service.c.html#L560">(MANAGER_IS_SYSTEM(UNIT(s)->manager))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1289</td><td><a href="service.c.html#L1289">(MANAGER_IS_USER(UNIT(s)->manager))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1804</td><td><a href="service.c.html#L1804">(UNIT(s)->cgroup_path)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">3593</td><td><a href="service.c.html#L3593">(UNIT(s)->description)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">3353</td><td><a href="service.c.html#L3353">(s->notify_access == NOTIFY_EXEC && pid != s->main_pid && pid != s->control_pid)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1035</td><td><a href="service.c.html#L1035">(s->control_pid > 0 && pid_is_unwaited(s->control_pid) && IN_SET(s->deserialized_state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">602</td><td><a href="service.c.html#L602">(s->exec_context.std_output == EXEC_OUTPUT_INHERIT && s->exec_context.std_input == EXEC_INPUT_NULL)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">3083</td><td><a href="service.c.html#L3083">(s->control_command && s->control_command->command_next && f == SERVICE_SUCCESS)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">514</td><td><a href="service.c.html#L514">(s->type == SERVICE_ONESHOT && s->restart != SERVICE_RESTART_NO)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">543</td><td><a href="service.c.html#L543">(s->runtime_max_usec != USEC_INFINITY && s->type == SERVICE_ONESHOT)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">666</td><td><a href="service.c.html#L666">(s->type == SERVICE_NOTIFY && s->notify_access == NOTIFY_NONE)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">669</td><td><a href="service.c.html#L669">(s->watchdog_usec > 0 && s->notify_access == NOTIFY_NONE)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1455</td><td><a href="service.c.html#L1455">(exit_status_set_test(&s->restart_prevent_status, s->main_exec_status.code, s->main_exec_status.status))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1459</td><td><a href="service.c.html#L1459">(exit_status_set_test(&s->restart_force_status, s->main_exec_status.code, s->main_exec_status.status))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3347</td><td><a href="service.c.html#L3347">(s->notify_access == NOTIFY_MAIN && pid != s->main_pid)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3354</td><td><a href="service.c.html#L3354">(s->main_pid != 0 && s->control_pid != 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3401</td><td><a href="service.c.html#L3401">(s->type == SERVICE_NOTIFY && s->state == SERVICE_START)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3406</td><td><a href="service.c.html#L3406">(s->state == SERVICE_RELOAD && s->control_pid == 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">524</td><td><a href="service.c.html#L524">(s->type == SERVICE_DBUS && !s->bus_name)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">649</td><td><a href="service.c.html#L649">(s->type == SERVICE_ONESHOT && !s->start_timeout_defined)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1712</td><td><a href="service.c.html#L1712">(s->type == SERVICE_DBUS && !s->bus_name_good)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">165</td><td><a href="service.c.html#L165">(s->main_pid == pid && s->main_pid_known)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">529</td><td><a href="service.c.html#L529">(s->bus_name && s->type != SERVICE_DBUS)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1413</td><td><a href="service.c.html#L1413">(s->main_pid_alien && s->main_pid > 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2329</td><td><a href="service.c.html#L2329">(s->main_pid_known && s->main_pid > 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">537</td><td><a href="service.c.html#L537">(s->usb_function_descriptors && !s->usb_function_strings)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">540</td><td><a href="service.c.html#L540">(!s->usb_function_descriptors && s->usb_function_strings)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">2486</td><td><a href="service.c.html#L2486">(strv_equal(command->argv, argv) && streq(command->path, path))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2745</td><td><a href="service.c.html#L2745">(cgroup_good(s) > 0 || main_pid_good(s) > 0 || control_pid_good(s) > 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1647</td><td><a href="service.c.html#L1647">(state == SERVICE_FINAL_SIGTERM && s->kill_context.send_sigkill)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">3215</td><td><a href="service.c.html#L3215">(cg_unified_controller(SYSTEMD_CGROUP_CONTROLLER) == 0 && set_isempty(u->pids))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3544</td><td><a href="service.c.html#L3544">(s->state == SERVICE_START && new_owner)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">390</td><td><a href="service.c.html#L390">(s->n_fd_store >= s->n_fd_store_max)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1015</td><td><a href="service.c.html#L1015">(s->deserialized_state == s->state)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1643</td><td><a href="service.c.html#L1643">(IN_SET(state, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM) && s->kill_context.send_sigkill)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2952</td><td><a href="service.c.html#L2952">(s->main_command->flags & EXEC_COMMAND_IGNORE_FAILURE)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">3067</td><td><a href="service.c.html#L3067">(s->control_command->flags & EXEC_COMMAND_IGNORE_FAILURE)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">418</td><td><a href="service.c.html#L418">(r < 0 && r != -EPERM)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1063</td><td><a href="service.c.html#L1063">(socket_acquire_peer(socket, s->socket_fd, &peer) > 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1307</td><td><a href="service.c.html#L1307">(r == 0 && IN_SET(sa.sa.sa_family, AF_INET, AF_INET6, AF_VSOCK))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2897</td><td><a href="service.c.html#L2897">(main_pid_good(s) <= 0 && !control_pid_good(s))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2905</td><td><a href="service.c.html#L2905">(main_pid_good(s) <= 0 && !control_pid_good(s))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3369</td><td><a href="service.c.html#L3369">(e && IN_SET(s->state, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2384</td><td><a href="service.c.html#L2384">(dual_timestamp_is_set(&s->main_exec_status.exit_timestamp))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3374</td><td><a href="service.c.html#L3374">(pid == getpid_cached() || pid == 1)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">221</td><td><a href="service.c.html#L221">(watchdog_usec == 0 || watchdog_usec == USEC_INFINITY)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1340</td><td><a href="service.c.html#L1340">(s->main_exec_status.code == CLD_EXITED)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2379</td><td><a href="service.c.html#L2379">(s->main_exec_status.pid > 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3131</td><td><a href="service.c.html#L3131">(!has_start_post && r < 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">787</td><td><a href="service.c.html#L787">(!s->exec_command[c])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">127</td><td><a href="service.c.html#L127">(s->control_pid <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">137</td><td><a href="service.c.html#L137">(s->main_pid <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">168</td><td><a href="service.c.html#L168">(s->main_pid != pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">638</td><td><a href="service.c.html#L638">(s->type == _SERVICE_TYPE_INVALID)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">695</td><td><a href="service.c.html#L695">(u->load_state == UNIT_STUB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="service.c.html#L699">(u->load_state == UNIT_LOADED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">751</td><td><a href="service.c.html#L751">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">756</td><td><a href="service.c.html#L756">(s->main_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">800</td><td><a href="service.c.html#L800">(s->n_fd_store_max > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">841</td><td><a href="service.c.html#L841">(pid == s->main_pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">965</td><td><a href="service.c.html#L965">(m->n_on_console == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1059</td><td><a href="service.c.html#L1059">(socket->max_connections_per_source > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1090</td><td><a href="service.c.html#L1090">(s->socket_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1115</td><td><a href="service.c.html#L1115">(u->type != UNIT_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="service.c.html#L1151">(s->n_fd_store > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1285</td><td><a href="service.c.html#L1285">(s->main_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1293</td><td><a href="service.c.html#L1293">(s->socket_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1376</td><td><a href="service.c.html#L1376">(s->type == SERVICE_IDLE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1493</td><td><a href="service.c.html#L1493">(s->state == SERVICE_AUTO_RESTART)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1512</td><td><a href="service.c.html#L1512">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1517</td><td><a href="service.c.html#L1517">(s->result != SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1569</td><td><a href="service.c.html#L1569">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1622</td><td><a href="service.c.html#L1622">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1679</td><td><a href="service.c.html#L1679">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1731</td><td><a href="service.c.html#L1731">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1740</td><td><a href="service.c.html#L1740">(s->notify_state == NOTIFY_RELOADING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1742</td><td><a href="service.c.html#L1742">(s->notify_state == NOTIFY_STOPPING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1792</td><td><a href="service.c.html#L1792">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1808</td><td><a href="service.c.html#L1808">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1839</td><td><a href="service.c.html#L1839">(s->type == SERVICE_FORKING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1852</td><td><a href="service.c.html#L1852">(s->type != SERVICE_ONESHOT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1887</td><td><a href="service.c.html#L1887">(s->type == SERVICE_FORKING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2085</td><td><a href="service.c.html#L2085">(s->state == SERVICE_STOP_POST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2087</td><td><a href="service.c.html#L2087">(s->state == SERVICE_RELOAD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2147</td><td><a href="service.c.html#L2147">(s->state == SERVICE_AUTO_RESTART)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2203</td><td><a href="service.c.html#L2203">(s->state == SERVICE_AUTO_RESTART)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2271</td><td><a href="service.c.html#L2271">(command == s->control_command)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2290</td><td><a href="service.c.html#L2290">(!GREEDY_REALLOC(args, allocated, length + 1 + n + 1))</a></td><td class="num">5.55</td></tr>
+      <tr><td class="num line">2326</td><td><a href="service.c.html#L2326">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2867</td><td><a href="service.c.html#L2867">(s->type == SERVICE_NOTIFY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2881</td><td><a href="service.c.html#L2881">(s->state == SERVICE_START)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2933</td><td><a href="service.c.html#L2933">(s->main_pid == pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2983</td><td><a href="service.c.html#L2983">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3013</td><td><a href="service.c.html#L3013">(s->type == SERVICE_ONESHOT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3020</td><td><a href="service.c.html#L3020">(s->type == SERVICE_NOTIFY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3061</td><td><a href="service.c.html#L3061">(s->control_pid == pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3075</td><td><a href="service.c.html#L3075">(s->result == SERVICE_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3112</td><td><a href="service.c.html#L3112">(s->type != SERVICE_FORKING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3133</td><td><a href="service.c.html#L3133">(r < 0 || !cgroup_good(s))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3155</td><td><a href="service.c.html#L3155">(r < 0 || !cgroup_good(s))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3344</td><td><a href="service.c.html#L3344">(s->notify_access == NOTIFY_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3348</td><td><a href="service.c.html#L3348">(s->main_pid != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3357</td><td><a href="service.c.html#L3357">(s->main_pid != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3359</td><td><a href="service.c.html#L3359">(s->control_pid != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3372</td><td><a href="service.c.html#L3372">(pid == s->control_pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3388</td><td><a href="service.c.html#L3388">(s->state == SERVICE_RUNNING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3417</td><td><a href="service.c.html#L3417">(s->state == SERVICE_RUNNING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3452</td><td><a href="service.c.html#L3452">(s->status_errno != status_errno)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3538</td><td><a href="service.c.html#L3538">(s->type == SERVICE_DBUS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3542</td><td><a href="service.c.html#L3542">(s->state == SERVICE_RUNNING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3585</td><td><a href="service.c.html#L3585">(s->socket_fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3588</td><td><a href="service.c.html#L3588">(s->state != SERVICE_DEAD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3624</td><td><a href="service.c.html#L3624">(s->state == SERVICE_FAILED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">642</td><td><a href="service.c.html#L642">(s->exec_command[SERVICE_EXEC_START])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">878</td><td><a href="service.c.html#L878">(unit_search_main_pid(UNIT(s), &pid) < 0)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2954</td><td><a href="service.c.html#L2954">(s->exec_command[SERVICE_EXEC_START])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1325</td><td><a href="service.c.html#L1325">(asprintf(&t, "REMOTE_PORT=%u", port) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2538</td><td><a href="service.c.html#L2538">(parse_pid(value, &pid) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2545</td><td><a href="service.c.html#L2545">(parse_pid(value, &pid) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2630</td><td><a href="service.c.html#L2630">(parse_pid(value, &pid) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2637</td><td><a href="service.c.html#L2637">(safe_atoi(value, &i) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2644</td><td><a href="service.c.html#L2644">(safe_atoi(value, &i) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2694</td><td><a href="service.c.html#L2694">(timestamp_deserialize(value, &watchdog_override_usec) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3370</td><td><a href="service.c.html#L3370">(parse_pid(e, &pid) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3467</td><td><a href="service.c.html#L3467">(name && !fdname_is_valid(name))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3478</td><td><a href="service.c.html#L3478">(safe_atou64(e, &watchdog_override_usec) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3591</td><td><a href="service.c.html#L3591">(getpeername_pretty(fd, true, &peer) >= 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3261</td><td><a href="service.c.html#L3261">(s->kill_context.send_sigkill)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3286</td><td><a href="service.c.html#L3286">(s->kill_context.send_sigkill)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="service.c.html#L1047">(!IN_SET(s->deserialized_state, SERVICE_DEAD, SERVICE_FAILED, SERVICE_AUTO_RESTART))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1053</td><td><a href="service.c.html#L1053">(!IN_SET(s->deserialized_state, SERVICE_DEAD, SERVICE_FAILED, SERVICE_AUTO_RESTART))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3438</td><td><a href="service.c.html#L3438">(!streq_ptr(s->status_text, t))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">145</td><td><a href="service.c.html#L145">(!s->pid_file_pathspec)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">412</td><td><a href="service.c.html#L412">(!fs->fdname)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">612</td><td><a href="service.c.html#L612">(!s->bus_name)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">817</td><td><a href="service.c.html#L817">(!s->pid_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">873</td><td><a href="service.c.html#L873">(!s->guess_main_pid)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">961</td><td><a href="service.c.html#L961">(ec && exec_context_may_touch_console(ec))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1522</td><td><a href="service.c.html#L1522">(allow_restart && service_shall_restart(s))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2801</td><td><a href="service.c.html#L2801">(!ps->path)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3026</td><td><a href="service.c.html#L3026">(!s->remain_after_exit)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3494</td><td><a href="service.c.html#L3494">(!s->timer_event_source)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2490</td><td><a href="service.c.html#L2490">(command && control)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">3522</td><td><a href="service.c.html#L3522">(old_owner && new_owner)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">192</td><td><a href="service.c.html#L192">(UNIT_ISSET(s->accept_socket))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">777</td><td><a href="service.c.html#L777">(UNIT_ISSET(s->accept_socket))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1050</td><td><a href="service.c.html#L1050">(IN_SET(s->deserialized_state, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1056</td><td><a href="service.c.html#L1056">(UNIT_ISSET(s->accept_socket))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1865</td><td><a href="service.c.html#L1865">(IN_SET(s->type, SERVICE_SIMPLE, SERVICE_IDLE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1880</td><td><a href="service.c.html#L1880">(IN_SET(s->type, SERVICE_SIMPLE, SERVICE_IDLE))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1895</td><td><a href="service.c.html#L1895">(IN_SET(s->type, SERVICE_ONESHOT, SERVICE_DBUS, SERVICE_NOTIFY))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2063</td><td><a href="service.c.html#L2063">(IN_SET(s->state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2083</td><td><a href="service.c.html#L2083">(IN_SET(s->state, SERVICE_START_PRE, SERVICE_STOP))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2131</td><td><a href="service.c.html#L2131">(IN_SET(s->state, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2137</td><td><a href="service.c.html#L2137">(IN_SET(s->state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2197</td><td><a href="service.c.html#L2197">(IN_SET(s->state, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2210</td><td><a href="service.c.html#L2210">(IN_SET(s->state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RELOAD))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2356</td><td><a href="service.c.html#L2356">(UNIT_ISSET(s->accept_socket))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">208</td><td><a href="service.c.html#L208">(s->watchdog_override_enable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">224</td><td><a href="service.c.html#L224">(s->watchdog_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="service.c.html#L278">(fs->service)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">284</td><td><a href="service.c.html#L284">(fs->event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">298</td><td><a href="service.c.html#L298">(s->fd_store)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">347</td><td><a href="service.c.html#L347">(s->bus_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">463</td><td><a href="service.c.html#L463">(s->timer_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">640</td><td><a href="service.c.html#L640">(s->bus_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">765</td><td><a href="service.c.html#L765">(s->pid_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">770</td><td><a href="service.c.html#L770">(s->bus_name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">796</td><td><a href="service.c.html#L796">(s->status_text)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">840</td><td><a href="service.c.html#L840">(s->main_pid_known)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="service.c.html#L870">(s->main_pid_known)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1204</td><td><a href="service.c.html#L1204">(flags & EXEC_IS_CONTROL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1238</td><td><a href="service.c.html#L1238">(flags & EXEC_IS_CONTROL)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="service.c.html#L1240">(s->permissions_start_only)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1242</td><td><a href="service.c.html#L1242">(s->root_directory_start_only)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1247</td><td><a href="service.c.html#L1247">(s->reset_accounting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1331</td><td><a href="service.c.html#L1331">(flags & EXEC_SETENV_RESULT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1409</td><td><a href="service.c.html#L1409">(s->main_pid_known)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1451</td><td><a href="service.c.html#L1451">(s->forbid_restart)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1555</td><td><a href="service.c.html#L1555">(s->pid_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1576</td><td><a href="service.c.html#L1576">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1686</td><td><a href="service.c.html#L1686">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1751</td><td><a href="service.c.html#L1751">(s->remain_after_exit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1765</td><td><a href="service.c.html#L1765">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1924</td><td><a href="service.c.html#L1924">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2027</td><td><a href="service.c.html#L2027">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2179</td><td><a href="service.c.html#L2179">(s->flush_n_restarts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2300</td><td><a href="service.c.html#L2300">(!GREEDY_REALLOC(args, allocated, length + 1))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">2394</td><td><a href="service.c.html#L2394">(s->watchdog_override_enable)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2876</td><td><a href="service.c.html#L2876">(s->pid_file_pathspec)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2943</td><td><a href="service.c.html#L2943">(s->main_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3064</td><td><a href="service.c.html#L3064">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3121</td><td><a href="service.c.html#L3121">(s->pid_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3149</td><td><a href="service.c.html#L3149">(s->pid_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">162</td><td><a href="service.c.html#L162">(pid == getpid_cached())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">436</td><td><a href="service.c.html#L436">(fdset_size(fds) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">882</td><td><a href="service.c.html#L882">(service_set_main_pid(s, pid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1173</td><td><a href="service.c.html#L1173">(!rfd_names[n_fds])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2834</td><td><a href="service.c.html#L2834">(path_spec_fd_event(p, events) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2837</td><td><a href="service.c.html#L2837">(service_retry_pid_file(s) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2840</td><td><a href="service.c.html#L2840">(service_watch_pid_file(s) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2937</td><td><a href="service.c.html#L2937">(service_load_pid_file(s, false) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3167</td><td><a href="service.c.html#L3167">(service_load_pid_file(s, true) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3181</td><td><a href="service.c.html#L3181">(main_pid_good(s) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3192</td><td><a href="service.c.html#L3192">(main_pid_good(s) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">159</td><td><a href="service.c.html#L159">(pid <= 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">226</td><td><a href="service.c.html#L226">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">239</td><td><a href="service.c.html#L239">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">251</td><td><a href="service.c.html#L251">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="service.c.html#L397">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="service.c.html#L399">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">422</td><td><a href="service.c.html#L422">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="service.c.html#L440">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="service.c.html#L444">(r == -EXFULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">448</td><td><a href="service.c.html#L448">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">450</td><td><a href="service.c.html#L450">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">465</td><td><a href="service.c.html#L465">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">471</td><td><a href="service.c.html#L471">(usec == USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">480</td><td><a href="service.c.html#L480">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="service.c.html#L566">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="service.c.html#L574">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="service.c.html#L582">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="service.c.html#L616">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">621</td><td><a href="service.c.html#L621">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">625</td><td><a href="service.c.html#L625">(r == -EEXIST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">627</td><td><a href="service.c.html#L627">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">655</td><td><a href="service.c.html#L655">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">659</td><td><a href="service.c.html#L659">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">663</td><td><a href="service.c.html#L663">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">673</td><td><a href="service.c.html#L673">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="service.c.html#L677">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">691</td><td><a href="service.c.html#L691">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">704</td><td><a href="service.c.html#L704">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="service.c.html#L710">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">785</td><td><a href="service.c.html#L785">(c < _SERVICE_EXEC_COMMAND_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="service.c.html#L821">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="service.c.html#L828">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="service.c.html#L852">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">856</td><td><a href="service.c.html#L856">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">886</td><td><a href="service.c.html#L886">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="service.c.html#L971">(old_state != state)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1019</td><td><a href="service.c.html#L1019">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="service.c.html#L1031">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1043</td><td><a href="service.c.html#L1043">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1121</td><td><a href="service.c.html#L1121">(cn_fds < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1124</td><td><a href="service.c.html#L1124">(cn_fds <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="service.c.html#L1146">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1254</td><td><a href="service.c.html#L1254">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1258</td><td><a href="service.c.html#L1258">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1267</td><td><a href="service.c.html#L1267">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1274</td><td><a href="service.c.html#L1274">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1298</td><td><a href="service.c.html#L1298">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="service.c.html#L1313">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1322</td><td><a href="service.c.html#L1322">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="service.c.html#L1344">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1389</td><td><a href="service.c.html#L1389">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1393</td><td><a href="service.c.html#L1393">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="service.c.html#L1441">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1525</td><td><a href="service.c.html#L1525">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1584</td><td><a href="service.c.html#L1584">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1634</td><td><a href="service.c.html#L1634">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1637</td><td><a href="service.c.html#L1637">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1639</td><td><a href="service.c.html#L1639">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1694</td><td><a href="service.c.html#L1694">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1716</td><td><a href="service.c.html#L1716">(main_pid_ok > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1718</td><td><a href="service.c.html#L1718">(main_pid_ok == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1749</td><td><a href="service.c.html#L1749">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1773</td><td><a href="service.c.html#L1773">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1794</td><td><a href="service.c.html#L1794">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1810</td><td><a href="service.c.html#L1810">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1818</td><td><a href="service.c.html#L1818">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1877</td><td><a href="service.c.html#L1877">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1936</td><td><a href="service.c.html#L1936">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="service.c.html#L1961">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1972</td><td><a href="service.c.html#L1972">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2014</td><td><a href="service.c.html#L2014">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2035</td><td><a href="service.c.html#L2035">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2075</td><td><a href="service.c.html#L2075">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2111</td><td><a href="service.c.html#L2111">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2154</td><td><a href="service.c.html#L2154">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2160</td><td><a href="service.c.html#L2160">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2250</td><td><a href="service.c.html#L2250">(c != first)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2293</td><td><a href="service.c.html#L2293">(length > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2340</td><td><a href="service.c.html#L2340">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2347</td><td><a href="service.c.html#L2347">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2350</td><td><a href="service.c.html#L2350">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2353</td><td><a href="service.c.html#L2353">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2358</td><td><a href="service.c.html#L2358">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2363</td><td><a href="service.c.html#L2363">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2371</td><td><a href="service.c.html#L2371">(copy < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2431</td><td><a href="service.c.html#L2431">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2433</td><td><a href="service.c.html#L2433">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2439</td><td><a href="service.c.html#L2439">(id < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2446</td><td><a href="service.c.html#L2446">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2461</td><td><a href="service.c.html#L2461">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="service.c.html#L2470">(state != STATE_EXEC_COMMAND_ARGS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2475</td><td><a href="service.c.html#L2475">(i != idx)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2513</td><td><a href="service.c.html#L2513">(state < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2521</td><td><a href="service.c.html#L2521">(f < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2523</td><td><a href="service.c.html#L2523">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2530</td><td><a href="service.c.html#L2530">(f < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2532</td><td><a href="service.c.html#L2532">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2555</td><td><a href="service.c.html#L2555">(b < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2563</td><td><a href="service.c.html#L2563">(b < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="service.c.html#L2569">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2575</td><td><a href="service.c.html#L2575">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2586</td><td><a href="service.c.html#L2586">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2621</td><td><a href="service.c.html#L2621">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2658</td><td><a href="service.c.html#L2658">(b < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2702</td><td><a href="service.c.html#L2702">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2707</td><td><a href="service.c.html#L2707">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2712</td><td><a href="service.c.html#L2712">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2760</td><td><a href="service.c.html#L2760">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2775</td><td><a href="service.c.html#L2775">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2924</td><td><a href="service.c.html#L2924">(code == CLD_EXITED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2926</td><td><a href="service.c.html#L2926">(code == CLD_KILLED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="service.c.html#L2928">(code == CLD_DUMPED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3015</td><td><a href="service.c.html#L3015">(f == SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3024</td><td><a href="service.c.html#L3024">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3105</td><td><a href="service.c.html#L3105">(f == SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3116</td><td><a href="service.c.html#L3116">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3144</td><td><a href="service.c.html#L3144">(f != SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3153</td><td><a href="service.c.html#L3153">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3166</td><td><a href="service.c.html#L3166">(f == SERVICE_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3498</td><td><a href="service.c.html#L3498">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3500</td><td><a href="service.c.html#L3500">(t == USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3533</td><td><a href="service.c.html#L3533">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3561</td><td><a href="service.c.html#L3561">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3563</td><td><a href="service.c.html#L3563">(r >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3604</td><td><a href="service.c.html#L3604">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3609</td><td><a href="service.c.html#L3609">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">834</td><td><a href="service.c.html#L834">(!pid_is_alive(pid))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">904</td><td><a href="service.c.html#L904">(!IN_SET(state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL, SERVICE_AUTO_RESTART))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">913</td><td><a href="service.c.html#L913">(!IN_SET(state, SERVICE_START, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">922</td><td><a href="service.c.html#L922">(!IN_SET(state, SERVICE_START_PRE, SERVICE_START, SERVICE_START_POST, SERVICE_RELOAD, SERVICE_STOP, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL, SERVICE_STOP_POST, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">943</td><td><a href="service.c.html#L943">(!IN_SET(state, SERVICE_START_POST, SERVICE_RUNNING, SERVICE_RELOAD))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2456</td><td><a href="service.c.html#L2456">(!path_is_absolute(path))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3042</td><td><a href="service.c.html#L3042">(!control_pid_good(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3052</td><td><a href="service.c.html#L3052">(!control_pid_good(s))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3428</td><td><a href="service.c.html#L3428">(!isempty(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3429</td><td><a href="service.c.html#L3429">(!utf8_is_valid(e))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">275</td><td><a href="service.c.html#L275">(!fs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">406</td><td><a href="service.c.html#L406">(!fs)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1095</td><td><a href="service.c.html#L1095">(!rfds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1100</td><td><a href="service.c.html#L1100">(!rfd_names)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1127</td><td><a href="service.c.html#L1127">(!rfds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1136</td><td><a href="service.c.html#L1136">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1158</td><td><a href="service.c.html#L1158">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1164</td><td><a href="service.c.html#L1164">(!nl)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1278</td><td><a href="service.c.html#L1278">(!our_env)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1317</td><td><a href="service.c.html#L1317">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1353</td><td><a href="service.c.html#L1353">(!final_env)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1851</td><td><a href="service.c.html#L1851">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2268</td><td><a href="service.c.html#L2268">(!command)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2286</td><td><a href="service.c.html#L2286">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2305</td><td><a href="service.c.html#L2305">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2482</td><td><a href="service.c.html#L2482">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2796</td><td><a href="service.c.html#L2796">(!ps)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3433</td><td><a href="service.c.html#L3433">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3597</td><td><a href="service.c.html#L3597">(!a)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1509</td><td><a href="service.c.html#L1509">(unit_stop_pending(UNIT(s)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">932</td><td><a href="service.c.html#L932">(IN_SET(state, SERVICE_DEAD, SERVICE_FAILED, SERVICE_AUTO_RESTART))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="service.c.html#L1281">(service_exec_needs_notify_socket(s, flags))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1645</td><td><a href="service.c.html#L1645">(IN_SET(state, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1657</td><td><a href="service.c.html#L1657">(IN_SET(state, SERVICE_STOP_SIGABRT, SERVICE_STOP_SIGTERM, SERVICE_STOP_SIGKILL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1736</td><td><a href="service.c.html#L1736">(service_good(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2509</td><td><a href="service.c.html#L2509">(streq(key, "state"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2517</td><td><a href="service.c.html#L2517">(streq(key, "result"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2526</td><td><a href="service.c.html#L2526">(streq(key, "reload-result"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="service.c.html#L2535">(streq(key, "control-pid"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2542</td><td><a href="service.c.html#L2542">(streq(key, "main-pid"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2551</td><td><a href="service.c.html#L2551">(streq(key, "main-pid-known"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2559</td><td><a href="service.c.html#L2559">(streq(key, "bus-name-good"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2567</td><td><a href="service.c.html#L2567">(streq(key, "bus-name-owner"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2571</td><td><a href="service.c.html#L2571">(streq(key, "status-text"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2582</td><td><a href="service.c.html#L2582">(streq(key, "accept-socket"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2593</td><td><a href="service.c.html#L2593">(streq(key, "socket-fd"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2602</td><td><a href="service.c.html#L2602">(streq(key, "fd-store-fd"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2627</td><td><a href="service.c.html#L2627">(streq(key, "main-exec-status-pid"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2634</td><td><a href="service.c.html#L2634">(streq(key, "main-exec-status-code"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2641</td><td><a href="service.c.html#L2641">(streq(key, "main-exec-status-status"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2648</td><td><a href="service.c.html#L2648">(streq(key, "main-exec-status-start"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2650</td><td><a href="service.c.html#L2650">(streq(key, "main-exec-status-exit"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2652</td><td><a href="service.c.html#L2652">(streq(key, "watchdog-timestamp"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2654</td><td><a href="service.c.html#L2654">(streq(key, "forbid-restart"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2662</td><td><a href="service.c.html#L2662">(streq(key, "stdin-fd"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2672</td><td><a href="service.c.html#L2672">(streq(key, "stdout-fd"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2682</td><td><a href="service.c.html#L2682">(streq(key, "stderr-fd"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2692</td><td><a href="service.c.html#L2692">(streq(key, "watchdog-override-usec"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2700</td><td><a href="service.c.html#L2700">(STR_IN_SET(key, "main-command", "control-command"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2705</td><td><a href="service.c.html#L2705">(streq(key, "n-restarts"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2710</td><td><a href="service.c.html#L2710">(streq(key, "flush-n-restarts"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3384</td><td><a href="service.c.html#L3384">(strv_find(tags, "RELOADING=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3395</td><td><a href="service.c.html#L3395">(strv_find(tags, "READY=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3413</td><td><a href="service.c.html#L3413">(strv_find(tags, "STOPPING=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3460</td><td><a href="service.c.html#L3460">(strv_find(tags, "WATCHDOG=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3463</td><td><a href="service.c.html#L3463">(strv_find(tags, "FDSTORE=1"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">318</td><td><a href="service.c.html#L318">(inactive)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">822</td><td><a href="service.c.html#L822">(may_warn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">829</td><td><a href="service.c.html#L829">(may_warn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">835</td><td><a href="service.c.html#L835">(may_warn)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2492</td><td><a href="service.c.html#L2492">(command)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3425</td><td><a href="service.c.html#L3425">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3446</td><td><a href="service.c.html#L3446">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3476</td><td><a href="service.c.html#L3476">(e)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3485</td><td><a href="service.c.html#L3485">(notify_dbus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3524</td><td><a href="service.c.html#L3524">(old_owner)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - bsd-user\signal.c Ctrl Expressions (72) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - bsd-user\signal.c Ctrl Expressions (72) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;bsd-user\signal.c Ctrl Expressions (72)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">658</td><td><a href="signal.c.html#L658">(<span style='background-color:#741da3;'>(sig == TARGET_SIGKILL || sig == TARGET_SIGSTOP) && act != NULL && act->_sa_handler != TARGET_SIG_DFL</span>)</a></td><td class="num">1020.75</td></tr>
+      <tr><td class="num line">987</td><td><a href="signal.c.html#L987">(sigismember(&ts->signal_mask, target_to_host_signal(sig)) || sigact_table[sig - 1]._sa_handler == TARGET_SIG_IGN)</a></td><td class="num">47.60</td></tr>
+      <tr><td class="num line">789</td><td><a href="signal.c.html#L789">(__get_user(target_set.__bits[i], &ucontext->uc_sigmask.__bits[i]))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">508</td><td><a href="signal.c.html#L508">(is_write && handle_sigsegv_accerr_write(cpu, &uc->uc_sigmask, pc, guest_addr))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">916</td><td><a href="signal.c.html#L916">(sig != TARGET_SIGCHLD && sig != TARGET_SIGURG && sig != TARGET_SIGINFO && sig != TARGET_SIGWINCH && sig != TARGET_SIGCONT)</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">999</td><td><a href="signal.c.html#L999">(k->pending && !sigismember(blocked_set, target_to_host_signal(sig)))</a></td><td class="num">22.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="signal.c.html#L613">(ss.ss_flags != TARGET_SS_DISABLE && ss.ss_flags != TARGET_SS_ONSTACK && ss.ss_flags != 0)</a></td><td class="num">17.50</td></tr>
+      <tr><td class="num line">485</td><td><a href="signal.c.html#L485">((host_sig == SIGSEGV || host_sig == SIGBUS) && info->si_code > 0)</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">717</td><td><a href="signal.c.html#L717">((ka->sa_flags & TARGET_SA_ONSTACK) && sas_ss_flags(ts, sp) == 0)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">364</td><td><a href="signal.c.html#L364">(core_dump_signal(target_sig) && (ts->bprm->core_dump != NULL))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">913</td><td><a href="signal.c.html#L913">(sig == TARGET_SIGTSTP || sig == TARGET_SIGTTIN || sig == TARGET_SIGTTOU)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">506</td><td><a href="signal.c.html#L506">(info->si_code == SEGV_ACCERR && h2g_valid(host_addr))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">85</td><td><a href="signal.c.html#L85">(pcreg > (uintptr_t)safe_syscall_start && pcreg < (uintptr_t)safe_syscall_end)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">680</td><td><a href="signal.c.html#L680">(host_sig != SIGSEGV && host_sig != SIGBUS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">934</td><td><a href="signal.c.html#L934">(!(sa->sa_flags & TARGET_SA_NODEFER))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="signal.c.html#L539">(guest_sig < 1 || guest_sig > TARGET_NSIG)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">654</td><td><a href="signal.c.html#L654">(sig < 1 || sig > TARGET_NSIG)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">684</td><td><a href="signal.c.html#L684">(k->sa_flags & TARGET_SA_RESTART)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">954</td><td><a href="signal.c.html#L954">(sa->sa_flags & TARGET_SA_SIGINFO)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">960</td><td><a href="signal.c.html#L960">(sa->sa_flags & TARGET_SA_RESETHAND)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">818</td><td><a href="signal.c.html#L818">(set_mcontext(env, &ucontext->uc_mcontext, 1))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">974</td><td><a href="signal.c.html#L974">(qatomic_read(&ts->signal_pending))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">529</td><td><a href="signal.c.html#L529">(info->si_code == BUS_ADRALN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">691</td><td><a href="signal.c.html#L691">(k->_sa_handler == TARGET_SIG_IGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">693</td><td><a href="signal.c.html#L693">(k->_sa_handler == TARGET_SIG_DFL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">619</td><td><a href="signal.c.html#L619">(ss.ss_flags == TARGET_SS_DISABLE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="signal.c.html#L624">(ss.ss_size < minstacksize)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">860</td><td><a href="signal.c.html#L860">(oact.sa_sigaction == (void *)SIG_IGN)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">862</td><td><a href="signal.c.html#L862">(oact.sa_sigaction == (void *)SIG_DFL)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">518</td><td><a href="signal.c.html#L518">(page_get_flags(guest_addr) & PAGE_VALID)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1029</td><td><a href="signal.c.html#L1029">(tcg_ops->record_sigsegv)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1045</td><td><a href="signal.c.html#L1045">(tcg_ops->record_sigbus)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="signal.c.html#L635">(copy_to_user(uoss_addr, &oss, sizeof(oss)))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="signal.c.html#L101">(i <= NSIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">114</td><td><a href="signal.c.html#L114">(i < _SIG_WORDS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">125</td><td><a href="signal.c.html#L125">(i <= TARGET_NSIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">137</td><td><a href="signal.c.html#L137">(i < TARGET_NSIG_WORDS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="signal.c.html#L236">(sig == TARGET_SIGPOLL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">247</td><td><a href="signal.c.html#L247">(sig == TARGET_SIGTRAP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">503</td><td><a href="signal.c.html#L503">(host_sig == SIGSEGV)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">751</td><td><a href="signal.c.html#L751">(i < TARGET_NSIG_WORDS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">788</td><td><a href="signal.c.html#L788">(i < TARGET_NSIG_WORDS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">831</td><td><a href="signal.c.html#L831">(ucontext != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">852</td><td><a href="signal.c.html#L852">(i <= TARGET_NSIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">854</td><td><a href="signal.c.html#L854">(i == TARGET_SIGPROF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">908</td><td><a href="signal.c.html#L908">(handler == TARGET_SIG_DFL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">921</td><td><a href="signal.c.html#L921">(handler == TARGET_SIG_IGN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">923</td><td><a href="signal.c.html#L923">(handler == TARGET_SIG_ERR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">996</td><td><a href="signal.c.html#L996">(sig <= TARGET_NSIG)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">599</td><td><a href="signal.c.html#L599">(!lock_user_struct(VERIFY_READ, uss, uss_addr, 1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">742</td><td><a href="signal.c.html#L742">(!lock_user_struct(VERIFY_WRITE, frame, frame_addr, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">813</td><td><a href="signal.c.html#L813">(!lock_user_struct(VERIFY_READ, ucontext, target_ucontext, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">896</td><td><a href="signal.c.html#L896">(!sig)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">102</td><td><a href="signal.c.html#L102">(sigismember(s, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">126</td><td><a href="signal.c.html#L126">(target_sigismember(s, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="signal.c.html#L227">(has_trapno(sig))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">608</td><td><a href="signal.c.html#L608">(on_sig_stack(ts, sp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">663</td><td><a href="signal.c.html#L663">(block_signals())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">694</td><td><a href="signal.c.html#L694">(fatal_signal(sig))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">809</td><td><a href="signal.c.html#L809">(is_error(ret))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="signal.c.html#L823">(reset_signal_mask(ucontext))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">873</td><td><a href="signal.c.html#L873">(fatal_signal(i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="signal.c.html#L369">(core_dumped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">556</td><td><a href="signal.c.html#L556">(sync_sig)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">586</td><td><a href="signal.c.html#L586">(uoss_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">593</td><td><a href="signal.c.html#L593">(uss_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">633</td><td><a href="signal.c.html#L633">(uoss_addr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">668</td><td><a href="signal.c.html#L668">(oact)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">673</td><td><a href="signal.c.html#L673">(act)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">755</td><td><a href="signal.c.html#L755">(tinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">904</td><td><a href="signal.c.html#L904">(do_strace)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">980</td><td><a href="signal.c.html#L980">(sig)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

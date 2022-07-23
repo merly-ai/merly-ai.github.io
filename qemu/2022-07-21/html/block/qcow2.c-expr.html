@@ -1,0 +1,597 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - block\qcow2.c Ctrl Expressions (546) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - block\qcow2.c Ctrl Expressions (546) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;block\qcow2.c Ctrl Expressions (546)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">4917</td><td><a href="qcow2.c.html#L4917">(<span style='background-color:#741da3;'>s->qcow_version >= 3 && !s->snapshots && !s->nb_bitmaps && 3 + l1_clusters <= s->refcount_block_size && s->crypt_method_header != QCOW_CRYPT_LUKS && !has_data_file(bs)</span>)</a></td><td class="num">1041.60</td></tr>
+      <tr><td class="num line">4681</td><td><a href="qcow2.c.html#L4681">(offset_into_cluster(s, bytes) && <span style='background-color:#741da3;'>(offset + bytes) != (bs->total_sectors << BDRV_SECTOR_BITS)</span>)</a></td><td class="num">1029.35</td></tr>
+      <tr><td class="num line">668</td><td><a href="qcow2.c.html#L668">((<span style='background-color:#741da3;'>INT64_MAX - entries * entry_len < offset</span>) || (offset_into_cluster(s, offset) != 0))</a></td><td class="num">1027.45</td></tr>
+      <tr><td class="num line">3996</td><td><a href="qcow2.c.html#L3996">(<span style='background-color:#741da3;'>ret < 0 || (type != QCOW2_SUBCLUSTER_UNALLOCATED_PLAIN && type != QCOW2_SUBCLUSTER_UNALLOCATED_ALLOC && type != QCOW2_SUBCLUSTER_ZERO_PLAIN && type != QCOW2_SUBCLUSTER_ZERO_ALLOC)</span>)</a></td><td class="num">1022.25</td></tr>
+      <tr><td class="num line">2104</td><td><a href="qcow2.c.html#L2104">(<span style='background-color:#741da3;'>(type == QCOW2_SUBCLUSTER_NORMAL || type == QCOW2_SUBCLUSTER_ZERO_ALLOC || type == QCOW2_SUBCLUSTER_UNALLOCATED_ALLOC) && !s->crypto</span>)</a></td><td class="num">1017.75</td></tr>
+      <tr><td class="num line">1815</td><td><a href="qcow2.c.html#L1815">(<span style='background-color:#741da3;'>!(flags & BDRV_O_CHECK) && bdrv_is_writable(bs) && (s->incompatible_features & QCOW2_INCOMPAT_DIRTY)</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">2118</td><td><a href="qcow2.c.html#L2118">(<span style='background-color:#741da3;'>s->metadata_preallocation && (status & BDRV_BLOCK_DATA) && (status & BDRV_BLOCK_OFFSET_VALID)</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">3957</td><td><a href="qcow2.c.html#L3957">(<span style='background-color:#741da3;'>res >= 0 && (res & BDRV_BLOCK_ZERO) && nr && bytes</span>)</a></td><td class="num">1014.25</td></tr>
+      <tr><td class="num line">3335</td><td><a href="qcow2.c.html#L3335">(<span style='background-color:#741da3;'>cluster_bits < MIN_CLUSTER_BITS || cluster_bits > MAX_CLUSTER_BITS || (1 << cluster_bits) != cluster_size</span>)</a></td><td class="num">1013.25</td></tr>
+      <tr><td class="num line">4288</td><td><a href="qcow2.c.html#L4288">(<span style='background-color:#741da3;'>(last_cluster + 1) * s->cluster_size < old_file_size</span>)</a></td><td class="num">1010.20</td></tr>
+      <tr><td class="num line">5370</td><td><a href="qcow2.c.html#L5370">(s->snapshots[i].vm_state_size > UINT32_MAX || s->snapshots[i].disk_size != bs->total_sectors * BDRV_SECTOR_SIZE)</a></td><td class="num">72.60</td></tr>
+      <tr><td class="num line">1693</td><td><a href="qcow2.c.html#L1693">(len > MIN(1023, s->cluster_size - header.backing_file_offset) || len >= sizeof(bs->backing_file))</a></td><td class="num">45.60</td></tr>
+      <tr><td class="num line">2344</td><td><a href="qcow2.c.html#L2344">(type == QCOW2_SUBCLUSTER_ZERO_PLAIN || type == QCOW2_SUBCLUSTER_ZERO_ALLOC || (type == QCOW2_SUBCLUSTER_UNALLOCATED_PLAIN && !bs->backing) || (type == QCOW2_SUBCLUSTER_UNALLOCATED_ALLOC && !bs->backing))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">950</td><td><a href="qcow2.c.html#L950">(*l2_cache_entry_size < 1 << MIN_CLUSTER_BITS || *l2_cache_entry_size > s->cluster_size || !is_power_of_2(*l2_cache_entry_size))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">88</td><td><a href="qcow2.c.html#L88">(buf_size >= sizeof(QCowHeader) && be32_to_cpu(cow_header->magic) == QCOW_MAGIC && be32_to_cpu(cow_header->version) >= 2)</a></td><td class="num">32.75</td></tr>
+      <tr><td class="num line">4033</td><td><a href="qcow2.c.html#L4033">(!QEMU_IS_ALIGNED(offset, s->cluster_size) || offset + bytes != bs->total_sectors * BDRV_SECTOR_SIZE)</a></td><td class="num">32.45</td></tr>
+      <tr><td class="num line">5881</td><td><a href="qcow2.c.html#L5881">(s->signaled_corruption && (!fatal || (s->incompatible_features & QCOW2_INCOMPAT_CORRUPT)))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">3526</td><td><a href="qcow2.c.html#L3526">(qcow2_opts->refcount_bits > 64 || !is_power_of_2(qcow2_opts->refcount_bits))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">5474</td><td><a href="qcow2.c.html#L5474">(s->snapshots[i].extra_data_size < sizeof_field(QCowSnapshotExtraData, vm_state_size_large) + sizeof_field(QCowSnapshotExtraData, disk_size))</a></td><td class="num">27.35</td></tr>
+      <tr><td class="num line">3985</td><td><a href="qcow2.c.html#L3985">(!(is_zero(bs, offset - head, head) && is_zero(bs, offset + bytes, tail)))</a></td><td class="num">25.95</td></tr>
+      <tr><td class="num line">475</td><td><a href="qcow2.c.html#L475">(table && table->name[0] != '\0')</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">3498</td><td><a href="qcow2.c.html#L3498">(qcow2_opts->has_backing_file && qcow2_opts->preallocation != PREALLOC_MODE_OFF && !qcow2_opts->extended_l2)</a></td><td class="num">19.00</td></tr>
+      <tr><td class="num line">4207</td><td><a href="qcow2.c.html#L4207">(prealloc != PREALLOC_MODE_OFF && prealloc != PREALLOC_MODE_METADATA && prealloc != PREALLOC_MODE_FALLOC && prealloc != PREALLOC_MODE_FULL)</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">631</td><td><a href="qcow2.c.html#L631">(fix && result->check_errors == 0 && result->corruptions == 0)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">2389</td><td><a href="qcow2.c.html#L2389">(m->cow_start.nb_bytes == 0 && m->cow_end.nb_bytes == 0)</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">2415</td><td><a href="qcow2.c.html#L2415">(m->offset + m->cow_end.offset != offset + bytes)</a></td><td class="num">14.70</td></tr>
+      <tr><td class="num line">2973</td><td><a href="qcow2.c.html#L2973">(s->qcow_version >= 3 && s->cluster_size > 4096)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2476</td><td><a href="qcow2.c.html#L2476">(!m->cow_start.nb_bytes && !m->cow_end.nb_bytes)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1047</td><td><a href="qcow2.c.html#L1047">(r->l2_table_cache == NULL || r->refcount_block_cache == NULL)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="qcow2.c.html#L1074">(r->use_lazy_refcounts && s->qcow_version < 3)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3554</td><td><a href="qcow2.c.html#L3554">(qcow2_opts->data_file_raw && qcow2_opts->preallocation == PREALLOC_MODE_OFF)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">3592</td><td><a href="qcow2.c.html#L3592">(qcow2_opts->has_compression_type && qcow2_opts->compression_type != QCOW2_COMPRESSION_TYPE_ZLIB)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">4025</td><td><a href="qcow2.c.html#L4025">(s->qcow_version < 3 && bs->backing)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">4227</td><td><a href="qcow2.c.html#L4227">(s->nb_snapshots && s->qcow_version < 3)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="qcow2.c.html#L308">((s->crypto_header.offset % s->cluster_size) != 0)</a></td><td class="num">12.35</td></tr>
+      <tr><td class="num line">4078</td><td><a href="qcow2.c.html#L4078">(bs->backing && bs->backing->bs)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1516</td><td><a href="qcow2.c.html#L1516">(header.refcount_table_clusters == 0 && !(flags & BDRV_O_CHECK))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3534</td><td><a href="qcow2.c.html#L3534">(version < 3 && qcow2_opts->refcount_bits != 16)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2462</td><td><a href="qcow2.c.html#L2462">(!(s->data_file->bs->supported_zero_flags & BDRV_REQ_NO_FALLBACK))</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1081</td><td><a href="qcow2.c.html#L1081">(s->use_lazy_refcounts && !r->use_lazy_refcounts)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1443</td><td><a href="qcow2.c.html#L1443">((flags & BDRV_O_RDWR) && !(flags & BDRV_O_CHECK))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1627</td><td><a href="qcow2.c.html#L1627">(!s->data_file && s->image_data_file)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">1669</td><td><a href="qcow2.c.html#L1669">(s->crypt_method_header && !s->crypto)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3507</td><td><a href="qcow2.c.html#L3507">(qcow2_opts->has_backing_fmt && !qcow2_opts->has_backing_file)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">3543</td><td><a href="qcow2.c.html#L3543">(qcow2_opts->data_file_raw && !qcow2_opts->data_file)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">242</td><td><a href="qcow2.c.html#L242">(offset > end_offset || ext.len > end_offset - offset)</a></td><td class="num">10.60</td></tr>
+      <tr><td class="num line">3548</td><td><a href="qcow2.c.html#L3548">(qcow2_opts->data_file_raw && qcow2_opts->has_backing_file)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">3939</td><td><a href="qcow2.c.html#L3939">(offset + bytes > bs->total_sectors * BDRV_SECTOR_SIZE)</a></td><td class="num">10.20</td></tr>
+      <tr><td class="num line">3973</td><td><a href="qcow2.c.html#L3973">(offset + bytes == bs->total_sectors * BDRV_SECTOR_SIZE)</a></td><td class="num">10.20</td></tr>
+      <tr><td class="num line">477</td><td><a href="qcow2.c.html#L477">(mask & (1ULL << table->bit))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1333</td><td><a href="qcow2.c.html#L1333">(header.version < 2 || header.version > 3)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1342</td><td><a href="qcow2.c.html#L1342">(header.cluster_bits < MIN_CLUSTER_BITS || header.cluster_bits > MAX_CLUSTER_BITS)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1476</td><td><a href="qcow2.c.html#L1476">(bdrv_uses_whitelist() && s->crypt_method_header == QCOW_CRYPT_AES)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2406</td><td><a href="qcow2.c.html#L2406">(l2meta_cow_start(m) + m->cow_start.nb_bytes != offset)</a></td><td class="num">9.35</td></tr>
+      <tr><td class="num line">3516</td><td><a href="qcow2.c.html#L3516">(version < 3 && qcow2_opts->lazy_refcounts)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">4501</td><td><a href="qcow2.c.html#L4501">((flags & BDRV_REQ_ZERO_WRITE) && offset > old_length)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">5752</td><td><a href="qcow2.c.html#L5752">(g_strcmp0(backing_file, s->image_backing_file) || g_strcmp0(backing_format, s->image_backing_format))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">105</td><td><a href="qcow2.c.html#L105">((offset + buflen) > s->crypto_header.length)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">166</td><td><a href="qcow2.c.html#L166">((offset + buflen) > s->crypto_header.length)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">943</td><td><a href="qcow2.c.html#L943">(*l2_cache_size < max_l2_cache && !l2_cache_entry_size_set)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1220</td><td><a href="qcow2.c.html#L1220">(s->cache_clean_interval != r->cache_clean_interval)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1568</td><td><a href="qcow2.c.html#L1568">(s->l1_size < s->l1_vm_state_index)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1946</td><td><a href="qcow2.c.html#L1946">((state->flags & BDRV_O_RDWR) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">5546</td><td><a href="qcow2.c.html#L5546">(info->current_operation != info->last_operation)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">5638</td><td><a href="qcow2.c.html#L5638">(refcount_bits <= 0 || refcount_bits > 64 || !is_power_of_2(refcount_bits))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2328</td><td><a href="qcow2.c.html#L2328">(bytes != 0 && aio_task_pool_status(aio) == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2616</td><td><a href="qcow2.c.html#L2616">(bytes != 0 && aio_task_pool_status(aio) == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2114</td><td><a href="qcow2.c.html#L2114">(type != QCOW2_SUBCLUSTER_UNALLOCATED_PLAIN && type != QCOW2_SUBCLUSTER_UNALLOCATED_ALLOC)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2502</td><td><a href="qcow2.c.html#L2502">(ret != -ENOTSUP && ret != -EAGAIN)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3401</td><td><a href="qcow2.c.html#L3401">(version < 3 && refcount_bits != 16)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">5717</td><td><a href="qcow2.c.html#L5717">(new_version < 3 && refcount_bits != 16)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2001</td><td><a href="qcow2.c.html#L2001">(qcow2_reopen_bitmaps_rw(state->bs, &local_err) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">998</td><td><a href="qcow2.c.html#L998">(!read_cache_sizes(bs, opts, &l2_cache_size, &l2_cache_entry_size, &refcount_cache_size, errp))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">4029</td><td><a href="qcow2.c.html#L4029">(!QEMU_IS_ALIGNED(offset | bytes, s->cluster_size))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">5842</td><td><a href="qcow2.c.html#L5842">(qopts->encrypt->format != Q_CRYPTO_BLOCK_FORMAT_LUKS)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">333</td><td><a href="qcow2.c.html#L333">(!(s->autoclear_features & QCOW2_AUTOCLEAR_BITMAPS))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1284</td><td><a href="qcow2.c.html#L1284">(!(s->incompatible_features & QCOW2_INCOMPAT_COMPRESSION))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2726</td><td><a href="qcow2.c.html#L2726">(!(s->flags & BDRV_O_INACTIVE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2937</td><td><a href="qcow2.c.html#L2937">(has_data_file(bs) && s->image_data_file)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1375</td><td><a href="qcow2.c.html#L1375">(header.header_length > s->cluster_size)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1394</td><td><a href="qcow2.c.html#L1394">(header.backing_file_offset > s->cluster_size)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">5594</td><td><a href="qcow2.c.html#L5594">(desc && desc->name)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2111</td><td><a href="qcow2.c.html#L2111">(type == QCOW2_SUBCLUSTER_ZERO_PLAIN || type == QCOW2_SUBCLUSTER_ZERO_ALLOC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2351</td><td><a href="qcow2.c.html#L2351">(!aio && cur_bytes != bytes)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2645</td><td><a href="qcow2.c.html#L2645">(!aio && cur_bytes != bytes)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2950</td><td><a href="qcow2.c.html#L2950">(s->crypto_header.offset != 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">4689</td><td><a href="qcow2.c.html#L4689">(!aio && chunk_size != bytes)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">5103</td><td><a href="qcow2.c.html#L5103">(prealloc == PREALLOC_MODE_FULL || prealloc == PREALLOC_MODE_FALLOC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="qcow2.c.html#L514">(s->incompatible_features & QCOW2_INCOMPAT_DIRTY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">540</td><td><a href="qcow2.c.html#L540">(s->incompatible_features & QCOW2_INCOMPAT_DIRTY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">574</td><td><a href="qcow2.c.html#L574">(s->incompatible_features & QCOW2_INCOMPAT_CORRUPT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1092</td><td><a href="qcow2.c.html#L1092">(opt_overlap_check_template && opt_overlap_check && strcmp(opt_overlap_check_template, opt_overlap_check))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1278</td><td><a href="qcow2.c.html#L1278">(s->incompatible_features & QCOW2_INCOMPAT_COMPRESSION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="qcow2.c.html#L1428">(s->incompatible_features & ~QCOW2_INCOMPAT_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1440</td><td><a href="qcow2.c.html#L1440">(s->incompatible_features & QCOW2_INCOMPAT_CORRUPT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1626</td><td><a href="qcow2.c.html#L1626">(s->incompatible_features & QCOW2_INCOMPAT_DATA_FILE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1998</td><td><a href="qcow2.c.html#L1998">(state->flags & BDRV_O_RDWR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5378</td><td><a href="qcow2.c.html#L5378">(s->incompatible_features & QCOW2_INCOMPAT_DIRTY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5390</td><td><a href="qcow2.c.html#L5390">(s->incompatible_features & ~QCOW2_INCOMPAT_COMPRESSION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">5411</td><td><a href="qcow2.c.html#L5411">(s->incompatible_features & QCOW2_INCOMPAT_COMPRESSION)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3104</td><td><a href="qcow2.c.html#L3104">(backing_file && strlen(backing_file) > 1023)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4312</td><td><a href="qcow2.c.html#L4312">(data_file_is_raw(bs) && prealloc == PREALLOC_MODE_OFF)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4686</td><td><a href="qcow2.c.html#L4686">(bytes && aio_task_pool_status(aio) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">909</td><td><a href="qcow2.c.html#L909">(l2_cache_size_set && (l2_cache_max_setting > combined_cache_size))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1821</td><td><a href="qcow2.c.html#L1821">(ret < 0 || result.check_errors)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3276</td><td><a href="qcow2.c.html#L3276">(n == last && generous_increase)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4743</td><td><a href="qcow2.c.html#L4743">(qcow2_co_decompress(bs, out_buf, s->cluster_size, buf, csize) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">224</td><td><a href="qcow2.c.html#L224">(offset > s->cluster_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">287</td><td><a href="qcow2.c.html#L287">(s->crypt_method_header != QCOW_CRYPT_LUKS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">334</td><td><a href="qcow2.c.html#L334">(s->qcow_version < 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">476</td><td><a href="qcow2.c.html#L476">(table->type == QCOW2_FEAT_TYPE_INCOMPATIBLE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="qcow2.c.html#L478">(features->len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">489</td><td><a href="qcow2.c.html#L489">(features->len > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">840</td><td><a href="qcow2.c.html#L840">(s->cache_clean_interval > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1058</td><td><a href="qcow2.c.html#L1058">(r->cache_clean_interval != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1065</td><td><a href="qcow2.c.html#L1065">(r->cache_clean_interval > UINT_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1277</td><td><a href="qcow2.c.html#L1277">(s->compression_type == QCOW2_COMPRESSION_TYPE_ZLIB)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1456</td><td><a href="qcow2.c.html#L1456">(s->subcluster_size < 1 << MIN_CLUSTER_BITS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1490</td><td><a href="qcow2.c.html#L1490">(s->crypt_method_header == QCOW_CRYPT_AES)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1574</td><td><a href="qcow2.c.html#L1574">(s->l1_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1576</td><td><a href="qcow2.c.html#L1576">(s->l1_table == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1587</td><td><a href="qcow2.c.html#L1587">(i < s->l1_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1670</td><td><a href="qcow2.c.html#L1670">(s->crypt_method_header == QCOW_CRYPT_AES)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2912</td><td><a href="qcow2.c.html#L2912">(buflen < s->unknown_header_fields_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3027</td><td><a href="qcow2.c.html#L3027">(s->nb_bitmaps > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3395</td><td><a href="qcow2.c.html#L3395">(refcount_bits > 64 || !is_power_of_2(refcount_bits))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4588</td><td><a href="qcow2.c.html#L4588">(bytes < s->cluster_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5029</td><td><a href="qcow2.c.html#L5029">(!qcrypto_block_calculate_payload_offset(create_opts, "encrypt.", &headerlen, &local_err))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5088</td><td><a href="qcow2.c.html#L5088">((ret & BDRV_BLOCK_DATA | BDRV_BLOCK_ALLOCATED) == BDRV_BLOCK_DATA | BDRV_BLOCK_ALLOCATED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5148</td><td><a href="qcow2.c.html#L5148">(s->crypto != NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5160</td><td><a href="qcow2.c.html#L5160">(s->qcow_version == 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5165</td><td><a href="qcow2.c.html#L5165">(s->qcow_version == 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5352</td><td><a href="qcow2.c.html#L5352">(s->refcount_order != 4)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5369</td><td><a href="qcow2.c.html#L5369">(i < s->nb_snapshots)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5473</td><td><a href="qcow2.c.html#L5473">(i < s->nb_snapshots)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5547</td><td><a href="qcow2.c.html#L5547">(info->last_operation != QCOW2_NO_OPERATION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5625</td><td><a href="qcow2.c.html#L5625">(s->crypt_method_header != QCOW_CRYPT_LUKS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5714</td><td><a href="qcow2.c.html#L5714">(s->refcount_bits != refcount_bits)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5761</td><td><a href="qcow2.c.html#L5761">(s->use_lazy_refcounts != lazy_refcounts)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">5848</td><td><a href="qcow2.c.html#L5848">(s->crypt_method_header != QCOW_CRYPT_LUKS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1151</td><td><a href="qcow2.c.html#L1151">(encryptfmt && !g_str_equal(encryptfmt, "aes"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1167</td><td><a href="qcow2.c.html#L1167">(encryptfmt && !g_str_equal(encryptfmt, "luks"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3820</td><td><a href="qcow2.c.html#L3820">(val && !strcmp(val, "on"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3822</td><td><a href="qcow2.c.html#L3822">(val && !strcmp(val, "off"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3827</td><td><a href="qcow2.c.html#L3827">(val && !strcmp(val, "aes"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3834</td><td><a href="qcow2.c.html#L3834">(val && !strcmp(val, "0.10"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3836</td><td><a href="qcow2.c.html#L3836">(val && !strcmp(val, "1.1"))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5647</td><td><a href="qcow2.c.html#L5647">(data_file && !has_data_file(bs))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5655</td><td><a href="qcow2.c.html#L5655">(data_file_raw && !data_file_is_raw(bs))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">661</td><td><a href="qcow2.c.html#L661">(entries > max_size_bytes / entry_len)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">914</td><td><a href="qcow2.c.html#L914">(*refcount_cache_size > combined_cache_size)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">927</td><td><a href="qcow2.c.html#L927">(combined_cache_size >= max_l2_cache + min_refcount_cache)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">2070</td><td><a href="qcow2.c.html#L2070">(has_all_cache_options && !has_new_total_cache_size)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3223</td><td><a href="qcow2.c.html#L3223">(host_offset + cur_bytes > file_length)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">5046</td><td><a href="qcow2.c.html#L5046">(l2_tables * L1E_SIZE > QCOW_MAX_L1_SIZE)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">5264</td><td><a href="qcow2.c.html#L5264">(INT64_MAX - pos < vmstate_offset)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">1791</td><td><a href="qcow2.c.html#L1791">(!(bdrv_get_flags(bs) & BDRV_O_INACTIVE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1968</td><td><a href="qcow2.c.html#L1968">(!has_data_file(state->bs))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3449</td><td><a href="qcow2.c.html#L3449">(!QEMU_IS_ALIGNED(qcow2_opts->size, BDRV_SECTOR_SIZE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3490</td><td><a href="qcow2.c.html#L3490">(!validate_cluster_size(cluster_size, qcow2_opts->extended_l2, errp))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5595</td><td><a href="qcow2.c.html#L5595">(!qemu_opt_find(opts, desc->name))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5601</td><td><a href="qcow2.c.html#L5601">(!strcmp(desc->name, BLOCK_OPT_COMPAT_LEVEL))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5605</td><td><a href="qcow2.c.html#L5605">(!strcmp(compat, "0.10") || !strcmp(compat, "v2"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5607</td><td><a href="qcow2.c.html#L5607">(!strcmp(compat, "1.1") || !strcmp(compat, "v3"))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5613</td><td><a href="qcow2.c.html#L5613">(!strcmp(desc->name, BLOCK_OPT_SIZE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5615</td><td><a href="qcow2.c.html#L5615">(!strcmp(desc->name, BLOCK_OPT_BACKING_FILE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5617</td><td><a href="qcow2.c.html#L5617">(!strcmp(desc->name, BLOCK_OPT_BACKING_FMT))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5631</td><td><a href="qcow2.c.html#L5631">(!strcmp(desc->name, BLOCK_OPT_LAZY_REFCOUNTS))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5634</td><td><a href="qcow2.c.html#L5634">(!strcmp(desc->name, BLOCK_OPT_REFCOUNT_BITS))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5645</td><td><a href="qcow2.c.html#L5645">(!strcmp(desc->name, BLOCK_OPT_DATA_FILE))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">5652</td><td><a href="qcow2.c.html#L5652">(!strcmp(desc->name, BLOCK_OPT_DATA_FILE_RAW))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">321</td><td><a href="qcow2.c.html#L321">(!s->crypto)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1160</td><td><a href="qcow2.c.html#L1160">(!r->crypto_opts)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1176</td><td><a href="qcow2.c.html#L1176">(!r->crypto_opts)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1417</td><td><a href="qcow2.c.html#L1417">(header.header_length > offsetof(QCowHeader, compression_type))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1530</td><td><a href="qcow2.c.html#L1530">(!(flags & BDRV_O_CHECK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1610</td><td><a href="qcow2.c.html#L1610">(qcow2_read_extensions(bs, header.header_length, ext_end, NULL, flags, &update_header, errp))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1631</td><td><a href="qcow2.c.html#L1631">(!s->data_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1636</td><td><a href="qcow2.c.html#L1636">(!s->data_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1678</td><td><a href="qcow2.c.html#L1678">(!s->crypto)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1682</td><td><a href="qcow2.c.html#L1682">(!(flags & BDRV_O_NO_IO))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1716</td><td><a href="qcow2.c.html#L1716">(!(flags & BDRV_O_CHECK))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1843</td><td><a href="qcow2.c.html#L1843">(open_data_file && has_data_file(bs))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1899</td><td><a href="qcow2.c.html#L1899">(!bs->file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1986</td><td><a href="qcow2.c.html#L1986">(!s->data_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2018</td><td><a href="qcow2.c.html#L2018">(!s->data_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2089</td><td><a href="qcow2.c.html#L2089">(!s->metadata_preallocation_checked)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2745</td><td><a href="qcow2.c.html#L2745">(close_data_file && has_data_file(bs))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3100</td><td><a href="qcow2.c.html#L3100">(backing_file && data_file_is_raw(bs))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3477</td><td><a href="qcow2.c.html#L3477">(!qcow2_opts->has_extended_l2)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3495</td><td><a href="qcow2.c.html#L3495">(!qcow2_opts->has_preallocation)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3513</td><td><a href="qcow2.c.html#L3513">(!qcow2_opts->has_lazy_refcounts)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3523</td><td><a href="qcow2.c.html#L3523">(!qcow2_opts->has_refcount_bits)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5620</td><td><a href="qcow2.c.html#L5620">(!s->crypto)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">5837</td><td><a href="qcow2.c.html#L5837">(!s->crypto)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">252</td><td><a href="qcow2.c.html#L252">(ext.len >= sizeof(bs->backing_format))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">292</td><td><a href="qcow2.c.html#L292">(ext.len != sizeof(Qcow2CryptoHeaderExtension))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">327</td><td><a href="qcow2.c.html#L327">(ext.len != sizeof(bitmaps_ext))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">362</td><td><a href="qcow2.c.html#L362">(bitmaps_ext.reserved32 != 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="qcow2.c.html#L374">(bitmaps_ext.nb_bitmaps > QCOW2_MAX_BITMAPS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">382</td><td><a href="qcow2.c.html#L382">(bitmaps_ext.nb_bitmaps == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">393</td><td><a href="qcow2.c.html#L393">(bitmaps_ext.bitmap_directory_size > QCOW2_MAX_BITMAP_DIRECTORY_SIZE)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">904</td><td><a href="qcow2.c.html#L904">(l2_cache_size_set && refcount_cache_size_set)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1328</td><td><a href="qcow2.c.html#L1328">(header.magic != QCOW_MAGIC)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1354</td><td><a href="qcow2.c.html#L1354">(header.version == 2)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1368</td><td><a href="qcow2.c.html#L1368">(header.header_length < 104)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1381</td><td><a href="qcow2.c.html#L1381">(header.header_length > sizeof(header))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1463</td><td><a href="qcow2.c.html#L1463">(header.refcount_order > 6)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1691</td><td><a href="qcow2.c.html#L1691">(header.backing_file_offset != 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">5619</td><td><a href="qcow2.c.html#L5619">(g_str_has_prefix(desc->name, "encrypt."))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">315</td><td><a href="qcow2.c.html#L315">(flags & BDRV_O_NO_IO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">853</td><td><a href="qcow2.c.html#L853">(s->cache_clean_timer)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="qcow2.c.html#L1025">(s->l2_table_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1033</td><td><a href="qcow2.c.html#L1033">(s->refcount_block_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1203</td><td><a href="qcow2.c.html#L1203">(s->l2_table_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1206</td><td><a href="qcow2.c.html#L1206">(s->refcount_block_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1233</td><td><a href="qcow2.c.html#L1233">(r->l2_table_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="qcow2.c.html#L1236">(r->refcount_block_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1475</td><td><a href="qcow2.c.html#L1475">(s->crypt_method_header)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1648</td><td><a href="qcow2.c.html#L1648">(s->data_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1672</td><td><a href="qcow2.c.html#L1672">(flags & BDRV_O_NO_IO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1794</td><td><a href="qcow2.c.html#L1794">(!qcow2_load_dirty_bitmaps(bs, &header_updated, errp))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1855</td><td><a href="qcow2.c.html#L1855">(s->l2_table_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1858</td><td><a href="qcow2.c.html#L1858">(s->refcount_block_cache)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1921</td><td><a href="qcow2.c.html#L1921">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2288</td><td><a href="qcow2.c.html#L2288">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2331</td><td><a href="qcow2.c.html#L2331">(s->crypto)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2394</td><td><a href="qcow2.c.html#L2394">(m->skip_cow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2466</td><td><a href="qcow2.c.html#L2466">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2532</td><td><a href="qcow2.c.html#L2532">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2623</td><td><a href="qcow2.c.html#L2623">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2911</td><td><a href="qcow2.c.html#L2911">(s->unknown_header_fields_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2923</td><td><a href="qcow2.c.html#L2923">(s->image_backing_format)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3066</td><td><a href="qcow2.c.html#L3066">(s->image_backing_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3456</td><td><a href="qcow2.c.html#L3456">(qcow2_opts->has_version)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3471</td><td><a href="qcow2.c.html#L3471">(qcow2_opts->has_cluster_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3480</td><td><a href="qcow2.c.html#L3480">(qcow2_opts->extended_l2)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3577</td><td><a href="qcow2.c.html#L3577">(qcow2_opts->data_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3647</td><td><a href="qcow2.c.html#L3647">(qcow2_opts->lazy_refcounts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3655</td><td><a href="qcow2.c.html#L3655">(qcow2_opts->data_file_raw)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3664</td><td><a href="qcow2.c.html#L3664">(qcow2_opts->extended_l2)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3742</td><td><a href="qcow2.c.html#L3742">(qcow2_opts->has_backing_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3745</td><td><a href="qcow2.c.html#L3745">(qcow2_opts->has_backing_fmt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3760</td><td><a href="qcow2.c.html#L3760">(qcow2_opts->has_encrypt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4432</td><td><a href="qcow2.c.html#L4432">(flags & BDRV_REQ_ZERO_WRITE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5086</td><td><a href="qcow2.c.html#L5086">(ret & BDRV_BLOCK_ZERO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5121</td><td><a href="qcow2.c.html#L5121">(info->has_bitmaps)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5167</td><td><a href="qcow2.c.html#L5167">(!qcow2_get_bitmap_info_list(bs, &bitmaps, errp))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5243</td><td><a href="qcow2.c.html#L5243">(bs->encrypted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">5836</td><td><a href="qcow2.c.html#L5836">(qopts->has_encrypt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2193</td><td><a href="qcow2.c.html#L2193">(qcow2_co_decrypt(bs, host_offset, offset, buf, bytes) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2423</td><td><a href="qcow2.c.html#L2423">(qemu_iovec_subvec_niov(qiov, qiov_offset, bytes) > IOV_MAX - 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2542</td><td><a href="qcow2.c.html#L2542">(qcow2_co_encrypt(bs, host_offset, offset, crypt_buf, bytes) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">112</td><td><a href="qcow2.c.html#L112">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">129</td><td><a href="qcow2.c.html#L129">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="qcow2.c.html#L149">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">173</td><td><a href="qcow2.c.html#L173">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">212</td><td><a href="qcow2.c.html#L212">(need_update_header != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="qcow2.c.html#L220">(offset < end_offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">231</td><td><a href="qcow2.c.html#L231">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">259</td><td><a href="qcow2.c.html#L259">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">272</td><td><a href="qcow2.c.html#L272">(p_feature_table != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">275</td><td><a href="qcow2.c.html#L275">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">300</td><td><a href="qcow2.c.html#L300">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">348</td><td><a href="qcow2.c.html#L348">(need_update_header != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="qcow2.c.html#L356">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">420</td><td><a href="qcow2.c.html#L420">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">444</td><td><a href="qcow2.c.html#L444">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">522</td><td><a href="qcow2.c.html#L522">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">546</td><td><a href="qcow2.c.html#L546">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">576</td><td><a href="qcow2.c.html#L576">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">613</td><td><a href="qcow2.c.html#L613">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="qcow2.c.html#L620">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">627</td><td><a href="qcow2.c.html#L627">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">633</td><td><a href="qcow2.c.html#L633">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1005</td><td><a href="qcow2.c.html#L1005">(l2_cache_size < MIN_L2_CACHE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1008</td><td><a href="qcow2.c.html#L1008">(l2_cache_size > INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="qcow2.c.html#L1015">(refcount_cache_size < MIN_REFCOUNT_CACHE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1018</td><td><a href="qcow2.c.html#L1018">(refcount_cache_size > INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1083</td><td><a href="qcow2.c.html#L1083">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1122</td><td><a href="qcow2.c.html#L1122">(i < QCOW2_OL_MAX_BITNR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1216</td><td><a href="qcow2.c.html#L1216">(i < QCOW2_DISCARD_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1249</td><td><a href="qcow2.c.html#L1249">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1309</td><td><a href="qcow2.c.html#L1309">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1387</td><td><a href="qcow2.c.html#L1387">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1526</td><td><a href="qcow2.c.html#L1526">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1543</td><td><a href="qcow2.c.html#L1543">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1552</td><td><a href="qcow2.c.html#L1552">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1559</td><td><a href="qcow2.c.html#L1559">(l1_vm_state_index > INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="qcow2.c.html#L1583">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1594</td><td><a href="qcow2.c.html#L1594">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1601</td><td><a href="qcow2.c.html#L1601">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1621</td><td><a href="qcow2.c.html#L1621">(*errp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="qcow2.c.html#L1701">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1721</td><td><a href="qcow2.c.html#L1721">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1804</td><td><a href="qcow2.c.html#L1804">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1822</td><td><a href="qcow2.c.html#L1822">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1941</td><td><a href="qcow2.c.html#L1941">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1948</td><td><a href="qcow2.c.html#L1948">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1953</td><td><a href="qcow2.c.html#L1953">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1958</td><td><a href="qcow2.c.html#L1958">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2098</td><td><a href="qcow2.c.html#L2098">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2133</td><td><a href="qcow2.c.html#L2133">(l2meta != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2183</td><td><a href="qcow2.c.html#L2183">(buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2189</td><td><a href="qcow2.c.html#L2189">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2340</td><td><a href="qcow2.c.html#L2340">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2357</td><td><a href="qcow2.c.html#L2357">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2370</td><td><a href="qcow2.c.html#L2370">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2387</td><td><a href="qcow2.c.html#L2387">(m != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2449</td><td><a href="qcow2.c.html#L2449">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2470</td><td><a href="qcow2.c.html#L2470">(m != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2481</td><td><a href="qcow2.c.html#L2481">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2483</td><td><a href="qcow2.c.html#L2483">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2494</td><td><a href="qcow2.c.html#L2494">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2501</td><td><a href="qcow2.c.html#L2501">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2536</td><td><a href="qcow2.c.html#L2536">(crypt_buf == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2554</td><td><a href="qcow2.c.html#L2554">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="qcow2.c.html#L2569">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2633</td><td><a href="qcow2.c.html#L2633">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2639</td><td><a href="qcow2.c.html#L2639">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2652</td><td><a href="qcow2.c.html#L2652">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2673</td><td><a href="qcow2.c.html#L2673">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2691</td><td><a href="qcow2.c.html#L2691">(local_err != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2712</td><td><a href="qcow2.c.html#L2712">(result == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2798</td><td><a href="qcow2.c.html#L2798">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2813</td><td><a href="qcow2.c.html#L2813">(buflen < ext_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2854</td><td><a href="qcow2.c.html#L2854">(buflen < sizeof(*header))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="qcow2.c.html#L2928">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2941</td><td><a href="qcow2.c.html#L2941">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2958</td><td><a href="qcow2.c.html#L2958">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3019</td><td><a href="qcow2.c.html#L3019">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3038</td><td><a href="qcow2.c.html#L3038">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3048</td><td><a href="qcow2.c.html#L3048">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3058</td><td><a href="qcow2.c.html#L3058">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3069</td><td><a href="qcow2.c.html#L3069">(buflen < backing_file_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3083</td><td><a href="qcow2.c.html#L3083">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3153</td><td><a href="qcow2.c.html#L3153">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3190</td><td><a href="qcow2.c.html#L3190">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3195</td><td><a href="qcow2.c.html#L3195">(m != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3200</td><td><a href="qcow2.c.html#L3200">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3217</td><td><a href="qcow2.c.html#L3217">(file_length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3224</td><td><a href="qcow2.c.html#L3224">(mode == PREALLOC_MODE_METADATA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3229</td><td><a href="qcow2.c.html#L3229">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3281</td><td><a href="qcow2.c.html#L3281">(n != last)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3346</td><td><a href="qcow2.c.html#L3346">(cluster_size < min_cluster_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3444</td><td><a href="qcow2.c.html#L3444">(bs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3481</td><td><a href="qcow2.c.html#L3481">(version < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3578</td><td><a href="qcow2.c.html#L3578">(version < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3586</td><td><a href="qcow2.c.html#L3586">(data_bs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3597</td><td><a href="qcow2.c.html#L3597">(version < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3659</td><td><a href="qcow2.c.html#L3659">(compression_type != QCOW2_COMPRESSION_TYPE_ZLIB)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3671</td><td><a href="qcow2.c.html#L3671">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3682</td><td><a href="qcow2.c.html#L3682">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3704</td><td><a href="qcow2.c.html#L3704">(blk == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3710</td><td><a href="qcow2.c.html#L3710">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3715</td><td><a href="qcow2.c.html#L3715">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3728</td><td><a href="qcow2.c.html#L3728">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3736</td><td><a href="qcow2.c.html#L3736">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3751</td><td><a href="qcow2.c.html#L3751">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3762</td><td><a href="qcow2.c.html#L3762">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3785</td><td><a href="qcow2.c.html#L3785">(blk == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3862</td><td><a href="qcow2.c.html#L3862">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3868</td><td><a href="qcow2.c.html#L3868">(bs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3877</td><td><a href="qcow2.c.html#L3877">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3884</td><td><a href="qcow2.c.html#L3884">(data_bs == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3918</td><td><a href="qcow2.c.html#L3918">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3977</td><td><a href="qcow2.c.html#L3977">(head || tail)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4062</td><td><a href="qcow2.c.html#L4062">(bytes != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4071</td><td><a href="qcow2.c.html#L4071">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4080</td><td><a href="qcow2.c.html#L4080">(src_offset >= backing_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4114</td><td><a href="qcow2.c.html#L4114">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4146</td><td><a href="qcow2.c.html#L4146">(bytes != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4158</td><td><a href="qcow2.c.html#L4158">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4164</td><td><a href="qcow2.c.html#L4164">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4172</td><td><a href="qcow2.c.html#L4172">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4242</td><td><a href="qcow2.c.html#L4242">(offset < old_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4244</td><td><a href="qcow2.c.html#L4244">(prealloc != PREALLOC_MODE_OFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4255</td><td><a href="qcow2.c.html#L4255">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4261</td><td><a href="qcow2.c.html#L4261">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4268</td><td><a href="qcow2.c.html#L4268">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4275</td><td><a href="qcow2.c.html#L4275">(old_file_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4282</td><td><a href="qcow2.c.html#L4282">(last_cluster < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4307</td><td><a href="qcow2.c.html#L4307">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4335</td><td><a href="qcow2.c.html#L4335">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4343</td><td><a href="qcow2.c.html#L4343">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4361</td><td><a href="qcow2.c.html#L4361">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4368</td><td><a href="qcow2.c.html#L4368">(old_file_size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4376</td><td><a href="qcow2.c.html#L4376">(last_cluster >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4405</td><td><a href="qcow2.c.html#L4405">(allocation_start < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4414</td><td><a href="qcow2.c.html#L4414">(clusters_allocated < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4435</td><td><a href="qcow2.c.html#L4435">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4443</td><td><a href="qcow2.c.html#L4443">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4447</td><td><a href="qcow2.c.html#L4447">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4482</td><td><a href="qcow2.c.html#L4482">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4509</td><td><a href="qcow2.c.html#L4509">(offset > zero_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4512</td><td><a href="qcow2.c.html#L4512">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4519</td><td><a href="qcow2.c.html#L4519">(zero_start > old_length)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4530</td><td><a href="qcow2.c.html#L4530">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4537</td><td><a href="qcow2.c.html#L4537">(prealloc != PREALLOC_MODE_OFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4540</td><td><a href="qcow2.c.html#L4540">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4553</td><td><a href="qcow2.c.html#L4553">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4564</td><td><a href="qcow2.c.html#L4564">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4598</td><td><a href="qcow2.c.html#L4598">(out_len == -ENOMEM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4601</td><td><a href="qcow2.c.html#L4601">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4605</td><td><a href="qcow2.c.html#L4605">(out_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4613</td><td><a href="qcow2.c.html#L4613">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4620</td><td><a href="qcow2.c.html#L4620">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4626</td><td><a href="qcow2.c.html#L4626">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4664</td><td><a href="qcow2.c.html#L4664">(bytes == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4670</td><td><a href="qcow2.c.html#L4670">(len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4695</td><td><a href="qcow2.c.html#L4695">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4705</td><td><a href="qcow2.c.html#L4705">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4739</td><td><a href="qcow2.c.html#L4739">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4772</td><td><a href="qcow2.c.html#L4772">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4777</td><td><a href="qcow2.c.html#L4777">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4783</td><td><a href="qcow2.c.html#L4783">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4797</td><td><a href="qcow2.c.html#L4797">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4815</td><td><a href="qcow2.c.html#L4815">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4830</td><td><a href="qcow2.c.html#L4830">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4862</td><td><a href="qcow2.c.html#L4862">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4870</td><td><a href="qcow2.c.html#L4870">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4873</td><td><a href="qcow2.c.html#L4873">(offset > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4881</td><td><a href="qcow2.c.html#L4881">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4887</td><td><a href="qcow2.c.html#L4887">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4936</td><td><a href="qcow2.c.html#L4936">(offset < end_offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4944</td><td><a href="qcow2.c.html#L4944">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5055</td><td><a href="qcow2.c.html#L5055">(ssize < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5074</td><td><a href="qcow2.c.html#L5074">(offset < ssize)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5080</td><td><a href="qcow2.c.html#L5080">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5270</td><td><a href="qcow2.c.html#L5270">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5281</td><td><a href="qcow2.c.html#L5281">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5293</td><td><a href="qcow2.c.html#L5293">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5306</td><td><a href="qcow2.c.html#L5306">(bytes < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5310</td><td><a href="qcow2.c.html#L5310">(bytes != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5318</td><td><a href="qcow2.c.html#L5318">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5322</td><td><a href="qcow2.c.html#L5322">(type == QCOW2_SUBCLUSTER_COMPRESSED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5380</td><td><a href="qcow2.c.html#L5380">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5406</td><td><a href="qcow2.c.html#L5406">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5413</td><td><a href="qcow2.c.html#L5413">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5434</td><td><a href="qcow2.c.html#L5434">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5484</td><td><a href="qcow2.c.html#L5484">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5493</td><td><a href="qcow2.c.html#L5493">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5678</td><td><a href="qcow2.c.html#L5678">(new_version > old_version)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5682</td><td><a href="qcow2.c.html#L5682">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5709</td><td><a href="qcow2.c.html#L5709">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5728</td><td><a href="qcow2.c.html#L5728">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5746</td><td><a href="qcow2.c.html#L5746">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5751</td><td><a href="qcow2.c.html#L5751">(backing_file || backing_format)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5763</td><td><a href="qcow2.c.html#L5763">(new_version < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5771</td><td><a href="qcow2.c.html#L5771">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5780</td><td><a href="qcow2.c.html#L5780">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5787</td><td><a href="qcow2.c.html#L5787">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5809</td><td><a href="qcow2.c.html#L5809">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5815</td><td><a href="qcow2.c.html#L5815">(new_version < old_version)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">5819</td><td><a href="qcow2.c.html#L5819">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">387</td><td><a href="qcow2.c.html#L387">(offset_into_cluster(s, bitmaps_ext.bitmap_directory_offset))</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1400</td><td><a href="qcow2.c.html#L1400">(header.backing_file_offset)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">992</td><td><a href="qcow2.c.html#L992">(!qemu_opts_absorb_qdict(opts, options, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1105</td><td><a href="qcow2.c.html#L1105">(!strcmp(opt_overlap_check, "none"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1107</td><td><a href="qcow2.c.html#L1107">(!strcmp(opt_overlap_check, "constant"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1109</td><td><a href="qcow2.c.html#L1109">(!strcmp(opt_overlap_check, "cached"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1111</td><td><a href="qcow2.c.html#L1111">(!strcmp(opt_overlap_check, "all"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2564</td><td><a href="qcow2.c.html#L2564">(!merge_cow(offset, bytes, qiov, qiov_offset, l2meta))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3363</td><td><a href="qcow2.c.html#L3363">(!validate_cluster_size(cluster_size, extended_l2, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3377</td><td><a href="qcow2.c.html#L3377">(!strcmp(buf, "0.10"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3379</td><td><a href="qcow2.c.html#L3379">(!strcmp(buf, "1.1"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3855</td><td><a href="qcow2.c.html#L3855">(!qdict_rename_keys(qdict, opt_renames, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4215</td><td><a href="qcow2.c.html#L4215">(!QEMU_IS_ALIGNED(offset, BDRV_SECTOR_SIZE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1101</td><td><a href="qcow2.c.html#L1101">(!opt_overlap_check)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2251</td><td><a href="qcow2.c.html#L2251">(!pool)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3148</td><td><a href="qcow2.c.html#L3148">(!crypto)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3375</td><td><a href="qcow2.c.html#L3375">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3620</td><td><a href="qcow2.c.html#L3620">(!blk)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3899</td><td><a href="qcow2.c.html#L3899">(!v)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3906</td><td><a href="qcow2.c.html#L3906">(!create_options)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3943</td><td><a href="qcow2.c.html#L3943">(!bytes)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4731</td><td><a href="qcow2.c.html#L4731">(!buf)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4837</td><td><a href="qcow2.c.html#L4837">(!new_reftable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5025</td><td><a href="qcow2.c.html#L5025">(!create_opts)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5150</td><td><a href="qcow2.c.html#L5150">(!encrypt_info)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5241</td><td><a href="qcow2.c.html#L5241">(!preallocated)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5603</td><td><a href="qcow2.c.html#L5603">(!compat)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5693</td><td><a href="qcow2.c.html#L5693">(!amend_opts_dict)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5698</td><td><a href="qcow2.c.html#L5698">(!amend_opts)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">5799</td><td><a href="qcow2.c.html#L5799">(!blk)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1657</td><td><a href="qcow2.c.html#L1657">(data_file_is_raw(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="qcow2.c.html#L1906">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2053</td><td><a href="qcow2.c.html#L2053">(qdict_haskey(options, QCOW2_OPT_CACHE_SIZE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4234</td><td><a href="qcow2.c.html#L4234">(qcow2_truncate_bitmaps_check(bs, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4327</td><td><a href="qcow2.c.html#L4327">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4359</td><td><a href="qcow2.c.html#L4359">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4660</td><td><a href="qcow2.c.html#L4660">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4677</td><td><a href="qcow2.c.html#L4677">(offset_into_cluster(s, offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5228</td><td><a href="qcow2.c.html#L5228">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5237</td><td><a href="qcow2.c.html#L5237">(qemu_in_coroutine())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">5357</td><td><a href="qcow2.c.html#L5357">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">488</td><td><a href="qcow2.c.html#L488">(mask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="qcow2.c.html#L596">(set_allocation_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">903</td><td><a href="qcow2.c.html#L903">(combined_cache_size_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">920</td><td><a href="qcow2.c.html#L920">(l2_cache_size_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">922</td><td><a href="qcow2.c.html#L922">(refcount_cache_size_set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1027</td><td><a href="qcow2.c.html#L1027">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1035</td><td><a href="qcow2.c.html#L1035">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1142</td><td><a href="qcow2.c.html#L1142">(encryptfmt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1424</td><td><a href="qcow2.c.html#L1424">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1616</td><td><a href="qcow2.c.html#L1616">(open_data_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1729</td><td><a href="qcow2.c.html#L1729">(update_header)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1802</td><td><a href="qcow2.c.html#L1802">(update_header)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2039</td><td><a href="qcow2.c.html#L2039">(has_new_overlap_template)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2136</td><td><a href="qcow2.c.html#L2136">(link_l2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2138</td><td><a href="qcow2.c.html#L2138">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2368</td><td><a href="qcow2.c.html#L2368">(aio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2671</td><td><a href="qcow2.c.html#L2671">(aio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2699</td><td><a href="qcow2.c.html#L2699">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2706</td><td><a href="qcow2.c.html#L2706">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2822</td><td><a href="qcow2.c.html#L2822">(len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2864</td><td><a href="qcow2.c.html#L2864">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3186</td><td><a href="qcow2.c.html#L3186">(bytes)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3283</td><td><a href="qcow2.c.html#L3283">(refblock_count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3343</td><td><a href="qcow2.c.html#L3343">(extended_l2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3651</td><td><a href="qcow2.c.html#L3651">(data_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3698</td><td><a href="qcow2.c.html#L3698">(data_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3721</td><td><a href="qcow2.c.html#L3721">(data_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3779</td><td><a href="qcow2.c.html#L3779">(data_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3875</td><td><a href="qcow2.c.html#L3875">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4177</td><td><a href="qcow2.c.html#L4177">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4300</td><td><a href="qcow2.c.html#L4300">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4458</td><td><a href="qcow2.c.html#L4458">(nb_new_data_clusters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4703</td><td><a href="qcow2.c.html#L4703">(aio)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4988</td><td><a href="qcow2.c.html#L4988">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4993</td><td><a href="qcow2.c.html#L4993">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4998</td><td><a href="qcow2.c.html#L4998">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5006</td><td><a href="qcow2.c.html#L5006">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5018</td><td><a href="qcow2.c.html#L5018">(has_luks)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5053</td><td><a href="qcow2.c.html#L5053">(in_bs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5063</td><td><a href="qcow2.c.html#L5063">(has_backing_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5197</td><td><a href="qcow2.c.html#L5197">(encrypt_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5417</td><td><a href="qcow2.c.html#L5417">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5482</td><td><a href="qcow2.c.html#L5482">(need_snapshot_update)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5687</td><td><a href="qcow2.c.html#L5687">(encryption_update)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5734</td><td><a href="qcow2.c.html#L5734">(data_file_raw)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5740</td><td><a href="qcow2.c.html#L5740">(data_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5762</td><td><a href="qcow2.c.html#L5762">(lazy_refcounts)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5796</td><td><a href="qcow2.c.html#L5796">(new_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5891</td><td><a href="qcow2.c.html#L5891">(fatal)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5907</td><td><a href="qcow2.c.html#L5907">(fatal)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

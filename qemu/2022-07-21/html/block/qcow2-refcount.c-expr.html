@@ -1,0 +1,419 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - block\qcow2-refcount.c Ctrl Expressions (368) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - block\qcow2-refcount.c Ctrl Expressions (368) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;block\qcow2-refcount.c Ctrl Expressions (368)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">996</td><td><a href="qcow2-refcount.c.html#L996">(s->free_cluster_index > 0 && <span style='background-color:#741da3;'>s->free_cluster_index - 1 > (max >> s->cluster_bits)</span>)</a></td><td class="num">1037.85</td></tr>
+      <tr><td class="num line">3173</td><td><a href="qcow2-refcount.c.html#L3173">(<span style='background-color:#741da3;'>reftable_index < *reftable_size && (*reftable)[reftable_index]</span>)</a></td><td class="num">1012.25</td></tr>
+      <tr><td class="num line">1988</td><td><a href="qcow2-refcount.c.html#L1988">(<span style='background-color:#741da3;'>(refcount == 1) != ((l1_entry & QCOW_OFLAG_COPIED) != 0)</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">2034</td><td><a href="qcow2-refcount.c.html#L2034">(<span style='background-color:#741da3;'>(refcount == 1) != ((l2_entry & QCOW_OFLAG_COPIED) != 0)</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">3276</td><td><a href="qcow2-refcount.c.html#L3276">(<span style='background-color:#741da3;'>new_refcount_bits < 64 && refcount >> new_refcount_bits</span>)</a></td><td class="num">1009.25</td></tr>
+      <tr><td class="num line">3119</td><td><a href="qcow2-refcount.c.html#L3119">(<span style='background-color:#741da3;'>!refblock_empty && reftable_index >= *reftable_size</span>)</a></td><td class="num">1009.00</td></tr>
+      <tr><td class="num line">2960</td><td><a href="qcow2-refcount.c.html#L2960">(s->snapshots[i].l1_size && overlaps_with(s->snapshots[i].l1_table_offset, s->snapshots[i].l1_size * L1E_SIZE))</a></td><td class="num">74.50</td></tr>
+      <tr><td class="num line">2970</td><td><a href="qcow2-refcount.c.html#L2970">((s->l1_table[i] & L1E_OFFSET_MASK) && overlaps_with(s->l1_table[i] & L1E_OFFSET_MASK, s->cluster_size))</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">2984</td><td><a href="qcow2-refcount.c.html#L2984">((s->refcount_table[i] & REFT_OFFSET_MASK) && overlaps_with(s->refcount_table[i] & REFT_OFFSET_MASK, s->cluster_size))</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">787</td><td><a href="qcow2-refcount.c.html#L787">(p == d || p->offset > d->offset + d->bytes || d->offset > p->offset + p->bytes)</a></td><td class="num">48.95</td></tr>
+      <tr><td class="num line">93</td><td><a href="qcow2-refcount.c.html#L93">(i > 0 && (s->refcount_table[i] & REFT_OFFSET_MASK) == 0)</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="qcow2-refcount.c.html#L872">(decrease ? (refcount - addend > refcount) : (refcount + addend < refcount || refcount + addend > s->refcount_max))</a></td><td class="num">38.30</td></tr>
+      <tr><td class="num line">1115</td><td><a href="qcow2-refcount.c.html#L1115">(!offset || ROUND_UP(offset, s->cluster_size) != new_cluster)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">3146</td><td><a href="qcow2-refcount.c.html#L3146">(!refblock_empty && !(*reftable)[reftable_index])</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">1170</td><td><a href="qcow2-refcount.c.html#L1170">(s->discard_passthrough[type] && (ctype == QCOW2_CLUSTER_NORMAL || ctype == QCOW2_CLUSTER_ZERO_ALLOC))</a></td><td class="num">15.50</td></tr>
+      <tr><td class="num line">3030</td><td><a href="qcow2-refcount.c.html#L3030">((chk & QCOW2_OL_BITMAP_DIRECTORY) && (s->autoclear_features & QCOW2_AUTOCLEAR_BITMAPS))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">856</td><td><a href="qcow2-refcount.c.html#L856">(s->free_cluster_index > (start >> s->cluster_bits))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">884</td><td><a href="qcow2-refcount.c.html#L884">(refcount == 0 && cluster_index < s->free_cluster_index)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">3669</td><td><a href="qcow2-refcount.c.html#L3669">(s->refcount_table[i] && !reftable_tmp[i])</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1433</td><td><a href="qcow2-refcount.c.html#L1433">(ret == 0 && addend >= 0 && l1_modified)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">2392</td><td><a href="qcow2-refcount.c.html#L2392">(cluster < *imrt_nb_clusters && contiguous_free_clusters < cluster_count)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">765</td><td><a href="qcow2-refcount.c.html#L765">(new_end - new_start <= length + d->bytes)</a></td><td class="num">10.20</td></tr>
+      <tr><td class="num line">2939</td><td><a href="qcow2-refcount.c.html#L2939">((chk & QCOW2_OL_ACTIVE_L1) && s->l1_size)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2945</td><td><a href="qcow2-refcount.c.html#L2945">((chk & QCOW2_OL_REFCOUNT_TABLE) && s->refcount_table_size)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2952</td><td><a href="qcow2-refcount.c.html#L2952">((chk & QCOW2_OL_SNAPSHOT_TABLE) && s->snapshots_size)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2958</td><td><a href="qcow2-refcount.c.html#L2958">((chk & QCOW2_OL_INACTIVE_L1) && s->snapshots)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2968</td><td><a href="qcow2-refcount.c.html#L2968">((chk & QCOW2_OL_ACTIVE_L2) && s->l1_table)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2978</td><td><a href="qcow2-refcount.c.html#L2978">((chk & QCOW2_OL_REFCOUNT_BLOCK) && s->refcount_table)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">2992</td><td><a href="qcow2-refcount.c.html#L2992">((chk & QCOW2_OL_INACTIVE_L2) && s->snapshots)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1550</td><td><a href="qcow2-refcount.c.html#L1550">(offset + size - file_len >= s->cluster_size)</a></td><td class="num">9.95</td></tr>
+      <tr><td class="num line">2331</td><td><a href="qcow2-refcount.c.html#L2331">(refcount1 > refcount2 && (fix & BDRV_FIX_LEAKS))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2333</td><td><a href="qcow2-refcount.c.html#L2333">(refcount1 < refcount2 && (fix & BDRV_FIX_ERRORS))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2940</td><td><a href="qcow2-refcount.c.html#L2940">(overlaps_with(s->l1_table_offset, s->l1_size * L1E_SIZE))</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2946</td><td><a href="qcow2-refcount.c.html#L2946">(overlaps_with(s->refcount_table_offset, s->refcount_table_size * REFTABLE_ENTRY_SIZE))</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2879</td><td><a href="qcow2-refcount.c.html#L2879">(res->leaks || res->corruptions)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2098</td><td><a href="qcow2-refcount.c.html#L2098">(s->refcount_table[i] & REFT_RESERVED_MASK)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3731</td><td><a href="qcow2-refcount.c.html#L3731">(i < end_cluster && cluster_count < threshold)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2183</td><td><a href="qcow2-refcount.c.html#L2183">(s->get_refcount(*refcount_table, cluster) != 1)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2124</td><td><a href="qcow2-refcount.c.html#L2124">(offset > INT64_MAX - s->cluster_size)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">2500</td><td><a href="qcow2-refcount.c.html#L2500">(on_disk_reftable_entries > refblock_index && on_disk_reftable[refblock_index])</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2234</td><td><a href="qcow2-refcount.c.html#L2234">(has_data_file(bs) && s->nb_snapshots)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3020</td><td><a href="qcow2-refcount.c.html#L3020">(l2_ofs && overlaps_with(l2_ofs, s->cluster_size))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2817</td><td><a href="qcow2-refcount.c.html#L2817">(rebuild && (fix & BDRV_FIX_ERRORS))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2864</td><td><a href="qcow2-refcount.c.html#L2864">(res->corruptions < old_res.corruptions)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">2867</td><td><a href="qcow2-refcount.c.html#L2867">(res->leaks < old_res.leaks)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">389</td><td><a href="qcow2-refcount.c.html#L389">(in_same_refcount_block(s, new_block, cluster_index << s->cluster_bits))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2021</td><td><a href="qcow2-refcount.c.html#L2021">(cluster_type == QCOW2_CLUSTER_NORMAL || cluster_type == QCOW2_CLUSTER_ZERO_ALLOC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2322</td><td><a href="qcow2-refcount.c.html#L2322">(refcount1 > 0 || refcount2 > 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2953</td><td><a href="qcow2-refcount.c.html#L2953">(overlaps_with(s->snapshots_offset, s->snapshots_size))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3033</td><td><a href="qcow2-refcount.c.html#L3033">(overlaps_with(s->bitmap_directory_offset, s->bitmap_directory_size))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1754</td><td><a href="qcow2-refcount.c.html#L1754">((l2_bitmap >> 32) & l2_bitmap)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2396</td><td><a href="qcow2-refcount.c.html#L2396">(!s->get_refcount(*refcount_table, cluster))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2484</td><td><a href="qcow2-refcount.c.html#L2484">(!s->get_refcount(*refcount_table, cluster))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1271</td><td><a href="qcow2-refcount.c.html#L1271">(l1_size2 && l1_table == NULL)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1812</td><td><a href="qcow2-refcount.c.html#L1812">(next_contiguous_offset && offset != next_contiguous_offset)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3008</td><td><a href="qcow2-refcount.c.html#L3008">(l1_sz2 && l1 == NULL)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3585</td><td><a href="qcow2-refcount.c.html#L3585">(s->get_refcount(refblock, block_index) != 1)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">115</td><td><a href="qcow2-refcount.c.html#L115">(s->refcount_table_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">116</td><td><a href="qcow2-refcount.c.html#L116">(s->refcount_table == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">126</td><td><a href="qcow2-refcount.c.html#L126">(i < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">256</td><td><a href="qcow2-refcount.c.html#L256">(refcount_table_index >= s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="qcow2-refcount.c.html#L316">(refcount_table_index < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="qcow2-refcount.c.html#L437">(refcount_table_index < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">584</td><td><a href="qcow2-refcount.c.html#L584">(table_size > s->max_refcount_table_index)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1091</td><td><a href="qcow2-refcount.c.html#L1091">(refcount == s->refcount_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1269</td><td><a href="qcow2-refcount.c.html#L1269">(l1_table_offset != s->l1_table_offset)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1313</td><td><a href="qcow2-refcount.c.html#L1313">(j < s->l2_slice_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1573</td><td><a href="qcow2-refcount.c.html#L1573">(refcount == s->refcount_max)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1683</td><td><a href="qcow2-refcount.c.html#L1683">(i < s->l2_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1973</td><td><a href="qcow2-refcount.c.html#L1973">(i < s->l1_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2016</td><td><a href="qcow2-refcount.c.html#L2016">(j < s->l2_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2093</td><td><a href="qcow2-refcount.c.html#L2093">(i < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2240</td><td><a href="qcow2-refcount.c.html#L2240">(i < s->nb_snapshots)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2249</td><td><a href="qcow2-refcount.c.html#L2249">(sn->l1_size > QCOW_MAX_L1_SIZE / L1E_SIZE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2930</td><td><a href="qcow2-refcount.c.html#L2930">(offset < s->cluster_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2959</td><td><a href="qcow2-refcount.c.html#L2959">(i < s->nb_snapshots)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2969</td><td><a href="qcow2-refcount.c.html#L2969">(i < s->l1_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2993</td><td><a href="qcow2-refcount.c.html#L2993">(i < s->nb_snapshots)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3226</td><td><a href="qcow2-refcount.c.html#L3226">(reftable_index < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3255</td><td><a href="qcow2-refcount.c.html#L3255">(refblock_index < s->refcount_block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3303</td><td><a href="qcow2-refcount.c.html#L3303">(refblock_index < s->refcount_block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3549</td><td><a href="qcow2-refcount.c.html#L3549">(index < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3604</td><td><a href="qcow2-refcount.c.html#L3604">(cluster_index < s->free_cluster_index)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3626</td><td><a href="qcow2-refcount.c.html#L3626">(i < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3668</td><td><a href="qcow2-refcount.c.html#L3668">(i < s->refcount_table_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1098</td><td><a href="qcow2-refcount.c.html#L1098">(!offset || free_in_cluster < size)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="qcow2-refcount.c.html#L905">(s->discard_passthrough[type])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1908</td><td><a href="qcow2-refcount.c.html#L1908">(l1_table[i] & L1E_RESERVED_MASK)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">509</td><td><a href="qcow2-refcount.c.html#L509">(*refcount_block != NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1563</td><td><a href="qcow2-refcount.c.html#L1563">(k >= *refcount_table_size)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2115</td><td><a href="qcow2-refcount.c.html#L2115">(cluster >= *nb_clusters)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2151</td><td><a href="qcow2-refcount.c.html#L2151">(cluster >= *nb_clusters)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2279</td><td><a href="qcow2-refcount.c.html#L2279">(s->crypto_header.length)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1138</td><td><a href="qcow2-refcount.c.html#L1138">(!offset_into_cluster(s, s->free_byte_offset))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="qcow2-refcount.c.html#L913">(!s->cache_discards)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3071</td><td><a href="qcow2-refcount.c.html#L3071">(data_file && has_data_file(bs))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3678</td><td><a href="qcow2-refcount.c.html#L3678">(!s->cache_discards)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1192</td><td><a href="qcow2-refcount.c.html#L1192">(offset_into_cluster(s, l2_entry & L2E_OFFSET_MASK))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2242</td><td><a href="qcow2-refcount.c.html#L2242">(offset_into_cluster(s, sn->l1_table_offset))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">977</td><td><a href="qcow2-refcount.c.html#L977">(s->cache_discards)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1694</td><td><a href="qcow2-refcount.c.html#L1694">(l2_entry & L2E_STD_RESERVED_MASK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="qcow2-refcount.c.html#L1704">(l2_entry & QCOW_OFLAG_COPIED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="qcow2-refcount.c.html#L1735">(flags & CHECK_FRAG_INFO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="qcow2-refcount.c.html#L1778">(fix & BDRV_FIX_ERRORS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1810</td><td><a href="qcow2-refcount.c.html#L1810">(flags & CHECK_FRAG_INFO)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1837</td><td><a href="qcow2-refcount.c.html#L1837">(l2_bitmap & QCOW_L2_BITMAP_ALL_ALLOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1961</td><td><a href="qcow2-refcount.c.html#L1961">(fix & BDRV_FIX_ERRORS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="qcow2-refcount.c.html#L1964">(fix & BDRV_FIX_LEAKS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="qcow2-refcount.c.html#L2120">(fix & BDRV_FIX_ERRORS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2843</td><td><a href="qcow2-refcount.c.html#L2843">(fix & BDRV_FIX_LEAKS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2929</td><td><a href="qcow2-refcount.c.html#L2929">(chk & QCOW2_OL_MAIN_HEADER)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2208</td><td><a href="qcow2-refcount.c.html#L2208">(!*refcount_table)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">604</td><td><a href="qcow2-refcount.c.html#L604">(!new_table[i])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1904</td><td><a href="qcow2-refcount.c.html#L1904">(!l1_table[i])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3642</td><td><a href="qcow2-refcount.c.html#L3642">(i == offset_to_reftable_index(s, refblock_offs))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">123</td><td><a href="qcow2-refcount.c.html#L123">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="qcow2-refcount.c.html#L276">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">363</td><td><a href="qcow2-refcount.c.html#L363">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">369</td><td><a href="qcow2-refcount.c.html#L369">(new_block < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">377</td><td><a href="qcow2-refcount.c.html#L377">(new_block == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="qcow2-refcount.c.html#L393">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="qcow2-refcount.c.html#L408">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">413</td><td><a href="qcow2-refcount.c.html#L413">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">421</td><td><a href="qcow2-refcount.c.html#L421">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">432</td><td><a href="qcow2-refcount.c.html#L432">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="qcow2-refcount.c.html#L443">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">494</td><td><a href="qcow2-refcount.c.html#L494">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">499</td><td><a href="qcow2-refcount.c.html#L499">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="qcow2-refcount.c.html#L549">(total_refblock_count_u64 > QCOW_MAX_REFTABLE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">571</td><td><a href="qcow2-refcount.c.html#L571">(table_size > QCOW_MAX_REFTABLE_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">578</td><td><a href="qcow2-refcount.c.html#L578">(new_table == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">603</td><td><a href="qcow2-refcount.c.html#L603">(i < total_refblock_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">614</td><td><a href="qcow2-refcount.c.html#L614">(i < total_refblock_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">622</td><td><a href="qcow2-refcount.c.html#L622">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">628</td><td><a href="qcow2-refcount.c.html#L628">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">642</td><td><a href="qcow2-refcount.c.html#L642">(first_offset_covered < end_offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="qcow2-refcount.c.html#L647">(first_offset_covered < start_offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">659</td><td><a href="qcow2-refcount.c.html#L659">(j < end_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">677</td><td><a href="qcow2-refcount.c.html#L677">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">682</td><td><a href="qcow2-refcount.c.html#L682">(i < total_refblock_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="qcow2-refcount.c.html#L689">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">693</td><td><a href="qcow2-refcount.c.html#L693">(i < total_refblock_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">708</td><td><a href="qcow2-refcount.c.html#L708">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">743</td><td><a href="qcow2-refcount.c.html#L743">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="qcow2-refcount.c.html#L745">(r2 < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="qcow2-refcount.c.html#L826">(length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="qcow2-refcount.c.html#L828">(length == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">839</td><td><a href="qcow2-refcount.c.html#L839">(cluster_offset <= last)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="qcow2-refcount.c.html#L848">(table_index != old_table_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">855</td><td><a href="qcow2-refcount.c.html#L855">(ret == -EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">860</td><td><a href="qcow2-refcount.c.html#L860">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">889</td><td><a href="qcow2-refcount.c.html#L889">(refcount == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">894</td><td><a href="qcow2-refcount.c.html#L894">(table != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">901</td><td><a href="qcow2-refcount.c.html#L901">(table != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">926</td><td><a href="qcow2-refcount.c.html#L926">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">954</td><td><a href="qcow2-refcount.c.html#L954">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">983</td><td><a href="qcow2-refcount.c.html#L983">(i < nb_clusters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">987</td><td><a href="qcow2-refcount.c.html#L987">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="qcow2-refcount.c.html#L989">(refcount != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1018</td><td><a href="qcow2-refcount.c.html#L1018">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1023</td><td><a href="qcow2-refcount.c.html#L1023">(ret == -EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="qcow2-refcount.c.html#L1025">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1041</td><td><a href="qcow2-refcount.c.html#L1041">(nb_clusters == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="qcow2-refcount.c.html#L1048">(i < nb_clusters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1050</td><td><a href="qcow2-refcount.c.html#L1050">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="qcow2-refcount.c.html#L1052">(refcount != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1060</td><td><a href="qcow2-refcount.c.html#L1060">(ret == -EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1062</td><td><a href="qcow2-refcount.c.html#L1062">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1087</td><td><a href="qcow2-refcount.c.html#L1087">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1104</td><td><a href="qcow2-refcount.c.html#L1104">(new_cluster < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1108</td><td><a href="qcow2-refcount.c.html#L1108">(new_cluster == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="qcow2-refcount.c.html#L1125">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1128</td><td><a href="qcow2-refcount.c.html#L1128">(ret == -EAGAIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1129</td><td><a href="qcow2-refcount.c.html#L1129">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="qcow2-refcount.c.html#L1153">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1215</td><td><a href="qcow2-refcount.c.html#L1215">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1221</td><td><a href="qcow2-refcount.c.html#L1221">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1232</td><td><a href="qcow2-refcount.c.html#L1232">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1278</td><td><a href="qcow2-refcount.c.html#L1278">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1282</td><td><a href="qcow2-refcount.c.html#L1282">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1291</td><td><a href="qcow2-refcount.c.html#L1291">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1305</td><td><a href="qcow2-refcount.c.html#L1305">(slice < n_slices)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1309</td><td><a href="qcow2-refcount.c.html#L1309">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1324</td><td><a href="qcow2-refcount.c.html#L1324">(addend != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="qcow2-refcount.c.html#L1334">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1359</td><td><a href="qcow2-refcount.c.html#L1359">(addend != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1363</td><td><a href="qcow2-refcount.c.html#L1363">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="qcow2-refcount.c.html#L1369">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1383</td><td><a href="qcow2-refcount.c.html#L1383">(refcount == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1386</td><td><a href="qcow2-refcount.c.html#L1386">(entry != old_entry)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1387</td><td><a href="qcow2-refcount.c.html#L1387">(addend > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1400</td><td><a href="qcow2-refcount.c.html#L1400">(addend != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1405</td><td><a href="qcow2-refcount.c.html#L1405">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1411</td><td><a href="qcow2-refcount.c.html#L1411">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="qcow2-refcount.c.html#L1413">(refcount == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1416</td><td><a href="qcow2-refcount.c.html#L1416">(l2_offset != old_l2_offset)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1434</td><td><a href="qcow2-refcount.c.html#L1434">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1441</td><td><a href="qcow2-refcount.c.html#L1441">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="qcow2-refcount.c.html#L1492">(new_byte_size == old_byte_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1499</td><td><a href="qcow2-refcount.c.html#L1499">(new_byte_size > SIZE_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1508</td><td><a href="qcow2-refcount.c.html#L1508">(new_byte_size > old_byte_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1536</td><td><a href="qcow2-refcount.c.html#L1536">(size <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1541</td><td><a href="qcow2-refcount.c.html#L1541">(file_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1560</td><td><a href="qcow2-refcount.c.html#L1560">(cluster_offset <= last)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1566</td><td><a href="qcow2-refcount.c.html#L1566">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1631</td><td><a href="qcow2-refcount.c.html#L1631">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1638</td><td><a href="qcow2-refcount.c.html#L1638">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1676</td><td><a href="qcow2-refcount.c.html#L1676">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1692</td><td><a href="qcow2-refcount.c.html#L1692">(type != QCOW2_CLUSTER_COMPRESSED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="qcow2-refcount.c.html#L1731">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1790</td><td><a href="qcow2-refcount.c.html#L1790">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1824</td><td><a href="qcow2-refcount.c.html#L1824">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1880</td><td><a href="qcow2-refcount.c.html#L1880">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1885</td><td><a href="qcow2-refcount.c.html#L1885">(l1_table == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1892</td><td><a href="qcow2-refcount.c.html#L1892">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="qcow2-refcount.c.html#L1898">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1903</td><td><a href="qcow2-refcount.c.html#L1903">(i < l1_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1920</td><td><a href="qcow2-refcount.c.html#L1920">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1935</td><td><a href="qcow2-refcount.c.html#L1935">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1984</td><td><a href="qcow2-refcount.c.html#L1984">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1998</td><td><a href="qcow2-refcount.c.html#L1998">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2009</td><td><a href="qcow2-refcount.c.html#L2009">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2029</td><td><a href="qcow2-refcount.c.html#L2029">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2050</td><td><a href="qcow2-refcount.c.html#L2050">(l2_dirty > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2054</td><td><a href="qcow2-refcount.c.html#L2054">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2063</td><td><a href="qcow2-refcount.c.html#L2063">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2131</td><td><a href="qcow2-refcount.c.html#L2131">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2136</td><td><a href="qcow2-refcount.c.html#L2136">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2146</td><td><a href="qcow2-refcount.c.html#L2146">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2161</td><td><a href="qcow2-refcount.c.html#L2161">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2177</td><td><a href="qcow2-refcount.c.html#L2177">(offset != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2180</td><td><a href="qcow2-refcount.c.html#L2180">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2212</td><td><a href="qcow2-refcount.c.html#L2212">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2221</td><td><a href="qcow2-refcount.c.html#L2221">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2229</td><td><a href="qcow2-refcount.c.html#L2229">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2259</td><td><a href="qcow2-refcount.c.html#L2259">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2265</td><td><a href="qcow2-refcount.c.html#L2265">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2274</td><td><a href="qcow2-refcount.c.html#L2274">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2283</td><td><a href="qcow2-refcount.c.html#L2283">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2290</td><td><a href="qcow2-refcount.c.html#L2290">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2311</td><td><a href="qcow2-refcount.c.html#L2311">(i < nb_clusters)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2313</td><td><a href="qcow2-refcount.c.html#L2313">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2326</td><td><a href="qcow2-refcount.c.html#L2326">(refcount1 != refcount2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2329</td><td><a href="qcow2-refcount.c.html#L2329">(refcount1 == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2349</td><td><a href="qcow2-refcount.c.html#L2349">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2356</td><td><a href="qcow2-refcount.c.html#L2356">(refcount1 < refcount2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2416</td><td><a href="qcow2-refcount.c.html#L2416">(contiguous_free_clusters < cluster_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2426</td><td><a href="qcow2-refcount.c.html#L2426">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2433</td><td><a href="qcow2-refcount.c.html#L2433">(i < cluster_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2482</td><td><a href="qcow2-refcount.c.html#L2482">(cluster < end_cluster)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2513</td><td><a href="qcow2-refcount.c.html#L2513">(first_free_cluster < refblock_start)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2519</td><td><a href="qcow2-refcount.c.html#L2519">(refblock_offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2526</td><td><a href="qcow2-refcount.c.html#L2526">(refblock_cluster_index >= end_cluster)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2534</td><td><a href="qcow2-refcount.c.html#L2534">(on_disk_reftable_entries <= refblock_index)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2566</td><td><a href="qcow2-refcount.c.html#L2566">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2582</td><td><a href="qcow2-refcount.c.html#L2582">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2659</td><td><a href="qcow2-refcount.c.html#L2659">(reftable_size_changed < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2681</td><td><a href="qcow2-refcount.c.html#L2681">(reftable_offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2702</td><td><a href="qcow2-refcount.c.html#L2702">(reftable_size_changed < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2722</td><td><a href="qcow2-refcount.c.html#L2722">(refblock_index < on_disk_reftable_entries)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2730</td><td><a href="qcow2-refcount.c.html#L2730">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2738</td><td><a href="qcow2-refcount.c.html#L2738">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2751</td><td><a href="qcow2-refcount.c.html#L2751">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2756</td><td><a href="qcow2-refcount.c.html#L2756">(refblock_index < on_disk_reftable_entries)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2790</td><td><a href="qcow2-refcount.c.html#L2790">(size < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2796</td><td><a href="qcow2-refcount.c.html#L2796">(nb_clusters > INT_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2806</td><td><a href="qcow2-refcount.c.html#L2806">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2825</td><td><a href="qcow2-refcount.c.html#L2825">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2839</td><td><a href="qcow2-refcount.c.html#L2839">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2888</td><td><a href="qcow2-refcount.c.html#L2888">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2983</td><td><a href="qcow2-refcount.c.html#L2983">(i <= last_entry)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3002</td><td><a href="qcow2-refcount.c.html#L3002">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3013</td><td><a href="qcow2-refcount.c.html#L3013">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3018</td><td><a href="qcow2-refcount.c.html#L3018">(j < l1_sz)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3076</td><td><a href="qcow2-refcount.c.html#L3076">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3078</td><td><a href="qcow2-refcount.c.html#L3078">(ret > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3125</td><td><a href="qcow2-refcount.c.html#L3125">(new_reftable_size > QCOW_MAX_REFTABLE_SIZE / REFTABLE_ENTRY_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3148</td><td><a href="qcow2-refcount.c.html#L3148">(offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3178</td><td><a href="qcow2-refcount.c.html#L3178">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3184</td><td><a href="qcow2-refcount.c.html#L3184">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3250</td><td><a href="qcow2-refcount.c.html#L3250">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3260</td><td><a href="qcow2-refcount.c.html#L3260">(new_refblock_index >= new_refblock_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3265</td><td><a href="qcow2-refcount.c.html#L3265">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3306</td><td><a href="qcow2-refcount.c.html#L3306">(new_refblock_index >= new_refblock_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3311</td><td><a href="qcow2-refcount.c.html#L3311">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3329</td><td><a href="qcow2-refcount.c.html#L3329">(new_refblock_index > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3332</td><td><a href="qcow2-refcount.c.html#L3332">(new_refblock_index < new_refblock_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3342</td><td><a href="qcow2-refcount.c.html#L3342">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3403</td><td><a href="qcow2-refcount.c.html#L3403">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3419</td><td><a href="qcow2-refcount.c.html#L3419">(new_reftable_offset < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3436</td><td><a href="qcow2-refcount.c.html#L3436">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3446</td><td><a href="qcow2-refcount.c.html#L3446">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3451</td><td><a href="qcow2-refcount.c.html#L3451">(i < new_reftable_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3459</td><td><a href="qcow2-refcount.c.html#L3459">(i < new_reftable_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3463</td><td><a href="qcow2-refcount.c.html#L3463">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3471</td><td><a href="qcow2-refcount.c.html#L3471">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3489</td><td><a href="qcow2-refcount.c.html#L3489">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3523</td><td><a href="qcow2-refcount.c.html#L3523">(i < new_reftable_size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3532</td><td><a href="qcow2-refcount.c.html#L3532">(new_reftable_offset > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3573</td><td><a href="qcow2-refcount.c.html#L3573">(refblock_offs < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3581</td><td><a href="qcow2-refcount.c.html#L3581">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3631</td><td><a href="qcow2-refcount.c.html#L3631">(refblock_offs == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3637</td><td><a href="qcow2-refcount.c.html#L3637">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3670</td><td><a href="qcow2-refcount.c.html#L3670">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3692</td><td><a href="qcow2-refcount.c.html#L3692">(i >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3695</td><td><a href="qcow2-refcount.c.html#L3695">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3700</td><td><a href="qcow2-refcount.c.html#L3700">(refcount > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3718</td><td><a href="qcow2-refcount.c.html#L3718">(file_length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3723</td><td><a href="qcow2-refcount.c.html#L3723">(real_allocation < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3734</td><td><a href="qcow2-refcount.c.html#L3734">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">619</td><td><a href="qcow2-refcount.c.html#L619">(new_table[i])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1820</td><td><a href="qcow2-refcount.c.html#L1820">(!has_data_file(bs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">262</td><td><a href="qcow2-refcount.c.html#L262">(!refcount_block_offset)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1504</td><td><a href="qcow2-refcount.c.html#L1504">(!new_ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1772</td><td><a href="qcow2-refcount.c.html#L1772">(!contains_data)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1873</td><td><a href="qcow2-refcount.c.html#L1873">(!l1_size)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1978</td><td><a href="qcow2-refcount.c.html#L1978">(!l2_offset)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2542</td><td><a href="qcow2-refcount.c.html#L2542">(!on_disk_reftable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2925</td><td><a href="qcow2-refcount.c.html#L2925">(!size)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3134</td><td><a href="qcow2-refcount.c.html#L3134">(!new_reftable)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3552</td><td><a href="qcow2-refcount.c.html#L3552">(!covering_refblock_offset)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">267</td><td><a href="qcow2-refcount.c.html#L267">(offset_into_cluster(s, refcount_block_offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="qcow2-refcount.c.html#L323">(offset_into_cluster(s, refcount_block_offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1169</td><td><a href="qcow2-refcount.c.html#L1169">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1219</td><td><a href="qcow2-refcount.c.html#L1219">(qcow2_need_accurate_refcounts(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="qcow2-refcount.c.html#L1297">(offset_into_cluster(s, l2_offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1344</td><td><a href="qcow2-refcount.c.html#L1344">(offset_into_cluster(s, offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="qcow2-refcount.c.html#L1613">(has_subclusters(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1712</td><td><a href="qcow2-refcount.c.html#L1712">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1762</td><td><a href="qcow2-refcount.c.html#L1762">(offset_into_cluster(s, offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1766</td><td><a href="qcow2-refcount.c.html#L1766">(has_subclusters(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1925</td><td><a href="qcow2-refcount.c.html#L1925">(offset_into_cluster(s, l2_offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2023</td><td><a href="qcow2-refcount.c.html#L2023">(has_data_file(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2107</td><td><a href="qcow2-refcount.c.html#L2107">(offset_into_cluster(s, offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3238</td><td><a href="qcow2-refcount.c.html#L3238">(offset_into_cluster(s, refblock_offset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="qcow2-refcount.c.html#L322">(refcount_block_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">561</td><td><a href="qcow2-refcount.c.html#L561">(exact_size)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="qcow2-refcount.c.html#L596">(new_refblock_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">832</td><td><a href="qcow2-refcount.c.html#L832">(decrease)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">849</td><td><a href="qcow2-refcount.c.html#L849">(refcount_block)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">879</td><td><a href="qcow2-refcount.c.html#L879">(decrease)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">918</td><td><a href="qcow2-refcount.c.html#L918">(refcount_block)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1084</td><td><a href="qcow2-refcount.c.html#L1084">(offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1293</td><td><a href="qcow2-refcount.c.html#L1293">(l2_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1425</td><td><a href="qcow2-refcount.c.html#L1425">(l2_slice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1445</td><td><a href="qcow2-refcount.c.html#L1445">(l1_allocated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1628</td><td><a href="qcow2-refcount.c.html#L1628">(metadata_overlap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1719</td><td><a href="qcow2-refcount.c.html#L1719">(l2_bitmap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1782</td><td><a href="qcow2-refcount.c.html#L1782">(metadata_overlap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1993</td><td><a href="qcow2-refcount.c.html#L1993">(repair)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2039</td><td><a href="qcow2-refcount.c.html#L2039">(repair)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2344</td><td><a href="qcow2-refcount.c.html#L2344">(num_fixed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2398</td><td><a href="qcow2-refcount.c.html#L2398">(first_gap)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2404</td><td><a href="qcow2-refcount.c.html#L2404">(contiguous_free_clusters)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2712</td><td><a href="qcow2-refcount.c.html#L2712">(reftable_size_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2852</td><td><a href="qcow2-refcount.c.html#L2852">(rebuild)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2871</td><td><a href="qcow2-refcount.c.html#L2871">(fix)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2872</td><td><a href="qcow2-refcount.c.html#L2872">(rebuild)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3235</td><td><a href="qcow2-refcount.c.html#L3235">(refblock_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3291</td><td><a href="qcow2-refcount.c.html#L3291">(new_set_refcount)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3320</td><td><a href="qcow2-refcount.c.html#L3320">(new_set_refcount)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3331</td><td><a href="qcow2-refcount.c.html#L3331">(new_set_refcount)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3409</td><td><a href="qcow2-refcount.c.html#L3409">(new_allocation)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3410</td><td><a href="qcow2-refcount.c.html#L3410">(new_reftable_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3427</td><td><a href="qcow2-refcount.c.html#L3427">(new_allocation)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3519</td><td><a href="qcow2-refcount.c.html#L3519">(new_reftable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3525</td><td><a href="qcow2-refcount.c.html#L3525">(offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3610</td><td><a href="qcow2-refcount.c.html#L3610">(refblock)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

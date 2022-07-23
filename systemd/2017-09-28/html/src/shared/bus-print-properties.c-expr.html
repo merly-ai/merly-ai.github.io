@@ -1,0 +1,125 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\shared\bus-print-properties.c Ctrl Expressions (74) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\shared\bus-print-properties.c Ctrl Expressions (74) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\shared\bus-print-properties.c Ctrl Expressions (74)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">154</td><td><a href="bus-print-properties.c.html#L154">(<span style='background-color:#741da3;'>(STR_IN_SET(name, "CPUWeight", "StartupCPUWeight", "IOWeight", "StartupIOWeight") && u == CGROUP_WEIGHT_INVALID) || (STR_IN_SET(name, "CPUShares", "StartupCPUShares") && u == CGROUP_CPU_SHARES_INVALID) || (STR_IN_SET(name, "BlockIOWeight", "StartupBlockIOWeight") && u == CGROUP_BLKIO_WEIGHT_INVALID) || (STR_IN_SET(name, "MemoryCurrent", "TasksCurrent") && u == UINT64_MAX) || (endswith(name, "NSec") && u == UINT64_MAX)</span>)</a></td><td class="num">1036.50</td></tr>
+      <tr><td class="num line">162</td><td><a href="bus-print-properties.c.html#L162">(<span style='background-color:#741da3;'>(STR_IN_SET(name, "DefaultMemoryLow", "DefaultMemoryMin", "MemoryLow", "MemoryHigh", "MemoryMax", "MemorySwapMax", "MemoryLimit", "MemoryAvailable") && u == CGROUP_LIMIT_MAX) || (STR_IN_SET(name, "TasksMax", "DefaultTasksMax") && u == UINT64_MAX) || (startswith(name, "Limit") && u == UINT64_MAX) || (startswith(name, "DefaultLimit") && u == UINT64_MAX)</span>)</a></td><td class="num">1029.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="bus-print-properties.c.html#L358">(<span style='background-color:#741da3;'>!filter || strv_contains(filter, name) || (expected_value = strv_find_startswith(filter, name_with_equal))</span>)</a></td><td class="num">1011.75</td></tr>
+      <tr><td class="num line">244</td><td><a href="bus-print-properties.c.html#L244">((r = sd_bus_message_read_basic(m, SD_BUS_TYPE_STRING, &str)) > 0)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">340</td><td><a href="bus-print-properties.c.html#L340">((r = sd_bus_message_enter_container(m, SD_BUS_TYPE_DICT_ENTRY, "sv")) > 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">263</td><td><a href="bus-print-properties.c.html#L263">(first && FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) && !FLAGS_SET(flags, BUS_PRINT_PROPERTY_ONLY_VALUE))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">90</td><td><a href="bus-print-properties.c.html#L90">(expected_value && parse_boolean(expected_value) != b)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">168</td><td><a href="bus-print-properties.c.html#L168">(STR_IN_SET(name, "IPIngressBytes", "IPIngressPackets", "IPEgressBytes", "IPEgressPackets") && u == UINT64_MAX)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">122</td><td><a href="bus-print-properties.c.html#L122">((u & NAMESPACE_FLAGS_ALL) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">370</td><td><a href="bus-print-properties.c.html#L370">(!func || r == 0)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">22</td><td><a href="bus-print-properties.c.html#L22">(!FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) && isempty(value))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">19</td><td><a href="bus-print-properties.c.html#L19">(expected_value && !streq_ptr(expected_value, value))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="bus-print-properties.c.html#L282">(FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) || n > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">304</td><td><a href="bus-print-properties.c.html#L304">(FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) || n > 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">375</td><td><a href="bus-print-properties.c.html#L375">(FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) && !expected_value)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">71</td><td><a href="bus-print-properties.c.html#L71">(FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY) || !isempty(s))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">265</td><td><a href="bus-print-properties.c.html#L265">(!first || FLAGS_SET(flags, BUS_PRINT_PROPERTY_SHOW_EMPTY))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">107</td><td><a href="bus-print-properties.c.html#L107">(endswith(name, "Timestamp") || STR_IN_SET(name, "NextElapseUSecRealtime", "LastTriggerUSec", "TimeUSec", "RTCTimeUSec"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">194</td><td><a href="bus-print-properties.c.html#L194">(strstr(name, "UMask") || strstr(name, "Mode"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">44</td><td><a href="bus-print-properties.c.html#L44">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">59</td><td><a href="bus-print-properties.c.html#L59">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">68</td><td><a href="bus-print-properties.c.html#L68">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">87</td><td><a href="bus-print-properties.c.html#L87">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">101</td><td><a href="bus-print-properties.c.html#L101">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">128</td><td><a href="bus-print-properties.c.html#L128">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">149</td><td><a href="bus-print-properties.c.html#L149">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">180</td><td><a href="bus-print-properties.c.html#L180">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="bus-print-properties.c.html#L191">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="bus-print-properties.c.html#L198">(u == UID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">203</td><td><a href="bus-print-properties.c.html#L203">(u == GID_INVALID)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">217</td><td><a href="bus-print-properties.c.html#L217">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">228</td><td><a href="bus-print-properties.c.html#L228">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">241</td><td><a href="bus-print-properties.c.html#L241">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">260</td><td><a href="bus-print-properties.c.html#L260">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">269</td><td><a href="bus-print-properties.c.html#L269">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="bus-print-properties.c.html#L279">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">288</td><td><a href="bus-print-properties.c.html#L288">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">301</td><td><a href="bus-print-properties.c.html#L301">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">310</td><td><a href="bus-print-properties.c.html#L310">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">337</td><td><a href="bus-print-properties.c.html#L337">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">345</td><td><a href="bus-print-properties.c.html#L345">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">350</td><td><a href="bus-print-properties.c.html#L350">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">361</td><td><a href="bus-print-properties.c.html#L361">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="bus-print-properties.c.html#L365">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="bus-print-properties.c.html#L372">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">374</td><td><a href="bus-print-properties.c.html#L374">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">379</td><td><a href="bus-print-properties.c.html#L379">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">384</td><td><a href="bus-print-properties.c.html#L384">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">388</td><td><a href="bus-print-properties.c.html#L388">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">393</td><td><a href="bus-print-properties.c.html#L393">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">396</td><td><a href="bus-print-properties.c.html#L396">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">400</td><td><a href="bus-print-properties.c.html#L400">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">430</td><td><a href="bus-print-properties.c.html#L430">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">252</td><td><a href="bus-print-properties.c.html#L252">(!FLAGS_SET(flags, BUS_PRINT_PROPERTY_ONLY_VALUE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">285</td><td><a href="bus-print-properties.c.html#L285">(!FLAGS_SET(flags, BUS_PRINT_PROPERTY_ONLY_VALUE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">307</td><td><a href="bus-print-properties.c.html#L307">(!FLAGS_SET(flags, BUS_PRINT_PROPERTY_ONLY_VALUE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">140</td><td><a href="bus-print-properties.c.html#L140">(!result)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">248</td><td><a href="bus-print-properties.c.html#L248">(!e)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">355</td><td><a href="bus-print-properties.c.html#L355">(!name_with_equal)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">25</td><td><a href="bus-print-properties.c.html#L25">(FLAGS_SET(flags, BUS_PRINT_PROPERTY_ONLY_VALUE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">112</td><td><a href="bus-print-properties.c.html#L112">(strstr(name, "USec"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">115</td><td><a href="bus-print-properties.c.html#L115">(streq(name, "CoredumpFilter"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">118</td><td><a href="bus-print-properties.c.html#L118">(streq(name, "RestrictNamespaces"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">124</td><td><a href="bus-print-properties.c.html#L124">(FLAGS_SET(u, NAMESPACE_FLAGS_ALL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">136</td><td><a href="bus-print-properties.c.html#L136">(streq(name, "MountFlags"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">145</td><td><a href="bus-print-properties.c.html#L145">(STR_IN_SET(name, "CapabilityBoundingSet", "AmbientCapabilities"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">197</td><td><a href="bus-print-properties.c.html#L197">(streq(name, "UID"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">202</td><td><a href="bus-print-properties.c.html#L202">(streq(name, "GID"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="bus-print-properties.c.html#L236">(streq(contents, "s"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="bus-print-properties.c.html#L274">(streq(contents, "y"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="bus-print-properties.c.html#L296">(streq(contents, "u"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">251</td><td><a href="bus-print-properties.c.html#L251">(first)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">348</td><td><a href="bus-print-properties.c.html#L348">(found_properties)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">368</td><td><a href="bus-print-properties.c.html#L368">(func)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="merly.css">
+  <title>cc65 Repo - Notable Ctrl Expressions (22) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - Notable Ctrl Expressions (22) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Notable Ctrl Expressions (22)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">ID</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">281:4</td><td><a href="src\cc65\codeopt.c.html#L569">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && L[0]->AM == AM65_IMM && CS_GetEntries(S, L + 1, I + 1, 10) && L[1]->OPC == OP65_LDX && L[1]->AM == AM65_IMM && L[2]->OPC == OP65_CLC && L[3]->OPC == OP65_ADC && (L[3]->AM == AM65_ABS || L[3]->AM == AM65_ZP) && (L[4]->OPC == OP65_BCC || L[4]->OPC == OP65_JCC) && L[4]->JumpTo != 0 && L[4]->JumpTo->Owner == L[6] && L[5]->OPC == OP65_INX && CE_IsCallTo(L[6], "pushax") && L[7]->OPC == OP65_LDX && L[8]->OPC == OP65_LDA && L[9]->OPC == OP65_LDY && CE_KnownImm(L[9]) && L[9]->Num == 0 && CE_IsCallTo(L[10], "staspidx") && !CS_RangeHasLabel(S, I + 1, 5) && !CS_RangeHasLabel(S, I + 7, 4) && (Len = strlen(L[0]->Arg)) > 3 && L[0]->Arg[0] == '<' && L[0]->Arg[1] == '(' && strlen(L[1]->Arg) == Len && L[1]->Arg[0] == '>' && memcmp(L[0]->Arg + 1, L[1]->Arg + 1, Len - 1) == 0</span>)</a></td><td class="num">397.45</td></tr>
+      <tr><td class="num line">281:5</td><td><a href="src\cc65\codeopt.c.html#L876">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && L[0]->AM == AM65_IMM && CS_GetEntries(S, L + 1, I + 1, 7) && L[1]->OPC == OP65_LDX && L[1]->AM == AM65_IMM && L[2]->OPC == OP65_CLC && L[3]->OPC == OP65_ADC && (L[3]->AM == AM65_ABS || L[3]->AM == AM65_ZP) && (L[4]->OPC == OP65_BCC || L[4]->OPC == OP65_JCC) && L[4]->JumpTo != 0 && L[4]->JumpTo->Owner == L[6] && L[5]->OPC == OP65_INX && L[6]->OPC == OP65_LDY && CE_KnownImm(L[6]) && L[6]->Num == 0 && CE_IsCallTo(L[7], "ldauidx") && !CS_RangeHasLabel(S, I + 1, 5) && !CE_HasLabel(L[7]) && (Len = strlen(L[0]->Arg)) > 3 && L[0]->Arg[0] == '<' && L[0]->Arg[1] == '(' && strlen(L[1]->Arg) == Len && L[1]->Arg[0] == '>' && memcmp(L[0]->Arg + 1, L[1]->Arg + 1, Len - 1) == 0</span>)</a></td><td class="num">380.35</td></tr>
+      <tr><td class="num line">281:6</td><td><a href="src\cc65\codeopt.c.html#L974">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && L[0]->AM == AM65_IMM && CS_GetEntries(S, L + 1, I + 1, 8) && L[1]->OPC == OP65_LDX && L[1]->AM == AM65_IMM && !CE_HasLabel(L[1]) && L[2]->OPC == OP65_LDY && CE_KnownImm(L[2]) && !CE_HasLabel(L[2]) && L[3]->OPC == OP65_CLC && !CE_HasLabel(L[3]) && L[4]->OPC == OP65_ADC && L[4]->AM == AM65_ZP_INDY && !CE_HasLabel(L[4]) && (L[5]->OPC == OP65_BCC || L[5]->OPC == OP65_JCC) && L[5]->JumpTo != 0 && L[5]->JumpTo->Owner == L[7] && !CE_HasLabel(L[5]) && L[6]->OPC == OP65_INX && !CE_HasLabel(L[6]) && L[7]->OPC == OP65_LDY && CE_KnownImm(L[7]) && L[7]->Num == 0 && CE_IsCallTo(L[8], "ldauidx") && !CE_HasLabel(L[8]) && (Len = strlen(L[0]->Arg)) > 3 && L[0]->Arg[0] == '<' && L[0]->Arg[1] == '(' && strlen(L[1]->Arg) == Len && L[1]->Arg[0] == '>' && memcmp(L[0]->Arg + 1, L[1]->Arg + 1, Len - 1) == 0</span>)</a></td><td class="num">378.50</td></tr>
+      <tr><td class="num line">281:1</td><td><a href="src\cc65\codeopt.c.html#L248">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && (L[0]->AM == AM65_ABS || L[0]->AM == AM65_ZP) && CS_GetEntries(S, L + 1, I + 1, 4) && !CS_RangeHasLabel(S, I + 1, 4) && L[1]->OPC == OP65_LDX && (L[1]->AM == AM65_ABS || L[1]->AM == AM65_ZP) && L[2]->OPC == OP65_JSR && (ShiftType = GetShiftType(L[2]->Arg)) != SHIFT_NONE && L[3]->OPC == OP65_STA && (L[3]->AM == AM65_ABS || L[3]->AM == AM65_ZP) && L[4]->OPC == OP65_STX && (L[4]->AM == AM65_ABS || L[4]->AM == AM65_ZP) && !RegAXUsed(S, I + 5)</span>)</a></td><td class="num">236.15</td></tr>
+      <tr><td class="num line">303:1</td><td><a href="src\cc65\coptstore.c.html#L357">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_STA && (L[0]->AM == AM65_ABS || L[0]->AM == AM65_ZP) && !CS_RangeHasLabel(S, I + 1, 3) && CS_GetEntries(S, L + 1, I + 1, 4) && L[1]->OPC == OP65_STX && L[1]->AM == L[0]->AM && L[2]->OPC == OP65_LDA && L[2]->AM == L[0]->AM && L[3]->OPC == OP65_LDX && L[3]->AM == L[1]->AM && strcmp(L[0]->Arg, L[2]->Arg) == 0 && strcmp(L[1]->Arg, L[3]->Arg) == 0 && !CE_UseLoadFlags(L[4])</span>)</a></td><td class="num">186.80</td></tr>
+      <tr><td class="num line">281:7</td><td><a href="src\cc65\codeopt.c.html#L1077">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && L[0]->AM == AM65_ZP && CS_GetEntries(S, L + 1, I + 1, 3) && !CS_RangeHasLabel(S, I + 1, 3) && L[1]->OPC == OP65_LDX && L[1]->AM == AM65_ZP && (Len = strlen(L[0]->Arg)) > 0 && strncmp(L[0]->Arg, L[1]->Arg, Len) == 0 && strcmp(L[1]->Arg + Len, "+1") == 0 && L[2]->OPC == OP65_LDY && CE_IsCallTo(L[3], "ldauidx")</span>)</a></td><td class="num">181.40</td></tr>
+      <tr><td class="num line">281:8</td><td><a href="src\cc65\codeopt.c.html#L1147">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && L[0]->AM == AM65_ZP && CS_GetEntries(S, L + 1, I + 1, 3) && !CS_RangeHasLabel(S, I + 1, 3) && L[1]->OPC == OP65_LDX && L[1]->AM == AM65_ZP && (Len = strlen(L[0]->Arg)) > 0 && strncmp(L[0]->Arg, L[1]->Arg, Len) == 0 && strcmp(L[1]->Arg + Len, "+1") == 0 && L[2]->OPC == OP65_LDY && CE_IsCallTo(L[3], "ldaxidx")</span>)</a></td><td class="num">181.40</td></tr>
+      <tr><td class="num line">281:3</td><td><a href="src\cc65\codeopt.c.html#L478">(<span style='background-color:#9c4c02;'>CE_IsCallTo(L[0], "pushax") && CS_GetEntries(S, L + 1, I + 1, 3) && L[1]->OPC == OP65_LDY && CE_KnownImm(L[1]) && !CE_HasLabel(L[1]) && CE_IsCallTo(L[2], "ldauidx") && !CE_HasLabel(L[2]) && (K = OptPtrStore1Sub(S, I + 3, L + 3)) > 0 && CS_GetEntries(S, L + 3 + K, I + 3 + K, 2) && L[3 + K]->OPC == OP65_LDY && CE_KnownImm(L[3 + K]) && !CE_HasLabel(L[3 + K]) && CE_IsCallTo(L[4 + K], "staspidx") && !CE_HasLabel(L[4 + K])</span>)</a></td><td class="num">158.80</td></tr>
+      <tr><td class="num line">291:1</td><td><a href="src\cc65\coptcmp.c.html#L362">((<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_ADC || L[0]->OPC == OP65_AND || L[0]->OPC == OP65_ASL || L[0]->OPC == OP65_DEA || L[0]->OPC == OP65_EOR || L[0]->OPC == OP65_INA || L[0]->OPC == OP65_LDA || L[0]->OPC == OP65_LSR || L[0]->OPC == OP65_ORA || L[0]->OPC == OP65_PLA || L[0]->OPC == OP65_SBC || L[0]->OPC == OP65_TXA || L[0]->OPC == OP65_TYA</span>) && !CS_RangeHasLabel(S, I + 1, 2) && CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_CMP && CE_KnownImm(L[1]) && L[1]->Num == 0)</a></td><td class="num">156.05</td></tr>
+      <tr><td class="num line">289:1</td><td><a href="src\cc65\coptc02.c.html#L129">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_LDA && (L[0]->AM == AM65_ZP || L[0]->AM == AM65_ABS) && !CS_RangeHasLabel(S, I + 1, 2) && CS_GetEntries(S, L + 1, I + 1, 2) && (L[1]->OPC == OP65_AND || L[1]->OPC == OP65_ORA) && CE_KnownImm(L[1]) && L[2]->OPC == OP65_STA && L[2]->AM == L[0]->AM && strcmp(L[2]->Arg, L[0]->Arg) == 0 && !RegAUsed(S, I + 3)</span>)</a></td><td class="num">153.65</td></tr>
+      <tr><td class="num line">293:7</td><td><a href="src\cc65\coptind.c.html#L1042">(<span style='background-color:#9c4c02;'>(E->Info & OF_STORE) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && !CE_HasLabel(N) && E->AM == N->AM && ((E->OPC == OP65_STA && N->OPC == OP65_LDA) || (E->OPC == OP65_STX && N->OPC == OP65_LDX) || (E->OPC == OP65_STY && N->OPC == OP65_LDY)) && strcmp(E->Arg, N->Arg) == 0 && (X = CS_GetNextEntry(S, I + 1)) != 0 && !CE_UseLoadFlags(X)</span>)</a></td><td class="num">149.35</td></tr>
+      <tr><td class="num line">293:8</td><td><a href="src\cc65\coptind.c.html#L1095">(<span style='background-color:#9c4c02;'>(E->OPC == OP65_TAX && N->OPC == OP65_TXA && !RegXUsed(S, I + 2)) || (E->OPC == OP65_TAY && N->OPC == OP65_TYA && !RegYUsed(S, I + 2)) || (E->OPC == OP65_TXA && N->OPC == OP65_TAX && !RegAUsed(S, I + 2)) || (E->OPC == OP65_TYA && N->OPC == OP65_TAY && !RegAUsed(S, I + 2))</span>)</a></td><td class="num">146.40</td></tr>
+      <tr><td class="num line">305:1</td><td><a href="src\cc65\coptsub.c.html#L131">(<span style='background-color:#9c4c02;'>E->OPC == OP65_LDA && !CS_RangeHasLabel(S, I + 1, 5) && CS_GetEntries(S, L, I + 1, 5) && L[0]->OPC == OP65_SEC && L[1]->OPC == OP65_STA && strcmp(L[1]->Arg, "tmp1") == 0 && L[2]->OPC == OP65_LDA && L[3]->OPC == OP65_SBC && strcmp(L[3]->Arg, "tmp1") == 0 && L[4]->OPC == OP65_STA && strcmp(L[4]->Arg, L[2]->Arg) == 0</span>)</a></td><td class="num">143.45</td></tr>
+      <tr><td class="num line">281:2</td><td><a href="src\cc65\codeopt.c.html#L414">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_AND || L[0]->OPC == OP65_EOR || L[0]->OPC == OP65_ORA || (L[0]->OPC == OP65_JSR && strncmp(L[0]->Arg, "shlax", 5) == 0) || (L[0]->OPC == OP65_JSR && strncmp(L[0]->Arg, "shrax", 5) == 0)</span>)</a></td><td class="num">136.75</td></tr>
+      <tr><td class="num line">301:1</td><td><a href="src\cc65\coptstop.c.html#L331">(<span style='background-color:#9c4c02;'>D->PushIndex >= 2 && (P = D->PrevEntry) != 0 && P->OPC == OP65_LDX && P->AM == AM65_ZP && strncmp(P->Arg, "regbank+", 7) == 0 && isdigit(P->Arg[8]) && (P = CS_GetEntry(D->Code, D->PushIndex - 2)) != 0 && P->OPC == OP65_LDA && P->AM == AM65_ZP && strncmp(P->Arg, "regbank+", 7) == 0 && isdigit(P->Arg[8])</span>)</a></td><td class="num">129.35</td></tr>
+      <tr><td class="num line">295:1</td><td><a href="src\cc65\coptneg.c.html#L123">(<span style='background-color:#9c4c02;'>(E->OPC == OP65_ADC || E->OPC == OP65_AND || E->OPC == OP65_DEA || E->OPC == OP65_EOR || E->OPC == OP65_INA || E->OPC == OP65_LDA || E->OPC == OP65_ORA || E->OPC == OP65_PLA || E->OPC == OP65_SBC || E->OPC == OP65_TXA || E->OPC == OP65_TYA) && CS_GetEntries(S, L, I + 1, 2) && CE_IsCallTo(L[0], "bnega") && !CE_HasLabel(L[0]) && (L[1]->Info & OF_ZBRA) != 0 && !CE_HasLabel(L[1])</span>)</a></td><td class="num">128.10</td></tr>
+      <tr><td class="num line">289:2</td><td><a href="src\cc65\coptc02.c.html#L207">(<span style='background-color:#9c4c02;'>((E->OPC == OP65_STA && E->RI->In.RegA == 0) || (E->OPC == OP65_STX && E->RI->In.RegX == 0) || (E->OPC == OP65_STY && E->RI->In.RegY == 0)) && (E->AM == AM65_ZP || E->AM == AM65_ABS || E->AM == AM65_ZPX || E->AM == AM65_ABSX)</span>)</a></td><td class="num">115.25</td></tr>
+      <tr><td class="num line">287:1</td><td><a href="src\cc65\coptadd.c.html#L319">(<span style='background-color:#9c4c02;'>CE_IsCallTo(L[0], "pushax") && CS_GetEntries(S, L + 1, I + 1, 3) && !CS_RangeHasLabel(S, I + 1, 3) && L[1]->OPC == OP65_LDA && (L[1]->AM == AM65_ABS || L[1]->AM == AM65_ZP) && L[2]->OPC == OP65_LDX && (L[2]->AM == AM65_ABS || L[2]->AM == AM65_ZP) && CE_IsCallTo(L[3], "tosaddax")</span>)</a></td><td class="num">109.80</td></tr>
+      <tr><td class="num line">293:2</td><td><a href="src\cc65\coptind.c.html#L306">(<span style='background-color:#9c4c02;'>(E->Info & OF_DEAD) != 0 && (N = CS_GetNextEntry(S, I)) != 0 && (!CE_HasLabel(N) || ((N->Info & OF_UBRA) != 0 && (LN = N->JumpTo) != 0 && LN->Owner == N && CL_GetRefCount(LN) == 1))</span>)</a></td><td class="num">106.00</td></tr>
+      <tr><td class="num line">293:3</td><td><a href="src\cc65\coptind.c.html#L646">(<span style='background-color:#9c4c02;'>(BC == BC_EQ && E->Num != 0) || (BC == BC_NE && E->Num == 0) || (BC == BC_PL && (E->Num & 0x80) != 0) || (BC == BC_MI && (E->Num & 0x80) == 0)</span>)</a></td><td class="num">101.00</td></tr>
+      <tr><td class="num line">293:4</td><td><a href="src\cc65\coptind.c.html#L657">(<span style='background-color:#9c4c02;'>(BC == BC_EQ && E->Num == 0) || (BC == BC_NE && E->Num != 0) || (BC == BC_PL && (E->Num & 0x80) == 0) || (BC == BC_MI && (E->Num & 0x80) != 0)</span>)</a></td><td class="num">101.00</td></tr>
+      <tr><td class="num line">307:1</td><td><a href="src\cc65\copttest.c.html#L86">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_STX && CS_GetEntries(S, L + 1, I + 1, 2) && !CE_HasLabel(L[1]) && L[1]->OPC == OP65_ORA && strcmp(L[0]->Arg, L[1]->Arg) == 0 && !CE_HasLabel(L[2]) && (L[2]->Info & OF_ZBRA) != 0</span>)</a></td><td class="num">100.45</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\oci8\oci8.c Ctrl Expressions (263) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\oci8\oci8.c Ctrl Expressions (263) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\oci8\oci8.c Ctrl Expressions (263)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">530</td><td><a href="oci8.c.html#L530">(<span style='background-color:#741da3;'>!connection->is_open || connection->passwd_changed || (PG(connection_status) & PHP_CONNECTION_TIMEOUT) || OCI_G(in_call)</span>)</a></td><td class="num">1015.25</td></tr>
+      <tr><td class="num line">1032</td><td><a href="oci8.c.html#L1032">(!persistent && ((zvp = zend_hash_find(&EG(regular_list), hashed_details.s)) != NULL))</a></td><td class="num">59.00</td></tr>
+      <tr><td class="num line">1024</td><td><a href="oci8.c.html#L1024">(persistent && ((zvp = zend_hash_find(&EG(persistent_list), hashed_details.s))) != NULL)</a></td><td class="num">58.25</td></tr>
+      <tr><td class="num line">2379</td><td><a href="oci8.c.html#L2379">(connection->is_persistent && !connection->private_spool && !(connection->private_spool = php_oci_create_spool(username, username_len, password, password_len, dbname, dbname_len, NULL, connection->charset)))</a></td><td class="num">57.25</td></tr>
+      <tr><td class="num line">702</td><td><a href="oci8.c.html#L702">(descriptor && descriptor->buffering == PHP_OCI_LOB_BUFFER_USED && (descriptor->type == OCI_DTYPE_LOB || descriptor->type == OCI_DTYPE_FILE))</a></td><td class="num">37.75</td></tr>
+      <tr><td class="num line">1087</td><td><a href="oci8.c.html#L1087">(!ping_done && (*(connection->next_pingp) > 0) && (timestamp >= *(connection->next_pingp)) && !php_oci_connection_ping(connection))</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">2496</td><td><a href="oci8.c.html#L2496">((*(connection->next_pingp) > 0) && (timestamp >= *(connection->next_pingp)))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">2123</td><td><a href="oci8.c.html#L2123">(spool_out_le->type == le_psessionpool && zend_string_equals(((php_oci_spool *)(spool_out_le->ptr))->spool_hash_key, spool_hashed_details.s))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">2190</td><td><a href="oci8.c.html#L2190">(!(connection->env = php_oci_create_env(connection->charset)))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1917</td><td><a href="oci8.c.html#L1917">(connection->used_this_request && !Z_ISUNDEF(connection->taf_callback) && !Z_ISNULL(connection->taf_callback))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">1224</td><td><a href="oci8.c.html#L1224">((session_pool = php_oci_get_spool(username, username_len, password, password_len, dbname, dbname_len, charsetid ? charsetid : charsetid_nls_lang)) == NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">223</td><td><a href="oci8.c.html#L223">(tmp_buf_len > 0 && tmp_buf[tmp_buf_len - 1] == '\n')</a></td><td class="num">26.60</td></tr>
+      <tr><td class="num line">204</td><td><a href="oci8.c.html#L204">(OCI_G(env) && OCIErrorGet(OCI_G(env), (ub4)1, NULL, &ora_error_code, tmp_buf, (ub4)PHP_OCI_ERRBUF_LEN, (ub4)OCI_HTYPE_ENV) == OCI_SUCCESS && *tmp_buf)</a></td><td class="num">26.50</td></tr>
+      <tr><td class="num line">2161</td><td><a href="oci8.c.html#L2161">(retenv && OCIErrorGet(retenv, (ub4)1, NULL, &ora_error_code, ora_msg_buf, (ub4)PHP_OCI_ERRBUF_LEN, (ub4)OCI_HTYPE_ENV) == OCI_SUCCESS && *ora_msg_buf)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">802</td><td><a href="oci8.c.html#L802">(err_buf_len && error_buf[err_buf_len - 1] == '\n')</a></td><td class="num">24.35</td></tr>
+      <tr><td class="num line">539</td><td><a href="oci8.c.html#L539">(le != NULL && le->type == le_pconnection && le->ptr == connection)</a></td><td class="num">19.50</td></tr>
+      <tr><td class="num line">1101</td><td><a href="oci8.c.html#L1101">((tmp_val != NULL) && (tmp != NULL) && zend_string_equals(tmp->hash_key, hashed_details.s))</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">1864</td><td><a href="oci8.c.html#L1864">((column->indicator == -1) && ((fetch_mode & PHP_OCI_RETURN_NULLS) == 0))</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1799</td><td><a href="oci8.c.html#L1799">(invokedstatement->impres_flag == PHP_OCI_IMPRES_NO_CHILDREN || invokedstatement->impres_flag == PHP_OCI_IMPRES_IS_CHILD)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1058</td><td><a href="oci8.c.html#L1058">(connection && connection->is_persistent && connection->is_stub)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1669</td><td><a href="oci8.c.html#L1669">(column->data_type != SQLT_RDD && (mode & PHP_OCI_RETURN_LOBS))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">926</td><td><a href="oci8.c.html#L926">(username_len != 1 || username[0] != '/' || password_len != 0)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1780</td><td><a href="oci8.c.html#L1780">(!(fetch_mode & PHP_OCI_NUM) && !(fetch_mode & PHP_OCI_ASSOC))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1966</td><td><a href="oci8.c.html#L1966">(!(session_pool->env = php_oci_create_env(charsetid)))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1141</td><td><a href="oci8.c.html#L1141">(connection == connection->id->ptr && le)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="oci8.c.html#L1418">(!connection->using_spool && connection->svc)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">914</td><td><a href="oci8.c.html#L914">((session_mode & OCI_SYSOPER) && (session_mode & OCI_SYSDBA))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1921</td><td><a href="oci8.c.html#L1921">(!connection->used_this_request && OCI_G(persistent_timeout) != -1)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1873</td><td><a href="oci8.c.html#L1873">(fetch_mode & PHP_OCI_NUM || !(fetch_mode & PHP_OCI_ASSOC))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1884</td><td><a href="oci8.c.html#L1884">(fetch_mode & PHP_OCI_NUM || !(fetch_mode & PHP_OCI_ASSOC))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1039</td><td><a href="oci8.c.html#L1039">(ptr && (ptr->type == le_connection))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1170</td><td><a href="oci8.c.html#L1170">(OCI_G(max_persistent) != -1 && OCI_G(num_persistent) >= OCI_G(max_persistent))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1174</td><td><a href="oci8.c.html#L1174">(OCI_G(max_persistent) != -1 && OCI_G(num_persistent) >= OCI_G(max_persistent))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1097</td><td><a href="oci8.c.html#L1097">((tmp_val != NULL) && (Z_TYPE_P(tmp_val) == IS_RESOURCE))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1347</td><td><a href="oci8.c.html#L1347">(errstatus == OCI_SUCCESS && ss == OCI_SERVER_NORMAL)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1223</td><td><a href="oci8.c.html#L1223">(use_spool && !connection->is_persistent)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1868</td><td><a href="oci8.c.html#L1868">(!(column->indicator == -1))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1957</td><td><a href="oci8.c.html#L1957">(hash_key && (ZSTR_LEN(hash_key) > 0))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="oci8.c.html#L988">(charset && *charset)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">675</td><td><a href="oci8.c.html#L675">(GC_REFCOUNT(column->descid) == 1)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1458</td><td><a href="oci8.c.html#L1458">(GC_REFCOUNT(connection->hash_key) >= 2)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">956</td><td><a href="oci8.c.html#L956">((session_mode & OCI_SYSOPER | OCI_SYSDBA | PHP_OCI_CRED_EXT) || new_password_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1029</td><td><a href="oci8.c.html#L1029">(le->type == le_pconnection)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1035</td><td><a href="oci8.c.html#L1035">(le->type == le_index_ptr)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1195</td><td><a href="oci8.c.html#L1195">(connection->hash_key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="oci8.c.html#L1644">(column->indicator == -1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1654</td><td><a href="oci8.c.html#L1654">(column->data_type != SQLT_RDD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1803</td><td><a href="oci8.c.html#L1803">(invokedstatement->impres_flag == PHP_OCI_IMPRES_HAS_CHILDREN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1816</td><td><a href="oci8.c.html#L1816">(invokedstatement->impres_count > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1832</td><td><a href="oci8.c.html#L1832">(invokedstatement->impres_count > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1857</td><td><a href="oci8.c.html#L1857">(i < statement->ncolumns)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1913</td><td><a href="oci8.c.html#L1913">(le->type == le_pconnection)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1927</td><td><a href="oci8.c.html#L1927">(connection->idle_expiry < timestamp)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1959</td><td><a href="oci8.c.html#L1959">(session_pool->spool_hash_key == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1021</td><td><a href="oci8.c.html#L1021">(!exclusive && !new_password)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">643</td><td><a href="oci8.c.html#L643">(bind->array.elements)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">648</td><td><a href="oci8.c.html#L648">(bind->array.element_lengths)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">653</td><td><a href="oci8.c.html#L653">(bind->array.indicators)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">638</td><td><a href="oci8.c.html#L638">(!Z_ISUNDEF(bind->val))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="oci8.c.html#L1473">(!Z_ISUNDEF(connection->taf_callback))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1475</td><td><a href="oci8.c.html#L1475">(!Z_ISNULL(connection->taf_callback))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="oci8.c.html#L1413">(!connection->is_stub)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1430</td><td><a href="oci8.c.html#L1430">(!connection->using_spool)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2390</td><td><a href="oci8.c.html#L2390">(!connection->using_spool)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2404</td><td><a href="oci8.c.html#L2404">(!connection->err)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2414</td><td><a href="oci8.c.html#L2414">(!connection->authinfo)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2490</td><td><a href="oci8.c.html#L2490">(!(connection->next_pingp))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2508</td><td><a href="oci8.c.html#L2508">(!(connection->svc))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2048</td><td><a href="oci8.c.html#L2048">(iserror && session_pool)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2131</td><td><a href="oci8.c.html#L2131">(iserror && session_pool)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">259</td><td><a href="oci8.c.html#L259">(oci_globals->err)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">266</td><td><a href="oci8.c.html#L266">(oci_globals->env)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="oci8.c.html#L536">(connection->hash_key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">619</td><td><a href="oci8.c.html#L619">(define->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">670</td><td><a href="oci8.c.html#L670">(column->stmtid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">674</td><td><a href="oci8.c.html#L674">(column->descid)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">682</td><td><a href="oci8.c.html#L682">(column->data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">686</td><td><a href="oci8.c.html#L686">(column->name)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">909</td><td><a href="oci8.c.html#L909">(session_mode & ~OCI_SYSOPER | OCI_SYSDBA | PHP_OCI_CRED_EXT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="oci8.c.html#L913">(session_mode & OCI_SYSOPER | OCI_SYSDBA | PHP_OCI_CRED_EXT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">918</td><td><a href="oci8.c.html#L918">(session_mode & PHP_OCI_CRED_EXT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">931</td><td><a href="oci8.c.html#L931">(session_mode & OCI_SYSOPER | OCI_SYSDBA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="oci8.c.html#L1070">(connection->is_open)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1072</td><td><a href="oci8.c.html#L1072">(connection->is_persistent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1095</td><td><a href="oci8.c.html#L1095">(connection->id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1266</td><td><a href="oci8.c.html#L1266">(connection->is_persistent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1422</td><td><a href="oci8.c.html#L1422">(connection->err)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1425</td><td><a href="oci8.c.html#L1425">(connection->authinfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1431</td><td><a href="oci8.c.html#L1431">(connection->session)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1435</td><td><a href="oci8.c.html#L1435">(connection->is_attached)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1439</td><td><a href="oci8.c.html#L1439">(connection->svc)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1443</td><td><a href="oci8.c.html#L1443">(connection->server)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="oci8.c.html#L1447">(connection->env)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1450</td><td><a href="oci8.c.html#L1450">(connection->private_spool)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1462</td><td><a href="oci8.c.html#L1462">(connection->hash_key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1467</td><td><a href="oci8.c.html#L1467">(connection->client_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1500</td><td><a href="oci8.c.html#L1500">(connection->is_stub)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1504</td><td><a href="oci8.c.html#L1504">(connection->descriptors)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1508</td><td><a href="oci8.c.html#L1508">(connection->svc)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="oci8.c.html#L1510">(connection->rb_on_disconnect)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1523</td><td><a href="oci8.c.html#L1523">(connection->next_pingp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1533</td><td><a href="oci8.c.html#L1533">(connection->using_spool)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1540</td><td><a href="oci8.c.html#L1540">(connection->svc)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1559</td><td><a href="oci8.c.html#L1559">(connection->client_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1649</td><td><a href="oci8.c.html#L1649">(column->is_cursor)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1652</td><td><a href="oci8.c.html#L1652">(column->is_descr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1672</td><td><a href="oci8.c.html#L1672">(column->chunk_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1675</td><td><a href="oci8.c.html#L1675">(descriptor->chunk_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="oci8.c.html#L1701">(column->piecewise)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1782</td><td><a href="oci8.c.html#L1782">(mode & PHP_OCI_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1785</td><td><a href="oci8.c.html#L1785">(mode & PHP_OCI_NUM)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1819</td><td><a href="oci8.c.html#L1819">(!statement || php_oci_statement_execute(statement, (ub4)OCI_DEFAULT))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1835</td><td><a href="oci8.c.html#L1835">(!statement || php_oci_statement_execute(statement, (ub4)OCI_DEFAULT))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1876</td><td><a href="oci8.c.html#L1876">(fetch_mode & PHP_OCI_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1877</td><td><a href="oci8.c.html#L1877">(fetch_mode & PHP_OCI_NUM)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1887</td><td><a href="oci8.c.html#L1887">(fetch_mode & PHP_OCI_ASSOC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2321</td><td><a href="oci8.c.html#L2321">(session_mode & PHP_OCI_CRED_EXT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2430</td><td><a href="oci8.c.html#L2430">(connection->is_persistent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2547</td><td><a href="oci8.c.html#L2547">(session_pool->poolname_len)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2552</td><td><a href="oci8.c.html#L2552">(session_pool->poolh)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2556</td><td><a href="oci8.c.html#L2556">(session_pool->err)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2560</td><td><a href="oci8.c.html#L2560">(session_pool->env)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2564</td><td><a href="oci8.c.html#L2564">(session_pool->spool_hash_key)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2343</td><td><a href="oci8.c.html#L2343">(php_oci_ping_init(connection, OCI_G(err)) != OCI_SUCCESS)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">2492</td><td><a href="oci8.c.html#L2492">(php_oci_ping_init(connection, OCI_G(err)) != OCI_SUCCESS)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">944</td><td><a href="oci8.c.html#L944">(OCI_G(env) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">946</td><td><a href="oci8.c.html#L946">(OCI_G(env) == NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1518</td><td><a href="oci8.c.html#L1518">(OCI_G(persistent_timeout) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1524</td><td><a href="oci8.c.html#L1524">(OCI_G(ping_interval) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1749</td><td><a href="oci8.c.html#L1749">(ZEND_NUM_ARGS() == 2)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1767</td><td><a href="oci8.c.html#L1767">(ZEND_NUM_ARGS() == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2152</td><td><a href="oci8.c.html#L2152">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2182</td><td><a href="oci8.c.html#L2182">(OCI_G(statement_cache_size) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2183</td><td><a href="oci8.c.html#L2183">(OCI_G(statement_cache_size) > SB4MAXVAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2197</td><td><a href="oci8.c.html#L2197">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2206</td><td><a href="oci8.c.html#L2206">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2216</td><td><a href="oci8.c.html#L2216">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2225</td><td><a href="oci8.c.html#L2225">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2234</td><td><a href="oci8.c.html#L2234">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2244</td><td><a href="oci8.c.html#L2244">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2255</td><td><a href="oci8.c.html#L2255">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2266</td><td><a href="oci8.c.html#L2266">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2276</td><td><a href="oci8.c.html#L2276">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2285</td><td><a href="oci8.c.html#L2285">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2294</td><td><a href="oci8.c.html#L2294">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2304</td><td><a href="oci8.c.html#L2304">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2311</td><td><a href="oci8.c.html#L2311">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2330</td><td><a href="oci8.c.html#L2330">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2335</td><td><a href="oci8.c.html#L2335">(OCI_G(errcode) != OCI_SUCCESS_WITH_INFO)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2350</td><td><a href="oci8.c.html#L2350">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2371</td><td><a href="oci8.c.html#L2371">(OCI_G(statement_cache_size) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2372</td><td><a href="oci8.c.html#L2372">(OCI_G(statement_cache_size) > SB4MAXVAL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2407</td><td><a href="oci8.c.html#L2407">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2417</td><td><a href="oci8.c.html#L2417">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2425</td><td><a href="oci8.c.html#L2425">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2437</td><td><a href="oci8.c.html#L2437">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2466</td><td><a href="oci8.c.html#L2466">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2473</td><td><a href="oci8.c.html#L2473">(OCI_G(errcode) != OCI_SUCCESS_WITH_INFO)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2485</td><td><a href="oci8.c.html#L2485">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2512</td><td><a href="oci8.c.html#L2512">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2583</td><td><a href="oci8.c.html#L2583">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2590</td><td><a href="oci8.c.html#L2590">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2595</td><td><a href="oci8.c.html#L2595">(OCI_G(ping_interval) >= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2604</td><td><a href="oci8.c.html#L2604">(OCI_G(errcode) != OCI_SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">142</td><td><a href="oci8.c.html#L142">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="oci8.c.html#L198">(errstatus == OCI_ERROR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">217</td><td><a href="oci8.c.html#L217">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="oci8.c.html#L227">(errstatus == OCI_SUCCESS_WITH_INFO)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">822</td><td><a href="oci8.c.html#L822">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="oci8.c.html#L830">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1003</td><td><a href="oci8.c.html#L1003">(result != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="oci8.c.html#L1191">(connection == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1317</td><td><a href="oci8.c.html#L1317">(errstatus == OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1325</td><td><a href="oci8.c.html#L1325">(error_code == 1010)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1367</td><td><a href="oci8.c.html#L1367">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1388</td><td><a href="oci8.c.html#L1388">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1584</td><td><a href="oci8.c.html#L1584">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1622</td><td><a href="oci8.c.html#L1622">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1682</td><td><a href="oci8.c.html#L1682">(lob_length > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1739</td><td><a href="oci8.c.html#L1739">(expected_args > 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1758</td><td><a href="oci8.c.html#L1758">(expected_args == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1849</td><td><a href="oci8.c.html#L1849">(placeholder == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1861</td><td><a href="oci8.c.html#L1861">(column == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1893</td><td><a href="oci8.c.html#L1893">(expected_args > 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1951</td><td><a href="oci8.c.html#L1951">(session_pool == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1974</td><td><a href="oci8.c.html#L1974">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1986</td><td><a href="oci8.c.html#L1986">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1998</td><td><a href="oci8.c.html#L1998">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2009</td><td><a href="oci8.c.html#L2009">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2020</td><td><a href="oci8.c.html#L2020">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2030</td><td><a href="oci8.c.html#L2030">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2042</td><td><a href="oci8.c.html#L2042">(errstatus != OCI_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2110</td><td><a href="oci8.c.html#L2110">(spool_out_zv != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2114</td><td><a href="oci8.c.html#L2114">(spool_out_le == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2118</td><td><a href="oci8.c.html#L2118">(session_pool == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">936</td><td><a href="oci8.c.html#L936">(!OCI_G(privileged_connect))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">868</td><td><a href="oci8.c.html#L868">(!charset_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">881</td><td><a href="oci8.c.html#L881">(!connection)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">990</td><td><a href="oci8.c.html#L990">(!charsetid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">998</td><td><a href="oci8.c.html#L998">(!charsetid)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1249</td><td><a href="oci8.c.html#L1249">(!use_spool)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1280</td><td><a href="oci8.c.html#L1280">(!exclusive)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1659</td><td><a href="oci8.c.html#L1659">(!descriptor)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2588</td><td><a href="oci8.c.html#L2588">(!next_pingp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">420</td><td><a href="oci8.c.html#L420">(OCI_G(edition))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">549</td><td><a href="oci8.c.html#L549">(DTRACE_OCI8_CONNECT_P_DTOR_CLOSE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">566</td><td><a href="oci8.c.html#L566">(DTRACE_OCI8_CONNECT_P_DTOR_RELEASE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="oci8.c.html#L780">(DTRACE_OCI8_ERROR_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">863</td><td><a href="oci8.c.html#L863">(DTRACE_OCI8_CONNECT_ENTRY_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="oci8.c.html#L875">(DTRACE_OCI8_CONNECT_RETURN_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">965</td><td><a href="oci8.c.html#L965">(OCI_G(connection_class))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="oci8.c.html#L971">(OCI_G(edition))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1046</td><td><a href="oci8.c.html#L1046">(DTRACE_OCI8_CONNECT_LOOKUP_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1059</td><td><a href="oci8.c.html#L1059">(php_oci_create_session(connection, NULL, dbname, dbname_len, username, username_len, password, password_len, new_password, new_password_len, (int)session_mode))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1079</td><td><a href="oci8.c.html#L1079">(php_oci_connection_status(connection))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1113</td><td><a href="oci8.c.html#L1113">(OCI_G(old_oci_close_semantics))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1250</td><td><a href="oci8.c.html#L1250">(php_oci_old_create_session(connection, dbname, dbname_len, username, username_len, password, password_len, new_password, new_password_len, (int)session_mode))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1256</td><td><a href="oci8.c.html#L1256">(php_oci_create_session(connection, session_pool, dbname, dbname_len, username, username_len, password, password_len, new_password, new_password_len, (int)session_mode))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1274</td><td><a href="oci8.c.html#L1274">(OCI_G(old_oci_close_semantics))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1292</td><td><a href="oci8.c.html#L1292">(DTRACE_OCI8_CONNECT_TYPE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1408</td><td><a href="oci8.c.html#L1408">(DTRACE_OCI8_CONNECTION_CLOSE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1511</td><td><a href="oci8.c.html#L1511">(php_oci_connection_rollback(connection))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1753</td><td><a href="oci8.c.html#L1753">(Z_ISREF_P(array))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1793</td><td><a href="oci8.c.html#L1793">(php_oci_statement_fetch(statement, nrows))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1830</td><td><a href="oci8.c.html#L1830">(php_oci_statement_fetch(statement, nrows))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1839</td><td><a href="oci8.c.html#L1839">(php_oci_statement_fetch(statement, nrows))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1923</td><td><a href="oci8.c.html#L1923">(DTRACE_OCI8_CONNECT_EXPIRY_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2006</td><td><a href="oci8.c.html#L2006">(OCI_G(edition))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2058</td><td><a href="oci8.c.html#L2058">(DTRACE_OCI8_SESSPOOL_CREATE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2085</td><td><a href="oci8.c.html#L2085">(OCI_G(edition))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2263</td><td><a href="oci8.c.html#L2263">(OCI_G(edition))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2395</td><td><a href="oci8.c.html#L2395">(DTRACE_OCI8_SESSPOOL_TYPE_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2446</td><td><a href="oci8.c.html#L2446">(DTRACE_OCI8_SESSPOOL_STATS_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2497</td><td><a href="oci8.c.html#L2497">(php_oci_connection_ping(connection))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2623</td><td><a href="oci8.c.html#L2623">(DTRACE_OCI8_CHECK_CONNECTION_ENABLED())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">220</td><td><a href="oci8.c.html#L220">(ora_error_code)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">484</td><td><a href="oci8.c.html#L484">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">499</td><td><a href="oci8.c.html#L499">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">740</td><td><a href="oci8.c.html#L740">(errcode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">751</td><td><a href="oci8.c.html#L751">(errcode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">759</td><td><a href="oci8.c.html#L759">(errcode)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">799</td><td><a href="oci8.c.html#L799">(error_code)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">976</td><td><a href="oci8.c.html#L976">(password_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">983</td><td><a href="oci8.c.html#L983">(dbname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1012</td><td><a href="oci8.c.html#L1012">(persistent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1069</td><td><a href="oci8.c.html#L1069">(connection)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1133</td><td><a href="oci8.c.html#L1133">(persistent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1154</td><td><a href="oci8.c.html#L1154">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1156</td><td><a href="oci8.c.html#L1156">(persistent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1167</td><td><a href="oci8.c.html#L1167">(persistent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1181</td><td><a href="oci8.c.html#L1181">(alloc_non_persistent)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1240</td><td><a href="oci8.c.html#L1240">(charsetid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1536</td><td><a href="oci8.c.html#L1536">(result)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1678</td><td><a href="oci8.c.html#L1678">(lob_fetch_status)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1687</td><td><a href="oci8.c.html#L1687">(lob_buffer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1813</td><td><a href="oci8.c.html#L1813">(errstatus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2053</td><td><a href="oci8.c.html#L2053">(spoolAuth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2089</td><td><a href="oci8.c.html#L2089">(password_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2096</td><td><a href="oci8.c.html#L2096">(dbname_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2241</td><td><a href="oci8.c.html#L2241">(username)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2252</td><td><a href="oci8.c.html#L2252">(password)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2300</td><td><a href="oci8.c.html#L2300">(new_password)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2533</td><td><a href="oci8.c.html#L2533">(session_pool)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

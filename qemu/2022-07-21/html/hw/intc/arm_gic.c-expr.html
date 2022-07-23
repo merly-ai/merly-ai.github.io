@@ -1,0 +1,305 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\intc\arm_gic.c Ctrl Expressions (254) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\intc\arm_gic.c Ctrl Expressions (254) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\intc\arm_gic.c Ctrl Expressions (254)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">2091</td><td><a href="arm_gic.c.html#L2091">(s->n_prio_bits > GIC_MAX_PRIORITY_BITS || (<span style='background-color:#741da3;'>s->virt_extn ? s->n_prio_bits < GIC_VIRT_MAX_GROUP_PRIO_BITS : s->n_prio_bits < GIC_MIN_PRIORITY_BITS</span>))</a></td><td class="num">1040.00</td></tr>
+      <tr><td class="num line">95</td><td><a href="arm_gic.c.html#L95">(GIC_DIST_TEST_ENABLED(irq, cm) && gic_test_pending(s, irq, cm) && (!GIC_DIST_TEST_ACTIVE(irq, cm)) && (<span style='background-color:#741da3;'>irq < GIC_INTERNAL || GIC_DIST_TARGET(irq) & cm</span>))</a></td><td class="num">1028.50</td></tr>
+      <tr><td class="num line">1657</td><td><a href="arm_gic.c.html#L1657">(<span style='background-color:#741da3;'>regno >= GIC_NR_APRS || s->revision != 2 || !gic_has_groups(s) || gic_cpu_ns_access(s, cpu, attrs) || gic_is_vcpu(cpu)</span>)</a></td><td class="num">1014.50</td></tr>
+      <tr><td class="num line">1641</td><td><a href="arm_gic.c.html#L1641">(<span style='background-color:#741da3;'>regno >= nr_aprs || s->revision != 2</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">1728</td><td><a href="arm_gic.c.html#L1728">(<span style='background-color:#741da3;'>regno >= nr_aprs || s->revision != 2</span>)</a></td><td class="num">1010.00</td></tr>
+      <tr><td class="num line">296</td><td><a href="arm_gic.c.html#L296">((s->h_hcr[cpu] & R_GICH_HCR_LRENPIE_MASK) && ((s->h_hcr[cpu] & R_GICH_HCR_EOICount_MASK) != 0))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">313</td><td><a href="arm_gic.c.html#L313">((s->h_hcr[cpu] & R_GICH_HCR_VGRP0DIE_MASK) && !(s->cpu_ctlr[vcpu] & GICC_CTLR_EN_GRP0))</a></td><td class="num">51.50</td></tr>
+      <tr><td class="num line">325</td><td><a href="arm_gic.c.html#L325">((s->h_hcr[cpu] & R_GICH_HCR_VGRP1DIE_MASK) && !(s->cpu_ctlr[vcpu] & GICC_CTLR_EN_GRP1))</a></td><td class="num">51.50</td></tr>
+      <tr><td class="num line">439</td><td><a href="arm_gic.c.html#L439">(group == 1 && secure && !(s->cpu_ctlr[cpu] & GICC_CTLR_ACK_CTL))</a></td><td class="num">46.50</td></tr>
+      <tr><td class="num line">980</td><td><a href="arm_gic.c.html#L980">(!(s->security_extn && !attrs.secure) && gic_has_groups(s))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">1205</td><td><a href="arm_gic.c.html#L1205">(!(s->security_extn && !attrs.secure) && gic_has_groups(s))</a></td><td class="num">44.50</td></tr>
+      <tr><td class="num line">458</td><td><a href="arm_gic.c.html#L458">(gic_has_groups(s) && !(s->cpu_ctlr[cpu] & GICC_CTLR_CBPR) && gic_test_group(s, irq, cpu))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">151</td><td><a href="arm_gic.c.html#L151">(virt && !(s->h_hcr[cpu] & R_GICH_HCR_EN_MASK))</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">307</td><td><a href="arm_gic.c.html#L307">((s->h_hcr[cpu] & R_GICH_HCR_VGRP0EIE_MASK) && (s->cpu_ctlr[vcpu] & GICC_CTLR_EN_GRP0))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">319</td><td><a href="arm_gic.c.html#L319">((s->h_hcr[cpu] & R_GICH_HCR_VGRP1EIE_MASK) && (s->cpu_ctlr[vcpu] & GICC_CTLR_EN_GRP1))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">1005</td><td><a href="arm_gic.c.html#L1005">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1025</td><td><a href="arm_gic.c.html#L1025">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1049</td><td><a href="arm_gic.c.html#L1049">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1089</td><td><a href="arm_gic.c.html#L1089">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1242</td><td><a href="arm_gic.c.html#L1242">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1274</td><td><a href="arm_gic.c.html#L1274">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1297</td><td><a href="arm_gic.c.html#L1297">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1315</td><td><a href="arm_gic.c.html#L1315">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1342</td><td><a href="arm_gic.c.html#L1342">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1366</td><td><a href="arm_gic.c.html#L1366">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">1405</td><td><a href="arm_gic.c.html#L1405">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq + i, 1 << cpu))</a></td><td class="num">31.10</td></tr>
+      <tr><td class="num line">774</td><td><a href="arm_gic.c.html#L774">((s->revision != REV_11MPCORE) && (s->running_priority[cpu] > 0xff))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">813</td><td><a href="arm_gic.c.html#L813">(irq >= GIC_MAXIRQ || (!gic_is_vcpu(cpu) && irq >= s->num_irq))</a></td><td class="num">30.50</td></tr>
+      <tr><td class="num line">1116</td><td><a href="arm_gic.c.html#L1116">(s->security_extn && !attrs.secure && !GIC_DIST_TEST_GROUP(irq, 1 << cpu))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">204</td><td><a href="arm_gic.c.html#L204">(group == 0 && s->cpu_ctlr[cpu_iface] & GICC_CTLR_FIQ_EN)</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">291</td><td><a href="arm_gic.c.html#L291">((s->h_hcr[cpu] & R_GICH_HCR_UIE_MASK) && (num_valid < 2))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">302</td><td><a href="arm_gic.c.html#L302">((s->h_hcr[cpu] & R_GICH_HCR_NPIE_MASK) && (num_pending == 0))</a></td><td class="num">28.50</td></tr>
+      <tr><td class="num line">915</td><td><a href="arm_gic.c.html#L915">(!GIC_DIST_TEST_EDGE_TRIGGER(irq) && GIC_DIST_TEST_ENABLED(irq, cm) && GIC_DIST_TEST_LEVEL(irq, cm) && (GIC_DIST_TARGET(irq) & cm) != 0)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">147</td><td><a href="arm_gic.c.html#L147">(!virt && !(s->ctlr & group_mask))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">155</td><td><a href="arm_gic.c.html#L155">(!(s->cpu_ctlr[cpu_iface] & group_mask))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="arm_gic.c.html#L584">(s->sgi_pending[irq][cpu] == 0)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1436</td><td><a href="arm_gic.c.html#L1436">(s->sgi_pending[irq][cpu] == 0)</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1254</td><td><a href="arm_gic.c.html#L1254">(GIC_DIST_TEST_LEVEL(irq + i, mask) && !GIC_DIST_TEST_EDGE_TRIGGER(irq + i))</a></td><td class="num">23.95</td></tr>
+      <tr><td class="num line">1066</td><td><a href="arm_gic.c.html#L1066">(s->num_cpu == 1 && s->revision != REV_11MPCORE)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1385</td><td><a href="arm_gic.c.html#L1385">(s->num_cpu != 1 || s->revision == REV_11MPCORE)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1433</td><td><a href="arm_gic.c.html#L1433">(!s->security_extn || attrs.secure || GIC_DIST_TEST_GROUP(irq, 1 << cpu))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1447</td><td><a href="arm_gic.c.html#L1447">(!s->security_extn || attrs.secure || GIC_DIST_TEST_GROUP(irq, 1 << cpu))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="arm_gic.c.html#L1074">(irq < 29 && s->revision == REV_11MPCORE)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1390</td><td><a href="arm_gic.c.html#L1390">(irq < 29 && s->revision == REV_11MPCORE)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">61</td><td><a href="arm_gic.c.html#L61">(!qtest_enabled() && s->num_cpu > 1)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1746</td><td><a href="arm_gic.c.html#L1746">(regno >= GIC_NR_APRS || s->revision != 2)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">667</td><td><a href="arm_gic.c.html#L667">(s->security_extn && !attrs.secure)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">688</td><td><a href="arm_gic.c.html#L688">(s->security_extn && !attrs.secure)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">958</td><td><a href="arm_gic.c.html#L958">(s->security_extn && !attrs.secure)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1188</td><td><a href="arm_gic.c.html#L1188">(s->security_extn && !attrs.secure)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1411</td><td><a href="arm_gic.c.html#L1411">(value & (1 << (i * 2)))</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">1417</td><td><a href="arm_gic.c.html#L1417">(value & (2 << (i * 2)))</a></td><td class="num">8.85</td></tr>
+      <tr><td class="num line">701</td><td><a href="arm_gic.c.html#L701">(s->priority_mask[cpu] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="arm_gic.c.html#L780">(s->running_priority[cpu] & 0x80)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1604</td><td><a href="arm_gic.c.html#L1604">(s->cpu_ctlr[cpu] & GICC_CTLR_CBPR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="arm_gic.c.html#L1701">(s->cpu_ctlr[cpu] & GICC_CTLR_CBPR)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">392</td><td><a href="arm_gic.c.html#L392">(irq < (s->num_irq - GIC_INTERNAL))</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">616</td><td><a href="arm_gic.c.html#L616">(gic_get_priority(s, irq, cpu) >= s->running_priority[cpu])</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">200</td><td><a href="arm_gic.c.html#L200">(best_prio < s->priority_mask[cpu_iface])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">202</td><td><a href="arm_gic.c.html#L202">(best_prio < s->running_priority[cpu_iface])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">908</td><td><a href="arm_gic.c.html#L908">(s->running_priority[cpu] == 0x100)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">435</td><td><a href="arm_gic.c.html#L435">(group == 0 && !secure)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1214</td><td><a href="arm_gic.c.html#L1214">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1236</td><td><a href="arm_gic.c.html#L1236">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1271</td><td><a href="arm_gic.c.html#L1271">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1296</td><td><a href="arm_gic.c.html#L1296">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1323</td><td><a href="arm_gic.c.html#L1323">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1347</td><td><a href="arm_gic.c.html#L1347">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1371</td><td><a href="arm_gic.c.html#L1371">(value & (1 << i))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">427</td><td><a href="arm_gic.c.html#L427">(pending_irq < GIC_MAXIRQ && gic_has_groups(s))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">94</td><td><a href="arm_gic.c.html#L94">(irq < s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">118</td><td><a href="arm_gic.c.html#L118">(lr_idx < s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">174</td><td><a href="arm_gic.c.html#L174">(cpu < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">259</td><td><a href="arm_gic.c.html#L259">(lr_idx < s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">338</td><td><a href="arm_gic.c.html#L338">(cpu < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">412</td><td><a href="arm_gic.c.html#L412">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">623</td><td><a href="arm_gic.c.html#L623">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">753</td><td><a href="arm_gic.c.html#L753">(s->revision == 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">759</td><td><a href="arm_gic.c.html#L759">(s->revision == 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="arm_gic.c.html#L799">(s->revision != 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">897</td><td><a href="arm_gic.c.html#L897">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">912</td><td><a href="arm_gic.c.html#L912">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">983</td><td><a href="arm_gic.c.html#L983">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1001</td><td><a href="arm_gic.c.html#L1001">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1020</td><td><a href="arm_gic.c.html#L1020">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1038</td><td><a href="arm_gic.c.html#L1038">(s->revision == 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1044</td><td><a href="arm_gic.c.html#L1044">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1061</td><td><a href="arm_gic.c.html#L1061">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1071</td><td><a href="arm_gic.c.html#L1071">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1085</td><td><a href="arm_gic.c.html#L1085">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1104</td><td><a href="arm_gic.c.html#L1104">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1208</td><td><a href="arm_gic.c.html#L1208">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1229</td><td><a href="arm_gic.c.html#L1229">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1264</td><td><a href="arm_gic.c.html#L1264">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1289</td><td><a href="arm_gic.c.html#L1289">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1308</td><td><a href="arm_gic.c.html#L1308">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1329</td><td><a href="arm_gic.c.html#L1329">(s->revision != 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1334</td><td><a href="arm_gic.c.html#L1334">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1353</td><td><a href="arm_gic.c.html#L1353">(s->revision != 2)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1358</td><td><a href="arm_gic.c.html#L1358">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1378</td><td><a href="arm_gic.c.html#L1378">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1387</td><td><a href="arm_gic.c.html#L1387">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1400</td><td><a href="arm_gic.c.html#L1400">(irq >= s->num_irq)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1410</td><td><a href="arm_gic.c.html#L1410">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="arm_gic.c.html#L1428">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1442</td><td><a href="arm_gic.c.html#L1442">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1666</td><td><a href="arm_gic.c.html#L1666">(s->revision == REV_11MPCORE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1838</td><td><a href="arm_gic.c.html#L1838">(lr_idx < s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1852</td><td><a href="arm_gic.c.html#L1852">(lr_idx < s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1930</td><td><a href="arm_gic.c.html#L1930">(lr_idx > s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1974</td><td><a href="arm_gic.c.html#L1974">(lr_idx > s->num_lrs)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2115</td><td><a href="arm_gic.c.html#L2115">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2126</td><td><a href="arm_gic.c.html#L2126">(i < s->num_cpu)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">550</td><td><a href="arm_gic.c.html#L550">(s->h_apr[rcpu])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">833</td><td><a href="arm_gic.c.html#L833">(gic_is_vcpu(cpu) && !gic_virq_is_valid(s, irq, cpu))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2085</td><td><a href="arm_gic.c.html#L2085">(kvm_enabled() && !kvm_arm_supports_user_irq())</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">98</td><td><a href="arm_gic.c.html#L98">(GIC_DIST_GET_PRIORITY(irq, cpu) < *best_prio)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">266</td><td><a href="arm_gic.c.html#L266">(GICH_LR_STATE(*entry) != GICH_LR_STATE_INVALID)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">270</td><td><a href="arm_gic.c.html#L270">(GICH_LR_STATE(*entry) == GICH_LR_STATE_PENDING)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">849</td><td><a href="arm_gic.c.html#L849">(gic_cpu_ns_access(s, cpu, attrs) && !group)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">925</td><td><a href="arm_gic.c.html#L925">(gic_cpu_ns_access(s, cpu, attrs) && !group)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">105</td><td><a href="arm_gic.c.html#L105">(*best_irq < 1023)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">125</td><td><a href="arm_gic.c.html#L125">(prio < *best_prio)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">878</td><td><a href="arm_gic.c.html#L878">(prio_drop && !valid)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">491</td><td><a href="arm_gic.c.html#L491">(gic_has_groups(s) && gic_test_group(s, irq, cpu))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">668</td><td><a href="arm_gic.c.html#L668">(!GIC_DIST_TEST_GROUP(irq, (1 << cpu)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">689</td><td><a href="arm_gic.c.html#L689">(!GIC_DIST_TEST_GROUP(irq, (1 << cpu)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">203</td><td><a href="arm_gic.c.html#L203">(gic_irq_signaling_enabled(s, cpu, virt, 1 << group))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1630</td><td><a href="arm_gic.c.html#L1630">(!gic_has_groups(s) || (gic_cpu_ns_access(s, cpu, attrs)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1716</td><td><a href="arm_gic.c.html#L1716">(!gic_has_groups(s) || (gic_cpu_ns_access(s, cpu, attrs)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1752</td><td><a href="arm_gic.c.html#L1752">(!gic_has_groups(s) || (gic_cpu_ns_access(s, cpu, attrs)))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">717</td><td><a href="arm_gic.c.html#L717">(pmask & 0x80)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1125</td><td><a href="arm_gic.c.html#L1125">(offset & 3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1247</td><td><a href="arm_gic.c.html#L1247">(!GIC_DIST_TEST_ENABLED(irq + i, cm))</a></td><td class="num">3.35</td></tr>
+      <tr><td class="num line">2125</td><td><a href="arm_gic.c.html#L2125">(s->virt_extn)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">559</td><td><a href="arm_gic.c.html#L559">(!*papr)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="arm_gic.c.html#L358">(GIC_DIST_TEST_EDGE_TRIGGER(irq) || GIC_DIST_TEST_ENABLED(irq, cm))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">262</td><td><a href="arm_gic.c.html#L262">(gic_lr_entry_is_eoi(*entry))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">408</td><td><a href="arm_gic.c.html#L408">(level == GIC_DIST_TEST_LEVEL(irq, cm))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">987</td><td><a href="arm_gic.c.html#L987">(GIC_DIST_TEST_GROUP(irq + i, cm))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1010</td><td><a href="arm_gic.c.html#L1010">(GIC_DIST_TEST_ENABLED(irq + i, cm))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1030</td><td><a href="arm_gic.c.html#L1030">(gic_test_pending(s, irq + i, mask))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1054</td><td><a href="arm_gic.c.html#L1054">(GIC_DIST_TEST_ACTIVE(irq + i, mask))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1094</td><td><a href="arm_gic.c.html#L1094">(GIC_DIST_TEST_MODEL(irq + i))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1097</td><td><a href="arm_gic.c.html#L1097">(GIC_DIST_TEST_EDGE_TRIGGER(irq + i))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1279</td><td><a href="arm_gic.c.html#L1279">(GIC_DIST_TEST_ENABLED(irq + i, cm))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">122</td><td><a href="arm_gic.c.html#L122">(state == GICH_LR_STATE_PENDING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">191</td><td><a href="arm_gic.c.html#L191">(best_irq != 1023)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">519</td><td><a href="arm_gic.c.html#L519">(i < GIC_NR_APRS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">557</td><td><a href="arm_gic.c.html#L557">(i < GIC_NR_APRS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">611</td><td><a href="arm_gic.c.html#L611">(irq >= GIC_MAXIRQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">630</td><td><a href="arm_gic.c.html#L630">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="arm_gic.c.html#L676">(irq < GIC_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">869</td><td><a href="arm_gic.c.html#L869">(irq >= GIC_MAXIRQ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">956</td><td><a href="arm_gic.c.html#L956">(offset < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="arm_gic.c.html#L957">(offset == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">967</td><td><a href="arm_gic.c.html#L967">(offset == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="arm_gic.c.html#L972">(offset < 0x08)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">974</td><td><a href="arm_gic.c.html#L974">(offset >= 0x80)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">986</td><td><a href="arm_gic.c.html#L986">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">995</td><td><a href="arm_gic.c.html#L995">(offset < 0x200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">997</td><td><a href="arm_gic.c.html#L997">(offset < 0x180)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1004</td><td><a href="arm_gic.c.html#L1004">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1014</td><td><a href="arm_gic.c.html#L1014">(offset < 0x300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1016</td><td><a href="arm_gic.c.html#L1016">(offset < 0x280)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1024</td><td><a href="arm_gic.c.html#L1024">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1034</td><td><a href="arm_gic.c.html#L1034">(offset < 0x400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="arm_gic.c.html#L1036">(offset < 0x380)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="arm_gic.c.html#L1048">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1058</td><td><a href="arm_gic.c.html#L1058">(offset < 0x800)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1064</td><td><a href="arm_gic.c.html#L1064">(offset < 0xc00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="arm_gic.c.html#L1076">(irq < GIC_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1082</td><td><a href="arm_gic.c.html#L1082">(offset < 0xf00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1088</td><td><a href="arm_gic.c.html#L1088">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1101</td><td><a href="arm_gic.c.html#L1101">(offset < 0xf10)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1103</td><td><a href="arm_gic.c.html#L1103">(offset < 0xf30)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1108</td><td><a href="arm_gic.c.html#L1108">(offset < 0xf20)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1122</td><td><a href="arm_gic.c.html#L1122">(offset < 0xfd0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1124</td><td><a href="arm_gic.c.html#L1124">(offset < 0x1000)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1186</td><td><a href="arm_gic.c.html#L1186">(offset < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1187</td><td><a href="arm_gic.c.html#L1187">(offset == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1199</td><td><a href="arm_gic.c.html#L1199">(offset < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1201</td><td><a href="arm_gic.c.html#L1201">(offset >= 0x80)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1211</td><td><a href="arm_gic.c.html#L1211">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1226</td><td><a href="arm_gic.c.html#L1226">(offset < 0x180)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1231</td><td><a href="arm_gic.c.html#L1231">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1235</td><td><a href="arm_gic.c.html#L1235">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="arm_gic.c.html#L1261">(offset < 0x200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1266</td><td><a href="arm_gic.c.html#L1266">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1270</td><td><a href="arm_gic.c.html#L1270">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1286</td><td><a href="arm_gic.c.html#L1286">(offset < 0x280)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1291</td><td><a href="arm_gic.c.html#L1291">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1295</td><td><a href="arm_gic.c.html#L1295">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1305</td><td><a href="arm_gic.c.html#L1305">(offset < 0x300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1310</td><td><a href="arm_gic.c.html#L1310">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1314</td><td><a href="arm_gic.c.html#L1314">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1327</td><td><a href="arm_gic.c.html#L1327">(offset < 0x380)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1341</td><td><a href="arm_gic.c.html#L1341">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1351</td><td><a href="arm_gic.c.html#L1351">(offset < 0x400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1365</td><td><a href="arm_gic.c.html#L1365">(i < 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1375</td><td><a href="arm_gic.c.html#L1375">(offset < 0x800)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1381</td><td><a href="arm_gic.c.html#L1381">(offset < 0xc00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1392</td><td><a href="arm_gic.c.html#L1392">(irq < GIC_INTERNAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1397</td><td><a href="arm_gic.c.html#L1397">(offset < 0xf00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1402</td><td><a href="arm_gic.c.html#L1402">(irq < GIC_NR_SGIS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1404</td><td><a href="arm_gic.c.html#L1404">(i < 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1423</td><td><a href="arm_gic.c.html#L1423">(offset < 0xf10)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1426</td><td><a href="arm_gic.c.html#L1426">(offset < 0xf20)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1440</td><td><a href="arm_gic.c.html#L1440">(offset < 0xf30)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1473</td><td><a href="arm_gic.c.html#L1473">(offset == 0xf00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1498</td><td><a href="arm_gic.c.html#L1498">(target_cpu < GIC_NCPU)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1537</td><td><a href="arm_gic.c.html#L1537">(regno < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1542</td><td><a href="arm_gic.c.html#L1542">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1547</td><td><a href="arm_gic.c.html#L1547">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1552</td><td><a href="arm_gic.c.html#L1552">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1568</td><td><a href="arm_gic.c.html#L1568">(regno < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="arm_gic.c.html#L1573">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1578</td><td><a href="arm_gic.c.html#L1578">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1583</td><td><a href="arm_gic.c.html#L1583">(regno == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">178</td><td><a href="arm_gic.c.html#L178">(!gic_irq_signaling_enabled(s, cpu, virt, GICD_CTLR_EN_GRP0 | GICD_CTLR_EN_GRP1))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">576</td><td><a href="arm_gic.c.html#L576">(!gic_is_vcpu(cpu))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">826</td><td><a href="arm_gic.c.html#L826">(!gic_eoi_split(s, cpu, attrs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">876</td><td><a href="arm_gic.c.html#L876">(!gic_eoi_split(s, cpu, attrs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">938</td><td><a href="arm_gic.c.html#L938">(!gic_eoi_split(s, cpu, attrs))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">521</td><td><a href="arm_gic.c.html#L521">(!apr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">373</td><td><a href="arm_gic.c.html#L373">(GIC_DIST_TEST_EDGE_TRIGGER(irq))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">488</td><td><a href="arm_gic.c.html#L488">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">510</td><td><a href="arm_gic.c.html#L510">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">547</td><td><a href="arm_gic.c.html#L547">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">638</td><td><a href="arm_gic.c.html#L638">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">656</td><td><a href="arm_gic.c.html#L656">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">700</td><td><a href="arm_gic.c.html#L700">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">716</td><td><a href="arm_gic.c.html#L716">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">732</td><td><a href="arm_gic.c.html#L732">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">748</td><td><a href="arm_gic.c.html#L748">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">779</td><td><a href="arm_gic.c.html#L779">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="arm_gic.c.html#L803">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">863</td><td><a href="arm_gic.c.html#L863">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="arm_gic.c.html#L1191">(gic_has_groups(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1603</td><td><a href="arm_gic.c.html#L1603">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1643</td><td><a href="arm_gic.c.html#L1643">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1645</td><td><a href="arm_gic.c.html#L1645">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1700</td><td><a href="arm_gic.c.html#L1700">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="arm_gic.c.html#L1731">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1733</td><td><a href="arm_gic.c.html#L1733">(gic_cpu_ns_access(s, cpu, attrs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1749</td><td><a href="arm_gic.c.html#L1749">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1769</td><td><a href="arm_gic.c.html#L1769">(gic_is_vcpu(cpu))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">185</td><td><a href="arm_gic.c.html#L185">(virt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">286</td><td><a href="arm_gic.c.html#L286">(num_eoi)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">356</td><td><a href="arm_gic.c.html#L356">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">370</td><td><a href="arm_gic.c.html#L370">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">512</td><td><a href="arm_gic.c.html#L512">(apr)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">888</td><td><a href="arm_gic.c.html#L888">(valid)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2080</td><td><a href="arm_gic.c.html#L2080">(local_err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

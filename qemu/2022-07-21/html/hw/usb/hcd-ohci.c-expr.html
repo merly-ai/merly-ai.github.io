@@ -1,0 +1,208 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\usb\hcd-ohci.c Ctrl Expressions (157) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\usb\hcd-ohci.c Ctrl Expressions (157) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\usb\hcd-ohci.c Ctrl Expressions (157)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">825</td><td><a href="hcd-ohci.c.html#L825">(i && (<span style='background-color:#741da3;'>!(i % width) || (i == len)</span>))</a></td><td class="num">1025.60</td></tr>
+      <tr><td class="num line">248</td><td><a href="hcd-ohci.c.html#L248">(<span style='background-color:#741da3;'>(ohci->intr & OHCI_INTR_MIE) && (ohci->intr_status & ohci->intr)</span>)</a></td><td class="num">1020.00</td></tr>
+      <tr><td class="num line">987</td><td><a href="hcd-ohci.c.html#L987">(<span style='background-color:#741da3;'>ret == pktlen || (dir == OHCI_TD_DIR_IN && ret >= 0 && flag_r)</span>)</a></td><td class="num">1015.25</td></tr>
+      <tr><td class="num line">1185</td><td><a href="hcd-ohci.c.html#L1185">(<span style='background-color:#741da3;'>ohci->old_ctl & (~ohci->ctl) & OHCI_CTL_BLE | OHCI_CTL_CLE</span>)</a></td><td class="num">1012.25</td></tr>
+      <tr><td class="num line">653</td><td><a href="hcd-ohci.c.html#L653">(!(OHCI_BM(start_offset, TD_PSW_CC) & 0xe) || ((relative_frame_number < frame_count) && !(OHCI_BM(next_offset, TD_PSW_CC) & 0xe)))</a></td><td class="num">46.75</td></tr>
+      <tr><td class="num line">1458</td><td><a href="hcd-ohci.c.html#L1458">(addr >= 0x54 && addr < 0x54 + ohci->num_ports * 4)</a></td><td class="num">46.20</td></tr>
+      <tr><td class="num line">1583</td><td><a href="hcd-ohci.c.html#L1583">(addr >= 0x54 && addr < 0x54 + ohci->num_ports * 4)</a></td><td class="num">46.20</td></tr>
+      <tr><td class="num line">268</td><td><a href="hcd-ohci.c.html#L268">((ohci->rhport[i].ctrl & OHCI_PORT_PES) == 0)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">1266</td><td><a href="hcd-ohci.c.html#L1266">(!(ohci->rhport[i].ctrl & OHCI_PORT_CCS))</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">1737</td><td><a href="hcd-ohci.c.html#L1737">(ohci->async_td && usb_packet_is_inflight(&ohci->usb_packet) && ohci->usb_packet.ep->dev == dev)</a></td><td class="num">36.75</td></tr>
+      <tr><td class="num line">1203</td><td><a href="hcd-ohci.c.html#L1203">(ohci->done_count == 0 && !(ohci->intr_status & OHCI_INTR_WD))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">992</td><td><a href="hcd-ohci.c.html#L992">((td.cbp & 0xfff) + ret > 0xfff)</a></td><td class="num">25.10</td></tr>
+      <tr><td class="num line">1274</td><td><a href="hcd-ohci.c.html#L1274">(ohci->rhport[i].ctrl & val)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1146</td><td><a href="hcd-ohci.c.html#L1146">((ohci->ctl & OHCI_CTL_CLE) && (ohci->status & OHCI_STATUS_CLF))</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">1156</td><td><a href="hcd-ohci.c.html#L1156">((ohci->ctl & OHCI_CTL_BLE) && (ohci->status & OHCI_STATUS_BLF))</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">1147</td><td><a href="hcd-ohci.c.html#L1147">(ohci->ctrl_cur && ohci->ctrl_cur != ohci->ctrl_head)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">313</td><td><a href="hcd-ohci.c.html#L313">(port->port.dev && port->port.dev->attached)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">1214</td><td><a href="hcd-ohci.c.html#L1214">(ohci->done_count != 7 && ohci->done_count != 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">739</td><td><a href="hcd-ohci.c.html#L739">(dir == OHCI_TD_DIR_IN && ret >= 0 && ret <= len)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">1089</td><td><a href="hcd-ohci.c.html#L1089">(ohci->async_td && addr == ohci->async_td)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">902</td><td><a href="hcd-ohci.c.html#L902">((td.cbp & 0xfffff000) != (td.be & 0xfffff000))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1085</td><td><a href="hcd-ohci.c.html#L1085">((ed.head & OHCI_ED_H) || (ed.flags & OHCI_ED_K))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="hcd-ohci.c.html#L514">(dma_memory_rw(ohci->as, ptr + ohci->localmem_base, buf, len - n, dir, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">11.45</td></tr>
+      <tr><td class="num line">542</td><td><a href="hcd-ohci.c.html#L542">(dma_memory_rw(ohci->as, ptr + ohci->localmem_base, buf, len - n, dir, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">11.45</td></tr>
+      <tr><td class="num line">1206</td><td><a href="hcd-ohci.c.html#L1206">(ohci->intr & ohci->intr_status)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1076</td><td><a href="hcd-ohci.c.html#L1076">(cur && link_cnt++ < ED_LINK_LIMIT)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="hcd-ohci.c.html#L505">(dma_memory_rw(ohci->as, ptr + ohci->localmem_base, buf, n, dir, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">533</td><td><a href="hcd-ohci.c.html#L533">(dma_memory_rw(ohci->as, ptr + ohci->localmem_base, buf, n, dir, MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">692</td><td><a href="hcd-ohci.c.html#L692">((start_addr & OHCI_PAGE_MASK) != (end_addr & OHCI_PAGE_MASK))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1346</td><td><a href="hcd-ohci.c.html#L1346">((ohci->ctl & OHCI_CTL_HCFS) != OHCI_USB_OPERATIONAL)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1715</td><td><a href="hcd-ohci.c.html#L1715">(port->port.dev->speed == USB_SPEED_LOW)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1722</td><td><a href="hcd-ohci.c.html#L1722">((s->ctl & OHCI_CTL_HCFS) == OHCI_USB_SUSPEND)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1782</td><td><a href="hcd-ohci.c.html#L1782">((s->ctl & OHCI_CTL_HCFS) == OHCI_USB_SUSPEND)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1098</td><td><a href="hcd-ohci.c.html#L1098">((ed.head & OHCI_DPTR_MASK) != ed.tail)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">660</td><td><a href="hcd-ohci.c.html#L660">((relative_frame_number < frame_count) && (start_offset > next_offset))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">749</td><td><a href="hcd-ohci.c.html#L749">(dir == OHCI_TD_DIR_OUT && ret == len)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1003</td><td><a href="hcd-ohci.c.html#L1003">((dir != OHCI_TD_DIR_IN) && (ret != len))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">863</td><td><a href="hcd-ohci.c.html#L863">(completion && !ohci->async_complete)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">290</td><td><a href="hcd-ohci.c.html#L290">(dev && dev->attached)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1110</td><td><a href="hcd-ohci.c.html#L1110">((ed.flags & OHCI_ED_F) == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">641</td><td><a href="hcd-ohci.c.html#L641">(!iso_td.bp || !iso_td.be)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">901</td><td><a href="hcd-ohci.c.html#L901">(td.cbp && td.be)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">962</td><td><a href="hcd-ohci.c.html#L962">(ohci->usb_packet.status == USB_RET_ASYNC)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">968</td><td><a href="hcd-ohci.c.html#L968">(ohci->usb_packet.status == USB_RET_SUCCESS)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1177</td><td><a href="hcd-ohci.c.html#L1177">(ohci->ctl & OHCI_CTL_PLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1192</td><td><a href="hcd-ohci.c.html#L1192">(ohci->intr_status & OHCI_INTR_UE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1268</td><td><a href="hcd-ohci.c.html#L1268">(ohci->rhstatus & OHCI_RHS_DRWE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1601</td><td><a href="hcd-ohci.c.html#L1601">(ohci->status & OHCI_STATUS_HCR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1754</td><td><a href="hcd-ohci.c.html#L1754">(port->ctrl & OHCI_PORT_CCS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1759</td><td><a href="hcd-ohci.c.html#L1759">(port->ctrl & OHCI_PORT_PES)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1775</td><td><a href="hcd-ohci.c.html#L1775">(port->ctrl & OHCI_PORT_PSS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">702</td><td><a href="hcd-ohci.c.html#L702">(len && dir != OHCI_TD_DIR_IN)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">917</td><td><a href="hcd-ohci.c.html#L917">(len && dir != OHCI_TD_DIR_IN)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">387</td><td><a href="hcd-ohci.c.html#L387">(dma_memory_write(ohci->as, addr, &tmp, sizeof(tmp), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">425</td><td><a href="hcd-ohci.c.html#L425">(dma_memory_write(ohci->as, addr, &tmp, sizeof(tmp), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">924</td><td><a href="hcd-ohci.c.html#L924">(ohci_copy_td(ohci, &td, ohci->usb_buf, pktlen, DMA_DIRECTION_TO_DEVICE))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">976</td><td><a href="hcd-ohci.c.html#L976">(ohci_copy_td(ohci, &td, ohci->usb_buf, ret, DMA_DIRECTION_FROM_DEVICE))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1170</td><td><a href="hcd-ohci.c.html#L1170">(ohci_read_hcca(ohci, ohci->hcca, &hcca))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1221</td><td><a href="hcd-ohci.c.html#L1221">(ohci_put_hcca(ohci, ohci->hcca, &hcca))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">267</td><td><a href="hcd-ohci.c.html#L267">(i < ohci->num_ports)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">288</td><td><a href="hcd-ohci.c.html#L288">(i < ohci->num_ports)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">310</td><td><a href="hcd-ohci.c.html#L310">(i < ohci->num_ports)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">613</td><td><a href="hcd-ohci.c.html#L613">(i < ohci->done_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">665</td><td><a href="hcd-ohci.c.html#L665">((start_offset & 0x1000) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">675</td><td><a href="hcd-ohci.c.html#L675">((end_offset & 0x1000) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">723</td><td><a href="hcd-ohci.c.html#L723">(pkt->status == USB_RET_ASYNC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">728</td><td><a href="hcd-ohci.c.html#L728">(pkt->status == USB_RET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">799</td><td><a href="hcd-ohci.c.html#L799">(i < ohci->done_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1053</td><td><a href="hcd-ohci.c.html#L1053">(i < ohci->done_count)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1288</td><td><a href="hcd-ohci.c.html#L1288">(val != ohci->fi)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1382</td><td><a href="hcd-ohci.c.html#L1382">(i < ohci->num_ports)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1390</td><td><a href="hcd-ohci.c.html#L1390">(i < ohci->num_ports)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1401</td><td><a href="hcd-ohci.c.html#L1401">(old_state != ohci->rhstatus)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1443</td><td><a href="hcd-ohci.c.html#L1443">(old_state != port->ctrl)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1728</td><td><a href="hcd-ohci.c.html#L1728">(old_state != port->ctrl)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1765</td><td><a href="hcd-ohci.c.html#L1765">(old_state != port->ctrl)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">820</td><td><a href="hcd-ohci.c.html#L820">(!printall && !print16)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">905</td><td><a href="hcd-ohci.c.html#L905">(td.cbp > td.be)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1010</td><td><a href="hcd-ohci.c.html#L1010">(td.flags & OHCI_TD_T0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1150</td><td><a href="hcd-ohci.c.html#L1150">(!ohci_service_ed_list(ohci, ohci->ctrl_head))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1157</td><td><a href="hcd-ohci.c.html#L1157">(!ohci_service_ed_list(ohci, ohci->bulk_head))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">603</td><td><a href="hcd-ohci.c.html#L603">(OHCI_CC_DATAOVERRUN == OHCI_BM(iso_td.flags, TD_CC))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1204</td><td><a href="hcd-ohci.c.html#L1204">(!ohci->done)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">367</td><td><a href="hcd-ohci.c.html#L367">(dma_memory_read(ohci->as, addr, buf, sizeof(*buf), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">405</td><td><a href="hcd-ohci.c.html#L405">(dma_memory_read(ohci->as, addr, buf, sizeof(*buf), MEMTXATTRS_UNSPECIFIED))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1423</td><td><a href="hcd-ohci.c.html#L1423">(ohci_port_set_if_connected(ohci, portnum, val & OHCI_PORT_PSS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1427</td><td><a href="hcd-ohci.c.html#L1427">(ohci_port_set_if_connected(ohci, portnum, val & OHCI_PORT_PRS))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">284</td><td><a href="hcd-ohci.c.html#L284">(ohci->async_td)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">947</td><td><a href="hcd-ohci.c.html#L947">(ohci->async_td)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1376</td><td><a href="hcd-ohci.c.html#L1376">(val & OHCI_RHS_OCIC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1379</td><td><a href="hcd-ohci.c.html#L1379">(val & OHCI_RHS_LPS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1387</td><td><a href="hcd-ohci.c.html#L1387">(val & OHCI_RHS_LPSC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1395</td><td><a href="hcd-ohci.c.html#L1395">(val & OHCI_RHS_DRWE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1398</td><td><a href="hcd-ohci.c.html#L1398">(val & OHCI_RHS_CRWE)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1415</td><td><a href="hcd-ohci.c.html#L1415">(val & OHCI_PORT_WTC)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1418</td><td><a href="hcd-ohci.c.html#L1418">(val & OHCI_PORT_CCS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1438</td><td><a href="hcd-ohci.c.html#L1438">(val & OHCI_PORT_LSDA)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1440</td><td><a href="hcd-ohci.c.html#L1440">(val & OHCI_PORT_PPS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1455</td><td><a href="hcd-ohci.c.html#L1455">(addr & 3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1578</td><td><a href="hcd-ohci.c.html#L1578">(addr & 3)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1680</td><td><a href="hcd-ohci.c.html#L1680">(val & OHCI_HRESET_FSBIR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">574</td><td><a href="hcd-ohci.c.html#L574">(ohci_read_iso_td(ohci, addr, &iso_td))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">615</td><td><a href="hcd-ohci.c.html#L615">(ohci_put_iso_td(ohci, addr, &iso_td))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">802</td><td><a href="hcd-ohci.c.html#L802">(ohci_put_iso_td(ohci, addr, &iso_td))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">867</td><td><a href="hcd-ohci.c.html#L867">(ohci_read_td(ohci, addr, &td))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1056</td><td><a href="hcd-ohci.c.html#L1056">(ohci_put_td(ohci, addr, &td))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="hcd-ohci.c.html#L1077">(ohci_read_ed(ohci, cur, &ed))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1111</td><td><a href="hcd-ohci.c.html#L1111">(ohci_service_td(ohci, &ed))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1115</td><td><a href="hcd-ohci.c.html#L1115">(ohci_service_iso_td(ohci, &ed))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1121</td><td><a href="hcd-ohci.c.html#L1121">(ohci_put_ed(ohci, cur, &ed))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">272</td><td><a href="hcd-ohci.c.html#L272">(dev != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">292</td><td><a href="hcd-ohci.c.html#L292">(j < USB_MAX_ENDPOINTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">366</td><td><a href="hcd-ohci.c.html#L366">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="hcd-ohci.c.html#L385">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">404</td><td><a href="hcd-ohci.c.html#L404">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">423</td><td><a href="hcd-ohci.c.html#L423">(i < num)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">502</td><td><a href="hcd-ohci.c.html#L502">(n > len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">509</td><td><a href="hcd-ohci.c.html#L509">(n == len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">530</td><td><a href="hcd-ohci.c.html#L530">(n > len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">537</td><td><a href="hcd-ohci.c.html#L537">(n == len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="hcd-ohci.c.html#L595">(relative_frame_number < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">598</td><td><a href="hcd-ohci.c.html#L598">(relative_frame_number > frame_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">647</td><td><a href="hcd-ohci.c.html#L647">(relative_frame_number < frame_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">673</td><td><a href="hcd-ohci.c.html#L673">(relative_frame_number < frame_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">687</td><td><a href="hcd-ohci.c.html#L687">(start_addr > end_addr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="hcd-ohci.c.html#L698">(len > sizeof(buf))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="hcd-ohci.c.html#L711">(dev == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">755</td><td><a href="hcd-ohci.c.html#L755">(ret > (ssize_t)len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">761</td><td><a href="hcd-ohci.c.html#L761">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">791</td><td><a href="hcd-ohci.c.html#L791">(relative_frame_number == frame_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">834</td><td><a href="hcd-ohci.c.html#L834">(i == len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">912</td><td><a href="hcd-ohci.c.html#L912">(len > sizeof(ohci->usb_buf))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">920</td><td><a href="hcd-ohci.c.html#L920">(pktlen > len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">942</td><td><a href="hcd-ohci.c.html#L942">(dev == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">974</td><td><a href="hcd-ohci.c.html#L974">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">975</td><td><a href="hcd-ohci.c.html#L975">(dir == OHCI_TD_DIR_IN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="hcd-ohci.c.html#L989">(ret == len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1013</td><td><a href="hcd-ohci.c.html#L1013">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1073</td><td><a href="hcd-ohci.c.html#L1073">(head == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1260</td><td><a href="hcd-ohci.c.html#L1260">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1318</td><td><a href="hcd-ohci.c.html#L1318">(old_state == new_state)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1353</td><td><a href="hcd-ohci.c.html#L1353">(tks < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1358</td><td><a href="hcd-ohci.c.html#L1358">(tks >= usb_frame_time)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1827</td><td><a href="hcd-ohci.c.html#L1827">(num_ports > OHCI_MAX_PORTS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1833</td><td><a href="hcd-ohci.c.html#L1833">(usb_frame_time == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1851</td><td><a href="hcd-ohci.c.html#L1851">(i < num_ports)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1864</td><td><a href="hcd-ohci.c.html#L1864">(i < num_ports)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">826</td><td><a href="hcd-ohci.c.html#L826">(!printall)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">923</td><td><a href="hcd-ohci.c.html#L923">(!completion)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">703</td><td><a href="hcd-ohci.c.html#L703">(ohci_copy_iso_td(ohci, start_addr, end_addr, buf, len, DMA_DIRECTION_TO_DEVICE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">741</td><td><a href="hcd-ohci.c.html#L741">(ohci_copy_iso_td(ohci, start_addr, end_addr, buf, ret, DMA_DIRECTION_FROM_DEVICE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">937</td><td><a href="hcd-ohci.c.html#L937">(completion)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1297</td><td><a href="hcd-ohci.c.html#L1297">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1839</td><td><a href="hcd-ohci.c.html#L1839">(NANOSECONDS_PER_SECOND >= USB_HZ)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1849</td><td><a href="hcd-ohci.c.html#L1849">(masterbus)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1858</td><td><a href="hcd-ohci.c.html#L1858">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1905</td><td><a href="hcd-ohci.c.html#L1905">(err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

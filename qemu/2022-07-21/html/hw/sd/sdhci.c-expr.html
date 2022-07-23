@@ -1,0 +1,193 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>qemu Repo - hw\sd\sdhci.c Ctrl Expressions (142) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\sd\sdhci.c Ctrl Expressions (142) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\sd\sdhci.c Ctrl Expressions (142)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">528</td><td><a href="sdhci.c.html#L528">((s->trnmod & SDHC_TRNS_MULTI) == 0 || (<span style='background-color:#741da3;'>(s->trnmod & SDHC_TRNS_MULTI) && (s->trnmod & SDHC_TRNS_BLK_CNT_EN) && (s->blkcnt == 0)</span>))</a></td><td class="num">1051.50</td></tr>
+      <tr><td class="num line">880</td><td><a href="sdhci.c.html#L880">(length || (<span style='background-color:#741da3;'>(dscr.attr & SDHC_ADMA_ATTR_END) && (s->trnmod & SDHC_TRNS_BLK_CNT_EN) && s->blkcnt != 0</span>))</a></td><td class="num">1041.00</td></tr>
+      <tr><td class="num line">416</td><td><a href="sdhci.c.html#L416">(<span style='background-color:#741da3;'>(s->trnmod & SDHC_TRNS_MULTI) && (s->trnmod & SDHC_TRNS_BLK_CNT_EN) && (s->blkcnt == 0)</span>)</a></td><td class="num">1024.75</td></tr>
+      <tr><td class="num line">449</td><td><a href="sdhci.c.html#L449">(<span style='background-color:#741da3;'>s->stopped_state == sdhc_gap_read && (s->trnmod & SDHC_TRNS_MULTI) && s->blkcnt != 1</span>)</a></td><td class="num">1023.75</td></tr>
+      <tr><td class="num line">537</td><td><a href="sdhci.c.html#L537">(<span style='background-color:#741da3;'>s->stopped_state == sdhc_gap_write && (s->trnmod & SDHC_TRNS_MULTI) && s->blkcnt > 0</span>)</a></td><td class="num">1023.75</td></tr>
+      <tr><td class="num line">477</td><td><a href="sdhci.c.html#L477">(<span style='background-color:#741da3;'>(s->data_count) >= (s->blksize & BLOCK_SIZE_MASK)</span>)</a></td><td class="num">1012.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="sdhci.c.html#L609">(<span style='background-color:#741da3;'>((boundary_count + begin) < block_size) && page_aligned</span>)</a></td><td class="num">1008.35</td></tr>
+      <tr><td class="num line">633</td><td><a href="sdhci.c.html#L633">(<span style='background-color:#741da3;'>((boundary_count + begin) < block_size) && page_aligned</span>)</a></td><td class="num">1008.35</td></tr>
+      <tr><td class="num line">1226</td><td><a href="sdhci.c.html#L1226">(<span style='background-color:#9c4c02;'>!(s->prnsts & SDHC_CARD_PRESENT) || ((s->pwrcon >> 1) & 0x7) < 5 || !(s->capareg & (1 << (31 - ((s->pwrcon >> 1) & 0x7))))</span>)</a></td><td class="num">138.00</td></tr>
+      <tr><td class="num line">965</td><td><a href="sdhci.c.html#L965">(!SDHC_CLOCK_IS_ON(s->clkcon) || (<span style='background-color:#9c4c02;'>((s->prnsts & SDHC_DATA_INHIBIT) || s->stopped_state) && ((s->cmdreg & SDHC_CMD_DATA_PRESENT) || ((s->cmdreg & SDHC_CMD_RESPONSE) == SDHC_CMD_RSP_WITH_BUSY && !(SDHC_COMMAND_TYPE(s->cmdreg) == SDHC_CMD_ABORT)))</span>))</a></td><td class="num">126.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="sdhci.c.html#L487">((s->trnmod & SDHC_TRNS_MULTI) == 0 || ((s->trnmod & SDHC_TRNS_BLK_CNT_EN) && (s->blkcnt == 0)) || (s->stopped_state == sdhc_gap_read && !(s->prnsts & SDHC_DAT_LINE_ACTIVE)))</a></td><td class="num">74.25</td></tr>
+      <tr><td class="num line">442</td><td><a href="sdhci.c.html#L442">((s->trnmod & SDHC_TRNS_MULTI) == 0 || ((s->trnmod & SDHC_TRNS_MULTI) && s->blkcnt == 1))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">361</td><td><a href="sdhci.c.html#L361">(!(s->quirks & SDHCI_QUIRK_NO_BUSY_IRQ) && (s->norintstsen & SDHC_NISEN_TRSCMP) && (s->cmdreg & SDHC_CMD_RESPONSE) == SDHC_CMD_RSP_WITH_BUSY)</a></td><td class="num">41.50</td></tr>
+      <tr><td class="num line">877</td><td><a href="sdhci.c.html#L877">(((s->trnmod & SDHC_TRNS_BLK_CNT_EN) && (s->blkcnt == 0)) || (dscr.attr & SDHC_ADMA_ATTR_END))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">1157</td><td><a href="sdhci.c.html#L1157">(!(mask & 0xFF000000) && s->blkcnt && s->blksize && SDHC_DMA_TYPE(s->hostctl1) == SDHC_CTRL_SDMA)</a></td><td class="num">35.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="sdhci.c.html#L1096">((value & SDHC_CONTINUE_REQ) && s->stopped_state && (s->blkgap & SDHC_STOP_AT_GAP_REQ) == 0)</a></td><td class="num">34.25</td></tr>
+      <tr><td class="num line">938</td><td><a href="sdhci.c.html#L938">(!(s->capareg & R_SDHC_CAPAB_ADMA2_MASK) || !(s->capareg & R_SDHC_CAPAB_BUS64BIT_MASK))</a></td><td class="num">31.50</td></tr>
+      <tr><td class="num line">914</td><td><a href="sdhci.c.html#L914">((s->blkcnt == 1) || !(s->trnmod & SDHC_TRNS_MULTI))</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">951</td><td><a href="sdhci.c.html#L951">((s->trnmod & SDHC_TRNS_READ) && sdbus_data_ready(&s->sdbus))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">589</td><td><a href="sdhci.c.html#L589">(!(s->trnmod & SDHC_TRNS_BLK_CNT_EN) || !s->blkcnt)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">870</td><td><a href="sdhci.c.html#L870">(sdhci_update_irq(s) && !(dscr.attr & SDHC_ADMA_ATTR_END))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">374</td><td><a href="sdhci.c.html#L374">(!timeout && s->blksize && (s->cmdreg & SDHC_CMD_DATA_PRESENT))</a></td><td class="num">16.75</td></tr>
+      <tr><td class="num line">749</td><td><a href="sdhci.c.html#L749">(s->trnmod & SDHC_TRNS_BLK_CNT_EN && !s->blkcnt)</a></td><td class="num">14.25</td></tr>
+      <tr><td class="num line">1091</td><td><a href="sdhci.c.html#L1091">((value & SDHC_STOP_AT_GAP_REQ) && (s->blkgap & SDHC_STOP_AT_GAP_REQ))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1268</td><td><a href="sdhci.c.html#L1268">((s->norintstsen & SDHC_NISEN_INSERT) && s->pending_insert_state)</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">565</td><td><a href="sdhci.c.html#L565">(s->data_count >= (s->blksize & BLOCK_SIZE_MASK))</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">1106</td><td><a href="sdhci.c.html#L1106">(!s->stopped_state && (value & SDHC_STOP_AT_GAP_REQ))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">252</td><td><a href="sdhci.c.html#L252">((s->norintsts & SDHC_NIS_REMOVE) && level)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1175</td><td><a href="sdhci.c.html#L1175">(extract32(s->blksize, 0, 12) > s->buf_maxsz)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">383</td><td><a href="sdhci.c.html#L383">((s->trnmod & SDHC_TRNS_ACMD12) != 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">468</td><td><a href="sdhci.c.html#L468">((s->prnsts & SDHC_DATA_AVAILABLE) == 0)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="sdhci.c.html#L717">((dscr->attr & SDHC_ADMA_ATTR_ACT_MASK) == SDHC_ADMA_ATTR_SET_LEN)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">981</td><td><a href="sdhci.c.html#L981">((s->data_count & 0x3) != byte_num)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">597</td><td><a href="sdhci.c.html#L597">((s->sdmasysad % boundary_chk) == 0)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">556</td><td><a href="sdhci.c.html#L556">(!(s->prnsts & SDHC_SPACE_AVAILABLE))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">922</td><td><a href="sdhci.c.html#L922">(!(s->capareg & R_SDHC_CAPAB_ADMA1_MASK))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">930</td><td><a href="sdhci.c.html#L930">(!(s->capareg & R_SDHC_CAPAB_ADMA2_MASK))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1201</td><td><a href="sdhci.c.html#L1201">(!(s->capareg & R_SDHC_CAPAB_SDMA_MASK))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">761</td><td><a href="sdhci.c.html#L761">((dscr.attr & SDHC_ADMA_ATTR_VALID) == 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">235</td><td><a href="sdhci.c.html#L235">(s->norintsts & SDHC_NIS_REMOVE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">240</td><td><a href="sdhci.c.html#L240">(s->norintstsen & SDHC_NISEN_INSERT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">259</td><td><a href="sdhci.c.html#L259">(s->norintstsen & SDHC_NISEN_INSERT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">266</td><td><a href="sdhci.c.html#L266">(s->norintstsen & SDHC_NISEN_REMOVE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">339</td><td><a href="sdhci.c.html#L339">(s->cmdreg & SDHC_CMD_RESPONSE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">355</td><td><a href="sdhci.c.html#L355">(s->errintstsen & SDHC_EISEN_CMDTIMEOUT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">368</td><td><a href="sdhci.c.html#L368">(s->norintstsen & SDHC_NISEN_CMDCMP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">399</td><td><a href="sdhci.c.html#L399">(s->norintstsen & SDHC_NISEN_TRSCMP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="sdhci.c.html#L437">(s->norintstsen & SDHC_NISEN_RBUFRDY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">452</td><td><a href="sdhci.c.html#L452">(s->norintstsen & SDHC_EISEN_BLKGAP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">482</td><td><a href="sdhci.c.html#L482">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="sdhci.c.html#L506">(s->prnsts & SDHC_SPACE_AVAILABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">507</td><td><a href="sdhci.c.html#L507">(s->norintstsen & SDHC_NISEN_WBUFRDY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">514</td><td><a href="sdhci.c.html#L514">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">532</td><td><a href="sdhci.c.html#L532">(s->norintstsen & SDHC_NISEN_WBUFRDY)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">540</td><td><a href="sdhci.c.html#L540">(s->norintstsen & SDHC_EISEN_BLKGAP)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">569</td><td><a href="sdhci.c.html#L569">(s->prnsts & SDHC_DOING_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">602</td><td><a href="sdhci.c.html#L602">(s->trnmod & SDHC_TRNS_READ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">615</td><td><a href="sdhci.c.html#L615">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">646</td><td><a href="sdhci.c.html#L646">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">659</td><td><a href="sdhci.c.html#L659">(s->norintstsen & SDHC_NISEN_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">671</td><td><a href="sdhci.c.html#L671">(s->trnmod & SDHC_TRNS_READ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">767</td><td><a href="sdhci.c.html#L767">(s->errintstsen & SDHC_EISEN_ADMAERR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">781</td><td><a href="sdhci.c.html#L781">(s->trnmod & SDHC_TRNS_READ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">805</td><td><a href="sdhci.c.html#L805">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">835</td><td><a href="sdhci.c.html#L835">(s->trnmod & SDHC_TRNS_BLK_CNT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">845</td><td><a href="sdhci.c.html#L845">(s->errintstsen & SDHC_EISEN_ADMAERR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">866</td><td><a href="sdhci.c.html#L866">(s->norintstsen & SDHC_NISEN_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">886</td><td><a href="sdhci.c.html#L886">(s->errintstsen & SDHC_EISEN_ADMAERR)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">911</td><td><a href="sdhci.c.html#L911">(s->trnmod & SDHC_TRNS_DMA)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1107</td><td><a href="sdhci.c.html#L1107">(s->prnsts & SDHC_DOING_READ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1109</td><td><a href="sdhci.c.html#L1109">(s->prnsts & SDHC_DOING_WRITE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1159</td><td><a href="sdhci.c.html#L1159">(s->trnmod & SDHC_TRNS_MULTI)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1208</td><td><a href="sdhci.c.html#L1208">((mask & 0xFF000000) || !sdhci_can_issue_command(s))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1237</td><td><a href="sdhci.c.html#L1237">(s->clkcon & SDHC_CLOCK_INT_EN)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1244</td><td><a href="sdhci.c.html#L1244">(s->norintstsen & SDHC_NISEN_CARDINT)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1598</td><td><a href="sdhci.c.html#L1598">(s->hostctl1 & SDHC_CTRL_8BITBUS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1602</td><td><a href="sdhci.c.html#L1602">(s->hostctl1 & SDHC_CTRL_4BITBUS)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1615</td><td><a href="sdhci.c.html#L1615">(s->clkcon & SDHC_CLOCK_INT_STABLE)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">625</td><td><a href="sdhci.c.html#L625">(page_aligned && boundary_count == 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">650</td><td><a href="sdhci.c.html#L650">(page_aligned && boundary_count == 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">60</td><td><a href="sdhci.c.html#L60">(s->sd_spec_version >= 3)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">515</td><td><a href="sdhci.c.html#L515">(s->blkcnt == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">605</td><td><a href="sdhci.c.html#L605">(s->data_count == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">622</td><td><a href="sdhci.c.html#L622">(s->data_count == block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">643</td><td><a href="sdhci.c.html#L643">(s->data_count == block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">656</td><td><a href="sdhci.c.html#L656">(s->blkcnt == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">784</td><td><a href="sdhci.c.html#L784">(s->data_count == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">803</td><td><a href="sdhci.c.html#L803">(s->data_count == block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">807</td><td><a href="sdhci.c.html#L807">(s->blkcnt == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">832</td><td><a href="sdhci.c.html#L832">(s->data_count == block_size)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">837</td><td><a href="sdhci.c.html#L837">(s->blkcnt == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1098</td><td><a href="sdhci.c.html#L1098">(s->stopped_state == sdhc_gap_read)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1189</td><td><a href="sdhci.c.html#L1189">(blksize != s->blksize)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1304</td><td><a href="sdhci.c.html#L1304">(s->uhs_mode >= UHS_I)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">864</td><td><a href="sdhci.c.html#L864">(dscr.attr & SDHC_ADMA_ATTR_INT)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">788</td><td><a href="sdhci.c.html#L788">((length + begin) < block_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">817</td><td><a href="sdhci.c.html#L817">((length + begin) < block_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">421</td><td><a href="sdhci.c.html#L421">(!FIELD_EX32(s->hostctl2, SDHC_HOSTCTL2, EXECUTE_TUNING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1153</td><td><a href="sdhci.c.html#L1153">(!TRANSFERRING_DATA(s->prnsts))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1168</td><td><a href="sdhci.c.html#L1168">(!TRANSFERRING_DATA(s->prnsts))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1220</td><td><a href="sdhci.c.html#L1220">(!(mask & 0xFF0000))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1232</td><td><a href="sdhci.c.html#L1232">(!(mask & 0xFF000000))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">426</td><td><a href="sdhci.c.html#L426">(FIELD_EX32(s->hostctl2, SDHC_HOSTCTL2, EXECUTE_TUNING))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1000</td><td><a href="sdhci.c.html#L1000">(timer_pending(s->transfer_timer))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1147</td><td><a href="sdhci.c.html#L1147">(timer_pending(s->transfer_timer))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1307</td><td><a href="sdhci.c.html#L1307">(FIELD_EX32(s->hostctl2, SDHC_HOSTCTL2, V18_ENA))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">317</td><td><a href="sdhci.c.html#L317">(s->pending_insert_quirk)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="sdhci.c.html#L604">(s->blkcnt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">631</td><td><a href="sdhci.c.html#L631">(s->blkcnt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1249</td><td><a href="sdhci.c.html#L1249">(s->errintsts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1261</td><td><a href="sdhci.c.html#L1261">(s->errintsts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1294</td><td><a href="sdhci.c.html#L1294">(s->acmd12errsts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1297</td><td><a href="sdhci.c.html#L1297">(s->errintsts)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1499</td><td><a href="sdhci.c.html#L1499">(s->dma_mr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1517</td><td><a href="sdhci.c.html#L1517">(s->dma_mr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1536</td><td><a href="sdhci.c.html#L1536">(s->dma_mr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1655</td><td><a href="sdhci.c.html#L1655">(value & ESDHC_IMX_FRC_SDCLK_ON)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1724</td><td><a href="sdhci.c.html#L1724">(value & ESDHC_CTRL_8BITBUS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1728</td><td><a href="sdhci.c.html#L1728">(value & ESDHC_CTRL_4BITBUS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1021</td><td><a href="sdhci.c.html#L1021">(sdhci_buff_access_is_sequential(s, offset - SDHC_BDATA))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">1215</td><td><a href="sdhci.c.html#L1215">(sdhci_buff_access_is_sequential(s, offset - SDHC_BDATA))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">109</td><td><a href="sdhci.c.html#L109">(val != 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">173</td><td><a href="sdhci.c.html#L173">(val >= 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">340</td><td><a href="sdhci.c.html#L340">(rlen == 4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="sdhci.c.html#L344">(rlen == 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="sdhci.c.html#L473">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">561</td><td><a href="sdhci.c.html#L561">(i < size)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">755</td><td><a href="sdhci.c.html#L755">(i < SDHC_ADMA_DESCS_PER_DELAY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">799</td><td><a href="sdhci.c.html#L799">(res != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="sdhci.c.html#L828">(res != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="sdhci.c.html#L844">(res != MEMTX_OK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="sdhci.c.html#L1357">(*errp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1388</td><td><a href="sdhci.c.html#L1388">(*errp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1513</td><td><a href="sdhci.c.html#L1513">(*errp)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">160</td><td><a href="sdhci.c.html#L160">(sdhci_check_capab_freq_range(s, "timeout", val, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">167</td><td><a href="sdhci.c.html#L167">(sdhci_check_capab_freq_range(s, "base", val, errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">102</td><td><a href="sdhci.c.html#L102">(val)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="sdhci.c.html#L208">(msk)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="sdhci.c.html#L257">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">278</td><td><a href="sdhci.c.html#L278">(level)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">783</td><td><a href="sdhci.c.html#L783">(length)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">815</td><td><a href="sdhci.c.html#L815">(length)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

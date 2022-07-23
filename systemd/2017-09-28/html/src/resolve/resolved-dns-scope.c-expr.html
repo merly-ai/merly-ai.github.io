@@ -1,0 +1,196 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\resolve\resolved-dns-scope.c Ctrl Expressions (145) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\resolve\resolved-dns-scope.c Ctrl Expressions (145) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\resolve\resolved-dns-scope.c Ctrl Expressions (145)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">801</td><td><a href="resolved-dns-scope.c.html#L801">(<span style='background-color:#741da3;'>!cache_ok && IN_SET(t->state, DNS_TRANSACTION_SUCCESS, DNS_TRANSACTION_RCODE_FAILURE) && t->answer_source != DNS_TRANSACTION_NETWORK</span>)</a></td><td class="num">1016.00</td></tr>
+      <tr><td class="num line">434</td><td><a href="resolved-dns-scope.c.html#L434">(<span style='background-color:#741da3;'>dns_name_endswith(domain, "0.in-addr.arpa") > 0 || dns_name_equal(domain, "255.255.255.255.in-addr.arpa") > 0 || dns_name_equal(domain, "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa") > 0</span>)</a></td><td class="num">1010.75</td></tr>
+      <tr><td class="num line">428</td><td><a href="resolved-dns-scope.c.html#L428">(<span style='background-color:#741da3;'>is_localhost(domain) || dns_name_endswith(domain, "127.in-addr.arpa") > 0 || dns_name_equal(domain, "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa") > 0</span>)</a></td><td class="num">1008.50</td></tr>
+      <tr><td class="num line">477</td><td><a href="resolved-dns-scope.c.html#L477">((s->family == AF_INET && dns_name_endswith(domain, "in-addr.arpa") > 0) || (s->family == AF_INET6 && dns_name_endswith(domain, "ip6.arpa") > 0) || (dns_name_endswith(domain, "local") > 0 && dns_name_equal(domain, "local") == 0 && manager_is_own_hostname(s->manager, domain) <= 0))</a></td><td class="num">71.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="resolved-dns-scope.c.html#L487">((s->family == AF_INET && dns_name_endswith(domain, "in-addr.arpa") > 0) || (s->family == AF_INET6 && dns_name_endswith(domain, "ip6.arpa") > 0) || (dns_name_is_single_label(domain) && !is_gateway_hostname(domain) && manager_is_own_hostname(s->manager, domain) <= 0))</a></td><td class="num">67.50</td></tr>
+      <tr><td class="num line">704</td><td><a href="resolved-dns-scope.c.html#L704">(p->family == AF_INET && !in_addr_equal(AF_INET, &p->destination, (union in_addr_union*)&LLMNR_MULTICAST_IPV4_ADDRESS))</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="resolved-dns-scope.c.html#L707">(p->family == AF_INET6 && !in_addr_equal(AF_INET6, &p->destination, (union in_addr_union*)&LLMNR_MULTICAST_IPV6_ADDRESS))</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">419</td><td><a href="resolved-dns-scope.c.html#L419">(ifindex != 0 && (!s->link || s->link->ifindex != ifindex))</a></td><td class="num">34.00</td></tr>
+      <tr><td class="num line">463</td><td><a href="resolved-dns-scope.c.html#L463">(dns_name_endswith(domain, "254.169.in-addr.arpa") == 0 && dns_name_endswith(domain, "8.e.f.ip6.arpa") == 0 && dns_name_endswith(domain, "9.e.f.ip6.arpa") == 0 && dns_name_endswith(domain, "a.e.f.ip6.arpa") == 0 && dns_name_endswith(domain, "b.e.f.ip6.arpa") == 0 && dns_name_endswith(domain, "local") == 0)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">422</td><td><a href="resolved-dns-scope.c.html#L422">((SD_RESOLVED_FLAGS_MAKE(s->protocol, s->family, 0) & flags) == 0)</a></td><td class="num">28.00</td></tr>
+      <tr><td class="num line">219</td><td><a href="resolved-dns-scope.c.html#L219">(!ratelimit_test(&s->ratelimit))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">244</td><td><a href="resolved-dns-scope.c.html#L244">(!ratelimit_test(&s->ratelimit))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">758</td><td><a href="resolved-dns-scope.c.html#L758">(!ratelimit_test(&s->ratelimit))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1005</td><td><a href="resolved-dns-scope.c.html#L1005">(!dns_zone_is_empty(&s->zone))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1010</td><td><a href="resolved-dns-scope.c.html#L1010">(!dns_cache_is_empty(&s->cache))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">121</td><td><a href="resolved-dns-scope.c.html#L121">((rr = ordered_hashmap_steal_first(s->conflict_queue)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">391</td><td><a href="resolved-dns-scope.c.html#L391">(r < 0 && errno != EINPROGRESS)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="resolved-dns-scope.c.html#L204">(p->size + UDP_PACKET_HEADER_SIZE > mtu)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">966</td><td><a href="resolved-dns-scope.c.html#L966">(i < p->answer->n_rrs)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">568</td><td><a href="resolved-dns-scope.c.html#L568">(setsockopt(fd, IPPROTO_IP, b ? IP_ADD_MEMBERSHIP : IP_DROP_MEMBERSHIP, &mreqn, sizeof(mreqn)) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">588</td><td><a href="resolved-dns-scope.c.html#L588">(setsockopt(fd, IPPROTO_IPV6, b ? IPV6_ADD_MEMBERSHIP : IPV6_DROP_MEMBERSHIP, &mreq, sizeof(mreq)) < 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">630</td><td><a href="resolved-dns-scope.c.html#L630">(dns_question_isempty(q) && dns_answer_isempty(answer) && dns_answer_isempty(soa))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">907</td><td><a href="resolved-dns-scope.c.html#L907">(r == -EEXIST || r == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">448</td><td><a href="resolved-dns-scope.c.html#L448">(dns_name_endswith(domain, d->name) > 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">139</td><td><a href="resolved-dns-scope.c.html#L139">(s->protocol != DNS_PROTOCOL_DNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">151</td><td><a href="resolved-dns-scope.c.html#L151">(s->protocol != DNS_PROTOCOL_DNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">163</td><td><a href="resolved-dns-scope.c.html#L163">(rtt <= s->max_rtt)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">173</td><td><a href="resolved-dns-scope.c.html#L173">(s->resend_timeout <= usec)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">201</td><td><a href="resolved-dns-scope.c.html#L201">(p->size > DNS_PACKET_UNICAST_SIZE_MAX)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">321</td><td><a href="resolved-dns-scope.c.html#L321">(server->family == AF_INET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">325</td><td><a href="resolved-dns-scope.c.html#L325">(server->family == AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">376</td><td><a href="resolved-dns-scope.c.html#L376">(s->protocol == DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">511</td><td><a href="resolved-dns-scope.c.html#L511">(key->class != DNS_CLASS_IN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">514</td><td><a href="resolved-dns-scope.c.html#L514">(s->protocol == DNS_PROTOCOL_DNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">548</td><td><a href="resolved-dns-scope.c.html#L548">(s->family == AF_INET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">554</td><td><a href="resolved-dns-scope.c.html#L554">(s->protocol == DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">571</td><td><a href="resolved-dns-scope.c.html#L571">(s->family == AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">577</td><td><a href="resolved-dns-scope.c.html#L577">(s->protocol == DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">599</td><td><a href="resolved-dns-scope.c.html#L599">(s->protocol != DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">608</td><td><a href="resolved-dns-scope.c.html#L608">(s->protocol != DNS_PROTOCOL_MDNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">696</td><td><a href="resolved-dns-scope.c.html#L696">(p->protocol != DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">699</td><td><a href="resolved-dns-scope.c.html#L699">(p->ipproto == IPPROTO_UDP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">761</td><td><a href="resolved-dns-scope.c.html#L761">(p->family == AF_INET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">763</td><td><a href="resolved-dns-scope.c.html#L763">(p->family == AF_INET6)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">837</td><td><a href="resolved-dns-scope.c.html#L837">(s->protocol != DNS_PROTOCOL_MDNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">947</td><td><a href="resolved-dns-scope.c.html#L947">(p->protocol == DNS_PROTOCOL_LLMNR)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">998</td><td><a href="resolved-dns-scope.c.html#L998">(s->family != AF_UNSPEC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1019</td><td><a href="resolved-dns-scope.c.html#L1019">(s->protocol != DNS_PROTOCOL_DNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1031</td><td><a href="resolved-dns-scope.c.html#L1031">(s->protocol != DNS_PROTOCOL_DNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="resolved-dns-scope.c.html#L1077">(scope->protocol != DNS_PROTOCOL_MDNS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">941</td><td><a href="resolved-dns-scope.c.html#L941">(!IN_SET(p->protocol, DNS_PROTOCOL_LLMNR, DNS_PROTOCOL_MDNS))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="resolved-dns-scope.c.html#L365">(sa.sa.sa_family == AF_INET)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">369</td><td><a href="resolved-dns-scope.c.html#L369">(sa.sa.sa_family == AF_INET6)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">379</td><td><a href="resolved-dns-scope.c.html#L379">(sa.sa.sa_family == AF_INET)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">383</td><td><a href="resolved-dns-scope.c.html#L383">(sa.sa.sa_family == AF_INET6)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">455</td><td><a href="resolved-dns-scope.c.html#L455">(dns_server && dns_server_limited_domains(dns_server))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1107</td><td><a href="resolved-dns-scope.c.html#L1107">(!scope->announced)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">96</td><td><a href="resolved-dns-scope.c.html#L96">(DNS_TRANSACTION_IS_LIVE(t->state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">955</td><td><a href="resolved-dns-scope.c.html#L955">(manager_our_packet(scope->manager, p))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">89</td><td><a href="resolved-dns-scope.c.html#L89">(s->transactions)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">116</td><td><a href="resolved-dns-scope.c.html#L116">(s->query_candidates)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">142</td><td><a href="resolved-dns-scope.c.html#L142">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="resolved-dns-scope.c.html#L154">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">187</td><td><a href="resolved-dns-scope.c.html#L187">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">283</td><td><a href="resolved-dns-scope.c.html#L283">(p->more)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">362</td><td><a href="resolved-dns-scope.c.html#L362">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">914</td><td><a href="resolved-dns-scope.c.html#L914">(scope->conflict_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">993</td><td><a href="resolved-dns-scope.c.html#L993">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1022</td><td><a href="resolved-dns-scope.c.html#L1022">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1042</td><td><a href="resolved-dns-scope.c.html#L1042">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="resolved-dns-scope.c.html#L1051">(s->link)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">198</td><td><a href="resolved-dns-scope.c.html#L198">(DNS_PACKET_QDCOUNT(p) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">216</td><td><a href="resolved-dns-scope.c.html#L216">(DNS_PACKET_QDCOUNT(p) > 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">440</td><td><a href="resolved-dns-scope.c.html#L440">(dns_name_endswith(domain, "invalid") > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">944</td><td><a href="resolved-dns-scope.c.html#L944">(DNS_PACKET_RRCOUNT(p) <= 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">948</td><td><a href="resolved-dns-scope.c.html#L948">(DNS_PACKET_LLMNR_C(p) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">951</td><td><a href="resolved-dns-scope.c.html#L951">(DNS_PACKET_LLMNR_T(p) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">58</td><td><a href="resolved-dns-scope.c.html#L58">(protocol == DNS_PROTOCOL_DNS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">208</td><td><a href="resolved-dns-scope.c.html#L208">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">224</td><td><a href="resolved-dns-scope.c.html#L224">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="resolved-dns-scope.c.html#L227">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="resolved-dns-scope.c.html#L232">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="resolved-dns-scope.c.html#L236">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">249</td><td><a href="resolved-dns-scope.c.html#L249">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">252</td><td><a href="resolved-dns-scope.c.html#L252">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">257</td><td><a href="resolved-dns-scope.c.html#L257">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">261</td><td><a href="resolved-dns-scope.c.html#L261">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">289</td><td><a href="resolved-dns-scope.c.html#L289">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">339</td><td><a href="resolved-dns-scope.c.html#L339">(family == AF_INET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">343</td><td><a href="resolved-dns-scope.c.html#L343">(family == AF_INET6)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">353</td><td><a href="resolved-dns-scope.c.html#L353">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">356</td><td><a href="resolved-dns-scope.c.html#L356">(type == SOCK_STREAM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">358</td><td><a href="resolved-dns-scope.c.html#L358">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">367</td><td><a href="resolved-dns-scope.c.html#L367">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">371</td><td><a href="resolved-dns-scope.c.html#L371">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="resolved-dns-scope.c.html#L381">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="resolved-dns-scope.c.html#L385">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="resolved-dns-scope.c.html#L536">(key_family < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">559</td><td><a href="resolved-dns-scope.c.html#L559">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">582</td><td><a href="resolved-dns-scope.c.html#L582">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">636</td><td><a href="resolved-dns-scope.c.html#L636">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">652</td><td><a href="resolved-dns-scope.c.html#L652">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">657</td><td><a href="resolved-dns-scope.c.html#L657">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="resolved-dns-scope.c.html#L662">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="resolved-dns-scope.c.html#L712">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="resolved-dns-scope.c.html#L727">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">731</td><td><a href="resolved-dns-scope.c.html#L731">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">738</td><td><a href="resolved-dns-scope.c.html#L738">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">745</td><td><a href="resolved-dns-scope.c.html#L745">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">769</td><td><a href="resolved-dns-scope.c.html#L769">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">780</td><td><a href="resolved-dns-scope.c.html#L780">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">822</td><td><a href="resolved-dns-scope.c.html#L822">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">844</td><td><a href="resolved-dns-scope.c.html#L844">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">848</td><td><a href="resolved-dns-scope.c.html#L848">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="resolved-dns-scope.c.html#L875">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">881</td><td><a href="resolved-dns-scope.c.html#L881">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">898</td><td><a href="resolved-dns-scope.c.html#L898">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">909</td><td><a href="resolved-dns-scope.c.html#L909">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">926</td><td><a href="resolved-dns-scope.c.html#L926">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="resolved-dns-scope.c.html#L959">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">971</td><td><a href="resolved-dns-scope.c.html#L971">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">977</td><td><a href="resolved-dns-scope.c.html#L977">(r <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1086</td><td><a href="resolved-dns-scope.c.html#L1086">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1090</td><td><a href="resolved-dns-scope.c.html#L1090">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1098</td><td><a href="resolved-dns-scope.c.html#L1098">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1102</td><td><a href="resolved-dns-scope.c.html#L1102">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1122</td><td><a href="resolved-dns-scope.c.html#L1122">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">520</td><td><a href="resolved-dns-scope.c.html#L520">(!dns_resource_key_is_address(key))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">49</td><td><a href="resolved-dns-scope.c.html#L49">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">107</td><td><a href="resolved-dns-scope.c.html#L107">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">796</td><td><a href="resolved-dns-scope.c.html#L796">(!t)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">871</td><td><a href="resolved-dns-scope.c.html#L871">(!rr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">987</td><td><a href="resolved-dns-scope.c.html#L987">(!f)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1074</td><td><a href="resolved-dns-scope.c.html#L1074">(!scope)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1081</td><td><a href="resolved-dns-scope.c.html#L1081">(!answer)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="resolved-dns-scope.c.html#L717">(DNS_PACKET_LLMNR_C(p))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">753</td><td><a href="resolved-dns-scope.c.html#L753">(DNS_STREAM_QUEUED(stream))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1094</td><td><a href="resolved-dns-scope.c.html#L1094">(dns_answer_isempty(answer))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">65</td><td><a href="resolved-dns-scope.c.html#L65">(l)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">293</td><td><a href="resolved-dns-scope.c.html#L293">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">314</td><td><a href="resolved-dns-scope.c.html#L314">(server)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">565</td><td><a href="resolved-dns-scope.c.html#L565">(b)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">585</td><td><a href="resolved-dns-scope.c.html#L585">(b)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">734</td><td><a href="resolved-dns-scope.c.html#L734">(answer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">743</td><td><a href="resolved-dns-scope.c.html#L743">(stream)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>php-src Repo - main\SAPI.c Ctrl Expressions (124) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - main\SAPI.c Ctrl Expressions (124) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;main\SAPI.c Ctrl Expressions (124)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">256</td><td><a href="SAPI.c.html#L256">((SG(post_max_size) > 0) && (<span style='background-color:#741da3;'>SG(request_info).content_length > SG(post_max_size)</span>))</a></td><td class="num">1024.75</td></tr>
+      <tr><td class="num line">282</td><td><a href="SAPI.c.html#L282">(<span style='background-color:#741da3;'>(SG(post_max_size) > 0) && (SG(read_post_bytes) > SG(post_max_size))</span>)</a></td><td class="num">1009.00</td></tr>
+      <tr><td class="num line">833</td><td><a href="SAPI.c.html#L833">(<span style='background-color:#741da3;'>SG(headers_sent) || SG(request_info).no_headers</span>)</a></td><td class="num">1004.25</td></tr>
+      <tr><td class="num line">797</td><td><a href="SAPI.c.html#L797">((SG(sapi_headers).http_response_code < 300 || SG(sapi_headers).http_response_code > 399) && SG(sapi_headers).http_response_code != 201)</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">1001</td><td><a href="SAPI.c.html#L1001">(!SG(request_info).path_translated || (VCWD_STAT(SG(request_info).path_translated, &SG(global_stat)) == -1))</a></td><td class="num">43.00</td></tr>
+      <tr><td class="num line">632</td><td><a href="SAPI.c.html#L632">(!sapi_module.header_handler || (SAPI_HEADER_ADD & sapi_module.header_handler(sapi_header, op, &SG(sapi_headers))))</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">1077</td><td><a href="SAPI.c.html#L1077">(!sapi_module.get_request_time || sapi_module.get_request_time(&SG(global_request_time)) == FAILURE)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">461</td><td><a href="SAPI.c.html#L461">(PG(enable_post_data_reading) && SG(request_info).content_type && SG(request_info).request_method && !strcmp(SG(request_info).request_method, "POST"))</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">202</td><td><a href="SAPI.c.html#L202">((post_entry = zend_hash_str_find_ptr(&SG(known_post_content_types), content_type, content_type_length)) != NULL)</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">410</td><td><a href="SAPI.c.html#L410">(SG(request_info).request_method && !strcmp(SG(request_info).request_method, "HEAD"))</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">452</td><td><a href="SAPI.c.html#L452">(SG(request_info).request_method && !strcmp(SG(request_info).request_method, "HEAD"))</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">593</td><td><a href="SAPI.c.html#L593">(header->header_len > len && header->header[len] == ':' && !strncasecmp(header->header, name, len))</a></td><td class="num">36.00</td></tr>
+      <tr><td class="num line">372</td><td><a href="SAPI.c.html#L372">(*charset && strncmp(*mimetype, "text/", 5) == 0 && strstr(*mimetype, "charset=") == NULL)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">556</td><td><a href="SAPI.c.html#L556">(*ptr == ' ' && *(ptr + 1) != ' ')</a></td><td class="num">29.35</td></tr>
+      <tr><td class="num line">803</td><td><a href="SAPI.c.html#L803">(SG(request_info).proto_num > 1000 && SG(request_info).request_method && strcmp(SG(request_info).request_method, "HEAD") && strcmp(SG(request_info).request_method, "GET"))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">144</td><td><a href="SAPI.c.html#L144">(zend_fcall_info_init(callback, 0, &fci, &SG(fci_cache), NULL, &callback_error) == SUCCESS)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1025</td><td><a href="SAPI.c.html#L1025">(strlen(sapi_module.name) == sizeof("cgi-fcgi") - 1 && !strcmp(sapi_module.name, "cgi-fcgi"))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">703</td><td><a href="SAPI.c.html#L703">(header_line_len && isspace(header_line[header_line_len - 1]))</a></td><td class="num">22.35</td></tr>
+      <tr><td class="num line">706</td><td><a href="SAPI.c.html#L706">(header_line_len && isspace(header_line[header_line_len - 1]))</a></td><td class="num">22.35</td></tr>
+      <tr><td class="num line">659</td><td><a href="SAPI.c.html#L659">(SG(headers_sent) && !SG(request_info).no_headers)</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">274</td><td><a href="SAPI.c.html#L274">(php_stream_write(SG(request_info).request_body, buffer, read_bytes) != read_bytes)</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">1123</td><td><a href="SAPI.c.html#L1123">(*p >= 'A' && *p <= 'Z')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">682</td><td><a href="SAPI.c.html#L682">(!p->line || !p->line_len)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">729</td><td><a href="SAPI.c.html#L729">(header_line[i] == '\n' || header_line[i] == '\r')</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">317</td><td><a href="SAPI.c.html#L317">(*charset && strncasecmp(mimetype, "text/", 5) == 0)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">118</td><td><a href="SAPI.c.html#L118">(zend_parse_parameters(ZEND_NUM_ARGS(), "f", &fci, &fcc) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">165</td><td><a href="SAPI.c.html#L165">(SG(request_info).post_entry && SG(request_info).content_type_dup)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">747</td><td><a href="SAPI.c.html#L747">(header_line_len >= 5 && !strncasecmp(header_line, "HTTP/", 5))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">840</td><td><a href="SAPI.c.html#L840">(SG(sapi_headers).send_default_content_type && sapi_module.send_headers)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">186</td><td><a href="SAPI.c.html#L186">(p < content_type + content_type_length)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">371</td><td><a href="SAPI.c.html#L371">(*mimetype != NULL)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">764</td><td><a href="SAPI.c.html#L764">(*ptr == ' ')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1117</td><td><a href="SAPI.c.html#L1117">(*p == '_')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">936</td><td><a href="SAPI.c.html#L936">(SG(sapi_started) && EG(current_execute_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">949</td><td><a href="SAPI.c.html#L949">(SG(sapi_started) && EG(current_execute_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="SAPI.c.html#L959">(SG(sapi_started) && EG(current_execute_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">969</td><td><a href="SAPI.c.html#L969">(SG(sapi_started) && EG(current_execute_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">978</td><td><a href="SAPI.c.html#L978">(SG(sapi_started) && EG(current_execute_data))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">388</td><td><a href="SAPI.c.html#L388">(SG(request_info).headers_read == 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">570</td><td><a href="SAPI.c.html#L570">(SG(sapi_headers).http_response_code == ncode)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">735</td><td><a href="SAPI.c.html#L735">(header_line[i] == '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">815</td><td><a href="SAPI.c.html#L815">(sapi_header.header == header_line)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">844</td><td><a href="SAPI.c.html#L844">(default_mimetype && len)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">595</td><td><a href="SAPI.c.html#L595">(current->prev)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">922</td><td><a href="SAPI.c.html#L922">(p->content_type)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="SAPI.c.html#L1080">(!gettimeofday(&tp, NULL))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">122</td><td><a href="SAPI.c.html#L122">(Z_TYPE(SG(callback_func)) != IS_UNDEF)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">862</td><td><a href="SAPI.c.html#L862">(Z_TYPE(SG(callback_func)) != IS_UNDEF)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">771</td><td><a href="SAPI.c.html#L771">(!SG(sapi_headers).mimetype)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">923</td><td><a href="SAPI.c.html#L923">(sapi_register_post_entry(p) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">148</td><td><a href="SAPI.c.html#L148">(error == FAILURE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">210</td><td><a href="SAPI.c.html#L210">(!sapi_module.default_post_reader)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="SAPI.c.html#L236">(!sapi_module.read_post)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">242</td><td><a href="SAPI.c.html#L242">(read_bytes > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="SAPI.c.html#L246">(read_bytes < buflen)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">273</td><td><a href="SAPI.c.html#L273">(read_bytes > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">287</td><td><a href="SAPI.c.html#L287">(read_bytes < SAPI_POST_BLOCK_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="SAPI.c.html#L505">(SAPI_POST_BLOCK_SIZE == read_bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="SAPI.c.html#L555">(*ptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">634</td><td><a href="SAPI.c.html#L634">(op == SAPI_HEADER_REPLACE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">710</td><td><a href="SAPI.c.html#L710">(op == SAPI_HEADER_DELETE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">727</td><td><a href="SAPI.c.html#L727">(i < header_line_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">775</td><td><a href="SAPI.c.html#L775">(newlen != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="SAPI.c.html#L1012">(!sapi_module.getenv)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1116</td><td><a href="SAPI.c.html#L1116">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="SAPI.c.html#L1120">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">486</td><td><a href="SAPI.c.html#L486">(SG(sapi_headers).http_status_line)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">495</td><td><a href="SAPI.c.html#L495">(SG(request_info).request_body)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">508</td><td><a href="SAPI.c.html#L508">(SG(request_info).auth_user)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">511</td><td><a href="SAPI.c.html#L511">(SG(request_info).auth_password)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="SAPI.c.html#L514">(SG(request_info).auth_digest)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">517</td><td><a href="SAPI.c.html#L517">(SG(request_info).content_type_dup)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">520</td><td><a href="SAPI.c.html#L520">(SG(request_info).current_user)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">529</td><td><a href="SAPI.c.html#L529">(SG(sapi_headers).mimetype)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">574</td><td><a href="SAPI.c.html#L574">(SG(sapi_headers).http_status_line)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">752</td><td><a href="SAPI.c.html#L752">(SG(sapi_headers).http_status_line)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">886</td><td><a href="SAPI.c.html#L886">(SG(sapi_headers).http_status_line)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">896</td><td><a href="SAPI.c.html#L896">(SG(sapi_headers).send_default_content_type)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">227</td><td><a href="SAPI.c.html#L227">(sapi_module.default_post_reader)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">265</td><td><a href="SAPI.c.html#L265">(sapi_module.read_post)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="SAPI.c.html#L417">(sapi_module.activate)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">421</td><td><a href="SAPI.c.html#L421">(sapi_module.input_filter_init)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">475</td><td><a href="SAPI.c.html#L475">(sapi_module.activate)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="SAPI.c.html#L478">(sapi_module.input_filter_init)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">523</td><td><a href="SAPI.c.html#L523">(sapi_module.deactivate)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">692</td><td><a href="SAPI.c.html#L692">(sapi_module.header_handler)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">716</td><td><a href="SAPI.c.html#L716">(sapi_module.header_handler)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">872</td><td><a href="SAPI.c.html#L872">(sapi_module.send_headers)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">988</td><td><a href="SAPI.c.html#L988">(sapi_module.flush)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">998</td><td><a href="SAPI.c.html#L998">(sapi_module.get_stat)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1030</td><td><a href="SAPI.c.html#L1030">(sapi_module.input_filter)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1038</td><td><a href="SAPI.c.html#L1038">(sapi_module.get_fd)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="SAPI.c.html#L1047">(sapi_module.force_http_10)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1057</td><td><a href="SAPI.c.html#L1057">(sapi_module.get_target_uid)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1066</td><td><a href="SAPI.c.html#L1066">(sapi_module.get_target_gid)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1090</td><td><a href="SAPI.c.html#L1090">(sapi_module.terminate_process)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">129</td><td><a href="SAPI.c.html#L129">(!SG(headers_sent))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="SAPI.c.html#L498">(!SG(post_read))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">761</td><td><a href="SAPI.c.html#L761">(!strcasecmp(header_line, "Content-Type"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">786</td><td><a href="SAPI.c.html#L786">(!strcasecmp(header_line, "Content-Length"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">796</td><td><a href="SAPI.c.html#L796">(!strcasecmp(header_line, "Location"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">812</td><td><a href="SAPI.c.html#L812">(!strcasecmp(header_line, "WWW-Authenticate"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1015</td><td><a href="SAPI.c.html#L1015">(!strncasecmp(name, "HTTP_PROXY", name_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">624</td><td><a href="SAPI.c.html#L624">(!duplicate)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1020</td><td><a href="SAPI.c.html#L1020">(!tmp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">302</td><td><a href="SAPI.c.html#L302">(SG(default_mimetype))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="SAPI.c.html#L309">(SG(default_charset))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">415</td><td><a href="SAPI.c.html#L415">(SG(server_context))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">460</td><td><a href="SAPI.c.html#L460">(SG(server_context))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">497</td><td><a href="SAPI.c.html#L497">(SG(server_context))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">526</td><td><a href="SAPI.c.html#L526">(SG(rfc1867_uploaded_files))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">711</td><td><a href="SAPI.c.html#L711">(strchr(header_line, ':'))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1075</td><td><a href="SAPI.c.html#L1075">(SG(global_request_time))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">158</td><td><a href="SAPI.c.html#L158">(callback_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">217</td><td><a href="SAPI.c.html#L217">(oldchar)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">223</td><td><a href="SAPI.c.html#L223">(post_reader_func)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">590</td><td><a href="SAPI.c.html#L590">(current)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="SAPI.c.html#L600">(next)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">637</td><td><a href="SAPI.c.html#L637">(colon_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">663</td><td><a href="SAPI.c.html#L663">(output_start_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">759</td><td><a href="SAPI.c.html#L759">(colon_offset)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">801</td><td><a href="SAPI.c.html#L801">(http_response_code)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">820</td><td><a href="SAPI.c.html#L820">(http_response_code)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1140</td><td><a href="SAPI.c.html#L1140">(buf)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

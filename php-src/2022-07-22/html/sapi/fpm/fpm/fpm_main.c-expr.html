@@ -1,0 +1,213 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>php-src Repo - sapi\fpm\fpm\fpm_main.c Ctrl Expressions (162) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - sapi\fpm\fpm\fpm_main.c Ctrl Expressions (162) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;sapi\fpm\fpm\fpm_main.c Ctrl Expressions (162)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1067</td><td><a href="fpm_main.c.html#L1067">(<span style='background-color:#741da3;'>!apache_was_here && env_path_translated != NULL && env_redirect_url != NULL && env_path_translated != script_path_translated && strcmp(env_path_translated, script_path_translated) != 0</span>)</a></td><td class="num">1021.25</td></tr>
+      <tr><td class="num line">603</td><td><a href="fpm_main.c.html#L603">(<span style='background-color:#741da3;'>CGIG(fcgi_logging) && request && message && len > 0 && fcgi_write(request, FCGI_STDERR, message, len) < 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">339</td><td><a href="fpm_main.c.html#L339">(<span style='background-color:#9c4c02;'>SG(sapi_headers).http_status_line && (s = strchr(SG(sapi_headers).http_status_line, ' ')) != 0 && (s - SG(sapi_headers).http_status_line) >= 5 && strncasecmp(SG(sapi_headers).http_status_line, "HTTP/", 5) == 0</span>)</a></td><td class="num">101.85</td></tr>
+      <tr><td class="num line">522</td><td><a href="fpm_main.c.html#L522">(Z_TYPE(PG(http_globals)[TRACK_VARS_ENV]) == IS_ARRAY && Z_ARR_P(array_ptr) != Z_ARR(PG(http_globals)[TRACK_VARS_ENV]) && zend_hash_num_elements(Z_ARRVAL(PG(http_globals)[TRACK_VARS_ENV])) > 0)</a></td><td class="num">97.00</td></tr>
+      <tr><td class="num line">529</td><td><a href="fpm_main.c.html#L529">(Z_TYPE(PG(http_globals)[TRACK_VARS_SERVER]) == IS_ARRAY && Z_ARR_P(array_ptr) != Z_ARR(PG(http_globals)[TRACK_VARS_SERVER]) && zend_hash_num_elements(Z_ARRVAL(PG(http_globals)[TRACK_VARS_SERVER])) > 0)</a></td><td class="num">97.00</td></tr>
+      <tr><td class="num line">861</td><td><a href="fpm_main.c.html#L861">((p == path || IS_SLASH(*(p - 1))) && (*(p + 2) == 0 || IS_SLASH(*(p + 2))))</a></td><td class="num">72.80</td></tr>
+      <tr><td class="num line">1094</td><td><a href="fpm_main.c.html#L1094">(script_path_translated && (script_path_translated_len = strlen(script_path_translated)) > 0 && (script_path_translated[script_path_translated_len - 1] == '/' || (real_path = tsrm_realpath(script_path_translated, NULL)) == NULL))</a></td><td class="num">62.85</td></tr>
+      <tr><td class="num line">871</td><td><a href="fpm_main.c.html#L871">(IS_SLASH(*(p - 1)) && (*(p + 2) == 0 || IS_SLASH(*(p + 2))))</a></td><td class="num">52.55</td></tr>
+      <tr><td class="num line">1743</td><td><a href="fpm_main.c.html#L1743">(!getenv("REDIRECT_STATUS") && !getenv("HTTP_REDIRECT_STATUS") && (!CGIG(redirect_status_env) || !getenv(CGIG(redirect_status_env))))</a></td><td class="num">39.25</td></tr>
+      <tr><td class="num line">718</td><td><a href="fpm_main.c.html#L718">(!IS_SLASH(SG(request_info).path_translated[path_len]))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">394</td><td><a href="fpm_main.c.html#L394">(response_status == 304 && h->header_len > sizeof("Content-Type:") - 1 && strncasecmp(h->header, "Content-Type:", sizeof("Content-Type:") - 1) == 0)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">1570</td><td><a href="fpm_main.c.html#L1570">((c = php_getopt(argc, argv, OPTIONS, &php_optarg, &php_optind, 0, 2)) != -1)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">349</td><td><a href="fpm_main.c.html#L349">(h->header_len > sizeof("Status:") - 1 && strncasecmp(h->header, "Status:", sizeof("Status:") - 1) == 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">386</td><td><a href="fpm_main.c.html#L386">(h->header_len > sizeof("Status:") - 1 && strncasecmp(h->header, "Status:", sizeof("Status:") - 1) == 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">1259</td><td><a href="fpm_main.c.html#L1259">(!orig_script_filename || (script_path_translated != orig_script_filename && strcmp(script_path_translated, orig_script_filename) != 0))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">1159</td><td><a href="fpm_main.c.html#L1159">(snlen > slen && !strcmp(env_script_name + snlen - slen, path_info))</a></td><td class="num">25.70</td></tr>
+      <tr><td class="num line">711</td><td><a href="fpm_main.c.html#L711">(php_ini_has_per_dir_config() || (PG(user_ini_filename) && *PG(user_ini_filename)))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">738</td><td><a href="fpm_main.c.html#L738">(doc_root_len > 0 && IS_SLASH(doc_root[doc_root_len - 1]))</a></td><td class="num">24.60</td></tr>
+      <tr><td class="num line">1106</td><td><a href="fpm_main.c.html#L1106">(stat(pt, &st) == 0 && S_ISREG(st.st_mode))</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1183</td><td><a href="fpm_main.c.html#L1183">(l && env_document_root[l - 1] == '/')</a></td><td class="num">24.35</td></tr>
+      <tr><td class="num line">985</td><td><a href="fpm_main.c.html#L985">(env_server_software && env_script_name && env_path_info && strncmp(env_server_software, "Microsoft-IIS", sizeof("Microsoft-IIS") - 1) == 0 && strncmp(env_path_info, env_script_name, strlen(env_script_name)) == 0)</a></td><td class="num">23.25</td></tr>
+      <tr><td class="num line">1870</td><td><a href="fpm_main.c.html#L1870">(UNEXPECTED(php_fopen_primary_script(&file_handle) == FAILURE))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">320</td><td><a href="fpm_main.c.html#L320">(CGIG(nph) || SG(sapi_headers).http_response_code != 200)</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1838</td><td><a href="fpm_main.c.html#L1838">(UNEXPECTED(!SG(request_info).request_method))</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">1847</td><td><a href="fpm_main.c.html#L1847">(UNEXPECTED(!SG(request_info).path_translated))</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">328</td><td><a href="fpm_main.c.html#L328">((s = strchr(SG(sapi_headers).http_status_line, ' ')))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">760</td><td><a href="fpm_main.c.html#L760">(!parent && !fcgi_finish_request((fcgi_request*)SG(server_context), 0))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">1857</td><td><a href="fpm_main.c.html#L1857">(UNEXPECTED(fpm_php_limit_extensions(SG(request_info).path_translated)))</a></td><td class="num">20.00</td></tr>
+      <tr><td class="num line">1104</td><td><a href="fpm_main.c.html#L1104">((ptr = strrchr(pt, '/')) || (ptr = strrchr(pt, '\\')))</a></td><td class="num">17.25</td></tr>
+      <tr><td class="num line">1014</td><td><a href="fpm_main.c.html#L1014">(*p != '\0' && *p != '/')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1035</td><td><a href="fpm_main.c.html#L1035">(*p != '\0' && *p != '/')</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">669</td><td><a href="fpm_main.c.html#L669">((ptr = strchr(ptr, DEFAULT_SLASH)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">293</td><td><a href="fpm_main.c.html#L293">(!parent && request && !fcgi_flush(request, 0))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">1477</td><td><a href="fpm_main.c.html#L1477">((request = (fcgi_request*)SG(server_context)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">361</td><td><a href="fpm_main.c.html#L361">(err->code == SG(sapi_headers).http_response_code)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1546</td><td><a href="fpm_main.c.html#L1546">(0 > fpm_signals_init_mask() || 0 > fpm_signals_block())</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1378</td><td><a href="fpm_main.c.html#L1378">(fpm_php_apply_defines_ex(&kv, *mode) == -1)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">512</td><td><a href="fpm_main.c.html#L512">(sapi_module.input_filter(filter_arg, var, &val, strlen(val), &new_val_len))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">733</td><td><a href="fpm_main.c.html#L733">(PG(user_ini_filename) && *PG(user_ini_filename))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1904</td><td><a href="fpm_main.c.html#L1904">(CGIG(error_header) && *CGIG(error_header))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">574</td><td><a href="fpm_main.c.html#L574">(sapi_module.input_filter(PARSE_SERVER, "PHP_SELF", &php_self, php_self_len, &php_self_len))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">581</td><td><a href="fpm_main.c.html#L581">(sapi_module.input_filter(PARSE_SERVER, "PHP_SELF", &php_self, php_self_len, &php_self_len))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1010</td><td><a href="fpm_main.c.html#L1010">(env_script_filename && strncasecmp(env_script_filename, APACHE_PROXY_FCGI_PREFIX, sizeof(APACHE_PROXY_FCGI_PREFIX) - 1) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1031</td><td><a href="fpm_main.c.html#L1031">(env_script_filename && strncasecmp(env_script_filename, APACHE_PROXY_BALANCER_PREFIX, sizeof(APACHE_PROXY_BALANCER_PREFIX) - 1) == 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1724</td><td><a href="fpm_main.c.html#L1724">(cgi_sapi_module.startup(&cgi_sapi_module) == FAILURE)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">1924</td><td><a href="fpm_main.c.html#L1924">(UNEXPECTED(max_requests && (requests == max_requests)))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="fpm_main.c.html#L443">(request_body_filename && *request_body_filename)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">325</td><td><a href="fpm_main.c.html#L325">(CGIG(rfc2616_headers) && SG(sapi_headers).http_status_line)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">360</td><td><a href="fpm_main.c.html#L360">(err->code != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">634</td><td><a href="fpm_main.c.html#L634">(request_time > entry->expires)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1143</td><td><a href="fpm_main.c.html#L1143">(!orig_script_name || strcmp(orig_script_name, env_path_info) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1167</td><td><a href="fpm_main.c.html#L1167">(!orig_script_filename || strcmp(orig_script_filename, pt) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1244</td><td><a href="fpm_main.c.html#L1244">(!orig_script_name || strcmp(orig_script_name, env_script_name) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1361</td><td><a href="fpm_main.c.html#L1361">(!key || strlen(key) < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1063</td><td><a href="fpm_main.c.html#L1063">(!env_document_root && PG(doc_root))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1296</td><td><a href="fpm_main.c.html#L1296">(!CGIG(discard_path) && env_path_translated)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">960</td><td><a href="fpm_main.c.html#L960">(!script_path_translated && env_path_translated)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">993</td><td><a href="fpm_main.c.html#L993">(*env_path_info == 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1017</td><td><a href="fpm_main.c.html#L1017">(*p != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1038</td><td><a href="fpm_main.c.html#L1038">(*p != '\0')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1267</td><td><a href="fpm_main.c.html#L1267">(!apache_was_here && env_redirect_url)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="fpm_main.c.html#L316">(SG(request_info).no_headers == 1)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1205</td><td><a href="fpm_main.c.html#L1205">(env_script_name && strstr(pt, env_script_name))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1736</td><td><a href="fpm_main.c.html#L1736">(cgi && CGIG(force_redirect))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1153</td><td><a href="fpm_main.c.html#L1153">(apache_was_here && env_script_name)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1352</td><td><a href="fpm_main.c.html#L1352">(!mode || !arg1)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">366</td><td><a href="fpm_main.c.html#L366">(err->str)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">385</td><td><a href="fpm_main.c.html#L385">(h->header_len)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1788</td><td><a href="fpm_main.c.html#L1788">(fpm_globals.send_config_pipe[1])</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1797</td><td><a href="fpm_main.c.html#L1797">(fpm_globals.send_config_pipe[1])</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1819</td><td><a href="fpm_main.c.html#L1819">(EXPECTED(fcgi_accept_request(request) >= 0))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1829</td><td><a href="fpm_main.c.html#L1829">(UNEXPECTED(php_request_startup() == FAILURE))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1903</td><td><a href="fpm_main.c.html#L1903">(UNEXPECTED(EG(exit_status) == 255))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">300</td><td><a href="fpm_main.c.html#L300">(fflush(stdout) == EOF)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">667</td><td><a href="fpm_main.c.html#L667">(strncmp(s1, s2, s_len) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">694</td><td><a href="fpm_main.c.html#L694">(!SG(request_info).path_translated)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1243</td><td><a href="fpm_main.c.html#L1243">(!SG(request_info).request_uri)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1450</td><td><a href="fpm_main.c.html#L1450">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1472</td><td><a href="fpm_main.c.html#L1472">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1485</td><td><a href="fpm_main.c.html#L1485">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1661</td><td><a href="fpm_main.c.html#L1661">(php_request_startup() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1686</td><td><a href="fpm_main.c.html#L1686">(php_request_startup() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1898</td><td><a href="fpm_main.c.html#L1898">(UNEXPECTED(request_body_fd != -1))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">249</td><td><a href="fpm_main.c.html#L249">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="fpm_main.c.html#L258">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">274</td><td><a href="fpm_main.c.html#L274">(remaining > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">332</td><td><a href="fpm_main.c.html#L332">(len > SAPI_CGI_MAX_HEADER_LENGTH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">435</td><td><a href="fpm_main.c.html#L435">(remaining < count_bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">438</td><td><a href="fpm_main.c.html#L438">(read_bytes < count_bytes)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">440</td><td><a href="fpm_main.c.html#L440">(request_body_fd == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">446</td><td><a href="fpm_main.c.html#L446">(0 > request_body_fd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">455</td><td><a href="fpm_main.c.html#L455">(request_body_fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">460</td><td><a href="fpm_main.c.html#L460">(tmp_read_bytes <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="fpm_main.c.html#L645">(real_path == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">653</td><td><a href="fpm_main.c.html#L653">(path_len > doc_root_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1279</td><td><a href="fpm_main.c.html#L1279">(env_script_name != orig_script_name)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1354</td><td><a href="fpm_main.c.html#L1354">(callback_type != ZEND_INI_PARSER_ENTRY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="fpm_main.c.html#L1701">(argc != php_optind)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1786</td><td><a href="fpm_main.c.html#L1786">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1873</td><td><a href="fpm_main.c.html#L1873">(errno == EACCES)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1573</td><td><a href="fpm_main.c.html#L1573">(cgi_sapi_module.php_ini_path_override)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">1934</td><td><a href="fpm_main.c.html#L1934">(cgi_sapi_module.php_ini_path_override)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">643</td><td><a href="fpm_main.c.html#L643">(!IS_ABSOLUTE_PATH(path, path_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1454</td><td><a href="fpm_main.c.html#L1454">(!fcgi_is_closed(request))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">276</td><td><a href="fpm_main.c.html#L276">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">357</td><td><a href="fpm_main.c.html#L357">(!has_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">375</td><td><a href="fpm_main.c.html#L375">(!has_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">389</td><td><a href="fpm_main.c.html#L389">(!ignore_status)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">487</td><td><a href="fpm_main.c.html#L487">(!name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">625</td><td><a href="fpm_main.c.html#L625">(!entry)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">856</td><td><a href="fpm_main.c.html#L856">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">868</td><td><a href="fpm_main.c.html#L868">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1231</td><td><a href="fpm_main.c.html#L1231">(!ptr)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1370</td><td><a href="fpm_main.c.html#L1370">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1842</td><td><a href="fpm_main.c.html#L1842">(UNEXPECTED(fpm_status_handle_request()))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">556</td><td><a href="fpm_main.c.html#L556">(CGIG(fix_pathinfo))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">698</td><td><a href="fpm_main.c.html#L698">(php_ini_has_per_host_config())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="fpm_main.c.html#L759">(SG(sapi_started))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="fpm_main.c.html#L1052">(CGIG(fix_pathinfo))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1301</td><td><a href="fpm_main.c.html#L1301">(is_valid_path(script_path_translated))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1489</td><td><a href="fpm_main.c.html#L1489">(fpm_status_export_to_zval(return_value))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1894</td><td><a href="fpm_main.c.html#L1894">(EXPECTED(primary_script))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="fpm_main.c.html#L246">(fpm_is_running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">291</td><td><a href="fpm_main.c.html#L291">(fpm_is_running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">348</td><td><a href="fpm_main.c.html#L348">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">383</td><td><a href="fpm_main.c.html#L383">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">472</td><td><a href="fpm_main.c.html#L472">(fpm_is_running)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">566</td><td><a href="fpm_main.c.html#L566">(script_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">569</td><td><a href="fpm_main.c.html#L569">(path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">702</td><td><a href="fpm_main.c.html#L702">(server_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">736</td><td><a href="fpm_main.c.html#L736">(doc_root)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">814</td><td><a href="fpm_main.c.html#L814">(prog)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">860</td><td><a href="fpm_main.c.html#L860">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">866</td><td><a href="fpm_main.c.html#L866">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">976</td><td><a href="fpm_main.c.html#L976">(script_path_translated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1026</td><td><a href="fpm_main.c.html#L1026">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1047</td><td><a href="fpm_main.c.html#L1047">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1103</td><td><a href="fpm_main.c.html#L1103">(pt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1127</td><td><a href="fpm_main.c.html#L1127">(apache_was_here)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1136</td><td><a href="fpm_main.c.html#L1136">(tflag)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1137</td><td><a href="fpm_main.c.html#L1137">(orig_path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1145</td><td><a href="fpm_main.c.html#L1145">(orig_script_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1169</td><td><a href="fpm_main.c.html#L1169">(orig_script_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1178</td><td><a href="fpm_main.c.html#L1178">(env_document_root)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1196</td><td><a href="fpm_main.c.html#L1196">(env_path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1200</td><td><a href="fpm_main.c.html#L1200">(orig_path_translated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1215</td><td><a href="fpm_main.c.html#L1215">(env_path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1219</td><td><a href="fpm_main.c.html#L1219">(orig_path_translated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1237</td><td><a href="fpm_main.c.html#L1237">(orig_script_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1246</td><td><a href="fpm_main.c.html#L1246">(orig_script_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1254</td><td><a href="fpm_main.c.html#L1254">(pt)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1262</td><td><a href="fpm_main.c.html#L1262">(orig_script_filename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1270</td><td><a href="fpm_main.c.html#L1270">(orig_path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1274</td><td><a href="fpm_main.c.html#L1274">(orig_path_translated)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1280</td><td><a href="fpm_main.c.html#L1280">(orig_script_name)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1291</td><td><a href="fpm_main.c.html#L1291">(env_path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1317</td><td><a href="fpm_main.c.html#L1317">(ini)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1326</td><td><a href="fpm_main.c.html#L1326">(ini)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1366</td><td><a href="fpm_main.c.html#L1366">(arg2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1683</td><td><a href="fpm_main.c.html#L1683">(php_information)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1731</td><td><a href="fpm_main.c.html#L1731">(use_extended_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1947</td><td><a href="fpm_main.c.html#L1947">(parent)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

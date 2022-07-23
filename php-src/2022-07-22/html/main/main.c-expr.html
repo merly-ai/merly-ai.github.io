@@ -1,0 +1,278 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>php-src Repo - main\main.c Ctrl Expressions (227) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - main\main.c Ctrl Expressions (227) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;main\main.c Ctrl Expressions (227)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1278</td><td><a href="main.c.html#L1278">(display && (<span style='background-color:#741da3;'>(EG(error_reporting) & type) || (type & E_CORE)</span>) && (<span style='background-color:#741da3;'>PG(log_errors) || PG(display_errors) || (!module_initialized)</span>))</a></td><td class="num">2032.50</td></tr>
+      <tr><td class="num line">2645</td><td><a href="main.c.html#L2645">(<span style='background-color:#741da3;'>ret == -1 && auth && auth_len > 0 && zend_binary_strncasecmp(auth, auth_len, "Digest ", sizeof("Digest ") - 1, sizeof("Digest ") - 1) == 0</span>)</a></td><td class="num">1015.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="main.c.html#L970">(<span style='background-color:#9c4c02;'>EG(current_execute_data) && EG(current_execute_data)->func && ZEND_USER_CODE(EG(current_execute_data)->func->common.type) && EG(current_execute_data)->opline && EG(current_execute_data)->opline->opcode == ZEND_INCLUDE_OR_EVAL</span>)</a></td><td class="num">121.00</td></tr>
+      <tr><td class="num line">1227</td><td><a href="main.c.html#L1227">(!zend_string_equals(PG(last_error_message), message) || (!PG(ignore_repeated_source) && ((PG(last_error_lineno) != (int)error_lineno) || !zend_string_equals(PG(last_error_file), error_filename))))</a></td><td class="num">60.00</td></tr>
+      <tr><td class="num line">1355</td><td><a href="main.c.html#L1355">((!strcmp(sapi_module.name, "cli") || !strcmp(sapi_module.name, "cgi") || !strcmp(sapi_module.name, "phpdbg")) && PG(display_errors) == PHP_DISPLAY_ERRORS_STDERR)</a></td><td class="num">45.00</td></tr>
+      <tr><td class="num line">1325</td><td><a href="main.c.html#L1325">(PG(log_errors) || (!module_initialized && (!PG(display_startup_errors) || !PG(display_errors))))</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">1338</td><td><a href="main.c.html#L1338">(PG(display_errors) && ((module_initialized && !PG(during_request_startup)) || (PG(display_startup_errors))))</a></td><td class="num">41.25</td></tr>
+      <tr><td class="num line">2508</td><td><a href="main.c.html#L2508">(primary_file->filename && !zend_string_equals_literal(primary_file->filename, "Standard input code") && primary_file->opened_path == NULL && primary_file->type != ZEND_HANDLE_FILENAME)</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">1462</td><td><a href="main.c.html#L1462">((pwd = getpwuid(pstat->st_uid)) == NULL)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">2262</td><td><a href="main.c.html#L2262">((module = zend_hash_str_find_ptr(&module_registry, "standard", sizeof("standard") - 1)) != NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">2274</td><td><a href="main.c.html#L2274">((module = zend_hash_str_find_ptr(&module_registry, "core", sizeof("core") - 1)) != NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">373</td><td><a href="main.c.html#L373">(VCWD_REALPATH(search_path, binary_location) && !VCWD_ACCESS(binary_location, X_OK) && VCWD_STAT(binary_location, &s) == 0 && S_ISREG(s.st_mode))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">2495</td><td><a href="main.c.html#L2495">(primary_file->filename && !(SG(options) & SAPI_OPTION_NO_CHDIR))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2587</td><td><a href="main.c.html#L2587">(primary_file->filename && !(SG(options) & SAPI_OPTION_NO_CHDIR))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2343</td><td><a href="main.c.html#L2343">(cfg_get_long((char*)*p, &value) == SUCCESS && value)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1385</td><td><a href="main.c.html#L1385">(!PG(display_errors) && !SG(headers_sent) && SG(sapi_headers).http_response_code == 200)</a></td><td class="num">24.00</td></tr>
+      <tr><td class="num line">385</td><td><a href="main.c.html#L385">(!VCWD_REALPATH(sapi_module.executable_location, binary_location) || VCWD_ACCESS(binary_location, X_OK))</a></td><td class="num">20.75</td></tr>
+      <tr><td class="num line">616</td><td><a href="main.c.html#L616">((stage == PHP_INI_STAGE_RUNTIME || stage == PHP_INI_STAGE_HTACCESS) && new_value && zend_string_equals_literal(new_value, "syslog"))</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1000</td><td><a href="main.c.html#L1000">((function = get_active_function_name()) && strlen(function))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2622</td><td><a href="main.c.html#L2622">(auth && auth_len > 0 && zend_binary_strncasecmp(auth, auth_len, "Basic ", sizeof("Basic ") - 1, sizeof("Basic ") - 1) == 0)</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">443</td><td><a href="main.c.html#L443">(mode && mode != PHP_DISPLAY_ERRORS_STDOUT && mode != PHP_DISPLAY_ERRORS_STDERR)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">631</td><td><a href="main.c.html#L631">((stage == PHP_INI_STAGE_RUNTIME || stage == PHP_INI_STAGE_HTACCESS) && new_value)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1452</td><td><a href="main.c.html#L1452">(getpwuid_r(pstat->st_uid, &_pw, pwbuf, pwbuflen, &retpwptr) != 0)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">363</td><td><a href="main.c.html#L363">((envpath = getenv("PATH")) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1039</td><td><a href="main.c.html#L1039">((p = strchr(docref_buf, '_')) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1050</td><td><a href="main.c.html#L1050">(docref && is_function && PG(html_errors) && strlen(PG(docref_root)))</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="main.c.html#L467">(type == ZEND_INI_DISPLAY_ORIG && ini_entry->modified)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">823</td><td><a href="main.c.html#L823">(PG(error_log_mode) > 0 && PG(error_log_mode) <= 0777)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1023</td><td><a href="main.c.html#L1023">(docref && docref[0] == '#')</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1329</td><td><a href="main.c.html#L1329">(type == E_CORE_ERROR || type == E_CORE_WARNING)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1346</td><td><a href="main.c.html#L1346">(type == E_ERROR || type == E_PARSE)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1756</td><td><a href="main.c.html#L1756">(PG(open_basedir) && *PG(open_basedir))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2212</td><td><a href="main.c.html#L2212">(PG(open_basedir) && *PG(open_basedir))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2241</td><td><a href="main.c.html#L2241">(additional_module && (zend_register_internal_module(additional_module) == NULL))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">505</td><td><a href="main.c.html#L505">(PG(internal_encoding) && PG(internal_encoding)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="main.c.html#L507">(SG(default_charset) && SG(default_charset)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">514</td><td><a href="main.c.html#L514">(PG(input_encoding) && PG(input_encoding)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">516</td><td><a href="main.c.html#L516">(SG(default_charset) && SG(default_charset)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">523</td><td><a href="main.c.html#L523">(PG(output_encoding) && PG(output_encoding)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">525</td><td><a href="main.c.html#L525">(SG(default_charset) && SG(default_charset)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1764</td><td><a href="main.c.html#L1764">(PG(output_handler) && PG(output_handler)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2519</td><td><a href="main.c.html#L2519">(PG(auto_prepend_file) && PG(auto_prepend_file)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2524</td><td><a href="main.c.html#L2524">(PG(auto_append_file) && PG(auto_append_file)[0])</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">917</td><td><a href="main.c.html#L917">(!result || ZSTR_LEN(result) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1485</td><td><a href="main.c.html#L1485">(zend_parse_parameters(ZEND_NUM_ARGS(), "l", &new_timeout) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1760</td><td><a href="main.c.html#L1760">(PG(expose_php) && !SG(headers_sent))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1527</td><td><a href="main.c.html#L1527">(php_stream_stat(stream, &ssb) == 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1966</td><td><a href="main.c.html#L1966">(zend_register_internal_module(*ptr) == NULL)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2106</td><td><a href="main.c.html#L2106">(WSAStartup(wVersionRequested, &wsaData) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">618</td><td><a href="main.c.html#L618">(PG(open_basedir) && php_check_open_basedir(ZSTR_VAL(new_value)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">632</td><td><a href="main.c.html#L632">(PG(open_basedir) && php_check_open_basedir(ZSTR_VAL(new_value)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1029</td><td><a href="main.c.html#L1029">(!docref && is_function)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1031</td><td><a href="main.c.html#L1031">(*function == '_')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1073</td><td><a href="main.c.html#L1073">(PG(docref_ext) && strlen(PG(docref_ext)))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1523</td><td><a href="main.c.html#L1523">(stream->readfilters.head)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1224</td><td><a href="main.c.html#L1224">(PG(ignore_repeated_errors) && PG(last_error_message))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">104</td><td><a href="main.c.html#L104">(zend_string_equals_literal(facility, "LOG_AUTH") || zend_string_equals_literal(facility, "auth") || zend_string_equals_literal(facility, "security"))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1034</td><td><a href="main.c.html#L1034">(space[0] == '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1396</td><td><a href="main.c.html#L1396">(!(orig_type & E_DONT_BAIL))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2558</td><td><a href="main.c.html#L2558">(old_cwd[0] != '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2594</td><td><a href="main.c.html#L2594">(old_cwd[0] != '\0')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2513</td><td><a href="main.c.html#L2513">(expand_filepath(ZSTR_VAL(primary_file->filename), realfile))</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">536</td><td><a href="main.c.html#L536">(memchr(ZSTR_VAL(new_value), '\0', ZSTR_LEN(new_value)) || strpbrk(ZSTR_VAL(new_value), "\\r\\n"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">556</td><td><a href="main.c.html#L556">(memchr(ZSTR_VAL(new_value), '\0', ZSTR_LEN(new_value)) || strpbrk(ZSTR_VAL(new_value), "\\r\\n"))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1003</td><td><a href="main.c.html#L1003">(EG(flags) & EG_FLAGS_IN_SHUTDOWN)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1610</td><td><a href="main.c.html#L1610">(EG(error_reporting) & E_WARNING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1642</td><td><a href="main.c.html#L1642">(EG(error_reporting) & E_WARNING)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="main.c.html#L316">(!*(INI_STR("disable_classes")))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="main.c.html#L469">(ini_entry->value)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1617</td><td><a href="main.c.html#L1617">(t->orig_filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1940</td><td><a href="main.c.html#L1940">(core_globals->disable_classes)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1943</td><td><a href="main.c.html#L1943">(core_globals->php_binary)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2099</td><td><a href="main.c.html#L2099">(!php_win32_crt_compatible(&img_err))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2488</td><td><a href="main.c.html#L2488">(primary_file->filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2580</td><td><a href="main.c.html#L2580">(primary_file->filename)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">111</td><td><a href="main.c.html#L111">(zend_string_equals_literal(facility, "LOG_AUTHPRIV") || zend_string_equals_literal(facility, "authpriv"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">117</td><td><a href="main.c.html#L117">(zend_string_equals_literal(facility, "LOG_CRON") || zend_string_equals_literal(facility, "cron"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">123</td><td><a href="main.c.html#L123">(zend_string_equals_literal(facility, "LOG_DAEMON") || zend_string_equals_literal(facility, "daemon"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">129</td><td><a href="main.c.html#L129">(zend_string_equals_literal(facility, "LOG_FTP") || zend_string_equals_literal(facility, "ftp"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">135</td><td><a href="main.c.html#L135">(zend_string_equals_literal(facility, "LOG_KERN") || zend_string_equals_literal(facility, "kern"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">141</td><td><a href="main.c.html#L141">(zend_string_equals_literal(facility, "LOG_LPR") || zend_string_equals_literal(facility, "lpr"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">147</td><td><a href="main.c.html#L147">(zend_string_equals_literal(facility, "LOG_MAIL") || zend_string_equals_literal(facility, "mail"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">153</td><td><a href="main.c.html#L153">(zend_string_equals_literal(facility, "LOG_INTERNAL_MARK") || zend_string_equals_literal(facility, "mark"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">159</td><td><a href="main.c.html#L159">(zend_string_equals_literal(facility, "LOG_NEWS") || zend_string_equals_literal(facility, "news"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">165</td><td><a href="main.c.html#L165">(zend_string_equals_literal(facility, "LOG_SYSLOG") || zend_string_equals_literal(facility, "syslog"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">171</td><td><a href="main.c.html#L171">(zend_string_equals_literal(facility, "LOG_USER") || zend_string_equals_literal(facility, "user"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">177</td><td><a href="main.c.html#L177">(zend_string_equals_literal(facility, "LOG_UUCP") || zend_string_equals_literal(facility, "uucp"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">183</td><td><a href="main.c.html#L183">(zend_string_equals_literal(facility, "LOG_LOCAL0") || zend_string_equals_literal(facility, "local0"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">189</td><td><a href="main.c.html#L189">(zend_string_equals_literal(facility, "LOG_LOCAL1") || zend_string_equals_literal(facility, "local1"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">195</td><td><a href="main.c.html#L195">(zend_string_equals_literal(facility, "LOG_LOCAL2") || zend_string_equals_literal(facility, "local2"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">201</td><td><a href="main.c.html#L201">(zend_string_equals_literal(facility, "LOG_LOCAL3") || zend_string_equals_literal(facility, "local3"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">207</td><td><a href="main.c.html#L207">(zend_string_equals_literal(facility, "LOG_LOCAL4") || zend_string_equals_literal(facility, "local4"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">213</td><td><a href="main.c.html#L213">(zend_string_equals_literal(facility, "LOG_LOCAL5") || zend_string_equals_literal(facility, "local5"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">219</td><td><a href="main.c.html#L219">(zend_string_equals_literal(facility, "LOG_LOCAL6") || zend_string_equals_literal(facility, "local6"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">225</td><td><a href="main.c.html#L225">(zend_string_equals_literal(facility, "LOG_LOCAL7") || zend_string_equals_literal(facility, "local7"))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">270</td><td><a href="main.c.html#L270">(zend_set_memory_limit(value) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="main.c.html#L352">(GetModuleFileName(0, binary_location, MAXPATHLEN) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">359</td><td><a href="main.c.html#L359">(!strchr(sapi_module.executable_location, '/'))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">810</td><td><a href="main.c.html#L810">(PG(error_log) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1240</td><td><a href="main.c.html#L1240">(EG(error_handling) == EH_THROW)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1492</td><td><a href="main.c.html#L1492">(zend_alter_ini_entry_chars_ex(key, new_timeout_str, new_timeout_strlen, PHP_INI_USER, PHP_INI_STAGE_RUNTIME, 0) == SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1700</td><td><a href="main.c.html#L1700">(waitpid(-1, NULL, WNOHANG) > 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1749</td><td><a href="main.c.html#L1749">(PG(max_input_time) == -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1915</td><td><a href="main.c.html#L1915">(CoInitialize(NULL) == S_OK)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2186</td><td><a href="main.c.html#L2186">(php_init_config() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2221</td><td><a href="main.c.html#L2221">(php_init_stream_wrappers(module_number) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2235</td><td><a href="main.c.html#L2235">(php_register_internal_extensions_func() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2287</td><td><a href="main.c.html#L2287">(zend_post_startup() != SUCCESS)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2528</td><td><a href="main.c.html#L2528">(PG(max_input_time) != -1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">239</td><td><a href="main.c.html#L239">(i >= -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">252</td><td><a href="main.c.html#L252">(i >= -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">275</td><td><a href="main.c.html#L275">(stage != ZEND_INI_STAGE_DEACTIVATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="main.c.html#L322">(*e)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">398</td><td><a href="main.c.html#L398">(stage == PHP_INI_STAGE_STARTUP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">405</td><td><a href="main.c.html#L405">(stage != PHP_INI_STAGE_DEACTIVATE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">645</td><td><a href="main.c.html#L645">(stage == PHP_INI_STAGE_HTACCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">828</td><td><a href="main.c.html#L828">(fd != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1158</td><td><a href="main.c.html#L1158">(buf_len >= 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1448</td><td><a href="main.c.html#L1448">(pwbuflen < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1456</td><td><a href="main.c.html#L1456">(retpwptr == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="main.c.html#L1613">(message == ZMSG_MEMORY_LEAK_DETECTED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1852</td><td><a href="main.c.html#L1852">(i < NUM_TRACK_VARS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1964</td><td><a href="main.c.html#L1964">(ptr < end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1965</td><td><a href="main.c.html#L1965">(*ptr)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2026</td><td><a href="main.c.html#L2026">(old_invalid_parameter_handler != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2337</td><td><a href="main.c.html#L2337">(i < 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2340</td><td><a href="main.c.html#L2340">(*p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2368</td><td><a href="main.c.html#L2368">(retval == SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2456</td><td><a href="main.c.html#L2456">(old_invalid_parameter_handler == NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2553</td><td><a href="main.c.html#L2553">(old_cwd_fd != -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2639</td><td><a href="main.c.html#L2639">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2650</td><td><a href="main.c.html#L2650">(ret == -1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="main.c.html#L1414">(SG(request_info).current_user)</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">357</td><td><a href="main.c.html#L357">(sapi_module.executable_location)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">862</td><td><a href="main.c.html#L862">(sapi_module.log_message)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2261</td><td><a href="main.c.html#L2261">(sapi_module.additional_functions)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">814</td><td><a href="main.c.html#L814">(!strcmp(PG(error_log), "syslog"))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">835</td><td><a href="main.c.html#L835">(!php_during_module_startup())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1252</td><td><a href="main.c.html#L1252">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1914</td><td><a href="main.c.html#L1914">(!PG(com_initialized))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2041</td><td><a href="main.c.html#L2041">(!php_win32_init_random_bytes())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2206</td><td><a href="main.c.html#L2206">(!php_win32_cp_use_unicode())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2610</td><td><a href="main.c.html#L2610">(!PG(ignore_user_abort))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">333</td><td><a href="main.c.html#L333">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">381</td><td><a href="main.c.html#L381">(!found)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">421</td><td><a href="main.c.html#L421">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1264</td><td><a href="main.c.html#L1264">(!error_filename)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1373</td><td><a href="main.c.html#L1373">(!module_initialized)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1424</td><td><a href="main.c.html#L1424">(!pstat)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1431</td><td><a href="main.c.html#L1431">(!name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1989</td><td><a href="main.c.html#L1989">(!called)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2393</td><td><a href="main.c.html#L2393">(!module_initialized)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">290</td><td><a href="main.c.html#L290">(zend_string_equals_literal(filter, "all"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">294</td><td><a href="main.c.html#L294">(zend_string_equals_literal(filter, "no-ctrl"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">298</td><td><a href="main.c.html#L298">(zend_string_equals_literal(filter, "ascii"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">302</td><td><a href="main.c.html#L302">(zend_string_equals_literal(filter, "raw"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">425</td><td><a href="main.c.html#L425">(zend_string_equals_literal_ci(value, "on"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">428</td><td><a href="main.c.html#L428">(zend_string_equals_literal_ci(value, "yes"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">432</td><td><a href="main.c.html#L432">(zend_string_equals_literal_ci(value, "true"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">435</td><td><a href="main.c.html#L435">(zend_string_equals_literal_ci(value, "stderr"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">438</td><td><a href="main.c.html#L438">(zend_string_equals_literal_ci(value, "stdout"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="main.c.html#L803">(PG(in_error_log))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">950</td><td><a href="main.c.html#L950">(PG(html_errors))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">964</td><td><a href="main.c.html#L964">(php_during_module_startup())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">966</td><td><a href="main.c.html#L966">(php_during_module_shutdown())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">968</td><td><a href="main.c.html#L968">(PG(during_request_startup))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1016</td><td><a href="main.c.html#L1016">(PG(html_errors))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1051</td><td><a href="main.c.html#L1051">(strncmp(docref, "http://", 7))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="main.c.html#L1080">(PG(html_errors))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1181</td><td><a href="main.c.html#L1181">(PG(last_error_message))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1185</td><td><a href="main.c.html#L1185">(PG(last_error_file))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1195</td><td><a href="main.c.html#L1195">(PG(report_zend_debug))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1273</td><td><a href="main.c.html#L1273">(zend_alloc_in_memory_limit_error_reporting())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1339</td><td><a href="main.c.html#L1339">(PG(xmlrpc_errors))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1345</td><td><a href="main.c.html#L1345">(PG(html_errors))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1587</td><td><a href="main.c.html#L1587">(PG(php_sys_temp_dir))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1629</td><td><a href="main.c.html#L1629">(IsDebuggerPresent())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1647</td><td><a href="main.c.html#L1647">(IsDebuggerPresent())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1674</td><td><a href="main.c.html#L1674">(IsDebuggerPresent())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1770</td><td><a href="main.c.html#L1770">(PG(output_buffering))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1772</td><td><a href="main.c.html#L1772">(PG(implicit_flush))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1814</td><td><a href="main.c.html#L1814">(PG(modules_activated))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1834</td><td><a href="main.c.html#L1834">(PG(modules_activated))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1844</td><td><a href="main.c.html#L1844">(PG(modules_activated))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="main.c.html#L1898">(PG(com_initialized))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1990</td><td><a href="main.c.html#L1990">(PG(windows_show_crt_warning))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2173</td><td><a href="main.c.html#L2173">(PG(php_binary))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2546</td><td><a href="main.c.html#L2546">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2673</td><td><a href="main.c.html#L2673">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">265</td><td><a href="main.c.html#L265">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">326</td><td><a href="main.c.html#L326">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">340</td><td><a href="main.c.html#L340">(s)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">371</td><td><a href="main.c.html#L371">(search_dir)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">482</td><td><a href="main.c.html#L482">(cgi_or_cli)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">490</td><td><a href="main.c.html#L490">(cgi_or_cli)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">541</td><td><a href="main.c.html#L541">(php_internal_encoding_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">544</td><td><a href="main.c.html#L544">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">568</td><td><a href="main.c.html#L568">(php_internal_encoding_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">571</td><td><a href="main.c.html#L571">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">584</td><td><a href="main.c.html#L584">(php_internal_encoding_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">587</td><td><a href="main.c.html#L587">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">600</td><td><a href="main.c.html#L600">(php_internal_encoding_changed)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">603</td><td><a href="main.c.html#L603">(new_value)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">954</td><td><a href="main.c.html#L954">(replace_buffer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1010</td><td><a href="main.c.html#L1010">(is_function)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1059</td><td><a href="main.c.html#L1059">(docref_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1065</td><td><a href="main.c.html#L1065">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1067</td><td><a href="main.c.html#L1067">(target)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1085</td><td><a href="main.c.html#L1085">(target)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1091</td><td><a href="main.c.html#L1091">(replace_origin)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1096</td><td><a href="main.c.html#L1096">(docref_buf)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1100</td><td><a href="main.c.html#L1100">(replace_buffer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1146</td><td><a href="main.c.html#L1146">(params)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1262</td><td><a href="main.c.html#L1262">(display)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1384</td><td><a href="main.c.html#L1384">(module_initialized)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1549</td><td><a href="main.c.html#L1549">(stream)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1667</td><td><a href="main.c.html#L1667">(datetime_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1809</td><td><a href="main.c.html#L1809">(ZEND_OBSERVER_ENABLED)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1992</td><td><a href="main.c.html#L1992">(function)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1993</td><td><a href="main.c.html#L1993">(file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2052</td><td><a href="main.c.html#L2052">(module_initialized)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2439</td><td><a href="main.c.html#L2439">(zend_post_shutdown_cb)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2538</td><td><a href="main.c.html#L2538">(prepend_file_p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2542</td><td><a href="main.c.html#L2542">(append_file_p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2627</td><td><a href="main.c.html#L2627">(user)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2629</td><td><a href="main.c.html#L2629">(pass)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2667</td><td><a href="main.c.html#L2667">(op_array)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

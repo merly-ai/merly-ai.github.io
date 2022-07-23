@@ -1,0 +1,344 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\codegen.c Ctrl Expressions (293) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\codegen.c Ctrl Expressions (293) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\codegen.c Ctrl Expressions (293)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1330</td><td><a href="codegen.c.html#L1330">(<span style='background-color:#741da3;'>ltype == CF_LONG && rtype != CF_LONG && (rhs & CF_CONST) == 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">1336</td><td><a href="codegen.c.html#L1336">(<span style='background-color:#741da3;'>ltype != CF_LONG && (lhs & CF_CONST) == 0 && rtype == CF_LONG</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="codegen.c.html#L322">(<span style='background-color:#741da3;'>(Offs & 0xFF) > 256 - sizeofarg(Flags)</span>)</a></td><td class="num">1008.10</td></tr>
+      <tr><td class="num line">2747</td><td><a href="codegen.c.html#L2747">((flags & CF_CONST) && (flags & CF_UNSIGNED) && val != 0xFFFFFFFF && (p2 = powerof2(val)) >= 0)</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">2610</td><td><a href="codegen.c.html#L2610">(flags & CF_CONST && (p2 = powerof2(val)) >= 0)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">2719</td><td><a href="codegen.c.html#L2719">((flags & CF_CONST) && (p2 = powerof2(val)) >= 0)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1420</td><td><a href="codegen.c.html#L1420">((p2 = powerof2(val)) > 0 && p2 <= 4)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">1475</td><td><a href="codegen.c.html#L1475">((p2 = powerof2(val)) > 0 && p2 <= 4)</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">930</td><td><a href="codegen.c.html#L930">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && offs == 1)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3257</td><td><a href="codegen.c.html#L3257">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && val <= 2)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3270</td><td><a href="codegen.c.html#L3270">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && val == 1)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">3351</td><td><a href="codegen.c.html#L3351">((CPUIsets[CPU] & CPU_ISET_65SC02) != 0 && val <= 2)</a></td><td class="num">27.50</td></tr>
+      <tr><td class="num line">1109</td><td><a href="codegen.c.html#L1109">((Offs & 0xFF) > 256 - sizeofarg(Flags | CF_FORCECHAR))</a></td><td class="num">27.10</td></tr>
+      <tr><td class="num line">2357</td><td><a href="codegen.c.html#L2357">(flags & CF_CONST && (flags & CF_TYPE) != CF_LONG)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2360</td><td><a href="codegen.c.html#L2360">((flags & CF_TYPE) == CF_CHAR && (flags & CF_FORCECHAR))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">710</td><td><a href="codegen.c.html#L710">((Done & 0x04) == 0 && B1 != B3)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">715</td><td><a href="codegen.c.html#L715">((Done & 0x08) == 0 && B1 != B4)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">2298</td><td><a href="codegen.c.html#L2298">(val == 0 && subs[offs + 0])</a></td><td class="num">10.10</td></tr>
+      <tr><td class="num line">2301</td><td><a href="codegen.c.html#L2301">(val < 0x100 && subs[offs + 1])</a></td><td class="num">10.10</td></tr>
+      <tr><td class="num line">1070</td><td><a href="codegen.c.html#L1070">((Flags & CF_NOKEEP) == 0 || CodeSizeFactor < 160)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">4087</td><td><a href="codegen.c.html#L4087">((Chunk = Count) > 16)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3009</td><td><a href="codegen.c.html#L3009">(val >= 8 && (flags & CF_UNSIGNED))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3038</td><td><a href="codegen.c.html#L3038">(val == 8 && (flags & CF_UNSIGNED))</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">762</td><td><a href="codegen.c.html#L762">((flags & CF_FORCECHAR) || (flags & CF_TEST))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">818</td><td><a href="codegen.c.html#L818">((flags & CF_FORCECHAR) || (flags & CF_TEST))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">611</td><td><a href="codegen.c.html#L611">(Bytes == 3 && CodeSizeFactor >= 133)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1379</td><td><a href="codegen.c.html#L1379">(ltype == CF_LONG && rtype != CF_LONG)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1382</td><td><a href="codegen.c.html#L1382">(ltype == CF_INT && rtype != CF_INT)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3017</td><td><a href="codegen.c.html#L3017">(val >= 1 && val <= 4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3031</td><td><a href="codegen.c.html#L3031">(val >= 1 && val <= 4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3108</td><td><a href="codegen.c.html#L3108">(val >= 1 && val <= 4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3122</td><td><a href="codegen.c.html#L3122">(val >= 1 && val <= 4)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1060</td><td><a href="codegen.c.html#L1060">((Val & 0xFF) == Offs + 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">1435</td><td><a href="codegen.c.html#L1435">(CodeSizeFactor >= (p2 + 1) * 130U)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">1497</td><td><a href="codegen.c.html#L1497">(CodeSizeFactor >= (p2 + 1) * 130U)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">1508</td><td><a href="codegen.c.html#L1508">(CodeSizeFactor >= (p2 + 1) * 150U)</a></td><td class="num">6.95</td></tr>
+      <tr><td class="num line">1356</td><td><a href="codegen.c.html#L1356">(rtype == CF_LONG || ltype == CF_LONG)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">455</td><td><a href="codegen.c.html#L455">((flags & CF_FIXARGC) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">673</td><td><a href="codegen.c.html#L673">((Flags & CF_CONST) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">679</td><td><a href="codegen.c.html#L679">((Flags & CF_FORCECHAR) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">722</td><td><a href="codegen.c.html#L722">((Done & 0x04) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">726</td><td><a href="codegen.c.html#L726">((Done & 0x08) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">825</td><td><a href="codegen.c.html#L825">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1056</td><td><a href="codegen.c.html#L1056">((Flags & CF_NOKEEP) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1127</td><td><a href="codegen.c.html#L1127">((Offs & 0xFF00) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1378</td><td><a href="codegen.c.html#L1378">((rhs & CF_CONST) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1678</td><td><a href="codegen.c.html#L1678">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1785</td><td><a href="codegen.c.html#L1785">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1922</td><td><a href="codegen.c.html#L1922">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2015</td><td><a href="codegen.c.html#L2015">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2439</td><td><a href="codegen.c.html#L2439">((Flags & CF_FIXARGC) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2452</td><td><a href="codegen.c.html#L2452">((Flags & CF_LOCAL) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2454</td><td><a href="codegen.c.html#L2454">((Flags & CF_FIXARGC) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2782</td><td><a href="codegen.c.html#L2782">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2791</td><td><a href="codegen.c.html#L2791">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2795</td><td><a href="codegen.c.html#L2795">((val & 0xFF00) == 0xFF00)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2796</td><td><a href="codegen.c.html#L2796">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2806</td><td><a href="codegen.c.html#L2806">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2851</td><td><a href="codegen.c.html#L2851">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2864</td><td><a href="codegen.c.html#L2864">((val & 0xFF) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2920</td><td><a href="codegen.c.html#L2920">((Val & 0xFF) != 0xFF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2927</td><td><a href="codegen.c.html#L2927">((Val & 0xFFFF) != 0xFFFF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2935</td><td><a href="codegen.c.html#L2935">((Val & 0xFF00) == 0xFF00)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2937</td><td><a href="codegen.c.html#L2937">((Val & 0x00FF) == 0x0000)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2948</td><td><a href="codegen.c.html#L2948">((Val & 0x00FF) != 0x00FF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2960</td><td><a href="codegen.c.html#L2960">((Val & 0xFF) != 0xFF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3049</td><td><a href="codegen.c.html#L3049">((flags & CF_UNSIGNED) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3289</td><td><a href="codegen.c.html#L3289">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3308</td><td><a href="codegen.c.html#L3308">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3377</td><td><a href="codegen.c.html#L3377">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3393</td><td><a href="codegen.c.html#L3393">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3586</td><td><a href="codegen.c.html#L3586">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3950</td><td><a href="codegen.c.html#L3950">((val & 0xFF) != 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4250</td><td><a href="codegen.c.html#L4250">(I == CollCount(Nodes) - 1)</a></td><td class="num">4.85</td></tr>
+      <tr><td class="num line">767</td><td><a href="codegen.c.html#L767">(!(flags & CF_UNSIGNED))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">779</td><td><a href="codegen.c.html#L779">(flags & CF_TEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">787</td><td><a href="codegen.c.html#L787">(flags & CF_TEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">836</td><td><a href="codegen.c.html#L836">(flags & CF_TEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">875</td><td><a href="codegen.c.html#L875">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">885</td><td><a href="codegen.c.html#L885">(flags & CF_TEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">901</td><td><a href="codegen.c.html#L901">(flags & CF_TEST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1044</td><td><a href="codegen.c.html#L1044">(Flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1052</td><td><a href="codegen.c.html#L1052">(Flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1084</td><td><a href="codegen.c.html#L1084">(Flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1184</td><td><a href="codegen.c.html#L1184">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1231</td><td><a href="codegen.c.html#L1231">(Flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1233</td><td><a href="codegen.c.html#L1233">(Flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1265</td><td><a href="codegen.c.html#L1265">(Flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1267</td><td><a href="codegen.c.html#L1267">(Flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1293</td><td><a href="codegen.c.html#L1293">(Flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1338</td><td><a href="codegen.c.html#L1338">(lhs & CF_REG)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1426</td><td><a href="codegen.c.html#L1426">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1427</td><td><a href="codegen.c.html#L1427">(p2--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1437</td><td><a href="codegen.c.html#L1437">(p2--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1443</td><td><a href="codegen.c.html#L1443">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1452</td><td><a href="codegen.c.html#L1452">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1481</td><td><a href="codegen.c.html#L1481">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1482</td><td><a href="codegen.c.html#L1482">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="codegen.c.html#L1483">(p2--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1496</td><td><a href="codegen.c.html#L1496">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1499</td><td><a href="codegen.c.html#L1499">(p2--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1510</td><td><a href="codegen.c.html#L1510">(p2--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1523</td><td><a href="codegen.c.html#L1523">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1661</td><td><a href="codegen.c.html#L1661">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1663</td><td><a href="codegen.c.html#L1663">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1689</td><td><a href="codegen.c.html#L1689">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1730</td><td><a href="codegen.c.html#L1730">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1772</td><td><a href="codegen.c.html#L1772">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1775</td><td><a href="codegen.c.html#L1775">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1797</td><td><a href="codegen.c.html#L1797">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1820</td><td><a href="codegen.c.html#L1820">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1904</td><td><a href="codegen.c.html#L1904">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1906</td><td><a href="codegen.c.html#L1906">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1934</td><td><a href="codegen.c.html#L1934">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1965</td><td><a href="codegen.c.html#L1965">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2003</td><td><a href="codegen.c.html#L2003">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2007</td><td><a href="codegen.c.html#L2007">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2026</td><td><a href="codegen.c.html#L2026">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2034</td><td><a href="codegen.c.html#L2034">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2178</td><td><a href="codegen.c.html#L2178">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2207</td><td><a href="codegen.c.html#L2207">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2240</td><td><a href="codegen.c.html#L2240">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2296</td><td><a href="codegen.c.html#L2296">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2327</td><td><a href="codegen.c.html#L2327">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2339</td><td><a href="codegen.c.html#L2339">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="codegen.c.html#L2376">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2385</td><td><a href="codegen.c.html#L2385">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2555</td><td><a href="codegen.c.html#L2555">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2574</td><td><a href="codegen.c.html#L2574">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2619</td><td><a href="codegen.c.html#L2619">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2624</td><td><a href="codegen.c.html#L2624">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2724</td><td><a href="codegen.c.html#L2724">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2752</td><td><a href="codegen.c.html#L2752">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2776</td><td><a href="codegen.c.html#L2776">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2781</td><td><a href="codegen.c.html#L2781">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2845</td><td><a href="codegen.c.html#L2845">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2850</td><td><a href="codegen.c.html#L2850">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2914</td><td><a href="codegen.c.html#L2914">(Flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2919</td><td><a href="codegen.c.html#L2919">(Flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3003</td><td><a href="codegen.c.html#L3003">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3018</td><td><a href="codegen.c.html#L3018">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3032</td><td><a href="codegen.c.html#L3032">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3094</td><td><a href="codegen.c.html#L3094">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3109</td><td><a href="codegen.c.html#L3109">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3123</td><td><a href="codegen.c.html#L3123">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3169</td><td><a href="codegen.c.html#L3169">(Flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3222</td><td><a href="codegen.c.html#L3222">(Flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3256</td><td><a href="codegen.c.html#L3256">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3258</td><td><a href="codegen.c.html#L3258">(val--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3350</td><td><a href="codegen.c.html#L3350">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3352</td><td><a href="codegen.c.html#L3352">(val--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3445</td><td><a href="codegen.c.html#L3445">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3450</td><td><a href="codegen.c.html#L3450">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3502</td><td><a href="codegen.c.html#L3502">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3507</td><td><a href="codegen.c.html#L3507">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3557</td><td><a href="codegen.c.html#L3557">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3563</td><td><a href="codegen.c.html#L3563">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3576</td><td><a href="codegen.c.html#L3576">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3617</td><td><a href="codegen.c.html#L3617">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3669</td><td><a href="codegen.c.html#L3669">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3675</td><td><a href="codegen.c.html#L3675">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3676</td><td><a href="codegen.c.html#L3676">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3706</td><td><a href="codegen.c.html#L3706">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3731</td><td><a href="codegen.c.html#L3731">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3787</td><td><a href="codegen.c.html#L3787">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3793</td><td><a href="codegen.c.html#L3793">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3794</td><td><a href="codegen.c.html#L3794">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3828</td><td><a href="codegen.c.html#L3828">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3859</td><td><a href="codegen.c.html#L3859">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3921</td><td><a href="codegen.c.html#L3921">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3927</td><td><a href="codegen.c.html#L3927">(flags & CF_UNSIGNED)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3940</td><td><a href="codegen.c.html#L3940">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3981</td><td><a href="codegen.c.html#L3981">(flags & CF_FORCECHAR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4037</td><td><a href="codegen.c.html#L4037">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4097</td><td><a href="codegen.c.html#L4097">(Chunk--)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4298</td><td><a href="codegen.c.html#L4298">(flags & CF_CONST)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4227</td><td><a href="codegen.c.html#L4227">(I < CollCount(Nodes))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">91</td><td><a href="codegen.c.html#L91">(Offs >= 256)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">328</td><td><a href="codegen.c.html#L328">(O != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="codegen.c.html#L473">(funcargs >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">477</td><td><a href="codegen.c.html#L477">(k > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="codegen.c.html#L478">(k <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">489</td><td><a href="codegen.c.html#L489">(k == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">519</td><td><a href="codegen.c.html#L519">(Bytes == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">521</td><td><a href="codegen.c.html#L521">(CodeSizeFactor < 165)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">534</td><td><a href="codegen.c.html#L534">(Bytes == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="codegen.c.html#L555">(Bytes == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="codegen.c.html#L560">(Bytes == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">596</td><td><a href="codegen.c.html#L596">(Bytes == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="codegen.c.html#L602">(Bytes == 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">623</td><td><a href="codegen.c.html#L623">(StackOffs <= RegOffs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">702</td><td><a href="codegen.c.html#L702">(B2 == B3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">706</td><td><a href="codegen.c.html#L706">(B2 == B4)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">921</td><td><a href="codegen.c.html#L921">(offs == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="codegen.c.html#L925">(CodeSizeFactor < 300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">973</td><td><a href="codegen.c.html#L973">(CodeSizeFactor > 250)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">986</td><td><a href="codegen.c.html#L986">(Offs > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="codegen.c.html#L988">(Offs < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1268</td><td><a href="codegen.c.html#L1268">(CodeSizeFactor >= 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1276</td><td><a href="codegen.c.html#L1276">(CodeSizeFactor >= 366)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1294</td><td><a href="codegen.c.html#L1294">(CodeSizeFactor >= 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1415</td><td><a href="codegen.c.html#L1415">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="codegen.c.html#L1417">(val > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1464</td><td><a href="codegen.c.html#L1464">(val != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1487</td><td><a href="codegen.c.html#L1487">(p2 <= 2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1535</td><td><a href="codegen.c.html#L1535">(val != 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1664</td><td><a href="codegen.c.html#L1664">(val == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1690</td><td><a href="codegen.c.html#L1690">(val == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1703</td><td><a href="codegen.c.html#L1703">(val < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="codegen.c.html#L1731">(val < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="codegen.c.html#L1735">(val == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1798</td><td><a href="codegen.c.html#L1798">(CodeSizeFactor >= 400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1858</td><td><a href="codegen.c.html#L1858">(CodeSizeFactor >= 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1907</td><td><a href="codegen.c.html#L1907">(val == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1938</td><td><a href="codegen.c.html#L1938">(val < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1966</td><td><a href="codegen.c.html#L1966">(val < 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2072</td><td><a href="codegen.c.html#L2072">(CodeSizeFactor >= 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2120</td><td><a href="codegen.c.html#L2120">(offs != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2133</td><td><a href="codegen.c.html#L2133">(L != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2506</td><td><a href="codegen.c.html#L2506">(k <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2520</td><td><a href="codegen.c.html#L2520">(space < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2522</td><td><a href="codegen.c.html#L2522">(space > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2790</td><td><a href="codegen.c.html#L2790">(val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2805</td><td><a href="codegen.c.html#L2805">(val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2859</td><td><a href="codegen.c.html#L2859">(val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2860</td><td><a href="codegen.c.html#L2860">(val != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2875</td><td><a href="codegen.c.html#L2875">(val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2876</td><td><a href="codegen.c.html#L2876">(val != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="codegen.c.html#L2928">(Val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2930</td><td><a href="codegen.c.html#L2930">(Val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2932</td><td><a href="codegen.c.html#L2932">(Val != 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2956</td><td><a href="codegen.c.html#L2956">(Val <= 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2964</td><td><a href="codegen.c.html#L2964">(Val == 0xFF00)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3014</td><td><a href="codegen.c.html#L3014">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3028</td><td><a href="codegen.c.html#L3028">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3046</td><td><a href="codegen.c.html#L3046">(val == 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3100</td><td><a href="codegen.c.html#L3100">(val >= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3105</td><td><a href="codegen.c.html#L3105">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3119</td><td><a href="codegen.c.html#L3119">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3129</td><td><a href="codegen.c.html#L3129">(val == 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3136</td><td><a href="codegen.c.html#L3136">(val == 16)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3247</td><td><a href="codegen.c.html#L3247">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3276</td><td><a href="codegen.c.html#L3276">(CodeSizeFactor < 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3278</td><td><a href="codegen.c.html#L3278">(val <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3280</td><td><a href="codegen.c.html#L3280">(val <= 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3288</td><td><a href="codegen.c.html#L3288">(val <= 0x300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3297</td><td><a href="codegen.c.html#L3297">(val >= 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3300</td><td><a href="codegen.c.html#L3300">(val >= 0x200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3303</td><td><a href="codegen.c.html#L3303">(val >= 0x300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3321</td><td><a href="codegen.c.html#L3321">(val <= 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3341</td><td><a href="codegen.c.html#L3341">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3364</td><td><a href="codegen.c.html#L3364">(CodeSizeFactor < 200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="codegen.c.html#L3366">(val <= 8)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3368</td><td><a href="codegen.c.html#L3368">(val <= 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3376</td><td><a href="codegen.c.html#L3376">(val < 0x300)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3385</td><td><a href="codegen.c.html#L3385">(val >= 0x100)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3388</td><td><a href="codegen.c.html#L3388">(val >= 0x200)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3406</td><td><a href="codegen.c.html#L3406">(val <= 255)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3566</td><td><a href="codegen.c.html#L3566">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3611</td><td><a href="codegen.c.html#L3611">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3678</td><td><a href="codegen.c.html#L3678">(val < 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3690</td><td><a href="codegen.c.html#L3690">((long)val < 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3708</td><td><a href="codegen.c.html#L3708">(val < 0xFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3720</td><td><a href="codegen.c.html#L3720">((long)val < 0x7FFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3733</td><td><a href="codegen.c.html#L3733">(val < 0xFFFFFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3745</td><td><a href="codegen.c.html#L3745">((long)val < 0x7FFFFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3795</td><td><a href="codegen.c.html#L3795">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3801</td><td><a href="codegen.c.html#L3801">(val < 0xFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3812</td><td><a href="codegen.c.html#L3812">((long)val < 0x7F)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3830</td><td><a href="codegen.c.html#L3830">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3836</td><td><a href="codegen.c.html#L3836">(val < 0xFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3848</td><td><a href="codegen.c.html#L3848">((long)val < 0x7FFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3861</td><td><a href="codegen.c.html#L3861">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3867</td><td><a href="codegen.c.html#L3867">(val < 0xFFFFFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3879</td><td><a href="codegen.c.html#L3879">((long)val < 0x7FFFFFFF)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3930</td><td><a href="codegen.c.html#L3930">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3975</td><td><a href="codegen.c.html#L3975">(val == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4112</td><td><a href="codegen.c.html#L4112">(Count > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4140</td><td><a href="codegen.c.html#L4140">(Size <= 128)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4147</td><td><a href="codegen.c.html#L4147">(Size <= 256)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4163</td><td><a href="codegen.c.html#L4163">(Size <= 128)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4171</td><td><a href="codegen.c.html#L4171">(Size <= 256)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4242</td><td><a href="codegen.c.html#L4242">(Depth == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4315</td><td><a href="codegen.c.html#L4315">(CodeSizeFactor < 400)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">108</td><td><a href="codegen.c.html#L108">(Offs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">117</td><td><a href="codegen.c.html#L117">(Offs)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">200</td><td><a href="codegen.c.html#L200">(DebugInfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">255</td><td><a href="codegen.c.html#L255">(S)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">379</td><td><a href="codegen.c.html#L379">(ZP)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">391</td><td><a href="codegen.c.html#L391">(ZP)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4084</td><td><a href="codegen.c.html#L4084">(Count)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4100</td><td><a href="codegen.c.html#L4100">(Chunk)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4233</td><td><a href="codegen.c.html#L4233">(NextLabel)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - Zend\Optimizer\escape_analysis.c Ctrl Expressions (80) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - Zend\Optimizer\escape_analysis.c Ctrl Expressions (80) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Zend\Optimizer\escape_analysis.c Ctrl Expressions (80)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">180</td><td><a href="escape_analysis.c.html#L180">(<span style='background-color:#741da3;'>opline->op1_type == IS_CV && (OP1_INFO() & MAY_BE_ARRAY)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">185</td><td><a href="escape_analysis.c.html#L185">(<span style='background-color:#741da3;'>opline->op1_type == IS_CV && (OP1_INFO() & MAY_BE_ARRAY)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">197</td><td><a href="escape_analysis.c.html#L197">(<span style='background-color:#741da3;'>opline->op2_type == IS_CV && (OP2_INFO() & MAY_BE_ARRAY)</span>)</a></td><td class="num">1012.75</td></tr>
+      <tr><td class="num line">468</td><td><a href="escape_analysis.c.html#L468">(opline->opcode == ZEND_OP_DATA && ((opline - 1)->opcode == ZEND_ASSIGN_DIM || (opline - 1)->opcode == ZEND_ASSIGN_OBJ || (opline - 1)->opcode == ZEND_ASSIGN_OBJ_REF) && op->op1_use == i && (op - 1)->op1_use >= 0)</a></td><td class="num">79.40</td></tr>
+      <tr><td class="num line">318</td><td><a href="escape_analysis.c.html#L318">(opline->op1_type != IS_CV || (OP1_INFO() & MAY_BE_REF) || (ssa_op->op1_def >= 0 && ssa->vars[ssa_op->op1_def].alias))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">334</td><td><a href="escape_analysis.c.html#L334">(opline->op1_type != IS_CV || (OP1_INFO() & MAY_BE_REF) || (ssa_op->op1_def >= 0 && ssa->vars[ssa_op->op1_def].alias))</a></td><td class="num">61.25</td></tr>
+      <tr><td class="num line">167</td><td><a href="escape_analysis.c.html#L167">(ce && !ce->parent && !ce->create_object && !ce->constructor && !ce->destructor && !ce->__get && !ce->__set && !(ce->ce_flags & forbidden_flags) && (ce->ce_flags & ZEND_ACC_CONSTANTS_UPDATED))</a></td><td class="num">57.75</td></tr>
+      <tr><td class="num line">384</td><td><a href="escape_analysis.c.html#L384">(ssa_vars[i].definition >= 0 && (ssa->var_info[i].type & MAY_BE_ARRAY | MAY_BE_OBJECT) && is_allocation_def(op_array, ssa, ssa_vars[i].definition, i, script))</a></td><td class="num">52.50</td></tr>
+      <tr><td class="num line">417</td><td><a href="escape_analysis.c.html#L417">(ssa_vars[i].definition >= 0 && (ssa->var_info[i].type & MAY_BE_ARRAY | MAY_BE_OBJECT))</a></td><td class="num">48.00</td></tr>
+      <tr><td class="num line">412</td><td><a href="escape_analysis.c.html#L412">(ssa_vars[i].alias && (ssa->var_info[i].type & MAY_BE_REF))</a></td><td class="num">45.75</td></tr>
+      <tr><td class="num line">176</td><td><a href="escape_analysis.c.html#L176">(opline->op1_type == IS_CONST && Z_TYPE_P(CRT_CONSTANT(opline->op1)) == IS_ARRAY)</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">193</td><td><a href="escape_analysis.c.html#L193">(opline->op2_type == IS_CONST && Z_TYPE_P(CRT_CONSTANT(opline->op2)) == IS_ARRAY)</a></td><td class="num">45.25</td></tr>
+      <tr><td class="num line">475</td><td><a href="escape_analysis.c.html#L475">((opline->opcode == ZEND_INIT_ARRAY || opline->opcode == ZEND_ADD_ARRAY_ELEMENT) && op->op1_use == i && op->result_def >= 0)</a></td><td class="num">43.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="escape_analysis.c.html#L230">(ce && !ce->create_object && !ce->constructor && !ce->destructor && !ce->__get && !ce->__set && !ce->parent)</a></td><td class="num">40.25</td></tr>
+      <tr><td class="num line">308</td><td><a href="escape_analysis.c.html#L308">((opline - 1)->opcode != ZEND_ASSIGN_DIM && (opline - 1)->opcode != ZEND_ASSIGN_OBJ)</a></td><td class="num">32.70</td></tr>
+      <tr><td class="num line">484</td><td><a href="escape_analysis.c.html#L484">(ssa_vars[enclosing_root].escape_state == ESCAPE_STATE_UNKNOWN || ssa_vars[enclosing_root].escape_state > ssa_vars[root].escape_state)</a></td><td class="num">32.25</td></tr>
+      <tr><td class="num line">97</td><td><a href="escape_analysis.c.html#L97">(j < ssa->cfg.blocks[p->block].predecessors_count)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">424</td><td><a href="escape_analysis.c.html#L424">(ssa_vars[root].escape_state == ESCAPE_STATE_UNKNOWN && is_allocation_def(op_array, ssa, ssa_vars[i].definition, i, script))</a></td><td class="num">27.00</td></tr>
+      <tr><td class="num line">419</td><td><a href="escape_analysis.c.html#L419">(!is_local_def(op_array, ssa, ssa_vars[i].definition, i, script))</a></td><td class="num">20.50</td></tr>
+      <tr><td class="num line">112</td><td><a href="escape_analysis.c.html#L112">(opline->opcode == ZEND_ASSIGN && op->op2_use >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">127</td><td><a href="escape_analysis.c.html#L127">(opline->opcode == ZEND_QM_ASSIGN && op->op1_use >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">130</td><td><a href="escape_analysis.c.html#L130">(opline->opcode == ZEND_ASSIGN && op->op2_use >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">133</td><td><a href="escape_analysis.c.html#L133">(opline->opcode == ZEND_ASSIGN && op->op1_def >= 0)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">340</td><td><a href="escape_analysis.c.html#L340">(opline->op2_type == IS_CV || opline->result_type != IS_UNUSED)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">298</td><td><a href="escape_analysis.c.html#L298">(opline->extended_value & ZEND_ARRAY_ELEMENT_REF)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">65</td><td><a href="escape_analysis.c.html#L65">(size[r1] < size[r2])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">94</td><td><a href="escape_analysis.c.html#L94">(p->pi >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="escape_analysis.c.html#L101">(ssa_vars[i].definition >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">106</td><td><a href="escape_analysis.c.html#L106">(op->op1_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">107</td><td><a href="escape_analysis.c.html#L107">(op->op1_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">108</td><td><a href="escape_analysis.c.html#L108">(opline->opcode != ZEND_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">116</td><td><a href="escape_analysis.c.html#L116">(op->op2_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">117</td><td><a href="escape_analysis.c.html#L117">(op->op2_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">121</td><td><a href="escape_analysis.c.html#L121">(op->result_def >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">122</td><td><a href="escape_analysis.c.html#L122">(op->result_use >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">123</td><td><a href="escape_analysis.c.html#L123">(opline->opcode != ZEND_QM_ASSIGN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">155</td><td><a href="escape_analysis.c.html#L155">(ssa_op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">190</td><td><a href="escape_analysis.c.html#L190">(ssa_op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">219</td><td><a href="escape_analysis.c.html#L219">(op->result_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">237</td><td><a href="escape_analysis.c.html#L237">(op->op1_def == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">262</td><td><a href="escape_analysis.c.html#L262">(ssa_op->op1_use == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">268</td><td><a href="escape_analysis.c.html#L268">(opline->op1_type == IS_CV)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">331</td><td><a href="escape_analysis.c.html#L331">(ssa_op->op2_use == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">352</td><td><a href="escape_analysis.c.html#L352">(ssa_op->result_use == var)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">410</td><td><a href="escape_analysis.c.html#L410">(ssa_vars[root].escape_state > ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">413</td><td><a href="escape_analysis.c.html#L413">(ssa_vars[root].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">420</td><td><a href="escape_analysis.c.html#L420">(ssa_vars[root].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">435</td><td><a href="escape_analysis.c.html#L435">(ssa_vars[i].use_chain >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">437</td><td><a href="escape_analysis.c.html#L437">(ssa_vars[root].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">460</td><td><a href="escape_analysis.c.html#L460">(ssa_vars[i].use_chain >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">462</td><td><a href="escape_analysis.c.html#L462">(ssa_vars[root].escape_state == ESCAPE_STATE_NO_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">486</td><td><a href="escape_analysis.c.html#L486">(ssa_vars[enclosing_root].escape_state == ESCAPE_STATE_UNKNOWN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">491</td><td><a href="escape_analysis.c.html#L491">(ssa_vars[root].escape_state == ESCAPE_STATE_GLOBAL_ESCAPE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="escape_analysis.c.html#L202">(OP1_INFO() & MAY_BE_UNDEF | MAY_BE_NULL | MAY_BE_FALSE)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">269</td><td><a href="escape_analysis.c.html#L269">(OP1_INFO() & MAY_BE_OBJECT)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">301</td><td><a href="escape_analysis.c.html#L301">(OP1_INFO() & MAY_BE_OBJECT)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">312</td><td><a href="escape_analysis.c.html#L312">(OP1_INFO() & MAY_BE_OBJECT)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">341</td><td><a href="escape_analysis.c.html#L341">(OP2_INFO() & MAY_BE_OBJECT)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">92</td><td><a href="escape_analysis.c.html#L92">(ssa_vars[i].definition_phi)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">402</td><td><a href="escape_analysis.c.html#L402">(zend_build_equi_escape_sets(ees, op_array, ssa) == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">38</td><td><a href="escape_analysis.c.html#L38">(i < count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">49</td><td><a href="escape_analysis.c.html#L49">(i != p)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">64</td><td><a href="escape_analysis.c.html#L64">(r1 != r2)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">91</td><td><a href="escape_analysis.c.html#L91">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">140</td><td><a href="escape_analysis.c.html#L140">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">383</td><td><a href="escape_analysis.c.html#L383">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="escape_analysis.c.html#L408">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">434</td><td><a href="escape_analysis.c.html#L434">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">442</td><td><a href="escape_analysis.c.html#L442">(num_non_escaped == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">459</td><td><a href="escape_analysis.c.html#L459">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">493</td><td><a href="escape_analysis.c.html#L493">(num_non_escaped == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">511</td><td><a href="escape_analysis.c.html#L511">(i < ssa_vars_count)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">513</td><td><a href="escape_analysis.c.html#L513">(i != root)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">86</td><td><a href="escape_analysis.c.html#L86">(!size)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">391</td><td><a href="escape_analysis.c.html#L391">(!has_allocations)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">398</td><td><a href="escape_analysis.c.html#L398">(!ees)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">439</td><td><a href="escape_analysis.c.html#L439">(is_escape_use(op_array, ssa, use, i))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">433</td><td><a href="escape_analysis.c.html#L433">(num_non_escaped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">454</td><td><a href="escape_analysis.c.html#L454">(num_non_escaped)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="escape_analysis.c.html#L507">(changed)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

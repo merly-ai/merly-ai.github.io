@@ -1,0 +1,69 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptstore.c Ctrl Expressions (18) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptstore.c Ctrl Expressions (18) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptstore.c Ctrl Expressions (18)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">357</td><td><a href="coptstore.c.html#L357">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_STA && (L[0]->AM == AM65_ABS || L[0]->AM == AM65_ZP) && !CS_RangeHasLabel(S, I + 1, 3) && CS_GetEntries(S, L + 1, I + 1, 4) && L[1]->OPC == OP65_STX && L[1]->AM == L[0]->AM && L[2]->OPC == OP65_LDA && L[2]->AM == L[0]->AM && L[3]->OPC == OP65_LDX && L[3]->AM == L[1]->AM && strcmp(L[0]->Arg, L[2]->Arg) == 0 && strcmp(L[1]->Arg, L[3]->Arg) == 0 && !CE_UseLoadFlags(L[4])</span>)</a></td><td class="num">186.80</td></tr>
+      <tr><td class="num line">81</td><td><a href="coptstore.c.html#L81">(L[0]->OPC == OP65_LDY && CE_KnownImm(L[0]) && L[0]->Num < 0xFF && !CS_RangeHasLabel(S, I + 1, 3) && CS_GetEntries(S, L + 1, I + 1, 4) && CE_IsCallTo(L[1], "staxysp") && L[2]->OPC == OP65_LDY && CE_KnownImm(L[2]) && L[2]->Num == L[0]->Num + 1 && CE_IsCallTo(L[3], "ldaxysp") && !CE_UseLoadFlags(L[4]))</a></td><td class="num">92.15</td></tr>
+      <tr><td class="num line">211</td><td><a href="coptstore.c.html#L211">(CE_IsCallTo(E, "steaxysp") && RegValIsKnown(RI->In.RegA) && RegValIsKnown(RI->In.RegX) && RegValIsKnown(RI->In.RegY) && RegValIsKnown(RI->In.SRegLo) && RegValIsKnown(RI->In.SRegHi) && !RegEAXUsed(S, I + 1))</a></td><td class="num">45.35</td></tr>
+      <tr><td class="num line">135</td><td><a href="coptstore.c.html#L135">(CE_IsCallTo(E, "staxysp") && RegValIsKnown(RI->In.RegA) && RegValIsKnown(RI->In.RegX) && RegValIsKnown(RI->In.RegY) && !RegAXUsed(S, I + 1))</a></td><td class="num">35.85</td></tr>
+      <tr><td class="num line">240</td><td><a href="coptstore.c.html#L240">(A == X && (Done & 0x02) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">246</td><td><a href="coptstore.c.html#L246">(A == L && (Done & 0x04) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">252</td><td><a href="coptstore.c.html#L252">(A == H && (Done & 0x08) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">270</td><td><a href="coptstore.c.html#L270">(X == L && (Done & 0x04) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">276</td><td><a href="coptstore.c.html#L276">(X == H && (Done & 0x08) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="coptstore.c.html#L294">(L == H && (Done & 0x08) == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">260</td><td><a href="coptstore.c.html#L260">((Done & 0x02) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">284</td><td><a href="coptstore.c.html#L284">((Done & 0x04) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">302</td><td><a href="coptstore.c.html#L302">((Done & 0x08) == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">73</td><td><a href="coptstore.c.html#L73">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">126</td><td><a href="coptstore.c.html#L126">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">202</td><td><a href="coptstore.c.html#L202">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">349</td><td><a href="coptstore.c.html#L349">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">158</td><td><a href="coptstore.c.html#L158">(A != X)</a></td><td class="num">2.25</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>qemu Repo - hw\net\rocker\rocker_of_dpa.c Ctrl Expressions (242) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - hw\net\rocker\rocker_of_dpa.c Ctrl Expressions (242) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;hw\net\rocker\rocker_of_dpa.c Ctrl Expressions (242)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">325</td><td><a href="rocker_of_dpa.c.html#L325">((<span style='background-color:#741da3;'>~*k & *m & *v</span>) | (<span style='background-color:#741da3;'>*k & *m & ~*v</span>))</a></td><td class="num">2043.00</td></tr>
+      <tr><td class="num line">1592</td><td><a href="rocker_of_dpa.c.html#L1592">(mask->ipv6.addr.src.addr32[0] != 0 && mask->ipv6.addr.src.addr32[1] != 0 && mask->ipv6.addr.src.addr32[2] != 0 && mask->ipv6.addr.src.addr32[3] != 0)</a></td><td class="num">53.00</td></tr>
+      <tr><td class="num line">241</td><td><a href="rocker_of_dpa.c.html#L241">(memcmp(key->eth.src.a, zero_mac.a, ETH_ALEN) || (mask && memcmp(mask->eth.src.a, zero_mac.a, ETH_ALEN)))</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">253</td><td><a href="rocker_of_dpa.c.html#L253">(memcmp(key->eth.dst.a, zero_mac.a, ETH_ALEN) || (mask && memcmp(mask->eth.dst.a, zero_mac.a, ETH_ALEN)))</a></td><td class="num">34.75</td></tr>
+      <tr><td class="num line">1214</td><td><a href="rocker_of_dpa.c.html#L1214">(memcmp(key->eth.dst.a, ipv4_mcast.a, sizeof(key->eth.dst.a)) == 0 && memcmp(mask->eth.dst.a, ipv4_mask.a, sizeof(mask->eth.dst.a)) == 0)</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">1218</td><td><a href="rocker_of_dpa.c.html#L1218">(memcmp(key->eth.dst.a, ipv6_mcast.a, sizeof(key->eth.dst.a)) == 0 && memcmp(mask->eth.dst.a, ipv6_mask.a, sizeof(mask->eth.dst.a)) == 0)</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">2055</td><td><a href="rocker_of_dpa.c.html#L2055">((ROCKER_GROUP_TYPE_GET(l2_group->id) == ROCKER_OF_DPA_GROUP_TYPE_L2_INTERFACE) && (ROCKER_GROUP_VLAN_GET(l2_group->id) != ROCKER_GROUP_VLAN_GET(group->id)))</a></td><td class="num">33.00</td></tr>
+      <tr><td class="num line">2472</td><td><a href="rocker_of_dpa.c.html#L2472">(flow_context->type != 9 && flow_context->type != ROCKER_GROUP_TYPE_GET(group->id))</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">1152</td><td><a href="rocker_of_dpa.c.html#L1152">(1 > ntohs(action->apply.new_vlan_id) || ntohs(action->apply.new_vlan_id) > 4095)</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">2007</td><td><a href="rocker_of_dpa.c.html#L2007">(ROCKER_GROUP_VLAN_GET(l2_interface_group->id) != (ntohs(group->l2_rewrite.vlan_id) & VLAN_VID_MASK))</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">332</td><td><a href="rocker_of_dpa.c.html#L332">(!match->best || flow->priority > match->best->priority || flow->lpm > match->best->lpm)</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">1209</td><td><a href="rocker_of_dpa.c.html#L1209">((key->eth.dst.a[0] & 0x01) == 0x00)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">205</td><td><a href="rocker_of_dpa.c.html#L205">(!(ntohl(mask) & ((2 << i) - 1)))</a></td><td class="num">26.10</td></tr>
+      <tr><td class="num line">1176</td><td><a href="rocker_of_dpa.c.html#L1176">(!flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT] || !flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT_MASK] || !flow_tlvs[ROCKER_TLV_OF_DPA_ETHERTYPE] || !flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC] || !flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC_MASK] || !flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID] || !flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID_MASK])</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">1985</td><td><a href="rocker_of_dpa.c.html#L1985">(!l2_interface_group || ROCKER_GROUP_TYPE_GET(l2_interface_group->id) != ROCKER_OF_DPA_GROUP_TYPE_L2_INTERFACE)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">1607</td><td><a href="rocker_of_dpa.c.html#L1607">(!ipv6_addr_is_multicast(&key->ipv6.addr.dst))</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">407</td><td><a href="rocker_of_dpa.c.html#L407">(ntohs(*fields->h_proto) == ETH_P_VLAN)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2304</td><td><a href="rocker_of_dpa.c.html#L2304">(flow_context->tbl_id != -1 && flow_context->tbl_id != key->tbl_id)</a></td><td class="num">18.00</td></tr>
+      <tr><td class="num line">1197</td><td><a href="rocker_of_dpa.c.html#L1197">(key->eth.type != htons(0x0800) && key->eth.type != htons(0x86dd))</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">1769</td><td><a href="rocker_of_dpa.c.html#L1769">(mode != ACL_MODE_IPV4_VLAN && mode != ACL_MODE_IPV6_VLAN && mode != ACL_MODE_NON_IP_VLAN && mode != ACL_MODE_ANY_VLAN)</a></td><td class="num">17.75</td></tr>
+      <tr><td class="num line">289</td><td><a href="rocker_of_dpa.c.html#L289">(key->ipv4.addr.dst || (mask && mask->ipv4.addr.dst))</a></td><td class="num">15.50</td></tr>
+      <tr><td class="num line">2349</td><td><a href="rocker_of_dpa.c.html#L2349">(memcmp(key->eth.src.a, zero_mac.a, ETH_ALEN) || memcmp(mask->eth.src.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">2360</td><td><a href="rocker_of_dpa.c.html#L2360">(memcmp(key->eth.dst.a, zero_mac.a, ETH_ALEN) || memcmp(mask->eth.dst.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">15.25</td></tr>
+      <tr><td class="num line">234</td><td><a href="rocker_of_dpa.c.html#L234">(key->eth.vlan_id || (mask && mask->eth.vlan_id))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">265</td><td><a href="rocker_of_dpa.c.html#L265">(key->eth.type || (mask && mask->eth.type))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">273</td><td><a href="rocker_of_dpa.c.html#L273">(key->ip.proto || (mask && mask->ip.proto))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">279</td><td><a href="rocker_of_dpa.c.html#L279">(key->ip.tos || (mask && mask->ip.tos))</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1235</td><td><a href="rocker_of_dpa.c.html#L1235">(action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_UNICAST_ROUTING && action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_MULTICAST_ROUTING)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">2334</td><td><a href="rocker_of_dpa.c.html#L2334">(nkey->has_vlan_id && mask->eth.vlan_id != 0xffff)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2383</td><td><a href="rocker_of_dpa.c.html#L2383">(nkey->has_ip_proto && mask->ip.proto != 0xff)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2391</td><td><a href="rocker_of_dpa.c.html#L2391">(nkey->has_ip_tos && mask->ip.tos != 0xff)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2355</td><td><a href="rocker_of_dpa.c.html#L2355">(nkey->has_eth_src && memcmp(mask->eth.src.a, ff_mac.a, ETH_ALEN))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">2366</td><td><a href="rocker_of_dpa.c.html#L2366">(nkey->has_eth_dst && memcmp(mask->eth.dst.a, ff_mac.a, ETH_ALEN))</a></td><td class="num">13.50</td></tr>
+      <tr><td class="num line">1502</td><td><a href="rocker_of_dpa.c.html#L1502">(type != ROCKER_OF_DPA_GROUP_TYPE_L2_INTERFACE && type != ROCKER_OF_DPA_GROUP_TYPE_L3_UCAST && type != ROCKER_OF_DPA_GROUP_TYPE_L3_ECMP)</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">220</td><td><a href="rocker_of_dpa.c.html#L220">(key->in_pport || (mask && mask->in_pport))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">227</td><td><a href="rocker_of_dpa.c.html#L227">(key->tunnel_id || (mask && mask->tunnel_id))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2324</td><td><a href="rocker_of_dpa.c.html#L2324">(nkey->has_in_pport && mask->in_pport != 0xffffffff)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2344</td><td><a href="rocker_of_dpa.c.html#L2344">(nkey->has_tunnel_id && mask->tunnel_id != 0xffffffff)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2400</td><td><a href="rocker_of_dpa.c.html#L2400">(key->ipv4.addr.dst || mask->ipv4.addr.dst)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">1294</td><td><a href="rocker_of_dpa.c.html#L1294">(key->eth.vlan_id && key->tunnel_id)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="rocker_of_dpa.c.html#L316">(flow->key.tbl_id == match->value.tbl_id)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="rocker_of_dpa.c.html#L320">(flow->key.width > match->value.width)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2329</td><td><a href="rocker_of_dpa.c.html#L2329">(key->eth.vlan_id || mask->eth.vlan_id)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2379</td><td><a href="rocker_of_dpa.c.html#L2379">(key->ip.proto || mask->ip.proto)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">2387</td><td><a href="rocker_of_dpa.c.html#L2387">(key->ip.tos || mask->ip.tos)</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">1806</td><td><a href="rocker_of_dpa.c.html#L1806">(!flow_tlvs[ROCKER_TLV_OF_DPA_TABLE_ID] || !flow_tlvs[ROCKER_TLV_OF_DPA_PRIORITY] || !flow_tlvs[ROCKER_TLV_OF_DPA_HARDTIME])</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">236</td><td><a href="rocker_of_dpa.c.html#L236">(mask && mask->eth.vlan_id != 0xffff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">267</td><td><a href="rocker_of_dpa.c.html#L267">(mask && mask->eth.type != 0xffff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">275</td><td><a href="rocker_of_dpa.c.html#L275">(mask && mask->ip.proto != 0xff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">281</td><td><a href="rocker_of_dpa.c.html#L281">(mask && mask->ip.tos != 0xff)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">246</td><td><a href="rocker_of_dpa.c.html#L246">(mask && memcmp(mask->eth.src.a, ff_mac.a, ETH_ALEN))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">258</td><td><a href="rocker_of_dpa.c.html#L258">(mask && memcmp(mask->eth.dst.a, ff_mac.a, ETH_ALEN))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">838</td><td><a href="rocker_of_dpa.c.html#L838">(group->l2_interface.out_pport != fc->in_pport)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1088</td><td><a href="rocker_of_dpa.c.html#L1088">(!overlay_tunnel && action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_VLAN)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1817</td><td><a href="rocker_of_dpa.c.html#L1817">(tbl == ROCKER_OF_DPA_TABLE_ID_INGRESS_PORT || tbl == ROCKER_OF_DPA_TABLE_ID_VLAN || tbl == ROCKER_OF_DPA_TABLE_ID_TERMINATION_MAC)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">222</td><td><a href="rocker_of_dpa.c.html#L222">(mask && mask->in_pport != 0xffffffff)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">229</td><td><a href="rocker_of_dpa.c.html#L229">(mask && mask->tunnel_id != 0xffffffff)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1092</td><td><a href="rocker_of_dpa.c.html#L1092">(overlay_tunnel && action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_BRIDGING)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="rocker_of_dpa.c.html#L1240">(unicast && action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_UNICAST_ROUTING)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1245</td><td><a href="rocker_of_dpa.c.html#L1245">(multicast && action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_MULTICAST_ROUTING)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">620</td><td><a href="rocker_of_dpa.c.html#L620">(now - flow->stats.refresh_time < refresh_delay)</a></td><td class="num">9.10</td></tr>
+      <tr><td class="num line">2319</td><td><a href="rocker_of_dpa.c.html#L2319">(key->in_pport || mask->in_pport)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2339</td><td><a href="rocker_of_dpa.c.html#L2339">(key->tunnel_id || mask->tunnel_id)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">614</td><td><a href="rocker_of_dpa.c.html#L614">(!memcmp(flow->mask.eth.dst.a, ff_mac.a, sizeof(flow->mask.eth.dst.a)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1069</td><td><a href="rocker_of_dpa.c.html#L1069">(!flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT] || !flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="rocker_of_dpa.c.html#L1107">(!flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT] || !flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1477</td><td><a href="rocker_of_dpa.c.html#L1477">(ipv6_addr_is_multicast(&key->ipv6.addr.dst))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1524</td><td><a href="rocker_of_dpa.c.html#L1524">(!flow_tlvs[ROCKER_TLV_OF_DPA_ETHERTYPE] || !flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1694</td><td><a href="rocker_of_dpa.c.html#L1694">(!flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT] || !flow_tlvs[ROCKER_TLV_OF_DPA_ETHERTYPE])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1699</td><td><a href="rocker_of_dpa.c.html#L1699">(flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID] && flow_tlvs[ROCKER_TLV_OF_DPA_TUNNEL_ID])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1959</td><td><a href="rocker_of_dpa.c.html#L1959">(!group_tlvs[ROCKER_TLV_OF_DPA_OUT_PPORT] || !group_tlvs[ROCKER_TLV_OF_DPA_POP_VLAN])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2025</td><td><a href="rocker_of_dpa.c.html#L2025">(!group_tlvs[ROCKER_TLV_OF_DPA_GROUP_COUNT] || !group_tlvs[ROCKER_TLV_OF_DPA_GROUP_IDS])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">504</td><td><a href="rocker_of_dpa.c.html#L504">(vlan_id && fields->vlanhdr)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="rocker_of_dpa.c.html#L645">(flow->action.write.group_id != ROCKER_GROUP_NONE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">674</td><td><a href="rocker_of_dpa.c.html#L674">(flow->action.write.group_id != ROCKER_GROUP_NONE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">710</td><td><a href="rocker_of_dpa.c.html#L710">(flow->action.write.group_id != ROCKER_GROUP_NONE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="rocker_of_dpa.c.html#L750">(flow->action.write.group_id != ROCKER_GROUP_NONE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1353</td><td><a href="rocker_of_dpa.c.html#L1353">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L2_INTERFACE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1362</td><td><a href="rocker_of_dpa.c.html#L1362">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L2_MCAST)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1371</td><td><a href="rocker_of_dpa.c.html#L1371">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L2_FLOOD)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1380</td><td><a href="rocker_of_dpa.c.html#L1380">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L2_OVERLAY)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1389</td><td><a href="rocker_of_dpa.c.html#L1389">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L2_OVERLAY)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1560</td><td><a href="rocker_of_dpa.c.html#L1560">(mask->ipv4.addr.src != 0)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1628</td><td><a href="rocker_of_dpa.c.html#L1628">(ROCKER_GROUP_TYPE_GET(action->write.group_id) != ROCKER_OF_DPA_GROUP_TYPE_L3_MCAST)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">324</td><td><a href="rocker_of_dpa.c.html#L324">(i < flow->key.width)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">835</td><td><a href="rocker_of_dpa.c.html#L835">(group->l2_interface.out_pport == 0)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">867</td><td><a href="rocker_of_dpa.c.html#L867">(i < group->l2_flood.group_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1322</td><td><a href="rocker_of_dpa.c.html#L1322">((dst_mac && dst_mac_mask) || !dst_mac)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1329</td><td><a href="rocker_of_dpa.c.html#L1329">((dst_mac && dst_mac_mask) || !dst_mac)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2042</td><td><a href="rocker_of_dpa.c.html#L2042">(i < group->l2_flood.group_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2050</td><td><a href="rocker_of_dpa.c.html#L2050">(i < group->l2_flood.group_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2520</td><td><a href="rocker_of_dpa.c.html#L2520">(i < group->l2_flood.group_count)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1117</td><td><a href="rocker_of_dpa.c.html#L1117">(!fp_port_from_pport(key->in_pport, &port))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1190</td><td><a href="rocker_of_dpa.c.html#L1190">(!fp_port_from_pport(key->in_pport, &port))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2503</td><td><a href="rocker_of_dpa.c.html#L2503">(memcmp(group->l2_rewrite.src_mac.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2508</td><td><a href="rocker_of_dpa.c.html#L2508">(memcmp(group->l2_rewrite.dst_mac.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2534</td><td><a href="rocker_of_dpa.c.html#L2534">(memcmp(group->l3_unicast.src_mac.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2539</td><td><a href="rocker_of_dpa.c.html#L2539">(memcmp(group->l3_unicast.dst_mac.a, zero_mac.a, ETH_ALEN))</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">530</td><td><a href="rocker_of_dpa.c.html#L530">(fp_port_from_pport(fc->in_pport, &port))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1571</td><td><a href="rocker_of_dpa.c.html#L1571">(!ipv4_addr_is_multicast(key->ipv4.addr.dst))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">399</td><td><a href="rocker_of_dpa.c.html#L399">(iov->iov_len < sofar)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">409</td><td><a href="rocker_of_dpa.c.html#L409">(iov->iov_len < sofar)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">420</td><td><a href="rocker_of_dpa.c.html#L420">(iov->iov_len < sofar)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">428</td><td><a href="rocker_of_dpa.c.html#L428">(iov->iov_len < sofar)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">495</td><td><a href="rocker_of_dpa.c.html#L495">(src_mac && memcmp(src_mac, zero_mac.a, ETH_ALEN))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">498</td><td><a href="rocker_of_dpa.c.html#L498">(dst_mac && memcmp(dst_mac, zero_mac.a, ETH_ALEN))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1139</td><td><a href="rocker_of_dpa.c.html#L1139">(action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_TERMINATION_MAC)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1342</td><td><a href="rocker_of_dpa.c.html#L1342">(action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_ACL_POLICY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1493</td><td><a href="rocker_of_dpa.c.html#L1493">(action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_ACL_POLICY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1620</td><td><a href="rocker_of_dpa.c.html#L1620">(action->goto_tbl != ROCKER_OF_DPA_TABLE_ID_ACL_POLICY)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">919</td><td><a href="rocker_of_dpa.c.html#L919">(!set->write.group_id)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1223</td><td><a href="rocker_of_dpa.c.html#L1223">(!unicast && !multicast)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1460</td><td><a href="rocker_of_dpa.c.html#L1460">(ipv4_addr_is_multicast(key->ipv4.addr.dst))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">549</td><td><a href="rocker_of_dpa.c.html#L549">(flow->action.apply.new_vlan_id)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2415</td><td><a href="rocker_of_dpa.c.html#L2415">(flow->action.write.group_id)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2420</td><td><a href="rocker_of_dpa.c.html#L2420">(flow->action.apply.new_vlan_id)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">540</td><td><a href="rocker_of_dpa.c.html#L540">(fc->fields.vlanhdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">582</td><td><a href="rocker_of_dpa.c.html#L582">(fc->fields.vlanhdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">656</td><td><a href="rocker_of_dpa.c.html#L656">(fc->fields.ipv4hdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">659</td><td><a href="rocker_of_dpa.c.html#L659">(fc->fields.ipv6_dst_addr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">686</td><td><a href="rocker_of_dpa.c.html#L686">(fc->fields.ipv4hdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">690</td><td><a href="rocker_of_dpa.c.html#L690">(fc->fields.ipv6_src_addr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">694</td><td><a href="rocker_of_dpa.c.html#L694">(fc->fields.ipv6_dst_addr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">728</td><td><a href="rocker_of_dpa.c.html#L728">(fc->fields.ipv4hdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">732</td><td><a href="rocker_of_dpa.c.html#L732">(fc->fields.ipv6hdr)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">824</td><td><a href="rocker_of_dpa.c.html#L824">(group->l2_interface.pop_vlan)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">908</td><td><a href="rocker_of_dpa.c.html#L908">(set->apply.copy_to_cpu)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1034</td><td><a href="rocker_of_dpa.c.html#L1034">(flow->action.goto_tbl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1130</td><td><a href="rocker_of_dpa.c.html#L1130">(key->eth.vlan_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1318</td><td><a href="rocker_of_dpa.c.html#L1318">(key->eth.vlan_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1319</td><td><a href="rocker_of_dpa.c.html#L1319">(dst_mac && !dst_mac_mask)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1326</td><td><a href="rocker_of_dpa.c.html#L1326">(dst_mac && !dst_mac_mask)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1738</td><td><a href="rocker_of_dpa.c.html#L1738">(key->eth.type)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2371</td><td><a href="rocker_of_dpa.c.html#L2371">(key->eth.type)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2410</td><td><a href="rocker_of_dpa.c.html#L2410">(flow->action.goto_tbl)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2499</td><td><a href="rocker_of_dpa.c.html#L2499">(group->l2_rewrite.vlan_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2530</td><td><a href="rocker_of_dpa.c.html#L2530">(group->l3_unicast.vlan_id)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2544</td><td><a href="rocker_of_dpa.c.html#L2544">(group->l3_unicast.ttl_check)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">478</td><td><a href="rocker_of_dpa.c.html#L478">(!fields->vlanhdr)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2259</td><td><a href="rocker_of_dpa.c.html#L2259">(!of_dpa->flow_tbl)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2265</td><td><a href="rocker_of_dpa.c.html#L2265">(!of_dpa->group_tbl)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">459</td><td><a href="rocker_of_dpa.c.html#L459">(fields->vlanhdr)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">584</td><td><a href="rocker_of_dpa.c.html#L584">(fc->tunnel_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1006</td><td><a href="rocker_of_dpa.c.html#L1006">(ops->build_match)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1014</td><td><a href="rocker_of_dpa.c.html#L1014">(ops->miss)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1022</td><td><a href="rocker_of_dpa.c.html#L1022">(ops->action_apply)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1026</td><td><a href="rocker_of_dpa.c.html#L1026">(ops->action_write)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1030</td><td><a href="rocker_of_dpa.c.html#L1030">(ops->hit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1036</td><td><a href="rocker_of_dpa.c.html#L1036">(ops->hit_no_goto)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1325</td><td><a href="rocker_of_dpa.c.html#L1325">(key->tunnel_id)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1146</td><td><a href="rocker_of_dpa.c.html#L1146">(!flow_tlvs[ROCKER_TLV_OF_DPA_NEW_VLAN_ID])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1433</td><td><a href="rocker_of_dpa.c.html#L1433">(!flow_tlvs[ROCKER_TLV_OF_DPA_ETHERTYPE])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1455</td><td><a href="rocker_of_dpa.c.html#L1455">(!flow_tlvs[ROCKER_TLV_OF_DPA_DST_IP])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1471</td><td><a href="rocker_of_dpa.c.html#L1471">(!flow_tlvs[ROCKER_TLV_OF_DPA_DST_IPV6])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1559</td><td><a href="rocker_of_dpa.c.html#L1559">(!flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IP])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1565</td><td><a href="rocker_of_dpa.c.html#L1565">(!flow_tlvs[ROCKER_TLV_OF_DPA_DST_IP])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1591</td><td><a href="rocker_of_dpa.c.html#L1591">(!flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IPV6])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1600</td><td><a href="rocker_of_dpa.c.html#L1600">(!flow_tlvs[ROCKER_TLV_OF_DPA_DST_IPV6])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1915</td><td><a href="rocker_of_dpa.c.html#L1915">(tlv_size > desc_buf_size(info))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1936</td><td><a href="rocker_of_dpa.c.html#L1936">(!flow_tlvs[ROCKER_TLV_OF_DPA_COOKIE])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1977</td><td><a href="rocker_of_dpa.c.html#L1977">(!group_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID_LOWER])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2080</td><td><a href="rocker_of_dpa.c.html#L2080">(!group_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID_LOWER])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2196</td><td><a href="rocker_of_dpa.c.html#L2196">(!group_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">204</td><td><a href="rocker_of_dpa.c.html#L204">(i < 32)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">447</td><td><a href="rocker_of_dpa.c.html#L447">(i < iovcnt)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">493</td><td><a href="rocker_of_dpa.c.html#L493">(src_mac || dst_mac)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1334</td><td><a href="rocker_of_dpa.c.html#L1334">(mode == BRIDGING_MODE_UNKNOWN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1405</td><td><a href="rocker_of_dpa.c.html#L1405">(mode != BRIDGING_MODE_TUNNEL_UCAST)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1078</td><td><a href="rocker_of_dpa.c.html#L1078">(flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1125</td><td><a href="rocker_of_dpa.c.html#L1125">(flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1136</td><td><a href="rocker_of_dpa.c.html#L1136">(flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1231</td><td><a href="rocker_of_dpa.c.html#L1231">(flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1251</td><td><a href="rocker_of_dpa.c.html#L1251">(flow_tlvs[ROCKER_TLV_OF_DPA_COPY_CPU_ACTION])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1279</td><td><a href="rocker_of_dpa.c.html#L1279">(flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1286</td><td><a href="rocker_of_dpa.c.html#L1286">(flow_tlvs[ROCKER_TLV_OF_DPA_TUNNEL_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1299</td><td><a href="rocker_of_dpa.c.html#L1299">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1308</td><td><a href="rocker_of_dpa.c.html#L1308">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1314</td><td><a href="rocker_of_dpa.c.html#L1314">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="rocker_of_dpa.c.html#L1339">(flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1348</td><td><a href="rocker_of_dpa.c.html#L1348">(flow_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1402</td><td><a href="rocker_of_dpa.c.html#L1402">(flow_tlvs[ROCKER_TLV_OF_DPA_TUNNEL_LPORT])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1412</td><td><a href="rocker_of_dpa.c.html#L1412">(flow_tlvs[ROCKER_TLV_OF_DPA_COPY_CPU_ACTION])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1464</td><td><a href="rocker_of_dpa.c.html#L1464">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_IP_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1480</td><td><a href="rocker_of_dpa.c.html#L1480">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_IPV6_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1490</td><td><a href="rocker_of_dpa.c.html#L1490">(flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1498</td><td><a href="rocker_of_dpa.c.html#L1498">(flow_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1549</td><td><a href="rocker_of_dpa.c.html#L1549">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IP])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1554</td><td><a href="rocker_of_dpa.c.html#L1554">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IP_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1579</td><td><a href="rocker_of_dpa.c.html#L1579">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IPV6])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1585</td><td><a href="rocker_of_dpa.c.html#L1585">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_IPV6_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1617</td><td><a href="rocker_of_dpa.c.html#L1617">(flow_tlvs[ROCKER_TLV_OF_DPA_GOTO_TABLE_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1625</td><td><a href="rocker_of_dpa.c.html#L1625">(flow_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1648</td><td><a href="rocker_of_dpa.c.html#L1648">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_PROTO])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1652</td><td><a href="rocker_of_dpa.c.html#L1652">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_PROTO_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1656</td><td><a href="rocker_of_dpa.c.html#L1656">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_DSCP])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1660</td><td><a href="rocker_of_dpa.c.html#L1660">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_DSCP_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1664</td><td><a href="rocker_of_dpa.c.html#L1664">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_ECN])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1668</td><td><a href="rocker_of_dpa.c.html#L1668">(flow_tlvs[ROCKER_TLV_OF_DPA_IP_ECN_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1708</td><td><a href="rocker_of_dpa.c.html#L1708">(flow_tlvs[ROCKER_TLV_OF_DPA_IN_PPORT_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1713</td><td><a href="rocker_of_dpa.c.html#L1713">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1719</td><td><a href="rocker_of_dpa.c.html#L1719">(flow_tlvs[ROCKER_TLV_OF_DPA_SRC_MAC_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1725</td><td><a href="rocker_of_dpa.c.html#L1725">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1731</td><td><a href="rocker_of_dpa.c.html#L1731">(flow_tlvs[ROCKER_TLV_OF_DPA_DST_MAC_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1742</td><td><a href="rocker_of_dpa.c.html#L1742">(flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1747</td><td><a href="rocker_of_dpa.c.html#L1747">(flow_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID_MASK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1787</td><td><a href="rocker_of_dpa.c.html#L1787">(flow_tlvs[ROCKER_TLV_OF_DPA_GROUP_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1792</td><td><a href="rocker_of_dpa.c.html#L1792">(flow_tlvs[ROCKER_TLV_OF_DPA_COPY_CPU_ACTION])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1816</td><td><a href="rocker_of_dpa.c.html#L1816">(flow_tlvs[ROCKER_TLV_OF_DPA_IDLETIME])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1992</td><td><a href="rocker_of_dpa.c.html#L1992">(group_tlvs[ROCKER_TLV_OF_DPA_SRC_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1998</td><td><a href="rocker_of_dpa.c.html#L1998">(group_tlvs[ROCKER_TLV_OF_DPA_DST_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2004</td><td><a href="rocker_of_dpa.c.html#L2004">(group_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2087</td><td><a href="rocker_of_dpa.c.html#L2087">(group_tlvs[ROCKER_TLV_OF_DPA_SRC_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2093</td><td><a href="rocker_of_dpa.c.html#L2093">(group_tlvs[ROCKER_TLV_OF_DPA_DST_MAC])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2099</td><td><a href="rocker_of_dpa.c.html#L2099">(group_tlvs[ROCKER_TLV_OF_DPA_VLAN_ID])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">2104</td><td><a href="rocker_of_dpa.c.html#L2104">(group_tlvs[ROCKER_TLV_OF_DPA_TTL_CHECK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">778</td><td><a href="rocker_of_dpa.c.html#L778">(!old_group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">800</td><td><a href="rocker_of_dpa.c.html#L800">(!group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">851</td><td><a href="rocker_of_dpa.c.html#L851">(!l2_group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">870</td><td><a href="rocker_of_dpa.c.html#L870">(!l2_group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">889</td><td><a href="rocker_of_dpa.c.html#L889">(!l2_group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">924</td><td><a href="rocker_of_dpa.c.html#L924">(!group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1013</td><td><a href="rocker_of_dpa.c.html#L1013">(!flow)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1879</td><td><a href="rocker_of_dpa.c.html#L1879">(!flow)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1890</td><td><a href="rocker_of_dpa.c.html#L1890">(!flow)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1907</td><td><a href="rocker_of_dpa.c.html#L1907">(!flow)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2052</td><td><a href="rocker_of_dpa.c.html#L2052">(!l2_group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2167</td><td><a href="rocker_of_dpa.c.html#L2167">(!group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2178</td><td><a href="rocker_of_dpa.c.html#L2178">(!group)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2442</td><td><a href="rocker_of_dpa.c.html#L2442">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2448</td><td><a href="rocker_of_dpa.c.html#L2448">(!w)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2568</td><td><a href="rocker_of_dpa.c.html#L2568">(!r)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2574</td><td><a href="rocker_of_dpa.c.html#L2574">(!w)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">292</td><td><a href="rocker_of_dpa.c.html#L292">(mask)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">613</td><td><a href="rocker_of_dpa.c.html#L613">(flow)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">911</td><td><a href="rocker_of_dpa.c.html#L911">(group)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1145</td><td><a href="rocker_of_dpa.c.html#L1145">(untagged)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1783</td><td><a href="rocker_of_dpa.c.html#L1783">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1859</td><td><a href="rocker_of_dpa.c.html#L1859">(flow)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1866</td><td><a href="rocker_of_dpa.c.html#L1866">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2139</td><td><a href="rocker_of_dpa.c.html#L2139">(group)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2146</td><td><a href="rocker_of_dpa.c.html#L2146">(err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2151</td><td><a href="rocker_of_dpa.c.html#L2151">(err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - migration\migration.c Ctrl Expressions (326) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - migration\migration.c Ctrl Expressions (326) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;migration\migration.c Ctrl Expressions (326)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1307</td><td><a href="migration.c.html#L1307">(cap_list[MIGRATION_CAPABILITY_ZERO_COPY_SEND] && (<span style='background-color:#741da3;'>!cap_list[MIGRATION_CAPABILITY_MULTIFD] || cap_list[MIGRATION_CAPABILITY_COMPRESS] || cap_list[MIGRATION_CAPABILITY_XBZRLE] || migrate_multifd_compression() || migrate_use_tls()</span>))</a></td><td class="num">1031.50</td></tr>
+      <tr><td class="num line">1557</td><td><a href="migration.c.html#L1557">(migrate_use_zero_copy_send() && ((params->has_multifd_compression && params->multifd_compression) || (params->has_tls_creds && params->tls_creds && *params->tls_creds)))</a></td><td class="num">64.75</td></tr>
+      <tr><td class="num line">1502</td><td><a href="migration.c.html#L1502">(params->has_xbzrle_cache_size && (params->xbzrle_cache_size < qemu_target_page_size() || !is_power_of_2(params->xbzrle_cache_size)))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">2886</td><td><a href="migration.c.html#L2886">((rp_cmd_args[header_type].len != -1 && header_len != rp_cmd_args[header_type].len) || header_len > sizeof(buf))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">524</td><td><a href="migration.c.html#L524">(!migrate_late_block_activate() || (autostart && (!global_state_received() || global_state_get_runstate() == RUN_STATE_RUNNING)))</a></td><td class="num">42.75</td></tr>
+      <tr><td class="num line">1511</td><td><a href="migration.c.html#L1511">(params->has_max_cpu_throttle && (params->max_cpu_throttle < params->cpu_throttle_initial || params->max_cpu_throttle > 99))</a></td><td class="num">37.75</td></tr>
+      <tr><td class="num line">1435</td><td><a href="migration.c.html#L1435">(params->has_throttle_trigger_threshold && (params->throttle_trigger_threshold < 1 || params->throttle_trigger_threshold > 100))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">1444</td><td><a href="migration.c.html#L1444">(params->has_cpu_throttle_initial && (params->cpu_throttle_initial < 1 || params->cpu_throttle_initial > 99))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">1453</td><td><a href="migration.c.html#L1453">(params->has_cpu_throttle_increment && (params->cpu_throttle_increment < 1 || params->cpu_throttle_increment > 99))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">1541</td><td><a href="migration.c.html#L1541">(params->has_announce_step && (params->announce_step < 1 || params->announce_step > 10000))</a></td><td class="num">34.50</td></tr>
+      <tr><td class="num line">3748</td><td><a href="migration.c.html#L3748">(!in_postcopy && pend_pre <= s->threshold_size && qatomic_read(&s->start_postcopy))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1550</td><td><a href="migration.c.html#L1550">(params->has_block_bitmap_mapping && !check_dirty_bitmap_mig_alias_map(params->block_bitmap_mapping, errp))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">3260</td><td><a href="migration.c.html#L3260">(qemu_sem_timedwait(&s->pause_sem, 1) == 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3878</td><td><a href="migration.c.html#L3878">(qemu_sem_timedwait(&s->rate_limit_sem, ms) == 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">436</td><td><a href="migration.c.html#L436">(!received && !g_tree_lookup(mis->page_requested, aligned))</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">4495</td><td><a href="migration.c.html#L4495">(!migrate_params_check(&ms->parameters, errp))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">3986</td><td><a href="migration.c.html#L3986">(urgent || !qemu_file_rate_limit(s->to_dst_file))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">2867</td><td><a href="migration.c.html#L2867">(!ms->rp_state.error && !qemu_file_get_error(rp) && migration_is_setup_or_active(ms->state))</a></td><td class="num">16.00</td></tr>
+      <tr><td class="num line">1794</td><td><a href="migration.c.html#L1794">(params->has_tls_creds && params->tls_creds->type == QTYPE_QNULL)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">1801</td><td><a href="migration.c.html#L1801">(params->has_tls_hostname && params->tls_hostname->type == QTYPE_QNULL)</a></td><td class="num">14.50</td></tr>
+      <tr><td class="num line">3377</td><td><a href="migration.c.html#L3377">(s->state == MIGRATION_STATUS_ACTIVE || s->state == MIGRATION_STATUS_DEVICE)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">1414</td><td><a href="migration.c.html#L1414">(params->has_compress_level && (params->compress_level > 9))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1421</td><td><a href="migration.c.html#L1421">(params->has_compress_threads && (params->compress_threads < 1))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1428</td><td><a href="migration.c.html#L1428">(params->has_decompress_threads && (params->decompress_threads < 1))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1462</td><td><a href="migration.c.html#L1462">(params->has_max_bandwidth && (params->max_bandwidth > SIZE_MAX))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1470</td><td><a href="migration.c.html#L1470">(params->has_downtime_limit && (params->downtime_limit > MAX_MIGRATE_DOWNTIME))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1481</td><td><a href="migration.c.html#L1481">(params->has_multifd_channels && (params->multifd_channels < 1))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1488</td><td><a href="migration.c.html#L1488">(params->has_multifd_zlib_level && (params->multifd_zlib_level > 9))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1495</td><td><a href="migration.c.html#L1495">(params->has_multifd_zstd_level && (params->multifd_zstd_level > 20))</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1520</td><td><a href="migration.c.html#L1520">(params->has_announce_initial && params->announce_initial > 100000)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1527</td><td><a href="migration.c.html#L1527">(params->has_announce_max && params->announce_max > 100000)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">1534</td><td><a href="migration.c.html#L1534">(params->has_announce_rounds && params->announce_rounds > 1000)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2022</td><td><a href="migration.c.html#L2022">(s->state == MIGRATION_STATUS_CANCELLING && s->block_inactive)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">2391</td><td><a href="migration.c.html#L2391">(!migrate_prepare(s, has_blk && blk, has_inc && inc, has_resume && resume, errp))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">3044</td><td><a href="migration.c.html#L3044">(qemu_file_get_error(ms->to_dst_file) && ms->rp_state.from_dst_file)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3182</td><td><a href="migration.c.html#L3182">(qemu_savevm_send_packaged(ms->to_dst_file, bioc->data, bioc->usage))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3362</td><td><a href="migration.c.html#L3362">(migrate_colo_enabled() && s->state == MIGRATION_STATUS_ACTIVE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3905</td><td><a href="migration.c.html#L3905">(s->state == MIGRATION_STATUS_WAIT_UNPLUG && qemu_savevm_state_guest_unplug_pending())</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1327</td><td><a href="migration.c.html#L1327">(runstate_check(RUN_STATE_INMIGRATE) && !migrate_multi_channels_is_allowed() && cap_list[MIGRATION_CAPABILITY_MULTIFD])</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">2019</td><td><a href="migration.c.html#L2019">(s->state == MIGRATION_STATUS_CANCELLING && f)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3746</td><td><a href="migration.c.html#L3746">(pending_size && pending_size >= s->threshold_size)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">1258</td><td><a href="migration.c.html#L1258">(!old_postcopy_cap && runstate_check(RUN_STATE_INMIGRATE) && !postcopy_ram_supported_by_host(mis))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1725</td><td><a href="migration.c.html#L1725">(s->to_dst_file && !migration_in_postcopy())</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">3689</td><td><a href="migration.c.html#L3689">(current_time < s->iteration_start_time + BUFFER_DELAY)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">3711</td><td><a href="migration.c.html#L3711">(ram_counters.dirty_pages_rate && transferred > 10000)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1757</td><td><a href="migration.c.html#L1757">(s->to_dst_file && migration_in_postcopy())</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3916</td><td><a href="migration.c.html#L3916">(timeout-- && qemu_savevm_state_guest_unplug_pending())</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2878</td><td><a href="migration.c.html#L2878">(header_type >= MIG_RP_MSG_MAX || header_type == MIG_RP_MSG_INVALID)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">3599</td><td><a href="migration.c.html#L3599">(state == MIGRATION_STATUS_CANCELLING || state == MIGRATION_STATUS_CANCELLED)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">495</td><td><a href="migration.c.html#L495">(strstart(uri, "tcp:", &p) || strstart(uri, "unix:", NULL) || strstart(uri, "vsock:", NULL))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">2404</td><td><a href="migration.c.html#L2404">(strstart(uri, "tcp:", &p) || strstart(uri, "unix:", NULL) || strstart(uri, "vsock:", NULL))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">3315</td><td><a href="migration.c.html#L3315">(inactivate && ret >= 0)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3623</td><td><a href="migration.c.html#L3623">(state == MIGRATION_STATUS_POSTCOPY_ACTIVE && ret)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">553</td><td><a href="migration.c.html#L553">(!global_state_received() || global_state_get_runstate() == RUN_STATE_RUNNING)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">409</td><td><a href="migration.c.html#L409">(rb != mis->last_rb)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">687</td><td><a href="migration.c.html#L687">(mis->state == MIGRATION_STATUS_POSTCOPY_PAUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">843</td><td><a href="migration.c.html#L843">(mis->state != MIGRATION_STATUS_POSTCOPY_RECOVER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1031</td><td><a href="migration.c.html#L1031">(s->state == MIGRATION_STATUS_COMPLETED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1099</td><td><a href="migration.c.html#L1099">(s->state != MIGRATION_STATUS_COMPLETED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1829</td><td><a href="migration.c.html#L1829">(s->state == MIGRATION_STATUS_NONE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1930</td><td><a href="migration.c.html#L1930">(s->state == MIGRATION_STATUS_CANCELLING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2010</td><td><a href="migration.c.html#L2010">(s->state != MIGRATION_STATUS_CANCELLING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2235</td><td><a href="migration.c.html#L2235">(mis->state != MIGRATION_STATUS_POSTCOPY_PAUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2258</td><td><a href="migration.c.html#L2258">(ms->state == MIGRATION_STATUS_POSTCOPY_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2269</td><td><a href="migration.c.html#L2269">(mis->state == MIGRATION_STATUS_POSTCOPY_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2302</td><td><a href="migration.c.html#L2302">(s->state != MIGRATION_STATUS_POSTCOPY_PAUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2447</td><td><a href="migration.c.html#L2447">(s->state != state)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3270</td><td><a href="migration.c.html#L3270">(s->state != MIGRATION_STATUS_CANCELLING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3295</td><td><a href="migration.c.html#L3295">(s->state == MIGRATION_STATUS_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3324</td><td><a href="migration.c.html#L3324">(s->state == MIGRATION_STATUS_POSTCOPY_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3413</td><td><a href="migration.c.html#L3413">(s->state == MIGRATION_STATUS_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3422</td><td><a href="migration.c.html#L3422">(s->state == MIGRATION_STATUS_CANCELLING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3459</td><td><a href="migration.c.html#L3459">(s->state == MIGRATION_STATUS_POSTCOPY_RECOVER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3463</td><td><a href="migration.c.html#L3463">(s->state == MIGRATION_STATUS_POSTCOPY_ACTIVE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3552</td><td><a href="migration.c.html#L3552">(s->state == MIGRATION_STATUS_POSTCOPY_PAUSED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3556</td><td><a href="migration.c.html#L3556">(s->state == MIGRATION_STATUS_POSTCOPY_RECOVER)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3909</td><td><a href="migration.c.html#L3909">(s->state != MIGRATION_STATUS_WAIT_UNPLUG)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3016</td><td><a href="migration.c.html#L3016">(!ms->rp_state.from_dst_file)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3919</td><td><a href="migration.c.html#L3919">(qemu_savevm_state_guest_unplug_pending() && !qtest_enabled())</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4500</td><td><a href="migration.c.html#L4500">(ms->enabled_capabilities[i])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">543</td><td><a href="migration.c.html#L543">(multifd_load_cleanup(&local_err) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">614</td><td><a href="migration.c.html#L614">(!ret && migration_incoming_colo_enabled())</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">648</td><td><a href="migration.c.html#L648">(multifd_load_cleanup(&local_err) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4266</td><td><a href="migration.c.html#L4266">(multifd_save_setup(&local_err) != 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">958</td><td><a href="migration.c.html#L958">(s->parameters.has_block_bitmap_mapping)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1994</td><td><a href="migration.c.html#L1994">(s->rp_state.from_dst_file)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2397</td><td><a href="migration.c.html#L2397">(!(has_resume && resume))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2418</td><td><a href="migration.c.html#L2418">(!(has_resume && resume))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2430</td><td><a href="migration.c.html#L2430">(!(has_resume && resume))</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3347</td><td><a href="migration.c.html#L3347">(s->rp_state.rp_thread_created)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3954</td><td><a href="migration.c.html#L3954">(s->rp_state.rp_thread_created)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">2773</td><td><a href="migration.c.html#L2773">(!QEMU_IS_ALIGNED(start, our_host_ps) || !QEMU_IS_ALIGNED(len, our_host_ps))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">370</td><td><a href="migration.c.html#L370">(!mis->to_src_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">669</td><td><a href="migration.c.html#L669">(!mis->from_src_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">738</td><td><a href="migration.c.html#L738">(!mis->from_src_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">786</td><td><a href="migration.c.html#L786">(!mis->from_src_file)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1964</td><td><a href="migration.c.html#L1964">(!s->error)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2984</td><td><a href="migration.c.html#L2984">(res && migration_in_postcopy())</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3657</td><td><a href="migration.c.html#L3657">(!s->downtime)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1295</td><td><a href="migration.c.html#L1295">(idx < check_caps_background_snapshot.size)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1393</td><td><a href="migration.c.html#L1393">(migration_is_running(s->state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2167</td><td><a href="migration.c.html#L2167">(runstate_check(RUN_STATE_SAVE_VM) || !migration_is_idle())</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2330</td><td><a href="migration.c.html#L2330">(migration_is_running(s->state))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3357</td><td><a href="migration.c.html#L3357">(qemu_file_get_error(s->to_dst_file))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3426</td><td><a href="migration.c.html#L3426">(qemu_file_get_error(s->to_dst_file))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3867</td><td><a href="migration.c.html#L3867">(qemu_file_rate_limit(s->to_dst_file))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">3869</td><td><a href="migration.c.html#L3869">(qemu_file_get_error(s->to_dst_file))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">287</td><td><a href="migration.c.html#L287">(mis->socket_address_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">292</td><td><a href="migration.c.html#L292">(mis->transport_cleanup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">302</td><td><a href="migration.c.html#L302">(mis->to_src_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="migration.c.html#L309">(mis->from_src_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">314</td><td><a href="migration.c.html#L314">(mis->postcopy_remote_fds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">322</td><td><a href="migration.c.html#L322">(mis->page_requested)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">327</td><td><a href="migration.c.html#L327">(mis->postcopy_qemufile_dst)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1172</td><td><a href="migration.c.html#L1172">(s->error)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1348</td><td><a href="migration.c.html#L1348">(mis->socket_address_list)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1576</td><td><a href="migration.c.html#L1576">(params->has_compress_level)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1580</td><td><a href="migration.c.html#L1580">(params->has_compress_threads)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1584</td><td><a href="migration.c.html#L1584">(params->has_compress_wait_thread)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1588</td><td><a href="migration.c.html#L1588">(params->has_decompress_threads)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1592</td><td><a href="migration.c.html#L1592">(params->has_throttle_trigger_threshold)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1596</td><td><a href="migration.c.html#L1596">(params->has_cpu_throttle_initial)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1600</td><td><a href="migration.c.html#L1600">(params->has_cpu_throttle_increment)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1604</td><td><a href="migration.c.html#L1604">(params->has_cpu_throttle_tailslow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1608</td><td><a href="migration.c.html#L1608">(params->has_tls_creds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1613</td><td><a href="migration.c.html#L1613">(params->has_tls_hostname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1618</td><td><a href="migration.c.html#L1618">(params->has_max_bandwidth)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1622</td><td><a href="migration.c.html#L1622">(params->has_downtime_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1626</td><td><a href="migration.c.html#L1626">(params->has_x_checkpoint_delay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1630</td><td><a href="migration.c.html#L1630">(params->has_block_incremental)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1633</td><td><a href="migration.c.html#L1633">(params->has_multifd_channels)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1636</td><td><a href="migration.c.html#L1636">(params->has_multifd_compression)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1639</td><td><a href="migration.c.html#L1639">(params->has_xbzrle_cache_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1642</td><td><a href="migration.c.html#L1642">(params->has_max_postcopy_bandwidth)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1645</td><td><a href="migration.c.html#L1645">(params->has_max_cpu_throttle)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1648</td><td><a href="migration.c.html#L1648">(params->has_announce_initial)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1651</td><td><a href="migration.c.html#L1651">(params->has_announce_max)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1654</td><td><a href="migration.c.html#L1654">(params->has_announce_rounds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1657</td><td><a href="migration.c.html#L1657">(params->has_announce_step)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1661</td><td><a href="migration.c.html#L1661">(params->has_block_bitmap_mapping)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1673</td><td><a href="migration.c.html#L1673">(params->has_compress_level)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1677</td><td><a href="migration.c.html#L1677">(params->has_compress_threads)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1681</td><td><a href="migration.c.html#L1681">(params->has_compress_wait_thread)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1685</td><td><a href="migration.c.html#L1685">(params->has_decompress_threads)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1689</td><td><a href="migration.c.html#L1689">(params->has_throttle_trigger_threshold)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1693</td><td><a href="migration.c.html#L1693">(params->has_cpu_throttle_initial)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1697</td><td><a href="migration.c.html#L1697">(params->has_cpu_throttle_increment)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="migration.c.html#L1701">(params->has_cpu_throttle_tailslow)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1705</td><td><a href="migration.c.html#L1705">(params->has_tls_creds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1711</td><td><a href="migration.c.html#L1711">(params->has_tls_hostname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1717</td><td><a href="migration.c.html#L1717">(params->has_tls_authz)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1723</td><td><a href="migration.c.html#L1723">(params->has_max_bandwidth)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1731</td><td><a href="migration.c.html#L1731">(params->has_downtime_limit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1735</td><td><a href="migration.c.html#L1735">(params->has_x_checkpoint_delay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1742</td><td><a href="migration.c.html#L1742">(params->has_block_incremental)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1745</td><td><a href="migration.c.html#L1745">(params->has_multifd_channels)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1748</td><td><a href="migration.c.html#L1748">(params->has_multifd_compression)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1751</td><td><a href="migration.c.html#L1751">(params->has_xbzrle_cache_size)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1755</td><td><a href="migration.c.html#L1755">(params->has_max_postcopy_bandwidth)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1762</td><td><a href="migration.c.html#L1762">(params->has_max_cpu_throttle)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1765</td><td><a href="migration.c.html#L1765">(params->has_announce_initial)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1768</td><td><a href="migration.c.html#L1768">(params->has_announce_max)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1771</td><td><a href="migration.c.html#L1771">(params->has_announce_rounds)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1774</td><td><a href="migration.c.html#L1774">(params->has_announce_step)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1778</td><td><a href="migration.c.html#L1778">(params->has_block_bitmap_mapping)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1810</td><td><a href="migration.c.html#L1810">(!migrate_params_check(&tmp, errp))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1880</td><td><a href="migration.c.html#L1880">(s->must_remove_block_options)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="migration.c.html#L1898">(s->to_dst_file)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1903</td><td><a href="migration.c.html#L1903">(s->migration_thread_running)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1922</td><td><a href="migration.c.html#L1922">(s->postcopy_qemufile_src)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1935</td><td><a href="migration.c.html#L1935">(s->error)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1972</td><td><a href="migration.c.html#L1972">(s->error)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3535</td><td><a href="migration.c.html#L3535">(s->postcopy_qemufile_src)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3788</td><td><a href="migration.c.html#L3788">(s->vm_was_running)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2355</td><td><a href="migration.c.html#L2355">(migrate_use_block() || migrate_use_block_incremental())</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">4240</td><td><a href="migration.c.html#L4240">(migrate_postcopy_ram() || migrate_use_return_path())</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">501</td><td><a href="migration.c.html#L501">(strstart(uri, "rdma:", &p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">506</td><td><a href="migration.c.html#L506">(strstart(uri, "fd:", &p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">665</td><td><a href="migration.c.html#L665">(multifd_load_setup(errp) != 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1335</td><td><a href="migration.c.html#L1335">(!cap_list[MIGRATION_CAPABILITY_POSTCOPY_RAM])</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1846</td><td><a href="migration.c.html#L1846">(qatomic_cmpxchg(state, old_state, new_state) == old_state)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2410</td><td><a href="migration.c.html#L2410">(strstart(uri, "rdma:", &p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2415</td><td><a href="migration.c.html#L2415">(strstart(uri, "fd:", &p))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2962</td><td><a href="migration.c.html#L2962">(migrate_handle_rp_recv_bitmap(ms, (char *)(buf + 1)))</a></td><td class="num">2.60</td></tr>
+      <tr><td class="num line">3574</td><td><a href="migration.c.html#L3574">(postcopy_do_resume(s) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4250</td><td><a href="migration.c.html#L4250">(postcopy_preempt_setup(s, &local_err))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">594</td><td><a href="migration.c.html#L594">(ps != POSTCOPY_INCOMING_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">595</td><td><a href="migration.c.html#L595">(ps == POSTCOPY_INCOMING_ADVISE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="migration.c.html#L602">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">635</td><td><a href="migration.c.html#L635">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">882</td><td><a href="migration.c.html#L882">(i < MIGRATION_CAPABILITY__MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">884</td><td><a href="migration.c.html#L884">(i == MIGRATION_CAPABILITY_BLOCK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1281</td><td><a href="migration.c.html#L1281">(wt_support < WT_SUPPORT_AVAILABLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1285</td><td><a href="migration.c.html#L1285">(wt_support < WT_SUPPORT_COMPATIBLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2006</td><td><a href="migration.c.html#L2006">(old_state == MIGRATION_STATUS_PRE_SWITCHOVER)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2350</td><td><a href="migration.c.html#L2350">(blk || blk_inc)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2815</td><td><a href="migration.c.html#L2815">(value != MIGRATION_RESUME_ACK_VALUE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2899</td><td><a href="migration.c.html#L2899">(res != header_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2937</td><td><a href="migration.c.html#L2937">(header_len >= expected_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2945</td><td><a href="migration.c.html#L2945">(header_len != expected_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2955</td><td><a href="migration.c.html#L2955">(header_len < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3090</td><td><a href="migration.c.html#L3090">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3096</td><td><a href="migration.c.html#L3096">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3101</td><td><a href="migration.c.html#L3101">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3306</td><td><a href="migration.c.html#L3306">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3310</td><td><a href="migration.c.html#L3310">(ret >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3321</td><td><a href="migration.c.html#L3321">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3841</td><td><a href="migration.c.html#L3841">(res > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3988</td><td><a href="migration.c.html#L3988">(iter_state == MIG_ITERATE_SKIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3990</td><td><a href="migration.c.html#L3990">(iter_state == MIG_ITERATE_BREAK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4000</td><td><a href="migration.c.html#L4000">(thr_error == MIG_THR_ERR_FATAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4003</td><td><a href="migration.c.html#L4003">(thr_error == MIG_THR_ERR_RECOVERED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4146</td><td><a href="migration.c.html#L4146">(iter_state == MIG_ITERATE_SKIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4148</td><td><a href="migration.c.html#L4148">(iter_state == MIG_ITERATE_BREAK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4157</td><td><a href="migration.c.html#L4157">(thr_error == MIG_THR_ERR_FATAL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4499</td><td><a href="migration.c.html#L4499">(i < MIGRATION_CAPABILITY__MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="migration.c.html#L1236">(cap_list[MIGRATION_CAPABILITY_BLOCK])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1245</td><td><a href="migration.c.html#L1245">(cap_list[MIGRATION_CAPABILITY_X_COLO])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1253</td><td><a href="migration.c.html#L1253">(cap_list[MIGRATION_CAPABILITY_POSTCOPY_RAM])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1267</td><td><a href="migration.c.html#L1267">(cap_list[MIGRATION_CAPABILITY_X_IGNORE_SHARED])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1273</td><td><a href="migration.c.html#L1273">(cap_list[MIGRATION_CAPABILITY_BACKGROUND_SNAPSHOT])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1297</td><td><a href="migration.c.html#L1297">(cap_list[incomp_cap])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1318</td><td><a href="migration.c.html#L1318">(cap_list[MIGRATION_CAPABILITY_ZERO_COPY_SEND])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">1334</td><td><a href="migration.c.html#L1334">(cap_list[MIGRATION_CAPABILITY_POSTCOPY_PREEMPT])</a></td><td class="num">1.75</td></tr>
+      <tr><td class="num line">717</td><td><a href="migration.c.html#L717">(!migration_incoming_setup(f, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">742</td><td><a href="migration.c.html#L742">(!migration_incoming_setup(f, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1198</td><td><a href="migration.c.html#L1198">(!ram_write_tracking_available())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1205</td><td><a href="migration.c.html#L1205">(!ram_write_tracking_compatible())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1399</td><td><a href="migration.c.html#L1399">(!migrate_caps_check(cap_list, params, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1823</td><td><a href="migration.c.html#L1823">(!migrate_postcopy())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2002</td><td><a href="migration.c.html#L2002">(!migration_is_running(old_state))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2204</td><td><a href="migration.c.html#L2204">(!runstate_check(RUN_STATE_INMIGRATE))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2209</td><td><a href="migration.c.html#L2209">(!yank_register_instance(MIGRATION_YANK_INSTANCE, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2398</td><td><a href="migration.c.html#L2398">(!yank_register_instance(MIGRATION_YANK_INSTANCE, errp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3078</td><td><a href="migration.c.html#L3078">(!migrate_pause_before_switchover())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3250</td><td><a href="migration.c.html#L3250">(!migrate_pause_before_switchover())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3778</td><td><a href="migration.c.html#L3778">(!migrate_colo_enabled())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3789</td><td><a href="migration.c.html#L3789">(!runstate_check(RUN_STATE_SHUTDOWN))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4241</td><td><a href="migration.c.html#L4241">(open_return_path_on_source(s, !resume))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2098</td><td><a href="migration.c.html#L2098">(!s)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2200</td><td><a href="migration.c.html#L2200">(!once)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2802</td><td><a href="migration.c.html#L2802">(!block)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3022</td><td><a href="migration.c.html#L3022">(!create_thread)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3128</td><td><a href="migration.c.html#L3128">(!bandwidth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3302</td><td><a href="migration.c.html#L3302">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3612</td><td><a href="migration.c.html#L3612">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">338</td><td><a href="migration.c.html#L338">(migrate_use_events())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">473</td><td><a href="migration.c.html#L473">(ram_block_discard_disable(true))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">560</td><td><a href="migration.c.html#L560">(migration_incoming_colo_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="migration.c.html#L720">(postcopy_try_recover())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">754</td><td><a href="migration.c.html#L754">(migrate_use_multifd())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">769</td><td><a href="migration.c.html#L769">(postcopy_try_recover())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">790</td><td><a href="migration.c.html#L790">(migrate_use_multifd())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">794</td><td><a href="migration.c.html#L794">(migrate_postcopy_preempt())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1070</td><td><a href="migration.c.html#L1070">(migrate_use_xbzrle())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1082</td><td><a href="migration.c.html#L1082">(migrate_use_compression())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1094</td><td><a href="migration.c.html#L1094">(cpu_throttle_active())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1107</td><td><a href="migration.c.html#L1107">(blk_mig_active())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1737</td><td><a href="migration.c.html#L1737">(migration_in_colo_state())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2283</td><td><a href="migration.c.html#L2283">(qemu_savevm_state_blocked(errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2320</td><td><a href="migration.c.html#L2320">(migrate_release_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2335</td><td><a href="migration.c.html#L2335">(runstate_check(RUN_STATE_INMIGRATE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2340</td><td><a href="migration.c.html#L2340">(runstate_check(RUN_STATE_POSTMIGRATE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2346</td><td><a href="migration.c.html#L2346">(migration_is_blocked(errp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2351</td><td><a href="migration.c.html#L2351">(migrate_colo_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2781</td><td><a href="migration.c.html#L2781">(ram_save_queue_pages(rbname, start, len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2873</td><td><a href="migration.c.html#L2873">(qemu_file_get_error(rp))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2970</td><td><a href="migration.c.html#L2970">(migrate_handle_rp_resume_ack(ms, tmp32))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2991</td><td><a href="migration.c.html#L2991">(postcopy_pause_return_path_thread(ms))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3073</td><td><a href="migration.c.html#L3073">(postcopy_preempt_wait_channel(ms))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3118</td><td><a href="migration.c.html#L3118">(migrate_postcopy_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3133</td><td><a href="migration.c.html#L3133">(migrate_postcopy_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3161</td><td><a href="migration.c.html#L3161">(migrate_postcopy_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3198</td><td><a href="migration.c.html#L3198">(migrate_postcopy_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3206</td><td><a href="migration.c.html#L3206">(migrate_release_ram())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3332</td><td><a href="migration.c.html#L3332">(migrate_postcopy_preempt())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3559</td><td><a href="migration.c.html#L3559">(postcopy_preempt_wait_channel(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3750</td><td><a href="migration.c.html#L3750">(postcopy_start(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3793</td><td><a href="migration.c.html#L3793">(runstate_check(RUN_STATE_FINISH_MIGRATE))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3902</td><td><a href="migration.c.html#L3902">(qemu_savevm_state_guest_unplug_pending())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3962</td><td><a href="migration.c.html#L3962">(migrate_postcopy())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3971</td><td><a href="migration.c.html#L3971">(migrate_colo_enabled())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3985</td><td><a href="migration.c.html#L3985">(migration_is_active(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4106</td><td><a href="migration.c.html#L4106">(global_state_store())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4110</td><td><a href="migration.c.html#L4110">(vm_stop_force_state(RUN_STATE_PAUSED))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4118</td><td><a href="migration.c.html#L4118">(qemu_savevm_state_complete_precopy_non_iterable(fb, false, false))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4128</td><td><a href="migration.c.html#L4128">(ram_write_tracking_start())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4144</td><td><a href="migration.c.html#L4144">(migration_is_active(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4274</td><td><a href="migration.c.html#L4274">(migrate_background_snapshot())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="migration.c.html#L236">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="migration.c.html#L452">(received)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">530</td><td><a href="migration.c.html#L530">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">555</td><td><a href="migration.c.html#L555">(autostart)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">617</td><td><a href="migration.c.html#L617">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">761</td><td><a href="migration.c.html#L761">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">767</td><td><a href="migration.c.html#L767">(start_migration)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1132</td><td><a href="migration.c.html#L1132">(cur_blocker)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2026</td><td><a href="migration.c.html#L2026">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2180</td><td><a href="migration.c.html#L2180">(only_migratable)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2215</td><td><a href="migration.c.html#L2215">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2263</td><td><a href="migration.c.html#L2263">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2271</td><td><a href="migration.c.html#L2271">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2287</td><td><a href="migration.c.html#L2287">(migration_blockers)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2301</td><td><a href="migration.c.html#L2301">(resume)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2361</td><td><a href="migration.c.html#L2361">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2368</td><td><a href="migration.c.html#L2368">(blk_inc)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2429</td><td><a href="migration.c.html#L2429">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2912</td><td><a href="migration.c.html#L2912">(sibling_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2983</td><td><a href="migration.c.html#L2983">(res)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3174</td><td><a href="migration.c.html#L3174">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3211</td><td><a href="migration.c.html#L3211">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3226</td><td><a href="migration.c.html#L3226">(restart_block)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3233</td><td><a href="migration.c.html#L3233">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3352</td><td><a href="migration.c.html#L3352">(rp_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3383</td><td><a href="migration.c.html#L3383">(local_err)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3480</td><td><a href="migration.c.html#L3480">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3491</td><td><a href="migration.c.html#L3491">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3508</td><td><a href="migration.c.html#L3508">(true)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3618</td><td><a href="migration.c.html#L3618">(local_error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3666</td><td><a href="migration.c.html#L3666">(transfer_time)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4168</td><td><a href="migration.c.html#L4168">(early_fail)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4197</td><td><a href="migration.c.html#L4197">(resume)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4203</td><td><a href="migration.c.html#L4203">(error_in)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4205</td><td><a href="migration.c.html#L4205">(resume)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4220</td><td><a href="migration.c.html#L4220">(resume)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4258</td><td><a href="migration.c.html#L4258">(resume)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

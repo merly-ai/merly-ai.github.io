@@ -1,0 +1,289 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>CMake Repo - Source\kwsys\ProcessWin32.c Ctrl Expressions (238) - MerlyMentor</title>
+</head>
+<body>
+  <h2>CMake Repo - Source\kwsys\ProcessWin32.c Ctrl Expressions (238) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;Source\kwsys\ProcessWin32.c Ctrl Expressions (238)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1845</td><td><a href="ProcessWin32.c.html#L1845">(<span style='background-color:#741da3;'>h && *h && *h != INVALID_HANDLE_VALUE && *h != GetStdHandle(STD_INPUT_HANDLE) && *h != GetStdHandle(STD_OUTPUT_HANDLE) && *h != GetStdHandle(STD_ERROR_HANDLE)</span>)</a></td><td class="num">1034.75</td></tr>
+      <tr><td class="num line">1182</td><td><a href="ProcessWin32.c.html#L1182">(<span style='background-color:#741da3;'>!cp || !cp->Detached || cp->State != kwsysProcess_State_Executing || cp->TimeoutExpired || cp->Killed || cp->Terminated</span>)</a></td><td class="num">1026.25</td></tr>
+      <tr><td class="num line">1217</td><td><a href="ProcessWin32.c.html#L1217">(<span style='background-color:#741da3;'>!cp || cp->State != kwsysProcess_State_Executing || cp->Killed || cp->TimeoutExpired</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">1403</td><td><a href="ProcessWin32.c.html#L1403">(<span style='background-color:#741da3;'>!cp || cp->State != kwsysProcess_State_Executing || cp->TimeoutExpired || cp->Killed</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">1440</td><td><a href="ProcessWin32.c.html#L1440">(<span style='background-color:#741da3;'>!cp || cp->State != kwsysProcess_State_Executing || cp->TimeoutExpired || cp->Killed</span>)</a></td><td class="num">1017.00</td></tr>
+      <tr><td class="num line">2000</td><td><a href="ProcessWin32.c.html#L2000">(<span style='background-color:#741da3;'>timeoutLength->QuadPart < 0 && userTimeout && *userTimeout <= 0</span>)</a></td><td class="num">1016.25</td></tr>
+      <tr><td class="num line">2653</td><td><a href="ProcessWin32.c.html#L2653">(<span style='background-color:#741da3;'>!kwsysProcessesInitialize() || !hProcess || hProcess == INVALID_HANDLE_VALUE</span>)</a></td><td class="num">1007.25</td></tr>
+      <tr><td class="num line">999</td><td><a href="ProcessWin32.c.html#L999">(!CreatePipe(&cp->Pipe[KWSYSPE_PIPE_STDOUT].Read, &cp->Pipe[KWSYSPE_PIPE_STDOUT].Write, 0, 0))</a></td><td class="num">83.00</td></tr>
+      <tr><td class="num line">1034</td><td><a href="ProcessWin32.c.html#L1034">(!CreatePipe(&cp->Pipe[KWSYSPE_PIPE_STDERR].Read, &cp->Pipe[KWSYSPE_PIPE_STDERR].Write, 0, 0))</a></td><td class="num">83.00</td></tr>
+      <tr><td class="num line">416</td><td><a href="ProcessWin32.c.html#L416">(!(cp->Pipe[i].Reader.Thread = CreateThread(0, 1024, kwsysProcessPipeThreadRead, &cp->Pipe[i], 0, &dummy)))</a></td><td class="num">71.25</td></tr>
+      <tr><td class="num line">443</td><td><a href="ProcessWin32.c.html#L443">(!(cp->Pipe[i].Waker.Thread = CreateThread(0, 1024, kwsysProcessPipeThreadWake, &cp->Pipe[i], 0, &dummy)))</a></td><td class="num">71.25</td></tr>
+      <tr><td class="num line">1732</td><td><a href="ProcessWin32.c.html#L1732">(!error && !kwsysProcessesAdd(cp->ProcessInformation[index].hProcess, cp->ProcessInformation[index].dwProcessId, cp->CreateProcessGroup))</a></td><td class="num">71.00</td></tr>
+      <tr><td class="num line">1022</td><td><a href="ProcessWin32.c.html#L1022">(!DuplicateHandle(GetCurrentProcess(), cp->Pipe[KWSYSPE_PIPE_STDOUT].Write, GetCurrentProcess(), &cp->PipeChildStd[1], 0, false, DUPLICATE_SAME_ACCESS))</a></td><td class="num">53.25</td></tr>
+      <tr><td class="num line">1057</td><td><a href="ProcessWin32.c.html#L1057">(!DuplicateHandle(GetCurrentProcess(), cp->Pipe[KWSYSPE_PIPE_STDERR].Write, GetCurrentProcess(), &cp->PipeChildStd[2], 0, false, DUPLICATE_SAME_ACCESS))</a></td><td class="num">53.25</td></tr>
+      <tr><td class="num line">1502</td><td><a href="ProcessWin32.c.html#L1502">((KWSYSPE_DEBUG((stderr, "wait for read %d\\n", td->Index)), WaitForSingleObject(td->Reader.Go, INFINITE), !td->Closed))</a></td><td class="num">48.75</td></tr>
+      <tr><td class="num line">1379</td><td><a href="ProcessWin32.c.html#L1379">((cp->ProcessResults[i].ExitCode & 0xF0000000) == 0xC0000000)</a></td><td class="num">42.50</td></tr>
+      <tr><td class="num line">396</td><td><a href="ProcessWin32.c.html#L396">(!(cp->Pipe[i].Reader.Ready = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">402</td><td><a href="ProcessWin32.c.html#L402">(!(cp->Pipe[i].Reader.Reset = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">408</td><td><a href="ProcessWin32.c.html#L408">(!(cp->Pipe[i].Reader.Go = CreateSemaphore(0, 1, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">423</td><td><a href="ProcessWin32.c.html#L423">(!(cp->Pipe[i].Waker.Ready = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">429</td><td><a href="ProcessWin32.c.html#L429">(!(cp->Pipe[i].Waker.Reset = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">435</td><td><a href="ProcessWin32.c.html#L435">(!(cp->Pipe[i].Waker.Go = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">882</td><td><a href="ProcessWin32.c.html#L882">(!(cp && cp->ProcessResults && (cp->NumberOfCommands > 0)))</a></td><td class="num">32.00</td></tr>
+      <tr><td class="num line">2462</td><td><a href="ProcessWin32.c.html#L2462">(!(self->Snapshot = self->P_CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0)))</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">1118</td><td><a href="ProcessWin32.c.html#L1118">(si.hStdError != cp->PipeChildStd[2] && !cp->MergeOutput)</a></td><td class="num">30.75</td></tr>
+      <tr><td class="num line">1945</td><td><a href="ProcessWin32.c.html#L1945">(length > 0 && cp->ErrorMessage[length - 1] == '\r')</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">1950</td><td><a href="ProcessWin32.c.html#L1950">(length > 0 && cp->ErrorMessage[length - 1] == '.')</a></td><td class="num">29.85</td></tr>
+      <tr><td class="num line">1757</td><td><a href="ProcessWin32.c.html#L1757">(cp->ProcessInformation[index].hProcess == cp->ProcessEvents[event])</a></td><td class="num">29.50</td></tr>
+      <tr><td class="num line">1507</td><td><a href="ProcessWin32.c.html#L1507">(!ReadFile(td->Read, td->DataBuffer, KWSYSPE_PIPE_BUFFER_SIZE, &td->DataLength, 0))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2468</td><td><a href="ProcessWin32.c.html#L2468">(!self->P_Process32First(self->Snapshot, &self->CurrentEntry))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">561</td><td><a href="ProcessWin32.c.html#L561">(!(newCommands = (wchar_t**)malloc((sizeof(wchar_t*) * newNumberOfCommands))))</a></td><td class="num">26.85</td></tr>
+      <tr><td class="num line">1094</td><td><a href="ProcessWin32.c.html#L1094">(!CreatePipe(&p[0], &p[1], 0, 0))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">925</td><td><a href="ProcessWin32.c.html#L925">(cp->ProcessResults[idx].State == kwsysProcess_StateByIndex_Exception)</a></td><td class="num">24.50</td></tr>
+      <tr><td class="num line">2716</td><td><a href="ProcessWin32.c.html#L2716">(kwsysProcesses.Processes[i].hProcess == hProcess)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">1962</td><td><a href="ProcessWin32.c.html#L1962">(cp->Timeout && cp->TimeoutTime.QuadPart < 0)</a></td><td class="num">13.75</td></tr>
+      <tr><td class="num line">2479</td><td><a href="ProcessWin32.c.html#L2479">(self->P_Process32Next(self->Snapshot, &self->CurrentEntry))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">374</td><td><a href="ProcessWin32.c.html#L374">(!(cp->SharedIndexMutex = CreateSemaphore(0, 1, 1, 0)))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">380</td><td><a href="ProcessWin32.c.html#L380">(!(cp->Full = CreateSemaphore(0, 0, 1, 0)))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">604</td><td><a href="ProcessWin32.c.html#L604">(slashes-- >= 0 && out != end)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">616</td><td><a href="ProcessWin32.c.html#L616">(slashes-- > 0 && out != end)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1977</td><td><a href="ProcessWin32.c.html#L1977">(timeoutTime->QuadPart < 0 || kwsysProcessTimeLess(userTimeoutTime, *timeoutTime))</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">1230</td><td><a href="ProcessWin32.c.html#L1230">(!done && cp->PipesLeft > 0)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1721</td><td><a href="ProcessWin32.c.html#L1721">(si->StartupInfo.hStdInput != si->hStdInput)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1724</td><td><a href="ProcessWin32.c.html#L1724">(si->StartupInfo.hStdOutput != si->hStdOutput)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1727</td><td><a href="ProcessWin32.c.html#L1727">(si->StartupInfo.hStdError != si->hStdError)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2670</td><td><a href="ProcessWin32.c.html#L2670">((newArray = (kwsysProcessInstance*)malloc(newSize * sizeof(kwsysProcessInstance))))</a></td><td class="num">9.85</td></tr>
+      <tr><td class="num line">1266</td><td><a href="ProcessWin32.c.html#L1266">(cp->Pipe[cp->CurrentIndex].Closed)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1339</td><td><a href="ProcessWin32.c.html#L1339">((pipe = kwsysProcess_WaitForData(cp, 0, 0, userTimeout)) > 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1942</td><td><a href="ProcessWin32.c.html#L1942">(cp->ErrorMessage[length - 1] == '\n')</a></td><td class="num">9.60</td></tr>
+      <tr><td class="num line">1485</td><td><a href="ProcessWin32.c.html#L1485">((WaitForSingleObject(td->Reader.Ready, INFINITE), !cp->Deleting))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1546</td><td><a href="ProcessWin32.c.html#L1546">((WaitForSingleObject(td->Waker.Ready, INFINITE), !cp->Deleting))</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">1112</td><td><a href="ProcessWin32.c.html#L1112">(si.hStdInput != cp->PipeChildStd[0])</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">1115</td><td><a href="ProcessWin32.c.html#L1115">(si.hStdOutput != cp->PipeChildStd[1])</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">938</td><td><a href="ProcessWin32.c.html#L938">(!cp || cp->State == kwsysProcess_State_Executing)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1334</td><td><a href="ProcessWin32.c.html#L1334">(!cp || cp->State != kwsysProcess_State_Executing)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1656</td><td><a href="ProcessWin32.c.html#L1656">(in != INVALID_HANDLE_VALUE && GetHandleInformation(in, &flags))</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">589</td><td><a href="ProcessWin32.c.html#L589">(a != command && out != end)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2261</td><td><a href="ProcessWin32.c.html#L2261">(!(self = (kwsysProcess_List*)malloc(sizeof(kwsysProcess_List))))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">555</td><td><a href="ProcessWin32.c.html#L555">(!cp || !command || !*command)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">1087</td><td><a href="ProcessWin32.c.html#L1087">(i == cp->NumberOfCommands - 1)</a></td><td class="num">7.85</td></tr>
+      <tr><td class="num line">960</td><td><a href="ProcessWin32.c.html#L960">(!GetCurrentDirectoryW(cp->RealWorkingDirectoryLength, cp->RealWorkingDirectory))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">2408</td><td><a href="ProcessWin32.c.html#L2408">(self->CurrentInfo->NextEntryDelta > 0)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">981</td><td><a href="ProcessWin32.c.html#L981">(cp->PipeChildStd[0] == INVALID_HANDLE_VALUE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1096</td><td><a href="ProcessWin32.c.html#L1096">(nextStdInput != cp->PipeChildStd[0])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1124</td><td><a href="ProcessWin32.c.html#L1124">(nextStdInput != cp->PipeChildStd[0])</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1861</td><td><a href="ProcessWin32.c.html#L1861">(cp->ErrorMessage[0] == 0)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1240</td><td><a href="ProcessWin32.c.html#L1240">(kwsysProcessGetTimeoutLeft(&timeoutTime, user ? userTimeout : 0, &timeoutLength))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">480</td><td><a href="ProcessWin32.c.html#L480">(cp->Pipe[i].Reader.Thread)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">493</td><td><a href="ProcessWin32.c.html#L493">(cp->Pipe[i].Waker.Thread)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">592</td><td><a href="ProcessWin32.c.html#L592">(!quote && *c)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2293</td><td><a href="ProcessWin32.c.html#L2293">(!(self->NT4 ? kwsysProcess_List__New_NT4(self) : kwsysProcess_List__New_Snapshot(self)))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1420</td><td><a href="ProcessWin32.c.html#L1420">(cp->ProcessInformation[i].hProcess)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1894</td><td><a href="ProcessWin32.c.html#L1894">(cp->ProcessInformation[i].hProcess)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">2547</td><td><a href="ProcessWin32.c.html#L2547">(cp->Pipe[i].Read)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">595</td><td><a href="ProcessWin32.c.html#L595">(quote && out != end)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">631</td><td><a href="ProcessWin32.c.html#L631">(!newCommands[cp->NumberOfCommands])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">466</td><td><a href="ProcessWin32.c.html#L466">(cp->State == kwsysProcess_State_Executing)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">535</td><td><a href="ProcessWin32.c.html#L535">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">570</td><td><a href="ProcessWin32.c.html#L570">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">650</td><td><a href="ProcessWin32.c.html#L650">(cp->Timeout < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">666</td><td><a href="ProcessWin32.c.html#L666">(dir && dir[0])</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">874</td><td><a href="ProcessWin32.c.html#L874">(cp->State == kwsysProcess_State_Error)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">884</td><td><a href="ProcessWin32.c.html#L884">(cp->State == kwsysProcess_State_Exception)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">943</td><td><a href="ProcessWin32.c.html#L943">(cp->NumberOfCommands < 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1084</td><td><a href="ProcessWin32.c.html#L1084">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1152</td><td><a href="ProcessWin32.c.html#L1152">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1164</td><td><a href="ProcessWin32.c.html#L1164">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1233</td><td><a href="ProcessWin32.c.html#L1233">(cp->CurrentIndex < KWSYSPE_PIPE_COUNT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1350</td><td><a href="ProcessWin32.c.html#L1350">(cp->CurrentIndex < KWSYSPE_PIPE_COUNT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1377</td><td><a href="ProcessWin32.c.html#L1377">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1418</td><td><a href="ProcessWin32.c.html#L1418">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1458</td><td><a href="ProcessWin32.c.html#L1458">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1596</td><td><a href="ProcessWin32.c.html#L1596">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1634</td><td><a href="ProcessWin32.c.html#L1634">(cp->RealWorkingDirectoryLength > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1756</td><td><a href="ProcessWin32.c.html#L1756">(index < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1774</td><td><a href="ProcessWin32.c.html#L1774">(i < cp->ProcessEventsLength)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1779</td><td><a href="ProcessWin32.c.html#L1779">(cp->ProcessEventsLength == 1)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1893</td><td><a href="ProcessWin32.c.html#L1893">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1899</td><td><a href="ProcessWin32.c.html#L1899">(i < cp->NumberOfCommands)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1992</td><td><a href="ProcessWin32.c.html#L1992">(timeoutTime->QuadPart < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2005</td><td><a href="ProcessWin32.c.html#L2005">(timeoutLength->QuadPart < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2528</td><td><a href="ProcessWin32.c.html#L2528">(cp->CurrentIndex < KWSYSPE_PIPE_COUNT)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2554</td><td><a href="ProcessWin32.c.html#L2554">(cp->PipesLeft > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2662</td><td><a href="ProcessWin32.c.html#L2662">(kwsysProcesses.Count == kwsysProcesses.Size)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2708</td><td><a href="ProcessWin32.c.html#L2708">(!hProcess || hProcess == INVALID_HANDLE_VALUE)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">988</td><td><a href="ProcessWin32.c.html#L988">(cp->PipeNativeSTDIN[0])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1016</td><td><a href="ProcessWin32.c.html#L1016">(cp->PipeNativeSTDOUT[1])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1051</td><td><a href="ProcessWin32.c.html#L1051">(cp->PipeNativeSTDERR[1])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">2751</td><td><a href="ProcessWin32.c.html#L2751">(kwsysProcesses.Processes[i].NewProcessGroup)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">599</td><td><a href="ProcessWin32.c.html#L599">(*c == '\\')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">602</td><td><a href="ProcessWin32.c.html#L602">(*c == '"')</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">1300</td><td><a href="ProcessWin32.c.html#L1300">(*userTimeout < 0)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">965</td><td><a href="ProcessWin32.c.html#L965">(!SetCurrentDirectoryW(cp->WorkingDirectory))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1875</td><td><a href="ProcessWin32.c.html#L1875">(!WideCharToMultiByte(CP_UTF8, 0, err_msg, -1, cp->ErrorMessage, KWSYSPE_PIPE_BUFFER_SIZE, NULL, NULL))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1570</td><td><a href="ProcessWin32.c.html#L1570">(!td->Closed)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1591</td><td><a href="ProcessWin32.c.html#L1591">(!cp->ProcessResults)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1608</td><td><a href="ProcessWin32.c.html#L1608">(!cp->ProcessInformation)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1615</td><td><a href="ProcessWin32.c.html#L1615">(!cp->CommandExitCodes)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1624</td><td><a href="ProcessWin32.c.html#L1624">(!cp->ProcessEvents)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1637</td><td><a href="ProcessWin32.c.html#L1637">(!cp->RealWorkingDirectory)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2360</td><td><a href="ProcessWin32.c.html#L2360">(!self->P_ZwQuerySystemInformation)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">367</td><td><a href="ProcessWin32.c.html#L367">(osv.dwPlatformId == VER_PLATFORM_WIN32_WINDOWS)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1246</td><td><a href="ProcessWin32.c.html#L1246">(timeoutTime.QuadPart < 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1273</td><td><a href="ProcessWin32.c.html#L1273">(data && length)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2673</td><td><a href="ProcessWin32.c.html#L2673">(kwsysProcesses.Count > 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2715</td><td><a href="ProcessWin32.c.html#L2715">(i < kwsysProcesses.Count)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2720</td><td><a href="ProcessWin32.c.html#L2720">(i < kwsysProcesses.Count)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2723</td><td><a href="ProcessWin32.c.html#L2723">(i < kwsysProcesses.Count)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2728</td><td><a href="ProcessWin32.c.html#L2728">(kwsysProcesses.Count == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2750</td><td><a href="ProcessWin32.c.html#L2750">(i < kwsysProcesses.Count)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">2762</td><td><a href="ProcessWin32.c.html#L2762">(i < kwsysProcesses.Count)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">467</td><td><a href="ProcessWin32.c.html#L467">(cp->Detached)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">539</td><td><a href="ProcessWin32.c.html#L539">(cp->Commands)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">575</td><td><a href="ProcessWin32.c.html#L575">(cp->Verbatim)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="ProcessWin32.c.html#L662">(cp->WorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">959</td><td><a href="ProcessWin32.c.html#L959">(cp->WorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">972</td><td><a href="ProcessWin32.c.html#L972">(cp->PipeFileSTDIN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">985</td><td><a href="ProcessWin32.c.html#L985">(cp->PipeSharedSTDIN)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1005</td><td><a href="ProcessWin32.c.html#L1005">(cp->PipeFileSTDOUT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1013</td><td><a href="ProcessWin32.c.html#L1013">(cp->PipeSharedSTDOUT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1040</td><td><a href="ProcessWin32.c.html#L1040">(cp->PipeFileSTDERR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1048</td><td><a href="ProcessWin32.c.html#L1048">(cp->PipeSharedSTDERR)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1140</td><td><a href="ProcessWin32.c.html#L1140">(cp->RealWorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1369</td><td><a href="ProcessWin32.c.html#L1369">(cp->Killed)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1372</td><td><a href="ProcessWin32.c.html#L1372">(cp->TimeoutExpired)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1410</td><td><a href="ProcessWin32.c.html#L1410">(cp->Terminated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1416</td><td><a href="ProcessWin32.c.html#L1416">(cp->CreateProcessGroup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="ProcessWin32.c.html#L1417">(cp->ProcessInformation)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1451</td><td><a href="ProcessWin32.c.html#L1451">(cp->Terminated)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1632</td><td><a href="ProcessWin32.c.html#L1632">(cp->WorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1658</td><td><a href="ProcessWin32.c.html#L1658">(flags & HANDLE_FLAG_INHERIT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1704</td><td><a href="ProcessWin32.c.html#L1704">(cp->CreateProcessGroup)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1892</td><td><a href="ProcessWin32.c.html#L1892">(cp->ProcessInformation)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1908</td><td><a href="ProcessWin32.c.html#L1908">(cp->RealWorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1914</td><td><a href="ProcessWin32.c.html#L1914">(cp->ProcessInformation)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1918</td><td><a href="ProcessWin32.c.html#L1918">(cp->ProcessEvents)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1922</td><td><a href="ProcessWin32.c.html#L1922">(cp->RealWorkingDirectory)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2310</td><td><a href="ProcessWin32.c.html#L2310">(self->NT4)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2407</td><td><a href="ProcessWin32.c.html#L2407">(self->CurrentInfo)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2452</td><td><a href="ProcessWin32.c.html#L2452">(self->Snapshot)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2459</td><td><a href="ProcessWin32.c.html#L2459">(self->Snapshot)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2478</td><td><a href="ProcessWin32.c.html#L2478">(self->Snapshot)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">713</td><td><a href="ProcessWin32.c.html#L713">(!*pfile)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1509</td><td><a href="ProcessWin32.c.html#L1509">(GetLastError() != ERROR_BROKEN_PIPE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2514</td><td><a href="ProcessWin32.c.html#L2514">(kwsysProcess_List_GetCurrentParentId(plist) == pid)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">386</td><td><a href="ProcessWin32.c.html#L386">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="ProcessWin32.c.html#L449">(i < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">478</td><td><a href="ProcessWin32.c.html#L478">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">585</td><td><a href="ProcessWin32.c.html#L585">(*a)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">598</td><td><a href="ProcessWin32.c.html#L598">(*c)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">610</td><td><a href="ProcessWin32.c.html#L610">(out != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">619</td><td><a href="ProcessWin32.c.html#L619">(out != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">624</td><td><a href="ProcessWin32.c.html#L624">(out != end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">670</td><td><a href="ProcessWin32.c.html#L670">(length > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="ProcessWin32.c.html#L707">(*pfile)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">720</td><td><a href="ProcessWin32.c.html#L720">(*pfile)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="ProcessWin32.c.html#L1135">(i < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1158</td><td><a href="ProcessWin32.c.html#L1158">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1191</td><td><a href="ProcessWin32.c.html#L1191">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1255</td><td><a href="ProcessWin32.c.html#L1255">(w == WAIT_TIMEOUT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1259</td><td><a href="ProcessWin32.c.html#L1259">(w == WAIT_OBJECT_0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1340</td><td><a href="ProcessWin32.c.html#L1340">(pipe == kwsysProcess_Pipe_Timeout)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="ProcessWin32.c.html#L1357">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1643</td><td><a href="ProcessWin32.c.html#L1643">(i < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1784</td><td><a href="ProcessWin32.c.html#L1784">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1817</td><td><a href="ProcessWin32.c.html#L1817">(fout == INVALID_HANDLE_VALUE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1868</td><td><a href="ProcessWin32.c.html#L1868">(length < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1928</td><td><a href="ProcessWin32.c.html#L1928">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1933</td><td><a href="ProcessWin32.c.html#L1933">(i < 3)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2383</td><td><a href="ProcessWin32.c.html#L2383">(status == STATUS_INFO_LENGTH_MISMATCH)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2394</td><td><a href="ProcessWin32.c.html#L2394">(status >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2535</td><td><a href="ProcessWin32.c.html#L2535">(i < KWSYSPE_PIPE_COUNT)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2608</td><td><a href="ProcessWin32.c.html#L2608">(!kwsysProcesses.Initialized)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2631</td><td><a href="ProcessWin32.c.html#L2631">(kwsysProcesses.Exiting)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">326</td><td><a href="ProcessWin32.c.html#L326">(!kwsysProcessesInitialize())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">676</td><td><a href="ProcessWin32.c.html#L676">(!GetFullPathNameW(wdir, length, work_dir, 0))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">950</td><td><a href="ProcessWin32.c.html#L950">(!kwsysProcessInitialize(cp))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1693</td><td><a href="ProcessWin32.c.html#L1693">(!kwsysTryEnterCreateProcessSection())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2300</td><td><a href="ProcessWin32.c.html#L2300">(!kwsysProcess_List_Update(self))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2612</td><td><a href="ProcessWin32.c.html#L2612">(!SetConsoleCtrlHandler(kwsysCtrlHandler, true))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">332</td><td><a href="ProcessWin32.c.html#L332">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">461</td><td><a href="ProcessWin32.c.html#L461">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">532</td><td><a href="ProcessWin32.c.html#L532">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">646</td><td><a href="ProcessWin32.c.html#L646">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">659</td><td><a href="ProcessWin32.c.html#L659">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">672</td><td><a href="ProcessWin32.c.html#L672">(!work_dir)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">691</td><td><a href="ProcessWin32.c.html#L691">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">730</td><td><a href="ProcessWin32.c.html#L730">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">760</td><td><a href="ProcessWin32.c.html#L760">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">797</td><td><a href="ProcessWin32.c.html#L797">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">819</td><td><a href="ProcessWin32.c.html#L819">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">872</td><td><a href="ProcessWin32.c.html#L872">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1121</td><td><a href="ProcessWin32.c.html#L1121">(!error)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1664</td><td><a href="ProcessWin32.c.html#L1664">(DuplicateHandle(GetCurrentProcess(), in, GetCurrentProcess(), out, 0, true, DUPLICATE_SAME_ACCESS))</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1804</td><td><a href="ProcessWin32.c.html#L1804">(!name)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2775</td><td><a href="ProcessWin32.c.html#L2775">(!cp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2518</td><td><a href="ProcessWin32.c.html#L2518">(kwsysProcess_List_NextProcess(plist))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">543</td><td><a href="ProcessWin32.c.html#L543">(command)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">614</td><td><a href="ProcessWin32.c.html#L614">(quote)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">711</td><td><a href="ProcessWin32.c.html#L711">(file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="ProcessWin32.c.html#L750">(shared)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">779</td><td><a href="ProcessWin32.c.html#L779">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">789</td><td><a href="ProcessWin32.c.html#L789">(p)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1009</td><td><a href="ProcessWin32.c.html#L1009">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1044</td><td><a href="ProcessWin32.c.html#L1044">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1294</td><td><a href="ProcessWin32.c.html#L1294">(userTimeout)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1306</td><td><a href="ProcessWin32.c.html#L1306">(pipeId)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1309</td><td><a href="ProcessWin32.c.html#L1309">(expired)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1311</td><td><a href="ProcessWin32.c.html#L1311">(user)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1859</td><td><a href="ProcessWin32.c.html#L1859">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1971</td><td><a href="ProcessWin32.c.html#L1971">(userTimeout)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2309</td><td><a href="ProcessWin32.c.html#L2309">(self)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2354</td><td><a href="ProcessWin32.c.html#L2354">(hNT)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2387</td><td><a href="ProcessWin32.c.html#L2387">(newBuffer)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2435</td><td><a href="ProcessWin32.c.html#L2435">(hKernel)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2501</td><td><a href="ProcessWin32.c.html#L2501">(h)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2512</td><td><a href="ProcessWin32.c.html#L2512">(plist)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2753</td><td><a href="ProcessWin32.c.html#L2753">(groupId)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

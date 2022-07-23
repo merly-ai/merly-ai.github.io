@@ -1,0 +1,102 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\relay\routerkeys.c Ctrl Expressions (51) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\relay\routerkeys.c Ctrl Expressions (51) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\relay\routerkeys.c Ctrl Expressions (51)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">421</td><td><a href="routerkeys.c.html#L421">(<span style='background-color:#741da3;'>!master_identity_key || !master_signing_key || !current_auth_key || !link_cert_cert || EXPIRES_SOON(signing_key_cert, options->TestingSigningKeySlop) || EXPIRES_SOON(auth_key_cert, options->TestingAuthKeySlop) || EXPIRES_SOON(link_cert_cert, options->TestingLinkKeySlop)</span>)</a></td><td class="num">1020.75</td></tr>
+      <tr><td class="num line">112</td><td><a href="routerkeys.c.html#L112">(!ed25519_pubkey_eq(&use_signing->pubkey, &master_signing_key->pubkey) || !tor_memeq(use_signing->seckey.seckey, master_signing_key->seckey.seckey, ED25519_SECKEY_LEN))</a></td><td class="num">55.25</td></tr>
+      <tr><td class="num line">235</td><td><a href="routerkeys.c.html#L235">(master_identity_key && !ed25519_pubkey_eq(&id->pubkey, &master_identity_key->pubkey))</a></td><td class="num">46.25</td></tr>
+      <tr><td class="num line">382</td><td><a href="routerkeys.c.html#L382">(force == 0 && link_cert_cert && !EXPIRES_SOON(link_cert_cert, options->TestingLinkKeySlop) && fast_memeq(digests->d[DIGEST_SHA256], link_cert_cert->signed_key.pubkey, DIGEST256_LEN))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">246</td><td><a href="routerkeys.c.html#L246">(!ed25519_pubkey_eq(&sign_cert->signing_key, &id->pubkey))</a></td><td class="num">28.25</td></tr>
+      <tr><td class="num line">371</td><td><a href="routerkeys.c.html#L371">(tor_tls_get_my_certs(1, &link_, &id) < 0 || link_ == NULL)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">432</td><td><a href="routerkeys.c.html#L432">(tor_tls_get_my_certs(1, &link_, &id) < 0 || link_ == NULL)</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="routerkeys.c.html#L437">(!fast_memeq(digests->d[DIGEST_SHA256], link_cert_cert->signed_key.pubkey, DIGEST256_LEN))</a></td><td class="num">26.75</td></tr>
+      <tr><td class="num line">220</td><td><a href="routerkeys.c.html#L220">(ed25519_pubkey_write_to_file(&id->pubkey, fname, "type0") < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">249</td><td><a href="routerkeys.c.html#L249">(tor_cert_checksig(sign_cert, &id->pubkey, 0) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">312</td><td><a href="routerkeys.c.html#L312">(!current_auth_key || signing_key_changed || EXPIRES_SOON(auth_key_cert, options->TestingAuthKeySlop))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">297</td><td><a href="routerkeys.c.html#L297">(server_mode(options) && (!rsa_ed_crosscert || HAPPENS_SOON(rsa_ed_crosscert_expiration, 30 * 86400)))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="routerkeys.c.html#L240">(need_new_signing_key && NULL == sign_signing_key_with_id)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">186</td><td><a href="routerkeys.c.html#L186">(options->command == CMD_KEYGEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">294</td><td><a href="routerkeys.c.html#L294">(options->command == CMD_KEYGEN)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">229</td><td><a href="routerkeys.c.html#L229">(safe_mem_is_zero((char*)id->seckey.seckey, sizeof(id->seckey)))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">696</td><td><a href="routerkeys.c.html#L696">(ed25519_keypair_from_curve25519_keypair(&ed_onion_key, sign_out, onion_key) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">122</td><td><a href="routerkeys.c.html#L122">(!use_signing && master_signing_key)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">156</td><td><a href="routerkeys.c.html#L156">(want_new_signing_key && !offline_master)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">244</td><td><a href="routerkeys.c.html#L244">(!sign_cert->signing_key_included)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="routerkeys.c.html#L257">(want_new_signing_key && sign_signing_key_with_id)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">194</td><td><a href="routerkeys.c.html#L194">(options->master_key_fname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">182</td><td><a href="routerkeys.c.html#L182">(!want_new_signing_key || offline_master)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">483</td><td><a href="routerkeys.c.html#L483">(generate_ed_link_cert(get_options(), time(NULL), 0) < 0)</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">190</td><td><a href="routerkeys.c.html#L190">(create_keys_directory(options) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">721</td><td><a href="routerkeys.c.html#L721">(crypto_pk_get_digest(rsa_id_key, (char*)signed_data) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">731</td><td><a href="routerkeys.c.html#L731">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">372</td><td><a href="routerkeys.c.html#L372">(!server_mode(options))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">528</td><td><a href="routerkeys.c.html#L528">(BUG(!cert))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">611</td><td><a href="routerkeys.c.html#L611">(!strcmp(arg, "sign"))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">109</td><td><a href="routerkeys.c.html#L109">(!master_signing_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">180</td><td><a href="routerkeys.c.html#L180">(!need_new_signing_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">205</td><td><a href="routerkeys.c.html#L205">(!id)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">273</td><td><a href="routerkeys.c.html#L273">(!sign)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">320</td><td><a href="routerkeys.c.html#L320">(!auth)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">327</td><td><a href="routerkeys.c.html#L327">(!master_identity_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">575</td><td><a href="routerkeys.c.html#L575">(!signing_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="routerkeys.c.html#L624">(!master_identity_key)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">107</td><td><a href="routerkeys.c.html#L107">(use_signing)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">144</td><td><a href="routerkeys.c.html#L144">(need_new_signing_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">165</td><td><a href="routerkeys.c.html#L165">(want_new_signing_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">178</td><td><a href="routerkeys.c.html#L178">(can_make_master_id_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">184</td><td><a href="routerkeys.c.html#L184">(offline_master)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">206</td><td><a href="routerkeys.c.html#L206">(need_new_signing_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">207</td><td><a href="routerkeys.c.html#L207">(offline_master)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">243</td><td><a href="routerkeys.c.html#L243">(sign_cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">281</td><td><a href="routerkeys.c.html#L281">(want_new_signing_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">332</td><td><a href="routerkeys.c.html#L332">(sign)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">336</td><td><a href="routerkeys.c.html#L336">(auth)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">397</td><td><a href="routerkeys.c.html#L397">(link_cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">581</td><td><a href="routerkeys.c.html#L581">(signing_key)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>systemd Repo - src\core\socket.c Ctrl Expressions (402) - MerlyMentor</title>
+</head>
+<body>
+  <h2>systemd Repo - src\core\socket.c Ctrl Expressions (402) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\core\socket.c Ctrl Expressions (402)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1210</td><td><a href="socket.c.html#L1210">(!S_ISFIFO(st.st_mode) || <span style='background-color:#741da3;'>(st.st_mode & 0777) != (socket_mode & ~old_mask)</span> || st.st_uid != getuid() || st.st_gid != getgid())</a></td><td class="num">1040.25</td></tr>
+      <tr><td class="num line">1313</td><td><a href="socket.c.html#L1313">(<span style='background-color:#741da3;'>(st.st_mode & 0777) != (mq_mode & ~old_mask)</span> || st.st_uid != getuid() || st.st_gid != getgid())</a></td><td class="num">1036.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="socket.c.html#L883">(asprintf(&r, "%u-%u.%u.%u.%u:%u-%u.%u.%u.%u:%u", nr, a >> 24, (a >> 16) & 0xFF, (a >> 8) & 0xFF, a & 0xFF, be16toh(local.in.sin_port), b >> 24, (b >> 16) & 0xFF, (b >> 8) & 0xFF, b & 0xFF, be16toh(remote.in.sin_port)) < 0)</a></td><td class="num">63.50</td></tr>
+      <tr><td class="num line">900</td><td><a href="socket.c.html#L900">(memcmp(&local.in6.sin6_addr, ipv4_prefix, sizeof(ipv4_prefix)) == 0 && memcmp(&remote.in6.sin6_addr, ipv4_prefix, sizeof(ipv4_prefix)) == 0)</a></td><td class="num">61.50</td></tr>
+      <tr><td class="num line">917</td><td><a href="socket.c.html#L917">(asprintf(&r, "%u-%s:%u-%s:%u", nr, inet_ntop(AF_INET6, &local.in6.sin6_addr, a, sizeof(a)), be16toh(local.in6.sin6_port), inet_ntop(AF_INET6, &remote.in6.sin6_addr, b, sizeof(b)), be16toh(remote.in6.sin6_port)) < 0)</a></td><td class="num">52.75</td></tr>
+      <tr><td class="num line">1132</td><td><a href="socket.c.html#L1132">(setsockopt(fd, SOL_TCP, TCP_CONGESTION, s->tcp_congestion, strlen(s->tcp_congestion) + 1) < 0)</a></td><td class="num">47.10</td></tr>
+      <tr><td class="num line">906</td><td><a href="socket.c.html#L906">(asprintf(&r, "%u-%u.%u.%u.%u:%u-%u.%u.%u.%u:%u", nr, a[0], a[1], a[2], a[3], be16toh(local.in6.sin6_port), b[0], b[1], b[2], b[3], be16toh(remote.in6.sin6_port)) < 0)</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">2889</td><td><a href="socket.c.html#L2889">(p->socket->accept && p->type == SOCKET_SOCKET && socket_address_can_accept(&p->address))</a></td><td class="num">35.50</td></tr>
+      <tr><td class="num line">2644</td><td><a href="socket.c.html#L2644">(sscanf(value, "%i %i %n", &fd, &type, &skip) < 2 || fd < 0 || type < 0 || !fdset_contains(fds, fd))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">2602</td><td><a href="socket.c.html#L2602">(sscanf(value, "%i %n", &fd, &skip) < 1 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2616</td><td><a href="socket.c.html#L2616">(sscanf(value, "%i %n", &fd, &skip) < 1 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2630</td><td><a href="socket.c.html#L2630">(sscanf(value, "%i %n", &fd, &skip) < 1 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2657</td><td><a href="socket.c.html#L2657">(sscanf(value, "%i %n", &fd, &skip) < 1 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2670</td><td><a href="socket.c.html#L2670">(sscanf(value, "%i %n", &fd, &skip) < 1 || fd < 0 || !fdset_contains(fds, fd))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="socket.c.html#L449">(UNIT(s)->load_state != UNIT_LOADED)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">2424</td><td><a href="socket.c.html#L2424">(UNIT(service)->load_state != UNIT_LOADED)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3168</td><td><a href="socket.c.html#L3168">(SERVICE(other)->state == SERVICE_RUNNING)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">786</td><td><a href="socket.c.html#L786">(!isempty(s->user) || !isempty(s->group))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">2152</td><td><a href="socket.c.html#L2152">(!isempty(s->user) || !isempty(s->group))</a></td><td class="num">25.50</td></tr>
+      <tr><td class="num line">316</td><td><a href="socket.c.html#L316">(!UNIT(s)->default_dependencies)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">869</td><td><a href="socket.c.html#L869">(getsockname(fd, &local.sa, &l) < 0)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">873</td><td><a href="socket.c.html#L873">(getpeername(fd, &remote.sa, &l) < 0)</a></td><td class="num">24.25</td></tr>
+      <tr><td class="num line">323</td><td><a href="socket.c.html#L323">(MANAGER_IS_SYSTEM(UNIT(s)->manager))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1087</td><td><a href="socket.c.html#L1087">(setsockopt(fd, SOL_SOCKET, SO_PRIORITY, &s->priority, sizeof(s->priority)) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1108</td><td><a href="socket.c.html#L1108">(setsockopt(fd, SOL_SOCKET, SO_MARK, &s->mark, sizeof(s->mark)) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">1112</td><td><a href="socket.c.html#L1112">(setsockopt(fd, IPPROTO_IP, IP_TOS, &s->ip_tos, sizeof(s->ip_tos)) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2525</td><td><a href="socket.c.html#L2525">(socket_address_family(&p->address) == AF_NETLINK)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">2744</td><td><a href="socket.c.html#L2744">(socket_address_family(&p->address) == AF_NETLINK)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3162</td><td><a href="socket.c.html#L3162">(IN_SET(SERVICE(other)->state, SERVICE_DEAD, SERVICE_FAILED, SERVICE_FINAL_SIGTERM, SERVICE_FINAL_SIGKILL, SERVICE_AUTO_RESTART))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">268</td><td><a href="socket.c.html#L268">(!socket_address_can_accept(&p->address))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2236</td><td><a href="socket.c.html#L2236">(!ratelimit_test(&s->trigger_limit))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">2431</td><td><a href="socket.c.html#L2431">(service->state != SERVICE_DEAD && service->state != SERVICE_FAILED && service->state != SERVICE_AUTO_RESTART)</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">477</td><td><a href="socket.c.html#L477">(!strv_isempty(s->symlinks) && !socket_find_symlink_target(s))</a></td><td class="num">22.25</td></tr>
+      <tr><td class="num line">1243</td><td><a href="socket.c.html#L1243">(!S_ISREG(st.st_mode) && !S_ISCHR(st.st_mode))</a></td><td class="num">22.00</td></tr>
+      <tr><td class="num line">1790</td><td><a href="socket.c.html#L1790">(s->control_pid > 0 && pid_is_unwaited(s->control_pid) && IN_SET(s->deserialized_state, SOCKET_START_PRE, SOCKET_START_CHOWN, SOCKET_START_POST, SOCKET_STOP_PRE, SOCKET_STOP_PRE_SIGTERM, SOCKET_STOP_PRE_SIGKILL, SOCKET_STOP_POST, SOCKET_FINAL_SIGTERM, SOCKET_FINAL_SIGKILL))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">2945</td><td><a href="socket.c.html#L2945">(s->control_command && s->control_command->command_next && f == SOCKET_SUCCESS)</a></td><td class="num">17.00</td></tr>
+      <tr><td class="num line">2606</td><td><a href="socket.c.html#L2606">(p->type == SOCKET_FIFO && path_equal_or_files_same(p->path, value + skip, 0))</a></td><td class="num">15.10</td></tr>
+      <tr><td class="num line">2620</td><td><a href="socket.c.html#L2620">(p->type == SOCKET_SPECIAL && path_equal_or_files_same(p->path, value + skip, 0))</a></td><td class="num">15.10</td></tr>
+      <tr><td class="num line">2634</td><td><a href="socket.c.html#L2634">(p->type == SOCKET_MQUEUE && streq(p->path, value + skip))</a></td><td class="num">15.10</td></tr>
+      <tr><td class="num line">2674</td><td><a href="socket.c.html#L2674">(p->type == SOCKET_USB_FUNCTION && path_equal_or_files_same(p->path, value + skip, 0))</a></td><td class="num">15.10</td></tr>
+      <tr><td class="num line">472</td><td><a href="socket.c.html#L472">(s->exec_context.pam_name && s->kill_context.kill_mode != KILL_CONTROL_GROUP)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">2286</td><td><a href="socket.c.html#L2286">(r > 0 && p->n_ref > s->max_connections_per_source)</a></td><td class="num">14.75</td></tr>
+      <tr><td class="num line">3141</td><td><a href="socket.c.html#L3141">(other->load_state != UNIT_LOADED || other->type != UNIT_SERVICE)</a></td><td class="num">13.25</td></tr>
+      <tr><td class="num line">462</td><td><a href="socket.c.html#L462">(s->accept && s->max_connections <= 0)</a></td><td class="num">12.50</td></tr>
+      <tr><td class="num line">503</td><td><a href="socket.c.html#L503">(x->peer.sa.sa_family < y->peer.sa.sa_family)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">505</td><td><a href="socket.c.html#L505">(x->peer.sa.sa_family > y->peer.sa.sa_family)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">514</td><td><a href="socket.c.html#L514">(x->peer.vm.svm_cid < y->peer.vm.svm_cid)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">516</td><td><a href="socket.c.html#L516">(x->peer.vm.svm_cid > y->peer.vm.svm_cid)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">955</td><td><a href="socket.c.html#L955">(asprintf(&r, "%u-%u:%u-%u:%u", nr, local.vm.svm_cid, local.vm.svm_port, remote.vm.svm_cid, remote.vm.svm_port) < 0)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">159</td><td><a href="socket.c.html#L159">((p = set_steal_first(s->peers_by_address)))</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">139</td><td><a href="socket.c.html#L139">((p = s->ports))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">467</td><td><a href="socket.c.html#L467">(s->accept && UNIT_DEREF(s->service))</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">1343</td><td><a href="socket.c.html#L1343">(!s->usb_function_descriptors || !s->usb_function_strings)</a></td><td class="num">10.25</td></tr>
+      <tr><td class="num line">305</td><td><a href="socket.c.html#L305">(!s->bind_to_device || streq(s->bind_to_device, "lo"))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">1787</td><td><a href="socket.c.html#L1787">(s->deserialized_state == s->state)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2274</td><td><a href="socket.c.html#L2274">(s->n_connections >= s->max_connections)</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">2934</td><td><a href="socket.c.html#L2934">(s->control_command->flags & EXEC_COMMAND_IGNORE_FAILURE)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">1127</td><td><a href="socket.c.html#L1127">(r < 0 && x < 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1192</td><td><a href="socket.c.html#L1192">(r < 0 && errno != EEXIST)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1290</td><td><a href="socket.c.html#L1290">(maxmsg > 0 && msgsize > 0)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2648</td><td><a href="socket.c.html#L2648">(socket_address_is(&p->address, value + skip, type))</a></td><td class="num">8.10</td></tr>
+      <tr><td class="num line">2661</td><td><a href="socket.c.html#L2661">(socket_address_is_netlink(&p->address, value + skip))</a></td><td class="num">8.10</td></tr>
+      <tr><td class="num line">243</td><td><a href="socket.c.html#L243">(asprintf(&name, "%s@%u.service", prefix, s->n_accepted) < 0)</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">936</td><td><a href="socket.c.html#L936">(asprintf(&r, "%u-\"PID_FMT\"-", nr, ucred.pid, ucred.uid) < 0)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">2875</td><td><a href="socket.c.html#L2875">(p->socket->state != SOCKET_LISTENING)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">457</td><td><a href="socket.c.html#L457">(s->accept && have_non_accept_socket(s))</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">490</td><td><a href="socket.c.html#L490">(s->peer.sa.sa_family == AF_INET)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">492</td><td><a href="socket.c.html#L492">(s->peer.sa.sa_family == AF_INET6)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">494</td><td><a href="socket.c.html#L494">(s->peer.sa.sa_family == AF_VSOCK)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">993</td><td><a href="socket.c.html#L993">(!was_open || !s->remove_on_stop)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">358</td><td><a href="socket.c.html#L358">(s->trigger_limit.interval == USEC_INFINITY)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">361</td><td><a href="socket.c.html#L361">(s->trigger_limit.burst == (unsigned)-1)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">1430</td><td><a href="socket.c.html#L1430">(r == -EPERM || r == -EOPNOTSUPP)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2066</td><td><a href="socket.c.html#L2066">(state == SOCKET_STOP_PRE_SIGTERM || state == SOCKET_STOP_PRE_SIGKILL)</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">2810</td><td><a href="socket.c.html#L2810">(!IN_SET(p->address.sockaddr.sa.sa_family, AF_INET, AF_INET6))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">848</td><td><a href="socket.c.html#L848">(!s->exec_command[c])</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1155</td><td><a href="socket.c.html#L1155">(fcntl(fd, F_SETPIPE_SZ, s->pipe_size) < 0)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">1479</td><td><a href="socket.c.html#L1479">(!IN_SET(address->sockaddr.sa.sa_family, AF_INET, AF_INET6))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">2703</td><td><a href="socket.c.html#L2703">(socket_address_matches_fd(&p->address, fd))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">119</td><td><a href="socket.c.html#L119">(s->control_pid <= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">265</td><td><a href="socket.c.html#L265">(p->type != SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">284</td><td><a href="socket.c.html#L284">(p->type == SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">543</td><td><a href="socket.c.html#L543">(u->load_state == UNIT_LOADED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">583</td><td><a href="socket.c.html#L583">(p->n_ref > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">702</td><td><a href="socket.c.html#L702">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">721</td><td><a href="socket.c.html#L721">(s->priority >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">726</td><td><a href="socket.c.html#L726">(s->receive_buffer > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">731</td><td><a href="socket.c.html#L731">(s->send_buffer > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">736</td><td><a href="socket.c.html#L736">(s->ip_tos >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">741</td><td><a href="socket.c.html#L741">(s->ip_ttl >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">746</td><td><a href="socket.c.html#L746">(s->pipe_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">751</td><td><a href="socket.c.html#L751">(s->mark >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">756</td><td><a href="socket.c.html#L756">(s->mq_maxmsg > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">761</td><td><a href="socket.c.html#L761">(s->mq_msgsize > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">793</td><td><a href="socket.c.html#L793">(s->keep_alive_time > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">815</td><td><a href="socket.c.html#L815">(p->type == SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">828</td><td><a href="socket.c.html#L828">(p->type == SOCKET_SPECIAL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">830</td><td><a href="socket.c.html#L830">(p->type == SOCKET_USB_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">832</td><td><a href="socket.c.html#L832">(p->type == SOCKET_MQUEUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1059</td><td><a href="socket.c.html#L1059">(s->socket_protocol == IPPROTO_SCTP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1086</td><td><a href="socket.c.html#L1086">(s->priority >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1090</td><td><a href="socket.c.html#L1090">(s->receive_buffer > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1100</td><td><a href="socket.c.html#L1100">(s->send_buffer > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1107</td><td><a href="socket.c.html#L1107">(s->mark >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1111</td><td><a href="socket.c.html#L1111">(s->ip_tos >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1115</td><td><a href="socket.c.html#L1115">(s->ip_ttl >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1154</td><td><a href="socket.c.html#L1154">(s->pipe_size > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1547</td><td><a href="socket.c.html#L1547">(p->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1570</td><td><a href="socket.c.html#L1570">(s->socket_protocol == IPPROTO_SCTP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1575</td><td><a href="socket.c.html#L1575">(s->socket_protocol == IPPROTO_UDPLITE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1592</td><td><a href="socket.c.html#L1592">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1604</td><td><a href="socket.c.html#L1604">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1620</td><td><a href="socket.c.html#L1620">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1632</td><td><a href="socket.c.html#L1632">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1666</td><td><a href="socket.c.html#L1666">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1685</td><td><a href="socket.c.html#L1685">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1722</td><td><a href="socket.c.html#L1722">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1836</td><td><a href="socket.c.html#L1836">(s->deserialized_state == SOCKET_LISTENING)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1951</td><td><a href="socket.c.html#L1951">(p->type == SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1953</td><td><a href="socket.c.html#L1953">(p->type == SOCKET_FIFO)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1983</td><td><a href="socket.c.html#L1983">(s->result == SOCKET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2004</td><td><a href="socket.c.html#L2004">(s->result == SOCKET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2032</td><td><a href="socket.c.html#L2032">(s->result == SOCKET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2076</td><td><a href="socket.c.html#L2076">(s->result == SOCKET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2206</td><td><a href="socket.c.html#L2206">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2281</td><td><a href="socket.c.html#L2281">(s->max_connections_per_source > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2386</td><td><a href="socket.c.html#L2386">(s->state == SOCKET_START_POST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2388</td><td><a href="socket.c.html#L2388">(s->state == SOCKET_STOP_POST)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2502</td><td><a href="socket.c.html#L2502">(s->control_pid > 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2505</td><td><a href="socket.c.html#L2505">(s->control_command_id >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2511</td><td><a href="socket.c.html#L2511">(p->fd < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2518</td><td><a href="socket.c.html#L2518">(p->type == SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2530</td><td><a href="socket.c.html#L2530">(p->type == SOCKET_SPECIAL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2532</td><td><a href="socket.c.html#L2532">(p->type == SOCKET_MQUEUE)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2534</td><td><a href="socket.c.html#L2534">(p->type == SOCKET_USB_FUNCTION)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2696</td><td><a href="socket.c.html#L2696">(p->type != SOCKET_SOCKET)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2699</td><td><a href="socket.c.html#L2699">(p->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2915</td><td><a href="socket.c.html#L2915">(pid != s->control_pid)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2942</td><td><a href="socket.c.html#L2942">(s->result == SOCKET_SUCCESS)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3080</td><td><a href="socket.c.html#L3080">(p->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3097</td><td><a href="socket.c.html#L3097">(p->fd >= 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3099</td><td><a href="socket.c.html#L3099">(i < p->n_auxiliary_fds)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3114</td><td><a href="socket.c.html#L3114">(s->state == SOCKET_FAILED)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">337</td><td><a href="socket.c.html#L337">(s->exec_command[i])</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">944</td><td><a href="socket.c.html#L944">(asprintf(&r, "%u-unknown", nr) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1028</td><td><a href="socket.c.html#L1028">(setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, &b, sizeof(b)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1034</td><td><a href="socket.c.html#L1034">(setsockopt(fd, SOL_TCP, TCP_KEEPIDLE, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1040</td><td><a href="socket.c.html#L1040">(setsockopt(fd, SOL_TCP, TCP_KEEPINTVL, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1046</td><td><a href="socket.c.html#L1046">(setsockopt(fd, SOL_TCP, TCP_KEEPCNT, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1052</td><td><a href="socket.c.html#L1052">(setsockopt(fd, SOL_TCP, TCP_DEFER_ACCEPT, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1060</td><td><a href="socket.c.html#L1060">(setsockopt(fd, SOL_SCTP, SCTP_NODELAY, &b, sizeof(b)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1063</td><td><a href="socket.c.html#L1063">(setsockopt(fd, SOL_TCP, TCP_NODELAY, &b, sizeof(b)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1070</td><td><a href="socket.c.html#L1070">(setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &one, sizeof(one)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1076</td><td><a href="socket.c.html#L1076">(setsockopt(fd, SOL_SOCKET, SO_PASSCRED, &one, sizeof(one)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1082</td><td><a href="socket.c.html#L1082">(setsockopt(fd, SOL_SOCKET, SO_PASSSEC, &one, sizeof(one)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1095</td><td><a href="socket.c.html#L1095">(setsockopt(fd, SOL_SOCKET, SO_RCVBUFFORCE, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1096</td><td><a href="socket.c.html#L1096">(setsockopt(fd, SOL_SOCKET, SO_RCVBUF, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1102</td><td><a href="socket.c.html#L1102">(setsockopt(fd, SOL_SOCKET, SO_SNDBUFFORCE, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1103</td><td><a href="socket.c.html#L1103">(setsockopt(fd, SOL_SOCKET, SO_SNDBUF, &value, sizeof(value)) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1205</td><td><a href="socket.c.html#L1205">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1239</td><td><a href="socket.c.html#L1239">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1263</td><td><a href="socket.c.html#L1263">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1310</td><td><a href="socket.c.html#L1310">(fstat(fd, &st) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2577</td><td><a href="socket.c.html#L2577">(safe_atou(value, &k) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2584</td><td><a href="socket.c.html#L2584">(parse_pid(value, &pid) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">3029</td><td><a href="socket.c.html#L3029">(s->kill_context.send_sigkill)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">3049</td><td><a href="socket.c.html#L3049">(s->kill_context.send_sigkill)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">370</td><td><a href="socket.c.html#L370">(!UNIT_DEREF(s->service))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1422</td><td><a href="socket.c.html#L1422">(!UNIT_ISSET(s->service))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1842</td><td><a href="socket.c.html#L1842">(!IN_SET(s->deserialized_state, SOCKET_DEAD, SOCKET_FAILED))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1928</td><td><a href="socket.c.html#L1928">(!isempty(s->user))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">1938</td><td><a href="socket.c.html#L1938">(!isempty(s->group))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">2257</td><td><a href="socket.c.html#L2257">(!UNIT_ISSET(s->service))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">3145</td><td><a href="socket.c.html#L3145">(!IN_SET(s->state, SOCKET_RUNNING, SOCKET_LISTENING))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">236</td><td><a href="socket.c.html#L236">(!s->accept)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">260</td><td><a href="socket.c.html#L260">(!s->accept)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="socket.c.html#L452">(!s->ports)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1367</td><td><a href="socket.c.html#L1367">(!p->auxiliary_fds)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1669</td><td><a href="socket.c.html#L1669">(!p->event_source)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">3181</td><td><a href="socket.c.html#L3181">(!s->timer_event_source)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1727</td><td><a href="socket.c.html#L1727">(have_open && have_closed)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">233</td><td><a href="socket.c.html#L233">(UNIT_DEREF(s->service))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">286</td><td><a href="socket.c.html#L286">(IN_SET(p->type, SOCKET_FIFO, SOCKET_SPECIAL, SOCKET_USB_FUNCTION))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">1812</td><td><a href="socket.c.html#L1812">(IN_SET(s->deserialized_state, SOCKET_START_CHOWN, SOCKET_START_POST, SOCKET_LISTENING, SOCKET_RUNNING))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2402</td><td><a href="socket.c.html#L2402">(IN_SET(s->state, SOCKET_STOP_PRE, SOCKET_STOP_PRE_SIGKILL, SOCKET_STOP_PRE_SIGTERM, SOCKET_STOP_POST, SOCKET_FINAL_SIGTERM, SOCKET_FINAL_SIGKILL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2412</td><td><a href="socket.c.html#L2412">(IN_SET(s->state, SOCKET_START_PRE, SOCKET_START_CHOWN, SOCKET_START_POST))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2419</td><td><a href="socket.c.html#L2419">(UNIT_ISSET(s->service))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2464</td><td><a href="socket.c.html#L2464">(IN_SET(s->state, SOCKET_STOP_PRE, SOCKET_STOP_PRE_SIGTERM, SOCKET_STOP_PRE_SIGKILL, SOCKET_STOP_POST, SOCKET_FINAL_SIGTERM, SOCKET_FINAL_SIGKILL))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">2475</td><td><a href="socket.c.html#L2475">(IN_SET(s->state, SOCKET_START_PRE, SOCKET_START_CHOWN, SOCKET_START_POST))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">196</td><td><a href="socket.c.html#L196">(s->timer_event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">362</td><td><a href="socket.c.html#L362">(s->accept)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">586</td><td><a href="socket.c.html#L586">(p->socket)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">707</td><td><a href="socket.c.html#L707">(s->bind_to_device)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">712</td><td><a href="socket.c.html#L712">(s->accept)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">766</td><td><a href="socket.c.html#L766">(s->reuse_port)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">771</td><td><a href="socket.c.html#L771">(s->smack)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">776</td><td><a href="socket.c.html#L776">(s->smack_ip_in)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">781</td><td><a href="socket.c.html#L781">(s->smack_ip_out)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">798</td><td><a href="socket.c.html#L798">(s->keep_alive_interval)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">803</td><td><a href="socket.c.html#L803">(s->keep_alive_cnt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">808</td><td><a href="socket.c.html#L808">(s->defer_accept)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1015</td><td><a href="socket.c.html#L1015">(s->remove_on_stop)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1026</td><td><a href="socket.c.html#L1026">(s->keep_alive)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1032</td><td><a href="socket.c.html#L1032">(s->keep_alive_time)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1038</td><td><a href="socket.c.html#L1038">(s->keep_alive_interval)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1044</td><td><a href="socket.c.html#L1044">(s->keep_alive_cnt)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1050</td><td><a href="socket.c.html#L1050">(s->defer_accept)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1056</td><td><a href="socket.c.html#L1056">(s->no_delay)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1068</td><td><a href="socket.c.html#L1068">(s->broadcast)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1074</td><td><a href="socket.c.html#L1074">(s->pass_cred)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1080</td><td><a href="socket.c.html#L1080">(s->pass_sec)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1131</td><td><a href="socket.c.html#L1131">(s->tcp_congestion)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1135</td><td><a href="socket.c.html#L1135">(s->smack_ip_in)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1141</td><td><a href="socket.c.html#L1141">(s->smack_ip_out)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1158</td><td><a href="socket.c.html#L1158">(s->smack)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1409</td><td><a href="socket.c.html#L1409">(s->selinux_context_from_net)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1688</td><td><a href="socket.c.html#L1688">(p->event_source)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1864</td><td><a href="socket.c.html#L1864">(s->reset_accounting)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2011</td><td><a href="socket.c.html#L2011">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2083</td><td><a href="socket.c.html#L2083">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2124</td><td><a href="socket.c.html#L2124">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2182</td><td><a href="socket.c.html#L2182">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2882</td><td><a href="socket.c.html#L2882">(revents & EPOLLHUP)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2931</td><td><a href="socket.c.html#L2931">(s->control_command)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3149</td><td><a href="socket.c.html#L3149">(s->accept)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3153</td><td><a href="socket.c.html#L3153">(other->start_limit_hit)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3159</td><td><a href="socket.c.html#L3159">(other->job)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3201</td><td><a href="socket.c.html#L3201">(s->fdname)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">605</td><td><a href="socket.c.html#L605">(!IN_SET(sa.peer.sa.sa_family, AF_INET, AF_INET6, AF_VSOCK))</a></td><td class="num">3.00</td></tr>
+      <tr><td class="num line">1267</td><td><a href="socket.c.html#L1267">(!S_ISREG(st.st_mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1488</td><td><a href="socket.c.html#L1488">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1959</td><td><a href="socket.c.html#L1959">(chown(path, uid, gid) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2819</td><td><a href="socket.c.html#L2819">(socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0, pair) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">198</td><td><a href="socket.c.html#L198">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">204</td><td><a href="socket.c.html#L204">(usec == USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">213</td><td><a href="socket.c.html#L213">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">240</td><td><a href="socket.c.html#L240">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">247</td><td><a href="socket.c.html#L247">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">293</td><td><a href="socket.c.html#L293">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">320</td><td><a href="socket.c.html#L320">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">325</td><td><a href="socket.c.html#L325">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">336</td><td><a href="socket.c.html#L336">(i < _SOCKET_EXEC_COMMAND_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">374</td><td><a href="socket.c.html#L374">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">381</td><td><a href="socket.c.html#L381">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">386</td><td><a href="socket.c.html#L386">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">390</td><td><a href="socket.c.html#L390">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">394</td><td><a href="socket.c.html#L394">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="socket.c.html#L399">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">404</td><td><a href="socket.c.html#L404">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">408</td><td><a href="socket.c.html#L408">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">536</td><td><a href="socket.c.html#L536">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">540</td><td><a href="socket.c.html#L540">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">546</td><td><a href="socket.c.html#L546">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">602</td><td><a href="socket.c.html#L602">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">624</td><td><a href="socket.c.html#L624">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="socket.c.html#L637">(family == AF_NETLINK)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">640</td><td><a href="socket.c.html#L640">(type == SOCK_STREAM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">642</td><td><a href="socket.c.html#L642">(type == SOCK_DGRAM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">644</td><td><a href="socket.c.html#L644">(type == SOCK_SEQPACKET)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">821</td><td><a href="socket.c.html#L821">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">847</td><td><a href="socket.c.html#L847">(c < _SOCKET_EXEC_COMMAND_MAX)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">935</td><td><a href="socket.c.html#L935">(k >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">940</td><td><a href="socket.c.html#L940">(k == -ENODATA)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1137</td><td><a href="socket.c.html#L1137">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1143</td><td><a href="socket.c.html#L1143">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1160</td><td><a href="socket.c.html#L1160">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1180</td><td><a href="socket.c.html#L1180">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1198</td><td><a href="socket.c.html#L1198">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1236</td><td><a href="socket.c.html#L1236">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1260</td><td><a href="socket.c.html#L1260">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1307</td><td><a href="socket.c.html#L1307">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1347</td><td><a href="socket.c.html#L1347">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1362</td><td><a href="socket.c.html#L1362">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1373</td><td><a href="socket.c.html#L1373">(i < n)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1383</td><td><a href="socket.c.html#L1383">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1413</td><td><a href="socket.c.html#L1413">(r == -EOPNOTSUPP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1419</td><td><a href="socket.c.html#L1419">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1483</td><td><a href="socket.c.html#L1483">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1485</td><td><a href="socket.c.html#L1485">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1492</td><td><a href="socket.c.html#L1492">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1494</td><td><a href="socket.c.html#L1494">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1500</td><td><a href="socket.c.html#L1500">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1506</td><td><a href="socket.c.html#L1506">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1519</td><td><a href="socket.c.html#L1519">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1524</td><td><a href="socket.c.html#L1524">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1531</td><td><a href="socket.c.html#L1531">(fd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1559</td><td><a href="socket.c.html#L1559">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1581</td><td><a href="socket.c.html#L1581">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1638</td><td><a href="socket.c.html#L1638">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1642</td><td><a href="socket.c.html#L1642">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1673</td><td><a href="socket.c.html#L1673">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1690</td><td><a href="socket.c.html#L1690">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1694</td><td><a href="socket.c.html#L1694">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1761</td><td><a href="socket.c.html#L1761">(state != SOCKET_LISTENING)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1774</td><td><a href="socket.c.html#L1774">(state != old_state)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1804</td><td><a href="socket.c.html#L1804">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1808</td><td><a href="socket.c.html#L1808">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1824</td><td><a href="socket.c.html#L1824">(r == SOCKET_OPEN_NONE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1829</td><td><a href="socket.c.html#L1829">(r == SOCKET_OPEN_SOME)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1838</td><td><a href="socket.c.html#L1838">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1871</td><td><a href="socket.c.html#L1871">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1875</td><td><a href="socket.c.html#L1875">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1879</td><td><a href="socket.c.html#L1879">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1894</td><td><a href="socket.c.html#L1894">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1898</td><td><a href="socket.c.html#L1898">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1912</td><td><a href="socket.c.html#L1912">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1919</td><td><a href="socket.c.html#L1919">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1921</td><td><a href="socket.c.html#L1921">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1932</td><td><a href="socket.c.html#L1932">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1942</td><td><a href="socket.c.html#L1942">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1969</td><td><a href="socket.c.html#L1969">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2013</td><td><a href="socket.c.html#L2013">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2043</td><td><a href="socket.c.html#L2043">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2046</td><td><a href="socket.c.html#L2046">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2048</td><td><a href="socket.c.html#L2048">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2052</td><td><a href="socket.c.html#L2052">(state == SOCKET_STOP_PRE_SIGTERM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2054</td><td><a href="socket.c.html#L2054">(state == SOCKET_STOP_PRE_SIGKILL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2056</td><td><a href="socket.c.html#L2056">(state == SOCKET_FINAL_SIGTERM)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2085</td><td><a href="socket.c.html#L2085">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2104</td><td><a href="socket.c.html#L2104">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2126</td><td><a href="socket.c.html#L2126">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2147</td><td><a href="socket.c.html#L2147">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2159</td><td><a href="socket.c.html#L2159">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2184</td><td><a href="socket.c.html#L2184">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2228</td><td><a href="socket.c.html#L2228">(cfd >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2243</td><td><a href="socket.c.html#L2243">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2264</td><td><a href="socket.c.html#L2264">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2283</td><td><a href="socket.c.html#L2283">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2300</td><td><a href="socket.c.html#L2300">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2304</td><td><a href="socket.c.html#L2304">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2305</td><td><a href="socket.c.html#L2305">(r != -ENOTCONN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2316</td><td><a href="socket.c.html#L2316">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2320</td><td><a href="socket.c.html#L2320">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2324</td><td><a href="socket.c.html#L2324">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2334</td><td><a href="socket.c.html#L2334">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2344</td><td><a href="socket.c.html#L2344">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2378</td><td><a href="socket.c.html#L2378">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2442</td><td><a href="socket.c.html#L2442">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2448</td><td><a href="socket.c.html#L2448">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2515</td><td><a href="socket.c.html#L2515">(copy < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2522</td><td><a href="socket.c.html#L2522">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2561</td><td><a href="socket.c.html#L2561">(state < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2569</td><td><a href="socket.c.html#L2569">(f < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2571</td><td><a href="socket.c.html#L2571">(f != SOCKET_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2592</td><td><a href="socket.c.html#L2592">(id < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2785</td><td><a href="socket.c.html#L2785">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2786</td><td><a href="socket.c.html#L2786">(errno == EINTR)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2814</td><td><a href="socket.c.html#L2814">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2816</td><td><a href="socket.c.html#L2816">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2823</td><td><a href="socket.c.html#L2823">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2825</td><td><a href="socket.c.html#L2825">(r == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2831</td><td><a href="socket.c.html#L2831">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2837</td><td><a href="socket.c.html#L2837">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2850</td><td><a href="socket.c.html#L2850">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2855</td><td><a href="socket.c.html#L2855">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2862</td><td><a href="socket.c.html#L2862">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2880</td><td><a href="socket.c.html#L2880">(revents != EPOLLIN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2894</td><td><a href="socket.c.html#L2894">(cfd < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2922</td><td><a href="socket.c.html#L2922">(code == CLD_EXITED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2924</td><td><a href="socket.c.html#L2924">(code == CLD_KILLED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2926</td><td><a href="socket.c.html#L2926">(code == CLD_DUMPED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2963</td><td><a href="socket.c.html#L2963">(f == SOCKET_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2970</td><td><a href="socket.c.html#L2970">(f == SOCKET_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2977</td><td><a href="socket.c.html#L2977">(f == SOCKET_SUCCESS)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3085</td><td><a href="socket.c.html#L3085">(n <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3185</td><td><a href="socket.c.html#L3185">(r < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3187</td><td><a href="socket.c.html#L3187">(t == USEC_INFINITY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1744</td><td><a href="socket.c.html#L1744">(!IN_SET(state, SOCKET_START_PRE, SOCKET_START_CHOWN, SOCKET_START_POST, SOCKET_STOP_PRE, SOCKET_STOP_PRE_SIGTERM, SOCKET_STOP_PRE_SIGKILL, SOCKET_STOP_POST, SOCKET_FINAL_SIGTERM, SOCKET_FINAL_SIGKILL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1764</td><td><a href="socket.c.html#L1764">(!IN_SET(state, SOCKET_START_CHOWN, SOCKET_START_POST, SOCKET_LISTENING, SOCKET_RUNNING, SOCKET_STOP_PRE, SOCKET_STOP_PRE_SIGTERM, SOCKET_STOP_PRE_SIGKILL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">289</td><td><a href="socket.c.html#L289">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">557</td><td><a href="socket.c.html#L557">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">566</td><td><a href="socket.c.html#L566">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">576</td><td><a href="socket.c.html#L576">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">617</td><td><a href="socket.c.html#L617">(!remote)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1331</td><td><a href="socket.c.html#L1331">(!p)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1377</td><td><a href="socket.c.html#L1377">(!ep)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1426</td><td><a href="socket.c.html#L1426">(!c)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1554</td><td><a href="socket.c.html#L1554">(!know_label)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1956</td><td><a href="socket.c.html#L1956">(!path)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2256</td><td><a href="socket.c.html#L2256">(!pending)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3091</td><td><a href="socket.c.html#L3091">(!rfds)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2224</td><td><a href="socket.c.html#L2224">(unit_stop_pending(UNIT(s)))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">368</td><td><a href="socket.c.html#L368">(have_non_accept_socket(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">397</td><td><a href="socket.c.html#L397">(socket_has_exec(s))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1120</td><td><a href="socket.c.html#L1120">(socket_ipv6_is_supported())</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2251</td><td><a href="socket.c.html#L2251">(unit_active_or_pending(other))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2557</td><td><a href="socket.c.html#L2557">(streq(key, "state"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2565</td><td><a href="socket.c.html#L2565">(streq(key, "result"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2574</td><td><a href="socket.c.html#L2574">(streq(key, "n-accepted"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2581</td><td><a href="socket.c.html#L2581">(streq(key, "control-pid"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2588</td><td><a href="socket.c.html#L2588">(streq(key, "control-command"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2598</td><td><a href="socket.c.html#L2598">(streq(key, "fifo"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2612</td><td><a href="socket.c.html#L2612">(streq(key, "special"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2626</td><td><a href="socket.c.html#L2626">(streq(key, "mqueue"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2640</td><td><a href="socket.c.html#L2640">(streq(key, "socket"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2653</td><td><a href="socket.c.html#L2653">(streq(key, "netlink"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2666</td><td><a href="socket.c.html#L2666">(streq(key, "ffs"))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2920</td><td><a href="socket.c.html#L2920">(is_clean_exit(code, status, EXIT_CLEAN_COMMAND, NULL))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">435</td><td><a href="socket.c.html#L435">(f)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">436</td><td><a href="socket.c.html#L436">(found)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">611</td><td><a href="socket.c.html#L611">(i)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1731</td><td><a href="socket.c.html#L1731">(have_open)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

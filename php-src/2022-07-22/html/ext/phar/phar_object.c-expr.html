@@ -1,0 +1,652 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>php-src Repo - ext\phar\phar_object.c Ctrl Expressions (601) - MerlyMentor</title>
+</head>
+<body>
+  <h2>php-src Repo - ext\phar\phar_object.c Ctrl Expressions (601) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;ext\phar\phar_object.c Ctrl Expressions (601)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">1169</td><td><a href="phar_object.c.html#L1169">(<span style='background-color:#741da3;'>is_data && phar_data->is_tar && phar_data->is_brandnew && format == PHAR_FORMAT_ZIP</span>)</a></td><td class="num">1017.50</td></tr>
+      <tr><td class="num line">571</td><td><a href="phar_object.c.html#L571">(!(SG(request_info).request_method && SG(request_info).request_uri && (<span style='background-color:#9c4c02;'>!strcmp(SG(request_info).request_method, "GET") || !strcmp(SG(request_info).request_method, "POST") || !strcmp(SG(request_info).request_method, "DELETE") || !strcmp(SG(request_info).request_method, "HEAD") || !strcmp(SG(request_info).request_method, "OPTIONS") || !strcmp(SG(request_info).request_method, "PATCH") || !strcmp(SG(request_info).request_method, "PUT")</span>)))</a></td><td class="num">188.50</td></tr>
+      <tr><td class="num line">1511</td><td><a href="phar_object.c.html#L1511">(<span style='background-color:#9c4c02;'>fname_len >= base_len && strncmp(fname, base, base_len) == 0 && ((ch = fname[base_len - IS_SLASH(base[base_len - 1])]) == '\0' || IS_SLASH(ch))</span>)</a></td><td class="num">118.35</td></tr>
+      <tr><td class="num line">3423</td><td><a href="phar_object.c.html#L3423">(!zend_hash_str_exists(&phar_obj->archive->manifest, oldfile, (uint32_t)oldfile_len) || NULL == (oldentry = zend_hash_str_find_ptr(&phar_obj->archive->manifest, oldfile, (uint32_t)oldfile_len)) || oldentry->is_deleted)</a></td><td class="num">90.75</td></tr>
+      <tr><td class="num line">600</td><td><a href="phar_object.c.html#L600">((sapi_mod_name_len == sizeof("cgi-fcgi") - 1 && !strncmp(sapi_module.name, "cgi-fcgi", sizeof("cgi-fcgi") - 1)) || (sapi_mod_name_len == sizeof("fpm-fcgi") - 1 && !strncmp(sapi_module.name, "fpm-fcgi", sizeof("fpm-fcgi") - 1)) || (sapi_mod_name_len == sizeof("cgi") - 1 && !strncmp(sapi_module.name, "cgi", sizeof("cgi") - 1)))</a></td><td class="num">85.25</td></tr>
+      <tr><td class="num line">3583</td><td><a href="phar_object.c.html#L3583">(!memcmp(&filename[start_pos], ".phar", sizeof(".phar") - 1) && (filename[start_pos + 5] == '/' || filename[start_pos + 5] == '\\' || filename[start_pos + 5] == '\0'))</a></td><td class="num">75.30</td></tr>
+      <tr><td class="num line">2724</td><td><a href="phar_object.c.html#L2724">(phar_obj->archive->alias_len && NULL != (fd_ptr = zend_hash_str_find_ptr(&(PHAR_G(phar_alias_map)), phar_obj->archive->alias, phar_obj->archive->alias_len)))</a></td><td class="num">72.50</td></tr>
+      <tr><td class="num line">3430</td><td><a href="phar_object.c.html#L3430">(NULL != (temp = zend_hash_str_find_ptr(&phar_obj->archive->manifest, newfile, (uint32_t)newfile_len)) || !temp->is_deleted)</a></td><td class="num">65.75</td></tr>
+      <tr><td class="num line">505</td><td><a href="phar_object.c.html#L505">(HT_IS_INITIALIZED(&PHAR_G(phar_fname_map)) && NULL != (pphar = zend_hash_str_find_ptr(&(PHAR_G(phar_fname_map)), fname, fname_len)))</a></td><td class="num">59.50</td></tr>
+      <tr><td class="num line">2704</td><td><a href="phar_object.c.html#L2704">(alias_len && NULL != (fd_ptr = zend_hash_str_find_ptr(&(PHAR_G(phar_alias_map)), alias, alias_len)))</a></td><td class="num">56.75</td></tr>
+      <tr><td class="num line">2101</td><td><a href="phar_object.c.html#L2101">(PHAR_G(manifest_cached) && NULL != (pphar = zend_hash_str_find_ptr(&cached_phars, newpath, phar->fname_len)))</a></td><td class="num">49.25</td></tr>
+      <tr><td class="num line">3598</td><td><a href="phar_object.c.html#L3598">(!(data = phar_get_or_create_entry_data((*pphar)->fname, (*pphar)->fname_len, filename, filename_len, "w+b", 0, &error, 1)))</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">3668</td><td><a href="phar_object.c.html#L3668">(!(data = phar_get_or_create_entry_data((*pphar)->fname, (*pphar)->fname_len, dirname, dirname_len, "w+b", 2, &error, 1)))</a></td><td class="num">48.50</td></tr>
+      <tr><td class="num line">2168</td><td><a href="phar_object.c.html#L2168">((!pphar || phar == pphar) && NULL == zend_hash_str_update_ptr(&(PHAR_G(phar_fname_map)), newpath, phar->fname_len, phar))</a></td><td class="num">47.25</td></tr>
+      <tr><td class="num line">1776</td><td><a href="phar_object.c.html#L1776">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">1839</td><td><a href="phar_object.c.html#L1839">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2605</td><td><a href="phar_object.c.html#L2605">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2720</td><td><a href="phar_object.c.html#L2720">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2868</td><td><a href="phar_object.c.html#L2868">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2883</td><td><a href="phar_object.c.html#L2883">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">2964</td><td><a href="phar_object.c.html#L2964">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">3015</td><td><a href="phar_object.c.html#L3015">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">3327</td><td><a href="phar_object.c.html#L3327">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">3369</td><td><a href="phar_object.c.html#L3369">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">4032</td><td><a href="phar_object.c.html#L4032">(phar_obj->archive->is_persistent && FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">47.00</td></tr>
+      <tr><td class="num line">468</td><td><a href="phar_object.c.html#L468">(PHAR_G(manifest_cached) && NULL != (pphar = zend_hash_str_find_ptr(&cached_phars, arch, arch_len)))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">507</td><td><a href="phar_object.c.html#L507">(PHAR_G(manifest_cached) && NULL != (pphar = zend_hash_str_find_ptr(&cached_phars, fname, fname_len)))</a></td><td class="num">46.00</td></tr>
+      <tr><td class="num line">2610</td><td><a href="phar_object.c.html#L2610">(NULL != (entry = zend_hash_str_find_ptr(&phar_obj->archive->manifest, fname, (uint32_t)fname_len)))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">3499</td><td><a href="phar_object.c.html#L3499">(NULL != (entry = zend_hash_str_find_ptr(&phar_obj->archive->manifest, fname, (uint32_t)fname_len)))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">3754</td><td><a href="phar_object.c.html#L3754">(NULL != (entry = zend_hash_str_find_ptr(&phar_obj->archive->manifest, fname, (uint32_t)fname_len)))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">3871</td><td><a href="phar_object.c.html#L3871">(NULL != (stub = zend_hash_str_find_ptr(&(phar_obj->archive->manifest), ".phar/stub.php", sizeof(".phar/stub.php") - 1)))</a></td><td class="num">43.75</td></tr>
+      <tr><td class="num line">2107</td><td><a href="phar_object.c.html#L2107">(NULL != (pphar = zend_hash_str_find_ptr(&(PHAR_G(phar_fname_map)), newpath, phar->fname_len)))</a></td><td class="num">42.00</td></tr>
+      <tr><td class="num line">467</td><td><a href="phar_object.c.html#L467">(NULL == (pphar = zend_hash_str_find_ptr(&(PHAR_G(phar_fname_map)), arch, arch_len)))</a></td><td class="num">38.75</td></tr>
+      <tr><td class="num line">3704</td><td><a href="phar_object.c.html#L3704">(zend_parse_parameters_ex(ZEND_PARSE_PARAMS_QUIET, ZEND_NUM_ARGS(), "pr", &fname, &fname_len, &zresource) == FAILURE && zend_parse_parameters(ZEND_NUM_ARGS(), "ps", &fname, &fname_len, &cont_str, &cont_len) == FAILURE)</a></td><td class="num">38.25</td></tr>
+      <tr><td class="num line">2108</td><td><a href="phar_object.c.html#L2108">(pphar->fname_len == phar->fname_len && !memcmp(pphar->fname, phar->fname, phar->fname_len))</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">3872</td><td><a href="phar_object.c.html#L3872">(phar_obj->archive->fp && !phar_obj->archive->is_brandnew && !(stub->flags & PHAR_ENT_COMPRESSION_MASK))</a></td><td class="num">37.50</td></tr>
+      <tr><td class="num line">1617</td><td><a href="phar_object.c.html#L1617">(!(data = phar_get_or_create_entry_data(phar_obj->archive->fname, phar_obj->archive->fname_len, str_key, str_key_len, "w+b", 0, &error, 1)))</a></td><td class="num">37.25</td></tr>
+      <tr><td class="num line">406</td><td><a href="phar_object.c.html#L406">(fname_len > 7 && !memcmp(fname, "phar://", 7) && SUCCESS == phar_split_fname(fname, fname_len, &arch, &arch_len, &entry, &entry_len, 2, 0))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">457</td><td><a href="phar_object.c.html#L457">(fname_len > 7 && !memcmp(fname, "phar://", 7) && SUCCESS == phar_split_fname(fname, fname_len, &arch, &arch_len, &entry, &entry_len, 2, 0))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1304</td><td><a href="phar_object.c.html#L1304">(zname_len > 7 && !memcmp(zname, "phar://", 7) && SUCCESS == phar_split_fname(zname, zname_len, &arch, &arch_len, &entry, &entry_len, 2, 0))</a></td><td class="num">33.75</td></tr>
+      <tr><td class="num line">1179</td><td><a href="phar_object.c.html#L1179">((is_data && !phar_data->is_data) || (!is_data && phar_data->is_data))</a></td><td class="num">33.50</td></tr>
+      <tr><td class="num line">2701</td><td><a href="phar_object.c.html#L2701">(alias_len == phar_obj->archive->alias_len && memcmp(phar_obj->archive->alias, alias, alias_len) == 0)</a></td><td class="num">33.25</td></tr>
+      <tr><td class="num line">4423</td><td><a href="phar_object.c.html#L4423">(fname_len < 7 || memcmp(fname, "phar://", 7) || phar_split_fname(fname, fname_len, &arch, &arch_len, &entry, &entry_len, 2, 0) == FAILURE)</a></td><td class="num">33.00</td></tr>
+      <tr><td class="num line">608</td><td><a href="phar_object.c.html#L608">(NULL == (z_script_name = zend_hash_str_find(_server, "SCRIPT_NAME", sizeof("SCRIPT_NAME") - 1)) || IS_STRING != Z_TYPE_P(z_script_name) || !strstr(Z_STRVAL_P(z_script_name), basename))</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">746</td><td><a href="phar_object.c.html#L746">(FAILURE == phar_get_archive(&phar, fname, fname_len, NULL, 0, NULL) || (info = phar_get_entry_info(phar, entry, entry_len, NULL, 0)) == NULL)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">792</td><td><a href="phar_object.c.html#L792">(FAILURE == phar_get_archive(&phar, fname, fname_len, NULL, 0, NULL) || (info = phar_get_entry_info(phar, entry, entry_len, NULL, 0)) == NULL)</a></td><td class="num">32.50</td></tr>
+      <tr><td class="num line">4227</td><td><a href="phar_object.c.html#L4227">((phar_get_fp_type(entry) == PHAR_FP && (entry->flags & PHAR_ENT_COMPRESSION_MASK)) || !phar_get_efp(entry, 0))</a></td><td class="num">31.75</td></tr>
+      <tr><td class="num line">4038</td><td><a href="phar_object.c.html#L4038">(serialize_metadata_or_throw(&phar_obj->archive->metadata_tracker, phar_obj->archive->is_persistent, metadata) != SUCCESS)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">4719</td><td><a href="phar_object.c.html#L4719">(serialize_metadata_or_throw(&entry_obj->entry->metadata_tracker, entry_obj->entry->is_persistent, metadata) != SUCCESS)</a></td><td class="num">31.00</td></tr>
+      <tr><td class="num line">614</td><td><a href="phar_object.c.html#L614">(NULL != (z_path_info = zend_hash_str_find(_server, "PATH_INFO", sizeof("PATH_INFO") - 1)) && IS_STRING == Z_TYPE_P(z_path_info))</a></td><td class="num">30.25</td></tr>
+      <tr><td class="num line">3536</td><td><a href="phar_object.c.html#L3536">(!(entry = phar_get_entry_info_dir(phar_obj->archive, fname, fname_len, 1, &error, 0)))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">4068</td><td><a href="phar_object.c.html#L4068">(!phar_metadata_tracker_has_data(&phar_obj->archive->metadata_tracker, phar_obj->archive->is_persistent))</a></td><td class="num">30.00</td></tr>
+      <tr><td class="num line">3875</td><td><a href="phar_object.c.html#L3875">(!(fp = php_stream_open_wrapper(phar_obj->archive->fname, "rb", 0, NULL)))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">4111</td><td><a href="phar_object.c.html#L4111">(virtual_file_ex(&new_state, entry->filename, NULL, CWD_EXPAND) != 0 || new_state.cwd_length <= 1)</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">4998</td><td><a href="phar_object.c.html#L4998">((entry_obj->entry->flags & PHAR_ENT_COMPRESSED_GZ) != 0 && !PHAR_G(has_zlib))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">5004</td><td><a href="phar_object.c.html#L5004">((entry_obj->entry->flags & PHAR_ENT_COMPRESSED_BZ2) != 0 && !PHAR_G(has_bz2))</a></td><td class="num">29.75</td></tr>
+      <tr><td class="num line">2136</td><td><a href="phar_object.c.html#L2136">(SUCCESS != phar_detect_phar_fname_ext(newpath, phar->fname_len, (const char **)&(phar->ext), &ext_len, 1, 1, 1))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">2157</td><td><a href="phar_object.c.html#L2157">(SUCCESS != phar_detect_phar_fname_ext(newpath, phar->fname_len, (const char **)&(phar->ext), &ext_len, 0, 1, 1))</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">730</td><td><a href="phar_object.c.html#L730">(!entry_len || (entry_len == 1 && entry[0] == '/'))</a></td><td class="num">28.75</td></tr>
+      <tr><td class="num line">4103</td><td><a href="phar_object.c.html#L4103">(entry->filename_len >= sizeof(".phar") - 1 && !memcmp(entry->filename, ".phar", sizeof(".phar") - 1))</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">4443</td><td><a href="phar_object.c.html#L4443">((entry_info = phar_get_entry_info_dir(phar_data, entry, entry_len, 1, &error, 1)) == NULL)</a></td><td class="num">27.75</td></tr>
+      <tr><td class="num line">1786</td><td><a href="phar_object.c.html#L1786">(SUCCESS == spl_iterator_apply((apply_reg ? &regexiter : &iteriter), (spl_iterator_apply_func_t)phar_build, (void *)&pass))</a></td><td class="num">27.25</td></tr>
+      <tr><td class="num line">805</td><td><a href="phar_object.c.html#L805">(NULL != (val = zend_hash_str_find(Z_ARRVAL_P(mimeoverride), ext, strlen(ext))))</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">40</td><td><a href="phar_object.c.html#L40">(NULL == (mime = zend_hash_str_find_ptr(mimes, ext, strlen(ext))))</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">3628</td><td><a href="phar_object.c.html#L3628">(contents_file != NULL && php_stream_stat(contents_file, &ssb) != -1)</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">1455</td><td><a href="phar_object.c.html#L1455">(php_stream_stat_path(fname, &ssb) == 0 && S_ISDIR(ssb.sb.st_mode))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">2068</td><td><a href="phar_object.c.html#L2068">(memcmp(phar_ext_list[i], basename + (oldname_len - phar_ext_len), phar_ext_len) == 0)</a></td><td class="num">24.70</td></tr>
+      <tr><td class="num line">3316</td><td><a href="phar_object.c.html#L3316">(!pharobj_cancompress(&phar_obj->archive->manifest))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">3360</td><td><a href="phar_object.c.html#L3360">(!pharobj_cancompress(&phar_obj->archive->manifest))</a></td><td class="num">24.75</td></tr>
+      <tr><td class="num line">3446</td><td><a href="phar_object.c.html#L3446">(FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">3761</td><td><a href="phar_object.c.html#L3761">(FAILURE == phar_copy_on_write(&(phar_obj->archive)))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">4189</td><td><a href="phar_object.c.html#L4189">(!php_stream_mkdir(fullpath, entry->flags & PHAR_ENT_PERM_MASK, PHP_STREAM_MKDIR_RECURSIVE, NULL))</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">688</td><td><a href="phar_object.c.html#L688">(Z_TYPE_P(rewrite_fci.retval) == IS_UNDEF || Z_TYPE(retval) == IS_UNDEF)</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">4171</td><td><a href="phar_object.c.html#L4171">(!overwrite && SUCCESS == php_stream_stat_path(fullpath, &ssb))</a></td><td class="num">23.50</td></tr>
+      <tr><td class="num line">229</td><td><a href="phar_object.c.html#L229">(zend_hash_str_add(&EG(included_files), name, name_len, &dummy) != NULL)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">554</td><td><a href="phar_object.c.html#L554">(zend_parse_parameters(ZEND_NUM_ARGS(), "|s!s!s!af!", &alias, &alias_len, &index_php, &index_php_len, &f404, &f404_len, &mimeoverride, &rewrite_fci, &rewrite_fcc) == FAILURE)</a></td><td class="num">23.00</td></tr>
+      <tr><td class="num line">2109</td><td><a href="phar_object.c.html#L2109">(!zend_hash_num_elements(&phar->manifest))</a></td><td class="num">22.75</td></tr>
+      <tr><td class="num line">4278</td><td><a href="phar_object.c.html#L4278">('/' == ZSTR_VAL(search)[ZSTR_LEN(search) - 1])</a></td><td class="num">22.60</td></tr>
+      <tr><td class="num line">771</td><td><a href="phar_object.c.html#L771">(path_info[strlen(path_info) - 1] == '/')</a></td><td class="num">22.35</td></tr>
+      <tr><td class="num line">2645</td><td><a href="phar_object.c.html#L2645">(phar_obj->archive->alias && phar_obj->archive->alias != phar_obj->archive->fname)</a></td><td class="num">21.75</td></tr>
+      <tr><td class="num line">59</td><td><a href="phar_object.c.html#L59">(Z_TYPE(PG(http_globals)[TRACK_VARS_SERVER]) == IS_UNDEF)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">604</td><td><a href="phar_object.c.html#L604">(Z_TYPE(PG(http_globals)[TRACK_VARS_SERVER]) != IS_UNDEF)</a></td><td class="num">20.25</td></tr>
+      <tr><td class="num line">2938</td><td><a href="phar_object.c.html#L2938">((index || webindex) && (phar_obj->archive->is_tar || phar_obj->archive->is_zip))</a></td><td class="num">18.75</td></tr>
+      <tr><td class="num line">1114</td><td><a href="phar_object.c.html#L1114">(zend_parse_parameters(ZEND_NUM_ARGS(), "p|ls!l", &fname, &fname_len, &flags, &alias, &alias_len, &format) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">2328</td><td><a href="phar_object.c.html#L2328">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l!l!s!", &format, &format_is_null, &method, &method_is_null, &ext, &ext_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">2439</td><td><a href="phar_object.c.html#L2439">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l!l!s!", &format, &format_is_null, &method, &method_is_null, &ext, &ext_len) == FAILURE)</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">2949</td><td><a href="phar_object.c.html#L2949">(!phar_obj->archive->is_tar && !phar_obj->archive->is_zip)</a></td><td class="num">15.75</td></tr>
+      <tr><td class="num line">3910</td><td><a href="phar_object.c.html#L3910">(phar_obj->archive->fp && !phar_obj->archive->is_brandnew)</a></td><td class="num">15.00</td></tr>
+      <tr><td class="num line">1118</td><td><a href="phar_object.c.html#L1118">(zend_parse_parameters(ZEND_NUM_ARGS(), "p|ls!", &fname, &fname_len, &flags, &alias, &alias_len) == FAILURE)</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">2051</td><td><a href="phar_object.c.html#L2051">((oldname = zend_memrchr(phar->fname, '/', phar->fname_len)))</a></td><td class="num">14.00</td></tr>
+      <tr><td class="num line">4756</td><td><a href="phar_object.c.html#L4756">(phar_metadata_tracker_has_data(&entry_obj->entry->metadata_tracker, entry_obj->entry->is_persistent))</a></td><td class="num">13.00</td></tr>
+      <tr><td class="num line">3869</td><td><a href="phar_object.c.html#L3869">(phar_obj->archive->is_tar || phar_obj->archive->is_zip)</a></td><td class="num">12.75</td></tr>
+      <tr><td class="num line">1129</td><td><a href="phar_object.c.html#L1129">(SUCCESS == phar_split_fname(fname, fname_len, &arch, &arch_len, &entry, &entry_len, !is_data, 2))</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">1357</td><td><a href="phar_object.c.html#L1357">(phar_obj->archive && phar_obj->archive->is_persistent)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">4484</td><td><a href="phar_object.c.html#L4484">(entry_obj->entry && entry_obj->entry->is_temp_dir)</a></td><td class="num">12.25</td></tr>
+      <tr><td class="num line">4607</td><td><a href="phar_object.c.html#L4607">(PHAR_G(readonly) && !entry_obj->entry->phar->is_data)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">4696</td><td><a href="phar_object.c.html#L4696">(PHAR_G(readonly) && !entry_obj->entry->phar->is_data)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">4745</td><td><a href="phar_object.c.html#L4745">(PHAR_G(readonly) && !entry_obj->entry->phar->is_data)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">4861</td><td><a href="phar_object.c.html#L4861">(PHAR_G(readonly) && !entry_obj->entry->phar->is_data)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">4986</td><td><a href="phar_object.c.html#L4986">(PHAR_G(readonly) && !entry_obj->entry->phar->is_data)</a></td><td class="num">12.00</td></tr>
+      <tr><td class="num line">440</td><td><a href="phar_object.c.html#L440">(zend_parse_parameters(ZEND_NUM_ARGS(), "pp", &path, &path_len, &actual, &actual_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">928</td><td><a href="phar_object.c.html#L928">(zend_parse_parameters(ZEND_NUM_ARGS(), "|p!p!", &index, &index_len, &webindex, &webindex_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">970</td><td><a href="phar_object.c.html#L970">(zend_parse_parameters(ZEND_NUM_ARGS(), "p|s!", &fname, &fname_len, &alias, &alias_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">2921</td><td><a href="phar_object.c.html#L2921">(zend_parse_parameters(ZEND_NUM_ARGS(), "|s!s!", &index, &index_len, &webindex, &webindex_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3397</td><td><a href="phar_object.c.html#L3397">(zend_parse_parameters(ZEND_NUM_ARGS(), "pp", &oldfile, &oldfile_len, &newfile, &newfile_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3811</td><td><a href="phar_object.c.html#L3811">(zend_parse_parameters(ZEND_NUM_ARGS(), "p|s!", &fname, &fname_len, &localname, &localname_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">3844</td><td><a href="phar_object.c.html#L3844">(zend_parse_parameters(ZEND_NUM_ARGS(), "ps", &localname, &localname_len, &cont_str, &cont_len) == FAILURE)</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">513</td><td><a href="phar_object.c.html#L513">(SUCCESS == phar_split_fname(path, path_len, &arch, &arch_len, &entry, &entry_len, 2, 0))</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">4113</td><td><a href="phar_object.c.html#L4113">(EINVAL == errno && entry->filename_len > 50)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">1524</td><td><a href="phar_object.c.html#L1524">(*str_key == '/' || *str_key == '\\')</a></td><td class="num">11.25</td></tr>
+      <tr><td class="num line">4889</td><td><a href="phar_object.c.html#L4889">((entry_obj->entry->flags & PHAR_ENT_COMPRESSED_BZ2) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">4920</td><td><a href="phar_object.c.html#L4920">((entry_obj->entry->flags & PHAR_ENT_COMPRESSED_GZ) != 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">4982</td><td><a href="phar_object.c.html#L4982">((entry_obj->entry->flags & PHAR_ENT_COMPRESSION_MASK) == 0)</a></td><td class="num">10.75</td></tr>
+      <tr><td class="num line">1707</td><td><a href="phar_object.c.html#L1707">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">1833</td><td><a href="phar_object.c.html#L1833">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2573</td><td><a href="phar_object.c.html#L2573">(SUCCESS != php_stream_stat_path(phar_obj->archive->fname, &ssb))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2599</td><td><a href="phar_object.c.html#L2599">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2680</td><td><a href="phar_object.c.html#L2680">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2815</td><td><a href="phar_object.c.html#L2815">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">2844</td><td><a href="phar_object.c.html#L2844">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3001</td><td><a href="phar_object.c.html#L3001">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3172</td><td><a href="phar_object.c.html#L3172">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3238</td><td><a href="phar_object.c.html#L3238">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3280</td><td><a href="phar_object.c.html#L3280">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3354</td><td><a href="phar_object.c.html#L3354">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3403</td><td><a href="phar_object.c.html#L3403">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3711</td><td><a href="phar_object.c.html#L3711">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">3748</td><td><a href="phar_object.c.html#L3748">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">4027</td><td><a href="phar_object.c.html#L4027">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">4063</td><td><a href="phar_object.c.html#L4063">(PHAR_G(readonly) && !phar_obj->archive->is_data)</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">66</td><td><a href="phar_object.c.html#L66">(NULL != (stuff = zend_hash_str_find(_SERVER, "PATH_INFO", sizeof("PATH_INFO") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">76</td><td><a href="phar_object.c.html#L76">(NULL != (stuff = zend_hash_str_find(_SERVER, "PATH_TRANSLATED", sizeof("PATH_TRANSLATED") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">90</td><td><a href="phar_object.c.html#L90">(NULL != (stuff = zend_hash_str_find(_SERVER, "REQUEST_URI", sizeof("REQUEST_URI") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">102</td><td><a href="phar_object.c.html#L102">(NULL != (stuff = zend_hash_str_find(_SERVER, "PHP_SELF", sizeof("PHP_SELF") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">115</td><td><a href="phar_object.c.html#L115">(NULL != (stuff = zend_hash_str_find(_SERVER, "SCRIPT_NAME", sizeof("SCRIPT_NAME") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">123</td><td><a href="phar_object.c.html#L123">(NULL != (stuff = zend_hash_str_find(_SERVER, "SCRIPT_FILENAME", sizeof("SCRIPT_FILENAME") - 1)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">2296</td><td><a href="phar_object.c.html#L2296">((ret = phar_rename_archive(&phar, ext)))</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">3882</td><td><a href="phar_object.c.html#L3882">((filter_name = phar_decompress_filter(stub, 0)) != NULL)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">950</td><td><a href="phar_object.c.html#L950">(zend_parse_parameters(ZEND_NUM_ARGS(), "|s!l", &alias, &alias_len, &dataoffset) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">1047</td><td><a href="phar_object.c.html#L1047">(zend_parse_parameters(ZEND_NUM_ARGS(), "p|b", &fname, &fname_len, &executable) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2995</td><td><a href="phar_object.c.html#L2995">(zend_parse_parameters(ZEND_NUM_ARGS(), "l|s!", &algo, &key, &key_len) != SUCCESS)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">3166</td><td><a href="phar_object.c.html#L3166">(zend_parse_parameters(ZEND_NUM_ARGS(), "l|s!", &method, &ext, &ext_len) == FAILURE)</a></td><td class="num">9.50</td></tr>
+      <tr><td class="num line">2039</td><td><a href="phar_object.c.html#L2039">(phar_path_check(&ext, &ext_len, &pcr_error) > pcr_is_ok)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">3438</td><td><a href="phar_object.c.html#L3438">(phar_path_check(&newfile, &tmp_len, &pcr_error) > pcr_is_ok)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">496</td><td><a href="phar_object.c.html#L496">(entry && path && path == entry)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2546</td><td><a href="phar_object.c.html#L2546">(phar_obj->archive->flags & PHAR_FILE_COMPRESSED_GZ)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">2550</td><td><a href="phar_object.c.html#L2550">(phar_obj->archive->flags & PHAR_FILE_COMPRESSED_BZ2)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4885</td><td><a href="phar_object.c.html#L4885">(entry_obj->entry->flags & PHAR_ENT_COMPRESSED_GZ)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">4916</td><td><a href="phar_object.c.html#L4916">(entry_obj->entry->flags & PHAR_ENT_COMPRESSED_BZ2)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">634</td><td><a href="phar_object.c.html#L634">(!(pt = strstr(testit, basename)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">659</td><td><a href="phar_object.c.html#L659">(!(pt = strstr(path_info, basename)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">1148</td><td><a href="phar_object.c.html#L1148">(fname == arch && fname != save_fname)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">3822</td><td><a href="phar_object.c.html#L3822">(!(resource = php_stream_open_wrapper(fname, "rb", 0, NULL)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4390</td><td><a href="phar_object.c.html#L4390">(0 == ret && NULL != filename)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">4821</td><td><a href="phar_object.c.html#L4821">(!(fp = phar_get_efp(link, 0)))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">2269</td><td><a href="phar_object.c.html#L2269">(FAILURE == phar_copy_file_contents(&newentry, phar->fp))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">4897</td><td><a href="phar_object.c.html#L4897">(SUCCESS != phar_open_entry_fp(entry_obj->entry, &error, 1))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">4928</td><td><a href="phar_object.c.html#L4928">(SUCCESS != phar_open_entry_fp(entry_obj->entry, &error, 1))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">5033</td><td><a href="phar_object.c.html#L5033">(SUCCESS != phar_open_entry_fp(entry_obj->entry, &error, 1))</a></td><td class="num">8.00</td></tr>
+      <tr><td class="num line">2609</td><td><a href="phar_object.c.html#L2609">(zend_hash_str_exists(&phar_obj->archive->manifest, fname, (uint32_t)fname_len))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3429</td><td><a href="phar_object.c.html#L3429">(zend_hash_str_exists(&phar_obj->archive->manifest, newfile, (uint32_t)newfile_len))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3498</td><td><a href="phar_object.c.html#L3498">(zend_hash_str_exists(&phar_obj->archive->manifest, fname, (uint32_t)fname_len))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3512</td><td><a href="phar_object.c.html#L3512">(zend_hash_str_exists(&phar_obj->archive->virtual_dirs, fname, (uint32_t)fname_len))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3683</td><td><a href="phar_object.c.html#L3683">(data->phar != *pphar)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">3753</td><td><a href="phar_object.c.html#L3753">(zend_hash_str_exists(&phar_obj->archive->manifest, fname, (uint32_t)fname_len))</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">230</td><td><a href="phar_object.c.html#L230">((cwd = zend_memrchr(entry, '/', entry_len)))</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">1644</td><td><a href="phar_object.c.html#L1644">(data->internal_file->fp_type == PHAR_MOD)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3927</td><td><a href="phar_object.c.html#L3927">(fp != phar_obj->archive->fp)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">3941</td><td><a href="phar_object.c.html#L3941">(fp != phar_obj->archive->fp)</a></td><td class="num">7.50</td></tr>
+      <tr><td class="num line">808</td><td><a href="phar_object.c.html#L808">(Z_LVAL_P(val) == PHAR_MIME_PHP || Z_LVAL_P(val) == PHAR_MIME_PHPS)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1282</td><td><a href="phar_object.c.html#L1282">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1701</td><td><a href="phar_object.c.html#L1701">(zend_parse_parameters(ZEND_NUM_ARGS(), "P|S", &dir, &regex) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">1827</td><td><a href="phar_object.c.html#L1827">(zend_parse_parameters(ZEND_NUM_ARGS(), "O|S!", &obj, zend_ce_traversable, &base) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2593</td><td><a href="phar_object.c.html#L2593">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2674</td><td><a href="phar_object.c.html#L2674">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &alias, &alias_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2861</td><td><a href="phar_object.c.html#L2861">(zend_parse_parameters_ex(ZEND_PARSE_PARAMS_QUIET, ZEND_NUM_ARGS(), "r|l", &zstub, &len) == SUCCESS)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">2882</td><td><a href="phar_object.c.html#L2882">(zend_parse_parameters(ZEND_NUM_ARGS(), "s", &stub, &stub_len) == SUCCESS)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3232</td><td><a href="phar_object.c.html#L3232">(zend_parse_parameters(ZEND_NUM_ARGS(), "|s!", &ext, &ext_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3492</td><td><a href="phar_object.c.html#L3492">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3529</td><td><a href="phar_object.c.html#L3529">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3640</td><td><a href="phar_object.c.html#L3640">(pphar[0] != data->phar)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3742</td><td><a href="phar_object.c.html#L3742">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">3788</td><td><a href="phar_object.c.html#L3788">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &dirname, &dirname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4412</td><td><a href="phar_object.c.html#L4412">(zend_parse_parameters(ZEND_NUM_ARGS(), "p", &fname, &fname_len) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">4515</td><td><a href="phar_object.c.html#L4515">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l!", &method, &method_is_null) == FAILURE)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">69</td><td><a href="phar_object.c.html#L69">(code > (size_t)entry_len && !memcmp(path_info, entry, entry_len))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">93</td><td><a href="phar_object.c.html#L93">(code > basename_len && !memcmp(path_info, basename, basename_len))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">106</td><td><a href="phar_object.c.html#L106">(code > basename_len && !memcmp(path_info, basename, basename_len))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">461</td><td><a href="phar_object.c.html#L461">(path_len > 7 && !memcmp(path, "phar://", 7))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">681</td><td><a href="phar_object.c.html#L681">(FAILURE == zend_call_function(&rewrite_fci, &rewrite_fcc))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1146</td><td><a href="phar_object.c.html#L1146">(phar_open_or_create_filename(fname, fname_len, alias, alias_len, is_data, REPORT_ERRORS, &phar_data, &error) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1291</td><td><a href="phar_object.c.html#L1291">(FAILURE == phar_open_from_filename(fname, fname_len, NULL, 0, REPORT_ERRORS, &phar, &error))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1305</td><td><a href="phar_object.c.html#L1305">((size_t)arch_len == fname_len && !memcmp(arch, fname, arch_len))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">1596</td><td><a href="phar_object.c.html#L1596">(str_key_len >= sizeof(".phar") - 1 && !memcmp(str_key, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3409</td><td><a href="phar_object.c.html#L3409">(oldfile_len >= sizeof(".phar") - 1 && !memcmp(oldfile, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3416</td><td><a href="phar_object.c.html#L3416">(newfile_len >= sizeof(".phar") - 1 && !memcmp(newfile, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3463</td><td><a href="phar_object.c.html#L3463">(FAILURE == phar_copy_entry_fp(oldentry, &newentry, &error))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3506</td><td><a href="phar_object.c.html#L3506">(fname_len >= sizeof(".phar") - 1 && !memcmp(fname, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3539</td><td><a href="phar_object.c.html#L3539">(fname_len == sizeof(".phar/stub.php") - 1 && !memcmp(fname, ".phar/stub.php", sizeof(".phar/stub.php") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3544</td><td><a href="phar_object.c.html#L3544">(fname_len == sizeof(".phar/alias.txt") - 1 && !memcmp(fname, ".phar/alias.txt", sizeof(".phar/alias.txt") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3549</td><td><a href="phar_object.c.html#L3549">(fname_len >= sizeof(".phar") - 1 && !memcmp(fname, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3716</td><td><a href="phar_object.c.html#L3716">(fname_len == sizeof(".phar/stub.php") - 1 && !memcmp(fname, ".phar/stub.php", sizeof(".phar/stub.php") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3721</td><td><a href="phar_object.c.html#L3721">(fname_len == sizeof(".phar/alias.txt") - 1 && !memcmp(fname, ".phar/alias.txt", sizeof(".phar/alias.txt") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3726</td><td><a href="phar_object.c.html#L3726">(fname_len >= sizeof(".phar") - 1 && !memcmp(fname, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3794</td><td><a href="phar_object.c.html#L3794">(dirname_len >= sizeof(".phar") - 1 && !memcmp(dirname, ".phar", sizeof(".phar") - 1))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">4429</td><td><a href="phar_object.c.html#L4429">(phar_open_from_filename(arch, arch_len, NULL, 0, REPORT_ERRORS, &phar_data, &error) == FAILURE)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">3123</td><td><a href="phar_object.c.html#L3123">(entry->flags & PHAR_ENT_COMPRESSED_BZ2)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3129</td><td><a href="phar_object.c.html#L3129">(entry->flags & PHAR_ENT_COMPRESSED_GZ)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">3879</td><td><a href="phar_object.c.html#L3879">(stub->flags & PHAR_ENT_COMPRESSION_MASK)</a></td><td class="num">6.50</td></tr>
+      <tr><td class="num line">1748</td><td><a href="phar_object.c.html#L1748">(regex && ZSTR_LEN(regex) > 0)</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">4281</td><td><a href="phar_object.c.html#L4281">(0 != strncmp(ZSTR_VAL(search), entry->filename, ZSTR_LEN(search)))</a></td><td class="num">6.25</td></tr>
+      <tr><td class="num line">485</td><td><a href="phar_object.c.html#L485">(path && path == entry)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">1939</td><td><a href="phar_object.c.html#L1939">(SUCCESS != php_stream_copy_to_stream_ex(phar_get_efp(link, 0), fp, link->uncompressed_filesize, NULL))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2066</td><td><a href="phar_object.c.html#L2066">(phar_ext_len && oldname_len > phar_ext_len)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">2569</td><td><a href="phar_object.c.html#L2569">(!phar_obj->archive->is_writeable)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">3611</td><td><a href="phar_object.c.html#L3611">(!data->internal_file->is_dir)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">4247</td><td><a href="phar_object.c.html#L4247">(SUCCESS != php_stream_copy_to_stream_ex(phar_get_efp(entry, 0), fp, entry->uncompressed_filesize, NULL))</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">350</td><td><a href="phar_object.c.html#L350">(zend_hash_str_exists(&(pphar->manifest), e, e_len))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">4351</td><td><a href="phar_object.c.html#L4351">(!(ssb.sb.st_mode & S_IFDIR))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">204</td><td><a href="phar_object.c.html#L204">(position == (zend_off_t)info->uncompressed_filesize)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1945</td><td><a href="phar_object.c.html#L1945">(entry->fp_type == PHAR_MOD)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">2243</td><td><a href="phar_object.c.html#L2243">(phar->fp == NULL)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3462</td><td><a href="phar_object.c.html#L3462">(oldentry->fp_type != PHAR_FP)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">3978</td><td><a href="phar_object.c.html#L3978">(phar_metadata_tracker_has_data(tracker, phar_obj->archive->is_persistent))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4134</td><td><a href="phar_object.c.html#L4134">(cnt++ < filename_len)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4144</td><td><a href="phar_object.c.html#L4144">(entry->filename_len > 50)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">4678</td><td><a href="phar_object.c.html#L4678">(phar_metadata_tracker_has_data(tracker, entry_obj->entry->is_persistent))</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">1413</td><td><a href="phar_object.c.html#L1413">(iter->funcs->get_current_key)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">1540</td><td><a href="phar_object.c.html#L1540">(iter->funcs->get_current_key)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2347</td><td><a href="phar_object.c.html#L2347">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2349</td><td><a href="phar_object.c.html#L2349">(phar_obj->archive->is_zip)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2452</td><td><a href="phar_object.c.html#L2452">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2454</td><td><a href="phar_object.c.html#L2454">(phar_obj->archive->is_zip)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2574</td><td><a href="phar_object.c.html#L2574">(phar_obj->archive->is_brandnew)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2690</td><td><a href="phar_object.c.html#L2690">(phar_obj->archive->is_data)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2691</td><td><a href="phar_object.c.html#L2691">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2850</td><td><a href="phar_object.c.html#L2850">(phar_obj->archive->is_data)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2851</td><td><a href="phar_object.c.html#L2851">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2927</td><td><a href="phar_object.c.html#L2927">(phar_obj->archive->is_data)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">2928</td><td><a href="phar_object.c.html#L2928">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3046</td><td><a href="phar_object.c.html#L3046">(phar_obj->archive->signature)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3178</td><td><a href="phar_object.c.html#L3178">(phar_obj->archive->is_zip)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3211</td><td><a href="phar_object.c.html#L3211">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3244</td><td><a href="phar_object.c.html#L3244">(phar_obj->archive->is_zip)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3250</td><td><a href="phar_object.c.html#L3250">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3310</td><td><a href="phar_object.c.html#L3310">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3366</td><td><a href="phar_object.c.html#L3366">(phar_obj->archive->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3445</td><td><a href="phar_object.c.html#L3445">(phar_obj->archive->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">3760</td><td><a href="phar_object.c.html#L3760">(phar_obj->archive->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4485</td><td><a href="phar_object.c.html#L4485">(entry_obj->entry->filename)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4548</td><td><a href="phar_object.c.html#L4548">(entry_obj->entry->is_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4554</td><td><a href="phar_object.c.html#L4554">(entry_obj->entry->is_crc_checked)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4601</td><td><a href="phar_object.c.html#L4601">(entry_obj->entry->is_temp_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4612</td><td><a href="phar_object.c.html#L4612">(entry_obj->entry->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4701</td><td><a href="phar_object.c.html#L4701">(entry_obj->entry->is_temp_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4707</td><td><a href="phar_object.c.html#L4707">(entry_obj->entry->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4750</td><td><a href="phar_object.c.html#L4750">(entry_obj->entry->is_temp_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4757</td><td><a href="phar_object.c.html#L4757">(entry_obj->entry->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4802</td><td><a href="phar_object.c.html#L4802">(entry_obj->entry->is_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4849</td><td><a href="phar_object.c.html#L4849">(entry_obj->entry->is_tar)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4855</td><td><a href="phar_object.c.html#L4855">(entry_obj->entry->is_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4867</td><td><a href="phar_object.c.html#L4867">(entry_obj->entry->is_deleted)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4873</td><td><a href="phar_object.c.html#L4873">(entry_obj->entry->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4976</td><td><a href="phar_object.c.html#L4976">(entry_obj->entry->is_dir)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">4992</td><td><a href="phar_object.c.html#L4992">(entry_obj->entry->is_deleted)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">5010</td><td><a href="phar_object.c.html#L5010">(entry_obj->entry->is_persistent)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">399</td><td><a href="phar_object.c.html#L399">(zend_parse_parameters(ZEND_NUM_ARGS(), "|b", &retphar) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">865</td><td><a href="phar_object.c.html#L865">(zend_parse_parameters(ZEND_NUM_ARGS(), "a", &mungvalues) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">999</td><td><a href="phar_object.c.html#L999">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l", &method) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1876</td><td><a href="phar_object.c.html#L1876">(zend_parse_parameters(ZEND_NUM_ARGS(), "|l", &mode) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">1893</td><td><a href="phar_object.c.html#L1893">(zend_parse_parameters(ZEND_NUM_ARGS(), "l", &type) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3274</td><td><a href="phar_object.c.html#L3274">(zend_parse_parameters(ZEND_NUM_ARGS(), "l", &method) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">3817</td><td><a href="phar_object.c.html#L3817">(!strstr(fname, "://") && php_check_open_basedir(fname))</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4021</td><td><a href="phar_object.c.html#L4021">(zend_parse_parameters(ZEND_NUM_ARGS(), "z", &metadata) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4595</td><td><a href="phar_object.c.html#L4595">(zend_parse_parameters(ZEND_NUM_ARGS(), "l", &perms) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4690</td><td><a href="phar_object.c.html#L4690">(zend_parse_parameters(ZEND_NUM_ARGS(), "z", &metadata) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">4843</td><td><a href="phar_object.c.html#L4843">(zend_parse_parameters(ZEND_NUM_ARGS(), "l", &method) == FAILURE)</a></td><td class="num">5.00</td></tr>
+      <tr><td class="num line">345</td><td><a href="phar_object.c.html#L345">(!pphar && PHAR_G(manifest_cached))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">469</td><td><a href="phar_object.c.html#L469">(SUCCESS == phar_copy_on_write(&pphar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">508</td><td><a href="phar_object.c.html#L508">(SUCCESS == phar_copy_on_write(&pphar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">562</td><td><a href="phar_object.c.html#L562">(phar_open_executed_filename(alias, alias_len, &error) != SUCCESS)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1655</td><td><a href="phar_object.c.html#L1655">(php_stream_stat(fp, &ssb) != -1)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1713</td><td><a href="phar_object.c.html#L1713">(SUCCESS != object_init_ex(&iter, spl_ce_RecursiveDirectoryIterator))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1730</td><td><a href="phar_object.c.html#L1730">(SUCCESS != object_init_ex(&iteriter, spl_ce_RecursiveIteratorIterator))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1751</td><td><a href="phar_object.c.html#L1751">(SUCCESS != object_init_ex(&regexiter, spl_ce_RegexIterator))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1857</td><td><a href="phar_object.c.html#L1857">(SUCCESS == spl_iterator_apply(obj, (spl_iterator_apply_func_t)phar_build, (void *)&pass))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">1918</td><td><a href="phar_object.c.html#L1918">(FAILURE == phar_open_entry_fp(entry, &error, 1))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2130</td><td><a href="phar_object.c.html#L2130">(SUCCESS == php_stream_stat_path(newpath, &ssb))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">2194</td><td><a href="phar_object.c.html#L2194">(SUCCESS != object_init_ex(&ret, ce))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4187</td><td><a href="phar_object.c.html#L4187">(FAILURE == php_stream_stat_path(fullpath, &ssb))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4344</td><td><a href="phar_object.c.html#L4344">(php_stream_stat_path(pathto, &ssb) < 0)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4615</td><td><a href="phar_object.c.html#L4615">(FAILURE == phar_copy_on_write(&phar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4710</td><td><a href="phar_object.c.html#L4710">(FAILURE == phar_copy_on_write(&phar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4760</td><td><a href="phar_object.c.html#L4760">(FAILURE == phar_copy_on_write(&phar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4814</td><td><a href="phar_object.c.html#L4814">(SUCCESS != phar_open_entry_fp(link, &error, 0))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">4876</td><td><a href="phar_object.c.html#L4876">(FAILURE == phar_copy_on_write(&phar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">5013</td><td><a href="phar_object.c.html#L5013">(FAILURE == phar_copy_on_write(&phar))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">798</td><td><a href="phar_object.c.html#L798">(mimeoverride && zend_hash_num_elements(Z_ARRVAL_P(mimeoverride)))</a></td><td class="num">4.25</td></tr>
+      <tr><td class="num line">154</td><td><a href="phar_object.c.html#L154">(entry[0] == '/')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">217</td><td><a href="phar_object.c.html#L217">(entry[0] == '/')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">236</td><td><a href="phar_object.c.html#L236">(entry[0] == '/')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">736</td><td><a href="phar_object.c.html#L736">(entry[0] != '/')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1063</td><td><a href="phar_object.c.html#L1063">(!phar->is_persistent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1078</td><td><a href="phar_object.c.html#L1078">(!phar_data->is_persistent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1193</td><td><a href="phar_object.c.html#L1193">(!phar_data->is_persistent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1215</td><td><a href="phar_object.c.html#L1215">(!phar_data->is_persistent)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2086</td><td><a href="phar_object.c.html#L2086">(ext[0] == '.')</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">2135</td><td><a href="phar_object.c.html#L2135">(!phar->is_data)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">4131</td><td><a href="phar_object.c.html#L4131">('\\' == filename[cnt])</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">314</td><td><a href="phar_object.c.html#L314">(phar && f404_len)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1771</td><td><a href="phar_object.c.html#L1771">(pass.fp == NULL)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">1852</td><td><a href="phar_object.c.html#L1852">(pass.fp == NULL)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">89</td><td><a href="phar_object.c.html#L89">(PHAR_G(phar_SERVER_mung_list) & PHAR_MUNG_REQUEST_URI)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">101</td><td><a href="phar_object.c.html#L101">(PHAR_G(phar_SERVER_mung_list) & PHAR_MUNG_PHP_SELF)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">114</td><td><a href="phar_object.c.html#L114">(PHAR_G(phar_SERVER_mung_list) & PHAR_MUNG_SCRIPT_NAME)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">122</td><td><a href="phar_object.c.html#L122">(PHAR_G(phar_SERVER_mung_list) & PHAR_MUNG_SCRIPT_FILENAME)</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">187</td><td><a href="phar_object.c.html#L187">(!phar_open_jit(phar, info, &error))</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1123</td><td><a href="phar_object.c.html#L1123">(phar_obj->archive)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1315</td><td><a href="phar_object.c.html#L1315">(phar->is_persistent)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1320</td><td><a href="phar_object.c.html#L1320">(phar->refcount)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1994</td><td><a href="phar_object.c.html#L1994">(phar->is_zip)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">1996</td><td><a href="phar_object.c.html#L1996">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2002</td><td><a href="phar_object.c.html#L2002">(phar->is_tar)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2006</td><td><a href="phar_object.c.html#L2006">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2013</td><td><a href="phar_object.c.html#L2013">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2020</td><td><a href="phar_object.c.html#L2020">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2041</td><td><a href="phar_object.c.html#L2041">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2143</td><td><a href="phar_object.c.html#L2143">(phar->alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2144</td><td><a href="phar_object.c.html#L2144">(phar->is_temporary_alias)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2187</td><td><a href="phar_object.c.html#L2187">(phar->is_data)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2303</td><td><a href="phar_object.c.html#L2303">(phar->fp)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">2611</td><td><a href="phar_object.c.html#L2611">(entry->is_deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3102</td><td><a href="phar_object.c.html#L3102">(entry->is_deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3118</td><td><a href="phar_object.c.html#L3118">(entry->is_deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3500</td><td><a href="phar_object.c.html#L3500">(entry->is_deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3554</td><td><a href="phar_object.c.html#L3554">(entry->is_temp_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">3755</td><td><a href="phar_object.c.html#L3755">(entry->is_deleted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4005</td><td><a href="phar_object.c.html#L4005">(tracker->str)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4098</td><td><a href="phar_object.c.html#L4098">(entry->is_mounted)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4188</td><td><a href="phar_object.c.html#L4188">(entry->is_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4214</td><td><a href="phar_object.c.html#L4214">(entry->is_dir)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">4418</td><td><a href="phar_object.c.html#L4418">(entry_obj->entry)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">874</td><td><a href="phar_object.c.html#L874">(zend_hash_num_elements(Z_ARRVAL_P(mungvalues)) > 4)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">1018</td><td><a href="phar_object.c.html#L1018">(PHAR_G(has_zlib) || PHAR_G(has_bz2))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">3926</td><td><a href="phar_object.c.html#L3926">(len != php_stream_read(fp, ZSTR_VAL(buf), len))</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">178</td><td><a href="phar_object.c.html#L178">(FAILURE == sapi_send_headers())</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">483</td><td><a href="phar_object.c.html#L483">(SUCCESS != phar_mount_entry(pphar, actual, actual_len, path, path_len))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">883</td><td><a href="phar_object.c.html#L883">(Z_TYPE_P(data) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">911</td><td><a href="phar_object.c.html#L911">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">987</td><td><a href="phar_object.c.html#L987">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1030</td><td><a href="phar_object.c.html#L1030">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1230</td><td><a href="phar_object.c.html#L1230">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1245</td><td><a href="phar_object.c.html#L1245">(zend_hash_str_exists(&module_registry, "openssl", sizeof("openssl") - 1))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1257</td><td><a href="phar_object.c.html#L1257">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1353</td><td><a href="phar_object.c.html#L1353">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1421</td><td><a href="phar_object.c.html#L1421">(Z_TYPE(key) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">1548</td><td><a href="phar_object.c.html#L1548">(Z_TYPE(key) != IS_STRING)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2540</td><td><a href="phar_object.c.html#L2540">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2563</td><td><a href="phar_object.c.html#L2563">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2639</td><td><a href="phar_object.c.html#L2639">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2654</td><td><a href="phar_object.c.html#L2654">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2706</td><td><a href="phar_object.c.html#L2706">(SUCCESS == phar_free_alias(fd_ptr, alias, alias_len))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2768</td><td><a href="phar_object.c.html#L2768">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2781</td><td><a href="phar_object.c.html#L2781">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2794</td><td><a href="phar_object.c.html#L2794">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2809</td><td><a href="phar_object.c.html#L2809">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">2862</td><td><a href="phar_object.c.html#L2862">((php_stream_from_zval_no_verify(stream, zstub)) != NULL)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3040</td><td><a href="phar_object.c.html#L3040">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3087</td><td><a href="phar_object.c.html#L3087">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3347</td><td><a href="phar_object.c.html#L3347">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3863</td><td><a href="phar_object.c.html#L3863">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">3954</td><td><a href="phar_object.c.html#L3954">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4057</td><td><a href="phar_object.c.html#L4057">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4228</td><td><a href="phar_object.c.html#L4228">(FAILURE == phar_open_entry_fp(entry, error, 1))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4240</td><td><a href="phar_object.c.html#L4240">(FAILURE == phar_seek_efp(entry, 0, SEEK_SET, 0, 0))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4257</td><td><a href="phar_object.c.html#L4257">(FAILURE == VCWD_CHMOD(fullpath, mode))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4275</td><td><a href="phar_object.c.html#L4275">(FAILURE == phar_extract_file(overwrite, entry, pathto, pathto_len, error))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4282</td><td><a href="phar_object.c.html#L4282">(FAILURE == phar_extract_file(overwrite, entry, pathto, pathto_len, error))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4289</td><td><a href="phar_object.c.html#L4289">(FAILURE == phar_extract_file(overwrite, entry, pathto, pathto_len, error))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4358</td><td><a href="phar_object.c.html#L4358">(zend_hash_num_elements(files_ht) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4364</td><td><a href="phar_object.c.html#L4364">(IS_STRING != Z_TYPE_P(zval_file))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4480</td><td><a href="phar_object.c.html#L4480">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4499</td><td><a href="phar_object.c.html#L4499">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4542</td><td><a href="phar_object.c.html#L4542">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4566</td><td><a href="phar_object.c.html#L4566">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4579</td><td><a href="phar_object.c.html#L4579">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4654</td><td><a href="phar_object.c.html#L4654">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4739</td><td><a href="phar_object.c.html#L4739">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4796</td><td><a href="phar_object.c.html#L4796">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">4970</td><td><a href="phar_object.c.html#L4970">(zend_parse_parameters_none() == FAILURE)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">201</td><td><a href="phar_object.c.html#L201">(got > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">232</td><td><a href="phar_object.c.html#L232">(entry == cwd)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">523</td><td><a href="phar_object.c.html#L523">(fname != save_fname)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1174</td><td><a href="phar_object.c.html#L1174">(fname == arch)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1514</td><td><a href="phar_object.c.html#L1514">(str_key_len <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2064</td><td><a href="phar_object.c.html#L2064">(i < phar_ext_list_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2299</td><td><a href="phar_object.c.html#L2299">(phar != NULL)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2376</td><td><a href="phar_object.c.html#L2376">(format == PHAR_FORMAT_ZIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2391</td><td><a href="phar_object.c.html#L2391">(format == PHAR_FORMAT_ZIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2486</td><td><a href="phar_object.c.html#L2486">(format == PHAR_FORMAT_ZIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2501</td><td><a href="phar_object.c.html#L2501">(format == PHAR_FORMAT_ZIP)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2863</td><td><a href="phar_object.c.html#L2863">(len > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3317</td><td><a href="phar_object.c.html#L3317">(flags == PHAR_FILE_COMPRESSED_GZ)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3581</td><td><a href="phar_object.c.html#L3581">(filename_len >= sizeof(".phar") - 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3614</td><td><a href="phar_object.c.html#L3614">(contents_len != cont_len)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">3654</td><td><a href="phar_object.c.html#L3654">(filename != save_filename)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4140</td><td><a href="phar_object.c.html#L4140">(len >= MAXPATHLEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4288</td><td><a href="phar_object.c.html#L4288">(NULL == entry)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4330</td><td><a href="phar_object.c.html#L4330">(pathto_len < 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4336</td><td><a href="phar_object.c.html#L4336">(pathto_len >= MAXPATHLEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">4386</td><td><a href="phar_object.c.html#L4386">(-1 == ret)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">2259</td><td><a href="phar_object.c.html#L2259">(newentry.link)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2264</td><td><a href="phar_object.c.html#L2264">(newentry.tmp)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">2284</td><td><a href="phar_object.c.html#L2284">(newentry.is_tar)</a></td><td class="num">1.50</td></tr>
+      <tr><td class="num line">869</td><td><a href="phar_object.c.html#L869">(!zend_hash_num_elements(Z_ARRVAL_P(mungvalues)))</a></td><td class="num">1.25</td></tr>
+      <tr><td class="num line">85</td><td><a href="phar_object.c.html#L85">(!PHAR_G(phar_SERVER_mung_list))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">682</td><td><a href="phar_object.c.html#L682">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">1217</td><td><a href="phar_object.c.html#L1217">(!EG(exception))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2382</td><td><a href="phar_object.c.html#L2382">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2397</td><td><a href="phar_object.c.html#L2397">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2492</td><td><a href="phar_object.c.html#L2492">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2507</td><td><a href="phar_object.c.html#L2507">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">2714</td><td><a href="phar_object.c.html#L2714">(!phar_validate_alias(alias, alias_len))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3122</td><td><a href="phar_object.c.html#L3122">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3128</td><td><a href="phar_object.c.html#L3128">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3189</td><td><a href="phar_object.c.html#L3189">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3198</td><td><a href="phar_object.c.html#L3198">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3288</td><td><a href="phar_object.c.html#L3288">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3297</td><td><a href="phar_object.c.html#L3297">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">3619</td><td><a href="phar_object.c.html#L3619">(!(php_stream_from_zval_no_verify(contents_file, zresource)))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4196</td><td><a href="phar_object.c.html#L4196">(!php_stream_mkdir(fullpath, 0777, PHP_STREAM_MKDIR_RECURSIVE, NULL))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4890</td><td><a href="phar_object.c.html#L4890">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4905</td><td><a href="phar_object.c.html#L4905">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4921</td><td><a href="phar_object.c.html#L4921">(!PHAR_G(has_zlib))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">4936</td><td><a href="phar_object.c.html#L4936">(!PHAR_G(has_bz2))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">34</td><td><a href="phar_object.c.html#L34">(!ext)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">185</td><td><a href="phar_object.c.html#L185">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">247</td><td><a href="phar_object.c.html#L247">(!new_op_array)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">370</td><td><a href="phar_object.c.html#L370">(!u)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">375</td><td><a href="phar_object.c.html#L375">(!u)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">594</td><td><a href="phar_object.c.html#L594">(!basename)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">844</td><td><a href="phar_object.c.html#L844">(!mime_type)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1286</td><td><a href="phar_object.c.html#L1286">(!fname_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1396</td><td><a href="phar_object.c.html#L1396">(!value)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1408</td><td><a href="phar_object.c.html#L1408">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1445</td><td><a href="phar_object.c.html#L1445">(!base_len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1478</td><td><a href="phar_object.c.html#L1478">(!fname)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1500</td><td><a href="phar_object.c.html#L1500">(!temp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1582</td><td><a href="phar_object.c.html#L1582">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1935</td><td><a href="phar_object.c.html#L1935">(!link)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">1993</td><td><a href="phar_object.c.html#L1993">(!ext)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">2078</td><td><a href="phar_object.c.html#L2078">(!ext_pos)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3887</td><td><a href="phar_object.c.html#L3887">(!filter)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3895</td><td><a href="phar_object.c.html#L3895">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">3916</td><td><a href="phar_object.c.html#L3916">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4156</td><td><a href="phar_object.c.html#L4156">(!len)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4221</td><td><a href="phar_object.c.html#L4221">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4272</td><td><a href="phar_object.c.html#L4272">(!search)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4322</td><td><a href="phar_object.c.html#L4322">(!fp)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4346</td><td><a href="phar_object.c.html#L4346">(!ret)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">4810</td><td><a href="phar_object.c.html#L4810">(!link)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">888</td><td><a href="phar_object.c.html#L888">(zend_string_equals_literal(Z_STR_P(data), "PHP_SELF"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">890</td><td><a href="phar_object.c.html#L890">(zend_string_equals_literal(Z_STR_P(data), "REQUEST_URI"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">892</td><td><a href="phar_object.c.html#L892">(zend_string_equals_literal(Z_STR_P(data), "SCRIPT_NAME"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">894</td><td><a href="phar_object.c.html#L894">(zend_string_equals_literal(Z_STR_P(data), "SCRIPT_FILENAME"))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">1441</td><td><a href="phar_object.c.html#L1441">(instanceof_function(Z_OBJCE_P(value), spl_ce_SplFileInfo))</a></td><td class="num">0.50</td></tr>
+      <tr><td class="num line">264</td><td><a href="phar_object.c.html#L264">(PHAR_G(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">276</td><td><a href="phar_object.c.html#L276">(PHAR_G(cwd))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="phar_object.c.html#L449">(memchr(fname, '\\', fname_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">587</td><td><a href="phar_object.c.html#L587">(memchr(fname, '\\', fname_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">672</td><td><a href="phar_object.c.html#L672">(ZEND_FCI_INITIALIZED(rewrite_fci))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1006</td><td><a href="phar_object.c.html#L1006">(PHAR_G(has_zlib))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1012</td><td><a href="phar_object.c.html#L1012">(PHAR_G(has_bz2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1264</td><td><a href="phar_object.c.html#L1264">(PHAR_G(has_zlib))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1268</td><td><a href="phar_object.c.html#L1268">(PHAR_G(has_bz2))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1392</td><td><a href="phar_object.c.html#L1392">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1417</td><td><a href="phar_object.c.html#L1417">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1544</td><td><a href="phar_object.c.html#L1544">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1565</td><td><a href="phar_object.c.html#L1565">(php_check_open_basedir(fname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1725</td><td><a href="phar_object.c.html#L1725">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">1740</td><td><a href="phar_object.c.html#L1740">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2334</td><td><a href="phar_object.c.html#L2334">(PHAR_G(readonly))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">2943</td><td><a href="phar_object.c.html#L2943">(PHAR_G(readonly))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3591</td><td><a href="phar_object.c.html#L3591">(memchr(filename, '\\', filename_len))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3993</td><td><a href="phar_object.c.html#L3993">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">3999</td><td><a href="phar_object.c.html#L3999">(EG(exception))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4163</td><td><a href="phar_object.c.html#L4163">(php_check_open_basedir(fullpath))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4632</td><td><a href="phar_object.c.html#L4632">(BG(CurrentLStatFile))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">4636</td><td><a href="phar_object.c.html#L4636">(BG(CurrentStatFile))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">188</td><td><a href="phar_object.c.html#L188">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">208</td><td><a href="phar_object.c.html#L208">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">212</td><td><a href="phar_object.c.html#L212">(basename)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">259</td><td><a href="phar_object.c.html#L259">(new_op_array)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">317</td><td><a href="phar_object.c.html#L317">(info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">351</td><td><a href="phar_object.c.html#L351">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">364</td><td><a href="phar_object.c.html#L364">(u)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">376</td><td><a href="phar_object.c.html#L376">(saveu)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">386</td><td><a href="phar_object.c.html#L386">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">408</td><td><a href="phar_object.c.html#L408">(retphar)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">476</td><td><a href="phar_object.c.html#L476">(arch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">489</td><td><a href="phar_object.c.html#L489">(arch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">500</td><td><a href="phar_object.c.html#L500">(arch)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">563</td><td><a href="phar_object.c.html#L563">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">641</td><td><a href="phar_object.c.html#L641">(path_info)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">703</td><td><a href="phar_object.c.html#L703">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">714</td><td><a href="phar_object.c.html#L714">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">726</td><td><a href="phar_object.c.html#L726">(entry_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">733</td><td><a href="phar_object.c.html#L733">(index_php_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">750</td><td><a href="phar_object.c.html#L750">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">763</td><td><a href="phar_object.c.html#L763">(not_cgi)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">777</td><td><a href="phar_object.c.html#L777">(not_cgi)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">781</td><td><a href="phar_object.c.html#L781">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">802</td><td><a href="phar_object.c.html#L802">(ext)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">813</td><td><a href="phar_object.c.html#L813">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">830</td><td><a href="phar_object.c.html#L830">(free_pathinfo)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">934</td><td><a href="phar_object.c.html#L934">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">958</td><td><a href="phar_object.c.html#L958">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">978</td><td><a href="phar_object.c.html#L978">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1113</td><td><a href="phar_object.c.html#L1113">(is_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1153</td><td><a href="phar_object.c.html#L1153">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1157</td><td><a href="phar_object.c.html#L1157">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1180</td><td><a href="phar_object.c.html#L1180">(is_data)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1200</td><td><a href="phar_object.c.html#L1200">(entry)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1292</td><td><a href="phar_object.c.html#L1292">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1464</td><td><a href="phar_object.c.html#L1464">(test)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1498</td><td><a href="phar_object.c.html#L1498">(base_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1502</td><td><a href="phar_object.c.html#L1502">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1515</td><td><a href="phar_object.c.html#L1515">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1532</td><td><a href="phar_object.c.html#L1532">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1568</td><td><a href="phar_object.c.html#L1568">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1572</td><td><a href="phar_object.c.html#L1572">(temp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1585</td><td><a href="phar_object.c.html#L1585">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1589</td><td><a href="phar_object.c.html#L1589">(temp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1598</td><td><a href="phar_object.c.html#L1598">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1602</td><td><a href="phar_object.c.html#L1602">(temp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1606</td><td><a href="phar_object.c.html#L1606">(opened)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1610</td><td><a href="phar_object.c.html#L1610">(close_fp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1621</td><td><a href="phar_object.c.html#L1621">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1625</td><td><a href="phar_object.c.html#L1625">(opened)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1629</td><td><a href="phar_object.c.html#L1629">(temp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1633</td><td><a href="phar_object.c.html#L1633">(close_fp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1640</td><td><a href="phar_object.c.html#L1640">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1667</td><td><a href="phar_object.c.html#L1667">(close_fp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1673</td><td><a href="phar_object.c.html#L1673">(save)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1677</td><td><a href="phar_object.c.html#L1677">(temp)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1778</td><td><a href="phar_object.c.html#L1778">(apply_reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1789</td><td><a href="phar_object.c.html#L1789">(apply_reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1796</td><td><a href="phar_object.c.html#L1796">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1803</td><td><a href="phar_object.c.html#L1803">(apply_reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1860</td><td><a href="phar_object.c.html#L1860">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">1919</td><td><a href="phar_object.c.html#L1919">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2080</td><td><a href="phar_object.c.html#L2080">(ext_pos)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2176</td><td><a href="phar_object.c.html#L2176">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2340</td><td><a href="phar_object.c.html#L2340">(format_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2365</td><td><a href="phar_object.c.html#L2365">(method_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2417</td><td><a href="phar_object.c.html#L2417">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2445</td><td><a href="phar_object.c.html#L2445">(format_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2475</td><td><a href="phar_object.c.html#L2475">(method_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2527</td><td><a href="phar_object.c.html#L2527">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2626</td><td><a href="phar_object.c.html#L2626">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2733</td><td><a href="phar_object.c.html#L2733">(alias_len)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2743</td><td><a href="phar_object.c.html#L2743">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2748</td><td><a href="phar_object.c.html#L2748">(readd)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2757</td><td><a href="phar_object.c.html#L2757">(oldalias)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2824</td><td><a href="phar_object.c.html#L2824">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2873</td><td><a href="phar_object.c.html#L2873">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2889</td><td><a href="phar_object.c.html#L2889">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2952</td><td><a href="phar_object.c.html#L2952">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2955</td><td><a href="phar_object.c.html#L2955">(stub)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2970</td><td><a href="phar_object.c.html#L2970">(created_stub)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">2974</td><td><a href="phar_object.c.html#L2974">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3025</td><td><a href="phar_object.c.html#L3025">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3217</td><td><a href="phar_object.c.html#L3217">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3256</td><td><a href="phar_object.c.html#L3256">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3335</td><td><a href="phar_object.c.html#L3335">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3379</td><td><a href="phar_object.c.html#L3379">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3476</td><td><a href="phar_object.c.html#L3476">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3599</td><td><a href="phar_object.c.html#L3599">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3607</td><td><a href="phar_object.c.html#L3607">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3612</td><td><a href="phar_object.c.html#L3612">(cont_str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3646</td><td><a href="phar_object.c.html#L3646">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3669</td><td><a href="phar_object.c.html#L3669">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3678</td><td><a href="phar_object.c.html#L3678">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3689</td><td><a href="phar_object.c.html#L3689">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3773</td><td><a href="phar_object.c.html#L3773">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3827</td><td><a href="phar_object.c.html#L3827">(localname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">3936</td><td><a href="phar_object.c.html#L3936">(filter)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4045</td><td><a href="phar_object.c.html#L4045">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4076</td><td><a href="phar_object.c.html#L4076">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4181</td><td><a href="phar_object.c.html#L4181">(slash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4205</td><td><a href="phar_object.c.html#L4205">(slash)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4229</td><td><a href="phar_object.c.html#L4229">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4357</td><td><a href="phar_object.c.html#L4357">(files_ht)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4432</td><td><a href="phar_object.c.html#L4432">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4521</td><td><a href="phar_object.c.html#L4521">(method_is_null)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4644</td><td><a href="phar_object.c.html#L4644">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4727</td><td><a href="phar_object.c.html#L4727">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4774</td><td><a href="phar_object.c.html#L4774">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4829</td><td><a href="phar_object.c.html#L4829">(str)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">4954</td><td><a href="phar_object.c.html#L4954">(error)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">5046</td><td><a href="phar_object.c.html#L5046">(error)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

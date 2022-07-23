@@ -1,0 +1,96 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\stdfunc.c Ctrl Expressions (45) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\stdfunc.c Ctrl Expressions (45) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\stdfunc.c Ctrl Expressions (45)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">750</td><td><a href="stdfunc.c.html#L750">(<span style='background-color:#9c4c02;'>((ED_IsRVal(&Arg2.Expr) && ED_IsLocConst(&Arg2.Expr)) || (ED_IsLVal(&Arg2.Expr) && ED_IsLocRegister(&Arg2.Expr))) && ((ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr)) || (ED_IsLVal(&Arg1.Expr) && ED_IsLocRegister(&Arg1.Expr))) && (<span style='background-color:#741da3;'>IS_Get(&InlineStdFuncs) || (ECount != UNSPECIFIED && ECount < 256)</span>)</span>)</a></td><td class="num">1165.00</td></tr>
+      <tr><td class="num line">257</td><td><a href="stdfunc.c.html#L257">(<span style='background-color:#9c4c02;'>ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ((ED_IsRVal(&Arg2.Expr) && ED_IsLocConst(&Arg2.Expr)) || (ED_IsLVal(&Arg2.Expr) && ED_IsLocRegister(&Arg2.Expr))) && ((ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr)) || (ED_IsLVal(&Arg1.Expr) && ED_IsLocRegister(&Arg1.Expr)))</span>)</a></td><td class="num">161.00</td></tr>
+      <tr><td class="num line">564</td><td><a href="stdfunc.c.html#L564">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ED_IsConstAbsInt(&Arg2.Expr) && ((ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr)) || (ED_IsLVal(&Arg1.Expr) && ED_IsLocRegister(&Arg1.Expr))))</a></td><td class="num">98.00</td></tr>
+      <tr><td class="num line">317</td><td><a href="stdfunc.c.html#L317">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ED_IsRVal(&Arg2.Expr) && ED_IsLocConst(&Arg2.Expr) && ED_IsRVal(&Arg1.Expr) && ED_IsLocStack(&Arg1.Expr) && (Arg1.Expr.IVal - StackPtr) + Arg3.Expr.IVal < 256)</a></td><td class="num">69.20</td></tr>
+      <tr><td class="num line">391</td><td><a href="stdfunc.c.html#L391">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ED_IsRVal(&Arg2.Expr) && ED_IsLocStack(&Arg2.Expr) && (Arg2.Expr.IVal - StackPtr) + Arg3.Expr.IVal < 256 && ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr))</a></td><td class="num">69.20</td></tr>
+      <tr><td class="num line">612</td><td><a href="stdfunc.c.html#L612">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ED_IsConstAbsInt(&Arg2.Expr) && ED_IsRVal(&Arg1.Expr) && ED_IsLocStack(&Arg1.Expr) && (Arg1.Expr.IVal - StackPtr) + Arg3.Expr.IVal < 256)</a></td><td class="num">65.20</td></tr>
+      <tr><td class="num line">640</td><td><a href="stdfunc.c.html#L640">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal <= 256 && ED_IsConstAbsInt(&Arg2.Expr) && (Arg2.Expr.IVal != 0 || IS_Get(&CodeSizeFactor) > 200))</a></td><td class="num">57.75</td></tr>
+      <tr><td class="num line">972</td><td><a href="stdfunc.c.html#L972">(ED_IsLocStack(&Arg) && IsArray && IsByteIndex && (Arg.IVal - StackPtr) + ECount < 256)</a></td><td class="num">45.70</td></tr>
+      <tr><td class="num line">787</td><td><a href="stdfunc.c.html#L787">(ED_IsRVal(&Arg2.Expr) && ED_IsLocStack(&Arg2.Expr) && StackPtr >= -255 && ED_IsRVal(&Arg1.Expr) && ED_IsLocConst(&Arg1.Expr))</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">830</td><td><a href="stdfunc.c.html#L830">(ED_IsRVal(&Arg2.Expr) && ED_IsLocConst(&Arg2.Expr) && ED_IsRVal(&Arg1.Expr) && ED_IsLocStack(&Arg1.Expr) && StackPtr >= -255)</a></td><td class="num">36.25</td></tr>
+      <tr><td class="num line">514</td><td><a href="stdfunc.c.html#L514">((Arg2.Flags & CF_CONST) != 0 && Arg2.Expr.IVal == 0)</a></td><td class="num">29.00</td></tr>
+      <tr><td class="num line">952</td><td><a href="stdfunc.c.html#L952">(ED_IsLocConst(&Arg) && IsArray && (IS_Get(&InlineStdFuncs) || IsByteIndex))</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">235</td><td><a href="stdfunc.c.html#L235">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal == 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">538</td><td><a href="stdfunc.c.html#L538">(ED_IsConstAbsInt(&Arg3.Expr) && Arg3.Expr.IVal == 0)</a></td><td class="num">26.00</td></tr>
+      <tr><td class="num line">942</td><td><a href="stdfunc.c.html#L942">(ED_IsLocLiteral(&Arg) && IS_Get(&WritableStrings) == 0)</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">1019</td><td><a href="stdfunc.c.html#L1019">(IS_Get(&CodeSizeFactor) > 400 && IS_Get(&InlineStdFuncs))</a></td><td class="num">25.25</td></tr>
+      <tr><td class="num line">759</td><td><a href="stdfunc.c.html#L759">(ED_IsLVal(&Arg2.Expr) && ED_IsLocRegister(&Arg2.Expr))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">764</td><td><a href="stdfunc.c.html#L764">(ED_IsLVal(&Arg1.Expr) && ED_IsLocRegister(&Arg1.Expr))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">998</td><td><a href="stdfunc.c.html#L998">(ED_IsLocRegister(&Arg) && ED_IsLVal(&Arg) && IsPtr && IS_Get(&InlineStdFuncs))</a></td><td class="num">16.25</td></tr>
+      <tr><td class="num line">342</td><td><a href="stdfunc.c.html#L342">(Arg3.Expr.IVal <= 127 && !AllowOneIndex)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">416</td><td><a href="stdfunc.c.html#L416">(Arg3.Expr.IVal <= 127 && !AllowOneIndex)</a></td><td class="num">8.50</td></tr>
+      <tr><td class="num line">168</td><td><a href="stdfunc.c.html#L168">(ED_IsConstAbsInt(&Arg->Expr))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">228</td><td><a href="stdfunc.c.html#L228">(Arg3.Flags & CF_CONST)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">531</td><td><a href="stdfunc.c.html#L531">(Arg3.Flags & CF_CONST)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">735</td><td><a href="stdfunc.c.html#L735">(Arg2.Flags & CF_CONST)</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">364</td><td><a href="stdfunc.c.html#L364">(Offs == 0 || AllowOneIndex)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">438</td><td><a href="stdfunc.c.html#L438">(Offs == 0 || AllowOneIndex)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">812</td><td><a href="stdfunc.c.html#L812">(Offs == 0 || AllowOneIndex)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">855</td><td><a href="stdfunc.c.html#L855">(Offs == 0 || AllowOneIndex)</a></td><td class="num">4.50</td></tr>
+      <tr><td class="num line">273</td><td><a href="stdfunc.c.html#L273">(Arg3.Expr.IVal <= 127)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">578</td><td><a href="stdfunc.c.html#L578">(Arg3.Expr.IVal <= 127)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">655</td><td><a href="stdfunc.c.html#L655">(Arg3.Expr.IVal <= 127)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">128</td><td><a href="stdfunc.c.html#L128">(IsTypeArray(Arg->Type))</a></td><td class="num">3.50</td></tr>
+      <tr><td class="num line">130</td><td><a href="stdfunc.c.html#L130">(Count == FLEXIBLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">344</td><td><a href="stdfunc.c.html#L344">(Offs == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">418</td><td><a href="stdfunc.c.html#L418">(Offs == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">918</td><td><a href="stdfunc.c.html#L918">(ECount == FLEXIBLE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1076</td><td><a href="stdfunc.c.html#L1076">(D == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">278</td><td><a href="stdfunc.c.html#L278">(Reg2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">283</td><td><a href="stdfunc.c.html#L283">(Reg1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">296</td><td><a href="stdfunc.c.html#L296">(Reg2)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">301</td><td><a href="stdfunc.c.html#L301">(Reg1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">583</td><td><a href="stdfunc.c.html#L583">(Reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">596</td><td><a href="stdfunc.c.html#L596">(Reg)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">916</td><td><a href="stdfunc.c.html#L916">(IsArray)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

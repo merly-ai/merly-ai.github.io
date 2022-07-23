@@ -1,0 +1,85 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../merly.css">
+  <title>cc65 Repo - src\cc65\coptcmp.c Ctrl Expressions (34) - MerlyMentor</title>
+</head>
+<body>
+  <h2>cc65 Repo - src\cc65\coptcmp.c Ctrl Expressions (34) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\cc65\coptcmp.c Ctrl Expressions (34)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">933</td><td><a href="coptcmp.c.html#L933">(<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_SBC && CS_GetEntries(S, L + 1, I + 1, 4) && (L[1]->OPC == OP65_BVC || L[1]->OPC == OP65_BVS) && L[1]->JumpTo != 0 && L[1]->JumpTo->Owner == L[3] && L[2]->OPC == OP65_EOR && CE_IsKnownImm(L[2], 0x80) && L[3]->OPC == OP65_ASL && L[3]->AM == AM65_ACC && (L[4]->OPC == OP65_BCC || L[4]->OPC == OP65_BCS || L[4]->OPC == OP65_JCC || L[4]->OPC == OP65_JCS) && !CE_HasLabel(L[4]) && !RegAUsed(S, I + 4)</span>)</a></td><td class="num">160.80</td></tr>
+      <tr><td class="num line">414</td><td><a href="coptcmp.c.html#L414">((<span style='background-color:#9c4c02;'>L[0]->OPC == OP65_ADC || L[0]->OPC == OP65_AND || L[0]->OPC == OP65_ASL || L[0]->OPC == OP65_DEA || L[0]->OPC == OP65_EOR || L[0]->OPC == OP65_INA || L[0]->OPC == OP65_LDA || L[0]->OPC == OP65_LSR || L[0]->OPC == OP65_ORA || L[0]->OPC == OP65_PLA || L[0]->OPC == OP65_SBC || L[0]->OPC == OP65_TXA || L[0]->OPC == OP65_TYA</span>) && !CS_RangeHasLabel(S, I + 1, 2) && CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_CMP && CE_IsKnownImm(L[1], 0))</a></td><td class="num">148.80</td></tr>
+      <tr><td class="num line">468</td><td><a href="coptcmp.c.html#L468">(<span style='background-color:#9c4c02;'>(E = CS_GetNextEntry(S, I + 2)) != 0 && L[2]->JumpTo != 0 && (N = L[2]->JumpTo->Owner) != 0 && N->OPC != OP65_BCC && N->OPC != OP65_BCS && N->OPC != OP65_JCC && N->OPC != OP65_JCS && (N->OPC != OP65_JSR || FindBoolCmpCond(N->Arg) == CMP_INV)</span>)</a></td><td class="num">139.60</td></tr>
+      <tr><td class="num line">300</td><td><a href="coptcmp.c.html#L300">(L[0]->OPC == OP65_LDX && !CS_RangeHasLabel(S, I + 1, 2) && CS_GetEntries(S, L + 1, I + 1, 2) && L[1]->OPC == OP65_STX && strcmp(L[1]->Arg, "tmp1") == 0 && L[2]->OPC == OP65_ORA && strcmp(L[2]->Arg, "tmp1") == 0)</a></td><td class="num">96.55</td></tr>
+      <tr><td class="num line">358</td><td><a href="coptcmp.c.html#L358">(E->OPC == OP65_STX && !CS_RangeHasLabel(S, I + 1, 2) && CS_GetEntries(S, L, I + 1, 2) && L[0]->OPC == OP65_STX && strcmp(L[0]->Arg, "tmp1") == 0 && L[1]->OPC == OP65_ORA && strcmp(L[1]->Arg, "tmp1") == 0)</a></td><td class="num">93.45</td></tr>
+      <tr><td class="num line">711</td><td><a href="coptcmp.c.html#L711">(E->OPC == OP65_JSR && (Cond = FindTosCmpCond(E->Arg)) != CMP_INV && (N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_ZBRA) != 0 && !CE_HasLabel(N))</a></td><td class="num">73.75</td></tr>
+      <tr><td class="num line">232</td><td><a href="coptcmp.c.html#L232">(E->OPC == OP65_JSR && (Cond = FindBoolCmpCond(E->Arg)) != CMP_INV && (N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_ZBRA) != 0)</a></td><td class="num">71.75</td></tr>
+      <tr><td class="num line">770</td><td><a href="coptcmp.c.html#L770">((E->OPC == OP65_LDX) && CS_GetEntries(S, L, I + 1, 2) && L[0]->OPC == OP65_TXA && !CE_HasLabel(L[0]) && (L[1]->Info & OF_FBRA) != 0 && !CE_HasLabel(L[1]) && !RegAUsed(S, I + 3))</a></td><td class="num">71.45</td></tr>
+      <tr><td class="num line">544</td><td><a href="coptcmp.c.html#L544">((L[4]->Info & OF_FBRA) != 0 && L[1]->Num == 0 && L[3]->Num == 0)</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">612</td><td><a href="coptcmp.c.html#L612">((L[5]->Info & OF_FBRA) != 0 && L[2]->Num == 0 && L[4]->Num == 0)</a></td><td class="num">58.75</td></tr>
+      <tr><td class="num line">537</td><td><a href="coptcmp.c.html#L537">(E->OPC == OP65_LDA && CS_GetEntries(S, L, I + 1, 5) && L[0]->OPC == OP65_LDX && !CE_HasLabel(L[0]) && IsImmCmp16(L + 1) && !RegAXUsed(S, I + 6))</a></td><td class="num">44.05</td></tr>
+      <tr><td class="num line">605</td><td><a href="coptcmp.c.html#L605">(L[0]->OPC == OP65_LDY && CE_IsConstImm(L[0]) && CS_GetEntries(S, L + 1, I + 1, 5) && !CE_HasLabel(L[1]) && CE_IsCallTo(L[1], "ldaxysp") && IsImmCmp16(L + 2))</a></td><td class="num">40.55</td></tr>
+      <tr><td class="num line">824</td><td><a href="coptcmp.c.html#L824">((N = CS_GetNextEntry(S, I)) != 0 && (N->Info & OF_CBRA) != 0 && !CE_HasLabel(N))</a></td><td class="num">38.50</td></tr>
+      <tr><td class="num line">815</td><td><a href="coptcmp.c.html#L815">((E->Info & OF_CMP) != 0 && (RegVal = GetCmpRegVal(E)) >= 0 && CE_IsConstImm(E))</a></td><td class="num">37.75</td></tr>
+      <tr><td class="num line">460</td><td><a href="coptcmp.c.html#L460">((L[2]->Info & OF_FBRA) != 0)</a></td><td class="num">26.25</td></tr>
+      <tr><td class="num line">98</td><td><a href="coptcmp.c.html#L98">((N = CS_GetNextEntry(S, I)) == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">133</td><td><a href="coptcmp.c.html#L133">((N = CS_GetNextEntry(S, I)) == 0)</a></td><td class="num">9.75</td></tr>
+      <tr><td class="num line">438</td><td><a href="coptcmp.c.html#L438">(L[2]->OPC == OP65_JSR)</a></td><td class="num">7.25</td></tr>
+      <tr><td class="num line">243</td><td><a href="coptcmp.c.html#L243">(GetBranchCond(N->OPC) == BC_EQ)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">724</td><td><a href="coptcmp.c.html#L724">(GetBranchCond(N->OPC) == BC_EQ)</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">223</td><td><a href="coptcmp.c.html#L223">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">292</td><td><a href="coptcmp.c.html#L292">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">350</td><td><a href="coptcmp.c.html#L350">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">406</td><td><a href="coptcmp.c.html#L406">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">529</td><td><a href="coptcmp.c.html#L529">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">597</td><td><a href="coptcmp.c.html#L597">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">702</td><td><a href="coptcmp.c.html#L702">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">762</td><td><a href="coptcmp.c.html#L762">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">807</td><td><a href="coptcmp.c.html#L807">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">925</td><td><a href="coptcmp.c.html#L925">(I < CS_GetEntryCount(S))</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">873</td><td><a href="coptcmp.c.html#L873">(!Cond)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">562</td><td><a href="coptcmp.c.html#L562">(CE_HasLabel(E))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">487</td><td><a href="coptcmp.c.html#L487">(Delete)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">889</td><td><a href="coptcmp.c.html#L889">(JumpsChanged)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

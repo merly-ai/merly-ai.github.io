@@ -1,0 +1,117 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../merly.css">
+  <title>qemu Repo - migration\block.c Ctrl Expressions (66) - MerlyMentor</title>
+</head>
+<body>
+  <h2>qemu Repo - migration\block.c Ctrl Expressions (66) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;migration\block.c Ctrl Expressions (66)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">942</td><td><a href="block.c.html#L942">(ret == 0 && bdi.cluster_size > 0 && bdi.cluster_size <= BLK_MIG_BLOCK_SIZE && <span style='background-color:#741da3;'>BLK_MIG_BLOCK_SIZE % bdi.cluster_size == 0</span>)</a></td><td class="num">1035.85</td></tr>
+      <tr><td class="num line">636</td><td><a href="block.c.html#L636">((blk = QSIMPLEQ_FIRST(&block_mig_state.blk_list)) != NULL)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">691</td><td><a href="block.c.html#L691">((bmds = QSIMPLEQ_FIRST(&block_mig_state.bmds_list)) != NULL)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">718</td><td><a href="block.c.html#L718">((blk = QSIMPLEQ_FIRST(&block_mig_state.blk_list)) != NULL)</a></td><td class="num">40.00</td></tr>
+      <tr><td class="num line">774</td><td><a href="block.c.html#L774">(block_mig_state.read_done * BLK_MIG_BLOCK_SIZE < qemu_file_get_rate_limit(f) && block_mig_state.submitted < MAX_PARALLEL_IO && (block_mig_state.submitted + block_mig_state.read_done) < MAX_IO_BUFFERS)</a></td><td class="num">36.70</td></tr>
+      <tr><td class="num line">284</td><td><a href="block.c.html#L284">(cur_sector < total_sectors && !bdrv_is_allocated(blk_bs(bb), cur_sector * BDRV_SECTOR_SIZE, MAX_IS_ALLOCATED_SEARCH, &count))</a></td><td class="num">26.10</td></tr>
+      <tr><td class="num line">972</td><td><a href="block.c.html#L972">((!block_mig_state.zero_blocks || cluster_size < BLK_MIG_BLOCK_SIZE) && buffer_is_zero(cur_buf, cluster_size))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">136</td><td><a href="block.c.html#L136">(block_mig_state.zero_blocks && buffer_is_zero(blk->buf, BLK_MIG_BLOCK_SIZE))</a></td><td class="num">8.75</td></tr>
+      <tr><td class="num line">883</td><td><a href="block.c.html#L883">(pending <= max_size && !block_mig_state.bulk_completed)</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="block.c.html#L207">(sector < blk_nb_sectors(bmds->blk))</a></td><td class="num">5.75</td></tr>
+      <tr><td class="num line">539</td><td><a href="block.c.html#L539">(bdrv_dirty_bitmap_get_locked(bmds->dirty_bitmap, sector * BDRV_SECTOR_SIZE))</a></td><td class="num">5.85</td></tr>
+      <tr><td class="num line">481</td><td><a href="block.c.html#L481">(bmds->bulk_completed == 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">530</td><td><a href="block.c.html#L530">(sector < bmds->total_sectors)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">640</td><td><a href="block.c.html#L640">(blk->ret < 0)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">308</td><td><a href="block.c.html#L308">(total_sectors - cur_sector < BDRV_SECTORS_PER_DIRTY_CHUNK)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">541</td><td><a href="block.c.html#L541">(total_sectors - sector < BDRV_SECTORS_PER_DIRTY_CHUNK)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">951</td><td><a href="block.c.html#L951">(total_sectors - addr < BDRV_SECTORS_PER_DIRTY_CHUNK)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">968</td><td><a href="block.c.html#L968">(i < BLK_MIG_BLOCK_SIZE / cluster_size)</a></td><td class="num">4.60</td></tr>
+      <tr><td class="num line">356</td><td><a href="block.c.html#L356">(!bmds->dirty_bitmap)</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1000</td><td><a href="block.c.html#L1000">(!(flags & BLK_MIG_FLAG_EOS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">1008</td><td><a href="block.c.html#L1008">(!(flags & BLK_MIG_FLAG_EOS))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">494</td><td><a href="block.c.html#L494">(block_mig_state.total_sector_sum != 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">500</td><td><a href="block.c.html#L500">(progress != block_mig_state.prev_progress)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">780</td><td><a href="block.c.html#L780">(block_mig_state.bulk_completed == 0)</a></td><td class="num">3.75</td></tr>
+      <tr><td class="num line">153</td><td><a href="block.c.html#L153">(flags & BLK_MIG_FLAG_ZERO_BLOCK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">279</td><td><a href="block.c.html#L279">(bmds->shared_base)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">365</td><td><a href="block.c.html#L365">(bmds->dirty_bitmap)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">437</td><td><a href="block.c.html#L437">(bmds->shared_base)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">913</td><td><a href="block.c.html#L913">(flags & BLK_MIG_FLAG_DEVICE_BLOCK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">957</td><td><a href="block.c.html#L957">(flags & BLK_MIG_FLAG_ZERO_BLOCK)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">992</td><td><a href="block.c.html#L992">(flags & BLK_MIG_FLAG_PROGRESS)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">482</td><td><a href="block.c.html#L482">(mig_save_device_bulk(f, bmds) == 1)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">782</td><td><a href="block.c.html#L782">(blk_mig_save_bulked_block(f) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">226</td><td><a href="block.c.html#L226">(start <= end)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">287</td><td><a href="block.c.html#L287">(count < BDRV_SECTOR_SIZE)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">296</td><td><a href="block.c.html#L296">(cur_sector >= total_sectors)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">416</td><td><a href="block.c.html#L416">(sectors <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">448</td><td><a href="block.c.html#L448">(i < num_bs)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">454</td><td><a href="block.c.html#L454">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">573</td><td><a href="block.c.html#L573">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">616</td><td><a href="block.c.html#L616">(ret <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">735</td><td><a href="block.c.html#L735">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">795</td><td><a href="block.c.html#L795">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">799</td><td><a href="block.c.html#L799">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">813</td><td><a href="block.c.html#L813">(delta_bytes > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">815</td><td><a href="block.c.html#L815">(delta_bytes < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">846</td><td><a href="block.c.html#L846">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">849</td><td><a href="block.c.html#L849">(ret == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">926</td><td><a href="block.c.html#L926">(blk != blk_prev)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">929</td><td><a href="block.c.html#L929">(total_sectors <= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">982</td><td><a href="block.c.html#L982">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">989</td><td><a href="block.c.html#L989">(ret < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">1005</td><td><a href="block.c.html#L1005">(ret != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">920</td><td><a href="block.c.html#L920">(!blk)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">993</td><td><a href="block.c.html#L993">(!banner_printed)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">411</td><td><a href="block.c.html#L411">(bdrv_is_read_only(bs))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">532</td><td><a href="block.c.html#L532">(bmds_aio_inflight(bmds, sector))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">637</td><td><a href="block.c.html#L637">(qemu_file_rate_limit(f))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">230</td><td><a href="block.c.html#L230">(set)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">452</td><td><a href="block.c.html#L452">(bmds)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">557</td><td><a href="block.c.html#L557">(is_async)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">745</td><td><a href="block.c.html#L745">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">766</td><td><a href="block.c.html#L766">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">807</td><td><a href="block.c.html#L807">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">832</td><td><a href="block.c.html#L832">(ret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">936</td><td><a href="block.c.html#L936">(local_err)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

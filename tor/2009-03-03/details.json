@@ -1,0 +1,440 @@
+{
+  "files": [
+    "contrib\\id_to_fp.c",
+    "src\\common\\OpenBSD_malloc_Linux.c",
+    "src\\common\\address.c",
+    "src\\common\\address.h",
+    "src\\common\\aes.c",
+    "src\\common\\aes.h",
+    "src\\common\\compat.c",
+    "src\\common\\compat.h",
+    "src\\common\\container.c",
+    "src\\common\\container.h",
+    "src\\common\\crypto.c",
+    "src\\common\\crypto.h",
+    "src\\common\\ht.h",
+    "src\\common\\log.c",
+    "src\\common\\log.h",
+    "src\\common\\memarea.c",
+    "src\\common\\memarea.h",
+    "src\\common\\mempool.c",
+    "src\\common\\mempool.h",
+    "src\\common\\strlcat.c",
+    "src\\common\\strlcpy.c",
+    "src\\common\\test.h",
+    "src\\common\\torgzip.c",
+    "src\\common\\torgzip.h",
+    "src\\common\\torint.h",
+    "src\\common\\tortls.c",
+    "src\\common\\tortls.h",
+    "src\\common\\util.c",
+    "src\\common\\util.h",
+    "src\\or\\buffers.c",
+    "src\\or\\circuitbuild.c",
+    "src\\or\\circuitlist.c",
+    "src\\or\\circuituse.c",
+    "src\\or\\command.c",
+    "src\\or\\config.c",
+    "src\\or\\connection.c",
+    "src\\or\\connection_edge.c",
+    "src\\or\\connection_or.c",
+    "src\\or\\control.c",
+    "src\\or\\cpuworker.c",
+    "src\\or\\directory.c",
+    "src\\or\\dirserv.c",
+    "src\\or\\dirvote.c",
+    "src\\or\\dns.c",
+    "src\\or\\dnsserv.c",
+    "src\\or\\eventdns.c",
+    "src\\or\\eventdns.h",
+    "src\\or\\eventdns_tor.h",
+    "src\\or\\geoip.c",
+    "src\\or\\hibernate.c",
+    "src\\or\\main.c",
+    "src\\or\\networkstatus.c",
+    "src\\or\\ntmain.c",
+    "src\\or\\onion.c",
+    "src\\or\\or.h",
+    "src\\or\\policies.c",
+    "src\\or\\reasons.c",
+    "src\\or\\relay.c",
+    "src\\or\\rendclient.c",
+    "src\\or\\rendcommon.c",
+    "src\\or\\rendmid.c",
+    "src\\or\\rendservice.c",
+    "src\\or\\rephist.c",
+    "src\\or\\router.c",
+    "src\\or\\routerlist.c",
+    "src\\or\\routerparse.c",
+    "src\\or\\test.c",
+    "src\\or\\test_data.c",
+    "src\\or\\tor_main.c",
+    "src\\tools\\tor-checkkey.c",
+    "src\\tools\\tor-gencert.c",
+    "src\\tools\\tor-resolve.c",
+    "src\\win32\\orconfig.h"
+  ],
+  "instances": {
+    "10:1108": {
+      "normalized": "(#<#a++ == 3 && *b && c < d#>#)"
+    },
+    "1:1047": {
+      "normalized": "(#<#a != 0 && #<#(3 << a) <= b + b#>##>#)"
+    },
+    "1:1345": {
+      "normalized": "(#<#!a && b <= c && b > c - d#>#)"
+    },
+    "1:1354": {
+      "normalized": "((b*)a & ((#<#3 << ((*c)->d)#>#) - 1))"
+    },
+    "1:1362": {
+      "normalized": "(#<#(*a)->b[c / (signed){0}]#># & (3 << (c % (signed){0})))"
+    },
+    "1:1368": {
+      "normalized": "(!a && b <= c && (#<#b > c / 3 || c == d#>#))"
+    },
+    "1:1653": {
+      "normalized": "(#<#a == NULL && b == (c - 1)#>#)"
+    },
+    "22:152": {
+      "normalized": "(#<#((c*)a->b) > d + 3#>#)"
+    },
+    "25:781": {
+      "normalized": "(a && #<#(a->b & 3) == (signed){0}[c].b#>#)"
+    },
+    "27:1189": {
+      "normalized": "(#<#a < 3 || b < 1 || b > 4 || c < 1 || c > 5 || d > 6 || e > 7 || f > 8#>#)"
+    },
+    "27:1266": {
+      "normalized": "(#<#a->b < 0 || a->c < 1 || a->c > 3 || a->d < 0 || a->d > 4 || a->e < 0 || a->e > 5 || a->f < 0 || a->f > 6 || a->g < 0 || a->g > 7#>#)"
+    },
+    "27:803": {
+      "normalized": "(#<#a < b / 3 || a > (signed){0}#>#)"
+    },
+    "27:848": {
+      "normalized": "(#<#a(*b) && ((c*)*b) < 3#>#)"
+    },
+    "27:879": {
+      "normalized": "(#<#a(*b) && ((c*)*b) < 3#>#)"
+    },
+    "2:1224": {
+      "normalized": "(#<#!a || *a == 3 || b(a, \"0\") == 0#>#)"
+    },
+    "2:577": {
+      "normalized": "(#<#(a < 0 || a > 3) || (b == (signed){0} && a > 4)#>#)"
+    },
+    "2:635": {
+      "normalized": "(#<#(*a != *b) && b == &c#>#)"
+    },
+    "30:1245": {
+      "normalized": "(!(#<#a->b || c->d & (signed){0}#>#))"
+    },
+    "30:1346": {
+      "normalized": "(#<#a[b] != -1 && (c || d(e, f))#>#)"
+    },
+    "30:1640": {
+      "normalized": "(#<#a && b->c && (d != (signed){0} || b->e)#>#)"
+    },
+    "30:1955": {
+      "normalized": "(#<#a()->b && c->d != (signed){0}#>#)"
+    },
+    "30:421": {
+      "normalized": "(#<#a->b || a->c || !a->d || a->e != (signed){0}#>#)"
+    },
+    "31:888": {
+      "normalized": "(#<#a(b) && b->c == (signed){0} && !b->d && b->e == (signed){1} && !b->f#>#)"
+    },
+    "31:894": {
+      "normalized": "(#<#(!a || b->c->a) && (!d || b->c->d) && (e == b->c->f) && b->g#>#)"
+    },
+    "32:1489": {
+      "normalized": "(#<#a->b == (signed){0} && !a->c && d(a)#>#)"
+    },
+    "32:292": {
+      "normalized": "(#<#a->b == (signed){0} && a->c <= d && a->c > e#>#)"
+    },
+    "32:332": {
+      "normalized": "(#<#a(b)->c || b->d > e#>#)"
+    },
+    "32:691": {
+      "normalized": "(#<#!a->b && c(a) && a->d == (signed){0} && a->e == (signed){1}#>#)"
+    },
+    "32:795": {
+      "normalized": "(#<#a->b && a->b->c->d != (signed){0} && a->b->c->c->d == (signed){0}#>#)"
+    },
+    "32:922": {
+      "normalized": "(#<#(a || b != (signed){0}) && b != (signed){1} && !c#>#)"
+    },
+    "33:484": {
+      "normalized": "(#<#a->b != 0 || a->c.d != (signed){0} || (a->e && a->e->f)#>#)"
+    },
+    "34:2997": {
+      "normalized": "(#<#a->b == 0 && a->c == 0 && a->d == 0 && a->e == 0 && a->f == 0 && !a->g#>#)"
+    },
+    "34:3445": {
+      "normalized": "(#<#a->b < (signed){0} || a->b > (signed){1} || a->b % 3#>#)"
+    },
+    "34:4418": {
+      "normalized": "(#<#!a && (!b || b & c)#>#)"
+    },
+    "35:2006": {
+      "normalized": "(#<#!a->b && c(a) && !a->d && e > 0#>#)"
+    },
+    "35:2036": {
+      "normalized": "(#<#!a->b && a->c && d(a) < 0#>#)"
+    },
+    "35:2433": {
+      "normalized": "(#<#!a && !(b < 0)#>#)"
+    },
+    "37:665": {
+      "normalized": "(#<#a->b.c || a->d || a->b.e != (signed){0}#>#)"
+    },
+    "38:1683": {
+      "normalized": "(#<#a->b != (signed){0} || a->c || a->d == (signed){1} || a->d == (signed){2}#>#)"
+    },
+    "38:2327": {
+      "normalized": "(#<#!a || (!b && !c) || !d#>#)"
+    },
+    "38:3900": {
+      "normalized": "(#<#a > b || (c && c > b)#>#)"
+    },
+    "38:3946": {
+      "normalized": "(#<#a()->b && !c() && !d()#>#)"
+    },
+    "40:1540": {
+      "normalized": "(#<#!a && (b == (signed){0} || b == (signed){1}) && c != b#>#)"
+    },
+    "41:2166": {
+      "normalized": "(a->b && (!a->c || d) && (#<#e(f) >= (signed){0} || #<#e(f) >= (d ? g : h)#>##>#))"
+    },
+    "41:2885": {
+      "normalized": "(a || #<#(((c*)b[0]) % 3) == d#>#)"
+    },
+    "41:691": {
+      "normalized": "(#<#a && a->b.c < d->b.c && e(a, d) && !f(d)#>#)"
+    },
+    "41:853": {
+      "normalized": "(#<#a(b) >= (d*)c && !(e & (signed){0})#>#)"
+    },
+    "41:886": {
+      "normalized": "(#<#a->b < c - (signed){0} || d.b < c - (signed){0}#>#)"
+    },
+    "42:324": {
+      "normalized": "((#<#a = (((e*)b->c.d) - ((e*)f->c.d))#>#))"
+    },
+    "42:326": {
+      "normalized": "((#<#a = (((e*)b->c.d) - ((e*)f->c.d))#>#))"
+    },
+    "42:328": {
+      "normalized": "((#<#a = (((e*)b->c.d) - ((e*)f->c.d))#>#))"
+    },
+    "43:1133": {
+      "normalized": "(#<#!a && b && !c(d, b) && e.f == g#>#)"
+    },
+    "45:2823": {
+      "normalized": "(#<#((a & (signed){0}) == 0) && b && b->c#>#)"
+    },
+    "45:768": {
+      "normalized": "(#<#a & 3 || !b || !b->c#>#)"
+    },
+    "49:416": {
+      "normalized": "(#<#a + (signed){0} <= b || c + (signed){1} <= d || e + (signed){1} <= f || (g && g <= b)#>#)"
+    },
+    "50:1001": {
+      "normalized": "(#<#a && b && b->c < b->d && b->c < 3#>#)"
+    },
+    "50:569": {
+      "normalized": "(#<#a >= 0 && b->c && d(b)#>#)"
+    },
+    "50:893": {
+      "normalized": "(#<#a % 3 == 0 && (b(c)) && !d()#>#)"
+    },
+    "50:930": {
+      "normalized": "(#<#a && a->b < c + (signed){0} && d()#>#)"
+    },
+    "51:1412": {
+      "normalized": "(#<#a && !b && c->d < e - (signed){0}#>#)"
+    },
+    "51:1479": {
+      "normalized": "(#<#a && (b < -1) && c#>#)"
+    },
+    "51:441": {
+      "normalized": "(#<#a > 1 || (a >= 0 && b < c)#>#)"
+    },
+    "52:409": {
+      "normalized": "(#<#a.b(c, &d) && (d.e != (signed){0}) && (f < (signed){1})#>#)"
+    },
+    "55:1071": {
+      "normalized": "(a < b(c) && #<#d(a)->e <= e#>#)"
+    },
+    "55:1091": {
+      "normalized": "(a < b(c) && #<#d(a)->e <= e#>#)"
+    },
+    "55:763": {
+      "normalized": "(#<#a->b == 0 && a->c <= 1 && a->d >= 3#>#)"
+    },
+    "57:1397": {
+      "normalized": "((!a && b->c > 0) || (#<#a && b->c > 0 && b->d == a#>#))"
+    },
+    "57:1467": {
+      "normalized": "(#<#(a ? a->b : c->b) < (signed){0}#>#)"
+    },
+    "57:204": {
+      "normalized": "(#<#!a(b) && c(b)->d && e == (signed){0}#>#)"
+    },
+    "57:662": {
+      "normalized": "(#<#a->b > 0 && c(d) && !e(f)#>#)"
+    },
+    "57:916": {
+      "normalized": "(#<#a->b < 3 || c + 3 > a->b#>#)"
+    },
+    "58:512": {
+      "normalized": "(a(b, c->d, #<#c->e == (signed){0} ? c->f : NULL#>#, g(NULL), h) < 0)"
+    },
+    "61:1037": {
+      "normalized": "(#<#(b*)a != c + 3 + d + 4#>#)"
+    },
+    "61:1237": {
+      "normalized": "(#<#!a->b || a->b->c > (signed){0} || a->b->d < e(NULL)#>#)"
+    },
+    "63:1479": {
+      "normalized": "((#<#a != b && (!a || !b)#>#) || b > a * 3 || b < a / 3)"
+    },
+    "63:638": {
+      "normalized": "(#<#a && (b->c & (signed){0}) && d(e, b->f, (signed){1})#>#)"
+    },
+    "64:310": {
+      "normalized": "(#<#a ? (b + (signed){0} < c) : (d + (signed){1} < b)#>#)"
+    },
+    "64:4290": {
+      "normalized": "(#<#!a->b && c(a) && d + (signed){0} < e && f + (signed){0} < e#>#)"
+    },
+    "64:5003": {
+      "normalized": "(#<#(a(b, 3) || a(b, 4)) && (c = d(b, (signed){0}))#>#)"
+    },
+    "64:5106": {
+      "normalized": "(#<#a >= 0 && a < b->c && d(b->e, a)#>#)"
+    },
+    "64:788": {
+      "normalized": "(#<#!a->b && c && d(c) == (signed){0}#>#)"
+    },
+    "65:1526": {
+      "normalized": "(#<#a(b->c, \"0\") || b->d < 3 || b->d > 4#>#)"
+    },
+    "65:2468": {
+      "normalized": "(#<#!a->b || c(a->b, \"0\") || a->d < 3 || a->d > 4#>#)"
+    },
+    "65:2628": {
+      "normalized": "(#<#!a->b || c(a->b, \"0\") || a->d < 3 || a->d > 4#>#)"
+    },
+    "65:3053": {
+      "normalized": "(#<#*a + 3 >= b - 4#># || c(*a + 3, 5, b - *a - 6) || d(b - 4, \"0\", 4))"
+    },
+    "65:3071": {
+      "normalized": "(#<##<#(c*)(a - b) != 3 + d + 4#># || e(b + 3, f->g, d) || e(a - 4, \"0\", 4)#>#)"
+    },
+    "66:472": {
+      "normalized": "(#<#a(b, \"0\") || c(b, \"1\") || d(b) < 3 || d(b) > 4#>#)"
+    },
+    "6:1464": {
+      "normalized": "(#<#*a == 3 && b > 0 && c == -1#>#)"
+    },
+    "6:1467": {
+      "normalized": "(#<#*a == 3 && b == 0 && a[1] == 3 && c == -1#>#)"
+    },
+    "6:1475": {
+      "normalized": "(#<#a > 3 || (a == 3 && b != -1) || (a < 3 && b == -1)#>#)"
+    }
+  },
+  "known_bad": {},
+  "known_good": {},
+  "nested_if_instances": {},
+  "nested_if_patterns": [],
+  "patterns": [
+    "(!(#<#a->b || c->d & 12345#>#))",
+    "(!a && b <= c && (#<#b > c / 12345 || c == d#>#))",
+    "(#<#!a && !(b < 12345)#>#)",
+    "(#<#!a && (!b || b & c)#>#)",
+    "(#<#!a && (b == 12345 || b == 12345) && c != b#>#)",
+    "(#<#!a && b && !c() && d.e == f#>#)",
+    "(#<#!a && b <= c && b > c - d#>#)",
+    "(#<#!a || (!b && !c) || !d#>#)",
+    "(#<#!a || *a == 12345 || b() == 12345#>#)",
+    "(#<#!a() && b()->c && d == 12345#>#)",
+    "(#<#!a->b && a->c && d() < 12345#>#)",
+    "(#<#!a->b && c && d() == 12345#>#)",
+    "(#<#!a->b && c() && !a->d && e > 12345#>#)",
+    "(#<#!a->b && c() && a->d == 12345 && a->e == 12345#>#)",
+    "(#<#!a->b && c() && d + 12345 < e && f + 12345 < e#>#)",
+    "(#<#!a->b || a->b->c > 12345 || a->b->d < e()#>#)",
+    "(#<#!a->b || c() || a->d < 12345 || a->d > 12345#>#)",
+    "(#<##<#(a - b) != 12345 + c + 12345#># || d() || d()#>#)",
+    "(#<#(!a || b->c->a) && (!d || b->c->d) && (e == b->c->f) && b->g#>#)",
+    "(#<#((a & 12345) == 12345) && b && b->c#>#)",
+    "(#<#(*a != *b) && b == &c#>#)",
+    "(#<#(*a)->b[c / 12345]#># & (12345 << (c % 12345)))",
+    "(#<#(a < 12345 || a > 12345) || (b == 12345 && a > 12345)#>#)",
+    "(#<#(a ? a->b : c->b) < 12345#>#)",
+    "(#<#(a || b != 12345) && b != 12345 && !c#>#)",
+    "(#<#(a() || a()) && (b = c())#>#)",
+    "(#<#(a->b) > c + 12345#>#)",
+    "(#<#*a + 12345 >= b - 12345#># || c() || d())",
+    "(#<#*a == 12345 && b == 12345 && a[12345] == 12345 && c == 12345#>#)",
+    "(#<#*a == 12345 && b > 12345 && c == 12345#>#)",
+    "(#<#a != 12345 && #<#(12345 << a) <= b + b#>##>#)",
+    "(#<#a != b + 12345 + c + 12345#>#)",
+    "(#<#a % 12345 == 12345 && (b()) && !c()#>#)",
+    "(#<#a & 12345 || !b || !b->c#>#)",
+    "(#<#a && !b && c->d < e - 12345#>#)",
+    "(#<#a && (b < 12345) && c#>#)",
+    "(#<#a && (b->c & 12345) && d()#>#)",
+    "(#<#a && a->b < c + 12345 && d()#>#)",
+    "(#<#a && a->b.c < d->b.c && e() && !f()#>#)",
+    "(#<#a && b && b->c < b->d && b->c < 12345#>#)",
+    "(#<#a && b->c && (d != 12345 || b->e)#>#)",
+    "(#<#a + 12345 <= b || c + 12345 <= d || e + 12345 <= f || (g && g <= b)#>#)",
+    "(#<#a < 12345 || b < 12345 || b > 12345 || c < 12345 || c > 12345 || d > 12345 || e > 12345 || f > 12345#>#)",
+    "(#<#a < b / 12345 || a > 12345#>#)",
+    "(#<#a == NULL && b == (c - 12345)#>#)",
+    "(#<#a > 12345 || (a == 12345 && b != 12345) || (a < 12345 && b == 12345)#>#)",
+    "(#<#a > 12345 || (a >= 12345 && b < c)#>#)",
+    "(#<#a > b || (c && c > b)#>#)",
+    "(#<#a >= 12345 && a < b->c && d()#>#)",
+    "(#<#a >= 12345 && b->c && d()#>#)",
+    "(#<#a ? (b + 12345 < c) : (d + 12345 < b)#>#)",
+    "(#<#a() && (*b) < 12345#>#)",
+    "(#<#a() && b->c == 12345 && !b->d && b->e == 12345 && !b->f#>#)",
+    "(#<#a() >= b && !(c & 12345)#>#)",
+    "(#<#a() || b() || c() < 12345 || c() > 12345#>#)",
+    "(#<#a() || b->c < 12345 || b->c > 12345#>#)",
+    "(#<#a()->b && !c() && !d()#>#)",
+    "(#<#a()->b && c->d != 12345#>#)",
+    "(#<#a()->b || c->d > e#>#)",
+    "(#<#a++ == 12345 && *b && c < d#>#)",
+    "(#<#a->b != 12345 || a->c || a->d == 12345 || a->d == 12345#>#)",
+    "(#<#a->b != 12345 || a->c.d != 12345 || (a->e && a->e->f)#>#)",
+    "(#<#a->b && a->b->c->d != 12345 && a->b->c->c->d == 12345#>#)",
+    "(#<#a->b < 12345 || a->b > 12345 || a->b % 12345#>#)",
+    "(#<#a->b < 12345 || a->c < 12345 || a->c > 12345 || a->d < 12345 || a->d > 12345 || a->e < 12345 || a->e > 12345 || a->f < 12345 || a->f > 12345 || a->g < 12345 || a->g > 12345#>#)",
+    "(#<#a->b < 12345 || c + 12345 > a->b#>#)",
+    "(#<#a->b < c - 12345 || d.b < c - 12345#>#)",
+    "(#<#a->b == 12345 && !a->c && d()#>#)",
+    "(#<#a->b == 12345 && a->c <= 12345 && a->d >= 12345#>#)",
+    "(#<#a->b == 12345 && a->c <= d && a->c > e#>#)",
+    "(#<#a->b == 12345 && a->c == 12345 && a->d == 12345 && a->e == 12345 && a->f == 12345 && !a->g#>#)",
+    "(#<#a->b > 12345 && c() && !d()#>#)",
+    "(#<#a->b || a->c || !a->d || a->e != 12345#>#)",
+    "(#<#a->b.c || a->d || a->b.e != 12345#>#)",
+    "(#<#a.b() && (c.d != 12345) && (e < 12345)#>#)",
+    "(#<#a[b] != 12345 && (c || d())#>#)",
+    "((!a && b->c > 12345) || (#<#a && b->c > 12345 && b->d == a#>#))",
+    "((#<#a != b && (!a || !b)#>#) || b > a * 12345 || b < a / 12345)",
+    "((#<#a = ((b->c.d) - (e->c.d))#>#))",
+    "(a & ((#<#12345 << ((*b)->c)#>#) - 12345))",
+    "(a && #<#(a->b & 12345) == 12345[c].b#>#)",
+    "(a < b() && #<#c()->d <= d#>#)",
+    "(a || #<#((b[12345]) % 12345) == c#>#)",
+    "(a() < 12345)",
+    "(a->b && (!a->c || d) && (#<#e() >= 12345 || #<#e() >= (d ? f : g)#>##>#))"
+  ]
+}

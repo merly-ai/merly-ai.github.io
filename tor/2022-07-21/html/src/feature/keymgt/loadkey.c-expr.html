@@ -1,0 +1,146 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="../../../merly.css">
+  <title>tor Repo - src\feature\keymgt\loadkey.c Ctrl Expressions (95) - MerlyMentor</title>
+</head>
+<body>
+  <h2>tor Repo - src\feature\keymgt\loadkey.c Ctrl Expressions (95) - MerlyMentor</h2>
+  
+  <header>
+    <nav>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Files" href="../../../index.html">Files</a></li>
+        <li class="mr-3"><a title="Anomalies" href="../../../anomalies.html">Anomalies</a></li>
+        <li class="mr-3"><a title="Notables" href="../../../notables.html">Notables</a></li>
+        <li class="mr-3"><a title="Known Good" href="../../../known-good.html">Known Good</a></li>
+        <li class="mr-3"><a title="Known Bad" href="../../../known-bad.html">Known Bad</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <fieldset>
+    <legend>&nbsp;src\feature\keymgt\loadkey.c Ctrl Expressions (95)&nbsp;</legend>
+    <table class="code">
+      <tr class="th"><td class="num">Line</td><td>Ctrl Expression</td><td class="num">Score</td></tr>
+      <tr><td class="num line">590</td><td><a href="loadkey.c.html#L590">(<span style='background-color:#741da3;'>created_sk || (have_secret && options != NULL && options->change_key_passphrase)</span>)</a></td><td class="num">1014.00</td></tr>
+      <tr><td class="num line">592</td><td><a href="loadkey.c.html#L592">(<span style='background-color:#9c4c02;'>write_secret_key(&keypair->seckey, encrypt_key, secret_fname, tag, encrypted_secret_fname) < 0 || (split && ed25519_pubkey_write_to_file(&keypair->pubkey, public_fname, tag) < 0) || (cert && crypto_write_tagged_contents_to_file(cert_fname, "ed25519v1-cert", tag, cert->encoded, cert->encoded_len) < 0)</span>)</a></td><td class="num">110.50</td></tr>
+      <tr><td class="num line">639</td><td><a href="loadkey.c.html#L639">(signing_key && cert->signing_key_included && !ed25519_pubkey_eq(&signing_key->pubkey, &cert->signing_key))</a></td><td class="num">50.50</td></tr>
+      <tr><td class="num line">631</td><td><a href="loadkey.c.html#L631">(signing_key && tor_cert_checksig(cert, &signing_key->pubkey, now) < 0)</a></td><td class="num">41.75</td></tr>
+      <tr><td class="num line">474</td><td><a href="loadkey.c.html#L474">(ed25519_public_key_generate(&keypair->pubkey, &keypair->seckey) < 0)</a></td><td class="num">29.25</td></tr>
+      <tr><td class="num line">273</td><td><a href="loadkey.c.html#L273">(get_options()->keygen_force_passphrase == FORCE_PASSPHRASE_ON)</a></td><td class="num">25.75</td></tr>
+      <tr><td class="num line">501</td><td><a href="loadkey.c.html#L501">(!ed25519_pubkey_eq(&keypair->pubkey, &pubkey_tmp))</a></td><td class="num">25.00</td></tr>
+      <tr><td class="num line">519</td><td><a href="loadkey.c.html#L519">(ed25519_pubkey_write_to_file(&keypair->pubkey, public_fname, tag) < 0)</a></td><td class="num">23.75</td></tr>
+      <tr><td class="num line">557</td><td><a href="loadkey.c.html#L557">(!have_secret && !found_public && !(flags & INIT_ED_KEY_CREATE))</a></td><td class="num">11.75</td></tr>
+      <tr><td class="num line">177</td><td><a href="loadkey.c.html#L177">(options->keygen_force_passphrase == FORCE_PASSPHRASE_ON && length == 0)</a></td><td class="num">11.50</td></tr>
+      <tr><td class="num line">533</td><td><a href="loadkey.c.html#L533">(!have_secret && found_public && !(flags & INIT_ED_KEY_MISSING_SECRET_OK))</a></td><td class="num">11.00</td></tr>
+      <tr><td class="num line">279</td><td><a href="loadkey.c.html#L279">(crypto_pwbox(&encrypted_key, &encrypted_len, key->seckey, sizeof(key->seckey), pwbuf0, strlen(pwbuf0), 0) < 0)</a></td><td class="num">10.50</td></tr>
+      <tr><td class="num line">627</td><td><a href="loadkey.c.html#L627">(!tor_memeq(cert->signed_key.pubkey, keypair->pubkey.pubkey, ED25519_PUBKEY_LEN))</a></td><td class="num">10.00</td></tr>
+      <tr><td class="num line">488</td><td><a href="loadkey.c.html#L488">(!found_public && errno != ENOENT && norepair)</a></td><td class="num">9.25</td></tr>
+      <tr><td class="num line">676</td><td><a href="loadkey.c.html#L676">(crypto_write_tagged_contents_to_file(cert_fname, "ed25519v1-cert", tag, cert->encoded, cert->encoded_len) < 0)</a></td><td class="num">9.00</td></tr>
+      <tr><td class="num line">49</td><td><a href="loadkey.c.html#L49">(!(prkey = crypto_pk_new()))</a></td><td class="num">8.25</td></tr>
+      <tr><td class="num line">569</td><td><a href="loadkey.c.html#L569">(!have_secret && !found_public && have_encrypted_secret_file)</a></td><td class="num">7.75</td></tr>
+      <tr><td class="num line">446</td><td><a href="loadkey.c.html#L446">(!have_secret && try_to_load && encrypt_key)</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">618</td><td><a href="loadkey.c.html#L618">(cert_body_len >= 0 && !strcmp(got_tag, tag))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">655</td><td><a href="loadkey.c.html#L655">(!signing_key || !(flags & INIT_ED_KEY_CREATE))</a></td><td class="num">7.00</td></tr>
+      <tr><td class="num line">483</td><td><a href="loadkey.c.html#L483">(try_to_load && (!have_secret || split))</a></td><td class="num">6.75</td></tr>
+      <tr><td class="num line">436</td><td><a href="loadkey.c.html#L436">(errno != ENOENT && norepair)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">455</td><td><a href="loadkey.c.html#L455">(errno != ENOENT && norepair)</a></td><td class="num">6.00</td></tr>
+      <tr><td class="num line">121</td><td><a href="loadkey.c.html#L121">(options->keygen_force_passphrase == FORCE_PASSPHRASE_OFF)</a></td><td class="num">5.50</td></tr>
+      <tr><td class="num line">577</td><td><a href="loadkey.c.html#L577">(!have_secret && !found_public)</a></td><td class="num">5.25</td></tr>
+      <tr><td class="num line">163</td><td><a href="loadkey.c.html#L163">(length != length2 || tor_memneq(buf, buf2, length))</a></td><td class="num">4.75</td></tr>
+      <tr><td class="num line">493</td><td><a href="loadkey.c.html#L493">(found_public && strcmp(got_tag, tag))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">609</td><td><a href="loadkey.c.html#L609">(!(flags & INIT_ED_KEY_NEEDCERT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">734</td><td><a href="loadkey.c.html#L734">(!(flags & INIT_ED_KEY_NEEDCERT))</a></td><td class="num">4.00</td></tr>
+      <tr><td class="num line">132</td><td><a href="loadkey.c.html#L132">(options->use_keygen_passphrase_fd)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">636</td><td><a href="loadkey.c.html#L636">(cert->cert_expired)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">662</td><td><a href="loadkey.c.html#L662">(flags & INIT_ED_KEY_INCLUDE_SIGNING_KEY_IN_CERT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">740</td><td><a href="loadkey.c.html#L740">(flags & INIT_ED_KEY_INCLUDE_SIGNING_KEY_IN_CERT)</a></td><td class="num">3.25</td></tr>
+      <tr><td class="num line">66</td><td><a href="loadkey.c.html#L66">(try_locking(get_options(), 0) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">266</td><td><a href="loadkey.c.html#L266">(do_getpass("Enter new passphrase:", pwbuf0, sizeof(pwbuf0), 1, get_options()) < 0)</a></td><td class="num">2.75</td></tr>
+      <tr><td class="num line">272</td><td><a href="loadkey.c.html#L272">(strlen(pwbuf0) == 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">285</td><td><a href="loadkey.c.html#L285">(crypto_write_tagged_contents_to_file(fname, ENC_KEY_HEADER, ENC_KEY_TAG, encrypted_key, encrypted_len) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">463</td><td><a href="loadkey.c.html#L463">(file_status(encrypted_secret_fname) != FN_NOENT)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">731</td><td><a href="loadkey.c.html#L731">(ed25519_keypair_generate(keypair, extra_strong) < 0)</a></td><td class="num">2.50</td></tr>
+      <tr><td class="num line">136</td><td><a href="loadkey.c.html#L136">(length >= 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">144</td><td><a href="loadkey.c.html#L144">(p2len < sizeof(msg))</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">155</td><td><a href="loadkey.c.html#L155">(length < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">201</td><td><a href="loadkey.c.html#L201">(encrypted_len < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">216</td><td><a href="loadkey.c.html#L216">(pwlen < 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">223</td><td><a href="loadkey.c.html#L223">(r_unbox == UNPWBOX_CORRUPTED)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">227</td><td><a href="loadkey.c.html#L227">(r_unbox == UNPWBOX_OKAY)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">235</td><td><a href="loadkey.c.html#L235">(secret_len != ED25519_SECKEY_LEN)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">309</td><td><a href="loadkey.c.html#L309">(r == 1)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">316</td><td><a href="loadkey.c.html#L316">(r != 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">431</td><td><a href="loadkey.c.html#L431">(rv == 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">449</td><td><a href="loadkey.c.html#L449">(r > 0)</a></td><td class="num">2.25</td></tr>
+      <tr><td class="num line">65</td><td><a href="loadkey.c.html#L65">(!have_lockfile())</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">82</td><td><a href="loadkey.c.html#L82">(!crypto_pk_is_valid_private_key(prkey))</a></td><td class="num">1.00</td></tr>
+      <tr><td class="num line">158</td><td><a href="loadkey.c.html#L158">(!twice)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">581</td><td><a href="loadkey.c.html#L581">(!keypair)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">624</td><td><a href="loadkey.c.html#L624">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">669</td><td><a href="loadkey.c.html#L669">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">746</td><td><a href="loadkey.c.html#L746">(!cert)</a></td><td class="num">0.75</td></tr>
+      <tr><td class="num line">78</td><td><a href="loadkey.c.html#L78">(crypto_pk_generate_key(prkey))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">90</td><td><a href="loadkey.c.html#L90">(crypto_pk_write_private_key_to_filename(prkey, fname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">101</td><td><a href="loadkey.c.html#L101">(crypto_pk_read_private_key_from_filename(prkey, fname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">207</td><td><a href="loadkey.c.html#L207">(strcmp(tag, ENC_KEY_TAG))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">313</td><td><a href="loadkey.c.html#L313">(strcmp(fname, encrypted_fname))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">469</td><td><a href="loadkey.c.html#L469">(strcmp(got_tag, tag))</a></td><td class="num">0.25</td></tr>
+      <tr><td class="num line">45</td><td><a href="loadkey.c.html#L45">(created_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">64</td><td><a href="loadkey.c.html#L64">(generate)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">87</td><td><a href="loadkey.c.html#L87">(created_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">111</td><td><a href="loadkey.c.html#L111">(prkey)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">141</td><td><a href="loadkey.c.html#L141">(twice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">153</td><td><a href="loadkey.c.html#L153">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">171</td><td><a href="loadkey.c.html#L171">(twice)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">212</td><td><a href="loadkey.c.html#L212">(1)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">247</td><td><a href="loadkey.c.html#L247">(secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">251</td><td><a href="loadkey.c.html#L251">(saved_errno)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">292</td><td><a href="loadkey.c.html#L292">(encrypted_key)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">307</td><td><a href="loadkey.c.html#L307">(encrypted)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">413</td><td><a href="loadkey.c.html#L413">(explicit_fname)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">428</td><td><a href="loadkey.c.html#L428">(load_secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">461</td><td><a href="loadkey.c.html#L461">(try_to_load)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">468</td><td><a href="loadkey.c.html#L468">(have_secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">497</td><td><a href="loadkey.c.html#L497">(found_public)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">498</td><td><a href="loadkey.c.html#L498">(have_secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">518</td><td><a href="loadkey.c.html#L518">(have_secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">535</td><td><a href="loadkey.c.html#L535">(have_encrypted_secret_file)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">540</td><td><a href="loadkey.c.html#L540">(offline_secret)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">558</td><td><a href="loadkey.c.html#L558">(split)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">645</td><td><a href="loadkey.c.html#L645">(bad_cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">651</td><td><a href="loadkey.c.html#L651">(cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">683</td><td><a href="loadkey.c.html#L683">(cert_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">691</td><td><a href="loadkey.c.html#L691">(keypair)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">695</td><td><a href="loadkey.c.html#L695">(cert_out)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">697</td><td><a href="loadkey.c.html#L697">(created_sk)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">699</td><td><a href="loadkey.c.html#L699">(created_pk)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">701</td><td><a href="loadkey.c.html#L701">(created_cert)</a></td><td class="num">0.00</td></tr>
+      <tr><td class="num line">726</td><td><a href="loadkey.c.html#L726">(cert_out)</a></td><td class="num">0.00</td></tr>
+
+    </table>
+  </fieldset>
+  
+  <footer class="footer width-full container-xl p-responsive">
+    <nav>
+      <p></p>
+      <ul class="list-style-none d-flex flex-wrap mb-2">
+        <li class="mr-3"><a title="Merly" href="https://merly.ai">© 2022 Merly, Inc.</a></li>
+        <!--
+        <li class="mr-3"><a>Terms</a></li>
+        <li class="mr-3"><a>Privacy</a></li>
+        <li class="mr-3"><a>Security</a></li>
+        -->
+        <li class="mr-3"><a href="https://merly.ai/_files/ugd/c392f8_90d33fd2e7644dcd9aa97ac2b7736c75.pdf">User Manual</a></li>
+        <li class="mr-3"><a href="mailto:sales@merly.ai">Contact Merly</a></li>
+        <li class="mr-3"><a href="https://merly.ai/mentor-pricing">Pricing</a></li>
+        <li class="mr-3"><a href="https://merly.ai/timeline">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
